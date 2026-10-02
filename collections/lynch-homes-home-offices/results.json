@@ -1,0 +1,49 @@
+{
+  "builder": {
+    "name": "Lynch Homes",
+    "slug": "lynch-homes",
+    "websiteUrl": "https://www.lynchhomes.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T16:15:52.169Z",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Home office with no beds or floorplan graphics",
+  "analysisVersion": "home-office-no-beds-or-floorplans-v2",
+  "developments": [
+    {
+      "url": "https://www.lynchhomes.co.uk/the-kings-development-troon/",
+      "name": "The Kings",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.lynchhomes.co.uk/jackton-manor-development/",
+      "name": "Jackton Manor",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.lynchhomes.co.uk/the-kings-development-troon-phase-4/",
+      "name": "The Kings Phase 4",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    }
+  ],
+  "properties": [],
+  "images": [],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 3,
+    "qualifyingDiscovered": 0,
+    "propertyLimitOmissions": 0,
+    "imagesAttempted": 0,
+    "pendingImages": 0,
+    "matchedImages": 0,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 0
+  },
+  "completedAt": "2026-10-02T16:16:00.331Z"
+}

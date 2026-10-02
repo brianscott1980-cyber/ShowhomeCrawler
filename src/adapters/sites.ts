@@ -22,8 +22,11 @@ export function builderSite(slug='bellway') {
  if(slug==='redrow')return {name:'Redrow',slug,websiteUrl:'https://www.redrow.co.uk',sitemap:'https://www.redrow.co.uk/sitemaps/sitemap-redrow-developments.xml',...redrow};
  if(slug==='berkeley-group')return {name:'The Berkeley Group',slug,websiteUrl:'https://www.berkeleygroup.co.uk',sitemap:'https://www.berkeleygroup.co.uk/sitemaps/sitemap-developments',...berkeley};
  if(slug==='crest-nicholson')return {name:'Crest Nicholson',slug,websiteUrl:'https://www.crestnicholson.com',sitemap:'https://www.crestnicholson.com/sitemap.xml',...crest};
+ if(slug==='lynch-homes')return {name:'Lynch Homes',slug,websiteUrl:'https://www.lynchhomes.co.uk',sitemap:'https://www.lynchhomes.co.uk/sitemap_index.xml',...lynch};
  throw new Error('Unsupported builder.');
 }
 import * as redrow from './redrow/site-parser.js';
 import * as berkeley from './berkeley/site-parser.js';
 import * as crest from './crest/site-parser.js';
+
+import * as lynch from './lynch/site-parser.js';
