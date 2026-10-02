@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Conon Woods",
+    "url": "https://www.tulloch-homes.com/homes-for-sale/12-conon-bridge",
+    "postcode": "IV7 8AH",
+    "latitude": 57.556033,
+    "longitude": -4.439637,
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Highland"
+    }
+  },
+  {
+    "name": "Conon Green",
+    "url": "https://www.tulloch-homes.com/homes-for-sale/15-conon-bridge",
+    "postcode": "IV7 8FJ",
+    "latitude": 57.562727,
+    "longitude": -4.427077,
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Highland"
+    }
+  },
+  {
+    "name": "The Maples",
+    "url": "https://www.tulloch-homes.com/homes-for-sale/1-inverness-maples",
+    "latitude": 57.45680744284327,
+    "longitude": -4.249259971164593,
+    "postcode": "IV2 6FU",
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Highland"
+    }
+  },
+  {
+    "name": "Parks View",
+    "url": "https://www.tulloch-homes.com/homes-for-sale/5-inverness",
+    "postcode": "B4H9Zz"
+  },
+  {
+    "name": "Fairview Heights",
+    "url": "https://www.tulloch-homes.com/homes-for-sale/13-inverness",
+    "postcode": "IV2 6JW",
+    "latitude": 57.445713,
+    "longitude": -4.207737,
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Highland"
+    }
+  },
+  {
+    "name": "The Executive Collection at Parks View",
+    "url": "https://www.tulloch-homes.com/homes-for-sale/16-inverness",
+    "postcode": "IV2 6JT",
+    "latitude": 57.454619,
+    "longitude": -4.194255,
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Highland"
+    }
+  },
+  {
+    "name": "Spey Green",
+    "url": "https://www.tulloch-homes.com/homes-for-sale/11-newtonmore",
+    "latitude": 57.059287,
+    "longitude": -4.12839,
+    "postcode": "PH20 1BB",
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Highland"
+    }
+  }
+]

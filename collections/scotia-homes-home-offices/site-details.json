@@ -1,0 +1,250 @@
+[
+  {
+    "url": "https://www.scotia-homes.co.uk/developments/dalfaber",
+    "country": "Scotland",
+    "scope": "Published homes",
+    "properties": [
+      {
+        "price": 620000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.scotia-homes.co.uk/developments/parkview",
+    "country": "Scotland",
+    "scope": "Published homes",
+    "properties": [
+      {
+        "price": 269950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 274950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 312950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 312950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 359950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 362950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 367950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 372950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 372950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 447950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 474950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.scotia-homes.co.uk/developments/aberfell",
+    "country": "Scotland",
+    "scope": "Published homes",
+    "properties": [
+      {
+        "price": 224950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 319950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 319950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 319950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 322950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 322950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 334950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 329950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 337950,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.scotia-homes.co.uk/developments/willowburn",
+    "country": null,
+    "scope": "Published homes",
+    "properties": [
+      {
+        "price": 224950,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 314950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 319950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 364950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 424950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  }
+]

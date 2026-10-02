@@ -1,7 +1,9 @@
-import {expect,it} from 'vitest';
+import sharp from 'sharp';
+import {expect,it,vi} from 'vitest';
 import * as tulloch from '../src/adapters/tulloch/site-parser';
 import * as scotia from '../src/adapters/scotia/site-parser';
-import {validateBatch} from '../src/vision/gemini-classifier';
+import {extractBaseCategorisation} from '../src/vision/image-categoriser';
+import {classifyBatch,validateBatch} from '../src/vision/gemini-classifier';
 it('discovers Tulloch development cards and all gallery images across bedroom counts',()=>{
  expect(tulloch.developmentUrls('<a href="/homes-for-sale/5-inverness">Parks View</a><a href="/homes-for-sale/5-inverness/777-carnegie">Carnegie</a>')).toEqual(['https://www.tulloch-homes.com/homes-for-sale/5-inverness']);
  const result=tulloch.discoverHomes('<title>Parks View | Tulloch</title><li class="property_development_plot_stub_item"><h3><a href="/homes-for-sale/5-inverness/796-etive">Affric</a></h3>Plot 408 £330,000 3 bedrooms</li>','https://www.tulloch-homes.com/homes-for-sale/5-inverness');
@@ -19,4 +21,23 @@ it('allows beds and non-office rooms only in the all-images classifier mode',()=
  expect(()=>validateBatch(body,['bedroom'])).toThrow('Contradictory classification');
  expect(validateBatch(body,['bedroom'],true)[0]?.verdict.matches).toBe(true);
  expect(()=>validateBatch(body,['wrong'],true)).toThrow('identifiers');
+});
+
+it('categorises a floorplan as a graphic even when its description names rooms',()=>{
+ const cat=extractBaseCategorisation('floorplan','A ground floor plan with kitchen, living room and WC.','Architectural diagram.');
+ expect(cat.mainCategory).toBe('Floorplan');expect(cat.isRoom).toBe(false);
+});
+
+it('binds short model labels back to full image identities even when answers are reordered',async()=>{
+ const ids=['a'.repeat(64),'b'.repeat(64)];
+ const bytes=await sharp({create:{width:2,height:2,channels:3,background:'#fff'}}).png().toBuffer();
+ const response={candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({images:[2,1].map(n=>({imageId:`image-${n}`,matches:true,hasDesk:false,hasBed:true,hasFloorplan:false,roomType:'Bedroom',description:`Bedroom ${n}`,reason:'Real room'}))})}]}}]};
+ const request=vi.spyOn(globalThis,'fetch').mockResolvedValue(new Response(JSON.stringify(response),{status:200}));
+ try{
+  const answers=await classifyBatch(ids.map(id=>({id,bytes})),'test-key','test-model',true);
+  expect(answers.map(answer=>answer.id)).toEqual([ids[1],ids[0]]);
+  expect(answers[0]?.verdict.description).toBe('Bedroom 2');
+  const body=JSON.parse(request.mock.calls[0]![1]!.body as string);
+  expect(body.generationConfig.responseSchema.properties.images.items.properties.imageId.enum).toEqual(['image-1','image-2']);
+ }finally{request.mockRestore();}
 });

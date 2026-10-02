@@ -16,7 +16,9 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
  // 1. Main Category
  let mainCategory = 'Other';
 
- if (
+ if (/\b(floor[ -]?plan|schematic)\b/.test(roomLower)) {
+  mainCategory = 'Floorplan';
+ } else if (
   /\b(cloakroom|powder room|wc|toilet|w\.c\.)\b/.test(roomLower) ||
   /\b(cloakroom|powder room|half-bathroom|downstairs wc|downstairs toilet|guest toilet)\b/.test(lower) ||
   (/\b(toilet|wc)\b/.test(lower) && !/\b(bath|bathtub|shower)\b/.test(lower))

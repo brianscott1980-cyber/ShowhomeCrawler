@@ -1,0 +1,43 @@
+[
+  {
+    "name": "DalfaberAviemore",
+    "url": "https://www.scotia-homes.co.uk/developments/dalfaber",
+    "latitude": 57.201245,
+    "longitude": -3.813903,
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Highland"
+    }
+  },
+  {
+    "name": "Park ViewKintore",
+    "url": "https://www.scotia-homes.co.uk/developments/parkview",
+    "latitude": 57.2270532,
+    "longitude": -2.3465592,
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Aberdeenshire"
+    }
+  },
+  {
+    "name": "AberfellArbroath",
+    "url": "https://www.scotia-homes.co.uk/developments/aberfell",
+    "postcode": "DD11 2AS",
+    "latitude": 56.558879,
+    "longitude": -2.616861,
+    "country": "Scotland",
+    "geography": {
+      "country": "Scotland",
+      "region": null,
+      "district": "Angus"
+    }
+  },
+  {
+    "name": "WillowburnTarves",
+    "url": "https://www.scotia-homes.co.uk/developments/willowburn"
+  }
+]

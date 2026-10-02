@@ -7,15 +7,16 @@ if (!values.builder || !/^[a-z][a-z-]+$/.test(values.builder)) throw new Error('
 const source = resolve('results', `${values.builder}-home-offices`);
 const target = resolve('collections', `${values.builder}-home-offices`);
 const report: RunReport = JSON.parse(await readFile(`${source}/results.json`, 'utf8'));
+if (report.analysisVersion === 'all-property-images-v1' && report.images.some(i => !i.categorisation)) throw new Error('Finish all-image categorisation before publishing.');
 if (report.images.some(i => !i.verdict)) throw new Error('Finish classification before publishing.');
-const matchedImages = report.images.filter(i => i.categorisation || i.verdict?.matches);
-for (const image of matchedImages) {
+const publishedImages = report.images.filter(i => i.categorisation || i.verdict?.matches);
+for (const image of publishedImages) {
  if (!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(image.path)) throw new Error('Invalid image path.');
  await access(`${source}/${image.path}`);
 }
 await mkdir(target, { recursive: true });
 await mkdir(`${target}/images`, { recursive: true });
-for (const image of matchedImages) await copyFile(`${source}/${image.path}`, `${target}/${image.path}`);
+for (const image of publishedImages) await copyFile(`${source}/${image.path}`, `${target}/${image.path}`);
 await writeReport(target, { ...report, images: report.images, properties: report.properties, metrics: { ...report.metrics, collectedUniqueImages: report.images.length } });
 await rm(`${target}/checkpoint.json`, { force: true });
-console.log(JSON.stringify({ stage: 'published_collection', developer: report.builder?.name, images: report.images.length, matchedImages: matchedImages.length, folder: target }));
+console.log(JSON.stringify({ stage: 'published_collection', developer: report.builder?.name, images: report.images.length, publishedImages: publishedImages.length, folder: target }));

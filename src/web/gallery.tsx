@@ -119,6 +119,7 @@ export function Gallery({
 
  const available = all.filter(image => {
   if (favouritesOnly) return favourites.includes(image.id);
+  if (image.categorisation && !image.categorisation.isRoom && image.categorisation.mainCategory !== 'Exterior') return false;
   const isUncategorised = !image.categorisation || image.categorisation.mainCategory === 'Other';
   if (isUncategorised && !isRoomImage(image)) return false;
   return image.verdict?.matches || includeUnclassified;

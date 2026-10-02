@@ -78,5 +78,15 @@
     "slug": "hill-group",
     "source": "https://www.hill.co.uk",
     "file": "hill-group.svg"
+  },
+  {
+    "slug": "tulloch-homes",
+    "source": "https://www.tulloch-homes.com/",
+    "file": "tulloch-homes.svg"
+  },
+  {
+    "slug": "scotia-homes",
+    "source": "https://www.scotia-homes.co.uk/assets/img/scotia-homes-logo-navy.svg",
+    "file": "scotia-homes.svg"
   }
 ]

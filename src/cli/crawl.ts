@@ -85,9 +85,9 @@ async function main() {
   const identities: { identity: Awaited<ReturnType<typeof imageIdentity>>; image: ReportImage }[] = [];
   const galleryCache = new Map<string, string[]>();
   let imageAttempts = 0, analysisUnavailable = false;
-  // Sequential galleries; development requests and image workers are capped at three.
-  for (const { home, development, plots } of homes.slice(0, maxProperties)) {
-   if (stopped) break;
+  // All-images runs share at most three gallery workers, each with one image request at a time.
+  await mapLimit(homes.slice(0, maxProperties), values['all-images'] ? Math.min(3, env.MAX_CONCURRENCY) : 1, async ({ home, development, plots }) => {
+   if (stopped) return;
    const property = { development: development.name, developmentUrl: development.url, name: home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
    report.properties.push(property);
    try {
@@ -100,8 +100,8 @@ async function main() {
     if (!images.length) report.errors.push({ url: home.url, stage: 'gallery', message: 'No supported image gallery found; not treated as a negative match.' });
     const galleryKey = sha256(JSON.stringify([...new Set(images.map(i => imageSourceKey(i.url)))].sort()));
     const reused = galleryCache.get(galleryKey);
-    if (reused) { property.imageIds = reused; report.metrics.reusedGalleries = (report.metrics.reusedGalleries ?? 0) + 1; continue; }
-    const imageIds = await mapLimit(images, Math.min(3, env.MAX_CONCURRENCY), async candidate => {
+    if (reused) { property.imageIds = reused; report.metrics.reusedGalleries = (report.metrics.reusedGalleries ?? 0) + 1; return; }
+    const imageIds = await mapLimit(images, values['all-images'] ? 1 : Math.min(3, env.MAX_CONCURRENCY), async candidate => {
      if (stopped) return null;
      return sourceTasks.get(candidate.url, async () => {
      const known = sourceImages.get(candidate.url);
@@ -145,7 +145,7 @@ async function main() {
     console.log(JSON.stringify({ stage: 'gallery', developer: site.name, completed: report.properties.length, total: Math.min(homes.length,maxProperties), development: development.name, home: home.name, images: images.length, uniqueImages: report.images.length }));
    } catch { report.errors.push({ url: home.url, stage: 'gallery', message: 'House page or gallery extraction failed' }); }
    await writeReport(folder, report);
-  }
+  });
   report.metrics.imagesAttempted = imageAttempts;
   report.metrics.pendingImages = report.images.filter(i => !i.verdict).length;
   report.metrics.matchedImages = report.images.filter(i => i.verdict?.matches).length;
@@ -162,4 +162,4 @@ async function main() {
   throw error;
  } finally { if (sql) await sql.end(); await lock.close(); const { unlink } = await import('node:fs/promises'); await unlink(folder + '/.lock'); }
 }
-main().catch(error => { console.error(error instanceof Error && /^(Set GEMINI|Only Bellway|Invalid crawl|Output must|This output|Development is|No development|robots.txt)/.test(error.message) ? error.message : 'Crawl failed; credentials and raw provider responses withheld.'); process.exitCode = 1; });
+main().catch(error => { console.error(error instanceof Error && /^(Set GEMINI|All-images|Only Bellway|Invalid crawl|Output must|This output|Development is|No development|robots.txt)/.test(error.message) ? error.message : 'Crawl failed; credentials and raw provider responses withheld.'); process.exitCode = 1; });
