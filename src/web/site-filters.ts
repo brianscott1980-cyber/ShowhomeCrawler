@@ -1,6 +1,5 @@
-import type {CollectionImage} from './scroll-collection-image';
 export interface SiteProperty {price:number|null;bedrooms:number|null;style:string|null}
-export interface SiteCard {key:string;name:string;developer:string;images?:CollectionImage[];image:string;description:string;count:number;country:string|null;latitude?:number;longitude?:number;properties:SiteProperty[];propertyScope?:string}
+export interface SiteCard {key:string;name:string;developer:string;images?:{src:string;alt:string}[];image:string;description:string;count:number;country:string|null;latitude?:number;longitude?:number;properties:SiteProperty[];propertyScope?:string}
 export interface SiteFilters {developer:string;country:string;minPrice:string;maxPrice:string;minBeds:string;maxBeds:string;style:string;radius:string}
 export interface LocationPoint {latitude:number;longitude:number}
 export function milesBetween(a:LocationPoint,b:LocationPoint){const rad=(n:number)=>n*Math.PI/180;const h=Math.sin(rad(b.latitude-a.latitude)/2)**2+Math.cos(rad(a.latitude))*Math.cos(rad(b.latitude))*Math.sin(rad(b.longitude-a.longitude)/2)**2;return 3958.7613*2*Math.atan2(Math.sqrt(h),Math.sqrt(Math.max(0,1-h)));}

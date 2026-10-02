@@ -4981,7 +4981,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -5010,7 +5010,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -5071,7 +5071,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -5336,7 +5336,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -5396,7 +5396,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -5661,7 +5661,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -5720,7 +5720,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [],
         "wallpaper": "Patterned wallpaper",
@@ -5774,7 +5774,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -5953,7 +5953,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -6286,7 +6286,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "desk"
@@ -6374,7 +6374,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6561,7 +6561,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6593,7 +6593,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6627,7 +6627,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6658,7 +6658,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6689,7 +6689,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6926,7 +6926,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -7060,7 +7060,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -7338,7 +7338,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7366,7 +7366,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [],
         "wallpaper": null,
@@ -7476,7 +7476,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7504,7 +7504,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7950,7 +7950,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8101,7 +8101,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Guest bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8162,7 +8162,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8190,7 +8190,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8786,7 +8786,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -8816,7 +8816,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -9050,7 +9050,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -9427,7 +9427,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -9601,7 +9601,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -9721,7 +9721,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -10175,7 +10175,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -10498,7 +10498,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -10526,7 +10526,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -10555,7 +10555,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -10879,7 +10879,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -11225,7 +11225,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -11256,7 +11256,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -11285,7 +11285,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -11517,7 +11517,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -11545,7 +11545,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -11771,7 +11771,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -11800,7 +11800,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -12128,7 +12128,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -12187,7 +12187,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Guest bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -12387,7 +12387,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -12771,7 +12771,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -13005,7 +13005,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13063,7 +13063,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13383,7 +13383,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13438,7 +13438,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13465,7 +13465,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13636,7 +13636,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -13664,7 +13664,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -13697,7 +13697,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -13953,7 +13953,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14009,7 +14009,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -14300,7 +14300,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -14532,7 +14532,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14559,7 +14559,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14588,7 +14588,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -15052,7 +15052,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -15140,7 +15140,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -15203,7 +15203,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -15230,7 +15230,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "side table",
@@ -15581,7 +15581,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -15613,7 +15613,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -15760,7 +15760,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -15790,7 +15790,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16026,7 +16026,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -16082,7 +16082,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16261,7 +16261,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16348,7 +16348,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16629,7 +16629,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16657,7 +16657,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16688,7 +16688,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16803,7 +16803,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -17104,7 +17104,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -17475,7 +17475,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -17705,7 +17705,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -17735,7 +17735,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -17979,7 +17979,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -18186,7 +18186,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -18220,7 +18220,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -18836,7 +18836,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -19162,7 +19162,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -19414,7 +19414,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -19591,7 +19591,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -19618,7 +19618,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -19852,7 +19852,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -19910,7 +19910,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -20086,7 +20086,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -20143,7 +20143,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -20173,7 +20173,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -20410,7 +20410,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -20469,7 +20469,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -20498,7 +20498,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -20756,7 +20756,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -21112,7 +21112,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -21225,7 +21225,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -21337,7 +21337,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -21683,7 +21683,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -21743,7 +21743,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -21964,7 +21964,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22106,7 +22106,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22134,7 +22134,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22304,7 +22304,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -22419,7 +22419,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22447,7 +22447,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22670,7 +22670,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22698,7 +22698,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22726,7 +22726,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22756,7 +22756,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -22874,7 +22874,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "sofa",
@@ -22992,7 +22992,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -23047,7 +23047,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -23229,7 +23229,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -23259,7 +23259,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -23290,7 +23290,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -23914,7 +23914,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -24172,7 +24172,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -24265,7 +24265,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -24294,7 +24294,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -24469,7 +24469,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -24500,7 +24500,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -24939,7 +24939,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -25424,7 +25424,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Child's bedroom / Nursery",
+        "subCategory": "Nursery",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -25627,7 +25627,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -25656,7 +25656,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -25854,7 +25854,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -25910,7 +25910,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",

@@ -4373,7 +4373,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Child's bedroom / Nursery",
+        "subCategory": "Nursery",
         "isRoom": true,
         "objects": [
           "bed",
@@ -4973,7 +4973,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -5003,7 +5003,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -5033,7 +5033,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -5457,7 +5457,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -5892,7 +5892,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -5922,7 +5922,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -6277,7 +6277,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6308,7 +6308,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6397,7 +6397,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -6425,7 +6425,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -6741,7 +6741,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -7213,7 +7213,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7246,7 +7246,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7310,7 +7310,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7343,7 +7343,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7375,7 +7375,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -7403,7 +7403,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -7845,7 +7845,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -7875,7 +7875,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -7963,7 +7963,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8024,7 +8024,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8117,7 +8117,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8726,7 +8726,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -8789,7 +8789,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "cabinetry",
@@ -8818,7 +8818,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -9223,7 +9223,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -9281,7 +9281,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -9929,7 +9929,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -9989,7 +9989,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -10320,7 +10320,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -10412,7 +10412,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -10443,7 +10443,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [],
         "wallpaper": null,
@@ -11036,7 +11036,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -11222,7 +11222,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "desk"
@@ -11525,7 +11525,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -11583,7 +11583,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -11612,7 +11612,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Child's bedroom / Nursery",
+        "subCategory": "Nursery",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -11679,7 +11679,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Guest bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -11713,7 +11713,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -11742,7 +11742,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -12183,7 +12183,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -12214,7 +12214,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -12276,7 +12276,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -12951,7 +12951,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Guest bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "sofa",
@@ -13096,7 +13096,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13124,7 +13124,7 @@
       "analysisModel": "gemini-3.5-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13475,7 +13475,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13533,7 +13533,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -13561,7 +13561,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -13590,7 +13590,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -13619,7 +13619,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [],
         "wallpaper": null,
@@ -13674,7 +13674,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14206,7 +14206,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Child's bedroom / Nursery",
+        "subCategory": "Nursery",
         "isRoom": true,
         "objects": [
           "armchair",
@@ -14238,7 +14238,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -14268,7 +14268,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -14781,7 +14781,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14809,7 +14809,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14837,7 +14837,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14865,7 +14865,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -14894,7 +14894,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14922,7 +14922,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14950,7 +14950,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -14978,7 +14978,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -15006,7 +15006,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -15034,7 +15034,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [],
         "wallpaper": null,
@@ -15381,7 +15381,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -15587,7 +15587,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -15616,7 +15616,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -15644,7 +15644,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed"
@@ -15906,7 +15906,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -15992,7 +15992,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",
@@ -16052,7 +16052,7 @@
       "analysisModel": "gemini-3.1-flash-lite",
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
         "isRoom": true,
         "objects": [
           "bed",

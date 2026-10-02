@@ -24,7 +24,8 @@
     "sites:sync": "tsx src/cli/sync-site-filtering.ts",
     "dev": "next dev --hostname 127.0.0.1",
     "start": "next start --hostname 127.0.0.1",
-    "build:crawler": "tsc -p tsconfig.crawler.json"
+    "build:crawler": "tsc -p tsconfig.crawler.json",
+    "images:normalise-bedrooms": "tsx src/cli/normalise-bedrooms.ts"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

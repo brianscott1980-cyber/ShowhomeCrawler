@@ -5,16 +5,16 @@ describe('Image categorisation', () => {
  it('correctly categorises bedrooms and subcategories', () => {
   const master = extractBaseCategorisation('bedroom', 'A master bedroom with king size bed and en-suite access');
   expect(master.mainCategory).toBe('Bedroom');
-  expect(master.subCategory).toBe('Master bedroom');
+  expect(master.subCategory).toBe('Double bedroom');
   expect(master.objects).toContain('bed');
 
   const nursery = extractBaseCategorisation('bedroom', 'A bright nursery with a baby crib and rocking chair');
   expect(nursery.mainCategory).toBe('Bedroom');
-  expect(nursery.subCategory).toBe("Child's bedroom / Nursery");
+  expect(nursery.subCategory).toBe('Nursery');
 
   const small = extractBaseCategorisation('bedroom', 'A children bedroom with single bed and desk');
   expect(small.mainCategory).toBe('Bedroom');
-  expect(small.subCategory).toBe('Small bedroom');
+  expect(small.subCategory).toBe('Single bedroom');
   expect(small.objects).toContain('bed');
   expect(small.objects).toContain('desk');
  });

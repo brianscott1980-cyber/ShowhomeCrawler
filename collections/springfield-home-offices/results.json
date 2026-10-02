@@ -566,7 +566,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Master bedroom",
+        "subCategory": "Double bedroom",
         "isRoom": true,
         "objects": [
           "bed"
@@ -649,7 +649,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed",
@@ -1007,7 +1007,7 @@
       },
       "categorisation": {
         "mainCategory": "Bedroom",
-        "subCategory": "Small bedroom",
+        "subCategory": "Single bedroom",
         "isRoom": true,
         "objects": [
           "bed"
