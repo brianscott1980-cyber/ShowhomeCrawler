@@ -1,0 +1,3370 @@
+{
+  "builder": {
+    "name": "Persimmon",
+    "slug": "persimmon",
+    "websiteUrl": "https://www.persimmonhomes.com"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T13:35:07.454Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/woods-meadow",
+      "name": "Woods Meadow",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/mulberry-park",
+      "name": "Mulberry Park",
+      "status": "complete",
+      "homes": 24,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/bluebell-meadow",
+      "name": "Bluebell Meadow",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/kett-s-meadow",
+      "name": "Kett's Meadow",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/festival-park",
+      "name": "Festival Park",
+      "status": "complete",
+      "homes": 26,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/persimmon-hopewell-park",
+      "name": "Persimmon @ Hopewell Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/persimmon-deer-vale-park",
+      "name": "Persimmon @ Deer Vale Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/anglia/foxley-park",
+      "name": "Foxley Park",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/central/coseley-new-village",
+      "name": "Coseley New Village",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/central/whitmore-place",
+      "name": "Whitmore Place",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens",
+      "name": "Thickthorn Gardens",
+      "status": "complete",
+      "homes": 29,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/central/tame-bridge-view",
+      "name": "Tame Bridge View",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/central/newlands-meadows",
+      "name": "Newlands Meadows",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/central/persimmon-at-austin-place",
+      "name": "Persimmon at Austin Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/eve-parc",
+      "name": "Eve Parc",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/palmerston-heights",
+      "name": "Palmerston Heights",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/saltram-meadow",
+      "name": "Saltram Meadow",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/trevethan-meadows",
+      "name": "Trevethan Meadows",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/trehenlis-gardens",
+      "name": "Trehenlis Gardens",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/trevithick-manor-park",
+      "name": "Trevithick Manor Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/abbotsham-park",
+      "name": "Abbotsham Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/cornwall-and-west-devon/kemeneth",
+      "name": "Kemeneth",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/rainton-gardens",
+      "name": "Rainton Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/herrington-grange",
+      "name": "Herrington Grange",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/st-michaels-way",
+      "name": "St Michaels Way",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/birchwood-manor",
+      "name": "Birchwood Manor",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/bramble-rise",
+      "name": "Bramble Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/hillfield-meadows",
+      "name": "Hillfield Meadows",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/mown-meadows",
+      "name": "Mown Meadows",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/templefields",
+      "name": "Templefields",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/durham/willow-vale",
+      "name": "Willow Vale",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/holdingham-grange",
+      "name": "Holdingham Grange",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/abbot-walk",
+      "name": "Abbot Walk",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/lavender-fields",
+      "name": "Lavender Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/the-maples",
+      "name": "The Maples",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/hampton-woods",
+      "name": "Hampton Woods",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/the-willows",
+      "name": "The Willows",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/hampton-green",
+      "name": "Hampton Green",
+      "status": "complete",
+      "homes": 31,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/newman-fields",
+      "name": "Newman Fields",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/burgh-gate",
+      "name": "Burgh Gate",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/the-willows",
+      "name": "The Willows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/brucefields",
+      "name": "Brucefields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/burnside-view",
+      "name": "Burnside View",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/kinglass-view",
+      "name": "Kinglass View",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/arniston-grange",
+      "name": "Arniston Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/glen-loan-park",
+      "name": "Glen Loan Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/the-scholars",
+      "name": "The Scholars",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/the-village-quarter",
+      "name": "The Village Quarter",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/duchess-grange",
+      "name": "Duchess Grange",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-wales/bishops-mead",
+      "name": "Bishops Mead",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-wales/springfield-meadows-at-glan-llyn",
+      "name": "Springfield Meadows at Glan Llyn",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-wales/carn-y-cefn",
+      "name": "Carn y Cefn",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-wales/the-parish-llanilltern-village",
+      "name": "The Parish @ Llanilltern Village",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-wales/porth-y-dyffryn",
+      "name": "Porth y Dyffryn",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-wales/hawthorn-park",
+      "name": "Hawthorn Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/east-wales/pen-y-castell",
+      "name": "Pen Y Castell",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/stortford-fields",
+      "name": "Stortford Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/the-maples",
+      "name": "The Maples",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/scarlett-mews",
+      "name": "Scarlett Mews",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/trinity-fields",
+      "name": "Trinity Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/persimmon-at-birchwood-rise",
+      "name": "Persimmon at Birchwood Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/willow-s-reach",
+      "name": "Willow's Reach",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/st-john-s-gate",
+      "name": "St John's Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/essex/aveley-grove",
+      "name": "Aveley Grove",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/brindle-park",
+      "name": "Brindle Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/moorfield-park",
+      "name": "Moorfield Park",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/solway-view",
+      "name": "Solway View",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/spring-meadows",
+      "name": "Spring Meadows",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/saddleback-view",
+      "name": "Saddleback View",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove",
+      "name": "Willow Grove",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/mill-green-gardens",
+      "name": "Mill Green Gardens",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/newby-park",
+      "name": "Newby Park",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/pavilion-gardens",
+      "name": "Pavilion Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/sycamore-rise",
+      "name": "Sycamore Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/the-furlongs-towcester-grange",
+      "name": "The Furlongs @ Towcester Grange",
+      "status": "complete",
+      "homes": 44,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/woodland-valley",
+      "name": "Woodland Valley",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
+      "name": "The Hawthorns",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/overstone-gate",
+      "name": "Overstone Gate",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/harlestone-grange",
+      "name": "Harlestone Grange",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/saxon-woods",
+      "name": "Saxon Woods",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/persimmon-homes-at-linmere",
+      "name": "Persimmon Homes at Linmere",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/woodhorn-meadows",
+      "name": "Woodhorn Meadows",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/the-fairways",
+      "name": "The Fairways",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/fallow-park",
+      "name": "Fallow Park",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/the-maples",
+      "name": "The Maples",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/the-heights",
+      "name": "The Heights",
+      "status": "complete",
+      "homes": 24,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/foxfields",
+      "name": "Foxfields",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/hauxley-view",
+      "name": "Hauxley View",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/paddock-fields",
+      "name": "Paddock Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/appleyard-park",
+      "name": "Appleyard Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place",
+      "name": "Eaton Place",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/weldon-park",
+      "name": "Weldon Park",
+      "status": "complete",
+      "homes": 27,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/beamhill-heights",
+      "name": "Beamhill Heights",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/garendon-park",
+      "name": "Garendon Park",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/jubilee-rise",
+      "name": "Jubilee Rise",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/weavers-place",
+      "name": "Weavers Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
+      "name": "Brascote Park",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/stewarts-loan",
+      "name": "Stewarts Loan",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/west-mill",
+      "name": "West Mill",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/strathearn-meadow",
+      "name": "Strathearn Meadow",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/kinloch-brae",
+      "name": "Kinloch Brae",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/willowfields",
+      "name": "Willowfields",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/strabathie-shores",
+      "name": "Strabathie Shores",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/castle-park",
+      "name": "Castle Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/palace-view",
+      "name": "Palace View",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/primrose-gardens",
+      "name": "Primrose Gardens",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/ballumbie-heights",
+      "name": "Ballumbie Heights",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/cairnton-rise",
+      "name": "Cairnton Rise",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/regency-gardens",
+      "name": "Regency Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-west/summerhill-park",
+      "name": "Summerhill Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-west/bluebell-walk",
+      "name": "Bluebell Walk",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-west/queensgate",
+      "name": "Queensgate",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-west/river-walk",
+      "name": "River Walk",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-west/royal-gardens",
+      "name": "Royal Gardens",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-west/old-hall-village",
+      "name": "Old Hall Village",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/north-west/the-acorns",
+      "name": "The Acorns",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/forest-view",
+      "name": "Forest View",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/castle-walk",
+      "name": "Castle Walk",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/avalon",
+      "name": "Avalon",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/bardolph-view",
+      "name": "Bardolph View",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/the-pavilion",
+      "name": "The Pavilion",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/thonock-green",
+      "name": "Thonock Green",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/greetwell-fields",
+      "name": "Greetwell Fields",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+      "name": "Regency Grange",
+      "status": "complete",
+      "homes": 36,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/teversal-green",
+      "name": "Teversal Green",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/persimmon-linby-meadows",
+      "name": "Persimmon @ Linby Meadows",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/severn-valley/persimmon-fiddington-fields",
+      "name": "Persimmon @ Fiddington Fields",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/severn-valley/beaufort-park",
+      "name": "Beaufort Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/severn-valley/redworthy-orchard",
+      "name": "Redworthy Orchard",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/severn-valley/persimmon-haywood-village",
+      "name": "Persimmon @ Haywood Village",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/severn-valley/farleigh-fields",
+      "name": "Farleigh Fields",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/severn-valley/cloverlea-gardens",
+      "name": "Cloverlea Gardens",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/severn-valley/tor-view",
+      "name": "Tor View",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-coast/manor-gardens",
+      "name": "Manor Gardens",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-coast/st-peters-place",
+      "name": "St Peters Place",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-coast/saxon-grange",
+      "name": "Saxon Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-coast/lakedale-at-whiteley-meadows",
+      "name": "Lakedale at Whiteley Meadows",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-east/mill-cross",
+      "name": "Mill Cross",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-east/ovinia-chase",
+      "name": "Ovinia Chase",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-east/moores-quarter",
+      "name": "Moores Quarter",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-east/victoria-bay",
+      "name": "Victoria Bay",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-east/burley-place",
+      "name": "Burley Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/malvern-rise",
+      "name": "Malvern Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/meon-way-gardens",
+      "name": "Meon Way Gardens",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view",
+      "name": "The View",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park",
+      "name": "Wykham Park",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-maples",
+      "name": "The Maples",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/regents-village",
+      "name": "Regents Village",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/mill-gardens",
+      "name": "Mill Gardens",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/ashworth-place",
+      "name": "Ashworth Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/hartnells-farm",
+      "name": "Hartnells Farm",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/tawcroft",
+      "name": "Tawcroft",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/swan-park",
+      "name": "Swan Park",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/inglewood",
+      "name": "Inglewood",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/cherrywood-grange",
+      "name": "Cherrywood Grange",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/kings-meadow",
+      "name": "Kings Meadow",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/maddison-view",
+      "name": "Maddison View",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
+      "name": "Boyton Place",
+      "status": "complete",
+      "homes": 24,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/priory-gardens",
+      "name": "Priory Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
+      "name": "Trelawny Place",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/castleton-grange",
+      "name": "Castleton Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/honours-meadow",
+      "name": "Honours Meadow",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view",
+      "name": "Aldhurst View",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/hakewill-mews",
+      "name": "Hakewill Mews",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale",
+      "name": "Constable Vale",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/persimmon-henley-gate",
+      "name": "Persimmon @ Henley Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/the-pines",
+      "name": "The Pines",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/kingsbury-meadows",
+      "name": "Kingsbury Meadows",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/saffron-gardens",
+      "name": "Saffron Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/orchid-gardens-at-ladgate-woods",
+      "name": "Orchid Gardens at Ladgate Woods",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/harebell-meadows",
+      "name": "Harebell Meadows",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/greatham-meadow",
+      "name": "Greatham Meadow",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/bluebell-grange",
+      "name": "Bluebell Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/kings-gate",
+      "name": "Kings Gate",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/little-maltby",
+      "name": "Little Maltby",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/teesside/juniper-gardens",
+      "name": "Juniper Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/thames-valley/hampton-park",
+      "name": "Hampton Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/thames-valley/malthouse-meadows",
+      "name": "Malthouse Meadows",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/thames-valley/cobbetts-place",
+      "name": "Cobbetts Place",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/wessex/persimmon-wellington-gate",
+      "name": "Persimmon @ Wellington Gate",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/wessex/persimmon-jubilee-gardens",
+      "name": "Persimmon @ Jubilee Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/wessex/persimmon-valley-park",
+      "name": "Persimmon @ Valley Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/wessex/oak-hill-rise",
+      "name": "Oak Hill Rise",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/wessex/highfield-gardens",
+      "name": "Highfield Gardens",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/wessex/persimmon-ashton-park",
+      "name": "Persimmon @ Ashton Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/cherry-tree-gardens",
+      "name": "Cherry Tree Gardens",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/st-john-s-grange",
+      "name": "St John's Grange",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/hadley-gate",
+      "name": "Hadley Gate",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/cromwell-wharf",
+      "name": "Cromwell Wharf",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/penson-grange",
+      "name": "Penson Grange",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/eckford-vale",
+      "name": "Eckford Vale",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/florent-gardens",
+      "name": "Florent Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/gardeners-walk",
+      "name": "Gardeners Walk",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/arran-view",
+      "name": "Arran View",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait",
+      "name": "Snowdon Gait",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/the-hawthorns",
+      "name": "The Hawthorns",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/mayfields",
+      "name": "Mayfields",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/royale-meadows",
+      "name": "Royale Meadows",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/byrehill-grange",
+      "name": "Byrehill Grange",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village",
+      "name": "Dargavel Village",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/castlehill-gate",
+      "name": "Castlehill Gate",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/kings-gate",
+      "name": "Kings Gate",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/royale-grange",
+      "name": "Royale Grange",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/teiglum-grange",
+      "name": "Teiglum Grange",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/michaels-grove",
+      "name": "Michaels Grove",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/morgans-walk",
+      "name": "Morgans Walk",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+      "name": "Awel Y Mynydd",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/parc-y-fron",
+      "name": "Parc Y Fron",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/cwrt-y-brenin",
+      "name": "Cwrt Y Brenin",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/ger-y-mor",
+      "name": "Ger Y Mor",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/llys-pentre",
+      "name": "Llys Pentre",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/bryn-awel",
+      "name": "Bryn Awel",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/jubilee-gardens",
+      "name": "Jubilee Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/cote-farm",
+      "name": "Cote Farm",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/castle-view",
+      "name": "Castle View",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/laneside",
+      "name": "Laneside",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/brampton-vale",
+      "name": "Brampton Vale",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/king-edwin-park",
+      "name": "King Edwin Park",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/pinewood-grange",
+      "name": "Pinewood Grange",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/wellington-mount",
+      "name": "Wellington Mount",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/long-lands-view",
+      "name": "Long Lands View",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/glassworks",
+      "name": "Glassworks",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/morwick-green",
+      "name": "Morwick Green",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/cobbydale-rise",
+      "name": "Cobbydale Rise",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/germany-beck",
+      "name": "Germany Beck",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/staynor-hall",
+      "name": "Staynor Hall",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/bootham-crescent",
+      "name": "Bootham Crescent",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/warren-park",
+      "name": "Warren Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/nutwell-grange",
+      "name": "Nutwell Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/regency-meadows",
+      "name": "Regency Meadows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/everingham-place",
+      "name": "Everingham Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/bradley-park",
+      "name": "Bradley Park",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/minster-view",
+      "name": "Minster View",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.persimmonhomes.com/new-homes/yorkshire/centuria-meadows",
+      "name": "Centuria Meadows",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Thickthorn Gardens",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens",
+      "name": "The Brightstone · Plot 159",
+      "url": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens/the-brightstone/5-bedroom-detached-kbhdcnztgnca?plot=159",
+      "bedrooms": 5,
+      "price": 710000,
+      "plots": [
+        {
+          "number": "159",
+          "price": 710000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8"
+      ]
+    },
+    {
+      "development": "Thickthorn Gardens",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens",
+      "name": "The Brightstone · Plot 146",
+      "url": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens/the-brightstone/5-bedroom-detached-kbhdcnztgnca?plot=146",
+      "bedrooms": 5,
+      "price": 730000,
+      "plots": [
+        {
+          "number": "146",
+          "price": 730000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8"
+      ]
+    },
+    {
+      "development": "Thickthorn Gardens",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens",
+      "name": "The Brightstone · Plot 157",
+      "url": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens/the-brightstone/5-bedroom-detached-kbhdcnztgnca?plot=157",
+      "bedrooms": 5,
+      "price": 730000,
+      "plots": [
+        {
+          "number": "157",
+          "price": 730000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8"
+      ]
+    },
+    {
+      "development": "Abbot Walk",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/east-midlands/abbot-walk",
+      "name": "The Marston · Plot 230",
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/abbot-walk/the-marston/5-bedroom-detached-ifhdcmrtgbca?plot=230",
+      "bedrooms": 5,
+      "price": 325000,
+      "plots": [
+        {
+          "number": "230",
+          "price": 325000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Abbot Walk",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/east-midlands/abbot-walk",
+      "name": "The Kielder · Plot 2",
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/abbot-walk/the-kielder/5-bedroom-detached-ifhdcnbrgvca?plot=2",
+      "bedrooms": 5,
+      "price": 420000,
+      "plots": [
+        {
+          "number": "2",
+          "price": 420000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f20815c67061e3bad0eaf8d37455dc3587fba49fd31e4d790b7696b1c259c5c5"
+      ]
+    },
+    {
+      "development": "Hampton Green",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/east-midlands/hampton-green",
+      "name": "The Wychwood · Plot 363",
+      "url": "https://www.persimmonhomes.com/new-homes/east-midlands/hampton-green/the-wychwood/5-bedroom-detached-giys2mjvgq3uiqzqge?plot=363",
+      "bedrooms": 5,
+      "price": 460000,
+      "plots": [
+        {
+          "number": "363",
+          "price": 460000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Kinglass View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/east-scotland/kinglass-view",
+      "name": "The Stockbridge · Plot 26",
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/kinglass-view/the-stockbridge/5-bedroom-detached-ge3dkm3eoy2q?plot=26",
+      "bedrooms": 5,
+      "price": 374995,
+      "plots": [
+        {
+          "number": "26",
+          "price": 374995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Arniston Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/east-scotland/arniston-grange",
+      "name": "The Stockbridge · Plot 78",
+      "url": "https://www.persimmonhomes.com/new-homes/east-scotland/arniston-grange/the-stockbridge/5-bedroom-detached-ge3dkm3eoy2q?plot=78",
+      "bedrooms": 5,
+      "price": 404995,
+      "plots": [
+        {
+          "number": "78",
+          "price": 404995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Willow Grove",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove",
+      "name": "The Wychwood · Plot 405",
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove/the-wychwood/5-bedroom-detached-giys2mjvgq3uiurqge?plot=405",
+      "bedrooms": 5,
+      "price": 377000,
+      "plots": [
+        {
+          "number": "405",
+          "price": 377000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Willow Grove",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove",
+      "name": "The Brightstone · Plot 397",
+      "url": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove/the-brightstone/5-bedroom-detached-giys2mjxha3uiurqge?plot=397",
+      "bedrooms": 5,
+      "price": 432000,
+      "plots": [
+        {
+          "number": "397",
+          "price": 432000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9624041c7f16fade43035c0e4fbac9a62f775652d8a580029c5cf7661993826e"
+      ]
+    },
+    {
+      "development": "The Hawthorns",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
+      "name": "The Warwick · Plot 287",
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns/the-warwick/5-bedroom-detached-kaytgmztiq?plot=287",
+      "bedrooms": 5,
+      "price": 429950,
+      "plots": [
+        {
+          "number": "287",
+          "price": 429950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "76eb9b1d66105672ff03c17faf51d58f8f3fd1382340bdad646247a99ca6a0e5"
+      ]
+    },
+    {
+      "development": "The Hawthorns",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
+      "name": "The Warwick · Plot 227",
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns/the-warwick/5-bedroom-detached-kaytgmztiq?plot=227",
+      "bedrooms": 5,
+      "price": 439950,
+      "plots": [
+        {
+          "number": "227",
+          "price": 439950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "76eb9b1d66105672ff03c17faf51d58f8f3fd1382340bdad646247a99ca6a0e5"
+      ]
+    },
+    {
+      "development": "The Hawthorns",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
+      "name": "The Warwick · Plot 228",
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns/the-warwick/5-bedroom-detached-kaytgmztiq?plot=228",
+      "bedrooms": 5,
+      "price": 439950,
+      "plots": [
+        {
+          "number": "228",
+          "price": 439950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "76eb9b1d66105672ff03c17faf51d58f8f3fd1382340bdad646247a99ca6a0e5"
+      ]
+    },
+    {
+      "development": "The Hawthorns",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
+      "name": "The Holywell · Plot 239",
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns/the-holywell/5-bedroom-detached-kiytimjuiq?plot=239",
+      "bedrooms": 5,
+      "price": 474950,
+      "plots": [
+        {
+          "number": "239",
+          "price": 474950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5902690cfbee94106a55894ac3e67859669e90e62037f56af63bad229ed70241",
+        "45dba4c691ad3b14682bcefcc971181a4119fb8f6fb6542d675081cb80b68a24"
+      ]
+    },
+    {
+      "development": "The Hawthorns",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
+      "name": "The Holywell · Plot 226",
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns/the-holywell/5-bedroom-detached-kiytimjuiq?plot=226",
+      "bedrooms": 5,
+      "price": 484950,
+      "plots": [
+        {
+          "number": "226",
+          "price": 484950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5902690cfbee94106a55894ac3e67859669e90e62037f56af63bad229ed70241",
+        "45dba4c691ad3b14682bcefcc971181a4119fb8f6fb6542d675081cb80b68a24"
+      ]
+    },
+    {
+      "development": "Overstone Gate",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/midlands/overstone-gate",
+      "name": "The Brightstone · Plot 56",
+      "url": "https://www.persimmonhomes.com/new-homes/midlands/overstone-gate/the-brightstone/5-bedroom-detached-giys2mjxha3uivbqge?plot=56",
+      "bedrooms": 5,
+      "price": 529950,
+      "plots": [
+        {
+          "number": "56",
+          "price": 529950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d115ab91c8b7bf5b65eb16dc320e71a5801ebea9f8b2cb3255e146f1ea0550a7"
+      ]
+    },
+    {
+      "development": "Hauxley View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-east/hauxley-view",
+      "name": "The Barmouth · Plot 121",
+      "url": "https://www.persimmonhomes.com/new-homes/north-east/hauxley-view/the-barmouth/5-bedroom-detached-imzdcljrha4tmrcwgayq?plot=121",
+      "bedrooms": 5,
+      "price": 447950,
+      "plots": [
+        {
+          "number": "121",
+          "price": 447950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Eaton Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place",
+      "name": "The Corfe · Plot 276",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place/the-corfe/5-bedroom-detached-kaytimjuiq?plot=276",
+      "bedrooms": 5,
+      "price": 405000,
+      "plots": [
+        {
+          "number": "276",
+          "price": 405000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9d35690006b80b5d6255c5f80b48b16cd386a77065d35dd4083b40471538ffb4"
+      ]
+    },
+    {
+      "development": "Eaton Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place",
+      "name": "The Corfe · Plot 452",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place/the-corfe/5-bedroom-detached-kaytimjuiq?plot=452",
+      "bedrooms": 5,
+      "price": 429995,
+      "plots": [
+        {
+          "number": "452",
+          "price": 429995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9d35690006b80b5d6255c5f80b48b16cd386a77065d35dd4083b40471538ffb4"
+      ]
+    },
+    {
+      "development": "Weldon Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/weldon-park",
+      "name": "The Warwick · Plot 855",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/weldon-park/the-warwick/5-bedroom-detached-imytgmztiq?plot=855",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "855",
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Weldon Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/weldon-park",
+      "name": "The Warwick · Plot 888",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/weldon-park/the-warwick/5-bedroom-detached-imytgmztiq?plot=888",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "888",
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Brascote Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
+      "name": "The Broadhaven · Plot 174",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park/the-broadhaven/5-bedroom-detached-imzdcljrheydarcwgayq?plot=174",
+      "bedrooms": 5,
+      "price": 499995,
+      "plots": [
+        {
+          "number": "174",
+          "price": 499995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Brascote Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
+      "name": "The Barmouth · Plot 17",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park/the-barmouth/5-bedroom-detached-imzdcljrha4tmrcwgayq?plot=17",
+      "bedrooms": 5,
+      "price": 520000,
+      "plots": [
+        {
+          "number": "17",
+          "price": 520000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8973bb4cc703d6d5fb244bceba11dfbb92fabf2d40f1961430372e1ebe61ee58",
+        "8ab1a26bf8fa8d65222059a1683cca71d87b2bd3508202ce4ceec8c060b572df"
+      ]
+    },
+    {
+      "development": "Brascote Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
+      "name": "The Barmouth · Plot 235",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park/the-barmouth/5-bedroom-detached-imzdcljrha4tmrcwgayq?plot=235",
+      "bedrooms": 5,
+      "price": 520000,
+      "plots": [
+        {
+          "number": "235",
+          "price": 520000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8973bb4cc703d6d5fb244bceba11dfbb92fabf2d40f1961430372e1ebe61ee58",
+        "8ab1a26bf8fa8d65222059a1683cca71d87b2bd3508202ce4ceec8c060b572df"
+      ]
+    },
+    {
+      "development": "Brascote Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
+      "name": "The Barmouth · Plot 207",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park/the-barmouth/5-bedroom-detached-imzdcljrha4tmrcwgayq?plot=207",
+      "bedrooms": 5,
+      "price": 525000,
+      "plots": [
+        {
+          "number": "207",
+          "price": 525000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8973bb4cc703d6d5fb244bceba11dfbb92fabf2d40f1961430372e1ebe61ee58",
+        "8ab1a26bf8fa8d65222059a1683cca71d87b2bd3508202ce4ceec8c060b572df"
+      ]
+    },
+    {
+      "development": "Brascote Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
+      "name": "The Barmouth · Plot 208",
+      "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park/the-barmouth/5-bedroom-detached-imzdcljrha4tmrcwgayq?plot=208",
+      "bedrooms": 5,
+      "price": 525000,
+      "plots": [
+        {
+          "number": "208",
+          "price": 525000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8973bb4cc703d6d5fb244bceba11dfbb92fabf2d40f1961430372e1ebe61ee58",
+        "8ab1a26bf8fa8d65222059a1683cca71d87b2bd3508202ce4ceec8c060b572df"
+      ]
+    },
+    {
+      "development": "Kinloch Brae",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-scotland/kinloch-brae",
+      "name": "The Warriston · Plot 19",
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/kinloch-brae/the-warriston/5-bedroom-detached-ge2dqmke?plot=19",
+      "bedrooms": 5,
+      "price": 329995,
+      "plots": [
+        {
+          "number": "19",
+          "price": 329995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Palace View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-scotland/palace-view",
+      "name": "The Stockbridge · Plot 30",
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/palace-view/the-stockbridge/5-bedroom-detached-ge3dkm2eme?plot=30",
+      "bedrooms": 5,
+      "price": 409995,
+      "plots": [
+        {
+          "number": "30",
+          "price": 409995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ballumbie Heights",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-scotland/ballumbie-heights",
+      "name": "The Skye · Plot 24",
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/ballumbie-heights/the-skye/5-bedroom-detached-kmzdkljrhe4dmrcsgayq?plot=24",
+      "bedrooms": 5,
+      "price": 454995,
+      "plots": [
+        {
+          "number": "24",
+          "price": 454995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ballumbie Heights",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/north-scotland/ballumbie-heights",
+      "name": "The Skye · Plot 25",
+      "url": "https://www.persimmonhomes.com/new-homes/north-scotland/ballumbie-heights/the-skye/5-bedroom-detached-kmzdkljrhe4dmrcsgayq?plot=25",
+      "bedrooms": 5,
+      "price": 454995,
+      "plots": [
+        {
+          "number": "25",
+          "price": 454995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Avalon",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/avalon",
+      "name": "The Kielder · Plot 21",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/avalon/the-kielder/5-bedroom-detached-giys2mjugezeivbqgi?plot=21",
+      "bedrooms": 5,
+      "price": 365000,
+      "plots": [
+        {
+          "number": "21",
+          "price": 365000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bardolph View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/bardolph-view",
+      "name": "The Marston · Plot 786",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/bardolph-view/the-marston/5-bedroom-detached-giys2mjsgi3eiqzqge?plot=786",
+      "bedrooms": 5,
+      "price": 365000,
+      "plots": [
+        {
+          "number": "786",
+          "price": 365000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bardolph View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/bardolph-view",
+      "name": "The Marston · Plot 787",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/bardolph-view/the-marston/5-bedroom-detached-giys2mjsgi3eiqzqge?plot=787",
+      "bedrooms": 5,
+      "price": 370000,
+      "plots": [
+        {
+          "number": "787",
+          "price": 370000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regency Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+      "name": "The Charlston · Plot 67",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange/the-charlston/5-bedroom-detached-giys2mjsgi3eiqzqgq?plot=67",
+      "bedrooms": 5,
+      "price": 320000,
+      "plots": [
+        {
+          "number": "67",
+          "price": 320000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regency Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+      "name": "The Charlston · Plot 41",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange/the-charlston/5-bedroom-detached-giys2mjsgi3eiqzqgq?plot=41",
+      "bedrooms": 5,
+      "price": 335000,
+      "plots": [
+        {
+          "number": "41",
+          "price": 335000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regency Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+      "name": "The Charlston · Plot 42",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange/the-charlston/5-bedroom-detached-giys2mjsgi3eiqzqgq?plot=42",
+      "bedrooms": 5,
+      "price": 335000,
+      "plots": [
+        {
+          "number": "42",
+          "price": 335000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regency Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+      "name": "The Charlston · Plot 53",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange/the-charlston/5-bedroom-detached-giys2mjsgi3eiqzqgq?plot=53",
+      "bedrooms": 5,
+      "price": 335000,
+      "plots": [
+        {
+          "number": "53",
+          "price": 335000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regency Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+      "name": "The Kielder · Plot 111",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange/the-kielder/5-bedroom-detached-giys2mjugezeivbqgi?plot=111",
+      "bedrooms": 5,
+      "price": 365000,
+      "plots": [
+        {
+          "number": "111",
+          "price": 365000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regency Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+      "name": "The Kielder · Plot 114",
+      "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange/the-kielder/5-bedroom-detached-giys2mjugezeivbqgi?plot=114",
+      "bedrooms": 5,
+      "price": 385000,
+      "plots": [
+        {
+          "number": "114",
+          "price": 385000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Meon Way Gardens",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/meon-way-gardens",
+      "name": "The Corfe · Plot 220",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/meon-way-gardens/the-corfe/5-bedroom-detached-kaytimjuiq?plot=220",
+      "bedrooms": 5,
+      "price": 475000,
+      "plots": [
+        {
+          "number": "220",
+          "price": 475000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view",
+      "name": "The Kielder · Plot 181",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view/the-kielder/5-bedroom-detached-giys2mjugezeiurqge?plot=181",
+      "bedrooms": 5,
+      "price": 450000,
+      "plots": [
+        {
+          "number": "181",
+          "price": 450000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "95500e73c56b04ca7d98b6ac2a8b5581bbd1169702413121dbaf7d755c853204"
+      ]
+    },
+    {
+      "development": "The View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view",
+      "name": "The Kielder · Plot 195",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view/the-kielder/5-bedroom-detached-giys2mjugezeiqzqge?plot=195",
+      "bedrooms": 5,
+      "price": 450000,
+      "plots": [
+        {
+          "number": "195",
+          "price": 450000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "95500e73c56b04ca7d98b6ac2a8b5581bbd1169702413121dbaf7d755c853204"
+      ]
+    },
+    {
+      "development": "The View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view",
+      "name": "The Kielder · Plot 5137",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view/the-kielder/5-bedroom-detached-giys2mjugezeivbqge?plot=5137",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "5137",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "95500e73c56b04ca7d98b6ac2a8b5581bbd1169702413121dbaf7d755c853204"
+      ]
+    },
+    {
+      "development": "The View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view",
+      "name": "The Kielder · Plot 5152",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view/the-kielder/5-bedroom-detached-giys2mjugezeivbqge?plot=5152",
+      "bedrooms": 5,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "5152",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "95500e73c56b04ca7d98b6ac2a8b5581bbd1169702413121dbaf7d755c853204"
+      ]
+    },
+    {
+      "development": "Wykham Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park",
+      "name": "The Wroxton · Plot 162",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park/the-wroxton/5-bedroom-mid-terrace-giys2mjtgqyfgvbqgi?plot=162",
+      "bedrooms": 5,
+      "price": 435000,
+      "plots": [
+        {
+          "number": "162",
+          "price": 435000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wykham Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park",
+      "name": "The Wychwood · Plot 184",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park/the-wychwood/5-bedroom-detached-giys2mjvgq3uivbqge?plot=184",
+      "bedrooms": 5,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "184",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wykham Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park",
+      "name": "The Wychwood · Plot 185",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park/the-wychwood/5-bedroom-detached-giys2mjvgq3uivbqge?plot=185",
+      "bedrooms": 5,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "185",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wykham Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park",
+      "name": "The Kingston · Plot 262",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park/the-kingston/5-bedroom-detached-imzdcljrg43tgrdugayq?plot=262",
+      "bedrooms": 5,
+      "price": 650000,
+      "plots": [
+        {
+          "number": "262",
+          "price": 650000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d115ab91c8b7bf5b65eb16dc320e71a5801ebea9f8b2cb3255e146f1ea0550a7"
+      ]
+    },
+    {
+      "development": "Regents Village",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-midlands/regents-village",
+      "name": "The Kilcruit · Plot 213",
+      "url": "https://www.persimmonhomes.com/new-homes/south-midlands/regents-village/the-kilcruit/5-bedroom-detached-giys2mjthe3eivbqgffug?plot=213",
+      "bedrooms": 5,
+      "price": 550000,
+      "plots": [
+        {
+          "number": "213",
+          "price": 550000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "22df69797db91125010e8207432303ff4c52805be11a35743317c16dcb6fb127"
+      ]
+    },
+    {
+      "development": "Swan Park",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/south-west/swan-park",
+      "name": "The Regent · Plot 181",
+      "url": "https://www.persimmonhomes.com/new-homes/south-west/swan-park/the-regent/5-bedroom-detached-imytqobxiq?plot=181",
+      "bedrooms": 5,
+      "price": 485000,
+      "plots": [
+        {
+          "number": "181",
+          "price": 485000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9a0d72ce619e276e93231e7f7560de38b462311e98290a6c0f914acb51b6b24a"
+      ]
+    },
+    {
+      "development": "Boyton Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
+      "name": "The Brightstone · Plot 59",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place/the-brightstone/5-bedroom-detached-giys2mjxgmzuiqzqge?plot=59",
+      "bedrooms": 5,
+      "price": 475000,
+      "plots": [
+        {
+          "number": "59",
+          "price": 475000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "831a5aae434879e2bd52d39b0dd613c3d5a9add134b6bc0f3416524b048dd844"
+      ]
+    },
+    {
+      "development": "Boyton Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
+      "name": "The Brightstone · Plot 45",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place/the-brightstone/5-bedroom-detached-giys2mjxgmzuiqzqge?plot=45",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "45",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "831a5aae434879e2bd52d39b0dd613c3d5a9add134b6bc0f3416524b048dd844"
+      ]
+    },
+    {
+      "development": "Boyton Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
+      "name": "The Brightstone · Plot 60",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place/the-brightstone/5-bedroom-detached-giys2mjxgmzuiqzqge?plot=60",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "60",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "831a5aae434879e2bd52d39b0dd613c3d5a9add134b6bc0f3416524b048dd844"
+      ]
+    },
+    {
+      "development": "Boyton Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
+      "name": "The Wychwood · Plot 164",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place/the-wychwood/5-bedroom-detached-giys2mjvgq3uiqzqge?plot=164",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "164",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Boyton Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
+      "name": "The Brightstone · Plot 140",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place/the-brightstone/5-bedroom-detached-giys2mjxgmzuiqzqge?plot=140",
+      "bedrooms": 5,
+      "price": 500000,
+      "plots": [
+        {
+          "number": "140",
+          "price": 500000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "831a5aae434879e2bd52d39b0dd613c3d5a9add134b6bc0f3416524b048dd844"
+      ]
+    },
+    {
+      "development": "Trelawny Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
+      "name": "The Wychwood · Plot 100",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place/the-wychwood/5-bedroom-detached-giys2mjvgq3uiqzqge?plot=100",
+      "bedrooms": 5,
+      "price": 440000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 440000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Trelawny Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
+      "name": "The Brightstone · Plot 83",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place/the-brightstone/5-bedroom-detached-giys2mjxha3uiqzqge?plot=83",
+      "bedrooms": 5,
+      "price": 470000,
+      "plots": [
+        {
+          "number": "83",
+          "price": 470000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8",
+        "6c49c8e493a2f6e4b9a6173105e7c8803b76702bd9600703072b7481cea17787"
+      ]
+    },
+    {
+      "development": "Trelawny Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
+      "name": "The Wychwood · Plot 72",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place/the-wychwood/5-bedroom-detached-giys2mjvgq3uiqzqge?plot=72",
+      "bedrooms": 5,
+      "price": 480000,
+      "plots": [
+        {
+          "number": "72",
+          "price": 480000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Trelawny Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
+      "name": "The Wychwood · Plot 99",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place/the-wychwood/5-bedroom-detached-giys2mjvgq3uiqzqge?plot=99",
+      "bedrooms": 5,
+      "price": 480000,
+      "plots": [
+        {
+          "number": "99",
+          "price": 480000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Trelawny Place",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
+      "name": "The Wychwood · Plot 158",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place/the-wychwood/5-bedroom-detached-giys2mjvgq3uiqzqge?plot=158",
+      "bedrooms": 5,
+      "price": 480000,
+      "plots": [
+        {
+          "number": "158",
+          "price": 480000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Castleton Grange",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/castleton-grange",
+      "name": "The Brightstone · Plot 170",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/castleton-grange/the-brightstone/5-bedroom-detached-giys2mjxha3uiqzqge?plot=170",
+      "bedrooms": 5,
+      "price": 470000,
+      "plots": [
+        {
+          "number": "170",
+          "price": 470000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8",
+        "6c49c8e493a2f6e4b9a6173105e7c8803b76702bd9600703072b7481cea17787"
+      ]
+    },
+    {
+      "development": "Aldhurst View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view",
+      "name": "The Knebworth · Plot 9",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view/the-knebworth/5-bedroom-detached-giys2mjtgqyeiqzqge?plot=9",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "9",
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Aldhurst View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view",
+      "name": "The Knebworth · Plot 63",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view/the-knebworth/5-bedroom-detached-giys2mjtgqyeiqzqge?plot=63",
+      "bedrooms": 5,
+      "price": 425000,
+      "plots": [
+        {
+          "number": "63",
+          "price": 425000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Aldhurst View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view",
+      "name": "The Brightstone · Plot 6",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view/the-brightstone/5-bedroom-detached-giys2mjxha3uiqzqge?plot=6",
+      "bedrooms": 5,
+      "price": 440000,
+      "plots": [
+        {
+          "number": "6",
+          "price": 440000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8",
+        "6c49c8e493a2f6e4b9a6173105e7c8803b76702bd9600703072b7481cea17787"
+      ]
+    },
+    {
+      "development": "Aldhurst View",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view",
+      "name": "The Brightstone · Plot 65",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view/the-brightstone/5-bedroom-detached-giys2mjxha3uiqzqge?plot=65",
+      "bedrooms": 5,
+      "price": 475000,
+      "plots": [
+        {
+          "number": "65",
+          "price": 475000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8",
+        "6c49c8e493a2f6e4b9a6173105e7c8803b76702bd9600703072b7481cea17787"
+      ]
+    },
+    {
+      "development": "Constable Vale",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale",
+      "name": "The Kielder · Plot 69",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale/the-kielder/5-bedroom-detached-kaytimjviq?plot=69",
+      "bedrooms": 5,
+      "price": 420000,
+      "plots": [
+        {
+          "number": "69",
+          "price": 420000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4dc6fb72cfc289ffa5169d90ededb3fa560ccb81a0eb2c949bc487910a4cba02"
+      ]
+    },
+    {
+      "development": "Constable Vale",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale",
+      "name": "The Hadleigh · Plot 170",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale/the-hadleigh/5-bedroom-detached-kaytknzuiq?plot=170",
+      "bedrooms": 5,
+      "price": 460000,
+      "plots": [
+        {
+          "number": "170",
+          "price": 460000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Constable Vale",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale",
+      "name": "The Hadleigh · Plot 169",
+      "url": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale/the-hadleigh/5-bedroom-detached-kaytknzuiq?plot=169",
+      "bedrooms": 5,
+      "price": 475000,
+      "plots": [
+        {
+          "number": "169",
+          "price": 475000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cherry Tree Gardens",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-midlands/cherry-tree-gardens",
+      "name": "The Corfe · Plot 185",
+      "url": "https://www.persimmonhomes.com/new-homes/west-midlands/cherry-tree-gardens/the-corfe/5-bedroom-detached-kaytimjuiq?plot=185",
+      "bedrooms": 5,
+      "price": 400000,
+      "plots": [
+        {
+          "number": "185",
+          "price": 400000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "22df69797db91125010e8207432303ff4c52805be11a35743317c16dcb6fb127"
+      ]
+    },
+    {
+      "development": "Snowdon Gait",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait",
+      "name": "The Thornwood · Plot 117",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait/the-thornwood/5-bedroom-detached-gezdin2e?plot=117",
+      "bedrooms": 5,
+      "price": 339000,
+      "plots": [
+        {
+          "number": "117",
+          "price": 339000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ae159de3b43852006c07361608030a7001ba884f4248521b421268146a7df3af"
+      ]
+    },
+    {
+      "development": "Snowdon Gait",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait",
+      "name": "The Warriston · Plot 92",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait/the-warriston/5-bedroom-detached-ge2dqmke?plot=92",
+      "bedrooms": 5,
+      "price": 380000,
+      "plots": [
+        {
+          "number": "92",
+          "price": 380000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5d4bae6d6317539df335a944b98710f3de801ffba9af13d98cf0cfb548811eec"
+      ]
+    },
+    {
+      "development": "Snowdon Gait",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait",
+      "name": "The Warriston · Plot 5",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait/the-warriston/5-bedroom-detached-ge2dqmke?plot=5",
+      "bedrooms": 5,
+      "price": 385000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 385000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5d4bae6d6317539df335a944b98710f3de801ffba9af13d98cf0cfb548811eec"
+      ]
+    },
+    {
+      "development": "Snowdon Gait",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait",
+      "name": "The Warriston · Plot 190",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait/the-warriston/5-bedroom-detached-ge2dqmke?plot=190",
+      "bedrooms": 5,
+      "price": 385000,
+      "plots": [
+        {
+          "number": "190",
+          "price": 385000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5d4bae6d6317539df335a944b98710f3de801ffba9af13d98cf0cfb548811eec"
+      ]
+    },
+    {
+      "development": "Dargavel Village",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village",
+      "name": "The Warriston · Plot 250",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village/the-warriston/5-bedroom-detached-ge2dqmke?plot=250",
+      "bedrooms": 5,
+      "price": 424000,
+      "plots": [
+        {
+          "number": "250",
+          "price": 424000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Dargavel Village",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village",
+      "name": "The Warriston · Plot 254",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village/the-warriston/5-bedroom-detached-ge2dqmke?plot=254",
+      "bedrooms": 5,
+      "price": 424000,
+      "plots": [
+        {
+          "number": "254",
+          "price": 424000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Dargavel Village",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village",
+      "name": "The Warriston · Plot 260",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village/the-warriston/5-bedroom-detached-ge2dqmke?plot=260",
+      "bedrooms": 5,
+      "price": 437000,
+      "plots": [
+        {
+          "number": "260",
+          "price": 437000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Kings Gate",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-scotland/kings-gate",
+      "name": "The Warriston · Plot 75",
+      "url": "https://www.persimmonhomes.com/new-homes/west-scotland/kings-gate/the-warriston/5-bedroom-detached-ge2dqmke?plot=75",
+      "bedrooms": 5,
+      "price": 345000,
+      "plots": [
+        {
+          "number": "75",
+          "price": 345000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Awel Y Mynydd",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+      "name": "The Fenchurch · Plot 97",
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd/the-fenchurch/5-bedroom-detached-imytonrxiq?plot=97",
+      "bedrooms": 5,
+      "price": 510000,
+      "plots": [
+        {
+          "number": "97",
+          "price": 510000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Awel Y Mynydd",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+      "name": "The Harley · Plot 95",
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd/the-harley/5-bedroom-detached-imytkmjtiq?plot=95",
+      "bedrooms": 5,
+      "price": 440000,
+      "plots": [
+        {
+          "number": "95",
+          "price": 440000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Awel Y Mynydd",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+      "name": "The Harley · Plot 96",
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd/the-harley/5-bedroom-detached-imytkmjtiq?plot=96",
+      "bedrooms": 5,
+      "price": 440000,
+      "plots": [
+        {
+          "number": "96",
+          "price": 440000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Awel Y Mynydd",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+      "name": "The Harley · Plot 100",
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd/the-harley/5-bedroom-detached-imytkmjtiq?plot=100",
+      "bedrooms": 5,
+      "price": 440000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 440000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Awel Y Mynydd",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+      "name": "The Marylebone · Plot 92",
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd/the-marylebone/5-bedroom-detached-imytmmrtiq?plot=92",
+      "bedrooms": 5,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "92",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fac209b95c055a0df190f7d848dc70f415ff52a5ceef93088057fdde09d0670b"
+      ]
+    },
+    {
+      "development": "Awel Y Mynydd",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+      "name": "The Marylebone · Plot 94",
+      "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd/the-marylebone/5-bedroom-detached-imytmmrtiq?plot=94",
+      "bedrooms": 5,
+      "price": 505000,
+      "plots": [
+        {
+          "number": "94",
+          "price": 505000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fac209b95c055a0df190f7d848dc70f415ff52a5ceef93088057fdde09d0670b"
+      ]
+    },
+    {
+      "development": "Brampton Vale",
+      "developmentUrl": "https://www.persimmonhomes.com/new-homes/west-yorkshire/brampton-vale",
+      "name": "The Knebworth   · Plot 205",
+      "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/brampton-vale/the-knebworth--/5-bedroom-detached-giys2mjtgqyeivbqge?plot=205",
+      "bedrooms": 5,
+      "price": 314950,
+      "plots": [
+        {
+          "number": "205",
+          "price": 314950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    }
+  ],
+  "images": [
+    {
+      "id": "5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8",
+      "path": "images/5cb6f5c28011a6bfda980f91cbf4c54aa6cd5a4ced0fc9f2064454dffa4176d8.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/btpo5czu/ph_aldhurst-view_the-brightstone_5-bed_4045.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a built-in desk, chair, laptop, shelving, and green accent wall.",
+        "reason": "It is a home office staged with a desk and workspace, and no bed is present."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "f20815c67061e3bad0eaf8d37455dc3587fba49fd31e4d790b7696b1c259c5c5",
+      "path": "images/f20815c67061e3bad0eaf8d37455dc3587fba49fd31e4d790b7696b1c259c5c5.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/zcxkz3oc/kielder-abbot-walk-45.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A well-lit home office featuring built-in shelving units, a long desk with a chair, and a separate lounge chair.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "9624041c7f16fade43035c0e4fbac9a62f775652d8a580029c5cf7661993826e",
+      "path": "images/9624041c7f16fade43035c0e4fbac9a62f775652d8a580029c5cf7661993826e.png",
+      "sourceUrl": "https://www.persimmonhomes.com/media/t4inth4x/ph_s3_brightstone_study_cgi.png",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-organized home office featuring a built-in wooden desk, shelves, a chair, and office accessories.",
+        "reason": "The room is staged specifically as a home office/study with a visible desk and no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "76eb9b1d66105672ff03c17faf51d58f8f3fd1382340bdad646247a99ca6a0e5",
+      "path": "images/76eb9b1d66105672ff03c17faf51d58f8f3fd1382340bdad646247a99ca6a0e5.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/qu2bhoyf/winster-8.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "study",
+        "description": "A bright study room featuring a glass-top desk, office chair, large mirror, and bookshelves.",
+        "reason": "The room is staged as a home office/study with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "5902690cfbee94106a55894ac3e67859669e90e62037f56af63bad229ed70241",
+      "path": "images/5902690cfbee94106a55894ac3e67859669e90e62037f56af63bad229ed70241.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/qacfl3hl/1015236-14.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A study room equipped with a desk, chair, and tall bookshelf, viewed through a doorway beside a staircase.",
+        "reason": "This room functions as a study/home office with a desk and no bed present."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "45dba4c691ad3b14682bcefcc971181a4119fb8f6fb6542d675081cb80b68a24",
+      "path": "images/45dba4c691ad3b14682bcefcc971181a4119fb8f6fb6542d675081cb80b68a24.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/ia4f3xyh/1015236-12.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with green walls, built-in shelving, a full desk setup with a chair, and a display cabinet.",
+        "reason": "It is staged as a home office with a visible desk and no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "d115ab91c8b7bf5b65eb16dc320e71a5801ebea9f8b2cb3255e146f1ea0550a7",
+      "path": "images/d115ab91c8b7bf5b65eb16dc320e71a5801ebea9f8b2cb3255e146f1ea0550a7.png",
+      "sourceUrl": "https://www.persimmonhomes.com/media/ufdd2hl3/ph_s1_brightstone_study_cgi.png",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A cozy home office staged with a wooden computer desk, a desktop computer, built-in shelving, an ergonomic office chair, and botanical decor.",
+        "reason": "The room is clearly staged as a home office with a visible desk and computer setup, and no bed is present."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "9d35690006b80b5d6255c5f80b48b16cd386a77065d35dd4083b40471538ffb4",
+      "path": "images/9d35690006b80b5d6255c5f80b48b16cd386a77065d35dd4083b40471538ffb4.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/0mkecrwl/960512-15.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A home office setup featuring a desk, an office chair, a green sofa, and decorative items on the walls.",
+        "reason": "The room is staged as a home office with a visible desk and no bed present."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "8973bb4cc703d6d5fb244bceba11dfbb92fabf2d40f1961430372e1ebe61ee58",
+      "path": "images/8973bb4cc703d6d5fb244bceba11dfbb92fabf2d40f1961430372e1ebe61ee58.png",
+      "sourceUrl": "https://www.persimmonhomes.com/media/4giolz03/barmouth-office-show-home.png",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk with a laptop, an office chair, a lounge chair, and decorative artwork.",
+        "reason": "This room is staged as a home office with a visible desk and office chair, and no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "8ab1a26bf8fa8d65222059a1683cca71d87b2bd3508202ce4ceec8c060b572df",
+      "path": "images/8ab1a26bf8fa8d65222059a1683cca71d87b2bd3508202ce4ceec8c060b572df.png",
+      "sourceUrl": "https://www.persimmonhomes.com/media/0xodhims/barmouth-office-room-show-home.png",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A brightly lit study or playroom space featuring a wall-mounted desk, rattan chairs, a canopy reading nook, and child-friendly decor.",
+        "reason": "The room is staged as a study/playroom with a visible work surface and contains no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "95500e73c56b04ca7d98b6ac2a8b5581bbd1169702413121dbaf7d755c853204",
+      "path": "images/95500e73c56b04ca7d98b6ac2a8b5581bbd1169702413121dbaf7d755c853204.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/kbimsy4f/kielder-harlestone-grange-web-36.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office room staged with a built-in desk, office chair, and shelving units.",
+        "reason": "The room is staged as a study/home office with a visible desk and no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "22df69797db91125010e8207432303ff4c52805be11a35743317c16dcb6fb127",
+      "path": "images/22df69797db91125010e8207432303ff4c52805be11a35743317c16dcb6fb127.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/5wvmhgny/kielder-liberty-gate-40.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office/study",
+        "description": "A dedicated home office featuring built-in wooden shelving units, a long desk surface with drawers, an office chair, and light blue walls.",
+        "reason": "The room is staged exclusively as a home office/study with a visible desk and office chair, and contains no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "9a0d72ce619e276e93231e7f7560de38b462311e98290a6c0f914acb51b6b24a",
+      "path": "images/9a0d72ce619e276e93231e7f7560de38b462311e98290a6c0f914acb51b6b24a.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/afqfajhr/the-regent-study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a desk with a chair under a window, a striped armchair, shelving unit, and a rug.",
+        "reason": "The room is staged as a home office with a visible desk and office chair, and contains no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "831a5aae434879e2bd52d39b0dd613c3d5a9add134b6bc0f3416524b048dd844",
+      "path": "images/831a5aae434879e2bd52d39b0dd613c3d5a9add134b6bc0f3416524b048dd844.png",
+      "sourceUrl": "https://www.persimmonhomes.com/media/zl4nxqbc/ph_boyton-place_the-brightstone_5-bed_4871.png",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with built-in desk, shelving, laptop, chair, and study decor.",
+        "reason": "This room is staged as a home office with a visible desk/work surface and no bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "6c49c8e493a2f6e4b9a6173105e7c8803b76702bd9600703072b7481cea17787",
+      "path": "images/6c49c8e493a2f6e4b9a6173105e7c8803b76702bd9600703072b7481cea17787.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/ijkb5hjy/ph_aldhurst-view_the-brightstone_5-bed_4400.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Attic home office or study featuring a wooden desk, chair, shelving, plants, and a green accent wall with a sofa.",
+        "reason": "The room features a dedicated desk and workspace surface for office work, and does not contain a bed."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "4dc6fb72cfc289ffa5169d90ededb3fa560ccb81a0eb2c949bc487910a4cba02",
+      "path": "images/4dc6fb72cfc289ffa5169d90ededb3fa560ccb81a0eb2c949bc487910a4cba02.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/xrzblxbo/persimmon-keilder-internal-11.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office room staged with a wooden desk, laptop, chair, sideboard, and mood boards on the wall.",
+        "reason": "This room is staged as a home office with a visible work desk and no bed present."
+      },
+      "analysisModel": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "ae159de3b43852006c07361608030a7001ba884f4248521b421268146a7df3af",
+      "path": "images/ae159de3b43852006c07361608030a7001ba884f4248521b421268146a7df3af.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/4wil3l2q/the-thornwood_170396.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and armchair.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "5d4bae6d6317539df335a944b98710f3de801ffba9af13d98cf0cfb548811eec",
+      "path": "images/5d4bae6d6317539df335a944b98710f3de801ffba9af13d98cf0cfb548811eec.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/rs3pruro/snowdon-gait-warriston-bedroom-5.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a built-in desk, chair, and shelving.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "fac209b95c055a0df190f7d848dc70f415ff52a5ceef93088057fdde09d0670b",
+      "path": "images/fac209b95c055a0df190f7d848dc70f415ff52a5ceef93088057fdde09d0670b.jpg",
+      "sourceUrl": "https://www.persimmonhomes.com/media/z4oo3gkv/1003081-26.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk, chair, and shelving unit.",
+        "reason": "This is a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 234,
+    "qualifyingDiscovered": 84,
+    "propertyLimitOmissions": 0,
+    "reusedGalleries": 39,
+    "reusedImageSources": 73,
+    "reusedImages": 23,
+    "imagesAttempted": 430,
+    "pendingImages": 0,
+    "matchedImages": 19,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 407
+  },
+  "completedAt": "2026-10-02T13:48:37.748Z"
+}
