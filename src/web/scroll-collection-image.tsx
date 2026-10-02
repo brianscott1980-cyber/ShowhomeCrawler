@@ -1,8 +1,8 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {collectionIndex,scrollCrossing,rowProgress,rowScrollCrossing,type CardEdges} from './scroll-crossing';
+import {collectionIndex,scrollCrossing,rowProgress,rowScrollCrossing,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
 export interface CollectionImage {src:string;alt:string;kind?:'logo';background?:string}
-interface Entry {element:HTMLElement;edges:CardEdges;progress:number;advance:(direction:number)=>void}
+interface Entry {element:HTMLElement;edges:CardEdges;progress:number;bottomAdvanced:boolean;advance:(direction:number)=>void}
 interface Measurement {edges:DOMRect;progress:number;column:number;columns:number;list:boolean}
 const entries=new Set<Entry>();
 let stop:undefined|(()=>void);
@@ -25,7 +25,7 @@ function measureCards(){
  return measurements;
 }
 function register(element:HTMLElement,advance:Entry['advance']){
- const entry:Entry={element,advance,edges:element.getBoundingClientRect(),progress:0};entries.add(entry);
+ const entry:Entry={element,advance,edges:element.getBoundingClientRect(),progress:0,bottomAdvanced:false};entries.add(entry);
  entry.progress=measureCards().get(element)?.progress??0;
  if(!stop){
   let scrollY=window.scrollY,frame=0;
@@ -33,9 +33,17 @@ function register(element:HTMLElement,advance:Entry['advance']){
   const update=()=>{
    frame=0;const delta=window.scrollY-scrollY;scrollY=window.scrollY;
    const measurements=measureCards();
+   const midpoint=window.innerHeight*.5;
+   const bottom=atPageBottom(scrollY,window.innerHeight,document.documentElement.scrollHeight);
    for(const item of entries){
     const next=measurements.get(item.element);if(!next)continue;
-    const direction=next.list?scrollCrossing(item.edges,next.edges,window.innerHeight*.5,delta):rowScrollCrossing(item.progress,next.progress,next.column,next.columns,delta);
+    let direction=next.list?scrollCrossing(item.edges,next.edges,window.innerHeight*.5,delta):rowScrollCrossing(item.progress,next.progress,next.column,next.columns,delta);
+    // At the page end, finish only cards whose usual trigger is still unreachable.
+    if(delta>0&&bottom&&!item.bottomAdvanced&&bottomRemainder(next.list,next.edges,next.progress,next.column,next.columns,midpoint)){
+     direction=1;item.bottomAdvanced=true;
+    }else if(delta<0&&item.bottomAdvanced&&(direction===-1||(next.list?next.edges.top>midpoint:next.progress<(next.column+.5)/next.columns))){
+     direction=-1;item.bottomAdvanced=false;
+    }
     item.edges=next.edges;item.progress=next.progress;if(direction)item.advance(direction);
    }
   };

@@ -41,3 +41,11 @@ it('calculates midpoint traversal and adapts to incomplete and single-column row
  expect(rowScrollCrossing(0,1,0,4,0)).toBe(0);
  expect(rowScrollCrossing(.2,.3,0,4,100)).toBe(0);
 });
+it('completes only unreachable bottom triggers with rounding tolerance',async()=>{
+ const {atPageBottom,bottomRemainder}=await import('../src/web/scroll-crossing');
+ expect(atPageBottom(1199,800,2000)).toBe(true);
+ expect(atPageBottom(1100,800,2000)).toBe(false);
+ expect(bottomRemainder(true,{top:500,bottom:700},0,0,1,400)).toBe(true);
+ expect(bottomRemainder(true,{top:100,bottom:300},0,0,1,400)).toBe(false);
+ expect([0,1,2,3].map(i=>bottomRemainder(false,{top:300,bottom:700},.4,i,4,400))).toEqual([false,false,true,true]);
+});
