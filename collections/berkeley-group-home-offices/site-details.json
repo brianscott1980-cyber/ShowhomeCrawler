@@ -1,1 +1,4626 @@
-[]
+[
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/westminster/190-strand",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/islington/250-city-road",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/kensington/375-kensington-high-street",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/westminster/9-millbank",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 282500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 310000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 647500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 699950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 737500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 890000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/westminster/abell-and-cleland",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/claygate-village/albury-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/haringey/alexandra-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/east-sussex/eastbourne/all-saints",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/guildford/arch-and-bloom",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 389500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 396500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 406500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 429000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 601500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 606500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 768500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/bankside-gardens",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 280000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 355000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 375000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 375000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 440000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/rudgwick/barleycroft",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/battersea-reach",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/colindale/beaufort-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/farnham-royal/berkeley-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 547500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 567500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 577500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 720000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 742500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 765000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 822500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 850850,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 872950,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 889520,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/north-bersted/bersted-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/bow/bow-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 495000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 660000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 760000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 805000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 825000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 845000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1100000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/twickenham/brewery-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/southall/the-green-quarter/brickfields-quarter-yards",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 400000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/horsham/broadacres",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/brompton-gardens",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/orpington/brunswick-square",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/cambridgeshire/cambridge/cambridge-riverside",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/camden/camden-goods-yard",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 587000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 608000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 695000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 740000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 810000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1125000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1418000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1436000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1475000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1616000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1670000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hartland-village/camellia-court",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 320000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/hornsey/campsbourne-well",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city/cascades-three-and-four",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 745000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1100000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1550000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/central-gardens",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 387500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 517500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/chiswick/chiswick-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/oxted/courtyard-gardens",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-exchange-watford/dart-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 297500,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 357500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 427500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 595000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park/deangarden-reach",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 647500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 737500,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/ealing/dickens-yard",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/milton-keynes/eastbrook-village",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 260000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 271000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 324000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 329000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 377000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 435000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 441000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 457000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 555000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 573000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 584000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 596000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/belgravia/ebury-square",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/staines-upon-thames/eden-grove",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 255000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 260000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 392500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 487500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 498000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/edenbrook",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/edenbrook-village",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/wokingham/eldridge-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/rickmansworth/elmswater",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/emperor-point",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/west-ham/twelvetrees-park/evergreen-point",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 950000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/cobham/fairmile-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/borehamwood/fairwood-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/cranbrook/farmstead",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/fero-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 400000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 512500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 517500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/fiennes-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/isleworth/fitzroy-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/paddock-wood/foal-hurst-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 549000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 575000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 580000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 600000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 620000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 679000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/blackheath/forbury",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/fulham-reach",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 549500,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 573500,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 598000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 610000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 617500,
+        "bedrooms": null,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-midlands/birmingham/glasswater-locks",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 250000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 250000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 300000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/aldgate/goodmans-fields",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wembley/grand-union",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 375000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 388500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 417500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 547500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 622500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 797500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/green-park-village",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hareshill",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 675000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 675000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 790000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hartland-village",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 320000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 775000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 810000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/tadworth/hazelmoor-rise",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/kew-bridge/heritage-walk",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/poplar/heron-wharf",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 445000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 447500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 457500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 462500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 572500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 587500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 612500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 622500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 660000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 750000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 790000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/hertford/hertford-locks",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 296000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 302000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 302000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 304000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 306000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 383000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 386000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 389000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 397000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 404000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 404000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 404000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 409000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 657000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 684000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 800000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 827000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/highcroft",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 400000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 560000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 765000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 770000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 850000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 900000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 960000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1055000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/horsham/highwood-village",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 440000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 595000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 760000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1030000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/holborough/holborough-lakes",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/royal-tunbridge-wells/hollyfields",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wimbledon/holmhurst-mews",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter/horlicks-factory",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 404000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 407000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 432000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 357500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 404000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 407000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 432000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/huntley-wharf",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/hurlingham-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/hurlingham-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/hurlingham-walk",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finchley/imperial-square",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wapping/london-dock/jade-wharf",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 700000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 706000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 758000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 826000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 985000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1080000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1160000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1164000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1170000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1187000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1233000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1270000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 2129000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2744000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/kennet-island",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/kensington/kensington-row",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/kew-bridge/kew-bridge",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/kew-bridge/kew-bridge-west",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 387500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 482500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 497500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 507500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 517500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 522500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1110000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/kings-road-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 855000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 917500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1192500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1470000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1932500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2250000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 3260000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 4335000,
+        "bedrooms": 4,
+        "style": "Apartment"
+      },
+      {
+        "price": 4357500,
+        "bedrooms": 4,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/canterbury/kingsbrook-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/gloucestershire/cirencester/kingshill-meadow",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/winchester/knights-quarter",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/putney/langham-square",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/lantern-wharf",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park/larch-court",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 445000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 890000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1525000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/cranleigh/leighwood-fields",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 550000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 635000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 655000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 690000,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/cranleigh/leighwood-fields/leighwood-manor",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 550000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/lillibrooke",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/oxshott/linley-house",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 325000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 352500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 355000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 492500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 512500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 517500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 585000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 620000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 627500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 642500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wapping/london-dock",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 700000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 706000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 758000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 826000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 985000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1080000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1160000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1164000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1170000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1187000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1233000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1270000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 2129000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2744000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/camberley/lumina",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park/mallard-house-and-ride-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 282500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 310000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/surrey-quays/marine-wharf",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wimbledon/marryat-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/albert-embankment/merano-residences",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/guildford/montagu-gardens",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/chelsea/moore-house-grosvenor-waterside",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/myro-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 492500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 585000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 620000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/caterham/oakgrove",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 695000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1325000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill/oakhill-copse",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1325000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill/oakhill-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 475000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/southwark/one-blackfriars",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/kings-road-park/one-kings-road-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 855000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 917500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1192500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 2250000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/tower-bridge/one-tower-bridge",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/opal-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 355000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 642500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/oval/oval-village",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 555000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 660000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 930000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 990000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1130000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1250000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1415000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1790000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2850000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/fulham-reach/palmer-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 549500,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 573500,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 598000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 610000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 617500,
+        "bedrooms": null,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/parkside-collection-at-chelsea-bridge-wharf",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wembley/grand-union/peninsula-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 375000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 417500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 547500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 622500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 797500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hartland-village/pinewood-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 520000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 775000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 810000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/prince-of-wales-drive",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/leatherhead/princes-chase",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/roehampton/queenmarys-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/beaconsfield/queens-acre-butlers-court",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/queensbury-gardens",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/kingston/queenshurst",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/sevenoaks/quinton-court",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/reading-riverworks",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 330000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 341000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 432500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 440000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 595000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 787500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/bethnal-green/regents-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 495000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 548000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 553000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 558000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 561000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 566000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 569000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 590000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 606000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 834000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 866000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 871000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 877000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 877000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 882000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1500000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/richmond/richmond-chase",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/vauxhall/riverlight",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/roehampton/roehampton-house",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/city-of-london/roman-house",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/rosa-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 325000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 352500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 627500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 560000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 610000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 620000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 642500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 647500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 692500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/gosport/royal-clarence-marina",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/kingston/royal-exchange",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/royal-tunbridge-wells/royal-wells-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/sevenoaks/ryewood",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/croydon/saffron-square",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/sailors-wharf",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 560000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 642500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/walton-on-the-hill/sandlands-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/seafarers-wharf",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 610000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/silk-woods",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/hendon/silkstream",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/skyview-gardens-the-signature-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 430000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-midlands/birmingham/snow-hill-wharf",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/canary-wharf/south-quay-plaza",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 752500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 762500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 772500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 992500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1017500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1030000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1192500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1262500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1792500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/hammersmith/sovereign-court",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/spring-hill",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 299950,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 399950,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 410000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 825000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 830000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 855000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 879500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1185000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/mill-hill/st-josephs-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/harrow/stanmore-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 445000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 890000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 895000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1525000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunninghill-square",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/sutton/sutton-garden-square",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 377000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 398000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 401000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 452000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 470000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 509000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 542000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 645000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/the-alba",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 517500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 607500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill/the-apartment-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 695000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-arches",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place/the-art-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 547500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 567500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 577500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 850850,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 872950,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 889520,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place/the-art-mill",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 720000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 742500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 765000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 822500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills/the-artisan-tower",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 625000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 630000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1059000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1341000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/barns-green/the-ashmiles",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finchley/the-avenue",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/the-blackheath-collection-apartments",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 482500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 497500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 507500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 522500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hareshill/the-bloom-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 680000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 790000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/marylebone/trillium/the-burton",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 967500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1050000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1180000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1595000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1630000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1800000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1870000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2332000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-chaplin-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1375000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1650000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/kings-road-park/the-charlton",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1470000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1932500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 3260000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 4335000,
+        "bedrooms": 4,
+        "style": "Apartment"
+      },
+      {
+        "price": 4357500,
+        "bedrooms": 4,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/albert-embankment/the-corniche",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/the-cottonworks",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/the-crown-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 999990,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/albert-embankment/the-dumont",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-exchange-watford",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 297500,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 357500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 427500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 427500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 595000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/camden/camden-goods-yard/the-gallery",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 587000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 608000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 695000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 740000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 810000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1125000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1475000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1670000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/southall/the-green-quarter",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 349000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 359000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 411000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 539000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hareshill/the-grove-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 675000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 675000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/beaconsfield/the-groves",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/oval/oval-village/the-halo",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 660000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 990000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1130000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1415000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1790000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2850000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter/the-heritage-house-collection",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/the-iris",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 515000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 892500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/sutton/sutton-garden-square/the-kensington",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 377000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 398000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 401000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 452000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 470000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 509000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 542000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 645000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter/the-maltings",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 357500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-mansion-house",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 749950,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1095000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1225000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1250000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/the-maribor",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 620000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 647500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 692500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/cranleigh/leighwood-fields/the-orchards",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 550000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 600000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 635000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 655000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 690000,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/southall/the-green-quarter/the-orien",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 349000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 359000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 411000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 539000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/horsham/the-paperyard",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park/the-pavilion",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 895000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park/the-penthouse-collection",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/oval/oval-village/the-pinnacle",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 555000,
+        "bedrooms": null,
+        "style": "Apartment"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 930000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1250000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/west-ham/twelvetrees-park/the-redwood",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 522500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 572500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 645000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 660000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 870000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1320000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/camden/camden-goods-yard/the-regent",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1418000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1436000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1616000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows/the-rosemere-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 489000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 575000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 735000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 899950,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-royal-mews",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 2495000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city/the-solaris-one-and-two",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 760000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows/the-summerleigh-collection",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 255000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 259000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/vauxhall/the-buckingham-suite",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/barnes/the-villas",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-walled-gardens",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1595000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1675000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1850000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/worcestershire/worcester/the-waterside-at-royal-worcester",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/bethnal-green/regents-view/the-westwood",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 495000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 553000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 561000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 566000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 834000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/bethnal-green/regents-view/the-wright",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 548000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 558000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 569000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 590000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 606000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 866000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 871000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 877000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 877000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 882000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1500000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/gloucestershire/cheltenham/thirlestaine-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/the-blackheath-collection-townhouses",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1110000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 749950,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1095000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1225000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1250000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1375000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1595000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1650000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1675000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1850000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 2495000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/marylebone/trillium",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 967500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1050000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1180000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1595000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1630000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1800000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1870000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2332000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/west-ham/twelvetrees-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 522500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 572500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 645000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 660000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 870000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 950000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 1320000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-exchange-watford/union-court",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 425000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 427500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/kent/gillingham/victory-pier",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/vista-chelsea-bridge",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/surrey/banstead/walnut-grove",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 625000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 630000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1059000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1341000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/waterlily-court",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/marylebone/west-end-gate",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 745000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 760000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1005000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1025000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1035000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1100000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1550000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 2550000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park/willow-rise",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 699950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 890000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/wimbledon/wimbledon-hill-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 255000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 259000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 489000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 540000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 575000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 735000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 899950,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/winton-place",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 515000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 517500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 607500,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 892500,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 999990,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1175000,
+        "bedrooms": 3,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/berkshire/warfield/woodhurst-park",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  },
+  {
+    "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/wye-dene",
+    "country": "England",
+    "scope": "Collection homes",
+    "properties": []
+  }
+]

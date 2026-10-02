@@ -5,7 +5,7 @@ import { absoluteUrl } from '../web/seo';
 export const dynamic='force-dynamic';
 export default async function sitemap():Promise<MetadataRoute.Sitemap>{
  const collections=await Promise.all(developers.map(async d=>({developer:d,report:await readCollection(d.slug)})));
- const grouped=await Promise.all((['sites','spaces','buildings'] as GroupKind[]).map(async kind=>({kind,groups:await readGroups(kind)})));
+ const grouped=await Promise.all((['locations','interiors','buildings'] as GroupKind[]).map(async kind=>({kind,groups:await readGroups(kind)})));
  return [{url:absoluteUrl('/')},...grouped.flatMap(({kind,groups})=>[{url:absoluteUrl(`/${kind}`)},...groups.map(group=>({url:absoluteUrl(`/${kind}/${group.key}`)}))]),...collections.flatMap(({developer,report})=>{
   const images=report?.images.filter(i=>i.verdict?.matches)??[];if(!images.length)return [];
   const date=report?.completedAt;return [{url:absoluteUrl(`/developers/${developer.slug}`),...(date&&Number.isFinite(Date.parse(date))?{lastModified:date}:{}),images:images.map(i=>absoluteUrl(assetUrl(developer.slug,i.path)))}];

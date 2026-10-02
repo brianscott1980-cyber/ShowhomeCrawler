@@ -41,7 +41,7 @@ describe('observed Bellway fixture', () => {
 });
 describe('migration and repository against PostgreSQL engine', () => {
  const db = new PGlite();
- beforeAll(async () => { await db.exec(await readFile('supabase/migrations/20261002000100_foundation.sql', 'utf8')); await db.exec(await readFile('supabase/migrations/20261002000200_image_classifications.sql', 'utf8')); });
+ beforeAll(async () => { await db.exec(await readFile('supabase/migrations/20261002000100_foundation.sql', 'utf8')); await db.exec(await readFile('supabase/migrations/20261002000200_image_classifications.sql', 'utf8')); await db.exec(await readFile('supabase/migrations/20261002000300_site_filtering.sql', 'utf8')); });
  afterAll(async () => { await db.close(); });
  // Execute the repository's actual SQL, including its conflict targets and transaction.
  const connection = { json: (value: unknown) => JSON.stringify(value), begin: async (fn: (tx: unknown) => Promise<unknown>) => db.transaction(async tx => fn(Object.assign(async (parts: TemplateStringsArray, ...values: unknown[]) => {
