@@ -8,6 +8,7 @@ import { readEnv } from '../config/env.js';
 import { RequestClient, mapLimit } from '../crawler/request-client.js';
 import { builderSite } from '../adapters/sites.js';
 import { sha256, imageIdentity, sameVisual } from '../galleries/image-hasher.js';
+import { ImageSourceCache, imageSourceKey } from '../galleries/image-source-cache.js';
 import { analysisVersion, question, classify, verdictSchema } from '../vision/gemini-classifier.js';
 import { writeReport, type RunReport, type ReportImage } from '../reports/report.js';
 import { createDatabase } from '../database/postgres.js';
@@ -68,10 +69,11 @@ async function main() {
   report.metrics.qualifyingDiscovered = homes.length;
   report.metrics.propertyLimitOmissions = Math.max(0, homes.length - maxProperties);
   const sourceImages = new Map<string, ReportImage>();
+  const sourceTasks = new ImageSourceCache<string>();
   const identities: { identity: Awaited<ReturnType<typeof imageIdentity>>; image: ReportImage }[] = [];
   const galleryCache = new Map<string, string[]>();
   let imageAttempts = 0, analysisUnavailable = false;
-  // Deliberately sequential galleries and AI calls; development requests are capped at three.
+  // Sequential galleries; development requests and image workers are capped at three.
   for (const { home, development, plots } of homes.slice(0, maxProperties)) {
    if (stopped) break;
    const property = { development: development.name, developmentUrl: development.url, name: site.slug === 'cala' && home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
@@ -79,11 +81,12 @@ async function main() {
    try {
     const images = galleryImages(await page(home.url));
     if (!images.length) report.errors.push({ url: home.url, stage: 'gallery', message: 'No supported image gallery found; not treated as a negative match.' });
-    const galleryKey = sha256(JSON.stringify(images.map(i => i.url).sort()));
+    const galleryKey = sha256(JSON.stringify([...new Set(images.map(i => imageSourceKey(i.url)))].sort()));
     const reused = galleryCache.get(galleryKey);
     if (reused) { property.imageIds = reused; report.metrics.reusedGalleries = (report.metrics.reusedGalleries ?? 0) + 1; continue; }
     const imageIds = await mapLimit(images, Math.min(3, env.MAX_CONCURRENCY), async candidate => {
      if (stopped) return null;
+     return sourceTasks.get(candidate.url, async () => {
      const known = sourceImages.get(candidate.url);
      if (known) return known.id;
      if (imageAttempts >= maxImages) { report.metrics.imageLimitOmissions = (report.metrics.imageLimitOmissions ?? 0) + 1; return null; }
@@ -117,10 +120,11 @@ async function main() {
       await atomic(folder + '/checkpoint.json', report);
       return image.id;
      } catch { report.errors.push({ url: candidate.url, stage: 'image', message: 'Image download or hashing failed' }); return null; }
+     }, () => { report.metrics.reusedImageSources = (report.metrics.reusedImageSources ?? 0) + 1; });
     });
     property.imageIds = imageIds.filter((id): id is string => id !== null);
     property.imageIds = [...new Set(property.imageIds)];
-    if (property.imageIds.length === images.length) galleryCache.set(galleryKey, property.imageIds);
+    if (imageIds.every(id => id !== null)) galleryCache.set(galleryKey, property.imageIds);
     console.log(JSON.stringify({ stage: 'gallery', development: development.name, home: home.name, images: images.length, uniqueImages: report.images.length }));
    } catch { report.errors.push({ url: home.url, stage: 'gallery', message: 'House page or gallery extraction failed' }); }
    await writeReport(folder, report);

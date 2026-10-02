@@ -1,6 +1,26 @@
 # ShowhomeCrawler
 
-Deterministic, server-side Bellway crawler with Gemini gallery classification and local review exports. No search frontend is built; the exported HTML is an offline results report.
+Next.js app for exploring UK developer showhome offices, with a deterministic server-side crawler, Gemini gallery classification and local review exports.
+
+## Web app
+
+```sh
+npm install
+npm run dev
+```
+
+Open http://127.0.0.1:3000. Showhome Explorer presents existing Bellway and Cala collections under `results/` as decor inspiration. Developer pages include search, development filters, fullscreen image navigation and favourites. Processing status, classification decisions and technical reports are kept out of the browsing pages. The current collection still uses the immediate five-bedroom home-office criteria; user-configurable search criteria are future work. Favourites are stored in your browser; offline HTML favourites from a `file://` origin are not automatically transferred.
+
+Manage collection processing with the CLI commands below. The existing local job API and background worker remain available for operator tooling, with same-origin localhost requests required for writes and one app job at a time. The app uses the existing filename, byte and visual deduplication and caches. Discovery can run without `GEMINI_API_KEY`; add the key to `.env.local` to analyse images.
+
+```sh
+npm run build
+npm start
+```
+
+The app follows the [Next.js App Router](https://nextjs.org/docs/app/getting-started/installation) and requires a local or persistent Node.js host with the source tree, dependencies and writable `results/` storage. Its background crawler is not a serverless/Vercel function. Remote hosting requires an authenticated job service and durable storage before enabling processing controls. No deployment has been configured. CLI commands below remain available; `npm run build:crawler` compiles their TypeScript separately.
+
+Job status is stored in `results/.app-job.json`. If a worker is forcibly terminated, verify that its PID and any crawl/classification children have exited before removing `results/.app-job/` and an affected collection’s `.lock` to recover.
 
 ## Setup
 
@@ -61,6 +81,10 @@ npm run results:classify -- --folder results/bellway-home-offices
 The batch worker retries transient failures with backoff and spacing between batches. Individual image IDs, boolean values and consistency are validated before saving each answer. Repeated resume commands reuse cached answers. A run with any failed or omitted work is labelled `completed_with_gaps`.
 
 SHA-256 identifies identical bytes. A conservative dHash comparison plus aspect ratio and thumbnail pixel error detects ordinary resizing/recompression; it can miss crops. Full gallery URL sets identify reused galleries, including reordered galleries. Remaining images are not fetched again for a known complete gallery. Do not equate an entire gallery based only on a shared first image.
+
+Before downloading, each crawl also shares work for the same image filename on the same host and directory, ignoring fragments and known size/quality/format query parameters. Unknown parameters (including crop and source selectors) remain distinct. Concurrent duplicates share one task and failed downloads can be retried. `metrics.reusedImageSources` counts source reuse; properties still link to the shared image. Gallery reuse uses these same source keys and supports duplicate entries. This source shortcut is scoped to the current run; SHA-256 and visual comparison remain the fallback for different filenames.
+
+For full developer runs, use `--discover-only` followed by `npm run results:classify -- --folder RESULTS_FOLDER` to classify the deduplicated images in batches of up to eight rather than making one Gemini request per image.
 
 A per-output lock prevents concurrent runs using the same folder. If an abruptly killed process leaves `.lock`, confirm it has exited before deleting the stale lock. Local caches enable resumable work; remote crawl-item records are a persisted audit of the completed export, not the live queue scheduler.
 

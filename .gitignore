@@ -8,3 +8,6 @@ coverage/
 supabase/.temp/
 *.log
 results/
+.next/
+*.tsbuildinfo
+next-env.d.ts
