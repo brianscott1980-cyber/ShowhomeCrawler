@@ -42,3 +42,20 @@ it('does not pin exterior images in collections without a builder logo',async()=
  const result=cardImageCollection([...images,exterior],undefined,()=>.2);
  expect(new Set(result.images.slice(0,4).map(i=>i.roomType)).size).toBe(4);
 });
+it('starts building previews with a front exterior then an interior from the same pool',async()=>{
+ const {buildingCardImageCollection}=await import('../src/web/card-images');
+ const rear:CardImage={src:'/rear',alt:'Rear garden',roomType:'Exterior'};
+ const front:CardImage={src:'/front',alt:'Front elevation of the home',roomType:'Exterior'};
+ const pool=[rear,...images,front];
+ const result=buildingCardImageCollection(pool,()=>.2);
+ expect(result.images[0]).toEqual(front);
+ expect(images).toContainEqual(result.images[1]);
+ expect(result.images.map(i=>i.src).sort()).toEqual(pool.map(i=>i.src).sort());
+});
+it('starts with an interior when only rear exteriors or no exterior exist',async()=>{
+ const {buildingCardImageCollection}=await import('../src/web/card-images');
+ const rear:CardImage={src:'/rear',alt:'Rear elevation',roomType:'Exterior'};
+ expect(images).toContainEqual(buildingCardImageCollection([rear,...images],()=>.1).images[0]);
+ expect(images).toContainEqual(buildingCardImageCollection(images,()=>.8).images[0]);
+ expect(buildingCardImageCollection([]).images).toEqual([]);
+});

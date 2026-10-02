@@ -1,6 +1,6 @@
 import type {ReportImage} from '../reports/report';
 import {assetUrl} from './collections';
-export interface CardImage {src:string;alt:string;roomType?:string;kind?:'logo';background?:string}
+export interface CardImage {src:string;alt:string;roomType?:string;subCategory?:string;kind?:'logo';background?:string}
 function shuffle<T>(values:T[],random:()=>number):T[]{
  const result=[...values];
  for(let i=result.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[result[i],result[j]]=[result[j]!,result[i]!];}
@@ -26,7 +26,7 @@ export function randomRoomImages(images:CardImage[],random:()=>number=Math.rando
 }
 export function reportCardImage(slug:string,image:ReportImage):CardImage {
  const room=image.categorisation?.mainCategory??image.verdict?.roomType??'Uncategorised';
- return {src:assetUrl(slug,image.path),alt:image.verdict?.description??image.categorisation?.subCategory??'Showhome interior',roomType:room};
+ return {src:assetUrl(slug,image.path),alt:image.verdict?.description??image.categorisation?.subCategory??'Showhome interior',roomType:room,subCategory:image.categorisation?.subCategory};
 }
 /** Generate on the server so the browser hydrates the same random starting image and order. */
 export function cardImageCollection(images:CardImage[],firstImage?:CardImage,random:()=>number=Math.random){
@@ -35,5 +35,22 @@ export function cardImageCollection(images:CardImage[],firstImage?:CardImage,ran
  const exterior=exteriors.length?exteriors[Math.floor(random()*exteriors.length)]:undefined;
  const rooms=randomRoomImages(available.filter(i=>i.src!==exterior?.src),random);
  const ordered=[...(firstImage?[firstImage]:[]),...(exterior?[exterior]:[]),...rooms];
+ return {images:ordered,image:ordered[0]?.src??'',description:ordered[0]?.alt??'Showhome interior'};
+}
+
+/** Building previews favour a front elevation, then an interior from that same building. */
+export function buildingCardImageCollection(images:CardImage[],random:()=>number=Math.random){
+ const available=[...new Map(images.map(image=>[image.src,image])).values()];
+ const isExterior=(image:CardImage)=>/^exterior(?:\s|$)/i.test(image.roomType?.trim()??'');
+ const exteriors=available.filter(isExterior);
+ const front=exteriors.filter(image=>/\bfront\b|fa[cç]ade|street[- ]facing/i.test(`${image.subCategory??''} ${image.alt}`));
+ const generic=exteriors.filter(image=>! /\brear\b|\bback\b|garden|aerial|patio|balcony/i.test(`${image.subCategory??''} ${image.alt}`));
+ const candidates=front.length?front:generic;
+ const exterior=candidates.length?candidates[Math.floor(random()*candidates.length)]:undefined;
+ const interiors=available.filter(image=>!isExterior(image)&&! /floor[ -]?plan|site plan|graphic/i.test(image.roomType??''));
+ const interior=interiors.length?interiors[Math.floor(random()*interiors.length)]:undefined;
+ const first=[...(exterior?[exterior]:[]),...(interior?[interior]:[])];
+ const pinned=new Set(first.map(image=>image.src));
+ const ordered=[...first,...randomRoomImages(available.filter(image=>!pinned.has(image.src)),random)];
  return {images:ordered,image:ordered[0]?.src??'',description:ordered[0]?.alt??'Showhome interior'};
 }

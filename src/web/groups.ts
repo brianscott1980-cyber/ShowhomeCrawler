@@ -25,7 +25,7 @@ export function groupCollections(collections:Collection[],kind:GroupKind):Group[
   const maps=new Map<string,{name:string;images:ReportImage[];properties:RunReport['properties']}>();
   const targetImages=isSpaces
    ? collection.report.images.filter(image => spaceName(image, collection.report.question) !== 'Uncategorised' || isRoomImage(image))
-   : collection.report.images.filter(i=>i.categorisation?i.categorisation.isRoom:!i.verdict||i.verdict.matches);
+   : collection.report.images.filter(i=>i.categorisation?(i.categorisation.isRoom||(kind==='buildings'&&i.categorisation.mainCategory==='Exterior')):!i.verdict||i.verdict.matches);
   for(const image of targetImages){
    const homes=(collection.report.properties??[]).filter(p=>p.imageIds.includes(image.id));
    const entries=isSpaces?[{identity:spaceName(image,collection.report.question),name:spaceName(image,collection.report.question),homes}]:homes.map(p=>({identity:isSites?`${collection.slug}:${p.developmentUrl}`:`${collection.slug}:${homeTypeName(p.name).toLowerCase()}`,name:isSites?p.development:homeTypeName(p.name),homes:[p]}));
