@@ -1545,7 +1545,13 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "777afa6957c2108e298065d042c47e1d712aac1ae29e1d6e2398c75554833a57",
+        "6df794165de5af0a46cc3d44190954fb8149fa78465a3fcd059d7d00ebd3cae8",
+        "be73cfed9d20d6a64d9ea0743e5ed76a9e8c75988ec276d1cd1cffebe71c26af",
+        "c6da1e5ddfd51b6d4a468381f542e47cf5c97c01ce8c2a81606ec5ee6fa09796",
+        "893ebe2ff14d6d0265d03e55692dc786e418aa6dedcc8b2c87f91bae7eb785d8"
+      ]
     },
     {
       "development": "Highwood Village",
@@ -1561,7 +1567,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "c677b31865dc8e53eccbc82ed39aaf2ac3b3831e9b42069465406f4a13b14c5e"
+      ]
     },
     {
       "development": "The Chaplin Collection",
@@ -1577,7 +1585,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "132f4bbcdb097d9443786336691491ce47f60f536e905a2f72615cad8bafdf94"
+      ]
     },
     {
       "development": "The Walled Gardens",
@@ -1593,7 +1603,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "b566700dc7c8fa78e19edd5db1beca370cfa6104babc4069dd8affc3dbde324e"
+      ]
     },
     {
       "development": "The Rosemere Collection",
@@ -1609,7 +1621,13 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "8a130fa5f15f25b6300582f97060b42865b2090f134a690deaa40432aa1b7c93",
+        "037a6755865d879ccdf6282185334750d3e4e33990b088a158250173ea4b8e80",
+        "f52f6cfc6a875592e03b4fcfa6fad65ddbc9e4286ff2def93294b4a4cb161e88",
+        "bae1a9379874c4f6135d6cc37a44255feb4fe6b32cb4aa27d4fabcd60102a0ea",
+        "4bd948de264c6c0029b773995b8e7b9dfc21486c85afb71bc0e7fd4480477329"
+      ]
     },
     {
       "development": "Spring Hill",
@@ -1625,7 +1643,12 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "e78872d948354104a51d043f4568c674c3b2ce775259476faff5b2d06d0f96ef",
+        "a714ad415ca1cefdb815c7bcfacfee85bbb5fe786a5aa6b48477adb2375d4127",
+        "94d6bbb5e60b5bef44c74413506e562b4a2e27cdb2f52546a0b5ffd2e1264873",
+        "cf35f0ff1fc2d1289b6deeda401f4805702b45ad72918a15a1afc123eeb24852"
+      ]
     },
     {
       "development": "Highcroft",
@@ -1641,7 +1664,11 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "351d5f8224a562422bd464936f3ed8840efe7b9d85ab68d4d800be386c938d42",
+        "789e38dd3777f6c041bb6a9b17b95bff060509a5de81de23a0df9943e13f4e41",
+        "05cb087916777a8c101b0ef78196704ea8b214ba3daa6d1632f92e78955bf906"
+      ]
     },
     {
       "development": "Highcroft",
@@ -1657,7 +1684,10 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "92c74b1a9b141d8b0ab9828b2955f753432402c5dd9aac46b573da1ed695236c",
+        "7c92c6867ff57a83b6051808fa8402f05d45ea1537d4d23baaf68ed855b3494a"
+      ]
     },
     {
       "development": "Oakhill",
@@ -1673,7 +1703,13 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "777afa6957c2108e298065d042c47e1d712aac1ae29e1d6e2398c75554833a57",
+        "6df794165de5af0a46cc3d44190954fb8149fa78465a3fcd059d7d00ebd3cae8",
+        "be73cfed9d20d6a64d9ea0743e5ed76a9e8c75988ec276d1cd1cffebe71c26af",
+        "c6da1e5ddfd51b6d4a468381f542e47cf5c97c01ce8c2a81606ec5ee6fa09796",
+        "893ebe2ff14d6d0265d03e55692dc786e418aa6dedcc8b2c87f91bae7eb785d8"
+      ]
     },
     {
       "development": "Trent Park",
@@ -1689,7 +1725,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "132f4bbcdb097d9443786336691491ce47f60f536e905a2f72615cad8bafdf94"
+      ]
     },
     {
       "development": "Trent Park",
@@ -1705,7 +1743,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "b566700dc7c8fa78e19edd5db1beca370cfa6104babc4069dd8affc3dbde324e"
+      ]
     },
     {
       "development": "Winterbrook Meadows",
@@ -1721,10 +1761,325 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "8a130fa5f15f25b6300582f97060b42865b2090f134a690deaa40432aa1b7c93",
+        "037a6755865d879ccdf6282185334750d3e4e33990b088a158250173ea4b8e80",
+        "f52f6cfc6a875592e03b4fcfa6fad65ddbc9e4286ff2def93294b4a4cb161e88",
+        "bae1a9379874c4f6135d6cc37a44255feb4fe6b32cb4aa27d4fabcd60102a0ea",
+        "4bd948de264c6c0029b773995b8e7b9dfc21486c85afb71bc0e7fd4480477329"
+      ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "id": "6df794165de5af0a46cc3d44190954fb8149fa78465a3fcd059d7d00ebd3cae8",
+      "path": "images/6df794165de5af0a46cc3d44190954fb8149fa78465a3fcd059d7d00ebd3cae8.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/oakhill/property-page-headers/p0150/oakhill_oakhill-copse_property-150_header-image-2_07072026.ashx?h=650&w=1920&rev=475b083dd4fa4aa59048de8e76464298&hash=E40FC7B5C7198F973466C193FC10122A",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "kitchen",
+        "description": "A kitchen with a breakfast bar and stools.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "777afa6957c2108e298065d042c47e1d712aac1ae29e1d6e2398c75554833a57",
+      "path": "images/777afa6957c2108e298065d042c47e1d712aac1ae29e1d6e2398c75554833a57.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/oakhill/property-page-headers/p0150/oakhill_oakhill-copse_property-150_header-image-5_07072026.ashx?h=650&w=1920&rev=16379cbff26a41068be5170b2d5785a9&hash=31AD4C04EF98BD1BC00F05B7535B28C3",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a brick house.",
+        "reason": "This is an exterior shot of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "be73cfed9d20d6a64d9ea0743e5ed76a9e8c75988ec276d1cd1cffebe71c26af",
+      "path": "images/be73cfed9d20d6a64d9ea0743e5ed76a9e8c75988ec276d1cd1cffebe71c26af.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/oakhill/property-page-headers/p0150/oakhill_oakhill-copse_property-150_header-image-1_07072026.ashx?h=650&w=1920&rev=e667d282c01248d28e209063a339abc5&hash=F75340FD7B32CE8F1691B4FF593CBDE0",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa, coffee table, and bench.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "893ebe2ff14d6d0265d03e55692dc786e418aa6dedcc8b2c87f91bae7eb785d8",
+      "path": "images/893ebe2ff14d6d0265d03e55692dc786e418aa6dedcc8b2c87f91bae7eb785d8.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/oakhill/property-page-headers/p0150/oakhill_oakhill-copse_property-150_header-image-4_07072026.ashx?h=650&w=1920&rev=8c4c658580b246da9f867c956e11288e&hash=123BAF991D2DD69DD518A43B6703C235",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a toilet and shower.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c6da1e5ddfd51b6d4a468381f542e47cf5c97c01ce8c2a81606ec5ee6fa09796",
+      "path": "images/c6da1e5ddfd51b6d4a468381f542e47cf5c97c01ce8c2a81606ec5ee6fa09796.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/oakhill/property-page-headers/p0150/oakhill_oakhill-copse_property-150_header-image-3_07072026.ashx?h=650&w=1920&rev=e0f82cf437fe4136b80c3ba07362b56e&hash=527447C52DCD82AE0B114E097EDC95A4",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom with a large bed.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c677b31865dc8e53eccbc82ed39aaf2ac3b3831e9b42069465406f4a13b14c5e",
+      "path": "images/c677b31865dc8e53eccbc82ed39aaf2ac3b3831e9b42069465406f4a13b14c5e.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/highwood-village/header-images/highwood-village_video-header-thumbnail_08-10-2024.ashx?rev=5ce5e41c55a44b4db02ca83bc233d907&hash=D8F32B7CCF82E55855F42F228312C187",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An aerial view of a residential neighborhood.",
+        "reason": "This is an exterior aerial view."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "132f4bbcdb097d9443786336691491ce47f60f536e905a2f72615cad8bafdf94",
+      "path": "images/132f4bbcdb097d9443786336691491ce47f60f536e905a2f72615cad8bafdf94.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/trent-park/the-chaplin-collection/trent-park---the-chaplin-collection-header_21052024.ashx?h=650&w=1920&rev=b471883b62eb4c858fd883b081f4d0da&hash=AD2834A6CCDFDBCBB06F106B2C10F51C",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "A composite image showing the exterior of a brick house, a swimming pool, and a garden.",
+        "reason": "The image shows exterior views and landscaping, not an interior home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "b566700dc7c8fa78e19edd5db1beca370cfa6104babc4069dd8affc3dbde324e",
+      "path": "images/b566700dc7c8fa78e19edd5db1beca370cfa6104babc4069dd8affc3dbde324e.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/trent-park/the-walled-garden/trent-park---the-walled-garden_header_07072025.ashx?h=650&w=1920&rev=d510e215d836485ea7212b1a65681f3d&hash=D6667443FD8BE6E712510B18F51AD7B5",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "living room",
+        "description": "A composite image showing a garden, a kitchen, and a living room.",
+        "reason": "The interior room shown is a living room with sofas, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "037a6755865d879ccdf6282185334750d3e4e33990b088a158250173ea4b8e80",
+      "path": "images/037a6755865d879ccdf6282185334750d3e4e33990b088a158250173ea4b8e80.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/winterbrook-meadows/property-headers/p0189/winterbrook-meadows_p0189_header_img2_27072026.ashx?h=650&w=1920&rev=9e85f3a731414f81b5ee9f3494e51499&hash=B147EC041AAF27F84942115B5CF18E24",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "kitchen",
+        "description": "A close-up of a kitchen sink and countertop.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "8a130fa5f15f25b6300582f97060b42865b2090f134a690deaa40432aa1b7c93",
+      "path": "images/8a130fa5f15f25b6300582f97060b42865b2090f134a690deaa40432aa1b7c93.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/winterbrook-meadows/property-headers/p0189/winterbrook-meadows_p0189_header_img1_27072026.ashx?h=650&w=1920&rev=289e898c98494fd1a3e94596f8a21c2e&hash=E81555C55E74B9F110E4FF7C379AECA5",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "kitchen",
+        "description": "A close-up of a kitchen countertop with kitchenware.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "f52f6cfc6a875592e03b4fcfa6fad65ddbc9e4286ff2def93294b4a4cb161e88",
+      "path": "images/f52f6cfc6a875592e03b4fcfa6fad65ddbc9e4286ff2def93294b4a4cb161e88.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/winterbrook-meadows/property-headers/p0189/winterbrook-meadows_p0189_header_img3_27072026.ashx?h=650&w=1920&rev=d18d9e2c547f438c99ea8343effc268e&hash=4D339FCA3BBCEB1735EC4DEFB8398B8B",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom with a made bed and bedside tables.",
+        "reason": "This is a bedroom containing a bed, which is explicitly excluded."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4bd948de264c6c0029b773995b8e7b9dfc21486c85afb71bc0e7fd4480477329",
+      "path": "images/4bd948de264c6c0029b773995b8e7b9dfc21486c85afb71bc0e7fd4480477329.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/winterbrook-meadows/property-headers/p0189/winterbrook-meadows_p0189_header_img5_27072026.ashx?h=650&w=1920&rev=6f6dce9b26c0493a8016a63bb9acb5ac&hash=0C1DAFBC02D93DF663D0B2E68FD6E93A",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "The exterior of a brick house with a car parked in the driveway.",
+        "reason": "This is an exterior view of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "bae1a9379874c4f6135d6cc37a44255feb4fe6b32cb4aa27d4fabcd60102a0ea",
+      "path": "images/bae1a9379874c4f6135d6cc37a44255feb4fe6b32cb4aa27d4fabcd60102a0ea.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/winterbrook-meadows/property-headers/p0189/winterbrook-meadows_p0189_header_img4_27072026.ashx?h=650&w=1920&rev=854e9fea914d40fabbbf58022de4db9d&hash=D36EEFFE22CAF77060200B18809EB3A6",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "bathroom",
+        "description": "A modern bathroom with a bathtub and vanity.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e78872d948354104a51d043f4568c674c3b2ce775259476faff5b2d06d0f96ef",
+      "path": "images/e78872d948354104a51d043f4568c674c3b2ce775259476faff5b2d06d0f96ef.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/spring-hill/plot-headers/spring-hill_property-106_header-image-1_19062026.ashx?h=650&w=1920&rev=775557eaaa9f4d5aa6b267a9ff8be183&hash=61A2D4CD3A381EE98FF3B31961DEE384",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior view of residential houses.",
+        "reason": "This is an exterior shot of buildings, not an interior home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "94d6bbb5e60b5bef44c74413506e562b4a2e27cdb2f52546a0b5ffd2e1264873",
+      "path": "images/94d6bbb5e60b5bef44c74413506e562b4a2e27cdb2f52546a0b5ffd2e1264873.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/spring-hill/plot-headers/plot-106/spring-hill_p0106_header-1_21052026.ashx?h=650&w=1920&rev=47c496417acc44918cf4996c712cef6b&hash=B6B4E9EFF055C0C3CC700D477167A06B",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom with a large bed.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "a714ad415ca1cefdb815c7bcfacfee85bbb5fe786a5aa6b48477adb2375d4127",
+      "path": "images/a714ad415ca1cefdb815c7bcfacfee85bbb5fe786a5aa6b48477adb2375d4127.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/spring-hill/plot-headers/plot-106/spring-hill_p0106_header-4_21052026.ashx?h=650&w=1920&rev=3ee701b41c2743c6a2664eb4bb53a44d&hash=0147A235A5F0768A6FDACD2A39617C41",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "cf35f0ff1fc2d1289b6deeda401f4805702b45ad72918a15a1afc123eeb24852",
+      "path": "images/cf35f0ff1fc2d1289b6deeda401f4805702b45ad72918a15a1afc123eeb24852.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/spring-hill/plot-headers/plot-106/spring-hill_p0106_header-2_21052026.ashx?h=650&w=1920&rev=16264c8a62d74c9c84a21294dd6df29b&hash=37FEA1EE7ACAD5F20C75D1AAAF80547B",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom with a single bed and a small desk.",
+        "reason": "Although it has a desk, it is clearly a bedroom because it contains a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "789e38dd3777f6c041bb6a9b17b95bff060509a5de81de23a0df9943e13f4e41",
+      "path": "images/789e38dd3777f6c041bb6a9b17b95bff060509a5de81de23a0df9943e13f4e41.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/highcroft/property-headers/highcroft_p0290_header-image-2_07092026.ashx?h=650&w=1920&rev=f76a697567c44c7886607eae7d552801&hash=58E1380DC8546AE318DA381D3B7203F2",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and an armchair.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "05cb087916777a8c101b0ef78196704ea8b214ba3daa6d1632f92e78955bf906",
+      "path": "images/05cb087916777a8c101b0ef78196704ea8b214ba3daa6d1632f92e78955bf906.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/highcroft/property-headers/highcroft_p0290_header-image-3_07092026.ashx?h=650&w=1920&rev=bf1e3d9af4554c0c81cd56fc34b355db&hash=F9EF2D022D8A8C2A70F53873B549157C",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A close-up of a bed in a bedroom.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "351d5f8224a562422bd464936f3ed8840efe7b9d85ab68d4d800be386c938d42",
+      "path": "images/351d5f8224a562422bd464936f3ed8840efe7b9d85ab68d4d800be386c938d42.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/highcroft/property-headers/highcroft_p0290_header-image-1_07092026.ashx?h=650&w=1920&rev=2f0dc3bb666d4a5d815eb601dfaae1fa&hash=7B4CF1FA52D37A8B9778C25E156BD2CC",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a fireplace.",
+        "reason": "This is a living room, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "7c92c6867ff57a83b6051808fa8402f05d45ea1537d4d23baaf68ed855b3494a",
+      "path": "images/7c92c6867ff57a83b6051808fa8402f05d45ea1537d4d23baaf68ed855b3494a.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/highcroft/property-headers/highcroft_p0288_header-image-4_07092026.ashx?h=650&w=1920&rev=94722fad87964fa988b18edad651ea6c&hash=D0984AF069BCEA76A55F334D1491F855",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "92c74b1a9b141d8b0ab9828b2955f753432402c5dd9aac46b573da1ed695236c",
+      "path": "images/92c74b1a9b141d8b0ab9828b2955f753432402c5dd9aac46b573da1ed695236c.jpg",
+      "sourceUrl": "https://www.berkeleygroup.co.uk/-/media/migration/berkeley-group/developments/highcroft/property-headers/highcroft_p0288_header-image-3_07092026.ashx?h=650&w=1920&rev=c5e4983cfffa4b6fb6d119ac7b9784cc&hash=CCD5E51D8F19A8A4045260176036041A",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with a breakfast bar.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    }
+  ],
   "errors": [
     {
       "url": "https://www.berkeleygroup.co.uk/developments/london/acton/napier-square",

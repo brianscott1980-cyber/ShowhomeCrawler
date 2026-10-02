@@ -74,7 +74,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "f8662cc51474f02faf3cbabcfa52029f49b5c428930db04028ce99830a56f421"
+      ]
     },
     {
       "development": "Buckie",
@@ -90,7 +92,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "7ecc26b31f6e0debfd6f7aaeef2815d458535044edf2a0cd0e7edb120d40c9f6"
+      ]
     },
     {
       "development": "Dundee",
@@ -107,7 +111,17 @@
         }
       ],
       "imageIds": [
-        "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5"
+        "2e09c9d63a9e4da1067df7b6d0f57f5bf7c0500f69195f81d44c8685ce514c5d",
+        "2a04945700ea47066e633da5c256105cf4c49d67e5ac8932c15a928f1056efc5",
+        "886a870122683ca7dfebd7459cc5d11b2da6b390f02a3d0e80f58c3b857e8bdd",
+        "0fd43cd359894ec64b533abef33a806c7960b085ea91a2909145c1e485b24468",
+        "51356958b8555db2714f65142b679cc830901ab164d59ae2d0919b294f3284cd",
+        "3f0f29109d07f39a7e9e3f0716d9015a41f3918bc5c57d90c3e016b6606baf95",
+        "8b808d3dfbf9f916dbf47d7e6ae48c1433dd1130903fb6c040c0fed54b462fdf",
+        "81bfb88da18e125392c6954d4103ebf2da06fa1d742dc883b8ac9f8bc3df1ef7",
+        "9b96a0205a44dc4d2132480b27891e38d68e60b2d8e141835f15cd8c473e8084",
+        "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5",
+        "dcbe9606ab51be5efa823077428ac210ffed5fa4d3b236ad6ac37b0c0bca6c22"
       ]
     },
     {
@@ -124,7 +138,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "dd09907f0ab52b6f1cf71f99ef8df68caacc54ab0de8b7d67cf290ba7ba611de"
+      ]
     },
     {
       "development": "Dundee",
@@ -140,7 +156,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "a62c7d3b79da09676bdbb3490c1d22063fc4440b0409237dd5f0bad34b7fbd7a"
+      ]
     },
     {
       "development": "Dundee",
@@ -157,7 +175,16 @@
         }
       ],
       "imageIds": [
-        "9d82298afe86bb41a298d28f21589f31ef97f8cf0c3607b0c1239d0700e2b824"
+        "737a9810b0c20a57abb37b7ad269277b835a3f9b2245e017627917b288c62530",
+        "fc2c1911ff5ef29cd29490bd17cd5d6b41fe02ffddf181ff0a299f063621220b",
+        "575f3832b390587fa79fe3863bf2f60b1c4ab4da827fb6158cd5f99b80c91940",
+        "79f79a8f7c9c83de91defa44ff2ad67eb28e351f215f1c4dfdcd910a7978eac6",
+        "9d82298afe86bb41a298d28f21589f31ef97f8cf0c3607b0c1239d0700e2b824",
+        "ca0212386a110ca6be1f9c16ae16b8ba7833e196733b0549331836cb2590afdf",
+        "eb5832ed23a236c5c330a0f0f2d1253c8e0398ea9be1253acba4eb29253a3bd1",
+        "3562c582e21c17cd47f1906f7da305969468caa3dcfe65e4dad2b72f14912fdd",
+        "37dc95cb8611fd1d61a62d52a4fb713683d6bd5efe5753e9df150e5579c79087",
+        "4a7b74f51b81f0b7769d67d3975ce4302833413a1880efc802ed479fd880a8f0"
       ]
     },
     {
@@ -175,7 +202,17 @@
         }
       ],
       "imageIds": [
-        "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5"
+        "c625ef1a33e234b56f373e3376533e7c71497dba7700bd9071c2902ffb4e8ef2",
+        "2a04945700ea47066e633da5c256105cf4c49d67e5ac8932c15a928f1056efc5",
+        "886a870122683ca7dfebd7459cc5d11b2da6b390f02a3d0e80f58c3b857e8bdd",
+        "0fd43cd359894ec64b533abef33a806c7960b085ea91a2909145c1e485b24468",
+        "51356958b8555db2714f65142b679cc830901ab164d59ae2d0919b294f3284cd",
+        "3f0f29109d07f39a7e9e3f0716d9015a41f3918bc5c57d90c3e016b6606baf95",
+        "8b808d3dfbf9f916dbf47d7e6ae48c1433dd1130903fb6c040c0fed54b462fdf",
+        "81bfb88da18e125392c6954d4103ebf2da06fa1d742dc883b8ac9f8bc3df1ef7",
+        "9b96a0205a44dc4d2132480b27891e38d68e60b2d8e141835f15cd8c473e8084",
+        "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5",
+        "dcbe9606ab51be5efa823077428ac210ffed5fa4d3b236ad6ac37b0c0bca6c22"
       ]
     },
     {
@@ -192,7 +229,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "7287293df672e5d4b7533b59d2b1cd15165a1de112fe05681a753979685643ff"
+      ]
     },
     {
       "development": "Elgin",
@@ -208,7 +247,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "7287293df672e5d4b7533b59d2b1cd15165a1de112fe05681a753979685643ff"
+      ]
     },
     {
       "development": "Millerhill",
@@ -224,7 +265,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "f535d8823016f04a968277407bd88348eead28245f707ffc8303b618699e32cd"
+      ]
     },
     {
       "development": "Perth",
@@ -240,7 +283,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "17fc47fd3ca80356a286cee5554284e7ef693e5ebf27479c77e4f64b05bf4183"
+      ]
     },
     {
       "development": "Perth",
@@ -256,7 +301,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "45134e4338b4ba6ef7987d7408ed667a68fea7f0b38df1fc27cd8718cc5365cc"
+      ]
     },
     {
       "development": "Perth",
@@ -272,7 +319,9 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "ad61642d90c3efa459ee1b8c1f19b5d1d3b7e3409aad8aa77f24d1d9db754e8d"
+      ]
     },
     {
       "development": "Perth",
@@ -288,7 +337,9 @@
           "available": false
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "eb8abc819356f409f37261ff1eeddd68ecd295066eef7a0e4c526308f1f678d4"
+      ]
     },
     {
       "development": "Perth",
@@ -304,10 +355,155 @@
           "available": false
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "fb5a850a24af145d3b2f9f733ebf272e20516bfddad80fae01fd349d836be089"
+      ]
     }
   ],
   "images": [
+    {
+      "id": "f8662cc51474f02faf3cbabcfa52029f49b5c428930db04028ce99830a56f421",
+      "path": "images/f8662cc51474f02faf3cbabcfa52029f49b5c428930db04028ce99830a56f421.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/583/224_-_Prestwick_plot_detail_image.jpg?1790075783",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a modern two-story house with a driveway and garage.",
+        "reason": "This is an exterior house photo, not an interior home office."
+      }
+    },
+    {
+      "id": "7ecc26b31f6e0debfd6f7aaeef2815d458535044edf2a0cd0e7edb120d40c9f6",
+      "path": "images/7ecc26b31f6e0debfd6f7aaeef2815d458535044edf2a0cd0e7edb120d40c9f6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/257/Prestwick_OPP_plot_detail_image.jpg?1782997403",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior rendering of a two-story home with a garage.",
+        "reason": "This is an exterior rendering, not an interior room."
+      }
+    },
+    {
+      "id": "2a04945700ea47066e633da5c256105cf4c49d67e5ac8932c15a928f1056efc5",
+      "path": "images/2a04945700ea47066e633da5c256105cf4c49d67e5ac8932c15a928f1056efc5.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/789/3_Kincraig_lounge_1_A_CROP_plot_detail_image.jpg?1750674026",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "living room",
+        "description": "A well-lit living room featuring sofas, a coffee table, and decorative lighting.",
+        "reason": "This is a living room, not a home office."
+      }
+    },
+    {
+      "id": "886a870122683ca7dfebd7459cc5d11b2da6b390f02a3d0e80f58c3b857e8bdd",
+      "path": "images/886a870122683ca7dfebd7459cc5d11b2da6b390f02a3d0e80f58c3b857e8bdd.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/787/1_Kincraig_dining_kitchen_1_plot_detail_image.jpg?1750673081",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "kitchen/dining",
+        "description": "A modern kitchen and dining area with cabinets, appliances, and a dining table.",
+        "reason": "This is a kitchen and dining area, not a home office."
+      }
+    },
+    {
+      "id": "2e09c9d63a9e4da1067df7b6d0f57f5bf7c0500f69195f81d44c8685ce514c5d",
+      "path": "images/2e09c9d63a9e4da1067df7b6d0f57f5bf7c0500f69195f81d44c8685ce514c5d.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/506/Kincraig_-_Dykes_of_Grey_Dundee_C-06_AS_plot_detail_image.jpg?1730732448",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a modern two-story stone-clad house.",
+        "reason": "This is an exterior photograph, not an interior room."
+      }
+    },
+    {
+      "id": "0fd43cd359894ec64b533abef33a806c7960b085ea91a2909145c1e485b24468",
+      "path": "images/0fd43cd359894ec64b533abef33a806c7960b085ea91a2909145c1e485b24468.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/791/4_Kincraig_lounge_3_B_CROP_plot_detail_image.jpg?1750673946",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "living room",
+        "description": "A stylish living room with a sofa, armchair, coffee table, and wall mirrors.",
+        "reason": "This is a living room, not a home office."
+      }
+    },
+    {
+      "id": "51356958b8555db2714f65142b679cc830901ab164d59ae2d0919b294f3284cd",
+      "path": "images/51356958b8555db2714f65142b679cc830901ab164d59ae2d0919b294f3284cd.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/790/5_Kincraig_hall_2_plot_detail_image.jpg?1790348408",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "hallway",
+        "description": "A bright hallway and entryway featuring a staircase and console table.",
+        "reason": "This is a hallway/entryway, not a home office."
+      }
+    },
+    {
+      "id": "3f0f29109d07f39a7e9e3f0716d9015a41f3918bc5c57d90c3e016b6606baf95",
+      "path": "images/3f0f29109d07f39a7e9e3f0716d9015a41f3918bc5c57d90c3e016b6606baf95.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/792/7_Kincraig_bedroom_1_A_CROP_plot_detail_image.jpg?1750674365",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A staged master bedroom with a large double bed and bedside tables.",
+        "reason": "This is a bedroom containing a visible bed."
+      }
+    },
+    {
+      "id": "8b808d3dfbf9f916dbf47d7e6ae48c1433dd1130903fb6c040c0fed54b462fdf",
+      "path": "images/8b808d3dfbf9f916dbf47d7e6ae48c1433dd1130903fb6c040c0fed54b462fdf.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/794/8_Kincraig_bedroom_2_A_crop_plot_detail_image.jpg?1750674514",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A staged bedroom with a large double bed, bedside tables, and lamps.",
+        "reason": "The room is clearly a bedroom featuring a bed, and there is no desk present."
+      }
+    },
+    {
+      "id": "81bfb88da18e125392c6954d4103ebf2da06fa1d742dc883b8ac9f8bc3df1ef7",
+      "path": "images/81bfb88da18e125392c6954d4103ebf2da06fa1d742dc883b8ac9f8bc3df1ef7.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/795/9_Kincraig_bedroom_3_A_CROP_plot_detail_image.jpg?1750674595",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom featuring a double bed and a desk area with office styling.",
+        "reason": "Although there is a desk area, the presence of a double bed means it fails the negative criteria for office-only rooms."
+      }
+    },
+    {
+      "id": "9b96a0205a44dc4d2132480b27891e38d68e60b2d8e141835f15cd8c473e8084",
+      "path": "images/9b96a0205a44dc4d2132480b27891e38d68e60b2d8e141835f15cd8c473e8084.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/796/10_Kincraig_bedroom_4_A_curves_plot_detail_image.jpg?1750674679",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A children's or single bedroom with a single bed and a small floating wall desk.",
+        "reason": "The room contains a bed, which disqualifies it from matching the home office criteria."
+      }
+    },
     {
       "id": "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5",
       "path": "images/d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5.jpg",
@@ -322,6 +518,97 @@
       }
     },
     {
+      "id": "dcbe9606ab51be5efa823077428ac210ffed5fa4d3b236ad6ac37b0c0bca6c22",
+      "path": "images/dcbe9606ab51be5efa823077428ac210ffed5fa4d3b236ad6ac37b0c0bca6c22.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/800/14_Kincraig_bathroom_B_plot_detail_image.jpg?1750674901",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "bathroom",
+        "description": "A modern bathroom featuring a bathtub, sink, toilet, and tiled walls.",
+        "reason": "This is a bathroom, not a home office."
+      }
+    },
+    {
+      "id": "dd09907f0ab52b6f1cf71f99ef8df68caacc54ab0de8b7d67cf290ba7ba611de",
+      "path": "images/dd09907f0ab52b6f1cf71f99ef8df68caacc54ab0de8b7d67cf290ba7ba611de.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/951/Springfield_Homes_-_Bowmore_-_Dykes_of_Grey_Dundee_C-05_B_300dpi_plot_detail_image.jpg?1770825496",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior render of a two-story residential house with a garage.",
+        "reason": "This is an exterior view of a house, not a room."
+      }
+    },
+    {
+      "id": "a62c7d3b79da09676bdbb3490c1d22063fc4440b0409237dd5f0bad34b7fbd7a",
+      "path": "images/a62c7d3b79da09676bdbb3490c1d22063fc4440b0409237dd5f0bad34b7fbd7a.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/953/OP_Springfield_Homes_-_Bowmore_-_Dykes_of_Grey_Dundee_C-05_B_300dpi_plot_detail_image.jpg?1770826856",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior architectural render showing the front facade of a residential house.",
+        "reason": "This is an exterior architectural render, not an interior room."
+      }
+    },
+    {
+      "id": "737a9810b0c20a57abb37b7ad269277b835a3f9b2245e017627917b288c62530",
+      "path": "images/737a9810b0c20a57abb37b7ad269277b835a3f9b2245e017627917b288c62530.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/325/Dunrobin_DYKES_C6_NEW_OP_plot_detail_image.jpg?1714039360",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior architectural render of a gray stone and white residential house.",
+        "reason": "This is an exterior view of a house, not an interior office."
+      }
+    },
+    {
+      "id": "575f3832b390587fa79fe3863bf2f60b1c4ab4da827fb6158cd5f99b80c91940",
+      "path": "images/575f3832b390587fa79fe3863bf2f60b1c4ab4da827fb6158cd5f99b80c91940.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/722/Dunrobin_lounge_2_CROP_plot_detail_image.jpg?1751293047",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "living room",
+        "description": "A spacious living room featuring two light-colored sofas, coffee tables, and contemporary artwork.",
+        "reason": "It is a living room, not a home office or study, and contains no desk."
+      }
+    },
+    {
+      "id": "fc2c1911ff5ef29cd29490bd17cd5d6b41fe02ffddf181ff0a299f063621220b",
+      "path": "images/fc2c1911ff5ef29cd29490bd17cd5d6b41fe02ffddf181ff0a299f063621220b.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/715/Dunrobin_Dining_kitchen_1_CROP_plot_detail_image.jpg?1751292929",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "kitchen and dining room",
+        "description": "A modern open-plan kitchen and dining area featuring built-in ovens and a dining table set.",
+        "reason": "This is a kitchen and dining room area, not a dedicated home office or study."
+      }
+    },
+    {
+      "id": "79f79a8f7c9c83de91defa44ff2ad67eb28e351f215f1c4dfdcd910a7978eac6",
+      "path": "images/79f79a8f7c9c83de91defa44ff2ad67eb28e351f215f1c4dfdcd910a7978eac6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/718/Dunrobin_ground_floor_hall_2_CROP_plot_detail_image.jpg?1751292986",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "hallway/entryway",
+        "description": "An entryway and hallway featuring a staircase, round mirror, and a decorative plant.",
+        "reason": "This is an entryway and hallway space, not a home office or study."
+      }
+    },
+    {
       "id": "9d82298afe86bb41a298d28f21589f31ef97f8cf0c3607b0c1239d0700e2b824",
       "path": "images/9d82298afe86bb41a298d28f21589f31ef97f8cf0c3607b0c1239d0700e2b824.jpg",
       "sourceUrl": "https://www.springfield.co.uk/assets/000/002/720/Dunrobin_home_office_CROP_AM_plot_detail_image.jpg?1751293009",
@@ -332,6 +619,175 @@
         "roomType": "home office / study",
         "description": "A well-lit home office featuring a large desk with two chairs, desk lamps, an accent chair, and patterned wallpaper.",
         "reason": "It is staged as a home office with visible desks and work surfaces for office work, and contains no bed."
+      }
+    },
+    {
+      "id": "ca0212386a110ca6be1f9c16ae16b8ba7833e196733b0549331836cb2590afdf",
+      "path": "images/ca0212386a110ca6be1f9c16ae16b8ba7833e196733b0549331836cb2590afdf.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/705/Dunrobin_bedroom_1_D_CROP_plot_detail_image.jpg?1751292621",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A well-decorated bedroom featuring a large double bed, bedside lamps, armchairs, and a dressing console.",
+        "reason": "This is a bedroom with a visible bed, which violates the criteria for a home office match."
+      }
+    },
+    {
+      "id": "eb5832ed23a236c5c330a0f0f2d1253c8e0398ea9be1253acba4eb29253a3bd1",
+      "path": "images/eb5832ed23a236c5c330a0f0f2d1253c8e0398ea9be1253acba4eb29253a3bd1.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/709/Dunrobin_bedroom_2B_CROP_plot_detail_image.jpg?1751292675",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A well-lit bedroom featuring a double bed with a brown headboard and patterned wallpaper.",
+        "reason": "The room contains a bed, which violates the criteria for a home office."
+      }
+    },
+    {
+      "id": "3562c582e21c17cd47f1906f7da305969468caa3dcfe65e4dad2b72f14912fdd",
+      "path": "images/3562c582e21c17cd47f1906f7da305969468caa3dcfe65e4dad2b72f14912fdd.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/725/Dunrobin_bedroom_3C_CROP_AM_plot_detail_image.jpg?1751292788",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom staged with a double bed, animal-themed cushions, and a console table along the wall.",
+        "reason": "The room contains a bed, disqualifying it as a home office."
+      }
+    },
+    {
+      "id": "37dc95cb8611fd1d61a62d52a4fb713683d6bd5efe5753e9df150e5579c79087",
+      "path": "images/37dc95cb8611fd1d61a62d52a4fb713683d6bd5efe5753e9df150e5579c79087.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/712/Dunrobin_bedroom_4_CROP_plot_detail_image.jpg?1751292852",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bedroom",
+        "description": "A bedroom with a single bed against a botanical-patterned accent wall.",
+        "reason": "The presence of a bed means this image does not match the home office criteria."
+      }
+    },
+    {
+      "id": "4a7b74f51b81f0b7769d67d3975ce4302833413a1880efc802ed479fd880a8f0",
+      "path": "images/4a7b74f51b81f0b7769d67d3975ce4302833413a1880efc802ed479fd880a8f0.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/701/Dunrobin_bathroom_CROP_plot_detail_image.jpg?1751292531",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "roomType": "bathroom",
+        "description": "A modern bathroom tiled with hexagonal patterns, featuring a bathtub, sink, and toilet.",
+        "reason": "This is a bathroom, not a home office."
+      }
+    },
+    {
+      "id": "c625ef1a33e234b56f373e3376533e7c71497dba7700bd9071c2902ffb4e8ef2",
+      "path": "images/c625ef1a33e234b56f373e3376533e7c71497dba7700bd9071c2902ffb4e8ef2.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/507/Kincraig_-_Dykes_of_Grey_Dundee_C-06_OPP_plot_detail_image.jpg?1730732477",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a modern two-story house with stone cladding and a driveway.",
+        "reason": "This is an exterior view of a house, not a room."
+      }
+    },
+    {
+      "id": "7287293df672e5d4b7533b59d2b1cd15165a1de112fe05681a753979685643ff",
+      "path": "images/7287293df672e5d4b7533b59d2b1cd15165a1de112fe05681a753979685643ff.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/422/Springfield_Homes_North_-_Prestwick_D_OPP_original_C_plot_detail_image.jpg?1782380461",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "Exterior shot of a two-story residential building with a garage and paved driveway.",
+        "reason": "This is an exterior view, not an indoor home office."
+      }
+    },
+    {
+      "id": "f535d8823016f04a968277407bd88348eead28245f707ffc8303b618699e32cd",
+      "path": "images/f535d8823016f04a968277407bd88348eead28245f707ffc8303b618699e32cd.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/414/Gleneagles_-_Millerhill_-_Zone_4_OP_plot_detail_image.jpg?1782313348",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior perspective of a modern detached house with stone and white render facades.",
+        "reason": "This image shows the exterior of a building."
+      }
+    },
+    {
+      "id": "17fc47fd3ca80356a286cee5554284e7ef693e5ebf27479c77e4f64b05bf4183",
+      "path": "images/17fc47fd3ca80356a286cee5554284e7ef693e5ebf27479c77e4f64b05bf4183.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/188/Gleneagles_-_2026_04_29_AS_plot_detail_image.jpg?1778764846",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "Exterior architectural rendering of a contemporary brick and white-rendered home.",
+        "reason": "This is an exterior property view, not a room staged as an office."
+      }
+    },
+    {
+      "id": "45134e4338b4ba6ef7987d7408ed667a68fea7f0b38df1fc27cd8718cc5365cc",
+      "path": "images/45134e4338b4ba6ef7987d7408ed667a68fea7f0b38df1fc27cd8718cc5365cc.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/201/Prestwick_-_2026_04_29_OP_plot_detail_image.jpg?1778769232",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a modern two-story house with a garage and a paved driveway.",
+        "reason": "This is an exterior shot of a house, not a home office."
+      }
+    },
+    {
+      "id": "ad61642d90c3efa459ee1b8c1f19b5d1d3b7e3409aad8aa77f24d1d9db754e8d",
+      "path": "images/ad61642d90c3efa459ee1b8c1f19b5d1d3b7e3409aad8aa77f24d1d9db754e8d.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/174/Carnoustie_-_2026_04_17_AS_plot_detail_image.jpg?1778761818",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior perspective of a contemporary detached house showing the garage and front entrance.",
+        "reason": "This is an exterior photograph, not an interior home office."
+      }
+    },
+    {
+      "id": "eb8abc819356f409f37261ff1eeddd68ecd295066eef7a0e4c526308f1f678d4",
+      "path": "images/eb8abc819356f409f37261ff1eeddd68ecd295066eef7a0e4c526308f1f678d4.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/565/Melford_exterior_plot_detail_image.jpg?1789381556",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior daytime photo of a two-story residential house with a sales sign in front.",
+        "reason": "This is an exterior view of a home, not an interior room or home office."
+      }
+    },
+    {
+      "id": "fb5a850a24af145d3b2f9f733ebf272e20516bfddad80fae01fd349d836be089",
+      "path": "images/fb5a850a24af145d3b2f9f733ebf272e20516bfddad80fae01fd349d836be089.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/189/Gleneagles_-_2026_04_29_OP_plot_detail_image.jpg?1778764986",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "roomType": "exterior",
+        "description": "An exterior shot of a modern residential property featuring brick and white render siding.",
+        "reason": "This shows the outside of a building, so it does not match home office criteria."
       }
     }
   ],
