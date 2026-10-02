@@ -79,9 +79,9 @@ export function GroupCards({
     <div className="site-filter-panel" style={{marginBottom: 24}}>
      <div className="filters site-filters" role="search" aria-label="Filter buildings">
       <label>
-       Homebuilder
+       Builder
        <select value={developer} onChange={e => setDeveloper(e.target.value)}>
-        <option value="">All homebuilders</option>
+        <option value="">All builders</option>
         {developers.map(d => (
          <option key={d} value={d}>{d}</option>
         ))}

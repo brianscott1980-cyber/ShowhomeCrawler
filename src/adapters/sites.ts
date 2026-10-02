@@ -1,3 +1,5 @@
+import * as tulloch from './tulloch/site-parser.js';
+import * as scotia from './scotia/site-parser.js';
 import * as robertson from './robertson/site-parser.js';
 import * as persimmon from './persimmon/site-parser.js';
 import * as springfield from './springfield/site-parser.js';
@@ -13,7 +15,7 @@ export function builderSite(slug='bellway') {
  if(slug==='cala')return {name:'Cala',slug,websiteUrl:'https://www.cala.co.uk',sitemap:'https://www.cala.co.uk/sitemap.xml',...cala};
  if(slug==='barratt')return {name:'Barratt',slug,websiteUrl:'https://www.barratthomes.co.uk',sitemap:'https://www.barratthomes.co.uk/sitemaps/sitemap-barratt-developments.xml',...barratt};
  if(slug==='taylor-wimpey')return {name:'Taylor Wimpey',slug,websiteUrl:'https://www.taylorwimpey.co.uk',sitemap:'https://www.taylorwimpey.co.uk/developments.xml',...taylor};
- if(slug==='david-wilson')return {name:'David Wilson',slug,websiteUrl:'https://www.dwh.co.uk',sitemap:'https://www.dwh.co.uk/sitemap/',...createSiteParser('https://www.dwh.co.uk')};
+ if(slug==='david-wilson')return {name:'David Wilson Homes',slug,websiteUrl:'https://www.dwh.co.uk',sitemap:'https://www.dwh.co.uk/sitemap/',...createSiteParser('https://www.dwh.co.uk')};
  if(slug==='miller-homes')return {name:'Miller Homes',slug,websiteUrl:'https://www.millerhomes.co.uk',sitemap:'https://www.millerhomes.co.uk/sitemaps.xml',...miller};
  if(slug==='avant')return {name:'Avant',slug,websiteUrl:'https://www.avanthomes.co.uk',sitemap:'https://www.avanthomes.co.uk/sitemap.xml',...avant};
  if(slug==='springfield')return {name:'Springfield',slug,websiteUrl:'https://www.springfield.co.uk',sitemap:'https://www.springfield.co.uk/homes-for-sale',...springfield};
@@ -25,6 +27,8 @@ export function builderSite(slug='bellway') {
  if(slug==='lynch-homes')return {name:'Lynch Homes',slug,websiteUrl:'https://www.lynchhomes.co.uk',sitemap:'https://www.lynchhomes.co.uk/sitemap_index.xml',...lynch};
  if(slug==='story-homes')return {name:'Story Homes',slug,websiteUrl:'https://www.storyhomes.co.uk',sitemap:'https://www.storyhomes.co.uk/developments/',...story};
  if(slug==='hill-group')return {name:'Hill Group',slug,websiteUrl:'https://www.hill.co.uk',sitemap:'https://www.hill.co.uk/all-developments',...hill};
+ if(slug==='tulloch-homes')return {name:'Tulloch Homes',slug,websiteUrl:'https://www.tulloch-homes.com',sitemap:'https://www.tulloch-homes.com/homes-for-sale',...tulloch};
+ if(slug==='scotia-homes')return {name:'Scotia Homes',slug,websiteUrl:'https://www.scotia-homes.co.uk',sitemap:'https://www.scotia-homes.co.uk/sitemap.xml',...scotia};
  throw new Error('Unsupported builder.');
 }
 import * as redrow from './redrow/site-parser.js';

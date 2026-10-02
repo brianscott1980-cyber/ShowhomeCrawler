@@ -72,6 +72,6 @@ export async function homepageData() {
  return {
   hero: selected[0] ? photo(selected[0]) : null,
   journeyPhotos: [exterior ? photo(exterior) : selected[0] ? photo(selected[0]) : null, selected[1] ? photo(selected[1]) : null, selected[2] ? photo(selected[2]) : null],
-  featured, mapPhotos, points, counts: { locations: locations.length, buildings: buildings.length, builders: collections.filter(c => c.report.images.some(i => i.verdict?.matches)).length },
+  featured, mapPhotos, points, counts: { locations: locations.length, buildings: buildings.length, builders: collections.filter(c => c.report.images.some(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : i.verdict?.matches)).length },
  };
 }
