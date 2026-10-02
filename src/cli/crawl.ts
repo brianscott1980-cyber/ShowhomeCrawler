@@ -90,7 +90,12 @@ async function main() {
    const property = { development: development.name, developmentUrl: development.url, name: home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
    report.properties.push(property);
    try {
-    const images = galleryImages(await page(home.url));
+    const html = await page(home.url);
+    if ('houseTypeName' in site) {
+     const name = site.houseTypeName(html);
+     if (name) property.name = name;
+    }
+    const images = galleryImages(html);
     if (!images.length) report.errors.push({ url: home.url, stage: 'gallery', message: 'No supported image gallery found; not treated as a negative match.' });
     const galleryKey = sha256(JSON.stringify([...new Set(images.map(i => imageSourceKey(i.url)))].sort()));
     const reused = galleryCache.get(galleryKey);

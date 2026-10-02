@@ -1,0 +1,1747 @@
+{
+  "builder": {
+    "name": "The Berkeley Group",
+    "slug": "berkeley-group",
+    "websiteUrl": "https://www.berkeleygroup.co.uk"
+  },
+  "status": "completed_with_gaps",
+  "startedAt": "2026-10-02T15:34:19.007Z",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/huntley-wharf",
+      "name": "Huntley Wharf",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-midlands/birmingham/snow-hill-wharf",
+      "name": "Snow Hill Wharf",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/brompton-gardens",
+      "name": "Brompton Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/silk-woods",
+      "name": "Silk Woods",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/croydon/saffron-square",
+      "name": "Saffron Square",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/putney/langham-square",
+      "name": "Langham Square",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wimbledon/wimbledon-hill-park",
+      "name": "Wimbledon Hill Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/albert-embankment/the-dumont",
+      "name": "The Dumont",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/leatherhead/princes-chase",
+      "name": "Princes Chase",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/guildford/montagu-gardens",
+      "name": "Montagu Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wembley/grand-union/peninsula-house",
+      "name": "Peninsula House",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/winchester/knights-quarter",
+      "name": "Knights Quarter",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/canterbury/kingsbrook-park",
+      "name": "Kingsbrook Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-exchange-watford/union-court",
+      "name": "Union Court",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/kings-road-park/one-kings-road-park",
+      "name": "One King's Road Park",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/kew-bridge/kew-bridge-west",
+      "name": "Kew Bridge West",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/sutton/sutton-garden-square/the-kensington",
+      "name": "The Kensington",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/hurlingham-place",
+      "name": "Hurlingham Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/poplar/heron-wharf",
+      "name": "Heron Wharf",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/north-bersted/bersted-park",
+      "name": "Bersted Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/cambridgeshire/cambridge/cambridge-riverside",
+      "name": "Cambridge Riverside",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/isleworth/fitzroy-gate",
+      "name": "Fitzroy Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/roehampton/queenmarys-place",
+      "name": "Queen Mary's Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/barnes/the-villas",
+      "name": "The Villas",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/ealing/dickens-yard",
+      "name": "Dickens Yard",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/colindale/beaufort-park",
+      "name": "Beaufort Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wimbledon/holmhurst-mews",
+      "name": "Holmhurst Mews",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/caterham/oakgrove",
+      "name": "Oakgrove",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hareshill/the-grove-collection",
+      "name": "The Grove Collection",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill/oakhill-house",
+      "name": "Oakhill House",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square",
+      "name": "Lombard Square",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/horsham/the-paperyard",
+      "name": "The Paperyard",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/warfield/woodhurst-park",
+      "name": "Woodhurst Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/hornsey/campsbourne-well",
+      "name": "Campsbourne Well",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/vauxhall/the-buckingham-suite",
+      "name": "The Tower, One St George Wharf",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/myro-house",
+      "name": "Myro House",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/the-crown-collection",
+      "name": "The Crown Collection",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/farnham-royal/berkeley-place",
+      "name": "Berkeley Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city",
+      "name": "White City Living",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill/oakhill-copse",
+      "name": "Oakhill Copse",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/kings-road-park",
+      "name": "King's Road Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/lillibrooke",
+      "name": "Lillibrooke",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/bethnal-green/regents-view",
+      "name": "Regent’s View",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hartland-village/camellia-court",
+      "name": "Camellia Court",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/horsham/highwood-village",
+      "name": "Highwood Village",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/the-blackheath-collection-apartments",
+      "name": "The Blackheath Collection Apartments",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside",
+      "name": "Royal Arsenal Riverside",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/richmond/richmond-chase",
+      "name": "Richmond Chase",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/aldgate/goodmans-fields",
+      "name": "Goodman's Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/chelsea/moore-house-grosvenor-waterside",
+      "name": "Moore House, Grosvenor Waterside",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/opal-house",
+      "name": "Opal House",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/edenbrook-village",
+      "name": "Edenbrook Village",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/bethnal-green/regents-view/the-westwood",
+      "name": "The Westwood Building",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/wye-dene",
+      "name": "Wye Dene",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/parkside-collection-at-chelsea-bridge-wharf",
+      "name": "Parkside Collection at Chelsea Bridge Wharf",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/camden/camden-goods-yard/the-gallery",
+      "name": "The Gallery",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-royal-mews",
+      "name": "The Royal Mews",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/camden/camden-goods-yard",
+      "name": "Camden Goods Yard",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills",
+      "name": "Wandsworth Mills",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park/mallard-house-and-ride-view",
+      "name": "Mallard House & Ride View",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wembley/grand-union",
+      "name": "Grand Union",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/holborough/holborough-lakes",
+      "name": "Holborough Lakes",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-arches",
+      "name": "The Arches",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/hammersmith/sovereign-court",
+      "name": "Sovereign Court",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/rickmansworth/elmswater",
+      "name": "Elmswater",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/acton/napier-square",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/kingston/queenshurst",
+      "name": "Queenshurst",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/prince-of-wales-drive",
+      "name": "Prince Of Wales Drive",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/southwark/one-blackfriars",
+      "name": "One Blackfriars",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/west-ham/twelvetrees-park/evergreen-point",
+      "name": "Evergreen Point",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/gosport/royal-clarence-marina",
+      "name": "Royal Clarence Marina",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place/the-art-mill",
+      "name": "The Art Mill",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-chaplin-collection",
+      "name": "The Chaplin Collection",
+      "status": "complete_with_warning",
+      "homes": 2,
+      "qualifying": 1,
+      "warning": "1 qualifying property listings have no property details link; their galleries are unavailable."
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/milton-keynes/eastbrook-village",
+      "name": "Eastbrook Village",
+      "status": "complete_with_warning",
+      "homes": 13,
+      "qualifying": 0,
+      "warning": "1 qualifying property listings have no property details link; their galleries are unavailable."
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-walled-gardens",
+      "name": "The Walled Gardens",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows/the-rosemere-collection",
+      "name": "The Rosemere Collection",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/spring-hill",
+      "name": "Spring Hill",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/hertford/hertford-locks",
+      "name": "Hertford Locks",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wapping/london-dock",
+      "name": "London Dock",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-exchange-watford",
+      "name": "The Exchange Watford",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park/larch-court",
+      "name": "Larch Court",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/westminster/abell-and-cleland",
+      "name": "Abell and Cleland",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/harrow/stanmore-place",
+      "name": "Stanmore Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/hendon/silkstream",
+      "name": "Silkstream",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/gloucestershire/cheltenham/thirlestaine-park",
+      "name": "Thirlestaine Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/the-alba",
+      "name": "The Alba",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wapping/london-dock/jade-wharf",
+      "name": "Jade Wharf",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/oval/oval-village/the-pinnacle",
+      "name": "The Pinnacle",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/beaconsfield/the-groves",
+      "name": "The Groves",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/cranbrook/farmstead",
+      "name": "Farmstead",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/sevenoaks/ryewood",
+      "name": "Ryewood",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter/horlicks-factory",
+      "name": "Horlicks Factory",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-midlands/birmingham/glasswater-locks",
+      "name": "Glasswater Locks",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/staines-upon-thames/eden-grove",
+      "name": "Eden Grove",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/highcroft",
+      "name": "Highcroft",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/southall/the-green-quarter",
+      "name": "The Green Quarter",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/west-ham/twelvetrees-park",
+      "name": "TwelveTrees Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park",
+      "name": "Sunningdale Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park/the-penthouse-collection",
+      "name": "The Penthouse Collection",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/westminster/190-strand",
+      "name": "190 Strand",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/chiswick/chiswick-gate",
+      "name": "Chiswick Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/orpington/brunswick-square",
+      "name": "Brunswick Square",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/gloucestershire/cirencester/kingshill-meadow",
+      "name": "Kingshill Meadow",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills/the-artisan-tower",
+      "name": "The Artisan Tower",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/southall/the-green-quarter/brickfields-quarter-yards",
+      "name": "Brickfields at Quarter Yards",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/skyview-gardens-the-signature-collection",
+      "name": "Skyview Gardens - The Signature Collection",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill/the-apartment-collection",
+      "name": "The Apartment Collection",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/sailors-wharf",
+      "name": "Sailors Wharf - West Quay",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/reading-riverworks",
+      "name": "Reading Riverworks",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill",
+      "name": "Oakhill",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/the-blackheath-collection-townhouses",
+      "name": "Townhouses - The Blackheath Collection",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/waterlily-court",
+      "name": "Waterlily Court",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/horsham/broadacres",
+      "name": "Broadacres",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/queensbury-gardens",
+      "name": "Queensbury Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/cranleigh/leighwood-fields",
+      "name": "Leighwood Fields",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/city-of-london/roman-house",
+      "name": "Roman House",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunningdale-park/the-pavilion",
+      "name": "The Pavilion",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/mill-hill/st-josephs-gate",
+      "name": "St. Joseph's Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/westminster/9-millbank",
+      "name": "9 Millbank",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/walton-on-the-hill/sandlands-park",
+      "name": "Sandlands Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/emperor-point",
+      "name": "Emperor Point",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city/cascades-three-and-four",
+      "name": "Cascades Three & Four",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/bethnal-green/regents-view/the-wright",
+      "name": "The Wright Building",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city/the-solaris-one-and-two",
+      "name": "The Solaris One & Two",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/fulham-reach/palmer-house",
+      "name": "Palmer House",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/seafarers-wharf",
+      "name": "Seafarers Wharf - West Quay",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/lantern-wharf",
+      "name": "Lantern Wharf - West Quay",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/woolwich/royal-arsenal-riverside/the-maribor",
+      "name": "The Maribor",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/watford/the-exchange-watford/dart-house",
+      "name": "Dart House",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hareshill/the-bloom-collection",
+      "name": "The Bloom Collection",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/rosa-house",
+      "name": "Rosa House",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/guildford/arch-and-bloom",
+      "name": "Arch & Bloom",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/cranleigh/leighwood-fields/the-orchards",
+      "name": "The Orchards",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter/the-heritage-house-collection",
+      "name": "The Heritage House Collection",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/rudgwick/barleycroft",
+      "name": "Barleycroft",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/green-park-village",
+      "name": "Green Park Village",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/east-sussex/eastbourne/all-saints",
+      "name": "All Saints",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/the-cottonworks",
+      "name": "The Cottonworks",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/surrey-quays/marine-wharf",
+      "name": "Marine Wharf",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/vista-chelsea-bridge",
+      "name": "Vista, Chelsea Bridge",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/kew-bridge/heritage-walk",
+      "name": "Heritage Walk",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/hurlingham-gate",
+      "name": "Hurlingham Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/kew-bridge/kew-bridge",
+      "name": "Kew Bridge",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/vauxhall/riverlight",
+      "name": "Riverlight",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/banstead/walnut-grove",
+      "name": "Walnut Grove",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/west-ham/twelvetrees-park/the-redwood",
+      "name": "The Redwood",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/oval/oval-village/the-halo",
+      "name": "The Halo",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hareshill",
+      "name": "Hareshill",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/beaconsfield/queens-acre-butlers-court",
+      "name": "Queens Acre, Butlers Court",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/oxshott/linley-house",
+      "name": "Linley House",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/royal-tunbridge-wells/royal-wells-park",
+      "name": "Royal Wells Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/haringey/alexandra-gate",
+      "name": "Alexandra Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park/deangarden-reach",
+      "name": "Deangarden Reach",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hartland-village/pinewood-green",
+      "name": "Pinewood Green",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/plumstead/lombard-square/fero-house",
+      "name": "Fero House",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/bow/bow-green",
+      "name": "Bow Green",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/canary-wharf/south-quay-plaza",
+      "name": "South Quay Plaza",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village",
+      "name": "Kidbrooke Village",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/greenwich/kidbrooke-village/central-gardens",
+      "name": "Central Gardens",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/hartland-village",
+      "name": "Hartland Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/paddock-wood/foal-hurst-green",
+      "name": "Foal Hurst Green",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/gillingham/victory-pier",
+      "name": "Victory Pier",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/albert-embankment/the-corniche",
+      "name": "The Corniche",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/roehampton/roehampton-house",
+      "name": "Roehampton House",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/oval/oval-village",
+      "name": "Oval Village",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/blackheath/forbury",
+      "name": "Forbury Blackheath",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/islington/250-city-road",
+      "name": "250 City Road",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/worcestershire/worcester/the-waterside-at-royal-worcester",
+      "name": "The Waterside at Royal Worcester",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/cobham/fairmile-gate",
+      "name": "Fairmile Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/royal-tunbridge-wells/hollyfields",
+      "name": "Hollyfields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park/willow-rise",
+      "name": "Willow Rise",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter/the-maltings",
+      "name": "The Maltings",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/slough/horlicks-quarter",
+      "name": "Horlicks Quarter",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/kensington/375-kensington-high-street",
+      "name": "375 Kensington High Street",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/bankside-gardens",
+      "name": "Bankside Gardens",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/cranleigh/leighwood-fields/leighwood-manor",
+      "name": "Leighwood Manor",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finchley/imperial-square",
+      "name": "Imperial Square",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/west-sussex/barns-green/the-ashmiles",
+      "name": "The Ashmiles",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/fiennes-park",
+      "name": "Fiennes Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/reading/kennet-island",
+      "name": "Kennet Island",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hertfordshire/borehamwood/fairwood-place",
+      "name": "Fairwood Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/wokingham/eldridge-park",
+      "name": "Eldridge Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/belgravia/ebury-square",
+      "name": "Ebury Square",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/kensington/kensington-row",
+      "name": "Kensington Row",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/kingston/royal-exchange",
+      "name": "Royal Exchange",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/marylebone/west-end-gate",
+      "name": "West End Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/twickenham/brewery-gate",
+      "name": "Brewery Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/southall/the-green-quarter/the-orien",
+      "name": "The Orien at Quarter Yards",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down/the-iris",
+      "name": "The Iris",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows/the-summerleigh-collection",
+      "name": "The Summerleigh Collection",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/hampshire/fleet/edenbrook",
+      "name": "Edenbrook",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/marylebone/trillium",
+      "name": "Trillium",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/sutton/sutton-garden-square",
+      "name": "Sutton Garden Square",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finsbury-park/woodberry-down",
+      "name": "Woodberry Down",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park",
+      "name": "Trent Park",
+      "status": "complete_with_warning",
+      "homes": 11,
+      "qualifying": 2,
+      "warning": "1 qualifying property listings have no property details link; their galleries are unavailable."
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/fulham-reach",
+      "name": "Fulham Reach",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/finchley/the-avenue",
+      "name": "The Avenue",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/winton-place",
+      "name": "Winton Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/berkshire/ascot/sunninghill-square",
+      "name": "Sunninghill Square",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/albert-embankment/merano-residences",
+      "name": "Merano Residences",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/tower-bridge/one-tower-bridge",
+      "name": "One Tower Bridge",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/battersea/battersea-reach",
+      "name": "Battersea Reach",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/hurlingham-walk",
+      "name": "Hurlingham Walk",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/wimbledon/marryat-place",
+      "name": "Marryat Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/tadworth/hazelmoor-rise",
+      "name": "Hazelmoor Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/oxted/courtyard-gardens",
+      "name": "Courtyard Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/camden/camden-goods-yard/the-regent",
+      "name": "The Regent",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/marylebone/trillium/the-burton",
+      "name": "The Burton",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place/the-art-house",
+      "name": "The Art House",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/camberley/lumina",
+      "name": "Lumina",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/surrey/claygate-village/albury-place",
+      "name": "Albury Place",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/kent/sevenoaks/quinton-court",
+      "name": "Quinton Court",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/fulham/kings-road-park/the-charlton",
+      "name": "The Charlton",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-mansion-house",
+      "name": "The Mansion House",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows",
+      "name": "Winterbrook Meadows",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/buckinghamshire/high-wycombe/abbey-barn-park",
+      "name": "Abbey Barn Park",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place",
+      "name": "Bermondsey Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Oakhill Copse",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill/oakhill-copse",
+      "name": "Property 150 · Oakhill Copse · Plot 150",
+      "url": "https://www.berkeleygroup.co.uk/development/oakhill-e079/property-p0150-150?propertyid=1fc35ce21fcd4d158cbb0d23b5226b7d&developmentid=c63c0631936e43f28096377ca0b44cf9",
+      "bedrooms": 5,
+      "price": 1325000,
+      "plots": [
+        {
+          "number": "150",
+          "price": 1325000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Highwood Village",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/west-sussex/horsham/highwood-village",
+      "name": "Property 920 · The Goldings · Plot 920",
+      "url": "https://www.berkeleygroup.co.uk/development/highwood-village-s827/property-p0920-920?propertyid=74a03325b858459989e99f275e575fa8&developmentid=8a0ae8da038248ce81450a609424b3f3",
+      "bedrooms": 5,
+      "price": 1030000,
+      "plots": [
+        {
+          "number": "920",
+          "price": 1030000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Chaplin Collection",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-chaplin-collection",
+      "name": "Property 92 · The Chaplin Collection · Plot 92",
+      "url": "https://www.berkeleygroup.co.uk/development/trent-park-e743/property-p0244-92?propertyid=98f2c2713cfc42daa88aee1930013af1&developmentid=6e7678826565401cb21967424871ed7f",
+      "bedrooms": 5,
+      "price": 1650000,
+      "plots": [
+        {
+          "number": "92",
+          "price": 1650000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Walled Gardens",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park/the-walled-gardens",
+      "name": "Property 10 · Walled Garden · Plot 10",
+      "url": "https://www.berkeleygroup.co.uk/development/trent-park-e743/property-p0193-10?propertyid=38c0907c34bd469eba6a833c921c6382&developmentid=6e7678826565401cb21967424871ed7f",
+      "bedrooms": 5,
+      "price": 1850000,
+      "plots": [
+        {
+          "number": "10",
+          "price": 1850000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Rosemere Collection",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows/the-rosemere-collection",
+      "name": "The Kipling",
+      "url": "https://www.berkeleygroup.co.uk/development/winterbrook-meadows-o480/property-p0189-189?propertyid=f606833674d0434fb1d444ffa5f2621d&developmentid=3e13e3cef1a1470f9995197ed6f596c1",
+      "bedrooms": 5,
+      "price": 899950,
+      "plots": [
+        {
+          "number": "189",
+          "price": 899950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Spring Hill",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/berkshire/maidenhead/spring-hill",
+      "name": "Property 106 · The Rosewood Collection · Plot 106",
+      "url": "https://www.berkeleygroup.co.uk/development/spring-hill-o427/property-p0106-106?propertyid=fa46e3dd908641078970b04e48368914&developmentid=0b23d14333c1453e884cb615522d6726",
+      "bedrooms": 5,
+      "price": 1185000,
+      "plots": [
+        {
+          "number": "106",
+          "price": 1185000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Highcroft",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/highcroft",
+      "name": "Property 290 · Phase 3 · Plot 290",
+      "url": "https://www.berkeleygroup.co.uk/development/highcroft-q703/property-p0290-290?propertyid=65b2c40244c44970902efd3396b9da88&developmentid=b08280648a524812b544229282afeda4",
+      "bedrooms": 5,
+      "price": 960000,
+      "plots": [
+        {
+          "number": "290",
+          "price": 960000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Highcroft",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/highcroft",
+      "name": "Property 288 · Phase 3 · Plot 288",
+      "url": "https://www.berkeleygroup.co.uk/development/highcroft-q703/property-p0288-288?propertyid=31524e77a5854f889b2e4cea4a046382&developmentid=b08280648a524812b544229282afeda4",
+      "bedrooms": 5,
+      "price": 1055000,
+      "plots": [
+        {
+          "number": "288",
+          "price": 1055000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Oakhill",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/kent/hildenborough/oakhill",
+      "name": "Property 150 · Oakhill Copse · Plot 150",
+      "url": "https://www.berkeleygroup.co.uk/development/oakhill-e079/property-p0150-150?propertyid=1fc35ce21fcd4d158cbb0d23b5226b7d&developmentid=c63c0631936e43f28096377ca0b44cf9",
+      "bedrooms": 5,
+      "price": 1325000,
+      "plots": [
+        {
+          "number": "150",
+          "price": 1325000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Trent Park",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park",
+      "name": "Property 92 · The Chaplin Collection · Plot 92",
+      "url": "https://www.berkeleygroup.co.uk/development/trent-park-e743/property-p0244-92?propertyid=98f2c2713cfc42daa88aee1930013af1&developmentid=6e7678826565401cb21967424871ed7f",
+      "bedrooms": 5,
+      "price": 1650000,
+      "plots": [
+        {
+          "number": "92",
+          "price": 1650000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Trent Park",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/london/enfield/trent-park",
+      "name": "Property 10 · Walled Garden · Plot 10",
+      "url": "https://www.berkeleygroup.co.uk/development/trent-park-e743/property-p0193-10?propertyid=38c0907c34bd469eba6a833c921c6382&developmentid=6e7678826565401cb21967424871ed7f",
+      "bedrooms": 5,
+      "price": 1850000,
+      "plots": [
+        {
+          "number": "10",
+          "price": 1850000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Winterbrook Meadows",
+      "developmentUrl": "https://www.berkeleygroup.co.uk/developments/oxfordshire/wallingford/winterbrook-meadows",
+      "name": "The Kipling",
+      "url": "https://www.berkeleygroup.co.uk/development/winterbrook-meadows-o480/property-p0189-189?propertyid=f606833674d0434fb1d444ffa5f2621d&developmentid=3e13e3cef1a1470f9995197ed6f596c1",
+      "bedrooms": 5,
+      "price": 899950,
+      "plots": [
+        {
+          "number": "189",
+          "price": 899950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    }
+  ],
+  "images": [],
+  "errors": [
+    {
+      "url": "https://www.berkeleygroup.co.uk/developments/london/acton/napier-square",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    }
+  ],
+  "metrics": {
+    "sitemapDevelopments": 217,
+    "qualifyingDiscovered": 12,
+    "propertyLimitOmissions": 0,
+    "reusedGalleries": 4,
+    "imagesAttempted": 22,
+    "pendingImages": 0,
+    "matchedImages": 0,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 22
+  },
+  "completedAt": "2026-10-02T15:34:25.052Z"
+}
