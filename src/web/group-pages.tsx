@@ -12,7 +12,7 @@ function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')
 export async function GroupDirectory({kind}:{kind:GroupKind}){
  const groups=await readGroups(kind);const pathPrefix=prefixFor(kind);
  if(kind==='sites'||kind==='locations')return <main><section className="intro compact"><h1>Locations</h1><p>{descriptions.locations}</p></section><SiteDirectory cards={await siteCards(groups)} basePath="/locations"/></main>;
- const cards=groups.map(group=>{const collection=group.collections[0]!,hero=collection.report.images[0]!;return {key:group.key,name:group.name,developers:group.developers,count:group.count,image:assetUrl(collection.slug,hero.path),description:hero.verdict?.description??'Uncategorised interior'};});
+ const cards=groups.map(group=>{const collection=group.collections[0]!,hero=collection.report.images[0]!;const properties=group.collections.flatMap(c=>c.report.properties??[]);const bedrooms=[...new Set(properties.map(p=>p.bedrooms).filter((b):b is number=>typeof b==='number'&&Number.isFinite(b)))].sort((a,b)=>a-b);const locations=[...new Set(properties.map(p=>p.development?.trim()).filter((d):d is string=>Boolean(d)))].sort();return {key:group.key,name:group.name,developers:[...new Set(group.developers)],count:group.count,image:assetUrl(collection.slug,hero.path),description:hero.verdict?.description??'Uncategorised interior',bedrooms,locations};});
  return <main><section className="intro compact"><h1>{labels[kind]}</h1><p>{descriptions[kind]}</p></section><GroupCards cards={cards} pathPrefix={pathPrefix} kindLabel={labels[kind]}/></main>;
 }
 export async function GroupDetail({kind,id}:{kind:GroupKind;id:string}){
