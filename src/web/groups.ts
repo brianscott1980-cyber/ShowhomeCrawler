@@ -7,7 +7,7 @@ export interface Collection {slug:string;name:string;report:RunReport}
 export interface Group {key:string;name:string;developers:string[];collections:Collection[];count:number}
 const keyFor=(value:string)=>createHash('sha256').update(value).digest('hex').slice(0,20);
 export function spaceName(image:ReportImage,question?:string){
- if(!image.verdict)return 'Uncategorised';
+ if(!image.verdict||!image.verdict.matches)return 'Uncategorised';
  if(question&&/home office/i.test(question))return 'Study & Home Office';
  const room=image.verdict.roomType?.trim();
  if(!room||/office|study/i.test(room))return 'Study & Home Office';
@@ -19,7 +19,8 @@ export function groupCollections(collections:Collection[],kind:GroupKind):Group[
  const isSites=kind==='sites'||kind==='locations';
  for(const collection of collections){
   const maps=new Map<string,{name:string;images:ReportImage[];properties:RunReport['properties']}>();
-  for(const image of collection.report.images.filter(i=>!i.verdict||i.verdict.matches)){
+  const targetImages=isSpaces?collection.report.images:collection.report.images.filter(i=>!i.verdict||i.verdict.matches);
+  for(const image of targetImages){
    const homes=(collection.report.properties??[]).filter(p=>p.imageIds.includes(image.id));
    const entries=isSpaces?[{identity:spaceName(image,collection.report.question),name:spaceName(image,collection.report.question),homes}]:homes.map(p=>({identity:isSites?`${collection.slug}:${p.developmentUrl}`:`${collection.slug}:${homeTypeName(p.name).toLowerCase()}`,name:isSites?p.development:homeTypeName(p.name),homes:[p]}));
    for(const entry of entries){let item=maps.get(entry.identity);if(!item){item={name:entry.name,images:[],properties:[]};maps.set(entry.identity,item);}if(!item.images.some(i=>i.id===image.id))item.images.push(image);for(const home of entry.homes)if(!item.properties.includes(home))item.properties.push(home);}

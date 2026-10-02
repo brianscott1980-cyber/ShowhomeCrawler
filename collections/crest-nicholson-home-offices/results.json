@@ -348,7 +348,16 @@
         }
       ],
       "imageIds": [
-        "8fae266e534b08c737598149c251b6fa1b2dff2f3c86d93afb2acdf5dcd5e00b"
+        "ec0a44e6b518c09ee1c0386d9f2d48bce4df197d9389e6efd45c2b3b86ecba86",
+        "7e1ab978afb46b7799bd780f14cafe20127c2ea47bd4c5711b06cabab0a8bbfb",
+        "a0269b52e1958c3e16a5c7de1c247903605362cffabff32b7d58ee6c76b4db23",
+        "170e0291ec6be80ff3ee047656207092cad4ab774988227e3ce6a7c927dfe782",
+        "a9a75c99915aa3916731cc9f080e252623972670596e2404941be93a3727cac6",
+        "8fae266e534b08c737598149c251b6fa1b2dff2f3c86d93afb2acdf5dcd5e00b",
+        "0d442b5f44ec4e733e1676b88eea8a892218160add3f7f5cc7cf141974ee0de5",
+        "b3b3ef78939e32eea82c2757c5865eba0bd28c39ad6ec675016d3337729f1447",
+        "17fae1f4061df739fa9b632a471dbd881af5eb0431e9deeec07b9fc92a0df6d1",
+        "05ab1e6e234608d8436ae9bcf85f917c5e62c85493dbdbf8c12438fdd6d60b65"
       ]
     },
     {
@@ -365,7 +374,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "beb3c67330fbb90b4f68b513e8994a1bd18ada6a392c81ade8e78f0d9159d73a",
+        "093317671a790320742bfe9c58bebd0b45145e895c7014a7118061facfb284f3",
+        "7cb08dfd63c20ef2ec4688e77a8c15a8a56ded2852b853ea7351ec8c2096bb6f",
+        "b60745da176667f8e7a8d21092a0228307f406bbd5606d7877f4af8927125aa9",
+        "93e15cf8fbd0a7d39ed2782066d6be24cd0a68eb8e186ddf4130ad226d9190d7",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "3b6b6345dbb1850572badb1fc835fab5380befeb42f7b73f655e9a18ce072311",
+        "2513b29551b4f3be55e81d15ea516bdfb986ee616e0951fdd5fe056b157ecf91",
+        "70b493eb947e448a95e475e530fe80c483d196943df4b8547551d82b17392d9f",
+        "4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e"
+      ]
     },
     {
       "development": "Westwood Park",
@@ -381,7 +401,16 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "208dc140133ad8c4c57ca33bdcc5a35ab61f74b6577542e5a0f36129d926b187",
+        "93a920ac15b3c966dce09fb911664cf918f2df5b2927091d1a6568306b4d22bc",
+        "eb7676ebd73f8a10172424947731076f55c3ab16f5a0e4828bfa6fef3a1bc383",
+        "871bf43050e8c1a95eb02781ea0a7676d4f2bc06c043a319b55265b1aa4f9454",
+        "377a9f2e7c92e200f813b99b5de8524a8d7486a45c4cd6014f358a5252252fe7",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "a80dc5d1c36214e7cb6c884d4c9a7c585cd2b9d9ba2bfaf13203f1d079aac959",
+        "72f87801f1734c8711d449b41a728302432bf7112aeeb00ee8412e8a560c924f"
+      ]
     },
     {
       "development": "Westwood Park",
@@ -397,7 +426,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "beb3c67330fbb90b4f68b513e8994a1bd18ada6a392c81ade8e78f0d9159d73a",
+        "093317671a790320742bfe9c58bebd0b45145e895c7014a7118061facfb284f3",
+        "7cb08dfd63c20ef2ec4688e77a8c15a8a56ded2852b853ea7351ec8c2096bb6f",
+        "b60745da176667f8e7a8d21092a0228307f406bbd5606d7877f4af8927125aa9",
+        "93e15cf8fbd0a7d39ed2782066d6be24cd0a68eb8e186ddf4130ad226d9190d7",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "3b6b6345dbb1850572badb1fc835fab5380befeb42f7b73f655e9a18ce072311",
+        "2513b29551b4f3be55e81d15ea516bdfb986ee616e0951fdd5fe056b157ecf91",
+        "70b493eb947e448a95e475e530fe80c483d196943df4b8547551d82b17392d9f",
+        "4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e"
+      ]
     },
     {
       "development": "Sketchley Gardens",
@@ -414,6 +454,9 @@
         }
       ],
       "imageIds": [
+        "0f0f5dcfcc6bab16bc69ed33d469b492bf053ad91ef53a176dd167870bbb12bf",
+        "dc27d7c0cba30ea64cd4d9281d8cafe4a4d457142804993f457ffb8af9d835fc",
+        "c32dc95d112d954db13f9e8142bc617b03f34f5e9a4270e8215c65a4afcea27c",
         "395c7cc17b86afb54b758297a22e0cf76ff48436927e4e940f963567dd6b457b"
       ]
     },
@@ -431,7 +474,12 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "0f0f5dcfcc6bab16bc69ed33d469b492bf053ad91ef53a176dd167870bbb12bf",
+        "9337c0ad21e6b7cc2893addd55e84fd5803ae3e76c13131acf4c11b5b8a6aee8",
+        "e043eaf3e7f5976dd58463c414ea94ba7548c86dee1435b88ef072f1d5432f77",
+        "dc27d7c0cba30ea64cd4d9281d8cafe4a4d457142804993f457ffb8af9d835fc"
+      ]
     },
     {
       "development": "Crown Meadows",
@@ -447,7 +495,17 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "10e0c2c08c94a2dcb349bd318c85853689fd1013b87aa8c186a32d7cfba2891b",
+        "f0dce773cd2c232b10151efd2a6ee6f9c8d3a2a16b834ce3b1d6a3ac7dc61068",
+        "b722158fd8bc4888d99e741496e972dba776e658014597c9f9a43e3bee8567c4",
+        "2a41c3b74ff4df5aa0977db01fd2e6baa2a462ef89e19deb41333281be071c57",
+        "2520da7021650346ef489c27e7cbda84f4842b12b068faffecebd491063b1b19",
+        "ea21ca0796a7b1d5b934aa88590f46ef94e493c4a437f17d81befecf682aa174",
+        "922a2e941174d75fa3a23aa608fa581793b9ef2fbf36e872afc4a971ccba9d0f",
+        "2fac63075398e34a8e65641af15fa32d68f77132d025cb2803c6e0e8c06cc422",
+        "6de1f7fabfa75ae24289c4bc2d9e189cd37f054ae379598c5c591707fc725673"
+      ]
     },
     {
       "development": "Crown Meadows",
@@ -463,7 +521,17 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "735fbc782a69af6cdbe61d86884e9108ee453a58ac81be71449eb6d0a5336d00",
+        "ef8d727a174d5109d0510a2d4239795db2a7ef6c070c2e389614f3c83cdc8b6d",
+        "97adc01ae94d88d04e0c45137a949dc3f272c0777e31cf3411d75f5143f2e53d",
+        "be905c92de3a904cb3e37dcf3a4afc9716919f40e09172efea602333d88d63ab",
+        "fbe820e3b26e28bf9737ba80f1380b001f405a668b1fb1ac48df4544c49d17b6",
+        "922a2e941174d75fa3a23aa608fa581793b9ef2fbf36e872afc4a971ccba9d0f",
+        "6de1f7fabfa75ae24289c4bc2d9e189cd37f054ae379598c5c591707fc725673",
+        "2fac63075398e34a8e65641af15fa32d68f77132d025cb2803c6e0e8c06cc422",
+        "ea21ca0796a7b1d5b934aa88590f46ef94e493c4a437f17d81befecf682aa174"
+      ]
     },
     {
       "development": "Marston Leys",
@@ -479,7 +547,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "9bee9e094a6ebc63a1d89530c20bf763b160d256541c8a43c1033eb32cbc1425",
+        "f305ef41112d664f62cd52339e42720e8ab9fe4632183b75b69f2c94a9f2c432",
+        "dd6ef2b13768c4c7de69ef6ab2eb5a67a1a94857de490484820b221e7048e440",
+        "02edf13d13131569dd156d0f0dc73eb31c2e923b5d12be8ce39ee4396294ab3e",
+        "83288d598410a3b1fed5edef22148abfd8c625ca216c163ef6d48e7470edd6b1",
+        "62973ce8606c59471ea8a9ee0fca813816f78a608e7a534136b21ab4747cccf4",
+        "44eb8890b9b07513259e688ae31487aa6ae64d96a2134ca4bbda7561042dc085",
+        "3473eabac4dc7efecbf339aaf6ef4b0e3683e0f36df125869fef49710cdbfd83",
+        "48d6693314e17d9216865513de382f129cb708fd84b69862605fc70bc45c57fc",
+        "15090be467ce2bb9c6c05d7549b094bc1039ad7fe03e4f6c6d2794e02698582a"
+      ]
     },
     {
       "development": "Marston Leys",
@@ -495,7 +574,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "9bee9e094a6ebc63a1d89530c20bf763b160d256541c8a43c1033eb32cbc1425",
+        "f305ef41112d664f62cd52339e42720e8ab9fe4632183b75b69f2c94a9f2c432",
+        "dd6ef2b13768c4c7de69ef6ab2eb5a67a1a94857de490484820b221e7048e440",
+        "02edf13d13131569dd156d0f0dc73eb31c2e923b5d12be8ce39ee4396294ab3e",
+        "83288d598410a3b1fed5edef22148abfd8c625ca216c163ef6d48e7470edd6b1",
+        "62973ce8606c59471ea8a9ee0fca813816f78a608e7a534136b21ab4747cccf4",
+        "44eb8890b9b07513259e688ae31487aa6ae64d96a2134ca4bbda7561042dc085",
+        "3473eabac4dc7efecbf339aaf6ef4b0e3683e0f36df125869fef49710cdbfd83",
+        "48d6693314e17d9216865513de382f129cb708fd84b69862605fc70bc45c57fc",
+        "15090be467ce2bb9c6c05d7549b094bc1039ad7fe03e4f6c6d2794e02698582a"
+      ]
     },
     {
       "development": "Lewin Park",
@@ -512,7 +602,16 @@
         }
       ],
       "imageIds": [
-        "07d06a37e924c56cd0105bd6a7931bcaf1d00799bafb4b3a18626d85e8c1981d"
+        "7d637972a86a25db9e5ce785661c4f2c6de5a334e5430e0fc3df12aea82732df",
+        "e98be6ea68b610eef97c2caa87d1223ecc4a6cd82fd4ef9d62321e46cbe46b8e",
+        "9c1dec0e39cfc584cd964e709bd6fe21e5c33b26409ce800bca886428065e791",
+        "07d06a37e924c56cd0105bd6a7931bcaf1d00799bafb4b3a18626d85e8c1981d",
+        "33e01074875ff4011b112fdd803c3639e37808a75b0ba00f4550f5d5c97cd9a4",
+        "d5bf61e38c6c4e3151cbe2a73e270212e9589f68b00ddbb611bb3d641cc0858a",
+        "466a691c3bc22c46caef4d96e91cef069501e135600a6776069c7fa4eeaf5420",
+        "0bc37ecfe1d292f57f39bececa3d7a0a38304f62b182960aededd7d8d33465ad",
+        "e84abdf97a2bd9f43ee98cd09971275b7f428c38c6d8cc5abc2cc803ed7495fe",
+        "15244c4ca5e5b2fd3858fa52bf2eacf541f3ea66a94284b1d828983107450ce9"
       ]
     },
     {
@@ -529,7 +628,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "42cbd85caba9c2c3d51ecd957431a3ca95235cbab08f9632800d7cf204b75b2e",
+        "95f719f51442c434aae74dbbdd978d143f3a5e879f9dc6b9d69b0fa88a445731",
+        "b60745da176667f8e7a8d21092a0228307f406bbd5606d7877f4af8927125aa9",
+        "4951c716967d11e70da9baf278606371fc61d83278cfd4c1346defc4e240dd49",
+        "dc832a7a1bc95028e491b4fce3c783b0c6d4be2a97cc7bc2367924a4c675ca81",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "e409841cbf3505012b9da17d91c3e444ca1cac08a2c81ac404876d49684b54c4",
+        "a55faa76ca194610785a887c791f487678c7b4894dbc71334c429b001b06076e",
+        "4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e",
+        "3b6b6345dbb1850572badb1fc835fab5380befeb42f7b73f655e9a18ce072311"
+      ]
     },
     {
       "development": "Crest Nicholson at Malabar",
@@ -546,8 +656,15 @@
         }
       ],
       "imageIds": [
+        "b8dff064fe02135cdbc28d3dc4909274dc3ddb25210f40bb72ee04ddc8531ce9",
+        "9598a119915c99b1b9d4965edc044a36e2fbb0a27d6046c6a645c67c65a9aa82",
+        "0f57e84d5889eff4c4f5c01a0e035f993000418de0d33e5c3da353d7ed1c659f",
         "f6ab90b6e4ac7d9499daaaf2e4085e0c1df8562d9f1b4b12a2254df2bb0cd1a4",
-        "40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05"
+        "8e2962dfa7deab4fca4c37039ad01411bc20b3fb4f585a2c2c2ae345e6f0e793",
+        "717462d52a6a61486bbaea76a575b39a0697a5ee03a5174706059aca628433d2",
+        "c55a45a43bafcf31d49c0a3cf0441093fdd10a1df18180a36fb3c7c1468b2915",
+        "40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05",
+        "3e5ccc0aec61c31a99e46bde531d513128027c5d261b71fd3b33d451ab8d8d8c"
       ]
     },
     {
@@ -564,7 +681,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "eb49df1088128e54abfa9ed6d2ab1bb2d6d13e2e27eebd816ee34e4c96f3d20f",
+        "95f719f51442c434aae74dbbdd978d143f3a5e879f9dc6b9d69b0fa88a445731",
+        "93e15cf8fbd0a7d39ed2782066d6be24cd0a68eb8e186ddf4130ad226d9190d7",
+        "b60745da176667f8e7a8d21092a0228307f406bbd5606d7877f4af8927125aa9",
+        "3b6b6345dbb1850572badb1fc835fab5380befeb42f7b73f655e9a18ce072311",
+        "91126486fb7c58d38d01130058d74d061303d2fd47da574671077ab81b86935a",
+        "e409841cbf3505012b9da17d91c3e444ca1cac08a2c81ac404876d49684b54c4",
+        "4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e",
+        "70b493eb947e448a95e475e530fe80c483d196943df4b8547551d82b17392d9f",
+        "2513b29551b4f3be55e81d15ea516bdfb986ee616e0951fdd5fe056b157ecf91"
+      ]
     },
     {
       "development": "Rowden Gate",
@@ -580,7 +708,16 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "6e9c3e673ec3b86bb81e4da87ffc8655a2f76ba904de6540e00c1e8af7abfd55",
+        "208dc140133ad8c4c57ca33bdcc5a35ab61f74b6577542e5a0f36129d926b187",
+        "93a920ac15b3c966dce09fb911664cf918f2df5b2927091d1a6568306b4d22bc",
+        "871bf43050e8c1a95eb02781ea0a7676d4f2bc06c043a319b55265b1aa4f9454",
+        "377a9f2e7c92e200f813b99b5de8524a8d7486a45c4cd6014f358a5252252fe7",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "0bac937b3735c7dd0b6e67c30e44fc19e47b14cd244ac2695257e146d29146be",
+        "72f87801f1734c8711d449b41a728302432bf7112aeeb00ee8412e8a560c924f"
+      ]
     },
     {
       "development": "Rowden Gate",
@@ -596,7 +733,16 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "6e9c3e673ec3b86bb81e4da87ffc8655a2f76ba904de6540e00c1e8af7abfd55",
+        "208dc140133ad8c4c57ca33bdcc5a35ab61f74b6577542e5a0f36129d926b187",
+        "93a920ac15b3c966dce09fb911664cf918f2df5b2927091d1a6568306b4d22bc",
+        "eb7676ebd73f8a10172424947731076f55c3ab16f5a0e4828bfa6fef3a1bc383",
+        "377a9f2e7c92e200f813b99b5de8524a8d7486a45c4cd6014f358a5252252fe7",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "871bf43050e8c1a95eb02781ea0a7676d4f2bc06c043a319b55265b1aa4f9454",
+        "72f87801f1734c8711d449b41a728302432bf7112aeeb00ee8412e8a560c924f"
+      ]
     },
     {
       "development": "Copley Park",
@@ -613,7 +759,16 @@
         }
       ],
       "imageIds": [
-        "26e524e680c25881341ef9e17a0b3cedb7d58436c38b739493828810b283e0dd"
+        "6f7d34caed4d70619533b1e7d5373648fab02930f0b6c9814ba80fd86574137a",
+        "11efe24551e970e86d9eaf7a7346991d45743b03316fd2c7f5b8bb29135dce63",
+        "924ae5ad441e7b0ba50873878105be2a3d69b6aa1f481fe4a477189ab164812b",
+        "6539d7aa77c3dc4396eecb9af63400ae8f0780ab06291b73ec89e11061b13bd0",
+        "26e524e680c25881341ef9e17a0b3cedb7d58436c38b739493828810b283e0dd",
+        "9afa7bbd22c38c1cf6cb5c040832de8672791e7d917db2b17de98e8e31c4492b",
+        "56d41e246b475d741d3f9198c2fd63ef59df97a09087c2ffa7c124dc1c33e7d4",
+        "636c6c437ea1bd627058c8416d9878dff81ad4c009516dd533992b5218114c6e",
+        "79c2b53e3c9556187eb7eafdd0fb2cd91eccab25b0efbf8f9fb6d8e335340094",
+        "d882b864889ea74ad9a9a94bf548a90756afb230ea4952e7edb80a0debd67dd3"
       ]
     },
     {
@@ -630,7 +785,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "75243ec8f5e8c901805e8a3aa87cd2cac08fdcb0e350448b5918591d773e4b67",
+        "093317671a790320742bfe9c58bebd0b45145e895c7014a7118061facfb284f3",
+        "7cb08dfd63c20ef2ec4688e77a8c15a8a56ded2852b853ea7351ec8c2096bb6f",
+        "93e15cf8fbd0a7d39ed2782066d6be24cd0a68eb8e186ddf4130ad226d9190d7",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "377a9f2e7c92e200f813b99b5de8524a8d7486a45c4cd6014f358a5252252fe7",
+        "4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e",
+        "70b493eb947e448a95e475e530fe80c483d196943df4b8547551d82b17392d9f",
+        "e409841cbf3505012b9da17d91c3e444ca1cac08a2c81ac404876d49684b54c4",
+        "2513b29551b4f3be55e81d15ea516bdfb986ee616e0951fdd5fe056b157ecf91"
+      ]
     },
     {
       "development": "Copley Park",
@@ -646,7 +812,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "673044cbf0fd1c9a923fc97c75fc8b3e57a5684c3e32c8240dfa1b2bf0f21863",
+        "093317671a790320742bfe9c58bebd0b45145e895c7014a7118061facfb284f3",
+        "7cb08dfd63c20ef2ec4688e77a8c15a8a56ded2852b853ea7351ec8c2096bb6f",
+        "93e15cf8fbd0a7d39ed2782066d6be24cd0a68eb8e186ddf4130ad226d9190d7",
+        "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+        "377a9f2e7c92e200f813b99b5de8524a8d7486a45c4cd6014f358a5252252fe7",
+        "4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e",
+        "70b493eb947e448a95e475e530fe80c483d196943df4b8547551d82b17392d9f",
+        "e409841cbf3505012b9da17d91c3e444ca1cac08a2c81ac404876d49684b54c4",
+        "2513b29551b4f3be55e81d15ea516bdfb986ee616e0951fdd5fe056b157ecf91"
+      ]
     },
     {
       "development": "Copley Park",
@@ -663,8 +840,15 @@
         }
       ],
       "imageIds": [
+        "3b062549b51e68e16d9e70641c7caadd1c4762ea37c80e09a71842f7a2787a24",
+        "8e2962dfa7deab4fca4c37039ad01411bc20b3fb4f585a2c2c2ae345e6f0e793",
+        "9598a119915c99b1b9d4965edc044a36e2fbb0a27d6046c6a645c67c65a9aa82",
+        "0f57e84d5889eff4c4f5c01a0e035f993000418de0d33e5c3da353d7ed1c659f",
         "f6ab90b6e4ac7d9499daaaf2e4085e0c1df8562d9f1b4b12a2254df2bb0cd1a4",
-        "40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05"
+        "717462d52a6a61486bbaea76a575b39a0697a5ee03a5174706059aca628433d2",
+        "40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05",
+        "c55a45a43bafcf31d49c0a3cf0441093fdd10a1df18180a36fb3c7c1468b2915",
+        "3e5ccc0aec61c31a99e46bde531d513128027c5d261b71fd3b33d451ab8d8d8c"
       ]
     },
     {
@@ -682,8 +866,15 @@
         }
       ],
       "imageIds": [
+        "7316214a6537b50550eceb4d64eaca3dc08495a8b066757dec55ec87d642bb6b",
+        "8e2962dfa7deab4fca4c37039ad01411bc20b3fb4f585a2c2c2ae345e6f0e793",
+        "9598a119915c99b1b9d4965edc044a36e2fbb0a27d6046c6a645c67c65a9aa82",
+        "0f57e84d5889eff4c4f5c01a0e035f993000418de0d33e5c3da353d7ed1c659f",
         "f6ab90b6e4ac7d9499daaaf2e4085e0c1df8562d9f1b4b12a2254df2bb0cd1a4",
-        "40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05"
+        "717462d52a6a61486bbaea76a575b39a0697a5ee03a5174706059aca628433d2",
+        "40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05",
+        "c55a45a43bafcf31d49c0a3cf0441093fdd10a1df18180a36fb3c7c1468b2915",
+        "3e5ccc0aec61c31a99e46bde531d513128027c5d261b71fd3b33d451ab8d8d8c"
       ]
     },
     {
@@ -701,7 +892,16 @@
         }
       ],
       "imageIds": [
-        "395c7cc17b86afb54b758297a22e0cf76ff48436927e4e940f963567dd6b457b"
+        "7ff167b29c0eb1f735ba332071c63a6579d55dd8d9b190faaf671ad3dfb8afc6",
+        "9337c0ad21e6b7cc2893addd55e84fd5803ae3e76c13131acf4c11b5b8a6aee8",
+        "cb7ba2465f70accfc09236d822e7fb5c1b10e76bbeebbafc934e6346cca517f0",
+        "9d4e6a98ac9f4f32735f980c9174dee5093c6bac90f2481e16f5db0408afb32b",
+        "395c7cc17b86afb54b758297a22e0cf76ff48436927e4e940f963567dd6b457b",
+        "dc27d7c0cba30ea64cd4d9281d8cafe4a4d457142804993f457ffb8af9d835fc",
+        "c65f519639cd08d0ce89ea94b50ef83090344b18e3eab0e465da483ef6119d87",
+        "e043eaf3e7f5976dd58463c414ea94ba7548c86dee1435b88ef072f1d5432f77",
+        "6c77d822e5e0bcffe0ec50509a948414692db408facd7a32ba5c2152d68c8bab",
+        "6bc50fa5ecaaab5b5e95ddf3feaffbff2438b3b6eec3403281f3f45467e06ee3"
       ]
     },
     {
@@ -719,7 +919,16 @@
         }
       ],
       "imageIds": [
-        "395c7cc17b86afb54b758297a22e0cf76ff48436927e4e940f963567dd6b457b"
+        "7ff167b29c0eb1f735ba332071c63a6579d55dd8d9b190faaf671ad3dfb8afc6",
+        "9337c0ad21e6b7cc2893addd55e84fd5803ae3e76c13131acf4c11b5b8a6aee8",
+        "cb7ba2465f70accfc09236d822e7fb5c1b10e76bbeebbafc934e6346cca517f0",
+        "9d4e6a98ac9f4f32735f980c9174dee5093c6bac90f2481e16f5db0408afb32b",
+        "395c7cc17b86afb54b758297a22e0cf76ff48436927e4e940f963567dd6b457b",
+        "dc27d7c0cba30ea64cd4d9281d8cafe4a4d457142804993f457ffb8af9d835fc",
+        "c65f519639cd08d0ce89ea94b50ef83090344b18e3eab0e465da483ef6119d87",
+        "e043eaf3e7f5976dd58463c414ea94ba7548c86dee1435b88ef072f1d5432f77",
+        "6c77d822e5e0bcffe0ec50509a948414692db408facd7a32ba5c2152d68c8bab",
+        "6bc50fa5ecaaab5b5e95ddf3feaffbff2438b3b6eec3403281f3f45467e06ee3"
       ]
     },
     {
@@ -737,7 +946,16 @@
         }
       ],
       "imageIds": [
-        "1df9698ebb1f06e8439a81b315e337f374439698fccddec452e26dfa2266e987"
+        "858b0cc3594c574f49ee800d5fdd7cf532fca7c092a759ed6cb0d91f5b05f116",
+        "4a70e8d58958db566bcca55b3f7858b55fdc91340a14eb300bb73e4d46f43849",
+        "38e07d38c74b48047649f8d422a7beff4d2313d8606e007b8f2cfba57cd4ca22",
+        "c5bb898fea4280eaa9ebe62730e1468c5b6df13e701fde34cacedf73184143ba",
+        "e3c9e9c5b1319be4fc512aded603233f876a623a175c4e641fc93ff8560a8f32",
+        "1df9698ebb1f06e8439a81b315e337f374439698fccddec452e26dfa2266e987",
+        "62d7dec9cd0d9b805a0538ad29145b2afda230c4210eb81d14c27a1ef3081c61",
+        "81846e71a74404b398434ac410990c1e589a452f8aa1c13b26659e14859e5624",
+        "8016d0ddfcbb5171ea676223f93b81c2c1e2cc4c8b884a5aa7cf4ac39e24a3b5",
+        "0cf0b7abc5e2a6512c8405c952b72750be1cba549c31ef0eca56c5f6cbf1bd91"
       ]
     },
     {
@@ -755,7 +973,16 @@
         }
       ],
       "imageIds": [
-        "b152d41facfcaf3b5c4d94d8aba639d339e954b032c99c0f194e51330dbe7cde"
+        "d11b2509b5d277be73779d25c8f72c4cde07785f6ecfd30d9459ec17fac463c6",
+        "fd1f194b6b3e744f9e1381c0f0856c4d4bce72836d7d25c95279adc8a5998327",
+        "0b2a9b1da12a26a398a3ff86d49f7f0976258f613b94fdab54216d932c34beba",
+        "48e85d239e4c3e1be85c07c1b4867feacdc9e9bfaf11e40b37843b0c4930bae0",
+        "b152d41facfcaf3b5c4d94d8aba639d339e954b032c99c0f194e51330dbe7cde",
+        "ef3b718c63d46ecd5b2b3aa1201f6e5c9d2f396d5eab5d1b9583f5710de74aab",
+        "4a07b33717af06db837733f7498eea3d54595924ac38141e504c0dc6cd835398",
+        "6d1170cd4cc18be23c27d0471611a41bc2d1a6f355e506b49de31d5ec480a303",
+        "f4dcb7a447542670daeda93eced944cbd478e21e9b6b685def037449e3c04422",
+        "cb5e9c527ccea135bea9529b11341942ce1b7d891e5fab14c4b566cf7941c407"
       ]
     },
     {
@@ -772,7 +999,18 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "d2270b966cec27d06697af783d7202ad0290c29aa4ff4bc982c8cbe3e7e30c62",
+        "20c8cbe3ad4190d6eeda47196b9c75c48d425b05e09cdb8aad4fe362ac4e1836",
+        "a598fb8383dd6498e418407758cbea8907aff8cbccdfdbf9698edc70063e5d76",
+        "482761b785597253a4199854397a44c5d8707c6df1fde3704b0043197a4d5289",
+        "757d21ea5c67863bfe3fb000778b187734d434a98c67a610ada28c19d8172db7",
+        "88d68ca2ddf2f0043ac77a063fbf48b78e618654562725150db4261e8ec2e7b1",
+        "5a05641da82018507c0a30ee1d6dd6b938158397a47c86c6c62aa5a3d451a362",
+        "61ce846ecc647b4b49bd2c7b8ea292bb78ef7d4ab00642def8342ad5d21b73ad",
+        "590754151d0348099b3ba31953d89f4bed048c6fafe7925cd0bdc7cfb0ce5188",
+        "7e914fa03a0128c8e9a30d3314750594812187561cb798d14fe5d03aad624183"
+      ]
     },
     {
       "development": "Windsor Gate",
@@ -789,7 +1027,16 @@
         }
       ],
       "imageIds": [
-        "f12b187d17a4acfd207fd7d91054d91a3da6fd6becae24109869cf0a01cd82ed"
+        "ea7e59b8bf46ec1b8868d6566d7a97e4fe3a13396d0f2c6724d6d011396730fc",
+        "9aa9349d32a584db994ca70ac3f81204d2123edaf42c90eee046f310c2b6bae9",
+        "24d2d772095c8927d07822673ab6c720bbb498a163a3fad484999b0fa5dd4375",
+        "5326a52f8ae0882e66229c2d84b9ecab1085380ca2aa8c991433043ef9885b72",
+        "f12b187d17a4acfd207fd7d91054d91a3da6fd6becae24109869cf0a01cd82ed",
+        "b5a873c543dd037d234f81774a06f619b18d5495ac98041a9f3e75bd097074fe",
+        "0d80aa3321352146b549de86b4ff0c44f3d94076ab3a04d9c1d251831d11916b",
+        "4eb7b960296a5479b9881bf371109c0078bd2348d12abebf8882120e8e7ece44",
+        "5143dfe2cb0904f00915bd7f1fc13d443d9acafa28c8e13c7b14b7d6c02b4271",
+        "1aac59a39ad066a6738e6da109b5badccb632026ac70f1745a3150bb1b97b280"
       ]
     },
     {
@@ -807,6 +1054,15 @@
         }
       ],
       "imageIds": [
+        "577ac5d969f27da9f1cd4dfac1162b9fbc7327cb152b8af855410a6ada0e0763",
+        "e98be6ea68b610eef97c2caa87d1223ecc4a6cd82fd4ef9d62321e46cbe46b8e",
+        "429d412ff262be7ff531d1d9a6d78e7f9826d8917469e0e540da4d0a6ac7ecde",
+        "33e01074875ff4011b112fdd803c3639e37808a75b0ba00f4550f5d5c97cd9a4",
+        "048e8d26aff10fa59da8dd4c7afd1a189ae9440a709c351e2fb1b011a9828de4",
+        "466a691c3bc22c46caef4d96e91cef069501e135600a6776069c7fa4eeaf5420",
+        "e442514c0ed58f51de79f8612a69ef91916c8b861d0cb73bcff4ee934a67b559",
+        "d5bf61e38c6c4e3151cbe2a73e270212e9589f68b00ddbb611bb3d641cc0858a",
+        "15244c4ca5e5b2fd3858fa52bf2eacf541f3ea66a94284b1d828983107450ce9",
         "07d06a37e924c56cd0105bd6a7931bcaf1d00799bafb4b3a18626d85e8c1981d"
       ]
     },
@@ -824,7 +1080,11 @@
           "available": true
         }
       ],
-      "imageIds": []
+      "imageIds": [
+        "c28cb476c417589ee272f6d0f2297c8634bb84b61870c5ebbced32d04e2e3a00",
+        "e2d45022642d7e2d375fcc3521b9baf3775bd1531ebe220c3683bf07912326a1",
+        "e7c80e1a7d48ee5bd4d63d3c5024d0e688db3962d6508db28f0374bc5e82c4fd"
+      ]
     },
     {
       "development": "Newlands Place",
@@ -841,11 +1101,95 @@
         }
       ],
       "imageIds": [
-        "395c7cc17b86afb54b758297a22e0cf76ff48436927e4e940f963567dd6b457b"
+        "daa34b365104a294d74281ba049068654b02689a0677a4fd74cf020ffdc78d51",
+        "dc27d7c0cba30ea64cd4d9281d8cafe4a4d457142804993f457ffb8af9d835fc",
+        "e70f32bfa6826438ad281ec6da6070a4420c1b21618b2449b8f2ca6fc3be77ec",
+        "395c7cc17b86afb54b758297a22e0cf76ff48436927e4e940f963567dd6b457b",
+        "e043eaf3e7f5976dd58463c414ea94ba7548c86dee1435b88ef072f1d5432f77",
+        "6c77d822e5e0bcffe0ec50509a948414692db408facd7a32ba5c2152d68c8bab",
+        "c65f519639cd08d0ce89ea94b50ef83090344b18e3eab0e465da483ef6119d87",
+        "c94c2c1550c59afb88cc3d96361af25ababf699067bee3e957f0db5f8176ab6f",
+        "9d4e6a98ac9f4f32735f980c9174dee5093c6bac90f2481e16f5db0408afb32b",
+        "6bc50fa5ecaaab5b5e95ddf3feaffbff2438b3b6eec3403281f3f45467e06ee3"
       ]
     }
   ],
   "images": [
+    {
+      "id": "a0269b52e1958c3e16a5c7de1c247903605362cffabff32b7d58ee6c76b4db23",
+      "path": "images/a0269b52e1958c3e16a5c7de1c247903605362cffabff32b7d58ee6c76b4db23.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29518-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen/dining",
+        "description": "A kitchen area with a dining table and chairs.",
+        "reason": "This is a kitchen and dining area, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "ec0a44e6b518c09ee1c0386d9f2d48bce4df197d9389e6efd45c2b3b86ecba86",
+      "path": "images/ec0a44e6b518c09ee1c0386d9f2d48bce4df197d9389e6efd45c2b3b86ecba86.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29516-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "This is an exterior view of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "7e1ab978afb46b7799bd780f14cafe20127c2ea47bd4c5711b06cabab0a8bbfb",
+      "path": "images/7e1ab978afb46b7799bd780f14cafe20127c2ea47bd4c5711b06cabab0a8bbfb.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29517-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with cabinets and appliances.",
+        "reason": "This is a kitchen."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "170e0291ec6be80ff3ee047656207092cad4ab774988227e3ce6a7c927dfe782",
+      "path": "images/170e0291ec6be80ff3ee047656207092cad4ab774988227e3ce6a7c927dfe782.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29529-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with armchairs and a coffee table.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "a9a75c99915aa3916731cc9f080e252623972670596e2404941be93a3727cac6",
+      "path": "images/a9a75c99915aa3916731cc9f080e252623972670596e2404941be93a3727cac6.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29520-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a television.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
     {
       "id": "8fae266e534b08c737598149c251b6fa1b2dff2f3c86d93afb2acdf5dcd5e00b",
       "path": "images/8fae266e534b08c737598149c251b6fa1b2dff2f3c86d93afb2acdf5dcd5e00b.jpg",
@@ -858,6 +1202,366 @@
         "roomType": "home office",
         "description": "A dedicated home office space with a desk and chair.",
         "reason": "This is a staged home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0d442b5f44ec4e733e1676b88eea8a892218160add3f7f5cc7cf141974ee0de5",
+      "path": "images/0d442b5f44ec4e733e1676b88eea8a892218160add3f7f5cc7cf141974ee0de5.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29521-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a clothes rack.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "b3b3ef78939e32eea82c2757c5865eba0bd28c39ad6ec675016d3337729f1447",
+      "path": "images/b3b3ef78939e32eea82c2757c5865eba0bd28c39ad6ec675016d3337729f1447.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29523-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and built-in wardrobes.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "17fae1f4061df739fa9b632a471dbd881af5eb0431e9deeec07b9fc92a0df6d1",
+      "path": "images/17fae1f4061df739fa9b632a471dbd881af5eb0431e9deeec07b9fc92a0df6d1.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29526-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a toilet, shower, and a small desk area.",
+        "reason": "This is a bathroom, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "05ab1e6e234608d8436ae9bcf85f917c5e62c85493dbdbf8c12438fdd6d60b65",
+      "path": "images/05ab1e6e234608d8436ae9bcf85f917c5e62c85493dbdbf8c12438fdd6d60b65.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29527-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A backyard garden with a shed.",
+        "reason": "This is an outdoor space, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "beb3c67330fbb90b4f68b513e8994a1bd18ada6a392c81ade8e78f0d9159d73a",
+      "path": "images/beb3c67330fbb90b4f68b513e8994a1bd18ada6a392c81ade8e78f0d9159d73a.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28275-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a brick house.",
+        "reason": "This is an exterior view of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "7cb08dfd63c20ef2ec4688e77a8c15a8a56ded2852b853ea7351ec8c2096bb6f",
+      "path": "images/7cb08dfd63c20ef2ec4688e77a8c15a8a56ded2852b853ea7351ec8c2096bb6f.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/21812-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room combined with a dining area and kitchen.",
+        "reason": "This is a living/dining/kitchen area, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "093317671a790320742bfe9c58bebd0b45145e895c7014a7118061facfb284f3",
+      "path": "images/093317671a790320742bfe9c58bebd0b45145e895c7014a7118061facfb284f3.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/21814-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A kitchen with a dining table.",
+        "reason": "This is a kitchen/dining area."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "b60745da176667f8e7a8d21092a0228307f406bbd5606d7877f4af8927125aa9",
+      "path": "images/b60745da176667f8e7a8d21092a0228307f406bbd5606d7877f4af8927125aa9.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/21846-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a dining table.",
+        "reason": "This is a living/dining area."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "93e15cf8fbd0a7d39ed2782066d6be24cd0a68eb8e186ddf4130ad226d9190d7",
+      "path": "images/93e15cf8fbd0a7d39ed2782066d6be24cd0a68eb8e186ddf4130ad226d9190d7.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/21818-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and chairs.",
+        "reason": "This is a living room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e",
+      "path": "images/24a7b08b5f6006198ea452633e6454e111adebc480729ff877b108d13524d68e.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/21811-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a daybed and a desk.",
+        "reason": "The room contains a bed (daybed), which disqualifies it as a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "3b6b6345dbb1850572badb1fc835fab5380befeb42f7b73f655e9a18ce072311",
+      "path": "images/3b6b6345dbb1850572badb1fc835fab5380befeb42f7b73f655e9a18ce072311.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/20859-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and headboard.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "2513b29551b4f3be55e81d15ea516bdfb986ee616e0951fdd5fe056b157ecf91",
+      "path": "images/2513b29551b4f3be55e81d15ea516bdfb986ee616e0951fdd5fe056b157ecf91.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/20861-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A child's bedroom with a bed and dresser.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "70b493eb947e448a95e475e530fe80c483d196943df4b8547551d82b17392d9f",
+      "path": "images/70b493eb947e448a95e475e530fe80c483d196943df4b8547551d82b17392d9f.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/20863-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a toilet, sink, and shower.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e",
+      "path": "images/4d426de3b3c6e2853acf63c4b635aef949cbbf31d8cc011bbd26f7a7c5e1051e.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/20862-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and canopy.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "93a920ac15b3c966dce09fb911664cf918f2df5b2927091d1a6568306b4d22bc",
+      "path": "images/93a920ac15b3c966dce09fb911664cf918f2df5b2927091d1a6568306b4d22bc.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/35430-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a coffee table.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "eb7676ebd73f8a10172424947731076f55c3ab16f5a0e4828bfa6fef3a1bc383",
+      "path": "images/eb7676ebd73f8a10172424947731076f55c3ab16f5a0e4828bfa6fef3a1bc383.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/28951-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A view of a garden through open doors.",
+        "reason": "This is an exterior view, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "208dc140133ad8c4c57ca33bdcc5a35ab61f74b6577542e5a0f36129d926b187",
+      "path": "images/208dc140133ad8c4c57ca33bdcc5a35ab61f74b6577542e5a0f36129d926b187.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/28946-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "871bf43050e8c1a95eb02781ea0a7676d4f2bc06c043a319b55265b1aa4f9454",
+      "path": "images/871bf43050e8c1a95eb02781ea0a7676d4f2bc06c043a319b55265b1aa4f9454.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/28944-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "A view of a staircase and a hallway leading to other rooms.",
+        "reason": "This is a hallway and staircase area, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "377a9f2e7c92e200f813b99b5de8524a8d7486a45c4cd6014f358a5252252fe7",
+      "path": "images/377a9f2e7c92e200f813b99b5de8524a8d7486a45c4cd6014f358a5252252fe7.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/28948-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a dresser.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "a80dc5d1c36214e7cb6c884d4c9a7c585cd2b9d9ba2bfaf13203f1d079aac959",
+      "path": "images/a80dc5d1c36214e7cb6c884d4c9a7c585cd2b9d9ba2bfaf13203f1d079aac959.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/35964-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A modern bathroom with a shower and sink.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "72f87801f1734c8711d449b41a728302432bf7112aeeb00ee8412e8a560c924f",
+      "path": "images/72f87801f1734c8711d449b41a728302432bf7112aeeb00ee8412e8a560c924f.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/31672-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a bathtub and shower.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c32dc95d112d954db13f9e8142bc617b03f34f5e9a4270e8215c65a4afcea27c",
+      "path": "images/c32dc95d112d954db13f9e8142bc617b03f34f5e9a4270e8215c65a4afcea27c.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/30260-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs, adjacent to a kitchen.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0f0f5dcfcc6bab16bc69ed33d469b492bf053ad91ef53a176dd167870bbb12bf",
+      "path": "images/0f0f5dcfcc6bab16bc69ed33d469b492bf053ad91ef53a176dd167870bbb12bf.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36431-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "This is an exterior view of a house, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "dc27d7c0cba30ea64cd4d9281d8cafe4a4d457142804993f457ffb8af9d835fc",
+      "path": "images/dc27d7c0cba30ea64cd4d9281d8cafe4a4d457142804993f457ffb8af9d835fc.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/30262-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a television.",
+        "reason": "This is a living room, not a home office."
       },
       "analysisModel": "gemini-3.1-flash-lite"
     },
@@ -877,6 +1581,441 @@
       "analysisModel": "gemini-3.1-flash-lite"
     },
     {
+      "id": "e043eaf3e7f5976dd58463c414ea94ba7548c86dee1435b88ef072f1d5432f77",
+      "path": "images/e043eaf3e7f5976dd58463c414ea94ba7548c86dee1435b88ef072f1d5432f77.png",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/25476-plot-lead.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and nightstand.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "9337c0ad21e6b7cc2893addd55e84fd5803ae3e76c13131acf4c11b5b8a6aee8",
+      "path": "images/9337c0ad21e6b7cc2893addd55e84fd5803ae3e76c13131acf4c11b5b8a6aee8.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/25472-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs, adjacent to a kitchen.",
+        "reason": "The room is a dining area, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "f0dce773cd2c232b10151efd2a6ee6f9c8d3a2a16b834ce3b1d6a3ac7dc61068",
+      "path": "images/f0dce773cd2c232b10151efd2a6ee6f9c8d3a2a16b834ce3b1d6a3ac7dc61068.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36899-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with cabinets and appliances.",
+        "reason": "The room is a kitchen."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "10e0c2c08c94a2dcb349bd318c85853689fd1013b87aa8c186a32d7cfba2891b",
+      "path": "images/10e0c2c08c94a2dcb349bd318c85853689fd1013b87aa8c186a32d7cfba2891b.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36897-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a brick house.",
+        "reason": "The image shows the exterior of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "b722158fd8bc4888d99e741496e972dba776e658014597c9f9a43e3bee8567c4",
+      "path": "images/b722158fd8bc4888d99e741496e972dba776e658014597c9f9a43e3bee8567c4.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36900-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen/dining",
+        "description": "An open plan kitchen and dining area with patio doors.",
+        "reason": "The room is a kitchen and dining area."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "2a41c3b74ff4df5aa0977db01fd2e6baa2a462ef89e19deb41333281be071c57",
+      "path": "images/2a41c3b74ff4df5aa0977db01fd2e6baa2a462ef89e19deb41333281be071c57.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36903-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "utility room",
+        "description": "A small utility room with a sink and cabinets.",
+        "reason": "The room is a utility room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "2520da7021650346ef489c27e7cbda84f4842b12b068faffecebd491063b1b19",
+      "path": "images/2520da7021650346ef489c27e7cbda84f4842b12b068faffecebd491063b1b19.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36901-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "empty room",
+        "description": "An empty room with carpet and a window.",
+        "reason": "The room is empty and does not contain a desk."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "ea21ca0796a7b1d5b934aa88590f46ef94e493c4a437f17d81befecf682aa174",
+      "path": "images/ea21ca0796a7b1d5b934aa88590f46ef94e493c4a437f17d81befecf682aa174.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36898-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a bathtub, toilet, and sink.",
+        "reason": "The room is a bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "922a2e941174d75fa3a23aa608fa581793b9ef2fbf36e872afc4a971ccba9d0f",
+      "path": "images/922a2e941174d75fa3a23aa608fa581793b9ef2fbf36e872afc4a971ccba9d0f.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36902-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A modern bathroom with a shower enclosure, sink, and toilet.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "2fac63075398e34a8e65641af15fa32d68f77132d025cb2803c6e0e8c06cc422",
+      "path": "images/2fac63075398e34a8e65641af15fa32d68f77132d025cb2803c6e0e8c06cc422.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36887-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "closet/dressing room",
+        "description": "A small room with large mirrored sliding wardrobe doors.",
+        "reason": "This room does not contain a desk or work surface."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6de1f7fabfa75ae24289c4bc2d9e189cd37f054ae379598c5c591707fc725673",
+      "path": "images/6de1f7fabfa75ae24289c4bc2d9e189cd37f054ae379598c5c591707fc725673.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36885-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "empty room",
+        "description": "An empty room with carpet and white walls.",
+        "reason": "The room is unfurnished and does not contain a desk."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "735fbc782a69af6cdbe61d86884e9108ee453a58ac81be71449eb6d0a5336d00",
+      "path": "images/735fbc782a69af6cdbe61d86884e9108ee453a58ac81be71449eb6d0a5336d00.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36904-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a house.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "ef8d727a174d5109d0510a2d4239795db2a7ef6c070c2e389614f3c83cdc8b6d",
+      "path": "images/ef8d727a174d5109d0510a2d4239795db2a7ef6c070c2e389614f3c83cdc8b6d.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36910-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A kitchen area with dark cabinets.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "97adc01ae94d88d04e0c45137a949dc3f272c0777e31cf3411d75f5143f2e53d",
+      "path": "images/97adc01ae94d88d04e0c45137a949dc3f272c0777e31cf3411d75f5143f2e53d.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36909-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A kitchen area with dark cabinets.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "be905c92de3a904cb3e37dcf3a4afc9716919f40e09172efea602333d88d63ab",
+      "path": "images/be905c92de3a904cb3e37dcf3a4afc9716919f40e09172efea602333d88d63ab.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36908-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "A hallway with a staircase.",
+        "reason": "This is a hallway and staircase, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "fbe820e3b26e28bf9737ba80f1380b001f405a668b1fb1ac48df4544c49d17b6",
+      "path": "images/fbe820e3b26e28bf9737ba80f1380b001f405a668b1fb1ac48df4544c49d17b6.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36911-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "empty room",
+        "description": "An empty room with carpet and white walls.",
+        "reason": "The room is unfurnished and does not contain a desk."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "9bee9e094a6ebc63a1d89530c20bf763b160d256541c8a43c1033eb32cbc1425",
+      "path": "images/9bee9e094a6ebc63a1d89530c20bf763b160d256541c8a43c1033eb32cbc1425.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34780-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a house.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "dd6ef2b13768c4c7de69ef6ab2eb5a67a1a94857de490484820b221e7048e440",
+      "path": "images/dd6ef2b13768c4c7de69ef6ab2eb5a67a1a94857de490484820b221e7048e440.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34781-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A kitchen with dining area.",
+        "reason": "This is a kitchen and dining area, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "f305ef41112d664f62cd52339e42720e8ab9fe4632183b75b69f2c94a9f2c432",
+      "path": "images/f305ef41112d664f62cd52339e42720e8ab9fe4632183b75b69f2c94a9f2c432.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34779-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs, open to a kitchen area.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "02edf13d13131569dd156d0f0dc73eb31c2e923b5d12be8ce39ee4396294ab3e",
+      "path": "images/02edf13d13131569dd156d0f0dc73eb31c2e923b5d12be8ce39ee4396294ab3e.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34782-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and armchairs.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "83288d598410a3b1fed5edef22148abfd8c625ca216c163ef6d48e7470edd6b1",
+      "path": "images/83288d598410a3b1fed5edef22148abfd8c625ca216c163ef6d48e7470edd6b1.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34783-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a large bed.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "62973ce8606c59471ea8a9ee0fca813816f78a608e7a534136b21ab4747cccf4",
+      "path": "images/62973ce8606c59471ea8a9ee0fca813816f78a608e7a534136b21ab4747cccf4.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34785-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a shower and sink.",
+        "reason": "This is a bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "44eb8890b9b07513259e688ae31487aa6ae64d96a2134ca4bbda7561042dc085",
+      "path": "images/44eb8890b9b07513259e688ae31487aa6ae64d96a2134ca4bbda7561042dc085.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34784-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a small desk area.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "3473eabac4dc7efecbf339aaf6ef4b0e3683e0f36df125869fef49710cdbfd83",
+      "path": "images/3473eabac4dc7efecbf339aaf6ef4b0e3683e0f36df125869fef49710cdbfd83.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34788-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a bathtub and shower.",
+        "reason": "This is a bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "48d6693314e17d9216865513de382f129cb708fd84b69862605fc70bc45c57fc",
+      "path": "images/48d6693314e17d9216865513de382f129cb708fd84b69862605fc70bc45c57fc.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34786-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and basketball decor.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "15090be467ce2bb9c6c05d7549b094bc1039ad7fe03e4f6c6d2794e02698582a",
+      "path": "images/15090be467ce2bb9c6c05d7549b094bc1039ad7fe03e4f6c6d2794e02698582a.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34787-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A child's bedroom with a bed and a desk.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "7d637972a86a25db9e5ce785661c4f2c6de5a334e5430e0fc3df12aea82732df",
+      "path": "images/7d637972a86a25db9e5ce785661c4f2c6de5a334e5430e0fc3df12aea82732df.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/23333-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a two-story brick residential house.",
+        "reason": "The image shows the exterior of a house, not an interior home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e98be6ea68b610eef97c2caa87d1223ecc4a6cd82fd4ef9d62321e46cbe46b8e",
+      "path": "images/e98be6ea68b610eef97c2caa87d1223ecc4a6cd82fd4ef9d62321e46cbe46b8e.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29661-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living/dining room",
+        "description": "A combined living and dining area with a kitchen in the background.",
+        "reason": "This is a living and dining room, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "9c1dec0e39cfc584cd964e709bd6fe21e5c33b26409ce800bca886428065e791",
+      "path": "images/9c1dec0e39cfc584cd964e709bd6fe21e5c33b26409ce800bca886428065e791.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29663-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa, television, and shelving units.",
+        "reason": "This is a living room, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
       "id": "07d06a37e924c56cd0105bd6a7931bcaf1d00799bafb4b3a18626d85e8c1981d",
       "path": "images/07d06a37e924c56cd0105bd6a7931bcaf1d00799bafb4b3a18626d85e8c1981d.jpg",
       "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29657-house-type-hero.jpg",
@@ -888,6 +2027,231 @@
         "roomType": "home office",
         "description": "A dedicated home office with a desk, chairs, and office decor.",
         "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "33e01074875ff4011b112fdd803c3639e37808a75b0ba00f4550f5d5c97cd9a4",
+      "path": "images/33e01074875ff4011b112fdd803c3639e37808a75b0ba00f4550f5d5c97cd9a4.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29658-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "utility room",
+        "description": "A utility room with a sink and washing machine.",
+        "reason": "This is a utility room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "d5bf61e38c6c4e3151cbe2a73e270212e9589f68b00ddbb611bb3d641cc0858a",
+      "path": "images/d5bf61e38c6c4e3151cbe2a73e270212e9589f68b00ddbb611bb3d641cc0858a.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29664-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a small vanity table.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "466a691c3bc22c46caef4d96e91cef069501e135600a6776069c7fa4eeaf5420",
+      "path": "images/466a691c3bc22c46caef4d96e91cef069501e135600a6776069c7fa4eeaf5420.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29655-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a shower, toilet, and sink.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0bc37ecfe1d292f57f39bececa3d7a0a38304f62b182960aededd7d8d33465ad",
+      "path": "images/0bc37ecfe1d292f57f39bececa3d7a0a38304f62b182960aededd7d8d33465ad.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29648-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a small vanity table.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e84abdf97a2bd9f43ee98cd09971275b7f428c38c6d8cc5abc2cc803ed7495fe",
+      "path": "images/e84abdf97a2bd9f43ee98cd09971275b7f428c38c6d8cc5abc2cc803ed7495fe.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29650-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "15244c4ca5e5b2fd3858fa52bf2eacf541f3ea66a94284b1d828983107450ce9",
+      "path": "images/15244c4ca5e5b2fd3858fa52bf2eacf541f3ea66a94284b1d828983107450ce9.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29659-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a desk surface.",
+        "reason": "The room contains a bed, which disqualifies it as a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "95f719f51442c434aae74dbbdd978d143f3a5e879f9dc6b9d69b0fa88a445731",
+      "path": "images/95f719f51442c434aae74dbbdd978d143f3a5e879f9dc6b9d69b0fa88a445731.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/24523-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen/dining",
+        "description": "A kitchen and dining area.",
+        "reason": "This is a kitchen and dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "42cbd85caba9c2c3d51ecd957431a3ca95235cbab08f9632800d7cf204b75b2e",
+      "path": "images/42cbd85caba9c2c3d51ecd957431a3ca95235cbab08f9632800d7cf204b75b2e.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/28927-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a house.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4951c716967d11e70da9baf278606371fc61d83278cfd4c1346defc4e240dd49",
+      "path": "images/4951c716967d11e70da9baf278606371fc61d83278cfd4c1346defc4e240dd49.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/24511-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and coffee tables.",
+        "reason": "This is a living room, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "dc832a7a1bc95028e491b4fce3c783b0c6d4be2a97cc7bc2367924a4c675ca81",
+      "path": "images/dc832a7a1bc95028e491b4fce3c783b0c6d4be2a97cc7bc2367924a4c675ca81.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/24515-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A garden patio area.",
+        "reason": "This is an outdoor space."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e409841cbf3505012b9da17d91c3e444ca1cac08a2c81ac404876d49684b54c4",
+      "path": "images/e409841cbf3505012b9da17d91c3e444ca1cac08a2c81ac404876d49684b54c4.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/24521-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "a55faa76ca194610785a887c791f487678c7b4894dbc71334c429b001b06076e",
+      "path": "images/a55faa76ca194610785a887c791f487678c7b4894dbc71334c429b001b06076e.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/24513-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom/bathroom",
+        "description": "A view of a bedroom and an adjacent bathroom.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "b8dff064fe02135cdbc28d3dc4909274dc3ddb25210f40bb72ee04ddc8531ce9",
+      "path": "images/b8dff064fe02135cdbc28d3dc4909274dc3ddb25210f40bb72ee04ddc8531ce9.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26127-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a housing development.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0f57e84d5889eff4c4f5c01a0e035f993000418de0d33e5c3da353d7ed1c659f",
+      "path": "images/0f57e84d5889eff4c4f5c01a0e035f993000418de0d33e5c3da353d7ed1c659f.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26135-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa, armchair, and TV unit.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "9598a119915c99b1b9d4965edc044a36e2fbb0a27d6046c6a645c67c65a9aa82",
+      "path": "images/9598a119915c99b1b9d4965edc044a36e2fbb0a27d6046c6a645c67c65a9aa82.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26129-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs.",
+        "reason": "This is a dining room, not a home office."
       },
       "analysisModel": "gemini-3.1-flash-lite"
     },
@@ -907,6 +2271,51 @@
       "analysisModel": "gemini-3.1-flash-lite"
     },
     {
+      "id": "8e2962dfa7deab4fca4c37039ad01411bc20b3fb4f585a2c2c2ae345e6f0e793",
+      "path": "images/8e2962dfa7deab4fca4c37039ad01411bc20b3fb4f585a2c2c2ae345e6f0e793.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26128-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs, open to a kitchen.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "717462d52a6a61486bbaea76a575b39a0697a5ee03a5174706059aca628433d2",
+      "path": "images/717462d52a6a61486bbaea76a575b39a0697a5ee03a5174706059aca628433d2.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26134-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a large bed and a headboard.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c55a45a43bafcf31d49c0a3cf0441093fdd10a1df18180a36fb3c7c1468b2915",
+      "path": "images/c55a45a43bafcf31d49c0a3cf0441093fdd10a1df18180a36fb3c7c1468b2915.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26133-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a shower and sink.",
+        "reason": "The room is a bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
       "id": "40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05",
       "path": "images/40d2db0258653c6f87611747537bd5e324bf54112d88732d66b9adb3058e6f05.jpg",
       "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26132-house-type-hero.jpg",
@@ -918,6 +2327,141 @@
         "roomType": "home office",
         "description": "A room staged as a home office with a desk, chair, and sofa.",
         "reason": "The room is a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "3e5ccc0aec61c31a99e46bde531d513128027c5d261b71fd3b33d451ab8d8d8c",
+      "path": "images/3e5ccc0aec61c31a99e46bde531d513128027c5d261b71fd3b33d451ab8d8d8c.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26130-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed featuring superhero bedding.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "eb49df1088128e54abfa9ed6d2ab1bb2d6d13e2e27eebd816ee34e4c96f3d20f",
+      "path": "images/eb49df1088128e54abfa9ed6d2ab1bb2d6d13e2e27eebd816ee34e4c96f3d20f.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28549-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "The image is an exterior view of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "91126486fb7c58d38d01130058d74d061303d2fd47da574671077ab81b86935a",
+      "path": "images/91126486fb7c58d38d01130058d74d061303d2fd47da574671077ab81b86935a.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/21854-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a shower and sink.",
+        "reason": "The room is a bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0bac937b3735c7dd0b6e67c30e44fc19e47b14cd244ac2695257e146d29146be",
+      "path": "images/0bac937b3735c7dd0b6e67c30e44fc19e47b14cd244ac2695257e146d29146be.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/31399-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a shower and sink.",
+        "reason": "The room is a bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6e9c3e673ec3b86bb81e4da87ffc8655a2f76ba904de6540e00c1e8af7abfd55",
+      "path": "images/6e9c3e673ec3b86bb81e4da87ffc8655a2f76ba904de6540e00c1e8af7abfd55.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/29056-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "The image is an exterior view of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6f7d34caed4d70619533b1e7d5373648fab02930f0b6c9814ba80fd86574137a",
+      "path": "images/6f7d34caed4d70619533b1e7d5373648fab02930f0b6c9814ba80fd86574137a.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34658-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a brick house.",
+        "reason": "This is an exterior shot of a building, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "11efe24551e970e86d9eaf7a7346991d45743b03316fd2c7f5b8bb29135dce63",
+      "path": "images/11efe24551e970e86d9eaf7a7346991d45743b03316fd2c7f5b8bb29135dce63.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34660-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living/dining/kitchen",
+        "description": "An open plan living, dining, and kitchen area.",
+        "reason": "This is a multi-purpose living space, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "924ae5ad441e7b0ba50873878105be2a3d69b6aa1f481fe4a477189ab164812b",
+      "path": "images/924ae5ad441e7b0ba50873878105be2a3d69b6aa1f481fe4a477189ab164812b.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34661-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with dark cabinets.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6539d7aa77c3dc4396eecb9af63400ae8f0780ab06291b73ec89e11061b13bd0",
+      "path": "images/6539d7aa77c3dc4396eecb9af63400ae8f0780ab06291b73ec89e11061b13bd0.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34659-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a coffee table.",
+        "reason": "This is a living room, not a home office."
       },
       "analysisModel": "gemini-3.1-flash-lite"
     },
@@ -937,6 +2481,306 @@
       "analysisModel": "gemini-3.1-flash-lite"
     },
     {
+      "id": "9afa7bbd22c38c1cf6cb5c040832de8672791e7d917db2b17de98e8e31c4492b",
+      "path": "images/9afa7bbd22c38c1cf6cb5c040832de8672791e7d917db2b17de98e8e31c4492b.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34663-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a vanity table.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "56d41e246b475d741d3f9198c2fd63ef59df97a09087c2ffa7c124dc1c33e7d4",
+      "path": "images/56d41e246b475d741d3f9198c2fd63ef59df97a09087c2ffa7c124dc1c33e7d4.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34664-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom/ensuite",
+        "description": "A view from a bathroom into a bedroom with a bed.",
+        "reason": "This room contains a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "636c6c437ea1bd627058c8416d9878dff81ad4c009516dd533992b5218114c6e",
+      "path": "images/636c6c437ea1bd627058c8416d9878dff81ad4c009516dd533992b5218114c6e.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34665-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A small bathroom with a shower.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "79c2b53e3c9556187eb7eafdd0fb2cd91eccab25b0efbf8f9fb6d8e335340094",
+      "path": "images/79c2b53e3c9556187eb7eafdd0fb2cd91eccab25b0efbf8f9fb6d8e335340094.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34666-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a vanity desk.",
+        "reason": "The room contains a bed, which disqualifies it as a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "d882b864889ea74ad9a9a94bf548a90756afb230ea4952e7edb80a0debd67dd3",
+      "path": "images/d882b864889ea74ad9a9a94bf548a90756afb230ea4952e7edb80a0debd67dd3.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/34667-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a toilet, sink, and bathtub.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "75243ec8f5e8c901805e8a3aa87cd2cac08fdcb0e350448b5918591d773e4b67",
+      "path": "images/75243ec8f5e8c901805e8a3aa87cd2cac08fdcb0e350448b5918591d773e4b67.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/30915-plot-lead.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of residential houses.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "673044cbf0fd1c9a923fc97c75fc8b3e57a5684c3e32c8240dfa1b2bf0f21863",
+      "path": "images/673044cbf0fd1c9a923fc97c75fc8b3e57a5684c3e32c8240dfa1b2bf0f21863.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28124-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of residential houses.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "3b062549b51e68e16d9e70641c7caadd1c4762ea37c80e09a71842f7a2787a24",
+      "path": "images/3b062549b51e68e16d9e70641c7caadd1c4762ea37c80e09a71842f7a2787a24.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/24599-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "7316214a6537b50550eceb4d64eaca3dc08495a8b066757dec55ec87d642bb6b",
+      "path": "images/7316214a6537b50550eceb4d64eaca3dc08495a8b066757dec55ec87d642bb6b.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/31795-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of residential houses.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "cb7ba2465f70accfc09236d822e7fb5c1b10e76bbeebbafc934e6346cca517f0",
+      "path": "images/cb7ba2465f70accfc09236d822e7fb5c1b10e76bbeebbafc934e6346cca517f0.png",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26799-house-type-hero.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "7ff167b29c0eb1f735ba332071c63a6579d55dd8d9b190faaf671ad3dfb8afc6",
+      "path": "images/7ff167b29c0eb1f735ba332071c63a6579d55dd8d9b190faaf671ad3dfb8afc6.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/31663-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "This is an exterior shot of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "9d4e6a98ac9f4f32735f980c9174dee5093c6bac90f2481e16f5db0408afb32b",
+      "path": "images/9d4e6a98ac9f4f32735f980c9174dee5093c6bac90f2481e16f5db0408afb32b.png",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26801-house-type-hero.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "The room contains a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c65f519639cd08d0ce89ea94b50ef83090344b18e3eab0e465da483ef6119d87",
+      "path": "images/c65f519639cd08d0ce89ea94b50ef83090344b18e3eab0e465da483ef6119d87.png",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26805-house-type-hero.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "The room contains a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6c77d822e5e0bcffe0ec50509a948414692db408facd7a32ba5c2152d68c8bab",
+      "path": "images/6c77d822e5e0bcffe0ec50509a948414692db408facd7a32ba5c2152d68c8bab.png",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26806-house-type-hero.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "closet",
+        "description": "A walk-in closet with a bench.",
+        "reason": "This is a closet, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6bc50fa5ecaaab5b5e95ddf3feaffbff2438b3b6eec3403281f3f45467e06ee3",
+      "path": "images/6bc50fa5ecaaab5b5e95ddf3feaffbff2438b3b6eec3403281f3f45467e06ee3.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/26803-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a tub and sink.",
+        "reason": "This is a bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4a70e8d58958db566bcca55b3f7858b55fdc91340a14eb300bb73e4d46f43849",
+      "path": "images/4a70e8d58958db566bcca55b3f7858b55fdc91340a14eb300bb73e4d46f43849.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34651-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A kitchen with cabinets and appliances.",
+        "reason": "This is a kitchen."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "858b0cc3594c574f49ee800d5fdd7cf532fca7c092a759ed6cb0d91f5b05f116",
+      "path": "images/858b0cc3594c574f49ee800d5fdd7cf532fca7c092a759ed6cb0d91f5b05f116.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/36761-plot-lead.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a house.",
+        "reason": "This is an exterior view."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "38e07d38c74b48047649f8d422a7beff4d2313d8606e007b8f2cfba57cd4ca22",
+      "path": "images/38e07d38c74b48047649f8d422a7beff4d2313d8606e007b8f2cfba57cd4ca22.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34650-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa and dining area.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c5bb898fea4280eaa9ebe62730e1468c5b6df13e701fde34cacedf73184143ba",
+      "path": "images/c5bb898fea4280eaa9ebe62730e1468c5b6df13e701fde34cacedf73184143ba.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34649-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a TV.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e3c9e9c5b1319be4fc512aded603233f876a623a175c4e641fc93ff8560a8f32",
+      "path": "images/e3c9e9c5b1319be4fc512aded603233f876a623a175c4e641fc93ff8560a8f32.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34652-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "A view of a residential hallway with a staircase.",
+        "reason": "This is a hallway, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
       "id": "1df9698ebb1f06e8439a81b315e337f374439698fccddec452e26dfa2266e987",
       "path": "images/1df9698ebb1f06e8439a81b315e337f374439698fccddec452e26dfa2266e987.jpg",
       "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34653-house-type-hero.jpg",
@@ -948,6 +2792,126 @@
         "roomType": "home office",
         "description": "A home office with a double desk setup and chairs.",
         "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "62d7dec9cd0d9b805a0538ad29145b2afda230c4210eb81d14c27a1ef3081c61",
+      "path": "images/62d7dec9cd0d9b805a0538ad29145b2afda230c4210eb81d14c27a1ef3081c61.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34655-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a vanity table.",
+        "reason": "The room contains a bed, which disqualifies it as a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "81846e71a74404b398434ac410990c1e589a452f8aa1c13b26659e14859e5624",
+      "path": "images/81846e71a74404b398434ac410990c1e589a452f8aa1c13b26659e14859e5624.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34656-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A small bathroom with a shower and toilet.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "8016d0ddfcbb5171ea676223f93b81c2c1e2cc4c8b884a5aa7cf4ac39e24a3b5",
+      "path": "images/8016d0ddfcbb5171ea676223f93b81c2c1e2cc4c8b884a5aa7cf4ac39e24a3b5.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34654-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a chest of drawers.",
+        "reason": "The room contains a bed, which disqualifies it as a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0cf0b7abc5e2a6512c8405c952b72750be1cba549c31ef0eca56c5f6cbf1bd91",
+      "path": "images/0cf0b7abc5e2a6512c8405c952b72750be1cba549c31ef0eca56c5f6cbf1bd91.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/34657-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a bathtub and toilet.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "fd1f194b6b3e744f9e1381c0f0856c4d4bce72836d7d25c95279adc8a5998327",
+      "path": "images/fd1f194b6b3e744f9e1381c0f0856c4d4bce72836d7d25c95279adc8a5998327.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28914-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with cabinets and appliances.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "d11b2509b5d277be73779d25c8f72c4cde07785f6ecfd30d9459ec17fac463c6",
+      "path": "images/d11b2509b5d277be73779d25c8f72c4cde07785f6ecfd30d9459ec17fac463c6.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28804-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a brick house.",
+        "reason": "This is an exterior view, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0b2a9b1da12a26a398a3ff86d49f7f0976258f613b94fdab54216d932c34beba",
+      "path": "images/0b2a9b1da12a26a398a3ff86d49f7f0976258f613b94fdab54216d932c34beba.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28915-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a large table, chairs, and a sofa in the background.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "48e85d239e4c3e1be85c07c1b4867feacdc9e9bfaf11e40b37843b0c4930bae0",
+      "path": "images/48e85d239e4c3e1be85c07c1b4867feacdc9e9bfaf11e40b37843b0c4930bae0.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28916-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a TV, console, and armchairs.",
+        "reason": "This is a living room, not a home office."
       },
       "analysisModel": "gemini-3.1-flash-lite"
     },
@@ -967,6 +2931,291 @@
       "analysisModel": "gemini-3.1-flash-lite"
     },
     {
+      "id": "ef3b718c63d46ecd5b2b3aa1201f6e5c9d2f396d5eab5d1b9583f5710de74aab",
+      "path": "images/ef3b718c63d46ecd5b2b3aa1201f6e5c9d2f396d5eab5d1b9583f5710de74aab.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28918-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and headboard.",
+        "reason": "This is a bedroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4a07b33717af06db837733f7498eea3d54595924ac38141e504c0dc6cd835398",
+      "path": "images/4a07b33717af06db837733f7498eea3d54595924ac38141e504c0dc6cd835398.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28919-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a sink and toilet.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6d1170cd4cc18be23c27d0471611a41bc2d1a6f355e506b49de31d5ec480a303",
+      "path": "images/6d1170cd4cc18be23c27d0471611a41bc2d1a6f355e506b49de31d5ec480a303.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28920-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "This is a bedroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "f4dcb7a447542670daeda93eced944cbd478e21e9b6b685def037449e3c04422",
+      "path": "images/f4dcb7a447542670daeda93eced944cbd478e21e9b6b685def037449e3c04422.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28921-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a bathtub and sink.",
+        "reason": "This is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "cb5e9c527ccea135bea9529b11341942ce1b7d891e5fab14c4b566cf7941c407",
+      "path": "images/cb5e9c527ccea135bea9529b11341942ce1b7d891e5fab14c4b566cf7941c407.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28922-house-type-hero.JPG",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa and neon sign.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "a598fb8383dd6498e418407758cbea8907aff8cbccdfdbf9698edc70063e5d76",
+      "path": "images/a598fb8383dd6498e418407758cbea8907aff8cbccdfdbf9698edc70063e5d76.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27518-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with light-colored cabinets and wooden flooring.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "d2270b966cec27d06697af783d7202ad0290c29aa4ff4bc982c8cbe3e7e30c62",
+      "path": "images/d2270b966cec27d06697af783d7202ad0290c29aa4ff4bc982c8cbe3e7e30c62.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29115-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a brick house.",
+        "reason": "This is an exterior view of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "20c8cbe3ad4190d6eeda47196b9c75c48d425b05e09cdb8aad4fe362ac4e1836",
+      "path": "images/20c8cbe3ad4190d6eeda47196b9c75c48d425b05e09cdb8aad4fe362ac4e1836.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27517-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa, dining table, and kitchen in the background.",
+        "reason": "This is a living/dining area, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "482761b785597253a4199854397a44c5d8707c6df1fde3704b0043197a4d5289",
+      "path": "images/482761b785597253a4199854397a44c5d8707c6df1fde3704b0043197a4d5289.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27519-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa and a television.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "757d21ea5c67863bfe3fb000778b187734d434a98c67a610ada28c19d8172db7",
+      "path": "images/757d21ea5c67863bfe3fb000778b187734d434a98c67a610ada28c19d8172db7.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27521-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas, chairs, and a television.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "88d68ca2ddf2f0043ac77a063fbf48b78e618654562725150db4261e8ec2e7b1",
+      "path": "images/88d68ca2ddf2f0043ac77a063fbf48b78e618654562725150db4261e8ec2e7b1.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27522-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a small desk/vanity area.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "5a05641da82018507c0a30ee1d6dd6b938158397a47c86c6c62aa5a3d451a362",
+      "path": "images/5a05641da82018507c0a30ee1d6dd6b938158397a47c86c6c62aa5a3d451a362.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27525-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "61ce846ecc647b4b49bd2c7b8ea292bb78ef7d4ab00642def8342ad5d21b73ad",
+      "path": "images/61ce846ecc647b4b49bd2c7b8ea292bb78ef7d4ab00642def8342ad5d21b73ad.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27523-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a guitar.",
+        "reason": "This is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "590754151d0348099b3ba31953d89f4bed048c6fafe7925cd0bdc7cfb0ce5188",
+      "path": "images/590754151d0348099b3ba31953d89f4bed048c6fafe7925cd0bdc7cfb0ce5188.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27524-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "7e914fa03a0128c8e9a30d3314750594812187561cb798d14fe5d03aad624183",
+      "path": "images/7e914fa03a0128c8e9a30d3314750594812187561cb798d14fe5d03aad624183.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/27526-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A garden or backyard area.",
+        "reason": "This is an outdoor space, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "ea7e59b8bf46ec1b8868d6566d7a97e4fe3a13396d0f2c6724d6d011396730fc",
+      "path": "images/ea7e59b8bf46ec1b8868d6566d7a97e4fe3a13396d0f2c6724d6d011396730fc.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/31685-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a house.",
+        "reason": "This is an exterior view of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "9aa9349d32a584db994ca70ac3f81204d2123edaf42c90eee046f310c2b6bae9",
+      "path": "images/9aa9349d32a584db994ca70ac3f81204d2123edaf42c90eee046f310c2b6bae9.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28085-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa and dining area.",
+        "reason": "This is a living room/dining area, not a dedicated home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "24d2d772095c8927d07822673ab6c720bbb498a163a3fad484999b0fa5dd4375",
+      "path": "images/24d2d772095c8927d07822673ab6c720bbb498a163a3fad484999b0fa5dd4375.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28086-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen.",
+        "reason": "This is a kitchen, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "5326a52f8ae0882e66229c2d84b9ecab1085380ca2aa8c991433043ef9885b72",
+      "path": "images/5326a52f8ae0882e66229c2d84b9ecab1085380ca2aa8c991433043ef9885b72.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28093-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a sofa.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
       "id": "f12b187d17a4acfd207fd7d91054d91a3da6fd6becae24109869cf0a01cd82ed",
       "path": "images/f12b187d17a4acfd207fd7d91054d91a3da6fd6becae24109869cf0a01cd82ed.jpg",
       "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28092-house-type-hero.jpg",
@@ -978,6 +3227,231 @@
         "roomType": "home office",
         "description": "A home office with a desk and chairs.",
         "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "b5a873c543dd037d234f81774a06f619b18d5495ac98041a9f3e75bd097074fe",
+      "path": "images/b5a873c543dd037d234f81774a06f619b18d5495ac98041a9f3e75bd097074fe.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28091-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed.",
+        "reason": "The room contains a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0d80aa3321352146b549de86b4ff0c44f3d94076ab3a04d9c1d251831d11916b",
+      "path": "images/0d80aa3321352146b549de86b4ff0c44f3d94076ab3a04d9c1d251831d11916b.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28089-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a bench.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4eb7b960296a5479b9881bf371109c0078bd2348d12abebf8882120e8e7ece44",
+      "path": "images/4eb7b960296a5479b9881bf371109c0078bd2348d12abebf8882120e8e7ece44.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28087-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and nightstands.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "5143dfe2cb0904f00915bd7f1fc13d443d9acafa28c8e13c7b14b7d6c02b4271",
+      "path": "images/5143dfe2cb0904f00915bd7f1fc13d443d9acafa28c8e13c7b14b7d6c02b4271.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28088-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and nightstand.",
+        "reason": "The room is a bedroom containing a bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "1aac59a39ad066a6738e6da109b5badccb632026ac70f1745a3150bb1b97b280",
+      "path": "images/1aac59a39ad066a6738e6da109b5badccb632026ac70f1745a3150bb1b97b280.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28090-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A bathroom with a sink and bathtub.",
+        "reason": "The room is a bathroom, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "429d412ff262be7ff531d1d9a6d78e7f9826d8917469e0e540da4d0a6ac7ecde",
+      "path": "images/429d412ff262be7ff531d1d9a6d78e7f9826d8917469e0e540da4d0a6ac7ecde.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29656-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a television.",
+        "reason": "The room is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "577ac5d969f27da9f1cd4dfac1162b9fbc7327cb152b8af855410a6ada0e0763",
+      "path": "images/577ac5d969f27da9f1cd4dfac1162b9fbc7327cb152b8af855410a6ada0e0763.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/30432-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a brick house.",
+        "reason": "The image shows the exterior of a building."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "048e8d26aff10fa59da8dd4c7afd1a189ae9440a709c351e2fb1b011a9828de4",
+      "path": "images/048e8d26aff10fa59da8dd4c7afd1a189ae9440a709c351e2fb1b011a9828de4.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29654-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An outdoor garden area with benches.",
+        "reason": "The image shows an outdoor space."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e442514c0ed58f51de79f8612a69ef91916c8b861d0cb73bcff4ee934a67b559",
+      "path": "images/e442514c0ed58f51de79f8612a69ef91916c8b861d0cb73bcff4ee934a67b559.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/29651-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a desk.",
+        "reason": "The room is a bedroom containing a bed, which disqualifies it."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e2d45022642d7e2d375fcc3521b9baf3775bd1531ebe220c3683bf07912326a1",
+      "path": "images/e2d45022642d7e2d375fcc3521b9baf3775bd1531ebe220c3683bf07912326a1.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/25627-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs, open to a kitchen.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c28cb476c417589ee272f6d0f2297c8634bb84b61870c5ebbced32d04e2e3a00",
+      "path": "images/c28cb476c417589ee272f6d0f2297c8634bb84b61870c5ebbced32d04e2e3a00.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/35076-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "This is an exterior shot of a house, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e7c80e1a7d48ee5bd4d63d3c5024d0e688db3962d6508db28f0374bc5e82c4fd",
+      "path": "images/e7c80e1a7d48ee5bd4d63d3c5024d0e688db3962d6508db28f0374bc5e82c4fd.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/plots/plot-lead-images/25624-plot-lead.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with sofas and a coffee table.",
+        "reason": "This is a living room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "daa34b365104a294d74281ba049068654b02689a0677a4fd74cf020ffdc78d51",
+      "path": "images/daa34b365104a294d74281ba049068654b02689a0677a4fd74cf020ffdc78d51.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/28381-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a residential house.",
+        "reason": "This is an exterior shot of a house, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e70f32bfa6826438ad281ec6da6070a4420c1b21618b2449b8f2ca6fc3be77ec",
+      "path": "images/e70f32bfa6826438ad281ec6da6070a4420c1b21618b2449b8f2ca6fc3be77ec.jpg",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/23334-house-type-hero.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a table and chairs, open to a kitchen.",
+        "reason": "This is a dining room, not a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "c94c2c1550c59afb88cc3d96361af25ababf699067bee3e957f0db5f8176ab6f",
+      "path": "images/c94c2c1550c59afb88cc3d96361af25ababf699067bee3e957f0db5f8176ab6f.png",
+      "sourceUrl": "https://www.crestnicholson.com/uploads/images/media/house-types/hero-images/25828-house-type-hero.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a bed and a small desk.",
+        "reason": "This is a bedroom containing a bed, which disqualifies it as a home office."
       },
       "analysisModel": "gemini-3.1-flash-lite"
     }

@@ -12,6 +12,11 @@ describe('Web app boundaries', () => {
   expect(() => collectionFolder('../outside')).toThrow('Unknown developer');
   expect((await asset(new Request('http://localhost/api/assets'), { params: Promise.resolve({ slug: 'unknown', path: ['results.json'] }) })).status).toBe(404);
  });
+ it('redirects uncached images to sourceUrl when available', async () => {
+  const response = await asset(new Request('http://localhost/api/assets'), { params: Promise.resolve({ slug: 'bellway', path: ['images', 'a0abbc711acf12951eee136566b099e99b206447bce006d2d8607f3c7c9f234a.jpg'] }) });
+  expect(response.status).toBe(307);
+  expect(response.headers.get('Location')).toContain('https://');
+ });
  it('rejects cross-site and non-local processing requests before launching work', async () => {
   const input = JSON.stringify({ developer: 'bellway', action: 'crawl' });
   expect((await job(new Request('http://localhost/api/jobs', { method: 'POST', headers: { origin: 'https://other.test' }, body: input }))).status).toBe(403);
