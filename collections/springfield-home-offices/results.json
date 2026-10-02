@@ -372,6 +372,20 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story house with a driveway and garage.",
         "reason": "This is an exterior house photo, not an interior home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -385,6 +399,19 @@
         "roomType": "exterior",
         "description": "An exterior rendering of a two-story home with a garage.",
         "reason": "This is an exterior rendering, not an interior room."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -398,6 +425,19 @@
         "roomType": "living room",
         "description": "A well-lit living room featuring sofas, a coffee table, and decorative lighting.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -411,6 +451,20 @@
         "roomType": "kitchen/dining",
         "description": "A modern kitchen and dining area with cabinets, appliances, and a dining table.",
         "reason": "This is a kitchen and dining area, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -424,6 +478,17 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story stone-clad house.",
         "reason": "This is an exterior photograph, not an interior room."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -437,6 +502,23 @@
         "roomType": "living room",
         "description": "A stylish living room with a sofa, armchair, coffee table, and wall mirrors.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "armchair",
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -450,6 +532,17 @@
         "roomType": "hallway",
         "description": "A bright hallway and entryway featuring a staircase and console table.",
         "reason": "This is a hallway/entryway, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -463,6 +556,19 @@
         "roomType": "bedroom",
         "description": "A staged master bedroom with a large double bed and bedside tables.",
         "reason": "This is a bedroom containing a visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -476,6 +582,20 @@
         "roomType": "bedroom",
         "description": "A staged bedroom with a large double bed, bedside tables, and lamps.",
         "reason": "The room is clearly a bedroom featuring a bed, and there is no desk present."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -489,6 +609,20 @@
         "roomType": "bedroom",
         "description": "A bedroom featuring a double bed and a desk area with office styling.",
         "reason": "Although there is a desk area, the presence of a double bed means it fails the negative criteria for office-only rooms."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -502,6 +636,20 @@
         "roomType": "bedroom",
         "description": "A children's or single bedroom with a single bed and a small floating wall desk.",
         "reason": "The room contains a bed, which disqualifies it from matching the home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -515,6 +663,20 @@
         "roomType": "home office",
         "description": "A home office or study staged with a long desk, office chairs, a reading chair, and artwork.",
         "reason": "It has a visible desk and work surface for office work with no visible bed or mattress."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -528,6 +690,21 @@
         "roomType": "bathroom",
         "description": "A modern bathroom featuring a bathtub, sink, toilet, and tiled walls.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -541,6 +718,19 @@
         "roomType": "exterior",
         "description": "An exterior render of a two-story residential house with a garage.",
         "reason": "This is an exterior view of a house, not a room."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -554,6 +744,17 @@
         "roomType": "exterior",
         "description": "An exterior architectural render showing the front facade of a residential house.",
         "reason": "This is an exterior architectural render, not an interior room."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -567,6 +768,20 @@
         "roomType": "exterior",
         "description": "An exterior architectural render of a gray stone and white residential house.",
         "reason": "This is an exterior view of a house, not an interior office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -580,6 +795,19 @@
         "roomType": "living room",
         "description": "A spacious living room featuring two light-colored sofas, coffee tables, and contemporary artwork.",
         "reason": "It is a living room, not a home office or study, and contains no desk."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -593,6 +821,19 @@
         "roomType": "kitchen and dining room",
         "description": "A modern open-plan kitchen and dining area featuring built-in ovens and a dining table set.",
         "reason": "This is a kitchen and dining room area, not a dedicated home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -606,6 +847,19 @@
         "roomType": "hallway/entryway",
         "description": "An entryway and hallway featuring a staircase, round mirror, and a decorative plant.",
         "reason": "This is an entryway and hallway space, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -619,6 +873,23 @@
         "roomType": "home office / study",
         "description": "A well-lit home office featuring a large desk with two chairs, desk lamps, an accent chair, and patterned wallpaper.",
         "reason": "It is staged as a home office with visible desks and work surfaces for office work, and contains no bed."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "armchair",
+          "bed",
+          "desk"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -632,6 +903,19 @@
         "roomType": "bedroom",
         "description": "A well-decorated bedroom featuring a large double bed, bedside lamps, armchairs, and a dressing console.",
         "reason": "This is a bedroom with a visible bed, which violates the criteria for a home office match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -645,6 +929,19 @@
         "roomType": "bedroom",
         "description": "A well-lit bedroom featuring a double bed with a brown headboard and patterned wallpaper.",
         "reason": "The room contains a bed, which violates the criteria for a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -658,6 +955,19 @@
         "roomType": "bedroom",
         "description": "A bedroom staged with a double bed, animal-themed cushions, and a console table along the wall.",
         "reason": "The room contains a bed, disqualifying it as a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -671,6 +981,19 @@
         "roomType": "bedroom",
         "description": "A bedroom with a single bed against a botanical-patterned accent wall.",
         "reason": "The presence of a bed means this image does not match the home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -684,6 +1007,21 @@
         "roomType": "bathroom",
         "description": "A modern bathroom tiled with hexagonal patterns, featuring a bathtub, sink, and toilet.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -697,6 +1035,19 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story house with stone cladding and a driveway.",
         "reason": "This is an exterior view of a house, not a room."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -710,6 +1061,20 @@
         "roomType": "exterior",
         "description": "Exterior shot of a two-story residential building with a garage and paved driveway.",
         "reason": "This is an exterior view, not an indoor home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -723,6 +1088,19 @@
         "roomType": "exterior",
         "description": "An exterior perspective of a modern detached house with stone and white render facades.",
         "reason": "This image shows the exterior of a building."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -736,6 +1114,20 @@
         "roomType": "exterior",
         "description": "Exterior architectural rendering of a contemporary brick and white-rendered home.",
         "reason": "This is an exterior property view, not a room staged as an office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -749,6 +1141,20 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story house with a garage and a paved driveway.",
         "reason": "This is an exterior shot of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -762,6 +1168,19 @@
         "roomType": "exterior",
         "description": "An exterior perspective of a contemporary detached house showing the garage and front entrance.",
         "reason": "This is an exterior photograph, not an interior home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -775,6 +1194,17 @@
         "roomType": "exterior",
         "description": "An exterior daytime photo of a two-story residential house with a sales sign in front.",
         "reason": "This is an exterior view of a home, not an interior room or home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -788,6 +1218,20 @@
         "roomType": "exterior",
         "description": "An exterior shot of a modern residential property featuring brick and white render siding.",
         "reason": "This shows the outside of a building, so it does not match home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     }
   ],

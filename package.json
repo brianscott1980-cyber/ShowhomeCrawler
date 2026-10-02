@@ -20,6 +20,7 @@
     "results:repair": "tsx src/cli/repair-coverage.ts",
     "results:publish": "tsx src/cli/publish-collection.ts",
     "results:reports": "tsx src/cli/reports.ts",
+    "images:categorise": "tsx src/cli/categorise-all.ts",
     "sites:sync": "tsx src/cli/sync-site-filtering.ts",
     "dev": "next dev --hostname 127.0.0.1",
     "start": "next start --hostname 127.0.0.1",

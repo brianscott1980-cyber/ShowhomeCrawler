@@ -7,7 +7,18 @@ async function saveArtifact(path: string, body: string) {
  await writeFile(temporary, body);
  await rename(temporary, path);
 }
-export interface ReportImage { id: string; path: string; sourceUrl: string; verdict?: Verdict; analysisModel?: string; criteriaExclusion?: string; error?: string }
+export interface ImageCategorisation {
+ mainCategory: string;
+ subCategory: string;
+ objects: string[];
+ wallpaper?: string | null;
+ curtains?: string | null;
+ colours: string[];
+ chairs: string[];
+ hasTelevision: boolean;
+ hasComputer: boolean;
+}
+export interface ReportImage { id: string; path: string; sourceUrl: string; verdict?: Verdict; categorisation?: ImageCategorisation; analysisModel?: string; criteriaExclusion?: string; error?: string }
 export interface ReportProperty { development: string; developmentUrl: string; name: string; url: string; bedrooms: number; price: number | null; plots: { number?: string; price: number | null; available: boolean }[]; imageIds: string[] }
 export interface RunReport { builder?: {name:string;slug:string;websiteUrl:string}; status: string; startedAt: string; completedAt?: string; model: string; question: string; analysisVersion?: string; developments: { url: string; name?: string; status: string; homes?: number; qualifying?: number; error?: string; warning?: string }[]; properties: ReportProperty[]; images: ReportImage[]; errors: { url: string; stage: string; message: string }[]; metrics: Record<string, number>; }
 const escape = (s: unknown) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));

@@ -1714,6 +1714,22 @@
         "roomType": "exterior",
         "description": "Exterior view of a modern two-story brick house with a garage and driveway.",
         "reason": "The image shows the exterior of a building, not an indoor home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1727,6 +1743,22 @@
         "roomType": "kitchen/dining room",
         "description": "Kitchen and dining area featuring dark green cabinetry and a dining table set for guests.",
         "reason": "This is a kitchen and dining room space, not a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1740,6 +1772,21 @@
         "roomType": "exterior",
         "description": "Exterior view of a modern brick residential property with solar panels on the roof.",
         "reason": "The image shows the exterior of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1753,6 +1800,19 @@
         "roomType": "open plan living space",
         "description": "Open plan room showing a kitchen, dining table, and living room seating area.",
         "reason": "This is a combined kitchen, dining, and living area, not a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1766,6 +1826,17 @@
         "roomType": "hallway",
         "description": "Indoor hallway with stairs leading upwards and doors opening into other rooms.",
         "reason": "This is a hallway and staircase area, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1779,6 +1850,23 @@
         "roomType": "living room",
         "description": "Living room featuring a green sofa, armchairs, coffee table, and a television unit.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -1792,6 +1880,21 @@
         "roomType": "living room",
         "description": "Living room with green seating, a central coffee table, and large windows.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1805,6 +1908,22 @@
         "roomType": "bedroom",
         "description": "Bedroom featuring a double bed with green styling and a small glass desk in the corner.",
         "reason": "Although there is a small desk present, the room contains a prominent bed making it a bedroom rather than a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1818,6 +1937,21 @@
         "roomType": "nursery",
         "description": "A nursery with a crib and changing unit, featuring pink walls and decor.",
         "reason": "The room contains a crib/bed and does not function as a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Child's bedroom / Nursery",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blush pink"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1831,6 +1965,22 @@
         "roomType": "bedroom",
         "description": "A child's bedroom with a single bed, green wallpaper, and storage units.",
         "reason": "The room contains a visible bed and is not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "cabinetry",
+          "bed"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1844,6 +1994,21 @@
         "roomType": "bedroom",
         "description": "A master bedroom with a double bed, green feature wall, and bedside tables.",
         "reason": "The room has a visible bed and is not a study or home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": "Feature accent wall",
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1857,6 +2022,23 @@
         "roomType": "bedroom",
         "description": "A styled bedroom with a large double bed, green upholstered headboard, and a wall-mounted dressing table desk on the right.",
         "reason": "The room contains a visible bed, which violates the criteria that home offices must not have a bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "dressing table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1870,6 +2052,23 @@
         "roomType": "bathroom",
         "description": "A compact modern bathroom featuring a walk-in shower enclosure, a toilet, and a pedestal sink against beige tiled walls.",
         "reason": "The room is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1883,6 +2082,22 @@
         "roomType": "bathroom",
         "description": "A clean, bright bathroom with a bathtub, a white toilet, and marbled wall tiles.",
         "reason": "The room is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1896,6 +2111,21 @@
         "roomType": "dining_room",
         "description": "An open-plan kitchen and dining area featuring a wooden dining table set with green chairs and place settings, alongside a fitted kitchen in the background.",
         "reason": "The room is a kitchen/dining area rather than a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining area",
+        "objects": [
+          "dining table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1909,6 +2139,20 @@
         "roomType": "bedroom",
         "description": "A bedroom angle showing the foot of the bed, fitted wardrobes with mirrored panels reflecting the window, and a wall-mounted floating desk unit.",
         "reason": "The room features a visible bed, failing the requirement of having no bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1922,6 +2166,21 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story brick detached house with a driveway and neighbouring properties under a partly cloudy sky.",
         "reason": "This is an exterior shot of a building, not an interior room."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1935,6 +2194,22 @@
         "roomType": "kitchen",
         "description": "A contemporary kitchen showing dark green cabinetry, integrated appliances, a marble countertop, and a partial view of a dining table in the foreground.",
         "reason": "The room is a kitchen, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1948,6 +2223,23 @@
         "roomType": "utility_room",
         "description": "A utility or laundry room with green cabinetry, a long countertop work surface, a shelf with plants, and a pet bed on the floor.",
         "reason": "While it has a work surface and no bed, it is staged as a utility/laundry room rather than a home office/study."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Laundry room",
+        "objects": [
+          "cabinetry",
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1961,6 +2253,21 @@
         "roomType": "dining room",
         "description": "A well-lit dining area featuring a wooden dining table set with place settings, surrounded by green chairs.",
         "reason": "This is a dining room with a dining table, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Formal dining room",
+        "objects": [
+          "dining table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1974,6 +2281,26 @@
         "roomType": "home office",
         "description": "A staged study room featuring a black desk with an office chair, a green accent wall, and a lamp.",
         "reason": "It is a dedicated home office containing a desk and office chair with no bed present."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "bed",
+          "desk",
+          "office chair"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Black"
+        ],
+        "chairs": [
+          "Office chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -1987,6 +2314,17 @@
         "roomType": "kitchen/dining area",
         "description": "An open plan kitchen and dining space with glass doors opening to a garden.",
         "reason": "This is a kitchen and dining area, not a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2000,6 +2338,21 @@
         "roomType": "living room",
         "description": "A cozy living room featuring a sectional sofa, a coffee table, and a large television on a sideboard.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -2013,6 +2366,21 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with white glossy cabinets, a stainless steel extractor hood, and built-in appliances.",
         "reason": "This is a kitchen, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2026,6 +2394,19 @@
         "roomType": "kitchen/dining area",
         "description": "An open kitchen area visible from a dining table set up in the foreground.",
         "reason": "This is a kitchen and dining space, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2039,6 +2420,20 @@
         "roomType": "bedroom",
         "description": "A styled bedroom with a double bed, patterned bedding, decorative wall art, and a small desk with a chair in the corner.",
         "reason": "Although there is a desk, it is a bedroom because a large bed is present."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2052,6 +2447,22 @@
         "roomType": "bedroom",
         "description": "A modern bedroom with a bed, pink-toned wall paneling, and open shelving with clothes.",
         "reason": "This is a bedroom featuring a visible bed, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "bookcase"
+        ],
+        "wallpaper": "Wood paneling",
+        "curtains": null,
+        "colours": [
+          "Blush pink"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2065,6 +2476,21 @@
         "roomType": "bedroom",
         "description": "A child's bedroom featuring a bed, nightstand, and a small desk in the corner.",
         "reason": "Although a desk is present, the room contains a visible bed, so it is classified as a bedroom and does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "nightstand",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2078,6 +2504,21 @@
         "roomType": "bedroom",
         "description": "A small child's bedroom with a single bed and a bedside table.",
         "reason": "The room contains a bed and lacks a desk, therefore it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "nightstand",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2091,6 +2532,21 @@
         "roomType": "bedroom",
         "description": "A children's bedroom styled with cloud-patterned wallpaper, a single bed, and a nightstand.",
         "reason": "The room features a bed and does not have a desk, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "nightstand",
+          "desk"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2104,6 +2560,24 @@
         "roomType": "bathroom",
         "description": "A modern bathroom featuring a bathtub, walk-in shower enclosure, toilet, and sink basin.",
         "reason": "This is a bathroom containing no bed or office desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bed",
+          "desk",
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2117,6 +2591,25 @@
         "roomType": "bathroom",
         "description": "A bathroom with a tiled walk-in shower, toilet, and sink basin against a green-accented wall.",
         "reason": "This is a bathroom with no desk or bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "objects": [
+          "bed",
+          "desk",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2130,6 +2623,22 @@
         "roomType": "bathroom",
         "description": "A powder room or half-bathroom featuring patterned floral wallpaper, a toilet, and a wall-mounted sink.",
         "reason": "This is a restroom containing no bed or desk."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "bed",
+          "desk",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": "Floral botanical",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2143,6 +2652,21 @@
         "roomType": "living room",
         "description": "A well-lit living room featuring a sofa, coffee table, armchairs, and decorative artwork.",
         "reason": "This is a living room, not a home office or study, and it lacks a desk."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2156,6 +2680,20 @@
         "roomType": "living room / media room",
         "description": "A media room or lounge area featuring a large television mounted on the wall above a console, seating, and a bean bag.",
         "reason": "This is a media/living room setup containing no desk or work surface for office work."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "desk",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -2169,6 +2707,17 @@
         "roomType": "hallway / staircase",
         "description": "An interior hallway showing stairs leading upstairs with wooden flooring and doorways leading to other rooms.",
         "reason": "This is a hallway and staircase area, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2182,6 +2731,21 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with white glossy cabinets, countertops, and appliances, opening into a utility room.",
         "reason": "This is a kitchen, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2195,6 +2759,19 @@
         "roomType": "utility room",
         "description": "A utility or laundry room with a washing machine, countertops, wall-mounted boiler, and a pet bed underneath the counter.",
         "reason": "This is a utility room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Laundry room",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2208,6 +2785,19 @@
         "roomType": "dining room / living area",
         "description": "A dining space with a wooden table in the foreground and a sofa against a paneled wall in the background.",
         "reason": "This is a dining area combined with living space, not a dedicated home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "sofa"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2221,6 +2811,19 @@
         "roomType": "child's bedroom",
         "description": "A child's bedroom featuring a single bed with animal-themed bedding, decorative wall wallpaper, and a play tent canopy.",
         "reason": "This is a bedroom containing a visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2234,6 +2837,21 @@
         "roomType": "bedroom",
         "description": "A primary bedroom with a large double bed, bedside tables, and a vanity/desk area on the left.",
         "reason": "Although there is a desk/vanity table present, this is clearly a bedroom with a prominent visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "desk",
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2247,6 +2865,20 @@
         "roomType": "bedroom",
         "description": "A child's or youth bedroom featuring a made bed, patterned wallpaper, clothes rack, and window with blinds.",
         "reason": "This is a bedroom with a visible bed, and there is no desk present."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": "Window blinds",
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2260,6 +2892,21 @@
         "roomType": "bedroom",
         "description": "A furnished bedroom containing a large bed with pillows, a nightstand, and a dark wooden desk with a stool.",
         "reason": "Although a desk is present, it is located in a bedroom with a visible bed, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "nightstand",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2273,6 +2920,23 @@
         "roomType": "exterior",
         "description": "The exterior front view of a brick house with a garage, driveway, and solar panels on the roof.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage",
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2286,6 +2950,20 @@
         "roomType": "living room",
         "description": "A modern living room with sofas, coffee tables, a large wall-mounted television, and decorative storage units.",
         "reason": "This is a living room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "cabinetry",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -2299,6 +2977,22 @@
         "roomType": "kitchen",
         "description": "A contemporary kitchen and dining space with dark cabinets, a dining table, and a large black clock on the wall.",
         "reason": "This is a kitchen and dining area, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2312,6 +3006,20 @@
         "roomType": "living room",
         "description": "An open-plan living and dining area featuring French doors leading to a garden, sofas, a dining table, and a partial kitchen view.",
         "reason": "This is a combined living room and dining space, not a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table",
+          "french doors"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2325,6 +3033,22 @@
         "roomType": "bedroom",
         "description": "A well-lit bedroom featuring a blue upholstered bed, patterned accent wall, nightstands, and a window.",
         "reason": "This is a bedroom with a visible bed and no desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2338,6 +3062,21 @@
         "roomType": "bedroom",
         "description": "An en-suite bedroom showing a bed in the foreground, an attached bathroom with a shower and toilet, and built-in mirrored wardrobes.",
         "reason": "This is a bedroom with a visible bed and attached bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "shower",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2351,6 +3090,20 @@
         "roomType": "bedroom",
         "description": "A well-lit bedroom featuring a large bed with a tall headboard, nightstand, and lamps.",
         "reason": "The room contains a prominent bed, making it a bedroom rather than a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "nightstand"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2364,6 +3117,22 @@
         "roomType": "bedroom",
         "description": "A staged bedroom with a green patterned headboard, made bed, and mirrored wardrobe.",
         "reason": "The presence of a bed indicates this is a bedroom, failing the home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "wardrobe"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2377,6 +3146,19 @@
         "roomType": "bedroom",
         "description": "A child's bedroom with a metal frame bed, children's wall art, and a small play table.",
         "reason": "The room contains a bed, which disqualifies it from being classified as a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2390,6 +3172,19 @@
         "roomType": "bedroom",
         "description": "A child's bedroom with jungle-themed bedding, striped ceiling, and animal decorations.",
         "reason": "The visible bed makes this a bedroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2403,6 +3198,20 @@
         "roomType": "bathroom",
         "description": "A small cloakroom bathroom featuring a toilet and a wall-mounted washbasin with a mirror.",
         "reason": "This is a bathroom, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "toilet",
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2416,6 +3225,20 @@
         "roomType": "bathroom",
         "description": "A modern tiled bathroom with a corner shower enclosure, toilet, and pedestal washbasin.",
         "reason": "This is a bathroom, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "objects": [
+          "shower",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2429,6 +3252,21 @@
         "roomType": "bathroom",
         "description": "A clean bathroom featuring a bathtub with an overhead shower, toilet, and pedestal basin.",
         "reason": "This is a bathroom, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2442,6 +3280,20 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story residential house with a paved driveway and solar panels.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2455,6 +3307,21 @@
         "roomType": "living room",
         "description": "A bright living and dining area with glass doors opening to a garden, coffee table, and dining table.",
         "reason": "This is a living and dining area, not a dedicated home office with a work desk."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table",
+          "coffee table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2468,6 +3335,19 @@
         "roomType": "living room",
         "description": "A comfortably furnished living room with sofas, a TV unit, coffee tables, and a large houseplant.",
         "reason": "This is a living room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -2481,6 +3361,21 @@
         "roomType": "kitchen",
         "description": "A contemporary kitchen featuring gloss white cabinets, dark countertops, built-in oven, and hob.",
         "reason": "This is a kitchen, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2494,6 +3389,23 @@
         "roomType": "living room",
         "description": "A cozy living room staged with a sofa, an armchair, a TV unit, and coffee tables.",
         "reason": "This is a living room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "armchair",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -2507,6 +3419,17 @@
         "roomType": "hallway",
         "description": "A hallway view showing multiple doors and stairs leading up.",
         "reason": "This is a hallway, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2520,6 +3443,19 @@
         "roomType": "bedroom",
         "description": "A master bedroom with a large double bed, bedside tables, and mirrored wardrobes.",
         "reason": "This room contains a bed, which makes it a bedroom rather than a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2533,6 +3469,21 @@
         "roomType": "bedroom",
         "description": "A well-lit bedroom featuring a central bed with a wooden panel headboard and decorative bench.",
         "reason": "This is a bedroom with a visible bed present."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Bench"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2546,6 +3497,22 @@
         "roomType": "bedroom",
         "description": "A bedroom staged with a blue upholstered headboard bed and a vanity table.",
         "reason": "This room contains a bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2559,6 +3526,20 @@
         "roomType": "bedroom",
         "description": "A child's bedroom with a single bed and a desk area setup against the wall.",
         "reason": "Although there is a desk present, this room contains a bed, disqualifying it as a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2572,6 +3553,21 @@
         "roomType": "bathroom",
         "description": "A modern bathroom with a glass shower enclosure, sink vanity, and toilet.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2585,6 +3581,22 @@
         "roomType": "open plan kitchen dining living",
         "description": "An open plan area showing a kitchen, dining table with red chairs, and a living space with coffee tables.",
         "reason": "This is an open plan kitchen/living/dining space, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table",
+          "dining chairs"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2598,6 +3610,17 @@
         "roomType": "hallway",
         "description": "An entrance hallway with stairs and patterned wallpaper.",
         "reason": "This is a hallway, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2611,6 +3634,21 @@
         "roomType": "living_room",
         "description": "A well-lit living room with a sofa, armchairs, coffee table, and a mounted TV on a paneled wall.",
         "reason": "This is a living room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -2624,6 +3662,24 @@
         "roomType": "living_room",
         "description": "A living room featuring a large sectional sofa, a centered armchair, a coffee table, and decorative wall art.",
         "reason": "This is a living room space without any desk or work surface."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "armchair",
+          "coffee table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2637,6 +3693,22 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with light grey cabinetry, a built-in oven, range hood, and a dining table in the foreground.",
         "reason": "This is a kitchen, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2650,6 +3722,20 @@
         "roomType": "bathroom",
         "description": "A small cloakroom or half bathroom containing a toilet, a pedestal sink, and a heated towel rail.",
         "reason": "This is a bathroom/toilet, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2663,6 +3749,20 @@
         "roomType": "bedroom",
         "description": "A decorated bedroom featuring a large bed with a tall headboard, bedside tables, and a dressing table.",
         "reason": "This is a bedroom with a visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "dressing table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2676,6 +3776,21 @@
         "roomType": "bedroom",
         "description": "A bedroom view showing a bed in the foreground, a wardrobe, a dressing table, and an en-suite bathroom door.",
         "reason": "This is a bedroom containing a visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "wardrobe",
+          "dressing table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2689,6 +3804,21 @@
         "roomType": "bathroom",
         "description": "A modern en-suite bathroom featuring a glass-enclosed shower, a pedestal sink, and a toilet.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "En suite",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2702,6 +3832,21 @@
         "roomType": "bedroom",
         "description": "A child's or teenager's bedroom featuring a bed, a study desk with chair against the wall, and shelving.",
         "reason": "Although there is a desk present, there is also a visible bed, which violates the negative constraint."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk",
+          "bookcase"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2715,6 +3860,22 @@
         "roomType": "bedroom",
         "description": "A pink-themed bedroom with a double bed, nightstand, and window.",
         "reason": "This image shows a bedroom containing a visible bed, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "nightstand"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blush pink"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2728,6 +3889,17 @@
         "roomType": "bedroom",
         "description": "A children's bedroom featuring twin single beds with unicorn-themed wallpaper and bedding.",
         "reason": "This image shows a bedroom containing visible twin beds, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2741,6 +3913,26 @@
         "roomType": "study",
         "description": "A home office or study with a long wooden desk, blue office chairs, accent armchair, shelving, and modern slat wall paneling.",
         "reason": "This image is staged as a home office/study with a visible desk and no bed present."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "armchair",
+          "bed",
+          "desk",
+          "bookcase"
+        ],
+        "wallpaper": "Wood paneling",
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2754,6 +3946,20 @@
         "roomType": "bathroom",
         "description": "A bathroom with a bathtub, pedestal sink, and tiled walls.",
         "reason": "This image shows a bathroom, which does not match the home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2767,6 +3973,24 @@
         "roomType": "living_room",
         "description": "A living room featuring a large beige sofa, patterned ottoman, matching armchair, and artwork.",
         "reason": "This image shows a living room, which does not match the home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "armchair"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Cream / Neutral"
+        ],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2780,6 +4004,19 @@
         "roomType": "hallway",
         "description": "A home hallway showing stairs, a radiator cover, a mirror, and a view into adjacent rooms.",
         "reason": "This image shows a hallway, which does not match the home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2793,6 +4030,19 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story suburban house with solar panels and a landscaped front yard.",
         "reason": "This image shows the exterior of a house, which does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2806,6 +4056,23 @@
         "roomType": "study",
         "description": "A study or home office with a white and wood desk, an upholstered chair, decorative plant, and patterned wallpaper.",
         "reason": "This image is staged as a home office/study with a visible desk and no bed present."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2819,6 +4086,22 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with grey cabinets and a dining table.",
         "reason": "This is a kitchen, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2832,6 +4115,20 @@
         "roomType": "living room",
         "description": "An open plan living room and kitchen area with a sofa and coffee table.",
         "reason": "This is a living room and kitchen combination space, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "sofa",
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2845,6 +4142,20 @@
         "roomType": "bathroom",
         "description": "A small cloakroom toilet with a sink and patterned wallpaper.",
         "reason": "This is a bathroom/restroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2858,6 +4169,21 @@
         "roomType": "utility room",
         "description": "A utility room with grey cabinets and counter space.",
         "reason": "This is a utility room, not a dedicated home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Utility room",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2871,6 +4197,20 @@
         "roomType": "bedroom",
         "description": "A staged bedroom featuring a double bed with a large upholstered headboard, side tables, and curtains.",
         "reason": "The room contains a bed and lacks a desk, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": "Floor-length curtains",
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2884,6 +4224,22 @@
         "roomType": "bedroom",
         "description": "A styled bedroom with a patterned feature wall, grey headboard, and a made bed.",
         "reason": "The room contains a bed and lacks an office desk, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": "Feature accent wall",
+        "curtains": null,
+        "colours": [
+          "Grey"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2897,6 +4253,21 @@
         "roomType": "bedroom",
         "description": "A bedroom featuring a bed, wardrobe with sliding mirrored doors, and an adjoining bathroom visible through an open door.",
         "reason": "The room contains a bed and lacks a desk, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "wardrobe",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2910,6 +4281,22 @@
         "roomType": "bathroom",
         "description": "A clean modern bathroom with a bathtub, glass shower screen, toilet, and pedestal sink.",
         "reason": "This is a bathroom, not an office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2923,6 +4310,21 @@
         "roomType": "bathroom",
         "description": "A tiled bathroom featuring a walk-in glass shower enclosure, pedestal sink, and toilet.",
         "reason": "This is a bathroom, not an office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2936,6 +4338,20 @@
         "roomType": "nursery",
         "description": "A child's nursery decorated with cloud wallpaper, a crib, and a rocking chair.",
         "reason": "The room contains a crib/bed and lacks an office desk, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Child's bedroom / Nursery",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2949,6 +4365,20 @@
         "roomType": "nursery",
         "description": "A nursery themed with panda wallpaper, featuring a baby crib and a rocking chair.",
         "reason": "The room contains a bed/crib and lacks a desk, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Child's bedroom / Nursery",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2962,6 +4392,19 @@
         "roomType": "exterior",
         "description": "An exterior view of modern suburban houses with a paved driveway and landscaped front yard.",
         "reason": "This is an exterior view, not an interior home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2975,6 +4418,19 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with fitted cabinets, countertops, built-in ovens, and a large decorative wall clock.",
         "reason": "This room is a kitchen, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -2988,6 +4444,20 @@
         "roomType": "dining room",
         "description": "An open-plan dining area with a wooden dining table, chairs, and a living area sofa in the background.",
         "reason": "This room is staged as a dining room and living space, not a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining area",
+        "objects": [
+          "dining table",
+          "sofa"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3001,6 +4471,21 @@
         "roomType": "living room",
         "description": "A comfortable living room featuring two light-colored sofas, a coffee table, a TV unit, and decorative window drapes.",
         "reason": "This is a living room, lacking a dedicated desk for office work."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "coffee table",
+          "desk",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": "Floor-length curtains",
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -3014,6 +4499,21 @@
         "roomType": "living room",
         "description": "A living room space with a large sectional sofa, a coffee table, a credenza, and patio doors leading to a garden.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "patio"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3027,6 +4527,20 @@
         "roomType": "bathroom",
         "description": "A small cloakroom or half-bathroom featuring a toilet, a corner sink with modern fixtures, and warm brown walls.",
         "reason": "This is a bathroom/restroom, not a study."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3040,6 +4554,22 @@
         "roomType": "bedroom",
         "description": "A double bedroom featuring a large upholstered headboard, bed with pillows and duvet, matching nightstands, and an end-of-bed storage bench.",
         "reason": "This room is clearly a bedroom containing a visible bed, and does not have an office desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Bench"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3053,6 +4583,23 @@
         "roomType": "bedroom",
         "description": "A bedroom containing a bed with a large tufted headboard, a bedside cabinet, and a black desk with a white chair on the left.",
         "reason": "Although there is a desk present, the room contains a visible bed, making it a bedroom rather than a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3066,6 +4613,22 @@
         "roomType": "bedroom",
         "description": "A child's bedroom featuring a pink bed decorated with plush toys, decorative wall moldings with animal mounts, and a window with blinds.",
         "reason": "This is a children's bedroom containing a bed and no office desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": "Window blinds",
+        "colours": [
+          "Blush pink"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3079,6 +4642,19 @@
         "roomType": "bedroom",
         "description": "A children's bedroom featuring a single bed with patterned bedding and a small children's activity table in the corner.",
         "reason": "The room contains a visible bed, which disqualifies it from being classified as a home office/study according to the rules."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3092,6 +4668,22 @@
         "roomType": "bathroom",
         "description": "A modern bathroom featuring a tiled bathtub, a pedestal sink, a toilet, and a large wall mirror.",
         "reason": "The room is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "vanity unit",
+          "toilet",
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3105,6 +4697,23 @@
         "roomType": "living room",
         "description": "A living room furnished with a TV unit mounted on a wood-paneled wall and comfortable beige sofas facing each other.",
         "reason": "The room is a living room and does not have a desk for office work."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "desk",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Cream / Neutral",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -3118,6 +4727,22 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with white and grey cabinetry, built-in ovens, and a countertop.",
         "reason": "This is a kitchen, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3131,6 +4756,19 @@
         "roomType": "dining room",
         "description": "A dining room area with a large wooden table, chairs, and French doors leading to a garden.",
         "reason": "This is a dining room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Formal dining room",
+        "objects": [
+          "french doors"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3144,6 +4782,21 @@
         "roomType": "kitchen",
         "description": "A kitchen with grey cabinets, countertops, an extractor hood, and built-in oven.",
         "reason": "This is a kitchen, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3157,6 +4810,22 @@
         "roomType": "living room",
         "description": "A living room with a light-colored sofa, coffee table, green walls, and decorative pictures.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3170,6 +4839,21 @@
         "roomType": "bathroom",
         "description": "A cloakroom or half bathroom featuring a toilet, wall-mounted sink, mirror, and decorative wall painting.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "vanity unit",
+          "toilet",
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3183,6 +4867,19 @@
         "roomType": "bedroom",
         "description": "A primary bedroom with a large bed, nightstands, dark reddish walls, and a window.",
         "reason": "This room contains a bed and is a bedroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3196,6 +4893,20 @@
         "roomType": "bedroom",
         "description": "A children's bedroom featuring a turquoise single bed, patterned wallpaper, a wardrobe, and toys.",
         "reason": "This room contains a bed and is a bedroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "wardrobe"
+        ],
+        "wallpaper": "Patterned wallpaper",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3209,6 +4920,21 @@
         "roomType": "bedroom",
         "description": "A guest bedroom with a double bed, yellow upholstered headboard, dark accent wall, and a clothes rack.",
         "reason": "This room contains a bed and is a bedroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Guest bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Mustard / Ochre"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3222,6 +4948,22 @@
         "roomType": "bedroom",
         "description": "A child's bedroom featuring a single bed with green and white theme.",
         "reason": "This is a bedroom containing a visible bed, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3235,6 +4977,21 @@
         "roomType": "bathroom",
         "description": "A modern bathroom with a glass-enclosed shower, toilet, and sink basin.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3248,6 +5005,21 @@
         "roomType": "bathroom",
         "description": "A tiled bathroom featuring a bathtub, toilet, and glass shower partition.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3261,6 +5033,19 @@
         "roomType": "exterior",
         "description": "Exterior view of a modern two-story residential house with a paved driveway.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3274,6 +5059,20 @@
         "roomType": "dining_room_kitchen",
         "description": "An open plan kitchen and dining area with a dining table and kitchen island.",
         "reason": "This is a dining room and kitchen area, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "objects": [
+          "dining table",
+          "kitchen island"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3287,6 +5086,17 @@
         "roomType": "exterior",
         "description": "Exterior view of a modern two-story suburban residential house.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3300,6 +5110,19 @@
         "roomType": "living_room",
         "description": "A comfortable living room with sofas, a coffee table, and decorative artworks.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3313,6 +5136,17 @@
         "roomType": "kitchen_dining",
         "description": "An open-plan kitchen and dining/living space.",
         "reason": "This is a kitchen and dining area, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3326,6 +5160,20 @@
         "roomType": "bedroom",
         "description": "A well-lit bedroom featuring a large double bed with pillows and a duvet, a bedside table, and a decorative console table.",
         "reason": "The room contains a large bed, making it a bedroom rather than a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "nightstand"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3339,6 +5187,22 @@
         "roomType": "bedroom",
         "description": "A bedroom staged with a double bed against a green accent wall, a green bedside table with a lamp, and a window with blinds.",
         "reason": "The room features a bed, which violates the requirement of having no visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "nightstand"
+        ],
+        "wallpaper": null,
+        "curtains": "Window blinds",
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3352,6 +5216,21 @@
         "roomType": "bathroom",
         "description": "A bathroom featuring a bathtub, sink, and toilet.",
         "reason": "The room is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3365,6 +5244,25 @@
         "roomType": "home_office",
         "description": "A compact home office staged with a white desk, office chair, desk lamp, and artwork.",
         "reason": "The room functions as a dedicated home office with a visible desk and no bed."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "bed",
+          "desk",
+          "office chair"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [
+          "Office chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3378,6 +5276,22 @@
         "roomType": "bedroom",
         "description": "A bedroom featuring a double bed with neutral and pink bedding, wall art, and bedside tables.",
         "reason": "The room contains a bed, which disqualifies it from matching."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blush pink",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3391,6 +5305,20 @@
         "roomType": "bedroom",
         "description": "A bedroom with a bed on the right and a small desk with a chair on the left.",
         "reason": "Although there is a small desk present, the room contains a visible bed making it a bedroom rather than a pure home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3404,6 +5332,22 @@
         "roomType": "bathroom",
         "description": "A bathroom featuring a bathtub with a glass screen, a separate shower enclosure, sink, and toilet.",
         "reason": "The room is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3417,6 +5361,19 @@
         "roomType": "utility_room",
         "description": "A utility or laundry room with a countertop surface, storage cabinets, and a laundry basket.",
         "reason": "The space is staged as a utility/laundry room, not a home office/study."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Laundry room",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3430,6 +5387,19 @@
         "roomType": "exterior",
         "description": "An exterior view of the back of a house with a lawn and wooden fencing.",
         "reason": "This is an outdoor exterior view, not an interior home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House rear",
+        "objects": [
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3443,6 +5413,23 @@
         "roomType": "living_room",
         "description": "A living room furnished with a large sofa, armchair, coffee table, and an ottoman.",
         "reason": "The room is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "armchair",
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3456,6 +5443,17 @@
         "roomType": "exterior",
         "description": "Exterior view of residential homes.",
         "reason": "This is an exterior shot of houses, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3469,6 +5467,19 @@
         "roomType": "living_room",
         "description": "Living room with sofas, a TV, and coffee tables.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -3482,6 +5493,21 @@
         "roomType": "home_office",
         "description": "Room staged as a living room and home office combination featuring a desk setup under the TV.",
         "reason": "The room contains a visible desk surface configured for work without any bed present."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "bed",
+          "desk",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -3495,6 +5521,17 @@
         "roomType": "living_room_dining_kitchen",
         "description": "Open plan living, dining, and kitchen area.",
         "reason": "This is a combined living, dining, and kitchen space rather than a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3508,6 +5545,19 @@
         "roomType": "kitchen",
         "description": "Modern kitchen with dark cabinets and appliances.",
         "reason": "This is a kitchen, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3521,6 +5571,21 @@
         "roomType": "dining_room",
         "description": "Dining room area with a large wooden table and chairs.",
         "reason": "This is a dining room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Formal dining room",
+        "objects": [
+          "dining chairs"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3534,6 +5599,17 @@
         "roomType": "living_room",
         "description": "Living room space with seating and garden doors.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3547,6 +5623,19 @@
         "roomType": "utility_room",
         "description": "Utility or laundry room with counter space and cabinets.",
         "reason": "This is a utility/laundry room, not a staged home office/study."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Laundry room",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3560,6 +5649,20 @@
         "roomType": "bathroom",
         "description": "A modern bathroom featuring a toilet, a wall-mounted basin, a mirror, and a decorative ladder shelf.",
         "reason": "This is a bathroom, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "toilet",
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3573,6 +5676,17 @@
         "roomType": "hallway",
         "description": "An indoor hallway with wooden flooring, carpeted stairs leading upwards, and doors opening to other rooms.",
         "reason": "This is a hallway and staircase area, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3586,6 +5700,19 @@
         "roomType": "bedroom",
         "description": "A well-lit bedroom featuring a large bed with a padded headboard, bedside tables with lamps, and an ensuite bathroom visible through the open door.",
         "reason": "This is a bedroom containing a bed, which does not match home office criteria."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3599,6 +5726,22 @@
         "roomType": "bathroom",
         "description": "A bathroom equipped with a bathtub, pedestal sink, toilet, and a glass-enclosed shower.",
         "reason": "This is a bathroom, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3612,6 +5755,19 @@
         "roomType": "exterior",
         "description": "Exterior view of a detached house with garage and car.",
         "reason": "This is an exterior image of a building, not an interior home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3625,6 +5781,19 @@
         "roomType": "living_dining_kitchen",
         "description": "Open plan living, dining, and kitchen area.",
         "reason": "This room contains a dining table and living area seating rather than a dedicated home office study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3638,6 +5807,20 @@
         "roomType": "home_office",
         "description": "Staged home office with a floating desk, wall paneling, and seating.",
         "reason": "The room features a clear desk/work surface for office work and contains no bed."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": "Wood paneling",
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3651,6 +5834,19 @@
         "roomType": "utility_room",
         "description": "Utility or laundry room with counter space and cabinetry.",
         "reason": "This is a utility/laundry room, not a staged home office."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Laundry room",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3664,6 +5860,19 @@
         "roomType": "bedroom",
         "description": "Master bedroom with a double bed and ensuite bathroom visible.",
         "reason": "This is a bedroom containing a visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3677,6 +5886,19 @@
         "roomType": "bedroom",
         "description": "Bedroom with a double bed and upholstered headboard.",
         "reason": "This is a bedroom containing a visible bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3690,6 +5912,17 @@
         "roomType": "bedroom",
         "description": "Children's bedroom with two single beds.",
         "reason": "This is a bedroom containing visible beds."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3703,6 +5936,19 @@
         "roomType": "bedroom",
         "description": "Bedroom featuring a double bed and an easel with artwork.",
         "reason": "Although there is an easel, this is a bedroom with a visible bed, which disqualifies it."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3716,6 +5962,20 @@
         "roomType": "bedroom",
         "description": "A guest bedroom or study featuring a single bed on the left and a desk setup on the right.",
         "reason": "Although there is a desk present, a bed is clearly visible in the room, violating the negative constraint."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3729,6 +5989,22 @@
         "roomType": "bathroom",
         "description": "A modern bathroom featuring a shower enclosure, a bathtub with a wooden caddy, a toilet, and a sink basin.",
         "reason": "The room is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3742,6 +6018,21 @@
         "roomType": "bathroom",
         "description": "A small bathroom showing a toilet, a pedestal sink, and a glass shower stall.",
         "reason": "The room is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3755,6 +6046,20 @@
         "roomType": "living room",
         "description": "A cozy living room with a large television, media console, coffee tables, and multiple seating sofas.",
         "reason": "The room is a living room and does not contain a desk."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "desk",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -3768,6 +6073,19 @@
         "roomType": "hallway",
         "description": "A hallway with carpeted stairs leading upwards, decorative wall art, a round mirror, and a console table.",
         "reason": "The room is a hallway/stairs area, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3781,6 +6099,22 @@
         "roomType": "exterior",
         "description": "Exterior view of a modern two-story brick house with a driveway and solar panels on the roof.",
         "reason": "This is an exterior shot of a house, not a room."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3794,6 +6128,22 @@
         "roomType": "living room / open plan",
         "description": "An open plan living room and kitchen area with a sectional sofa, coffee table, and dining table in the background.",
         "reason": "This is a living area/open-plan space with no desk present."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table",
+          "sofa",
+          "coffee table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3807,6 +6157,19 @@
         "roomType": "dining room",
         "description": "A dining space featuring a dark dining table surrounded by upholstered chairs, leading into a kitchen and living area.",
         "reason": "The room is a dining room and kitchen space, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining area",
+        "objects": [
+          "dining table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3820,6 +6183,24 @@
         "roomType": "kitchen/dining area",
         "description": "An open plan kitchen and dining area featuring a dining table with chairs, kitchen cabinetry in the background, and a door leading to a garden.",
         "reason": "This is a dining room and kitchen space, not a home office or study, and lacks a designated office desk."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry",
+          "desk",
+          "dining chairs"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3833,6 +6214,19 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with fitted cabinets, countertops, and appliances.",
         "reason": "This is a kitchen, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3846,6 +6240,23 @@
         "roomType": "living room",
         "description": "A living room featuring a sofa, coffee table, and a TV unit against a wood-paneled wall.",
         "reason": "This is a living room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "television"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false
       }
     },
     {
@@ -3859,6 +6270,19 @@
         "roomType": "living room",
         "description": "A living room with double doors opening to a garden, a sofa, and a media unit.",
         "reason": "This is a living room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3872,6 +6296,17 @@
         "roomType": "utility room",
         "description": "A utility or laundry room with countertops, a microwave, and a boiler.",
         "reason": "This is a utility room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Laundry room",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3885,6 +6320,17 @@
         "roomType": "hallway",
         "description": "An upper hallway with doors, a radiator cover, and decorative artwork.",
         "reason": "This is a hallway, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Entrance hall",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3898,6 +6344,19 @@
         "roomType": "bedroom",
         "description": "A primary bedroom with a large bed, upholstered headboard, and bedside tables.",
         "reason": "This is a bedroom containing a bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3911,6 +6370,20 @@
         "roomType": "bedroom",
         "description": "A bedroom featuring a bed, fitted wardrobes, and a vanity area.",
         "reason": "This is a bedroom containing a bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3924,6 +6397,22 @@
         "roomType": "bedroom",
         "description": "A bedroom showing a bed, an ensuite bathroom door, and armchair seating.",
         "reason": "This is a bedroom containing a bed."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "armchair",
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3937,6 +6426,21 @@
         "roomType": "bathroom",
         "description": "A modern bathroom featuring a shower stall, toilet, and sink vanity.",
         "reason": "This is a bathroom, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3950,6 +6454,20 @@
         "roomType": "bedroom",
         "description": "A staged bedroom with a large double bed and an integrated small desk area on the left.",
         "reason": "Although a desk is present, the room contains a prominent bed, which disqualifies it from being a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3963,6 +6481,21 @@
         "roomType": "bathroom",
         "description": "A tidy bathroom with a glass shower enclosure, toilet, and pedestal sink.",
         "reason": "This is a bathroom containing sanitary facilities, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3976,6 +6509,20 @@
         "roomType": "bedroom",
         "description": "A spacious bedroom featuring a large double bed, dressers, and a desk workspace in the foreground.",
         "reason": "This room contains a bed, meaning it is a bedroom rather than a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -3989,6 +6536,20 @@
         "roomType": "kitchen/dining/living",
         "description": "An open-plan kitchen and living area with a dining table, seating, and kitchen cabinets.",
         "reason": "This is a combined kitchen and living area, not a standalone home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4002,6 +6563,19 @@
         "roomType": "exterior",
         "description": "An exterior view of a modern two-story house with a car parked on the driveway.",
         "reason": "This is an exterior house photograph, not an interior office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4015,6 +6589,20 @@
         "roomType": "living room",
         "description": "A brightly lit living room furnished with two sofas, a coffee table, and a sideboard.",
         "reason": "This is a living room featuring seating furniture, lacking any desk or work surface for office work."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "coffee table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4028,6 +6616,19 @@
         "roomType": "exterior",
         "description": "An exterior shot of residential houses with solar panels and parked cars.",
         "reason": "This is an exterior property view, not an interior office space."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4041,6 +6642,20 @@
         "roomType": "living room",
         "description": "A living room furnished with multiple sofas, a coffee table, and a sideboard cabinet.",
         "reason": "The room is a living room with sofas and a coffee table, and contains no desk."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "coffee table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4054,6 +6669,22 @@
         "roomType": "kitchen",
         "description": "A modern kitchen with white cabinetry, wooden countertops, built-in oven, and a sink.",
         "reason": "This is a kitchen, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "cabinetry",
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4067,6 +6698,21 @@
         "roomType": "living room",
         "description": "A bright living room featuring sofas, a coffee table, and patio doors leading outside.",
         "reason": "The room is a living room and does not feature a desk."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "coffee table",
+          "desk",
+          "patio"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4080,6 +6726,21 @@
         "roomType": "bedroom",
         "description": "A bedroom staged with a large double bed, bedside tables, and a dark dresser.",
         "reason": "This is a bedroom containing a visible bed, and lacks a desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "chest of drawers",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4093,6 +6754,24 @@
         "roomType": "bedroom",
         "description": "A bedroom featuring a made bed with green and beige bedding, a bedside table, and a window.",
         "reason": "This is a bedroom with a visible bed and no desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed",
+          "nightstand",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4106,6 +6785,21 @@
         "roomType": "bedroom",
         "description": "A bedroom containing a double bed with a purple quilt, bedside tables, and a dresser.",
         "reason": "The room is a bedroom with a visible bed and no desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed",
+          "chest of drawers",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4119,6 +6813,21 @@
         "roomType": "child bedroom",
         "description": "A child's bedroom featuring a single bed, a small nightstand, and a children's play teepee.",
         "reason": "This is a bedroom containing a visible single bed and no desk."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "nightstand",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4132,6 +6841,24 @@
         "roomType": "home office",
         "description": "A dedicated home office/study room featuring a desk with shelving, an office chair, a table lamp, and wall art.",
         "reason": "The room is clearly staged as a home office with a visible desk and office chair, and contains no bed."
+      },
+      "categorisation": {
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Dedicated study",
+        "objects": [
+          "bed",
+          "desk",
+          "office chair",
+          "bookcase"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Office chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4145,6 +6872,22 @@
         "roomType": "bathroom",
         "description": "A modern bathroom with a bathtub, shower screen, sink, and toilet.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4158,6 +6901,20 @@
         "roomType": "bathroom",
         "description": "A small cloakroom or toilet room featuring a pedestal sink and toilet.",
         "reason": "This is a restroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Toilet",
+        "subCategory": "Cloakroom / WC",
+        "objects": [
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4171,6 +6928,21 @@
         "roomType": "bathroom",
         "description": "A compact bathroom featuring a shower enclosure, toilet, and pedestal sink.",
         "reason": "This is a bathroom, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4184,6 +6956,17 @@
         "roomType": "exterior",
         "description": "An exterior rendering of a detached house with a car parked outside.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4197,6 +6980,21 @@
         "roomType": "living room",
         "description": "A living room staged with a sofa, dark sideboard, and coffee table.",
         "reason": "This is a living room lacking a desk or study workstation."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4210,6 +7008,20 @@
         "roomType": "kitchen/dining room",
         "description": "An open plan kitchen and dining area with fitted units and a dining table set.",
         "reason": "This is a kitchen and dining area, not a dedicated home office."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4223,6 +7035,19 @@
         "roomType": "living room",
         "description": "A bright living room furnished with a light-colored sectional sofa and nesting tables.",
         "reason": "This is a living room, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4236,6 +7061,19 @@
         "roomType": "exterior",
         "description": "An exterior architectural render of a two-story home with a red car parked in the driveway.",
         "reason": "This is an exterior view of a building, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4249,6 +7087,21 @@
         "roomType": "living and dining room",
         "description": "An open plan living and dining room with a dining table, chairs, sofa, and access to a garden.",
         "reason": "This is a living and dining room, not a home office or study, and it does not contain a desk."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [
+          "dining table",
+          "sofa",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4262,6 +7115,20 @@
         "roomType": "kitchen and dining room",
         "description": "An open plan kitchen, dining, and living space featuring a dining table and kitchen area.",
         "reason": "This is a kitchen and dining area with no desk present."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4275,6 +7142,19 @@
         "roomType": "utility room",
         "description": "A utility room with a countertop, laundry hamper, and cabinets.",
         "reason": "This is a utility room, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Utility Room",
+        "subCategory": "Laundry room",
+        "objects": [
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4288,6 +7168,19 @@
         "roomType": "hallway and stairs",
         "description": "A hallway leading to stairs with white walls and wooden flooring.",
         "reason": "This is a hallway and staircase, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4301,6 +7194,21 @@
         "roomType": "landing",
         "description": "An upstairs landing area with doorways and a small armchair visible in one of the rooms.",
         "reason": "This is a hallway landing, not a dedicated home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "objects": [
+          "armchair"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4314,6 +7222,19 @@
         "roomType": "bedroom",
         "description": "A furnished bedroom featuring a large bed with pillows, bedside tables, and lamps.",
         "reason": "This is a bedroom containing a visible bed, so it cannot be matched as an office."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4327,6 +7248,22 @@
         "roomType": "bathroom",
         "description": "A bathroom with a walk-in shower, bathtub, toilet, and sink.",
         "reason": "This is a bathroom, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4340,6 +7277,19 @@
         "roomType": "bedroom",
         "description": "A bedroom showing a large bed, nightstands with lamps, and an ensuite bathroom door in the background.",
         "reason": "This is a bedroom containing a visible bed, so it cannot be classified as a study."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4353,6 +7303,20 @@
         "roomType": "bedroom",
         "description": "A child's bedroom featuring a single bed, a play tent, and a decorative giraffe toy.",
         "reason": "The room contains a visible bed and lacks a desk, so it does not match."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4366,6 +7330,19 @@
         "roomType": "exterior",
         "description": "An exterior architectural rendering of a two-story detached house with a driveway and car.",
         "reason": "This is an exterior view of a building, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4379,6 +7356,20 @@
         "roomType": "exterior",
         "description": "An exterior photograph of the front facade of a two-story home with solar panels and a driveway.",
         "reason": "This is an exterior photograph, not an interior home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4392,6 +7383,23 @@
         "roomType": "kitchen/dining room",
         "description": "A combined open-plan kitchen and dining area featuring a dining table with red chairs and fitted kitchen cabinetry in the background.",
         "reason": "The space is a kitchen and dining area, not a home office or study."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "objects": [
+          "dining table",
+          "cabinetry",
+          "dining chairs"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4405,6 +7413,17 @@
         "roomType": "exterior",
         "description": "An exterior front view of a two-story modern house with a red car parked in front.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4418,6 +7437,21 @@
         "roomType": "exterior",
         "description": "An exterior view of a brick house at dusk with a detached garage and a parked car.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     },
     {
@@ -4431,6 +7465,22 @@
         "roomType": "exterior",
         "description": "An exterior daytime view of a brick house with a garage and a car parked in the driveway.",
         "reason": "This is an exterior view of a house, not a home office."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
       }
     }
   ],
