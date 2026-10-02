@@ -1,0 +1,2097 @@
+{
+  "builder": {
+    "name": "Barratt",
+    "slug": "barratt",
+    "websiteUrl": "https://www.barratthomes.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T12:14:34.523Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000147-hendon-waterside/",
+      "name": "Hendon Waterside",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002578-bermondsey-heights/",
+      "name": "Bermondsey Heights",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002612-sterling-place/",
+      "name": "Sterling Place",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002949-lightmakers/",
+      "name": "Lightmakers",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002593-wembley-park-gardens/",
+      "name": "Wembley Park Gardens",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002062-hayes-village/",
+      "name": "Hayes Village",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002987-streatham-common-junction/",
+      "name": "Streatham Common Junction",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002828-the-lanes/",
+      "name": "The Lanes",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002672-royal-gateway/",
+      "name": "Royal Gateway",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002159-eastman-village/",
+      "name": "Eastman Village",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001785-huntingtower/",
+      "name": "Huntingtower",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002681-alder-heights/",
+      "name": "Alder Heights",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003180-cot-hill-rise/",
+      "name": "Cot Hill Rise",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001612-orchard-green-@-kingsbrook/",
+      "name": "Orchard Green @ Kingsbrook",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002693-platinum-place/",
+      "name": "Platinum Place",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001987-pen-bethan/",
+      "name": "Pen Bethan",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000239-folliott's-manor/",
+      "name": "Folliott's Manor",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000415-woburn-downs/",
+      "name": "Woburn Downs",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003095-eaglesham-view/",
+      "name": "Eaglesham View",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001005-barratt-@-torrance-park/",
+      "name": "Barratt @ Torrance Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002948-tower-street-at-merchant-quay/",
+      "name": "Tower Street at Merchant Quay",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001140-st-clements-brae/",
+      "name": "St Clements Brae",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001978-heathfield-nook/",
+      "name": "Heathfield Nook",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000495-barratt-at-wendel-view/",
+      "name": "Barratt at Wendel View",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002999-curborough-fields/",
+      "name": "Curborough Fields",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002978-pickford-gate/",
+      "name": "Pickford Gate",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002808-west-end-green/",
+      "name": "West End Green",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002674-woodland-gait/",
+      "name": "Woodland Gait",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002692-the-watchmakers/",
+      "name": "The Watchmakers",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002690-barratt-homes-@-alconbury-weald/",
+      "name": "Barratt Homes @ Alconbury Weald",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002989-hilliers-heights/",
+      "name": "Hilliers Heights",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001107-ryebank-gate/",
+      "name": "Ryebank Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002848-afon-las-@-plasd%C5%B5r/",
+      "name": "Afon Las @ Plasdŵr",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003171-monaveen-gardens/",
+      "name": "Monaveen Gardens",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003000-kensington-gate/",
+      "name": "Kensington Gate",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001124-abbey-view/",
+      "name": "Abbey View",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001033-bertelin-fields/",
+      "name": "Bertelin Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003034-kingfisher-park/",
+      "name": "Kingfisher Park",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003077-kings-court/",
+      "name": "Kings Court",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001134-spitfire-green/",
+      "name": "Spitfire Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001144-ladden-garden-village/",
+      "name": "Ladden Garden Village",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002825-sycamore-gardens/",
+      "name": "Sycamore Gardens",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001177-wintringham/",
+      "name": "Wintringham",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001391-barratt-homes-@-treledan/",
+      "name": "Barratt Homes @ Treledan",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001315-poppy-fields/",
+      "name": "Poppy Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001468-grey-towers-village/",
+      "name": "Grey Towers Village",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001909-gilmerton-heights/",
+      "name": "Gilmerton Heights",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002871-de-lacy-mews/",
+      "name": "De Lacy Mews",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001809-the-lilies/",
+      "name": "The Lilies",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002689-honeymans-helm/",
+      "name": "Honeymans Helm",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003124-barratt-homes-at-roman-gardens/",
+      "name": "Barratt Homes at Roman Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003161-barratt-homes-@-lakewood-meadows/",
+      "name": "Barratt Homes @ Lakewood Meadows",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003132-the-cedars-@-ledsham-garden-village/",
+      "name": "The Cedars @ Ledsham Garden Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002873-sandy-gate-view/",
+      "name": "Sandy Gate View",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/",
+      "name": "Bernets Nook",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002954-new-lubbesthorpe/",
+      "name": "New Lubbesthorpe",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002851-carrick-meadows/",
+      "name": "Carrick Meadows",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002951-laurel-chase/",
+      "name": "Laurel Chase",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002136-glenvale-park/",
+      "name": "Glenvale Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002161-clipstone-park/",
+      "name": "Clipstone Park",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003049-chaulden-meadows/",
+      "name": "Chaulden Meadows",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002587-franklin-gardens-at-darwin-green/",
+      "name": "Franklin Gardens at Darwin Green",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002684-cuckoo-fields-barratt-homes/",
+      "name": "Cuckoo Fields Barratt Homes",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Old Durham Gate",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 10
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002601-scarlet-view/",
+      "name": "Scarlet View",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002592-anvil-place/",
+      "name": "Anvil Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002633-talbot-place/",
+      "name": "Talbot Place",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002628-fairway-gardens/",
+      "name": "Fairway Gardens",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002650-barratt-@-lairds-gait/",
+      "name": "Barratt @ Lairds Gait",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002651-the-poppies---barratt-homes/",
+      "name": "The Poppies - Barratt Homes",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002662-hawthorn-grove/",
+      "name": "Hawthorn Grove",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002649-silkin-meadows/",
+      "name": "Silkin Meadows",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002639-brookside-meadows/",
+      "name": "Brookside Meadows",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002667-nursery-fields/",
+      "name": "Nursery Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/",
+      "name": "Somer Meadows",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002682-fiddington-fields/",
+      "name": "Fiddington Fields",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003046-barratt-@-almond-valley/",
+      "name": "Barratt @ Almond Valley",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000667-osprey-heights/",
+      "name": "Osprey Heights",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002606-hopecroft-view/",
+      "name": "Hopecroft View",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001985-pebble-walk/",
+      "name": "Pebble Walk",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001007-pentref-llewelyn/",
+      "name": "Pentref Llewelyn",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002392-church-fields/",
+      "status": "complete",
+      "name": "Church Fields",
+      "homes": 14,
+      "qualifying": 0,
+      "warning": "1 plot cards have no details link; galleries unavailable."
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002586-keiller's-rise/",
+      "name": "Keiller's Rise",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002590-thornberry-gardens/",
+      "name": "Thornberry Gardens",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003147-wigston-meadows-at-kilby-bridge/",
+      "name": "Wigston Meadows at Kilby Bridge",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002824-wigston-meadows/",
+      "name": "Wigston Meadows",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002648-lancaster-gardens/",
+      "name": "Lancaster Gardens",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001011-okement-park/",
+      "name": "Okement Park",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002621-stewarts-reach/",
+      "name": "Stewarts Reach",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002599-languard-view/",
+      "name": "Languard View",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002785-barratt-@-bangour-village/",
+      "name": "Barratt @ Bangour Village",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002870-barratt-homes-at-henley-gate/",
+      "name": "Barratt Homes at Henley Gate",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001623-queens-court/",
+      "name": "Queens Court",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001146-penning-fold/",
+      "name": "Penning Fold",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002971-barratt-homes-at-sholden-meadows/",
+      "name": "Barratt Homes at Sholden Meadows",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002706-foundry-lea/",
+      "name": "Foundry Lea",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001006-bertone-gardens/",
+      "name": "Bertone Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002968-century-gardens/",
+      "name": "Century Gardens",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002802-barratt-homes-at-towcester-grange/",
+      "name": "Barratt Homes at Towcester Grange",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002800-chatteris-gate/",
+      "name": "Chatteris Gate",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001355-willow-grove/",
+      "name": "Willow Grove",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001725-woodland-heath/",
+      "name": "Woodland Heath",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001168-barratt-at-hampton-beach/",
+      "name": "Barratt at Hampton Beach",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002554-barratt-homes-at-bourne/",
+      "name": "Barratt Homes at Bourne",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002597-the-sands/",
+      "name": "The Sands",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002803-barratt-homes-at-harlestone-grange/",
+      "name": "Barratt Homes at Harlestone Grange",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002602-the-hawthorns/",
+      "name": "The Hawthorns",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001158-whittlesey-lakeside/",
+      "name": "Whittlesey Lakeside",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001084-meadow-hill/",
+      "name": "Meadow Hill",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002577-stonebridge-fields/",
+      "name": "Stonebridge Fields",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001092-lockwood-fields/",
+      "name": "Lockwood Fields",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002669-stirling-park/",
+      "name": "Stirling Park",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002687-hollygate-green/",
+      "name": "Hollygate Green",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002652-the-meadows/",
+      "name": "The Meadows",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001306-the-pearls/",
+      "name": "The Pearls",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002700-carleton-chase/",
+      "name": "Carleton Chase",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000521-martello-lakes/",
+      "name": "Martello Lakes",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002642-monkton-gardens/",
+      "name": "Monkton Gardens",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003070-foxglove-park/",
+      "name": "Foxglove Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001093-king's-meadow/",
+      "name": "King's Meadow",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001390-waldmers-wood/",
+      "name": "Waldmers Wood",
+      "status": "complete",
+      "homes": 32,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000965-barratt-homes-at-linmere/",
+      "name": "Barratt Homes at Linmere",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002983-st-peters-chase/",
+      "name": "St Peters Chase",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000446-aston-grange/",
+      "name": "Aston Grange",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000220-wichel-fields-@-wichelstowe/",
+      "name": "Wichel Fields @ Wichelstowe",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002986-castle-reach/",
+      "name": "Castle Reach",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000171-kingslaw-gait/",
+      "name": "Kingslaw Gait",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002807-the-skylarks/",
+      "name": "The Skylarks",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000740-waterside/",
+      "name": "Waterside",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002973-lennox-gardens/",
+      "name": "Lennox Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001701-canal-quarter-at-kingsbrook/",
+      "name": "Canal Quarter at Kingsbrook",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002663-cornhill-village/",
+      "name": "Cornhill Village",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001647-quarter-jack-park/",
+      "name": "Quarter Jack Park",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+      "name": "Barratt at Overstone Gate",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002550-orchards-view-@-wichelstowe/",
+      "name": "Orchards View @ Wichelstowe",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001091-cherry-meadows-at-applegate-park/",
+      "name": "Cherry Meadows at Applegate Park",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001099-highgrove-at-wynyard-park/",
+      "name": "Highgrove at Wynyard Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002673-auchinleck-village/",
+      "name": "Auchinleck Village",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002634-affinity/",
+      "name": "Affinity",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002924-ashbourne-airfield/",
+      "name": "Ashbourne Airfield",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003019-sandy-shores/",
+      "name": "Sandy Shores",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001066-riverside-quarter/",
+      "name": "Riverside Quarter",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002697-russet-park/",
+      "name": "Russet Park",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002466-winnycroft/",
+      "name": "Winnycroft",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001197-centurion-village/",
+      "name": "Centurion Village",
+      "status": "complete",
+      "homes": 26,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002568-the-spires/",
+      "name": "The Spires",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002089-darwin-green/",
+      "name": "Darwin Green",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001009-findrassie/",
+      "name": "Findrassie",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002715-highgrove/",
+      "name": "Highgrove",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002767-knights-gate/",
+      "name": "Knights Gate",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001167-king's-gallop/",
+      "name": "King's Gallop",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002613-barratt-homes-at-priors-hall-park/",
+      "name": "Barratt Homes at Priors Hall Park",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002676-burnbrae-meadow/",
+      "name": "Burnbrae Meadow",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002702-barratt-homes-at-thoresby-vale/",
+      "name": "Barratt Homes at Thoresby Vale",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001688-mortimer-park/",
+      "name": "Mortimer Park",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001117-barratt-@-west-craigs/",
+      "name": "Barratt @ West Craigs",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002468-barratt-homes-at-richmond-park/",
+      "name": "Barratt Homes at Richmond Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001811-wigmore-park/",
+      "name": "Wigmore Park",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002569-knights-view/",
+      "name": "Knights View",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002374-fernwood-village/",
+      "name": "Fernwood Village",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Hilliers Heights",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002989-hilliers-heights/",
+      "name": "Lamberton · Plot 51",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002989-hilliers-heights/plot-51-h837851/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "51",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "65349ef9f93fe14a37a25db8945023da80665f9e2907636c6c0b9f5467f6807d"
+      ]
+    },
+    {
+      "development": "Hilliers Heights",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002989-hilliers-heights/",
+      "name": "Lamberton · Plot 2",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002989-hilliers-heights/plot-2-h83782/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "65349ef9f93fe14a37a25db8945023da80665f9e2907636c6c0b9f5467f6807d"
+      ]
+    },
+    {
+      "development": "Sycamore Gardens",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002825-sycamore-gardens/",
+      "name": "Ballathie · Plot 83",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002825-sycamore-gardens/plot-83-h942283/",
+      "bedrooms": 5,
+      "price": 409995,
+      "plots": [
+        {
+          "number": "83",
+          "price": 409995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sycamore Gardens",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002825-sycamore-gardens/",
+      "name": "Ballathie · Plot 87",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002825-sycamore-gardens/plot-87-h942287/",
+      "bedrooms": 5,
+      "price": 447995,
+      "plots": [
+        {
+          "number": "87",
+          "price": 447995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Gilmerton Heights",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev001909-gilmerton-heights/",
+      "name": "Tantallon · Plot 190",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001909-gilmerton-heights/plot-190-h7594190/",
+      "bedrooms": 5,
+      "price": 449995,
+      "plots": [
+        {
+          "number": "190",
+          "price": 449995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bernets Nook",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/",
+      "name": "Lamberton · Plot 106",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/plot-106-h8600106/",
+      "bedrooms": 5,
+      "price": 399000,
+      "plots": [
+        {
+          "number": "106",
+          "price": 399000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bernets Nook",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/",
+      "name": "Lamberton · Plot 88",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/plot-88-h860088/",
+      "bedrooms": 5,
+      "price": 399000,
+      "plots": [
+        {
+          "number": "88",
+          "price": 399000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cca89f7f732dc4a67427537e7a4e1f9bedd94ef126a554bf0dce2178c9ec4ee1",
+        "9dad8d3eef5bd469b4160b274e7186e2ca48c787fd618aafbd8a9e280294f2aa"
+      ]
+    },
+    {
+      "development": "New Lubbesthorpe",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002954-new-lubbesthorpe/",
+      "name": "Fallow · Plot 382",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002954-new-lubbesthorpe/plot-382-h9344382/",
+      "bedrooms": 5,
+      "price": 564995,
+      "plots": [
+        {
+          "number": "382",
+          "price": 564995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "New Lubbesthorpe",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002954-new-lubbesthorpe/",
+      "name": "Marlowe · Plot 328",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002954-new-lubbesthorpe/plot-328-h9344328/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "328",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Laurel Chase",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002951-laurel-chase/",
+      "name": "Fallow · Plot 8",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002951-laurel-chase/plot-8-h87348/",
+      "bedrooms": 5,
+      "price": 529995,
+      "plots": [
+        {
+          "number": "8",
+          "price": 529995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e13d7da36d7877aaa47a041ed5a9285ac73e1d022ba12b52d85e1fde70976d03"
+      ]
+    },
+    {
+      "development": "Laurel Chase",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002951-laurel-chase/",
+      "name": "Marlowe · Plot 1",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002951-laurel-chase/plot-1-h87341/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Franklin Gardens at Darwin Green",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-002587-franklin-gardens-at-darwin-green/",
+      "name": "Malvern · Plot 296",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002587-franklin-gardens-at-darwin-green/plot-296-h7102296/",
+      "bedrooms": 5,
+      "price": 840000,
+      "plots": [
+        {
+          "number": "296",
+          "price": 840000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3600fbc1b65c3b819754a6e7a97f1b4f9155a95c2e9fdfa1c94ac3536e4a6bbe"
+      ]
+    },
+    {
+      "development": "Franklin Gardens at Darwin Green",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-002587-franklin-gardens-at-darwin-green/",
+      "name": "Marlowe · Plot 306",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002587-franklin-gardens-at-darwin-green/plot-306-h7102306/",
+      "bedrooms": 5,
+      "price": 895000,
+      "plots": [
+        {
+          "number": "306",
+          "price": 895000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cuckoo Fields Barratt Homes",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002684-cuckoo-fields-barratt-homes/",
+      "name": "Lamberton · Plot 256",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002684-cuckoo-fields-barratt-homes/plot-256-h8452256/",
+      "bedrooms": 5,
+      "price": 525000,
+      "plots": [
+        {
+          "number": "256",
+          "price": 525000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 197",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-197-h8533197/",
+      "bedrooms": 5,
+      "price": 419995,
+      "plots": [
+        {
+          "number": "197",
+          "price": 419995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 115",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-115-h8533115/",
+      "bedrooms": 5,
+      "price": 429995,
+      "plots": [
+        {
+          "number": "115",
+          "price": 429995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Fallow · Plot 122",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-122-h8533122/",
+      "bedrooms": 5,
+      "price": 434995,
+      "plots": [
+        {
+          "number": "122",
+          "price": 434995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 125",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-125-h8533125/",
+      "bedrooms": 5,
+      "price": 434995,
+      "plots": [
+        {
+          "number": "125",
+          "price": 434995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 126",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-126-h8533126/",
+      "bedrooms": 5,
+      "price": 435995,
+      "plots": [
+        {
+          "number": "126",
+          "price": 435995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 129",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-129-h8533129/",
+      "bedrooms": 5,
+      "price": 437995,
+      "plots": [
+        {
+          "number": "129",
+          "price": 437995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 128",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-128-h8533128/",
+      "bedrooms": 5,
+      "price": 438995,
+      "plots": [
+        {
+          "number": "128",
+          "price": 438995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 123",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-123-h8533123/",
+      "bedrooms": 5,
+      "price": 439995,
+      "plots": [
+        {
+          "number": "123",
+          "price": 439995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Fallow · Plot 2",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-2-h85332/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Old Durham Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+      "name": "Brambling · Plot 132",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/plot-132-h8533132/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "132",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Poppies - Barratt Homes",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-002651-the-poppies---barratt-homes/",
+      "name": "Lamberton · Plot 342",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002651-the-poppies---barratt-homes/plot-342-h9206342/",
+      "bedrooms": 5,
+      "price": 645000,
+      "plots": [
+        {
+          "number": "342",
+          "price": 645000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Brookside Meadows",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-002639-brookside-meadows/",
+      "name": "Lamberton · Plot 189",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002639-brookside-meadows/plot-189-ha037189/",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "number": "189",
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Somer Meadows",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/",
+      "name": "Lamberton · Plot 53",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/plot-53-h880753/",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "53",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Somer Meadows",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/",
+      "name": "Lamberton · Plot 1",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/plot-1-h88071/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "65349ef9f93fe14a37a25db8945023da80665f9e2907636c6c0b9f5467f6807d"
+      ]
+    },
+    {
+      "development": "Wigston Meadows at Kilby Bridge",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev003147-wigston-meadows-at-kilby-bridge/",
+      "name": "Fallow · Plot 30",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003147-wigston-meadows-at-kilby-bridge/plot-30-ha04630/",
+      "bedrooms": 5,
+      "price": 499995,
+      "plots": [
+        {
+          "number": "30",
+          "price": 499995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wigston Meadows at Kilby Bridge",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev003147-wigston-meadows-at-kilby-bridge/",
+      "name": "Fallow · Plot 135",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003147-wigston-meadows-at-kilby-bridge/plot-135-ha046135/",
+      "bedrooms": 5,
+      "price": 539995,
+      "plots": [
+        {
+          "number": "135",
+          "price": 539995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt Homes at Sholden Meadows",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002971-barratt-homes-at-sholden-meadows/",
+      "name": "Lamberton · Plot 3",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002971-barratt-homes-at-sholden-meadows/plot-3-h87923/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "3",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Century Gardens",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002968-century-gardens/",
+      "name": "Lamberton · Plot 43",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002968-century-gardens/plot-43-h883943/",
+      "bedrooms": 5,
+      "price": 640000,
+      "plots": [
+        {
+          "number": "43",
+          "price": 640000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Willow Grove",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev001355-willow-grove/",
+      "name": "Marlowe · Plot 205",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev001355-willow-grove/plot-205-h7519205/",
+      "bedrooms": 5,
+      "price": 684995,
+      "plots": [
+        {
+          "number": "205",
+          "price": 684995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hollygate Green",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002687-hollygate-green/",
+      "name": "Malvern · Plot 29",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002687-hollygate-green/plot-29-h533329/",
+      "bedrooms": 5,
+      "price": 539995,
+      "plots": [
+        {
+          "number": "29",
+          "price": 539995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Meadows",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-002652-the-meadows/",
+      "name": "Brimstone · Plot 110",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002652-the-meadows/plot-110-h8810110/",
+      "bedrooms": 5,
+      "price": 509995,
+      "plots": [
+        {
+          "number": "110",
+          "price": 509995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Meadows",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-002652-the-meadows/",
+      "name": "Brimstone · Plot 121",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-002652-the-meadows/plot-121-h8810121/",
+      "bedrooms": 5,
+      "price": 514995,
+      "plots": [
+        {
+          "number": "121",
+          "price": 514995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Foxglove Park",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev003070-foxglove-park/",
+      "name": "Ballathie · Plot 24",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev003070-foxglove-park/plot-24-ha50624/",
+      "bedrooms": 5,
+      "price": 435995,
+      "plots": [
+        {
+          "number": "24",
+          "price": 435995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "King's Meadow",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-001093-king's-meadow/",
+      "name": "Marlowe · Plot 233",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001093-king's-meadow/plot-233-h7683233/",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "233",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "King's Meadow",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev-001093-king's-meadow/",
+      "name": "Marlowe · Plot 59",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev-001093-king's-meadow/plot-59-h768359/",
+      "bedrooms": 5,
+      "price": 559995,
+      "plots": [
+        {
+          "number": "59",
+          "price": 559995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt Homes at Linmere",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev000965-barratt-homes-at-linmere/",
+      "name": "Haversham Special · Plot 62",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000965-barratt-homes-at-linmere/plot-62-h871162/",
+      "bedrooms": 5,
+      "price": 490500,
+      "plots": [
+        {
+          "number": "62",
+          "price": 490500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "94813ee531beb79ab5bf97eab6fd20ae60b8934af5cb318846cee0dc755aaeea"
+      ]
+    },
+    {
+      "development": "Barratt Homes at Linmere",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev000965-barratt-homes-at-linmere/",
+      "name": "Haversham Special · Plot 150",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000965-barratt-homes-at-linmere/plot-150-h8711150/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "150",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "94813ee531beb79ab5bf97eab6fd20ae60b8934af5cb318846cee0dc755aaeea"
+      ]
+    },
+    {
+      "development": "Aston Grange",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev000446-aston-grange/",
+      "name": "Lamberton · Plot 90",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev000446-aston-grange/plot-90-h823090/",
+      "bedrooms": 5,
+      "price": 599995,
+      "plots": [
+        {
+          "number": "90",
+          "price": 599995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt at Overstone Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+      "name": "Lamberton · Plot 84",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/plot-84-h830484/",
+      "bedrooms": 5,
+      "price": 514995,
+      "plots": [
+        {
+          "number": "84",
+          "price": 514995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt at Overstone Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+      "name": "Lamberton · Plot 85",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/plot-85-h830485/",
+      "bedrooms": 5,
+      "price": 519995,
+      "plots": [
+        {
+          "number": "85",
+          "price": 519995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt at Overstone Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+      "name": "Malvern · Plot 88",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/plot-88-h830488/",
+      "bedrooms": 5,
+      "price": 544995,
+      "plots": [
+        {
+          "number": "88",
+          "price": 544995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt at Overstone Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+      "name": "Malvern · Plot 86",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/plot-86-h830486/",
+      "bedrooms": 5,
+      "price": 546995,
+      "plots": [
+        {
+          "number": "86",
+          "price": 546995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3600fbc1b65c3b819754a6e7a97f1b4f9155a95c2e9fdfa1c94ac3536e4a6bbe"
+      ]
+    },
+    {
+      "development": "Barratt at Overstone Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+      "name": "Marlowe · Plot 47",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/plot-47-h830447/",
+      "bedrooms": 5,
+      "price": 594995,
+      "plots": [
+        {
+          "number": "47",
+          "price": 594995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt at Overstone Gate",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+      "name": "Marlowe · Plot 87",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/plot-87-h830487/",
+      "bedrooms": 5,
+      "price": 599995,
+      "plots": [
+        {
+          "number": "87",
+          "price": 599995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Russet Park",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002697-russet-park/",
+      "name": "Lamberton · Plot 53",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002697-russet-park/plot-53-h668553/",
+      "bedrooms": 5,
+      "price": 620000,
+      "plots": [
+        {
+          "number": "53",
+          "price": 620000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "597345ab49184e6e460d03c3a3f0ec7ad848e134f4109806c2df20e31fb078e3"
+      ]
+    },
+    {
+      "development": "Russet Park",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002697-russet-park/",
+      "name": "Lamberton · Plot 12",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002697-russet-park/plot-12-h668512/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "12",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt Homes at Thoresby Vale",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002702-barratt-homes-at-thoresby-vale/",
+      "name": "LAMBERTON · Plot 1",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002702-barratt-homes-at-thoresby-vale/plot-1-h88561/",
+      "bedrooms": 5,
+      "price": 419995,
+      "plots": [
+        {
+          "number": "1",
+          "price": 419995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barratt Homes at Thoresby Vale",
+      "developmentUrl": "https://www.barratthomes.co.uk/new-homes/dev002702-barratt-homes-at-thoresby-vale/",
+      "name": "Lamberton · Plot 70",
+      "url": "https://www.barratthomes.co.uk/new-homes/dev002702-barratt-homes-at-thoresby-vale/plot-70-h885670/",
+      "bedrooms": 5,
+      "price": 479995,
+      "plots": [
+        {
+          "number": "70",
+          "price": 479995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    }
+  ],
+  "images": [
+    {
+      "id": "65349ef9f93fe14a37a25db8945023da80665f9e2907636c6c0b9f5467f6807d",
+      "path": "images/65349ef9f93fe14a37a25db8945023da80665f9e2907636c6c0b9f5467f6807d.jpg",
+      "sourceUrl": "https://www.barratthomes.co.uk/-/media/divisions/barratt-bristol/developments/somer-meadows/show-homes/lamberton/somermeadows_lamberton_single_bedroom-resized.jpg?w=840&hash=B545720BA337A549B7507018A0CD3A95",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "A dedicated home office featuring a desk with a chair, a corkboard, and a daybed/sofa.",
+        "reason": "This is a staged home office with a visible desk and no bed (only a sofa/daybed)."
+      }
+    },
+    {
+      "id": "cca89f7f732dc4a67427537e7a4e1f9bedd94ef126a554bf0dce2178c9ec4ee1",
+      "path": "images/cca89f7f732dc4a67427537e7a4e1f9bedd94ef126a554bf0dce2178c9ec4ee1.jpg",
+      "sourceUrl": "https://www.barratthomes.co.uk/-/media/divisions/bh-west-mids/developments/elborough-place-(h826101)/bwm-elborough-park-lamberton-dining.jpg?w=840&hash=4AC4CFE38AFEA6B7E51F70895ACD7621",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "An open plan kitchen-dining space featuring a small desk and office chair in the background area.",
+        "reason": "The space includes a distinct office desk with a laptop and chair, and there is no bed visible."
+      }
+    },
+    {
+      "id": "9dad8d3eef5bd469b4160b274e7186e2ca48c787fd618aafbd8a9e280294f2aa",
+      "path": "images/9dad8d3eef5bd469b4160b274e7186e2ca48c787fd618aafbd8a9e280294f2aa.jpg",
+      "sourceUrl": "https://www.barratthomes.co.uk/-/media/divisions/bh-west-mids/developments/elborough-place-(h826101)/bwm-elborough-park-lamberton-home-office-area.jpg?w=840&hash=C7C1E362CA743A0EF38FB42A9C17DB6F",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A close-up view of a home office desk setup with a laptop, chair, and wall organizer.",
+        "reason": "This is a dedicated home office study area with a clear desk surface for work and no bed present."
+      }
+    },
+    {
+      "id": "e13d7da36d7877aaa47a041ed5a9285ac73e1d022ba12b52d85e1fde70976d03",
+      "path": "images/e13d7da36d7877aaa47a041ed5a9285ac73e1d022ba12b52d85e1fde70976d03.jpg",
+      "sourceUrl": "https://www.barratthomes.co.uk/-/media/divisions/north-east/developments/sycamore-grove-(dev-001160)/014-bne_sycamoregrove_newcastle_lamberton_4bed.jpg?w=840&hash=0F15CE15AF1F799721E17396442933E3",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office featuring a large built-in desk, multiple chairs, a TV, and a sofa.",
+        "reason": "It is staged as a home office/study with a visible work surface and no bed."
+      }
+    },
+    {
+      "id": "3600fbc1b65c3b819754a6e7a97f1b4f9155a95c2e9fdfa1c94ac3536e4a6bbe",
+      "path": "images/3600fbc1b65c3b819754a6e7a97f1b4f9155a95c2e9fdfa1c94ac3536e4a6bbe.jpg",
+      "sourceUrl": "https://www.barratthomes.co.uk/-/media/divisions/southampton/developments/berewood-green-(h730801)/95192.jpg?w=840&hash=FF2DEF9D8474070800859AEC7AE522DD",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office and study room featuring a desk with a computer, an office chair, and living room seating area.",
+        "reason": "The room includes a visible workspace/desk and office chair, and contains no bed."
+      }
+    },
+    {
+      "id": "94813ee531beb79ab5bf97eab6fd20ae60b8934af5cb318846cee0dc755aaeea",
+      "path": "images/94813ee531beb79ab5bf97eab6fd20ae60b8934af5cb318846cee0dc755aaeea.jpg",
+      "sourceUrl": "https://www.barratthomes.co.uk/-/media/divisions/bdw-north-thame/developments/barratt-homes-at-linmere-dev000965/linmere-haversham-study.jpg?w=840&hash=9EE423710023EADEE614647F67D3D4FB",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a desk with a computer monitor, an office chair, and decor on the walls.",
+        "reason": "The room is staged as a home office with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "597345ab49184e6e460d03c3a3f0ec7ad848e134f4109806c2df20e31fb078e3",
+      "path": "images/597345ab49184e6e460d03c3a3f0ec7ad848e134f4109806c2df20e31fb078e3.jpg",
+      "sourceUrl": "https://www.barratthomes.co.uk/-/media/divisions/south-west-dwh/developments/delamere-park-(h797801)/lamberton/8668-021_bh_delamerepark_frome_lamberton_5bed.jpg?w=840&hash=ECE4469BFF0CB6674C43E8DA5D465EC3",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with green walls, a wooden desk holding a laptop and lamp, an office chair, shelving units, and a yellow accent armchair.",
+        "reason": "The room is clearly staged as a home office/study with a functional desk and workspace, and contains no bed."
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 160,
+    "qualifyingDiscovered": 52,
+    "propertyLimitOmissions": 0,
+    "reusedGalleries": 7,
+    "reusedImageSources": 186,
+    "reusedImages": 4,
+    "imagesAttempted": 245,
+    "pendingImages": 0,
+    "matchedImages": 7,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 241
+  },
+  "completedAt": "2026-10-02T12:24:45.910Z"
+}

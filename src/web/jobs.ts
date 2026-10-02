@@ -1,3 +1,4 @@
+import { developers } from '../adapters/developers';
 import { mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { resolve } from 'node:path';
@@ -7,7 +8,7 @@ import { collectionFolder } from './collections';
 import type { AppJob, JobInput } from '../models/app-job';
 
 export const jobInput = z.object({
- developer: z.enum(['bellway', 'cala']), action: z.enum(['crawl', 'classify']),
+ developer: z.enum(developers.map(d => d.slug)), action: z.enum(['crawl', 'classify']),
  maxDevelopments: z.number().int().min(1).max(1000).default(1000),
  maxProperties: z.number().int().min(1).max(10000).default(10000),
  maxImages: z.number().int().min(1).max(20000).default(20000),

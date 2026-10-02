@@ -59,7 +59,7 @@ async function main() {
    report.metrics.matchedImages = report.images.filter(i => i.verdict?.matches).length;
    await writeReport(folder, report);
    console.log(JSON.stringify({ stage: 'batch_complete', processed: Math.min(offset + 8, pending.length), total: pending.length, matches: report.metrics.matchedImages }));
-   await sleep(4000);
+   if (remaining.length) await sleep(4000);
   }
   report.status = report.errors.length || report.metrics.pendingImages || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';
   report.completedAt = new Date().toISOString(); await writeReport(folder, report);

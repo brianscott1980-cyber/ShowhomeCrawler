@@ -1,0 +1,10 @@
+import { readFile } from 'node:fs/promises';
+import { parseArgs } from 'node:util';
+import { sha256 } from '../galleries/image-hasher.js';
+import { analysisVersion, verdictSchema } from '../vision/gemini-classifier.js';
+import type { RunReport } from '../reports/report.js';
+const {values}=parseArgs({options:{builder:{type:'string'}}});
+if(!values.builder||!/^[a-z][a-z-]+$/.test(values.builder))throw new Error('Builder required.');
+const report:RunReport=JSON.parse(await readFile(`results/${values.builder}-home-offices/checkpoint.json`,'utf8'));
+const verdicts=await Promise.all(report.images.map(async image=>image.verdict??readFile(`results/.cache/analysis/${sha256(`${image.id}:${report.model}:${analysisVersion}`)}.json`,'utf8').then(raw=>verdictSchema.parse(JSON.parse(raw))).catch(()=>null)));
+console.log(JSON.stringify({developer:report.builder?.name,status:report.status,developmentsChecked:report.developments.length,developmentsTotal:report.metrics.sitemapDevelopments,propertiesCollected:report.properties.length,propertiesTotal:report.metrics.qualifyingDiscovered,uniqueImages:report.images.length,imagesClassified:verdicts.filter(Boolean).length,matches:verdicts.filter(v=>v?.matches).length,coverageErrors:report.errors.length}));

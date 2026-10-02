@@ -6,6 +6,7 @@ import { load } from 'cheerio';
 import { matchesPropertyFilter } from '../filters/property-filter.js';
 import { readEnv } from '../config/env.js';
 import { RequestClient, mapLimit } from '../crawler/request-client.js';
+import { discoverSitemapDevelopments } from '../crawler/sitemaps.js';
 import { builderSite } from '../adapters/sites.js';
 import { sha256, imageIdentity, sameVisual } from '../galleries/image-hasher.js';
 import { ImageSourceCache, imageSourceKey } from '../galleries/image-source-cache.js';
@@ -17,13 +18,13 @@ async function exists(path: string) { try { await readFile(path); return true; }
 async function atomic(path: string, value: unknown) { const temporary = path + '.' + randomUUID() + '.tmp'; await writeFile(temporary, JSON.stringify(value)); await rename(temporary, path); }
 async function main() {
  const env = readEnv();
- const { values } = parseArgs({ options: { builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string', default: 'results/bellway-home-offices' }, 'discover-only': { type: 'boolean' }, development: { type: 'string' }, persist: { type: 'boolean' } } });
+ const { values } = parseArgs({ options: { builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string' }, persist: { type: 'boolean' } } });
  const site = builderSite(values.builder); const { developmentUrls, discoverHomes, galleryImages } = site;
  const number = (v: string, max: number) => { const n = Number(v); if (!Number.isInteger(n) || n <= 0 || n > max) throw new Error('Invalid crawl limit.'); return n; };
  const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 20000);
  const model = env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
  if (!values['discover-only'] && !env.GEMINI_API_KEY) throw new Error('Set GEMINI_API_KEY locally or use --discover-only.');
- const folder = resolve(values.output);
+ const folder = resolve(values.output ?? `results/${site.slug}-home-offices`);
  if (!folder.startsWith(resolve('results') + '/')) throw new Error('Output must be within results/.');
  await mkdir(folder + '/images', { recursive: true }); await mkdir('results/.cache/pages', { recursive: true }); await mkdir('results/.cache/analysis', { recursive: true });
  const lock = await open(folder + '/.lock', 'wx').catch(() => { throw new Error('This output folder is already locked by another crawl.'); });
@@ -33,7 +34,7 @@ async function main() {
   if (await exists(path)) return readFile(path, 'utf8');
   const html = await client.text(url);
   // Remove transient Livewire/session data from local cached pages.
-  const $ = load(html); $('[wire\\:initial-data]').removeAttr('wire:initial-data'); $('script').not('[type="application/ld+json"]').remove(); $('input[type="hidden"]').remove();
+  const $ = load(html); $('[wire\\:initial-data]').removeAttr('wire:initial-data'); $('script').not('[type="application/ld+json"], [type="application/json"]').remove(); $('input[type="hidden"]').remove();
   const sanitized = $.html(); await writeFile(path, sanitized); return sanitized;
  };
  const sql = values.persist ? createDatabase() : null;
@@ -43,11 +44,10 @@ async function main() {
  try {
   const robots = await client.text(site.websiteUrl + '/robots.txt');
   if (/Disallow:\s*\/\s*(?:\n|$)/.test(robots)) throw new Error('robots.txt disallows crawling.');
-  const sitemap = await client.text(site.sitemap);
-  const all = developmentUrls(sitemap);
+  const all = await discoverSitemapDevelopments(site.sitemap, developmentUrls, url => client.text(url));
   if (!all.length) throw new Error('No development URLs found.');
   let urls = all.slice(0, maxDevs);
-  if (values.development) { if (!all.includes(values.development)) throw new Error('Development is not in the Bellway sitemap.'); urls = [values.development]; }
+  if (values.development) { if (!all.includes(values.development)) throw new Error('Development is not in the builder sitemap.'); urls = [values.development]; }
   report.metrics.sitemapDevelopments = all.length;
   console.log(JSON.stringify({ stage: 'discovery', sitemapDevelopments: all.length, selected: urls.length }));
   const discovered = await mapLimit(urls, Math.min(3, env.MAX_CONCURRENCY), async url => {
@@ -57,12 +57,12 @@ async function main() {
     if (repo && result.plots.length) await repo.saveDevelopment(result.development, result.plots);
     const qualifying = result.homes.filter(p => matchesPropertyFilter(p, { minBedrooms: minBeds }));
     report.developments.push({ url, name: result.development.name, status: result.plotError ? 'complete_with_warning' : 'complete', homes: result.homes.length, qualifying: qualifying.length, warning: result.plotError ?? (result.development.url !== url ? 'Redirected to ' + result.development.url : undefined) });
-    console.log(JSON.stringify({ stage: 'development', name: result.development.name, homes: result.homes.length, qualifying: qualifying.length }));
+    console.log(JSON.stringify({ stage: 'development', developer: site.name, completed: report.developments.length, total: urls.length, name: result.development.name, homes: result.homes.length, qualifying: qualifying.length }));
     await atomic(folder + '/checkpoint.json', report);
     return { ...result, qualifying };
    } catch (error) {
     const message = error instanceof Error && error.message.startsWith('HTTP ') ? error.message : 'Development extraction or persistence failed';
-    report.developments.push({ url, status: 'failed', error: message }); report.errors.push({ url, stage: 'development', message }); return null;
+    report.developments.push({ url, status: 'failed', error: message }); report.errors.push({ url, stage: 'development', message }); console.log(JSON.stringify({stage:'development_failed',developer:site.name,completed:report.developments.length,total:urls.length,url,message})); return null;
    }
   });
   const homes = discovered.flatMap(d => d ? d.qualifying.map(home => ({ home, development: d.development, plots: d.plots.filter(p => p.url === home.url) })) : []);
@@ -76,7 +76,7 @@ async function main() {
   // Sequential galleries; development requests and image workers are capped at three.
   for (const { home, development, plots } of homes.slice(0, maxProperties)) {
    if (stopped) break;
-   const property = { development: development.name, developmentUrl: development.url, name: site.slug === 'cala' && home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
+   const property = { development: development.name, developmentUrl: development.url, name: home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
    report.properties.push(property);
    try {
     const images = galleryImages(await page(home.url));
@@ -125,7 +125,7 @@ async function main() {
     property.imageIds = imageIds.filter((id): id is string => id !== null);
     property.imageIds = [...new Set(property.imageIds)];
     if (imageIds.every(id => id !== null)) galleryCache.set(galleryKey, property.imageIds);
-    console.log(JSON.stringify({ stage: 'gallery', development: development.name, home: home.name, images: images.length, uniqueImages: report.images.length }));
+    console.log(JSON.stringify({ stage: 'gallery', developer: site.name, completed: report.properties.length, total: Math.min(homes.length,maxProperties), development: development.name, home: home.name, images: images.length, uniqueImages: report.images.length }));
    } catch { report.errors.push({ url: home.url, stage: 'gallery', message: 'House page or gallery extraction failed' }); }
    await writeReport(folder, report);
   }
@@ -136,6 +136,13 @@ async function main() {
   report.status = stopped ? 'cancelled' : report.errors.length || report.metrics.pendingImages || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';
   report.completedAt = new Date().toISOString(); await writeReport(folder, report); await atomic(folder + '/checkpoint.json', report);
   console.log(JSON.stringify({ stage: 'finished', status: report.status, developments: report.developments.length, properties: report.properties.length, uniqueImages: report.images.length, matches: report.metrics.matchedImages, errors: report.errors.length, output: folder }));
+ } catch (error) {
+  report.status = 'failed'; report.completedAt = new Date().toISOString();
+  const message = error instanceof Error && /^(HTTP \d+|No development URLs found\.|robots.txt disallows crawling\.)$/.test(error.message) ? error.message : 'Source discovery failed; no negative classification inferred.';
+  report.errors.push({url:site.sitemap,stage:'source',message});
+  await writeReport(folder,report);
+  console.log(JSON.stringify({stage:'finished',developer:site.name,status:report.status,errors:report.errors.length,output:folder}));
+  throw error;
  } finally { if (sql) await sql.end(); await lock.close(); const { unlink } = await import('node:fs/promises'); await unlink(folder + '/.lock'); }
 }
 main().catch(error => { console.error(error instanceof Error && /^(Set GEMINI|Only Bellway|Invalid crawl|Output must|This output|Development is|No development|robots.txt)/.test(error.message) ? error.message : 'Crawl failed; credentials and raw provider responses withheld.'); process.exitCode = 1; });
