@@ -8,11 +8,12 @@ export function scrollCrossing(previous:CardEdges,current:CardEdges,threshold:nu
 export function collectionIndex(index:number,direction:number,length:number){return length>0?(index+direction+length)%length:0;}
 /** The midpoint traverses the row from its top (0) to its bottom (1). */
 export function rowProgress(row:CardEdges,midpoint:number){return Math.max(0,Math.min(1,(midpoint-row.top)/Math.max(1,row.bottom-row.top)));}
-export function rowScrollCrossing(previous:number,current:number,column:number,columns:number,scrollDelta:number){
- const trigger=(column+.5)/Math.max(1,columns);
+export function rowTrigger(column:number,columns:number,large=false){return large&&columns===2&&column===1?.6:(column+.5)/Math.max(1,columns);}
+export function rowScrollCrossing(previous:number,current:number,column:number,columns:number,scrollDelta:number,large=false){
+ const trigger=rowTrigger(column,columns,large);
  if(scrollDelta>0&&previous<trigger&&current>=trigger)return 1;
  if(scrollDelta<0&&previous>=trigger&&current<trigger)return -1;
  return 0;
 }
 export function atPageBottom(scrollY:number,viewportHeight:number,pageHeight:number){return scrollY+viewportHeight>=pageHeight-2;}
-export function bottomRemainder(list:boolean,edges:CardEdges,progress:number,column:number,columns:number,midpoint:number){return list?edges.bottom>=midpoint:progress<(column+.5)/Math.max(1,columns);}
+export function bottomRemainder(list:boolean,edges:CardEdges,progress:number,column:number,columns:number,midpoint:number,large=false){return list?edges.bottom>=midpoint:progress<rowTrigger(column,columns,large);}
