@@ -1,0 +1,352 @@
+{
+  "builder": {
+    "name": "Springfield",
+    "slug": "springfield",
+    "websiteUrl": "https://www.springfield.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T13:33:29.965Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Elgin",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Buckie",
+      "status": "complete",
+      "homes": 30,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Inverness",
+      "status": "complete",
+      "homes": 37,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Elgin",
+      "status": "complete",
+      "homes": 29,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Millerhill",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Perth",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Dundee",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 5
+    }
+  ],
+  "properties": [
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Prestwick · Plot 224",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1522-prestwick",
+      "bedrooms": 5,
+      "price": 395000,
+      "plots": [
+        {
+          "number": "224",
+          "price": 395000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Prestwick · Plot 230",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1527-prestwick",
+      "bedrooms": 5,
+      "price": 397000,
+      "plots": [
+        {
+          "number": "230",
+          "price": 397000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Kincraig · Plot 309",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+      "bedrooms": 5,
+      "price": 437000,
+      "plots": [
+        {
+          "number": "309",
+          "price": 437000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Bowmore · Plot 331",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1560-bowmore",
+      "bedrooms": 5,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "331",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Bowmore with sunroom · Plot 329",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1564-bowmore-with-sunroom",
+      "bedrooms": 5,
+      "price": 522000,
+      "plots": [
+        {
+          "number": "329",
+          "price": 522000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Dunrobin with sunroom · Plot 310",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+      "bedrooms": 5,
+      "price": 527000,
+      "plots": [
+        {
+          "number": "310",
+          "price": 527000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9d82298afe86bb41a298d28f21589f31ef97f8cf0c3607b0c1239d0700e2b824"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Kincraig with sunroom · Plot 2116",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2116",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Prestwick · Plot 74",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1642-prestwick",
+      "bedrooms": 5,
+      "price": 457000,
+      "plots": [
+        {
+          "number": "74",
+          "price": 457000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Prestwick with sunroom · Plot 65",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1640-prestwick",
+      "bedrooms": 5,
+      "price": 484000,
+      "plots": [
+        {
+          "number": "65",
+          "price": 484000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Gleneagles · Plot 98",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1577-gleneagles",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "98",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Gleneagles · Plot 5062",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1787-gleneagles",
+      "bedrooms": 5,
+      "price": 441500,
+      "plots": [
+        {
+          "number": "5062",
+          "price": 441500,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Prestwick · Plot 5063",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1788-prestwick",
+      "bedrooms": 5,
+      "price": 455500,
+      "plots": [
+        {
+          "number": "5063",
+          "price": 455500,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Carnoustie · Plot 5075",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1800-carnoustie",
+      "bedrooms": 5,
+      "price": 488500,
+      "plots": [
+        {
+          "number": "5075",
+          "price": 488500,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Melford show home · Plot 1002",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1817-melford-show-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1002",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Gleneagles · Plot 5077",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1802-gleneagles",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "5077",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    }
+  ],
+  "images": [
+    {
+      "id": "d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5",
+      "path": "images/d52f5a0b5ece7db36ceaaaeea551ff2aebce8a956847a6a95e7005e82be167c5.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/799/13_Kincraig_office_1_plot_detail_image.jpg?1750674868",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or study staged with a long desk, office chairs, a reading chair, and artwork.",
+        "reason": "It has a visible desk and work surface for office work with no visible bed or mattress."
+      }
+    },
+    {
+      "id": "9d82298afe86bb41a298d28f21589f31ef97f8cf0c3607b0c1239d0700e2b824",
+      "path": "images/9d82298afe86bb41a298d28f21589f31ef97f8cf0c3607b0c1239d0700e2b824.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/720/Dunrobin_home_office_CROP_AM_plot_detail_image.jpg?1751293009",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "A well-lit home office featuring a large desk with two chairs, desk lamps, an accent chair, and patterned wallpaper.",
+        "reason": "It is staged as a home office with visible desks and work surfaces for office work, and contains no bed."
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 7,
+    "qualifyingDiscovered": 15,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 10,
+    "reusedGalleries": 1,
+    "imagesAttempted": 33,
+    "pendingImages": 0,
+    "matchedImages": 2,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 33
+  },
+  "completedAt": "2026-10-02T13:34:34.845Z"
+}

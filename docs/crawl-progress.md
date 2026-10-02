@@ -8,7 +8,7 @@ Criteria: at least five bedrooms; a visible desk and no visible bed. Developers 
 | 2 | David Wilson | Completed with gaps; collection included in this commit | 160 | 138 | 724 | 33 | 1 |
 | 3 | Miller Homes | Completed; collection included in this commit | 88 | 150 house styles (1,107 plots) | 554 | 29 | 0 |
 | 4 | Avant | Completed; collection included in this commit | 43 | 45 | 210 | 7 | 0 |
-| 5 | Springfield | Queued | | | | | |
+| 5 | Springfield | Completed; collection included in this commit | 7 | 15 | 33 | 2 | 0 |
 | 6 | Persimmon | Queued | | | | | |
 | 7 | Robertson Homes | Queued | | | | | |
 | 8 | Redrow | Queued | | | | | |
