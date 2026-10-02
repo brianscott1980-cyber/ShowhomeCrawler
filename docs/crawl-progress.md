@@ -11,7 +11,7 @@ Criteria: at least five bedrooms; a visible desk and no visible bed. Developers 
 | 5 | Springfield | Completed; collection included in this commit | 7 | 15 | 33 | 2 | 0 |
 | 6 | Persimmon | Completed; collection included in this commit | 234 | 84 | 407 | 19 | 0 |
 | 7 | Robertson Homes | Completed; collection included in this commit | 19 | 26 | 248 | 7 | 0 |
-| 8 | Redrow | Queued | | | | | |
+| 8 | Redrow | Completed; collection included in this commit | 91 | 71 | 200 | 2 | 0 |
 | 9 | The Berkeley Group | Queued | | | | | |
 | 10 | Crest Nicholson | Queued | | | | | |
 | 11 | Lynch Homes | Queued | | | | | |

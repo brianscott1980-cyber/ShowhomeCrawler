@@ -1,0 +1,1766 @@
+{
+  "builder": {
+    "name": "Redrow",
+    "slug": "redrow",
+    "websiteUrl": "https://www.redrow.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T14:06:04.380Z",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432817-the-foxgloves-silver-end-witham/",
+      "name": "The Foxgloves, Silver End, Witham",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212448-regent-quay-sittingbourne/",
+      "name": "Regent Quay, Sittingbourne",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212723-amber-fields-sittingbourne/",
+      "name": "Amber Fields, Sittingbourne",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr242791-the-alders-@-great-oldbury/",
+      "name": "The Alders @ Great Oldbury",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022673-tabley-park-knutsford/",
+      "name": "Tabley Park, Knutsford",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432857-the-oaks-at-hazel-park-stevenage/",
+      "name": "The Oaks at Hazel Park, Stevenage",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212757-oakleigh-fields-cliffe-woods/",
+      "name": "Oakleigh Fields, Cliffe Woods",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr152738-parc-y-coleg/",
+      "name": "Parc y Coleg",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162807-the-glade-at-woodland-vale/",
+      "name": "The Glade at Woodland Vale",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr412739-harbour-views/",
+      "name": "Harbour Views",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/",
+      "name": "Vale Croft Woods",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212812-paddock-green/",
+      "name": "Paddock Green",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/",
+      "name": "Sovereign Fields",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr021862-sycamore-green-ledsham-garden-village/",
+      "name": "Sycamore Green, Ledsham Garden Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162767-bishop-meadows-cowlishaw/",
+      "name": "Bishop Meadows, Cowlishaw",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082855-redrow-at-wigston-meadows/",
+      "name": "Redrow at Wigston Meadows",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022854-alderbrook-manor-grappenhall-heys/",
+      "name": "Alderbrook Manor, Grappenhall Heys",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432547-blossom-park-ingatestone/",
+      "name": "Blossom Park, Ingatestone",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212803-temple-woods-strood/",
+      "name": "Temple Woods, Strood",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr412786-harvest-rise/",
+      "name": "Harvest Rise",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr242818-charlton-common/",
+      "name": "Charlton Common",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/",
+      "name": "Imperial Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212622-the-hoplands/",
+      "name": "The Hoplands",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212788-greenways-betteshanger/",
+      "name": "Greenways, Betteshanger",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/",
+      "name": "Willow Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212704-monchelsea-park-maidstone/",
+      "name": "Monchelsea Park, Maidstone",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212779-preston-fields-faversham/",
+      "name": "Preston Fields, Faversham",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212747-stonehaven-park-ebbsfleet/",
+      "name": "Stonehaven Park, Ebbsfleet",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr242821-polden-orchards/",
+      "name": "Polden Orchards",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432743-millview-park-bocking/",
+      "name": "Millview Park, Bocking",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432645-hendricks-green-goffs-oak/",
+      "name": "Hendricks Green, Goffs Oak",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432745-hazel-park-stevenage/",
+      "name": "Hazel Park, Stevenage",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162781-poppy-fields-rotherham/",
+      "name": "Poppy Fields, Rotherham",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082816-arden-fields-bulkington/",
+      "name": "Arden Fields, Bulkington",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432631-the-parklands-at-great-wilsey-park-haverhill/",
+      "name": "The Parklands at Great Wilsey Park, Haverhill",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082823-curborough-lakes/",
+      "name": "Curborough Lakes",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082843-radbourne-view-derby/",
+      "name": "Radbourne View, Derby",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162780-kingsley-manor-harrogate/",
+      "name": "Kingsley Manor, Harrogate",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082764-dovecote-grange-fairham/",
+      "name": "Dovecote Grange, Fairham",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082785-royal-gardens-worcester/",
+      "name": "Royal Gardens, Worcester",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr412810-ash-gardens/",
+      "name": "Ash Gardens",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr152751-maes-yr-haf-at-plasdwr/",
+      "name": "Maes yr Haf at Plasdwr",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr412693-lavant-view/",
+      "name": "Lavant View",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/",
+      "name": "Roman Green, Kings Moat Garden Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162722-centurion-fields-leeds/",
+      "name": "Centurion Fields, Leeds",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212680-crown-hill-view-conningbrook-ashford/",
+      "name": "Crown Hill View, Conningbrook, Ashford",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022403-oaklands-ledsham-garden-village/",
+      "name": "Oaklands, Ledsham Garden Village",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022832-oak-brook-manor/",
+      "name": "Oak Brook Manor",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162830-woodland-chase-eccleston/",
+      "name": "Woodland Chase, Eccleston",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr242838-elm-grove/",
+      "name": "Elm Grove",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr152597-de-clare-gardens/",
+      "name": "De Clare Gardens",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022784-blossoms-round-hill-gardens/",
+      "name": "Blossoms, Round Hill Gardens",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162852-highgrove-gardens/",
+      "name": "Highgrove Gardens",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr152686-churchlands/",
+      "name": "Churchlands",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022602-gleaves-view-daresbury-garden-village/",
+      "name": "Gleaves View, Daresbury Garden Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162826-meadow-vale/",
+      "name": "Meadow Vale",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022750-the-finches-at-hilton-grange-halewood/",
+      "name": "The Finches at Hilton Grange, Halewood",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022706-emperor-park-kings-moat-garden-village/",
+      "name": "Emperor Park, Kings Moat Garden Village",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr152844-cwrt-y-pererin-at-plasdwr/",
+      "name": "Cwrt Y Pererin at Plasdwr",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr412809-royal-oaks-at-gillingham-meadows/",
+      "name": "Royal Oaks at Gillingham Meadows",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022672-hawthorn-court-ledsham-garden-village/",
+      "name": "Hawthorn Court, Ledsham Garden Village",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212806-the-landings/",
+      "name": "The Landings",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432362-westley-green-langdon-hills/",
+      "name": "Westley Green, Langdon Hills",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212797-hamlet-park/",
+      "name": "Hamlet Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/",
+      "name": "Windmill Court, East Bridgford",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr242733-blundell%E2%80%99s-grange/",
+      "name": "Blundell’s Grange",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022737-keckwick-park-daresbury-garden-village/",
+      "name": "Keckwick Park, Daresbury Garden Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022756-ashton-chase-woodford-garden-village/",
+      "name": "Ashton Chase, Woodford Garden Village",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022548-the-grange-at-yew-tree-park-burscough/",
+      "name": "The Grange at Yew Tree Park, Burscough",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022749-grace-fields-at-hilton-grange-halewood/",
+      "name": "Grace Fields at Hilton Grange, Halewood",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr242735-st-michael's-meadow/",
+      "name": "St Michael's Meadow",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212846-the-lakes-at-stonehaven-park/",
+      "name": "The Lakes at Stonehaven Park",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022783-woodlands-round-hill-gardens/",
+      "name": "Woodlands, Round Hill Gardens",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr442231-colindale-gardens-colindale/",
+      "name": "Colindale Gardens, Colindale",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432775-mandeville-crescent-saffron-walden/",
+      "name": "Mandeville Crescent, Saffron Walden",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr432444-the-mulberries-witham/",
+      "name": "The Mulberries, Witham",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162822-broadstone-manor-diggle/",
+      "name": "Broadstone Manor, Diggle",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082761-ash-holt-newton-garden-village/",
+      "name": "Ash Holt, Newton Garden Village",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082732-eagle-gate-at-amington-amington-garden-village/",
+      "name": "Eagle Gate at Amington, Amington Garden Village",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082851-curborough-fields/",
+      "name": "Curborough Fields",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/",
+      "name": "Shackleton Fields, Woodford Garden Village",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr242541-blaise-park/",
+      "name": "Blaise Park",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr152674-the-cedars-at-great-milton-park/",
+      "name": "The Cedars at Great Milton Park",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082719-hugglescote-grange-coalville/",
+      "name": "Hugglescote Grange, Coalville",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr162664-worden-gardens-leyland/",
+      "name": "Worden Gardens, Leyland",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr152596-the-hollies-at-great-milton-park/",
+      "name": "The Hollies at Great Milton Park",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082441-amington-fairway-amington-garden-village/",
+      "name": "Amington Fairway, Amington Garden Village",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082720-wellington-place-newton-garden-village/",
+      "name": "Wellington Place, Newton Garden Village",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr212776-the-mill-apartments/",
+      "name": "The Mill Apartments",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr082642-redrow-at-houlton/",
+      "name": "Redrow at Houlton",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.redrow.co.uk/new-homes/devr022834-mill-green-meadows/",
+      "name": "Mill Green Meadows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    }
+  ],
+  "properties": [
+    {
+      "development": "Tabley Park, Knutsford",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022673-tabley-park-knutsford/",
+      "name": "Toft",
+      "url": "https://www.redrow.co.uk/new-homes/devr022673-tabley-park-knutsford/toft/",
+      "bedrooms": 5,
+      "price": 1235000,
+      "plots": [
+        {
+          "price": 1235000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Tabley Park, Knutsford",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022673-tabley-park-knutsford/",
+      "name": "Tabley",
+      "url": "https://www.redrow.co.uk/new-homes/devr022673-tabley-park-knutsford/tabley/",
+      "bedrooms": 5,
+      "price": 1295000,
+      "plots": [
+        {
+          "price": 1295000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Oaks at Hazel Park, Stevenage",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432857-the-oaks-at-hazel-park-stevenage/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr432857-the-oaks-at-hazel-park-stevenage/hampstead/",
+      "bedrooms": 5,
+      "price": 870000,
+      "plots": [
+        {
+          "price": 870000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Oakleigh Fields, Cliffe Woods",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr212757-oakleigh-fields-cliffe-woods/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr212757-oakleigh-fields-cliffe-woods/hampstead/",
+      "bedrooms": 5,
+      "price": 800000,
+      "plots": [
+        {
+          "price": 800000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Glade at Woodland Vale",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162807-the-glade-at-woodland-vale/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr162807-the-glade-at-woodland-vale/hampstead/",
+      "bedrooms": 5,
+      "price": 680000,
+      "plots": [
+        {
+          "price": 680000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Vale Croft Woods",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/hampstead/",
+      "bedrooms": 5,
+      "price": 840000,
+      "plots": [
+        {
+          "price": 840000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Vale Croft Woods",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/",
+      "name": "Blenheim",
+      "url": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/blenheim/",
+      "bedrooms": 5,
+      "price": 1075000,
+      "plots": [
+        {
+          "price": 1075000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Vale Croft Woods",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/",
+      "name": "Highgrove",
+      "url": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/highgrove/",
+      "bedrooms": 5,
+      "price": 1275000,
+      "plots": [
+        {
+          "price": 1275000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Paddock Green",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr212812-paddock-green/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr212812-paddock-green/hampstead/",
+      "bedrooms": 5,
+      "price": 745000,
+      "plots": [
+        {
+          "price": 745000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sovereign Fields",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/hampstead/",
+      "bedrooms": 5,
+      "price": 725000,
+      "plots": [
+        {
+          "price": 725000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sovereign Fields",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/",
+      "name": "Sandringham Premium",
+      "url": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/sandringham-premium/",
+      "bedrooms": 5,
+      "price": 970000,
+      "plots": [
+        {
+          "price": 970000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sovereign Fields",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/",
+      "name": "Highgrove",
+      "url": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/highgrove/",
+      "bedrooms": 5,
+      "price": 1055000,
+      "plots": [
+        {
+          "price": 1055000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sycamore Green, Ledsham Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr021862-sycamore-green-ledsham-garden-village/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr021862-sycamore-green-ledsham-garden-village/hampstead/",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bishop Meadows, Cowlishaw",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162767-bishop-meadows-cowlishaw/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr162767-bishop-meadows-cowlishaw/hampstead/",
+      "bedrooms": 5,
+      "price": 620000,
+      "plots": [
+        {
+          "price": 620000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Redrow at Wigston Meadows",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082855-redrow-at-wigston-meadows/",
+      "name": "Highgate",
+      "url": "https://www.redrow.co.uk/new-homes/devr082855-redrow-at-wigston-meadows/highgate/",
+      "bedrooms": 5,
+      "price": 649995,
+      "plots": [
+        {
+          "price": 649995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Redrow at Wigston Meadows",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082855-redrow-at-wigston-meadows/",
+      "name": "Blenheim",
+      "url": "https://www.redrow.co.uk/new-homes/devr082855-redrow-at-wigston-meadows/blenheim/",
+      "bedrooms": 5,
+      "price": 850000,
+      "plots": [
+        {
+          "price": 850000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Alderbrook Manor, Grappenhall Heys",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022854-alderbrook-manor-grappenhall-heys/",
+      "name": "Bridgemere",
+      "url": "https://www.redrow.co.uk/new-homes/devr022854-alderbrook-manor-grappenhall-heys/bridgemere/",
+      "bedrooms": 5,
+      "price": 855000,
+      "plots": [
+        {
+          "price": 855000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Harvest Rise",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412786-harvest-rise/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr412786-harvest-rise/hampstead/",
+      "bedrooms": 5,
+      "price": 750000,
+      "plots": [
+        {
+          "price": 750000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Imperial Park",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/hampstead/",
+      "bedrooms": 5,
+      "price": 930000,
+      "plots": [
+        {
+          "price": 930000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Imperial Park",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/",
+      "name": "Highgate",
+      "url": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/highgate/",
+      "bedrooms": 5,
+      "price": 930000,
+      "plots": [
+        {
+          "price": 930000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Imperial Park",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/",
+      "name": "Blenheim",
+      "url": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/blenheim/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Hoplands",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr212622-the-hoplands/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr212622-the-hoplands/hampstead/",
+      "bedrooms": 5,
+      "price": 640000,
+      "plots": [
+        {
+          "price": 640000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Greenways, Betteshanger",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr212788-greenways-betteshanger/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr212788-greenways-betteshanger/hampstead/",
+      "bedrooms": 5,
+      "price": 662000,
+      "plots": [
+        {
+          "price": 662000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Willow Park",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/",
+      "name": "Blenheim",
+      "url": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/blenheim/",
+      "bedrooms": 5,
+      "price": 1150000,
+      "plots": [
+        {
+          "price": 1150000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Willow Park",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/",
+      "name": "Highgrove",
+      "url": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/highgrove/",
+      "bedrooms": 5,
+      "price": 1375000,
+      "plots": [
+        {
+          "price": 1375000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2c1f716aa53e791a70c01f5b16c0d49b182251a43352d13d9e7a65ded03f32ba"
+      ]
+    },
+    {
+      "development": "Preston Fields, Faversham",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr212779-preston-fields-faversham/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr212779-preston-fields-faversham/hampstead/",
+      "bedrooms": 5,
+      "price": 725000,
+      "plots": [
+        {
+          "price": 725000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millview Park, Bocking",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432743-millview-park-bocking/",
+      "name": "Highgate",
+      "url": "https://www.redrow.co.uk/new-homes/devr432743-millview-park-bocking/highgate/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hendricks Green, Goffs Oak",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432645-hendricks-green-goffs-oak/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr432645-hendricks-green-goffs-oak/hampstead/",
+      "bedrooms": 5,
+      "price": 1000000,
+      "plots": [
+        {
+          "price": 1000000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hazel Park, Stevenage",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432745-hazel-park-stevenage/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr432745-hazel-park-stevenage/hampstead/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Poppy Fields, Rotherham",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162781-poppy-fields-rotherham/",
+      "name": "Highgate",
+      "url": "https://www.redrow.co.uk/new-homes/devr162781-poppy-fields-rotherham/highgate/",
+      "bedrooms": 5,
+      "price": 527000,
+      "plots": [
+        {
+          "price": 527000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Poppy Fields, Rotherham",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162781-poppy-fields-rotherham/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr162781-poppy-fields-rotherham/hampstead/",
+      "bedrooms": 5,
+      "price": 540000,
+      "plots": [
+        {
+          "price": 540000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Parklands at Great Wilsey Park, Haverhill",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432631-the-parklands-at-great-wilsey-park-haverhill/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr432631-the-parklands-at-great-wilsey-park-haverhill/hampstead/",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Curborough Lakes",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082823-curborough-lakes/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr082823-curborough-lakes/hampstead/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Radbourne View, Derby",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082843-radbourne-view-derby/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr082843-radbourne-view-derby/hampstead/",
+      "bedrooms": 5,
+      "price": 615000,
+      "plots": [
+        {
+          "price": 615000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Royal Gardens, Worcester",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082785-royal-gardens-worcester/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr082785-royal-gardens-worcester/hampstead/",
+      "bedrooms": 5,
+      "price": 610000,
+      "plots": [
+        {
+          "price": 610000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Kingsley Manor, Harrogate",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162780-kingsley-manor-harrogate/",
+      "name": "Highgate",
+      "url": "https://www.redrow.co.uk/new-homes/devr162780-kingsley-manor-harrogate/highgate/",
+      "bedrooms": 5,
+      "price": 740000,
+      "plots": [
+        {
+          "price": 740000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ash Gardens",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412810-ash-gardens/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr412810-ash-gardens/hampstead/",
+      "bedrooms": 5,
+      "price": 725000,
+      "plots": [
+        {
+          "price": 725000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Roman Green, Kings Moat Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/hampstead/",
+      "bedrooms": 5,
+      "price": 720000,
+      "plots": [
+        {
+          "price": 720000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Roman Green, Kings Moat Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/",
+      "name": "Blenheim",
+      "url": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/blenheim/",
+      "bedrooms": 5,
+      "price": 880000,
+      "plots": [
+        {
+          "price": 880000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Roman Green, Kings Moat Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/",
+      "name": "Highgrove",
+      "url": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/highgrove/",
+      "bedrooms": 5,
+      "price": 1052000,
+      "plots": [
+        {
+          "price": 1052000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Oak Brook Manor",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022832-oak-brook-manor/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022832-oak-brook-manor/hampstead/",
+      "bedrooms": 5,
+      "price": 640000,
+      "plots": [
+        {
+          "price": 640000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Highgrove Gardens",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162852-highgrove-gardens/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr162852-highgrove-gardens/hampstead/",
+      "bedrooms": 5,
+      "price": 628000,
+      "plots": [
+        {
+          "price": 628000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Highgrove Gardens",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162852-highgrove-gardens/",
+      "name": "Highgate",
+      "url": "https://www.redrow.co.uk/new-homes/devr162852-highgrove-gardens/highgate/",
+      "bedrooms": 5,
+      "price": 635000,
+      "plots": [
+        {
+          "price": 635000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Blossoms, Round Hill Gardens",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022784-blossoms-round-hill-gardens/",
+      "name": "Warren",
+      "url": "https://www.redrow.co.uk/new-homes/devr022784-blossoms-round-hill-gardens/warren-/",
+      "bedrooms": 5,
+      "price": 618000,
+      "plots": [
+        {
+          "price": 618000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Gleaves View, Daresbury Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022602-gleaves-view-daresbury-garden-village/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022602-gleaves-view-daresbury-garden-village/hampstead/",
+      "bedrooms": 5,
+      "price": 650000,
+      "plots": [
+        {
+          "price": 650000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Gleaves View, Daresbury Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022602-gleaves-view-daresbury-garden-village/",
+      "name": "Marlborough",
+      "url": "https://www.redrow.co.uk/new-homes/devr022602-gleaves-view-daresbury-garden-village/marlborough/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Royal Oaks at Gillingham Meadows",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr412809-royal-oaks-at-gillingham-meadows/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr412809-royal-oaks-at-gillingham-meadows/hampstead/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Landings",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr212806-the-landings/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr212806-the-landings/hampstead/",
+      "bedrooms": 5,
+      "price": 510000,
+      "plots": [
+        {
+          "price": 510000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Westley Green, Langdon Hills",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432362-westley-green-langdon-hills/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr432362-westley-green-langdon-hills/hampstead/",
+      "bedrooms": 5,
+      "price": 850000,
+      "plots": [
+        {
+          "price": 850000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hamlet Park",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr212797-hamlet-park/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr212797-hamlet-park/hampstead/",
+      "bedrooms": 5,
+      "price": 735000,
+      "plots": [
+        {
+          "price": 735000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Windmill Court, East Bridgford",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/",
+      "name": "Sandringham Premium",
+      "url": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/sandringham-premium/",
+      "bedrooms": 5,
+      "price": 899995,
+      "plots": [
+        {
+          "price": 899995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "537b6be2013cc6dd5fa71feed631f6ece25b093b48dcc572008aa7a213e8b62f"
+      ]
+    },
+    {
+      "development": "Windmill Court, East Bridgford",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/",
+      "name": "Highgrove",
+      "url": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/highgrove/",
+      "bedrooms": 5,
+      "price": 949995,
+      "plots": [
+        {
+          "price": 949995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Windmill Court, East Bridgford",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/",
+      "name": "Blenheim",
+      "url": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/blenheim/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Blundell’s Grange",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr242733-blundell%E2%80%99s-grange/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr242733-blundell%E2%80%99s-grange/hampstead/",
+      "bedrooms": 5,
+      "price": 588000,
+      "plots": [
+        {
+          "price": 588000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Grange at Yew Tree Park, Burscough",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022548-the-grange-at-yew-tree-park-burscough/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022548-the-grange-at-yew-tree-park-burscough/hampstead/",
+      "bedrooms": 5,
+      "price": 541000,
+      "plots": [
+        {
+          "price": 541000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Grace Fields at Hilton Grange, Halewood",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022749-grace-fields-at-hilton-grange-halewood/",
+      "name": "Highgate",
+      "url": "https://www.redrow.co.uk/new-homes/devr022749-grace-fields-at-hilton-grange-halewood/highgate/",
+      "bedrooms": 5,
+      "price": 625000,
+      "plots": [
+        {
+          "price": 625000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Grace Fields at Hilton Grange, Halewood",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022749-grace-fields-at-hilton-grange-halewood/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022749-grace-fields-at-hilton-grange-halewood/hampstead/",
+      "bedrooms": 5,
+      "price": 628000,
+      "plots": [
+        {
+          "price": 628000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Woodlands, Round Hill Gardens",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022783-woodlands-round-hill-gardens/",
+      "name": "Warren",
+      "url": "https://www.redrow.co.uk/new-homes/devr022783-woodlands-round-hill-gardens/warren-/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mandeville Crescent, Saffron Walden",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432775-mandeville-crescent-saffron-walden/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr432775-mandeville-crescent-saffron-walden/hampstead/",
+      "bedrooms": 5,
+      "price": 880000,
+      "plots": [
+        {
+          "price": 880000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mandeville Crescent, Saffron Walden",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432775-mandeville-crescent-saffron-walden/",
+      "name": "Highgate 5",
+      "url": "https://www.redrow.co.uk/new-homes/devr432775-mandeville-crescent-saffron-walden/highgate-5/",
+      "bedrooms": 5,
+      "price": 885000,
+      "plots": [
+        {
+          "price": 885000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Mulberries, Witham",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432444-the-mulberries-witham/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr432444-the-mulberries-witham/hampstead/",
+      "bedrooms": 5,
+      "price": 760000,
+      "plots": [
+        {
+          "price": 760000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Mulberries, Witham",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr432444-the-mulberries-witham/",
+      "name": "Highgate RVT",
+      "url": "https://www.redrow.co.uk/new-homes/devr432444-the-mulberries-witham/highgate-rvt/",
+      "bedrooms": 5,
+      "price": 785000,
+      "plots": [
+        {
+          "price": 785000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ash Holt, Newton Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082761-ash-holt-newton-garden-village/",
+      "name": "Marlborough",
+      "url": "https://www.redrow.co.uk/new-homes/devr082761-ash-holt-newton-garden-village/marlborough/",
+      "bedrooms": 5,
+      "price": 569995,
+      "plots": [
+        {
+          "price": 569995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Broadstone Manor, Diggle",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr162822-broadstone-manor-diggle/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr162822-broadstone-manor-diggle/hampstead/",
+      "bedrooms": 5,
+      "price": 805000,
+      "plots": [
+        {
+          "price": 805000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Shackleton Fields, Woodford Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/hampstead/",
+      "bedrooms": 5,
+      "price": 848000,
+      "plots": [
+        {
+          "price": 848000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Shackleton Fields, Woodford Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/",
+      "name": "Highgrove",
+      "url": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/highgrove/",
+      "bedrooms": 5,
+      "price": 1267000,
+      "plots": [
+        {
+          "price": 1267000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Shackleton Fields, Woodford Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/",
+      "name": "Chatsworth",
+      "url": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/chatsworth/",
+      "bedrooms": 5,
+      "price": 1490000,
+      "plots": [
+        {
+          "price": 1490000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Shackleton Fields, Woodford Garden Village",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/",
+      "name": "Wentworth",
+      "url": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/wentworth/",
+      "bedrooms": 5,
+      "price": 1512000,
+      "plots": [
+        {
+          "price": 1512000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Cedars at Great Milton Park",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr152674-the-cedars-at-great-milton-park/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr152674-the-cedars-at-great-milton-park/hampstead/",
+      "bedrooms": 5,
+      "price": 596000,
+      "plots": [
+        {
+          "price": 596000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Redrow at Houlton",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr082642-redrow-at-houlton/",
+      "name": "Beeston",
+      "url": "https://www.redrow.co.uk/new-homes/devr082642-redrow-at-houlton/beeston/",
+      "bedrooms": 5,
+      "price": 675000,
+      "plots": [
+        {
+          "price": 675000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mill Green Meadows",
+      "developmentUrl": "https://www.redrow.co.uk/new-homes/devr022834-mill-green-meadows/",
+      "name": "Hampstead",
+      "url": "https://www.redrow.co.uk/new-homes/devr022834-mill-green-meadows/hampstead/",
+      "bedrooms": 5,
+      "price": 648000,
+      "plots": [
+        {
+          "price": 648000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    }
+  ],
+  "images": [
+    {
+      "id": "2c1f716aa53e791a70c01f5b16c0d49b182251a43352d13d9e7a65ded03f32ba",
+      "path": "images/2c1f716aa53e791a70c01f5b16c0d49b182251a43352d13d9e7a65ded03f32ba.jpg",
+      "sourceUrl": "https://www.redrow.co.uk/-/media/divisions/redrow-south-east/developments/paddock-green-devr212812/the-highgrove/redrow---the-highgrove---home-office---72363.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, computer, and chair.",
+        "reason": "This is a dedicated home office space with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "537b6be2013cc6dd5fa71feed631f6ece25b093b48dcc572008aa7a213e8b62f",
+      "path": "images/537b6be2013cc6dd5fa71feed631f6ece25b093b48dcc572008aa7a213e8b62f.jpg",
+      "sourceUrl": "https://www.redrow.co.uk/-/media/divisions/redrow-shared/properties/g-series/heritage-premium/the-sandringham/internal---apr-23/redrow---the-sandringham---home-office---51387.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and shelving.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 91,
+    "qualifyingDiscovered": 71,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 354,
+    "reusedImages": 41,
+    "reusedGalleries": 6,
+    "imagesAttempted": 241,
+    "pendingImages": 0,
+    "matchedImages": 2,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 200
+  },
+  "completedAt": "2026-10-02T14:15:36.492Z"
+}
