@@ -1,0 +1,3939 @@
+{
+  "builder": {
+    "name": "David Wilson",
+    "slug": "david-wilson",
+    "websiteUrl": "https://www.dwh.co.uk"
+  },
+  "status": "completed_with_gaps",
+  "startedAt": "2026-10-02T13:02:51.340Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002625-alconbury-weald/",
+      "name": "Alconbury Weald",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002858-ashbourne-airfield/",
+      "name": "Ashbourne Airfield",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002899-arrowgreen-view/",
+      "name": "Arrowgreen View",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001889-ashlawn-gardens/",
+      "name": "Ashlawn Gardens",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/",
+      "name": "Ashtree Grove",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002847-auchinleck-village/",
+      "name": "Auchinleck Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001110-barum-knoll/",
+      "name": "Barum Knoll",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003040-beauchamp-gate/",
+      "name": "Beauchamp Gate",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002567-bluebell-meadows/",
+      "name": "Bluebell Meadows",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002683-bramble-wood/",
+      "name": "Bramble Wood",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002638-brookside-meadows/",
+      "name": "Brookside Meadows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002661-brookwood-meadows/",
+      "name": "Brookwood Meadows",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002635-buckley-gardens/",
+      "name": "Buckley Gardens",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001127-calder-rise/",
+      "name": "Calder Rise",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002985-castle-reach/",
+      "name": "Castle Reach",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002691-canalside/",
+      "name": "Canalside",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002856-castle-syke-grange/",
+      "name": "Castle Syke Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002768-castra-park/",
+      "name": "Castra Park",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002588-centurion-meadows/",
+      "name": "Centurion Meadows",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001048-centurion-village/",
+      "name": "Centurion Village",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002967-century-gardens/",
+      "name": "Century Gardens",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002696-chaloners-green/",
+      "name": "Chaloners Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/",
+      "name": "Chatteris Gate",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/",
+      "name": "Chiltern Grange",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002596-clockmakers/",
+      "name": "Clockmakers",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002616-constable-gardens/",
+      "name": "Constable Gardens",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001294-cringleford-heights/",
+      "name": "Cringleford Heights",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/",
+      "name": "Corinthian Place",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002707-cuckoo-fields-dwh/",
+      "name": "Cuckoo Fields DWH",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003015-curborough-fields/",
+      "name": "Curborough Fields",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003047-david-wilson-at-poppy-fields/",
+      "name": "David Wilson at Poppy Fields",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002787-david-wilson-homes-@-pentref-llewelyn/",
+      "name": "David Wilson Homes @ Pentref Llewelyn",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001869-david-wilson-homes-@-treledan/",
+      "name": "David Wilson Homes @ Treledan",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002849-david-wilson-homes-at-afon-las-@-plasd%C5%B5r/",
+      "name": "David Wilson Homes at Afon Las @ Plasdŵr",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003192-david-wilson-homes-at-millview-park/",
+      "name": "David Wilson Homes at Millview Park",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003064-david-wilson-homes-at-tudor-meadow/",
+      "name": "David Wilson Homes at Tudor Meadow",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002615-david-wilson-homes-at-priors-hall-park/",
+      "name": "David Wilson Homes at Priors Hall Park",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001089-david-wilson-homes-the-woodlands/",
+      "name": "David Wilson Homes The Woodlands",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001135-doxford-green/",
+      "name": "Doxford Green",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002576-drakelow-park/",
+      "name": "Drakelow Park",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002786-dwh-@-bangour-village/",
+      "name": "DWH @ Bangour Village",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002959-dwh-@-chaulden-meadows/",
+      "name": "DWH @ Chaulden Meadows",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002664-dwh-@-cornhill-village/",
+      "name": "DWH @ Cornhill Village",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002680-dwh-@-otter-stone-manor/",
+      "name": "DWH @ Otter Stone Manor",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001183-dwh-@-eaglesham-view/",
+      "name": "DWH @ Eaglesham View",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002585-dwh-@-st-andrews/",
+      "name": "DWH @ St Andrews",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002579-dwh-@-valley-park/",
+      "name": "DWH @ Valley Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002495-dwh-at-darwin-green/",
+      "name": "DWH at Darwin Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/",
+      "name": "DWH at Overstone Gate",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/",
+      "name": "DWH at Roman Gardens",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/",
+      "name": "DWH at Wendel View",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001335-dwh-canal-quarter-@-kingsbrook/",
+      "name": "DWH Canal Quarter @ Kingsbrook",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "DWH at Romans Quarter",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 7
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002580-dwh-richmond-park/",
+      "name": "DWH Richmond Park",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002382-dwh-orchard-green-@-kingsbrook/",
+      "name": "DWH Orchard Green @ Kingsbrook",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001179-dwh-findrassie/",
+      "name": "DWH Findrassie",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002699-eastfield-park/",
+      "name": "Eastfield Park",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002863-fairway-gardens-dwh/",
+      "name": "Fairway Gardens DWH",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002570-elm-tree-park/",
+      "name": "Elm Tree Park",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002778-fiddington-fields/",
+      "name": "Fiddington Fields",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001097-forest-walk/",
+      "name": "Forest Walk",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/",
+      "name": "Fossil Bay",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002705-foundry-lea/",
+      "name": "Foundry Lea",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002695-francis-fields/",
+      "name": "Francis Fields",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000378-grey-towers-village/",
+      "name": "Grey Towers Village",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/",
+      "name": "Glenvale Park",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001338-hampton-mill/",
+      "name": "Hampton Mill",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/",
+      "name": "Harlestone Grange",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002656-hawk-view/",
+      "name": "Hawk View",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003097-hazelwood-view/",
+      "name": "Hazelwood View",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002643-henley-gate/",
+      "name": "Henley Gate",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001910-heritage-grange-@-upper-lighthorne/",
+      "name": "Heritage Grange @ Upper Lighthorne",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002834-heyford-springs/",
+      "name": "Heyford Springs",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002604-high-forest/",
+      "name": "High Forest",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002714-highgrove/",
+      "name": "Highgrove",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002876-hollins-park-view/",
+      "name": "Hollins Park View",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001106-highgrove-at-wynyard-park/",
+      "name": "Highgrove at Wynyard Park",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/",
+      "name": "Honeymans Helm",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002589-imperial-court/",
+      "name": "Imperial Court",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/",
+      "name": "Hunters Place @ Fernwood Village",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002608-hughes-meadow/",
+      "name": "Hughes Meadow",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003099-kensington-gate/",
+      "name": "Kensington Gate",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000854-kings-park/",
+      "name": "Kings Park",
+      "status": "complete",
+      "homes": 26,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/",
+      "name": "Ladden Garden Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003017-lakewood-meadows/",
+      "name": "Lakewood Meadows",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002623-lairds-gait/",
+      "name": "Lairds Gait",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002701-lancaster-grove/",
+      "name": "Lancaster Grove",
+      "status": "complete",
+      "homes": 25,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/",
+      "name": "Mallard Meadows at Winslow",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002685-lapwing-green/",
+      "name": "Lapwing Green",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002675-marina-way/",
+      "name": "Marina Way",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/",
+      "name": "Maylands Park",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001159-meadow-hill/",
+      "name": "Meadow Hill",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003107-millers-grove/",
+      "name": "Millers Grove",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003172-monaveen-gardens/",
+      "name": "Monaveen Gardens",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002874-montgomery-manor/",
+      "name": "Montgomery Manor",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/",
+      "name": "Mulberry Rise at Applegate Park",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000784-new-lubbesthorpe/",
+      "name": "New Lubbesthorpe",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002306-niveus-walk/",
+      "name": "Niveus Walk",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003197-newton-garden-village/",
+      "name": "Newton Garden Village",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002668-nursery-fields/",
+      "name": "Nursery Fields",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/",
+      "name": "Oak View",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001051-orchards-rise/",
+      "name": "Orchards Rise",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002658-otters-reach-at-benthall-grange/",
+      "name": "Otters Reach at Benthall Grange",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001787-oughtibridge-valley-sheffield/",
+      "name": "Oughtibridge Valley, Sheffield",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/",
+      "name": "Pastures Place",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002896-peacock-grove/",
+      "name": "Peacock Grove",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002977-pickford-gate/",
+      "status": "complete",
+      "name": "Pickford Gate",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001143-penning-ridge/",
+      "name": "Penning Ridge",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002694-porters-way/",
+      "name": "Porters Way",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002827-queen's-manor/",
+      "name": "Queen's Manor",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003096-queens-reach-at-daresbury-garden-village/",
+      "name": "Queens Reach at Daresbury Garden Village",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/",
+      "name": "River View at Oundle",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002620-roman-walk/",
+      "name": "Roman Walk",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002626-romans-quarter/",
+      "name": "Romans Quarter",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001042-rose-place/",
+      "name": "Rose Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001114-rosewell-meadow/",
+      "name": "Rosewell Meadow",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001108-ryebank-gate/",
+      "name": "Ryebank Gate",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001087-saxon-fields/",
+      "name": "Saxon Fields",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000937-seven-sisters/",
+      "name": "Seven Sisters",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002868-saxon-green/",
+      "name": "Saxon Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/",
+      "name": "Sholden Meadows",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002777-sileby-green/",
+      "name": "Sileby Green",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002783-silver-hill-manor/",
+      "name": "Silver Hill Manor",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002677-somer-meadows/",
+      "name": "Somer Meadows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001141-spitfire-green/",
+      "name": "Spitfire Green",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002984-st-peters-chase/",
+      "name": "St Peters Chase",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002565-stonebridge-fields/",
+      "name": "Stonebridge Fields",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002632-sundial-place-dwh/",
+      "name": "Sundial Place DWH",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002826-sycamore-grange/",
+      "name": "Sycamore Grange",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002644-sylvan-meadows/",
+      "name": "Sylvan Meadows",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002647-the-catkins/",
+      "name": "The Catkins",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000658-the-chase-@-newbury-racecourse/",
+      "name": "The Chase @ Newbury Racecourse",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003098-the-coppice/",
+      "name": "The Coppice",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002609-the-damsons/",
+      "name": "The Damsons",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002655-the-hamlets/",
+      "name": "The Hamlets",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002605-the-hawthorns/",
+      "name": "The Hawthorns",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003018-the-dunes-reserve/",
+      "name": "The Dunes Reserve",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002583-the-lapwings-at-burleyfields/",
+      "name": "The Lapwings at Burleyfields",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001133-the-orchards/",
+      "name": "The Orchards",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "The Nook",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 8
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002704-the-oval-at-old-durham-gate/",
+      "name": "The Oval at Old Durham Gate",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002976-the-paddocks/",
+      "name": "The Paddocks",
+      "status": "complete",
+      "homes": 28,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000561-the-pavilions/",
+      "name": "The Pavilions",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001070-the-pearls/",
+      "name": "The Pearls",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002617-the-poppies/",
+      "name": "The Poppies",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001010-the-skylarks/",
+      "name": "The Skylarks",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002640-the-waterside/",
+      "name": "The Waterside",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002898-the-stables/",
+      "name": "The Stables",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002657-the-watlings-at-towcester/",
+      "name": "The Watlings at Towcester",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001125-the-willows/",
+      "name": "The Willows",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev003020-the-woodlands-collection/",
+      "name": "The Woodlands Collection",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/",
+      "name": "Thoresby Vale",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001123-thorpebury-in-the-limes/",
+      "name": "Thorpebury in the Limes",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002641-west-craigs-quarter/",
+      "name": "West Craigs Quarter",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001104-west-meadows-@-arcot-estate/",
+      "name": "West Meadows @ Arcot Estate",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Wigston Meadows",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 7
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev001897-willow-grove/",
+      "name": "Willow Grove",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev002671-winnycroft/",
+      "name": "Winnycroft",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-001176-wintringham/",
+      "name": "Wintringham",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.dwh.co.uk/new-homes/dev-002622-wolds-view/",
+      "name": "Wolds View",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Alconbury Weald",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002625-alconbury-weald/",
+      "name": "The Moreton · Plot 8",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002625-alconbury-weald/plot-8-h88978/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "8",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49cb4b9cf7f3099365b363f435a565c8298621c0800e08009a66229b07bef5a9"
+      ]
+    },
+    {
+      "development": "Ashbourne Airfield",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002858-ashbourne-airfield/",
+      "name": "Moreton · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev002858-ashbourne-airfield/plot-1-h85371/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ashlawn Gardens",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001889-ashlawn-gardens/",
+      "name": "Moreton · Plot 266",
+      "url": "https://www.dwh.co.uk/new-homes/dev001889-ashlawn-gardens/plot-266-h6325266/",
+      "bedrooms": 5,
+      "price": 719995,
+      "plots": [
+        {
+          "number": "266",
+          "price": 719995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ashtree Grove",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/",
+      "name": "HENLEY · Plot 61",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/plot-61-h872861/",
+      "bedrooms": 5,
+      "price": 1100000,
+      "plots": [
+        {
+          "number": "61",
+          "price": 1100000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ashtree Grove",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/",
+      "name": "LICHFIELD · Plot 58",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/plot-58-h872858/",
+      "bedrooms": 5,
+      "price": 1400000,
+      "plots": [
+        {
+          "number": "58",
+          "price": 1400000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ashtree Grove",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/",
+      "name": "LICHFIELD · Plot 59",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/plot-59-h872859/",
+      "bedrooms": 5,
+      "price": 1400000,
+      "plots": [
+        {
+          "number": "59",
+          "price": 1400000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ashtree Grove",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/",
+      "name": "HENLEY · Plot 2",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/plot-2-h87282/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bluebell Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002567-bluebell-meadows/",
+      "name": "HENLEY · Plot 229",
+      "url": "https://www.dwh.co.uk/new-homes/dev002567-bluebell-meadows/plot-229-h8752229/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "229",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Buckley Gardens",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002635-buckley-gardens/",
+      "name": "Manning · Plot 100",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002635-buckley-gardens/plot-100-h8695100/",
+      "bedrooms": 5,
+      "price": 690000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 690000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005"
+      ]
+    },
+    {
+      "development": "Buckley Gardens",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002635-buckley-gardens/",
+      "name": "Manning · Plot 4",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002635-buckley-gardens/plot-4-h86954/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "4",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005"
+      ]
+    },
+    {
+      "development": "Chatteris Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/",
+      "name": "Buckingham · Plot 72",
+      "url": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/plot-72-ha41472/",
+      "bedrooms": 5,
+      "price": 589995,
+      "plots": [
+        {
+          "number": "72",
+          "price": 589995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8a2f648fab231f8e6087cd8e1fe4b9f45ff8cb8dec67068f705c612ddcfeb970"
+      ]
+    },
+    {
+      "development": "Chatteris Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/",
+      "name": "Lichfield · Plot 73",
+      "url": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/plot-73-ha41473/",
+      "bedrooms": 5,
+      "price": 699995,
+      "plots": [
+        {
+          "number": "73",
+          "price": 699995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Chatteris Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/",
+      "name": "Buckingham · Plot 80",
+      "url": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/plot-80-ha41480/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "80",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8a2f648fab231f8e6087cd8e1fe4b9f45ff8cb8dec67068f705c612ddcfeb970"
+      ]
+    },
+    {
+      "development": "Chatteris Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/",
+      "name": "Buckingham · Plot 6",
+      "url": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/plot-6-ha4186/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "6",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8a2f648fab231f8e6087cd8e1fe4b9f45ff8cb8dec67068f705c612ddcfeb970"
+      ]
+    },
+    {
+      "development": "Chiltern Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/",
+      "name": "Manning · Plot 40",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/plot-40-h745240/",
+      "bedrooms": 5,
+      "price": 800000,
+      "plots": [
+        {
+          "number": "40",
+          "price": 800000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a88a711334fc352e754d616b4705137350bba154e070929d4226254450134ff6"
+      ]
+    },
+    {
+      "development": "Chiltern Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/",
+      "name": "Glidewell · Plot 82",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/plot-82-h745282/",
+      "bedrooms": 5,
+      "price": 900000,
+      "plots": [
+        {
+          "number": "82",
+          "price": 900000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e081033067a5d386b9e94f8d2d6c079c366e5c7bcdc5ee23c3557716e03e99bc"
+      ]
+    },
+    {
+      "development": "Chiltern Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/",
+      "name": "Glidewell · Plot 134",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/plot-134-h7452134/",
+      "bedrooms": 5,
+      "price": 900000,
+      "plots": [
+        {
+          "number": "134",
+          "price": 900000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c9d16d94e1d35598f17f823a34dbe44cd36f1aefcde24f0ddc3e7ca080a7d3e1"
+      ]
+    },
+    {
+      "development": "Chiltern Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/",
+      "name": "Glidewell · Plot 145",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/plot-145-h7452145/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "145",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c9d16d94e1d35598f17f823a34dbe44cd36f1aefcde24f0ddc3e7ca080a7d3e1"
+      ]
+    },
+    {
+      "development": "Corinthian Place",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/",
+      "name": "Henley · Plot 100",
+      "url": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/plot-100-h8769100/",
+      "bedrooms": 5,
+      "price": 745000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 745000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Corinthian Place",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/",
+      "name": "Moreton · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/plot-1-h75441/",
+      "bedrooms": 5,
+      "price": 825000,
+      "plots": [
+        {
+          "number": "1",
+          "price": 825000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Corinthian Place",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/",
+      "name": "Evesham · Plot 9",
+      "url": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/plot-9-h87699/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "9",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "92c00d4aa1bba81aa834546c4adeb3062f5536f9be88ec7d4e912d1ff92c847b"
+      ]
+    },
+    {
+      "development": "David Wilson Homes The Woodlands",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001089-david-wilson-homes-the-woodlands/",
+      "name": "EARLSWOOD · Plot 201",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001089-david-wilson-homes-the-woodlands/plot-201-h8401201/",
+      "bedrooms": 5,
+      "price": 599995,
+      "plots": [
+        {
+          "number": "201",
+          "price": 599995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Doxford Green",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001135-doxford-green/",
+      "name": "MANNING · Plot 137",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001135-doxford-green/plot-137-h8589137/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "137",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a5d21b03ccf77608a22bdbf24347fe505b2b78c91bc1b53e623458ca93d5bb33"
+      ]
+    },
+    {
+      "development": "Drakelow Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002576-drakelow-park/",
+      "name": "Emerson · Plot 132",
+      "url": "https://www.dwh.co.uk/new-homes/dev002576-drakelow-park/plot-132-h8606132/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "132",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH @ Chaulden Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002959-dwh-@-chaulden-meadows/",
+      "name": "Lenwade · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev002959-dwh-@-chaulden-meadows/plot-1-h93391/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Overstone Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/",
+      "name": "MANNING · Plot 206",
+      "url": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/plot-206-h8305206/",
+      "bedrooms": 5,
+      "price": 654995,
+      "plots": [
+        {
+          "number": "206",
+          "price": 654995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "54135eed0b60a6585a1866805d4c54e9604f54ea1c76f9ca299aeb0e1da81943"
+      ]
+    },
+    {
+      "development": "DWH at Overstone Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/",
+      "name": "LICHFIELD · Plot 208",
+      "url": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/plot-208-h8305208/",
+      "bedrooms": 5,
+      "price": 714995,
+      "plots": [
+        {
+          "number": "208",
+          "price": 714995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Overstone Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/",
+      "name": "Moreton · Plot 201",
+      "url": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/plot-201-h7378201/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "201",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3eacc9159b60af2e352d8eb573345d936df76a718b06d90a42276691e0e6ea92"
+      ]
+    },
+    {
+      "development": "DWH at Roman Gardens",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/",
+      "name": "Woodwalton · Plot 298",
+      "url": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/plot-298-h9366298/",
+      "bedrooms": 5,
+      "price": 860000,
+      "plots": [
+        {
+          "number": "298",
+          "price": 860000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Roman Gardens",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/",
+      "name": "Consall · Plot 208",
+      "url": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/plot-208-h9366208/",
+      "bedrooms": 5,
+      "price": 900000,
+      "plots": [
+        {
+          "number": "208",
+          "price": 900000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43667653c45f14218a00c5824d78c813cbee8434d01f129d8bc64a2ca9bb1e35"
+      ]
+    },
+    {
+      "development": "DWH at Roman Gardens",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/",
+      "name": "Consall · Plot 217",
+      "url": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/plot-217-h9366217/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "217",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43667653c45f14218a00c5824d78c813cbee8434d01f129d8bc64a2ca9bb1e35"
+      ]
+    },
+    {
+      "development": "DWH at Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "Henley · Plot 509",
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/plot-509-h7760509/",
+      "bedrooms": 5,
+      "price": 619995,
+      "plots": [
+        {
+          "number": "509",
+          "price": 619995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "Henley · Plot 589",
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/plot-589-h7760589/",
+      "bedrooms": 5,
+      "price": 639995,
+      "plots": [
+        {
+          "number": "589",
+          "price": 639995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "BUCKINGHAM · Plot 592",
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/plot-592-h7760592/",
+      "bedrooms": 5,
+      "price": 644995,
+      "plots": [
+        {
+          "number": "592",
+          "price": 644995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "61622991424acee46dc8edcdbdd701b42ac8d49bbdbbd6f5edf57449cbf17671"
+      ]
+    },
+    {
+      "development": "DWH at Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "Moreton · Plot 555",
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/plot-555-h7760555/",
+      "bedrooms": 5,
+      "price": 679995,
+      "plots": [
+        {
+          "number": "555",
+          "price": 679995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "17cadf8968841fa79be3c354b87d4d34126ac31e00f296e2942128e2ae135840"
+      ]
+    },
+    {
+      "development": "DWH at Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "Moreton · Plot 624",
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/plot-624-h7760624/",
+      "bedrooms": 5,
+      "price": 684995,
+      "plots": [
+        {
+          "number": "624",
+          "price": 684995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "Moreton · Plot 590",
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/plot-590-h7760590/",
+      "bedrooms": 5,
+      "price": 699995,
+      "plots": [
+        {
+          "number": "590",
+          "price": 699995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49cb4b9cf7f3099365b363f435a565c8298621c0800e08009a66229b07bef5a9"
+      ]
+    },
+    {
+      "development": "DWH at Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
+      "name": "Lichfield · Plot 503",
+      "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/plot-503-h7760503/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "503",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd"
+      ]
+    },
+    {
+      "development": "DWH at Wendel View",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/",
+      "name": "Emerson Special · Plot 512",
+      "url": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/plot-512-h8380512/",
+      "bedrooms": 5,
+      "price": 557995,
+      "plots": [
+        {
+          "number": "512",
+          "price": 557995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Wendel View",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/",
+      "name": "Emerson Special · Plot 296",
+      "url": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/plot-296-h8380296/",
+      "bedrooms": 5,
+      "price": 557995,
+      "plots": [
+        {
+          "number": "296",
+          "price": 557995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "DWH at Wendel View",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/",
+      "name": "Lichfield Special · Plot 511",
+      "url": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/plot-511-h8380511/",
+      "bedrooms": 5,
+      "price": 719995,
+      "plots": [
+        {
+          "number": "511",
+          "price": 719995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd"
+      ]
+    },
+    {
+      "development": "Elm Tree Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002570-elm-tree-park/",
+      "name": "Henley · Plot 66",
+      "url": "https://www.dwh.co.uk/new-homes/dev002570-elm-tree-park/plot-66-h875566/",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "66",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b12d52fc0d8bfb4625018a82436e86c30e9ee479a3ddf37b2e24eaa470cceab8"
+      ]
+    },
+    {
+      "development": "Fiddington Fields",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002778-fiddington-fields/",
+      "name": "EARLSWOOD · Plot 161",
+      "url": "https://www.dwh.co.uk/new-homes/dev002778-fiddington-fields/plot-161-h8869161/",
+      "bedrooms": 5,
+      "price": 650000,
+      "plots": [
+        {
+          "number": "161",
+          "price": 650000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "127ce72017eb6063dd3a787b8ceed35615aa69a7d9d78980000f134d0807538d"
+      ]
+    },
+    {
+      "development": "Fiddington Fields",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002778-fiddington-fields/",
+      "name": "MANNING · Plot 152",
+      "url": "https://www.dwh.co.uk/new-homes/dev002778-fiddington-fields/plot-152-h8869152/",
+      "bedrooms": 5,
+      "price": 675000,
+      "plots": [
+        {
+          "number": "152",
+          "price": 675000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Fossil Bay",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/",
+      "name": "Broadstairs · Plot 5",
+      "url": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/plot-5-h91615/",
+      "bedrooms": 5,
+      "price": 799000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 799000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "dff2792c33d752a69524e414d35abecd807559e3aa8f514c08e6c20172f8d610"
+      ]
+    },
+    {
+      "development": "Fossil Bay",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/",
+      "name": "Lenwade · Plot 74",
+      "url": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/plot-74-h916174/",
+      "bedrooms": 5,
+      "price": 830000,
+      "plots": [
+        {
+          "number": "74",
+          "price": 830000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Fossil Bay",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/",
+      "name": "Lenwade · Plot 76",
+      "url": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/plot-76-h916176/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "76",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Foundry Lea",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002705-foundry-lea/",
+      "name": "Emerson · Plot 50",
+      "url": "https://www.dwh.co.uk/new-homes/dev002705-foundry-lea/plot-50-h851950/",
+      "bedrooms": 5,
+      "price": 620000,
+      "plots": [
+        {
+          "number": "50",
+          "price": 620000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Glenvale Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/",
+      "name": "Buckingham · Plot 61",
+      "url": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/plot-61-h877361/",
+      "bedrooms": 5,
+      "price": 680000,
+      "plots": [
+        {
+          "number": "61",
+          "price": 680000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "672dd2f799047b20d99f712682d20b89da3e72dd6a012ca2f543cef45e921c04"
+      ]
+    },
+    {
+      "development": "Glenvale Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/",
+      "name": "BUCKINGHAM · Plot 50",
+      "url": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/plot-50-h877350/",
+      "bedrooms": 5,
+      "price": 682000,
+      "plots": [
+        {
+          "number": "50",
+          "price": 682000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Glenvale Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/",
+      "name": "Moreton · Plot 39",
+      "url": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/plot-39-h877339/",
+      "bedrooms": 5,
+      "price": 690000,
+      "plots": [
+        {
+          "number": "39",
+          "price": 690000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3eacc9159b60af2e352d8eb573345d936df76a718b06d90a42276691e0e6ea92"
+      ]
+    },
+    {
+      "development": "Grey Towers Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000378-grey-towers-village/",
+      "name": "Henley · Plot 86",
+      "url": "https://www.dwh.co.uk/new-homes/dev000378-grey-towers-village/plot-86-h579986/",
+      "bedrooms": 5,
+      "price": 584995,
+      "plots": [
+        {
+          "number": "86",
+          "price": 584995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Grey Towers Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000378-grey-towers-village/",
+      "name": "Glidewell · Plot 82",
+      "url": "https://www.dwh.co.uk/new-homes/dev000378-grey-towers-village/plot-82-h579982/",
+      "bedrooms": 5,
+      "price": 659995,
+      "plots": [
+        {
+          "number": "82",
+          "price": 659995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "624a363c9531003a1ea8ff1de85f8cbd73817884666cb15e407e3198f3a75e88"
+      ]
+    },
+    {
+      "development": "Harlestone Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/",
+      "name": "Moreton · Plot 37",
+      "url": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/plot-37-h830837/",
+      "bedrooms": 5,
+      "price": 644995,
+      "plots": [
+        {
+          "number": "37",
+          "price": 644995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Harlestone Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/",
+      "name": "Moreton · Plot 72",
+      "url": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/plot-72-h830872/",
+      "bedrooms": 5,
+      "price": 659995,
+      "plots": [
+        {
+          "number": "72",
+          "price": 659995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Harlestone Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/",
+      "name": "Moreton · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/plot-1-ha3761/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Henley Gate",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002643-henley-gate/",
+      "name": "Henley · Plot 100",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002643-henley-gate/plot-100-h8658100/",
+      "bedrooms": 5,
+      "price": 675000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 675000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Heritage Grange @ Upper Lighthorne",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001910-heritage-grange-@-upper-lighthorne/",
+      "name": "EMERSON · Plot 124",
+      "url": "https://www.dwh.co.uk/new-homes/dev001910-heritage-grange-@-upper-lighthorne/plot-124-h7736124/",
+      "bedrooms": 5,
+      "price": 680000,
+      "plots": [
+        {
+          "number": "124",
+          "price": 680000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Honeymans Helm",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/",
+      "name": "Yapton · Plot 122",
+      "url": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/plot-122-h8730122/",
+      "bedrooms": 5,
+      "price": 765000,
+      "plots": [
+        {
+          "number": "122",
+          "price": 765000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f71e5db3905a6fb0a5975b7d9c4ef24bfa6550776dccd44141c8e94b99fd39f0"
+      ]
+    },
+    {
+      "development": "Honeymans Helm",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/",
+      "name": "Burlington · Plot 128",
+      "url": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/plot-128-h8730128/",
+      "bedrooms": 5,
+      "price": 795000,
+      "plots": [
+        {
+          "number": "128",
+          "price": 795000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7afa8f2af5c1326c919d321c17e4e03ef4cce24ee41f3533391708be61de56ca"
+      ]
+    },
+    {
+      "development": "Honeymans Helm",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/",
+      "name": "Burlington · Plot 121",
+      "url": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/plot-121-h8730121/",
+      "bedrooms": 5,
+      "price": 800000,
+      "plots": [
+        {
+          "number": "121",
+          "price": 800000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7afa8f2af5c1326c919d321c17e4e03ef4cce24ee41f3533391708be61de56ca"
+      ]
+    },
+    {
+      "development": "Honeymans Helm",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/",
+      "name": "Burlington · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/plot-1-h87301/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7afa8f2af5c1326c919d321c17e4e03ef4cce24ee41f3533391708be61de56ca"
+      ]
+    },
+    {
+      "development": "Hunters Place @ Fernwood Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/",
+      "name": "Moreton · Plot 401",
+      "url": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/plot-401-h8294401/",
+      "bedrooms": 5,
+      "price": 556995,
+      "plots": [
+        {
+          "number": "401",
+          "price": 556995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hunters Place @ Fernwood Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/",
+      "name": "Henley · Plot 385",
+      "url": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/plot-385-h8294385/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "385",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hunters Place @ Fernwood Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/",
+      "name": "Henley · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/plot-1-h69891/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b12d52fc0d8bfb4625018a82436e86c30e9ee479a3ddf37b2e24eaa470cceab8"
+      ]
+    },
+    {
+      "development": "Imperial Court",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002589-imperial-court/",
+      "name": "Henley · Plot 3",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002589-imperial-court/plot-3-h89263/",
+      "bedrooms": 5,
+      "price": 970000,
+      "plots": [
+        {
+          "number": "3",
+          "price": 970000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ladden Garden Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/",
+      "name": "Henley · Plot 47",
+      "url": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/plot-47-h860447/",
+      "bedrooms": 5,
+      "price": 700000,
+      "plots": [
+        {
+          "number": "47",
+          "price": 700000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ladden Garden Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/",
+      "name": "Manning · Plot 185",
+      "url": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/plot-185-h7836185/",
+      "bedrooms": 5,
+      "price": 720000,
+      "plots": [
+        {
+          "number": "185",
+          "price": 720000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005"
+      ]
+    },
+    {
+      "development": "Ladden Garden Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/",
+      "name": "Manning · Plot 183",
+      "url": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/plot-183-h7836183/",
+      "bedrooms": 5,
+      "price": 735000,
+      "plots": [
+        {
+          "number": "183",
+          "price": 735000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cd21d9c9babad50d23b64fb17de4f2e7d87f7773c01b3bb5341230d4f2f6f639"
+      ]
+    },
+    {
+      "development": "Ladden Garden Village",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/",
+      "name": "Glidewell · Plot 178",
+      "url": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/plot-178-h7836178/",
+      "bedrooms": 5,
+      "price": 780000,
+      "plots": [
+        {
+          "number": "178",
+          "price": 780000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "624a363c9531003a1ea8ff1de85f8cbd73817884666cb15e407e3198f3a75e88"
+      ]
+    },
+    {
+      "development": "Lapwing Green",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002685-lapwing-green/",
+      "name": "Manning · Plot 50",
+      "url": "https://www.dwh.co.uk/new-homes/dev002685-lapwing-green/plot-50-h869750/",
+      "bedrooms": 5,
+      "price": 930000,
+      "plots": [
+        {
+          "number": "50",
+          "price": 930000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005"
+      ]
+    },
+    {
+      "development": "Lapwing Green",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002685-lapwing-green/",
+      "name": "Manning · Plot 43",
+      "url": "https://www.dwh.co.uk/new-homes/dev002685-lapwing-green/plot-43-h869743/",
+      "bedrooms": 5,
+      "price": 937000,
+      "plots": [
+        {
+          "number": "43",
+          "price": 937000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f4e4d8e039b1713cb9420f9fe2fffec69ee894eb19aad0bea903b9e02ab0cd01"
+      ]
+    },
+    {
+      "development": "Mallard Meadows at Winslow",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/",
+      "name": "Manning · Plot 55",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/plot-55-h873755/",
+      "bedrooms": 5,
+      "price": 749995,
+      "plots": [
+        {
+          "number": "55",
+          "price": 749995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005",
+        "5d9cd95d6678e4dbfde5de5a99c04682b55bd5e2a20ceb292ce4940108bbcaa5"
+      ]
+    },
+    {
+      "development": "Mallard Meadows at Winslow",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/",
+      "name": "Moreton · Plot 53",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/plot-53-h873753/",
+      "bedrooms": 5,
+      "price": 799995,
+      "plots": [
+        {
+          "number": "53",
+          "price": 799995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mallard Meadows at Winslow",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/",
+      "name": "MANNING · Plot 65",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/plot-65-h873765/",
+      "bedrooms": 5,
+      "price": 804995,
+      "plots": [
+        {
+          "number": "65",
+          "price": 804995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mallard Meadows at Winslow",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/",
+      "name": "Moreton · Plot 66",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/plot-66-h873766/",
+      "bedrooms": 5,
+      "price": 853995,
+      "plots": [
+        {
+          "number": "66",
+          "price": 853995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mallard Meadows at Winslow",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/",
+      "name": "Lichfield · Plot 54",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/plot-54-h873754/",
+      "bedrooms": 5,
+      "price": 869995,
+      "plots": [
+        {
+          "number": "54",
+          "price": 869995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d264a6bb1e28b309400bba7483ae857e86bfbbea742a4810ec6cdb127753a9c1"
+      ]
+    },
+    {
+      "development": "Maylands Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/",
+      "name": "PENSTHORPE · Plot 131",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/plot-131-h8698131/",
+      "bedrooms": 5,
+      "price": 660000,
+      "plots": [
+        {
+          "number": "131",
+          "price": 660000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7fdb9a40a9c4dec2b81f149623ac5c3596b0b4bec7c7887762ece64201765417"
+      ]
+    },
+    {
+      "development": "Maylands Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/",
+      "name": "PENSTHORPE · Plot 132",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/plot-132-h8698132/",
+      "bedrooms": 5,
+      "price": 660000,
+      "plots": [
+        {
+          "number": "132",
+          "price": 660000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f4e4d8e039b1713cb9420f9fe2fffec69ee894eb19aad0bea903b9e02ab0cd01"
+      ]
+    },
+    {
+      "development": "Maylands Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/",
+      "name": "LENWADE · Plot 2",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/plot-2-h86982/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mulberry Rise at Applegate Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/",
+      "name": "EARLSWOOD · Plot 211",
+      "url": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/plot-211-h7654211/",
+      "bedrooms": 5,
+      "price": 699995,
+      "plots": [
+        {
+          "number": "211",
+          "price": 699995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mulberry Rise at Applegate Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/",
+      "name": "EARLSWOOD · Plot 174",
+      "url": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/plot-174-h7654174/",
+      "bedrooms": 5,
+      "price": 722995,
+      "plots": [
+        {
+          "number": "174",
+          "price": 722995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mulberry Rise at Applegate Park",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/",
+      "name": "Earlswood · Plot 119",
+      "url": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/plot-119-h7657119/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "119",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "New Lubbesthorpe",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000784-new-lubbesthorpe/",
+      "name": "Moreton · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev000784-new-lubbesthorpe/plot-1-h81061/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Nursery Fields",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002668-nursery-fields/",
+      "name": "Woodwalton · Plot 160",
+      "url": "https://www.dwh.co.uk/new-homes/dev002668-nursery-fields/plot-160-h8887160/",
+      "bedrooms": 5,
+      "price": 680000,
+      "plots": [
+        {
+          "number": "160",
+          "price": 680000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Nursery Fields",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002668-nursery-fields/",
+      "name": "Woodwalton · Plot 159",
+      "url": "https://www.dwh.co.uk/new-homes/dev002668-nursery-fields/plot-159-h8887159/",
+      "bedrooms": 5,
+      "price": 699000,
+      "plots": [
+        {
+          "number": "159",
+          "price": 699000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Oak View",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/",
+      "name": "Woodwalton · Plot 99",
+      "url": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/plot-99-h682899/",
+      "bedrooms": 5,
+      "price": 1000000,
+      "plots": [
+        {
+          "number": "99",
+          "price": 1000000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Oak View",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/",
+      "name": "Woodwalton · Plot 87",
+      "url": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/plot-87-h682887/",
+      "bedrooms": 5,
+      "price": 1070000,
+      "plots": [
+        {
+          "number": "87",
+          "price": 1070000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Oak View",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/",
+      "name": "Pensthorpe · Plot 79",
+      "url": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/plot-79-h682879/",
+      "bedrooms": 5,
+      "price": 1100000,
+      "plots": [
+        {
+          "number": "79",
+          "price": 1100000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005"
+      ]
+    },
+    {
+      "development": "Oak View",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/",
+      "name": "Woodwalton · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/plot-1-h68281/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Otters Reach at Benthall Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002658-otters-reach-at-benthall-grange/",
+      "name": "Moreton · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002658-otters-reach-at-benthall-grange/plot-1-h89411/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Pastures Place",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/",
+      "name": "Henley · Plot 82",
+      "url": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/plot-82-h860382/",
+      "bedrooms": 5,
+      "price": 569995,
+      "plots": [
+        {
+          "number": "82",
+          "price": 569995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Pastures Place",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/",
+      "name": "Buckingham · Plot 84",
+      "url": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/plot-84-h860384/",
+      "bedrooms": 5,
+      "price": 579995,
+      "plots": [
+        {
+          "number": "84",
+          "price": 579995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8a2f648fab231f8e6087cd8e1fe4b9f45ff8cb8dec67068f705c612ddcfeb970"
+      ]
+    },
+    {
+      "development": "Pastures Place",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/",
+      "name": "Buckingham · Plot 83",
+      "url": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/plot-83-h860383/",
+      "bedrooms": 5,
+      "price": 579995,
+      "plots": [
+        {
+          "number": "83",
+          "price": 579995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "61622991424acee46dc8edcdbdd701b42ac8d49bbdbbd6f5edf57449cbf17671"
+      ]
+    },
+    {
+      "development": "Queen's Manor",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002827-queen's-manor/",
+      "name": "Lichfield · Plot 2",
+      "url": "https://www.dwh.co.uk/new-homes/dev002827-queen's-manor/plot-2-h68232/",
+      "bedrooms": 5,
+      "price": 799995,
+      "plots": [
+        {
+          "number": "2",
+          "price": 799995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd",
+        "158294f53d90034d9c8415774ed6f7859ba6855f1a5019c2954c6ade45821e6a"
+      ]
+    },
+    {
+      "development": "Queen's Manor",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002827-queen's-manor/",
+      "name": "Lichfield · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev002827-queen's-manor/plot-1-h68231/",
+      "bedrooms": 5,
+      "price": 799995,
+      "plots": [
+        {
+          "number": "1",
+          "price": 799995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "538dfd33da1e00d766cfa75d510f4935c382ac687754a591e4ad415fba26b4f5"
+      ]
+    },
+    {
+      "development": "River View at Oundle",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/",
+      "name": "Henley · Plot 23",
+      "url": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/plot-23-h728023/",
+      "bedrooms": 5,
+      "price": 784995,
+      "plots": [
+        {
+          "number": "23",
+          "price": 784995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "River View at Oundle",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/",
+      "name": "LICHFIELD · Plot 24",
+      "url": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/plot-24-h728024/",
+      "bedrooms": 5,
+      "price": 849995,
+      "plots": [
+        {
+          "number": "24",
+          "price": 849995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "538dfd33da1e00d766cfa75d510f4935c382ac687754a591e4ad415fba26b4f5"
+      ]
+    },
+    {
+      "development": "River View at Oundle",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/",
+      "name": "Glidewell · Plot 20",
+      "url": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/plot-20-h728020/",
+      "bedrooms": 5,
+      "price": 849995,
+      "plots": [
+        {
+          "number": "20",
+          "price": 849995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e081033067a5d386b9e94f8d2d6c079c366e5c7bcdc5ee23c3557716e03e99bc"
+      ]
+    },
+    {
+      "development": "River View at Oundle",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/",
+      "name": "Henley · Plot 2",
+      "url": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/plot-2-h72802/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Roman Walk",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002620-roman-walk/",
+      "name": "EARLSWOOD · Plot 56",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002620-roman-walk/plot-56-h873556/",
+      "bedrooms": 5,
+      "price": 629995,
+      "plots": [
+        {
+          "number": "56",
+          "price": 629995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "127ce72017eb6063dd3a787b8ceed35615aa69a7d9d78980000f134d0807538d"
+      ]
+    },
+    {
+      "development": "Roman Walk",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002620-roman-walk/",
+      "name": "Earlswood · Plot 54",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002620-roman-walk/plot-54-h873554/",
+      "bedrooms": 5,
+      "price": 629995,
+      "plots": [
+        {
+          "number": "54",
+          "price": 629995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Romans Quarter",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002626-romans-quarter/",
+      "name": "EARLSWOOD · Plot 44",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002626-romans-quarter/plot-44-h885444/",
+      "bedrooms": 5,
+      "price": 650000,
+      "plots": [
+        {
+          "number": "44",
+          "price": 650000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "127ce72017eb6063dd3a787b8ceed35615aa69a7d9d78980000f134d0807538d"
+      ]
+    },
+    {
+      "development": "Saxon Fields",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-001087-saxon-fields/",
+      "name": "Lenwade · Plot 124",
+      "url": "https://www.dwh.co.uk/new-homes/dev-001087-saxon-fields/plot-124-h8691124/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "124",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sholden Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/",
+      "name": "EARLSWOOD · Plot 103",
+      "url": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/plot-103-h8791103/",
+      "bedrooms": 5,
+      "price": 649995,
+      "plots": [
+        {
+          "number": "103",
+          "price": 649995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sholden Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/",
+      "name": "EARLSWOOD · Plot 48",
+      "url": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/plot-48-h879148/",
+      "bedrooms": 5,
+      "price": 659995,
+      "plots": [
+        {
+          "number": "48",
+          "price": 659995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sholden Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/",
+      "name": "MANNING · Plot 54",
+      "url": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/plot-54-h879154/",
+      "bedrooms": 5,
+      "price": 689995,
+      "plots": [
+        {
+          "number": "54",
+          "price": 689995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005",
+        "5d9cd95d6678e4dbfde5de5a99c04682b55bd5e2a20ceb292ce4940108bbcaa5"
+      ]
+    },
+    {
+      "development": "Sholden Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/",
+      "name": "MANNING · Plot 52",
+      "url": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/plot-52-h879152/",
+      "bedrooms": 5,
+      "price": 689995,
+      "plots": [
+        {
+          "number": "52",
+          "price": 689995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005"
+      ]
+    },
+    {
+      "development": "Sycamore Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002826-sycamore-grange/",
+      "name": "Deeside · Plot 17",
+      "url": "https://www.dwh.co.uk/new-homes/dev002826-sycamore-grange/plot-17-h942117/",
+      "bedrooms": 5,
+      "price": 499995,
+      "plots": [
+        {
+          "number": "17",
+          "price": 499995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sycamore Grange",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002826-sycamore-grange/",
+      "name": "Deeside · Plot 24",
+      "url": "https://www.dwh.co.uk/new-homes/dev002826-sycamore-grange/plot-24-h942124/",
+      "bedrooms": 5,
+      "price": 534995,
+      "plots": [
+        {
+          "number": "24",
+          "price": 534995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Moreton · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-1-hb6201/",
+      "bedrooms": 5,
+      "price": 724995,
+      "plots": [
+        {
+          "number": "1",
+          "price": 724995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Manning · Plot 2",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-2-hb6202/",
+      "bedrooms": 5,
+      "price": 664995,
+      "plots": [
+        {
+          "number": "2",
+          "price": 664995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f4e4d8e039b1713cb9420f9fe2fffec69ee894eb19aad0bea903b9e02ab0cd01"
+      ]
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Manning · Plot 7",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-7-hb6207/",
+      "bedrooms": 5,
+      "price": 674995,
+      "plots": [
+        {
+          "number": "7",
+          "price": 674995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Manning · Plot 9",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-9-hb6209/",
+      "bedrooms": 5,
+      "price": 684995,
+      "plots": [
+        {
+          "number": "9",
+          "price": 684995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cd21d9c9babad50d23b64fb17de4f2e7d87f7773c01b3bb5341230d4f2f6f639"
+      ]
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Moreton · Plot 3",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-3-hb6203/",
+      "bedrooms": 5,
+      "price": 724995,
+      "plots": [
+        {
+          "number": "3",
+          "price": 724995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Moreton · Plot 15",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-15-hb62015/",
+      "bedrooms": 5,
+      "price": 739995,
+      "plots": [
+        {
+          "number": "15",
+          "price": 739995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "17cadf8968841fa79be3c354b87d4d34126ac31e00f296e2942128e2ae135840"
+      ]
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Moreton · Plot 8",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-8-hb6208/",
+      "bedrooms": 5,
+      "price": 739995,
+      "plots": [
+        {
+          "number": "8",
+          "price": 739995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Nook",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
+      "name": "Lichfield · Plot 14",
+      "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/plot-14-hb62014/",
+      "bedrooms": 5,
+      "price": 779995,
+      "plots": [
+        {
+          "number": "14",
+          "price": 779995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd",
+        "158294f53d90034d9c8415774ed6f7859ba6855f1a5019c2954c6ade45821e6a"
+      ]
+    },
+    {
+      "development": "The Paddocks",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002976-the-paddocks/",
+      "name": "Heardwick · Plot 250",
+      "url": "https://www.dwh.co.uk/new-homes/dev002976-the-paddocks/plot-250-h9347250/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "250",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6aa36f70b829963d7f7ea19690e5b762abee055c632b05bd73cf6258cad4d675"
+      ]
+    },
+    {
+      "development": "The Poppies",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002617-the-poppies/",
+      "name": "Henley · Plot 666",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002617-the-poppies/plot-666-h8559666/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "666",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Skylarks",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001010-the-skylarks/",
+      "name": "Henley · Plot 188",
+      "url": "https://www.dwh.co.uk/new-homes/dev001010-the-skylarks/plot-188-h8112188/",
+      "bedrooms": 5,
+      "price": 674995,
+      "plots": [
+        {
+          "number": "188",
+          "price": 674995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Stables",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002898-the-stables/",
+      "name": "BUCKINGHAM · Plot 54",
+      "url": "https://www.dwh.co.uk/new-homes/dev002898-the-stables/plot-54-h798554/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "54",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e77d5c96290174bbd70e9e0596ab9191e1c302b6a8a7b870fa3012fc5ee9db6f"
+      ]
+    },
+    {
+      "development": "The Watlings at Towcester",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002657-the-watlings-at-towcester/",
+      "name": "Henley Georgian · Plot 121",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002657-the-watlings-at-towcester/plot-121-h8872121/",
+      "bedrooms": 5,
+      "price": 753995,
+      "plots": [
+        {
+          "number": "121",
+          "price": 753995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Watlings at Towcester",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev-002657-the-watlings-at-towcester/",
+      "name": "Emerson Georgian · Plot 80",
+      "url": "https://www.dwh.co.uk/new-homes/dev-002657-the-watlings-at-towcester/plot-80-h887280/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "80",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Thoresby Vale",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/",
+      "name": "Moreton · Plot 305",
+      "url": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/plot-305-h8809305/",
+      "bedrooms": 5,
+      "price": 614995,
+      "plots": [
+        {
+          "number": "305",
+          "price": 614995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "17cadf8968841fa79be3c354b87d4d34126ac31e00f296e2942128e2ae135840"
+      ]
+    },
+    {
+      "development": "Thoresby Vale",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/",
+      "name": "BUCKINGHAM · Plot 315",
+      "url": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/plot-315-h8809315/",
+      "bedrooms": 5,
+      "price": 619995,
+      "plots": [
+        {
+          "number": "315",
+          "price": 619995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e77d5c96290174bbd70e9e0596ab9191e1c302b6a8a7b870fa3012fc5ee9db6f"
+      ]
+    },
+    {
+      "development": "Thoresby Vale",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/",
+      "name": "Lichfield · Plot 354",
+      "url": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/plot-354-h8809354/",
+      "bedrooms": 5,
+      "price": 649995,
+      "plots": [
+        {
+          "number": "354",
+          "price": 649995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd",
+        "158294f53d90034d9c8415774ed6f7859ba6855f1a5019c2954c6ade45821e6a"
+      ]
+    },
+    {
+      "development": "Thoresby Vale",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/",
+      "name": "Moreton · Plot 321",
+      "url": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/plot-321-h8809321/",
+      "bedrooms": 5,
+      "price": 649995,
+      "plots": [
+        {
+          "number": "321",
+          "price": 649995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b8cd82e8c1b55e422071f2d671b30a35e0410fd087bc87b7255f0eb1b8838d33"
+      ]
+    },
+    {
+      "development": "Thoresby Vale",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/",
+      "name": "Moreton · Plot 340",
+      "url": "https://www.dwh.co.uk/new-homes/dev000833-thoresby-vale/plot-340-h8809340/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "340",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a75321e458796313ab37ff7d960e7f8647bba41e20ac11809ad7868311384b9d"
+      ]
+    },
+    {
+      "development": "Wigston Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Henley · Plot 259",
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/plot-259-h7111259/",
+      "bedrooms": 5,
+      "price": 634995,
+      "plots": [
+        {
+          "number": "259",
+          "price": 634995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wigston Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Moreton · Plot 55",
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/plot-55-h928855/",
+      "bedrooms": 5,
+      "price": 679995,
+      "plots": [
+        {
+          "number": "55",
+          "price": 679995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "17cadf8968841fa79be3c354b87d4d34126ac31e00f296e2942128e2ae135840"
+      ]
+    },
+    {
+      "development": "Wigston Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Henley · Plot 258",
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/plot-258-h7111258/",
+      "bedrooms": 5,
+      "price": 634995,
+      "plots": [
+        {
+          "number": "258",
+          "price": 634995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wigston Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Moreton · Plot 239",
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/plot-239-h7111239/",
+      "bedrooms": 5,
+      "price": 684995,
+      "plots": [
+        {
+          "number": "239",
+          "price": 684995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49cb4b9cf7f3099365b363f435a565c8298621c0800e08009a66229b07bef5a9"
+      ]
+    },
+    {
+      "development": "Wigston Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Moreton · Plot 58",
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/plot-58-h928858/",
+      "bedrooms": 5,
+      "price": 684995,
+      "plots": [
+        {
+          "number": "58",
+          "price": 684995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b8cd82e8c1b55e422071f2d671b30a35e0410fd087bc87b7255f0eb1b8838d33"
+      ]
+    },
+    {
+      "development": "Wigston Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Lichfield · Plot 237",
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/plot-237-h7111237/",
+      "bedrooms": 5,
+      "price": 739995,
+      "plots": [
+        {
+          "number": "237",
+          "price": 739995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd",
+        "158294f53d90034d9c8415774ed6f7859ba6855f1a5019c2954c6ade45821e6a"
+      ]
+    },
+    {
+      "development": "Wigston Meadows",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
+      "name": "Moreton · Plot 18",
+      "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/plot-18-h928818/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "18",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "17cadf8968841fa79be3c354b87d4d34126ac31e00f296e2942128e2ae135840"
+      ]
+    },
+    {
+      "development": "Willow Grove",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001897-willow-grove/",
+      "name": "Moreton · Plot 43",
+      "url": "https://www.dwh.co.uk/new-homes/dev001897-willow-grove/plot-43-h751843/",
+      "bedrooms": 5,
+      "price": 835000,
+      "plots": [
+        {
+          "number": "43",
+          "price": 835000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Willow Grove",
+      "developmentUrl": "https://www.dwh.co.uk/new-homes/dev001897-willow-grove/",
+      "name": "Moorecroft · Plot 1",
+      "url": "https://www.dwh.co.uk/new-homes/dev001897-willow-grove/plot-1-h75121/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "86c98183cd1e47f5c91e567d78d3e7a43ea7daeb7377a7f48bde7c6d3b38fcd4"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "49cb4b9cf7f3099365b363f435a565c8298621c0800e08009a66229b07bef5a9",
+      "path": "images/49cb4b9cf7f3099365b363f435a565c8298621c0800e08009a66229b07bef5a9.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bdw-cambridge/developments/alconbury-weald-dev002625/ah9_1987-a.jpg?w=840&hash=04BBFEEE6675020488BAF027F8F58816",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or study area staged with a stylish desk, laptop, office chair, and armchair.",
+        "reason": "This is a properly staged home office featuring a desk and no bed."
+      }
+    },
+    {
+      "id": "001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005",
+      "path": "images/001816e17710ab41029227592c481b3056485845ad2d9ada2578a36354b77005.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-west-dwh/developments/buckley-gardens-dev002635/show-home-photography/buckley-gardens-manning-study.jpg?w=840&hash=B25A1D878B5ED3D57F9E876D2DD31A2D",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a built-in desk, office chair, shelving, and desktop decor.",
+        "reason": "This is staged specifically as a home office/study with a visible work surface and no bed."
+      }
+    },
+    {
+      "id": "8a2f648fab231f8e6087cd8e1fe4b9f45ff8cb8dec67068f705c612ddcfeb970",
+      "path": "images/8a2f648fab231f8e6087cd8e1fe4b9f45ff8cb8dec67068f705c612ddcfeb970.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bh-northampton/developments/david-wilson-homes-at-chatteris-dev002801/013-bn_chatterisgate_dwh_buckingham_5bed_lowres.jpg?w=840&hash=A977B7E02066B5F413B18DD150DD825F",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring two wooden desks, computers, lamps, and chairs.",
+        "reason": "This room is staged as a home office with visible desks and no bed."
+      }
+    },
+    {
+      "id": "a88a711334fc352e754d616b4705137350bba154e070929d4226254450134ff6",
+      "path": "images/a88a711334fc352e754d616b4705137350bba154e070929d4226254450134ff6.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/dwh-southern/developments/donnington-heights-dev001001/study.jpg?w=840&hash=5B54EA8994ADD6F885018C3DC351C0C9",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or study with a desk, office chair, large shelving unit, and notice board.",
+        "reason": "It is staged specifically as a home office/study with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "e081033067a5d386b9e94f8d2d6c079c366e5c7bcdc5ee23c3557716e03e99bc",
+      "path": "images/e081033067a5d386b9e94f8d2d6c079c366e5c7bcdc5ee23c3557716e03e99bc.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-west-dwh/developments/de-cheney-gardens-(h592501)/199974.jpg?w=840&hash=CD4911D24F0FE31C915ECFDF34AE59A6",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk with yellow chairs, a shelving unit, and an armchair.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "c9d16d94e1d35598f17f823a34dbe44cd36f1aefcde24f0ddc3e7ca080a7d3e1",
+      "path": "images/c9d16d94e1d35598f17f823a34dbe44cd36f1aefcde24f0ddc3e7ca080a7d3e1.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/dwh-southern/developments/chiltern-grange-(dev-001154)/study.jpg?w=840&hash=BB8CE7B1C77675C3948A98F5601C968D",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a desk, office chair, side table, mirror, and accent chair.",
+        "reason": "This room is staged as a home office with a visible desk and office chair, and no bed."
+      }
+    },
+    {
+      "id": "92c00d4aa1bba81aa834546c4adeb3062f5536f9be88ec7d4e912d1ff92c847b",
+      "path": "images/92c00d4aa1bba81aa834546c4adeb3062f5536f9be88ec7d4e912d1ff92c847b.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bdw-eastern/developments/corinthian-place-dev002686/evesham-show-home/014-bec_corinthianplace_essex_evesham_5bed_lowres.jpg?w=840&hash=EEE316E16CBDAAB6CFCA91984BECEB83",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office/study",
+        "description": "A well-lit home office featuring a desk with a computer monitor, an office chair, a sofa, a bookshelf, and a bay window.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and there is no bed present."
+      }
+    },
+    {
+      "id": "a5d21b03ccf77608a22bdbf24347fe505b2b78c91bc1b53e623458ca93d5bb33",
+      "path": "images/a5d21b03ccf77608a22bdbf24347fe505b2b78c91bc1b53e623458ca93d5bb33.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/north-east/developments/doxford-green-(dev-001135)/015-davidwilson_northeast_doxfordgreen_sunderland_manning_5bed_internals.jpg?w=840&hash=13077018300847BE4BF0CB9D88EFA597",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a large built-in desk with dual workstations, laptops, and chairs.",
+        "reason": "It is staged as a home office with a visible desk surface and no bed."
+      }
+    },
+    {
+      "id": "54135eed0b60a6585a1866805d4c54e9604f54ea1c76f9ca299aeb0e1da81943",
+      "path": "images/54135eed0b60a6585a1866805d4c54e9604f54ea1c76f9ca299aeb0e1da81943.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-mids-dwh/developments/stotfold-park-(h807401)/ah8_8345-a.jpg?w=840&hash=F7A354508790B005624A4C365150763C",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a wooden desk, office chair, armchair, and laptop.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      }
+    },
+    {
+      "id": "3eacc9159b60af2e352d8eb573345d936df76a718b06d90a42276691e0e6ea92",
+      "path": "images/3eacc9159b60af2e352d8eb573345d936df76a718b06d90a42276691e0e6ea92.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-mids-dwh/developments/dwh-at-overstone-gate-(h737801)/ah8_9978-a.jpg?w=840&hash=D46173CE8B503E8B6C898765A8CFDD0D",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A bright home office landing area equipped with a wooden desk, computer keyboard, desk lamp, chair, and a patterned rug.",
+        "reason": "This room contains a dedicated desk workspace and has no bed."
+      }
+    },
+    {
+      "id": "43667653c45f14218a00c5824d78c813cbee8434d01f129d8bc64a2ca9bb1e35",
+      "path": "images/43667653c45f14218a00c5824d78c813cbee8434d01f129d8bc64a2ca9bb1e35.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bdw-eastern/developments/dwh-at-roman-gardens-dev003123/016-davidwilson_easterncounties_romangardens_essex_consall_5bed_lowres.jpg?w=840&hash=4FE3C47B61D745A88F8EBAA0928335D4",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office featuring a large desk in the center, a chair, and a tall bookcase.",
+        "reason": "This room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "61622991424acee46dc8edcdbdd701b42ac8d49bbdbbd6f5edf57449cbf17671",
+      "path": "images/61622991424acee46dc8edcdbdd701b42ac8d49bbdbbd6f5edf57449cbf17671.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/east-mids-dwh/developments/grange-view-dev000783/009-dwem_grangeview_coalville_buckingham_5bed.jpg?w=840&hash=D88A771F0FB07A65283E1D82A34DA2D8",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk with a laptop, a chair, shelves, and deer-patterned wallpaper.",
+        "reason": "The room has a dedicated desk for office work and no visible bed."
+      }
+    },
+    {
+      "id": "17cadf8968841fa79be3c354b87d4d34126ac31e00f296e2942128e2ae135840",
+      "path": "images/17cadf8968841fa79be3c354b87d4d34126ac31e00f296e2942128e2ae135840.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/east-mids-dwh/developments/wigston-meadows-south-dev002877/025-bem_wigstonmeadows_south_moreton_5bed_lowres.jpg?w=840&hash=A58E4E6270B47A84D1D3411D1A392FCF",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or dressing room staged with two white desks with vanity mirrors, chairs, and large built-in wardrobes.",
+        "reason": "The room is staged as a home office/study with a desk and no bed."
+      }
+    },
+    {
+      "id": "9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd",
+      "path": "images/9dbb20dd611db39941ed6ee37e0ba02e3ed6608b4443b7b19bd0947c09ef49cd.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/east-mids-dwh/developments/dwh-at-romans-quarter-dev000170/015-bem_romansquarter_bingham_lichfield_5bed_lowres.jpg?w=840&hash=4BD43C1E9A915FAB73C0DE5ED4417155",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A staged home office with a desk, computer monitor, office chair, tall shelving unit, and decorative plants.",
+        "reason": "It is a home office with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "b12d52fc0d8bfb4625018a82436e86c30e9ee479a3ddf37b2e24eaa470cceab8",
+      "path": "images/b12d52fc0d8bfb4625018a82436e86c30e9ee479a3ddf37b2e24eaa470cceab8.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/east-mids-dwh/house-types/henley-h5887/dwem_fernwoodvillage_newark_henley_5bed-017.jpg?w=840&hash=A79D9F4CE8C980C5DF15998206F73D3D",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / craft room",
+        "description": "A home office or craft study featuring a desk with a sewing machine, a chair, and a daybed/bench without a mattress.",
+        "reason": "It has a visible desk for office work and no bed, satisfying all matching criteria."
+      }
+    },
+    {
+      "id": "127ce72017eb6063dd3a787b8ceed35615aa69a7d9d78980000f134d0807538d",
+      "path": "images/127ce72017eb6063dd3a787b8ceed35615aa69a7d9d78980000f134d0807538d.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bdw-north-thame/developments/dwh--clipstone-park-dev001705/a1126-040-plot-126_dwh_clipstonepark_leightonbuzzard_earlswood-thumb.jpg?w=840&hash=F15232D822DA6FFE2BBA7341E19D2832",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "A staged home office or study room with a long work desk, a stool, floral displays on shelving, and dried flowers hanging from the wall.",
+        "reason": "This is staged as a study/office with a desk and no bed."
+      }
+    },
+    {
+      "id": "dff2792c33d752a69524e414d35abecd807559e3aa8f514c08e6c20172f8d610",
+      "path": "images/dff2792c33d752a69524e414d35abecd807559e3aa8f514c08e6c20172f8d610.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/north-east/developments/cherry-tree-park-(h753901)/bne_cherrytree_manning-009.jpg?w=840&hash=E967EACD84C5CC9F1C53D3AB4CE18837",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk, laptop, chair, and decorative chalkboard wall.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "672dd2f799047b20d99f712682d20b89da3e72dd6a012ca2f543cef45e921c04",
+      "path": "images/672dd2f799047b20d99f712682d20b89da3e72dd6a012ca2f543cef45e921c04.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bh-northampton/developments/david-wilson-homes-at-chatteris-dev002801/014-bn_chatterisgate_dwh_buckingham_5bed_lowres.jpg?w=840&hash=D5CD5B8187DDE484E72F8F41A491D064",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "office",
+        "description": "A dedicated home office room staged with two wooden desks, matching chairs with slipcovers, desktop computers, and desk lamps against a textured dark accent wall.",
+        "reason": "This is a home office with desks and no bed."
+      }
+    },
+    {
+      "id": "624a363c9531003a1ea8ff1de85f8cbd73817884666cb15e407e3198f3a75e88",
+      "path": "images/624a363c9531003a1ea8ff1de85f8cbd73817884666cb15e407e3198f3a75e88.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bdw-north-thame/developments/dwh--clipstone-park-dev001705/07-study.jpg?w=840&hash=0E4BEA69C62869F6F10F3BABE9D7F673",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a desk with a laptop, an office chair, and cabinetry.",
+        "reason": "This is a home office with a visible desk and work surface, and no bed."
+      }
+    },
+    {
+      "id": "f71e5db3905a6fb0a5975b7d9c4ef24bfa6550776dccd44141c8e94b99fd39f0",
+      "path": "images/f71e5db3905a6fb0a5975b7d9c4ef24bfa6550776dccd44141c8e94b99fd39f0.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/east-mids-dwh/developments/the-hawthorns-dev002605/013-dwem_thehawthorns_suttoninashfield_chelworth_4bed_lowres.jpg?w=840&hash=FD26A104095B194E72C55A0D1E73F358",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A stylish home office with a desk, computer monitor, office chair, large bookshelf, and decorative arched wallpaper.",
+        "reason": "It is staged as a dedicated home office/study with a clear desk and no visible bed."
+      }
+    },
+    {
+      "id": "7afa8f2af5c1326c919d321c17e4e03ef4cce24ee41f3533391708be61de56ca",
+      "path": "images/7afa8f2af5c1326c919d321c17e4e03ef4cce24ee41f3533391708be61de56ca.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/dwh-southern/developments/honeymans-helm-dev002688/show-home-photogprahy/landing-min.jpg?w=840&hash=16819469C1185A4213904F5119FEA86A",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A bright home office setup with a desk, laptop, chair, and organizing accessories.",
+        "reason": "It is staged as a home office with a visible work desk and no bed present."
+      }
+    },
+    {
+      "id": "cd21d9c9babad50d23b64fb17de4f2e7d87f7773c01b3bb5341230d4f2f6f639",
+      "path": "images/cd21d9c9babad50d23b64fb17de4f2e7d87f7773c01b3bb5341230d4f2f6f639.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/yorkshire-west/developments/001-archived-sites/elysian-fields,-adel-(dev001122)/010-dwyw_elysianfields_leeds_fewston_5bed.jpg?w=840&hash=2AACF28074C5D4008CAECAE508616097",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office with a desk, computer monitor, office chair, armchair, and window.",
+        "reason": "It is a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "f4e4d8e039b1713cb9420f9fe2fffec69ee894eb19aad0bea903b9e02ab0cd01",
+      "path": "images/f4e4d8e039b1713cb9420f9fe2fffec69ee894eb19aad0bea903b9e02ab0cd01.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-west-dwh/developments/morton-meadows-(h804101)/8317-012_dwh_mortonmeadow_thornbury_manning_5bed.jpg?w=840&hash=4DB45DD6F52EC97984A62011EA9ED043",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office staged with a black desk, chair, large shelving unit, and warm brown walls.",
+        "reason": "It is staged as a home office with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "5d9cd95d6678e4dbfde5de5a99c04682b55bd5e2a20ceb292ce4940108bbcaa5",
+      "path": "images/5d9cd95d6678e4dbfde5de5a99c04682b55bd5e2a20ceb292ce4940108bbcaa5.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-west-dwh/developments/buckley-gardens-dev002635/show-home-photography/buckley-gardens-manning-bedroom-5.jpg?w=840&hash=126DD0E454413255F5560858D3585CDB",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a desk, office chair, laptop, and a green sofa.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and no bed."
+      }
+    },
+    {
+      "id": "d264a6bb1e28b309400bba7483ae857e86bfbbea742a4810ec6cdb127753a9c1",
+      "path": "images/d264a6bb1e28b309400bba7483ae857e86bfbbea742a4810ec6cdb127753a9c1.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-mids-dwh/developments/the-wickets-earls-barton-h635303/205826.jpg?w=840&hash=17A0A62EAF80FF95F4BB1683D6E38E8D",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office styled with a dark desk, computer monitor, chair, bookshelf, and an armchair.",
+        "reason": "This is a properly staged home office with a visible desk and work surface, and no bed."
+      }
+    },
+    {
+      "id": "7fdb9a40a9c4dec2b81f149623ac5c3596b0b4bec7c7887762ece64201765417",
+      "path": "images/7fdb9a40a9c4dec2b81f149623ac5c3596b0b4bec7c7887762ece64201765417.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/dwh-southern/developments/donnington-heights-(h793101)/donningtonheights_manning_h577_study.jpg?w=840&hash=D089B5B7EC9F7B65381E4E904AFC7EB9",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A cozy home office featuring a wooden desk, ergonomic chair, laptop, shelving unit, and a reading armchair.",
+        "reason": "The room is staged specifically as a home office with a visible work desk and chair, and no bed."
+      }
+    },
+    {
+      "id": "158294f53d90034d9c8415774ed6f7859ba6855f1a5019c2954c6ade45821e6a",
+      "path": "images/158294f53d90034d9c8415774ed6f7859ba6855f1a5019c2954c6ade45821e6a.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/east-mids-dwh/developments/dwh-at-romans-quarter-dev000170/024-bem_romansquarter_bingham_lichfield_5bed_lowres.jpg?w=840&hash=B87EF605064CAE86AEBBB78282BE683A",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office/study room with a wooden desk, chair, and large mirrored wardrobes",
+        "reason": "The room features a visible desk and work surface suitable for office work, and there is no visible bed."
+      }
+    },
+    {
+      "id": "538dfd33da1e00d766cfa75d510f4935c382ac687754a591e4ad415fba26b4f5",
+      "path": "images/538dfd33da1e00d766cfa75d510f4935c382ac687754a591e4ad415fba26b4f5.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/yorkshire-west/developments/imperial-court-dev002589/013-byw_imperialcourt_ilkley_lichfield_5bed_lowres.jpg?w=840&hash=DB6EED7B54362D19D1E6D6834A61DC15",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a glass-topped desk, a matching chair, built-in bookshelves with a rolling ladder, and an armchair by the window.",
+        "reason": "This is a home office staged with a desk and workspace, and there is no visible bed."
+      }
+    },
+    {
+      "id": "6aa36f70b829963d7f7ea19690e5b762abee055c632b05bd73cf6258cad4d675",
+      "path": "images/6aa36f70b829963d7f7ea19690e5b762abee055c632b05bd73cf6258cad4d675.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/north-east/developments/the-paddocks-dev002976/014-bne_the-paddocks_morpeth_heardwick_5bed.jpg?w=840&hash=F1B347CD6BC5ED010E7FF5B2AE67B22E",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office room equipped with a large wraparound desk, two office chairs, desktop computers, wall cabinets, and decorative art.",
+        "reason": "The room is specifically staged as a home office with a visible desk, office chairs, and computer setups, with no bed present."
+      }
+    },
+    {
+      "id": "e77d5c96290174bbd70e9e0596ab9191e1c302b6a8a7b870fa3012fc5ee9db6f",
+      "path": "images/e77d5c96290174bbd70e9e0596ab9191e1c302b6a8a7b870fa3012fc5ee9db6f.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/south-west-dwh/developments/park-farm-ph-ii-(h720101)/215875.jpg?w=840&hash=47131621CF2968B8A25323A322B28B37",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a long desk, a laptop, an office chair, shelving, and a lamp.",
+        "reason": "It is staged specifically as a home office with a visible desk and no visible bed."
+      }
+    },
+    {
+      "id": "b8cd82e8c1b55e422071f2d671b30a35e0410fd087bc87b7255f0eb1b8838d33",
+      "path": "images/b8cd82e8c1b55e422071f2d671b30a35e0410fd087bc87b7255f0eb1b8838d33.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/yorkshire-west/developments/imperial-court-dev002589/021-byw_imperialcourt_ilkley_moreton_5bed_lowres.jpg?w=840&hash=39E8702709F4B25A6D6FB8989BF047E2",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "An attic-style home office or study space furnished with a wooden desk and chair, slanted walls, and built-in wardrobes.",
+        "reason": "The room features a visible desk and work surface suitable for office work, and there is no bed present."
+      }
+    },
+    {
+      "id": "a75321e458796313ab37ff7d960e7f8647bba41e20ac11809ad7868311384b9d",
+      "path": "images/a75321e458796313ab37ff7d960e7f8647bba41e20ac11809ad7868311384b9d.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bh-north-mids/developments/thoresby-vale-(dev000833)/006-davidwilson_northmidlands_thoresbyvale_edwinstowe_plot340_moreton_5bed_lowres.jpg?w=840&hash=A24E32B0D2FE2B1EF2987F032C1AF678",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "An attic-style home office or study area equipped with a wooden desk, an ergonomic office chair, a pinboard, and an armchair next to a skylight.",
+        "reason": "This room contains a clear workstation/desk setup for office work and has no visible bed, making it a valid match."
+      }
+    },
+    {
+      "id": "86c98183cd1e47f5c91e567d78d3e7a43ea7daeb7377a7f48bde7c6d3b38fcd4",
+      "path": "images/86c98183cd1e47f5c91e567d78d3e7a43ea7daeb7377a7f48bde7c6d3b38fcd4.jpg",
+      "sourceUrl": "https://www.dwh.co.uk/-/media/divisions/bh-northampton/developments/willow-grove-(h751501)/216571.jpg?w=840&hash=0ABD873A1D025D93A0708ED3BCC56DC8",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "Attic home office featuring a white desk, desktop computer, chair, and armchair.",
+        "reason": "The room is staged as a dedicated home office with a visible desk and workspace, and contains no bed."
+      }
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://www.dwh.co.uk/robots.txt",
+      "stage": "robots",
+      "message": "Robots rules unavailable; public browser snapshots used for collection."
+    }
+  ],
+  "metrics": {
+    "sitemapDevelopments": 160,
+    "qualifyingDiscovered": 138,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 562,
+    "reusedGalleries": 4,
+    "reusedImages": 25,
+    "imagesAttempted": 749,
+    "pendingImages": 0,
+    "matchedImages": 33,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 724
+  },
+  "completedAt": "2026-10-02T13:13:07.455Z"
+}

@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile, rename, open } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { setTimeout as sleep } from 'node:timers/promises';
 import { randomUUID } from 'node:crypto';
 import { parseArgs } from 'node:util';
 import { load } from 'cheerio';
@@ -18,7 +19,7 @@ async function exists(path: string) { try { await readFile(path); return true; }
 async function atomic(path: string, value: unknown) { const temporary = path + '.' + randomUUID() + '.tmp'; await writeFile(temporary, JSON.stringify(value)); await rename(temporary, path); }
 async function main() {
  const env = readEnv();
- const { values } = parseArgs({ options: { builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string' }, persist: { type: 'boolean' } } });
+ const { values } = parseArgs({ options: { 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string' }, persist: { type: 'boolean' } } });
  const site = builderSite(values.builder); const { developmentUrls, discoverHomes, galleryImages } = site;
  const number = (v: string, max: number) => { const n = Number(v); if (!Number.isInteger(n) || n <= 0 || n > max) throw new Error('Invalid crawl limit.'); return n; };
  const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 20000);
@@ -31,6 +32,10 @@ async function main() {
  const client = new RequestClient({ delay: Math.max(500, env.REQUEST_DELAY_MS), retries: env.MAX_RETRIES, timeout: env.REQUEST_TIMEOUT_MS, maxRequests: 40000 });
  const page = async (url: string) => {
   const path = `results/.cache/pages/${sha256(url)}.html`;
+  if (values['browser-snapshots']) {
+   for (let attempt = 0; attempt < 60 && !await exists(path); attempt++) await sleep(1000);
+   if (!await exists(path)) throw new Error('Browser snapshot unavailable.');
+  }
   if (await exists(path)) return readFile(path, 'utf8');
   const html = await client.text(url);
   // Remove transient Livewire/session data from local cached pages.
@@ -42,9 +47,14 @@ async function main() {
  const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question, developments: [], properties: [], images: [], errors: [], metrics: {} };
  let stopped = false; process.once('SIGINT', () => { stopped = true; }); process.once('SIGTERM', () => { stopped = true; });
  try {
-  const robots = await client.text(site.websiteUrl + '/robots.txt');
+  const sourceText = (url: string) => values['browser-snapshots'] ? readFile(`results/.cache/pages/${sha256(url)}.html`, 'utf8') : client.text(url);
+  const robots = await sourceText(site.websiteUrl + '/robots.txt');
+  if (!/User-agent:/i.test(robots)) {
+   if (!values['browser-snapshots']) throw new Error('Robots rules unavailable.');
+   report.errors.push({url:site.websiteUrl+'/robots.txt',stage:'robots',message:'Robots rules unavailable; public browser snapshots used for collection.'});
+  }
   if (/Disallow:\s*\/\s*(?:\n|$)/.test(robots)) throw new Error('robots.txt disallows crawling.');
-  const all = await discoverSitemapDevelopments(site.sitemap, developmentUrls, url => client.text(url));
+  const all = await discoverSitemapDevelopments(site.sitemap, developmentUrls, sourceText);
   if (!all.length) throw new Error('No development URLs found.');
   let urls = all.slice(0, maxDevs);
   if (values.development) { if (!all.includes(values.development)) throw new Error('Development is not in the builder sitemap.'); urls = [values.development]; }

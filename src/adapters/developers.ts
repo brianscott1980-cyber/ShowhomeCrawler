@@ -3,7 +3,7 @@ export const developers = [
  { slug: 'cala', name: 'Cala', website: 'https://www.cala.co.uk', sitemap: '/sitemap.xml' },
  { slug: 'barratt', name: 'Barratt', website: 'https://www.barratthomes.co.uk', sitemap: '/sitemaps/sitemap-barratt-developments.xml' },
  { slug: 'taylor-wimpey', name: 'Taylor Wimpey', website: 'https://www.taylorwimpey.co.uk', sitemap: '/developments.xml' },
- { slug: 'david-wilson', name: 'David Wilson', website: 'https://www.dwh.co.uk', sitemap: '/sitemaps/sitemap-dwh-developments.xml' },
+ { slug: 'david-wilson', name: 'David Wilson', website: 'https://www.dwh.co.uk', sitemap: '/sitemap/' },
  { slug: 'miller-homes', name: 'Miller Homes', website: 'https://www.millerhomes.co.uk', sitemap: '/sitemaps.xml' },
  { slug: 'avant', name: 'Avant', website: 'https://www.avanthomes.co.uk', sitemap: '/sitemap.xml' },
  { slug: 'springfield', name: 'Springfield', website: 'https://www.springfield.co.uk', sitemap: '/sitemap.xml' },
