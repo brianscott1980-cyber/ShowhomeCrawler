@@ -8,7 +8,7 @@ export const metadata={alternates:{canonical:'/'}};
 export const dynamic='force-dynamic';
 export default async function Home(){
  const cards=await Promise.all(developers.map(async developer=>{
-  const report=await readCollection(developer.slug);if(!report?.images.some(i=>i.verdict?.matches))return null;const matches=report?.images.filter(i=>i.categorisation?i.categorisation.isRoom:i.verdict?.matches)??[];const hero=matches[0];if(!hero)return null;
+  const report=await readCollection(developer.slug);if(!report?.images.some(i=>i.verdict?.matches))return null;const matches=report?.images.filter(i=>i.categorisation?(i.categorisation.isRoom||i.categorisation.mainCategory==='Exterior'):i.verdict?.matches)??[];const hero=matches[0];if(!hero)return null;
   const locations=await readFile(`collections/${developer.slug}-home-offices/locations.json`,'utf8').then(s=>JSON.parse(s)).catch(()=>[]);
   const logo=logos.find(l=>l.slug===developer.slug);
   const logoUrl=logo?`/logos/${logo.file}`:undefined;

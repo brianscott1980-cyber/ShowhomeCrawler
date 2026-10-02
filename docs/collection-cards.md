@@ -9,3 +9,5 @@ Transitions ease for 700ms; reduced-motion preferences disable the animation. Th
 Card image order is randomised on the server for each page load. Images are shuffled within room types and room types are interleaved, so rooms with many photos do not dominate the beginning of a collection. Duplicate image URLs are removed. Each card uses only its own collection, and scrolling back follows the same random order in reverse. Classified room photos are included for Homebuilders, Locations and Buildings as well as Interiors.
 
 Homebuilder carousels always start with the official builder logo, fitted without cropping on a contrasting background. Randomised room photos follow; the logo stays outside the room shuffle.
+
+When a homebuilder has exterior photos, one is chosen at random as the second slide immediately after its logo. That photo is removed from the remaining shuffled sequence to avoid duplication. Builders without an exterior proceed directly to the mixed room photos.
