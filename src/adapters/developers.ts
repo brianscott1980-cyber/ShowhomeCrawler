@@ -3,7 +3,7 @@ export const developers = [
  { slug: 'cala', name: 'Cala', website: 'https://www.cala.co.uk', sitemap: '/sitemap.xml' },
  { slug: 'barratt', name: 'Barratt', website: 'https://www.barratthomes.co.uk', sitemap: '/sitemaps/sitemap-barratt-developments.xml' },
  { slug: 'taylor-wimpey', name: 'Taylor Wimpey', website: 'https://www.taylorwimpey.co.uk', sitemap: '/developments.xml' },
- { slug: 'david-wilson', name: 'David Wilson', website: 'https://www.dwh.co.uk', sitemap: '/sitemap/' },
+ { slug: 'david-wilson', name: 'David Wilson Homes', website: 'https://www.dwh.co.uk', sitemap: '/sitemap/' },
  { slug: 'miller-homes', name: 'Miller Homes', website: 'https://www.millerhomes.co.uk', sitemap: '/sitemaps.xml' },
  { slug: 'avant', name: 'Avant', website: 'https://www.avanthomes.co.uk', sitemap: '/sitemap.xml' },
  { slug: 'springfield', name: 'Springfield', website: 'https://www.springfield.co.uk', sitemap: '/sitemap.xml' },
@@ -15,6 +15,8 @@ export const developers = [
  { slug: 'lynch-homes', name: 'Lynch Homes', website: 'https://www.lynchhomes.co.uk', sitemap: '/sitemap_index.xml' },
  { slug: 'story-homes', name: 'Story Homes', website: 'https://www.storyhomes.co.uk', sitemap: '/sitemap_index.xml' },
  { slug: 'hill-group', name: 'Hill Group', website: 'https://www.hill.co.uk', sitemap: '/sitemap.xml' },
+ { slug: 'tulloch-homes', name: 'Tulloch Homes', website: 'https://www.tulloch-homes.com', sitemap: '/homes-for-sale' },
+ { slug: 'scotia-homes', name: 'Scotia Homes', website: 'https://www.scotia-homes.co.uk', sitemap: '/sitemap.xml' },
 ] as const;
 export type DeveloperSlug = typeof developers[number]['slug'];
 export const crawlOrder: DeveloperSlug[] = developers.slice(3).map(d => d.slug);

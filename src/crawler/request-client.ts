@@ -13,7 +13,7 @@ export class RequestClient {
  }
  async bytes(url: string, maxBytes = 20_000_000): Promise<Buffer> {
   const parsed = new URL(url);
-  if (parsed.protocol !== 'https:' || !['cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk', ...developers.map(d => new URL(d.website).hostname)].includes(parsed.hostname)) throw new Error('URL outside crawler host allowlist.');
+  if (parsed.protocol !== 'https:' || !['scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk', ...developers.map(d => new URL(d.website).hostname)].includes(parsed.hostname)) throw new Error('URL outside crawler host allowlist.');
   for (let attempt = 0; ; attempt++) {
    await this.gate();
    try {

@@ -2,37 +2,39 @@ import { readFile, writeFile, rename, open, unlink } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
 import { load } from 'cheerio';
 import { setTimeout as sleep } from 'node:timers/promises';
+import { extractBaseCategorisation } from '../vision/image-categoriser.js';
 import { readEnv } from '../config/env.js';
 import { sha256 } from '../galleries/image-hasher.js';
 import { analysisVersion, classifyBatch, verdictSchema } from '../vision/gemini-classifier.js';
 import { writeReport, type RunReport } from '../reports/report.js';
 async function main() {
- const { values } = parseArgs({ options: { model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
+ const { values } = parseArgs({ options: { 'all-images': {type:'boolean'}, model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
  const folder = values.folder, env = readEnv();
  if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY required.');
  const report: RunReport = JSON.parse(await readFile(folder + '/results.json', 'utf8'));
+ const version = values['all-images'] ? 'all-property-images-v1' : analysisVersion;
  const classificationModel = values.model ?? report.model;
  for (const image of report.images) if (image.verdict) image.analysisModel ??= report.model;
  for (const development of report.developments) if (development.name) development.name = load(development.name).text();
  for (const property of report.properties) { property.development = load(property.development).text(); property.name = load(property.name).text(); }
  const lock = await open(folder + '/.lock', 'wx');
  try {
-  const pending = report.images.filter(i => !i.verdict);
+  const pending = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict);
   report.status = 'classifying'; await writeReport(folder, report);
   for (let offset = 0; offset < pending.length; offset += 8) {
    const images = pending.slice(offset, offset + 8);
    const remaining = [];
    for (const image of images) {
     for (const model of [...new Set([report.model, classificationModel])]) {
-     const cache = `results/.cache/analysis/${sha256(`${image.id}:${model}:${analysisVersion}`)}.json`;
-     try { image.verdict = verdictSchema.parse(JSON.parse(await readFile(cache, 'utf8'))); image.analysisModel = model; delete image.error; break; } catch {}
+     const cache = `results/.cache/analysis/${sha256(`${image.id}:${model}:${version}`)}.json`;
+     try { image.verdict = verdictSchema.parse(JSON.parse(await readFile(cache, 'utf8'))); image.analysisModel = model; delete image.error; if (values['all-images']) image.categorisation = extractBaseCategorisation(image.verdict.roomType, image.verdict.description, image.verdict.reason); break; } catch {}
     }
-    if (!image.verdict) remaining.push({ id: image.id, bytes: await readFile(folder + '/' + image.path) });
+    if (values['all-images'] ? !image.categorisation : !image.verdict) remaining.push({ id: image.id, bytes: await readFile(folder + '/' + image.path) });
    }
    if (remaining.length) {
     let answers;
     for (let attempt = 0; ; attempt++) {
-     try { answers = await classifyBatch(remaining, env.GEMINI_API_KEY, classificationModel); break; }
+     try { answers = await classifyBatch(remaining, env.GEMINI_API_KEY, classificationModel, values['all-images']); break; }
      catch (error) {
       const failure = error as { status?: number; retrySeconds?: number; quotaViolations?: {quotaMetric?: string; quotaId?: string; quotaValue?: string}[] };
       console.log(JSON.stringify({ stage: 'batch_retry', status: failure.status ?? 'invalid_response', quota: failure.quotaViolations, reason: error instanceof Error && /^(Gemini did not complete classification\.|Batch image identifiers do not match\.|Contradictory classification\.)$/.test(error.message) ? error.message : undefined, attempt: attempt + 1 }));
@@ -42,7 +44,7 @@ async function main() {
        if (failure.status) throw error;
        answers = [];
        for (const item of remaining) {
-        try { answers.push(...await classifyBatch([item], env.GEMINI_API_KEY, classificationModel)); }
+        try { answers.push(...await classifyBatch([item], env.GEMINI_API_KEY, classificationModel, values['all-images'])); }
         catch { const image = images.find(i=>i.id===item.id)!; image.error='Individual classification failed after batch retries'; report.errors.push({url:image.sourceUrl,stage:'classification',message:image.error}); }
         await sleep(4000);
        }
@@ -54,8 +56,9 @@ async function main() {
      }
     }
     for (const answer of answers) {
-     const image = images.find(i => i.id === answer.id)!; image.verdict = answer.verdict; image.analysisModel = classificationModel; delete image.error;
-     const path = `results/.cache/analysis/${sha256(`${image.id}:${classificationModel}:${analysisVersion}`)}.json`;
+     const image = images.find(i => i.id === answer.id)!; image.verdict = answer.verdict;
+     if (values['all-images']) image.categorisation = extractBaseCategorisation(answer.verdict.roomType, answer.verdict.description, answer.verdict.reason); image.analysisModel = classificationModel; delete image.error;
+     const path = `results/.cache/analysis/${sha256(`${image.id}:${classificationModel}:${version}`)}.json`;
      await writeFile(path + '.tmp', JSON.stringify(answer.verdict)); await rename(path + '.tmp', path);
     }
    }

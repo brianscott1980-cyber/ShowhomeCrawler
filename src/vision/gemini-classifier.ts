@@ -23,9 +23,9 @@ export async function classify(bytes: Buffer, apiKey: string, model: string): Pr
  return verdict;
 }
 
-export async function classifyBatch(items: { id: string; bytes: Buffer }[], apiKey: string, model: string): Promise<{ id: string; verdict: Verdict }[]> {
+export async function classifyBatch(items: { id: string; bytes: Buffer }[], apiKey: string, model: string, allImages = false): Promise<{ id: string; verdict: Verdict }[]> {
  if (!items.length || items.length > 8) throw new Error('Classification batch must contain 1–8 images.');
- const parts: ({ text: string } | { inlineData: { mimeType: string; data: string } })[] = [{ text: 'Classify each labelled image independently. Match ONLY a room staged as a home office/study with a visible desk/work surface for office work AND no visible bed, bunk bed, cot, mattress or unfolded sofa bed. Bedrooms with a visible bed, kitchens, dining rooms, floorplans, exteriors and empty rooms do NOT match. Do not let furniture in one image affect another image. Return one answer per supplied imageId, preserving those IDs exactly. Reject any floorplan graphic, site plan, schematic or overhead layout drawing, including collages containing one, even if a desk is drawn. Give matches, hasDesk, hasBed, hasFloorplan, roomType, description and reason for every image.' }];
+ const parts: ({ text: string } | { inlineData: { mimeType: string; data: string } })[] = [{ text: allImages ? 'Describe and classify EVERY labelled property image independently, including bedrooms, living rooms, kitchens, bathrooms, studies, dining rooms, hallways, utility rooms, exteriors, gardens, floorplans, maps and promotional graphics. Return one answer for each exact imageId. Set matches true for real rooms and property exteriors or gardens; false for floorplans, maps, documents, logos and promotional graphics. Give hasDesk, hasBed, hasFloorplan, a precise roomType, a detailed factual description of furniture, colours and styling, and reason for each image. Do not restrict to offices or exclude beds.' : 'Classify each labelled image independently. Match ONLY a room staged as a home office/study with a visible desk/work surface for office work AND no visible bed, bunk bed, cot, mattress or unfolded sofa bed. Bedrooms with a visible bed, kitchens, dining rooms, floorplans, exteriors and empty rooms do NOT match. Do not let furniture in one image affect another image. Return one answer per supplied imageId, preserving those IDs exactly. Reject any floorplan graphic, site plan, schematic or overhead layout drawing, including collages containing one, even if a desk is drawn. Give matches, hasDesk, hasBed, hasFloorplan, roomType, description and reason for every image.' }];
  for (const item of items) {
   const jpeg = await sharp(item.bytes).rotate().resize({ width: 1280, height: 1280, fit: 'inside', withoutEnlargement: true }).jpeg({ quality: 85 }).toBuffer();
   parts.push({ text: 'imageId: ' + item.id }, { inlineData: { mimeType: 'image/jpeg', data: jpeg.toString('base64') } });
@@ -44,13 +44,13 @@ export async function classifyBatch(items: { id: string; bytes: Buffer }[], apiK
  const body = await response.json() as { candidates?: { content?: { parts?: { text?: string }[] }; finishReason?: string }[] };
  const candidate = body.candidates?.[0];
  if (candidate?.finishReason !== 'STOP') throw new Error('Gemini did not complete classification.');
- return validateBatch(JSON.parse(candidate.content?.parts?.map(p => p.text ?? '').join('') ?? ''), items.map(i => i.id));
+ return validateBatch(JSON.parse(candidate.content?.parts?.map(p => p.text ?? '').join('') ?? ''), items.map(i => i.id), allImages);
 }
-export function validateBatch(body: unknown, ids: string[]): { id: string; verdict: Verdict }[] {
+export function validateBatch(body: unknown, ids: string[], allImages = false): { id: string; verdict: Verdict }[] {
  const parsed = z.object({ images: z.array(verdictSchema.extend({ imageId: z.string(), hasFloorplan: z.boolean() })) }).parse(body);
  if (parsed.images.length !== ids.length || new Set(parsed.images.map(i => i.imageId)).size !== ids.length || parsed.images.some(i => !ids.includes(i.imageId))) throw new Error('Batch image identifiers do not match.');
  return parsed.images.map(({ imageId, ...verdict }) => {
-  if (verdict.matches && (!verdict.hasDesk || verdict.hasBed || verdict.hasFloorplan || /floor[ -]?plan|site plan|schematic/i.test(verdict.roomType))) throw new Error('Contradictory classification.');
+  if (!allImages && verdict.matches && (!verdict.hasDesk || verdict.hasBed || verdict.hasFloorplan || /floor[ -]?plan|site plan|schematic/i.test(verdict.roomType))) throw new Error('Contradictory classification.');
   return { id: imageId, verdict };
  });
 }
