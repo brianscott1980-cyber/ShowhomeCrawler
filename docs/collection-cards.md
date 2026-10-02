@@ -16,4 +16,4 @@ Grid card rows use their progress through the viewport midpoint instead. Each co
 
 Reaching the bottom while scrolling down completes any remaining list or grid card triggers that cannot reach the midpoint. Each advances once; stationary scroll events do not repeat the transition. Scrolling back reverses those completed transitions as the cards return below their trigger.
 
-In the large two-column layout, the first card triggers at 25% and the second at 60% of row progress, bringing the second transition forward. Compact grids keep their evenly spaced triggers.
+In the large two-column layout, the first card triggers at 25% and the second at 50% of row progress, bringing the second transition forward. Compact grids keep their evenly spaced triggers.
