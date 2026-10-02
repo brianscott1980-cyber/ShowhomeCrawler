@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open http://127.0.0.1:3000. Showhome Explorer presents existing Bellway and Cala collections under `results/` as decor inspiration. Developer pages include search, development filters, fullscreen image navigation and favourites. Processing status, classification decisions and technical reports are kept out of the browsing pages. The current collection still uses the immediate five-bedroom home-office criteria; user-configurable search criteria are future work. Favourites are stored in your browser; offline HTML favourites from a `file://` origin are not automatically transferred.
+Open http://127.0.0.1:3000. Showhome Explorer presents existing Bellway, Cala and Barratt collections under `results/` as decor inspiration. Developer pages include search, development filters, fullscreen image navigation and favourites. Processing status, classification decisions and technical reports are kept out of the browsing pages. The current collection still uses the immediate five-bedroom home-office criteria; user-configurable search criteria are future work. Favourites are stored in your browser; offline HTML favourites from a `file://` origin are not automatically transferred.
 
 Manage collection processing with the CLI commands below. The existing local job API and background worker remain available for operator tooling, with same-origin localhost requests required for writes and one app job at a time. The app uses the existing filename, byte and visual deduplication and caches. Discovery can run without `GEMINI_API_KEY`; add the key to `.env.local` to analyse images.
 
@@ -133,3 +133,28 @@ npm run results:reports
 ```
 
 Plot pages are discovered from public cards, including numeric reserved plots without a details link. Empty galleries remain explicit coverage gaps. Open `results/index.html` directly to review the saved collections offline.
+
+## Barratt
+
+Barratt uses the same five-or-more-bedroom and home-office-with-no-visible-bed criteria. Discovery checks its public development sitemap and the currently exposed plot cards, including signed full-size carousel images. Sold-out developments can expose no plot cards.
+
+```sh
+npm run crawl -- --builder barratt --output results/barratt-home-offices --max-developments 1000 --max-properties 10000 --max-images 20000 --discover-only
+npm run results:classify -- --folder results/barratt-home-offices
+npm run results:persist -- --folder results/barratt-home-offices
+npm run results:reports
+```
+
+The web app and offline gateway include Barratt alongside the existing collections.
+
+## Collections shipped with Git
+
+`collections/<developer>-home-offices/` contains the committed browsing snapshot: JSON data, matched images, HTML and CSV exports. The web app serves this snapshot when present, so developer cards and image galleries work in a fresh checkout. Complete discovery audits, negative images, page caches, checkpoints and credentials stay in ignored local `results/`. The snapshot records the original unique-image total in `metrics.collectedUniqueImages`.
+
+After discovery and classification, publish the current snapshot with:
+
+```sh
+npm run results:publish -- --builder taylor-wimpey
+```
+
+Commit the developer adapter, registry changes and its entire `collections/` folder together. The publisher checks that classifications are finished and every matched image exists before writing the snapshot.

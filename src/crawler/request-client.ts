@@ -1,3 +1,4 @@
+import { developers } from '../adapters/developers.js';
 import { setTimeout as sleep } from 'node:timers/promises';
 export class RequestError extends Error { constructor(public readonly status: number) { super(`HTTP ${status}`); } }
 export class RequestClient {
@@ -12,7 +13,7 @@ export class RequestClient {
  }
  async bytes(url: string, maxBytes = 20_000_000): Promise<Buffer> {
   const parsed = new URL(url);
-  if (parsed.protocol !== 'https:' || !['www.bellway.co.uk', 'cms.bellway.co.uk', 'www.cala.co.uk'].includes(parsed.hostname)) throw new Error('URL outside crawler host allowlist.');
+  if (parsed.protocol !== 'https:' || !['cms.bellway.co.uk', ...developers.map(d => new URL(d.website).hostname)].includes(parsed.hostname)) throw new Error('URL outside crawler host allowlist.');
   for (let attempt = 0; ; attempt++) {
    await this.gate();
    try {

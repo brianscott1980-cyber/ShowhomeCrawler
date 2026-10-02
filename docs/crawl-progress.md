@@ -1,0 +1,19 @@
+# Developer crawl progress
+
+Criteria: at least five bedrooms; a visible desk and no visible bed. Developers run in the requested order. Each finished collection is committed and pushed with its matched image assets under `collections/`.
+
+| Order | Developer | Status | Developments checked | Qualifying properties | Unique images | Office matches | Coverage gaps |
+|---|---|---|---:|---:|---:|---:|---:|
+| 1 | Taylor Wimpey | Completed with gaps; collection included in this commit | 351 | 101 | 855 | 50 | 10 |
+| 2 | David Wilson | Queued | | | | | |
+| 3 | Miller Homes | Queued | | | | | |
+| 4 | Avant | Queued | | | | | |
+| 5 | Springfield | Queued | | | | | |
+| 6 | Persimmon | Queued | | | | | |
+| 7 | Robertson Homes | Queued | | | | | |
+| 8 | Redrow | Queued | | | | | |
+| 9 | The Berkeley Group | Queued | | | | | |
+| 10 | Crest Nicholson | Queued | | | | | |
+| 11 | Lynch Homes | Queued | | | | | |
+| 12 | Story Homes | Queued | | | | | |
+| 13 | Hill Group | Queued | | | | | |

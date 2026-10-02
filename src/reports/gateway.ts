@@ -1,10 +1,11 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, readdir } from 'node:fs/promises';
 import {matchedPage} from './matched-page.js';
 import {favouritesStateScript} from './gallery-ui.js';
 import type { RunReport } from './report.js';
 const e=(s:unknown)=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 export async function writeGateway(){
- const collections=await Promise.all(['bellway-home-offices','cala-home-offices'].map(async folder=>({folder,report:JSON.parse(await readFile(`results/${folder}/results.json`,'utf8')) as RunReport})));
+ const folders=(await readdir('results',{withFileTypes:true})).filter(e=>e.isDirectory()&&e.name.endsWith('-home-offices')).map(e=>e.name);
+ const collections=await Promise.all(folders.map(async folder=>({folder,report:JSON.parse(await readFile(`results/${folder}/results.json`,'utf8')) as RunReport})));
  const combined: RunReport = {builder:{name:'Favourites',slug:'favourites',websiteUrl:''},status:'completed',startedAt:new Date().toISOString(),model:'Gemini',question:'Home office with no beds',developments:[],properties:[],images:[],errors:[],metrics:{}};
  for(const {folder,report} of collections){combined.images.push(...report.images.filter(i=>i.verdict?.matches).map(i=>({...i,path:folder+'/'+i.path})));combined.properties.push(...report.properties.map(p=>({...p,development:(report.builder?.name??'Bellway')+' · '+p.development})));}
  combined.images=[...new Map(combined.images.map(i=>[i.id,i])).values()];

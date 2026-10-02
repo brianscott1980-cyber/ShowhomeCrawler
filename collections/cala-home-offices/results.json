@@ -1,0 +1,3008 @@
+{
+  "builder": {
+    "name": "Cala",
+    "slug": "cala",
+    "websiteUrl": "https://www.cala.co.uk"
+  },
+  "status": "completed_with_gaps",
+  "startedAt": "2026-10-02T10:34:12.026Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/chariot-fields-biddenham/availability-prices/",
+      "name": "Chariot Fields, Biddenham, Bedfordshire",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/samuel-gardens-arlesey/availability-prices/",
+      "name": "Samuel Gardens, Arlesey, Bedfordshire",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/randall-fields-stotfold/availability-prices/",
+      "name": "Randall Fields, Stotfold, Bedfordshire",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/cambridgeshire/cala-at-waterbeach/availability-prices/",
+      "name": "Cala at Waterbeach, Cambridgeshire",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/cambridgeshire/netherhall-gardens-cambridge/availability-prices/",
+      "name": "Netherhall Gardens, Cambridge, Cambridgeshire",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/peterborough/cala-at-hampton-lakes/availability-prices/",
+      "name": "Cala at Hampton Lakes, Peterborough",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/cotswolds/gloucestershire/millstone-green-fairford/availability-prices/",
+      "name": "Millstone Green, Fairford, Gloucestershire",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/silverburn-bridge-of-don/availability-prices/",
+      "name": "Silverburn, Bridge of Don, Aberdeen",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 9
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/green-bank-at-grandhome/availability-prices/",
+      "name": "Green Bank at Grandhome, Aberdeen",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/burnland-meadows-westhill/availability-prices/",
+      "name": "Burnland Meadows, Westhill, Aberdeenshire",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
+      "name": "Raemoir Park, Banchory, Aberdeenshire",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/availability-prices/",
+      "name": "Conglass Brae, Inverurie, Aberdeenshire",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-dunbartonshire/weaver-s-brae-kirkintilloch/availability-prices/",
+      "name": "Weaver's Brae, Kirkintilloch, East Dunbartonshire",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/",
+      "name": "Longbanks Green, Dunbar, East Lothian",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 10
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/edinburgh/west-craigs/availability-prices/",
+      "name": "West Craigs, Edinburgh",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/edinburgh/rosebery-wynd-south-queensferry/availability-prices/",
+      "name": "Rosebery Wynd, South Queensferry, Edinburgh",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Lathallan Grange, Polmont, Falkirk",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/availability-prices/",
+      "name": "The Crawfields, Bo'ness, Falkirk",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/glasgow/jordanhill-park/availability-prices/",
+      "name": "Jordanhill Park, Glasgow",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/glasgow/the-foundry-cathcart/availability-prices/",
+      "name": "The Foundry, Cathcart, Glasgow",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/midlothian/craighall-village-colliers-gate-millerhill/availability-prices/",
+      "name": "Craighall Village – Colliers Gate, Millerhill, Midlothian",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/midlothian/belwood-oaks-penicuik/availability-prices/",
+      "name": "Belwood Oaks, Penicuik, Midlothian",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Cedar Brae, Jackton, South Lanarkshire",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 11
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
+      "name": "Cornhill Village, Hamilton, South Lanarkshire",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Ballagan Woods, Killearn, Stirling",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 8
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/pinefields-livingston/availability-prices/",
+      "name": "Pinefields, Livingston, West Lothian",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/availability-prices/",
+      "name": "Mansefield Lea, East Calder, West Lothian",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/availability-prices/",
+      "name": "Calderwood, East Calder, West Lothian",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/",
+      "name": "Millgate Lawns, Winchburgh, West Lothian",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
+      "name": "Hillside Gardens, Aberdour, Fife",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/ascot-gardens-ascot/availability-prices/",
+      "name": "Ascot Gardens, Ascot, Berkshire",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-finchwood-park-the-ridge-finchampstead/availability-prices/",
+      "name": "Cala at Finchwood Park - The Ridge, Finchampstead, Berkshire",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-finchwood-park-the-meadows-finchampstead/availability-prices/",
+      "name": "Cala at Finchwood Park - The Meadows, Finchampstead, Berkshire",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-heights-crowthorne/availability-prices/",
+      "name": "Cala at Buckler's Park - The Heights, Crowthorne, Berkshire",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-pines-crowthorne/availability-prices/",
+      "name": "Cala at Buckler's Park - The Pines, Crowthorne, Berkshire",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/availability-prices/",
+      "name": "Knights Grove, Newbury, Berkshire",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/availability-prices/",
+      "name": "Arabella Park, Great Kimble, Buckinghamshire",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/",
+      "name": "Aylett's Green, Kelvedon, Essex",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/ufford-chase-phase-2-great-bentley/availability-prices/",
+      "name": "Ufford Chase Phase 2, Great Bentley, Essex",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/ingatestone-grove-ingatestone/availability-prices/",
+      "name": "Ingatestone Grove, Ingatestone, Essex",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/wivenhoe-gardens-wivenhoe/availability-prices/",
+      "name": "Wivenhoe Gardens, Wivenhoe, Essex",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/greater-london/langley-court/availability-prices/",
+      "name": "Langley Court, Greater London",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/staggs-farm-great-dunmow/availability-prices/",
+      "name": "Staggs Farm, Great Dunmow, Essex",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/the-willows-burridge/availability-prices/",
+      "name": "The Willows, Burridge, Hampshire",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/knightwood-chase-fordingbridge/availability-prices/",
+      "name": "Knightwood Chase, Fordingbridge, Hampshire",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/worting-park-basingstoke/availability-prices/",
+      "name": "Worting Park, Basingstoke, Hampshire",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/kings-barton-at-monarchs-mead/availability-prices/",
+      "name": "Kings Barton at Monarchs Mead, Hampshire",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/kings-barton-at-the-green/availability-prices/",
+      "name": "Kings Barton at The Green, Hampshire",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/ryder-gardens-bovingdon/availability-prices/",
+      "name": "Ryder Gardens, Bovingdon, Hertfordshire",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/availability-prices/",
+      "name": "Sambrooke Park, Potters Bar, Hertfordshire",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/edmund-park-kings-langley/availability-prices/",
+      "name": "Edmund Park, Kings Langley, Hertfordshire",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/heritage-row-st-albans/availability-prices/",
+      "name": "Heritage Row, St Albans, Hertfordshire",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/mosaic-fields-st-albans/availability-prices/",
+      "name": "Mosaic Fields, St Albans, Hertfordshire",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/botanist-green/availability-prices/",
+      "name": "Botanist Green, Hertfordshire",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Barden Croft, Tonbridge, Kent",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/maiden-view-woodchurch/availability-prices/",
+      "name": "Maiden View, Woodchurch, Kent",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/brooklands-grove-weybridge/availability-prices/",
+      "name": "Brooklands Grove, Weybridge, Surrey",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/maple-croft-egham/availability-prices/",
+      "name": "Maple Croft, Egham, Surrey",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/the-glades-at-mindenhurst-deepcut/availability-prices/",
+      "name": "The Glades at Mindenhurst, Deepcut, Surrey",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/cala-at-warlingham/availability-prices/",
+      "name": "Cala at Warlingham, Surrey",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/birchwood-farnham/availability-prices/",
+      "name": "Birchwood, Farnham, Surrey",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/enton-meadows-milford/availability-prices/",
+      "name": "Enton Meadows, Milford, Surrey",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/new-monks-park-phase-2/availability-prices/",
+      "name": "New Monks Park Phase 2, West Sussex",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/hawksbourne-cala-at-mowbray/availability-prices/",
+      "name": "Hawksbourne (Cala at Mowbray), West Sussex",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/langmead-place/availability-prices/",
+      "name": "Langmead Place, West Sussex",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/rosebrook-hambrook/availability-prices/",
+      "name": "Rosebrook, Hambrook, West Sussex",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/furzefield-mowbray-village-horsham/availability-prices/",
+      "name": "Furzefield (Mowbray Village), Horsham, West Sussex",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/hurland-the-island-mowbray-village-horsham/availability-prices/",
+      "name": "Hurland & The Island (Mowbray Village), Horsham, West Sussex",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/brickworks/availability-prices/",
+      "name": "Brickworks, West Sussex",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-nobel-park-phase-2-didcot/availability-prices/",
+      "name": "Cala at Nobel Park, Phase 2, Didcot, Oxfordshire",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-nobel-park-phase-6-didcot/availability-prices/",
+      "name": "Cala at Nobel Park, Phase 6, Didcot, Oxfordshire",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-himley-village-bicester/availability-prices/",
+      "name": "Cala at Himley Village, Bicester, Oxfordshire",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cross-trees-park-shrivenham/availability-prices/",
+      "name": "Cross Trees Park, Shrivenham, Oxfordshire",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/bliss-willows-chipping-norton/availability-prices/",
+      "name": "Bliss Willows, Chipping Norton, Oxfordshire",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/east-sussex/the-oaks-wivelsfield/availability-prices/",
+      "name": "The Oaks, Wivelsfield, East Sussex",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/east-sussex/the-bluebells-uckfield/availability-prices/",
+      "name": "The Bluebells, Uckfield, East Sussex",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
+      "name": "Oakwood Park, Wimborne, Dorset",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/wiltshire/the-orchards-purton/availability-prices/",
+      "name": "The Orchards, Purton, Wiltshire",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Chariot Fields, Biddenham, Bedfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/chariot-fields-biddenham/availability-prices/",
+      "name": "Whitebeam · Plot 13",
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/chariot-fields-biddenham/13/",
+      "bedrooms": 5,
+      "price": 875000,
+      "plots": [
+        {
+          "number": "13",
+          "price": 875000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Chariot Fields, Biddenham, Bedfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/chariot-fields-biddenham/availability-prices/",
+      "name": "Yew II · Plot 37",
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/chariot-fields-biddenham/37/",
+      "bedrooms": 5,
+      "price": 975000,
+      "plots": [
+        {
+          "number": "37",
+          "price": 975000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6aa24385511d4c79ed7cc5084789fedff336e29e4aaeb4c98826426f483763b5"
+      ]
+    },
+    {
+      "development": "Randall Fields, Stotfold, Bedfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/randall-fields-stotfold/availability-prices/",
+      "name": "Whitebeam · Plot 6",
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/randall-fields-stotfold/6/",
+      "bedrooms": 5,
+      "price": 915000,
+      "plots": [
+        {
+          "number": "6",
+          "price": 915000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Silverburn, Bridge of Don, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/silverburn-bridge-of-don/availability-prices/",
+      "name": "Crichton · Plot 16",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/silverburn-bridge-of-don/16/",
+      "bedrooms": 5,
+      "price": 489000,
+      "plots": [
+        {
+          "number": "16",
+          "price": 489000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cd08ab4db1dda9fa5f887502247d050a1dd3c778e4823d5baae1d5d434ba191d"
+      ]
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Crieff · Plot 425",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/425/",
+      "bedrooms": 5,
+      "price": 529950,
+      "plots": [
+        {
+          "number": "425",
+          "price": 529950,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "cad99b3258d0b703f1ed6cdeba260250d9e045e876e1cdc9725dba3f76be7354"
+      ]
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Darvel · Plot 429",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/429/",
+      "bedrooms": 5,
+      "price": 580000,
+      "plots": [
+        {
+          "number": "429",
+          "price": 580000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "80dd1619f8cb91a4999060d63ad5e4401cfbaa1a4493ee47adad8501c0943005"
+      ]
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Darvel · Plot 430",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/430/",
+      "bedrooms": 5,
+      "price": 595000,
+      "plots": [
+        {
+          "number": "430",
+          "price": 595000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "80dd1619f8cb91a4999060d63ad5e4401cfbaa1a4493ee47adad8501c0943005"
+      ]
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Crieff · Plot 431",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/431/",
+      "bedrooms": 5,
+      "price": 529995,
+      "plots": [
+        {
+          "number": "431",
+          "price": 529995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cad99b3258d0b703f1ed6cdeba260250d9e045e876e1cdc9725dba3f76be7354"
+      ]
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Crichton · Plot 432",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/432/",
+      "bedrooms": 5,
+      "price": 545000,
+      "plots": [
+        {
+          "number": "432",
+          "price": 545000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Darroch · Plot 433",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/433/",
+      "bedrooms": 5,
+      "price": 589995,
+      "plots": [
+        {
+          "number": "433",
+          "price": 589995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a0d4a7a02d9ccccb422e1194257eb3d82589506fd97aac631db1c4e69c64ed38"
+      ]
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Garvie · Plot 434",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/434/",
+      "bedrooms": 5,
+      "price": 625000,
+      "plots": [
+        {
+          "number": "434",
+          "price": 625000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ee599af3b9ccd7dc84dfbaedfb4d9bca9ba91524ddd1cdff02eea6c8504e390"
+      ]
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Crichton · Plot 435",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/435/",
+      "bedrooms": 5,
+      "price": 545000,
+      "plots": [
+        {
+          "number": "435",
+          "price": 545000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Lowther · Plot 441",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/441/",
+      "bedrooms": 5,
+      "price": 679000,
+      "plots": [
+        {
+          "number": "441",
+          "price": 679000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Burnland Meadows, Westhill, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/burnland-meadows-westhill/availability-prices/",
+      "name": "Garvie · Plot 32",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/burnland-meadows-westhill/32/",
+      "bedrooms": 5,
+      "price": 494950,
+      "plots": [
+        {
+          "number": "32",
+          "price": 494950,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Raemoir Park, Banchory, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
+      "name": "Garvie · Plot 15",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/15/",
+      "bedrooms": 5,
+      "price": 529950,
+      "plots": [
+        {
+          "number": "15",
+          "price": 529950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Raemoir Park, Banchory, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
+      "name": "Crichton · Plot 17",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/17/",
+      "bedrooms": 5,
+      "price": 469000,
+      "plots": [
+        {
+          "number": "17",
+          "price": 469000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Raemoir Park, Banchory, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
+      "name": "Dewar · Plot 32",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/32/",
+      "bedrooms": 5,
+      "price": 549950,
+      "plots": [
+        {
+          "number": "32",
+          "price": 549950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "70085ac541052b4a3e58b22acfbca2c21264b54d869303619d4986653fea144d"
+      ]
+    },
+    {
+      "development": "Raemoir Park, Banchory, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
+      "name": "Kennedy · Plot 33",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/33/",
+      "bedrooms": 5,
+      "price": 599950,
+      "plots": [
+        {
+          "number": "33",
+          "price": 599950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "456d7dad906341f646a1e645579a60c934a94fde7b143f77d0e113e3521c819d"
+      ]
+    },
+    {
+      "development": "Raemoir Park, Banchory, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
+      "name": "Crichton · Plot 36",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/36/",
+      "bedrooms": 5,
+      "price": 479000,
+      "plots": [
+        {
+          "number": "36",
+          "price": 479000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Conglass Brae, Inverurie, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/availability-prices/",
+      "name": "Garvie · Plot 209",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/209/",
+      "bedrooms": 5,
+      "price": 535000,
+      "plots": [
+        {
+          "number": "209",
+          "price": 535000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "3ee599af3b9ccd7dc84dfbaedfb4d9bca9ba91524ddd1cdff02eea6c8504e390"
+      ]
+    },
+    {
+      "development": "Conglass Brae, Inverurie, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/availability-prices/",
+      "name": "Garvie · Plot 241",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/241/",
+      "bedrooms": 5,
+      "price": 539950,
+      "plots": [
+        {
+          "number": "241",
+          "price": 539950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ee599af3b9ccd7dc84dfbaedfb4d9bca9ba91524ddd1cdff02eea6c8504e390"
+      ]
+    },
+    {
+      "development": "Conglass Brae, Inverurie, Aberdeenshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/availability-prices/",
+      "name": "Garvie · Plot 243",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/243/",
+      "bedrooms": 5,
+      "price": 539995,
+      "plots": [
+        {
+          "number": "243",
+          "price": 539995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ee599af3b9ccd7dc84dfbaedfb4d9bca9ba91524ddd1cdff02eea6c8504e390"
+      ]
+    },
+    {
+      "development": "Weaver's Brae, Kirkintilloch, East Dunbartonshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-dunbartonshire/weaver-s-brae-kirkintilloch/availability-prices/",
+      "name": "Lewis · Plot 6",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-dunbartonshire/weaver-s-brae-kirkintilloch/6/",
+      "bedrooms": 5,
+      "price": 646000,
+      "plots": [
+        {
+          "number": "6",
+          "price": 646000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3"
+      ]
+    },
+    {
+      "development": "Weaver's Brae, Kirkintilloch, East Dunbartonshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-dunbartonshire/weaver-s-brae-kirkintilloch/availability-prices/",
+      "name": "Darroch · Plot 7",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-dunbartonshire/weaver-s-brae-kirkintilloch/7/",
+      "bedrooms": 5,
+      "price": 573000,
+      "plots": [
+        {
+          "number": "7",
+          "price": 573000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Longbanks Green, Dunbar, East Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/",
+      "name": "Garvie · Plot 9",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/9/",
+      "bedrooms": 5,
+      "price": 694995,
+      "plots": [
+        {
+          "number": "9",
+          "price": 694995,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "81a4dda4a62d119c4c7503e74925c7d99e43574903522af3f751f487ea61a8e7"
+      ]
+    },
+    {
+      "development": "Longbanks Green, Dunbar, East Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/",
+      "name": "Macrae · Plot 15",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/15/",
+      "bedrooms": 5,
+      "price": 824995,
+      "plots": [
+        {
+          "number": "15",
+          "price": 824995,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "c69ea2e9a6da8ff9bdfede0e2863e4243118ce4f035eb98bdd700d329894d63e"
+      ]
+    },
+    {
+      "development": "Longbanks Green, Dunbar, East Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/",
+      "name": "Garvie · Plot 16",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/16/",
+      "bedrooms": 5,
+      "price": 704995,
+      "plots": [
+        {
+          "number": "16",
+          "price": 704995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "81a4dda4a62d119c4c7503e74925c7d99e43574903522af3f751f487ea61a8e7"
+      ]
+    },
+    {
+      "development": "Longbanks Green, Dunbar, East Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/",
+      "name": "Garvie · Plot 18",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/18/",
+      "bedrooms": 5,
+      "price": 699995,
+      "plots": [
+        {
+          "number": "18",
+          "price": 699995,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "81a4dda4a62d119c4c7503e74925c7d99e43574903522af3f751f487ea61a8e7"
+      ]
+    },
+    {
+      "development": "Longbanks Green, Dunbar, East Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/",
+      "name": "Gordon · Plot 22",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/22/",
+      "bedrooms": 5,
+      "price": 724995,
+      "plots": [
+        {
+          "number": "22",
+          "price": 724995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Garvie · Plot 28",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/28/",
+      "bedrooms": 5,
+      "price": 604000,
+      "plots": [
+        {
+          "number": "28",
+          "price": 604000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "9338f309b0657b397a3cd66f569d9112a4bf8d2e2ac1c96293e242f99f4b1bd8"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Dewar FE · Plot 30",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/30/",
+      "bedrooms": 5,
+      "price": 568000,
+      "plots": [
+        {
+          "number": "30",
+          "price": 568000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "dd214093d142a8953766fc6f469696990aba2da84c66a663611dd83d80aa52a4"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Kennedy · Plot 32",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/32/",
+      "bedrooms": 5,
+      "price": 625000,
+      "plots": [
+        {
+          "number": "32",
+          "price": 625000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "e3651dd3c4ea2e4f4aa2523b02e7133dff367f5200409365f2577730161af070"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Dewar SE · Plot 33",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/33/",
+      "bedrooms": 5,
+      "price": 569000,
+      "plots": [
+        {
+          "number": "33",
+          "price": 569000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "dd214093d142a8953766fc6f469696990aba2da84c66a663611dd83d80aa52a4"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Kennedy · Plot 34",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/34/",
+      "bedrooms": 5,
+      "price": 625000,
+      "plots": [
+        {
+          "number": "34",
+          "price": 625000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e3651dd3c4ea2e4f4aa2523b02e7133dff367f5200409365f2577730161af070"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Garvie · Plot 36",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/36/",
+      "bedrooms": 5,
+      "price": 606000,
+      "plots": [
+        {
+          "number": "36",
+          "price": 606000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9338f309b0657b397a3cd66f569d9112a4bf8d2e2ac1c96293e242f99f4b1bd8"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Evan · Plot 37",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/37/",
+      "bedrooms": 5,
+      "price": 540000,
+      "plots": [
+        {
+          "number": "37",
+          "price": 540000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b37b54afd27c088edb03f502bef8f4caa98c6ebe2ae1ab8f328e3efb56ce5dca"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Darroch · Plot 38",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/38/",
+      "bedrooms": 5,
+      "price": 574000,
+      "plots": [
+        {
+          "number": "38",
+          "price": 574000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "94903b2c62069244259f45219755279fe3453f3d36d406556a52c519af4647a8"
+      ]
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Crichton · Plot 105",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/105/",
+      "bedrooms": 5,
+      "price": 533000,
+      "plots": [
+        {
+          "number": "105",
+          "price": 533000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Dewar FE · Plot 116",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/116/",
+      "bedrooms": 5,
+      "price": 571000,
+      "plots": [
+        {
+          "number": "116",
+          "price": 571000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "dd214093d142a8953766fc6f469696990aba2da84c66a663611dd83d80aa52a4"
+      ]
+    },
+    {
+      "development": "Lathallan Grange, Polmont, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Evan · Plot 55",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/55/",
+      "bedrooms": 5,
+      "price": 540000,
+      "plots": [
+        {
+          "number": "55",
+          "price": 540000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b37b54afd27c088edb03f502bef8f4caa98c6ebe2ae1ab8f328e3efb56ce5dca"
+      ]
+    },
+    {
+      "development": "Lathallan Grange, Polmont, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Garvie · Plot 60",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/60/",
+      "bedrooms": 5,
+      "price": 555000,
+      "plots": [
+        {
+          "number": "60",
+          "price": 555000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5f8bafdd941535d58b8d58c369a0f01d6e6b3b17e23b3d5e103c5e569ed8d06e"
+      ]
+    },
+    {
+      "development": "Lathallan Grange, Polmont, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Lewis · Plot 61",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/61/",
+      "bedrooms": 5,
+      "price": 609000,
+      "plots": [
+        {
+          "number": "61",
+          "price": 609000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3"
+      ]
+    },
+    {
+      "development": "Lathallan Grange, Polmont, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Garvie · Plot 64",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/64/",
+      "bedrooms": 5,
+      "price": 530000,
+      "plots": [
+        {
+          "number": "64",
+          "price": 530000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5f8bafdd941535d58b8d58c369a0f01d6e6b3b17e23b3d5e103c5e569ed8d06e"
+      ]
+    },
+    {
+      "development": "Lathallan Grange, Polmont, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Logan · Plot 70",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/70/",
+      "bedrooms": 5,
+      "price": 604000,
+      "plots": [
+        {
+          "number": "70",
+          "price": 604000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Lathallan Grange, Polmont, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Kennedy · Plot 71",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/71/",
+      "bedrooms": 5,
+      "price": 594000,
+      "plots": [
+        {
+          "number": "71",
+          "price": 594000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "1f2c032718eb9f5f2655d6a12f79e198713dba3f513384f3c026a1863fefbdbf"
+      ]
+    },
+    {
+      "development": "The Crawfields, Bo'ness, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/availability-prices/",
+      "name": "Crichton · Plot 2",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/2/",
+      "bedrooms": 5,
+      "price": 512000,
+      "plots": [
+        {
+          "number": "2",
+          "price": 512000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Crawfields, Bo'ness, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/availability-prices/",
+      "name": "Darroch · Plot 5",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/5/",
+      "bedrooms": 5,
+      "price": 544000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 544000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "684a819f8e177c23686cef42b7002540a839c679b56a6361e05add29be6b7b49"
+      ]
+    },
+    {
+      "development": "The Crawfields, Bo'ness, Falkirk",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/availability-prices/",
+      "name": "Evan · Plot 22",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/22/",
+      "bedrooms": 5,
+      "price": 535000,
+      "plots": [
+        {
+          "number": "22",
+          "price": 535000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b37b54afd27c088edb03f502bef8f4caa98c6ebe2ae1ab8f328e3efb56ce5dca"
+      ]
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Garvie · Plot 446",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/446/",
+      "bedrooms": 5,
+      "price": 557000,
+      "plots": [
+        {
+          "number": "446",
+          "price": 557000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "9338f309b0657b397a3cd66f569d9112a4bf8d2e2ac1c96293e242f99f4b1bd8"
+      ]
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Moncrief · Plot 447",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/447/",
+      "bedrooms": 5,
+      "price": 659995,
+      "plots": [
+        {
+          "number": "447",
+          "price": 659995,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Logan · Plot 448",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/448/",
+      "bedrooms": 5,
+      "price": 607000,
+      "plots": [
+        {
+          "number": "448",
+          "price": 607000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Evan · Plot 451",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/451/",
+      "bedrooms": 5,
+      "price": 532000,
+      "plots": [
+        {
+          "number": "451",
+          "price": 532000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Darroch · Plot 452",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/452/",
+      "bedrooms": 5,
+      "price": 544000,
+      "plots": [
+        {
+          "number": "452",
+          "price": 544000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "94903b2c62069244259f45219755279fe3453f3d36d406556a52c519af4647a8"
+      ]
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Garvie · Plot 454",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/454/",
+      "bedrooms": 5,
+      "price": 558000,
+      "plots": [
+        {
+          "number": "454",
+          "price": 558000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9338f309b0657b397a3cd66f569d9112a4bf8d2e2ac1c96293e242f99f4b1bd8"
+      ]
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Moncrief · Plot 456",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/456/",
+      "bedrooms": 5,
+      "price": 662000,
+      "plots": [
+        {
+          "number": "456",
+          "price": 662000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Crichton · Plot 473",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/473/",
+      "bedrooms": 5,
+      "price": 509995,
+      "plots": [
+        {
+          "number": "473",
+          "price": 509995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Logan · Plot 475",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/475/",
+      "bedrooms": 5,
+      "price": 609000,
+      "plots": [
+        {
+          "number": "475",
+          "price": 609000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Darroch · Plot 476",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/476/",
+      "bedrooms": 5,
+      "price": 544000,
+      "plots": [
+        {
+          "number": "476",
+          "price": 544000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "94903b2c62069244259f45219755279fe3453f3d36d406556a52c519af4647a8"
+      ]
+    },
+    {
+      "development": "Cedar Brae, Jackton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Evan · Plot 477",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/477/",
+      "bedrooms": 5,
+      "price": 529995,
+      "plots": [
+        {
+          "number": "477",
+          "price": 529995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cornhill Village, Hamilton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
+      "name": "Gordon SE · Plot 63",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/63/",
+      "bedrooms": 5,
+      "price": 540000,
+      "plots": [
+        {
+          "number": "63",
+          "price": 540000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "b7b8c9e97b06cad33ac5f088aad7ebe036d9de25cc4577c7ec015b93fcf9b75e"
+      ]
+    },
+    {
+      "development": "Cornhill Village, Hamilton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
+      "name": "Lewis · Plot 68",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/68/",
+      "bedrooms": 5,
+      "price": 569995,
+      "plots": [
+        {
+          "number": "68",
+          "price": 569995,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3"
+      ]
+    },
+    {
+      "development": "Cornhill Village, Hamilton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
+      "name": "Moncrief · Plot 69",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/69/",
+      "bedrooms": 5,
+      "price": 598000,
+      "plots": [
+        {
+          "number": "69",
+          "price": 598000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cornhill Village, Hamilton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
+      "name": "Kennedy · Plot 157",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/157/",
+      "bedrooms": 5,
+      "price": 557500,
+      "plots": [
+        {
+          "number": "157",
+          "price": 557500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e3651dd3c4ea2e4f4aa2523b02e7133dff367f5200409365f2577730161af070"
+      ]
+    },
+    {
+      "development": "Cornhill Village, Hamilton, South Lanarkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
+      "name": "Lewis · Plot 167",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/167/",
+      "bedrooms": 5,
+      "price": 567995,
+      "plots": [
+        {
+          "number": "167",
+          "price": 567995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3"
+      ]
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Macrae · Plot 43",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/43/",
+      "bedrooms": 5,
+      "price": 805000,
+      "plots": [
+        {
+          "number": "43",
+          "price": 805000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "366e7d70a1bfdf6fe36b42f3e084b8cc1610be148e204cd8691f4d01143a57db",
+        "bd60971a5f47d4c90ab0ac1a5f15b40ec89ed00f5671303455feb431de91c7f6"
+      ]
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Lewis · Plot 44",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/44/",
+      "bedrooms": 5,
+      "price": 655000,
+      "plots": [
+        {
+          "number": "44",
+          "price": 655000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3"
+      ]
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Macrae · Plot 45",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/45/",
+      "bedrooms": 5,
+      "price": 810000,
+      "plots": [
+        {
+          "number": "45",
+          "price": 810000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "366e7d70a1bfdf6fe36b42f3e084b8cc1610be148e204cd8691f4d01143a57db",
+        "bd60971a5f47d4c90ab0ac1a5f15b40ec89ed00f5671303455feb431de91c7f6"
+      ]
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Melville SE · Plot 46",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/46/",
+      "bedrooms": 5,
+      "price": 705000,
+      "plots": [
+        {
+          "number": "46",
+          "price": 705000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e655ec460c66d654766783610acf2177610a0cae2224ecf1d164247ecd1562ae"
+      ]
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Logan · Plot 50",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/50/",
+      "bedrooms": 5,
+      "price": 652000,
+      "plots": [
+        {
+          "number": "50",
+          "price": 652000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Melville SE · Plot 51",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/51/",
+      "bedrooms": 5,
+      "price": 709000,
+      "plots": [
+        {
+          "number": "51",
+          "price": 709000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "e655ec460c66d654766783610acf2177610a0cae2224ecf1d164247ecd1562ae"
+      ]
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Ranald · Plot 52",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/52/",
+      "bedrooms": 5,
+      "price": 767000,
+      "plots": [
+        {
+          "number": "52",
+          "price": 767000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0ee573bfb8107f3c21ebfc8bebdde45cf94b1a668aa526b57b1dba857a2a039c"
+      ]
+    },
+    {
+      "development": "Ballagan Woods, Killearn, Stirling",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Lewis · Plot 59",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/59/",
+      "bedrooms": 5,
+      "price": 660500,
+      "plots": [
+        {
+          "number": "59",
+          "price": 660500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3"
+      ]
+    },
+    {
+      "development": "Mansefield Lea, East Calder, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/availability-prices/",
+      "name": "Darroch · Plot 89",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/89/",
+      "bedrooms": 5,
+      "price": 499995,
+      "plots": [
+        {
+          "number": "89",
+          "price": 499995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mansefield Lea, East Calder, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/availability-prices/",
+      "name": "Crichton · Plot 90",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/90/",
+      "bedrooms": 5,
+      "price": 474995,
+      "plots": [
+        {
+          "number": "90",
+          "price": 474995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mansefield Lea, East Calder, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/availability-prices/",
+      "name": "Garvie · Plot 91",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/91/",
+      "bedrooms": 5,
+      "price": 584995,
+      "plots": [
+        {
+          "number": "91",
+          "price": 584995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "81a4dda4a62d119c4c7503e74925c7d99e43574903522af3f751f487ea61a8e7"
+      ]
+    },
+    {
+      "development": "Calderwood, East Calder, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/availability-prices/",
+      "name": "Garvie · Plot 32",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/32/",
+      "bedrooms": 5,
+      "price": 599995,
+      "plots": [
+        {
+          "number": "32",
+          "price": 599995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9338f309b0657b397a3cd66f569d9112a4bf8d2e2ac1c96293e242f99f4b1bd8"
+      ]
+    },
+    {
+      "development": "Calderwood, East Calder, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/availability-prices/",
+      "name": "Darroch · Plot 51",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/51/",
+      "bedrooms": 5,
+      "price": 509995,
+      "plots": [
+        {
+          "number": "51",
+          "price": 509995,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Calderwood, East Calder, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/availability-prices/",
+      "name": "Crichton · Plot 89",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/89/",
+      "bedrooms": 5,
+      "price": 479995,
+      "plots": [
+        {
+          "number": "89",
+          "price": 479995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millgate Lawns, Winchburgh, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/",
+      "name": "Crichton · Plot 108",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/108/",
+      "bedrooms": 5,
+      "price": 554995,
+      "plots": [
+        {
+          "number": "108",
+          "price": 554995,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millgate Lawns, Winchburgh, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/",
+      "name": "Garvie · Plot 109",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/109/",
+      "bedrooms": 5,
+      "price": 609995,
+      "plots": [
+        {
+          "number": "109",
+          "price": 609995,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millgate Lawns, Winchburgh, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/",
+      "name": "Garvie · Plot 110",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/110/",
+      "bedrooms": 5,
+      "price": 609995,
+      "plots": [
+        {
+          "number": "110",
+          "price": 609995,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millgate Lawns, Winchburgh, West Lothian",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/",
+      "name": "Darroch · Plot 112",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/112/",
+      "bedrooms": 5,
+      "price": 584995,
+      "plots": [
+        {
+          "number": "112",
+          "price": 584995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hillside Gardens, Aberdour, Fife",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
+      "name": "Colville · Plot 2",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/2/",
+      "bedrooms": 5,
+      "price": 599995,
+      "plots": [
+        {
+          "number": "2",
+          "price": 599995,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "3b2a8e58e94804efd70c3228bb33132231ed21608d246ec8d7f5d91d53bf8306"
+      ]
+    },
+    {
+      "development": "Hillside Gardens, Aberdour, Fife",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
+      "name": "Logan · Plot 3",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/3/",
+      "bedrooms": 5,
+      "price": 799995,
+      "plots": [
+        {
+          "number": "3",
+          "price": 799995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hillside Gardens, Aberdour, Fife",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
+      "name": "Logan · Plot 32",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/32/",
+      "bedrooms": 5,
+      "price": 789995,
+      "plots": [
+        {
+          "number": "32",
+          "price": 789995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hillside Gardens, Aberdour, Fife",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
+      "name": "Garvie · Plot 33",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/33/",
+      "bedrooms": 5,
+      "price": 729995,
+      "plots": [
+        {
+          "number": "33",
+          "price": 729995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hillside Gardens, Aberdour, Fife",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
+      "name": "Darroch · Plot 34",
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/34/",
+      "bedrooms": 5,
+      "price": 669995,
+      "plots": [
+        {
+          "number": "34",
+          "price": 669995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ascot Gardens, Ascot, Berkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/ascot-gardens-ascot/availability-prices/",
+      "name": "The Duxford · Plot 70",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/ascot-gardens-ascot/70/",
+      "bedrooms": 5,
+      "price": 1675000,
+      "plots": [
+        {
+          "number": "70",
+          "price": 1675000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f26404ad3d13c8e3c30776346e4b23031a4f732e784486463ca8a6ab29422126"
+      ]
+    },
+    {
+      "development": "Cala at Buckler's Park - The Heights, Crowthorne, Berkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-heights-crowthorne/availability-prices/",
+      "name": "Spruce · Plot 84",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-heights-crowthorne/84/",
+      "bedrooms": 5,
+      "price": 900000,
+      "plots": [
+        {
+          "number": "84",
+          "price": 900000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "b719575b4386b18f94a46f9b0b9cd36346507bfd040d54858f53405582f4aa5d"
+      ]
+    },
+    {
+      "development": "Knights Grove, Newbury, Berkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/availability-prices/",
+      "name": "Willow · Plot 47",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/47/",
+      "bedrooms": 5,
+      "price": 920000,
+      "plots": [
+        {
+          "number": "47",
+          "price": 920000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6b1b9bd9c9e5b806c30b3aaeb4c5c355742663c252a0d4d2e99f97199b1f1cfe"
+      ]
+    },
+    {
+      "development": "Knights Grove, Newbury, Berkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/availability-prices/",
+      "name": "Willow · Plot 51",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/51/",
+      "bedrooms": 5,
+      "price": 975000,
+      "plots": [
+        {
+          "number": "51",
+          "price": 975000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Knights Grove, Newbury, Berkshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/availability-prices/",
+      "name": "Willow · Plot 62",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/62/",
+      "bedrooms": 5,
+      "price": 975000,
+      "plots": [
+        {
+          "number": "62",
+          "price": 975000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6b1b9bd9c9e5b806c30b3aaeb4c5c355742663c252a0d4d2e99f97199b1f1cfe"
+      ]
+    },
+    {
+      "development": "Arabella Park, Great Kimble, Buckinghamshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/availability-prices/",
+      "name": "Whiterose · Plot 20",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/20/",
+      "bedrooms": 5,
+      "price": 955000,
+      "plots": [
+        {
+          "number": "20",
+          "price": 955000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Arabella Park, Great Kimble, Buckinghamshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/availability-prices/",
+      "name": "York · Plot 26",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/26/",
+      "bedrooms": 5,
+      "price": 1100000,
+      "plots": [
+        {
+          "number": "26",
+          "price": 1100000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "1cc45eac4b572836da72611f6fdf1c3b05709e989dd1183522a56d05d96a03c8"
+      ]
+    },
+    {
+      "development": "Arabella Park, Great Kimble, Buckinghamshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/availability-prices/",
+      "name": "Wilstone · Plot 27",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/27/",
+      "bedrooms": 5,
+      "price": 1195000,
+      "plots": [
+        {
+          "number": "27",
+          "price": 1195000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Aylett's Green, Kelvedon, Essex",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/",
+      "name": "The Grange · Plot 68",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/68/",
+      "bedrooms": 5,
+      "price": 800000,
+      "plots": [
+        {
+          "number": "68",
+          "price": 800000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f278e8fbdc2ecbf019edd370c325f6f4ea8b659bd52c2f8580c5bb76d8b57099"
+      ]
+    },
+    {
+      "development": "Aylett's Green, Kelvedon, Essex",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/",
+      "name": "The Grange · Plot 72",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/72/",
+      "bedrooms": 5,
+      "price": 825000,
+      "plots": [
+        {
+          "number": "72",
+          "price": 825000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f278e8fbdc2ecbf019edd370c325f6f4ea8b659bd52c2f8580c5bb76d8b57099"
+      ]
+    },
+    {
+      "development": "Aylett's Green, Kelvedon, Essex",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/",
+      "name": "The Grange · Plot 79",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/79/",
+      "bedrooms": 5,
+      "price": 800000,
+      "plots": [
+        {
+          "number": "79",
+          "price": 800000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f278e8fbdc2ecbf019edd370c325f6f4ea8b659bd52c2f8580c5bb76d8b57099"
+      ]
+    },
+    {
+      "development": "Sambrooke Park, Potters Bar, Hertfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/availability-prices/",
+      "name": "Yew · Plot 5",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/5/",
+      "bedrooms": 5,
+      "price": 1450000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 1450000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "1cc45eac4b572836da72611f6fdf1c3b05709e989dd1183522a56d05d96a03c8"
+      ]
+    },
+    {
+      "development": "Sambrooke Park, Potters Bar, Hertfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/availability-prices/",
+      "name": "Yarrow · Plot 39",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/39/",
+      "bedrooms": 5,
+      "price": 1295000,
+      "plots": [
+        {
+          "number": "39",
+          "price": 1295000,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sambrooke Park, Potters Bar, Hertfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/availability-prices/",
+      "name": "Whitethorn · Plot 40",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/40/",
+      "bedrooms": 5,
+      "price": 1199000,
+      "plots": [
+        {
+          "number": "40",
+          "price": 1199000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3039b4ff0456f3e9f094a796f7e27cc935e2f3646988d512282d211cc4817519"
+      ]
+    },
+    {
+      "development": "Barden Croft, Tonbridge, Kent",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Willow · Plot 76",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/76/",
+      "bedrooms": 5,
+      "price": 1160000,
+      "plots": [
+        {
+          "number": "76",
+          "price": 1160000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "64b924cfbc017a8054efc065b3b0abcc20c7a25820064e96c4f94ed7d4450526"
+      ]
+    },
+    {
+      "development": "Barden Croft, Tonbridge, Kent",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Yew · Plot 89",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/89/",
+      "bedrooms": 5,
+      "price": 1180000,
+      "plots": [
+        {
+          "number": "89",
+          "price": 1180000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d00fa1ec66ae985f02c1e88019c6f60e28e1f1938992a09ef37af7b47b9998f"
+      ]
+    },
+    {
+      "development": "Barden Croft, Tonbridge, Kent",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Willow · Plot 92",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/92/",
+      "bedrooms": 5,
+      "price": 1160000,
+      "plots": [
+        {
+          "number": "92",
+          "price": 1160000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "64b924cfbc017a8054efc065b3b0abcc20c7a25820064e96c4f94ed7d4450526"
+      ]
+    },
+    {
+      "development": "Barden Croft, Tonbridge, Kent",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Yew · Plot 93",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/93/",
+      "bedrooms": 5,
+      "price": 1180000,
+      "plots": [
+        {
+          "number": "93",
+          "price": 1180000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d00fa1ec66ae985f02c1e88019c6f60e28e1f1938992a09ef37af7b47b9998f"
+      ]
+    },
+    {
+      "development": "Barden Croft, Tonbridge, Kent",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Yew · Plot 100",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/100/",
+      "bedrooms": 5,
+      "price": 1200000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 1200000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d00fa1ec66ae985f02c1e88019c6f60e28e1f1938992a09ef37af7b47b9998f"
+      ]
+    },
+    {
+      "development": "Barden Croft, Tonbridge, Kent",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Yew · Plot 101",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/101/",
+      "bedrooms": 5,
+      "price": 1220000,
+      "plots": [
+        {
+          "number": "101",
+          "price": 1220000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d00fa1ec66ae985f02c1e88019c6f60e28e1f1938992a09ef37af7b47b9998f"
+      ]
+    },
+    {
+      "development": "Cala at Himley Village, Bicester, Oxfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-himley-village-bicester/availability-prices/",
+      "name": "Peony · Plot 40",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-himley-village-bicester/40/",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "number": "40",
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bliss Willows, Chipping Norton, Oxfordshire",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/bliss-willows-chipping-norton/availability-prices/",
+      "name": "Willow with family room · Plot 12",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/bliss-willows-chipping-norton/12/",
+      "bedrooms": 5,
+      "price": 999999,
+      "plots": [
+        {
+          "number": "12",
+          "price": 999999,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ddbfc9b40dfc9a23b4c7c6dbb8e6e83885bbddd5be4d8819e7b367341d13003"
+      ]
+    },
+    {
+      "development": "Oakwood Park, Wimborne, Dorset",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
+      "name": "Wisteria – Canford · Plot 1",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/1/",
+      "bedrooms": 5,
+      "price": 875000,
+      "plots": [
+        {
+          "number": "1",
+          "price": 875000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ba28c11f31ba70233a4a9e20b5033de1f7cf98e79c9be30a0c2a06a9b88c6432"
+      ]
+    },
+    {
+      "development": "Oakwood Park, Wimborne, Dorset",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
+      "name": "Wisteria – Canford · Plot 28",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/28/",
+      "bedrooms": 5,
+      "price": 850000,
+      "plots": [
+        {
+          "number": "28",
+          "price": 850000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ba28c11f31ba70233a4a9e20b5033de1f7cf98e79c9be30a0c2a06a9b88c6432"
+      ]
+    },
+    {
+      "development": "Oakwood Park, Wimborne, Dorset",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
+      "name": "Wisteria – Canford · Plot 29",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/29/",
+      "bedrooms": 5,
+      "price": 850000,
+      "plots": [
+        {
+          "number": "29",
+          "price": 850000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "ba28c11f31ba70233a4a9e20b5033de1f7cf98e79c9be30a0c2a06a9b88c6432"
+      ]
+    },
+    {
+      "development": "Oakwood Park, Wimborne, Dorset",
+      "developmentUrl": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
+      "name": "Wisteria · Plot 265",
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/265/",
+      "bedrooms": 5,
+      "price": 930000,
+      "plots": [
+        {
+          "number": "265",
+          "price": 930000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ba28c11f31ba70233a4a9e20b5033de1f7cf98e79c9be30a0c2a06a9b88c6432"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "6aa24385511d4c79ed7cc5084789fedff336e29e4aaeb4c98826426f483763b5",
+      "path": "images/6aa24385511d4c79ed7cc5084789fedff336e29e4aaeb4c98826426f483763b5.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/gagftwvr/the-yew-ii-study-room.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or study featuring a dedicated wooden desk, an ergonomic chair, a laptop, and built-in shelving.",
+        "reason": "This room is staged specifically as a home office with a visible desk and office chair, and no bed."
+      }
+    },
+    {
+      "id": "cd08ab4db1dda9fa5f887502247d050a1dd3c778e4823d5baae1d5d434ba191d",
+      "path": "images/cd08ab4db1dda9fa5f887502247d050a1dd3c778e4823d5baae1d5d434ba191d.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/25uh2cai/vb1848656_20210804_cala_homes_-_oakbank_-_the_crichton_-_bedroom_5_001_1024x683.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a desk with a laptop, an office chair, a small sofa, and plant decor.",
+        "reason": "The room contains a desk and work surface, no bed is present, and it is styled as a home office study."
+      }
+    },
+    {
+      "id": "cad99b3258d0b703f1ed6cdeba260250d9e045e876e1cdc9725dba3f76be7354",
+      "path": "images/cad99b3258d0b703f1ed6cdeba260250d9e045e876e1cdc9725dba3f76be7354.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/pzeblsys/vb1412651_20190221_cala_homes_-_kingfisher_park_018_3200x1931.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a desk, office chair, shelving units, and decorative artwork.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "80dd1619f8cb91a4999060d63ad5e4401cfbaa1a4493ee47adad8501c0943005",
+      "path": "images/80dd1619f8cb91a4999060d63ad5e4401cfbaa1a4493ee47adad8501c0943005.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/ejsieuwq/the-darroch-weaver-s-brae-8.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office or study room equipped with a modern desk, computer monitor, desk chair, and a pink sofa.",
+        "reason": "This is a home office staged with a desk and computer setup, and no bed."
+      }
+    },
+    {
+      "id": "a0d4a7a02d9ccccb422e1194257eb3d82589506fd97aac631db1c4e69c64ed38",
+      "path": "images/a0d4a7a02d9ccccb422e1194257eb3d82589506fd97aac631db1c4e69c64ed38.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/gz4jrhuz/vb5118685_20240319_cala_homes_-_weavers_brae_-_darroch_-_bedroom_5_study_001_1024x683.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office or study room featuring a desk with a computer monitor, an office chair, and a pink sofa.",
+        "reason": "This room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "3ee599af3b9ccd7dc84dfbaedfb4d9bca9ba91524ddd1cdff02eea6c8504e390",
+      "path": "images/3ee599af3b9ccd7dc84dfbaedfb4d9bca9ba91524ddd1cdff02eea6c8504e390.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/gurdkkdy/vb5600465_cala_n_plot_201_inverurie_garvie_study_1600x1067.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a wooden desk with a computer monitor, an ergonomic chair, a decorative shelving unit, patterned wallpaper, and an armchair with an ottoman.",
+        "reason": "The room is staged as a home office with a visible work surface and no bed."
+      }
+    },
+    {
+      "id": "70085ac541052b4a3e58b22acfbca2c21264b54d869303619d4986653fea144d",
+      "path": "images/70085ac541052b4a3e58b22acfbca2c21264b54d869303619d4986653fea144d.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/iizfglxr/vb1692541_print_plot_4_-_upstairs_living_overview___zacandzac_1024x683.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "A study room or home office staging featuring a desk with a computer and a pink sofa.",
+        "reason": "The room is staged as a home office with a clear work desk and no bed."
+      }
+    },
+    {
+      "id": "456d7dad906341f646a1e645579a60c934a94fde7b143f77d0e113e3521c819d",
+      "path": "images/456d7dad906341f646a1e645579a60c934a94fde7b143f77d0e113e3521c819d.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/g1fbedur/vb1913281_cala-cults-fraiarsfield-west-kennedy-study-_-zacandzac.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a dark desk, computer monitor, two comfortable accent armchairs, and shelves.",
+        "reason": "This room is staged as a home office with a visible desk and no bed present, meeting all criteria."
+      }
+    },
+    {
+      "id": "f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3",
+      "path": "images/f40dc0143b87a35bcada0e98796f17ac244321d2c7582b11c83ed66620d484f3.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/uhgjfahv/vb5396200_20250227_cala_homes_-_cornhill_village_-_lewis_-_bedroom_5_003_800x501.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or study featuring a modern desk, an office chair, and a sofa.",
+        "reason": "This is a staged home office/study with a visible work surface and no bed."
+      }
+    },
+    {
+      "id": "81a4dda4a62d119c4c7503e74925c7d99e43574903522af3f751f487ea61a8e7",
+      "path": "images/81a4dda4a62d119c4c7503e74925c7d99e43574903522af3f751f487ea61a8e7.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/vwjnkwdy/garvie-millgate-lawns-13.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office/study staged with a long wooden desk, two chairs, shelving, and an armchair by the window.",
+        "reason": "This is a dedicated home office with a desk and no visible bed."
+      }
+    },
+    {
+      "id": "c69ea2e9a6da8ff9bdfede0e2863e4243118ce4f035eb98bdd700d329894d63e",
+      "path": "images/c69ea2e9a6da8ff9bdfede0e2863e4243118ce4f035eb98bdd700d329894d63e.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/parjhgif/preston-glade-macrae-bed-5.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office set up with a desk, computer monitor, chair, and a sofa along the wall.",
+        "reason": "This room is staged as a study/home office with a desk and no bed."
+      }
+    },
+    {
+      "id": "9338f309b0657b397a3cd66f569d9112a4bf8d2e2ac1c96293e242f99f4b1bd8",
+      "path": "images/9338f309b0657b397a3cd66f569d9112a4bf8d2e2ac1c96293e242f99f4b1bd8.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/yrbb0tah/vb5170150_20240625_cala_homes_-_calderwood_-_the_garvie_-_bedroom_5_study_001_1600x1067.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "office",
+        "description": "A dedicated home office featuring a desk with a laptop, an office chair, and an armchair with an ottoman.",
+        "reason": "The space has a clear desk for office work and no bed, making it a matching home office."
+      }
+    },
+    {
+      "id": "dd214093d142a8953766fc6f469696990aba2da84c66a663611dd83d80aa52a4",
+      "path": "images/dd214093d142a8953766fc6f469696990aba2da84c66a663611dd83d80aa52a4.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/oo1drfz5/vb2018591_20220627_cala_homes_-_belwood_oaks_-_dewar_-_bedroom_5_study_001_1600x998.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a dark desk, laptop, chair, shelving unit, and a cozy armchair by the window.",
+        "reason": "It is staged as a home office with a visible desk and no visible bed."
+      }
+    },
+    {
+      "id": "e3651dd3c4ea2e4f4aa2523b02e7133dff367f5200409365f2577730161af070",
+      "path": "images/e3651dd3c4ea2e4f4aa2523b02e7133dff367f5200409365f2577730161af070.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/ejjovr2t/vb5594980_20251112_cala_homes_-_aurs_meadows_-_kennedy_-_bedroom_5_001_1600x1067-1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office staged with a writing desk, an office chair, a telephone, and large shelving units.",
+        "reason": "The room is staged specifically as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "b37b54afd27c088edb03f502bef8f4caa98c6ebe2ae1ab8f328e3efb56ce5dca",
+      "path": "images/b37b54afd27c088edb03f502bef8f4caa98c6ebe2ae1ab8f328e3efb56ce5dca.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/hr0bg35g/vb5650458_20260227_cala_homes_-_lathallan_grange_-_evan_-_study_001_1600x1077-2.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "study",
+        "description": "A home office featuring a desk with a computer, an office chair, bookshelf, and animal-themed wallpaper.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "94903b2c62069244259f45219755279fe3453f3d36d406556a52c519af4647a8",
+      "path": "images/94903b2c62069244259f45219755279fe3453f3d36d406556a52c519af4647a8.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/wxkpvwzx/vb5594913_20251112_cala_homes_-_aurs_meadows_-_darroch_-_bedroom_5_001_1600x1067.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A study room featuring a dark desk with a mirror, a pink armchair, storage units, and a patterned armchair.",
+        "reason": "The room includes a designated work surface/desk and a chair, functioning as a home office, and there is no visible bed."
+      }
+    },
+    {
+      "id": "5f8bafdd941535d58b8d58c369a0f01d6e6b3b17e23b3d5e103c5e569ed8d06e",
+      "path": "images/5f8bafdd941535d58b8d58c369a0f01d6e6b3b17e23b3d5e103c5e569ed8d06e.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/ktfjjlsd/vb5409999_20250324_cala_homes_-_ballagan_woods_-_garvie_-_bedroom_5_001_1600x1067.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or study with a desk, computer monitor, office chair, and shelving unit.",
+        "reason": "The room is staged as a study with a clear desk and no bed present."
+      }
+    },
+    {
+      "id": "1f2c032718eb9f5f2655d6a12f79e198713dba3f513384f3c026a1863fefbdbf",
+      "path": "images/1f2c032718eb9f5f2655d6a12f79e198713dba3f513384f3c026a1863fefbdbf.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/344loklb/vb1716174_kinnaird-lee-kennedy-inside-pod.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a modern white desk, chair, shelves, and a standing lamp.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and there is no visible bed."
+      }
+    },
+    {
+      "id": "684a819f8e177c23686cef42b7002540a839c679b56a6361e05add29be6b7b49",
+      "path": "images/684a819f8e177c23686cef42b7002540a839c679b56a6361e05add29be6b7b49.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/2yimdyno/vb5118685_20240319_cala_homes_-_weavers_brae_-_darroch_-_bedroom_5_study_001_1600x974.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office setup featuring a desk, computer monitor, chair, and a pink sofa.",
+        "reason": "It is a dedicated home office containing a desk and no bed."
+      }
+    },
+    {
+      "id": "b7b8c9e97b06cad33ac5f088aad7ebe036d9de25cc4577c7ec015b93fcf9b75e",
+      "path": "images/b7b8c9e97b06cad33ac5f088aad7ebe036d9de25cc4577c7ec015b93fcf9b75e.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/gwlcqbwp/vs_bed_5_5.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A staged home office featuring a desk with a laptop, an office chair, and a sofa.",
+        "reason": "The room is staged as a home office/study with a visible desk for office work and no visible bed."
+      }
+    },
+    {
+      "id": "366e7d70a1bfdf6fe36b42f3e084b8cc1610be148e204cd8691f4d01143a57db",
+      "path": "images/366e7d70a1bfdf6fe36b42f3e084b8cc1610be148e204cd8691f4d01143a57db.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/fkanfnv0/vb1734169_linlithgow-macrae-study-_-zacandzac.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office staged with a desk, computer monitor, office chair, large shelving unit, and patterned wallpaper.",
+        "reason": "The room is staged as a home office with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "bd60971a5f47d4c90ab0ac1a5f15b40ec89ed00f5671303455feb431de91c7f6",
+      "path": "images/bd60971a5f47d4c90ab0ac1a5f15b40ec89ed00f5671303455feb431de91c7f6.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/vslbxnmw/vb1857547_11_room_above_garage_study_vs_1600x1067.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A spacious home office/study featuring a large executive desk, office chair, built-in bookshelves, and a seating area with a sofa.",
+        "reason": "The room is staged as a home office with a prominent desk and no bed present."
+      }
+    },
+    {
+      "id": "e655ec460c66d654766783610acf2177610a0cae2224ecf1d164247ecd1562ae",
+      "path": "images/e655ec460c66d654766783610acf2177610a0cae2224ecf1d164247ecd1562ae.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/z1wfjji5/vb5548769_20250912_cala_homes_-_cedar_brae_-_melville_-_study_001_3200x2133.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A compact home office/study room featuring a sleek desk, office chair, decorative wall pattern, and shelving.",
+        "reason": "This is a dedicated home office with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "0ee573bfb8107f3c21ebfc8bebdde45cf94b1a668aa526b57b1dba857a2a039c",
+      "path": "images/0ee573bfb8107f3c21ebfc8bebdde45cf94b1a668aa526b57b1dba857a2a039c.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/zb5iwvqg/vb1450725_20190408-cala-homes-boclair-gait-013.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office featuring a desk with a computer monitor, an office chair, a comfortable armchair, and stylish decor against a patterned accent wall.",
+        "reason": "The room clearly functions as an office with a designated desk setup and work surface, and there is no bed present."
+      }
+    },
+    {
+      "id": "3b2a8e58e94804efd70c3228bb33132231ed21608d246ec8d7f5d91d53bf8306",
+      "path": "images/3b2a8e58e94804efd70c3228bb33132231ed21608d246ec8d7f5d91d53bf8306.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/bk2f1mrv/the-colville-study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A well-staged home office with a dark wood desk, computer monitor, green accent armchair, and office accessories.",
+        "reason": "The room is specifically staged as a home office with a visible work desk and no bed present."
+      }
+    },
+    {
+      "id": "f26404ad3d13c8e3c30776346e4b23031a4f732e784486463ca8a6ab29422126",
+      "path": "images/f26404ad3d13c8e3c30776346e4b23031a4f732e784486463ca8a6ab29422126.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/czqhpluf/the-duxford-14.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a large desk with a chair, a comfortable armchair, and natural lighting from windows.",
+        "reason": "This is a staged home office/study with a visible desk for work and no visible bed."
+      }
+    },
+    {
+      "id": "b719575b4386b18f94a46f9b0b9cd36346507bfd040d54858f53405582f4aa5d",
+      "path": "images/b719575b4386b18f94a46f9b0b9cd36346507bfd040d54858f53405582f4aa5d.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/yyznpone/vb5148828_a1209_143_plot48_burford_grange_hitchin.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "Home office / Study",
+        "description": "A dedicated home office room with a desk, chair, lamp, wall clock, and shelving unit.",
+        "reason": "The room is staged as a home office/study with a visible desk and no visible bed."
+      }
+    },
+    {
+      "id": "6b1b9bd9c9e5b806c30b3aaeb4c5c355742663c252a0d4d2e99f97199b1f1cfe",
+      "path": "images/6b1b9bd9c9e5b806c30b3aaeb4c5c355742663c252a0d4d2e99f97199b1f1cfe.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/klblew25/vb5148667_plot47_burford_grange_hitchin_cala_homes_chiltern_study_1600x1067.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office featuring a wooden desk with a laptop, an office chair, shelving, and a bench by the window.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and there is no bed present."
+      }
+    },
+    {
+      "id": "1cc45eac4b572836da72611f6fdf1c3b05709e989dd1183522a56d05d96a03c8",
+      "path": "images/1cc45eac4b572836da72611f6fdf1c3b05709e989dd1183522a56d05d96a03c8.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/dvlpauir/vb5414167_a1569_013_plot_24__arabella_park__kimblewick__cala_homes_chiltern_1024x683.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a desk with a computer monitor, an office chair, shelving, an armchair, and a plant.",
+        "reason": "This room is staged as a home office with a visible work desk, office chair, computer, and no bed."
+      }
+    },
+    {
+      "id": "f278e8fbdc2ecbf019edd370c325f6f4ea8b659bd52c2f8580c5bb76d8b57099",
+      "path": "images/f278e8fbdc2ecbf019edd370c325f6f4ea8b659bd52c2f8580c5bb76d8b57099.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/xbgfcmed/the-grange_aylett-s-green_bedroom_study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A well-lit home office with a dark desk, office chair, laptop, and artwork on the wall.",
+        "reason": "The image clearly shows a dedicated study space with a desk and no bed."
+      }
+    },
+    {
+      "id": "3039b4ff0456f3e9f094a796f7e27cc935e2f3646988d512282d211cc4817519",
+      "path": "images/3039b4ff0456f3e9f094a796f7e27cc935e2f3646988d512282d211cc4817519.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/uwhf12dl/cala-sambrooke-park-whitethorn-study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A dedicated home office featuring a desk, laptop, chair, bulletin board, and shelving.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "64b924cfbc017a8054efc065b3b0abcc20c7a25820064e96c4f94ed7d4450526",
+      "path": "images/64b924cfbc017a8054efc065b3b0abcc20c7a25820064e96c4f94ed7d4450526.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/5b5mid22/vb5425105_a1588_01_1024x683.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office or study room featuring a desk with a chair, a bookshelf, an armchair, and no bed.",
+        "reason": "This is a staged home office containing a desk and chair suitable for study or work, with no bed present."
+      }
+    },
+    {
+      "id": "4d00fa1ec66ae985f02c1e88019c6f60e28e1f1938992a09ef37af7b47b9998f",
+      "path": "images/4d00fa1ec66ae985f02c1e88019c6f60e28e1f1938992a09ef37af7b47b9998f.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/uupdyu0p/vb5255927_a1360_139_3200x2133.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A well-lit study or home office featuring a wooden desk, books, a globe, and an office chair.",
+        "reason": "This is a home office staged with a desk and workspace, with no bed present."
+      }
+    },
+    {
+      "id": "3ddbfc9b40dfc9a23b4c7c6dbb8e6e83885bbddd5be4d8819e7b367341d13003",
+      "path": "images/3ddbfc9b40dfc9a23b4c7c6dbb8e6e83885bbddd5be4d8819e7b367341d13003.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/3kgba3wl/vb5202426_a1318_24_1024x683.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk, laptop, office chair, bookshelf, and accent chair.",
+        "reason": "This room is staged as a home office with a visible desk, office chair, and computer, and has no bed."
+      }
+    },
+    {
+      "id": "ba28c11f31ba70233a4a9e20b5033de1f7cf98e79c9be30a0c2a06a9b88c6432",
+      "path": "images/ba28c11f31ba70233a4a9e20b5033de1f7cf98e79c9be30a0c2a06a9b88c6432.jpg",
+      "sourceUrl": "https://www.cala.co.uk/media/hojdj24p/the-wisteria-study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "A well-lit home office or study room featuring a desk under the window with a chair, a large green accent armchair, and patterned wallpaper.",
+        "reason": "The room contains a desk and work surface suitable for office work, and there is no visible bed."
+      }
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/441/",
+      "stage": "gallery",
+      "message": "No supported image gallery found; not treated as a negative match."
+    }
+  ],
+  "metrics": {
+    "sitemapDevelopments": 80,
+    "qualifyingDiscovered": 113,
+    "propertyLimitOmissions": 0,
+    "reusedGalleries": 30,
+    "reusedImages": 41,
+    "imagesAttempted": 749,
+    "pendingImages": 0,
+    "matchedImages": 35,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 708
+  },
+  "completedAt": "2026-10-02T10:56:16.258Z"
+}

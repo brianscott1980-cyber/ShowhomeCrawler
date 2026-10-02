@@ -1,0 +1,5111 @@
+{
+  "builder": {
+    "name": "Taylor Wimpey",
+    "slug": "taylor-wimpey",
+    "websiteUrl": "https://www.taylorwimpey.co.uk"
+  },
+  "status": "completed_with_gaps",
+  "startedAt": "2026-10-02T12:33:20.617Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winnersh/land-at-watmore-lane",
+      "name": "Land at Watmore Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/midsomer-norton/chilcompton-road",
+      "name": "Chilcompton Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/aylesbury/hampden-fields-proposed-development",
+      "name": "Hampden Fields Proposed Development",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/solihull/hares-croft",
+      "name": "Hares Croft",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/solihull/cuttlebrook-grange",
+      "name": "Cuttlebrook Grange",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/whittlesey/whittlesey-fields",
+      "name": "Whittlesey Fields",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/south-gilmerton/farrier-fields",
+      "name": "Farrier Fields",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/greenwich/greenwich-millennium-village",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/whiston/fox-wood-garden-village-phase-3",
+      "name": "Fox Wood Garden Village Phase 3",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chalfont-st-peter/land-at-west-of-denham-lane-butlers-field",
+      "name": "Land at West of Denham Lane Butlers Field",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/southam/coventry-road",
+      "name": "Coventry Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cardiff/north-east-cardiff",
+      "name": "North East Cardiff",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/nantwich/kingsbourne",
+      "name": "Kingsbourne",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sudbury/chilton-woods",
+      "name": "Chilton Woods",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/great-bentley/great-bentley-phase-2",
+      "name": "Great Bentley Phase 2",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brentwood/1-london-road",
+      "name": "1 London Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hawkwell/land-west-of-main-road",
+      "name": "Land West of Main Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brentwood/roman-road",
+      "name": "Roman Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stowupland/land-at-stowmarket-road",
+      "name": "Land at Stowmarket Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stowmarket/northfield-view-wider-site",
+      "name": "Northfield View wider site",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hethersett-north/hethersett-a3-a4",
+      "name": "Hethersett A3 A4",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/oakham/brooke-road",
+      "name": "Brooke Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/markfield/land-off-ratby-lane",
+      "name": "Land off Ratby Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/whitburn/heartlands-phase-5",
+      "name": "Heartlands Phase 5",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/gilmerton/highfield-gilmerton",
+      "name": "Highfield Gilmerton",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/exeter/cranbrook-western-expansion",
+      "name": "Cranbrook Western Expansion",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ruishton/land-at-brookfield-nurseries",
+      "name": "Land at Brookfield Nurseries",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/feniton/land-off-colestocks-road",
+      "name": "Land off Colestocks Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/exeter/attwells-farm",
+      "name": "Attwells Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/honiton/land-off-ottery-moor-lane",
+      "name": "Land off Ottery Moor Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barming/barming-p3",
+      "name": "Barming P3",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/luton/land-at-north-luton",
+      "name": "Land at North Luton",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ringwood/land-north-of-hightown-road",
+      "name": "Land north of Hightown Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/merstham/bletchingley-road",
+      "name": "Bletchingley Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cardross/land-at-geilston-farm",
+      "name": "Land at Geilston Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cowie-/berryhills",
+      "name": "Berryhills",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/kibblesworth-/land-off-kibblesworth-bank",
+      "name": "Land Off Kibblesworth Bank",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/newcastle-great-park-town-centre",
+      "name": "Newcastle Great Park Town Centre",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/rochdale/foundry-fields",
+      "name": "Foundry Fields",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunchurch/the-lodgings",
+      "name": "The Lodgings",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/south-west-rugby/homestead-view",
+      "name": "Homestead View",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cannock/wimblebury-road",
+      "name": "Wimblebury Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bromsgrove/perryfields-phase-three",
+      "name": "Perryfields Phase Three",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stockport/jacksons-lane",
+      "name": "Jacksons Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/northallerton/northallerton-south",
+      "name": "Northallerton South",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/tattenhall/land-at-chester-road",
+      "name": "Land at Chester Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hambleton/land-south-of-scalm-lane",
+      "name": "Land South of Scalm Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/yarm/land-at-green-lane",
+      "name": "Land at Green Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/knaresborough/highfield-farm",
+      "name": "Highfield Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/york/stockton-lane",
+      "name": "Stockton Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/witney/land-at-north-witney",
+      "name": "Land at North Witney",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/shiplake/reading-road",
+      "name": "Reading Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wesham/land-at-weeton-road",
+      "name": "Land at Weeton Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/easington/easington",
+      "name": "Easington",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/frodsham/robin-hood-lane",
+      "name": "Robin Hood Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hampton-magna/hampton-magna",
+      "name": "Hampton Magna",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/edwinstowe/edwinstowe",
+      "name": "Edwinstowe",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/backwell/land-at-grove-farm-and-burnt-house-farm",
+      "name": "Land at Grove Farm and Burnt House Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/radford-semele/southam-road",
+      "name": "Southam Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/henfield/land-at-london-road",
+      "name": "Land at London Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hockley-heath/hockley-heath",
+      "name": "Hockley Heath",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/syston/south-east-syston",
+      "name": "South East Syston",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/holmer-green/land-at-skimmers-field",
+      "name": "Land at Skimmers Field",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/county-durham/sherburn-village",
+      "name": "Sherburn Village",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/shipston-on-stour/hanson-avenue",
+      "name": "Hanson Avenue",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/costessey/hampden-view-phase-3",
+      "name": "Hampden View Phase 3",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/london/postmark-london",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wythall/alcester-road",
+      "name": "Alcester Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/honiton/land-at-northcote-hill",
+      "name": "Land at Northcote Hill",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/horsham/lower-broadbridge-farm",
+      "name": "Lower Broadbridge Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/eccleshall/shaws-lane",
+      "name": "Shaws Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/east-kilbride/benthall-farm",
+      "name": "Benthall Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-albans/land-south-of-hill-dyke-road",
+      "name": "Land South of Hill Dyke Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/upper-callerton",
+      "name": "Upper Callerton",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/maldon/knowles-farm",
+      "name": "Knowles Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/royal-leamington-spa/north-leamington",
+      "name": "North Leamington",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/south-ribble/the-lanes",
+      "name": "The Lanes",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leigh/westmere-gardens",
+      "name": "Westmere Gardens",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/great-ayton/land-east-of-easby-lane",
+      "name": "Land east of Easby Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/tyneview-park",
+      "name": "Tyneview Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dereham/etling-grove",
+      "name": "Etling Grove",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/keynsham/manor-road",
+      "name": "Manor Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/gateshead/clasper-village",
+      "name": "Clasper Village",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barrhead/duncarnock",
+      "name": "Duncarnock",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/livingston/limefield-grove",
+      "name": "Limefield Grove",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bonnyrigg/bannock-wood",
+      "name": "Bannock Wood",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/arlesey/arlesey",
+      "name": "Arlesey",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/warwick/tournament-park",
+      "name": "Tournament Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/uckfield/land-adjacent-to-seghers-place",
+      "name": "Land adjacent to Seghers Place",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brymbo/coed-issa",
+      "name": "Coed Issa",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bishopsworth/elsbert-drive",
+      "name": "Elsbert Drive",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/albrighton/land-at-cross-road",
+      "name": "Land at Cross Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/billericay/land-west-of-tye-common-road",
+      "name": "Land West of Tye Common Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/martlesham/brightwell-lakes-parcel-w6",
+      "name": "Brightwell Lakes Parcel W6",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/county-durham/sacriston",
+      "name": "Sacriston",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/salden-place-proposed-development",
+      "name": "Salden Place Proposed Development",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/honiton/land-off-northcote-road",
+      "name": "Land off Northcote Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bedworth/woodlands-road",
+      "name": "Woodlands Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/kingswood",
+      "name": "Kingswood",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/preston/tabley-lane",
+      "name": "Tabley Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bedale/beaumont-gate",
+      "name": "Beaumont Gate",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/kirklevington/oaklands",
+      "name": "Oaklands",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/long-ashton/woodspring",
+      "name": "Woodspring",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coventry-/allard-way",
+      "name": "Allard Way",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wynyard/manor-gardens",
+      "name": "Manor Gardens",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park",
+      "name": "Bronze Park",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leeds/morwick-springs",
+      "name": "Morwick Springs",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view",
+      "name": "St Mary View",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/east-kilbride/amble-court",
+      "name": "Amble Court",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/glenboig/meadowside",
+      "name": "Meadowside",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/kilmarnock/lairds-gardens",
+      "name": "Lairds Gardens",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newton-mearns/castle-gate-maidenhill",
+      "name": "Castle Gate Maidenhill",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/washington/alder-park",
+      "name": "Alder Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chester-le-street/chester-meadows",
+      "name": "Chester Meadows",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/worcester/regency-gate",
+      "name": "Regency Gate",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/warwick/the-asps",
+      "name": "The Asps",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hoddesdon/high-leigh-garden-village",
+      "name": "High Leigh Garden Village",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cowbridge/clare-garden-village",
+      "name": "Clare Garden Village",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wakefield/newland-grange",
+      "name": "Newland Grange",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leeds/woodside-vale",
+      "name": "Woodside Vale",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coalville/charnwood-chase-at-swinfen-vale",
+      "name": "Charnwood Chase at Swinfen Vale",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/redditch/church-rise",
+      "name": "Church Rise",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/middlesbrough/spring-wood-gardens",
+      "name": "Spring Wood Gardens",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wombourne/bowlers-place---coming-soon",
+      "name": "New build homes for sale in Wombourne",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dawlish/brook-vale",
+      "name": "Brook Vale",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/woolsington-grange-phase-2",
+      "name": "Woolsington Grange Phase 2",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/darlington/coniscliffe-park",
+      "name": "Coniscliffe Park",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bathgate/sibbalds-wynd",
+      "name": "Sibbalds Wynd",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bury-st-edmunds/lark-grange",
+      "name": "Lark Grange",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/thetford/britannia-grange",
+      "name": "Britannia Grange",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/motherwell/torrance-place",
+      "name": "Torrance Place",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/east-calder/calderwood",
+      "name": "Calderwood",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/roslin/sinclair-gardens",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/redditch/meadow-rise",
+      "name": "Meadow Rise",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/folkestone/shorncliffe-heights",
+      "name": "Shorncliffe Heights",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coventry/bow-meadows",
+      "name": "Bow Meadows",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/kidderminster/woven-oaks",
+      "name": "Woven Oaks",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bulkington/twill-meadow",
+      "name": "Twill Meadow",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sawtry/archers-place",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bordon/dukes-quarter",
+      "name": "Dukes Quarter",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/burton-upon-trent/stonewood-park",
+      "name": "Stonewood Park",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/salden-place-west",
+      "name": "Salden Place West",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/highworth/pentylands-place",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/kenton-bank-meadows",
+      "name": "Kenton Bank Meadows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/washington/stoneridge-hall",
+      "name": "Stoneridge Hall",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coatbridge/calder-wynd",
+      "name": "Calder Wynd",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/prescot/orchard-park",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cullompton/culm-valley-park",
+      "name": "Culm Valley Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/maidstone/oakapple-place",
+      "name": "Oakapple Place",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/codicote/the-heath",
+      "name": "The Heath",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/faygate/kilnwood-vale",
+      "name": "Kilnwood Vale",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/greater-manchester/east-hollinsfield",
+      "name": "East Hollinsfield",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wigan/rothwells-farm",
+      "name": "Rothwells Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/whiston/foundry-gardens",
+      "name": "Foundry Gardens",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/waterlooville/oakwood-rise",
+      "name": "Oakwood Rise",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wakefield/clover-grange",
+      "name": "Clover Grange",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/blindwells/the-marches",
+      "name": "The Marches",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/high-wycombe/wycombe-view",
+      "name": "Wycombe View",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/mangotsfield/land-at-cossham-street",
+      "name": "Land at Cossham Street",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/marske/marske-sands",
+      "name": "Marske Sands",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ripon/fountains-walk",
+      "name": "Fountains Walk",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/crewkerne/wool-gardens",
+      "name": "Wool Gardens",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/keresley/appledown-gate",
+      "name": "Appledown Gate",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hatton/union-view",
+      "name": "Union View",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/shifnal/acorn-green",
+      "name": "Acorn Green",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/knaresborough/trinity-fields",
+      "name": "Trinity Fields",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/south-queensferry/hawthorn-gardens",
+      "name": "Hawthorn Gardens",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bromsgrove/perryfields",
+      "name": "Perryfields",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coventry/cherrywood-gardens",
+      "name": "Cherrywood Gardens",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chester/kings-moat-garden-village",
+      "name": "Kings Moat Garden Village",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stoke-gifford/stoke-rise",
+      "name": "Stoke Rise",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/keynsham/minsmere-green",
+      "name": "Minsmere Green",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/nailsea/netherton-grange",
+      "name": "Netherton Grange",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/tyldesley/bridgewater-place",
+      "name": "Bridgewater Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/backwell/backwell-grove",
+      "name": "Backwell Grove",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-helens/woodland-view",
+      "name": "Woodland View",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barry/latitude-at-the-quays",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/swadlincote/gresley-meadow",
+      "name": "Gresley Meadow",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/soham/land-at-brook-street",
+      "name": "Land at Brook Street",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/burghley-green-at-west-cambourne",
+      "name": "Burghley Green at West Cambourne",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stretton-on-dunsmore/squires-cross",
+      "name": "Squires Cross",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/quedgeley/the-quarters",
+      "name": "The Quarters",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/lawley/hayford-grange",
+      "name": "Hayford Grange",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf",
+      "name": "Parc Llandaf",
+      "status": "complete",
+      "homes": 27,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/robroyston/monument-way",
+      "name": "Monument Way",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bishopton/dargavel-view",
+      "name": "Dargavel View",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hamilton/oakwood-grove",
+      "name": "Oakwood Grove",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ross-on-wye/kyrle-green",
+      "name": "Kyrle Green",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cheddar/oak-park-cheddar",
+      "name": "Oak Park Cheddar",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barrhead/arthurlie-gate",
+      "name": "Arthurlie Gate",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ryhope/burdon-fields",
+      "name": "Burdon Fields",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sunderland/burdon-manor",
+      "name": "Burdon Manor",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stafford/burleyfields",
+      "name": "Burleyfields",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/maybury/west-craigs",
+      "name": "West Craigs",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/gloucester/whittle-gardens",
+      "name": "Whittle Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
+      "name": "Seton Rise",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/north-finchley/the-tramworks",
+      "name": "The Tramworks",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/heathwood-at-brunton-rise",
+      "name": "Heathwood at Brunton Rise",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/swindon/robin-gardens",
+      "name": "Robin Gardens",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/watford/little-furze-place",
+      "name": "Little Furze Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-albans/rose-meadows",
+      "name": "Rose Meadows",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bishop's-stortford/stortford-fields",
+      "name": "Stortford Fields",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wallyford/ravensheugh-heights",
+      "name": "Ravensheugh Heights",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/salden-place-east",
+      "status": "complete",
+      "name": "Salden Place East",
+      "homes": 5,
+      "qualifying": 0,
+      "warning": "1 plot cards have no details URL."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stockton-on-tees/elmwood-grange",
+      "name": "Elmwood Grange",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/gillingham/gillingham-lakes",
+      "name": "Gillingham Lakes",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/deepcut/mindenhurst",
+      "name": "Mindenhurst",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/banwell/mead-fields",
+      "name": "Mead Fields",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones",
+      "name": "Riven Stones",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunbar/belhaven-way",
+      "name": "Belhaven Way",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/redcar/fitzwilliam-place",
+      "name": "Fitzwilliam Place",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/devizes/marshalls-green",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hailsham/swingate-park",
+      "name": "Swingate Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-helens/anderton-green",
+      "name": "Anderton Green",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dorking/sondes-meadows",
+      "name": "Sondes Meadows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/whiteley/woodlands-chase",
+      "name": "Woodlands Chase",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/nuneaton/meadow-green",
+      "name": "Meadow Green",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/clitheroe/half-penny-meadows",
+      "name": "Half Penny Meadows",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bracknell/willow-green",
+      "name": "Willow Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/costessey/hampden-view",
+      "name": "Hampden View",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/martlesham/auster-place-at-brightwell-lakes",
+      "name": "Auster Place at Brightwell Lakes",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/haddington/letham-meadows",
+      "name": "Letham Meadows",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/norwich/land-north-of-rackheath",
+      "name": "Land North of Rackheath",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hemel-hempstead/chaulden-meadows",
+      "name": "Chaulden Meadows",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/corby/weldon-manor",
+      "name": "Weldon Manor",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/robroyston/lumloch-view",
+      "name": "Lumloch View",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/robroyston/lumloch-grove",
+      "name": "Lumloch Grove",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ashby-de-la-zouch/castle-manor",
+      "name": "Castle Manor",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stone/marlborough-road",
+      "name": "Marlborough Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wombourne/bowlers-place",
+      "name": "Bowlers Place",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/houghton-le-spring/herrington-view",
+      "name": "Herrington View",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/exeter/lunar-rise",
+      "name": "Lunar Rise",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/blackwood/cwrt-sirhowy",
+      "name": "Cwrt Sirhowy",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/didcot/valley-park",
+      "name": "Valley Park",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hereford/elgar-place",
+      "name": "Elgar Place",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bracebridge-heath/bracebridge-heights",
+      "name": "Bracebridge Heights",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coventry/appledown-meadow",
+      "name": "Appledown Meadow",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/earlsfield/king-georges-gate",
+      "name": "King Georges Gate",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/canford-magna/canford-vale",
+      "name": "Canford Vale",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coventry/waterside-gardens",
+      "name": "Waterside Gardens",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/aylesbury/hampden-fields-west",
+      "name": "Hampden Fields West",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gate",
+      "name": "Whitefield Gate",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-helens/sherdley-green",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/polmont/the-laurels-at-lathallan-grange",
+      "name": "The Laurels at Lathallan Grange",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bristol/berwick-green",
+      "name": "Berwick Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/miskin/melin-newydd",
+      "name": "Melin Newydd",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/old-catton/sewell-meadow",
+      "name": "Sewell Meadow",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/taunton/orchard-grove",
+      "name": "Orchard Grove",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/penicuik/greenlaw-mains",
+      "name": "Greenlaw Mains",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ratho-station/lauder-grove",
+      "name": "Lauder Grove",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bognor-regis/regis-park",
+      "name": "Regis Park",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hassocks/ockley-park",
+      "name": "Ockley Park",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks",
+      "name": "Capstone Oaks",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
+      "name": "Hadley Grange at Clipstone Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chorley/eaves-green",
+      "name": "Eaves Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/upper-lighthorne/valiant-fields",
+      "name": "Valiant Fields",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/eaglescliffe/coatham-gardens",
+      "name": "Coatham Gardens",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/norton/norton-lodge",
+      "name": "Norton Lodge",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/evesham/abbey-grange",
+      "name": "Abbey Grange",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place",
+      "name": "Wellington Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/farnham/orchard-place",
+      "name": "Orchard Place",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gardens",
+      "name": "Whitefield Gardens",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/whiston/fox-wood-garden-village",
+      "name": "Fox Wood Garden Village",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/blandford-forum/bryanston-holt",
+      "name": "Bryanston Holt",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chippenham/showell-nurseries",
+      "name": "Showell Nurseries",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/abbots-langley/high-elms",
+      "name": "High Elms",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chatham/land-at-capstone-oaks",
+      "name": "Land at Capstone Oaks",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange",
+      "name": "Fortibus Fields at Apsham Grange",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cambuslang/newton-farm",
+      "name": "Newton Farm",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barrhead/springhill-gardens",
+      "name": "Springhill Gardens",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bargeddie/manse-view",
+      "name": "Manse View",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ashington/land-at-rectory-lane",
+      "name": "Land at Rectory Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/borehamwood/land-west-of-vale-avenue",
+      "name": "Land West of Vale Avenue",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/new-marske/land-at-longbeck-lane",
+      "name": "Land at Longbeck Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/manchester/woodlands-edge",
+      "name": "Woodlands Edge",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wilmslow/oaklands-at-heathfield-farm",
+      "name": "Oaklands at Heathfield Farm",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leeds/stanhope-fields",
+      "name": "Stanhope Fields",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/northallerton/romanby-grange",
+      "name": "Romanby Grange",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/eaglescliffe/coatham-gardens-ph6",
+      "name": "Coatham Gardens Ph6",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/eaglescliffe/coatham-meadows",
+      "name": "Coatham Meadows",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stockton-on-tees/hartburn-grange",
+      "name": "Hartburn Grange",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cwmbran/edlogan-wharf",
+      "name": "Edlogan Wharf",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/polegate/the-mill",
+      "name": "The Mill",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/formby/the-ridings",
+      "name": "The Ridings",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ipswich/land-at-hadleigh-road",
+      "name": "Land at Hadleigh Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/exeter/cranbrook",
+      "name": "Cranbrook",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/crewkerne/centurion-rise",
+      "name": "Centurion Rise",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/horley/westvale-park",
+      "name": "Westvale Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/shoeburyness/artillery-mews",
+      "name": "Artillery Mews",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/maldon/handley-gardens",
+      "name": "Handley Gardens",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leyton/coronation-square",
+      "name": "Coronation Square",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ely/lantern-croft",
+      "name": "Lantern Croft",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brantham/stour-view",
+      "name": "Stour View",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/chivers-rise-at-west-cambourne",
+      "name": "Chivers Rise at West Cambourne",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stowmarket/northfield-view",
+      "name": "Northfield View",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum",
+      "name": "The Arboretum",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wymondham/the-alders",
+      "name": "The Alders",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hassocks-/friars-oak",
+      "name": "Friars Oak",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/rossendale/the-vale-at-edenfield",
+      "name": "The Vale at Edenfield",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brentwood/brentwood-75",
+      "status": "failed",
+      "error": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/shavington/crewe-road",
+      "name": "Crewe Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hagley/land-south-of-western-road",
+      "name": "Land South of Western Road",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hethersett/heather-gardens",
+      "name": "Heather Gardens",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/plymouth/sherford",
+      "name": "Sherford",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/preston/bartle-heath",
+      "name": "Bartle Heath",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/martlesham/deben-park-at-brightwell-lakes",
+      "name": "Deben Park at Brightwell Lakes",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/four-marks/land-off-alton-lane",
+      "name": "Land off Alton Lane",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange",
+      "name": "The Vista at Barton Grange",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/maidenhead/harvest-hill",
+      "name": "Harvest Hill",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/seaham/seaham-garden-village",
+      "name": "Seaham Garden Village",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/altofts/frobisher-meadows",
+      "name": "Frobisher Meadows",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ascot/heatherwood-royal",
+      "name": "Heatherwood Royal",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/mickleover/arnett-grove",
+      "name": "Arnett Grove",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wetherby/swinnow-park",
+      "name": "Swinnow Park",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/county-durham/seaham-garden-village-phase-2",
+      "name": "Seaham Garden Village Phase 2",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sleaford/newton-park-at-handley-chase",
+      "name": "Newton Park at Handley Chase",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sittingbourne/ufton-court",
+      "name": "Ufton Court",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/lancaster/beaumont-rise",
+      "name": "Beaumont Rise",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/crewe/millbrook-place",
+      "name": "Millbrook Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ipswich/wolsey-grange",
+      "name": "Wolsey Grange",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchester/alresford-down",
+      "name": "Alresford Down",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bolton/lever-valley",
+      "name": "Lever Valley",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bridgnorth/severn-heights",
+      "name": "Severn Heights",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wallyford/dolphingstone-grange",
+      "name": "Dolphingstone Grange",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/arborfield-green/arborfield-heights",
+      "name": "Arborfield Heights",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dartford/knights-reach",
+      "name": "Knights Reach",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wivenhoe,-colchester/wyvern-place",
+      "name": "Wyvern Place",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/grantham/barrowby-chase",
+      "name": "Barrowby Chase",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/northampton/buckton-fields",
+      "name": "Buckton Fields",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange",
+      "name": "Clayridge Park at Barton Grange",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bingham/bingham-gate",
+      "name": "Bingham Gate",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
+      "name": "The Atrium at Overstone",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bishopton/dargavel-village",
+      "name": "Dargavel Village",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/stourbridge/titan-wharf",
+      "name": "Titan Wharf",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/herne-bay/st-augustines-place",
+      "name": "St Augustines Place",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/syston/barkby-fields",
+      "name": "Barkby Fields",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wixams/cromwell-place-at-wixams",
+      "name": "Cromwell Place at Wixams",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/aylesbury/hampden-fields-east",
+      "name": "Hampden Fields East",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ockham/wisley-acres",
+      "name": "Wisley Acres",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/branston/swallows-keep",
+      "name": "Swallows Keep",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/eggborough/millstone-walk",
+      "name": "Millstone Walk",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green",
+      "name": "Hartford Green",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/middlewich/millstream-meadows",
+      "name": "Millstream Meadows",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hackney-wick/hertford-mill-hackney-wick",
+      "name": "Hertford Mill Hackney Wick",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leven-road/rivermark",
+      "name": "Rivermark",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wellingborough/glenvale-park",
+      "name": "Glenvale Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/nuneaton/bramcote-grange",
+      "name": "Bramcote Grange",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/frinton-on-sea/samphire-meadow",
+      "name": "Samphire Meadow",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cotgrave/colston-gardens",
+      "name": "Colston Gardens",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/darlington/the-woodlands-at-coniscliffe-park",
+      "name": "The Woodlands at Coniscliffe Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "No current plot list exposed (proposed, coming soon or sold out)."
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/south-marston/woodlands",
+      "name": "Woodlands",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Manor Gardens",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/wynyard/manor-gardens",
+      "name": "The Thirlford · Plot 264",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wynyard/manor-gardens/plot-264",
+      "bedrooms": 5,
+      "price": 500000,
+      "plots": [
+        {
+          "number": "264",
+          "price": 500000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9574be3066f6aecbb796ee3f027d58c5acc2907c71a700a535ee8cf5afa18ab0"
+      ]
+    },
+    {
+      "development": "Bronze Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park",
+      "name": "The Aireton · Plot 22",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park/plot-22",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "number": "22",
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ec29ceeb91e31748c36eea5484c07e560b1da8e8f1c5a9b1b216c43c44d7b382"
+      ]
+    },
+    {
+      "development": "Bronze Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park",
+      "name": "The Aireton · Plot 33",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park/plot-33",
+      "bedrooms": 5,
+      "price": 650000,
+      "plots": [
+        {
+          "number": "33",
+          "price": 650000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "dc56d9185aa4cb6a1ff5dd0d8f64f22512f1e67fc9fe60bbc07aaf51d9a2c977"
+      ]
+    },
+    {
+      "development": "Bronze Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park",
+      "name": "The Thirlford · Plot 103",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park/plot-103",
+      "bedrooms": 5,
+      "price": 765000,
+      "plots": [
+        {
+          "number": "103",
+          "price": 765000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ad1b4943f932a0f98d7f9932655b840e2ceb8bc7494202eee257fbf739f4d52"
+      ]
+    },
+    {
+      "development": "St Mary View",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view",
+      "name": "The Garrton · Plot 20",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view/plot-20",
+      "bedrooms": 5,
+      "price": 550000,
+      "plots": [
+        {
+          "number": "20",
+          "price": 550000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "10800b25552c115dd68d04cc5870c7cbfbfe0dc6343424ae7ff3d59c84462987"
+      ]
+    },
+    {
+      "development": "St Mary View",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view",
+      "name": "The Garrton · Plot 59",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view/plot-59",
+      "bedrooms": 5,
+      "price": 575000,
+      "plots": [
+        {
+          "number": "59",
+          "price": 575000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2df239e1919993016239fbcbcf4df7fee5d8806b424361ebb5b44111921389ea",
+        "a11ae0bde4dab460718dd2c262556ecbd3dbdc1b9da0957fabedfcf66fcfc1f1"
+      ]
+    },
+    {
+      "development": "St Mary View",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view",
+      "name": "The Wayford · Plot 53",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view/plot-53",
+      "bedrooms": 5,
+      "price": 610000,
+      "plots": [
+        {
+          "number": "53",
+          "price": 610000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Asps",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/warwick/the-asps",
+      "name": "The Wayford · Plot 83",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/warwick/the-asps/plot-83",
+      "bedrooms": 5,
+      "price": 765000,
+      "plots": [
+        {
+          "number": "83",
+          "price": 765000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "47bc72094cd15c27e03a0697640df9468e276847913eae57fd4be382aa969e76"
+      ]
+    },
+    {
+      "development": "Clare Garden Village",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/cowbridge/clare-garden-village",
+      "name": "The Mappleton · Plot 427",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/cowbridge/clare-garden-village/plot-427",
+      "bedrooms": 5,
+      "price": 725000,
+      "plots": [
+        {
+          "number": "427",
+          "price": 725000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "783da49a1a358cd27122ae3b6faf8edee762a59db9dfc2b270d22c1c4af22b1e"
+      ]
+    },
+    {
+      "development": "Bow Meadows",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/coventry/bow-meadows",
+      "name": "The Aireton · Plot 5",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/coventry/bow-meadows/plot-5",
+      "bedrooms": 5,
+      "price": 550000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 550000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bf62840a02ee7ad32d15c96272fa067fb305ff564f43d905b05df160bd0023af"
+      ]
+    },
+    {
+      "development": "Twill Meadow",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/bulkington/twill-meadow",
+      "name": "The Aireton · Plot 49",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bulkington/twill-meadow/plot-49",
+      "bedrooms": 5,
+      "price": 545000,
+      "plots": [
+        {
+          "number": "49",
+          "price": 545000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "34d6832a87ea024a4fdcf6a2019f15b5bfc81156ac194ac256d0fafa0d72c9ae"
+      ]
+    },
+    {
+      "development": "Twill Meadow",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/bulkington/twill-meadow",
+      "name": "The Patterham · Plot 54",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bulkington/twill-meadow/plot-54",
+      "bedrooms": 5,
+      "price": 599950,
+      "plots": [
+        {
+          "number": "54",
+          "price": 599950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a5cb66720c2cd58d19d1a577d7dbb8a44ecec54bfa6bf54f53f30076ac32ff12"
+      ]
+    },
+    {
+      "development": "The Heath",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/codicote/the-heath",
+      "name": "The Daly · Plot 100",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/codicote/the-heath/plot-100",
+      "bedrooms": 5,
+      "price": 830000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 830000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "32e61a7ed52c0cd20f7b77b57d04fc33add04bc1fa849c085b1917c53b02ffe5"
+      ]
+    },
+    {
+      "development": "Fountains Walk",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/ripon/fountains-walk",
+      "name": "The Patterham · Plot 246",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ripon/fountains-walk/plot-246",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "number": "246",
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Fountains Walk",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/ripon/fountains-walk",
+      "name": "The Patterham · Plot 258",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ripon/fountains-walk/plot-258",
+      "bedrooms": 5,
+      "price": 615000,
+      "plots": [
+        {
+          "number": "258",
+          "price": 615000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Appledown Gate",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/keresley/appledown-gate",
+      "name": "The Lavenham · Plot 462",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/keresley/appledown-gate/plot-462",
+      "bedrooms": 5,
+      "price": 500000,
+      "plots": [
+        {
+          "number": "462",
+          "price": 500000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "593e1e2ffe6e5167eb68573caf3784be3ea887a49718d659014174ea62b903bc",
+        "3155260bdb2ffc1f40e3955e6a758c6fa75d14c1a9fded1b088424511db38fae"
+      ]
+    },
+    {
+      "development": "Minsmere Green",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/keynsham/minsmere-green",
+      "name": "The Thirlford · Plot 39",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/keynsham/minsmere-green/plot-39",
+      "bedrooms": 5,
+      "price": 770000,
+      "plots": [
+        {
+          "number": "39",
+          "price": 770000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9574be3066f6aecbb796ee3f027d58c5acc2907c71a700a535ee8cf5afa18ab0"
+      ]
+    },
+    {
+      "development": "Burghley Green at West Cambourne",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/burghley-green-at-west-cambourne",
+      "name": "The Aireton · Plot 287",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/burghley-green-at-west-cambourne/plot-287",
+      "bedrooms": 5,
+      "price": 590000,
+      "plots": [
+        {
+          "number": "287",
+          "price": 590000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "dc56d9185aa4cb6a1ff5dd0d8f64f22512f1e67fc9fe60bbc07aaf51d9a2c977"
+      ]
+    },
+    {
+      "development": "Burghley Green at West Cambourne",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/burghley-green-at-west-cambourne",
+      "name": "The Garrton · Plot 198",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/burghley-green-at-west-cambourne/plot-198",
+      "bedrooms": 5,
+      "price": 625000,
+      "plots": [
+        {
+          "number": "198",
+          "price": 625000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5e6cda551ad319e28512767b485ce0331cf6c365349fea5e2afc46fd790db2dd",
+        "1bd8e0d8ae5bd5ef8e42ef90917bf2c403ee704707ba12d965b56fbacf79d833"
+      ]
+    },
+    {
+      "development": "Parc Llandaf",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf",
+      "name": "The Dale · Plot 120",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf/plot-120",
+      "bedrooms": 5,
+      "price": 649995,
+      "plots": [
+        {
+          "number": "120",
+          "price": 649995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4bcb9caea34388173b8aaccdb88480f49771dbf6ec0915db40fe4e7e907ded3d"
+      ]
+    },
+    {
+      "development": "Parc Llandaf",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf",
+      "name": "The Dale · Plot 108",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf/plot-108",
+      "bedrooms": 5,
+      "price": 670000,
+      "plots": [
+        {
+          "number": "108",
+          "price": 670000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4bcb9caea34388173b8aaccdb88480f49771dbf6ec0915db40fe4e7e907ded3d"
+      ]
+    },
+    {
+      "development": "Parc Llandaf",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf",
+      "name": "The Dale · Plot 96",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf/plot-96",
+      "bedrooms": 5,
+      "price": 675000,
+      "plots": [
+        {
+          "number": "96",
+          "price": 675000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4bcb9caea34388173b8aaccdb88480f49771dbf6ec0915db40fe4e7e907ded3d"
+      ]
+    },
+    {
+      "development": "Parc Llandaf",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf",
+      "name": "The Dale · Plot 100",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf/plot-100",
+      "bedrooms": 5,
+      "price": 695000,
+      "plots": [
+        {
+          "number": "100",
+          "price": 695000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4bcb9caea34388173b8aaccdb88480f49771dbf6ec0915db40fe4e7e907ded3d"
+      ]
+    },
+    {
+      "development": "Dargavel View",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/bishopton/dargavel-view",
+      "name": "The Cameron · Plot 173",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bishopton/dargavel-view/plot-173",
+      "bedrooms": 5,
+      "price": 554995,
+      "plots": [
+        {
+          "number": "173",
+          "price": 554995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Oakwood Grove",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/hamilton/oakwood-grove",
+      "name": "The Wallace · Plot 55",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hamilton/oakwood-grove/plot-55",
+      "bedrooms": 5,
+      "price": 412000,
+      "plots": [
+        {
+          "number": "55",
+          "price": 412000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Burdon Manor",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/sunderland/burdon-manor",
+      "name": "The Aireton · Plot 376",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sunderland/burdon-manor/plot-376",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "376",
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cccfc5dd9687823486dcb342dcebfcf2e16ae2d10a38f7398a5095c6bb9cc30d"
+      ]
+    },
+    {
+      "development": "Burdon Manor",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/sunderland/burdon-manor",
+      "name": "The Patterham · Plot 298",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sunderland/burdon-manor/plot-298",
+      "bedrooms": 5,
+      "price": 474995,
+      "plots": [
+        {
+          "number": "298",
+          "price": 474995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Seton Rise",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
+      "name": "The Wallace · Plot 149",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise/plot-149",
+      "bedrooms": 5,
+      "price": 470000,
+      "plots": [
+        {
+          "number": "149",
+          "price": 470000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5042b64522c59161b1fe3958250de4852d39db032bcd94618b6c1427503976e5"
+      ]
+    },
+    {
+      "development": "Seton Rise",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
+      "name": "The Wallace · Plot 105",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise/plot-105",
+      "bedrooms": 5,
+      "price": 472000,
+      "plots": [
+        {
+          "number": "105",
+          "price": 472000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4836794916375f90d8dceefd64c0a05ee3811c39998b8d0acde24adb2437cbf4"
+      ]
+    },
+    {
+      "development": "Seton Rise",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
+      "name": "The Cameron · Plot 116",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise/plot-116",
+      "bedrooms": 5,
+      "price": 569995,
+      "plots": [
+        {
+          "number": "116",
+          "price": 569995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Seton Rise",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
+      "name": "The Cameron · Plot 147",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise/plot-147",
+      "bedrooms": 5,
+      "price": 589995,
+      "plots": [
+        {
+          "number": "147",
+          "price": 589995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Heathwood at Brunton Rise",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/heathwood-at-brunton-rise",
+      "name": "The Aireton · Plot 441",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/heathwood-at-brunton-rise/plot-441",
+      "bedrooms": 5,
+      "price": 459995,
+      "plots": [
+        {
+          "number": "441",
+          "price": 459995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99"
+      ]
+    },
+    {
+      "development": "Heathwood at Brunton Rise",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/heathwood-at-brunton-rise",
+      "name": "The Aireton · Plot 471",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/heathwood-at-brunton-rise/plot-471",
+      "bedrooms": 5,
+      "price": 464995,
+      "plots": [
+        {
+          "number": "471",
+          "price": 464995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99"
+      ]
+    },
+    {
+      "development": "Rose Meadows",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/st-albans/rose-meadows",
+      "name": "The Dunnerton · Plot 63",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-albans/rose-meadows/plot-63",
+      "bedrooms": 5,
+      "price": 1075000,
+      "plots": [
+        {
+          "number": "63",
+          "price": 1075000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a7e18c07c671743b09b7b7524c4b39899cd13b5d28cfc95964a005442225e9c7",
+        "3c99f32554df27fa44df01c78b80f3de2df5309958e619f0ec0f400e123a95ec"
+      ]
+    },
+    {
+      "development": "Stortford Fields",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/bishop's-stortford/stortford-fields",
+      "name": "The Aireton · Plot 127",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/bishop's-stortford/stortford-fields/plot-127",
+      "bedrooms": 5,
+      "price": 720000,
+      "plots": [
+        {
+          "number": "127",
+          "price": 720000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8ee4ecc7a312c2cc881c6327adf57bee95f50873484a0204b048de9423090b06",
+        "87b621e8118e927edc32b61b1c4fb33a4542a73502e27a44de48cb9f8480d1c1"
+      ]
+    },
+    {
+      "development": "Ravensheugh Heights",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/wallyford/ravensheugh-heights",
+      "name": "The Wallace · Plot 8",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wallyford/ravensheugh-heights/plot-8",
+      "bedrooms": 5,
+      "price": 465000,
+      "plots": [
+        {
+          "number": "8",
+          "price": 465000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4836794916375f90d8dceefd64c0a05ee3811c39998b8d0acde24adb2437cbf4"
+      ]
+    },
+    {
+      "development": "Ravensheugh Heights",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/wallyford/ravensheugh-heights",
+      "name": "The Wallace · Plot 49",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wallyford/ravensheugh-heights/plot-49",
+      "bedrooms": 5,
+      "price": 470000,
+      "plots": [
+        {
+          "number": "49",
+          "price": 470000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Mindenhurst",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/deepcut/mindenhurst",
+      "name": "The Thirlford · Plot 32",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/deepcut/mindenhurst/plot-32",
+      "bedrooms": 5,
+      "price": 775000,
+      "plots": [
+        {
+          "number": "32",
+          "price": 775000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7",
+        "98710275829acf00588200a7d4491edaebe17dc55cad1d0734d646fa8aaf8ee2"
+      ]
+    },
+    {
+      "development": "Mindenhurst",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/deepcut/mindenhurst",
+      "name": "The Thirlford · Plot 33",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/deepcut/mindenhurst/plot-33",
+      "bedrooms": 5,
+      "price": 780000,
+      "plots": [
+        {
+          "number": "33",
+          "price": 780000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7",
+        "98710275829acf00588200a7d4491edaebe17dc55cad1d0734d646fa8aaf8ee2"
+      ]
+    },
+    {
+      "development": "Belhaven Way",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/dunbar/belhaven-way",
+      "name": "The Wallace · Plot 147",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunbar/belhaven-way/plot-147",
+      "bedrooms": 5,
+      "price": 455000,
+      "plots": [
+        {
+          "number": "147",
+          "price": 455000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4836794916375f90d8dceefd64c0a05ee3811c39998b8d0acde24adb2437cbf4"
+      ]
+    },
+    {
+      "development": "Riven Stones",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones",
+      "name": "The Lavenham · Plot 3",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones/plot-3",
+      "bedrooms": 5,
+      "price": 395995,
+      "plots": [
+        {
+          "number": "3",
+          "price": 395995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "80b77a63adf5442bbbce926e09c5fd569d2be0ee2e99798a4f3cebd24854e162",
+        "593e1e2ffe6e5167eb68573caf3784be3ea887a49718d659014174ea62b903bc"
+      ]
+    },
+    {
+      "development": "Riven Stones",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones",
+      "name": "The Lavenham · Plot 146",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones/plot-146",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "146",
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Riven Stones",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones",
+      "name": "The Lavenham · Plot 145",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones/plot-145",
+      "bedrooms": 5,
+      "price": 407995,
+      "plots": [
+        {
+          "number": "145",
+          "price": 407995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sondes Meadows",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/dorking/sondes-meadows",
+      "name": "The Thirlford · Plot 144",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dorking/sondes-meadows/plot-144",
+      "bedrooms": 5,
+      "price": 1150000,
+      "plots": [
+        {
+          "number": "144",
+          "price": 1150000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hampden View",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/costessey/hampden-view",
+      "name": "The Thirlford · Plot 47",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/costessey/hampden-view/plot-47",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "47",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ad1b4943f932a0f98d7f9932655b840e2ceb8bc7494202eee257fbf739f4d52"
+      ]
+    },
+    {
+      "development": "Castle Manor",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/ashby-de-la-zouch/castle-manor",
+      "name": "The Ashby · Plot 175",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/ashby-de-la-zouch/castle-manor/plot-175",
+      "bedrooms": 5,
+      "price": 570000,
+      "plots": [
+        {
+          "number": "175",
+          "price": 570000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "64761317efb6569530b593a0d00f69f1086c300db0ea4b570f4266acb3b3eb36"
+      ]
+    },
+    {
+      "development": "Whitefield Gate",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gate",
+      "name": "The Patterham · Plot 2600",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gate/plot-2600",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2600",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "865f5997566c9a5d6fa9c1449e6955a68654f49a667d5e3a89c4409a8bee0b4c"
+      ]
+    },
+    {
+      "development": "Melin Newydd",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/miskin/melin-newydd",
+      "name": "The Winterford · Plot 120",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/miskin/melin-newydd/plot-120",
+      "bedrooms": 5,
+      "price": 693000,
+      "plots": [
+        {
+          "number": "120",
+          "price": 693000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Melin Newydd",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/miskin/melin-newydd",
+      "name": "The Winterford · Plot 121",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/miskin/melin-newydd/plot-121",
+      "bedrooms": 5,
+      "price": 695000,
+      "plots": [
+        {
+          "number": "121",
+          "price": 695000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Orchard Grove",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/taunton/orchard-grove",
+      "name": "The Wayford · Plot 238",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/taunton/orchard-grove/plot-238",
+      "bedrooms": 5,
+      "price": 599000,
+      "plots": [
+        {
+          "number": "238",
+          "price": 599000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "Orchard Grove",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/taunton/orchard-grove",
+      "name": "The Wayford · Plot 302",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/taunton/orchard-grove/plot-302",
+      "bedrooms": 5,
+      "price": 625000,
+      "plots": [
+        {
+          "number": "302",
+          "price": 625000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4591a65168d9a68c8d678e9038262e906e3b7706fef2f216d6c567637694c32a"
+      ]
+    },
+    {
+      "development": "Greenlaw Mains",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/penicuik/greenlaw-mains",
+      "name": "The Wallace · Plot 764",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/penicuik/greenlaw-mains/plot-764",
+      "bedrooms": 5,
+      "price": 445000,
+      "plots": [
+        {
+          "number": "764",
+          "price": 445000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4836794916375f90d8dceefd64c0a05ee3811c39998b8d0acde24adb2437cbf4"
+      ]
+    },
+    {
+      "development": "Greenlaw Mains",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/penicuik/greenlaw-mains",
+      "name": "The Wallace · Plot 813",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/penicuik/greenlaw-mains/plot-813",
+      "bedrooms": 5,
+      "price": 455000,
+      "plots": [
+        {
+          "number": "813",
+          "price": 455000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Ockley Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/hassocks/ockley-park",
+      "name": "The Wayford · Plot 136",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hassocks/ockley-park/plot-136",
+      "bedrooms": 5,
+      "price": 840000,
+      "plots": [
+        {
+          "number": "136",
+          "price": 840000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "47bc72094cd15c27e03a0697640df9468e276847913eae57fd4be382aa969e76"
+      ]
+    },
+    {
+      "development": "Hadley Grange at Clipstone Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
+      "name": "The Wayford · Plot 148",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park/plot-148",
+      "bedrooms": 5,
+      "price": 700000,
+      "plots": [
+        {
+          "number": "148",
+          "price": 700000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "Hadley Grange at Clipstone Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
+      "name": "The Wayford · Plot 151",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park/plot-151",
+      "bedrooms": 5,
+      "price": 715000,
+      "plots": [
+        {
+          "number": "151",
+          "price": 715000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "Hadley Grange at Clipstone Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
+      "name": "The Winterford · Plot 154",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park/plot-154",
+      "bedrooms": 5,
+      "price": 765000,
+      "plots": [
+        {
+          "number": "154",
+          "price": 765000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hadley Grange at Clipstone Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
+      "name": "The Winterford · Plot 171",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park/plot-171",
+      "bedrooms": 5,
+      "price": 775000,
+      "plots": [
+        {
+          "number": "171",
+          "price": 775000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hadley Grange at Clipstone Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
+      "name": "The Winterford · Plot 149",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park/plot-149",
+      "bedrooms": 5,
+      "price": 785000,
+      "plots": [
+        {
+          "number": "149",
+          "price": 785000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Capstone Oaks",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks",
+      "name": "The Aireton · Plot 84",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks/plot-84",
+      "bedrooms": 5,
+      "price": 569995,
+      "plots": [
+        {
+          "number": "84",
+          "price": 569995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6c7b4d4b34535f66ebb3fa5eb8e1c25e3b05e1a7fb57b44be42f5ca6e4f9faab"
+      ]
+    },
+    {
+      "development": "Capstone Oaks",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks",
+      "name": "The Thirlford · Plot 79",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks/plot-79",
+      "bedrooms": 5,
+      "price": 699500,
+      "plots": [
+        {
+          "number": "79",
+          "price": 699500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26",
+        "ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323"
+      ]
+    },
+    {
+      "development": "Capstone Oaks",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks",
+      "name": "The Thirlford · Plot 73",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks/plot-73",
+      "bedrooms": 5,
+      "price": 727500,
+      "plots": [
+        {
+          "number": "73",
+          "price": 727500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26",
+        "ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323"
+      ]
+    },
+    {
+      "development": "Wellington Place",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place",
+      "name": "The Lavenham · Plot 450",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place/plot-450",
+      "bedrooms": 5,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "450",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wellington Place",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place",
+      "name": "The Garrton · Plot 326",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place/plot-326",
+      "bedrooms": 5,
+      "price": 539000,
+      "plots": [
+        {
+          "number": "326",
+          "price": 539000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3def3d586b7065503a3fca9011db9459023b3606cc9fcfbc731a663fa970cd03"
+      ]
+    },
+    {
+      "development": "Wellington Place",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place",
+      "name": "The Garrton · Plot 335",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place/plot-335",
+      "bedrooms": 5,
+      "price": 550000,
+      "plots": [
+        {
+          "number": "335",
+          "price": 550000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "64761317efb6569530b593a0d00f69f1086c300db0ea4b570f4266acb3b3eb36"
+      ]
+    },
+    {
+      "development": "Whitefield Gardens",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gardens",
+      "name": "The Wallace · Plot 33",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gardens/plot-33",
+      "bedrooms": 5,
+      "price": 465000,
+      "plots": [
+        {
+          "number": "33",
+          "price": 465000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4836794916375f90d8dceefd64c0a05ee3811c39998b8d0acde24adb2437cbf4"
+      ]
+    },
+    {
+      "development": "Whitefield Gardens",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gardens",
+      "name": "The Wallace · Plot 36",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gardens/plot-36",
+      "bedrooms": 5,
+      "price": 467000,
+      "plots": [
+        {
+          "number": "36",
+          "price": 467000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Fortibus Fields at Apsham Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange",
+      "name": "The Patterham · Plot 5",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange/plot-5",
+      "bedrooms": 5,
+      "price": 815000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 815000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Fortibus Fields at Apsham Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange",
+      "name": "The Patterham · Plot 4",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange/plot-4",
+      "bedrooms": 5,
+      "price": 830000,
+      "plots": [
+        {
+          "number": "4",
+          "price": 830000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Fortibus Fields at Apsham Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange",
+      "name": "The Thirlford · Plot 90",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange/plot-90",
+      "bedrooms": 5,
+      "price": 840000,
+      "plots": [
+        {
+          "number": "90",
+          "price": 840000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ad1b4943f932a0f98d7f9932655b840e2ceb8bc7494202eee257fbf739f4d52",
+        "dcc6c805a78182ef14e5ff4a11f926f96044364ded230aef17a9971a69f31702"
+      ]
+    },
+    {
+      "development": "Fortibus Fields at Apsham Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange",
+      "name": "The Patterham · Plot 92",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange/plot-92",
+      "bedrooms": 5,
+      "price": 840000,
+      "plots": [
+        {
+          "number": "92",
+          "price": 840000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Springhill Gardens",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/barrhead/springhill-gardens",
+      "name": "The Patterham · Plot 48",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barrhead/springhill-gardens/plot-48",
+      "bedrooms": 5,
+      "price": 569995,
+      "plots": [
+        {
+          "number": "48",
+          "price": 569995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "865f5997566c9a5d6fa9c1449e6955a68654f49a667d5e3a89c4409a8bee0b4c"
+      ]
+    },
+    {
+      "development": "Stour View",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/brantham/stour-view",
+      "name": "The Garrton · Plot 76",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brantham/stour-view/plot-76",
+      "bedrooms": 5,
+      "price": 550000,
+      "plots": [
+        {
+          "number": "76",
+          "price": 550000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5e6cda551ad319e28512767b485ce0331cf6c365349fea5e2afc46fd790db2dd"
+      ]
+    },
+    {
+      "development": "Stour View",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/brantham/stour-view",
+      "name": "The Wayford · Plot 104",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brantham/stour-view/plot-104",
+      "bedrooms": 5,
+      "price": 605000,
+      "plots": [
+        {
+          "number": "104",
+          "price": 605000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cf566a82b4b1b16a21bfe647882438d437e1d783ee2575958c1322ae8f5a20b0"
+      ]
+    },
+    {
+      "development": "The Arboretum",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum",
+      "name": "The Garrton · Plot 96",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum/plot-96",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "96",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5e6cda551ad319e28512767b485ce0331cf6c365349fea5e2afc46fd790db2dd",
+        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+      ]
+    },
+    {
+      "development": "The Arboretum",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum",
+      "name": "The Garrton · Plot 121",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum/plot-121",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "121",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "64761317efb6569530b593a0d00f69f1086c300db0ea4b570f4266acb3b3eb36",
+        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+      ]
+    },
+    {
+      "development": "The Arboretum",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum",
+      "name": "The Garrton · Plot 122",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum/plot-122",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "122",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2df239e1919993016239fbcbcf4df7fee5d8806b424361ebb5b44111921389ea",
+        "a11ae0bde4dab460718dd2c262556ecbd3dbdc1b9da0957fabedfcf66fcfc1f1",
+        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+      ]
+    },
+    {
+      "development": "The Arboretum",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum",
+      "name": "The Garrton · Plot 95",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum/plot-95",
+      "bedrooms": 5,
+      "price": 490000,
+      "plots": [
+        {
+          "number": "95",
+          "price": 490000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "10800b25552c115dd68d04cc5870c7cbfbfe0dc6343424ae7ff3d59c84462987",
+        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+      ]
+    },
+    {
+      "development": "Heather Gardens",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/hethersett/heather-gardens",
+      "name": "The Garrton · Plot 422",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/hethersett/heather-gardens/plot-422",
+      "bedrooms": 5,
+      "price": 515000,
+      "plots": [
+        {
+          "number": "422",
+          "price": 515000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "1f27a64bcc8235d55170d4aa6414e3dd2b3c80fd61d1a220ced31ff67907936d"
+      ]
+    },
+    {
+      "development": "Deben Park at Brightwell Lakes",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/martlesham/deben-park-at-brightwell-lakes",
+      "name": "The Dunnerton · Plot 374",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/martlesham/deben-park-at-brightwell-lakes/plot-374",
+      "bedrooms": 5,
+      "price": 595000,
+      "plots": [
+        {
+          "number": "374",
+          "price": 595000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a7e18c07c671743b09b7b7524c4b39899cd13b5d28cfc95964a005442225e9c7",
+        "3c99f32554df27fa44df01c78b80f3de2df5309958e619f0ec0f400e123a95ec",
+        "7ac182a576a43517778bd1124e52fc072816b9f8f63aefe10ccae794d008c017"
+      ]
+    },
+    {
+      "development": "The Vista at Barton Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange",
+      "name": "The Aireton · Plot 121",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange/plot-121",
+      "bedrooms": 5,
+      "price": 700000,
+      "plots": [
+        {
+          "number": "121",
+          "price": 700000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ec29ceeb91e31748c36eea5484c07e560b1da8e8f1c5a9b1b216c43c44d7b382",
+        "00868b1c30f15511ebfc06f0e0d24d0a6f1cfe7823b42151c553d5b56d52bcc9"
+      ]
+    },
+    {
+      "development": "The Vista at Barton Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange",
+      "name": "The Thirlford · Plot 120",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange/plot-120",
+      "bedrooms": 5,
+      "price": 775000,
+      "plots": [
+        {
+          "number": "120",
+          "price": 775000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "adc62e0bc9eb007681ff646c2deaa3060527f53610dd1e49256a03579107fc84"
+      ]
+    },
+    {
+      "development": "The Vista at Barton Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange",
+      "name": "The Wadeford · Plot 119",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange/plot-119",
+      "bedrooms": 5,
+      "price": 815000,
+      "plots": [
+        {
+          "number": "119",
+          "price": 815000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f811d0dddc10590c8611849b6d872b231b04ecc5f1cb01ff5846ffa826d163d9"
+      ]
+    },
+    {
+      "development": "Seaham Garden Village Phase 2",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/county-durham/seaham-garden-village-phase-2",
+      "name": "The Aireton · Plot 90",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/county-durham/seaham-garden-village-phase-2/plot-90",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "90",
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99"
+      ]
+    },
+    {
+      "development": "Swinnow Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/wetherby/swinnow-park",
+      "name": "The Wayford · Plot 23",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wetherby/swinnow-park/plot-23",
+      "bedrooms": 5,
+      "price": 750000,
+      "plots": [
+        {
+          "number": "23",
+          "price": 750000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "Swinnow Park",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/wetherby/swinnow-park",
+      "name": "The Wayford · Plot 27",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/wetherby/swinnow-park/plot-27",
+      "bedrooms": 5,
+      "price": 780000,
+      "plots": [
+        {
+          "number": "27",
+          "price": 780000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "Alresford Down",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/winchester/alresford-down",
+      "name": "The Aireton · Plot 9",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchester/alresford-down/plot-9",
+      "bedrooms": 5,
+      "price": 772995,
+      "plots": [
+        {
+          "number": "9",
+          "price": 772995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "dc56d9185aa4cb6a1ff5dd0d8f64f22512f1e67fc9fe60bbc07aaf51d9a2c977"
+      ]
+    },
+    {
+      "development": "Alresford Down",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/winchester/alresford-down",
+      "name": "The Aireton · Plot 92",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/winchester/alresford-down/plot-92",
+      "bedrooms": 5,
+      "price": 824995,
+      "plots": [
+        {
+          "number": "92",
+          "price": 824995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "eaadb0f93fc17fe93dd00bdf5687085b246b4b187ba25ecedb9b0d832e5d4704"
+      ]
+    },
+    {
+      "development": "Clayridge Park at Barton Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange",
+      "name": "The Aireton · Plot 18",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange/plot-18",
+      "bedrooms": 5,
+      "price": 700000,
+      "plots": [
+        {
+          "number": "18",
+          "price": 700000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8ee4ecc7a312c2cc881c6327adf57bee95f50873484a0204b048de9423090b06"
+      ]
+    },
+    {
+      "development": "Clayridge Park at Barton Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange",
+      "name": "The Thirlford · Plot 17",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange/plot-17",
+      "bedrooms": 5,
+      "price": 775000,
+      "plots": [
+        {
+          "number": "17",
+          "price": 775000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7",
+        "745362b34ea9ac6c031f1e71f6b3fa732a85f027103337cf4ba08fd4116a88d8"
+      ]
+    },
+    {
+      "development": "Clayridge Park at Barton Grange",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange",
+      "name": "The Wadeford · Plot 19",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange/plot-19",
+      "bedrooms": 5,
+      "price": 820000,
+      "plots": [
+        {
+          "number": "19",
+          "price": 820000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "33835af70363cfc7fa650a79eb200fa3fb7027db26de4037c77c60968271313e"
+      ]
+    },
+    {
+      "development": "The Atrium at Overstone",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
+      "name": "The Garrton · Plot 221",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone/plot-221",
+      "bedrooms": 5,
+      "price": 530000,
+      "plots": [
+        {
+          "number": "221",
+          "price": 530000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "183b6c63aa7f0b45b3f03aa21ffb2ad31f5cb8e88e972b138f624f286ad119d2"
+      ]
+    },
+    {
+      "development": "The Atrium at Overstone",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
+      "name": "The Garrton · Plot 220",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone/plot-220",
+      "bedrooms": 5,
+      "price": 550000,
+      "plots": [
+        {
+          "number": "220",
+          "price": 550000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "183b6c63aa7f0b45b3f03aa21ffb2ad31f5cb8e88e972b138f624f286ad119d2"
+      ]
+    },
+    {
+      "development": "The Atrium at Overstone",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
+      "name": "The Wayford · Plot 235",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone/plot-235",
+      "bedrooms": 5,
+      "price": 575000,
+      "plots": [
+        {
+          "number": "235",
+          "price": 575000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "The Atrium at Overstone",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
+      "name": "The Wayford · Plot 198",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone/plot-198",
+      "bedrooms": 5,
+      "price": 585000,
+      "plots": [
+        {
+          "number": "198",
+          "price": 585000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "The Atrium at Overstone",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
+      "name": "The Wayford · Plot 216",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone/plot-216",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "number": "216",
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    },
+    {
+      "development": "Barkby Fields",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/syston/barkby-fields",
+      "name": "The Aireton · Plot 182",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/syston/barkby-fields/plot-182",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "number": "182",
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "eaadb0f93fc17fe93dd00bdf5687085b246b4b187ba25ecedb9b0d832e5d4704"
+      ]
+    },
+    {
+      "development": "Millstone Walk",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/eggborough/millstone-walk",
+      "name": "The Thirlford · Plot 38",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/eggborough/millstone-walk/plot-38",
+      "bedrooms": 5,
+      "price": 499995,
+      "plots": [
+        {
+          "number": "38",
+          "price": 499995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7"
+      ]
+    },
+    {
+      "development": "Hartford Green",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green",
+      "name": "The Wayford · Plot 138",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green/plot-138",
+      "bedrooms": 5,
+      "price": 565000,
+      "plots": [
+        {
+          "number": "138",
+          "price": 565000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7e14984c16ff10013de2463331cede287ad91855054337c9ad9a0b4fd3bd8127"
+      ]
+    },
+    {
+      "development": "Hartford Green",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green",
+      "name": "The Wayford · Plot 139",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green/plot-139",
+      "bedrooms": 5,
+      "price": 565000,
+      "plots": [
+        {
+          "number": "139",
+          "price": 565000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4591a65168d9a68c8d678e9038262e906e3b7706fef2f216d6c567637694c32a"
+      ]
+    },
+    {
+      "development": "Hartford Green",
+      "developmentUrl": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green",
+      "name": "The Wayford · Plot 140",
+      "url": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green/plot-140",
+      "bedrooms": 5,
+      "price": 565000,
+      "plots": [
+        {
+          "number": "140",
+          "price": 565000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "9574be3066f6aecbb796ee3f027d58c5acc2907c71a700a535ee8cf5afa18ab0",
+      "path": "images/9574be3066f6aecbb796ee3f027d58c5acc2907c71a700a535ee8cf5afa18ab0.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Yorkshire/Sales/House-Type-Photography/5-Bedroom/Thirlford/WP-Thirlford---Study.jpg?mw=1800&hash=98022729AF41E854353386519CED40E6",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office or study room featuring a white desk with trestle legs, a desk lamp, wall shelving with decor and books, artwork, a small armchair, and a modern stool.",
+        "reason": "The room is staged as a home office with a visible desk, appropriate office accessories, and no bed."
+      }
+    },
+    {
+      "id": "ec29ceeb91e31748c36eea5484c07e560b1da8e8f1c5a9b1b216c43c44d7b382",
+      "path": "images/ec29ceeb91e31748c36eea5484c07e560b1da8e8f1c5a9b1b216c43c44d7b382.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Midlands/Sales/House-Types---Show-Home-Photography/Aireton/Aireton---Salden-Place/TWSM_Salden-Place-East_EMB51_Airton_Study.jpg?mw=1800&hash=A4EC95FB1A341B5C652D9D2C0E83C135",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A small home office equipped with a desk, office chair, shelving unit, and laptop.",
+        "reason": "This is a staged home office/study with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "dc56d9185aa4cb6a1ff5dd0d8f64f22512f1e67fc9fe60bbc07aaf51d9a2c977",
+      "path": "images/dc56d9185aa4cb6a1ff5dd0d8f64f22512f1e67fc9fe60bbc07aaf51d9a2c977.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Midlands/Sales/House-Types---Show-Home-Photography/Aireton/Aireton-Exeter/TW-EX-Lunar-Rise_Exeter_EMB51_Aireton_Study.jpg?mw=1800&hash=2E6B3E723FEE0D1AED4B5C032F1DFCEB",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a built-in desk, office chair, shelving unit, laptop, and matching blue-grey walls.",
+        "reason": "The room is staged specifically as a home office/study with a visible desk and work surface, and contains no bed."
+      }
+    },
+    {
+      "id": "3ad1b4943f932a0f98d7f9932655b840e2ceb8bc7494202eee257fbf739f4d52",
+      "path": "images/3ad1b4943f932a0f98d7f9932655b840e2ceb8bc7494202eee257fbf739f4d52.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Midlands/Sales/House-Types---Show-Home-Photography/Thirlford/Thirlford-Barham-Meadows/Study.jpg?mw=1800&hash=2F5629AAA633D5898F0168C741F994A9",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring built-in shelving units, a desk with a laptop, and an office chair.",
+        "reason": "This room is staged specifically as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "10800b25552c115dd68d04cc5870c7cbfbfe0dc6343424ae7ff3d59c84462987",
+      "path": "images/10800b25552c115dd68d04cc5870c7cbfbfe0dc6343424ae7ff3d59c84462987.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Exeter/Housetypes/Garrton/Garrton-1/Study.jpg?mw=1800&hash=B07E17BE5F472D3A035D8864B6E71B73",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk with a laptop, lamp, and chair, alongside an armchair and a decorative shelf.",
+        "reason": "This room contains a visible desk and office chair for work with no bed present, meeting all home office criteria."
+      }
+    },
+    {
+      "id": "2df239e1919993016239fbcbcf4df7fee5d8806b424361ebb5b44111921389ea",
+      "path": "images/2df239e1919993016239fbcbcf4df7fee5d8806b424361ebb5b44111921389ea.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Exeter/Housetypes/Garrton/Garrton-2/TWWM-FriaryMeadow-Garrton-SH-APR21-05-Study.jpg?mw=1800&hash=3B6AB0D9DD97FDC31F9A18A8F161DCEB",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office featuring a desk, laptop, chair, patterned wallpaper, and shelving.",
+        "reason": "This is a dedicated home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "a11ae0bde4dab460718dd2c262556ecbd3dbdc1b9da0957fabedfcf66fcfc1f1",
+      "path": "images/a11ae0bde4dab460718dd2c262556ecbd3dbdc1b9da0957fabedfcf66fcfc1f1.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Exeter/Housetypes/Garrton/Garrton-2/TWWM-FriaryMeadow-Garrton-SH-APR21-23-Landing.jpg?mw=1800&hash=CAF19E64D10825CE4732BD52597E35FA",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a long built-in white desk with drawers, two chairs, and a skylight.",
+        "reason": "The room has a visible desk/work surface, no bed, and is staged specifically as a study/office."
+      }
+    },
+    {
+      "id": "47bc72094cd15c27e03a0697640df9468e276847913eae57fd4be382aa969e76",
+      "path": "images/47bc72094cd15c27e03a0697640df9468e276847913eae57fd4be382aa969e76.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Midlands/Sales/Showhome-photography/House-types/Wayford/Study-1.jpg?mw=1800&hash=D67E92CDBD18F66C8C581B2DEC7224C5",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a desk, office chair, shelving unit with storage boxes, and a computer monitor.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and contains no bed."
+      }
+    },
+    {
+      "id": "783da49a1a358cd27122ae3b6faf8edee762a59db9dfc2b270d22c1c4af22b1e",
+      "path": "images/783da49a1a358cd27122ae3b6faf8edee762a59db9dfc2b270d22c1c4af22b1e.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Wales/Show-home-photography/Mappleton/CGV-NEW/study.jpg?mw=1800&hash=D01076644ED3DF3DC19D30B96A363ED6",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a wooden desk placed by the bay window with a laptop, an office chair, and an armchair in the corner.",
+        "reason": "This is a home office staged with a visible desk, workspace, and office chair, and contains no bed."
+      }
+    },
+    {
+      "id": "bf62840a02ee7ad32d15c96272fa067fb305ff564f43d905b05df160bd0023af",
+      "path": "images/bf62840a02ee7ad32d15c96272fa067fb305ff564f43d905b05df160bd0023af.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Midlands/Sales/Showhome-photography/New-House-Types/Aireton/NM-Tower-Woods/Tower-Woods_Aireton_Study1.jpg?mw=1800&hash=79B0E4BC163390CEBAB3DE00160C2CAA",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A compact home office staged with a large desk, shelving unit, office chair, laptop, desk lamp, and patterned wallpaper.",
+        "reason": "This room is staged specifically as a home office/study with a visible desk and work surface, and has no bed."
+      }
+    },
+    {
+      "id": "34d6832a87ea024a4fdcf6a2019f15b5bfc81156ac194ac256d0fafa0d72c9ae",
+      "path": "images/34d6832a87ea024a4fdcf6a2019f15b5bfc81156ac194ac256d0fafa0d72c9ae.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/Twill-Meadow/Web---Floorplans/EMB51---Aireton-GF.jpg?mw=1800&hash=614B7A6557B13C8CD9411C75D8B13FE1",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "floor plan",
+        "description": "An architectural floor plan showing multiple rooms including a kitchen, living area, dining space, and a home office.",
+        "reason": "The floor plan shows a dedicated home office area equipped with a desk and chair, and no beds."
+      }
+    },
+    {
+      "id": "a5cb66720c2cd58d19d1a577d7dbb8a44ecec54bfa6bf54f53f30076ac32ff12",
+      "path": "images/a5cb66720c2cd58d19d1a577d7dbb8a44ecec54bfa6bf54f53f30076ac32ff12.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/Showhome-Photography/New-House-Types/Patterham/Patterham-Show-home-Photography/Patterham---Office-Bed-5---FW.jpg?mw=1800&hash=A326AFA17A9B651E8A869DAC148BBFC8",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring built-in shelving units, a large wooden desk surface with a laptop, an ergonomic chair, and a window.",
+        "reason": "It is staged as a home office/study with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "32e61a7ed52c0cd20f7b77b57d04fc33add04bc1fa849c085b1917c53b02ffe5",
+      "path": "images/32e61a7ed52c0cd20f7b77b57d04fc33add04bc1fa849c085b1917c53b02ffe5.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Show-home-photography/Billington-The-Heath/Study-1a.jpg?mw=1800&hash=AAE4CEAB48B0F983C02AA949A56EE31E",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office room staged with two dark desks, chairs, laptops, and cork noticeboards against a green-and-white two-tone wall.",
+        "reason": "The room is staged as a home office with visible work surfaces (desks) and no bed."
+      }
+    },
+    {
+      "id": "593e1e2ffe6e5167eb68573caf3784be3ea887a49718d659014174ea62b903bc",
+      "path": "images/593e1e2ffe6e5167eb68573caf3784be3ea887a49718d659014174ea62b903bc.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Midlands/Sales/Showhome-photography/House-types/Lavenham-EM/Lavenham---Yorkshire-Swinnow-Park/TW-Yorks-Swinnow-Park_Wetherby_PD51_Lavenham_Study-(1).jpg?mw=1800&hash=0AAB5F1454EFD6CF836C54AF168AC8E4",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office or study room featuring a large fitted desk, office chair, and shelving units.",
+        "reason": "It is staged as a home office/study with a visible desk and work surface, and no visible bed."
+      }
+    },
+    {
+      "id": "3155260bdb2ffc1f40e3955e6a758c6fa75d14c1a9fded1b088424511db38fae",
+      "path": "images/3155260bdb2ffc1f40e3955e6a758c6fa75d14c1a9fded1b088424511db38fae.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Midlands/Sales/Showhome-photography/House-types/Lavenham-EM/Lavenham---Yorkshire-Swinnow-Park/TW-Yorks-Swinnow-Park_Wetherby_PD51_Lavenham_Study-(2).jpg?mw=1800&hash=AD855771020129A2F6E4DF9E1ECA5B16",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "An alternate angle of a home office or study with an extensive desk workspace, chair, and built-in shelving.",
+        "reason": "It is staged as a home office/study with a visible desk and work surface, and no visible bed."
+      }
+    },
+    {
+      "id": "5e6cda551ad319e28512767b485ce0331cf6c365349fea5e2afc46fd790db2dd",
+      "path": "images/5e6cda551ad319e28512767b485ce0331cf6c365349fea5e2afc46fd790db2dd.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/All-Developments/Show-home-photography/Garrton/EA-Burghley-Green/Study.jpg?mw=1800&hash=1673D832D9AAC46B3E414EA92ABBB5CF",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office nook with a desk, laptop, chair, and decorative plant against an accent wall.",
+        "reason": "It is a home office setup featuring a desk and chair with no bed visible."
+      }
+    },
+    {
+      "id": "1bd8e0d8ae5bd5ef8e42ef90917bf2c403ee704707ba12d965b56fbacf79d833",
+      "path": "images/1bd8e0d8ae5bd5ef8e42ef90917bf2c403ee704707ba12d965b56fbacf79d833.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/All-Developments/Show-home-photography/Garrton/EA-Burghley-Green/Second-floor-landing.jpg?mw=1800&hash=9E8A38C335B3E8F83B47E977489D3B4C",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "An attic-style home office space featuring a wooden desk, rolling office chair, and a laptop with stationery.",
+        "reason": "This is a correctly staged home office with a clear desk, chair, and workspace, with no bed present."
+      }
+    },
+    {
+      "id": "4bcb9caea34388173b8aaccdb88480f49771dbf6ec0915db40fe4e7e907ded3d",
+      "path": "images/4bcb9caea34388173b8aaccdb88480f49771dbf6ec0915db40fe4e7e907ded3d.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Wales/Developments/Parc-Llandaf/CGIs/06_Bedroom5_Study.jpg?mw=1800&hash=F5B104CEA670A15F482E7663F9046D4E",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "A dedicated home office staged with a sleek gray desk, laptop, white office chair, shelving unit, and a plant against dark paneled walls.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and contains no bed."
+      }
+    },
+    {
+      "id": "cccfc5dd9687823486dcb342dcebfcf2e16ae2d10a38f7398a5095c6bb9cc30d",
+      "path": "images/cccfc5dd9687823486dcb342dcebfcf2e16ae2d10a38f7398a5095c6bb9cc30d.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-East/Sales/Burdon-Manor/Floorplans/EMB51---Aireton---GF.jpg?mw=1800&hash=0EB51BF8C2849B504CA28B585F1C799F",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "study",
+        "description": "An architectural floor plan showing a designated study room with a desk and computer setup.",
+        "reason": "This floor plan includes a dedicated study room featuring a desk with no bed present."
+      }
+    },
+    {
+      "id": "5042b64522c59161b1fe3958250de4852d39db032bcd94618b6c1427503976e5",
+      "path": "images/5042b64522c59161b1fe3958250de4852d39db032bcd94618b6c1427503976e5.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/NEW-SHOW-HOME-INTERIORS/Wallace/The-Wallace-at-Oakwood-Grove/14--TWWS-Oakwood-Grove-The-Wallace-Bedroom-51800x1200.jpg?mw=1800&hash=CD42819DBF578322D4802483AA9E48DC",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office staged with a wooden desk, rolling office chair, shelves, an accent armchair, and dark textured walls.",
+        "reason": "This room is staged as a home office with a visible desk and no bed present, meeting all requirements."
+      }
+    },
+    {
+      "id": "4836794916375f90d8dceefd64c0a05ee3811c39998b8d0acde24adb2437cbf4",
+      "path": "images/4836794916375f90d8dceefd64c0a05ee3811c39998b8d0acde24adb2437cbf4.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/NEW-SHOW-HOME-INTERIORS/Wallace/The-Wallace-Calderwood/12-The-Wallace--Bedroom-4.jpg?mw=1800&hash=35FA445EFC14E12F3F404C056FA9A7E2",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with blue walls, a wooden desk with a laptop, a blue chair, and an armchair.",
+        "reason": "The room is staged as a home office with a visible desk and workspace, and there is no bed present."
+      }
+    },
+    {
+      "id": "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99",
+      "path": "images/269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-East/Sales/Heathwood-Phase-2C-and-3/Floor-Plans/EMB51---Aireton---GF.jpg?mw=1800&hash=6261C5C79CAEB2681C0DCC03152A9C0B",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "An architectural floor plan of a home ground floor layout featuring a designated study with a desk.",
+        "reason": "The floor plan shows a dedicated study room labeled with a desk and chair, and no beds are present."
+      }
+    },
+    {
+      "id": "a7e18c07c671743b09b7b7524c4b39899cd13b5d28cfc95964a005442225e9c7",
+      "path": "images/a7e18c07c671743b09b7b7524c4b39899cd13b5d28cfc95964a005442225e9c7.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Show-home-photography/Dunnerton/08-Dunnerton_EMB52---Study.jpg?mw=1800&hash=BF1854C3009B0645A0234CBE41BC4CBC",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk, computer setup, office chair, and shelving",
+        "reason": "This is a staged home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "3c99f32554df27fa44df01c78b80f3de2df5309958e619f0ec0f400e123a95ec",
+      "path": "images/3c99f32554df27fa44df01c78b80f3de2df5309958e619f0ec0f400e123a95ec.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Show-home-photography/Dunnerton/17-Dunnerton_EMB52---Dressing.jpg?mw=1800&hash=9FFC0A2E85EDEE85DAB9532D5C3FFEB3",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a wooden desk, laptop, and orange office chair positioned in front of windows and mirrored wardrobes.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "8ee4ecc7a312c2cc881c6327adf57bee95f50873484a0204b048de9423090b06",
+      "path": "images/8ee4ecc7a312c2cc881c6327adf57bee95f50873484a0204b048de9423090b06.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Show-home-photography/Aireton-Stortford-Fields/Study.jpg?mw=1800&hash=2E39DCA8F51EBA525C18F57470ED9758",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office / study",
+        "description": "A well-lit home office or study area featuring a sleek dark desk with a laptop, an ergonomic chair, and a decorative shelving unit by a window.",
+        "reason": "It is staged as a home office/study with a visible desk and work surface for office work, and there is no visible bed."
+      }
+    },
+    {
+      "id": "87b621e8118e927edc32b61b1c4fb33a4542a73502e27a44de48cb9f8480d1c1",
+      "path": "images/87b621e8118e927edc32b61b1c4fb33a4542a73502e27a44de48cb9f8480d1c1.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Stortford-Fields/Stortford-Phase-5/3D-Floor-Plans/Aireton-GF.jpg?mw=1800&hash=A1E32E1B45F6425076E8A957991979C4",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "floorplan",
+        "description": "An architectural floor plan showing a multi-room layout including a dedicated home office study area with a desk.",
+        "reason": "This is a floorplan showing a designated office room with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7",
+      "path": "images/2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Shared/Product/Five-bedroom-homes/The-Thirlford/10-Thirlford_EMA51---Study.jpg?mw=1800&hash=1713B58D357D1E8F06268B6C6090CDEA",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a desk with a computer monitor, an office chair, a large wall bookshelf, and a window.",
+        "reason": "The room is staged as a home office with a visible desk and office chair, and contains no bed."
+      }
+    },
+    {
+      "id": "98710275829acf00588200a7d4491edaebe17dc55cad1d0734d646fa8aaf8ee2",
+      "path": "images/98710275829acf00588200a7d4491edaebe17dc55cad1d0734d646fa8aaf8ee2.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Shared/Product/Five-bedroom-homes/The-Thirlford/18-Thirlford_EMA51---Bedroom-5.jpg?mw=1800&hash=227CAF7C5A923AF49C5085D624D14E3E",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a wooden desk, a white office chair, laptop, shelving, and map wall art.",
+        "reason": "It is staged as a home office/study with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "80b77a63adf5442bbbce926e09c5fd569d2be0ee2e99798a4f3cebd24854e162",
+      "path": "images/80b77a63adf5442bbbce926e09c5fd569d2be0ee2e99798a4f3cebd24854e162.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Manchester/Resource-Library/Lavenham/TWY-Swinnow-Park/TW-Yorks-Swinnow-Park_Lavenham_Front-Room_Study.jpg?mw=1800&hash=7438AF87AD4ED6DCD35458C678E189CE",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a desk with a laptop, an armchair with ottoman, shelving, and a bench.",
+        "reason": "The room contains a visible desk and work surface setup suitable for office work, and has no bed."
+      }
+    },
+    {
+      "id": "64761317efb6569530b593a0d00f69f1086c300db0ea4b570f4266acb3b3eb36",
+      "path": "images/64761317efb6569530b593a0d00f69f1086c300db0ea4b570f4266acb3b3eb36.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Midlands/Sales/Show-home-photography/Garrton/EM-Wellington-Place/Study.jpg?mw=1800&hash=6405E03A506D9F8AE36E43FB46E2BC85",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with patterned monkey wallpaper, a dark wooden desk with a computer monitor, and an office chair.",
+        "reason": "It is staged as a home office with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "865f5997566c9a5d6fa9c1449e6955a68654f49a667d5e3a89c4409a8bee0b4c",
+      "path": "images/865f5997566c9a5d6fa9c1449e6955a68654f49a667d5e3a89c4409a8bee0b4c.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/NEW-SHOW-HOME-INTERIORS/NEW-HOUSE-TYPES/SCOTTISH-VERSIONS/The-Patterham---Aug-26/8-TWScotland_Patterham_Landing.jpg?mw=1800&hash=2B1E4FC1C5EBE40337F018BAF083B234",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office/study space featuring a wooden desk with a laptop, a desk lamp, a green chair, and framed wall art against a dark green accent wall.",
+        "reason": "It is a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7",
+      "path": "images/af83cdcc1e16e6f2e1e4d5a755a798d349453b921d1c09a917f3d40a84f4d1b7.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Exeter/Housetypes/Wayford/Wayford-3/TWSM_Colney-Manor_NA51_Wayford_Study_1800x1200.jpg?mw=1800&hash=A27C13C01296AF32A27A938A48490C2F",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with extensive cabinetry, a large desk, a rolling office chair, and bookshelves.",
+        "reason": "The room is staged as a home office, has a visible desk, and contains no bed."
+      }
+    },
+    {
+      "id": "4591a65168d9a68c8d678e9038262e906e3b7706fef2f216d6c567637694c32a",
+      "path": "images/4591a65168d9a68c8d678e9038262e906e3b7706fef2f216d6c567637694c32a.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Exeter/Housetypes/Wayford/Wayford-1/TW-Exeter-example-study.jpg?mw=1800&hash=43B6B8B2797C6A26F7541AB712717558",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office/study featuring a wooden desk with a computer monitor, desk lamp, chair, and a world map on the wall.",
+        "reason": "The room is staged as a home office/study with a visible desk and work surface, and there is no visible bed."
+      }
+    },
+    {
+      "id": "6c7b4d4b34535f66ebb3fa5eb8e1c25e3b05e1a7fb57b44be42f5ca6e4f9faab",
+      "path": "images/6c7b4d4b34535f66ebb3fa5eb8e1c25e3b05e1a7fb57b44be42f5ca6e4f9faab.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-East/Sales/Capstone-Oaks/The-Aireton-Show-home/The-Aireton---Study.jpg?mw=1800&hash=CCBE4BA517D820D59B1099EA83BB5AAC",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a built-in desk, shelving unit, and office chair.",
+        "reason": "The room is staged specifically as a home office with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26",
+      "path": "images/6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-East/Sales/Housetype-Photography/The-Thirlford/10-Thirlford_EMA51---Study.jpg?mw=1800&hash=F0A34EA8C7422C932752AAD5854EBC59",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Staged home office with a modern desk, computer monitor, office chair, and large bookcase.",
+        "reason": "This room is staged specifically as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323",
+      "path": "images/ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-East/Sales/Capstone-Oaks/Floorplans/EMA51_GF---Thirlford.jpg?mw=1800&hash=E8B294102C707AB5CC27FF882E7491EA",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "floorplan",
+        "description": "Floor plan of a multi-room house layout showing a designated study room with a desk.",
+        "reason": "The floor plan clearly depicts a dedicated study room with a desk setup and no bed present."
+      }
+    },
+    {
+      "id": "3def3d586b7065503a3fca9011db9459023b3606cc9fcfbc731a663fa970cd03",
+      "path": "images/3def3d586b7065503a3fca9011db9459023b3606cc9fcfbc731a663fa970cd03.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Midlands/Sales/Wellington-Place/Garrton-Showhome/Study.jpg?mw=1800&hash=06C40656616400AC0FF4E73E779ACC6F",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "Dedicated study room staged with a dark wood desk, office chair, patterned accent wall, and a lamp.",
+        "reason": "The room is clearly staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "dcc6c805a78182ef14e5ff4a11f926f96044364ded230aef17a9971a69f31702",
+      "path": "images/dcc6c805a78182ef14e5ff4a11f926f96044364ded230aef17a9971a69f31702.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Exeter/Sales/Apsham-Grange/Fortibus-Fields/Floorplans/Thirlford-GF-FP.jpg?mw=1800&hash=91C838D571AFC3875D7712883E294F64",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "floorplan",
+        "description": "A floorplan clearly featuring a designated 'Study' room complete with a desk and chair.",
+        "reason": "Although this is a floorplan, it specifically highlights a dedicated study/home office room with a visible desk and no bed, satisfying the office criteria."
+      }
+    },
+    {
+      "id": "cf566a82b4b1b16a21bfe647882438d437e1d783ee2575958c1322ae8f5a20b0",
+      "path": "images/cf566a82b4b1b16a21bfe647882438d437e1d783ee2575958c1322ae8f5a20b0.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/All-Developments/Show-home-photography/Wayford/Admiral-Park/Study.jpg?mw=1800&hash=7D02802DA4233018E50020CE11028324",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office or study room staged with a long desk, two chairs, laptops, and floating shelves.",
+        "reason": "This is a dedicated home office with a visible work desk, chairs, and laptops, and no bed present."
+      }
+    },
+    {
+      "id": "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b",
+      "path": "images/2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/The-Arboretum/Floorplans/Revisions/NB51_Garrton_GF.jpg?mw=1800&hash=BEECF793FE5EB397A96A7395E6D6E836",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "An architectural floorplan showing a living room, kitchen, dining area, bathroom, and a home office with a desk.",
+        "reason": "The floorplan depicts a dedicated office/study space featuring a desk and chair with no beds present in that specific room, satisfying all criteria."
+      }
+    },
+    {
+      "id": "1f27a64bcc8235d55170d4aa6414e3dd2b3c80fd61d1a220ced31ff67907936d",
+      "path": "images/1f27a64bcc8235d55170d4aa6414e3dd2b3c80fd61d1a220ced31ff67907936d.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/All-Developments/Show-home-photography/Garrton/SM-Orchard-Chase/Study.jpg?mw=1800&hash=19BDD823C99B325D7F31482762F6FEFF",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a desk, office chair, shelving unit, and decorative wall art against a burgundy accent wall.",
+        "reason": "This room contains a visible desk and office chair, and no bed, perfectly matching a home office."
+      }
+    },
+    {
+      "id": "7ac182a576a43517778bd1124e52fc072816b9f8f63aefe10ccae794d008c017",
+      "path": "images/7ac182a576a43517778bd1124e52fc072816b9f8f63aefe10ccae794d008c017.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/Deben-Park/Floor-plans/Ph-2-W6/Dunnerton---EMB52-GF.jpg?mw=1800&hash=D6F61B8B67C5BE29B11B4E9FE14F491C",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "floorplan",
+        "description": "A floorplan showing various rooms including a clearly marked home office with a desk.",
+        "reason": "This floorplan layout includes a staged home office area with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "00868b1c30f15511ebfc06f0e0d24d0a6f1cfe7823b42151c553d5b56d52bcc9",
+      "path": "images/00868b1c30f15511ebfc06f0e0d24d0a6f1cfe7823b42151c553d5b56d52bcc9.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Midlands/Sales/House-Types---Show-Home-Photography/Aireton/Aireton---Salden-Place/TWSM_Salden-Place-East_EMB51_Airton_Bedroom-5.jpg?mw=1800&hash=60F8271B0A1F78707C1885CCB1085369",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office featuring a corner desk, shelves, an office chair, and an armchair.",
+        "reason": "The room is clearly staged as a home office with a visible work surface and office chair, and no bed."
+      }
+    },
+    {
+      "id": "adc62e0bc9eb007681ff646c2deaa3060527f53610dd1e49256a03579107fc84",
+      "path": "images/adc62e0bc9eb007681ff646c2deaa3060527f53610dd1e49256a03579107fc84.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Midlands/Sales/House-Types---Show-Home-Photography/Thirlford/Thirlford-Hampden-West/Thirlford_Study.jpg?mw=1800&hash=3A34C35030D037DC2405A2B9C6587299",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with built-in cabinetry, shelving units, a desk surface, and an ergonomic office chair.",
+        "reason": "The room is staged specifically as a study/home office with a desk surface and no bed."
+      }
+    },
+    {
+      "id": "f811d0dddc10590c8611849b6d872b231b04ecc5f1cb01ff5846ffa826d163d9",
+      "path": "images/f811d0dddc10590c8611849b6d872b231b04ecc5f1cb01ff5846ffa826d163d9.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Midlands/Sales/House-Types---Show-Home-Photography/Wadeford---Bronze-Park/TWSM_Bronze-Park_EMA52_Wadeford_Study.jpg?mw=1800&hash=85D9322F9D003A454FB9FEE1710C0B6C",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office with a built-in desk setup, a laptop, shelves, and an office chair.",
+        "reason": "It is staged as a home office with a desk and no bed."
+      }
+    },
+    {
+      "id": "eaadb0f93fc17fe93dd00bdf5687085b246b4b187ba25ecedb9b0d832e5d4704",
+      "path": "images/eaadb0f93fc17fe93dd00bdf5687085b246b4b187ba25ecedb9b0d832e5d4704.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Southern-Counties/Show-Home-Photography/New-House-Type-range/The-Aireton/Alresford-Down/TW-SC-Alresford-DownWinchesterEMB51AiretonKitchenDining-91800x1200.jpg?mw=1800&hash=E401214150CA61D8D63BC2BEFCFF6BDB",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a built-in desk, office chair, shelving unit, and laptop.",
+        "reason": "The image clearly shows a dedicated home office/study setup with a work desk and chair, and no bed."
+      }
+    },
+    {
+      "id": "745362b34ea9ac6c031f1e71f6b3fa732a85f027103337cf4ba08fd4116a88d8",
+      "path": "images/745362b34ea9ac6c031f1e71f6b3fa732a85f027103337cf4ba08fd4116a88d8.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Clayridge-Park/FPs/Thirlford-GF.jpg?mw=1800&hash=62B8A6A0351ADD437A3D8961CF558FE1",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Floor plan highlighting a home office with a visible desk workspace and no bed",
+        "reason": "This floor plan clearly shows a home office/study room equipped with a desk and no beds."
+      }
+    },
+    {
+      "id": "33835af70363cfc7fa650a79eb200fa3fb7027db26de4037c77c60968271313e",
+      "path": "images/33835af70363cfc7fa650a79eb200fa3fb7027db26de4037c77c60968271313e.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Show-home-photography/Wadeford/07-Wadeford_EMA52---Study.jpg?mw=1800&hash=E8CC7C9AC185F386F2C5B5C55D5A9ED8",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A home office featuring a wooden desk, a modern office chair, a computer monitor, and a large bookshelf unit.",
+        "reason": "This room is staged specifically as a home office/study with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "183b6c63aa7f0b45b3f03aa21ffb2ad31f5cb8e88e972b138f624f286ad119d2",
+      "path": "images/183b6c63aa7f0b45b3f03aa21ffb2ad31f5cb8e88e972b138f624f286ad119d2.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-Midlands/Sales/House-Types---Show-Home-Photography/Garrton---Cromwell-Place/Study.jpg?mw=1800&hash=5B818300C5A9117AF901F19303220284",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a corner desk with a laptop, an orange chair, a desk lamp, and shelving.",
+        "reason": "This room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "7e14984c16ff10013de2463331cede287ad91855054337c9ad9a0b4fd3bd8127",
+      "path": "images/7e14984c16ff10013de2463331cede287ad91855054337c9ad9a0b4fd3bd8127.jpg",
+      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/London/All-developments/Wayford/EA-Brightwell-Lakes/TWEA_Brightwell-Lakes_NA51_Wayford_Study.jpg?mw=1800&hash=20530695134CFB8EC9249AE7393D6AC6",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring built-in white shelving, a corner desk setup, a laptop, and an office chair.",
+        "reason": "This room is staged specifically as a home office with a desk and no bed."
+      }
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/greenwich/greenwich-millennium-village",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/london/postmark-london",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/roslin/sinclair-gardens",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sawtry/archers-place",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/highworth/pentylands-place",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/prescot/orchard-park",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barry/latitude-at-the-quays",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/devizes/marshalls-green",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-helens/sherdley-green",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brentwood/brentwood-75",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    }
+  ],
+  "metrics": {
+    "sitemapDevelopments": 351,
+    "qualifyingDiscovered": 101,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 359,
+    "reusedImages": 267,
+    "reusedGalleries": 14,
+    "imagesAttempted": 1122,
+    "pendingImages": 0,
+    "matchedImages": 50,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 855
+  },
+  "completedAt": "2026-10-02T12:46:55.614Z"
+}

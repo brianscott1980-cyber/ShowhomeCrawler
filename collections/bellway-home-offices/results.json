@@ -1,0 +1,6456 @@
+{
+  "status": "completed",
+  "startedAt": "2026-10-01T23:41:55.906Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/centurion-chase",
+      "name": "Centurion Chase",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-paddock-at-chilsey-grange",
+      "name": "The Paddock at Chilsey Grange",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
+      "name": "Hedworths Green at Lambton Park",
+      "status": "complete",
+      "homes": 25,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/woodbury-manor",
+      "name": "Woodbury Manor",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes",
+      "name": "The Lanes",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/torvill-park",
+      "name": "Torvill Park",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/langmead-place",
+      "name": "Langmead Place",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/st-marys-hill",
+      "name": "St. Mary's Hill",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
+      "name": "Sharnbrook Park",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
+      "name": "Sheasby Park",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/bellway-at-hugglescote-grange",
+      "name": "Bellway at Hugglescote Grange",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/weavers-meadow",
+      "name": "Weavers Meadow",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/elder-brook",
+      "name": "Elder Brook",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade",
+      "name": "Arden Glade",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/goodsyard",
+      "name": "Goodsyard",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/carnegie-quarter-by-bellway",
+      "name": "Carnegie Quarter by Bellway",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/berwick-green",
+      "name": "Berwick Green",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/buttercross-meadows",
+      "name": "Buttercross Meadows",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/alderstone-park",
+      "name": "Alderstone Park",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/bellway-at-rosewood",
+      "name": "Bellway at Rosewood",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/moreton-fields",
+      "name": "Moreton Fields",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/stoughton-park",
+      "name": "Stoughton Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/roman-court",
+      "name": "Roman Court",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/flowers-hill-grange",
+      "name": "Flowers Hill Grange",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/whitehouse-gardens",
+      "name": "Whitehouse Gardens",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/hares-leap",
+      "name": "Hare's Leap",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/haycroft-gardens",
+      "name": "Haycroft Gardens",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/spirewood-grange",
+      "name": "Spirewood Grange",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/pennwood-grange",
+      "name": "Pennwood Grange",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/watchmans-place",
+      "name": "Watchman's Place",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/poppy-view",
+      "name": "Poppy View",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/longwood-grange",
+      "name": "Longwood Grange",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/kingsfleet-park",
+      "name": "Kingsfleet Park",
+      "status": "complete",
+      "homes": 24,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/harvino",
+      "name": "Harvino",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/elmfield-green",
+      "name": "Elmfield Green",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/springstead-village",
+      "name": "Springstead Village",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/ashlar-village",
+      "name": "Ashlar Village",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/trinity-green",
+      "name": "Trinity Green",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/rowden-chase",
+      "name": "Rowden Chase",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/forster-park",
+      "name": "Forster Park",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/bellway-at-boorley-gardens",
+      "name": "Bellway at Boorley Gardens",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields",
+      "name": "Tiger Moth Fields",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange",
+      "name": "Dalmore Grange",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/cooper-square",
+      "name": "Cooper Square",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/palmers-grange",
+      "name": "Palmers Grange",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/st-albans-gate",
+      "name": "St Albans Gate",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/eastview",
+      "name": "Eastview",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/firview",
+      "name": "Firview",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/halewood-oaks",
+      "name": "Halewood Oaks",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/trilogy",
+      "name": "Trilogy",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/regents-gate",
+      "name": "Regent's Gate",
+      "status": "complete",
+      "homes": 24,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/landsdale",
+      "name": "Landsdale",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/oakwood-at-wynyard-park",
+      "name": "Oakwood at Wynyard Park",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/radley-reach",
+      "name": "Radley Reach",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/holbrook-park",
+      "name": "Holbrook Park",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/redlands-grove",
+      "name": "Redlands Grove",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/foxton-mill",
+      "name": "Foxton Mill",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/beaulieu-grange",
+      "name": "Beaulieu Grange",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/hopwood-meadows",
+      "name": "Hopwood Meadows",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/bellway-at-whitehouse-park",
+      "name": "Bellway at Whitehouse Park",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/neptune",
+      "name": "Neptune",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/alexander-park",
+      "name": "Alexander Park",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/woodland-walk",
+      "name": "Woodland Walk",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/lydiate-gate",
+      "name": "Lydiate Gate",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/the-gatehouse",
+      "name": "The Gatehouse",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/corallian-heights",
+      "name": "Corallian Heights",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/simpson-park",
+      "name": "Simpson Park",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/francis-gardens",
+      "name": "Francis Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/astoria-park",
+      "name": "Astoria Park",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/chilsey-grange",
+      "name": "Chilsey Grange",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/summers-bridge",
+      "name": "Summers Bridge",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/lavender-rise",
+      "name": "Lavender Rise",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-meadows-at-hampden-gardens",
+      "name": "The Meadows at Hampden Gardens",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/narrowboat-view",
+      "name": "Narrowboat View",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/holt-vale",
+      "name": "Holt Vale",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/astley-fields",
+      "name": "Astley Fields",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/bishops-gate",
+      "name": "Bishops Gate",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/somerford-gate",
+      "name": "Somerford Gate",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange",
+      "name": "Baldwins Gate Grange",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/garrison-point",
+      "name": "Garrison Point",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/monument-meadows",
+      "name": "Monument Meadows",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/moss-bank-gardens",
+      "name": "Moss Bank Gardens",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park",
+      "name": "Carnatic Park",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/carters-court",
+      "name": "Carter's Court",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chestnut-vale",
+      "name": "Chestnut Vale",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/baydale-village",
+      "name": "Baydale Village",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/mansion-gardens-at-fallow-wood-view",
+      "name": "Mansion Gardens at Fallow Wood View",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/maple-creek",
+      "name": "Maple Creek",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/poulton-rise",
+      "name": "Poulton Rise",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/lucas-green",
+      "name": "Lucas Green",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/highwoods-view",
+      "name": "Highwoods View",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/celtic-gardens",
+      "name": "Celtic Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/the-willows",
+      "name": "The Willows",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/berry-hill-lea",
+      "name": "Berry Hill Lea",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/summerhill-view",
+      "name": "Summerhill View",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/berry-hill-vale",
+      "name": "Berry Hill Vale",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-bridge",
+      "name": "Chamberlains Bridge",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/clarence-gate",
+      "name": "Clarence Gate",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/libbets-grange",
+      "name": "Libbets Grange",
+      "status": "complete",
+      "homes": 27,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/darwins-edge",
+      "name": "Darwin's Edge",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/regency-manor",
+      "name": "Regency Manor",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/mount-royal-gardens",
+      "name": "Mount Royal Gardens",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/killinghall-grange",
+      "name": "Killinghall Grange",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/blackthorn-walk",
+      "name": "Blackthorn Walk",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/elemore",
+      "name": "Elemore",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/penny-way",
+      "name": "Penny Way",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/trident-way",
+      "name": "Trident Way",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/hatton-gate",
+      "name": "Hatton Gate",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/empress-gardens",
+      "name": "Empress Gardens",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/radwinter-gardens",
+      "name": "Radwinter Gardens",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/the-green-at-dh1",
+      "name": "The Green at DH1",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/old-brook-view",
+      "name": "Old Brook View",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/springwood",
+      "name": "Springwood",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/brook-meadows",
+      "name": "Brook Meadows",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/tattenhoe-meadows",
+      "name": "Tattenhoe Meadows",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/hartwell-park",
+      "name": "Hartwell Park",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/willow-brook",
+      "name": "Willow Brook",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/dh1",
+      "name": "DH1",
+      "status": "complete",
+      "homes": 24,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/elizabeth-square",
+      "name": "Elizabeth Square",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/walderside",
+      "name": "Walderside",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/roman-gate",
+      "name": "Roman Gate",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/clifford-gardens",
+      "name": "Clifford Gardens",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/roundhouse-fields",
+      "name": "Roundhouse Fields",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/perceval-grange",
+      "name": "Perceval Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft",
+      "name": "Meadowcroft",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/montgomerie-park",
+      "name": "Montgomerie Park",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/rectory-fields",
+      "name": "Rectory Fields",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge",
+      "name": "Willow's Edge",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/cathedral-rise",
+      "name": "Cathedral Rise",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/pinewood-grange",
+      "name": "Pinewood Grange",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/spindrift-park",
+      "name": "Spindrift Park",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/skyline",
+      "name": "Skyline",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/the-old-foundry",
+      "name": "The Old Foundry",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/oxenden-park",
+      "name": "Oxenden Park",
+      "status": "complete",
+      "homes": 25,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/autumn-ford",
+      "name": "Autumn Ford",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/indigo-park",
+      "name": "Indigo Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/clavering-park",
+      "name": "Clavering Park",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
+      "name": "Prince's Gate",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/parsons-croft",
+      "name": "Parsons Croft",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/ellingwood",
+      "name": "Ellingwood",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/lathom-pastures",
+      "name": "Lathom Pastures",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/pomona-grove",
+      "name": "Pomona Grove",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/alkerden-heights",
+      "name": "Alkerden Heights",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/linmere-gateway",
+      "name": "Linmere Gateway",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/ashlands",
+      "name": "Ashlands",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/the-landings",
+      "name": "The Landings",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/navigators-walk",
+      "name": "Navigators Walk",
+      "status": "complete",
+      "homes": 26,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/longfield-place",
+      "name": "Longfield Place",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/hawthorn-park",
+      "name": "Hawthorn Park",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/scholars-walk",
+      "name": "Scholars Walk",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/vita-at-holbrook-park",
+      "name": "Vita at Holbrook Park",
+      "status": "complete",
+      "homes": 20,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/the-foresters-at-middlebeck",
+      "name": "The Foresters at Middlebeck",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/winchburgh-grange",
+      "name": "Winchburgh Grange",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/wellfield-rise",
+      "name": "Wellfield Rise",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/western-grange",
+      "name": "Western Grange",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/mountain-view",
+      "name": "Mountain View",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/st-oswalds-place",
+      "name": "St Oswald's Place",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/falcon-grove",
+      "name": "Falcon Grove",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/linmere-mews",
+      "name": "Linmere Mews",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/porters-grove",
+      "name": "Porters Grove",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/parc-mawr",
+      "name": "Parc Mawr",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/blenheim-green",
+      "name": "Blenheim Green",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange",
+      "name": "High Leigh Grange",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/abbey-fields-grange",
+      "name": "Abbey Fields Grange",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/amberstone-park",
+      "name": "Amberstone Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/montem-square",
+      "name": "Montem Square",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/castle-grange",
+      "name": "Castle Grange",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/yew-tree-park",
+      "name": "Yew Tree Park",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/hartford-edge",
+      "name": "Hartford Edge",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/echelon",
+      "name": "Echelon",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/forest-walk",
+      "name": "Forest Walk",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/kingsmere-park",
+      "name": "Kingsmere Park",
+      "status": "complete",
+      "homes": 26,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/maplewood-grove",
+      "name": "Maplewood Grove",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/quarrington-edge-at-handley-chase",
+      "name": "Quarrington Edge at Handley Chase",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/greenleys-gardens",
+      "name": "Greenleys Gardens",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/fardalehill",
+      "name": "Fardalehill",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/genesis-at-berry-hill",
+      "name": "Genesis at Berry Hill",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale",
+      "name": "King George's Vale",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/park-gate-village",
+      "name": "Park Gate Village",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/royal-bowland-park-phase-2",
+      "name": "Royal Bowland Park Phase 2",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/ridgewood",
+      "name": "Ridgewood",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/wakeley-meadow",
+      "name": "Wakeley Meadow",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/millworks",
+      "name": "Millworks",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/bellway-at-shawfair",
+      "name": "Bellway at Shawfair",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/abbey-view",
+      "name": "Abbey View",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/primrose-grove",
+      "name": "Primrose Grove",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow",
+      "name": "Priors Meadow",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/earls-way",
+      "name": "Earl's Way",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/bronze-fields",
+      "name": "Bronze Fields",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/new-cardington-fields",
+      "name": "New Cardington Fields",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/euxton-heights",
+      "name": "Euxton Heights",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/oakhill-meadow",
+      "name": "Oakhill Meadow",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/sapphire-fields-at-great-dunmow-grange",
+      "name": "Sapphire Fields at Great Dunmow Grange",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/dargavel-village",
+      "name": "Dargavel Village",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/parsonage-place",
+      "name": "Parsonage Place",
+      "status": "complete",
+      "homes": 26,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/bellway-at-brewery-square",
+      "name": "Bellway at Brewery Square",
+      "status": "complete",
+      "homes": 25,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/lock-keeper-gardens",
+      "name": "Lock Keeper Gardens",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/pilgrim-manor",
+      "name": "Pilgrim Manor",
+      "status": "complete",
+      "homes": 22,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/sky-plaza",
+      "name": "Sky Plaza",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/the-comptons",
+      "name": "The Comptons",
+      "status": "complete_with_warning",
+      "homes": 6,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens",
+      "name": "Elfenne Gardens",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/weavers-fields",
+      "name": "Weavers Fields",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/cloverhill",
+      "name": "Cloverhill",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/coppice-heights",
+      "name": "Coppice Heights",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/the-sidings-at-shawfair",
+      "name": "The Sidings at Shawfair",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/victoria-gate",
+      "name": "Victoria Gate",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath",
+      "name": "Chamberlains Heath",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/ivy-hill",
+      "name": "Ivy Hill",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/dehavilland-place",
+      "name": "DeHavilland Place",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/barleywoods",
+      "name": "Barleywoods",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view",
+      "name": "Spires View",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-atrium",
+      "name": "The Atrium",
+      "status": "complete",
+      "homes": 25,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/westcombe-park",
+      "name": "Westcombe Park",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/the-putting-green-at-brackley-village",
+      "name": "The Putting Green at Brackley Village",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/weaver-green",
+      "name": "Weaver Green",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/the-ferns-at-kennett-garden-village",
+      "name": "The Ferns at Kennett Garden Village",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold",
+      "name": "Lancaster Fold",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/the-crescent",
+      "name": "The Crescent",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/abercrombie-park",
+      "name": "Abercrombie Park",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/earlsbrook-court",
+      "name": "Earlsbrook Court",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/alder-grove",
+      "name": "Alder Grove",
+      "status": "complete",
+      "homes": 23,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/the-grove-at-riverbrook-place",
+      "name": "The Grove at Riverbrook Place",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/highlands-grange",
+      "name": "Highlands Grange",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights",
+      "name": "Bellway at Whitford Heights",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/cranfield-grange",
+      "name": "Cranfield Grange",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/pinchbeck-fields",
+      "name": "Pinchbeck Fields",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/fallow-wood-view",
+      "name": "Fallow Wood View",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/bellway-at-fonnereau-village",
+      "name": "Bellway at Fonnereau Village",
+      "status": "complete",
+      "homes": 21,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/cromwell-grange",
+      "name": "Cromwell Grange",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park",
+      "name": "Bellway at St James' Park",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/lockwood-place",
+      "name": "Lockwood Place",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/ladywell-coppice",
+      "name": "Ladywell Coppice",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/clover-fields",
+      "name": "Clover Fields",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/barton-quarter",
+      "name": "Barton Quarter",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/craig-y-parcau",
+      "name": "Craig y Parcau",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/st-wilfrids-place",
+      "name": "St Wilfrid's Place",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/cedarcroft",
+      "name": "Cedarcroft",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/mayflower-mews",
+      "name": "Mayflower Mews",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-horizons",
+      "name": "Fielders Quarter - Horizons",
+      "status": "complete_with_warning",
+      "homes": 21,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/copperhouse-green",
+      "name": "Copperhouse Green",
+      "status": "complete_with_warning",
+      "homes": 2,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/cavendish-grove",
+      "name": "Cavendish Grove",
+      "status": "complete_with_warning",
+      "homes": 8,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/old-royal-chace",
+      "name": "Old Royal Chace",
+      "status": "complete_with_warning",
+      "homes": 1,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/legacy-wharf",
+      "name": "Legacy Wharf",
+      "status": "complete_with_warning",
+      "homes": 4,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/roe-wood-park",
+      "name": "Roe Wood Park",
+      "status": "complete_with_warning",
+      "homes": 6,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/harbour-village",
+      "name": "Harbour Village",
+      "status": "complete_with_warning",
+      "homes": 26,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/ebbsfleet-cross-at-garden-city",
+      "name": "Ebbsfleet Cross at Garden City",
+      "status": "complete_with_warning",
+      "homes": 1,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/kingsgate-park",
+      "name": "Kingsgate Park",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-west-circus",
+      "name": "Fielders Quarter - West Circus",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/tavistock-quarter",
+      "name": "Tavistock Quarter",
+      "status": "complete_with_warning",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/crossways-quarter",
+      "name": "Crossways Quarter",
+      "status": "complete_with_warning",
+      "homes": 5,
+      "qualifying": 0,
+      "warning": "Structured plot source could not be parsed; house-style cards retained."
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-at-barking-riverside",
+      "status": "complete",
+      "name": "Fielders Quarter - West Circus",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Redirected to https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-west-circus"
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter",
+      "status": "complete",
+      "name": "Fielders Quarter - West Circus",
+      "homes": 0,
+      "qualifying": 0,
+      "warning": "Redirected to https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-west-circus"
+    }
+  ],
+  "properties": [
+    {
+      "development": "Centurion Chase",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/centurion-chase",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/centurion-chase/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Hedworths Green at Lambton Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
+      "name": "The Woodstone",
+      "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park/the-woodstone-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 624995,
+      "plots": [
+        {
+          "number": "128",
+          "price": 624995,
+          "available": true
+        },
+        {
+          "number": "126",
+          "price": 627995,
+          "available": true
+        },
+        {
+          "number": "113",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "77",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "56",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "112",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "89",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "144",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "97",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "145",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "98",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hedworths Green at Lambton Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
+      "name": "The Herrington",
+      "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park/the-herrington-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 664995,
+      "plots": [
+        {
+          "number": "127",
+          "price": 664995,
+          "available": true
+        },
+        {
+          "number": "45",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "44",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "83",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hedworths Green at Lambton Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
+      "name": "The Woodstone",
+      "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park/the-woodstone-5-bedroom-end-terrace-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "82",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "80",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Lanes",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "139",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "114",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "132",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "112",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "131",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "31",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "135",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "115",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "146",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "113",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "140",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Lanes",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "134",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "52",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "81",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "29",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sharnbrook Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
+      "name": "The Stanbridge",
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park/the-stanbridge-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 800000,
+      "plots": [
+        {
+          "number": "276",
+          "price": 800000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sheasby Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "486",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "485",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "01c2ed406ce8d94d8927ecb4ead7c52d180f87ff0fd9cfa9d36dfcd16f4e1a59"
+      ]
+    },
+    {
+      "development": "Arden Glade",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade",
+      "name": "The Bosworth",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade/the-bosworth-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "85",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "69",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Arden Glade",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "214",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "519aae7187bc6656078a8c80f0711b1746246f303e52d8ac0391850e613233b8"
+      ]
+    },
+    {
+      "development": "Alderstone Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/alderstone-park",
+      "name": "The Parkman",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/alderstone-park/the-parkman-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "114",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "102",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "170",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hare's Leap",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/hares-leap",
+      "name": "The Walden B",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/hares-leap/the-walden-b-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 800000,
+      "plots": [
+        {
+          "number": "3",
+          "price": 800000,
+          "available": true
+        },
+        {
+          "number": "13",
+          "price": 820000,
+          "available": true
+        },
+        {
+          "number": "4",
+          "price": 820000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hare's Leap",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/hares-leap",
+      "name": "The Tillingham.",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/hares-leap/the-tillingham-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1000000,
+      "plots": [
+        {
+          "number": "43",
+          "price": 1000000,
+          "available": true
+        },
+        {
+          "number": "37",
+          "price": 1100000,
+          "available": true
+        },
+        {
+          "number": "38",
+          "price": 1125000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hare's Leap",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/hares-leap",
+      "name": "The Danbury inc studio",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/hares-leap/the-danbury-inc-studio-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1075000,
+      "plots": [
+        {
+          "number": "44",
+          "price": 1075000,
+          "available": true
+        },
+        {
+          "number": "45",
+          "price": 1125000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Pennwood Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/pennwood-grange",
+      "name": "The Beaconsfield",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/pennwood-grange/the-beaconsfield-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 875000,
+      "plots": [
+        {
+          "number": "217",
+          "price": 875000,
+          "available": true
+        },
+        {
+          "number": "218",
+          "price": 900000,
+          "available": true
+        },
+        {
+          "number": "219",
+          "price": 900000,
+          "available": true
+        },
+        {
+          "number": "216",
+          "price": 900000,
+          "available": true
+        },
+        {
+          "number": "220",
+          "price": 905000,
+          "available": true
+        },
+        {
+          "number": "221",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "187",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "189",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "188",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Longwood Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/wales/longwood-grange",
+      "name": "Beech",
+      "url": "https://www.bellway.co.uk/new-homes/wales/longwood-grange/the-beech-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "197",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "194",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "70",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Longwood Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/wales/longwood-grange",
+      "name": "The Cypress",
+      "url": "https://www.bellway.co.uk/new-homes/wales/longwood-grange/the-cypress-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "193",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Harvino",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/harvino",
+      "name": "Royal",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/harvino/the-royal-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 940000,
+      "plots": [
+        {
+          "number": "45",
+          "price": 940000,
+          "available": true
+        },
+        {
+          "number": "67",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Elmfield Green",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/southern-counties/elmfield-green",
+      "name": "The Walker",
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/elmfield-green/the-walker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "39",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "46",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "45",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "60",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "44",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "77",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Rowden Chase",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/rowden-chase",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/rowden-chase/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "211",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "165",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "151",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "93",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "156",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Bellway at Boorley Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/wessex/bellway-at-boorley-gardens",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/wessex/bellway-at-boorley-gardens/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "565",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "547",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "566",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Tiger Moth Fields",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "87",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "86",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "175",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "174",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "110",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "176",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "177",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "111",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "85",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "115",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Tiger Moth Fields",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "45",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "47",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "52",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "48",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Dalmore Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "358",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "356",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "d6d413f7f77901a94283377ddbcf2c7a3d58ec78b96ab401ab60bbd86ec03c07"
+      ]
+    },
+    {
+      "development": "Dalmore Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange",
+      "name": "The Turnberry",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange/the-turnberry-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "357",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "355",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Firview",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-west/firview",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/firview/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 459995,
+      "plots": [
+        {
+          "number": "79",
+          "price": 459995,
+          "available": true
+        },
+        {
+          "number": "31",
+          "price": 461995,
+          "available": true
+        },
+        {
+          "number": "126",
+          "price": 464995,
+          "available": true
+        },
+        {
+          "number": "37",
+          "price": 465995,
+          "available": true
+        },
+        {
+          "number": "95",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "90",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "2",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "101",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "49a95edafc46ce5a849e1cac431c3f144d966e591908d3a9f30085d3324d48ec"
+      ]
+    },
+    {
+      "development": "Regent's Gate",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/regents-gate",
+      "name": "The Pinehurst 2",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/regents-gate/the-pinehurst-2-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1250000,
+      "plots": [
+        {
+          "number": "62",
+          "price": 1250000,
+          "available": true
+        },
+        {
+          "number": "63",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "64",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regent's Gate",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/regents-gate",
+      "name": "The Pinehurst 1",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/regents-gate/the-pinehurst-1-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1275000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 1275000,
+          "available": true
+        },
+        {
+          "number": "3",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Regent's Gate",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/regents-gate",
+      "name": "The Augusta",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/regents-gate/the-augusta-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1425000,
+      "plots": [
+        {
+          "number": "8",
+          "price": 1425000,
+          "available": true
+        },
+        {
+          "number": "10",
+          "price": 1425000,
+          "available": true
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Landsdale",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-west/landsdale",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/landsdale/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 473995,
+      "plots": [
+        {
+          "number": "403",
+          "price": 473995,
+          "available": true
+        },
+        {
+          "number": "388",
+          "price": 484995,
+          "available": true
+        },
+        {
+          "number": "380",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "232",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "208",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "234",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "284",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "211",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "372",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "236",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "121494ca6742f5a2d6b8cef5b651eea05b393f7677c8ceef4d214b8d753db2d7"
+      ]
+    },
+    {
+      "development": "Radley Reach",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/radley-reach",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/radley-reach/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 840000,
+      "plots": [
+        {
+          "number": "68",
+          "price": 840000,
+          "available": true
+        },
+        {
+          "number": "218",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "135",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "221",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "209",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "265",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "267",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "266",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "270",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "271",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "150",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "155",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "e384530edccb401773690cf2dea4bdb7618e75e8dbf31aa2fe3bf860e1f33cd6"
+      ]
+    },
+    {
+      "development": "Radley Reach",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/radley-reach",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/radley-reach/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "207",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "269",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "220",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "153",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "208",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "268",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "219",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "154",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "206",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "37d1e82ef5aadefbe1bea1fe110fba857a8ebcf9ccae4b6754c482f127c856a2"
+      ]
+    },
+    {
+      "development": "Oakwood at Wynyard Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/oakwood-at-wynyard-park",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/durham/oakwood-at-wynyard-park/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "168",
+          "price": 549995,
+          "available": true
+        },
+        {
+          "number": "52",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "31",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "122",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "116",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "16",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "53",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "115",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Hopwood Meadows",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/manchester/hopwood-meadows",
+      "name": "The Hawthorne",
+      "url": "https://www.bellway.co.uk/new-homes/manchester/hopwood-meadows/the-hawthorne-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "142",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "132",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "130",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Alexander Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/alexander-park",
+      "name": "The Millwright",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/alexander-park/the-millwright-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 820000,
+      "plots": [
+        {
+          "number": "187",
+          "price": 820000,
+          "available": true
+        },
+        {
+          "number": "221",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "208",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "124",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "114",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "154",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "127",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "190",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "211",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "151",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "218",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "117",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "3c7080b462dcb85ad8466a82ddde9f9316afd088786e279dcad2f2ca854178f9"
+      ]
+    },
+    {
+      "development": "Lydiate Gate",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/lydiate-gate",
+      "name": "The Parkman",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/lydiate-gate/the-parkman-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "48",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "45",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Gatehouse",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/the-gatehouse",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/the-gatehouse/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "98",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "220",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "96",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "50",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "44",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "157",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "193",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "231",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "64",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "2840c47e2431c5cea7497de7a0887f487ad3a6972d1a6483bf200adcfde26454"
+      ]
+    },
+    {
+      "development": "Astoria Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/astoria-park",
+      "name": "The Walker",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/astoria-park/the-walker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "165",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "144",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "151",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "164",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Astoria Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/astoria-park",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/astoria-park/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "153",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "124",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Lavender Rise",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/lavender-rise",
+      "name": "The Moreton",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/lavender-rise/the-moreton-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 775000,
+      "plots": [
+        {
+          "number": "52",
+          "price": 775000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Meadows at Hampden Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/the-meadows-at-hampden-gardens",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-meadows-at-hampden-gardens/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1025000,
+      "plots": [
+        {
+          "number": "45",
+          "price": 1025000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Baldwins Gate Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "85",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "8",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "9",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "22",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "86",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "84",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "21",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Baldwins Gate Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "23",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "83",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "87",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "17",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "20",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "14",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "25",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "19",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "efcf5ddc610edb80aea8ca92c1f96b0868e64ece0078c6050d7d9cf08de90ecc"
+      ]
+    },
+    {
+      "development": "Baldwins Gate Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange",
+      "name": "The Watchmaker Supreme",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange/the-watchmaker-supreme-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "7",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "10",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "efcf5ddc610edb80aea8ca92c1f96b0868e64ece0078c6050d7d9cf08de90ecc"
+      ]
+    },
+    {
+      "development": "Carnatic Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park",
+      "name": "The Swift",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park/the-swift-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 950000,
+      "plots": [
+        {
+          "number": "103",
+          "price": 950000,
+          "available": true
+        },
+        {
+          "number": "104",
+          "price": 950000,
+          "available": true
+        },
+        {
+          "number": "58",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "59",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Carnatic Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "105",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "61",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "60",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "57",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Carnatic Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park",
+      "name": "The Poulton",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park/the-poulton-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "127",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "122",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "113",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "96",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Baydale Village",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/baydale-village",
+      "name": "Sailmaker",
+      "url": "https://www.bellway.co.uk/new-homes/durham/baydale-village/the-sailmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 578950,
+      "plots": [
+        {
+          "number": "23",
+          "price": 578950,
+          "available": true
+        },
+        {
+          "number": "76",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "91",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "262",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "75",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "92",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Baydale Village",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/baydale-village",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/durham/baydale-village/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "93",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "86",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "79",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "87",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "90",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "45",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "83",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "94",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "4f42789f2d9c45a6f2f93d659ba1933fb2024732ede5ea9766a9f72bd3445a7a"
+      ]
+    },
+    {
+      "development": "Poulton Rise",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/poulton-rise",
+      "name": "The Poulton",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/poulton-rise/the-poulton-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "157",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "77",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "116",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "59",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Celtic Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/celtic-gardens",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/celtic-gardens/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 615000,
+      "plots": [
+        {
+          "number": "93",
+          "price": 615000,
+          "available": true
+        },
+        {
+          "number": "54",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "26",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "53",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Libbets Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/libbets-grange",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/libbets-grange/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "160",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "134",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "155",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "152",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "151",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Libbets Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/libbets-grange",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/libbets-grange/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "136",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "153",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "154",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "156",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "187",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "145",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "519aae7187bc6656078a8c80f0711b1746246f303e52d8ac0391850e613233b8"
+      ]
+    },
+    {
+      "development": "Regency Manor",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/regency-manor",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/durham/regency-manor/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 524995,
+      "plots": [
+        {
+          "number": "253",
+          "price": 524995,
+          "available": true
+        },
+        {
+          "number": "249",
+          "price": 529995,
+          "available": true
+        },
+        {
+          "number": "236",
+          "price": 534995,
+          "available": true
+        },
+        {
+          "number": "254",
+          "price": 539995,
+          "available": true
+        },
+        {
+          "number": "207",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Regency Manor",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/regency-manor",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/durham/regency-manor/the-draper-5-bedroom-detached-home-1",
+      "bedrooms": 5,
+      "price": 559995,
+      "plots": [
+        {
+          "number": "248",
+          "price": 559995,
+          "available": true
+        },
+        {
+          "number": "251",
+          "price": 564995,
+          "available": true
+        },
+        {
+          "number": "252",
+          "price": 564995,
+          "available": true
+        },
+        {
+          "number": "205",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Penny Way",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/yorkshire/penny-way",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/penny-way/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "78",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "160",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "4e203ebd6373e99bb7a5159e085ffdb4767915ef4cb92a8ecdfec459cd2e2d2f"
+      ]
+    },
+    {
+      "development": "Trident Way",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/yorkshire/trident-way",
+      "name": "The Dahlia",
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/trident-way/the-dahlia-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "255",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "256",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "260",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "234",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "251",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "247",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "259",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "232",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "8f4a49f84ac9095b310d530816ef64a9b331bbbad341964ab69c7921eb9b89cf"
+      ]
+    },
+    {
+      "development": "Radwinter Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/radwinter-gardens",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/radwinter-gardens/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "79",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "66",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "DH1",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/dh1",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/dh1/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "120",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "117",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "121",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "82",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "79",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "96",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "90",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "170",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "78",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "86",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "81",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "100",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "87",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "83",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "116",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "103",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "148",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "102",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "74",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "89",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "107",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "169",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "147",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "108",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "101",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "29f78e5ebd5c00b39e5a2e4aece0b59f031eaf972e598be9c96964e4f64462aa"
+      ]
+    },
+    {
+      "development": "DH1",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/dh1",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/dh1/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "168",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "118",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Clifford Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/yorkshire/clifford-gardens",
+      "name": "The Kettlewell",
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/clifford-gardens/the-kettlewell-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "70",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "65",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "54",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "53",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "66",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "0e783bf109cc8d9048ed418c060a3d196c5f82811e8427acc005ce26a5e6430c"
+      ]
+    },
+    {
+      "development": "Meadowcroft",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 659995,
+      "plots": [
+        {
+          "number": "9",
+          "price": 659995,
+          "available": true
+        },
+        {
+          "number": "6",
+          "price": 664995,
+          "available": true
+        },
+        {
+          "number": "8",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "19",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "29f78e5ebd5c00b39e5a2e4aece0b59f031eaf972e598be9c96964e4f64462aa"
+      ]
+    },
+    {
+      "development": "Meadowcroft",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft",
+      "name": "The Cedar",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft/the-cedar-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 664995,
+      "plots": [
+        {
+          "number": "25",
+          "price": 664995,
+          "available": true
+        },
+        {
+          "number": "17",
+          "price": 724995,
+          "available": true
+        },
+        {
+          "number": "20",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "26",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "21",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Meadowcroft",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft",
+      "name": "The Poplar",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft/the-poplar-5-bedroom-detached-home-1",
+      "bedrooms": 5,
+      "price": 684995,
+      "plots": [
+        {
+          "number": "13",
+          "price": 684995,
+          "available": true
+        },
+        {
+          "number": "14",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "4ecb928cb32c2d578753bf604b78e1e3aff686f80126711d8f1bca0ce802b294"
+      ]
+    },
+    {
+      "development": "Willow's Edge",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge",
+      "name": "The Aries",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge/the-aries-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "328",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Willow's Edge",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "3",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "4",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Willow's Edge",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge",
+      "name": "The Sagittarius",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge/the-sagittarius-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "21",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "6",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "9",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "23",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "7",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "5",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "2",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "8",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "22",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cathedral Rise",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/eastern-counties/cathedral-rise",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/cathedral-rise/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "181",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "168",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "194",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "192",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "214",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "The Old Foundry",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/durham/the-old-foundry",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/durham/the-old-foundry/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 509995,
+      "plots": [
+        {
+          "number": "82",
+          "price": 509995,
+          "available": true
+        },
+        {
+          "number": "60",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "51",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "61",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "73",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "55",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "72",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Clavering Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/kent/clavering-park",
+      "name": "The Napier",
+      "url": "https://www.bellway.co.uk/new-homes/kent/clavering-park/the-napier-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 789995,
+      "plots": [
+        {
+          "number": "63",
+          "price": 789995,
+          "available": true
+        },
+        {
+          "number": "61",
+          "price": 793995,
+          "available": true
+        },
+        {
+          "number": "59",
+          "price": 799995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Clavering Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/kent/clavering-park",
+      "name": "The Sandbank",
+      "url": "https://www.bellway.co.uk/new-homes/kent/clavering-park/the-sandbank-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 798995,
+      "plots": [
+        {
+          "number": "60",
+          "price": 798995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Prince's Gate",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
+      "name": "The Queenwood",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate/the-queenwood-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 415995,
+      "plots": [
+        {
+          "number": "487",
+          "price": 415995,
+          "available": true
+        },
+        {
+          "number": "464",
+          "price": 418995,
+          "available": true
+        },
+        {
+          "number": "424",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "324",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "351",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "463",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "472",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "430",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "346",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "413",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "440",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "432",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "b678f3a4779f55b98259e6a3fd490a5fb8d3c1aa19629098b78fce969653cc1a"
+      ]
+    },
+    {
+      "development": "Prince's Gate",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
+      "name": "The Lomond",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate/the-lomond-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 429995,
+      "plots": [
+        {
+          "number": "498",
+          "price": 429995,
+          "available": true
+        },
+        {
+          "number": "491",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "327",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "301",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "410",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "350",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Prince's Gate",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate/the-sunningdale-5-bedroom-detached-home-1",
+      "bedrooms": 5,
+      "price": 475995,
+      "plots": [
+        {
+          "number": "515",
+          "price": 475995,
+          "available": true
+        },
+        {
+          "number": "344",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "511",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "459",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "329",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "323",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "468",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "451",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "461",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Parsons Croft",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/yorkshire/parsons-croft",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/parsons-croft/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 534995,
+      "plots": [
+        {
+          "number": "17",
+          "price": 534995,
+          "available": true
+        },
+        {
+          "number": "203",
+          "price": 534995,
+          "available": true
+        },
+        {
+          "number": "75",
+          "price": 544995,
+          "available": true
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "173",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "4e203ebd6373e99bb7a5159e085ffdb4767915ef4cb92a8ecdfec459cd2e2d2f"
+      ]
+    },
+    {
+      "development": "Lathom Pastures",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/lathom-pastures",
+      "name": "The Parkman",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/lathom-pastures/the-parkman-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "277",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "251",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Scholars Walk",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/scholars-walk",
+      "name": "The Millwright",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/scholars-walk/the-millwright-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "3",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "4",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "47",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "48",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "92",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "82",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "3c7080b462dcb85ad8466a82ddde9f9316afd088786e279dcad2f2ca854178f9"
+      ]
+    },
+    {
+      "development": "Western Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/western-grange",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/western-grange/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 659995,
+      "plots": [
+        {
+          "number": "141",
+          "price": 659995,
+          "available": true
+        },
+        {
+          "number": "154",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "151",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "37d1e82ef5aadefbe1bea1fe110fba857a8ebcf9ccae4b6754c482f127c856a2"
+      ]
+    },
+    {
+      "development": "Mountain View",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-west/mountain-view",
+      "name": "The Parkman",
+      "url": "https://www.bellway.co.uk/new-homes/north-west/mountain-view/the-parkman-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 468995,
+      "plots": [
+        {
+          "number": "78",
+          "price": 468995,
+          "available": true
+        },
+        {
+          "number": "31",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "30",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Falcon Grove",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/falcon-grove",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/falcon-grove/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "288",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "225",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "4f42789f2d9c45a6f2f93d659ba1933fb2024732ede5ea9766a9f72bd3445a7a"
+      ]
+    },
+    {
+      "development": "Falcon Grove",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/falcon-grove",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/falcon-grove/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "287",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "519aae7187bc6656078a8c80f0711b1746246f303e52d8ac0391850e613233b8"
+      ]
+    },
+    {
+      "development": "High Leigh Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 900000,
+      "plots": [
+        {
+          "number": "57",
+          "price": 900000,
+          "available": true
+        },
+        {
+          "number": "85",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "20",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "68",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "22",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "70",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "86",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "74",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "82",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "69",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "97",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "77",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "34",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "29f78e5ebd5c00b39e5a2e4aece0b59f031eaf972e598be9c96964e4f64462aa"
+      ]
+    },
+    {
+      "development": "High Leigh Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange",
+      "name": "The Danbury",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange/the-danbury-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "151",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "145",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "154",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "149",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "148",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "146",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "High Leigh Grange",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "113",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "21",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "72",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "67",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Blenheim Green",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/kent/blenheim-green",
+      "name": "The Torque",
+      "url": "https://www.bellway.co.uk/new-homes/kent/blenheim-green/the-torque-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 906995,
+      "plots": [
+        {
+          "number": "17",
+          "price": 906995,
+          "available": true
+        },
+        {
+          "number": "18",
+          "price": 906995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Echelon",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/east-midlands/echelon",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/echelon/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 669950,
+      "plots": [
+        {
+          "number": "217",
+          "price": 669950,
+          "available": true
+        },
+        {
+          "number": "39",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "114",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "64",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "220",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "48",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "191",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "53",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "58",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "119",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "162",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "2",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "116",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "40",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "190",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "72",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "75",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Echelon",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/east-midlands/echelon",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/echelon/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 769950,
+      "plots": [
+        {
+          "number": "214",
+          "price": 769950,
+          "available": true
+        },
+        {
+          "number": "73",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "13",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "56",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "215",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "55",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "74",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "163",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Hartford Edge",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-east/hartford-edge",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/north-east/hartford-edge/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "540",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "474",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "392",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "464",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "514",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "539",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "475",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "505",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Quarrington Edge at Handley Chase",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/east-midlands/quarrington-edge-at-handley-chase",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/quarrington-edge-at-handley-chase/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "74",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "73",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "76",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "79",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "314",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "519aae7187bc6656078a8c80f0711b1746246f303e52d8ac0391850e613233b8"
+      ]
+    },
+    {
+      "development": "King George's Vale",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale",
+      "name": "The Granger",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale/the-granger-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 925000,
+      "plots": [
+        {
+          "number": "31",
+          "price": 925000,
+          "available": true
+        },
+        {
+          "number": "32",
+          "price": 935000,
+          "available": true
+        },
+        {
+          "number": "28",
+          "price": 950000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "King George's Vale",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale",
+      "name": "The Millbrook",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale/the-millbrook-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1000000,
+      "plots": [
+        {
+          "number": "35",
+          "price": 1000000,
+          "available": true
+        },
+        {
+          "number": "33",
+          "price": 1000000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3c7080b462dcb85ad8466a82ddde9f9316afd088786e279dcad2f2ca854178f9"
+      ]
+    },
+    {
+      "development": "King George's Vale",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale",
+      "name": "The Millwright",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale/the-millwright-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 1025000,
+      "plots": [
+        {
+          "number": "46",
+          "price": 1025000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3c7080b462dcb85ad8466a82ddde9f9316afd088786e279dcad2f2ca854178f9"
+      ]
+    },
+    {
+      "development": "Ridgewood",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-west/ridgewood",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/ridgewood/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "212",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "249",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "215",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "d6d413f7f77901a94283377ddbcf2c7a3d58ec78b96ab401ab60bbd86ec03c07"
+      ]
+    },
+    {
+      "development": "Priors Meadow",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 740000,
+      "plots": [
+        {
+          "number": "132",
+          "price": 740000,
+          "available": true
+        },
+        {
+          "number": "153",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "154",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "128",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "11f54c0050f0c3f271ade5d0e36b04cdca32c10e5d9176e7e6319750c2b93cd7"
+      ]
+    },
+    {
+      "development": "Priors Meadow",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow",
+      "name": "The Watchmaker Supreme",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow/the-watchmaker-supreme-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "143",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "efcf5ddc610edb80aea8ca92c1f96b0868e64ece0078c6050d7d9cf08de90ecc"
+      ]
+    },
+    {
+      "development": "Oakhill Meadow",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/southern-counties/oakhill-meadow",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/oakhill-meadow/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "25",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Dargavel Village",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-west/dargavel-village",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/dargavel-village/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 539995,
+      "plots": [
+        {
+          "number": "201",
+          "price": 539995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d6d413f7f77901a94283377ddbcf2c7a3d58ec78b96ab401ab60bbd86ec03c07"
+      ]
+    },
+    {
+      "development": "Lock Keeper Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/south-west/lock-keeper-gardens",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/south-west/lock-keeper-gardens/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "161",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "189",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "101",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "102",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "11f54c0050f0c3f271ade5d0e36b04cdca32c10e5d9176e7e6319750c2b93cd7"
+      ]
+    },
+    {
+      "development": "Pilgrim Manor",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/pilgrim-manor",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/pilgrim-manor/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "105",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "100",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "108",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "69",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "66",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "126",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "83",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "79",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "70",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Elfenne Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens",
+      "name": "The Queenwood",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens/the-queenwood-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 375995,
+      "plots": [
+        {
+          "number": "275",
+          "price": 375995,
+          "available": true
+        },
+        {
+          "number": "228",
+          "price": 392995,
+          "available": true
+        },
+        {
+          "number": "276",
+          "price": 392995,
+          "available": true
+        },
+        {
+          "number": "247",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "250",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "261",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "259",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "239",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "242",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "cdeb4fa16111c99ce8226b4b6cdb966722b5b4e529ca09e16421592759a86c4c"
+      ]
+    },
+    {
+      "development": "Elfenne Gardens",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens",
+      "name": "The Lomond",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens/the-lomond-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "274",
+          "price": 399995,
+          "available": true
+        },
+        {
+          "number": "277",
+          "price": 411995,
+          "available": true
+        },
+        {
+          "number": "231",
+          "price": 416995,
+          "available": true
+        },
+        {
+          "number": "236",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "248",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "260",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "249",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "262",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Cloverhill",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/scotland-west/cloverhill",
+      "name": "The Sunningdale",
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/cloverhill/the-sunningdale-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 514995,
+      "plots": [
+        {
+          "number": "218",
+          "price": 514995,
+          "available": true
+        },
+        {
+          "number": "438",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "456",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "3b42e950352503d9ecec9679e4aa2e96242fb7255bc71c44b7a69fec570650b2"
+      ]
+    },
+    {
+      "development": "Chamberlains Heath",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath",
+      "name": "The Leamington",
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath/the-leamington-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 700000,
+      "plots": [
+        {
+          "number": "47",
+          "price": 700000,
+          "available": true
+        },
+        {
+          "number": "165",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "192",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "62",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "185",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "67",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Chamberlains Heath",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath",
+      "name": "The Henlow",
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath/the-henlow-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "66",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Chamberlains Heath",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "193",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "184",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "188",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "183",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "194",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "189",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "DeHavilland Place",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/kent/dehavilland-place",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/kent/dehavilland-place/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 908995,
+      "plots": [
+        {
+          "number": "172",
+          "price": 908995,
+          "available": true
+        },
+        {
+          "number": "210",
+          "price": 915995,
+          "available": true
+        },
+        {
+          "number": "39",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "14",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "13",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "12",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "e384530edccb401773690cf2dea4bdb7618e75e8dbf31aa2fe3bf860e1f33cd6"
+      ]
+    },
+    {
+      "development": "Spires View",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view",
+      "name": "The Speer",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view/the-speer-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 965000,
+      "plots": [
+        {
+          "number": "70",
+          "price": 965000,
+          "available": true
+        },
+        {
+          "number": "68",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "69",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Spires View",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view",
+      "name": "The Speer",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view/the-speer-5-bedroom-mid-terrace-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "58",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "59",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "60",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Spires View",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view",
+      "name": "The Speer",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view/the-speer-5-bedroom-semi-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "21",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "46",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "43",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "45",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Spires View",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view",
+      "name": "The Speer",
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view/the-speer-5-bedroom-linked-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "33",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "34",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Barleywoods",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/east-midlands/barleywoods",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/barleywoods/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 650000,
+      "plots": [
+        {
+          "number": "11",
+          "price": 650000,
+          "available": true
+        },
+        {
+          "number": "6",
+          "price": 650000,
+          "available": true
+        },
+        {
+          "number": "40",
+          "price": 690000,
+          "available": true
+        },
+        {
+          "number": "1",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "519aae7187bc6656078a8c80f0711b1746246f303e52d8ac0391850e613233b8"
+      ]
+    },
+    {
+      "development": "Lancaster Fold",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 624995,
+      "plots": [
+        {
+          "number": "9",
+          "price": 624995,
+          "available": true
+        },
+        {
+          "number": "10",
+          "price": 624995,
+          "available": true
+        },
+        {
+          "number": "17",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "37",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "2",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "39",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "44",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "18",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "34",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "155",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "156",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6"
+      ]
+    },
+    {
+      "development": "Lancaster Fold",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "19",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "15",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "16",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "158",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "20",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "162",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "35",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "36",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "159",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "161",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89"
+      ]
+    },
+    {
+      "development": "Bellway at Whitford Heights",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights",
+      "name": "The Watchmaker",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights/the-watchmaker-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 699995,
+      "plots": [
+        {
+          "number": "57",
+          "price": 699995,
+          "available": true
+        },
+        {
+          "number": "56",
+          "price": 699995,
+          "available": true
+        },
+        {
+          "number": "269",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "268",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "8f4a49f84ac9095b310d530816ef64a9b331bbbad341964ab69c7921eb9b89cf"
+      ]
+    },
+    {
+      "development": "Bellway at Whitford Heights",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights",
+      "name": "The Bosworth",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights/the-bosworth-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 649995,
+      "plots": [
+        {
+          "number": "52",
+          "price": 649995,
+          "available": true
+        },
+        {
+          "number": "69",
+          "price": 649995,
+          "available": true
+        },
+        {
+          "number": "290",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "312",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "267",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bellway at Whitford Heights",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights",
+      "name": "The Draper",
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights/the-draper-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 725000,
+      "plots": [
+        {
+          "number": "55",
+          "price": 725000,
+          "available": true
+        },
+        {
+          "number": "306",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "307",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "37d1e82ef5aadefbe1bea1fe110fba857a8ebcf9ccae4b6754c482f127c856a2"
+      ]
+    },
+    {
+      "development": "Bellway at St James' Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park",
+      "name": "The Granger",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park/the-granger-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 695000,
+      "plots": [
+        {
+          "number": "206",
+          "price": 695000,
+          "available": true
+        },
+        {
+          "number": "272",
+          "price": 720000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bellway at St James' Park",
+      "developmentUrl": "https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park",
+      "name": "The Millwright",
+      "url": "https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park/the-millwright-5-bedroom-detached-home",
+      "bedrooms": 5,
+      "price": 750000,
+      "plots": [
+        {
+          "number": "262",
+          "price": 750000,
+          "available": true
+        },
+        {
+          "number": "270",
+          "price": 775000,
+          "available": true
+        },
+        {
+          "number": "271",
+          "price": 775000,
+          "available": true
+        },
+        {
+          "number": "273",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "416",
+          "price": null,
+          "available": false
+        },
+        {
+          "number": "413",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": []
+    }
+  ],
+  "images": [
+    {
+      "id": "770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89",
+      "path": "images/770333f3544d50c04533f53ac93a60d17a64fa55c98340cc609318db0657ae89.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Draper/Centurion-Chase/_large/2863661/025_bellway_centurion_chase_draper_DSC_0790.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office room featuring built-in wooden shelving units, a desk area with a laptop, an office chair, and a window with blinds.",
+        "reason": "The image shows a home office space with a visible desk and office chair, and there is no visible bed or sleeping furniture present."
+      }
+    },
+    {
+      "id": "01c2ed406ce8d94d8927ecb4ead7c52d180f87ff0fd9cfa9d36dfcd16f4e1a59",
+      "path": "images/01c2ed406ce8d94d8927ecb4ead7c52d180f87ff0fd9cfa9d36dfcd16f4e1a59.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/west-midlands/sheasby-park/images/_large/1160805/64779-3z9a8624.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a large wooden desk, computer, office chair, armchair, and shelving units.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "519aae7187bc6656078a8c80f0711b1746246f303e52d8ac0391850e613233b8",
+      "path": "images/519aae7187bc6656078a8c80f0711b1746246f303e52d8ac0391850e613233b8.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Watchmaker/Barleywoods/_large/2718479/023-BellwayEC_Barleywoods_Watchmaker_Rooms.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office featuring a long built-in desk with two chairs, dual computer monitors, desk lamps, and wall art.",
+        "reason": "This room is staged as a home office/study with a visible desk and work surface, and no bed."
+      }
+    },
+    {
+      "id": "22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6",
+      "path": "images/22915b786fe9b83af518808bedf172f272ddc33541a423e320736fcb603eb7e6.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Watchmaker/Regency-Manor/Updated/_large/3083867/013-BellwayDurham_RegencyManor_Watchmaker_Rooms.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "Home office staged with an extensive built-in desk system, a computer monitor, office chair, overhead shelving, and an armchair.",
+        "reason": "It is staged as a home office/study with a visible desk and work surface, and there is no bed present."
+      }
+    },
+    {
+      "id": "d6d413f7f77901a94283377ddbcf2c7a3d58ec78b96ab401ab60bbd86ec03c07",
+      "path": "images/d6d413f7f77901a94283377ddbcf2c7a3d58ec78b96ab401ab60bbd86ec03c07.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Scotland-Showhome-Photography/The-Sunningdale/Dargavel-Village/_large/2509435/DV_Sunningdale_25.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office set up with a dark desk, computer monitor, office chair, and a black sofa.",
+        "reason": "It is staged as a home office with a visible desk/work surface and no bed."
+      }
+    },
+    {
+      "id": "49a95edafc46ce5a849e1cac431c3f144d966e591908d3a9f30085d3324d48ec",
+      "path": "images/49a95edafc46ce5a849e1cac431c3f144d966e591908d3a9f30085d3324d48ec.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/scotland-west/Firview/images/Sunningdale/_large/3227704/Sunningdale_26.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office or study staged with a black computer desk, office chair, desktop computer, and a large dark shelving unit filled with decorative items and storage boxes against patterned wallpaper.",
+        "reason": "The room is staged as a home office/study with a visible desk and work surface, and contains no bed, cot, or mattress."
+      }
+    },
+    {
+      "id": "121494ca6742f5a2d6b8cef5b651eea05b393f7677c8ceef4d214b8d753db2d7",
+      "path": "images/121494ca6742f5a2d6b8cef5b651eea05b393f7677c8ceef4d214b8d753db2d7.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Scotland-Showhome-Photography/The-Sunningdale/Landsdale/_large/2793781/L2_Sunningdale_21.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk with a chair, a long grey sofa against the wall with decorative shelving above, and no bed present.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "e384530edccb401773690cf2dea4bdb7618e75e8dbf31aa2fe3bf860e1f33cd6",
+      "path": "images/e384530edccb401773690cf2dea4bdb7618e75e8dbf31aa2fe3bf860e1f33cd6.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Watchmaker/DeHavilland-Place/_large/2783084/242055-16.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A green-walled home office featuring a built-in desk with a computer, an office chair, cabinetry, and an armchair.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and contains no bed."
+      }
+    },
+    {
+      "id": "37d1e82ef5aadefbe1bea1fe110fba857a8ebcf9ccae4b6754c482f127c856a2",
+      "path": "images/37d1e82ef5aadefbe1bea1fe110fba857a8ebcf9ccae4b6754c482f127c856a2.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Draper/The-Grange-at-Fenham/_large/2486637/bed-5-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a glass-topped desk, ergonomic office chair, computer monitor, and decorative artwork.",
+        "reason": "The room contains a visible desk for office work and no bed, perfectly matching a home office."
+      }
+    },
+    {
+      "id": "3c7080b462dcb85ad8466a82ddde9f9316afd088786e279dcad2f2ca854178f9",
+      "path": "images/3c7080b462dcb85ad8466a82ddde9f9316afd088786e279dcad2f2ca854178f9.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/north-london/king-georges-vale/images/The-Millwright/_large/2825703/242073-27.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a built-in dark blue desk, desktop computer, chair, and overhead shelving.",
+        "reason": "The room is staged as a dedicated home office with a clear work surface and no bed."
+      }
+    },
+    {
+      "id": "2840c47e2431c5cea7497de7a0887f487ad3a6972d1a6483bf200adcfde26454",
+      "path": "images/2840c47e2431c5cea7497de7a0887f487ad3a6972d1a6483bf200adcfde26454.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Scotland-Showhome-Photography/The-Sunningdale/Ladywood-View/_large/2500425/Ladywood_Sunningdale_29.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office with a dark desk, an office chair, shelving unit, and patterned wallpaper.",
+        "reason": "This room is staged as a home office/study with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "efcf5ddc610edb80aea8ca92c1f96b0868e64ece0078c6050d7d9cf08de90ecc",
+      "path": "images/efcf5ddc610edb80aea8ca92c1f96b0868e64ece0078c6050d7d9cf08de90ecc.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Watchmaker/Baldwins-Gate-Grange/_large/3092952/018-BellwayWM_BaldwinsGateGrange_Watchmaker_Rooms.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with green walls and built-in cabinetry, featuring a large desk with a laptop, an office chair, and shelving.",
+        "reason": "This is a home office/study staged with a visible desk/work surface and no bed."
+      }
+    },
+    {
+      "id": "4f42789f2d9c45a6f2f93d659ba1933fb2024732ede5ea9766a9f72bd3445a7a",
+      "path": "images/4f42789f2d9c45a6f2f93d659ba1933fb2024732ede5ea9766a9f72bd3445a7a.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Draper/Falcon-Grove/_large/3162393/044_Bellway_Falcon_Court_Draper_18122025_DSC_4786.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a desk with a computer monitor, an office chair, a large shelving unit, and a potted plant.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "4e203ebd6373e99bb7a5159e085ffdb4767915ef4cb92a8ecdfec459cd2e2d2f",
+      "path": "images/4e203ebd6373e99bb7a5159e085ffdb4767915ef4cb92a8ecdfec459cd2e2d2f.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Watchmaker/Parsons-Croft/_large/2474458/013-Bellway_ParsonsCroft_Watchmaker_Internal_Rooms.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office/study",
+        "description": "A home office or study featuring a dark desk with a laptop, an ergonomic chair, paneled walls, and a built-in bar area.",
+        "reason": "The room is staged as a study/home office with a visible desk and work surface, and contains no bed."
+      }
+    },
+    {
+      "id": "8f4a49f84ac9095b310d530816ef64a9b331bbbad341964ab69c7921eb9b89cf",
+      "path": "images/8f4a49f84ac9095b310d530816ef64a9b331bbbad341964ab69c7921eb9b89cf.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Watchmaker/Longholme-Park/_large/2474440/017-Bellway_LongholmePark_Watchmaker_Rooms.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit home office with a dark wood desk, matching chair, armchair, and shelving unit.",
+        "reason": "This is a home office with a visible desk for office work and no bed present."
+      }
+    },
+    {
+      "id": "29f78e5ebd5c00b39e5a2e4aece0b59f031eaf972e598be9c96964e4f64462aa",
+      "path": "images/29f78e5ebd5c00b39e5a2e4aece0b59f031eaf972e598be9c96964e4f64462aa.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Draper/Meadowcroft/_large/3040301/049bellway_meadowcroft_draper_showhome_DSC_6502.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring built-in dark cabinetry, a computer desk with a desktop monitor, a rolling chair, and an orange armchair.",
+        "reason": "The room is staged as a home office with a visible desk and work surface, and has no bed."
+      }
+    },
+    {
+      "id": "0e783bf109cc8d9048ed418c060a3d196c5f82811e8427acc005ce26a5e6430c",
+      "path": "images/0e783bf109cc8d9048ed418c060a3d196c5f82811e8427acc005ce26a5e6430c.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/yorkshire/clifford-gardens/images/The-Kettlewell/_large/2782089/bellway-kettlewell-conyers-green-7.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A home office or study staged with a dark desk, two armchairs, a side table with a lamp, and wall art.",
+        "reason": "It is a home office/study containing a desk and no bed."
+      }
+    },
+    {
+      "id": "4ecb928cb32c2d578753bf604b78e1e3aff686f80126711d8f1bca0ce802b294",
+      "path": "images/4ecb928cb32c2d578753bf604b78e1e3aff686f80126711d8f1bca0ce802b294.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/north-east/meadowcroft/images/The-Poplar/_large/2920626/004_bellway_meadowcroft_poplar_showhome_DSC_8404.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with dark blue walls, built-in shelving, a large wooden desk with a laptop, an office chair, and an armchair.",
+        "reason": "The room features a desk and work surface suitable for office work, and there is no visible bed."
+      }
+    },
+    {
+      "id": "b678f3a4779f55b98259e6a3fd490a5fb8d3c1aa19629098b78fce969653cc1a",
+      "path": "images/b678f3a4779f55b98259e6a3fd490a5fb8d3c1aa19629098b78fce969653cc1a.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/scotland-east/princes-gate/images/_large/370147/63474-princesgate_queenwood_10.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk, laptop, office chair, and shelving units.",
+        "reason": "The room is staged as a home office with a clear work desk surface and no bed present."
+      }
+    },
+    {
+      "id": "11f54c0050f0c3f271ade5d0e36b04cdca32c10e5d9176e7e6319750c2b93cd7",
+      "path": "images/11f54c0050f0c3f271ade5d0e36b04cdca32c10e5d9176e7e6319750c2b93cd7.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Watchmaker/Priors-Meadow/_large/3210187/021-BellwayWM_PriorsMeadow_Watchmaker_Rooms.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring an L-shaped desk setup, computer, office chair, overhead cabinets, and a window.",
+        "reason": "The room is clearly staged as a home office/study with a visible desk and work surface, and no visible bed."
+      }
+    },
+    {
+      "id": "cdeb4fa16111c99ce8226b4b6cdb966722b5b4e529ca09e16421592759a86c4c",
+      "path": "images/cdeb4fa16111c99ce8226b4b6cdb966722b5b4e529ca09e16421592759a86c4c.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Scotland-Showhome-Photography/The-Queenwood/Elfenne-Gardens/_large/2697598/EG_Queenwood_08.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A well-lit study or home office featuring a wooden desk with a laptop, an office chair, and warm orange textured wallpaper.",
+        "reason": "The room is staged as a home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "3b42e950352503d9ecec9679e4aa2e96242fb7255bc71c44b7a69fec570650b2",
+      "path": "images/3b42e950352503d9ecec9679e4aa2e96242fb7255bc71c44b7a69fec570650b2.webp",
+      "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Scotland-Showhome-Photography/The-Sunningdale/Cloverhill/_large/2784680/C_Sunningdale_24.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged home office featuring a modern dark desk with a laptop, an office chair, an armchair, and decorative wall art.",
+        "reason": "The room is a home office with a visible desk and work surface, and has no visible bed."
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 252,
+    "qualifyingDiscovered": 118,
+    "propertyLimitOmissions": 0,
+    "reusedImages": 18,
+    "reusedGalleries": 2,
+    "imagesAttempted": 751,
+    "pendingImages": 0,
+    "matchedImages": 22,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 733
+  },
+  "completedAt": "2026-10-02T00:06:20.806Z"
+}
