@@ -23,13 +23,15 @@ export function Gallery({ collections, favouritesOnly = false }: { collections: 
   setFavourites(next); try { localStorage.setItem(key, JSON.stringify(next)); } catch { /* Saving may be unavailable in private browser storage. */ }
  }
  const all = collections.flatMap(c => c.report.images.map(image => ({ ...image, slug: c.slug, developer: c.name, homes: c.report.properties.filter(p => p.imageIds.includes(image.id)), uid: `${c.slug}:${image.id}` })));
- const images = all.filter(image => {
+ const available = all.filter(image => image.verdict?.matches && (!favouritesOnly || favourites.includes(image.id)));
+ const images = available.filter(image => {
   if (favouritesOnly && (!image.verdict?.matches || !favourites.includes(image.id))) return false;
   if (!image.verdict?.matches) return false;
   if (development && !image.homes.some(h => h.developmentUrl === development)) return false;
   return `${image.developer} ${image.verdict?.description ?? ''} ${image.homes.map(h => `${h.name} ${h.development}`).join(' ')}`.toLowerCase().includes(query.toLowerCase());
  });
- const sites = [...new Map(collections.flatMap(c => c.report.properties.map(p => [p.developmentUrl, p.development] as const))).entries()].sort((a, b) => a[1].localeCompare(b[1]));
+ const sites = [...new Map(available.flatMap(image => image.homes.map(p => [p.developmentUrl, p.development] as const))).entries()].sort((a, b) => a[1].localeCompare(b[1]));
+ useEffect(() => { if (development && !sites.some(([url]) => url === development)) setDevelopment(''); }, [development, sites]);
  const current = images.find(i => i.uid === selected);
  function open(uid: string) { setSelected(uid); dialog.current?.showModal(); }
  function step(direction: number) { const index = images.findIndex(i => i.uid === selected); setSelected(images[(index + direction + images.length) % images.length]?.uid ?? null); }
