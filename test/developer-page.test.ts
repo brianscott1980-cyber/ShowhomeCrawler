@@ -37,6 +37,7 @@ describe('Developer report pages', () => {
    document.querySelector<HTMLButtonElement>('.card-save')!.click();
    expect(JSON.parse(localStorage.getItem('showhome-favourites-v1')!)).toEqual(['one']);
    expect(document.querySelector('.card-save')?.getAttribute('aria-pressed')).toBe('true');
+   expect(document.querySelector('[data-favourites-count]')?.textContent).toBe('1');
    expect(document.querySelector('.site-header')).toBeNull();
   } finally { dom.window.close(); }
  });

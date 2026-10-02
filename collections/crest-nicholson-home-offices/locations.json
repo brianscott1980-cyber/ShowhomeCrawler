@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Curbridge Meadows",
+    "url": "https://www.crestnicholson.com/developments/hampshire/curbridge-meadows",
+    "postcode": "PO15 7PZ",
+    "latitude": 50.896247,
+    "longitude": -1.256487
+  },
+  {
+    "name": "Sketchley Gardens",
+    "url": "https://www.crestnicholson.com/developments/warwickshire/sketchley-gardens",
+    "postcode": "CV11 6WZ",
+    "latitude": 52.518749,
+    "longitude": -1.441544
+  },
+  {
+    "name": "Lewin Park",
+    "url": "https://www.crestnicholson.com/developments/bedfordshire/lewin-park",
+    "postcode": "SG18 9PL",
+    "latitude": 52.047519,
+    "longitude": -0.26491
+  },
+  {
+    "name": "Crest Nicholson at Malabar",
+    "url": "https://www.crestnicholson.com/developments/northamptonshire/malabar",
+    "postcode": "NN11 4NN",
+    "latitude": 52.253074,
+    "longitude": -1.190863
+  },
+  {
+    "name": "Copley Park",
+    "url": "https://www.crestnicholson.com/developments/south-yorkshire/copley-park",
+    "postcode": "DN5 7NU",
+    "latitude": 53.513278,
+    "longitude": -1.194106
+  },
+  {
+    "name": "Cygnet View",
+    "url": "https://www.crestnicholson.com/developments/east-riding-of-yorkshire/cygnet-view",
+    "postcode": "HU14 3GD",
+    "latitude": 53.740242,
+    "longitude": -0.496632
+  },
+  {
+    "name": "Meadow Fields",
+    "url": "https://www.crestnicholson.com/developments/north-yorkshire/meadow-fields",
+    "postcode": "YO13 9HT",
+    "latitude": 54.254258,
+    "longitude": -0.470563
+  },
+  {
+    "name": "Windsor Gate",
+    "url": "https://www.crestnicholson.com/developments/berkshire/windsor-gate",
+    "postcode": "SL4 5TZ",
+    "latitude": 51.486611,
+    "longitude": -0.660383
+  },
+  {
+    "name": "Westcombe Park",
+    "url": "https://www.crestnicholson.com/developments/essex/westcombe-park",
+    "postcode": "CM9 4HD",
+    "latitude": 51.747944,
+    "longitude": 0.68347
+  },
+  {
+    "name": "Newlands Place",
+    "url": "https://www.crestnicholson.com/developments/berkshire/newlands-place",
+    "postcode": "RG2 9GJ",
+    "latitude": 51.385797,
+    "longitude": -0.887126
+  }
+]

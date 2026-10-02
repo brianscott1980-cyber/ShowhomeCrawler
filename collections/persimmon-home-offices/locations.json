@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Thickthorn Gardens",
+    "url": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens",
+    "postcode": "CV8 2AJ",
+    "latitude": 52.338223,
+    "longitude": -1.560104
+  },
+  {
+    "name": "Abbot Walk",
+    "url": "https://www.persimmonhomes.com/new-homes/east-midlands/abbot-walk",
+    "postcode": "PE16 6UA",
+    "latitude": 52.466433,
+    "longitude": 0.040867
+  },
+  {
+    "name": "Willow Grove",
+    "url": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove",
+    "postcode": "BB2 4JJ",
+    "latitude": 53.724755,
+    "longitude": -2.489314
+  },
+  {
+    "name": "The Hawthorns",
+    "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
+    "postcode": "LE16 9HW",
+    "latitude": 52.465059,
+    "longitude": -0.913597
+  },
+  {
+    "name": "Overstone Gate",
+    "url": "https://www.persimmonhomes.com/new-homes/midlands/overstone-gate",
+    "postcode": "NN6 0RR",
+    "latitude": 52.294158,
+    "longitude": -0.831869
+  },
+  {
+    "name": "Eaton Place",
+    "url": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place",
+    "postcode": "CV11 6BD",
+    "latitude": 52.543403,
+    "longitude": -1.447896
+  },
+  {
+    "name": "Brascote Park",
+    "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
+    "postcode": "LE9 9RS",
+    "latitude": 52.604224,
+    "longitude": -1.273557
+  },
+  {
+    "name": "The View",
+    "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view",
+    "postcode": "B97 6FG",
+    "latitude": 52.321716,
+    "longitude": -1.953615
+  },
+  {
+    "name": "Wykham Park",
+    "url": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park",
+    "postcode": "OX16 9UN",
+    "latitude": 52.043888,
+    "longitude": -1.358196
+  },
+  {
+    "name": "Regents Village",
+    "url": "https://www.persimmonhomes.com/new-homes/south-midlands/regents-village",
+    "postcode": "GL51 9FU",
+    "latitude": 51.919761,
+    "longitude": -2.102644
+  },
+  {
+    "name": "Swan Park",
+    "url": "https://www.persimmonhomes.com/new-homes/south-west/swan-park",
+    "postcode": "EX7 0RL",
+    "latitude": 50.598563,
+    "longitude": -3.46933
+  },
+  {
+    "name": "Boyton Place",
+    "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
+    "postcode": "CB9 9BF",
+    "latitude": 52.085778,
+    "longitude": 0.422404
+  },
+  {
+    "name": "Trelawny Place",
+    "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
+    "postcode": "IP11 9QZ",
+    "latitude": 51.981379,
+    "longitude": 1.33615
+  },
+  {
+    "name": "Castleton Grange",
+    "url": "https://www.persimmonhomes.com/new-homes/suffolk/castleton-grange",
+    "postcode": "IP23 7FD",
+    "latitude": 52.324848,
+    "longitude": 1.135284
+  },
+  {
+    "name": "Aldhurst View",
+    "url": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view",
+    "postcode": "IP16 4RD",
+    "latitude": 52.210928,
+    "longitude": 1.576095
+  },
+  {
+    "name": "Constable Vale",
+    "url": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale",
+    "postcode": "IP7 6FY",
+    "latitude": 52.046852,
+    "longitude": 0.969608
+  },
+  {
+    "name": "Cherry Tree Gardens",
+    "url": "https://www.persimmonhomes.com/new-homes/west-midlands/cherry-tree-gardens",
+    "postcode": "TF4 2UE",
+    "latitude": 52.672764,
+    "longitude": -2.474855
+  },
+  {
+    "name": "Snowdon Gait",
+    "url": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait",
+    "postcode": "KA23 9HN",
+    "latitude": 55.691098,
+    "longitude": -4.86563
+  },
+  {
+    "name": "Awel Y Mynydd",
+    "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
+    "postcode": "SA16 0FJ",
+    "latitude": 51.689634,
+    "longitude": -4.278451
+  }
+]

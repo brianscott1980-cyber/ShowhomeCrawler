@@ -166,3 +166,7 @@ npm run results:classify -- --folder results/persimmon-home-offices --model gemi
 ```
 
 Completed decisions are retained. Each image records `analysisModel`, and database classifications use that actual model. Long quota reset delays stop retries instead of repeatedly submitting requests.
+
+Developer directory supports large cards, a compact grid, and a list. The selected layout is stored locally; default sorting shows most matching spaces first. Distance sorting uses straight-line miles to the nearest development with published matches. Users can enter a UK postcode (looked up through [Postcodes.io](https://postcodes.io/docs/overview/)) or explicitly request browser geolocation. Browser coordinates remain in client state; the application does not persist postcode lookups.
+
+Refresh published development location metadata after publishing collections with `npx tsx src/cli/collection-locations.ts`. Metadata is extracted from development pages and their postcode/map data and stored alongside each collection as `locations.json`. Previously resolved locations are reused.

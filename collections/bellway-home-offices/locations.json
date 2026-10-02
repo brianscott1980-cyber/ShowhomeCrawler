@@ -1,0 +1,356 @@
+[
+  {
+    "name": "Centurion Chase",
+    "url": "https://www.bellway.co.uk/new-homes/north-east/centurion-chase",
+    "postcode": "NE28 8SU",
+    "latitude": 54.994373,
+    "longitude": -1.552682
+  },
+  {
+    "name": "Sheasby Park",
+    "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
+    "latitude": 52.71642,
+    "longitude": -1.7837
+  },
+  {
+    "name": "Arden Glade",
+    "url": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade",
+    "postcode": "CV7 8JE",
+    "latitude": 52.452707,
+    "longitude": -1.534893
+  },
+  {
+    "name": "Rowden Chase",
+    "url": "https://www.bellway.co.uk/new-homes/south-west/rowden-chase",
+    "postcode": "SN152NU",
+    "latitude": 51.438434,
+    "longitude": -2.131139
+  },
+  {
+    "name": "Bellway at Boorley Gardens",
+    "url": "https://www.bellway.co.uk/new-homes/wessex/bellway-at-boorley-gardens",
+    "postcode": "SO32 2BX",
+    "latitude": 50.938516,
+    "longitude": -1.288848
+  },
+  {
+    "name": "Tiger Moth Fields",
+    "url": "https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields",
+    "postcode": "SN15 4PA",
+    "latitude": 51.513504,
+    "longitude": -1.973933
+  },
+  {
+    "name": "Dalmore Grange",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange",
+    "postcode": "EH26 0GJ",
+    "latitude": 55.84998,
+    "longitude": -3.190005
+  },
+  {
+    "name": "Firview",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-west/firview",
+    "postcode": "G67 3PD",
+    "latitude": 55.952944,
+    "longitude": -3.954023
+  },
+  {
+    "name": "Landsdale",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-west/landsdale",
+    "postcode": "G75 8RR",
+    "latitude": 55.744783,
+    "longitude": -4.23787
+  },
+  {
+    "name": "Radley Reach",
+    "url": "https://www.bellway.co.uk/new-homes/thames-valley/radley-reach",
+    "postcode": "OX14 2HP",
+    "latitude": 51.688071,
+    "longitude": -1.259037
+  },
+  {
+    "name": "Oakwood at Wynyard Park",
+    "url": "https://www.bellway.co.uk/new-homes/durham/oakwood-at-wynyard-park",
+    "postcode": "TS22 5FQ",
+    "latitude": 54.640474,
+    "longitude": -1.327864
+  },
+  {
+    "name": "Alexander Park",
+    "url": "https://www.bellway.co.uk/new-homes/thames-valley/alexander-park",
+    "postcode": "GU11 4BE",
+    "latitude": 51.257954,
+    "longitude": -0.766869
+  },
+  {
+    "name": "The Gatehouse",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-east/the-gatehouse",
+    "postcode": "EH21 8LZ",
+    "latitude": 55.920805,
+    "longitude": -3.042209
+  },
+  {
+    "name": "Astoria Park",
+    "url": "https://www.bellway.co.uk/new-homes/thames-valley/astoria-park",
+    "postcode": "SL6 9EE",
+    "latitude": 51.548763,
+    "longitude": -0.732313
+  },
+  {
+    "name": "The Meadows at Hampden Gardens",
+    "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-meadows-at-hampden-gardens",
+    "postcode": "OX9 3SJ",
+    "latitude": 51.738168,
+    "longitude": -0.961517
+  },
+  {
+    "name": "Baldwins Gate Grange",
+    "url": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange",
+    "postcode": "ST5 5FQ",
+    "latitude": 52.956924,
+    "longitude": -2.315801
+  },
+  {
+    "name": "Carnatic Park",
+    "url": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park",
+    "postcode": "L18 8DU",
+    "latitude": 53.375819,
+    "longitude": -2.923265
+  },
+  {
+    "name": "Baydale Village",
+    "url": "https://www.bellway.co.uk/new-homes/durham/baydale-village",
+    "postcode": "DL2 2NB",
+    "latitude": 54.547034,
+    "longitude": -1.636251
+  },
+  {
+    "name": "Celtic Gardens",
+    "url": "https://www.bellway.co.uk/new-homes/south-west/celtic-gardens",
+    "postcode": "TA3 5EB",
+    "latitude": 51.031595,
+    "longitude": -3.038016
+  },
+  {
+    "name": "Libbets Grange",
+    "url": "https://www.bellway.co.uk/new-homes/south-west/libbets-grange",
+    "postcode": "EX17 1DW",
+    "latitude": 50.79518,
+    "longitude": -3.643693
+  },
+  {
+    "name": "Regency Manor",
+    "url": "https://www.bellway.co.uk/new-homes/durham/regency-manor",
+    "postcode": "TS22 5WL",
+    "latitude": 54.640587,
+    "longitude": -1.37766
+  },
+  {
+    "name": "Penny Way",
+    "url": "https://www.bellway.co.uk/new-homes/yorkshire/penny-way",
+    "postcode": "DN14 9LB",
+    "latitude": 53.689094,
+    "longitude": -1.035946
+  },
+  {
+    "name": "Trident Way",
+    "url": "https://www.bellway.co.uk/new-homes/yorkshire/trident-way",
+    "postcode": "HU15 1XB",
+    "latitude": 53.724149,
+    "longitude": -0.566806
+  },
+  {
+    "name": "Radwinter Gardens",
+    "url": "https://www.bellway.co.uk/new-homes/north-london/radwinter-gardens",
+    "postcode": "CB10 2LB",
+    "latitude": 52.021409,
+    "longitude": 0.264591
+  },
+  {
+    "name": "DH1",
+    "url": "https://www.bellway.co.uk/new-homes/north-east/dh1",
+    "postcode": "DH1 5RA",
+    "latitude": 54.795971,
+    "longitude": -1.606478
+  },
+  {
+    "name": "Clifford Gardens",
+    "url": "https://www.bellway.co.uk/new-homes/yorkshire/clifford-gardens",
+    "postcode": "BD23 3BT",
+    "latitude": 53.949379,
+    "longitude": -2.024971
+  },
+  {
+    "name": "Meadowcroft",
+    "url": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft",
+    "postcode": "NE65 8BZ",
+    "latitude": 55.306892,
+    "longitude": -1.799594
+  },
+  {
+    "name": "Willow's Edge",
+    "url": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge",
+    "postcode": "SL6 7HL",
+    "latitude": 51.536804,
+    "longitude": -0.725653
+  },
+  {
+    "name": "Cathedral Rise",
+    "url": "https://www.bellway.co.uk/new-homes/eastern-counties/cathedral-rise",
+    "postcode": "CB6 2FU",
+    "latitude": 52.410831,
+    "longitude": 0.260606
+  },
+  {
+    "name": "Prince's Gate",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
+    "latitude": 55.95569,
+    "longitude": -2.95046
+  },
+  {
+    "name": "Parsons Croft",
+    "url": "https://www.bellway.co.uk/new-homes/yorkshire/parsons-croft",
+    "postcode": "HU10 6DP",
+    "latitude": 53.762326,
+    "longitude": -0.460284
+  },
+  {
+    "name": "Scholars Walk",
+    "url": "https://www.bellway.co.uk/new-homes/north-london/scholars-walk",
+    "postcode": "CM23 3LU",
+    "latitude": 51.8567,
+    "longitude": 0.162364
+  },
+  {
+    "name": "Western Grange",
+    "url": "https://www.bellway.co.uk/new-homes/north-east/western-grange",
+    "postcode": "NE12 6BA",
+    "latitude": 55.030781,
+    "longitude": -1.548804
+  },
+  {
+    "name": "Falcon Grove",
+    "url": "https://www.bellway.co.uk/new-homes/north-east/falcon-grove",
+    "postcode": "NE15 9GJ",
+    "latitude": 55.002576,
+    "longitude": -1.728997
+  },
+  {
+    "name": "High Leigh Grange",
+    "url": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange",
+    "postcode": "EN11 8FW",
+    "latitude": 51.762423,
+    "longitude": -0.025797
+  },
+  {
+    "name": "Echelon",
+    "url": "https://www.bellway.co.uk/new-homes/east-midlands/echelon",
+    "postcode": "LE6 0LF",
+    "latitude": 52.646176,
+    "longitude": -1.259887
+  },
+  {
+    "name": "Hartford Edge",
+    "url": "https://www.bellway.co.uk/new-homes/north-east/hartford-edge",
+    "postcode": "NE23 8BZ",
+    "latitude": 55.082682,
+    "longitude": -1.622533
+  },
+  {
+    "name": "Quarrington Edge at Handley Chase",
+    "url": "https://www.bellway.co.uk/new-homes/east-midlands/quarrington-edge-at-handley-chase",
+    "postcode": "NG34 8NX",
+    "latitude": 52.982982,
+    "longitude": -0.425413
+  },
+  {
+    "name": "King George's Vale",
+    "url": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale",
+    "postcode": "EN6 4RD",
+    "latitude": 51.701641,
+    "longitude": -0.119518
+  },
+  {
+    "name": "Ridgewood",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-west/ridgewood",
+    "postcode": "FK7 8EX",
+    "latitude": 56.081213,
+    "longitude": -3.922893
+  },
+  {
+    "name": "Priors Meadow",
+    "url": "https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow",
+    "postcode": "CV31 1AZ",
+    "latitude": 52.271029,
+    "longitude": -1.514255
+  },
+  {
+    "name": "Oakhill Meadow",
+    "url": "https://www.bellway.co.uk/new-homes/southern-counties/oakhill-meadow",
+    "postcode": "GU12 6TX",
+    "latitude": 51.251134,
+    "longitude": -0.709821
+  },
+  {
+    "name": "Dargavel Village",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-west/dargavel-village",
+    "postcode": "PA7 5HP",
+    "latitude": 55.897089,
+    "longitude": -4.507048
+  },
+  {
+    "name": "Lock Keeper Gardens",
+    "url": "https://www.bellway.co.uk/new-homes/south-west/lock-keeper-gardens",
+    "postcode": "SN10 3LU",
+    "latitude": 51.357405,
+    "longitude": -1.966783
+  },
+  {
+    "name": "Elfenne Gardens",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens",
+    "postcode": "EH33 2FR",
+    "latitude": 55.922568,
+    "longitude": -2.970501
+  },
+  {
+    "name": "Cloverhill",
+    "url": "https://www.bellway.co.uk/new-homes/scotland-west/cloverhill",
+    "latitude": 55.89615,
+    "longitude": -4.07733
+  },
+  {
+    "name": "Chamberlains Heath",
+    "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath",
+    "postcode": "LU7 3SW",
+    "latitude": 51.930999,
+    "longitude": -0.648727
+  },
+  {
+    "name": "DeHavilland Place",
+    "url": "https://www.bellway.co.uk/new-homes/kent/dehavilland-place",
+    "postcode": "ME19 4NR",
+    "latitude": 51.281767,
+    "longitude": 0.405911
+  },
+  {
+    "name": "Barleywoods",
+    "url": "https://www.bellway.co.uk/new-homes/east-midlands/barleywoods",
+    "postcode": "LE15 6RU",
+    "latitude": 52.666377,
+    "longitude": -0.742374
+  },
+  {
+    "name": "Lancaster Fold",
+    "url": "https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold",
+    "postcode": "YO51 9SA",
+    "latitude": 54.082744,
+    "longitude": -1.392093
+  },
+  {
+    "name": "Bellway at Whitford Heights",
+    "url": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights",
+    "postcode": "B61 7ED",
+    "latitude": 52.3344,
+    "longitude": -2.078244
+  }
+]
