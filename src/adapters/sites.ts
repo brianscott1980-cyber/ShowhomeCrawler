@@ -19,5 +19,7 @@ export function builderSite(slug='bellway') {
  if(slug==='springfield')return {name:'Springfield',slug,websiteUrl:'https://www.springfield.co.uk',sitemap:'https://www.springfield.co.uk/homes-for-sale',...springfield};
  if(slug==='persimmon')return {name:'Persimmon',slug,websiteUrl:'https://www.persimmonhomes.com',sitemap:'https://www.persimmonhomes.com/sitemap',...persimmon};
  if(slug==='robertson-homes')return {name:'Robertson Homes',slug,websiteUrl:'https://www.robertsonhomes.co.uk',sitemap:'https://www.robertsonhomes.co.uk/location-sitemap.xml',...robertson};
+ if(slug==='redrow')return {name:'Redrow',slug,websiteUrl:'https://www.redrow.co.uk',sitemap:'https://www.redrow.co.uk/sitemaps/sitemap-redrow-developments.xml',...redrow};
  throw new Error('Unsupported builder.');
 }
+import * as redrow from './redrow/site-parser.js';
