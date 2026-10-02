@@ -24,3 +24,21 @@ it('pins the builder logo first while randomising only the room photos',async()=
  expect(collection.images.slice(1).map(i=>i.src).sort()).toEqual(images.map(i=>i.src).sort());
  expect(new Set(collection.images.slice(1,4).map(i=>i.roomType)).size).toBe(3);
 });
+it('chooses a random exterior immediately after the logo without duplicating it',async()=>{
+ const {cardImageCollection}=await import('../src/web/card-images');
+ const logo:CardImage={src:'/logos/builder.svg',alt:'Builder logo',kind:'logo'};
+ const exterior1:CardImage={src:'/outside1',alt:'Front elevation',roomType:'Exterior'};
+ const exterior2:CardImage={src:'/outside2',alt:'Rear elevation',roomType:'Exterior'};
+ const pool=[...images,exterior1,exterior2];
+ const a=cardImageCollection(pool,logo,()=>.1),b=cardImageCollection(pool,logo,()=>.9);
+ expect(a.images.slice(0,2)).toEqual([logo,exterior1]);
+ expect(b.images.slice(0,2)).toEqual([logo,exterior2]);
+ expect(new Set(a.images.map(i=>i.src)).size).toBe(pool.length+1);
+ expect(a.images.slice(1).map(i=>i.src).sort()).toEqual(pool.map(i=>i.src).sort());
+});
+it('does not pin exterior images in collections without a builder logo',async()=>{
+ const {cardImageCollection}=await import('../src/web/card-images');
+ const exterior:CardImage={src:'/outside',alt:'Exterior',roomType:'Exterior'};
+ const result=cardImageCollection([...images,exterior],undefined,()=>.2);
+ expect(new Set(result.images.slice(0,4).map(i=>i.roomType)).size).toBe(4);
+});

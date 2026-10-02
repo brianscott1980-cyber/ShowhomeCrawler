@@ -29,8 +29,11 @@ export function reportCardImage(slug:string,image:ReportImage):CardImage {
  return {src:assetUrl(slug,image.path),alt:image.verdict?.description??image.categorisation?.subCategory??'Showhome interior',roomType:room};
 }
 /** Generate on the server so the browser hydrates the same random starting image and order. */
-export function cardImageCollection(images:CardImage[],firstImage?:CardImage){
- const rooms=randomRoomImages(images);
- const ordered=firstImage?[firstImage,...rooms.filter(i=>i.src!==firstImage.src)]:rooms;
+export function cardImageCollection(images:CardImage[],firstImage?:CardImage,random:()=>number=Math.random){
+ const available=[...new Map(images.filter(i=>i.src!==firstImage?.src).map(i=>[i.src,i])).values()];
+ const exteriors=firstImage?.kind==='logo'?available.filter(i=>/^exterior(?:\s|$)/i.test(i.roomType?.trim()??'')):[];
+ const exterior=exteriors.length?exteriors[Math.floor(random()*exteriors.length)]:undefined;
+ const rooms=randomRoomImages(available.filter(i=>i.src!==exterior?.src),random);
+ const ordered=[...(firstImage?[firstImage]:[]),...(exterior?[exterior]:[]),...rooms];
  return {images:ordered,image:ordered[0]?.src??'',description:ordered[0]?.alt??'Showhome interior'};
 }
