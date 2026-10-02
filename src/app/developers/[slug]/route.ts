@@ -1,3 +1,4 @@
+import {builderNameHtml} from '../../../web/builder-brand';
 import { developers, readCollection, assetUrl } from '../../../web/collections';
 import { developerSeo } from '../../../web/seo';
 import { analyticsMarkup } from '../../../web/analytics';
@@ -24,5 +25,5 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
   gateway: '/', favourites: '/favourites', explorerHeader: true,
   fullReport: assetUrl(slug, 'full-report.html'), matches: assetUrl(slug, 'matches.csv'),
  });
- return new Response(html.replace('<div class="nav-actions">','<div class="nav-actions"><a class="browse-link" href="/">Homebuilders</a><a class="browse-link" href="/locations">Locations</a><a class="browse-link" href="/interiors">Interiors</a><a class="browse-link" href="/buildings">Buildings</a>').replace(/<title>.*?<\/title>/, `<title>${developer.name} Showhome &amp; Home Office Ideas | Showhome Explorer</title>`).replace('</head>', `${seo}<style>.nav{flex-wrap:wrap}.developer-name{position:static;transform:none;order:3;width:100%;text-align:center;margin-top:16px}.nav-actions{flex-wrap:wrap;justify-content:flex-end}.nav-actions .browse-link{font-size:13px}</style>${analyticsMarkup}</head>`), { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
+ return new Response(html.replace(/(<a class="developer-name"[^>]*>).*?(<\/a>)/, (_match,open,close)=>open+builderNameHtml(slug,'#15243a')+close).replace('<div class="nav-actions">','<div class="nav-actions"><a class="browse-link" href="/">Homebuilders</a><a class="browse-link" href="/locations">Locations</a><a class="browse-link" href="/interiors">Interiors</a><a class="browse-link" href="/buildings">Buildings</a>').replace(/<title>.*?<\/title>/, `<title>${developer.name} Showhome &amp; Home Office Ideas | Showhome Explorer</title>`).replace('</head>', `${seo}<style>.nav{flex-wrap:wrap}.developer-name{position:static;transform:none;order:3;width:100%;text-align:center;margin-top:16px}.nav-actions{flex-wrap:wrap;justify-content:flex-end}.nav-actions .browse-link{font-size:13px}</style>${analyticsMarkup}</head>`), { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
 }

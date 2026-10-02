@@ -1,4 +1,5 @@
 'use client';
+import {BuilderName} from './builder-name';
 import {useState} from 'react';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import Link from 'next/link';
@@ -122,7 +123,7 @@ export function GroupCards({
       <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
       <div className="card-body">
        <h2>{card.name}</h2>
-       <p className="subtle">{card.developers.join(' · ')}</p>
+       <p className="subtle">{card.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)}</p>
        {card.bedrooms && card.bedrooms.length > 0 && (
         <p className="subtle">
          {card.bedrooms.map(b => `${b} bed`).join(' · ')}
