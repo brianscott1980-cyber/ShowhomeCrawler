@@ -48,7 +48,7 @@ it('does not coerce classifier strings to booleans', () => {
 });
 
 it('requires every batch image ID exactly once and rejects contradictory matches', () => {
- const verdict = { matches: false, hasDesk: false, hasBed: true, roomType: 'bedroom', description: '', reason: '' };
+ const verdict = { matches: false, hasDesk: false, hasBed: true, hasFloorplan: false, roomType: 'bedroom', description: '', reason: '' };
  expect(validateBatch({ images: [{ ...verdict, imageId: 'a' }] }, ['a'])[0]!.id).toBe('a');
  expect(() => validateBatch({ images: [{ ...verdict, imageId: 'b' }] }, ['a'])).toThrow();
  expect(() => validateBatch({ images: [{ ...verdict, imageId: 'a' }, { ...verdict, imageId: 'a' }] }, ['a', 'b'])).toThrow();
@@ -89,3 +89,5 @@ it('filters minimum bedrooms without imposing detached or price criteria', async
  expect(matchesPropertyFilter(property,{minPrice:400000})).toBe(false);
  expect(matchesPropertyFilter(property,{detachedOnly:true})).toBe(false);
 });
+
+it('rejects floorplans even when desks are drawn and requires the floorplan flag',()=>{const verdict={imageId:'a',matches:true,hasDesk:true,hasBed:false,hasFloorplan:true,roomType:'office',description:'Drawn desk',reason:'Desk drawn'};expect(()=>validateBatch({images:[verdict]},['a'])).toThrow('Contradictory');expect(()=>validateBatch({images:[{...verdict,hasFloorplan:false,roomType:'floor plan'}]},['a'])).toThrow('Contradictory');const {hasFloorplan,...missing}=verdict;expect(()=>validateBatch({images:[missing]},['a'])).toThrow();expect(validateBatch({images:[{...verdict,matches:false}]},['a'])[0]?.verdict.matches).toBe(false);});

@@ -107,7 +107,7 @@ Eleven application tables: `builders`, `developments`, `house_types`, `property_
 
 ## Classification
 
-Gemini receives images, not webpages. A validated structured response contains `matches`, `hasDesk`, `hasBed`, `roomType`, `description` and `reason`. Positive matches must have a desk and no visible bed. Local classification identity is image SHA-256 + model + versioned prompt. Positive and negative decisions are persisted; malformed output, refusals and API errors remain failures. Changing the question/prompt requires bumping `analysisVersion`.
+Gemini receives images, not webpages. A validated structured response contains `matches`, `hasDesk`, `hasBed`, `hasFloorplan`, `roomType`, `description` and `reason`. Positive matches must have a desk, no visible bed and no floorplan graphics. Local classification identity is image SHA-256 + model + versioned prompt. Positive and negative decisions are persisted; malformed output, refusals and API errors remain failures. Changing the question/prompt requires bumping `analysisVersion`.
 
 The current model and image-input/JSON schema API are documented by [Google](https://ai.google.dev/api/generate-content). See [classification design](docs/image-classification.md) and [Bellway sources](docs/bellway-source-analysis.md).
 
