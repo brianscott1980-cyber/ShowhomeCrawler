@@ -14,3 +14,5 @@ export function rowScrollCrossing(previous:number,current:number,column:number,c
  if(scrollDelta<0&&previous>=trigger&&current<trigger)return -1;
  return 0;
 }
+export function atPageBottom(scrollY:number,viewportHeight:number,pageHeight:number){return scrollY+viewportHeight>=pageHeight-2;}
+export function bottomRemainder(list:boolean,edges:CardEdges,progress:number,column:number,columns:number,midpoint:number){return list?edges.bottom>=midpoint:progress<(column+.5)/Math.max(1,columns);}

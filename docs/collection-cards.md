@@ -13,3 +13,5 @@ Homebuilder carousels always start with the official builder logo, fitted withou
 When a homebuilder has exterior photos, one is chosen at random as the second slide immediately after its logo. That photo is removed from the remaining shuffled sequence to avoid duplication. Builders without an exterior proceed directly to the mixed room photos.
 
 Grid card rows use their progress through the viewport midpoint instead. Each column owns the centre of an equal progress segment: two columns trigger at 25% and 75%; four at 12.5%, 37.5%, 62.5% and 87.5%. Downward scrolling advances left to right; upward scrolling reverses right to left. Rows and columns come from actual rendered positions, including static cards and incomplete rows, so responsive layouts use their current column count.
+
+Reaching the bottom while scrolling down completes any remaining list or grid card triggers that cannot reach the midpoint. Each advances once; stationary scroll events do not repeat the transition. Scrolling back reverses those completed transitions as the cards return below their trigger.
