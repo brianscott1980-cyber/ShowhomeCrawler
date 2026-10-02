@@ -51,16 +51,16 @@ describe('Developer directory',()=>{
  it('filters Buildings by Homebuilder, Bedrooms, and Locations with reset functionality',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
   const buildingCards=[
-   {key:'b1',name:'Alford',developers:['Miller Homes'],count:2,image:'/1.jpg',description:'Desc',bedrooms:[5],locations:['Shawfair']},
-   {key:'b2',name:'Beechford',developers:['Miller Homes'],count:4,image:'/2.jpg',description:'Desc',bedrooms:[4,5],locations:['Langley Gate','City Fields']},
-   {key:'b3',name:'Cheltenham',developers:['Barratt'],count:3,image:'/3.jpg',description:'Desc',bedrooms:[4],locations:['Langley Gate']},
+   {key:'b1',name:'Alford',developers:['Miller Homes'],count:2,image:'/1.jpg',description:'Desc',bedrooms:[5],locations:['Shawfair'],places:[{site:'Test site',locations:['Shawfair']}]},
+   {key:'b2',name:'Beechford',developers:['Miller Homes'],count:4,image:'/2.jpg',description:'Desc',bedrooms:[4,5],locations:['Langley Gate','City Fields'],places:[{site:'Test site',locations:['Langley Gate','City Fields']}]},
+   {key:'b3',name:'Cheltenham',developers:['Barratt'],count:3,image:'/3.jpg',description:'Desc',bedrooms:[4],locations:['Langley Gate'],places:[{site:'Test site',locations:['Langley Gate']}]},
   ];
   try{
    await act(async()=>root.render(<GroupCards cards={buildingCards} pathPrefix="buildings" kindLabel="Buildings"/>));
    expect(document.querySelectorAll('.collection-card')).toHaveLength(3);
 
    const selects=document.querySelectorAll<HTMLSelectElement>('.site-filters select');
-   expect(selects).toHaveLength(3);
+   expect(selects).toHaveLength(4);
    const [devSelect, bedSelect, locSelect]=selects;
 
    // Filter by Homebuilder
