@@ -39,7 +39,7 @@ export class RequestClient {
    }
   }
  }
- async text(url: string) { return (await this.bytes(url, 5_000_000)).toString('utf8'); }
+ async text(url: string) { return (await this.bytes(url, 10_000_000)).toString('utf8'); }
 }
 export async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T, index: number) => Promise<R>): Promise<R[]> {
  const output: R[] = []; let next = 0;
