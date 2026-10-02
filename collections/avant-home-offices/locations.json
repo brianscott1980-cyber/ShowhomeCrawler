@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bennerley View",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
+    "latitude": 52.986317,
+    "longitude": -1.290875,
+    "postcode": "NG16 2SJ"
+  },
+  {
+    "name": "Lawrence Point",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
+    "latitude": 53.020127,
+    "longitude": -1.296678,
+    "postcode": "NG16 3ER"
+  },
+  {
+    "name": "Althamer View",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+    "latitude": 55.953998,
+    "longitude": -2.949327,
+    "postcode": "EH32 9GT"
+  },
+  {
+    "name": "Darach Fields",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+    "latitude": 55.889235,
+    "longitude": -4.171355,
+    "postcode": "G33 6PQ"
+  },
+  {
+    "name": "Thistle Meadows",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+    "latitude": 55.933254,
+    "longitude": -2.949005,
+    "postcode": "EH33 2FX"
+  },
+  {
+    "name": "Stewart's Quarter",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+    "latitude": 56.037282,
+    "longitude": -3.437628,
+    "postcode": "KY11 2ZQ"
+  },
+  {
+    "name": "Edmonstone Village",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+    "latitude": 55.913924,
+    "longitude": -3.117122,
+    "postcode": "EH16 4SP"
+  },
+  {
+    "name": "Bishop's Quarter",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/leeds/bishops-quarter",
+    "latitude": 53.800912,
+    "longitude": -1.240366,
+    "postcode": "LS25 6GT"
+  },
+  {
+    "name": "Cadley Village",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/swadlincote/cadley-village",
+    "latitude": 52.774065,
+    "longitude": -1.562344,
+    "postcode": "DE11 0BB"
+  }
+]

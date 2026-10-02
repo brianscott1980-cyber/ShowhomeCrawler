@@ -20,7 +20,7 @@ export function Gallery({ collections, favouritesOnly = false }: { collections: 
  }, []);
  function toggle(id: string) {
   const next = favourites.includes(id) ? favourites.filter(v => v !== id) : [...favourites, id];
-  setFavourites(next); try { localStorage.setItem(key, JSON.stringify(next)); } catch { /* Saving may be unavailable in private browser storage. */ }
+  setFavourites(next); try { localStorage.setItem(key, JSON.stringify(next)); window.dispatchEvent(new Event('showhome-favourites-changed')); } catch { /* Saving may be unavailable in private browser storage. */ }
  }
  const all = collections.flatMap(c => c.report.images.map(image => ({ ...image, slug: c.slug, developer: c.name, homes: c.report.properties.filter(p => p.imageIds.includes(image.id)), uid: `${c.slug}:${image.id}` })));
  const available = all.filter(image => image.verdict?.matches && (!favouritesOnly || favourites.includes(image.id)));

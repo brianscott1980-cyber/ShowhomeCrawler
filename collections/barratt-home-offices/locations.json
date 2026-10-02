@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Hilliers Heights",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002989-hilliers-heights/",
+    "latitude": 51.2188864,
+    "longitude": -2.3187569,
+    "postcode": "BA11 5BX"
+  },
+  {
+    "name": "Bernets Nook",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/",
+    "latitude": 53.7218959,
+    "longitude": -2.5236511,
+    "postcode": "BB3 0LL"
+  },
+  {
+    "name": "Laurel Chase",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002951-laurel-chase/",
+    "latitude": 55.178562,
+    "longitude": -1.6828177,
+    "postcode": "NE61 2NP"
+  },
+  {
+    "name": "Franklin Gardens at Darwin Green",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-002587-franklin-gardens-at-darwin-green/",
+    "latitude": 52.2338211,
+    "longitude": 0.1106165,
+    "postcode": "CB3 0XX"
+  },
+  {
+    "name": "Somer Meadows",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/",
+    "latitude": 51.2714205,
+    "longitude": -2.479973,
+    "postcode": "BA3 4ZT"
+  },
+  {
+    "name": "Barratt Homes at Linmere",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev000965-barratt-homes-at-linmere/",
+    "latitude": 51.9189228143591,
+    "longitude": -0.493874892729948,
+    "postcode": "LU5 7BT"
+  },
+  {
+    "name": "Barratt at Overstone Gate",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
+    "latitude": 52.2883376503671,
+    "longitude": -0.83208145755724,
+    "postcode": "NN6 0RW"
+  },
+  {
+    "name": "Russet Park",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002697-russet-park/",
+    "latitude": 53.9102388,
+    "longitude": -1.1435455,
+    "postcode": "YO23 3TJ"
+  }
+]
