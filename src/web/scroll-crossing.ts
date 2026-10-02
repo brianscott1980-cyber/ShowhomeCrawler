@@ -8,7 +8,7 @@ export function scrollCrossing(previous:CardEdges,current:CardEdges,threshold:nu
 export function collectionIndex(index:number,direction:number,length:number){return length>0?(index+direction+length)%length:0;}
 /** The midpoint traverses the row from its top (0) to its bottom (1). */
 export function rowProgress(row:CardEdges,midpoint:number){return Math.max(0,Math.min(1,(midpoint-row.top)/Math.max(1,row.bottom-row.top)));}
-export function rowTrigger(column:number,columns:number,large=false){return large&&columns===2&&column===1?.6:(column+.5)/Math.max(1,columns);}
+export function rowTrigger(column:number,columns:number,large=false){return large&&columns===2&&column===1?.5:(column+.5)/Math.max(1,columns);}
 export function rowScrollCrossing(previous:number,current:number,column:number,columns:number,scrollDelta:number,large=false){
  const trigger=rowTrigger(column,columns,large);
  if(scrollDelta>0&&previous<trigger&&current>=trigger)return 1;
