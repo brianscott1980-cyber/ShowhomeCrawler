@@ -28,7 +28,14 @@ async function main() {
    for (const image of images) {
     for (const model of [...new Set([report.model, classificationModel])]) {
      const cache = `results/.cache/analysis/${sha256(`${image.id}:${model}:${version}`)}.json`;
-     try { image.verdict = verdictSchema.parse(JSON.parse(await readFile(cache, 'utf8'))); image.analysisModel = model; delete image.error; if (values['all-images']) image.categorisation = extractBaseCategorisation(image.verdict.roomType, image.verdict.description, image.verdict.reason); break; } catch {}
+     try {
+      const cached = JSON.parse(await readFile(cache, 'utf8'));
+      image.verdict = verdictSchema.parse(cached);
+      image.analysisModel = cached.analysisModel ?? model;
+      delete image.error;
+      if (values['all-images']) image.categorisation = cached.categorisation ?? extractBaseCategorisation(image.verdict.roomType, image.verdict.description, image.verdict.reason);
+      break;
+     } catch {}
     }
     if (values['all-images'] ? !image.categorisation : !image.verdict) remaining.push({ id: image.id, bytes: await readFile(folder + '/' + image.path) });
    }
@@ -64,7 +71,7 @@ async function main() {
     }
    }
    report.errors = report.errors.filter(error => error.stage !== 'classification' || !report.images.find(i => i.sourceUrl === error.url)?.verdict);
-   report.metrics.pendingImages = report.images.filter(i => !i.verdict).length;
+   report.metrics.pendingImages = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).length;
    report.metrics.matchedImages = report.images.filter(i => i.verdict?.matches).length;
    await writeReport(folder, report);
    console.log(JSON.stringify({ stage: 'batch_complete', processed: Math.min(offset + 8, pending.length), total: pending.length, matches: report.metrics.matchedImages }));
@@ -73,7 +80,7 @@ async function main() {
   report.status = report.errors.length || report.metrics.pendingImages || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';
   report.completedAt = new Date().toISOString(); await writeReport(folder, report);
  } catch (error) {
-  if (report) { report.status = 'completed_with_gaps'; report.metrics.pendingImages = report.images.filter(i => !i.verdict).length; await writeReport(folder, report); }
+  if (report) { report.status = 'completed_with_gaps'; report.metrics.pendingImages = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).length; await writeReport(folder, report); }
   throw error;
  } finally { await lock.close(); await unlink(folder + '/.lock'); }
 }

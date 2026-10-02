@@ -22,6 +22,22 @@ The app follows the [Next.js App Router](https://nextjs.org/docs/app/getting-sta
 
 Job status is stored in `results/.app-job.json`. If a worker is forcibly terminated, verify that its PID and any crawl/classification children have exited before removing `results/.app-job/` and an affected collection’s `.lock` to recover.
 
+## All-images builder collections
+
+The Builders directory and builder results show categorised rooms and property exteriors, including builders with no office matches. Legacy office-only exports retain their original names for compatibility.
+
+Collect every advertised home without a bedroom filter, deduplicate the gallery images, then classify every unique image and publish the collection:
+
+```sh
+npm run crawl -- --builder tulloch-homes --all-images --discover-only --max-developments 1000 --max-properties 10000 --max-images 20000
+npm run results:classify -- --folder results/tulloch-homes-home-offices --all-images
+npm run results:publish -- --builder tulloch-homes
+```
+
+The same workflow supports `scotia-homes`, `david-wilson` and `lynch-homes`. `results:classify-stream` accepts `--all-images` and an optional `--model` to cache answers while collection is running; finish with `results:classify --all-images` to apply them. All-images answers have their own versioned cache and include bedrooms, kitchens, other rooms, exteriors, floorplans and non-room graphics. Categorisation and publication copy all classified images, so a negative office decision never removes a room from the website.
+
+For existing browser-snapshot sources, `--browser-snapshots --live-missing` reuses saved sitemap/robots snapshots and cached pages, fetching missing house pages through the normal bounded HTTP client.
+
 ## Setup
 
 Requires Node.js 22 or newer:

@@ -1,8 +1,8 @@
 [
   {
     "url": "https://www.lynchhomes.co.uk/jackton-manor-development/",
-    "country": null,
-    "scope": "Advertised homes",
+    "country": "Scotland",
+    "scope": "Published homes",
     "properties": [
       {
         "price": 480000,
@@ -20,17 +20,5 @@
         "style": null
       }
     ]
-  },
-  {
-    "url": "https://www.lynchhomes.co.uk/the-kings-development-troon/",
-    "country": null,
-    "scope": "Collection homes",
-    "properties": []
-  },
-  {
-    "url": "https://www.lynchhomes.co.uk/the-kings-development-troon-phase-4/",
-    "country": null,
-    "scope": "Collection homes",
-    "properties": []
   }
 ]
