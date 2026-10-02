@@ -1,0 +1,148 @@
+<div class="multi-image-carousel" x-data="multiImageCarousel({ images: JSON.parse('[\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378704\\\/60617-sunningdale.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378582\\\/66592-dv_sunningdale_03.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378581\\\/66593-dv_sunningdale_04.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378593\\\/66595-dv_sunningdale_07.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378584\\\/66604-dv_sunningdale_08.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378707\\\/66596-dv_sunningdale_09.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378585\\\/66598-dv_sunningdale_11.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378706\\\/66607-dv_sunningdale_14.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378705\\\/66599-dv_sunningdale_15.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378591\\\/66610-dv_sunningdale_29.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378710\\\/66611-dv_sunningdale_30.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378602\\\/66611-dv_sunningdale_32.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378586\\\/66605-dv_sunningdale_22.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378708\\\/66606-dv_sunningdale_23.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378712\\\/66607-dv_sunningdale_24.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378594\\\/66609-dv_sunningdale_27.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378711\\\/66610-dv_sunningdale_28.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378588\\\/66602-dv_sunningdale_19.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378587\\\/66608-dv_sunningdale_25.webp\u0022,\u0022https:\\\/\\\/cms.bellway.co.uk\\\/media\\\/resized-images\\\/division\\\/scotland-west\\\/dargavel-village\\\/images\\\/_large\\\/378709\\\/66601-dv_sunningdale_18.webp\u0022]') })">
+    <div class="inner">
+        <div class="slides tw-relative tw-grid tw-grid-cols-12 tw-gap-2 lg:tw-min-h-[350px] xl:tw-min-h-[650px]">
+            <!-- Main image -->
+            <div class="tw-col-span-12 tw-min-h-64 tw-relative" :class="{
+                    'lg:tw-col-span-8': images.length > 1,
+                    'lg:tw-col-span-12': images.length <= 1,
+                }">
+                                <img :src="visibleImages[0]" alt="" class="tw-w-full tw-h-full tw-object-cover tw-rounded-lg">
+            </div>
+
+            <!-- Two smaller images -->
+            <template x-if="images.length > 1">
+                <div class="tw-hidden tw-col-span-12 lg:tw-flex tw-flex-row tw-gap-2 lg:tw-col-span-4 lg:tw-flex-col">
+                    <div class="tw-h-full">
+                        <img :src="visibleImages[1]" alt="" class="tw-w-full tw-h-full tw-object-cover tw-rounded-lg">
+                    </div>
+
+                    <div class="tw-h-full">
+                        <template x-if="images.length > 2">
+                            <img :src="visibleImages[2]" alt="" class="tw-w-full tw-h-full tw-object-cover tw-rounded-lg">
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <!-- Controls -->
+        <template x-if="images.length > 3">
+            <div class="controls tw-flex tw-justify-between tw-items-center tw-gap-x-6 tw-mt-5 lg:tw-mt-6">
+                
+                    <div class="tw-flex tw-items-center tw-gap-x-2 tw-flex-auto lg:tw-max-w-[50%] lg:tw-gap-x-3">
+                        <template x-if="images.length <= 10">
+                            <template x-for="(_, index) in images.length">
+                                <span class="tw-h-1 tw-rounded-sm tw-cursor-pointer tw-transition-all tw-duration-200 tw-ease-out" :class="{
+                                        'tw-flex-1 tw-max-w-[20px] tw-bg-rb-neutral-300 hover:tw-flex-[2] hover:tw-max-w-[40px]': index !== currentIndex,
+                                        'tw-flex-[4] tw-max-w-[80px] tw-bg-rb-navy-900': index === currentIndex,
+                                    }" @click="goTo(index)">
+                                    <span class="tw-sr-only" x-text="'Go to slide ' + (index + 1)"></span>
+                                </span>
+                            </template>
+                        </template>
+
+                        <template x-else="">
+                            <span class="tw-flex tw-grow tw-items-center tw-gap-x-3 tw-leading-none">
+                                <span class="tw-flex tw-items-center tw-gap-x-1 tw-text-sm">
+                                    <span class="tw-text-center tw-w-[2ch]" x-text="currentIndex + 1"></span> / <span class="tw-text-center tw-w-[2ch]" x-text="images.length"></span>
+                                </span>
+
+                                <span class="tw-grow tw-relative tw-h-1 tw-bg-rb-neutral-300 tw-rounded-sm tw-overflow-clip">
+                                    <span class="tw-absolute tw-inset-0 tw-bg-rb-navy-900 tw-transition-transform tw-duration-[250ms] tw-ease-in-out tw-origin-left tw-scale-x-[--progress]" :style="{
+                                            '--progress': ((currentIndex + 1) / images.length) * 100 + '%',
+                                        }">
+                                </span>
+                            </span>
+                        </span></template>
+                    </div>
+                
+
+                <div class="tw-flex tw-gap-x-2 tw-shrink-0 tw-ml-auto lg:tw-gap-x-3">
+                    <button class="button   button--box " @click="prevBtn()">
+    
+    <span class="tw-hidden">Previous image</span>
+
+            <svg class="rb-icon  rb-icon-lg" aria-hidden="true">
+    <use href="#icon-arrow-left"></use>
+</svg>
+    </button>
+
+                    <button class="button   button--box " @click="nextBtn()">
+    
+    <span class="tw-hidden">Next image</span>
+
+            <svg class="rb-icon  rb-icon-lg" aria-hidden="true">
+    <use href="#icon-arrow-right"></use>
+</svg>
+    </button>
+                </div>
+            </div>
+        </template>
+
+                    
+            <div class="
+                    tw-flex tw-items-center tw-mt-8 tw-gap-2
+                    lg:tw-absolute lg:tw-z-10 lg:tw-bottom-20 lg:tw-left-0 lg:tw-mt-0 lg:tw-p-5
+                ">
+                
+                                    <button class="button button--white  " x-on:click="openVirtualTours()">
+    
+    <span class="text">Virtual tour</span>
+
+    </button>
+                
+                                    <button data-cal-link="westscotland.apointments/dargavel-village" data-cal-namespace="30min" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;,&quot;theme&quot;:&quot;light&quot;}" class="button white">
+    <span class="text">
+        Book an appointment
+    </span>
+</button>
+
+<!-- Cal element-click embed code begins -->
+<script type="text/javascript">
+(function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.loaded) {
+            cal.ns = {};
+            cal.q = cal.q || [];
+            d.head.appendChild(d.createElement("script")).src = A;
+            cal.loaded = true;
+        }
+        if (ar[0] === L) {
+            const api = function () { p(api, arguments); };
+            const namespace = ar[1];
+            api.q = api.q || [];
+            if(typeof namespace === "string"){
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+            } else p(cal, ar);
+            return;
+        }
+        p(cal, ar);
+    };
+})(window, "https://app.cal.com/embed/embed.js", "init");
+
+Cal("init", "30min", {origin:"https://bellway.cal.com"});
+
+Cal.ns["30min"]("ui", {"theme":"light","hideEventTypeDetails":true,"layout":"month_view"});
+
+if (window.location.hash === '#appointments' && !window.__calAppointmentTriggered) {
+    window.__calAppointmentTriggered = true;
+    (function waitForCal() {
+        var calBtn = document.querySelector('[data-cal-link]');
+        if (calBtn && window.Cal && window.Cal.loaded) {
+            setTimeout(function() { calBtn.click(); }, 500);
+        } else {
+            setTimeout(waitForCal, 200);
+        }
+    })();
+}
+</script>
+<!-- Cal element-click embed code ends -->
+                            </div>
+            </div>
+</div>

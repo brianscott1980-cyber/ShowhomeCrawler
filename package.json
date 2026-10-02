@@ -1,0 +1,38 @@
+{
+  "name": "showhome-crawler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:migrate": "tsx src/cli/migrate.ts",
+    "discover": "tsx src/cli/discover.ts",
+    "crawl:test": "tsx src/cli/discover.ts --fixture",
+    "crawl": "tsx src/cli/crawl.ts",
+    "results:persist": "tsx src/cli/persist-results.ts",
+    "results:classify": "tsx src/cli/classify-results.ts",
+    "results:repair": "tsx src/cli/repair-coverage.ts",
+    "results:reports": "tsx src/cli/reports.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "dotenv": "^18.0.5",
+    "postgres": "^3.4.9",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.4",
+    "jsdom": "^30.1.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
