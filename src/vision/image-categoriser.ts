@@ -1,3 +1,4 @@
+import {bedroomSubCategory} from './bedroom-category.js';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -82,12 +83,7 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
  // 2. Subcategory
  let subCategory = mainCategory;
  if (mainCategory === 'Bedroom') {
-  if (/\b(nursery|crib|cot\b|baby|toddler)\b/.test(lower)) subCategory = "Child's bedroom / Nursery";
-  else if (/\b(bunk|single bed|twin bed|child|kid|teen|playroom)\b/.test(lower)) subCategory = 'Small bedroom';
-  else if (/\b(master|primary|principal|dressing area|walk-in wardrobe)\b/.test(lower) || (/\b(en-?suite)\b/.test(lower) && /\bbed\b/.test(lower))) subCategory = 'Master bedroom';
-  else if (/\bguest\b/.test(lower)) subCategory = 'Guest bedroom';
-  else if (/\b(double bed|large bed|king bed)\b/.test(lower)) subCategory = 'Double bedroom';
-  else subCategory = 'Master bedroom';
+  subCategory = bedroomSubCategory(description,roomType,reason);
  } else if (mainCategory === 'Bathroom') {
   if (/\ben-?suite\b/.test(roomLower) || /\ben-?suite\b/.test(lower)) subCategory = 'En suite';
   else if (/\b(walk-in shower|shower enclosure|shower room)\b/.test(lower) && !/\b(bathtub|bath\b)\b/.test(lower)) subCategory = 'Shower room';
@@ -258,7 +254,8 @@ export async function categoriseBatchWithGemini(
   'Return JSON object with "images" array containing exactly one element for every input item.\n' +
   'Taxonomy:\n' +
   '- mainCategory: One of [Living Room, Dining Room, Kitchen, Bedroom, Bathroom, Toilet, Study & Home Office, Hallway, Exterior, Utility Room, Dressing Room, Home Gym, Media & Games Room, Conservatory, Floorplan, Other]\n' +
-  '- subCategory: Specific type: e.g. Master bedroom, Small bedroom, Family bathroom, En suite, Cloakroom / WC, House front, House rear, Garden, Kitchen island, Open-plan kitchen, Formal lounge, Snug / Family room, Dedicated study, Balcony / terrace, Street scene\n' +
+  '- subCategory: Specific type: e.g. Double bedroom, Single bedroom, Family bathroom, En suite, Cloakroom / WC, House front, House rear, Garden, Kitchen island, Open-plan kitchen, Formal lounge, Snug / Family room, Dedicated study, Balcony / terrace, Street scene\n' +
+  '- Bedroom subCategory must be Double bedroom for double/full/queen/king beds, Single bedroom for single/twin/bunk beds, Nursery for cot-only rooms, or Bedroom (bed size unclear) if size is not stated. Never infer size from master, primary, guest, child, room dimensions or en-suite access.\n' +
   '- objects: String array of visible items (furniture, appliances, fixtures, outdoor features)\n' +
   '- wallpaper: Wallpaper style/pattern (e.g. geometric, floral, textured, feature wall, paneling) or null\n' +
   '- curtains: Window dressing type (e.g. floor-length curtains, roman blinds, roller blinds, shutters) or null\n' +
@@ -312,7 +309,7 @@ export async function categoriseBatchWithGemini(
    if (img.id) {
     results.set(img.id, {
      mainCategory: img.mainCategory || 'Other',
-     subCategory: img.subCategory || img.mainCategory || 'Other',
+     subCategory: img.mainCategory==='Bedroom'?bedroomSubCategory(items.find(i=>i.id===img.id)?.desc,items.find(i=>i.id===img.id)?.room,items.find(i=>i.id===img.id)?.reason,img.subCategory):img.subCategory || img.mainCategory || 'Other',
      isRoom: !isNonRoom(img.subCategory || img.mainCategory),
      objects: Array.isArray(img.objects) ? img.objects : [],
      wallpaper: img.wallpaper && img.wallpaper !== 'null' ? img.wallpaper : null,
@@ -346,6 +343,7 @@ export async function categoriseAllImages(
    try {
     const data = JSON.parse(await readFile(cachePath, 'utf8')) as ImageCategorisation;
     if (data.isRoom !== undefined) {
+     if(data.mainCategory==='Bedroom')data.subCategory=bedroomSubCategory(img.description,img.roomType,img.reason,data.subCategory);
      map.set(img.id, data);
      continue;
     }
