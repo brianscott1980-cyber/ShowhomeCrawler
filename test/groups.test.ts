@@ -17,6 +17,7 @@ it('groups categorised images by their mainCategory and only shows uncategorised
  const groups=groupCollections([col],'interiors');
  // img4 (isRoom: false) and img5 (infographic) are excluded. img3 (empty room) and img6 (empty room type room) are included in Uncategorised.
  expect(groups.map(g=>[g.name,g.count])).toEqual([['Bedroom',1],['Living Room',1],['Uncategorised',2]]);
+ for(const kind of ['locations','buildings'] as const){const cards=groupCollections([col],kind);expect(cards).toHaveLength(1);expect(cards[0]?.collections[0]?.report.images.map(i=>i.id)).toEqual(['img1','img2','img3']);}
  expect(spaceName(col.report.images[0]!)).toBe('Bedroom');
  expect(spaceName(col.report.images[1]!)).toBe('Living Room');
  expect(spaceName(col.report.images[2]!)).toBe('Uncategorised');
