@@ -6,3 +6,11 @@ export function scrollCrossing(previous:CardEdges,current:CardEdges,threshold:nu
  return 0;
 }
 export function collectionIndex(index:number,direction:number,length:number){return length>0?(index+direction+length)%length:0;}
+/** The midpoint traverses the row from its top (0) to its bottom (1). */
+export function rowProgress(row:CardEdges,midpoint:number){return Math.max(0,Math.min(1,(midpoint-row.top)/Math.max(1,row.bottom-row.top)));}
+export function rowScrollCrossing(previous:number,current:number,column:number,columns:number,scrollDelta:number){
+ const trigger=(column+.5)/Math.max(1,columns);
+ if(scrollDelta>0&&previous<trigger&&current>=trigger)return 1;
+ if(scrollDelta<0&&previous>=trigger&&current<trigger)return -1;
+ return 0;
+}

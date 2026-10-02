@@ -23,3 +23,21 @@ it('handles exact threshold crossings and wraps in both directions',()=>{
  expect(collectionIndex(0,-1,3)).toBe(2);
  expect(collectionIndex(0,1,1)).toBe(0);
 });
+it('staggered four-column rows advance left to right and reverse right to left',async()=>{
+ const {rowScrollCrossing}=await import('../src/web/scroll-crossing');
+ expect([0,1,2,3].map(i=>rowScrollCrossing(0,.3,i,4,100))).toEqual([1,0,0,0]);
+ expect([0,1,2,3].map(i=>rowScrollCrossing(.3,.7,i,4,100))).toEqual([0,1,1,0]);
+ expect([0,1,2,3].map(i=>rowScrollCrossing(1,.7,i,4,-100))).toEqual([0,0,0,-1]);
+ expect([0,1,2,3].map(i=>rowScrollCrossing(.7,.3,i,4,-100))).toEqual([0,-1,-1,0]);
+});
+it('calculates midpoint traversal and adapts to incomplete and single-column rows',async()=>{
+ const {rowProgress,rowScrollCrossing}=await import('../src/web/scroll-crossing');
+ expect(rowProgress({top:600,bottom:1000},400)).toBe(0);
+ expect(rowProgress({top:300,bottom:700},400)).toBe(.25);
+ expect(rowProgress({top:-100,bottom:300},400)).toBe(1);
+ expect(rowScrollCrossing(0,.3,0,2,100)).toBe(1);
+ expect(rowScrollCrossing(0,.3,1,2,100)).toBe(0);
+ expect(rowScrollCrossing(.4,.6,0,1,100)).toBe(1);
+ expect(rowScrollCrossing(0,1,0,4,0)).toBe(0);
+ expect(rowScrollCrossing(.2,.3,0,4,100)).toBe(0);
+});
