@@ -5,16 +5,21 @@ it('groups house types without plot suffixes and deduplicates shared plot images
 it('keeps same-named sites and building types from different developers separate',()=>{for(const kind of ['sites','buildings'] as const){const groups=groupCollections([collection('one'),collection('two')],kind);expect(groups).toHaveLength(2);expect(new Set(groups.map(g=>g.key)).size).toBe(2);}});
 it('combines office spaces across developers and labels pending and non-matching images as uncategorised',()=>{const groups=groupCollections([collection('one'),collection('two')],'spaces');expect(groups.map(g=>[g.name,g.count])).toEqual([['Study & Home Office',2],['Uncategorised',4]]);expect(spaceName(collection('one').report.images[1]!)).toBe('Uncategorised');expect(spaceName(collection('one').report.images[2]!)).toBe('Uncategorised');});
 it('uses stable detail keys across successive crawls',()=>{const a=collection('one'),b=collection('one');b.report.properties.reverse();expect(groupCollections([a],'buildings')[0]?.key).toBe(groupCollections([b],'buildings')[0]?.key);});
-it('groups categorised images by their mainCategory and maps Other to Uncategorised',()=>{
+it('groups categorised images by their mainCategory and only shows uncategorised items if they are of rooms',()=>{
  const col:Collection={slug:'cat-test',name:'Cat Test',report:{status:'completed',startedAt:'now',model:'test',question:'Test',developments:[],errors:[],metrics:{},images:[
-  {id:'img1',path:'images/1.jpg',sourceUrl:'https://example.com/1',categorisation:{mainCategory:'Bedroom',subCategory:'Master bedroom',objects:['bed'],colours:['Blue'],chairs:[],hasTelevision:false,hasComputer:false}},
-  {id:'img2',path:'images/2.jpg',sourceUrl:'https://example.com/2',categorisation:{mainCategory:'Living Room',subCategory:'Formal lounge',objects:['sofa'],colours:['Grey'],chairs:['Armchair'],hasTelevision:true,hasComputer:false}},
-  {id:'img3',path:'images/3.jpg',sourceUrl:'https://example.com/3',categorisation:{mainCategory:'Other',subCategory:'Other',objects:[],colours:[],chairs:[],hasTelevision:false,hasComputer:false}}
- ],properties:[{name:'Style A',development:'Site A',developmentUrl:'https://example.com/site-a',url:'https://example.com/home-a',bedrooms:4,price:null,plots:[],imageIds:['img1','img2','img3']}]}};
+  {id:'img1',path:'images/1.jpg',sourceUrl:'https://example.com/1',categorisation:{mainCategory:'Bedroom',subCategory:'Master bedroom',isRoom:true,objects:['bed'],colours:['Blue'],chairs:[],hasTelevision:false,hasComputer:false}},
+  {id:'img2',path:'images/2.jpg',sourceUrl:'https://example.com/2',categorisation:{mainCategory:'Living Room',subCategory:'Formal lounge',isRoom:true,objects:['sofa'],colours:['Grey'],chairs:['Armchair'],hasTelevision:true,hasComputer:false}},
+  {id:'img3',path:'images/3.jpg',sourceUrl:'https://example.com/3',categorisation:{mainCategory:'Other',subCategory:'Empty room',isRoom:true,objects:[],colours:[],chairs:[],hasTelevision:false,hasComputer:false}},
+  {id:'img4',path:'images/4.jpg',sourceUrl:'https://example.com/4',categorisation:{mainCategory:'Other',subCategory:'Document / Graphic',isRoom:false,objects:[],colours:[],chairs:[],hasTelevision:false,hasComputer:false}},
+  {id:'img5',path:'images/5.jpg',sourceUrl:'https://example.com/5',verdict:{matches:false,roomType:'infographic',description:'Travel infographic',reason:'This is an infographic, not a room.'}},
+  {id:'img6',path:'images/6.jpg',sourceUrl:'https://example.com/6',verdict:{matches:false,roomType:'',description:'Unfurnished room with wooden floorboards'}}
+ ],properties:[{name:'Style A',development:'Site A',developmentUrl:'https://example.com/site-a',url:'https://example.com/home-a',bedrooms:4,price:null,plots:[],imageIds:['img1','img2','img3','img4','img5','img6']}]}};
  const groups=groupCollections([col],'interiors');
- expect(groups.map(g=>[g.name,g.count])).toEqual([['Bedroom',1],['Living Room',1],['Uncategorised',1]]);
+ // img4 (isRoom: false) and img5 (infographic) are excluded. img3 (empty room) and img6 (empty room type room) are included in Uncategorised.
+ expect(groups.map(g=>[g.name,g.count])).toEqual([['Bedroom',1],['Living Room',1],['Uncategorised',2]]);
  expect(spaceName(col.report.images[0]!)).toBe('Bedroom');
  expect(spaceName(col.report.images[1]!)).toBe('Living Room');
  expect(spaceName(col.report.images[2]!)).toBe('Uncategorised');
 });
+
 

@@ -95,4 +95,24 @@ describe('Image categorisation', () => {
   expect(study.chairs).toContain('Office chair');
   expect(study.colours).toContain('Warm wood / Oak');
  });
+
+ it('identifies rooms vs non-room graphics, documents and maps', () => {
+  const emptyRoom = extractBaseCategorisation('empty room', 'An empty room with white walls and carpet');
+  expect(emptyRoom.isRoom).toBe(true);
+  expect(emptyRoom.mainCategory).toBe('Other');
+  expect(emptyRoom.subCategory).toBe('Empty room');
+
+  const unknownRoom = extractBaseCategorisation('', 'A spacious room with bay windows and wooden floorboards');
+  expect(unknownRoom.isRoom).toBe(true);
+
+  const info = extractBaseCategorisation('infographic', 'An informational graphic displaying travel times and connections', 'This is an infographic, not a room.');
+  expect(info.isRoom).toBe(false);
+
+  const epc = extractBaseCategorisation('energy_assessment', 'A Predicted Energy Assessment document showing rating 90', 'This is an energy performance certificate document, not a room.');
+  expect(epc.isRoom).toBe(false);
+
+  const map = extractBaseCategorisation('map', 'A geographical map showing local area amenities and roads', 'This is a map graphic, not a room.');
+  expect(map.isRoom).toBe(false);
+ });
 });
+

@@ -3,6 +3,7 @@ import { homeTypeName, plotDetails } from '../reports/home-display';
 import { useEffect, useRef, useState } from 'react';
 import type { RunReport } from '../reports/report';
 import { ViewOptions, useCardView } from './view-options';
+import { isRoomImage } from '../vision/room-classifier';
 
 interface Collection { slug: string; name: string; report: RunReport }
 const key = 'showhome-favourites-v1';
@@ -64,7 +65,12 @@ export function Gallery({
   }))
  );
 
- const available = all.filter(image => (favouritesOnly ? favourites.includes(image.id) : (image.verdict?.matches || includeUnclassified)));
+ const available = all.filter(image => {
+  if (favouritesOnly) return favourites.includes(image.id);
+  const isUncategorised = !image.categorisation || image.categorisation.mainCategory === 'Other';
+  if (isUncategorised && !isRoomImage(image)) return false;
+  return image.verdict?.matches || includeUnclassified;
+ });
 
  const mainCategories = [...new Set(available.map(img => img.categorisation?.mainCategory).filter(Boolean) as string[])].sort();
 

@@ -3,10 +3,14 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { ImageCategorisation } from '../reports/report.js';
 
+export { isNonRoom, isRoomImage } from './room-classifier.js';
+import { isNonRoom } from './room-classifier.js';
+
 export function extractBaseCategorisation(roomType?: string, description?: string, reason?: string): ImageCategorisation {
  const fullText = `${description || ''} ${reason || ''}`.trim();
  const lower = fullText.toLowerCase();
  const roomLower = (roomType || '').toLowerCase().replace(/_/g, ' ').trim();
+ const isRoom = !isNonRoom(roomType, description, reason);
 
  // 1. Main Category
  let mainCategory = 'Other';
@@ -129,6 +133,8 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
   else subCategory = 'Games room';
  } else if (mainCategory === 'Conservatory') {
   subCategory = 'Sunroom / Conservatory';
+ } else if (mainCategory === 'Other') {
+  subCategory = isRoom ? 'Empty room' : 'Document / Graphic';
  }
 
  // 3. Objects
@@ -231,6 +237,7 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
  return {
   mainCategory,
   subCategory,
+  isRoom,
   objects,
   wallpaper,
   curtains,
@@ -306,6 +313,7 @@ export async function categoriseBatchWithGemini(
     results.set(img.id, {
      mainCategory: img.mainCategory || 'Other',
      subCategory: img.subCategory || img.mainCategory || 'Other',
+     isRoom: !isNonRoom(img.subCategory || img.mainCategory),
      objects: Array.isArray(img.objects) ? img.objects : [],
      wallpaper: img.wallpaper && img.wallpaper !== 'null' ? img.wallpaper : null,
      curtains: img.curtains && img.curtains !== 'null' ? img.curtains : null,
@@ -337,8 +345,10 @@ export async function categoriseAllImages(
   if (existsSync(cachePath)) {
    try {
     const data = JSON.parse(await readFile(cachePath, 'utf8')) as ImageCategorisation;
-    map.set(img.id, data);
-    continue;
+    if (data.isRoom !== undefined) {
+     map.set(img.id, data);
+     continue;
+    }
    } catch {
     // Ignore corrupt cache
    }

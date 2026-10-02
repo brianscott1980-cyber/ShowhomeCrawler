@@ -2455,6 +2455,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [
           "driveway"
         ],
@@ -2484,6 +2485,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry"
@@ -2514,6 +2516,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Open-plan living",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -2539,6 +2542,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table",
           "fireplace"
@@ -2567,6 +2571,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -2596,6 +2601,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -2623,6 +2629,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Small bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -2650,6 +2657,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -2678,6 +2686,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "nightstand"
@@ -2706,6 +2715,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "shower",
           "vanity unit",
@@ -2735,6 +2745,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -2760,6 +2771,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Open-plan living",
+        "isRoom": true,
         "objects": [
           "sofa"
         ],
@@ -2787,6 +2799,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry"
@@ -2815,6 +2828,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "bookcase"
@@ -2843,6 +2857,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -2870,6 +2885,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -2897,6 +2913,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "chest of drawers"
@@ -2925,6 +2942,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "nightstand"
@@ -2953,6 +2971,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "shower",
           "vanity unit",
@@ -2982,6 +3001,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "wardrobe"
@@ -3010,6 +3030,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -3035,6 +3056,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -3064,6 +3086,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "television"
         ],
@@ -3091,6 +3114,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "mirror",
@@ -3120,6 +3144,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3147,6 +3172,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3174,6 +3200,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3203,6 +3230,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3230,6 +3258,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk",
@@ -3261,6 +3290,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "shower"
@@ -3289,6 +3319,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "bar stools"
@@ -3319,6 +3350,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -3348,6 +3380,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "fireplace"
         ],
@@ -3375,6 +3408,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3404,6 +3438,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3431,6 +3466,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -3459,6 +3495,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "nightstand"
@@ -3487,6 +3524,7 @@
       "categorisation": {
         "mainCategory": "Toilet",
         "subCategory": "Cloakroom / WC",
+        "isRoom": true,
         "objects": [
           "vanity unit",
           "toilet"
@@ -3515,6 +3553,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -3540,6 +3579,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table"
         ],
@@ -3567,6 +3607,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry",
@@ -3598,6 +3639,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table",
           "television"
@@ -3626,6 +3668,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "wardrobe"
@@ -3654,6 +3697,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "bar stools"
@@ -3684,6 +3728,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -3709,6 +3754,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table"
         ],
@@ -3738,6 +3784,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "television"
         ],
@@ -3767,6 +3814,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3794,6 +3842,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -3821,6 +3870,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "chest of drawers"
@@ -3849,6 +3899,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -3877,6 +3928,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -3902,6 +3954,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -3927,6 +3980,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -3952,6 +4006,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table"
         ],
@@ -3979,6 +4034,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "coffee table"
@@ -4007,6 +4063,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4034,6 +4091,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4061,6 +4119,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "vanity unit",
@@ -4090,6 +4149,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4117,6 +4177,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4142,6 +4203,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island"
         ],
@@ -4169,6 +4231,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4194,6 +4257,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Open-plan living",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4219,6 +4283,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table",
           "television"
@@ -4247,6 +4312,7 @@
       "categorisation": {
         "mainCategory": "Dining Room",
         "subCategory": "Formal dining room",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -4276,6 +4342,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4303,6 +4370,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4330,6 +4398,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "toilet"
@@ -4358,6 +4427,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Open-plan living",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4383,6 +4453,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table"
         ],
@@ -4410,6 +4481,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4437,6 +4509,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4462,6 +4535,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4489,6 +4563,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4514,6 +4589,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4541,6 +4617,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island"
         ],
@@ -4568,6 +4645,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4593,6 +4671,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4620,6 +4699,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island"
         ],
@@ -4647,6 +4727,7 @@
       "categorisation": {
         "mainCategory": "Dining Room",
         "subCategory": "Formal dining room",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -4676,6 +4757,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa"
         ],
@@ -4703,6 +4785,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "fireplace"
@@ -4731,6 +4814,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4758,6 +4842,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "shower",
           "vanity unit"
@@ -4786,6 +4871,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -4811,6 +4897,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "toilet"
@@ -4839,6 +4926,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4866,6 +4954,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [
           "garage"
         ],
@@ -4895,6 +4984,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry"
@@ -4923,6 +5013,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "nightstand"
@@ -4951,6 +5042,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -4978,6 +5070,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -5003,6 +5096,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "bar stools"
@@ -5033,6 +5127,7 @@
       "categorisation": {
         "mainCategory": "Utility Room",
         "subCategory": "Utility room",
+        "isRoom": true,
         "objects": [
           "vanity unit"
         ],
@@ -5060,6 +5155,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "shower",
           "vanity unit"
@@ -5088,6 +5184,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island"
         ],
@@ -5115,6 +5212,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table"
         ],
@@ -5142,6 +5240,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [
           "dining table"
         ],
@@ -5169,6 +5268,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -5196,6 +5296,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "shower",
           "vanity unit"
@@ -5224,6 +5325,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -5249,6 +5351,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry"
@@ -5277,6 +5380,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [
           "dining table"
         ],
@@ -5304,6 +5408,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table"
         ],
@@ -5331,6 +5436,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "coffee table",
@@ -5360,6 +5466,7 @@
       "categorisation": {
         "mainCategory": "Dining Room",
         "subCategory": "Formal dining room",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -5389,6 +5496,7 @@
       "categorisation": {
         "mainCategory": "Hallway",
         "subCategory": "Landing & Stairs",
+        "isRoom": true,
         "objects": [
           "side table"
         ],
@@ -5416,6 +5524,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -5443,6 +5552,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "vanity unit",
@@ -5472,6 +5582,7 @@
       "categorisation": {
         "mainCategory": "Dining Room",
         "subCategory": "Formal dining room",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -5501,6 +5612,7 @@
       "categorisation": {
         "mainCategory": "Study & Home Office",
         "subCategory": "Dedicated study",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk",
@@ -5530,6 +5642,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -5559,6 +5672,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island"
         ],
@@ -5586,6 +5700,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa"
         ],
@@ -5613,6 +5728,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa"
         ],
@@ -5640,6 +5756,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry"
@@ -5668,6 +5785,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -5693,6 +5811,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "wardrobe"
@@ -5721,6 +5840,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -5748,6 +5868,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -5776,6 +5897,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -5803,6 +5925,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -5832,6 +5955,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -5859,6 +5983,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "armchair",
@@ -5891,6 +6016,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -5918,6 +6044,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -5945,6 +6072,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table",
           "desk"
@@ -5973,6 +6101,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Fitted kitchen",
+        "isRoom": true,
         "objects": [
           "cabinetry"
         ],
@@ -6000,6 +6129,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -6027,6 +6157,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table",
           "desk"
@@ -6055,6 +6186,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -6082,6 +6214,7 @@
       "categorisation": {
         "mainCategory": "Toilet",
         "subCategory": "Cloakroom / WC",
+        "isRoom": true,
         "objects": [
           "vanity unit",
           "toilet"
@@ -6110,6 +6243,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Fitted kitchen",
+        "isRoom": true,
         "objects": [
           "cabinetry"
         ],
@@ -6140,6 +6274,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [
           "garage",
           "driveway"
@@ -6170,6 +6305,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table",
           "fireplace"
@@ -6198,6 +6334,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry"
@@ -6228,6 +6365,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "Garden",
+        "isRoom": true,
         "objects": [
           "lawn"
         ],
@@ -6257,6 +6395,7 @@
       "categorisation": {
         "mainCategory": "Dining Room",
         "subCategory": "Formal dining room",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -6286,6 +6425,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "fireplace"
@@ -6314,6 +6454,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -6341,6 +6482,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -6368,6 +6510,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "dressing table",
@@ -6397,6 +6540,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -6424,6 +6568,7 @@
       "categorisation": {
         "mainCategory": "Toilet",
         "subCategory": "Cloakroom / WC",
+        "isRoom": true,
         "objects": [
           "vanity unit",
           "toilet",
@@ -6453,6 +6598,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -6478,6 +6624,7 @@
       "categorisation": {
         "mainCategory": "Dining Room",
         "subCategory": "Formal dining room",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -6507,6 +6654,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -6534,6 +6682,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "vanity unit",
@@ -6563,6 +6712,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [
           "cabinetry"
         ],
@@ -6592,6 +6742,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "coffee table",
           "television"
@@ -6620,6 +6771,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -6647,6 +6799,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "dressing table",
@@ -6677,6 +6830,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -6705,6 +6859,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -6733,6 +6888,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -6760,6 +6916,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Fitted kitchen",
+        "isRoom": true,
         "objects": [
           "cabinetry"
         ],
@@ -6789,6 +6946,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "cabinetry",
@@ -6823,6 +6981,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "armchair",
@@ -6855,6 +7014,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "nightstand"
@@ -6883,6 +7043,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "vanity unit"
@@ -6911,6 +7072,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -6939,6 +7101,7 @@
       "categorisation": {
         "mainCategory": "Study & Home Office",
         "subCategory": "Bedroom workspace",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk",
@@ -6968,6 +7131,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "shower"
@@ -6996,6 +7160,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7023,6 +7188,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7048,6 +7214,7 @@
       "categorisation": {
         "mainCategory": "Utility Room",
         "subCategory": "Laundry room",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7073,6 +7240,7 @@
       "categorisation": {
         "mainCategory": "Study & Home Office",
         "subCategory": "Dedicated study",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk",
@@ -7102,6 +7270,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7127,6 +7296,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -7154,6 +7324,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Fitted kitchen",
+        "isRoom": true,
         "objects": [
           "cabinetry"
         ],
@@ -7181,6 +7352,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island"
         ],
@@ -7208,6 +7380,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "bar stools"
@@ -7238,6 +7411,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island",
           "bar stools"
@@ -7268,6 +7442,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Fitted kitchen",
+        "isRoom": true,
         "objects": [
           "sofa",
           "coffee table"
@@ -7296,6 +7471,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "coffee table"
@@ -7324,6 +7500,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "coffee table",
@@ -7353,6 +7530,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -7380,6 +7558,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -7407,6 +7586,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -7434,6 +7614,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "armchair",
@@ -7465,6 +7646,7 @@
       "categorisation": {
         "mainCategory": "Dining Room",
         "subCategory": "Formal dining room",
+        "isRoom": true,
         "objects": [
           "dining chairs"
         ],
@@ -7494,6 +7676,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Kitchen island",
+        "isRoom": true,
         "objects": [
           "kitchen island"
         ],
@@ -7521,6 +7704,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7546,6 +7730,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa"
         ],
@@ -7573,6 +7758,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "television"
@@ -7601,6 +7787,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "television"
@@ -7629,6 +7816,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "vanity unit"
@@ -7657,6 +7845,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "wardrobe"
@@ -7685,6 +7874,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -7714,6 +7904,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "desk"
@@ -7742,6 +7933,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7767,6 +7959,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7792,6 +7985,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7817,6 +8011,7 @@
       "categorisation": {
         "mainCategory": "Exterior",
         "subCategory": "House front",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7842,6 +8037,7 @@
       "categorisation": {
         "mainCategory": "Living Room",
         "subCategory": "Formal lounge",
+        "isRoom": true,
         "objects": [
           "sofa",
           "fireplace"
@@ -7870,6 +8066,7 @@
       "categorisation": {
         "mainCategory": "Kitchen",
         "subCategory": "Open-plan kitchen",
+        "isRoom": true,
         "objects": [],
         "wallpaper": null,
         "curtains": null,
@@ -7895,6 +8092,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Double bedroom",
+        "isRoom": true,
         "objects": [
           "bed"
         ],
@@ -7922,6 +8120,7 @@
       "categorisation": {
         "mainCategory": "Bathroom",
         "subCategory": "Family bathroom",
+        "isRoom": true,
         "objects": [
           "bathtub",
           "vanity unit"
@@ -7950,6 +8149,7 @@
       "categorisation": {
         "mainCategory": "Bedroom",
         "subCategory": "Master bedroom",
+        "isRoom": true,
         "objects": [
           "bed",
           "nightstand"

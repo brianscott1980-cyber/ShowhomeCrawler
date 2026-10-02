@@ -10,6 +10,7 @@ async function saveArtifact(path: string, body: string) {
 export interface ImageCategorisation {
  mainCategory: string;
  subCategory: string;
+ isRoom: boolean;
  objects: string[];
  wallpaper?: string | null;
  curtains?: string | null;

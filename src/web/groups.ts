@@ -1,6 +1,7 @@
 import {createHash} from 'node:crypto';
 import {developers,readCollection} from './collections';
 import {homeTypeName} from '../reports/home-display';
+import {isRoomImage} from '../vision/room-classifier';
 import type {RunReport,ReportImage} from '../reports/report';
 export type GroupKind='sites'|'spaces'|'buildings'|'locations'|'interiors';
 export interface Collection {slug:string;name:string;report:RunReport}
@@ -22,7 +23,9 @@ export function groupCollections(collections:Collection[],kind:GroupKind):Group[
  const isSites=kind==='sites'||kind==='locations';
  for(const collection of collections){
   const maps=new Map<string,{name:string;images:ReportImage[];properties:RunReport['properties']}>();
-  const targetImages=isSpaces?collection.report.images:collection.report.images.filter(i=>!i.verdict||i.verdict.matches);
+  const targetImages=isSpaces
+   ? collection.report.images.filter(image => spaceName(image, collection.report.question) !== 'Uncategorised' || isRoomImage(image))
+   : collection.report.images.filter(i=>!i.verdict||i.verdict.matches);
   for(const image of targetImages){
    const homes=(collection.report.properties??[]).filter(p=>p.imageIds.includes(image.id));
    const entries=isSpaces?[{identity:spaceName(image,collection.report.question),name:spaceName(image,collection.report.question),homes}]:homes.map(p=>({identity:isSites?`${collection.slug}:${p.developmentUrl}`:`${collection.slug}:${homeTypeName(p.name).toLowerCase()}`,name:isSites?p.development:homeTypeName(p.name),homes:[p]}));
