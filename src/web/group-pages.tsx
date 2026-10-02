@@ -1,3 +1,4 @@
+import {BuilderName} from './builder-name';
 import {cardImageCollection,reportCardImage} from './card-images';
 import {SiteDirectory} from './site-directory';
 import {siteCards} from './site-cards';
@@ -17,7 +18,7 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
 }
 export async function GroupDetail({kind,id}:{kind:GroupKind;id:string}){
  const group=(await readGroups(kind)).find(g=>g.key===id);if(!group)notFound();const pathPrefix=prefixFor(kind);
- return <main><section className="intro compact"><Link href={`/${pathPrefix}`}>← All {labels[kind].toLowerCase()}</Link><h1>{group.name}</h1><p>{group.developers.join(' · ')}</p></section><Gallery collections={group.collections} includeUnclassified/></main>;
+ return <main><section className="intro compact"><Link href={`/${pathPrefix}`}>← All {labels[kind].toLowerCase()}</Link><h1>{group.name}</h1><p>{group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)}</p></section><Gallery collections={group.collections} includeUnclassified/></main>;
 }
 export async function groupMetadata(kind:GroupKind,id:string){const group=(await readGroups(kind)).find(g=>g.key===id);if(!group)notFound();const pathPrefix=prefixFor(kind);return {title:`${group.name} | Showhome Explorer`,description:`Explore ${group.count} images from ${group.name} by ${group.developers.join(', ')}.`,alternates:{canonical:`/${pathPrefix}/${id}`}};}
 
