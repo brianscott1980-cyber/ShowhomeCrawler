@@ -14,7 +14,7 @@ Criteria: at least five bedrooms; a visible desk, no visible bed, and no floorpl
 | 8 | Redrow | Completed; collection included in this commit | 91 | 71 | 200 | 2 | 0 |
 | 9 | The Berkeley Group | Completed with gaps; collection included in this commit | 217 development/phase pages | 12 collected; 3 listings lack details links | 22 | 0 | 4 |
 | 10 | Crest Nicholson | Completed; collection included in this commit | 46 | 30 | 156 | 9 | 0 |
-| 11 | Lynch Homes | Queued | | | | | |
+| 11 | Lynch Homes | Completed; collection included in this commit | 3 | 0 | 0 | 0 | 0 |
 | 12 | Story Homes | Queued | | | | | |
 | 13 | Hill Group | Queued | | | | | |
 
@@ -23,3 +23,5 @@ Classifier note: Gemini 3.5 Flash-Lite reached its 500-request daily quota durin
 Berkeley coverage: Napier Square has no supported availability table. Three qualifying listings at Eastbrook Village, The Chaplin Collection, and Trent Park link to the homepage rather than a property page; homepage galleries are excluded. Five Fleet area guides are excluded from development discovery. All 22 collected property images were classified; none met the office criteria.
 
 Floorplan criterion update: nine previously published Taylor Wimpey matches were confirmed as floorplan graphics in a visual review and excluded. Its match count is now 41. Earlier photos retain their original classifier results; new crawls use the explicit v2 floorplan checks.
+
+Lynch coverage: all three sitemap development pages checked. Jackton Manor advertises three plots with three or four bedrooms; The Kings and The Kings Phase 4 both explicitly report “Nothing found.” No listings meet the five-bedroom minimum, so no property images were downloaded or classified. The empty collection report is retained and hidden from gateway lists.

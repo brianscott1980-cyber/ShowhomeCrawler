@@ -12,7 +12,7 @@ export const developers = [
  { slug: 'redrow', name: 'Redrow', website: 'https://www.redrow.co.uk', sitemap: '/sitemaps/sitemap-redrow-developments.xml' },
  { slug: 'berkeley-group', name: 'The Berkeley Group', website: 'https://www.berkeleygroup.co.uk', sitemap: '/sitemaps/sitemap-index' },
  { slug: 'crest-nicholson', name: 'Crest Nicholson', website: 'https://www.crestnicholson.com', sitemap: '/sitemap.xml' },
- { slug: 'lynch-homes', name: 'Lynch Homes', website: 'https://www.lynchhomes.co.uk', sitemap: '/sitemap.xml' },
+ { slug: 'lynch-homes', name: 'Lynch Homes', website: 'https://www.lynchhomes.co.uk', sitemap: '/sitemap_index.xml' },
  { slug: 'story-homes', name: 'Story Homes', website: 'https://www.storyhomes.co.uk', sitemap: '/sitemap_index.xml' },
  { slug: 'hill-group', name: 'Hill Group', website: 'https://www.hill.co.uk', sitemap: '/sitemap.xml' },
 ] as const;
