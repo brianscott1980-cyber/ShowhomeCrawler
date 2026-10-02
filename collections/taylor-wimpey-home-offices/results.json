@@ -2790,9 +2790,7 @@
           "available": true
         }
       ],
-      "imageIds": [
-        "34d6832a87ea024a4fdcf6a2019f15b5bfc81156ac194ac256d0fafa0d72c9ae"
-      ]
+      "imageIds": []
     },
     {
       "development": "Twill Meadow",
@@ -3054,9 +3052,7 @@
           "available": true
         }
       ],
-      "imageIds": [
-        "cccfc5dd9687823486dcb342dcebfcf2e16ae2d10a38f7398a5095c6bb9cc30d"
-      ]
+      "imageIds": []
     },
     {
       "development": "Burdon Manor",
@@ -3156,9 +3152,7 @@
           "available": true
         }
       ],
-      "imageIds": [
-        "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99"
-      ]
+      "imageIds": []
     },
     {
       "development": "Heathwood at Brunton Rise",
@@ -3174,9 +3168,7 @@
           "available": true
         }
       ],
-      "imageIds": [
-        "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99"
-      ]
+      "imageIds": []
     },
     {
       "development": "Rose Meadows",
@@ -3212,8 +3204,7 @@
         }
       ],
       "imageIds": [
-        "8ee4ecc7a312c2cc881c6327adf57bee95f50873484a0204b048de9423090b06",
-        "87b621e8118e927edc32b61b1c4fb33a4542a73502e27a44de48cb9f8480d1c1"
+        "8ee4ecc7a312c2cc881c6327adf57bee95f50873484a0204b048de9423090b06"
       ]
     },
     {
@@ -3664,8 +3655,7 @@
         }
       ],
       "imageIds": [
-        "6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26",
-        "ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323"
+        "6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26"
       ]
     },
     {
@@ -3683,8 +3673,7 @@
         }
       ],
       "imageIds": [
-        "6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26",
-        "ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323"
+        "6ab80374afdf9dd900f086fdedc73108f37f22e8234c47db52b70fa8a2cb2e26"
       ]
     },
     {
@@ -3820,8 +3809,7 @@
         }
       ],
       "imageIds": [
-        "3ad1b4943f932a0f98d7f9932655b840e2ceb8bc7494202eee257fbf739f4d52",
-        "dcc6c805a78182ef14e5ff4a11f926f96044364ded230aef17a9971a69f31702"
+        "3ad1b4943f932a0f98d7f9932655b840e2ceb8bc7494202eee257fbf739f4d52"
       ]
     },
     {
@@ -3909,8 +3897,7 @@
         }
       ],
       "imageIds": [
-        "5e6cda551ad319e28512767b485ce0331cf6c365349fea5e2afc46fd790db2dd",
-        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+        "5e6cda551ad319e28512767b485ce0331cf6c365349fea5e2afc46fd790db2dd"
       ]
     },
     {
@@ -3928,8 +3915,7 @@
         }
       ],
       "imageIds": [
-        "64761317efb6569530b593a0d00f69f1086c300db0ea4b570f4266acb3b3eb36",
-        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+        "64761317efb6569530b593a0d00f69f1086c300db0ea4b570f4266acb3b3eb36"
       ]
     },
     {
@@ -3948,8 +3934,7 @@
       ],
       "imageIds": [
         "2df239e1919993016239fbcbcf4df7fee5d8806b424361ebb5b44111921389ea",
-        "a11ae0bde4dab460718dd2c262556ecbd3dbdc1b9da0957fabedfcf66fcfc1f1",
-        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+        "a11ae0bde4dab460718dd2c262556ecbd3dbdc1b9da0957fabedfcf66fcfc1f1"
       ]
     },
     {
@@ -3967,8 +3952,7 @@
         }
       ],
       "imageIds": [
-        "10800b25552c115dd68d04cc5870c7cbfbfe0dc6343424ae7ff3d59c84462987",
-        "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b"
+        "10800b25552c115dd68d04cc5870c7cbfbfe0dc6343424ae7ff3d59c84462987"
       ]
     },
     {
@@ -4005,8 +3989,7 @@
       ],
       "imageIds": [
         "a7e18c07c671743b09b7b7524c4b39899cd13b5d28cfc95964a005442225e9c7",
-        "3c99f32554df27fa44df01c78b80f3de2df5309958e619f0ec0f400e123a95ec",
-        "7ac182a576a43517778bd1124e52fc072816b9f8f63aefe10ccae794d008c017"
+        "3c99f32554df27fa44df01c78b80f3de2df5309958e619f0ec0f400e123a95ec"
       ]
     },
     {
@@ -4078,9 +4061,7 @@
           "available": true
         }
       ],
-      "imageIds": [
-        "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99"
-      ]
+      "imageIds": []
     },
     {
       "development": "Swinnow Park",
@@ -4187,8 +4168,7 @@
         }
       ],
       "imageIds": [
-        "2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7",
-        "745362b34ea9ac6c031f1e71f6b3fa732a85f027103337cf4ba08fd4116a88d8"
+        "2654fa57e723a57c89c149741c905affcf42ac0729b222f349c7a39e3f1105e7"
       ]
     },
     {
@@ -4522,19 +4502,6 @@
       }
     },
     {
-      "id": "34d6832a87ea024a4fdcf6a2019f15b5bfc81156ac194ac256d0fafa0d72c9ae",
-      "path": "images/34d6832a87ea024a4fdcf6a2019f15b5bfc81156ac194ac256d0fafa0d72c9ae.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/Twill-Meadow/Web---Floorplans/EMB51---Aireton-GF.jpg?mw=1800&hash=614B7A6557B13C8CD9411C75D8B13FE1",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "floor plan",
-        "description": "An architectural floor plan showing multiple rooms including a kitchen, living area, dining space, and a home office.",
-        "reason": "The floor plan shows a dedicated home office area equipped with a desk and chair, and no beds."
-      }
-    },
-    {
       "id": "a5cb66720c2cd58d19d1a577d7dbb8a44ecec54bfa6bf54f53f30076ac32ff12",
       "path": "images/a5cb66720c2cd58d19d1a577d7dbb8a44ecec54bfa6bf54f53f30076ac32ff12.jpg",
       "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/Showhome-Photography/New-House-Types/Patterham/Patterham-Show-home-Photography/Patterham---Office-Bed-5---FW.jpg?mw=1800&hash=A326AFA17A9B651E8A869DAC148BBFC8",
@@ -4626,19 +4593,6 @@
       }
     },
     {
-      "id": "cccfc5dd9687823486dcb342dcebfcf2e16ae2d10a38f7398a5095c6bb9cc30d",
-      "path": "images/cccfc5dd9687823486dcb342dcebfcf2e16ae2d10a38f7398a5095c6bb9cc30d.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-East/Sales/Burdon-Manor/Floorplans/EMB51---Aireton---GF.jpg?mw=1800&hash=0EB51BF8C2849B504CA28B585F1C799F",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "study",
-        "description": "An architectural floor plan showing a designated study room with a desk and computer setup.",
-        "reason": "This floor plan includes a dedicated study room featuring a desk with no bed present."
-      }
-    },
-    {
       "id": "5042b64522c59161b1fe3958250de4852d39db032bcd94618b6c1427503976e5",
       "path": "images/5042b64522c59161b1fe3958250de4852d39db032bcd94618b6c1427503976e5.jpg",
       "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/NEW-SHOW-HOME-INTERIORS/Wallace/The-Wallace-at-Oakwood-Grove/14--TWWS-Oakwood-Grove-The-Wallace-Bedroom-51800x1200.jpg?mw=1800&hash=CD42819DBF578322D4802483AA9E48DC",
@@ -4662,19 +4616,6 @@
         "roomType": "home office",
         "description": "A home office with blue walls, a wooden desk with a laptop, a blue chair, and an armchair.",
         "reason": "The room is staged as a home office with a visible desk and workspace, and there is no bed present."
-      }
-    },
-    {
-      "id": "269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99",
-      "path": "images/269ec87783b03e8428d2aef780d7beaf262b782e32f335e15aa195870b118b99.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-East/Sales/Heathwood-Phase-2C-and-3/Floor-Plans/EMB51---Aireton---GF.jpg?mw=1800&hash=6261C5C79CAEB2681C0DCC03152A9C0B",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "home office / study",
-        "description": "An architectural floor plan of a home ground floor layout featuring a designated study with a desk.",
-        "reason": "The floor plan shows a dedicated study room labeled with a desk and chair, and no beds are present."
       }
     },
     {
@@ -4714,19 +4655,6 @@
         "roomType": "home office / study",
         "description": "A well-lit home office or study area featuring a sleek dark desk with a laptop, an ergonomic chair, and a decorative shelving unit by a window.",
         "reason": "It is staged as a home office/study with a visible desk and work surface for office work, and there is no visible bed."
-      }
-    },
-    {
-      "id": "87b621e8118e927edc32b61b1c4fb33a4542a73502e27a44de48cb9f8480d1c1",
-      "path": "images/87b621e8118e927edc32b61b1c4fb33a4542a73502e27a44de48cb9f8480d1c1.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Stortford-Fields/Stortford-Phase-5/3D-Floor-Plans/Aireton-GF.jpg?mw=1800&hash=A1E32E1B45F6425076E8A957991979C4",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "floorplan",
-        "description": "An architectural floor plan showing a multi-room layout including a dedicated home office study area with a desk.",
-        "reason": "This is a floorplan showing a designated office room with a visible desk and no bed."
       }
     },
     {
@@ -4847,19 +4775,6 @@
       }
     },
     {
-      "id": "ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323",
-      "path": "images/ece899523c9e6b510da7250aa9b76b71b219824da00cd7dba1a7e04e9c743323.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/South-East/Sales/Capstone-Oaks/Floorplans/EMA51_GF---Thirlford.jpg?mw=1800&hash=E8B294102C707AB5CC27FF882E7491EA",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "floorplan",
-        "description": "Floor plan of a multi-room house layout showing a designated study room with a desk.",
-        "reason": "The floor plan clearly depicts a dedicated study room with a desk setup and no bed present."
-      }
-    },
-    {
       "id": "3def3d586b7065503a3fca9011db9459023b3606cc9fcfbc731a663fa970cd03",
       "path": "images/3def3d586b7065503a3fca9011db9459023b3606cc9fcfbc731a663fa970cd03.jpg",
       "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Midlands/Sales/Wellington-Place/Garrton-Showhome/Study.jpg?mw=1800&hash=06C40656616400AC0FF4E73E779ACC6F",
@@ -4870,19 +4785,6 @@
         "roomType": "home_office",
         "description": "Dedicated study room staged with a dark wood desk, office chair, patterned accent wall, and a lamp.",
         "reason": "The room is clearly staged as a home office with a visible desk and no bed."
-      }
-    },
-    {
-      "id": "dcc6c805a78182ef14e5ff4a11f926f96044364ded230aef17a9971a69f31702",
-      "path": "images/dcc6c805a78182ef14e5ff4a11f926f96044364ded230aef17a9971a69f31702.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/Exeter/Sales/Apsham-Grange/Fortibus-Fields/Floorplans/Thirlford-GF-FP.jpg?mw=1800&hash=91C838D571AFC3875D7712883E294F64",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "floorplan",
-        "description": "A floorplan clearly featuring a designated 'Study' room complete with a desk and chair.",
-        "reason": "Although this is a floorplan, it specifically highlights a dedicated study/home office room with a visible desk and no bed, satisfying the office criteria."
       }
     },
     {
@@ -4899,19 +4801,6 @@
       }
     },
     {
-      "id": "2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b",
-      "path": "images/2cae6d9bec1f9a7a3312a82551fef5cd37977caf8959b5ba404188f14cf81b2b.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/The-Arboretum/Floorplans/Revisions/NB51_Garrton_GF.jpg?mw=1800&hash=BEECF793FE5EB397A96A7395E6D6E836",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "home office",
-        "description": "An architectural floorplan showing a living room, kitchen, dining area, bathroom, and a home office with a desk.",
-        "reason": "The floorplan depicts a dedicated office/study space featuring a desk and chair with no beds present in that specific room, satisfying all criteria."
-      }
-    },
-    {
       "id": "1f27a64bcc8235d55170d4aa6414e3dd2b3c80fd61d1a220ced31ff67907936d",
       "path": "images/1f27a64bcc8235d55170d4aa6414e3dd2b3c80fd61d1a220ced31ff67907936d.jpg",
       "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/All-Developments/Show-home-photography/Garrton/SM-Orchard-Chase/Study.jpg?mw=1800&hash=19BDD823C99B325D7F31482762F6FEFF",
@@ -4922,19 +4811,6 @@
         "roomType": "home office",
         "description": "A staged home office featuring a desk, office chair, shelving unit, and decorative wall art against a burgundy accent wall.",
         "reason": "This room contains a visible desk and office chair, and no bed, perfectly matching a home office."
-      }
-    },
-    {
-      "id": "7ac182a576a43517778bd1124e52fc072816b9f8f63aefe10ccae794d008c017",
-      "path": "images/7ac182a576a43517778bd1124e52fc072816b9f8f63aefe10ccae794d008c017.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Anglia/Sales/Deben-Park/Floor-plans/Ph-2-W6/Dunnerton---EMB52-GF.jpg?mw=1800&hash=D6F61B8B67C5BE29B11B4E9FE14F491C",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "floorplan",
-        "description": "A floorplan showing various rooms including a clearly marked home office with a desk.",
-        "reason": "This floorplan layout includes a staged home office area with a visible desk and no bed."
       }
     },
     {
@@ -4987,19 +4863,6 @@
         "roomType": "home office",
         "description": "A staged home office featuring a built-in desk, office chair, shelving unit, and laptop.",
         "reason": "The image clearly shows a dedicated home office/study setup with a work desk and chair, and no bed."
-      }
-    },
-    {
-      "id": "745362b34ea9ac6c031f1e71f6b3fa732a85f027103337cf4ba08fd4116a88d8",
-      "path": "images/745362b34ea9ac6c031f1e71f6b3fa732a85f027103337cf4ba08fd4116a88d8.jpg",
-      "sourceUrl": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-Thames/Sales/Clayridge-Park/FPs/Thirlford-GF.jpg?mw=1800&hash=62B8A6A0351ADD437A3D8961CF558FE1",
-      "verdict": {
-        "matches": true,
-        "hasDesk": true,
-        "hasBed": false,
-        "roomType": "home office",
-        "description": "Floor plan highlighting a home office with a visible desk workspace and no bed",
-        "reason": "This floor plan clearly shows a home office/study room equipped with a desk and no beds."
       }
     },
     {

@@ -45,7 +45,7 @@ async function main() {
  };
  const sql = values.persist ? createDatabase() : null;
  const repo = sql ? new PostgresCatalogRepository(sql, site) : null;
- const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question, developments: [], properties: [], images: [], errors: [], metrics: {} };
+ const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question, analysisVersion, developments: [], properties: [], images: [], errors: [], metrics: {} };
  let stopped = false; process.once('SIGINT', () => { stopped = true; }); process.once('SIGTERM', () => { stopped = true; });
  try {
   const sourceText = (url: string) => values['browser-snapshots'] ? readFile(`results/.cache/pages/${sha256(url)}.html`, 'utf8') : client.text(url);
