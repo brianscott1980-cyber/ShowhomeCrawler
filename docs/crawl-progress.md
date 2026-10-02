@@ -1,6 +1,6 @@
 # Developer crawl progress
 
-Criteria: at least five bedrooms; a visible desk and no visible bed. Developers run in the requested order. Each finished collection is committed and pushed with its matched image assets under `collections/`.
+Criteria: at least five bedrooms; a visible desk and no visible bed. Developers run in the requested order. From Berkeley onward, ask the user before starting each subsequent developer. Each finished collection is committed and pushed with its matched image assets under `collections/`.
 
 | Order | Developer | Status | Developments checked | Qualifying properties | Unique images | Office matches | Coverage gaps |
 |---|---|---|---:|---:|---:|---:|---:|
@@ -12,10 +12,12 @@ Criteria: at least five bedrooms; a visible desk and no visible bed. Developers 
 | 6 | Persimmon | Completed; collection included in this commit | 234 | 84 | 407 | 19 | 0 |
 | 7 | Robertson Homes | Completed; collection included in this commit | 19 | 26 | 248 | 7 | 0 |
 | 8 | Redrow | Completed; collection included in this commit | 91 | 71 | 200 | 2 | 0 |
-| 9 | The Berkeley Group | Queued | | | | | |
+| 9 | The Berkeley Group | Completed with gaps; collection included in this commit | 217 development/phase pages | 12 collected; 3 listings lack details links | 22 | 0 | 4 |
 | 10 | Crest Nicholson | Queued | | | | | |
 | 11 | Lynch Homes | Queued | | | | | |
 | 12 | Story Homes | Queued | | | | | |
 | 13 | Hill Group | Queued | | | | | |
 
 Classifier note: Gemini 3.5 Flash-Lite reached its 500-request daily quota during Persimmon. Remaining Persimmon images and subsequent collections use Gemini 3.1 Flash-Lite; image records retain model attribution.
+
+Berkeley coverage: Napier Square has no supported availability table. Three qualifying listings at Eastbrook Village, The Chaplin Collection, and Trent Park link to the homepage rather than a property page; homepage galleries are excluded. Five Fleet area guides are excluded from development discovery. All 22 collected property images were classified; none met the office criteria.
