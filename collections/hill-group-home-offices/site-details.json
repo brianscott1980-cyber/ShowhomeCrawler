@@ -1,0 +1,345 @@
+[
+  {
+    "url": "https://www.hill.co.uk/millside-grange",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1649950,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1695000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/hartley-acres",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 334950,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 409950,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 499950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 574950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 799950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 799950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 949950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/hollymead-square",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 549950,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 574950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 709950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 764950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 779950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 799950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 849950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/farehurst-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 489950,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 499950,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 659950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 669950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 749950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 799950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 999950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/st-georges-place",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 569950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 599950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 649950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 839950,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 869950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/audley-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 574950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 579950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 604950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 609950,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 789950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 919950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/kingsley-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 599950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 609950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 609950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 614950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 619950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 749950,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 789950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 829950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 999950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/hartmere",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 749950,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 829950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 899950,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 1249950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 1279950,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1299950,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1499950,
+        "bedrooms": 6,
+        "style": "Detached"
+      },
+      {
+        "price": 1599950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/abbotts-chase",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 699950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 779950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 869950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 874950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 1224950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  }
+]

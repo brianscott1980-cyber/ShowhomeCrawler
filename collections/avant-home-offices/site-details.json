@@ -1,0 +1,490 @@
+[
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 215000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 263000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 300000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 393000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 320000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 375000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 298995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 298995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 300995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 363995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 396995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 397995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 398995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 414995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 421995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 426995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 341995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 434995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 439995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 516995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 519995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 544995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 555995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 286995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 286995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 301995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 306995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 329995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 354995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 359995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 363995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 371995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 389995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 396995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 419995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 434995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 444995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 458995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 224995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 224995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 266995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 284995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 284995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 347995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 348995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 379995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 381995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 383995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 396995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 304995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 333995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 333995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 418995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 420995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 435995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 435995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 451995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 473995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 475995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 494995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/leeds/bishops-quarter",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 285000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/swadlincote/cadley-village",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 450000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  }
+]
