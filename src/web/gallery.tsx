@@ -1,6 +1,6 @@
 'use client';
 import { homeTypeName, plotDetails } from '../reports/home-display';
-import { type ReactNode, useEffect, useRef, useState } from 'react';
+import { type ReactNode, type ComponentProps, type CSSProperties, useEffect, useRef, useState } from 'react';
 import type { RunReport } from '../reports/report';
 import { ViewOptions, useCardView } from './view-options';
 import { isRoomImage } from '../vision/room-classifier';
@@ -13,6 +13,13 @@ interface Collection { slug: string; name: string; report: RunReport }
 const key = 'showhome-favourites-v1';
 const imageUrl = (slug: string, path: string) => `/api/assets/${slug}/${path.split('/').map(encodeURIComponent).join('/')}`;
 
+const galleryMotions = ['results-ken-burns', 'results-zoom-out', 'results-pan-ne', 'results-pan-sw', 'results-pan-nw', 'results-pan-se'];
+function AnimatedGalleryImage({ style, ...props }: ComponentProps<'img'>) {
+ const [motion, setMotion] = useState(galleryMotions[0]);
+ useEffect(() => { setMotion(galleryMotions[Math.floor(Math.random() * galleryMotions.length)]); }, []);
+ return <img {...props} style={{ ...style, '--gallery-motion': motion } as CSSProperties}/>;
+}
+
 export function Gallery({
  collections,
  favouritesOnly = false,
@@ -20,8 +27,10 @@ export function Gallery({
  introduction,
  featured = false,
  places,
+ initialImage,
 }: {
  collections: Collection[];
+ initialImage?: string;
  favouritesOnly?: boolean;
  includeUnclassified?: boolean;
  featured?: boolean;
@@ -38,8 +47,16 @@ export function Gallery({
  const setMainCategory=(value:string)=>setFilters(previous=>({...previous,category:value,room:''}));
  const setSubCategory=(value:string)=>setFilters(previous=>({...previous,room:value}));
  const [selected, setSelected] = useState<string | null>(null);
+ const openedInitialImage = useRef<string | null>(null);
  const dialog = useRef<HTMLDialogElement>(null);
  const hero = useRef<HTMLDivElement>(null);
+ const [pageHidden, setPageHidden] = useState(false);
+ useEffect(() => {
+  const read = () => setPageHidden(document.hidden);
+  read();
+  document.addEventListener('visibilitychange', read);
+  return () => document.removeEventListener('visibilitychange', read);
+ }, []);
  const thumbnails = useRef<HTMLDivElement>(null);
  const returnFocus = useRef<HTMLElement | null>(null);
  const [heroId, setHeroId] = useState<string | null>(null);
@@ -171,17 +188,6 @@ export function Gallery({
   setHeroId(heroImages[(index + direction + heroImages.length) % heroImages.length]?.uid ?? null);
  }
  useEffect(() => {
-  if (!introduction || heroImages.length < 2) return;
-  const timer = setInterval(() => {
-   if (dialog.current?.open || document.hidden || hero.current?.matches(':hover') || hero.current?.contains(document.activeElement) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-   setHeroId(previous => {
-    const index = heroImages.findIndex(i => i.uid === previous);
-    return heroImages[(index + 1 + heroImages.length) % heroImages.length]?.uid ?? null;
-   });
-  }, 5000);
-  return () => clearInterval(timer);
- }, [introduction, heroImages.map(i => i.uid).join(':')]);
- useEffect(() => {
   if (selected && !current) { dialog.current?.close(); setSelected(null); }
  }, [selected, current]);
 
@@ -191,6 +197,15 @@ export function Gallery({
   showControls();
   dialog.current?.showModal();
  }
+
+ useEffect(() => {
+  if (!ready || !initialImage || openedInitialImage.current === initialImage) return;
+  openedInitialImage.current = initialImage;
+  if (images.some(image => image.uid === initialImage)) {
+   setHeroId(initialImage);
+   open(initialImage);
+  }
+ }, [ready, initialImage, images.map(image => image.uid).join('|')]);
 
  function step(direction: number) {
   showControls();
@@ -209,10 +224,12 @@ export function Gallery({
       <p>{introduction.description}</p>
       <a className="results-cta" href="#collection">Discover the collection ↓</a>
      </div>
-     {heroImage && <div ref={hero} className="results-hero-photo" role="region" aria-label="Interior image carousel" onKeyDown={e => {
+     {heroImage && <div ref={hero} className={`results-hero-photo${selected || pageHidden ? ' is-paused' : ''}`} role="region" aria-label="Interior image carousel" onKeyDown={e => {
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); heroStep(e.key === 'ArrowLeft' ? -1 : 1); }
      }}>
-      <button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><img src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
+      <button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
+      <span key={heroImage.uid} className="results-hero-room-type">{heroImage.categorisation?.subCategory ?? heroImage.categorisation?.mainCategory ?? 'Showhome interior'}</span>
+      {heroImages.length > 1 && <div className="results-slide-progress" aria-hidden="true"><span key={heroImage.uid} onAnimationEnd={() => heroStep(1)}/></div>}
       <button className="results-arrow results-prev" onClick={() => heroStep(-1)} aria-label="Previous preview image">‹</button>
       <button className="results-arrow results-next" onClick={() => heroStep(1)} aria-label="Next preview image">›</button>
      </div>}
@@ -376,7 +393,15 @@ export function Gallery({
     ref={dialog}
     className={`viewer results-viewer ${controlsVisible ? 'controls-visible' : ''}`}
     aria-label="Fullscreen interior gallery"
-    onClose={() => { setSelected(null); returnFocus.current?.focus(); }}
+    onClose={() => {
+     setSelected(null);
+     const url = new URL(window.location.href);
+     if (url.searchParams.has('image')) {
+      url.searchParams.delete('image');
+      window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+     }
+     returnFocus.current?.focus();
+    }}
     onPointerMove={showControls} onPointerDown={showControls} onFocus={showControls}
     onKeyDown={e => {
      showControls();
@@ -384,7 +409,7 @@ export function Gallery({
     }}
    >
     {current && <>
-     <img className="results-full-image" style={{ touchAction: 'pan-y pinch-zoom' }}
+     <AnimatedGalleryImage key={current.uid} className="results-full-image" style={{ touchAction: 'pan-y pinch-zoom' }}
       onTouchStart={e => { const t = e.touches[0]; swipe.current = e.touches.length === 1 && t ? { id: t.identifier, x: t.clientX, y: t.clientY } : null; }}
       onTouchCancel={() => { swipe.current = null; }}
       onTouchEnd={e => {
