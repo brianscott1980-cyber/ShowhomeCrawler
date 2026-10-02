@@ -25,6 +25,8 @@ describe('Developer report pages', () => {
   });
   try {
    const { document, localStorage } = dom.window;
+   expect(document.querySelector('script[src="https://www.googletagmanager.com/gtag/js?id=G-2H9QEBQ64X"]')).not.toBeNull();
+   expect(Array.from((dom.window as unknown as {dataLayer:IArguments[]}).dataLayer).map(args=>Array.from(args))).toEqual([['js',expect.anything()],['config','G-2H9QEBQ64X']]);
    expect(document.querySelector('.explorer-brand')?.textContent).toBe('SHOWHOMEEXPLORER');
    expect(document.querySelector('.developer-name')?.textContent).toBe('Cala');
    expect(document.querySelector<HTMLAnchorElement>('.explorer-brand')?.pathname).toBe('/');

@@ -1,4 +1,5 @@
 import { developers, readCollection, assetUrl } from '../../../web/collections';
+import { analyticsMarkup } from '../../../web/analytics';
 import { matchedPage } from '../../../reports/matched-page';
 
 export const dynamic = 'force-dynamic';
@@ -21,5 +22,5 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
   gateway: '/', favourites: '/favourites', explorerHeader: true,
   fullReport: assetUrl(slug, 'full-report.html'), matches: assetUrl(slug, 'matches.csv'),
  });
- return new Response(html, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
+ return new Response(html.replace('</head>', `${analyticsMarkup}</head>`), { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
 }
