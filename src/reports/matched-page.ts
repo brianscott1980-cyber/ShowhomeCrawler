@@ -1,3 +1,4 @@
+import {homeTypeName,plotDetails} from './home-display.js';
 import {galleryStyles,galleryScript,viewerMarkup,heartIcon} from './gallery-ui.js';
 import type { RunReport } from './report.js';
 const e = (value: unknown) => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
@@ -21,11 +22,11 @@ export function matchedPage(report: RunReport, favouritesOnly = false, links: Ma
  const cards = images.map((image, index) => {
   const homes = properties.filter(p => p.imageIds.includes(image.id));
   const sites = [...new Set(homes.map(p => p.development))];
-  const types = [...new Set(homes.map(p => p.name))];
+  const types = [...new Set(homes.map(p => homeTypeName(p.name)))];
   return `<article class="office-card" data-image-id="${e(image.id)}" data-sites="${e(JSON.stringify(sites))}" data-search="${e([...sites,...types].join(' ').toLowerCase())}">
    <div class="photo-frame"><a class="photo" data-open="${e(image.id)}" href="${e(image.path)}" target="_blank" rel="noopener" aria-label="View office ${index+1} at full size"><img src="${e(image.path)}" alt="${e(image.verdict!.description)}" loading="lazy" width="1280" height="853"><span class="photo-tag">Study &amp; home office</span><span class="zoom" aria-hidden="true">↗</span></a><button type="button" class="save-button card-save" data-save="${e(image.id)}" aria-label="Add to favourites" aria-pressed="false">${heartIcon}</button></div>
-   <div class="card-body"><p class="card-eyebrow">${e(types.join(' · '))}</p><h3>${e(sites.length===1?sites[0]:`${sites.length} developments`)}</h3><p class="description">${e(image.verdict!.description)}</p><div class="features"><span>5+ bedrooms</span><span>Desk visible</span><span>No bed visible</span></div>
-   <details><summary>Explore ${homes.length===1?'this home':`${homes.length} matching homes`} <span aria-hidden="true">+</span></summary><ul class="homes">${homes.map(p => `<li><a href="${e(p.url)}" target="_blank" rel="noopener"><strong>${e(p.development)}</strong><span>${e(p.name)} · ${p.bedrooms} bedrooms${p.price===null?'':' · From £'+p.price.toLocaleString('en-GB')} <b aria-hidden="true">↗</b></span></a></li>`).join('')}</ul></details></div></article>`;
+   <div class="card-body"><h3>${e(types.join(' · '))}</h3><p class="description">${e(image.verdict!.description)}</p><div class="features"><span>5+ bedrooms</span><span>Desk visible</span><span>No bed visible</span></div>
+   <details><summary>Explore this home <span aria-hidden="true">+</span></summary><ul class="homes">${homes.map(p => `<li><a href="${e(p.url)}" target="_blank" rel="noopener"><strong>${e(p.development)}</strong><span>${e(homeTypeName(p.name))} · ${p.bedrooms} bedrooms${p.price===null?'':' · From £'+p.price.toLocaleString('en-GB')} <b aria-hidden="true">↗</b></span>${plotDetails(p)?`<span class="plot-details">${e(plotDetails(p))}</span>`:''}</a></li>`).join('')}</ul></details></div></article>`;
  }).join('');
  const hero = images[0];
  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${e(builder)} · Home office collection</title><style>
