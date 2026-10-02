@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "bellway",
+    "source": "https://www.bellway.co.uk/img/logo-glow.svg?id=b14057a1bf24a66368a3fce539ad1d5d",
+    "file": "bellway.svg"
+  },
+  {
+    "slug": "cala",
+    "source": "https://www.cala.co.uk/media/2bffbjfd/121586-cala-logo-1080x1080px-v1-bf3.png?width=90&height=90",
+    "file": "cala.png"
+  },
+  {
+    "slug": "barratt",
+    "source": "https://www.barratthomes.co.uk/-/media/feature/brand/barratt-logo-v2-270319.png?h=84&w=428&la=en&hash=8A57D554F64657968724DF3A8A4A2BC4",
+    "file": "barratt.png"
+  },
+  {
+    "slug": "taylor-wimpey",
+    "source": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/System/Masthead/TW-Logo.svg?la=en&h=52&mw=200&w=111&hash=A7D6CDD5C3AAE8557C14C2F0BF504796",
+    "file": "taylor-wimpey.svg"
+  },
+  {
+    "slug": "david-wilson",
+    "source": "https://www.dwh.co.uk/-/media/feature/brand/david-wilson-homes-logo-resized.png?h=84&w=428&la=en&hash=FF9712446A65517868241E826FC6B27E",
+    "file": "david-wilson.png"
+  },
+  {
+    "slug": "miller-homes",
+    "source": "https://www.millerhomes.co.uk",
+    "file": "miller-homes.svg"
+  },
+  {
+    "slug": "avant",
+    "source": "https://www.avanthomes.co.uk/images/homepage/1_top/avant_logo.svg",
+    "file": "avant.svg"
+  },
+  {
+    "slug": "springfield",
+    "source": "https://www.springfield.co.uk",
+    "file": "springfield.svg"
+  },
+  {
+    "slug": "persimmon",
+    "source": "https://www.persimmonhomes.com/media/ucbnupsr/1_persimmon_logo_without_strapline_rgb.png",
+    "file": "persimmon.png"
+  },
+  {
+    "slug": "robertson-homes",
+    "source": "https://www.robertsonhomes.co.uk",
+    "file": "robertson-homes.svg"
+  },
+  {
+    "slug": "redrow",
+    "source": "https://www.redrow.co.uk/-/media/redrow/redrow.png?h=320&w=1804&la=en&hash=3F5B51818EFDE654DF38C0C5C064DD58",
+    "file": "redrow.png"
+  },
+  {
+    "slug": "berkeley-group",
+    "source": "https://www.berkeleygroup.co.uk/-/media/feature/navigation/footer/strapline/berkeley-group-color.ashx?rev=70cd8bf41c0f4b548988068f869da503&hash=AA816FB5242141C90A70023D106BDC99",
+    "file": "berkeley-group.svg"
+  },
+  {
+    "slug": "crest-nicholson",
+    "source": "https://www.crestnicholson.com/images/new-logo/CREST_NICHOLSON_LOGO_CN-Blue_RGB.svg",
+    "file": "crest-nicholson.svg"
+  },
+  {
+    "slug": "lynch-homes",
+    "source": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/05/lynch-homes-logo.svg",
+    "file": "lynch-homes.svg"
+  },
+  {
+    "slug": "story-homes",
+    "source": "https://www.storyhomes.co.uk/wp-content/themes/story/email/img/logo.png",
+    "file": "story-homes.png"
+  },
+  {
+    "slug": "hill-group",
+    "source": "https://www.hill.co.uk",
+    "file": "hill-group.svg"
+  }
+]

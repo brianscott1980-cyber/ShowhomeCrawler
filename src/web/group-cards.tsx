@@ -1,5 +1,6 @@
 'use client';
 import {useState} from 'react';
+import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import Link from 'next/link';
 import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 
@@ -8,6 +9,7 @@ export interface GroupCardItem {
  name: string;
  developers: string[];
  count: number;
+ images?: CollectionImage[];
  image: string;
  description: string;
  bedrooms?: number[];
@@ -56,6 +58,7 @@ export function GroupCards({
   : cards;
 
  const hasActiveFilters = Boolean(developer || bedrooms || location);
+ const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
 
  function resetFilters() {
   setDeveloper('');
@@ -116,7 +119,7 @@ export function GroupCards({
    <div className={`collection-grid directory-${view}`}>
     {visible.map(card => (
      <Link className="collection-card" href={`/${pathPrefix}/${card.key}`} key={card.key}>
-      <img loading="lazy" src={card.image} alt={card.description} />
+      <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
       <div className="card-body">
        <h2>{card.name}</h2>
        <p className="subtle">{card.developers.join(' · ')}</p>
