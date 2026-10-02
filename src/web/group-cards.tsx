@@ -1,6 +1,7 @@
 'use client';
 import {BuilderName} from './builder-name';
 import {useState} from 'react';
+import {matchesBuildingPlace,type BuildingPlace} from './building-place-filter';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import Link from 'next/link';
 import {ViewOptions,useCardView,type CardViewMode} from './view-options';
@@ -15,6 +16,8 @@ export interface GroupCardItem {
  description: string;
  bedrooms?: number[];
  locations?: string[];
+ sites?: string[];
+ places?: BuildingPlace[];
 }
 
 export function GroupCards({
@@ -34,6 +37,7 @@ export function GroupCards({
  const [developer, setDeveloper] = useState('');
  const [bedrooms, setBedrooms] = useState('');
  const [location, setLocation] = useState('');
+ const [site,setSite]=useState('');
 
  const isBuildings = pathPrefix === 'buildings';
 
@@ -49,22 +53,24 @@ export function GroupCards({
   ? [...new Set(cards.flatMap(c => c.locations ?? []))].sort()
   : [];
 
+ const siteOptions=isBuildings?[...new Set(cards.flatMap(c=>c.sites??[]))].sort():[];
  const visible = isBuildings
   ? cards.filter(card => {
      if (developer && !card.developers.includes(developer)) return false;
      if (bedrooms && !card.bedrooms?.includes(Number(bedrooms))) return false;
-     if (location && !card.locations?.includes(location)) return false;
+     if ((site||location)&&!matchesBuildingPlace(card.places??[],site,location)) return false;
      return true;
     })
   : cards;
 
- const hasActiveFilters = Boolean(developer || bedrooms || location);
+ const hasActiveFilters = Boolean(developer || bedrooms || location || site);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
 
  function resetFilters() {
   setDeveloper('');
   setBedrooms('');
   setLocation('');
+  setSite('');
  }
 
  return (
@@ -99,6 +105,13 @@ export function GroupCards({
         ))}
        </select>
       </label>
+      <label>
+       Site
+       <select value={site} onChange={e=>setSite(e.target.value)}>
+        <option value="">All sites</option>
+        {siteOptions.map(s=><option key={s} value={s}>{s}</option>)}
+       </select>
+      </label>
       {hasActiveFilters && (
        <button
         type="button"
@@ -127,7 +140,7 @@ export function GroupCards({
        {card.bedrooms && card.bedrooms.length > 0 && (
         <p className="subtle">
          {card.bedrooms.map(b => `${b} bed`).join(' · ')}
-         {card.locations && card.locations.length > 0 && ` · ${card.locations.length === 1 ? card.locations[0] : `${card.locations.length} locations`}`}
+         {card.sites && card.sites.length > 0 && ` · ${card.sites.length === 1 ? card.sites[0] : `${card.sites.length} sites`}`}
         </p>
        )}
        <p>{card.count} {card.count === 1 ? 'image' : 'images'}</p>

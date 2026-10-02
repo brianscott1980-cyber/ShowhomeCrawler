@@ -4,217 +4,403 @@
     "url": "https://www.dwh.co.uk/new-homes/dev-002625-alconbury-weald/",
     "postcode": "PE28 4LY",
     "latitude": 52.374031,
-    "longitude": -0.2256099
+    "longitude": -0.2256099,
+    "geography": {
+      "district": "Huntingdonshire",
+      "county": "Cambridgeshire",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Buckley Gardens",
     "url": "https://www.dwh.co.uk/new-homes/dev-002635-buckley-gardens/",
     "postcode": "SN12 6DU",
     "latitude": 51.356525,
-    "longitude": -2.1435043
+    "longitude": -2.1435043,
+    "geography": {
+      "district": "Wiltshire",
+      "county": null,
+      "region": "South West",
+      "country": "England"
+    }
   },
   {
     "name": "Chatteris Gate",
     "url": "https://www.dwh.co.uk/new-homes/dev002801-chatteris-gate/",
     "postcode": "PE16 6LT",
     "latitude": 52.4441618,
-    "longitude": 0.0460413
+    "longitude": 0.0460413,
+    "geography": {
+      "district": "Fenland",
+      "county": "Cambridgeshire",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Chiltern Grange",
     "url": "https://www.dwh.co.uk/new-homes/dev-001154-chiltern-grange/",
     "postcode": "OX10 6NY",
     "latitude": 51.6261648,
-    "longitude": -1.1053501
+    "longitude": -1.1053501,
+    "geography": {
+      "district": "South Oxfordshire",
+      "county": "Oxfordshire",
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "Corinthian Place",
     "url": "https://www.dwh.co.uk/new-homes/dev002686-corinthian-place/",
     "postcode": "CM0 8NS",
     "latitude": 51.6425598,
-    "longitude": 0.7966119
+    "longitude": 0.7966119,
+    "geography": {
+      "district": "Maldon",
+      "county": "Essex",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Doxford Green",
     "url": "https://www.dwh.co.uk/new-homes/dev-001135-doxford-green/",
     "postcode": "SR3 2YX",
     "latitude": 54.8625734,
-    "longitude": -1.3990025
+    "longitude": -1.3990025,
+    "geography": {
+      "district": "Sunderland",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   },
   {
     "name": "DWH at Overstone Gate",
     "url": "https://www.dwh.co.uk/new-homes/dev001676-dwh-at-overstone-gate/",
     "postcode": "NN6 0RP",
     "latitude": 52.2883376503671,
-    "longitude": -0.83208145755724
+    "longitude": -0.83208145755724,
+    "geography": {
+      "district": "West Northamptonshire",
+      "county": null,
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "DWH at Roman Gardens",
     "url": "https://www.dwh.co.uk/new-homes/dev003123-dwh-at-roman-gardens/",
     "postcode": "CO5 9BU",
     "latitude": 51.827578,
-    "longitude": 0.6899013
+    "longitude": 0.6899013,
+    "geography": {
+      "district": "Braintree",
+      "county": "Essex",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "DWH at Romans Quarter",
     "url": "https://www.dwh.co.uk/new-homes/dev000170-dwh-at-romans-quarter/",
     "postcode": "NG13 7BS",
     "latitude": 52.9596214970531,
-    "longitude": -0.966224588437195
+    "longitude": -0.966224588437195,
+    "geography": {
+      "district": "Rushcliffe",
+      "county": "Nottinghamshire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "DWH at Wendel View",
     "url": "https://www.dwh.co.uk/new-homes/dev001174-dwh-at-wendel-view/",
     "postcode": "NN8 3AQ",
     "latitude": 52.2923084018152,
-    "longitude": -0.720687710867807
+    "longitude": -0.720687710867807,
+    "geography": {
+      "district": "North Northamptonshire",
+      "county": null,
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Elm Tree Park",
     "url": "https://www.dwh.co.uk/new-homes/dev002570-elm-tree-park/",
     "postcode": "NG21 0HF",
     "latitude": 53.1213551,
-    "longitude": -1.1370443
+    "longitude": -1.1370443,
+    "geography": {
+      "district": "Mansfield",
+      "county": "Nottinghamshire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Fiddington Fields",
     "url": "https://www.dwh.co.uk/new-homes/dev002778-fiddington-fields/",
     "postcode": "GL20 7GG",
     "latitude": 51.9957889,
-    "longitude": -2.1211106
+    "longitude": -2.1211106,
+    "geography": {
+      "district": "Tewkesbury",
+      "county": "Gloucestershire",
+      "region": "South West",
+      "country": "England"
+    }
   },
   {
     "name": "Fossil Bay",
     "url": "https://www.dwh.co.uk/new-homes/dev002711-fossil-bay/",
     "postcode": "PO20 7JJ",
     "latitude": 50.7663986,
-    "longitude": -0.8505231
+    "longitude": -0.8505231,
+    "geography": {
+      "district": "Chichester",
+      "county": "West Sussex",
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "Glenvale Park",
     "url": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/",
     "postcode": "NN8 6BU",
     "latitude": 52.3183896,
-    "longitude": -0.7172803
+    "longitude": -0.7172803,
+    "geography": {
+      "district": "North Northamptonshire",
+      "county": null,
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Grey Towers Village",
     "url": "https://www.dwh.co.uk/new-homes/dev000378-grey-towers-village/",
     "postcode": "TS7 0PW",
     "latitude": 54.5221227218402,
-    "longitude": -1.16879307043265
+    "longitude": -1.16879307043265,
+    "geography": {
+      "district": "Middlesbrough",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   },
   {
     "name": "Honeymans Helm",
     "url": "https://www.dwh.co.uk/new-homes/dev002688-honeymans-helm/",
     "postcode": "SN6 7QQ",
     "latitude": 51.6219404,
-    "longitude": -1.7038793
+    "longitude": -1.7038793,
+    "geography": {
+      "district": "Swindon",
+      "county": null,
+      "region": "South West",
+      "country": "England"
+    }
   },
   {
     "name": "Hunters Place @ Fernwood Village",
     "url": "https://www.dwh.co.uk/new-homes/dev000569-hunters-place-@-fernwood-village/",
     "postcode": "NG24 3UA",
     "latitude": 53.0490865,
-    "longitude": -0.7651636
+    "longitude": -0.7651636,
+    "geography": {
+      "district": "Newark and Sherwood",
+      "county": "Nottinghamshire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Ladden Garden Village",
     "url": "https://www.dwh.co.uk/new-homes/dev000102-ladden-garden-village/",
     "postcode": "BS37 7YX",
     "latitude": 51.5565735896213,
-    "longitude": -2.41637392638903
+    "longitude": -2.41637392638903,
+    "geography": {
+      "district": "South Gloucestershire",
+      "county": null,
+      "region": "South West",
+      "country": "England"
+    }
   },
   {
     "name": "Lapwing Green",
     "url": "https://www.dwh.co.uk/new-homes/dev002685-lapwing-green/",
     "postcode": "RG14 1RG",
     "latitude": 51.4110495,
-    "longitude": -1.3475339
+    "longitude": -1.3475339,
+    "geography": {
+      "district": "West Berkshire",
+      "county": null,
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "Mallard Meadows at Winslow",
     "url": "https://www.dwh.co.uk/new-homes/dev-002654-mallard-meadows-at-winslow/",
     "postcode": "MK18 3QQ",
     "latitude": 51.9513116,
-    "longitude": -0.8840437
+    "longitude": -0.8840437,
+    "geography": {
+      "district": "Buckinghamshire",
+      "county": null,
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "Maylands Park",
     "url": "https://www.dwh.co.uk/new-homes/dev-001165-maylands-park/",
     "postcode": "CW5 7GZ",
     "latitude": 53.0516439,
-    "longitude": -2.5037631
+    "longitude": -2.5037631,
+    "geography": {
+      "district": "Cheshire East",
+      "county": null,
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "Oak View",
     "url": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/",
     "postcode": "CM11 2PP",
     "latitude": 51.6131263,
-    "longitude": 0.4348796
+    "longitude": 0.4348796,
+    "geography": {
+      "district": "Basildon",
+      "county": "Essex",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Pastures Place",
     "url": "https://www.dwh.co.uk/new-homes/dev002584-pastures-place/",
     "postcode": "NG33 4NS",
     "latitude": 52.8089771,
-    "longitude": -0.5170875
+    "longitude": -0.5170875,
+    "geography": {
+      "district": "South Kesteven",
+      "county": "Lincolnshire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Queen's Manor",
     "url": "https://www.dwh.co.uk/new-homes/dev002827-queen's-manor/",
     "postcode": "LE7 3FE",
     "latitude": 52.702851,
-    "longitude": -1.051575
+    "longitude": -1.051575,
+    "geography": {
+      "district": "Charnwood",
+      "county": "Leicestershire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "River View at Oundle",
     "url": "https://www.dwh.co.uk/new-homes/dev002884-river-view-at-oundle/",
     "postcode": "PE8 5TR",
     "latitude": 52.4793815,
-    "longitude": -0.4808907
+    "longitude": -0.4808907,
+    "geography": {
+      "district": "North Northamptonshire",
+      "county": null,
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Roman Walk",
     "url": "https://www.dwh.co.uk/new-homes/dev-002620-roman-walk/",
     "postcode": "CT12 4AG",
     "latitude": 51.3356291,
-    "longitude": 1.3144233
+    "longitude": 1.3144233,
+    "geography": {
+      "district": "Thanet",
+      "county": "Kent",
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "Romans Quarter",
     "url": "https://www.dwh.co.uk/new-homes/dev-002626-romans-quarter/",
     "postcode": "SP8 4RE",
     "latitude": 51.0326644,
-    "longitude": -2.2881884
+    "longitude": -2.2881884,
+    "geography": {
+      "district": "Dorset",
+      "county": null,
+      "region": "South West",
+      "country": "England"
+    }
   },
   {
     "name": "Sholden Meadows",
     "url": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/",
     "postcode": "CT14 0AD",
     "latitude": 51.222203,
-    "longitude": 1.3728572
+    "longitude": 1.3728572,
+    "geography": {
+      "district": "Dover",
+      "county": "Kent",
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "The Nook",
     "url": "https://www.dwh.co.uk/new-homes/dev003065-the-nook/",
     "postcode": "LE18 3AE",
     "latitude": 52.5747735,
-    "longitude": -1.1026402
+    "longitude": -1.1026402,
+    "geography": {
+      "district": "Oadby and Wigston",
+      "county": "Leicestershire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "The Paddocks",
     "url": "https://www.dwh.co.uk/new-homes/dev002976-the-paddocks/",
     "postcode": "NE61 2NP",
     "latitude": 55.1803361,
-    "longitude": -1.7021497
+    "longitude": -1.7021497,
+    "geography": {
+      "district": "Northumberland",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   },
   {
     "name": "The Stables",
     "url": "https://www.dwh.co.uk/new-homes/dev002898-the-stables/",
     "postcode": "NG12 3HE",
     "latitude": 52.9147315,
-    "longitude": -1.0314473
+    "longitude": -1.0314473,
+    "geography": {
+      "district": "Rushcliffe",
+      "county": "Nottinghamshire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Thoresby Vale",
@@ -228,13 +414,25 @@
     "url": "https://www.dwh.co.uk/new-homes/dev002877-wigston-meadows/",
     "postcode": "LE18 3AE",
     "latitude": 52.569455,
-    "longitude": -1.099289
+    "longitude": -1.099289,
+    "geography": {
+      "district": "Oadby and Wigston",
+      "county": "Leicestershire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Willow Grove",
     "url": "https://www.dwh.co.uk/new-homes/dev001897-willow-grove/",
     "postcode": "MK42 6AW",
     "latitude": 52.0871879960061,
-    "longitude": -0.461798143376083
+    "longitude": -0.461798143376083,
+    "geography": {
+      "district": "Bedford",
+      "county": null,
+      "region": "East of England",
+      "country": "England"
+    }
   }
 ]

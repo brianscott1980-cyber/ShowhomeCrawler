@@ -4,13 +4,25 @@
     "url": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/",
     "postcode": "RG26 5BP",
     "latitude": 51.328516,
-    "longitude": -1.0694927
+    "longitude": -1.0694927,
+    "geography": {
+      "district": "Basingstoke and Deane",
+      "county": "Hampshire",
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "Windmill Court, East Bridgford",
     "url": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/",
     "postcode": "NG13 8YN",
     "latitude": 52.978613,
-    "longitude": -0.9575799
+    "longitude": -0.9575799,
+    "geography": {
+      "district": "Rushcliffe",
+      "county": "Nottinghamshire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   }
 ]

@@ -4,132 +4,246 @@
     "url": "https://www.persimmonhomes.com/new-homes/central/thickthorn-gardens",
     "postcode": "CV8 2AJ",
     "latitude": 52.338223,
-    "longitude": -1.560104
+    "longitude": -1.560104,
+    "geography": {
+      "district": "Warwick",
+      "county": "Warwickshire",
+      "region": "West Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Abbot Walk",
     "url": "https://www.persimmonhomes.com/new-homes/east-midlands/abbot-walk",
     "postcode": "PE16 6UA",
     "latitude": 52.466433,
-    "longitude": 0.040867
+    "longitude": 0.040867,
+    "geography": {
+      "district": "Fenland",
+      "county": "Cambridgeshire",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Willow Grove",
     "url": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove",
     "postcode": "BB2 4JJ",
     "latitude": 53.724755,
-    "longitude": -2.489314
+    "longitude": -2.489314,
+    "geography": {
+      "district": "Blackburn with Darwen",
+      "county": null,
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "The Hawthorns",
     "url": "https://www.persimmonhomes.com/new-homes/midlands/the-hawthorns",
     "postcode": "LE16 9HW",
     "latitude": 52.465059,
-    "longitude": -0.913597
+    "longitude": -0.913597,
+    "geography": {
+      "district": "Harborough",
+      "county": "Leicestershire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Overstone Gate",
     "url": "https://www.persimmonhomes.com/new-homes/midlands/overstone-gate",
     "postcode": "NN6 0RR",
     "latitude": 52.294158,
-    "longitude": -0.831869
+    "longitude": -0.831869,
+    "geography": {
+      "district": "West Northamptonshire",
+      "county": null,
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Eaton Place",
     "url": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place",
     "postcode": "CV11 6BD",
     "latitude": 52.543403,
-    "longitude": -1.447896
+    "longitude": -1.447896,
+    "geography": {
+      "district": "Nuneaton and Bedworth",
+      "county": "Warwickshire",
+      "region": "West Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Brascote Park",
     "url": "https://www.persimmonhomes.com/new-homes/north-midlands/brascote-park",
     "postcode": "LE9 9RS",
     "latitude": 52.604224,
-    "longitude": -1.273557
+    "longitude": -1.273557,
+    "geography": {
+      "district": "Blaby",
+      "county": "Leicestershire",
+      "region": "East Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "The View",
     "url": "https://www.persimmonhomes.com/new-homes/south-midlands/the-view",
     "postcode": "B97 6FG",
     "latitude": 52.321716,
-    "longitude": -1.953615
+    "longitude": -1.953615,
+    "geography": {
+      "district": "Bromsgrove",
+      "county": "Worcestershire",
+      "region": "West Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Wykham Park",
     "url": "https://www.persimmonhomes.com/new-homes/south-midlands/wykham-park",
     "postcode": "OX16 9UN",
     "latitude": 52.043888,
-    "longitude": -1.358196
+    "longitude": -1.358196,
+    "geography": {
+      "district": "Cherwell",
+      "county": "Oxfordshire",
+      "region": "South East",
+      "country": "England"
+    }
   },
   {
     "name": "Regents Village",
     "url": "https://www.persimmonhomes.com/new-homes/south-midlands/regents-village",
     "postcode": "GL51 9FU",
     "latitude": 51.919761,
-    "longitude": -2.102644
+    "longitude": -2.102644,
+    "geography": {
+      "district": "Cheltenham",
+      "county": "Gloucestershire",
+      "region": "South West",
+      "country": "England"
+    }
   },
   {
     "name": "Swan Park",
     "url": "https://www.persimmonhomes.com/new-homes/south-west/swan-park",
     "postcode": "EX7 0RL",
     "latitude": 50.598563,
-    "longitude": -3.46933
+    "longitude": -3.46933,
+    "geography": {
+      "district": "Teignbridge",
+      "county": "Devon",
+      "region": "South West",
+      "country": "England"
+    }
   },
   {
     "name": "Boyton Place",
     "url": "https://www.persimmonhomes.com/new-homes/suffolk/boyton-place",
     "postcode": "CB9 9BF",
     "latitude": 52.085778,
-    "longitude": 0.422404
+    "longitude": 0.422404,
+    "geography": {
+      "district": "West Suffolk",
+      "county": "Suffolk",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Trelawny Place",
     "url": "https://www.persimmonhomes.com/new-homes/suffolk/trelawny-place",
     "postcode": "IP11 9QZ",
     "latitude": 51.981379,
-    "longitude": 1.33615
+    "longitude": 1.33615,
+    "geography": {
+      "district": "East Suffolk",
+      "county": "Suffolk",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Castleton Grange",
     "url": "https://www.persimmonhomes.com/new-homes/suffolk/castleton-grange",
     "postcode": "IP23 7FD",
     "latitude": 52.324848,
-    "longitude": 1.135284
+    "longitude": 1.135284,
+    "geography": {
+      "district": "Mid Suffolk",
+      "county": "Suffolk",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Aldhurst View",
     "url": "https://www.persimmonhomes.com/new-homes/suffolk/aldhurst-view",
     "postcode": "IP16 4RD",
     "latitude": 52.210928,
-    "longitude": 1.576095
+    "longitude": 1.576095,
+    "geography": {
+      "district": "East Suffolk",
+      "county": "Suffolk",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Constable Vale",
     "url": "https://www.persimmonhomes.com/new-homes/suffolk/constable-vale",
     "postcode": "IP7 6FY",
     "latitude": 52.046852,
-    "longitude": 0.969608
+    "longitude": 0.969608,
+    "geography": {
+      "district": "Babergh",
+      "county": "Suffolk",
+      "region": "East of England",
+      "country": "England"
+    }
   },
   {
     "name": "Cherry Tree Gardens",
     "url": "https://www.persimmonhomes.com/new-homes/west-midlands/cherry-tree-gardens",
     "postcode": "TF4 2UE",
     "latitude": 52.672764,
-    "longitude": -2.474855
+    "longitude": -2.474855,
+    "geography": {
+      "district": "Telford and Wrekin",
+      "county": null,
+      "region": "West Midlands",
+      "country": "England"
+    }
   },
   {
     "name": "Snowdon Gait",
     "url": "https://www.persimmonhomes.com/new-homes/west-scotland/snowdon-gait",
     "postcode": "KA23 9HN",
     "latitude": 55.691098,
-    "longitude": -4.86563
+    "longitude": -4.86563,
+    "geography": {
+      "district": "North Ayrshire",
+      "county": null,
+      "region": null,
+      "country": "Scotland"
+    }
   },
   {
     "name": "Awel Y Mynydd",
     "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
     "postcode": "SA16 0FJ",
     "latitude": 51.689634,
-    "longitude": -4.278451
+    "longitude": -4.278451,
+    "geography": {
+      "district": "Carmarthenshire",
+      "county": null,
+      "region": null,
+      "country": "Wales"
+    }
   }
 ]
