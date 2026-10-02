@@ -16,6 +16,10 @@ describe('Developer directory',()=>{
   expect(orderedDevelopers(cards,'name',null).map(c=>c.slug)).toEqual(['a','b','c']);
   const ordered=orderedDevelopers(cards,'distance',{latitude:51,longitude:0});expect(ordered.map(c=>c.slug)).toEqual(['a','b','c']);expect(ordered[0]!.nearest?.name).toBe('Near');expect(distanceMiles({latitude:51,longitude:0},{latitude:52,longitude:0})).toBeCloseTo(69.09,1);
  });
+ it('defaults to ordering homebuilders by name A–Z',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
+  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));const select=document.querySelector('#directory-order') as HTMLSelectElement;expect(select.value).toBe('name');const cardTitles=[...document.querySelectorAll('.collection-card h2')].map(h=>h.textContent?.replace('↗','').trim());expect(cardTitles).toEqual(['Alpha','Beta','Gamma']);}finally{await act(async()=>root.unmount());dom.window.close();}
+ });
  it('switches all three layouts, defaults to list, and remembers the selected view in sessionStorage',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
   try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));expect(document.querySelector('.directory-list')).not.toBeNull();for(const [label,layout] of [['Smaller grid','compact'],['Large cards','large'],['List','list']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(sessionStorage.getItem('showhome-homebuilders-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
@@ -42,6 +46,45 @@ describe('Developer directory',()=>{
    await act(async()=>largeBtn.click());
    expect(document.querySelector('.directory-large')).not.toBeNull();
    expect(sessionStorage.getItem('showhome-buildings-view')).toBe('large');
+  }finally{await act(async()=>root.unmount());dom.window.close();}
+ });
+ it('filters Buildings by Homebuilder, Bedrooms, and Locations with reset functionality',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
+  const buildingCards=[
+   {key:'b1',name:'Alford',developers:['Miller Homes'],count:2,image:'/1.jpg',description:'Desc',bedrooms:[5],locations:['Shawfair']},
+   {key:'b2',name:'Beechford',developers:['Miller Homes'],count:4,image:'/2.jpg',description:'Desc',bedrooms:[4,5],locations:['Langley Gate','City Fields']},
+   {key:'b3',name:'Cheltenham',developers:['Barratt'],count:3,image:'/3.jpg',description:'Desc',bedrooms:[4],locations:['Langley Gate']},
+  ];
+  try{
+   await act(async()=>root.render(<GroupCards cards={buildingCards} pathPrefix="buildings" kindLabel="Buildings"/>));
+   expect(document.querySelectorAll('.collection-card')).toHaveLength(3);
+
+   const selects=document.querySelectorAll<HTMLSelectElement>('.site-filters select');
+   expect(selects).toHaveLength(3);
+   const [devSelect, bedSelect, locSelect]=selects;
+
+   // Filter by Homebuilder
+   await act(async()=>{devSelect.value='Miller Homes';devSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   expect(document.querySelectorAll('.collection-card')).toHaveLength(2);
+
+   // Filter by Bedrooms (4)
+   await act(async()=>{bedSelect.value='4';bedSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   expect(document.querySelectorAll('.collection-card')).toHaveLength(1);
+   expect(document.querySelector('.collection-card h2')?.textContent).toContain('Beechford');
+
+   // Filter by Location
+   await act(async()=>{locSelect.value='Langley Gate';locSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   expect(document.querySelectorAll('.collection-card')).toHaveLength(1);
+
+   // Reset filters
+   const resetBtn=[...document.querySelectorAll('button')].find(b=>b.textContent==='Reset filters')!;
+   await act(async()=>resetBtn.click());
+   expect(document.querySelectorAll('.collection-card')).toHaveLength(3);
+
+   // Non-matching filter
+   await act(async()=>{locSelect.value='City Fields';locSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));bedSelect.value='4';bedSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));devSelect.value='Barratt';devSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   expect(document.querySelectorAll('.collection-card')).toHaveLength(0);
+   expect(document.querySelector('.empty')?.textContent).toContain('No buildings match these filters');
   }finally{await act(async()=>root.unmount());dom.window.close();}
  });
  it('updates the header badge after favourite changes without double-counting duplicate IDs',async()=>{
