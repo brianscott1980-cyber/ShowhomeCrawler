@@ -1,6 +1,8 @@
 'use client';
 import {BuilderName} from './builder-name';
-import {useState} from 'react';
+import {useUrlFilters} from './url-filters';
+import {withFilters} from './url-query';
+const filterDefaults={developer:'',bedrooms:'',location:'',site:''};
 import {matchesBuildingPlace,type BuildingPlace} from './building-place-filter';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import Link from 'next/link';
@@ -8,6 +10,7 @@ import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 
 export interface GroupCardItem {
  key: string;
+ href?: string;
  name: string;
  developers: string[];
  count: number;
@@ -34,10 +37,12 @@ export function GroupCards({
  storageKey?: string;
 }) {
  const [view, changeView] = useCardView(storageKey, defaultView);
- const [developer, setDeveloper] = useState('');
- const [bedrooms, setBedrooms] = useState('');
- const [location, setLocation] = useState('');
- const [site,setSite]=useState('');
+ const [filters,setFilters]=useUrlFilters(filterDefaults);
+ const {developer,bedrooms,location,site}=filters;
+ const setDeveloper=(value:string)=>setFilters(previous=>({...previous,developer:value}));
+ const setBedrooms=(value:string)=>setFilters(previous=>({...previous,bedrooms:value}));
+ const setLocation=(value:string)=>setFilters(previous=>({...previous,location:value}));
+ const setSite=(value:string)=>setFilters(previous=>({...previous,site:value}));
 
  const isBuildings = pathPrefix === 'buildings';
 
@@ -66,12 +71,7 @@ export function GroupCards({
  const hasActiveFilters = Boolean(developer || bedrooms || location || site);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
 
- function resetFilters() {
-  setDeveloper('');
-  setBedrooms('');
-  setLocation('');
-  setSite('');
- }
+ function resetFilters() { setFilters(filterDefaults); }
 
  return (
   <>
@@ -132,7 +132,7 @@ export function GroupCards({
    </div>
    <div className={`collection-grid directory-${view}`}>
     {visible.map(card => (
-     <Link className="collection-card" href={`/${pathPrefix}/${card.key}`} key={card.key}>
+     <Link className="collection-card" href={withFilters(card.href ?? `/${pathPrefix}/${card.key}`,filters)} key={card.key}>
       <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
       <div className="card-body">
        <h2>{card.name}</h2>
