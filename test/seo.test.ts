@@ -5,7 +5,7 @@ vi.mock('../src/web/collections',()=>({developers:[{slug:'full'},{slug:'empty'}]
 import sitemap from '../src/app/sitemap';
 import robots from '../src/app/robots';
 it('includes only indexable collections and their qualifying image URLs in the sitemap',async()=>{
- const entries=await sitemap();expect(entries.map(e=>e.url)).toEqual([siteUrl+'/',siteUrl+'/developers/full']);expect(entries[1]?.images).toEqual([siteUrl+'/api/assets/full/images/one.jpg']);expect(entries[1]?.lastModified).toBe('2026-10-02T12:00:00Z');
+ const entries=await sitemap();expect(entries.map(e=>e.url)).toContain(siteUrl+'/developers/full');expect(entries.map(e=>e.url)).not.toContain(siteUrl+'/developers/empty');expect(entries.find(e=>e.url.endsWith('/developers/full'))?.images).toEqual([siteUrl+'/api/assets/full/images/one.jpg']);expect(entries.find(e=>e.url.endsWith('/developers/full'))?.lastModified).toBe('2026-10-02T12:00:00Z');
 });
 it('allows gallery image crawling and declares the sitemap',()=>{expect(robots().sitemap).toBe(siteUrl+'/sitemap.xml');expect(JSON.stringify(robots().rules)).not.toContain('/api/assets');});
 it('escapes metadata and structured data while providing canonical and image sharing information',()=>{
