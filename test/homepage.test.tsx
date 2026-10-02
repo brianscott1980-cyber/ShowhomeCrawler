@@ -1,7 +1,7 @@
 import { expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { JSDOM } from 'jsdom';
-vi.mock('../src/web/homepage-data', () => ({ homepageData: async () => ({ hero: {src:'/hero.jpg',alt:'A living room',builder:'Bellway',category:'Living Room'},journeyPhotos:[],featured:[],points:[{latitude:52,longitude:-1,name:'Test site',builder:'Bellway'}],counts:{locations:12,builders:3,buildings:8} }) }));
+vi.mock('../src/web/homepage-data', () => ({ homepageData: async () => ({ hero: {src:'/hero.jpg',alt:'A living room',builder:'Bellway',category:'Living Room'},journeyPhotos:[],featured:[],mapPhotos:[],points:[{latitude:52,longitude:-1,name:'Test site',builder:'Bellway'}],counts:{locations:12,builders:3,buildings:8} }) }));
 import Home from '../src/app/page';
 import { CoverageMap, coverageClusters, projectLocation } from '../src/web/coverage-map';
 it('gives the homepage three distinct journeys and a real coverage overview', async () => {
@@ -10,7 +10,7 @@ it('gives the homepage three distinct journeys and a real coverage overview', as
  expect([...doc.querySelectorAll('.home-journey')].map(a=>a.getAttribute('href'))).toEqual(['/locations','/interiors','/buildings']);
  expect(doc.querySelector('[href="/homebuilders"]')).not.toBeNull();
  expect(doc.querySelector('.home-coverage-counts')?.textContent).toContain('Locations12');
- expect(doc.querySelector('.home-map svg title')?.textContent).toContain('United Kingdom');
+ expect(doc.querySelector('.home-map svg')?.getAttribute('aria-label')).toContain('United Kingdom');
  expect(doc.querySelectorAll('.home-map .map-site')).toHaveLength(1);
  expect(doc.querySelector('.home-saved a')?.getAttribute('href')).toBe('/favourites');
  dom.window.close();
@@ -29,7 +29,17 @@ it('keeps builders separate in shared map cells and gives them different labelle
  const dom=new JSDOM(renderToStaticMarkup(<CoverageMap points={points}/>));
  const circles=[...dom.window.document.querySelectorAll('.map-site')];
  expect(new Set(circles.map(c=>c.getAttribute('fill'))).size).toBe(2);
- expect(circles.map(c=>c.textContent)).toEqual(['Bellway: 1 location','Cala: 1 location']);
+ expect(circles.map(c=>c.getAttribute('aria-label'))).toEqual(['Bellway: 1 location','Cala: 1 location']);
  expect(dom.window.document.querySelector('.home-map-legend')).toBeNull();
+ expect(dom.window.document.querySelector('.home-map title')).toBeNull();
+ dom.window.close();
+});
+
+it('highlights only the associated site, even when another builder site is nearby',()=>{
+ const points=[{latitude:52,longitude:-1,name:'A',builder:'Bellway',siteId:'a'},{latitude:52.001,longitude:-1,name:'B',builder:'Bellway',siteId:'b'}];
+ const dom=new JSDOM(renderToStaticMarkup(<CoverageMap points={points} activeSiteIds={['a']}/>));
+ expect(dom.window.document.querySelectorAll('.map-site')).toHaveLength(2);
+ expect(dom.window.document.querySelectorAll('.is-active-site')).toHaveLength(1);
+ expect(dom.window.document.querySelector('.home-map')?.classList.contains('has-active-sites')).toBe(true);
  dom.window.close();
 });
