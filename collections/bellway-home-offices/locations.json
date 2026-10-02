@@ -9,6 +9,7 @@
   {
     "name": "Sheasby Park",
     "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
+    "postcode": "WS13 8FR",
     "latitude": 52.71642,
     "longitude": -1.7837
   },
@@ -22,7 +23,7 @@
   {
     "name": "Rowden Chase",
     "url": "https://www.bellway.co.uk/new-homes/south-west/rowden-chase",
-    "postcode": "SN152NU",
+    "postcode": "SN15 2NU",
     "latitude": 51.438434,
     "longitude": -2.131139
   },
@@ -204,6 +205,7 @@
   {
     "name": "Prince's Gate",
     "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
+    "postcode": "EH32 9TS",
     "latitude": 55.95569,
     "longitude": -2.95046
   },
@@ -315,6 +317,7 @@
   {
     "name": "Cloverhill",
     "url": "https://www.bellway.co.uk/new-homes/scotland-west/cloverhill",
+    "postcode": "G69 8BD",
     "latitude": 55.89615,
     "longitude": -4.07733
   },

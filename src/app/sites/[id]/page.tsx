@@ -1,5 +1,3 @@
-import {GroupDetail,groupMetadata} from '../../../web/group-pages';
-export const dynamic='force-dynamic';
+import {permanentRedirect} from 'next/navigation';
 type Props={params:Promise<{id:string}>};
-export async function generateMetadata({params}:Props){return groupMetadata('sites',(await params).id);}
-export default async function Page({params}:Props){return <GroupDetail kind="sites" id={(await params).id}/>;}
+export default async function Page({params}:Props){permanentRedirect(`/locations/${(await params).id}`);}

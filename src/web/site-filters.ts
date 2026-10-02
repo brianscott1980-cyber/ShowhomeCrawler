@@ -16,4 +16,18 @@ export function filterSites(cards:SiteCard[],filters:SiteFilters,point:LocationP
   return !filters.style||(p.style??'Unknown')===filters.style;
  });
 });}
-export function propertyStyle(type:string|null,detached:boolean|null):string|null{if(type){if(/semi[ -]?detached/i.test(type))return 'Semi-detached';if(/terrac|attached|townhouse|town house|mews/i.test(type)&&!/detached/i.test(type))return 'Attached / terraced';if(/\bdetached\b/i.test(type))return 'Detached';if(/apartment|flat|duplex|maisonette/i.test(type))return 'Apartment';}return detached===true?'Detached':null;}
+export function propertyStyle(type:string|null,detached:boolean|null,name?:string|null):string|null{
+ if(type){
+  if(/semi[ -]?detached/i.test(type))return 'Semi-detached';
+  if(/terrac|attached|townhouse|town house|mews/i.test(type)&&!/detached/i.test(type))return 'Attached / terraced';
+  if(/\bdetached\b/i.test(type))return 'Detached';
+  if(/apartment|flat|duplex|maisonette/i.test(type))return 'Apartment';
+ }
+ if(name){
+  if(/semi[ -]?detached/i.test(name))return 'Semi-detached';
+  if(/terrac|attached|townhouse|town house|mews/i.test(name)&&!/detached/i.test(name))return 'Attached / terraced';
+  if(/\bdetached\b/i.test(name))return 'Detached';
+  if(/apartment|flat|duplex|maisonette/i.test(name))return 'Apartment';
+ }
+ return detached===true?'Detached':null;
+}

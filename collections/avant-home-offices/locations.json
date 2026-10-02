@@ -2,64 +2,64 @@
   {
     "name": "Bennerley View",
     "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
+    "postcode": "NG16 2SJ",
     "latitude": 52.986317,
-    "longitude": -1.290875,
-    "postcode": "NG16 2SJ"
+    "longitude": -1.290875
   },
   {
     "name": "Lawrence Point",
     "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
+    "postcode": "NG16 3ER",
     "latitude": 53.020127,
-    "longitude": -1.296678,
-    "postcode": "NG16 3ER"
+    "longitude": -1.296678
   },
   {
     "name": "Althamer View",
     "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+    "postcode": "EH32 9GT",
     "latitude": 55.953998,
-    "longitude": -2.949327,
-    "postcode": "EH32 9GT"
+    "longitude": -2.949327
   },
   {
     "name": "Darach Fields",
     "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+    "postcode": "G33 6PQ",
     "latitude": 55.889235,
-    "longitude": -4.171355,
-    "postcode": "G33 6PQ"
+    "longitude": -4.171355
   },
   {
     "name": "Thistle Meadows",
     "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+    "postcode": "EH33 2FX",
     "latitude": 55.933254,
-    "longitude": -2.949005,
-    "postcode": "EH33 2FX"
+    "longitude": -2.949005
   },
   {
     "name": "Stewart's Quarter",
     "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+    "postcode": "KY11 2ZQ",
     "latitude": 56.037282,
-    "longitude": -3.437628,
-    "postcode": "KY11 2ZQ"
+    "longitude": -3.437628
   },
   {
     "name": "Edmonstone Village",
     "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+    "postcode": "EH16 4SP",
     "latitude": 55.913924,
-    "longitude": -3.117122,
-    "postcode": "EH16 4SP"
+    "longitude": -3.117122
   },
   {
     "name": "Bishop's Quarter",
     "url": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/leeds/bishops-quarter",
+    "postcode": "LS25 6GT",
     "latitude": 53.800912,
-    "longitude": -1.240366,
-    "postcode": "LS25 6GT"
+    "longitude": -1.240366
   },
   {
     "name": "Cadley Village",
     "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/swadlincote/cadley-village",
+    "postcode": "DE11 0BB",
     "latitude": 52.774065,
-    "longitude": -1.562344,
-    "postcode": "DE11 0BB"
+    "longitude": -1.562344
   }
 ]
