@@ -1,0 +1,1177 @@
+{
+  "builder": {
+    "name": "Avant",
+    "slug": "avant",
+    "websiteUrl": "https://www.avanthomes.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T13:28:19.266Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/leicestershire/hinckley/chestnut-acres-burbage",
+      "name": "Chestnut Acres",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/radcliffe-on-trent/hackett-grange",
+      "name": "Hackett Grange",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/nottingham/foxgrove-village",
+      "name": "Foxgrove Village",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
+      "name": "Bennerley View",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
+      "name": "Lawrence Point",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/chesterfield/earls-park",
+      "name": "Earl's Park",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/somercotes/birchwood-lane-somercotes",
+      "name": "Seely Fields",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/leicestershire/earl-shilton/sheltone-park",
+      "name": "Sheltone Village",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/lancashire/preston/oakview-quarter",
+      "name": "Oakview Quarter",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/west-yorkshire/bingley/five-rise-quarter",
+      "name": "Five Rise Quarter",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+      "name": "Althamer View",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 5
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+      "name": "Darach Fields",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/west-midlands/coventry/allesley-heights",
+      "status": "complete",
+      "name": "Allesley Heights",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow-city/glasgow/richmond-heights",
+      "name": "Richmond Heights",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/north-lanarkshire/glenboig/craignethan-gate",
+      "name": "Craignethan Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/bathgate/armadale/honeyman-park",
+      "name": "Honeyman Park",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/south-lanarkshire/east-kilbride/jackton-green",
+      "name": "Jackton Green",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "Thistle Meadows",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 9
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+      "name": "Stewart's Quarter",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/south-yorkshire/barnsley/great-houghton",
+      "status": "complete",
+      "name": "Houghton Place",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+      "name": "Edmonstone Village",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/angus/dundee/craigowl-law",
+      "name": "Craigowl Law",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/south-yorkshire/barnsley/smithy-wood",
+      "name": "Smithy Wood Gate",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/lincolnshire/gainsborough/mowbray-croft",
+      "status": "complete",
+      "name": "Mowbray Croft",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/leeds/bishops-quarter",
+      "name": "Bishop's Quarter",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/south-yorkshire/rotherham/sorby-park",
+      "name": "Sorby Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/shropshire/telford/priory-orchard",
+      "name": "Priory Orchard",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/middlesbrough/acklam/the-avenue-acklam",
+      "name": "The Avenue",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/co-durham/willington/westward-green",
+      "name": "Westward Green",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/west-yorkshire/wakefield/altofts-acres",
+      "name": "Altofts Acres",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/catterick-garrison/brompton-mews",
+      "name": "Brompton Mews",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/west-yorkshire/leeds/montague-place",
+      "status": "complete",
+      "name": "Montague Place",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/west-yorkshire/keighley/odettes-point",
+      "name": "Odette's Point",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/doncaster/edenthorpe/eden-fields",
+      "name": "Eden Fields",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/west-yorkshire/leeds/greenlock-place",
+      "name": "Greenlock Place",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/sutton-in-ashfield/silverhill-edge",
+      "name": "Silverhill Edge",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/retford/trinity-fields",
+      "name": "Trinity Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/lincolnshire/scunthorpe/moorwell-meadows",
+      "name": "Moorwell Meadows",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/south-yorkshire/rotherham/thorn-wood-gardens",
+      "status": "complete",
+      "name": "Thorn Wood Gardens",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/northamptonshire/desborough/viridian-meadows",
+      "name": "Viridian Meadows",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/swadlincote/cadley-village",
+      "name": "Cadley Village",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/mansfield/sitwell-acres",
+      "status": "complete",
+      "name": "Sitwell Acres",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.avanthomes.co.uk/new-build-homes/west-yorkshire/carlton/strawberry-fields",
+      "name": "Strawberry Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Hackett Grange",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/radcliffe-on-trent/hackett-grange",
+      "name": "The Cookridge · Plot 77",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/radcliffe-on-trent/hackett-grange/homes/cookridge/077",
+      "bedrooms": 5,
+      "price": 430000,
+      "plots": [
+        {
+          "number": "77",
+          "price": 430000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hackett Grange",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/radcliffe-on-trent/hackett-grange",
+      "name": "The Cookridge · Plot 148",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/radcliffe-on-trent/hackett-grange/homes/cookridge/148",
+      "bedrooms": 5,
+      "price": 450000,
+      "plots": [
+        {
+          "number": "148",
+          "price": 450000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bennerley View",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
+      "name": "The Cookridge · Plot 10",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view/homes/cookridge/010",
+      "bedrooms": 5,
+      "price": 395000,
+      "plots": [
+        {
+          "number": "10",
+          "price": 395000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bennerley View",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
+      "name": "The Thornton · Plot 5",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view/homes/thornton/005",
+      "bedrooms": 5,
+      "price": 435000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 435000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "42bcadb2ba02afbc6294303072c0ed8f544d4bbabc49269877c8590ee0d4e034"
+      ]
+    },
+    {
+      "development": "Lawrence Point",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
+      "name": "The Cookridge · Plot 22",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point/homes/cookridge/022",
+      "bedrooms": 5,
+      "price": 370000,
+      "plots": [
+        {
+          "number": "22",
+          "price": 370000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Lawrence Point",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
+      "name": "The Thornton · Plot 48",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point/homes/thornton/048",
+      "bedrooms": 5,
+      "price": 420000,
+      "plots": [
+        {
+          "number": "48",
+          "price": 420000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "42bcadb2ba02afbc6294303072c0ed8f544d4bbabc49269877c8590ee0d4e034"
+      ]
+    },
+    {
+      "development": "Lawrence Point",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
+      "name": "The Thornton · Plot 36",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point/homes/thornton/036",
+      "bedrooms": 5,
+      "price": 425000,
+      "plots": [
+        {
+          "number": "36",
+          "price": 425000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Seely Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/somercotes/birchwood-lane-somercotes",
+      "name": "The Cookridge · Plot 130",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/somercotes/birchwood-lane-somercotes/homes/cookridge/130",
+      "bedrooms": 5,
+      "price": 370000,
+      "plots": [
+        {
+          "number": "130",
+          "price": 370000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Seely Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/somercotes/birchwood-lane-somercotes",
+      "name": "The Bilbrough · Plot 129",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/somercotes/birchwood-lane-somercotes/homes/bilbrough/129",
+      "bedrooms": 5,
+      "price": 410000,
+      "plots": [
+        {
+          "number": "129",
+          "price": 410000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Althamer View",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+      "name": "The Nairn · Plot 309",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view/homes/nairn/309",
+      "bedrooms": 5,
+      "price": 397995,
+      "plots": [
+        {
+          "number": "309",
+          "price": 397995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Althamer View",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+      "name": "The Pitlochry · Plot 308",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view/homes/pitlochry/308",
+      "bedrooms": 5,
+      "price": 399995,
+      "plots": [
+        {
+          "number": "308",
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Althamer View",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+      "name": "The Rothesay · Plot 334",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view/homes/rothesay/334",
+      "bedrooms": 5,
+      "price": 414995,
+      "plots": [
+        {
+          "number": "334",
+          "price": 414995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c4884327d660513141ff42fe3b554876d86cc07bd2033a989318ad4ab67eb2b"
+      ]
+    },
+    {
+      "development": "Althamer View",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+      "name": "The Pitlochry · Plot 222",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view/homes/pitlochry/222",
+      "bedrooms": 5,
+      "price": 421995,
+      "plots": [
+        {
+          "number": "222",
+          "price": 421995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "94603c4674c62b61e882333a78c20b7d240f473ba8f94ec95e7a47e0a8931668"
+      ]
+    },
+    {
+      "development": "Althamer View",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
+      "name": "The Rothesay · Plot 221",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view/homes/rothesay/221",
+      "bedrooms": 5,
+      "price": 426995,
+      "plots": [
+        {
+          "number": "221",
+          "price": 426995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Darach Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+      "name": "The Stirling · Plot 89",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields/homes/stirling/089",
+      "bedrooms": 5,
+      "price": 434995,
+      "plots": [
+        {
+          "number": "89",
+          "price": 434995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Darach Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+      "name": "The Stirling · Plot 73",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields/homes/stirling/073",
+      "bedrooms": 5,
+      "price": 439995,
+      "plots": [
+        {
+          "number": "73",
+          "price": 439995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "11ed35533c0dc8b370572e1afb49e67b184f0db0b8ad4b9f761abcdd1bca3109"
+      ]
+    },
+    {
+      "development": "Darach Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+      "name": "The Thurso · Plot 97",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields/homes/thurso/097",
+      "bedrooms": 5,
+      "price": 516995,
+      "plots": [
+        {
+          "number": "97",
+          "price": 516995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "45c5562fb0fe47759a7b5938c2ee39344daed4158c11b795e5577943e550753e"
+      ]
+    },
+    {
+      "development": "Darach Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+      "name": "The Thurso · Plot 94",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields/homes/thurso/094",
+      "bedrooms": 5,
+      "price": 519995,
+      "plots": [
+        {
+          "number": "94",
+          "price": 519995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "57979fd2cb27d0b898cd9f722c973c8ef19125a2f919a70777546b66f221d8ad"
+      ]
+    },
+    {
+      "development": "Darach Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+      "name": "The Uphall · Plot 96",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields/homes/uphall/096",
+      "bedrooms": 5,
+      "price": 544995,
+      "plots": [
+        {
+          "number": "96",
+          "price": 544995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Darach Fields",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
+      "name": "The Uphall · Plot 93",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields/homes/uphall/093",
+      "bedrooms": 5,
+      "price": 555995,
+      "plots": [
+        {
+          "number": "93",
+          "price": 555995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Honeyman Park",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/bathgate/armadale/honeyman-park",
+      "name": "The Nairn · Plot 151",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/bathgate/armadale/honeyman-park/homes/nairn/151",
+      "bedrooms": 5,
+      "price": 331995,
+      "plots": [
+        {
+          "number": "151",
+          "price": 331995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Honeyman Park",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/bathgate/armadale/honeyman-park",
+      "name": "The Nairn · Plot 156",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/bathgate/armadale/honeyman-park/homes/nairn/156",
+      "bedrooms": 5,
+      "price": 341995,
+      "plots": [
+        {
+          "number": "156",
+          "price": 341995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Nairn · Plot 87",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/nairn/087",
+      "bedrooms": 5,
+      "price": 359995,
+      "plots": [
+        {
+          "number": "87",
+          "price": 359995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "04dd6a9762eb6f27693094e2eb647907a84e2a0ab7bce569dce7b7be9b76004a"
+      ]
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Nairn · Plot 30",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/nairn/030",
+      "bedrooms": 5,
+      "price": 371995,
+      "plots": [
+        {
+          "number": "30",
+          "price": 371995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Rothesay · Plot 55",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/rothesay/055",
+      "bedrooms": 5,
+      "price": 389995,
+      "plots": [
+        {
+          "number": "55",
+          "price": 389995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c4884327d660513141ff42fe3b554876d86cc07bd2033a989318ad4ab67eb2b"
+      ]
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Nairn · Plot 78",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/nairn/078",
+      "bedrooms": 5,
+      "price": 396995,
+      "plots": [
+        {
+          "number": "78",
+          "price": 396995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "04dd6a9762eb6f27693094e2eb647907a84e2a0ab7bce569dce7b7be9b76004a"
+      ]
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Rothesay · Plot 88",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/rothesay/088",
+      "bedrooms": 5,
+      "price": 419995,
+      "plots": [
+        {
+          "number": "88",
+          "price": 419995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c4884327d660513141ff42fe3b554876d86cc07bd2033a989318ad4ab67eb2b"
+      ]
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Pitlochry · Plot 82",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/pitlochry/082",
+      "bedrooms": 5,
+      "price": 429995,
+      "plots": [
+        {
+          "number": "82",
+          "price": 429995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "94603c4674c62b61e882333a78c20b7d240f473ba8f94ec95e7a47e0a8931668"
+      ]
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Stirling · Plot 84",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/stirling/084",
+      "bedrooms": 5,
+      "price": 434995,
+      "plots": [
+        {
+          "number": "84",
+          "price": 434995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Pitlochry · Plot 50",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/pitlochry/050",
+      "bedrooms": 5,
+      "price": 444995,
+      "plots": [
+        {
+          "number": "50",
+          "price": 444995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "94603c4674c62b61e882333a78c20b7d240f473ba8f94ec95e7a47e0a8931668"
+      ]
+    },
+    {
+      "development": "Thistle Meadows",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
+      "name": "The Stirling · Plot 65",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows/homes/stirling/065",
+      "bedrooms": 5,
+      "price": 458995,
+      "plots": [
+        {
+          "number": "65",
+          "price": 458995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Stewart's Quarter",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+      "name": "The Rothesay · Plot 133",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter/homes/rothesay/133",
+      "bedrooms": 5,
+      "price": 379995,
+      "plots": [
+        {
+          "number": "133",
+          "price": 379995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c4884327d660513141ff42fe3b554876d86cc07bd2033a989318ad4ab67eb2b"
+      ]
+    },
+    {
+      "development": "Stewart's Quarter",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+      "name": "The Nairn · Plot 120",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter/homes/nairn/120",
+      "bedrooms": 5,
+      "price": 381995,
+      "plots": [
+        {
+          "number": "120",
+          "price": 381995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Stewart's Quarter",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+      "name": "The Nairn · Plot 64",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter/homes/nairn/064",
+      "bedrooms": 5,
+      "price": 383995,
+      "plots": [
+        {
+          "number": "64",
+          "price": 383995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Stewart's Quarter",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
+      "name": "The Rothesay · Plot 122",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter/homes/rothesay/122",
+      "bedrooms": 5,
+      "price": 396995,
+      "plots": [
+        {
+          "number": "122",
+          "price": 396995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Edmonstone Village",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+      "name": "The Nairn · Plot 242",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village/homes/nairn/242",
+      "bedrooms": 5,
+      "price": 450995,
+      "plots": [
+        {
+          "number": "242",
+          "price": 450995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Edmonstone Village",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+      "name": "The Nairn · Plot 240",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village/homes/nairn/240",
+      "bedrooms": 5,
+      "price": 451995,
+      "plots": [
+        {
+          "number": "240",
+          "price": 451995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Edmonstone Village",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+      "name": "The Rothesay · Plot 243",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village/homes/rothesay/243",
+      "bedrooms": 5,
+      "price": 473995,
+      "plots": [
+        {
+          "number": "243",
+          "price": 473995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c4884327d660513141ff42fe3b554876d86cc07bd2033a989318ad4ab67eb2b"
+      ]
+    },
+    {
+      "development": "Edmonstone Village",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+      "name": "The Rothesay · Plot 239",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village/homes/rothesay/239",
+      "bedrooms": 5,
+      "price": 475995,
+      "plots": [
+        {
+          "number": "239",
+          "price": 475995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Edmonstone Village",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+      "name": "The Stirling · Plot 135",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village/homes/stirling/135",
+      "bedrooms": 5,
+      "price": 494995,
+      "plots": [
+        {
+          "number": "135",
+          "price": 494995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Edmonstone Village",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
+      "name": "The Stirling · Plot 74",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village/homes/stirling/074",
+      "bedrooms": 5,
+      "price": 499995,
+      "plots": [
+        {
+          "number": "74",
+          "price": 499995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Craigowl Law",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/angus/dundee/craigowl-law",
+      "name": "The Stirling · Plot 14",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/angus/dundee/craigowl-law/homes/stirling/014",
+      "bedrooms": 5,
+      "price": 329995,
+      "plots": [
+        {
+          "number": "14",
+          "price": 329995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Craigowl Law",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/angus/dundee/craigowl-law",
+      "name": "The Stirling · Plot 25",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/angus/dundee/craigowl-law/homes/stirling/025",
+      "bedrooms": 5,
+      "price": 354995,
+      "plots": [
+        {
+          "number": "25",
+          "price": 354995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Bishop's Quarter",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/leeds/bishops-quarter",
+      "name": "The Appleton · Plot 1",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/leeds/bishops-quarter/homes/appleton/001",
+      "bedrooms": 5,
+      "price": 525000,
+      "plots": [
+        {
+          "number": "1",
+          "price": 525000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "57979fd2cb27d0b898cd9f722c973c8ef19125a2f919a70777546b66f221d8ad"
+      ]
+    },
+    {
+      "development": "Cadley Village",
+      "developmentUrl": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/swadlincote/cadley-village",
+      "name": "The Appleton · Plot 372",
+      "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/swadlincote/cadley-village/homes/appleton/372",
+      "bedrooms": 5,
+      "price": 450000,
+      "plots": [
+        {
+          "number": "372",
+          "price": 450000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "57979fd2cb27d0b898cd9f722c973c8ef19125a2f919a70777546b66f221d8ad"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "42bcadb2ba02afbc6294303072c0ed8f544d4bbabc49269877c8590ee0d4e034",
+      "path": "images/42bcadb2ba02afbc6294303072c0ed8f544d4bbabc49269877c8590ee0d4e034.jpg",
+      "sourceUrl": "https://data.openasset.com/bd9882d6/7d6c469e5895a25a26727514e8b98dd0/3208_N43_jpg/3208_N43_plothero.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A staged study room featuring a black desk with an office chair, a green accent wall, and a lamp.",
+        "reason": "It is a dedicated home office containing a desk and office chair with no bed present."
+      }
+    },
+    {
+      "id": "7c4884327d660513141ff42fe3b554876d86cc07bd2033a989318ad4ab67eb2b",
+      "path": "images/7c4884327d660513141ff42fe3b554876d86cc07bd2033a989318ad4ab67eb2b.jpg",
+      "sourceUrl": "https://data.openasset.com/bd9882d6/cfd0bb944ea36ec28a6545074f8f73d8/705_N20_jpg/705_N20_plothero.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "study",
+        "description": "A home office or study with a long wooden desk, blue office chairs, accent armchair, shelving, and modern slat wall paneling.",
+        "reason": "This image is staged as a home office/study with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "94603c4674c62b61e882333a78c20b7d240f473ba8f94ec95e7a47e0a8931668",
+      "path": "images/94603c4674c62b61e882333a78c20b7d240f473ba8f94ec95e7a47e0a8931668.jpg",
+      "sourceUrl": "https://data.openasset.com/bd9882d6/8d1594a4261a4218a2ec78ca7aaff15e/7059_jpg/7059_plothero.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "study",
+        "description": "A study or home office with a white and wood desk, an upholstered chair, decorative plant, and patterned wallpaper.",
+        "reason": "This image is staged as a home office/study with a visible desk and no bed present."
+      }
+    },
+    {
+      "id": "11ed35533c0dc8b370572e1afb49e67b184f0db0b8ad4b9f761abcdd1bca3109",
+      "path": "images/11ed35533c0dc8b370572e1afb49e67b184f0db0b8ad4b9f761abcdd1bca3109.jpg",
+      "sourceUrl": "https://data.openasset.com/bd9882d6/271a28b4f153100f4db96b00fc4354c8/7054_N307_jpg/7054_N307_plothero.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "A compact home office staged with a white desk, office chair, desk lamp, and artwork.",
+        "reason": "The room functions as a dedicated home office with a visible desk and no bed."
+      }
+    },
+    {
+      "id": "45c5562fb0fe47759a7b5938c2ee39344daed4158c11b795e5577943e550753e",
+      "path": "images/45c5562fb0fe47759a7b5938c2ee39344daed4158c11b795e5577943e550753e.jpg",
+      "sourceUrl": "https://data.openasset.com/bd9882d6/b324c80a77f56b98ce29ce57dd02c297/7044_N251_jpg/7044_N251_plothero.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "Room staged as a living room and home office combination featuring a desk setup under the TV.",
+        "reason": "The room contains a visible desk surface configured for work without any bed present."
+      }
+    },
+    {
+      "id": "57979fd2cb27d0b898cd9f722c973c8ef19125a2f919a70777546b66f221d8ad",
+      "path": "images/57979fd2cb27d0b898cd9f722c973c8ef19125a2f919a70777546b66f221d8ad.jpg",
+      "sourceUrl": "https://data.openasset.com/bd9882d6/058534b27c44371e564fb169f0d1d4c5/7044_N250_jpg/7044_N250_plothero.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home_office",
+        "description": "Staged home office with a floating desk, wall paneling, and seating.",
+        "reason": "The room features a clear desk/work surface for office work and contains no bed."
+      }
+    },
+    {
+      "id": "04dd6a9762eb6f27693094e2eb647907a84e2a0ab7bce569dce7b7be9b76004a",
+      "path": "images/04dd6a9762eb6f27693094e2eb647907a84e2a0ab7bce569dce7b7be9b76004a.jpg",
+      "sourceUrl": "https://data.openasset.com/bd9882d6/579a1d48b52d71d55c048a688dac4817/7058_N119_jpg/7058_N119_plothero.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office/study room featuring a desk with shelving, an office chair, a table lamp, and wall art.",
+        "reason": "The room is clearly staged as a home office with a visible desk and office chair, and contains no bed."
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 43,
+    "qualifyingDiscovered": 45,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 289,
+    "reusedGalleries": 9,
+    "imagesAttempted": 210,
+    "pendingImages": 0,
+    "matchedImages": 7,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 210
+  },
+  "completedAt": "2026-10-02T13:31:56.609Z"
+}
