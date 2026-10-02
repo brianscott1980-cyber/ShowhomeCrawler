@@ -10,7 +10,7 @@ function register(element:HTMLElement,advance:Entry['advance']){
  if(!stop){
   let scrollY=window.scrollY,frame=0;
   const reset=()=>{scrollY=window.scrollY;for(const item of entries)item.edges=item.element.getBoundingClientRect();};
-  const update=()=>{frame=0;const delta=window.scrollY-scrollY;scrollY=window.scrollY;for(const item of entries){const edges=item.element.getBoundingClientRect();const direction=scrollCrossing(item.edges,edges,window.innerHeight*.25,delta);item.edges=edges;if(direction)item.advance(direction);}};
+  const update=()=>{frame=0;const delta=window.scrollY-scrollY;scrollY=window.scrollY;for(const item of entries){const edges=item.element.getBoundingClientRect();const direction=scrollCrossing(item.edges,edges,window.innerHeight*.5,delta);item.edges=edges;if(direction)item.advance(direction);}};
   const scroll=()=>{if(!frame)frame=requestAnimationFrame(update);};
   window.addEventListener('scroll',scroll,{passive:true});window.addEventListener('resize',reset);
   stop=()=>{window.removeEventListener('scroll',scroll);window.removeEventListener('resize',reset);cancelAnimationFrame(frame);stop=undefined;};
