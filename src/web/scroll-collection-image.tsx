@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import {collectionIndex,scrollCrossing,type CardEdges} from './scroll-crossing';
-export interface CollectionImage {src:string;alt:string}
+export interface CollectionImage {src:string;alt:string;kind?:'logo';background?:string}
 interface Entry {element:HTMLElement;edges:CardEdges;advance:(direction:number)=>void}
 const entries=new Set<Entry>();
 let stop:undefined|(()=>void);
@@ -38,7 +38,7 @@ export function ScrollCollectionImage({images,image,description,layout}:{images?
  const current=items[slide.index]??items[0]!;
  const previous=items[slide.previous]??items[0]!;
  return <div ref={ref} className="collection-image">
-  {slide.sequence>0&&<img className="collection-image-previous" src={previous.src} alt="" aria-hidden="true"/>}
-  <img key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={slide.sequence&&loadedSrc!==current.src?{opacity:0}:undefined} className={slide.sequence&&loadedSrc===current.src?`collection-image-current collection-image-${slide.direction>0?'next':'back'}`:'collection-image-current'} src={current.src} alt={current.alt} loading="lazy"/>
+  {slide.sequence>0&&<img className={`collection-image-previous${previous.kind==='logo'?' collection-image-logo':''}`} style={{background:previous.background}} src={previous.src} alt="" aria-hidden="true"/>}
+  <img key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={current.src} alt={current.alt} loading="lazy"/>
  </div>;
 }

@@ -26,10 +26,9 @@ nav{align-items:center}nav>a{display:inline-flex;align-items:center;gap:6px;line
 @keyframes collection-back{from{opacity:0;transform:translateX(-8%)}to{opacity:1;transform:translateX(0)}}
 .directory-compact .collection-image{height:180px}
 .directory-list .collection-image{width:220px;height:auto;min-height:165px}
-.builder-logo-plaque{display:flex;align-items:center;justify-content:flex-start;min-height:56px;margin-bottom:12px}
-.collection-card .card-body img.builder-logo{position:static;width:156px;height:52px;min-height:0;object-fit:contain;object-position:left center;flex-shrink:0}
 @media(max-width:950px){.collection-image{height:280px}}
 @media(max-width:700px){.directory-compact .collection-image{height:150px}.directory-list .collection-image{width:115px;height:auto}}
 @media(max-width:620px){.collection-image{height:300px}}
 @media(prefers-reduced-motion:reduce){.collection-image-next,.collection-image-back{animation:none}}
-.logo-cala,.logo-barratt,.logo-david-wilson,.logo-robertson-homes,.logo-lynch-homes{width:fit-content;max-width:100%;padding:10px 14px;background:#163f48;border-radius:6px}
+.collection-card .collection-image img.collection-image-logo{object-fit:contain;padding:24px;box-sizing:border-box}
+@media(max-width:700px){.directory-list .collection-image img.collection-image-logo{padding:12px}}

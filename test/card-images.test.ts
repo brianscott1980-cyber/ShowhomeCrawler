@@ -14,3 +14,13 @@ it('deduplicates shared photos, supports a single room and handles empty collect
  expect(randomRoomImages([])).toEqual([]);
  expect(randomRoomImages([images[0]!])).toEqual([images[0]]);
 });
+it('pins the builder logo first while randomising only the room photos',async()=>{
+ const {cardImageCollection}=await import('../src/web/card-images');
+ const logo:CardImage={src:'/logos/builder.svg',alt:'Builder logo',kind:'logo',background:'#fff'};
+ const collection=cardImageCollection(images,logo);
+ expect(collection.image).toBe(logo.src);
+ expect(collection.description).toBe(logo.alt);
+ expect(collection.images[0]).toEqual(logo);
+ expect(collection.images.slice(1).map(i=>i.src).sort()).toEqual(images.map(i=>i.src).sort());
+ expect(new Set(collection.images.slice(1,4).map(i=>i.roomType)).size).toBe(3);
+});
