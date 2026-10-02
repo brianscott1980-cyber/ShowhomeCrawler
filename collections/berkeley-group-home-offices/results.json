@@ -1783,7 +1783,20 @@
         "description": "A kitchen with a breakfast bar and stools.",
         "reason": "This is a kitchen, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "objects": [
+          "kitchen island"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "777afa6957c2108e298065d042c47e1d712aac1ae29e1d6e2398c75554833a57",
@@ -1797,7 +1810,20 @@
         "description": "An exterior view of a brick house.",
         "reason": "This is an exterior shot of a house."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "be73cfed9d20d6a64d9ea0743e5ed76a9e8c75988ec276d1cd1cffebe71c26af",
@@ -1811,7 +1837,23 @@
         "description": "A living room with a sofa, coffee table, and bench.",
         "reason": "This is a living room, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "sofa",
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Bench"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "893ebe2ff14d6d0265d03e55692dc786e418aa6dedcc8b2c87f91bae7eb785d8",
@@ -1825,7 +1867,21 @@
         "description": "A bathroom with a toilet and shower.",
         "reason": "This is a bathroom, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "shower",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "c6da1e5ddfd51b6d4a468381f542e47cf5c97c01ce8c2a81606ec5ee6fa09796",
@@ -1839,7 +1895,20 @@
         "description": "A bedroom with a large bed.",
         "reason": "This is a bedroom containing a bed."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "c677b31865dc8e53eccbc82ed39aaf2ac3b3831e9b42069465406f4a13b14c5e",
@@ -1853,7 +1922,18 @@
         "description": "An aerial view of a residential neighborhood.",
         "reason": "This is an exterior aerial view."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "132f4bbcdb097d9443786336691491ce47f60f536e905a2f72615cad8bafdf94",
@@ -1867,7 +1947,20 @@
         "description": "A composite image showing the exterior of a brick house, a swimming pool, and a garden.",
         "reason": "The image shows exterior views and landscaping, not an interior home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "b566700dc7c8fa78e19edd5db1beca370cfa6104babc4069dd8affc3dbde324e",
@@ -1881,7 +1974,18 @@
         "description": "A composite image showing a garden, a kitchen, and a living room.",
         "reason": "The interior room shown is a living room with sofas, not a dedicated home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "037a6755865d879ccdf6282185334750d3e4e33990b088a158250173ea4b8e80",
@@ -1895,7 +1999,20 @@
         "description": "A close-up of a kitchen sink and countertop.",
         "reason": "This is a kitchen, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "8a130fa5f15f25b6300582f97060b42865b2090f134a690deaa40432aa1b7c93",
@@ -1909,7 +2026,18 @@
         "description": "A close-up of a kitchen countertop with kitchenware.",
         "reason": "This is a kitchen, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "f52f6cfc6a875592e03b4fcfa6fad65ddbc9e4286ff2def93294b4a4cb161e88",
@@ -1923,7 +2051,20 @@
         "description": "A bedroom with a made bed and bedside tables.",
         "reason": "This is a bedroom containing a bed, which is explicitly excluded."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "4bd948de264c6c0029b773995b8e7b9dfc21486c85afb71bc0e7fd4480477329",
@@ -1937,7 +2078,22 @@
         "description": "The exterior of a brick house with a car parked in the driveway.",
         "reason": "This is an exterior view of a house."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Terracotta"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "bae1a9379874c4f6135d6cc37a44255feb4fe6b32cb4aa27d4fabcd60102a0ea",
@@ -1951,7 +2107,21 @@
         "description": "A modern bathroom with a bathtub and vanity.",
         "reason": "This is a bathroom, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "objects": [
+          "bathtub",
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "e78872d948354104a51d043f4568c674c3b2ce775259476faff5b2d06d0f96ef",
@@ -1965,7 +2135,18 @@
         "description": "An exterior view of residential houses.",
         "reason": "This is an exterior shot of buildings, not an interior home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "94d6bbb5e60b5bef44c74413506e562b4a2e27cdb2f52546a0b5ffd2e1264873",
@@ -1979,7 +2160,20 @@
         "description": "A bedroom with a large bed.",
         "reason": "The room is a bedroom containing a bed."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "a714ad415ca1cefdb815c7bcfacfee85bbb5fe786a5aa6b48477adb2375d4127",
@@ -1993,7 +2187,22 @@
         "description": "A dining room with a table and chairs.",
         "reason": "This is a dining room, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Formal dining room",
+        "objects": [
+          "dining chairs"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "cf35f0ff1fc2d1289b6deeda401f4805702b45ad72918a15a1afc123eeb24852",
@@ -2007,7 +2216,21 @@
         "description": "A bedroom with a single bed and a small desk.",
         "reason": "Although it has a desk, it is clearly a bedroom because it contains a bed."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Small bedroom",
+        "objects": [
+          "bed",
+          "desk"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "789e38dd3777f6c041bb6a9b17b95bff060509a5de81de23a0df9943e13f4e41",
@@ -2021,7 +2244,23 @@
         "description": "A bedroom with a bed and an armchair.",
         "reason": "The room is a bedroom containing a bed."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "armchair",
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "05cb087916777a8c101b0ef78196704ea8b214ba3daa6d1632f92e78955bf906",
@@ -2035,7 +2274,20 @@
         "description": "A close-up of a bed in a bedroom.",
         "reason": "The room is a bedroom containing a bed."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "351d5f8224a562422bd464936f3ed8840efe7b9d85ab68d4d800be386c938d42",
@@ -2049,7 +2301,20 @@
         "description": "A living room with sofas and a fireplace.",
         "reason": "This is a living room, not a dedicated home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "objects": [
+          "fireplace"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "7c92c6867ff57a83b6051808fa8402f05d45ea1537d4d23baaf68ed855b3494a",
@@ -2063,7 +2328,20 @@
         "description": "A bedroom with a bed.",
         "reason": "The room is a bedroom containing a bed."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Master bedroom",
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     },
     {
       "id": "92c74b1a9b141d8b0ab9828b2955f753432402c5dd9aac46b573da1ed695236c",
@@ -2077,7 +2355,20 @@
         "description": "A modern kitchen with a breakfast bar.",
         "reason": "This is a kitchen, not a home office."
       },
-      "analysisModel": "gemini-3.1-flash-lite"
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "objects": [
+          "kitchen island"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
     }
   ],
   "errors": [

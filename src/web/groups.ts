@@ -7,6 +7,9 @@ export interface Collection {slug:string;name:string;report:RunReport}
 export interface Group {key:string;name:string;developers:string[];collections:Collection[];count:number}
 const keyFor=(value:string)=>createHash('sha256').update(value).digest('hex').slice(0,20);
 export function spaceName(image:ReportImage,question?:string){
+ if(image.categorisation?.mainCategory){
+  return image.categorisation.mainCategory==='Other'?'Uncategorised':image.categorisation.mainCategory;
+ }
  if(!image.verdict||!image.verdict.matches)return 'Uncategorised';
  if(question&&/home office/i.test(question))return 'Study & Home Office';
  const room=image.verdict.roomType?.trim();
