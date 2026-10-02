@@ -1,0 +1,730 @@
+{
+  "builder": {
+    "name": "Hill Group",
+    "slug": "hill-group",
+    "websiteUrl": "https://www.hill.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T16:33:36.087Z",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Home office with no beds or floorplan graphics",
+  "analysisVersion": "home-office-no-beds-or-floorplans-v2",
+  "developments": [
+    {
+      "url": "https://www.hill.co.uk/all-developments/cambridgeshire/knights-park",
+      "name": "Knights Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/marleighpark",
+      "name": "Marleigh Park",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/st-james-quay",
+      "name": "St James Quay",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/all-developments/west-london/lampton-parkside",
+      "name": "Lampton Parkside",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/eden-green",
+      "name": "Eden Green",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/millside-grange",
+      "name": "Millside Grange",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.hill.co.uk/hartley-acres",
+      "name": "Hartley Acres",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/canalside-quarter",
+      "name": "Canalside Quarter",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/the-gables",
+      "name": "The Gables",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/all-developments/london/kew-bridge-rise",
+      "name": "Kew Bridge Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/elgrove-gardens",
+      "name": "Elgrove Gardens",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/hollymead-square",
+      "name": "Hollymead Square",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/farehurst-park",
+      "name": "Farehurst Park",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/st-georges-place",
+      "name": "St Georges Place",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.hill.co.uk/nexus",
+      "name": "Nexus",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/all-developments/london/north-gate-park",
+      "name": "North Gate Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/cambium-square",
+      "name": "Cambium Square",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/all-developments/cambridgeshire/the-icon",
+      "name": "The Icon",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/audley-green",
+      "name": "Audley Green",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/all-developments/london/dagenham-green",
+      "name": "Dagenham Green",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/city-reach",
+      "name": "City Reach",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/fitzwilliam-gate",
+      "name": "Fitzwilliam Gate",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/kingsley-park",
+      "name": "Kingsley Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/all-developments/avon/baltic-wharf",
+      "name": "Baltic Wharf",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/hartmere",
+      "name": "Hartmere",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.hill.co.uk/thecliftoncollection",
+      "name": "The Clifton Collection",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/mulberry-grove",
+      "name": "Mulberry Grove",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/abbotts-chase",
+      "name": "Abbotts Chase",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.hill.co.uk/willow-bank",
+      "name": "Willow Bank",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/elmstead",
+      "name": "Elmstead",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/mulberry-rise",
+      "name": "Mulberry Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/thesouthvillecollection",
+      "name": "The Southville Collection",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/honeywood",
+      "name": "Honeywood",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/little-chalfont-park",
+      "name": "Little Chalfont Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/all-developments/hertfordshire/welham-manor",
+      "name": "Welham Manor",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.hill.co.uk/juniper-green",
+      "name": "Juniper Green",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "Eden Green",
+      "developmentUrl": "https://www.hill.co.uk/eden-green",
+      "name": "The Sage · Plot 34",
+      "url": "https://www.hill.co.uk/all-developments/essex/eden-green/the-sage-number-34-1",
+      "bedrooms": 5,
+      "price": 924950,
+      "plots": [
+        {
+          "number": "34",
+          "price": 924950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millside Grange",
+      "developmentUrl": "https://www.hill.co.uk/millside-grange",
+      "name": "The Lawrence · Plot 153",
+      "url": "https://www.hill.co.uk/all-developments/rickmansworth/millside-grange/the-lawrence-number-153",
+      "bedrooms": 5,
+      "price": 1649950,
+      "plots": [
+        {
+          "number": "153",
+          "price": 1649950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Millside Grange",
+      "developmentUrl": "https://www.hill.co.uk/millside-grange",
+      "name": "The Lawrence · Plot 2",
+      "url": "https://www.hill.co.uk/all-developments/rickmansworth/millside-grange/the-lawrence-number-2",
+      "bedrooms": 5,
+      "price": 1695000,
+      "plots": [
+        {
+          "number": "2",
+          "price": 1695000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "65c63290312dda4d8e36772b2cb6683e8e8d3f84ea76b4918fd1e23a28b6e41f",
+        "59874731bfbf422ddad619eb3fda905079077d9c157e911e3fdc8fb7a0d18c16"
+      ]
+    },
+    {
+      "development": "Hartley Acres",
+      "developmentUrl": "https://www.hill.co.uk/hartley-acres",
+      "name": "The Goddard · Plot 115",
+      "url": "https://www.hill.co.uk/all-developments/kent/hartley-acres/the-goddard-number-115",
+      "bedrooms": 5,
+      "price": 949950,
+      "plots": [
+        {
+          "number": "115",
+          "price": 949950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d172938765ccda01a73d441e5229bf8d74ba95766f80df527fc0154f12095da0"
+      ]
+    },
+    {
+      "development": "Canalside Quarter",
+      "developmentUrl": "https://www.hill.co.uk/canalside-quarter",
+      "name": "The Florey · Plot 89",
+      "url": "https://www.hill.co.uk/all-developments/oxfordshire/canalside-quarter/the-florey-number-89",
+      "bedrooms": 5,
+      "price": 1495000,
+      "plots": [
+        {
+          "number": "89",
+          "price": 1495000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hollymead Square",
+      "developmentUrl": "https://www.hill.co.uk/hollymead-square",
+      "name": "The Shadwell · Plot 44",
+      "url": "https://www.hill.co.uk/all-developments/essex/hollymead-square/the-shadwell-number-44",
+      "bedrooms": 5,
+      "price": 849950,
+      "plots": [
+        {
+          "number": "44",
+          "price": 849950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4b7b11051e96d4a41b72caab484423ac4a009274d29cbf1276bd2c3553b21cdf"
+      ]
+    },
+    {
+      "development": "Farehurst Park",
+      "developmentUrl": "https://www.hill.co.uk/farehurst-park",
+      "name": "The Kite · Plot 98",
+      "url": "https://www.hill.co.uk/all-developments/cambridgeshire/farehurst-park/the-kite-number-98",
+      "bedrooms": 5,
+      "price": 999950,
+      "plots": [
+        {
+          "number": "98",
+          "price": 999950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f46fb7f7b2c00ac83a9316aa65afb59ae0c6393a66af0238fd8855ac0b851a04"
+      ]
+    },
+    {
+      "development": "St Georges Place",
+      "developmentUrl": "https://www.hill.co.uk/st-georges-place",
+      "name": "The Framlingham · Plot 43",
+      "url": "https://www.hill.co.uk/all-developments/suffolk/st-georges-place/the-framlingham-number-43",
+      "bedrooms": 5,
+      "price": 839950,
+      "plots": [
+        {
+          "number": "43",
+          "price": 839950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a99c3cf827198dc1af339123f75da3b741e102079f51e0aed9a25ff0fc0f47e1"
+      ]
+    },
+    {
+      "development": "St Georges Place",
+      "developmentUrl": "https://www.hill.co.uk/st-georges-place",
+      "name": "The Framlingham · Plot 51",
+      "url": "https://www.hill.co.uk/all-developments/suffolk/st-georges-place/the-framlingham-number-51",
+      "bedrooms": 5,
+      "price": 869950,
+      "plots": [
+        {
+          "number": "51",
+          "price": 869950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a99c3cf827198dc1af339123f75da3b741e102079f51e0aed9a25ff0fc0f47e1"
+      ]
+    },
+    {
+      "development": "Audley Green",
+      "developmentUrl": "https://www.hill.co.uk/audley-green",
+      "name": "The Foxglove · Plot 75",
+      "url": "https://www.hill.co.uk/all-developments/essex/audley-green/the-foxglove-number-75",
+      "bedrooms": 5,
+      "price": 919950,
+      "plots": [
+        {
+          "number": "75",
+          "price": 919950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fefa87bddf77e8560fda6c6a18646bd58c63d56594503638af9b8120afb01d52"
+      ]
+    },
+    {
+      "development": "Kingsley Park",
+      "developmentUrl": "https://www.hill.co.uk/kingsley-park",
+      "name": "The Iris · Plot 78",
+      "url": "https://www.hill.co.uk/all-developments/essex/kingsley-park/the-iris-number-78",
+      "bedrooms": 5,
+      "price": 999950,
+      "plots": [
+        {
+          "number": "78",
+          "price": 999950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3e06f02fa8cf4468565e69c7baaced9264805d3d0edfc226e41ddaf82de2c2df"
+      ]
+    },
+    {
+      "development": "Hartmere",
+      "developmentUrl": "https://www.hill.co.uk/hartmere",
+      "name": "The Mallory · Plot 12",
+      "url": "https://www.hill.co.uk/all-developments/cambridgeshire/hartmere/the-mallory-number-12",
+      "bedrooms": 5,
+      "price": 1279950,
+      "plots": [
+        {
+          "number": "12",
+          "price": 1279950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbc856fcd337b50106d6d09c33c7b329df168dd540141abc0f676119b33d46d4"
+      ]
+    },
+    {
+      "development": "Hartmere",
+      "developmentUrl": "https://www.hill.co.uk/hartmere",
+      "name": "The Herring · Plot 18",
+      "url": "https://www.hill.co.uk/all-developments/cambridgeshire/hartmere/the-herring-number-18",
+      "bedrooms": 5,
+      "price": 1299950,
+      "plots": [
+        {
+          "number": "18",
+          "price": 1299950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Hartmere",
+      "developmentUrl": "https://www.hill.co.uk/hartmere",
+      "name": "The Lewis · Plot 11",
+      "url": "https://www.hill.co.uk/all-developments/cambridgeshire/hartmere/the-lewis-number-11",
+      "bedrooms": 6,
+      "price": 1499950,
+      "plots": [
+        {
+          "number": "11",
+          "price": 1499950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6afa5ba96bfc605919de8bab68758fd22d757a36eebbd5470b99f632ccbdd9be"
+      ]
+    },
+    {
+      "development": "Hartmere",
+      "developmentUrl": "https://www.hill.co.uk/hartmere",
+      "name": "The Milne · Plot 6",
+      "url": "https://www.hill.co.uk/all-developments/cambridgeshire/hartmere/the-milne-number-6",
+      "bedrooms": 5,
+      "price": 1599950,
+      "plots": [
+        {
+          "number": "6",
+          "price": 1599950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6afa5ba96bfc605919de8bab68758fd22d757a36eebbd5470b99f632ccbdd9be"
+      ]
+    },
+    {
+      "development": "Abbotts Chase",
+      "developmentUrl": "https://www.hill.co.uk/abbotts-chase",
+      "name": "The Fairfield · Plot 17",
+      "url": "https://www.hill.co.uk/all-developments/essex/abbotts-chase/the-fairfield-number-17",
+      "bedrooms": 5,
+      "price": 1224950,
+      "plots": [
+        {
+          "number": "17",
+          "price": 1224950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "049d9fe69a7ff75036a89790884a207a540cb55d38d3ea554f7b5521c431ce62"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "65c63290312dda4d8e36772b2cb6683e8e8d3f84ea76b4918fd1e23a28b6e41f",
+      "path": "images/65c63290312dda4d8e36772b2cb6683e8e8d3f84ea76b4918fd1e23a28b6e41f.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2023-10/_SJH4872-Edit-Edit-Edit.jpg.webp?h=f7d9296c&itok=dOBdO0ch",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and large wall clock.",
+        "reason": "This room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "59874731bfbf422ddad619eb3fda905079077d9c157e911e3fdc8fb7a0d18c16",
+      "path": "images/59874731bfbf422ddad619eb3fda905079077d9c157e911e3fdc8fb7a0d18c16.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2023-10/_SJH4716-Edit-Edit.jpg.webp?h=f7d9296c&itok=WTip_A3u",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office with a desk and a sofa.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "d172938765ccda01a73d441e5229bf8d74ba95766f80df527fc0154f12095da0",
+      "path": "images/d172938765ccda01a73d441e5229bf8d74ba95766f80df527fc0154f12095da0.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2025-10/HARTLEY%20ACRES%2C%20The%20Goddard%2C%20number%20109_14.jpg.webp?h=a1e1a043&itok=n50B8OiD",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and shelving unit.",
+        "reason": "This is a dedicated home office space with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4b7b11051e96d4a41b72caab484423ac4a009274d29cbf1276bd2c3553b21cdf",
+      "path": "images/4b7b11051e96d4a41b72caab484423ac4a009274d29cbf1276bd2c3553b21cdf.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2024-09/SJH_0125-Edit.jpg.webp?h=a1e1a043&itok=w-Cux06M",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and lamp.",
+        "reason": "This is a dedicated home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "f46fb7f7b2c00ac83a9316aa65afb59ae0c6393a66af0238fd8855ac0b851a04",
+      "path": "images/f46fb7f7b2c00ac83a9316aa65afb59ae0c6393a66af0238fd8855ac0b851a04.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2026-08/PLOT%2095%2C%20FAREHURST%20PARK%20%2831%29.jpg.webp?h=69f2b9d0&itok=3J_e-sVE",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A small home office with a desk, chair, and shelving unit.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "a99c3cf827198dc1af339123f75da3b741e102079f51e0aed9a25ff0fc0f47e1",
+      "path": "images/a99c3cf827198dc1af339123f75da3b741e102079f51e0aed9a25ff0fc0f47e1.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2025-04/SJH_0835-Edit.jpg.webp?h=a1e1a043&itok=jU7gkXF8",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and shelving.",
+        "reason": "This room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "fefa87bddf77e8560fda6c6a18646bd58c63d56594503638af9b8120afb01d52",
+      "path": "images/fefa87bddf77e8560fda6c6a18646bd58c63d56594503638af9b8120afb01d52.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2025-05/SJH_2495-Edit.jpg.webp?h=a1e1a043&itok=Beozi0Wj",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk, chair, and shelving unit.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "3e06f02fa8cf4468565e69c7baaced9264805d3d0edfc226e41ddaf82de2c2df",
+      "path": "images/3e06f02fa8cf4468565e69c7baaced9264805d3d0edfc226e41ddaf82de2c2df.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2025-10/Kingsley%20Park%20-%20Plot%207%20The%20Elm%20%2847%29.jpg.webp?h=a1e1a043&itok=7XFXT6uS",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office space featuring a desk with a computer, a chair, and storage furniture under a sloped ceiling with a skylight.",
+        "reason": "The image shows a dedicated home office setup with a desk and no visible bed, meeting all criteria for a match."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "bbc856fcd337b50106d6d09c33c7b329df168dd540141abc0f676119b33d46d4",
+      "path": "images/bbc856fcd337b50106d6d09c33c7b329df168dd540141abc0f676119b33d46d4.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2026-09/Cambium%20Square%20-%20Plot%2030%20Show%20Home%20%20%282%29.jpg.webp?h=06ac0d8c&itok=NEIP6YBx",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk, computer, and office chair.",
+        "reason": "This is a staged home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6afa5ba96bfc605919de8bab68758fd22d757a36eebbd5470b99f632ccbdd9be",
+      "path": "images/6afa5ba96bfc605919de8bab68758fd22d757a36eebbd5470b99f632ccbdd9be.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2026-04/Hartmere%20Show%20Home_Internals-34%20%281%29.jpg.webp?h=30f254db&itok=ZjeisMkV",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a long desk and two chairs.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "049d9fe69a7ff75036a89790884a207a540cb55d38d3ea554f7b5521c431ce62",
+      "path": "images/049d9fe69a7ff75036a89790884a207a540cb55d38d3ea554f7b5521c431ce62.webp",
+      "sourceUrl": "https://www.hill.co.uk/sites/default/files/styles/media_gallery/public/images/2026-10/PLOT%202%2C%20ABBOTTS%20CHASE%20%2835%29.jpg.webp?h=a5f39d5b&itok=cxmAKjS9",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and shelving unit.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 36,
+    "qualifyingDiscovered": 16,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 513,
+    "reusedImages": 3,
+    "imagesAttempted": 213,
+    "pendingImages": 0,
+    "matchedImages": 11,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 210
+  },
+  "completedAt": "2026-10-02T16:34:54.158Z"
+}
