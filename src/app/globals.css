@@ -32,3 +32,5 @@ nav{align-items:center}nav>a{display:inline-flex;align-items:center;gap:6px;line
 @media(prefers-reduced-motion:reduce){.collection-image-next,.collection-image-back{animation:none}}
 .collection-card .collection-image img.collection-image-logo{object-fit:contain;padding:24px;box-sizing:border-box}
 @media(max-width:700px){.directory-list .collection-image img.collection-image-logo{padding:12px}}
+
+body:has(> main.homepage) > .site-header{display:none}

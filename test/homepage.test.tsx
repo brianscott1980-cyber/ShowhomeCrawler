@@ -1,7 +1,7 @@
 import { expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { JSDOM } from 'jsdom';
-vi.mock('../src/web/homepage-data', () => ({ homepageData: async () => ({ hero: {src:'/hero.jpg',alt:'A living room',builder:'Bellway',category:'Living Room'},journeyPhotos:[],featured:[],points:[{latitude:52,longitude:-1,name:'Test site'}],counts:{locations:12,builders:3,buildings:8} }) }));
+vi.mock('../src/web/homepage-data', () => ({ homepageData: async () => ({ hero: {src:'/hero.jpg',alt:'A living room',builder:'Bellway',category:'Living Room'},journeyPhotos:[],featured:[],points:[{latitude:52,longitude:-1,name:'Test site',builder:'Bellway'}],counts:{locations:12,builders:3,buildings:8} }) }));
 import Home from '../src/app/page';
 import { CoverageMap, coverageClusters, projectLocation } from '../src/web/coverage-map';
 it('gives the homepage three distinct journeys and a real coverage overview', async () => {
@@ -18,7 +18,18 @@ it('gives the homepage three distinct journeys and a real coverage overview', as
 it('projects northern locations above southern ones and clusters points without losing their counts',()=>{
  const north=projectLocation({latitude:57,longitude:-2}),south=projectLocation({latitude:51,longitude:-2});
  expect(north.y).toBeLessThan(south.y);expect(north.x).toBe(south.x);
- const points=[{latitude:52,longitude:-1,name:'A'},{latitude:52,longitude:-1,name:'B'},{latitude:57,longitude:-3,name:'C'}];
+ const points=[{latitude:52,longitude:-1,name:'A',builder:'Bellway'},{latitude:52,longitude:-1,name:'B',builder:'Bellway'},{latitude:57,longitude:-3,name:'C',builder:'Cala'}];
  const clusters=coverageClusters(points);expect(clusters).toHaveLength(2);expect(clusters.reduce((sum,c)=>sum+c.count,0)).toBe(3);
  const dom=new JSDOM(renderToStaticMarkup(<CoverageMap points={points}/>));expect(dom.window.document.querySelector('desc')?.textContent).toContain('3 mapped locations');dom.window.close();
+});
+
+it('keeps builders separate in shared map cells and gives them different labelled colours',()=>{
+ const points=[{latitude:52,longitude:-1,name:'A',builder:'Bellway'},{latitude:52,longitude:-1,name:'B',builder:'Cala'}];
+ expect(coverageClusters(points)).toHaveLength(2);
+ const dom=new JSDOM(renderToStaticMarkup(<CoverageMap points={points}/>));
+ const circles=[...dom.window.document.querySelectorAll('.map-site')];
+ expect(new Set(circles.map(c=>c.getAttribute('fill'))).size).toBe(2);
+ expect(circles.map(c=>c.textContent)).toEqual(['Bellway: 1 location','Cala: 1 location']);
+ expect(dom.window.document.querySelector('.home-map-legend')).toBeNull();
+ dom.window.close();
 });
