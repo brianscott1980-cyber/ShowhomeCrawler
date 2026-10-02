@@ -1,0 +1,703 @@
+{
+  "builder": {
+    "name": "Robertson Homes",
+    "slug": "robertson-homes",
+    "websiteUrl": "https://www.robertsonhomes.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T13:49:36.844Z",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Home office with no beds",
+  "developments": [
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/polmont/",
+      "name": "Polmont, Polmont Road, Falkirk, FK2 0XT",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/shawfair-2/",
+      "name": "Shawfair, B6415, Dalkeith, EH22 1SB",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/findrassie/",
+      "name": "Findrassie, Duffus Road, Elgin, IV30 5PB",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/great-glen/",
+      "name": "Great Glen, Kirkwall Brae , Inverness, IV3 8GD",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/dunfermline/",
+      "name": "Kingswood, Dunfermline, Fife,",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/elderslie/",
+      "name": "Elderslie, Auchenlodment Road, Renfrewshire, PA5 9NX",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/perth/",
+      "name": "Muirhall Road, Perth,",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/shawfair/",
+      "name": "Shawfair, Cocklerow Gardens, Dalkeith, EH22 1RY",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/east-calder/",
+      "name": "The Drovers, Main Street, East Calder, EH53 0ET",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/mid-calder/",
+      "name": "Calder Grange,  B7015, Mid Calder, EH53 0SL",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/larkhall/",
+      "name": "Seven Hills, South Lanarkshire,",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/winchburgh/",
+      "name": "Castle Gate, Winchburgh, EH52 6QN",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/bowes-manor/",
+      "name": "Bowes Manor, Syke Road, Burnopfield, Newcastle upon Tyne, NE16 6AU",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
+      "name": "Meadowside, Crawfield Road, Bo'ness, EH51 0PA",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-almondell-calderwood/",
+      "name": "Almondell, Calderwood Road, East Calder, EH53 0WN",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "status": "complete",
+      "homes": 14,
+      "qualifying": 13
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/lionfields/",
+      "name": "Lionfields, Lambton Park, Chester-le-Street, County Durham, DH3 4DS",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-torvean/",
+      "name": "Torvean, Golf View Road, Inverness, IV3 8FE",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
+      "name": "Wynyard Woods, Stoneywood Drive, Wynyard, TS22 5UP",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 4
+    }
+  ],
+  "properties": [
+    {
+      "development": "Castle Gate, Winchburgh, EH52 6QN",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/winchburgh/",
+      "name": "Miller Garden Room · Plot 7",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/winchburgh/plot-007-miller-garden-room/",
+      "bedrooms": 5,
+      "price": 600000,
+      "plots": [
+        {
+          "number": "7",
+          "price": 600000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Meadowside, Crawfield Road, Bo'ness, EH51 0PA",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
+      "name": "Lawrie Garden Room · Plot 99",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/plot-099-lawrie-garden-room-2/",
+      "bedrooms": 5,
+      "price": 464995,
+      "plots": [
+        {
+          "number": "99",
+          "price": 464995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Meadowside, Crawfield Road, Bo'ness, EH51 0PA",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
+      "name": "Leonardo Grand MKII · Plot 106",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/plot-106-leonardo-grand/",
+      "bedrooms": 5,
+      "price": 535000,
+      "plots": [
+        {
+          "number": "106",
+          "price": 535000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Meadowside, Crawfield Road, Bo'ness, EH51 0PA",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
+      "name": "Mitchell Garden Room · Plot 91",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/plot-091-mitchell-garden-room/",
+      "bedrooms": 5,
+      "price": 545000,
+      "plots": [
+        {
+          "number": "91",
+          "price": 545000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b740c219ad5003e84561646869ea1fef9b59886f666003f3e7a206513d3fa84a"
+      ]
+    },
+    {
+      "development": "Almondell, Calderwood Road, East Calder, EH53 0WN",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-almondell-calderwood/",
+      "name": "Lawrie Garden Room · Plot 40",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-almondell-calderwood/plot-040-lawrie-garden-room-2/",
+      "bedrooms": 5,
+      "price": 502000,
+      "plots": [
+        {
+          "number": "40",
+          "price": 502000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Lawrie Garden Room · Plot 87",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-087-lawrie-garden-room/",
+      "bedrooms": 5,
+      "price": 485000,
+      "plots": [
+        {
+          "number": "87",
+          "price": 485000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Lawrie Garden Room · Plot 15",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-015-lawrie-garden-room-2/",
+      "bedrooms": 5,
+      "price": 485000,
+      "plots": [
+        {
+          "number": "15",
+          "price": 485000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Lawrie Garden Room · Plot 92",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-092-lawrie-garden-room/",
+      "bedrooms": 5,
+      "price": 485000,
+      "plots": [
+        {
+          "number": "92",
+          "price": 485000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Everett Grand · Plot 13",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-013-everett-grand/",
+      "bedrooms": 5,
+      "price": 525000,
+      "plots": [
+        {
+          "number": "13",
+          "price": 525000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "eb321e79a9043953cb4e7a27b440206109f1f1e902c93d3540111d5f8abea227"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Everett Grand · Plot 91",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-091-everett-grand/",
+      "bedrooms": 5,
+      "price": 540000,
+      "plots": [
+        {
+          "number": "91",
+          "price": 540000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "eb321e79a9043953cb4e7a27b440206109f1f1e902c93d3540111d5f8abea227"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Mackintosh Garden Room · Plot 115",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-115-mackintosh-garden-room-2/",
+      "bedrooms": 5,
+      "price": 545000,
+      "plots": [
+        {
+          "number": "115",
+          "price": 545000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ffc2276cf1c3b37458ba80e06acfdd32300b57d9ac566fda6c4028c898f2a128"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Lawrie Grand · Plot 82",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-082-lawrie-grand/",
+      "bedrooms": 6,
+      "price": 550000,
+      "plots": [
+        {
+          "number": "82",
+          "price": 550000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9b89cd1ba4f7dc4dd1a6662be68e3073818c536886ab5f4b3d1575a8f5efef15"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Mackintosh Garden Room · Plot 14",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-014-mackintosh-garden-room-2/",
+      "bedrooms": 5,
+      "price": 560000,
+      "plots": [
+        {
+          "number": "14",
+          "price": 560000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ffc2276cf1c3b37458ba80e06acfdd32300b57d9ac566fda6c4028c898f2a128"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Mackintosh Garden Room · Plot 88",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-088-mackintosh-garden-room/",
+      "bedrooms": 5,
+      "price": 560000,
+      "plots": [
+        {
+          "number": "88",
+          "price": 560000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ffc2276cf1c3b37458ba80e06acfdd32300b57d9ac566fda6c4028c898f2a128"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Newman Garden Room · Plot 16",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-016-newman-garden-room/",
+      "bedrooms": 5,
+      "price": 695000,
+      "plots": [
+        {
+          "number": "16",
+          "price": 695000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5fd40fa9ad84e692fd72886c0220d1ca238e6025de3b98e8bb9cd4bffbae2976"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Murray Garden Room · Plot 18",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-018-murray-garden-room-2/",
+      "bedrooms": 5,
+      "price": 739995,
+      "plots": [
+        {
+          "number": "18",
+          "price": 739995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e75a44d54078ced5daa20522437a5fbf7e9d1b2622651e502feb0639bee6e976"
+      ]
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Stewart Garden Room · Plot 85",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-085-stewart-garden-room/",
+      "bedrooms": 6,
+      "price": 824995,
+      "plots": [
+        {
+          "number": "85",
+          "price": 824995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+      "name": "Stewart Garden Room · Plot 21",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/plot-021-stewart-garden-room/",
+      "bedrooms": 6,
+      "price": 829995,
+      "plots": [
+        {
+          "number": "21",
+          "price": 829995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Lionfields, Lambton Park, Chester-le-Street, County Durham, DH3 4DS",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/lionfields/",
+      "name": "Murray Garden Room · Plot 32",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/lionfields/plot-032-murray-garden-room-2/",
+      "bedrooms": 5,
+      "price": 769995,
+      "plots": [
+        {
+          "number": "32",
+          "price": 769995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Lionfields, Lambton Park, Chester-le-Street, County Durham, DH3 4DS",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/lionfields/",
+      "name": "Murray Garden Room · Plot 14",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/lionfields/plot-014-murray-garden-room-2/",
+      "bedrooms": 5,
+      "price": 776995,
+      "plots": [
+        {
+          "number": "14",
+          "price": 776995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Torvean, Golf View Road, Inverness, IV3 8FE",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-torvean/",
+      "name": "Lawrie Garden Room · Plot 89",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-torvean/plot-089-lawrie-garden-room/",
+      "bedrooms": 5,
+      "price": 465000,
+      "plots": [
+        {
+          "number": "89",
+          "price": 465000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Torvean, Golf View Road, Inverness, IV3 8FE",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-torvean/",
+      "name": "Lawrie Garden Room · Plot 114",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-torvean/plot-114-lawrie-garden-room/",
+      "bedrooms": 5,
+      "price": 465000,
+      "plots": [
+        {
+          "number": "114",
+          "price": 465000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Wynyard Woods, Stoneywood Drive, Wynyard, TS22 5UP",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
+      "name": "Mackintosh Garden Room · Plot 30",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/plot-030-mackintosh-garden-room/",
+      "bedrooms": 5,
+      "price": 519995,
+      "plots": [
+        {
+          "number": "30",
+          "price": 519995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "979eb693d5761cb2c3bf31f4f4348504b6a12663756bea5d8b5a7e543bd5a098"
+      ]
+    },
+    {
+      "development": "Wynyard Woods, Stoneywood Drive, Wynyard, TS22 5UP",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
+      "name": "Lawrie Grand · Plot 27",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/plot-027-lawrie-grand/",
+      "bedrooms": 6,
+      "price": 544995,
+      "plots": [
+        {
+          "number": "27",
+          "price": 544995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9b89cd1ba4f7dc4dd1a6662be68e3073818c536886ab5f4b3d1575a8f5efef15"
+      ]
+    },
+    {
+      "development": "Wynyard Woods, Stoneywood Drive, Wynyard, TS22 5UP",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
+      "name": "Mitchell Garden Room · Plot 60",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/plot-060-mitchell-garden-room-2/",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "60",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b740c219ad5003e84561646869ea1fef9b59886f666003f3e7a206513d3fa84a"
+      ]
+    },
+    {
+      "development": "Wynyard Woods, Stoneywood Drive, Wynyard, TS22 5UP",
+      "developmentUrl": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
+      "name": "Nasmyth Garden Room · Plot 56",
+      "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/plot-056-nasmyth-garden-room-2/",
+      "bedrooms": 5,
+      "price": 614995,
+      "plots": [
+        {
+          "number": "56",
+          "price": 614995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    }
+  ],
+  "images": [
+    {
+      "id": "b740c219ad5003e84561646869ea1fef9b59886f666003f3e7a206513d3fa84a",
+      "path": "images/b740c219ad5003e84561646869ea1fef9b59886f666003f3e7a206513d3fa84a.jpg",
+      "sourceUrl": "https://www.robertsonhomes.co.uk/wp-content/uploads/2025/06/Mitchell-Garden-Room-study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a desk and chair.",
+        "reason": "The room is clearly staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "eb321e79a9043953cb4e7a27b440206109f1f1e902c93d3540111d5f8abea227",
+      "path": "images/eb321e79a9043953cb4e7a27b440206109f1f1e902c93d3540111d5f8abea227.jpg",
+      "sourceUrl": "https://www.robertsonhomes.co.uk/wp-content/uploads/2019/06/Image-Everett-Grand-Boness-.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A bright attic room staged as a craft or study space with a large central work table.",
+        "reason": "The room contains a large desk/work surface and no bed, fitting the criteria for a home office."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "ffc2276cf1c3b37458ba80e06acfdd32300b57d9ac566fda6c4028c898f2a128",
+      "path": "images/ffc2276cf1c3b37458ba80e06acfdd32300b57d9ac566fda6c4028c898f2a128.jpg",
+      "sourceUrl": "https://www.robertsonhomes.co.uk/wp-content/uploads/2021/06/Dargavel-Mackintosh-workspace-1500x844.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a long desk, chairs, and a green wall feature.",
+        "reason": "This is a dedicated home office space with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "9b89cd1ba4f7dc4dd1a6662be68e3073818c536886ab5f4b3d1575a8f5efef15",
+      "path": "images/9b89cd1ba4f7dc4dd1a6662be68e3073818c536886ab5f4b3d1575a8f5efef15.jpg",
+      "sourceUrl": "https://www.robertsonhomes.co.uk/wp-content/uploads/2019/06/Lawrie-Grand-6.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a built-in desk, chair, and shelving.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "5fd40fa9ad84e692fd72886c0220d1ca238e6025de3b98e8bb9cd4bffbae2976",
+      "path": "images/5fd40fa9ad84e692fd72886c0220d1ca238e6025de3b98e8bb9cd4bffbae2976.jpg",
+      "sourceUrl": "https://www.robertsonhomes.co.uk/wp-content/uploads/2019/10/stewart-garden-room-023-1500x844.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk, chair, and shelving.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e75a44d54078ced5daa20522437a5fbf7e9d1b2622651e502feb0639bee6e976",
+      "path": "images/e75a44d54078ced5daa20522437a5fbf7e9d1b2622651e502feb0639bee6e976.jpg",
+      "sourceUrl": "https://www.robertsonhomes.co.uk/wp-content/uploads/2019/10/Almondell_Murray_Study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, chair, and bookshelf.",
+        "reason": "This is a dedicated home office space with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "979eb693d5761cb2c3bf31f4f4348504b6a12663756bea5d8b5a7e543bd5a098",
+      "path": "images/979eb693d5761cb2c3bf31f4f4348504b6a12663756bea5d8b5a7e543bd5a098.jpg",
+      "sourceUrl": "https://www.robertsonhomes.co.uk/wp-content/uploads/2023/05/Bowes-Manor_Mackintosh-GR_Bedroom-5-1500x844.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "roomType": "home office",
+        "description": "A home office with a desk, computer, and shelving.",
+        "reason": "This is a dedicated home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 19,
+    "qualifyingDiscovered": 26,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 115,
+    "reusedGalleries": 6,
+    "reusedImages": 1,
+    "imagesAttempted": 249,
+    "pendingImages": 0,
+    "matchedImages": 7,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 248
+  },
+  "completedAt": "2026-10-02T13:57:22.585Z"
+}

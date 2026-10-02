@@ -1,3 +1,4 @@
+import * as robertson from './robertson/site-parser.js';
 import * as persimmon from './persimmon/site-parser.js';
 import * as springfield from './springfield/site-parser.js';
 import * as avant from './avant/site-parser.js';
@@ -17,5 +18,6 @@ export function builderSite(slug='bellway') {
  if(slug==='avant')return {name:'Avant',slug,websiteUrl:'https://www.avanthomes.co.uk',sitemap:'https://www.avanthomes.co.uk/sitemap.xml',...avant};
  if(slug==='springfield')return {name:'Springfield',slug,websiteUrl:'https://www.springfield.co.uk',sitemap:'https://www.springfield.co.uk/homes-for-sale',...springfield};
  if(slug==='persimmon')return {name:'Persimmon',slug,websiteUrl:'https://www.persimmonhomes.com',sitemap:'https://www.persimmonhomes.com/sitemap',...persimmon};
+ if(slug==='robertson-homes')return {name:'Robertson Homes',slug,websiteUrl:'https://www.robertsonhomes.co.uk',sitemap:'https://www.robertsonhomes.co.uk/location-sitemap.xml',...robertson};
  throw new Error('Unsupported builder.');
 }
