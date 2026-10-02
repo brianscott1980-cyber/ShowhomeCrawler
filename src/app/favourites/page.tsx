@@ -1,5 +1,6 @@
 import { developers, readCollection } from '../../web/collections';
 import { Gallery } from '../../web/gallery';
+export const metadata={title:'Your Saved Spaces | Showhome Explorer',robots:{index:false,follow:true},alternates:{canonical:'/favourites'}};
 export const dynamic = 'force-dynamic';
 export default async function Favourites() {
  const collections = (await Promise.all(developers.map(async d => {

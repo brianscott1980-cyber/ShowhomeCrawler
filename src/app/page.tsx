@@ -1,6 +1,8 @@
 import {assetUrl,developers,readCollection} from '../web/collections';
+import {absoluteUrl,jsonLd} from '../web/seo';
 import {readFile} from 'node:fs/promises';
 import {DeveloperDirectory,type DeveloperCard} from '../web/directory';
+export const metadata={alternates:{canonical:'/'}};
 export const dynamic='force-dynamic';
 export default async function Home(){
  const cards=await Promise.all(developers.map(async developer=>{
@@ -8,5 +10,6 @@ export default async function Home(){
   const locations=await readFile(`collections/${developer.slug}-home-offices/locations.json`,'utf8').then(s=>JSON.parse(s)).catch(()=>[]);
   return {slug:developer.slug,name:developer.name,spaces:matches.length,image:assetUrl(developer.slug,hero.path),description:hero.verdict?.description??'Showhome interior',locations:locations.filter((p:{latitude?:number;longitude?:number})=>Number.isFinite(p.latitude)&&Number.isFinite(p.longitude))} as DeveloperCard;
  }));
- return <main><section className="intro"><h1>Showhome Explorer</h1><p>Discover interiors. Find inspiration.</p></section><DeveloperDirectory cards={cards.filter((c):c is DeveloperCard=>c!==null)}/></main>;
+ const schema={'@context':'https://schema.org','@type':'WebSite',name:'Showhome Explorer',url:absoluteUrl('/'),description:'UK showhome interiors and home office inspiration'};
+ return <main><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd(schema)}}/><section className="intro"><h1>Showhome Explorer</h1><p>Discover interiors. Find inspiration.</p></section><DeveloperDirectory cards={cards.filter((c):c is DeveloperCard=>c!==null)}/></main>;
 }
