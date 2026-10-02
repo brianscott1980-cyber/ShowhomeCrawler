@@ -6,7 +6,7 @@ import type { RunReport } from '../reports/report';
 interface Collection { slug: string; name: string; report: RunReport }
 const key = 'showhome-favourites-v1';
 const imageUrl = (slug: string, path: string) => `/api/assets/${slug}/${path.split('/').map(encodeURIComponent).join('/')}`;
-export function Gallery({ collections, favouritesOnly = false }: { collections: Collection[]; favouritesOnly?: boolean }) {
+export function Gallery({ collections, favouritesOnly = false, includeUnclassified = false }: { collections: Collection[]; favouritesOnly?: boolean; includeUnclassified?: boolean }) {
  const [favourites, setFavourites] = useState<string[]>([]);
  const [ready, setReady] = useState(false);
  const [query, setQuery] = useState('');
@@ -23,10 +23,10 @@ export function Gallery({ collections, favouritesOnly = false }: { collections: 
   setFavourites(next); try { localStorage.setItem(key, JSON.stringify(next)); window.dispatchEvent(new Event('showhome-favourites-changed')); } catch { /* Saving may be unavailable in private browser storage. */ }
  }
  const all = collections.flatMap(c => c.report.images.map(image => ({ ...image, slug: c.slug, developer: c.name, homes: c.report.properties.filter(p => p.imageIds.includes(image.id)), uid: `${c.slug}:${image.id}` })));
- const available = all.filter(image => image.verdict?.matches && (!favouritesOnly || favourites.includes(image.id)));
+ const available = all.filter(image => (image.verdict?.matches || (includeUnclassified && !image.verdict)) && (!favouritesOnly || favourites.includes(image.id)));
  const images = available.filter(image => {
   if (favouritesOnly && (!image.verdict?.matches || !favourites.includes(image.id))) return false;
-  if (!image.verdict?.matches) return false;
+  if (!image.verdict?.matches && !(includeUnclassified && !image.verdict)) return false;
   if (development && !image.homes.some(h => h.developmentUrl === development)) return false;
   return `${image.developer} ${image.verdict?.description ?? ''} ${image.homes.map(h => `${h.name} ${h.development}`).join(' ')}`.toLowerCase().includes(query.toLowerCase());
  });
