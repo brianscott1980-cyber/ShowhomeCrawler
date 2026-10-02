@@ -4,20 +4,38 @@
     "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
     "postcode": "EH51 0PA",
     "latitude": 56.003455,
-    "longitude": -3.617504
+    "longitude": -3.617504,
+    "geography": {
+      "district": "Falkirk",
+      "county": null,
+      "region": null,
+      "country": "Scotland"
+    }
   },
   {
     "name": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
     "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
     "postcode": "EH25 9QF",
     "latitude": 55.834807,
-    "longitude": -3.171851
+    "longitude": -3.171851,
+    "geography": {
+      "district": "Midlothian",
+      "county": null,
+      "region": null,
+      "country": "Scotland"
+    }
   },
   {
     "name": "Wynyard Woods, Stoneywood Drive, Wynyard, TS22 5UP",
     "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
     "postcode": "TS22 5UP",
     "latitude": 54.641593,
-    "longitude": -1.370501
+    "longitude": -1.370501,
+    "geography": {
+      "district": "Stockton-on-Tees",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   }
 ]

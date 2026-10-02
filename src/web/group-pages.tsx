@@ -1,3 +1,4 @@
+import {buildingLocationIndex} from './building-locations';
 import {BuilderName} from './builder-name';
 import {cardImageCollection,buildingCardImageCollection,reportCardImage} from './card-images';
 import {SiteDirectory} from './site-directory';
@@ -13,7 +14,8 @@ function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')
 export async function GroupDirectory({kind}:{kind:GroupKind}){
  const groups=await readGroups(kind);const pathPrefix=prefixFor(kind);
  if(kind==='sites'||kind==='locations')return <main><section className="intro compact"><h1>Locations</h1><p>{descriptions.locations}</p></section><SiteDirectory cards={await siteCards(groups)} basePath="/locations"/></main>;
- const cards=groups.map(group=>{const properties=group.collections.flatMap(c=>c.report.properties??[]);const bedrooms=[...new Set(properties.map(p=>p.bedrooms).filter((b):b is number=>typeof b==='number'&&Number.isFinite(b)))].sort((a,b)=>a-b);const locations=[...new Set(properties.map(p=>p.development?.trim()).filter((d):d is string=>Boolean(d)))].sort();return {key:group.key,name:group.name,developers:[...new Set(group.developers)],count:group.count,...(kind==='buildings'?buildingCardImageCollection:cardImageCollection)(group.collections.flatMap(c=>c.report.images.map(i=>reportCardImage(c.slug,i)))),bedrooms,locations};});
+ const geography=kind==='buildings'?await buildingLocationIndex(groups):new Map<string,string[]>();
+ const cards=groups.map(group=>{const properties=group.collections.flatMap(c=>c.report.properties??[]);const bedrooms=[...new Set(properties.map(p=>p.bedrooms).filter((b):b is number=>typeof b==='number'&&Number.isFinite(b)))].sort((a,b)=>a-b);const sites=[...new Set(properties.map(p=>p.development?.trim()).filter((d):d is string=>Boolean(d)))].sort();const places=group.collections.flatMap(c=>c.report.properties.map(p=>({site:p.development,locations:geography.get(`${c.slug}:${p.developmentUrl}`)??[]})));const locations=[...new Set(places.flatMap(p=>p.locations))].sort();return {key:group.key,name:group.name,developers:[...new Set(group.developers)],count:group.count,...(kind==='buildings'?buildingCardImageCollection:cardImageCollection)(group.collections.flatMap(c=>c.report.images.map(i=>reportCardImage(c.slug,i)))),bedrooms,locations,sites,places};});
  return <main><section className="intro compact"><h1>{labels[kind]}</h1><p>{descriptions[kind]}</p></section><GroupCards cards={cards} pathPrefix={pathPrefix} kindLabel={labels[kind]}/></main>;
 }
 export async function GroupDetail({kind,id}:{kind:GroupKind;id:string}){

@@ -4,76 +4,142 @@
     "url": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
     "postcode": "CA14 1DT",
     "latitude": 54.653178,
-    "longitude": -3.533389
+    "longitude": -3.533389,
+    "geography": {
+      "district": "Cumberland",
+      "county": null,
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "Millfields",
     "url": "https://www.storyhomes.co.uk/developments/millfields/",
     "postcode": "LA12 9HW",
     "latitude": 54.185099,
-    "longitude": -3.086388
+    "longitude": -3.086388,
+    "geography": {
+      "district": "Westmorland and Furness",
+      "county": null,
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "Scotby Grove",
     "url": "https://www.storyhomes.co.uk/developments/scotby-grove/",
     "postcode": "CA4 8BJ",
     "latitude": 54.8955,
-    "longitude": -2.875413
+    "longitude": -2.875413,
+    "geography": {
+      "district": "Cumberland",
+      "county": null,
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "The Fairways",
     "url": "https://www.storyhomes.co.uk/developments/the-fairways/",
     "postcode": "CA11 8RB",
     "latitude": 54.674966,
-    "longitude": -2.754819
+    "longitude": -2.754819,
+    "geography": {
+      "district": "Westmorland and Furness",
+      "county": null,
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "Ashwood Grange",
     "url": "https://www.storyhomes.co.uk/developments/ashwood-grange/",
     "postcode": "DL2 1JU",
     "latitude": 54.522041,
-    "longitude": -1.474257
+    "longitude": -1.474257,
+    "geography": {
+      "district": "Darlington",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   },
   {
     "name": "Killingworth Gate",
     "url": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
     "postcode": "NE12 6FQ",
     "latitude": 55.036149,
-    "longitude": -1.547305
+    "longitude": -1.547305,
+    "geography": {
+      "district": "North Tyneside",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   },
   {
     "name": "Riverbrook Gardens",
     "url": "https://www.storyhomes.co.uk/developments/riverbrook-gardens/",
     "postcode": "NE66 2EY",
     "latitude": 55.411226,
-    "longitude": -1.681877
+    "longitude": -1.681877,
+    "geography": {
+      "district": "Northumberland",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   },
   {
     "name": "Sadler Woods",
     "url": "https://www.storyhomes.co.uk/developments/sadlerwoods/",
     "postcode": "TS16 0RL",
     "latitude": 54.526521,
-    "longitude": -1.363031
+    "longitude": -1.363031,
+    "geography": {
+      "district": "Stockton-on-Tees",
+      "county": null,
+      "region": "North East",
+      "country": "England"
+    }
   },
   {
     "name": "Holcroft Gardens",
     "url": "https://www.storyhomes.co.uk/developments/holcroft-gardens/",
     "postcode": "WA3 5AE",
     "latitude": 53.45502,
-    "longitude": -2.505454
+    "longitude": -2.505454,
+    "geography": {
+      "district": "Warrington",
+      "county": null,
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "Tithe Meadow",
     "url": "https://www.storyhomes.co.uk/developments/tithe-meadow/",
     "postcode": "FY6 7QQ",
     "latitude": 53.850784,
-    "longitude": -3.010132
+    "longitude": -3.010132,
+    "geography": {
+      "district": "Wyre",
+      "county": "Lancashire",
+      "region": "North West",
+      "country": "England"
+    }
   },
   {
     "name": "Woodbridge Green",
     "url": "https://www.storyhomes.co.uk/developments/woodbridge-green/",
     "postcode": "PR4 0RA",
     "latitude": 53.779989,
-    "longitude": -2.771205
+    "longitude": -2.771205,
+    "geography": {
+      "district": "Preston",
+      "county": "Lancashire",
+      "region": "North West",
+      "country": "England"
+    }
   }
 ]

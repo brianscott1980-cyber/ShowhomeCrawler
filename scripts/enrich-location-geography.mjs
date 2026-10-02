@@ -1,0 +1,6 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const source=await readFile('src/adapters/developers.ts','utf8');const files=[];
+for(const [,slug]of source.matchAll(/slug: '([^']+)'/g)){const path=`collections/${slug}-home-offices/locations.json`;try{files.push({path,rows:JSON.parse(await readFile(path,'utf8'))});}catch{}}
+const normal=p=>p.replace(/\s/g,'').toUpperCase();const postcodes=[...new Set(files.flatMap(f=>f.rows.map(r=>r.postcode).filter(Boolean)).map(normal))];const places=new Map();
+for(let i=0;i<postcodes.length;i+=100){const response=await fetch('https://api.postcodes.io/postcodes',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({postcodes:postcodes.slice(i,i+100)})});if(!response.ok)throw Error(response.status);for(const entry of (await response.json()).result){if(entry.result)places.set(normal(entry.query),entry.result);}}
+let enriched=0;for(const file of files){for(const row of file.rows){const p=row.postcode?places.get(normal(row.postcode)):undefined;if(p){row.geography={district:p.admin_district,county:p.admin_county,region:p.region,country:p.country};enriched++;}}await writeFile(file.path,JSON.stringify(file.rows,null,2)+'\n');}console.log({postcodes:postcodes.length,enriched});
