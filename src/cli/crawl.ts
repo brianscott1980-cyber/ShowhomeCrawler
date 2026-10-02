@@ -37,7 +37,8 @@ async function main() {
    if (!await exists(path)) throw new Error('Browser snapshot unavailable.');
   }
   if (await exists(path)) return readFile(path, 'utf8');
-  const html = await client.text(url);
+  let html = await client.text(url);
+  if ('enrichPage' in site && site.enrichPage) html = await site.enrichPage(html, async apiUrl => client.text(apiUrl));
   // Remove transient Livewire/session data from local cached pages.
   const $ = load(html); $('[wire\\:initial-data]').removeAttr('wire:initial-data'); $('script').not('[type="application/ld+json"], [type="application/json"]').remove(); $('input[type="hidden"]').remove();
   const sanitized = $.html(); await writeFile(path, sanitized); return sanitized;
