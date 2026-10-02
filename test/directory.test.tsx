@@ -3,6 +3,8 @@ import {JSDOM} from 'jsdom';
 import {act} from 'react';
 import {createRoot} from 'react-dom/client';
 import {DeveloperDirectory,orderedDevelopers,distanceMiles,type DeveloperCard} from '../src/web/directory';
+import {SiteDirectory} from '../src/web/site-directory';
+import type {SiteCard} from '../src/web/site-filters';
 import {Navigation} from '../src/web/navigation';
 import {GET} from '../src/app/api/location/route';
 const cards:DeveloperCard[]=[{slug:'a',name:'Alpha',spaces:2,image:'a.jpg',description:'Office',locations:[{name:'Far',latitude:56,longitude:0},{name:'Near',latitude:51,longitude:0}]},{slug:'b',name:'Beta',spaces:9,image:'b.jpg',description:'Office',locations:[{name:'Other',latitude:52,longitude:0}]},{slug:'c',name:'Gamma',spaces:5,image:'c.jpg',description:'Office',locations:[]}];
@@ -15,7 +17,12 @@ describe('Developer directory',()=>{
  });
  it('switches all three layouts and remembers the selected view',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
-  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));for(const [label,layout] of [['List','list'],['Smaller grid','compact'],['Large cards','large']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(localStorage.getItem('showhome-directory-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
+  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));for(const [label,layout] of [['List','list'],['Smaller grid','compact'],['Large cards','large']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(localStorage.getItem('showhome-directory-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
+ });
+ it('switches layouts with thumbnail icons in SiteDirectory',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
+  const siteCard:SiteCard={key:'k1',name:'Loc',developer:'Dev',image:'/img.jpg',description:'Desc',count:1,country:'UK',latitude:51,longitude:0,properties:[]};
+  try{await act(async()=>root.render(<SiteDirectory cards={[siteCard]}/>));for(const [label,layout] of [['List','list'],['Smaller grid','compact'],['Large cards','large']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();}}finally{await act(async()=>root.unmount());dom.window.close();}
  });
  it('updates the header badge after favourite changes without double-counting duplicate IDs',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);localStorage.setItem('showhome-favourites-v1','["one","one","two"]');const root=createRoot(document.getElementById('root')!);
