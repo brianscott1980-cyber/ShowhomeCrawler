@@ -33,7 +33,7 @@ export default async function Page({ params }: Props) {
    item: { '@type': 'ImageObject', contentUrl: absoluteUrl(assetUrl(slug, image.path)), caption: image.verdict?.description ?? 'Showhome interior' } })) } };
  return <ResultsPage title={<>Room to work<br/>from home.</>} eyebrow={<a href={developer.website} target="_blank" rel="noreferrer"><BuilderName name={developer.name}/></a>}
   description={`Explore studies and home offices in ${developer.name} homes with five or more bedrooms. A desk, a place to focus — and no bed in sight.`}
-  back={{ href: '/', label: '← All homebuilders' }} collections={report ? [{ slug, name: developer.name, report }] : []}>
+  back={{ href: '/homebuilders', label: '← All homebuilders' }} collections={report ? [{ slug, name: developer.name, report }] : []}>
   {report ? <div className="download-links"><a href={assetUrl(slug, 'matches.csv')}>Download matches</a><a href={assetUrl(slug, 'full-report.html')}>Full results &amp; coverage</a></div> : <p className="empty">Interiors from {developer.name} are coming soon.</p>}
   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }}/>
  </ResultsPage>;

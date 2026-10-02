@@ -18,11 +18,13 @@ export function Gallery({
  favouritesOnly = false,
  includeUnclassified = false,
  introduction,
+ featured = false,
  places,
 }: {
  collections: Collection[];
  favouritesOnly?: boolean;
  includeUnclassified?: boolean;
+ featured?: boolean;
  places?: Record<string,string[]>;
  introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; back?: { href: string; label: string } };
 }) {
@@ -197,7 +199,7 @@ export function Gallery({
  }
 
  return (
-  <section aria-label="Image collection">
+  <section aria-label="Image collection" className={featured ? 'featured-gallery' : undefined}>
    {introduction && <>
     <section className="results-hero">
      <div className="results-hero-copy">
@@ -222,7 +224,7 @@ export function Gallery({
     </div>
     <div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : 'Explore the collection'}</h2></div>
    </>}
-   <div className="filters">
+   {!featured && <><div className="filters">
     <label>
      Search
      <input
@@ -287,7 +289,8 @@ export function Gallery({
     </p>
    </div>
 
-   <div className={`image-grid image-grid-${view}`}>
+   </>}
+   <div className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`}>
     {images.map(image => (
      <article className="image-card" key={image.uid}>
       <div className="results-photo-frame">
@@ -307,6 +310,7 @@ export function Gallery({
       </div>
 
       <div className="image-body">
+       {featured ? <><h3>{image.categorisation?.mainCategory ?? 'Showhome interior'}</h3><p className="subtle">{image.developer}</p></> : <>
        <div className="image-heading">
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
          <p className="eyebrow" style={{ margin: 0 }}>{image.developer}</p>
@@ -354,6 +358,7 @@ export function Gallery({
          </div>
         ))}
        </details>
+       </>}
       </div>
      </article>
     ))}
