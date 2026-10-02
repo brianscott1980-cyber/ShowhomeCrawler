@@ -1,16 +1,16 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {collectionIndex,scrollCrossing} from './scroll-crossing';
+import {collectionIndex,scrollCrossing,type CardEdges} from './scroll-crossing';
 export interface CollectionImage {src:string;alt:string}
-interface Entry {element:HTMLElement;top:number;advance:(direction:number)=>void}
+interface Entry {element:HTMLElement;edges:CardEdges;advance:(direction:number)=>void}
 const entries=new Set<Entry>();
 let stop:undefined|(()=>void);
 function register(element:HTMLElement,advance:Entry['advance']){
- const entry:Entry={element,advance,top:element.getBoundingClientRect().top};entries.add(entry);
+ const entry:Entry={element,advance,edges:element.getBoundingClientRect()};entries.add(entry);
  if(!stop){
   let scrollY=window.scrollY,frame=0;
-  const reset=()=>{scrollY=window.scrollY;for(const item of entries)item.top=item.element.getBoundingClientRect().top;};
-  const update=()=>{frame=0;const delta=window.scrollY-scrollY;scrollY=window.scrollY;for(const item of entries){const top=item.element.getBoundingClientRect().top;const direction=scrollCrossing(item.top,top,window.innerHeight*.25,delta);item.top=top;if(direction)item.advance(direction);}};
+  const reset=()=>{scrollY=window.scrollY;for(const item of entries)item.edges=item.element.getBoundingClientRect();};
+  const update=()=>{frame=0;const delta=window.scrollY-scrollY;scrollY=window.scrollY;for(const item of entries){const edges=item.element.getBoundingClientRect();const direction=scrollCrossing(item.edges,edges,window.innerHeight*.25,delta);item.edges=edges;if(direction)item.advance(direction);}};
   const scroll=()=>{if(!frame)frame=requestAnimationFrame(update);};
   window.addEventListener('scroll',scroll,{passive:true});window.addEventListener('resize',reset);
   stop=()=>{window.removeEventListener('scroll',scroll);window.removeEventListener('resize',reset);cancelAnimationFrame(frame);stop=undefined;};
