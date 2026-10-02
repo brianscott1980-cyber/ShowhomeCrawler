@@ -1,0 +1,1172 @@
+{
+  "builder": {
+    "name": "Story Homes",
+    "slug": "story-homes",
+    "websiteUrl": "https://www.storyhomes.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-02T16:20:33.323Z",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Home office with no beds or floorplan graphics",
+  "analysisVersion": "home-office-no-beds-or-floorplans-v2",
+  "developments": [
+    {
+      "url": "https://www.storyhomes.co.uk/developments/brigsteer-rise/",
+      "name": "Brigsteer Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/edgehill-park/",
+      "name": "Edgehill Park",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/eden-grove/",
+      "name": "Eden Grove",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
+      "name": "Foxbridge Rise",
+      "status": "complete",
+      "homes": 19,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/heights-at-edgehill-park/",
+      "name": "Heights at Edgehill Park",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/millfields/",
+      "name": "Millfields",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/scotby-grove/",
+      "name": "Scotby Grove",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/the-fairways/",
+      "name": "The Fairways",
+      "status": "complete",
+      "homes": 18,
+      "qualifying": 6
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/winchester-rise/",
+      "name": "Winchester Rise",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/summerpark/",
+      "name": "Summerpark",
+      "status": "complete",
+      "homes": 5,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/ashwood-grange/",
+      "name": "Ashwood Grange",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/beaumont-grange/",
+      "name": "Beaumont Grange",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/hawksley-rise/",
+      "name": "Hawksley Rise",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/heritage-fields/",
+      "name": "Heritage Fields",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
+      "name": "Killingworth Gate",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/newlands-hurst/",
+      "name": "Newlands Hurst",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/nunthorpe-gate/",
+      "name": "Nunthorpe Gate",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/riverbrook-gardens/",
+      "name": "Riverbrook Gardens",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/robinson-fields/",
+      "name": "Robinson Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/sadlerwoods/",
+      "name": "Sadler Woods",
+      "status": "complete",
+      "homes": 6,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/elmbrook-park/",
+      "name": "Elmbrook Park",
+      "status": "complete",
+      "homes": 9,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/hazelwood/",
+      "name": "Hazelwood",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/holcroft-gardens/",
+      "name": "Holcroft Gardens",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/longton-fields/",
+      "name": "Longton Fields",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/stonebrook-meadows/",
+      "name": "Stonebrook Meadows",
+      "status": "complete",
+      "homes": 11,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/tithe-gardens/",
+      "name": "Tithe Gardens",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/tithe-meadow/",
+      "name": "Tithe Meadow",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.storyhomes.co.uk/developments/woodbridge-green/",
+      "name": "Woodbridge Green",
+      "status": "complete",
+      "homes": 10,
+      "qualifying": 1
+    }
+  ],
+  "properties": [
+    {
+      "development": "Edgehill Park",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/edgehill-park/",
+      "name": "Masterton · Plot 178",
+      "url": "https://www.storyhomes.co.uk/homes/edgehill-park-plot-178/",
+      "bedrooms": 5,
+      "price": 424950,
+      "plots": [
+        {
+          "number": "178",
+          "price": 424950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Edgehill Park",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/edgehill-park/",
+      "name": "Masterton · Plot 3",
+      "url": "https://www.storyhomes.co.uk/homes/edgehill-park-plot-3-2/",
+      "bedrooms": 5,
+      "price": 424950,
+      "plots": [
+        {
+          "number": "3",
+          "price": 424950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Edgehill Park",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/edgehill-park/",
+      "name": "Masterton · Plot 5",
+      "url": "https://www.storyhomes.co.uk/homes/edgehill-park-plot-5-2/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "5",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Foxbridge Rise",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
+      "name": "Cranford · Plot 35",
+      "url": "https://www.storyhomes.co.uk/homes/foxbridge-rise-plot-35/",
+      "bedrooms": 5,
+      "price": 439950,
+      "plots": [
+        {
+          "number": "35",
+          "price": 439950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b55e3b4a73985be16c37f6bf71f94e0a4c935a889e7352ee69fc425bfa983423"
+      ]
+    },
+    {
+      "development": "Foxbridge Rise",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
+      "name": "Middleton · Plot 49",
+      "url": "https://www.storyhomes.co.uk/homes/foxbridge-rise-plot-49/",
+      "bedrooms": 6,
+      "price": 539950,
+      "plots": [
+        {
+          "number": "49",
+          "price": 539950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0d50037a45477161bc3b70858ed3a9cffd1a028bd3a4b95671905979cf642752",
+        "2f9c5307c6a7140ae46d730e0cfba29d1257d427da39cc5e2d7871e8bfe2652f"
+      ]
+    },
+    {
+      "development": "Foxbridge Rise",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
+      "name": "Cranford · Plot 51",
+      "url": "https://www.storyhomes.co.uk/homes/foxbridge-rise-plot-51/",
+      "bedrooms": 5,
+      "price": 449950,
+      "plots": [
+        {
+          "number": "51",
+          "price": 449950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b55e3b4a73985be16c37f6bf71f94e0a4c935a889e7352ee69fc425bfa983423"
+      ]
+    },
+    {
+      "development": "Foxbridge Rise",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
+      "name": "Cranford · Plot 93",
+      "url": "https://www.storyhomes.co.uk/homes/foxbridge-rise-plot-93/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "93",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b55e3b4a73985be16c37f6bf71f94e0a4c935a889e7352ee69fc425bfa983423"
+      ]
+    },
+    {
+      "development": "Millfields",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/millfields/",
+      "name": "Cranford · Plot 7",
+      "url": "https://www.storyhomes.co.uk/homes/millfields-plot-7/",
+      "bedrooms": 5,
+      "price": 599950,
+      "plots": [
+        {
+          "number": "7",
+          "price": 599950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Millfields",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/millfields/",
+      "name": "Woodford · Plot 32",
+      "url": "https://www.storyhomes.co.uk/homes/millfields-plot-32/",
+      "bedrooms": 6,
+      "price": 694950,
+      "plots": [
+        {
+          "number": "32",
+          "price": 694950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Millfields",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/millfields/",
+      "name": "Cranford · Plot 9",
+      "url": "https://www.storyhomes.co.uk/homes/millfields-plot-9/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "9",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Millfields",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/millfields/",
+      "name": "Cranford · Plot 33",
+      "url": "https://www.storyhomes.co.uk/homes/millfields-plot-33/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "33",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Scotby Grove",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/scotby-grove/",
+      "name": "Charlton · Plot 84",
+      "url": "https://www.storyhomes.co.uk/homes/scotby-grove-plot-84/",
+      "bedrooms": 5,
+      "price": 559950,
+      "plots": [
+        {
+          "number": "84",
+          "price": 559950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d"
+      ]
+    },
+    {
+      "development": "Scotby Grove",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/scotby-grove/",
+      "name": "Charlton · Plot 79",
+      "url": "https://www.storyhomes.co.uk/homes/scotby-grove-plot-79/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "79",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d"
+      ]
+    },
+    {
+      "development": "The Fairways",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/the-fairways/",
+      "name": "Masterton · Plot 23",
+      "url": "https://www.storyhomes.co.uk/homes/the-fairways-plot-23/",
+      "bedrooms": 5,
+      "price": 509950,
+      "plots": [
+        {
+          "number": "23",
+          "price": 509950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Fairways",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/the-fairways/",
+      "name": "Cranford · Plot 24",
+      "url": "https://www.storyhomes.co.uk/homes/the-fairways-plot-24/",
+      "bedrooms": 5,
+      "price": 539950,
+      "plots": [
+        {
+          "number": "24",
+          "price": 539950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "The Fairways",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/the-fairways/",
+      "name": "Cranford · Plot 75",
+      "url": "https://www.storyhomes.co.uk/homes/the-fairways-plot-75/",
+      "bedrooms": 5,
+      "price": 539950,
+      "plots": [
+        {
+          "number": "75",
+          "price": 539950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b55e3b4a73985be16c37f6bf71f94e0a4c935a889e7352ee69fc425bfa983423"
+      ]
+    },
+    {
+      "development": "The Fairways",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/the-fairways/",
+      "name": "Sutton · Plot 116",
+      "url": "https://www.storyhomes.co.uk/homes/the-fairways-plot-116/",
+      "bedrooms": 5,
+      "price": 639950,
+      "plots": [
+        {
+          "number": "116",
+          "price": 639950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ed5a2f647a257cab98d3984c2b6e09e701a927d90226284d423ed4344b41daf4",
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "The Fairways",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/the-fairways/",
+      "name": "Masterton · Plot 104",
+      "url": "https://www.storyhomes.co.uk/homes/the-fairways-plot-104/",
+      "bedrooms": 5,
+      "price": 514950,
+      "plots": [
+        {
+          "number": "104",
+          "price": 514950,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "The Fairways",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/the-fairways/",
+      "name": "Cranford · Plot 15",
+      "url": "https://www.storyhomes.co.uk/homes/the-fairways-plot-15/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "15",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Ashwood Grange",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/ashwood-grange/",
+      "name": "Sutton · Plot 155",
+      "url": "https://www.storyhomes.co.uk/homes/ashwood-grange-plot-155/",
+      "bedrooms": 5,
+      "price": 519995,
+      "plots": [
+        {
+          "number": "155",
+          "price": 519995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ed5a2f647a257cab98d3984c2b6e09e701a927d90226284d423ed4344b41daf4",
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Ashwood Grange",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/ashwood-grange/",
+      "name": "Cranford · Plot 27",
+      "url": "https://www.storyhomes.co.uk/homes/ashwood-grange-plot-27/",
+      "bedrooms": 5,
+      "price": 484995,
+      "plots": [
+        {
+          "number": "27",
+          "price": 484995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b55e3b4a73985be16c37f6bf71f94e0a4c935a889e7352ee69fc425bfa983423"
+      ]
+    },
+    {
+      "development": "Ashwood Grange",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/ashwood-grange/",
+      "name": "Sutton · Plot 163",
+      "url": "https://www.storyhomes.co.uk/homes/ashwood-grange-plot-163/",
+      "bedrooms": 5,
+      "price": 524995,
+      "plots": [
+        {
+          "number": "163",
+          "price": 524995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ed5a2f647a257cab98d3984c2b6e09e701a927d90226284d423ed4344b41daf4",
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Ashwood Grange",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/ashwood-grange/",
+      "name": "Milford · Plot 9",
+      "url": "https://www.storyhomes.co.uk/homes/ashwood-grange-plot-9/",
+      "bedrooms": 5,
+      "price": 439995,
+      "plots": [
+        {
+          "number": "9",
+          "price": 439995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Heritage Fields",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/heritage-fields/",
+      "name": "Masterton · Plot 99",
+      "url": "https://www.storyhomes.co.uk/homes/heritage-fields-plot-99/",
+      "bedrooms": 5,
+      "price": 409995,
+      "plots": [
+        {
+          "number": "99",
+          "price": 409995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Heritage Fields",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/heritage-fields/",
+      "name": "Masterton · Plot 126",
+      "url": "https://www.storyhomes.co.uk/homes/heritage-fields-plot-126/",
+      "bedrooms": 5,
+      "price": 419995,
+      "plots": [
+        {
+          "number": "126",
+          "price": 419995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Killingworth Gate",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
+      "name": "Cranford · Plot 155",
+      "url": "https://www.storyhomes.co.uk/homes/killingworth-gate-plot-155/",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "155",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Killingworth Gate",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
+      "name": "Cranford · Plot 25",
+      "url": "https://www.storyhomes.co.uk/homes/killingworth-gate-plot-25/",
+      "bedrooms": 5,
+      "price": 554995,
+      "plots": [
+        {
+          "number": "25",
+          "price": 554995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Killingworth Gate",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
+      "name": "Woodford · Plot 22",
+      "url": "https://www.storyhomes.co.uk/homes/killingworth-gate-plot-22/",
+      "bedrooms": 6,
+      "price": 629995,
+      "plots": [
+        {
+          "number": "22",
+          "price": 629995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Killingworth Gate",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
+      "name": "Cranford · Plot 13",
+      "url": "https://www.storyhomes.co.uk/homes/killingworth-gate-plot-13/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "13",
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Riverbrook Gardens",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/riverbrook-gardens/",
+      "name": "Sutton · Plot 185",
+      "url": "https://www.storyhomes.co.uk/homes/riverbrook-gardens-plot-185/",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "185",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ed5a2f647a257cab98d3984c2b6e09e701a927d90226284d423ed4344b41daf4",
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Riverbrook Gardens",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/riverbrook-gardens/",
+      "name": "Masterton · Plot 138",
+      "url": "https://www.storyhomes.co.uk/homes/riverbrook-gardens-plot-138/",
+      "bedrooms": 5,
+      "price": 482995,
+      "plots": [
+        {
+          "number": "138",
+          "price": 482995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Riverbrook Gardens",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/riverbrook-gardens/",
+      "name": "Sutton · Plot 173",
+      "url": "https://www.storyhomes.co.uk/homes/riverbrook-gardens-plot-173/",
+      "bedrooms": 5,
+      "price": 564995,
+      "plots": [
+        {
+          "number": "173",
+          "price": 564995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ed5a2f647a257cab98d3984c2b6e09e701a927d90226284d423ed4344b41daf4",
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Sadler Woods",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/sadlerwoods/",
+      "name": "Charlton · Plot 235",
+      "url": "https://www.storyhomes.co.uk/homes/sadler-woods-plot-235/",
+      "bedrooms": 5,
+      "price": 449995,
+      "plots": [
+        {
+          "number": "235",
+          "price": 449995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "aa3cfb4b36f769c7ef5f4f8d5842a4622e3d718a792f069efdc03685be65135c"
+      ]
+    },
+    {
+      "development": "Sadler Woods",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/sadlerwoods/",
+      "name": "Charlton · Plot 245",
+      "url": "https://www.storyhomes.co.uk/homes/sadler-woods-plot-245/",
+      "bedrooms": 5,
+      "price": 449995,
+      "plots": [
+        {
+          "number": "245",
+          "price": 449995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d"
+      ]
+    },
+    {
+      "development": "Sadler Woods",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/sadlerwoods/",
+      "name": "Masterton · Plot 143",
+      "url": "https://www.storyhomes.co.uk/homes/sadler-woods-plot-143/",
+      "bedrooms": 5,
+      "price": 434995,
+      "plots": [
+        {
+          "number": "143",
+          "price": 434995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Sadler Woods",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/sadlerwoods/",
+      "name": "Charlton · Plot 142",
+      "url": "https://www.storyhomes.co.uk/homes/sadler-woods-plot-142/",
+      "bedrooms": 5,
+      "price": 459995,
+      "plots": [
+        {
+          "number": "142",
+          "price": 459995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d"
+      ]
+    },
+    {
+      "development": "Holcroft Gardens",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/holcroft-gardens/",
+      "name": "Woodford · Plot 149",
+      "url": "https://www.storyhomes.co.uk/homes/holcroft-gardens-plot-149/",
+      "bedrooms": 6,
+      "price": 869995,
+      "plots": [
+        {
+          "number": "149",
+          "price": 869995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Holcroft Gardens",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/holcroft-gardens/",
+      "name": "Woodford · Plot 145",
+      "url": "https://www.storyhomes.co.uk/homes/holcroft-gardens-plot-145/",
+      "bedrooms": 6,
+      "price": 884995,
+      "plots": [
+        {
+          "number": "145",
+          "price": 884995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce"
+      ]
+    },
+    {
+      "development": "Holcroft Gardens",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/holcroft-gardens/",
+      "name": "Cranford · Plot 131",
+      "url": "https://www.storyhomes.co.uk/homes/holcroft-gardens-plot-131/",
+      "bedrooms": 5,
+      "price": 759995,
+      "plots": [
+        {
+          "number": "131",
+          "price": 759995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05"
+      ]
+    },
+    {
+      "development": "Stonebrook Meadows",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/stonebrook-meadows/",
+      "name": "Kempton · Plot 56",
+      "url": "https://www.storyhomes.co.uk/homes/stonebrook-meadows-plot-56/",
+      "bedrooms": 6,
+      "price": 499995,
+      "plots": [
+        {
+          "number": "56",
+          "price": 499995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Stonebrook Meadows",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/stonebrook-meadows/",
+      "name": "Kempton · Plot 2",
+      "url": "https://www.storyhomes.co.uk/homes/stonebrook-meadows-plot-2/",
+      "bedrooms": 6,
+      "price": 509995,
+      "plots": [
+        {
+          "number": "2",
+          "price": 509995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Tithe Meadow",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/tithe-meadow/",
+      "name": "Charlton · Plot 109",
+      "url": "https://www.storyhomes.co.uk/homes/tithe-meadow-plot-109/",
+      "bedrooms": 5,
+      "price": 539995,
+      "plots": [
+        {
+          "number": "109",
+          "price": 539995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "aa3cfb4b36f769c7ef5f4f8d5842a4622e3d718a792f069efdc03685be65135c"
+      ]
+    },
+    {
+      "development": "Tithe Meadow",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/tithe-meadow/",
+      "name": "Masterton · Plot 117",
+      "url": "https://www.storyhomes.co.uk/homes/tithe-meadow-plot-117/",
+      "bedrooms": 5,
+      "price": 524995,
+      "plots": [
+        {
+          "number": "117",
+          "price": 524995,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Tithe Meadow",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/tithe-meadow/",
+      "name": "Charlton · Plot 122",
+      "url": "https://www.storyhomes.co.uk/homes/tithe-meadow-plot-122/",
+      "bedrooms": 5,
+      "price": 554995,
+      "plots": [
+        {
+          "number": "122",
+          "price": 554995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d"
+      ]
+    },
+    {
+      "development": "Tithe Meadow",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/tithe-meadow/",
+      "name": "Middleton · Plot 7",
+      "url": "https://www.storyhomes.co.uk/homes/tithe-meadow-plot-7/",
+      "bedrooms": 6,
+      "price": 624995,
+      "plots": [
+        {
+          "number": "7",
+          "price": 624995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d4446ced7834aae7d9a1629c0eaff56b49d1746d9c6caad08213cfb4d83a19c0"
+      ]
+    },
+    {
+      "development": "Woodbridge Green",
+      "developmentUrl": "https://www.storyhomes.co.uk/developments/woodbridge-green/",
+      "name": "Charlton · Plot 158",
+      "url": "https://www.storyhomes.co.uk/homes/woodbridge-green-plot-158/",
+      "bedrooms": 5,
+      "price": 524995,
+      "plots": [
+        {
+          "number": "158",
+          "price": 524995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "b55e3b4a73985be16c37f6bf71f94e0a4c935a889e7352ee69fc425bfa983423",
+      "path": "images/b55e3b4a73985be16c37f6bf71f94e0a4c935a889e7352ee69fc425bfa983423.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2023/05/017-Story_BrigsteerRise_Cranford_Rooms.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office featuring a desk, chair, and wall art.",
+        "reason": "The image shows a dedicated home office space with a desk and chair, and no bed is visible."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0d50037a45477161bc3b70858ed3a9cffd1a028bd3a4b95671905979cf642752",
+      "path": "images/0d50037a45477161bc3b70858ed3a9cffd1a028bd3a4b95671905979cf642752.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2026/01/019-Story_Cumbria_FoxbridgeRise_Middleton_Rooms_1000x750.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A room featuring a desk with a computer, a chair, and a sofa.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "2f9c5307c6a7140ae46d730e0cfba29d1257d427da39cc5e2d7871e8bfe2652f",
+      "path": "images/2f9c5307c6a7140ae46d730e0cfba29d1257d427da39cc5e2d7871e8bfe2652f.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2026/01/030-Story_Cumbria_FoxbridgeRise_Middleton_Rooms_1000x750.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A room staged as a home office with a desk, chair, and storage.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05",
+      "path": "images/43af209fef12b9b50d3f84b9b67702ae177f198a3f6f548f109179230207de05.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2025/09/018-Story_Cumbria_TheFairways_Cranford_Rooms_1000x750.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk, chair, and computer.",
+        "reason": "This room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce",
+      "path": "images/4d940052d9fa7695eef48abbfd129945e391f4ba5811ff7dc338e4d16fd673ce.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2022/04/028-StoryNE_RiverbrookGardens_Sutton_Study.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk and bookshelf.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d",
+      "path": "images/af1705ff331064f563affc2caccb1e8e79a709331266b3ec1b595620affd688d.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2025/09/014-StoryCumbria_ScotbyGrove_Charlton_Rooms-1000x750-1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A dedicated home office with a desk, chair, and built-in shelving.",
+        "reason": "This room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "ed5a2f647a257cab98d3984c2b6e09e701a927d90226284d423ed4344b41daf4",
+      "path": "images/ed5a2f647a257cab98d3984c2b6e09e701a927d90226284d423ed4344b41daf4.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2023/06/032-StoryNE_RiverbrookGardens_Sutton_Hallway.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office viewed from a hallway, featuring a desk and chair.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "aa3cfb4b36f769c7ef5f4f8d5842a4622e3d718a792f069efdc03685be65135c",
+      "path": "images/aa3cfb4b36f769c7ef5f4f8d5842a4622e3d718a792f069efdc03685be65135c.jpg",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2024/12/014-StoryNE_BeaumontGrange_Charlton_Rooms.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A home office with a long desk, two chairs, and computer equipment.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "d4446ced7834aae7d9a1629c0eaff56b49d1746d9c6caad08213cfb4d83a19c0",
+      "path": "images/d4446ced7834aae7d9a1629c0eaff56b49d1746d9c6caad08213cfb4d83a19c0.png",
+      "sourceUrl": "https://www.storyhomes.co.uk/wp-content/uploads/2023/10/15.png",
+      "verdict": {
+        "matches": true,
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "home office",
+        "description": "A dedicated home office space with a desk, chair, and shelving unit.",
+        "reason": "The room is staged as a home office with a desk and no bed."
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 28,
+    "qualifyingDiscovered": 46,
+    "propertyLimitOmissions": 0,
+    "reusedGalleries": 25,
+    "reusedImageSources": 117,
+    "reusedImages": 7,
+    "imagesAttempted": 162,
+    "pendingImages": 0,
+    "matchedImages": 9,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 155
+  },
+  "completedAt": "2026-10-02T16:23:53.915Z"
+}

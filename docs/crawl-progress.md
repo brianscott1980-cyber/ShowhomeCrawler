@@ -15,7 +15,7 @@ Criteria: at least five bedrooms; a visible desk, no visible bed, and no floorpl
 | 9 | The Berkeley Group | Completed with gaps; collection included in this commit | 217 development/phase pages | 12 collected; 3 listings lack details links | 22 | 0 | 4 |
 | 10 | Crest Nicholson | Completed; collection included in this commit | 46 | 30 | 156 | 9 | 0 |
 | 11 | Lynch Homes | Completed; collection included in this commit | 3 | 0 | 0 | 0 | 0 |
-| 12 | Story Homes | Queued | | | | | |
+| 12 | Story Homes | Completed; collection included in this commit | 28 | 46 plots | 155 | 9 | 0 |
 | 13 | Hill Group | Queued | | | | | |
 
 Classifier note: Gemini 3.5 Flash-Lite reached its 500-request daily quota during Persimmon. Remaining Persimmon images and subsequent collections use Gemini 3.1 Flash-Lite; image records retain model attribution.
@@ -25,3 +25,5 @@ Berkeley coverage: Napier Square has no supported availability table. Three qual
 Floorplan criterion update: nine previously published Taylor Wimpey matches were confirmed as floorplan graphics in a visual review and excluded. Its match count is now 41. Earlier photos retain their original classifier results; new crawls use the explicit v2 floorplan checks.
 
 Lynch coverage: all three sitemap development pages checked. Jackton Manor advertises three plots with three or four bedrooms; The Kings and The Kings Phase 4 both explicitly report “Nothing found.” No listings meet the five-bedroom minimum, so no property images were downloaded or classified. The empty collection report is retained and hidden from gateway lists.
+
+Story coverage: all 28 development links in the official directory checked, with 216 advertised plots and 46 meeting the five-bedroom minimum. Ten developments explicitly report coming soon or sold out. All 155 unique property-gallery images classified under the v2 criteria; nine matches visually reviewed and published with their image assets. Temporary classifier 503/429 errors were resolved through batch classification; no pending images or coverage gaps remain.
