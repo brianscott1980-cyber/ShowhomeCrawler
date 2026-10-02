@@ -1,18 +1,18 @@
 import {developers,type DeveloperSlug} from '../adapters/developers';
-export interface BuilderBrand {primary:string;secondary:string;parts:readonly [string,string]}
+export interface BuilderBrand {primary:string;secondary:string;parts:readonly [string,...string[]]}
 // Logo hues and tonal companions from the local official marks.
 export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
- 'bellway':{primary:'#f3613c',secondary:'#a63c22',parts:['Bell','way']},
- 'cala':{primary:'#454545',secondary:'#6b6b6b',parts:['Ca','la']},
- 'barratt':{primary:'#333333',secondary:'#666666',parts:['Bar','ratt']},
+ 'bellway':{primary:'#f3613c',secondary:'#a63c22',parts:['Bellway']},
+ 'cala':{primary:'#454545',secondary:'#6b6b6b',parts:['Cala']},
+ 'barratt':{primary:'#333333',secondary:'#666666',parts:['Barratt']},
  'taylor-wimpey':{primary:'#C61A41',secondary:'#3B1953',parts:['Taylor ','Wimpey']},
  'david-wilson':{primary:'#333333',secondary:'#a97742',parts:['David ','Wilson']},
  'miller-homes':{primary:'#0C1975',secondary:'#009BAA',parts:['Miller ','Homes']},
- 'avant':{primary:'#9d1d64',secondary:'#6c1445',parts:['Av','ant']},
- 'springfield':{primary:'#4A7729',secondary:'#63A50B',parts:['Spring','field']},
- 'persimmon':{primary:'#004d50',secondary:'#008561',parts:['Pers','immon']},
+ 'avant':{primary:'#9d1d64',secondary:'#6c1445',parts:['Avant']},
+ 'springfield':{primary:'#4A7729',secondary:'#63A50B',parts:['Springfield']},
+ 'persimmon':{primary:'#004d50',secondary:'#008561',parts:['Persimmon']},
  'robertson-homes':{primary:'#333333',secondary:'#666666',parts:['Robertson ','Homes']},
- 'redrow':{primary:'#d01030',secondary:'#960c23',parts:['Red','row']},
+ 'redrow':{primary:'#d01030',secondary:'#960c23',parts:['Redrow']},
  'berkeley-group':{primary:'#d10020',secondary:'#111111',parts:['The Berkeley ','Group']},
  'crest-nicholson':{primary:'#002246',secondary:'#3b5875',parts:['Crest ','Nicholson']},
  'lynch-homes':{primary:'#333333',secondary:'#666666',parts:['Lynch ','Homes']},
