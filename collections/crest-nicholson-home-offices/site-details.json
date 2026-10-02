@@ -1,0 +1,167 @@
+[
+  {
+    "url": "https://www.crestnicholson.com/developments/hampshire/curbridge-meadows",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 560000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/warwickshire/sketchley-gardens",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 480000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/bedfordshire/lewin-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 700000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/northamptonshire/malabar",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 535000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/south-yorkshire/copley-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 405000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 470000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/east-riding-of-yorkshire/cygnet-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 565000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 615000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/north-yorkshire/meadow-fields",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 475000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/berkshire/windsor-gate",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 950000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1125000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/essex/westcombe-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 680000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/berkshire/newlands-place",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 850000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  }
+]

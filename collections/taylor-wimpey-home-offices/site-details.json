@@ -1,0 +1,2398 @@
+[
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/wynyard/manor-gardens",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 260000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 290000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 325000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 415000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 765000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 330000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 345000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 610000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/warwick/the-asps",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 415000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 765000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/cowbridge/clare-garden-village",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 430000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 437000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 514500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 725000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/coventry/bow-meadows",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 307500,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 375000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 385000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 415000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/bulkington/twill-meadow",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 265000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 265000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 349950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 349950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 545000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 599950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/codicote/the-heath",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 830000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/keresley/appledown-gate",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 310000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 325000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 440000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 440000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 440000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/keynsham/minsmere-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 240000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 675000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 770000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/burghley-green-at-west-cambourne",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 340000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 340000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 415000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 570000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 580000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 580000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 590000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 240000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 244000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 317000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 321000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 323000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 384000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 411000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 412000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 479000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 489000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 529000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 542500,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 649995,
+        "bedrooms": 5,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 665000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 670000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 670000,
+        "bedrooms": 5,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 675000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 675000,
+        "bedrooms": 5,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 695000,
+        "bedrooms": 5,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 403000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 405000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 470000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 472000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 559995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 569995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 589995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/st-albans/rose-meadows",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 685000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 700000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 700000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 835000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 835000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 850000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 865000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/bishop's-stortford/stortford-fields",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 310000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 317500,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 510000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 595000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 720000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/wallyford/ravensheugh-heights",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 256000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 257000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 301000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 306500,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 368000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 405000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 407000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 407000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 440000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 441000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 470000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/deepcut/mindenhurst",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 340000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 605000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 620000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 630000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 645000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 780000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/dunbar/belhaven-way",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 165000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 165000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 165000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 165000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 165000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 165000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 239995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 239995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 265000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 267000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 267000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 375000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 426000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 268995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 271995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 318995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 321995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 358995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 359995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 359995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 363995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 395995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 407995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/costessey/hampden-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": null,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/ashby-de-la-zouch/castle-manor",
+    "country": null,
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 312500,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 385000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 570000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gate",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/taunton/orchard-grove",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 2,
+        "style": "Detached"
+      },
+      {
+        "price": 283000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 363000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 599000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/penicuik/greenlaw-mains",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 257000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 307000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 329995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 329995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 329995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 362000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 362000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 385000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 396000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 422000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 445000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/hassocks/ockley-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 840000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 435000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 700000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 715000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 765000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 359995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 403995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 417500,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 442500,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 445000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 457995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 569995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 699500,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 727500,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 305000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 462500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 539000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gardens",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 329000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 331000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 445000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 467000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 420000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 590000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 815000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 830000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 840000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 840000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/barrhead/springhill-gardens",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 315000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 347000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 359995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 569995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/brantham/stour-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 345000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 605000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 345000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/hethersett/heather-gardens",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 270000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 305000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 355000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 415000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/martlesham/deben-park-at-brightwell-lakes",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 290000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 305000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 380000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 510000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 595000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 460000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 700000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 715000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 815000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/wetherby/swinnow-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 299995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 370000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 530000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 569995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 699995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 750000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 780000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/winchester/alresford-down",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 539995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 545000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 555000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 559995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 599995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 685995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 725000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 755000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 772995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 824995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 510000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 630000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 700000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 715000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 820000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 315000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 530000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 585000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/syston/barkby-fields",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 345000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/eggborough/millstone-walk",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 226000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 228000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 290000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 305000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 360000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 393000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  }
+]

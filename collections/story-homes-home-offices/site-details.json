@@ -1,0 +1,819 @@
+[
+  {
+    "url": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 234950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 254950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 259950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 309950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 379950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 439950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 539950,
+        "bedrooms": 6,
+        "style": null
+      },
+      {
+        "price": 309950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 309950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 131250,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 206950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 254950,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 354950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/millfields/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 379950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 469950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 504950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 599950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 449950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 694950,
+        "bedrooms": 6,
+        "style": null
+      },
+      {
+        "price": 160500,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/scotby-grove/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 294950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 314950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 419950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 249950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 559950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 419950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 254950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 329950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 329950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 329950,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/the-fairways/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 509950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 539950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 539950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 639950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 304950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 334950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 514950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 419950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 147000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 147000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/ashwood-grange/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 244995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 519995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 484995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 524995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 180000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 349995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 182400,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 387995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 439995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 249995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 249995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 354995,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 259995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 462995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 549995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 462995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 554995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 629995,
+        "bedrooms": 6,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/riverbrook-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 549995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 379995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 379995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 422995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 482995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 564995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/sadlerwoods/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 449995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 304995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 434995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 459995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/holcroft-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 869995,
+        "bedrooms": 6,
+        "style": null
+      },
+      {
+        "price": 659995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 394995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 539995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 599995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 634995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 884995,
+        "bedrooms": 6,
+        "style": null
+      },
+      {
+        "price": 369995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 674995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 759995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/tithe-meadow/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 539995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 469995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 172000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 176000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 472995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 524995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 229995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 554995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 624995,
+        "bedrooms": 6,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/woodbridge-green/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 314995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 319995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 409995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 524995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 445000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 545000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 545000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 6,
+        "style": "Detached"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 560000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 695000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 739995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 824995,
+        "bedrooms": 6,
+        "style": "Detached"
+      },
+      {
+        "price": 829995,
+        "bedrooms": 6,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 427500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 428995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 519995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 544995,
+        "bedrooms": 6,
+        "style": "Detached"
+      },
+      {
+        "price": 549995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 614995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  }
+]

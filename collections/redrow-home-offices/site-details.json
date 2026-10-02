@@ -1,0 +1,91 @@
+[
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 485000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 615000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 655000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 685000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 690000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 745000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 980000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1150000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1375000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 219995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 544995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 674995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 899995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 949995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  }
+]

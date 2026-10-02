@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 370000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 407000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 437000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 470000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 495000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 522000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 527000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  }
+]
