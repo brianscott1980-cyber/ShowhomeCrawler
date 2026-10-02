@@ -2,7 +2,7 @@
 
 Homebuilders show locally stored official logos. `public/logos/sources.json` records the original URLs; when adding a builder, save its logo there and add its source entry. White logos use a dark slide background for contrast.
 
-Homebuilders, Locations, Interiors and Buildings cards receive the images from their own collection. A card changes image at the midpoint (50%) of the viewport: next when its bottom edge crosses while scrolling down, previous when its top edge crosses while scrolling up, wrapping at either end. Single-image collections stay still. There is no timer, swipe control or manual carousel on directory cards.
+Homebuilders, Locations, Interiors and Buildings cards receive the images from their own collection. In list layouts a card changes image at the midpoint (50%) of the viewport: next when its bottom edge crosses while scrolling down, previous when its top edge crosses while scrolling up, wrapping at either end. Single-image collections stay still. There is no timer, swipe control or manual carousel on directory cards.
 
 Transitions ease for 700ms; reduced-motion preferences disable the animation. The shared passive scroll listener batches geometry reads with animation frames. Resize, filtering, sorting and layout changes reset crossing baselines. Upcoming images preload only near the viewport.
 
@@ -11,3 +11,5 @@ Card image order is randomised on the server for each page load. Images are shuf
 Homebuilder carousels always start with the official builder logo, fitted without cropping on a contrasting background. Randomised room photos follow; the logo stays outside the room shuffle.
 
 When a homebuilder has exterior photos, one is chosen at random as the second slide immediately after its logo. That photo is removed from the remaining shuffled sequence to avoid duplication. Builders without an exterior proceed directly to the mixed room photos.
+
+Grid card rows use their progress through the viewport midpoint instead. Each column owns the centre of an equal progress segment: two columns trigger at 25% and 75%; four at 12.5%, 37.5%, 62.5% and 87.5%. Downward scrolling advances left to right; upward scrolling reverses right to left. Rows and columns come from actual rendered positions, including static cards and incomplete rows, so responsive layouts use their current column count.
