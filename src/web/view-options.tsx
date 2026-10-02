@@ -53,16 +53,18 @@ export function useCardView(storageKey = 'showhome-directory-view', defaultView:
  const [view, setView] = useState<CardViewMode>(defaultView);
  useEffect(() => {
   try {
-   const saved = localStorage.getItem(storageKey);
+   const saved = sessionStorage.getItem(storageKey);
    if (saved === 'large' || saved === 'compact' || saved === 'list') {
     setView(saved);
+    return;
    }
   } catch {}
- }, [storageKey]);
+  setView(defaultView);
+ }, [storageKey, defaultView]);
  function changeView(next: CardViewMode) {
   setView(next);
   try {
-   localStorage.setItem(storageKey, next);
+   sessionStorage.setItem(storageKey, next);
   } catch {}
  }
  return [view, changeView] as const;

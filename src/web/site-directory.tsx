@@ -2,12 +2,22 @@
 import Link from 'next/link';
 import {useState} from 'react';
 import {filterSites,type SiteCard,type SiteFilters,type LocationPoint} from './site-filters';
-import {ViewOptions,useCardView} from './view-options';
+import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 const defaults:SiteFilters={developer:'',country:'',minPrice:'',maxPrice:'',minBeds:'',maxBeds:'',style:'',radius:''};
 const money=(n:number)=>'£'+n.toLocaleString('en-GB');
 function range(values:(number|null)[],format:(n:number)=>string){const known=values.filter((v):v is number=>v!==null&&Number.isFinite(v));if(!known.length)return 'Not available';const min=Math.min(...known),max=Math.max(...known);return min===max?format(min):`${format(min)} – ${format(max)}`;}
-export function SiteDirectory({cards, basePath = '/locations'}:{cards:SiteCard[]; basePath?: string}){
- const [view,changeView]=useCardView('showhome-directory-view','large');
+export function SiteDirectory({
+ cards,
+ basePath = '/locations',
+ defaultView = 'list',
+ storageKey = 'showhome-locations-view',
+}:{
+ cards:SiteCard[];
+ basePath?: string;
+ defaultView?: CardViewMode;
+ storageKey?: string;
+}){
+ const [view,changeView]=useCardView(storageKey,defaultView);
  const [filters,setFilters]=useState(defaults),[postcode,setPostcode]=useState(''),[point,setPoint]=useState<LocationPoint|null>(null),[busy,setBusy]=useState(false),[message,setMessage]=useState(''),[order,setOrder]=useState('name');
  function change(key:keyof SiteFilters,value:string){setFilters(previous=>({...previous,[key]:value}));}
  async function locate(e:React.FormEvent){e.preventDefault();if(busy)return;setBusy(true);setPoint(null);setMessage('Looking up postcode…');try{const response=await fetch('/api/location?postcode='+encodeURIComponent(postcode.trim()));const data=await response.json();if(!response.ok)throw new Error(data.error??'Postcode lookup failed.');setPoint(data);setOrder('distance');setMessage('Distances from '+data.postcode);}catch(error){setMessage(error instanceof Error?error.message:'Location unavailable.');}finally{setBusy(false);}}

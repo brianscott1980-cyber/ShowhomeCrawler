@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import {ViewOptions,useCardView} from './view-options';
+import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 
 export interface GroupCardItem {
  key: string;
@@ -15,12 +15,16 @@ export function GroupCards({
  cards,
  pathPrefix,
  kindLabel,
+ defaultView = pathPrefix === 'buildings' ? 'compact' : 'large',
+ storageKey = pathPrefix === 'buildings' ? 'showhome-buildings-view' : 'showhome-interiors-view',
 }: {
  cards: GroupCardItem[];
  pathPrefix: string;
  kindLabel: string;
+ defaultView?: CardViewMode;
+ storageKey?: string;
 }) {
- const [view, changeView] = useCardView('showhome-directory-view', 'large');
+ const [view, changeView] = useCardView(storageKey, defaultView);
  return (
   <>
    <div className="directory-toolbar">

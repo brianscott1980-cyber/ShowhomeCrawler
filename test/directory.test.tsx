@@ -4,6 +4,7 @@ import {act} from 'react';
 import {createRoot} from 'react-dom/client';
 import {DeveloperDirectory,orderedDevelopers,distanceMiles,type DeveloperCard} from '../src/web/directory';
 import {SiteDirectory} from '../src/web/site-directory';
+import {GroupCards} from '../src/web/group-cards';
 import type {SiteCard} from '../src/web/site-filters';
 import {Navigation} from '../src/web/navigation';
 import {GET} from '../src/app/api/location/route';
@@ -15,14 +16,33 @@ describe('Developer directory',()=>{
   expect(orderedDevelopers(cards,'name',null).map(c=>c.slug)).toEqual(['a','b','c']);
   const ordered=orderedDevelopers(cards,'distance',{latitude:51,longitude:0});expect(ordered.map(c=>c.slug)).toEqual(['a','b','c']);expect(ordered[0]!.nearest?.name).toBe('Near');expect(distanceMiles({latitude:51,longitude:0},{latitude:52,longitude:0})).toBeCloseTo(69.09,1);
  });
- it('switches all three layouts and remembers the selected view',async()=>{
-  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
-  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));for(const [label,layout] of [['List','list'],['Smaller grid','compact'],['Large cards','large']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(localStorage.getItem('showhome-directory-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
+ it('switches all three layouts, defaults to list, and remembers the selected view in sessionStorage',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
+  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));expect(document.querySelector('.directory-list')).not.toBeNull();for(const [label,layout] of [['Smaller grid','compact'],['Large cards','large'],['List','list']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(sessionStorage.getItem('showhome-homebuilders-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
  });
- it('switches layouts with thumbnail icons in SiteDirectory',async()=>{
-  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
+ it('switches layouts with thumbnail icons in SiteDirectory, defaults to list, and saves to sessionStorage',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
   const siteCard:SiteCard={key:'k1',name:'Loc',developer:'Dev',image:'/img.jpg',description:'Desc',count:1,country:'UK',latitude:51,longitude:0,properties:[]};
-  try{await act(async()=>root.render(<SiteDirectory cards={[siteCard]}/>));for(const [label,layout] of [['List','list'],['Smaller grid','compact'],['Large cards','large']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();}}finally{await act(async()=>root.unmount());dom.window.close();}
+  try{await act(async()=>root.render(<SiteDirectory cards={[siteCard]}/>));expect(document.querySelector('.directory-list')).not.toBeNull();for(const [label,layout] of [['Smaller grid','compact'],['Large cards','large'],['List','list']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(sessionStorage.getItem('showhome-locations-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
+ });
+ it('defaults Interiors to large card and Buildings to small card (compact), persisting in sessionStorage',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
+  const groupItems=[{key:'living-room',name:'Living Room',developers:['Alpha'],count:3,image:'/img.jpg',description:'Living Room'}];
+  try{
+   await act(async()=>root.render(<GroupCards key="interiors" cards={groupItems} pathPrefix="interiors" kindLabel="Interiors"/>));
+   expect(document.querySelector('.directory-large')).not.toBeNull();
+   const listBtn=[...document.querySelectorAll('button')].find(b=>b.textContent==='List')!;
+   await act(async()=>listBtn.click());
+   expect(document.querySelector('.directory-list')).not.toBeNull();
+   expect(sessionStorage.getItem('showhome-interiors-view')).toBe('list');
+
+   await act(async()=>root.render(<GroupCards key="buildings" cards={groupItems} pathPrefix="buildings" kindLabel="Buildings"/>));
+   expect(document.querySelector('.directory-compact')).not.toBeNull();
+   const largeBtn=[...document.querySelectorAll('button')].find(b=>b.textContent==='Large cards')!;
+   await act(async()=>largeBtn.click());
+   expect(document.querySelector('.directory-large')).not.toBeNull();
+   expect(sessionStorage.getItem('showhome-buildings-view')).toBe('large');
+  }finally{await act(async()=>root.unmount());dom.window.close();}
  });
  it('updates the header badge after favourite changes without double-counting duplicate IDs',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);localStorage.setItem('showhome-favourites-v1','["one","one","two"]');const root=createRoot(document.getElementById('root')!);
