@@ -1,3 +1,4 @@
+import * as avant from './avant/site-parser.js';
 import * as miller from './miller/site-parser.js';
 import { createSiteParser } from './barratt/site-parser.js';
 import * as taylor from './taylor-wimpey/site-parser.js';
@@ -11,5 +12,6 @@ export function builderSite(slug='bellway') {
  if(slug==='taylor-wimpey')return {name:'Taylor Wimpey',slug,websiteUrl:'https://www.taylorwimpey.co.uk',sitemap:'https://www.taylorwimpey.co.uk/developments.xml',...taylor};
  if(slug==='david-wilson')return {name:'David Wilson',slug,websiteUrl:'https://www.dwh.co.uk',sitemap:'https://www.dwh.co.uk/sitemap/',...createSiteParser('https://www.dwh.co.uk')};
  if(slug==='miller-homes')return {name:'Miller Homes',slug,websiteUrl:'https://www.millerhomes.co.uk',sitemap:'https://www.millerhomes.co.uk/sitemaps.xml',...miller};
+ if(slug==='avant')return {name:'Avant',slug,websiteUrl:'https://www.avanthomes.co.uk',sitemap:'https://www.avanthomes.co.uk/sitemap.xml',...avant};
  throw new Error('Unsupported builder.');
 }
