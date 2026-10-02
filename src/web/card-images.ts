@@ -1,6 +1,6 @@
 import type {ReportImage} from '../reports/report';
 import {assetUrl} from './collections';
-export interface CardImage {src:string;alt:string;roomType?:string}
+export interface CardImage {src:string;alt:string;roomType?:string;kind?:'logo';background?:string}
 function shuffle<T>(values:T[],random:()=>number):T[]{
  const result=[...values];
  for(let i=result.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[result[i],result[j]]=[result[j]!,result[i]!];}
@@ -29,7 +29,8 @@ export function reportCardImage(slug:string,image:ReportImage):CardImage {
  return {src:assetUrl(slug,image.path),alt:image.verdict?.description??image.categorisation?.subCategory??'Showhome interior',roomType:room};
 }
 /** Generate on the server so the browser hydrates the same random starting image and order. */
-export function cardImageCollection(images:CardImage[]){
- const ordered=randomRoomImages(images);
+export function cardImageCollection(images:CardImage[],firstImage?:CardImage){
+ const rooms=randomRoomImages(images);
+ const ordered=firstImage?[firstImage,...rooms.filter(i=>i.src!==firstImage.src)]:rooms;
  return {images:ordered,image:ordered[0]?.src??'',description:ordered[0]?.alt??'Showhome interior'};
 }
