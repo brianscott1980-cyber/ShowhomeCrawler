@@ -158,3 +158,11 @@ npm run results:publish -- --builder taylor-wimpey
 ```
 
 Commit the developer adapter, registry changes and its entire `collections/` folder together. The publisher checks that classifications are finished and every matched image exists before writing the snapshot.
+
+If the selected classifier reaches its daily quota, resume with an available image-capable model:
+
+```sh
+npm run results:classify -- --folder results/persimmon-home-offices --model gemini-3.1-flash-lite
+```
+
+Completed decisions are retained. Each image records `analysisModel`, and database classifications use that actual model. Long quota reset delays stop retries instead of repeatedly submitting requests.

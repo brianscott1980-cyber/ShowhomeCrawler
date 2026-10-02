@@ -36,10 +36,13 @@ async function main() {
    for (let attempt = 0; ; attempt++) {
     try { answers = await classifyBatch(group, env.GEMINI_API_KEY!, report.model); break; }
     catch (error) {
-     const status = (error as {status?: number}).status;
-     console.log(JSON.stringify({stage:'stream_retry',developer:report.builder?.name,status:status ?? 'invalid_response',attempt:attempt+1}));
+     const failure = error as {status?: number;retrySeconds?: number;quotaViolations?: unknown};
+     const status = failure.status;
+     console.log(JSON.stringify({stage:'stream_retry',developer:report.builder?.name,status:status ?? 'invalid_response',quota:failure.quotaViolations,attempt:attempt+1}));
+     if ((failure.retrySeconds ?? 0) > 120) throw error;
      if (attempt >= 3 || (status && ![429,500,502,503,504].includes(status))) throw error;
-     await sleep(Math.min(60000,10000 * 2 ** attempt));
+     const delay = Math.min(120000, Math.max(10000 * 2 ** attempt, (failure.retrySeconds ?? 0) * 1000));
+     for (let elapsed=0;elapsed<delay;elapsed+=10000) await sleep(Math.min(10000,delay-elapsed));
     }
    }
    for (const answer of answers) {

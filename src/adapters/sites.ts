@@ -1,3 +1,4 @@
+import * as persimmon from './persimmon/site-parser.js';
 import * as springfield from './springfield/site-parser.js';
 import * as avant from './avant/site-parser.js';
 import * as miller from './miller/site-parser.js';
@@ -15,5 +16,6 @@ export function builderSite(slug='bellway') {
  if(slug==='miller-homes')return {name:'Miller Homes',slug,websiteUrl:'https://www.millerhomes.co.uk',sitemap:'https://www.millerhomes.co.uk/sitemaps.xml',...miller};
  if(slug==='avant')return {name:'Avant',slug,websiteUrl:'https://www.avanthomes.co.uk',sitemap:'https://www.avanthomes.co.uk/sitemap.xml',...avant};
  if(slug==='springfield')return {name:'Springfield',slug,websiteUrl:'https://www.springfield.co.uk',sitemap:'https://www.springfield.co.uk/homes-for-sale',...springfield};
+ if(slug==='persimmon')return {name:'Persimmon',slug,websiteUrl:'https://www.persimmonhomes.com',sitemap:'https://www.persimmonhomes.com/sitemap',...persimmon};
  throw new Error('Unsupported builder.');
 }

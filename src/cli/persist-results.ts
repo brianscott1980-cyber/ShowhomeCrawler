@@ -34,12 +34,12 @@ async function main() {
    await mapLimit(report.images, 3, async image => {
     const identity = await imageIdentity(await readFile(`${folder}/${image.path}`));
     const [row] = await sql`insert into images(source_url, sha256, perceptual_hash, width, height, mime_type, room_type, description, ai_model, ai_analysis_version, ai_analysed_at)
-     values (${image.sourceUrl}, ${identity.sha256}, ${identity.dhash}, ${identity.width}, ${identity.height}, ${'image/' + identity.format}, ${image.verdict?.roomType ?? null}, ${image.verdict?.description ?? null}, ${image.verdict ? report.model : null}, ${image.verdict ? analysisVersion : null}, ${image.verdict ? report.completedAt ?? report.startedAt : null})
+     values (${image.sourceUrl}, ${identity.sha256}, ${identity.dhash}, ${identity.width}, ${identity.height}, ${'image/' + identity.format}, ${image.verdict?.roomType ?? null}, ${image.verdict?.description ?? null}, ${image.verdict ? image.analysisModel ?? report.model : null}, ${image.verdict ? analysisVersion : null}, ${image.verdict ? report.completedAt ?? report.startedAt : null})
      on conflict(sha256) do update set room_type=coalesce(excluded.room_type, images.room_type), description=coalesce(excluded.description,images.description), ai_model=coalesce(excluded.ai_model,images.ai_model), ai_analysis_version=coalesce(excluded.ai_analysis_version,images.ai_analysis_version), ai_analysed_at=coalesce(excluded.ai_analysed_at,images.ai_analysed_at) returning id, (xmax = 0) as inserted`;
     if (row!.inserted) newImages++;
     ids.set(image.id, row!.id);
     if (image.verdict) await sql`insert into image_classifications(image_id,question,question_version,ai_model,matches,has_desk,has_bed,reason)
-     values (${row!.id},${report.question},${analysisVersion},${report.model},${image.verdict.matches},${image.verdict.hasDesk},${image.verdict.hasBed},${image.verdict.reason}) on conflict(image_id,question_version,ai_model) do nothing`;
+     values (${row!.id},${report.question},${analysisVersion},${image.analysisModel ?? report.model},${image.verdict.matches},${image.verdict.hasDesk},${image.verdict.hasBed},${image.verdict.reason}) on conflict(image_id,question_version,ai_model) do nothing`;
    });
    const imageMap = new Map(report.images.map(i => [i.id, i]));
    persistenceStage = 'galleries';

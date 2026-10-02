@@ -7,10 +7,12 @@ import { sha256 } from '../galleries/image-hasher.js';
 import { analysisVersion, classifyBatch, verdictSchema } from '../vision/gemini-classifier.js';
 import { writeReport, type RunReport } from '../reports/report.js';
 async function main() {
- const { values } = parseArgs({ options: { folder: { type: 'string', default: 'results/bellway-home-offices' } } });
+ const { values } = parseArgs({ options: { model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
  const folder = values.folder, env = readEnv();
  if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY required.');
  const report: RunReport = JSON.parse(await readFile(folder + '/results.json', 'utf8'));
+ const classificationModel = values.model ?? report.model;
+ for (const image of report.images) if (image.verdict) image.analysisModel ??= report.model;
  for (const development of report.developments) if (development.name) development.name = load(development.name).text();
  for (const property of report.properties) { property.development = load(property.development).text(); property.name = load(property.name).text(); }
  const lock = await open(folder + '/.lock', 'wx');
@@ -21,23 +23,26 @@ async function main() {
    const images = pending.slice(offset, offset + 8);
    const remaining = [];
    for (const image of images) {
-    const cache = `results/.cache/analysis/${sha256(`${image.id}:${report.model}:${analysisVersion}`)}.json`;
-    try { image.verdict = verdictSchema.parse(JSON.parse(await readFile(cache, 'utf8'))); delete image.error; }
-    catch { remaining.push({ id: image.id, bytes: await readFile(folder + '/' + image.path) }); }
+    for (const model of [...new Set([report.model, classificationModel])]) {
+     const cache = `results/.cache/analysis/${sha256(`${image.id}:${model}:${analysisVersion}`)}.json`;
+     try { image.verdict = verdictSchema.parse(JSON.parse(await readFile(cache, 'utf8'))); image.analysisModel = model; delete image.error; break; } catch {}
+    }
+    if (!image.verdict) remaining.push({ id: image.id, bytes: await readFile(folder + '/' + image.path) });
    }
    if (remaining.length) {
     let answers;
     for (let attempt = 0; ; attempt++) {
-     try { answers = await classifyBatch(remaining, env.GEMINI_API_KEY, report.model); break; }
+     try { answers = await classifyBatch(remaining, env.GEMINI_API_KEY, classificationModel); break; }
      catch (error) {
-      const failure = error as { status?: number; retrySeconds?: number };
-      console.log(JSON.stringify({ stage: 'batch_retry', status: failure.status ?? 'invalid_response', reason: error instanceof Error && /^(Gemini did not complete classification\.|Batch image identifiers do not match\.|Contradictory classification\.)$/.test(error.message) ? error.message : undefined, attempt: attempt + 1 }));
+      const failure = error as { status?: number; retrySeconds?: number; quotaViolations?: {quotaMetric?: string; quotaId?: string; quotaValue?: string}[] };
+      console.log(JSON.stringify({ stage: 'batch_retry', status: failure.status ?? 'invalid_response', quota: failure.quotaViolations, reason: error instanceof Error && /^(Gemini did not complete classification\.|Batch image identifiers do not match\.|Contradictory classification\.)$/.test(error.message) ? error.message : undefined, attempt: attempt + 1 }));
+      if ((failure.retrySeconds ?? 0) > 120) throw error;
       if (failure.status && ![429, 500, 502, 503, 504].includes(failure.status)) throw error;
       if (attempt >= 3) {
        if (failure.status) throw error;
        answers = [];
        for (const item of remaining) {
-        try { answers.push(...await classifyBatch([item], env.GEMINI_API_KEY, report.model)); }
+        try { answers.push(...await classifyBatch([item], env.GEMINI_API_KEY, classificationModel)); }
         catch { const image = images.find(i=>i.id===item.id)!; image.error='Individual classification failed after batch retries'; report.errors.push({url:image.sourceUrl,stage:'classification',message:image.error}); }
         await sleep(4000);
        }
@@ -49,8 +54,8 @@ async function main() {
      }
     }
     for (const answer of answers) {
-     const image = images.find(i => i.id === answer.id)!; image.verdict = answer.verdict; delete image.error;
-     const path = `results/.cache/analysis/${sha256(`${image.id}:${report.model}:${analysisVersion}`)}.json`;
+     const image = images.find(i => i.id === answer.id)!; image.verdict = answer.verdict; image.analysisModel = classificationModel; delete image.error;
+     const path = `results/.cache/analysis/${sha256(`${image.id}:${classificationModel}:${analysisVersion}`)}.json`;
      await writeFile(path + '.tmp', JSON.stringify(answer.verdict)); await rename(path + '.tmp', path);
     }
    }
