@@ -3,7 +3,7 @@ import type { PropertyCandidate, GalleryImageCandidate } from '../../models/doma
 export function createSiteParser(origin: string) {
 function developmentUrls(xml: string): string[] {
  const $ = load(xml, { xmlMode: true }); const urls = new Set<string>();
- $('url > loc').each((_, el) => { const url = new URL($(el).text().trim()); if (url.origin === origin && /^\/new-homes\/dev-?\d+-[^/]+\/$/.test(url.pathname)) urls.add(url.href); });
+ $('url > loc, a[href]').each((_, el) => { const url = new URL($(el).attr('href') ?? $(el).text().trim(), origin); if (url.origin === origin && /^\/new-homes\/dev-?\d+-[^/]+\/$/.test(url.pathname)) urls.add(url.href); });
  return [...urls];
 }
 function discoverHomes(html: string, url: string) {
@@ -13,7 +13,8 @@ function discoverHomes(html: string, url: string) {
  const plots: PropertyCandidate[] = []; const seen = new Set<string>();
  $('.plot-list__plot a.plot').each((_, el) => {
   const card = $(el); const href = card.attr('href'); if (!href) return;
-  const linked = new URL(href, url); if (linked.href === origin || linked.href === origin + '/') { unlinkedPlots++; return; } if (linked.origin !== origin || !linked.pathname.startsWith(new URL(url).pathname) || !/\/plot-[^/]+\/$/.test(linked.pathname)) throw new Error('Unexpected plot URL.');
+  const linked = new URL(href, url); if (linked.href === origin || linked.href === origin + '/') { unlinkedPlots++; return; } const developmentId = (path: string) => path.match(/^\/new-homes\/(dev-?\d+)-/)?.[1]?.replace('-', '');
+  if (linked.origin !== origin || developmentId(linked.pathname) !== developmentId(new URL(url).pathname) || !/\/plot-[^/]+\/$/.test(linked.pathname)) throw new Error('Unexpected plot URL.');
   if (seen.has(linked.href)) return; seen.add(linked.href);
   const text = card.find('.plot__features').text(); const beds = text.match(/(\d+)\s*bed/i); const price = text.match(/£\s*([\d,]+)/);
   const house = card.find('.plot__sales-name').text().trim(); const reserved = /reserved|sold/i.test(card.find('.plot__status-container').text());
