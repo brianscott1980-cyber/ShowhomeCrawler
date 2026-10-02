@@ -3,7 +3,7 @@ import { developers, readCollection, collectionFolder, assetUrl } from './collec
 import { groupCollections, type Collection } from './groups';
 import { isRoomImage } from '../vision/room-classifier';
 
-export interface CoveragePoint { latitude: number; longitude: number; name: string }
+export interface CoveragePoint { latitude: number; longitude: number; name: string; builder: string }
 export interface HomePhoto { src: string; alt: string; builder: string; category: string }
 export async function homepageData() {
  const collections: Collection[] = (await Promise.all(developers.map(async developer => {
@@ -25,7 +25,7 @@ export async function homepageData() {
   const point = coordinates.get(c.slug)?.find(row => row.url === url);
   return point && Number.isFinite(point.latitude) && Number.isFinite(point.longitude)
    && point.latitude >= 49.5 && point.latitude <= 61.2 && point.longitude >= -9 && point.longitude <= 2.5
-   ? [{ latitude: point.latitude, longitude: point.longitude, name: group.name }] : [];
+   ? [{ latitude: point.latitude, longitude: point.longitude, name: group.name, builder: c.name }] : [];
  });
  const candidates = collections.flatMap(c => c.report.images.filter(image => isRoomImage(image) && image.categorisation?.mainCategory !== 'Exterior' && (image.categorisation?.isRoom || image.verdict?.matches)).map(image => ({ collection: c, image })));
  const selected: typeof candidates = [];
