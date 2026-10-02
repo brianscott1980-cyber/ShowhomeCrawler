@@ -49,3 +49,12 @@ it('completes only unreachable bottom triggers with rounding tolerance',async()=
  expect(bottomRemainder(true,{top:100,bottom:300},0,0,1,400)).toBe(false);
  expect([0,1,2,3].map(i=>bottomRemainder(false,{top:300,bottom:700},.4,i,4,400))).toEqual([false,false,true,true]);
 });
+it('brings the second large card forward without changing compact grids or the first card',async()=>{
+ const {rowScrollCrossing,bottomRemainder}=await import('../src/web/scroll-crossing');
+ expect(rowScrollCrossing(.55,.65,1,2,100,true)).toBe(1);
+ expect(rowScrollCrossing(.65,.55,1,2,-100,true)).toBe(-1);
+ expect(rowScrollCrossing(.55,.65,1,2,100,false)).toBe(0);
+ expect(rowScrollCrossing(.2,.3,0,2,100,true)).toBe(1);
+ expect(bottomRemainder(false,{top:0,bottom:400},.65,1,2,200,true)).toBe(false);
+ expect(bottomRemainder(false,{top:0,bottom:400},.65,1,2,200,false)).toBe(true);
+});

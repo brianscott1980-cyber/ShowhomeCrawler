@@ -1,9 +1,9 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {collectionIndex,scrollCrossing,rowProgress,rowScrollCrossing,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
+import {collectionIndex,scrollCrossing,rowProgress,rowScrollCrossing,rowTrigger,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
 export interface CollectionImage {src:string;alt:string;kind?:'logo';background?:string}
 interface Entry {element:HTMLElement;edges:CardEdges;progress:number;bottomAdvanced:boolean;advance:(direction:number)=>void}
-interface Measurement {edges:DOMRect;progress:number;column:number;columns:number;list:boolean}
+interface Measurement {edges:DOMRect;progress:number;column:number;columns:number;list:boolean;large:boolean}
 const entries=new Set<Entry>();
 let stop:undefined|(()=>void);
 function measureCards(){
@@ -19,7 +19,7 @@ function measureCards(){
   for(const row of rows){
    row.sort((a,b)=>a.edges.left-b.edges.left);
    const progress=rowProgress({top:row[0]!.edges.top,bottom:Math.max(...row.map(card=>card.edges.bottom))},midpoint);
-   row.forEach((card,column)=>measurements.set(card.element,{edges:card.edges,progress,column,columns:row.length,list:grid.classList.contains('directory-list')}));
+   row.forEach((card,column)=>measurements.set(card.element,{edges:card.edges,progress,column,columns:row.length,list:grid.classList.contains('directory-list'),large:grid.classList.contains('directory-large')}));
   }
  }
  return measurements;
@@ -37,11 +37,11 @@ function register(element:HTMLElement,advance:Entry['advance']){
    const bottom=atPageBottom(scrollY,window.innerHeight,document.documentElement.scrollHeight);
    for(const item of entries){
     const next=measurements.get(item.element);if(!next)continue;
-    let direction=next.list?scrollCrossing(item.edges,next.edges,window.innerHeight*.5,delta):rowScrollCrossing(item.progress,next.progress,next.column,next.columns,delta);
+    let direction=next.list?scrollCrossing(item.edges,next.edges,window.innerHeight*.5,delta):rowScrollCrossing(item.progress,next.progress,next.column,next.columns,delta,next.large);
     // At the page end, finish only cards whose usual trigger is still unreachable.
-    if(delta>0&&bottom&&!item.bottomAdvanced&&bottomRemainder(next.list,next.edges,next.progress,next.column,next.columns,midpoint)){
+    if(delta>0&&bottom&&!item.bottomAdvanced&&bottomRemainder(next.list,next.edges,next.progress,next.column,next.columns,midpoint,next.large)){
      direction=1;item.bottomAdvanced=true;
-    }else if(delta<0&&item.bottomAdvanced&&(direction===-1||(next.list?next.edges.top>midpoint:next.progress<(next.column+.5)/next.columns))){
+    }else if(delta<0&&item.bottomAdvanced&&(direction===-1||(next.list?next.edges.top>midpoint:next.progress<rowTrigger(next.column,next.columns,next.large)))){
      direction=-1;item.bottomAdvanced=false;
     }
     item.edges=next.edges;item.progress=next.progress;if(direction)item.advance(direction);
