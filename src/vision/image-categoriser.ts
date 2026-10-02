@@ -233,7 +233,7 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
  return {
   mainCategory,
   subCategory,
-  isRoom,
+  isRoom: isRoom && mainCategory !== 'Floorplan',
   objects,
   wallpaper,
   curtains,

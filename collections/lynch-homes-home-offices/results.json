@@ -5,23 +5,23 @@
     "websiteUrl": "https://www.lynchhomes.co.uk"
   },
   "status": "completed",
-  "startedAt": "2026-10-02T16:15:52.169Z",
-  "model": "gemini-3.1-flash-lite",
+  "startedAt": "2026-10-02T23:30:35.770Z",
+  "model": "gemini-3.5-flash-lite",
   "question": "Home office with no beds or floorplan graphics",
   "analysisVersion": "home-office-no-beds-or-floorplans-v2",
   "developments": [
-    {
-      "url": "https://www.lynchhomes.co.uk/the-kings-development-troon/",
-      "name": "The Kings",
-      "status": "complete",
-      "homes": 0,
-      "qualifying": 0
-    },
     {
       "url": "https://www.lynchhomes.co.uk/jackton-manor-development/",
       "name": "Jackton Manor",
       "status": "complete",
       "homes": 3,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.lynchhomes.co.uk/the-kings-development-troon/",
+      "name": "The Kings",
+      "status": "complete",
+      "homes": 0,
       "qualifying": 0
     },
     {
@@ -32,18 +32,835 @@
       "qualifying": 0
     }
   ],
-  "properties": [],
-  "images": [],
+  "properties": [
+    {
+      "development": "Jackton Manor",
+      "developmentUrl": "https://www.lynchhomes.co.uk/jackton-manor-development/",
+      "name": "The Newark · Plot 39",
+      "url": "https://www.lynchhomes.co.uk/house-types/the-newark-plot-39/",
+      "bedrooms": 4,
+      "price": 480000,
+      "plots": [
+        {
+          "number": "39",
+          "price": 480000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fe74cd34f43bc8b22641e9376ac65405a8c89b8bbe60fa2ce75ad17d0f7c0986",
+        "52187304235fb544becc0163184f2ddd2fc145a31ad66b63cd036b8468de92fb",
+        "137ef14c29e8fc0ea402cbdf78616b7b0e7e78816edac64b08cf16ea6597f0df",
+        "863534eade39ae837abdc4dde4ea69956ace6a1b3af62eda647e524875c37cc2",
+        "fc8ba7b6c95782ab7494c8387ec57445a584a7dec9e63d32128423d3ad853a77",
+        "96bb4b189ae8e52a0c294a5840eae6e620573187a4fcff1e62fc9c50267ea23f",
+        "8b5531cc127adc0eabf6c633d7c077c04725983cd1a83d941df1f1c54257ac92",
+        "dab027f5fcf6b4d66c2a6ec22a91fc55dd868086f12d56640f1bad2e5a667eed"
+      ]
+    },
+    {
+      "development": "Jackton Manor",
+      "developmentUrl": "https://www.lynchhomes.co.uk/jackton-manor-development/",
+      "name": "The Machrie · Plot 35",
+      "url": "https://www.lynchhomes.co.uk/house-types/the-machrie-plot-35/",
+      "bedrooms": 4,
+      "price": 450000,
+      "plots": [
+        {
+          "number": "35",
+          "price": 450000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d5ee36b1b3f861e784878de4ccdcaf9f749d10fe1824c46b5dc89d1ad71f88d0",
+        "ccab899f37da9657131898367eefed28d3de153230929642254b0faa15b99010",
+        "2ae580e84be09da765d1bacbea1a37af6e7fe317540851853d69895b31b5668f",
+        "0b1f2efaa2606f5092ce199cdf18dc4f704672c7c08a5fa68ed55614034867fd",
+        "8d93e59e07141c5fc3364ccab469dec58dce501780864043b2f12415a11cec2a",
+        "1c7f35cb2d3bdac017c7a7c585e0c191b4437b391f2cdb6c3120e8420b761fc3",
+        "1d69822ae4227e109f7d1a4eb68f3be9e5ee735274d8470cb6b44d339bcd76c5"
+      ]
+    },
+    {
+      "development": "Jackton Manor",
+      "developmentUrl": "https://www.lynchhomes.co.uk/jackton-manor-development/",
+      "name": "The Culzean · Plot 34",
+      "url": "https://www.lynchhomes.co.uk/house-types/the-culzean-plot-34/",
+      "bedrooms": 3,
+      "price": 430000,
+      "plots": [
+        {
+          "number": "34",
+          "price": 430000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e9b3db3346129874c819c844f22cd0ce04283b4036ed472b5a974845595271f7",
+        "520326e38468482abe6af9e403bf387ef3caac956e3e97f7c08239bbf9ce05bb",
+        "a689d1d2edaebab998b4d0560f3d5cd65cf21e01ced408a222952fe7dcdf19a4",
+        "79c86aa95e063b340a84dd9898cd300cf499c0a675503283e1831cc64f8e1c23",
+        "5d1b9e775f9531d4d5b02cc29fe827a1d7f3b1809d4a97ac7827f40e3da8a7e6",
+        "739c615d37f7d069bc08860e86747c01598c206353e658c939ccfcf1d0fb74ad",
+        "6c4dbbcabc9694fdef48c4c5fa424d3fc3959e23145fa2169359cfb88689fc08"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "52187304235fb544becc0163184f2ddd2fc145a31ad66b63cd036b8468de92fb",
+      "path": "images/52187304235fb544becc0163184f2ddd2fc145a31ad66b63cd036b8468de92fb.webp",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2023/07/newark-house-type-jackton.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with a white rendered upper floor and a stone-clad lower floor. It features a dark grey tiled roof, a dark front door, and a paved driveway with a car parked on the left. A manicured hedge runs along the front of the property.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "137ef14c29e8fc0ea402cbdf78616b7b0e7e78816edac64b08cf16ea6597f0df",
+      "path": "images/137ef14c29e8fc0ea402cbdf78616b7b0e7e78816edac64b08cf16ea6597f0df.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/NEWARK-REVISED-170822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with dark grey cabinetry, a black marble-effect island with three bar stools, and wood-effect herringbone flooring. Pendant lights hang over the island, and there is a dining area visible in the background.",
+        "reason": "This is an interior view of a kitchen and dining space."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "isRoom": true,
+        "objects": [
+          "kitchen island",
+          "cabinetry",
+          "bar stools",
+          "pendant light"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Warm wood / Oak",
+          "Black"
+        ],
+        "chairs": [
+          "Bar stools"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "fe74cd34f43bc8b22641e9376ac65405a8c89b8bbe60fa2ce75ad17d0f7c0986",
+      "path": "images/fe74cd34f43bc8b22641e9376ac65405a8c89b8bbe60fa2ce75ad17d0f7c0986.webp",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2023/10/newark-floor-plans-scaled.webp",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A black and white architectural floorplan showing the layout of the ground and first floors of a house.",
+        "reason": "This is a technical floorplan document."
+      },
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "863534eade39ae837abdc4dde4ea69956ace6a1b3af62eda647e524875c37cc2",
+      "path": "images/863534eade39ae837abdc4dde4ea69956ace6a1b3af62eda647e524875c37cc2.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/NEWARK-BEDROOM-REVISED-140822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom with a large bed featuring a dark grey upholstered headboard, light grey bedding, and a mustard-coloured throw pillow. There is a beige ottoman at the foot of the bed, a small armchair, and a door leading to an en-suite bathroom.",
+        "reason": "This is an interior view of a bedroom."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [
+          "armchair",
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral",
+          "Mustard / Ochre"
+        ],
+        "chairs": [
+          "Armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "fc8ba7b6c95782ab7494c8387ec57445a584a7dec9e63d32128423d3ad853a77",
+      "path": "images/fc8ba7b6c95782ab7494c8387ec57445a584a7dec9e63d32128423d3ad853a77.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/NEWARK-03-080822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A close-up view of a kitchen island with a black marble countertop and dark grey cabinets. There are three pendant lights above the island and a dining area visible in the background.",
+        "reason": "This is an interior view of a kitchen."
+      },
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "isRoom": true,
+        "objects": [
+          "kitchen island",
+          "cabinetry",
+          "pendant light"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "96bb4b189ae8e52a0c294a5840eae6e620573187a4fcff1e62fc9c50267ea23f",
+      "path": "images/96bb4b189ae8e52a0c294a5840eae6e620573187a4fcff1e62fc9c50267ea23f.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/NEWARK-02-080822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room area featuring a dark green velvet sectional sofa, a glass-topped coffee table, and abstract wall art. The kitchen is visible in the background with a breakfast bar and stools.",
+        "reason": "This is an interior view of a living room."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "isRoom": true,
+        "objects": [
+          "kitchen island",
+          "sofa",
+          "coffee table"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "8b5531cc127adc0eabf6c633d7c077c04725983cd1a83d941df1f1c54257ac92",
+      "path": "images/8b5531cc127adc0eabf6c633d7c077c04725983cd1a83d941df1f1c54257ac92.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/08/NEWARK-GARDEN-ROOM-280822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining area with a round table, four upholstered chairs, and a modern chandelier. Large windows with white blinds and grey curtains look out onto a garden.",
+        "reason": "This is an interior view of a dining room."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Formal dining room",
+        "isRoom": true,
+        "objects": [
+          "pendant light"
+        ],
+        "wallpaper": null,
+        "curtains": "Floor-length curtains",
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "dab027f5fcf6b4d66c2a6ec22a91fc55dd868086f12d56640f1bad2e5a667eed",
+      "path": "images/dab027f5fcf6b4d66c2a6ec22a91fc55dd868086f12d56640f1bad2e5a667eed.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/08/NEWARK-HALL-01-280822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "A landing area at the top of a staircase with a small round side table, a decorative plant, and abstract wall art. The walls are covered in a textured beige wallpaper.",
+        "reason": "This is an interior view of a hallway/landing."
+      },
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "isRoom": true,
+        "objects": [
+          "side table"
+        ],
+        "wallpaper": "Textured neutral",
+        "curtains": null,
+        "colours": [
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "ccab899f37da9657131898367eefed28d3de153230929642254b0faa15b99010",
+      "path": "images/ccab899f37da9657131898367eefed28d3de153230929642254b0faa15b99010.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/MACHRIE-KITCHEN-030822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "An open-plan living and dining area featuring a light grey sofa, a round wooden coffee table with decorative bowls, a dining table with four chairs, and a modern pendant light. The room has light walls, wooden flooring, and large windows.",
+        "reason": "This is a rendered image of a living and dining space."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "isRoom": true,
+        "objects": [
+          "dining table",
+          "sofa",
+          "coffee table",
+          "dining chairs",
+          "pendant light"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey"
+        ],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "2ae580e84be09da765d1bacbea1a37af6e7fe317540851853d69895b31b5668f",
+      "path": "images/2ae580e84be09da765d1bacbea1a37af6e7fe317540851853d69895b31b5668f.webp",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2023/07/machrie-house-type-jackton.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with a white rendered facade, stone cladding on the lower front section, a dark grey tiled roof, and an integrated garage. There is a paved driveway and a small front garden with a hedge.",
+        "reason": "This is an architectural exterior render of a property."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "d5ee36b1b3f861e784878de4ccdcaf9f749d10fe1824c46b5dc89d1ad71f88d0",
+      "path": "images/d5ee36b1b3f861e784878de4ccdcaf9f749d10fe1824c46b5dc89d1ad71f88d0.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/MACHRIE-KITCHEN-02-100822.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A close-up view of a dining area featuring a round dark wood table with four beige upholstered chairs, a modern sculptural pendant light, and a bowl of pears. The background shows a living area with a sofa and large glass doors leading to a garden.",
+        "reason": "This is a rendered image of a dining area."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Formal dining room",
+        "isRoom": true,
+        "objects": [
+          "sofa",
+          "dining chairs",
+          "pendant light"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Cream / Neutral",
+          "Warm wood / Oak"
+        ],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "0b1f2efaa2606f5092ce199cdf18dc4f704672c7c08a5fa68ed55614034867fd",
+      "path": "images/0b1f2efaa2606f5092ce199cdf18dc4f704672c7c08a5fa68ed55614034867fd.webp",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2023/10/machrie-floor-plans-scaled.webp",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A black and white architectural floorplan showing the layout of a ground floor and a first floor, including rooms like the lounge, kitchen, garage, and bedrooms.",
+        "reason": "This is a technical floorplan document."
+      },
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "8d93e59e07141c5fc3364ccab469dec58dce501780864043b2f12415a11cec2a",
+      "path": "images/8d93e59e07141c5fc3364ccab469dec58dce501780864043b2f12415a11cec2a.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/MACHRIE-BATHROOM.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A modern bathroom with grey marble-effect wall and floor tiles, a white bathtub, a separate glass-enclosed shower, a wall-mounted toilet, and a pedestal sink. A large round mirror is mounted above the bath.",
+        "reason": "This is a rendered image of a bathroom."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "isRoom": true,
+        "objects": [
+          "bathtub",
+          "shower",
+          "vanity unit",
+          "toilet",
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "1c7f35cb2d3bdac017c7a7c585e0c191b4437b391f2cdb6c3120e8420b761fc3",
+      "path": "images/1c7f35cb2d3bdac017c7a7c585e0c191b4437b391f2cdb6c3120e8420b761fc3.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/MACHRIE-BEDROOM-260822-002.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A master bedroom featuring a large bed with a tall upholstered headboard, blue and grey bedding, a decorative botanical wallpaper feature wall, a modern chandelier, and built-in white wardrobes.",
+        "reason": "This is a rendered image of a bedroom."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [
+          "bed",
+          "pendant light"
+        ],
+        "wallpaper": "Feature accent wall",
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "1d69822ae4227e109f7d1a4eb68f3be9e5ee735274d8470cb6b44d339bcd76c5",
+      "path": "images/1d69822ae4227e109f7d1a4eb68f3be9e5ee735274d8470cb6b44d339bcd76c5.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/MACHRIE-BATHROOM-02.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A close-up detail of a white pedestal sink with a chrome faucet, set against grey marble-effect tiled walls. A window with a grey blind and a glass vase with greenery are visible on the ledge.",
+        "reason": "This is a detail shot of a bathroom interior."
+      },
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "isRoom": true,
+        "objects": [
+          "vanity unit"
+        ],
+        "wallpaper": null,
+        "curtains": "Window blinds",
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "e9b3db3346129874c819c844f22cd0ce04283b4036ed472b5a974845595271f7",
+      "path": "images/e9b3db3346129874c819c844f22cd0ce04283b4036ed472b5a974845595271f7.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/CULZEAN-BEDROOM.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "A bedroom featuring a tufted grey upholstered headboard, a bed with brown and grey bedding, a dark wood bedside table, and a metal leaf wall art piece. A full-length mirror is visible in the background.",
+        "reason": "This is a rendered image of a bedroom."
+      },
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [
+          "bed",
+          "nightstand",
+          "mirror"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "520326e38468482abe6af9e403bf387ef3caac956e3e97f7c08239bbf9ce05bb",
+      "path": "images/520326e38468482abe6af9e403bf387ef3caac956e3e97f7c08239bbf9ce05bb.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/CULZEAN-REAR-060922-002.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "Rear view of a modern bungalow with white rendered walls, a grey tiled roof, and patio doors. There is a paved patio area furnished with a dark grey outdoor sofa, two matching armchairs, and a low coffee table. Large grey planters with greenery are present.",
+        "reason": "This is an exterior view of the property showing the rear garden and patio furniture."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House rear",
+        "isRoom": true,
+        "objects": [
+          "sofa",
+          "coffee table",
+          "patio"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "a689d1d2edaebab998b4d0560f3d5cd65cf21e01ced408a222952fe7dcdf19a4",
+      "path": "images/a689d1d2edaebab998b4d0560f3d5cd65cf21e01ced408a222952fe7dcdf19a4.webp",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2023/07/culzean-house-type-jackton.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "Front exterior view of a single-story bungalow featuring white render and stone cladding accents. It has a dark grey front door, a paved driveway, and a neatly trimmed hedge in the foreground.",
+        "reason": "This is an exterior view of the front of the property."
+      },
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "79c86aa95e063b340a84dd9898cd300cf499c0a675503283e1831cc64f8e1c23",
+      "path": "images/79c86aa95e063b340a84dd9898cd300cf499c0a675503283e1831cc64f8e1c23.webp",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2023/10/culzean-floor-plans-scaled.webp",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of a ground floor, including a kitchen, dining/family area, lounge, three bedrooms (one with en-suite), a bathroom, and a utility room.",
+        "reason": "This is a technical floorplan document."
+      },
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "5d1b9e775f9531d4d5b02cc29fe827a1d7f3b1809d4a97ac7827f40e3da8a7e6",
+      "path": "images/5d1b9e775f9531d4d5b02cc29fe827a1d7f3b1809d4a97ac7827f40e3da8a7e6.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/CULZEAN-KITCHEN-250922.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining area featuring a round dark wood table with four upholstered cream chairs. Dark grey kitchen cabinetry is visible in the background, along with a large wall clock and a prominent woven pendant light.",
+        "reason": "This is an interior view of a dining space."
+      },
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining area",
+        "isRoom": true,
+        "objects": [
+          "cabinetry",
+          "dining chairs",
+          "pendant light"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral",
+          "Warm wood / Oak"
+        ],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "739c615d37f7d069bc08860e86747c01598c206353e658c939ccfcf1d0fb74ad",
+      "path": "images/739c615d37f7d069bc08860e86747c01598c206353e658c939ccfcf1d0fb74ad.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/CULZEAN-LOUNGE-250922.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "A living room with a large grey sectional sofa, a black glass coffee table, and a floor lamp. The walls are dark grey with a large abstract painting, and there are floor-to-ceiling curtains leading to patio doors.",
+        "reason": "This is an interior view of a living room."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [
+          "sofa",
+          "coffee table",
+          "patio"
+        ],
+        "wallpaper": null,
+        "curtains": "Floor-length curtains",
+        "colours": [
+          "Grey",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "6c4dbbcabc9694fdef48c4c5fa424d3fc3959e23145fa2169359cfb88689fc08",
+      "path": "images/6c4dbbcabc9694fdef48c4c5fa424d3fc3959e23145fa2169359cfb88689fc08.jpg",
+      "sourceUrl": "https://www.lynchhomes.co.uk/wp-content/uploads/2022/07/CULZEAN-KITCHEN-02-250922.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "An open-plan living and dining area. The living space has grey sofas, a wooden coffee table, and a textured rug. The dining area features a round table with cream chairs and dark grey kitchen units in the background.",
+        "reason": "This is an interior view of an open-plan living and dining area."
+      },
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Open-plan living",
+        "isRoom": true,
+        "objects": [
+          "cabinetry",
+          "coffee table",
+          "dining chairs",
+          "rug"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      },
+      "analysisModel": "gemini-3.1-flash-lite"
+    }
+  ],
   "errors": [],
   "metrics": {
     "sitemapDevelopments": 3,
-    "qualifyingDiscovered": 0,
+    "qualifyingDiscovered": 3,
     "propertyLimitOmissions": 0,
-    "imagesAttempted": 0,
+    "reusedImageSources": 6,
+    "imagesAttempted": 22,
     "pendingImages": 0,
-    "matchedImages": 0,
+    "matchedImages": 19,
     "developmentLimitOmissions": 0,
-    "collectedUniqueImages": 0
+    "collectedUniqueImages": 22
   },
-  "completedAt": "2026-10-02T16:16:00.331Z"
+  "completedAt": "2026-10-02T23:34:13.621Z"
 }

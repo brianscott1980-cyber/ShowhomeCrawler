@@ -23,6 +23,7 @@ async function main() {
  const site = builderSite(values.builder); const { developmentUrls, discoverHomes, galleryImages } = site;
  const number = (v: string, max: number) => { const n = Number(v); if (!Number.isInteger(n) || n <= 0 || n > max) throw new Error('Invalid crawl limit.'); return n; };
  const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 20000);
+ if (values['all-images'] && !values['discover-only']) throw new Error('All-images crawling requires --discover-only; categorise with results:classify --all-images.');
  const model = env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
  if (!values['discover-only'] && !env.GEMINI_API_KEY) throw new Error('Set GEMINI_API_KEY locally or use --discover-only.');
  const folder = resolve(values.output ?? `results/${site.slug}-home-offices`);
@@ -45,7 +46,7 @@ async function main() {
  };
  const sql = values.persist ? createDatabase() : null;
  const repo = sql ? new PostgresCatalogRepository(sql, site) : null;
- const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question, analysisVersion, developments: [], properties: [], images: [], errors: [], metrics: {} };
+ const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question: values['all-images'] ? 'All property gallery images' : question, analysisVersion: values['all-images'] ? 'all-property-images-v1' : analysisVersion, developments: [], properties: [], images: [], errors: [], metrics: {} };
  let stopped = false; process.once('SIGINT', () => { stopped = true; }); process.once('SIGTERM', () => { stopped = true; });
  try {
   const sourceText = (url: string) => values['browser-snapshots'] ? readFile(`results/.cache/pages/${sha256(url)}.html`, 'utf8') : client.text(url);

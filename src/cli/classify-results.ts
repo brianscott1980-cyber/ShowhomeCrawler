@@ -13,6 +13,7 @@ async function main() {
  if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY required.');
  const report: RunReport = JSON.parse(await readFile(folder + '/results.json', 'utf8'));
  const version = values['all-images'] ? 'all-property-images-v1' : analysisVersion;
+ if (values['all-images']) { report.question = 'All property gallery images'; report.analysisVersion = version; }
  const classificationModel = values.model ?? report.model;
  for (const image of report.images) if (image.verdict) image.analysisModel ??= report.model;
  for (const development of report.developments) if (development.name) development.name = load(development.name).text();
