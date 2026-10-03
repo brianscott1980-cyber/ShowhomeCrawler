@@ -1,4 +1,5 @@
 'use client';
+import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
 import {useUrlFilters} from './url-filters';
 import {withFilters} from './url-query';
@@ -77,7 +78,7 @@ export function GroupCards({
   <>
    {isBuildings && (
     <div className="site-filter-panel" style={{marginBottom: 24}}>
-     <div className="filters site-filters" role="search" aria-label="Filter buildings">
+     <DirectoryFilters className="filters site-filters" label="Filter buildings">
       <label>
        Builder
        <select value={developer} onChange={e => setDeveloper(e.target.value)}>
@@ -121,7 +122,7 @@ export function GroupCards({
         Reset filters
        </button>
       )}
-     </div>
+     </DirectoryFilters>
     </div>
    )}
    <div className="directory-toolbar">

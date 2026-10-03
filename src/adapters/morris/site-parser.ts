@@ -1,3 +1,4 @@
+import {cleanHomeName} from '../../reports/home-display.js';
 import { load } from 'cheerio';
 import type { PropertyCandidate, GalleryImageCandidate } from '../../models/domain.js';
 
@@ -105,7 +106,7 @@ export function discoverHomes(html: string, url: string) {
           homes.push({
             externalId: plotNumber ? `${new URL(targetUrl).pathname}#plot-${plotNumber}` : new URL(targetUrl).pathname,
             houseTypeExternalId: houseName.toLowerCase().replace(/\W+/g, '-'),
-            name: fullTitle,
+            name: cleanHomeName(fullTitle),
             url: targetUrl,
             plotNumber,
             bedrooms,
@@ -139,7 +140,7 @@ export function discoverHomes(html: string, url: string) {
               homes.push({
                 externalId: u.pathname,
                 houseTypeExternalId: parts[0]!.toLowerCase(),
-                name: houseName,
+                name: cleanHomeName(houseName),
                 url: u.href,
                 bedrooms: null,
                 price: null,

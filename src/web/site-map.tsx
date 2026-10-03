@@ -1,4 +1,5 @@
 'use client';
+import {focusPadding} from './map-focus';
 
 import {useEffect, useRef, useState} from 'react';
 import type {Map as MapInstance, Marker, GeoJSONSource} from 'maplibre-gl';
@@ -72,7 +73,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
       const zoom=await (instance.getSource('sites') as GeoJSONSource).getClusterExpansionZoom(Number(feature.properties?.cluster_id));
       if(disposed||request!==clusterRequest.current)return;
       instance.stop();
-      instance.jumpTo({center:feature.geometry.coordinates as [number,number],zoom:Math.min(instance.getMaxZoom(),Math.max(zoom,instance.getZoom()+1))});
+      instance.easeTo({duration:0,center:feature.geometry.coordinates as [number,number],zoom:Math.min(instance.getMaxZoom(),Math.max(zoom,instance.getZoom()+1))});
       publish();
      } catch { /* A cluster can disappear when filters change while its zoom is resolved. */ }
     });
@@ -93,7 +94,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
    });
    instance.on('error',()=>{if(!disposed&&!instance.isStyleLoaded()){setStatus('Map unavailable. Switch to List or Cards to browse every development.');latest.current.onUnavailable();}});
    const mapped=latest.current.cards.filter(hasCoordinates);
-   if(!saved&&mapped.length)instance.fitBounds(mapped.reduce((b,c)=>b.extend([c.longitude,c.latitude]),new LngLatBounds([mapped[0]!.longitude,mapped[0]!.latitude],[mapped[0]!.longitude,mapped[0]!.latitude])),{padding:55,maxZoom:12,duration:0});
+   if(!saved&&mapped.length)instance.fitBounds(mapped.reduce((b,c)=>b.extend([c.longitude,c.latitude]),new LngLatBounds([mapped[0]!.longitude,mapped[0]!.latitude],[mapped[0]!.longitude,mapped[0]!.latitude])),{padding:latest.current.focusArea?{left:latest.current.focusArea.left+24,top:latest.current.focusArea.top+24,right:Math.max(24,instance.getCanvas().clientWidth-latest.current.focusArea.right+24),bottom:Math.max(24,instance.getCanvas().clientHeight-latest.current.focusArea.bottom+24)}:55,maxZoom:12,duration:0});
    resize=new ResizeObserver(()=>instance.resize());resize.observe(container.current);
   }).catch(()=>{if(!disposed){setStatus('Map unavailable. Switch to List or Cards to browse every development.');latest.current.onUnavailable();}});
   return()=>{disposed=true;resize?.disconnect();highlight.current?.remove();highlight.current=null;map.current?.remove();map.current=null;};
@@ -161,6 +162,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
   void update();
   return()=>{disposed=true;request++;instance.off('idle',update);paintCluster(null);marker.remove();};
  },[activeKey,hoverKey,cards,ready]);
+ useEffect(()=>{const instance=map.current;if(ready&&instance)instance.setPadding(focusPadding(focusArea,instance.getCanvas()));},[ready,focusArea]);
  useEffect(()=>{
   const instance=map.current,card=cards.find(c=>c.key===activeKey);
   if(!ready||!instance)return;

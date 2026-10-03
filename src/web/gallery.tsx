@@ -1,4 +1,5 @@
 'use client';
+import {DirectoryFilters} from './directory-filters';
 import { homeTypeName, plotDetails } from '../reports/home-display';
 import { type ReactNode, type ComponentProps, type CSSProperties, useEffect, useRef, useState } from 'react';
 import type { RunReport } from '../reports/report';
@@ -242,7 +243,7 @@ export function Gallery({
     </div>
     <div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : 'Explore the collection'}</h2></div>
    </>}
-   {!featured && <><div className="filters">
+   {!featured && <><DirectoryFilters className="filters">
     <label>
      Search
      <input
@@ -296,7 +297,7 @@ export function Gallery({
      <label>Site<select value={filters.site} onChange={e=>setFilters({...filters,site:e.target.value})}><option value="">All sites</option>{[...new Set(available.flatMap(i=>i.homes.map(h=>h.development)))].sort().map(name=><option key={name}>{name}</option>)}</select></label>
     </>}
     <button className="results-reset" onClick={() => setFilters(galleryDefaults)}>Clear filters</button>
-   </div>
+   </DirectoryFilters>
 
    <div className="directory-toolbar" style={{ marginTop: 24 }}>
     <ViewOptions view={view} onChange={changeView} ariaLabel="Image card layout" />
