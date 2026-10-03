@@ -1,0 +1,1930 @@
+{
+  "builder": {
+    "name": "Dandara",
+    "slug": "dandara",
+    "websiteUrl": "https://www.dandara.com"
+  },
+  "status": "completed_with_gaps",
+  "startedAt": "2026-10-03T12:45:01.435Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "All property gallery images",
+  "analysisVersion": "all-property-images-v1",
+  "developments": [
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "Hazelwood",
+      "status": "complete",
+      "homes": 17,
+      "qualifying": 17
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/",
+      "name": "The Pines",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/the-grange/",
+      "name": "Hazelwood",
+      "status": "redirected",
+      "homes": 1,
+      "qualifying": 1,
+      "warning": "Alias of https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/"
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-midlothian/dalkeith/eskbank-gardens/",
+      "name": "New Homes in East Lothian",
+      "status": "retired",
+      "homes": 1,
+      "qualifying": 1,
+      "warning": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/stoneywood/",
+      "name": "New Homes in Aberdeen",
+      "status": "retired",
+      "homes": 1,
+      "qualifying": 1,
+      "warning": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/grandhome/",
+      "name": "New Homes in Aberdeen",
+      "status": "retired",
+      "homes": 1,
+      "qualifying": 1,
+      "warning": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/north-berwick/barley-brae/",
+      "name": "New Homes in East Lothian",
+      "status": "retired",
+      "homes": 1,
+      "qualifying": 1,
+      "warning": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-midlothian/straiton/ashgrove/",
+      "name": "Ways to Buy Your New Home",
+      "status": "retired",
+      "homes": 1,
+      "qualifying": 1,
+      "warning": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-midlothian/shawfair/shawfair/",
+      "name": "Ways to Buy Your New Home",
+      "status": "retired",
+      "homes": 1,
+      "qualifying": 1,
+      "warning": "Source redirects to a marketing or regional page; not an active development."
+    }
+  ],
+  "properties": [
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Beech, Home 38",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-beech-home-38/",
+      "bedrooms": 4,
+      "price": 519995,
+      "plots": [
+        {
+          "price": 519995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "be19ceb088027e39eb466a33bb8779ed659454b99595609e409b66b7ef7c84d2",
+        "3d4be5f0511f5f9176f134cca9ff65e99cf692f01e2dcf3e60dc30e97248eb01",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Yew SR, Home 21",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-yew-sr-home-21/",
+      "bedrooms": 5,
+      "price": 584995,
+      "plots": [
+        {
+          "price": 584995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8ebb2c885d898b75894bb13b94079828b054f08096d3d99f0cf4323e584de9ee",
+        "304988b4e077c9a0d3f627164433d6428d1aad58f7fd8ae327a836cbc77eae8b",
+        "85b523a76b5774ddd617cd8dcec8d7152422dd0562bfdc374d512c4d6e805e09",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Hazel, Home 20",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-hazel-home-20/",
+      "bedrooms": 3,
+      "price": 399995,
+      "plots": [
+        {
+          "price": 399995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7f74cf3fb68cbe7a8eed9348c582a1b19af8d51a0378cda3634f41232af96da9",
+        "21368dbb561a7e668c0b46cabee471985122c578c51889d9e887405573b00c72",
+        "8f0b242c2f5f82dc203d461b9443477973ac50bc0bb32cdfcebb137eaf1e1fbe",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Yew, Home 19",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/plot-d19-the-yew/",
+      "bedrooms": 5,
+      "price": 539995,
+      "plots": [
+        {
+          "price": 539995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bf337c41e50f12018f2e6a7dd3b4307d5c3503ab52afafa97fd40010577ff6f9",
+        "d936c2a724ad8e6b73e27546f47edae3fc62066f66bf0f21ddff6aaa107a75a1",
+        "f1575aad2ce8f357814fe5b091060aa855cb719c0f40565da2835d3a78a52d68",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 2, Home 31",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-2-home-31/",
+      "bedrooms": 2,
+      "price": 254995,
+      "plots": [
+        {
+          "price": 254995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "923f0da719cd9c194e30c9bf736f05208fba6e843361a82e963c06b6299e6312",
+        "a4bad8ff9ca93fedd79dbe312a7fe6f7fa195b8b89731bd89bb860d467c4836b",
+        "2dafaeb807dbf7127945ce67a4fc8568f1afb24b9ec7a3602e9e9fe748704cfe",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 2, Home 29",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-2-home-29/",
+      "bedrooms": 2,
+      "price": 254995,
+      "plots": [
+        {
+          "price": 254995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "923f0da719cd9c194e30c9bf736f05208fba6e843361a82e963c06b6299e6312",
+        "a4bad8ff9ca93fedd79dbe312a7fe6f7fa195b8b89731bd89bb860d467c4836b",
+        "2dafaeb807dbf7127945ce67a4fc8568f1afb24b9ec7a3602e9e9fe748704cfe",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 3, Home 32",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-3-home-32/",
+      "bedrooms": 3,
+      "price": 297995,
+      "plots": [
+        {
+          "price": 297995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "09920f064c763d0bf27eb5eb7c68687153e58514b22a996f473c0c9cc37c3344",
+        "cea00e462655716d9fe2fd0c1ea9514061f8b97af6a401f0789fd23c182ce80e",
+        "137cc93954ba3ca7075a2f04b76b88454b5fe25cc6b14bf735d7d8115711c423",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 3, Home 34",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-3-home-34/",
+      "bedrooms": 3,
+      "price": 289995,
+      "plots": [
+        {
+          "price": 289995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "09920f064c763d0bf27eb5eb7c68687153e58514b22a996f473c0c9cc37c3344",
+        "cea00e462655716d9fe2fd0c1ea9514061f8b97af6a401f0789fd23c182ce80e",
+        "137cc93954ba3ca7075a2f04b76b88454b5fe25cc6b14bf735d7d8115711c423",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Beech, Home 52",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-beech-home-52/",
+      "bedrooms": 4,
+      "price": 10000,
+      "plots": [
+        {
+          "price": 10000,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "be19ceb088027e39eb466a33bb8779ed659454b99595609e409b66b7ef7c84d2",
+        "3d4be5f0511f5f9176f134cca9ff65e99cf692f01e2dcf3e60dc30e97248eb01",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 3, Home 82",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-3-home-82/",
+      "bedrooms": 3,
+      "price": 291995,
+      "plots": [
+        {
+          "price": 291995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "09920f064c763d0bf27eb5eb7c68687153e58514b22a996f473c0c9cc37c3344",
+        "cea00e462655716d9fe2fd0c1ea9514061f8b97af6a401f0789fd23c182ce80e",
+        "137cc93954ba3ca7075a2f04b76b88454b5fe25cc6b14bf735d7d8115711c423",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 3, Home 83",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-3-home-83/",
+      "bedrooms": 3,
+      "price": 294995,
+      "plots": [
+        {
+          "price": 294995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "09920f064c763d0bf27eb5eb7c68687153e58514b22a996f473c0c9cc37c3344",
+        "cea00e462655716d9fe2fd0c1ea9514061f8b97af6a401f0789fd23c182ce80e",
+        "137cc93954ba3ca7075a2f04b76b88454b5fe25cc6b14bf735d7d8115711c423",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Beech, Home 50",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-beech-home-50/",
+      "bedrooms": 4,
+      "price": 529995,
+      "plots": [
+        {
+          "price": 529995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "be19ceb088027e39eb466a33bb8779ed659454b99595609e409b66b7ef7c84d2",
+        "3d4be5f0511f5f9176f134cca9ff65e99cf692f01e2dcf3e60dc30e97248eb01",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 2, Home 26",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-2-home-2/",
+      "bedrooms": 2,
+      "price": 239995,
+      "plots": [
+        {
+          "price": 239995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "923f0da719cd9c194e30c9bf736f05208fba6e843361a82e963c06b6299e6312",
+        "a4bad8ff9ca93fedd79dbe312a7fe6f7fa195b8b89731bd89bb860d467c4836b",
+        "2dafaeb807dbf7127945ce67a4fc8568f1afb24b9ec7a3602e9e9fe748704cfe",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Yew SR, Home 51",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-yew-sr-home-51/",
+      "bedrooms": 5,
+      "price": 589995,
+      "plots": [
+        {
+          "price": 589995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8ebb2c885d898b75894bb13b94079828b054f08096d3d99f0cf4323e584de9ee",
+        "304988b4e077c9a0d3f627164433d6428d1aad58f7fd8ae327a836cbc77eae8b",
+        "85b523a76b5774ddd617cd8dcec8d7152422dd0562bfdc374d512c4d6e805e09",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Ash 2, Home 25",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash-2-home/",
+      "bedrooms": 2,
+      "price": 244995,
+      "plots": [
+        {
+          "price": 244995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "923f0da719cd9c194e30c9bf736f05208fba6e843361a82e963c06b6299e6312",
+        "a4bad8ff9ca93fedd79dbe312a7fe6f7fa195b8b89731bd89bb860d467c4836b",
+        "2dafaeb807dbf7127945ce67a4fc8568f1afb24b9ec7a3602e9e9fe748704cfe",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "The Oak, Home 80",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/the-oak-home-80/",
+      "bedrooms": 4,
+      "price": 539995,
+      "plots": [
+        {
+          "price": 539995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f8946863f3bc82209c3218fa4e37b08525d6fbddf190bbf067d562285fa14c5b",
+        "6270dae8a973707c3e109ccebc49dd50608dbf60551ddd9b1922a9a9bb3206fb",
+        "a2649c26e6f0a82a8682a5019c49e9da19e60a428ad7e0faccd58b72883d6e96",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282"
+      ]
+    },
+    {
+      "development": "Hazelwood",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "name": "Hazelwood development gallery",
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [],
+      "imageIds": [
+        "f1c890995ef6051486aecbb49043912db6869996db3c53bb2a098ba3b4e22ee2",
+        "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+        "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+        "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+        "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+        "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+        "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+        "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+        "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+        "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282",
+        "47a96dd2ac1e8fc66a9f431ff5cdc4316f3d3044f4a2d53ef8fbbbe8a94535f7",
+        "aba0ef27cba16093a482ed7c105beb7acafdedc9dfc061f2fd8263cbc0a5cce6"
+      ]
+    },
+    {
+      "development": "The Pines",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/",
+      "name": "The Tiree V1, Home 69",
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/the-tiree-v1-home-69/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "d04bd2b86b66c389f0b3452261dc4e480a14ad4e3097001c1520cf9606307f2b",
+        "a1a39983c89e8cc091f32b5ad953629d8fd1637d0c496cd4c5b7263d32a7ef04",
+        "36e7d165c62b7ebfffc75b932c7b0f9094928b91f82bf0fc6909f0bbb9ced3eb",
+        "8c80dc827cdf737f14ae11c7f7b874bf3759f85a1afe7047f0025e827221dfe1",
+        "fcc7d5458d32cc4702ddebd4db5e280b63bb94e5e5ea489698c73d45e3a80955",
+        "41c18ac2a6354c80cc3027692fecf422999b290f438fdc1effdaba31c910606e"
+      ]
+    },
+    {
+      "development": "The Pines",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/",
+      "name": "The Canna V2, Home 84",
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/the-canna-v2-home-84/",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "db642534df6da30292ed5a91af0257b059b2a14339fcb454f29baad02e303558",
+        "0dddca86829c970b6665d4171f9cb3d759a9a4cb70edb466f85075ea7a4f950d",
+        "d9f3d1475fa65491a974d7a409232f90022917dce9154d267ed39474f63a9bc0",
+        "8c80dc827cdf737f14ae11c7f7b874bf3759f85a1afe7047f0025e827221dfe1",
+        "fcc7d5458d32cc4702ddebd4db5e280b63bb94e5e5ea489698c73d45e3a80955",
+        "41c18ac2a6354c80cc3027692fecf422999b290f438fdc1effdaba31c910606e"
+      ]
+    },
+    {
+      "development": "The Pines",
+      "developmentUrl": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/",
+      "name": "The Pines development gallery",
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [],
+      "imageIds": [
+        "40c95228bd07edab6105ef43ef5909423a84bfe5f411ee7c143b4890c28fa8de",
+        "8c80dc827cdf737f14ae11c7f7b874bf3759f85a1afe7047f0025e827221dfe1",
+        "fcc7d5458d32cc4702ddebd4db5e280b63bb94e5e5ea489698c73d45e3a80955",
+        "41c18ac2a6354c80cc3027692fecf422999b290f438fdc1effdaba31c910606e"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9",
+      "path": "images/732bb1b14443d8fef42eb56d78084966354f34c624e68a99474a818a89c0d8f9.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Beech-Render-v3__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white render walls, a grey tiled roof with solar panels, and an integrated wooden garage door.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "be19ceb088027e39eb466a33bb8779ed659454b99595609e409b66b7ef7c84d2",
+      "path": "images/be19ceb088027e39eb466a33bb8779ed659454b99595609e409b66b7ef7c84d2.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Beech-Bay-Standard-Ground-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout including a lounge, dining area, sunroom, kitchen, utility, WC, and garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "3d4be5f0511f5f9176f134cca9ff65e99cf692f01e2dcf3e60dc30e97248eb01",
+      "path": "images/3d4be5f0511f5f9176f134cca9ff65e99cf692f01e2dcf3e60dc30e97248eb01.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Beech-Bay-Standard-First-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper floor layout including four bedrooms, a bathroom, and two ensuites.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99",
+      "path": "images/b7ff9ef9762b17b8a0c545381423798bb692f0e7229ec62a447098cba15fbc99.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Images/7122528_DAN_Aberdeen_Hazelwood_Web_Siteplan_2000x2000px_9276318__ScaleWidthWzEyMDBd.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "site map",
+        "description": "A color-coded site map showing the layout of a housing development with various house types, parking, and a play area.",
+        "reason": "This is a site plan/map document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Document / Graphic",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732",
+      "path": "images/c2f7e1bf335b00a9b152637711393facca845c4ae7228f8c6d0d74a3c024c732.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/haz_N695_medium-2__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A photograph of a modern two-story house with white render and stone cladding, a wooden garage door, and a stone wall in the foreground.",
+        "reason": "This is a photograph of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b",
+      "path": "images/0601a75c862a2afdad2249cf136088b70115f528e99106c3e1d99ef99f46582b.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Hazel-1-v2__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white render, a grey tiled roof, and an integrated wooden garage door, set in a landscaped area.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c",
+      "path": "images/5bd9c1ff185e46e0722e825855792349d6cf35482a968165bf0c444d10a4154c.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Yew__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white render and grey stone cladding, featuring a wooden garage door and a paved driveway.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a",
+      "path": "images/f6b031569670ecfe4526a8b979eae7dab272eea8122751113b794bbd0182e07a.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Ash-2-1__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a row of three terraced houses with white render, grey tiled roofs, and individual front doors with small porches.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89",
+      "path": "images/0aeace8f741c01eac5d2a0c276fc3949649c0c34ac345ffd78a305c5eb5c3e89.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Ash-3-1-v2__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a semi-detached house with white walls, a dark grey tiled roof, and solar panels. The front features a small porch, a paved driveway, and a manicured hedge.",
+        "reason": "This is an exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b",
+      "path": "images/bd721e9589775a4ac5f56923e5734835fd8227c8a3334ab779ab4607a7becc6b.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/s01_N14_medium-3-1__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen/dining room",
+        "description": "A modern kitchen and dining area with white cabinetry, light wood-effect flooring, and a glass-topped dining table with four beige chairs. A large tree-themed artwork hangs on the wall.",
+        "reason": "This is an interior view of a kitchen and dining space."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Open-plan kitchen",
+        "isRoom": true,
+        "objects": [
+          "dining table",
+          "cabinetry",
+          "dining chairs"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Cream / Neutral",
+          "Warm wood / Oak"
+        ],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282",
+      "path": "images/70bb9615da06cb511cf1d47f45550568b6031adecfddf7b59e9d7abf48122282.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/750x509__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a detached house with white walls, a dark grey roof with solar panels, and a wooden garage door. There is a paved driveway and a small front garden with a hedge.",
+        "reason": "This is an exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8ebb2c885d898b75894bb13b94079828b054f08096d3d99f0cf4323e584de9ee",
+      "path": "images/8ebb2c885d898b75894bb13b94079828b054f08096d3d99f0cf4323e584de9ee.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/haz_N695_medium-1__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A photograph of a modern house exterior with white render and stone cladding. It features a wooden garage door, a paved path, and a front lawn enclosed by a stone wall.",
+        "reason": "This is an exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "304988b4e077c9a0d3f627164433d6428d1aad58f7fd8ae327a836cbc77eae8b",
+      "path": "images/304988b4e077c9a0d3f627164433d6428d1aad58f7fd8ae327a836cbc77eae8b.png",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/The-Yew-GOR_ground-floor_THE-WYND_HAZELWOOD__ScaleWidthWzc1MF0.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout, including a sunroom, dining area, kitchen, lounge, utility, WC, hall, and garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "85b523a76b5774ddd617cd8dcec8d7152422dd0562bfdc374d512c4d6e805e09",
+      "path": "images/85b523a76b5774ddd617cd8dcec8d7152422dd0562bfdc374d512c4d6e805e09.png",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/The-Yew-GOR_first-floor_THE-WYND_HAZELWOOD__ScaleWidthWzc1MF0.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper floor layout, including five bedrooms, en-suites, a bathroom, landing, and storage areas.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "7f74cf3fb68cbe7a8eed9348c582a1b19af8d51a0378cda3634f41232af96da9",
+      "path": "images/7f74cf3fb68cbe7a8eed9348c582a1b19af8d51a0378cda3634f41232af96da9.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Hazel__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a detached house with white walls, a dark grey roof with solar panels, and a wooden garage door. The front includes a paved driveway and a hedge.",
+        "reason": "This is an exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "21368dbb561a7e668c0b46cabee471985122c578c51889d9e887405573b00c72",
+      "path": "images/21368dbb561a7e668c0b46cabee471985122c578c51889d9e887405573b00c72.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/The-Hazel_ground-floor_THE-WYND_HAZELWOOD__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout, including a kitchen, dining area, lounge, utility, WC, and garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8f0b242c2f5f82dc203d461b9443477973ac50bc0bb32cdfcebb137eaf1e1fbe",
+      "path": "images/8f0b242c2f5f82dc203d461b9443477973ac50bc0bb32cdfcebb137eaf1e1fbe.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/The-Hazel_first-floor_THE-WYND_HAZELWOOD__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of an upper floor with three bedrooms, a bathroom, and an en-suite.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bf337c41e50f12018f2e6a7dd3b4307d5c3503ab52afafa97fd40010577ff6f9",
+      "path": "images/bf337c41e50f12018f2e6a7dd3b4307d5c3503ab52afafa97fd40010577ff6f9.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Yew__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white walls, stone cladding, a grey tiled roof with solar panels, and a paved driveway.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d936c2a724ad8e6b73e27546f47edae3fc62066f66bf0f21ddff6aaa107a75a1",
+      "path": "images/d936c2a724ad8e6b73e27546f47edae3fc62066f66bf0f21ddff6aaa107a75a1.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Yew-Standard-Ground-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout including a kitchen, dining area, lounge, utility, WC, and garage.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f1575aad2ce8f357814fe5b091060aa855cb719c0f40565da2835d3a78a52d68",
+      "path": "images/f1575aad2ce8f357814fe5b091060aa855cb719c0f40565da2835d3a78a52d68.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Yew-Standard-First-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper floor layout with five bedrooms, multiple en-suites, a family bathroom, and a landing.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "923f0da719cd9c194e30c9bf736f05208fba6e843361a82e963c06b6299e6312",
+      "path": "images/923f0da719cd9c194e30c9bf736f05208fba6e843361a82e963c06b6299e6312.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Ash-2__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a row of semi-detached or terraced houses with white facades, grey roofs, and small front gardens with paved parking.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a4bad8ff9ca93fedd79dbe312a7fe6f7fa195b8b89731bd89bb860d467c4836b",
+      "path": "images/a4bad8ff9ca93fedd79dbe312a7fe6f7fa195b8b89731bd89bb860d467c4836b.png",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Ash-2-FDOR_Ground-Floor_OAKFIELDS__ScaleWidthWzc1MF0.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout with an open-plan kitchen, dining, and lounge area, plus a utility and WC.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2dafaeb807dbf7127945ce67a4fc8568f1afb24b9ec7a3602e9e9fe748704cfe",
+      "path": "images/2dafaeb807dbf7127945ce67a4fc8568f1afb24b9ec7a3602e9e9fe748704cfe.png",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Ash-2-FDOR_First-Floor_OAKFIELDS-v2__ScaleWidthWzc1MF0.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper floor layout with two bedrooms, a bathroom, and a landing.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "09920f064c763d0bf27eb5eb7c68687153e58514b22a996f473c0c9cc37c3344",
+      "path": "images/09920f064c763d0bf27eb5eb7c68687153e58514b22a996f473c0c9cc37c3344.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/Ash-3-v2__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a pair of semi-detached houses with white walls, grey roofs with solar panels, and front gardens with paved driveways.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cea00e462655716d9fe2fd0c1ea9514061f8b97af6a401f0789fd23c182ce80e",
+      "path": "images/cea00e462655716d9fe2fd0c1ea9514061f8b97af6a401f0789fd23c182ce80e.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Ash-3-Standard-Ground-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout of a property, including a lounge, dining area, kitchen, hall, store, and WC.",
+        "reason": "This is a technical floorplan diagram, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "137cc93954ba3ca7075a2f04b76b88454b5fe25cc6b14bf735d7d8115711c423",
+      "path": "images/137cc93954ba3ca7075a2f04b76b88454b5fe25cc6b14bf735d7d8115711c423.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Ash-3-Standard-First-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the first floor layout, featuring three bedrooms, an en-suite, a bathroom, a landing, and storage.",
+        "reason": "This is a technical floorplan diagram, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f8946863f3bc82209c3218fa4e37b08525d6fbddf190bbf067d562285fa14c5b",
+      "path": "images/f8946863f3bc82209c3218fa4e37b08525d6fbddf190bbf067d562285fa14c5b.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/1050x632__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white rendered walls, a grey tiled roof with solar panels, and a wooden garage door.",
+        "reason": "This is a promotional exterior rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "6270dae8a973707c3e109ccebc49dd50608dbf60551ddd9b1922a9a9bb3206fb",
+      "path": "images/6270dae8a973707c3e109ccebc49dd50608dbf60551ddd9b1922a9a9bb3206fb.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Oak-Handed-Ground-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout, including a sunroom, dining area, kitchen, lounge, hall, utility, garage, and WC.",
+        "reason": "This is a technical floorplan diagram, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a2649c26e6f0a82a8682a5019c49e9da19e60a428ad7e0faccd58b72883d6e96",
+      "path": "images/a2649c26e6f0a82a8682a5019c49e9da19e60a428ad7e0faccd58b72883d6e96.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Plot_Images/HAZELWOOD-FLOORPLANS-FOR-WEBSITE-Oak-Handed-First-Floor-OCT24__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the first floor layout, featuring four bedrooms, two en-suites, a bathroom, a landing, and storage.",
+        "reason": "This is a technical floorplan diagram, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f1c890995ef6051486aecbb49043912db6869996db3c53bb2a098ba3b4e22ee2",
+      "path": "images/f1c890995ef6051486aecbb49043912db6869996db3c53bb2a098ba3b4e22ee2.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Images/haz_N689_medium-1-2__ScaleMaxWidthWzE5MjBd.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A photograph of a residential street featuring modern detached houses with white render, stone cladding, grey tiled roofs, and manicured front gardens.",
+        "reason": "This is a photograph of the exterior of a property development."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "47a96dd2ac1e8fc66a9f431ff5cdc4316f3d3044f4a2d53ef8fbbbe8a94535f7",
+      "path": "images/47a96dd2ac1e8fc66a9f431ff5cdc4316f3d3044f4a2d53ef8fbbbe8a94535f7.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Images/7122885_DAN_Aberdeen_Hazelwood_Master_SitePlan_Webfile_3_9811255__ScaleWidthWzEyMDBd.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "site map",
+        "description": "A color-coded site map showing the layout of a housing development, including roads, individual plots, green spaces, and a nearby retail area.",
+        "reason": "This is a site map/master plan graphic, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Document / Graphic",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "aba0ef27cba16093a482ed7c105beb7acafdedc9dfc061f2fd8263cbc0a5cce6",
+      "path": "images/aba0ef27cba16093a482ed7c105beb7acafdedc9dfc061f2fd8263cbc0a5cce6.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/Hazelwood_Images/haz_N466_1050x632px__FillWzEyMDAsNjc1XQ.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a residential street scene with multiple detached houses, green lawns, flowering cherry trees, and paved driveways.",
+        "reason": "This is a promotional exterior rendering of a property development."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d04bd2b86b66c389f0b3452261dc4e480a14ad4e3097001c1520cf9606307f2b",
+      "path": "images/d04bd2b86b66c389f0b3452261dc4e480a14ad4e3097001c1520cf9606307f2b.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines_Plot_Images/Tiree-V1-Contemporary__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with beige rendered walls, a dark tiled roof, and a grey garage door. There is a paved driveway with a blue car parked on the left and a small front garden with a hedge.",
+        "reason": "This is a real-world exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a1a39983c89e8cc091f32b5ad953629d8fd1637d0c496cd4c5b7263d32a7ef04",
+      "path": "images/a1a39983c89e8cc091f32b5ad953629d8fd1637d0c496cd4c5b7263d32a7ef04.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines_Plot_Images/THE-PINES_The-Tiree-V1_GF_6001906__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout of a house, including a lounge, kitchen/dining area, family room, utility, W.C., and a double garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "36e7d165c62b7ebfffc75b932c7b0f9094928b91f82bf0fc6909f0bbb9ced3eb",
+      "path": "images/36e7d165c62b7ebfffc75b932c7b0f9094928b91f82bf0fc6909f0bbb9ced3eb.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines_Plot_Images/THE-PINES_The-Tiree-V1_FF_6001909__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the first-floor layout, featuring five bedrooms, a study, a bathroom, and multiple en-suites.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8c80dc827cdf737f14ae11c7f7b874bf3759f85a1afe7047f0025e827221dfe1",
+      "path": "images/8c80dc827cdf737f14ae11c7f7b874bf3759f85a1afe7047f0025e827221dfe1.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines-_Images/5932110_DAN_Scotland_The-Pines_SITE-PLAN_WEB__ScaleWidthWzEyMDBd.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "site map",
+        "description": "A color-coded site map showing the layout of a housing development with numbered plots and a key identifying different house types.",
+        "reason": "This is a site map/development plan."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Document / Graphic",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "fcc7d5458d32cc4702ddebd4db5e280b63bb94e5e5ea489698c73d45e3a80955",
+      "path": "images/fcc7d5458d32cc4702ddebd4db5e280b63bb94e5e5ea489698c73d45e3a80955.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines_Plot_Images/Tiree-V1-Contemporary-1__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with beige walls, a dark roof, and a grey garage door. The scene includes a paved driveway, a blue car, and a small front garden.",
+        "reason": "This is a real-world exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "41c18ac2a6354c80cc3027692fecf422999b290f438fdc1effdaba31c910606e",
+      "path": "images/41c18ac2a6354c80cc3027692fecf422999b290f438fdc1effdaba31c910606e.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines_Plot_Images/Canna-V1-Contemporary-1__ScaleWidthWzMyMF0.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a white-walled two-story house with a separate detached garage. There is a paved driveway with a silver car and a front garden with a hedge.",
+        "reason": "This is a real-world exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "db642534df6da30292ed5a91af0257b059b2a14339fcb454f29baad02e303558",
+      "path": "images/db642534df6da30292ed5a91af0257b059b2a14339fcb454f29baad02e303558.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines-_Plot_Images/SUMMER-INCENTIVE-WEBSITE-10k__Resampled.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "promotional graphic",
+        "description": "A promotional graphic with a teal background featuring a soccer ball entering a net and text advertising a financial incentive for home buyers.",
+        "reason": "This is a promotional marketing graphic."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Document / Graphic",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0dddca86829c970b6665d4171f9cb3d759a9a4cb70edb466f85075ea7a4f950d",
+      "path": "images/0dddca86829c970b6665d4171f9cb3d759a9a4cb70edb466f85075ea7a4f950d.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines-_Plot_Images/THE-PINES_The-Canna-V2_GF_7262924__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing a ground floor layout with a kitchen/dining area, family room, lounge, W.C., utility, and a bedroom/study.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d9f3d1475fa65491a974d7a409232f90022917dce9154d267ed39474f63a9bc0",
+      "path": "images/d9f3d1475fa65491a974d7a409232f90022917dce9154d267ed39474f63a9bc0.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines-_Plot_Images/THE-PINES_The-Canna-V2_FF_7262921__ScaleWidthWzc1MF0.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of an upper floor with four bedrooms, a landing, a family bathroom, an ensuite, a Jack & Jill bathroom, and storage areas.",
+        "reason": "This is a technical drawing representing the layout of a property, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "40c95228bd07edab6105ef43ef5909423a84bfe5f411ee7c143b4890c28fa8de",
+      "path": "images/40c95228bd07edab6105ef43ef5909423a84bfe5f411ee7c143b4890c28fa8de.jpg",
+      "sourceUrl": "https://www.dandara.com/assets/The-Pines-_Images/The-Pines_Moffat-Lane_Wallyford_25_2752-RET-1__Resampled.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a modern residential development featuring light-coloured rendered walls, dark tiled roofs, and dark window frames. The scene includes a paved driveway and a clear blue sky.",
+        "reason": "This is a photograph of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-midlothian/dalkeith/eskbank-gardens/",
+      "stage": "source-retired",
+      "message": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/stoneywood/",
+      "stage": "source-retired",
+      "message": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/grandhome/",
+      "stage": "source-retired",
+      "message": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-east-lothian/north-berwick/barley-brae/",
+      "stage": "source-retired",
+      "message": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-midlothian/straiton/ashgrove/",
+      "stage": "source-retired",
+      "message": "Source redirects to a marketing or regional page; not an active development."
+    },
+    {
+      "url": "https://www.dandara.com/new-homes-for-sale/new-homes-midlothian/shawfair/shawfair/",
+      "stage": "source-retired",
+      "message": "Source redirects to a marketing or regional page; not an active development."
+    }
+  ],
+  "metrics": {
+    "sitemapDevelopments": 9,
+    "qualifyingDiscovered": 27,
+    "propertyLimitOmissions": 0,
+    "reusedImages": 1,
+    "reusedImageSources": 69,
+    "reusedGalleries": 15,
+    "imagesAttempted": 43,
+    "pendingImages": 0,
+    "matchedImages": 20,
+    "developmentLimitOmissions": 0,
+    "activeDevelopments": 2,
+    "retiredDevelopmentURLs": 6,
+    "redirectedDevelopmentURLs": 1,
+    "collectedUniqueImages": 42
+  },
+  "completedAt": "2026-10-03T12:54:30.593Z"
+}

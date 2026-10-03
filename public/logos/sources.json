@@ -143,5 +143,10 @@
     "slug": "lovell",
     "source": "https://newhomes.lovell.co.uk/images/lovell-logo.svg",
     "file": "lovell.svg"
+  },
+  {
+    "slug": "dandara",
+    "source": "https://www.dandara.com/images/dandara-logo.svg",
+    "file": "dandara.svg"
   }
 ]
