@@ -1,3 +1,4 @@
+import {saveGeminiState} from '../reports/gemini-status.js';
 import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { readFile, writeFile, rename, open, unlink } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
@@ -25,6 +26,7 @@ async function main() {
  const lock = await open(folder + '/.lock', 'wx');
  try {
   const pending = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict);
+  await saveGeminiState(folder,{state:'analysing',model:classificationModel});
   report.status = 'classifying'; await writeReport(folder, report);
   for (let offset = 0; offset < pending.length; offset += 8) {
    const images = pending.slice(offset, offset + 8);
@@ -47,6 +49,7 @@ async function main() {
    if (remaining.length) {
     let answers;
     for (let attempt = 0; ; attempt++) {
+     await saveGeminiState(folder,{state:'analysing',model:classificationModel});
      try { answers = await classifyBatch(remaining, env.GEMINI_API_KEY, classificationModel, values['all-images']); break; }
      catch (error) {
       const failure = error as { status?: number; retrySeconds?: number; quotaViolations?: {quotaMetric?: string; quotaId?: string; quotaValue?: string}[] };
@@ -55,6 +58,8 @@ async function main() {
       if (isRateLimit) {
        console.log('Gemini rate limit exceeded. Pausing for 30 minutes before retrying...');
        const delaySeconds = Math.max(failure.retrySeconds ?? 1800, 1800);
+       await saveGeminiState(folder,{state:'quota_wait',model:classificationModel,httpStatus:429,retryAt:new Date(Date.now()+delaySeconds*1000).toISOString()});
+       await writeReport(folder,report);
        for (let seconds = 0; seconds < delaySeconds; seconds += 10) await sleep(Math.min(10, delaySeconds - seconds) * 1000);
        continue;
       }
@@ -72,6 +77,7 @@ async function main() {
        break;
       }
       // Sleep in small intervals so cancellation and progress remain responsive.
+      await saveGeminiState(folder,{state:'retrying',model:classificationModel,httpStatus:failure.status});
       const delay = Math.min(120, Math.max(10, failure.retrySeconds ?? 10 * 2 ** attempt));
       for (let seconds = 0; seconds < delay; seconds += 10) await sleep(Math.min(10, delay - seconds) * 1000);
      }
@@ -91,6 +97,7 @@ async function main() {
    if (remaining.length) await sleep(4000);
   }
   report.status = report.errors.length || report.metrics.pendingImages || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';
+  await saveGeminiState(folder,{state:'complete',model:classificationModel});
   report.completedAt = new Date().toISOString(); await writeReport(folder, report);
  } catch (error) {
   if (report) { report.status = 'completed_with_gaps'; report.metrics.pendingImages = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).length; await writeReport(folder, report); }
