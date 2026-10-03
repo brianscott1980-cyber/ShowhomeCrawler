@@ -4,103 +4,174 @@
     "url": "https://www.barratthomes.co.uk/new-homes/dev002989-hilliers-heights/",
     "postcode": "BA11 5BX",
     "latitude": 51.2188864,
-    "longitude": -2.3187569,
-    "geography": {
-      "district": "Somerset",
-      "county": null,
-      "region": "South West",
-      "country": "England"
-    }
+    "longitude": -2.3187569
+  },
+  {
+    "name": "Sycamore Gardens",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002825-sycamore-gardens/",
+    "postcode": "KY12 8QB",
+    "latitude": 56.0637872,
+    "longitude": -3.5073863
+  },
+  {
+    "name": "Gilmerton Heights",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev001909-gilmerton-heights/",
+    "postcode": "EH17 8SH",
+    "latitude": 55.9007672335419,
+    "longitude": -3.1263523211422
   },
   {
     "name": "Bernets Nook",
     "url": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/",
     "postcode": "BB3 0LL",
     "latitude": 53.7218959,
-    "longitude": -2.5236511,
-    "geography": {
-      "district": "Blackburn with Darwen",
-      "county": null,
-      "region": "North West",
-      "country": "England"
-    }
+    "longitude": -2.5236511
+  },
+  {
+    "name": "New Lubbesthorpe",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002954-new-lubbesthorpe/",
+    "postcode": "LE19 4DE",
+    "latitude": 52.613674,
+    "longitude": -1.2214302
   },
   {
     "name": "Laurel Chase",
     "url": "https://www.barratthomes.co.uk/new-homes/dev002951-laurel-chase/",
     "postcode": "NE61 2NP",
     "latitude": 55.178562,
-    "longitude": -1.6828177,
-    "geography": {
-      "district": "Northumberland",
-      "county": null,
-      "region": "North East",
-      "country": "England"
-    }
+    "longitude": -1.6828177
   },
   {
     "name": "Franklin Gardens at Darwin Green",
     "url": "https://www.barratthomes.co.uk/new-homes/dev-002587-franklin-gardens-at-darwin-green/",
     "postcode": "CB3 0XX",
     "latitude": 52.2338211,
-    "longitude": 0.1106165,
-    "geography": {
-      "district": "Cambridge",
-      "county": "Cambridgeshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.1106165
+  },
+  {
+    "name": "Cuckoo Fields Barratt Homes",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002684-cuckoo-fields-barratt-homes/",
+    "postcode": "BN27 2BY",
+    "latitude": 50.8542517,
+    "longitude": 0.267668
+  },
+  {
+    "name": "Old Durham Gate",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+    "postcode": "DH1 2DX",
+    "latitude": 54.7741599,
+    "longitude": -1.539798
+  },
+  {
+    "name": "The Poppies - Barratt Homes",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-002651-the-poppies---barratt-homes/",
+    "postcode": "ME20 7YF",
+    "latitude": 51.2857139,
+    "longitude": 0.4767363
+  },
+  {
+    "name": "Brookside Meadows",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-002639-brookside-meadows/",
+    "postcode": "OX12 0PW",
+    "latitude": 51.6135661,
+    "longitude": -1.4264982
   },
   {
     "name": "Somer Meadows",
     "url": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/",
     "postcode": "BA3 4ZT",
     "latitude": 51.2714205,
-    "longitude": -2.479973,
-    "geography": {
-      "district": "Somerset",
-      "county": null,
-      "region": "South West",
-      "country": "England"
-    }
+    "longitude": -2.479973
+  },
+  {
+    "name": "Wigston Meadows at Kilby Bridge",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev003147-wigston-meadows-at-kilby-bridge/",
+    "postcode": "LE18 3AE",
+    "latitude": 52.569455,
+    "longitude": -1.099289
+  },
+  {
+    "name": "Barratt Homes at Sholden Meadows",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002971-barratt-homes-at-sholden-meadows/",
+    "postcode": "CT14 0AD",
+    "latitude": 51.222203,
+    "longitude": 1.3728572
+  },
+  {
+    "name": "Century Gardens",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002968-century-gardens/",
+    "postcode": "PO22 0DB",
+    "latitude": 50.8280978,
+    "longitude": -0.6395978
+  },
+  {
+    "name": "Willow Grove",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev001355-willow-grove/",
+    "postcode": "MK42 6AW",
+    "latitude": 52.0871879960061,
+    "longitude": -0.461798143376083
+  },
+  {
+    "name": "Hollygate Green",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002687-hollygate-green/",
+    "postcode": "NG12 3JW",
+    "latitude": 52.9130408,
+    "longitude": -1.0357828
+  },
+  {
+    "name": "The Meadows",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-002652-the-meadows/",
+    "postcode": "LN6 6AQ",
+    "latitude": 53.1492124,
+    "longitude": -0.6654014
+  },
+  {
+    "name": "Foxglove Park",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev003070-foxglove-park/",
+    "postcode": "EH33 2FE",
+    "latitude": 55.934546,
+    "longitude": -2.944249
+  },
+  {
+    "name": "King's Meadow",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-001093-king's-meadow/",
+    "postcode": "LE14 2TS",
+    "latitude": 52.7504569,
+    "longitude": -0.8981186
   },
   {
     "name": "Barratt Homes at Linmere",
     "url": "https://www.barratthomes.co.uk/new-homes/dev000965-barratt-homes-at-linmere/",
     "postcode": "LU5 7BT",
     "latitude": 51.9189228143591,
-    "longitude": -0.493874892729948,
-    "geography": {
-      "district": "Central Bedfordshire",
-      "county": null,
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.493874892729948
+  },
+  {
+    "name": "Aston Grange",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev000446-aston-grange/",
+    "postcode": "CV33 8AH",
+    "latitude": 52.1980493627605,
+    "longitude": -1.48495059493983
   },
   {
     "name": "Barratt at Overstone Gate",
     "url": "https://www.barratthomes.co.uk/new-homes/dev002200-barratt-at-overstone-gate/",
     "postcode": "NN6 0RW",
     "latitude": 52.2883376503671,
-    "longitude": -0.83208145755724,
-    "geography": {
-      "district": "West Northamptonshire",
-      "county": null,
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -0.83208145755724
   },
   {
     "name": "Russet Park",
     "url": "https://www.barratthomes.co.uk/new-homes/dev002697-russet-park/",
     "postcode": "YO23 3TJ",
     "latitude": 53.9102388,
-    "longitude": -1.1435455,
-    "geography": {
-      "district": "York",
-      "county": null,
-      "region": "Yorkshire and The Humber",
-      "country": "England"
-    }
+    "longitude": -1.1435455
+  },
+  {
+    "name": "Barratt Homes at Thoresby Vale",
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002702-barratt-homes-at-thoresby-vale/",
+    "postcode": "NG21 9PS",
+    "latitude": 53.2009547,
+    "longitude": -1.0540076
   }
 ]

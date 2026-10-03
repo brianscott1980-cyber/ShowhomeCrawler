@@ -37,6 +37,53 @@
     ]
   },
   {
+    "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/randall-fields-stotfold/availability-prices/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 685000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 725000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/silverburn-bridge-of-don/availability-prices/",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -144,6 +191,12 @@
         "style": "Detached"
       }
     ]
+  },
+  {
+    "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/burnland-meadows-westhill/availability-prices/",
+    "country": "Scotland",
+    "scope": "Collection homes",
+    "properties": []
   },
   {
     "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
@@ -590,6 +643,23 @@
     ]
   },
   {
+    "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 584995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -837,6 +907,53 @@
         "price": 1220000,
         "bedrooms": 5,
         "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-himley-village-bicester/availability-prices/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 755000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 375000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": "Semi-detached"
       }
     ]
   },

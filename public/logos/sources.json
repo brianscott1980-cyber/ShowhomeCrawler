@@ -103,5 +103,10 @@
     "slug": "countryside-homes",
     "source": "https://www.countrysidehomes.com/images/countryside-logo.png",
     "file": "countryside-homes.png"
+  },
+  {
+    "slug": "bloor-homes",
+    "source": "https://bloorhomes.com/assets/images/logo.png",
+    "file": "bloor-homes.png"
   }
 ]

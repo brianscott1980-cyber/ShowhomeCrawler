@@ -1,5 +1,650 @@
 [
   {
+    "url": "https://www.redrow.co.uk/new-homes/devr022673-tabley-park-knutsford/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 1235000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1295000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432857-the-oaks-at-hazel-park-stevenage/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 660000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 720000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 735000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 825000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 870000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 900000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr212757-oakleigh-fields-cliffe-woods/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 620000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 790000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 800000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 855000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr162807-the-glade-at-woodland-vale/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 432000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 485000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 494000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 530000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 660000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 2,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr412790-vale-croft-woods/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 672500,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 840000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 930000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1275000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr212812-paddock-green/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 480000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 590000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 625000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 635000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 745000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 772500,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022847-sovereign-fields/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 725000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 786000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 970000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1055000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr021862-sycamore-green-ledsham-garden-village/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 448000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 456000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 472000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 487000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 589000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 691000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr162767-bishop-meadows-cowlishaw/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 386000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 430000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 455000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 463000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 486000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 595000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 620000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr082855-redrow-at-wigston-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 509995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 509995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 514995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 649995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 850000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022854-alderbrook-manor-grappenhall-heys/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 542000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 625000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 670000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 681000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 822000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 855000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 936000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr412786-harvest-rise/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 505000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 540000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 575000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 750000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr162853-imperial-park/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 765000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 825000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 895000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 930000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 930000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 940000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr212622-the-hoplands/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 480000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 480000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 480000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 492500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 635000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 640000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 655000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 670000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr212788-greenways-betteshanger/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 415000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 495000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 662000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.redrow.co.uk/new-homes/devr412827-willow-park/",
     "country": "England",
     "scope": "Advertised homes",
@@ -52,6 +697,1051 @@
     ]
   },
   {
+    "url": "https://www.redrow.co.uk/new-homes/devr212779-preston-fields-faversham/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 360000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 390000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 575000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 605000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 665000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 725000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 725000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 765000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 800000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432743-millview-park-bocking/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 465000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 545000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 610000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 610000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432645-hendricks-green-goffs-oak/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 585000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 775000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 830000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 830000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 860000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 870000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 895000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 1000000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1090000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432745-hazel-park-stevenage/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 470000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 660000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 695000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 700000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr162781-poppy-fields-rotherham/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 240000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 256000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 345000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 377000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 395000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 428000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 472000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 473000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 527000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 539000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 540000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432631-the-parklands-at-great-wilsey-park-haverhill/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 300000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 325000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 350000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 495000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 535000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr082823-curborough-lakes/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 314995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 459995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 478000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 539995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 560000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 664995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr082843-radbourne-view-derby/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 260000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 300000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 385000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 439000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 495000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 615000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 615000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr082785-royal-gardens-worcester/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 260000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 400000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 400000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 410000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 415000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 610000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 660000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr162780-kingsley-manor-harrogate/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 740000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr412810-ash-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 505000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 512500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 545000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 572500,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 585000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 610000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 705000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 725000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022689-roman-green-kings-moat-garden-village/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 561000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 561000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 617000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 720000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 780000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 880000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1052000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022832-oak-brook-manor/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 210000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 488000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 536000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 568000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 640000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr162852-highgrove-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 400000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 405000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 489000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 538000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 617000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 628000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 635000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022784-blossoms-round-hill-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 334000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 370000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 482000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 519000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 562000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 618000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 692000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022602-gleaves-view-daresbury-garden-village/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 462000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 581000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 629000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 639000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 662000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 728000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr412809-royal-oaks-at-gillingham-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 350000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 375000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 435000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 480000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr212806-the-landings/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 325000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 325000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 420000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 430000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 430000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 460000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 510000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432362-westley-green-langdon-hills/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 255000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 610000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 850000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 850000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr212797-hamlet-park/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 425000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 535000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 585000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 610000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 710000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 735000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 815000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.redrow.co.uk/new-homes/devr082813-windmill-court-east-bridgford/",
     "country": "England",
     "scope": "Advertised homes",
@@ -84,6 +1774,530 @@
       {
         "price": null,
         "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr242733-blundell%E2%80%99s-grange/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 420000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 435000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 548500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 588000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 630000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 660000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022548-the-grange-at-yew-tree-park-burscough/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 380000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 398000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 420000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 505000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 541000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022749-grace-fields-at-hilton-grange-halewood/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 440000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 445000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 472000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 489000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 625000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 628000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022783-woodlands-round-hill-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 348000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 381000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 401000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 420000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 424000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 438000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 459000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432775-mandeville-crescent-saffron-walden/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 700000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 760000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 880000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 885000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 970000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr432444-the-mulberries-witham/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 365000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 540000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 556000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 585000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 600000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 660000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 760000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 785000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr082761-ash-holt-newton-garden-village/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 374995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 394995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 488995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 549995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 569995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr162822-broadstone-manor-diggle/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 392000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 615000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 640000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 735000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 790000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 805000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022755-shackleton-fields-woodford-garden-village/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 848000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 849000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 960000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1267000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1490000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1512000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr152674-the-cedars-at-great-milton-park/",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 473000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 477000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 596000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 599000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr082642-redrow-at-houlton/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 545000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 545000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 675000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.redrow.co.uk/new-homes/devr022834-mill-green-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 367000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 492000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 529000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 573000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 646000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 648000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 656000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
         "style": null
       }
     ]

@@ -896,6 +896,23 @@
     ]
   },
   {
+    "url": "https://www.millerhomes.co.uk/new-homes/scotland/chapel-gardens-dumbarton",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 369000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.millerhomes.co.uk/new-homes/scotland/east-calder-oaks-east-calder",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -1042,6 +1059,138 @@
       },
       {
         "price": 497000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.millerhomes.co.uk/new-homes/scotland/greenacres-sauchie",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 280000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 280000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 280000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 280000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 280000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 280000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 296500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 296500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 292000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 324000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 322000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 320000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 332000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 334000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 336000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 313000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 277000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 356000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 353000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 385000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 404000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 407000,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -3661,6 +3810,474 @@
     ]
   },
   {
+    "url": "https://www.millerhomes.co.uk/new-homes/north-east/seaham-garden-village-ph1",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 186000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 186000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 174000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 176000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 176000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 179000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 179000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 208000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 208000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 196000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 195000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 195000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 215000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 215000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 211000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 199000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 227000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 345000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 345000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.millerhomes.co.uk/new-homes/north-east/seaham-garden-village-ph2",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 186000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 186000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 174000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 176000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 176000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 179000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 179000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 208000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 208000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 196000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 195000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 195000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 215000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 215000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 211000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 199000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 227000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 345000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 345000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.millerhomes.co.uk/new-homes/north-east/seaham-garden-village-ph3",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 186000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 186000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 185000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 174000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 176000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 176000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 179000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 179000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 208000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 208000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 196000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 195000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 195000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 215000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 215000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 211000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 199000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 227000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 345000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 345000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.millerhomes.co.uk/new-homes/north-east/station-fields",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 182000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 175000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 210000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 199000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 218000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 218000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 325000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 346000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 343000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 352000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 351000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 348000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 323000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.millerhomes.co.uk/new-homes/east-midlands/bramcote-hills-rise",
     "country": "England",
     "scope": "Advertised homes",
@@ -4671,6 +5288,402 @@
     ]
   },
   {
+    "url": "https://www.millerhomes.co.uk/new-homes/north-west/dial-house-place-rainford",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 352995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 288995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 288995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 288995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 288995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 285995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 285995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 285995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 520995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 519995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 519995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 519995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 442995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 408995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 544995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 549995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 544995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.millerhomes.co.uk/new-homes/north-west/lunts-heath-rise-widnes",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 373995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 373995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 477995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 489995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 469995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 469995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 489995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 482995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 472995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 482995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 472995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 443995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 443995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 413995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 413995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 580995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.millerhomes.co.uk/new-homes/north-west/rookery-place-rainford",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 254995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 253995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 284995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 355995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 355995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 352995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 352995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 352995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 272995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 272995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 287995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.millerhomes.co.uk/new-homes/north-west/thorley-glade-timperley",
     "country": "England",
     "scope": "Advertised homes",
@@ -5250,6 +6263,123 @@
     ]
   },
   {
+    "url": "https://www.millerhomes.co.uk/new-homes/yorkshire/hawksley-park-huddersfield",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 379995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 489995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 489995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.millerhomes.co.uk/new-homes/yorkshire/holmebank-gardens",
     "country": "England",
     "scope": "Advertised homes",
@@ -5489,6 +6619,153 @@
       {
         "price": 684995,
         "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.millerhomes.co.uk/new-homes/yorkshire/priory-fields-crofton",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 324995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 342995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 339995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 304995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 304995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 432995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 469995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 5,
         "style": "Detached"
       }
     ]

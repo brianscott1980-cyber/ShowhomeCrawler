@@ -1,5 +1,147 @@
 [
   {
+    "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 210000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 210000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 220000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 220000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 243000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 246000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 275000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 278000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 285000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 296000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 306000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 307000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 308000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 312000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 316630,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 319000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 325000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 337000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 376000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 378000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 378000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 381000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 395000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 397000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 402000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 409000,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -41,6 +183,237 @@
       },
       {
         "price": 527000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 236000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 236000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 246000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 246000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 254000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 257000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 257000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 260000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 260000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 316000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 335000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 343000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 362000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 362000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 370000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 370000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 397000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 420000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 427000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 447000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 451000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 452000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 457000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 484000,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 332000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 355000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 395000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 549995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 260500,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 266500,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 300000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 306000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 306000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 342000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 413500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 441500,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 455500,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 488500,
         "bedrooms": 5,
         "style": null
       }

@@ -1,15 +1,37 @@
 [
   {
+    "name": "Buckie",
+    "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+    "postcode": "IV30 8BL",
+    "latitude": 57.664242,
+    "longitude": -2.970647
+  },
+  {
     "name": "Dundee",
     "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
     "postcode": "DD2 5GY",
     "latitude": 56.47133819926048,
-    "longitude": -3.0688673576708143,
-    "geography": {
-      "district": "Dundee City",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.0688673576708143
+  },
+  {
+    "name": "Elgin",
+    "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+    "postcode": "IV30 8BL",
+    "latitude": 57.6276078944066,
+    "longitude": -3.30296244232919
+  },
+  {
+    "name": "Millerhill",
+    "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+    "postcode": "EH22 1FN",
+    "latitude": 55.912532,
+    "longitude": -3.083518
+  },
+  {
+    "name": "Perth",
+    "url": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+    "postcode": "PH1 0AD",
+    "latitude": 56.42393,
+    "longitude": -3.49023
   }
 ]

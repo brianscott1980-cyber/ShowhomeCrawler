@@ -1,119 +1,79 @@
 [
   {
+    "name": "Eden Green",
+    "url": "https://www.hill.co.uk/eden-green",
+    "postcode": "CM7 4LL",
+    "latitude": 51.963098,
+    "longitude": 0.444984
+  },
+  {
     "name": "Millside Grange",
     "url": "https://www.hill.co.uk/millside-grange",
     "postcode": "WD3 3JJ",
     "latitude": 51.65692,
-    "longitude": -0.452577,
-    "geography": {
-      "district": "Three Rivers",
-      "county": "Hertfordshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.452577
   },
   {
     "name": "Hartley Acres",
     "url": "https://www.hill.co.uk/hartley-acres",
     "postcode": "TN17 3LQ",
     "latitude": 51.093205,
-    "longitude": 0.523264,
-    "geography": {
-      "district": "Tunbridge Wells",
-      "county": "Kent",
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": 0.523264
+  },
+  {
+    "name": "Canalside Quarter",
+    "url": "https://www.hill.co.uk/canalside-quarter",
+    "postcode": "OX2 8QF",
+    "latitude": 51.788079,
+    "longitude": -1.286048
   },
   {
     "name": "Hollymead Square",
     "url": "https://www.hill.co.uk/hollymead-square",
     "postcode": "CB11 3PN",
     "latitude": 51.978368,
-    "longitude": 0.21317,
-    "geography": {
-      "district": "Uttlesford",
-      "county": "Essex",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.21317
   },
   {
     "name": "Farehurst Park",
     "url": "https://www.hill.co.uk/farehurst-park",
     "postcode": "CB21 5EB",
     "latitude": 52.186941,
-    "longitude": 0.208155,
-    "geography": {
-      "district": "South Cambridgeshire",
-      "county": "Cambridgeshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.208155
   },
   {
     "name": "St Georges Place",
     "url": "https://www.hill.co.uk/st-georges-place",
     "postcode": "IP18 6FD",
     "latitude": 52.334748,
-    "longitude": 1.659821,
-    "geography": {
-      "district": "East Suffolk",
-      "county": "Suffolk",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 1.659821
   },
   {
     "name": "Audley Green",
     "url": "https://www.hill.co.uk/audley-green",
     "postcode": "CB10 1FU",
     "latitude": 52.058539,
-    "longitude": 0.200051,
-    "geography": {
-      "district": "Uttlesford",
-      "county": "Essex",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.200051
   },
   {
     "name": "Kingsley Park",
     "url": "https://www.hill.co.uk/kingsley-park",
     "postcode": "CM12 9RR",
     "latitude": 51.613504,
-    "longitude": 0.422304,
-    "geography": {
-      "district": "Basildon",
-      "county": "Essex",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.422304
   },
   {
     "name": "Hartmere",
     "url": "https://www.hill.co.uk/hartmere",
     "postcode": "CB2 0RB",
     "latitude": 52.172161,
-    "longitude": 0.151058,
-    "geography": {
-      "district": "Cambridge",
-      "county": "Cambridgeshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.151058
   },
   {
     "name": "Abbotts Chase",
     "url": "https://www.hill.co.uk/abbotts-chase",
     "postcode": "RM4 1JH",
     "latitude": 51.625916,
-    "longitude": 0.188722,
-    "geography": {
-      "district": "Epping Forest",
-      "county": "Essex",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.188722
   }
 ]

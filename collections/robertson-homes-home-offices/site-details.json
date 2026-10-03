@@ -1,5 +1,62 @@
 [
   {
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/winchburgh/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 320000,
+        "bedrooms": null,
+        "style": "Detached"
+      },
+      {
+        "price": 320000,
+        "bedrooms": null,
+        "style": "Detached"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -37,6 +94,58 @@
       {
         "price": 545000,
         "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-almondell-calderwood/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 470000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 470000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 499000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 502000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 4,
         "style": "Detached"
       }
     ]
@@ -114,6 +223,60 @@
       {
         "price": 829995,
         "bedrooms": 6,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/lionfields/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 609995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 614995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 769995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 776995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-torvean/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 262000,
+        "bedrooms": null,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 345000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 5,
         "style": "Detached"
       }
     ]

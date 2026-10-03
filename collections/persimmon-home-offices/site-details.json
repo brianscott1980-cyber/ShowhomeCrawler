@@ -204,6 +204,277 @@
     ]
   },
   {
+    "url": "https://www.persimmonhomes.com/new-homes/east-midlands/hampton-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 105000,
+        "bedrooms": 1,
+        "style": null
+      },
+      {
+        "price": 145000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 145000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 150000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 160000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 165000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 200000,
+        "bedrooms": 1,
+        "style": null
+      },
+      {
+        "price": 235000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 240000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 240000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 240000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 280000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 285000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 285000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 285000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 285000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 290000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 300000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 305000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 320000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 320000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 380000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 385000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/east-scotland/kinglass-view",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 325995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 315995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 315995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 322995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 325995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 374995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/east-scotland/arniston-grange",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 215995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 329995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 344995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 347995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 349995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 349995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 354995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 364995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 364995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 404995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.persimmonhomes.com/new-homes/lancashire/willow-grove",
     "country": "England",
     "scope": "Advertised homes",
@@ -430,6 +701,108 @@
     ]
   },
   {
+    "url": "https://www.persimmonhomes.com/new-homes/north-east/hauxley-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 190950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 146965,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 219950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 219950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 224950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 224950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 259950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 279950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 279950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 304950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 349950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 394950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 394950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 394950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 398950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 398950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 401950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 410950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 447950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.persimmonhomes.com/new-homes/north-midlands/eaton-place",
     "country": "England",
     "scope": "Advertised homes",
@@ -511,6 +884,148 @@
       },
       {
         "price": 429995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/north-midlands/weldon-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 259995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 219995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 219995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 224995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 224995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 224995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 229995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 244995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 249995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 259995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 264995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 264995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 264995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 304995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 304995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 354995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 359995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 364995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -634,6 +1149,560 @@
       {
         "price": 525000,
         "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/north-scotland/kinloch-brae",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 229995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 209995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 209995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 229995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 237995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 294995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 329995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 334995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/north-scotland/palace-view",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 409995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 199995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 239995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 241995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 241995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 308995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 337995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 337995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/north-scotland/ballumbie-heights",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 514995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/nottingham/avalon",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 315000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 195000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 195000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 200000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 200000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 265000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 280000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 285000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 305000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/nottingham/bardolph-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 245000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 245000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 250000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 255000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 255000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 255000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 255000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 262500,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 285000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 380000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/nottingham/regency-grange",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 190000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 200000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 200000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 215000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 235000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 235000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 235000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 275000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 300000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 305000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 320000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 385000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/south-midlands/meon-way-gardens",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 410000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 300000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 425000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 445000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 455000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
         "style": "Detached"
       }
     ]
@@ -1551,6 +2620,100 @@
     ]
   },
   {
+    "url": "https://www.persimmonhomes.com/new-homes/west-scotland/dargavel-village",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 354000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 386000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 416000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 424000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 424000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 437000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/west-scotland/kings-gate",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 345000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 255000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 255000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 262000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 265000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 270000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 310000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 310000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 319000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 323000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.persimmonhomes.com/new-homes/west-wales/awel-y-mynydd",
     "country": "Wales",
     "scope": "Advertised homes",
@@ -1592,6 +2755,63 @@
       },
       {
         "price": 505000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.persimmonhomes.com/new-homes/west-yorkshire/brampton-vale",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 239950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 239950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 244950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 244950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 279950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 289950,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 294950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 299950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 309950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 314950,
         "bedrooms": 5,
         "style": "Detached"
       }
