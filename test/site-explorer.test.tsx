@@ -1,12 +1,12 @@
 import {describe,it,expect,vi,afterEach} from 'vitest';
 import {JSDOM} from 'jsdom';
-import {act} from 'react';
+import {act,useEffect} from 'react';
 import {createRoot} from 'react-dom/client';
 import {SiteDirectory} from '../src/web/site-directory';
 import type {SiteCard} from '../src/web/site-filters';
 vi.mock('../src/web/site-map',async importOriginal=>{
  const actual=await importOriginal<typeof import('../src/web/site-map')>();
- return {...actual,SiteMap:({activeKey,onSelect,onBoundsChange,onCameraChange}:any)=><aside data-testid="map" data-selected={activeKey??''}><button onClick={()=>onSelect('one')}>Select map dot</button><button onClick={()=>{onBoundsChange({west:-1,east:1,south:50,north:52});onCameraChange({lat:51,lng:0,zoom:9});}}>Move map</button></aside>};
+ return {...actual,SiteMap:({cards,activeKey,onSelect,onBoundsChange,onCameraChange,onVisibleSitesChange}:any)=>{useEffect(()=>onVisibleSitesChange(cards.map((card:SiteCard)=>card.key)),[cards,onVisibleSitesChange]);return <aside data-testid="map" data-selected={activeKey??''}><button onClick={()=>onSelect('one')}>Select map dot</button><button onClick={()=>{onBoundsChange({west:-1,east:1,south:50,north:52});onVisibleSitesChange(['one']);onCameraChange({lat:51,lng:0,zoom:9});}}>Move map</button></aside>;}};
 });
 const cards:SiteCard[]=[{key:'one',name:'Southern Gardens',developer:'Bellway',image:'/one.jpg',description:'Kitchen',count:2,country:'England',latitude:51,longitude:0,properties:[]},{key:'two',name:'Northern Gardens',developer:'Cala',image:'/two.jpg',description:'Living room',count:3,country:'Scotland',latitude:55,longitude:-4,properties:[]}];
 afterEach(()=>vi.unstubAllGlobals());
