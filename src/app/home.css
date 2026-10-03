@@ -4,8 +4,6 @@
 @media(max-width:380px){.home-hero h1{font-size:39px}.home-featured-grid .photo-button img{height:150px}.home-coverage-counts{gap:16px}}
 @media(prefers-reduced-motion:reduce){.home-journey-photo img,.home-button{transition:none}.home-journey:hover img{transform:none}}
 
-.home-logo{display:block;width:360px;max-width:100%;height:auto;margin:0 0 24px}
-
 .rolling-count-visual{display:inline-flex;align-items:flex-start;font-family:Arial,Helvetica,sans-serif;font-variant-numeric:lining-nums tabular-nums;line-height:1.15}.rolling-digit{display:inline-block;height:1.15em;width:.64em;overflow:hidden;text-align:center}.rolling-digit-strip{display:flex;flex-direction:column;transform:translateY(var(--roll-end));animation:home-count-roll 2.4s cubic-bezier(.12,.7,.18,1) var(--roll-delay) both}.rolling-digit-strip>span{display:block;height:1.15em;line-height:1.15;flex-shrink:0}@keyframes home-count-roll{from{transform:translateY(0)}to{transform:translateY(var(--roll-end))}}@media(prefers-reduced-motion:reduce){.rolling-digit-strip{animation:none}}
 
 .home-hero-map{overflow-y:clip}
