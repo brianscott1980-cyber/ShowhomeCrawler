@@ -19,11 +19,11 @@ function siteFeatures(cards:SiteCard[]) {
  return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name}}))};
 }
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-export function SiteMap({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange}:{cards:SiteCard[];activeKey:string|null;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void}) {
+export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange}:{cards:SiteCard[];activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void}) {
  const container=useRef<HTMLDivElement>(null), map=useRef<MapInstance|null>(null), highlight=useRef<Marker|null>(null);
  const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange});
  latest.current={cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange};
- const selectionSeen=useRef(activeKey);
+ const selectionSeen=useRef({key:activeKey,sequence:focusSequence});
  const publishedCamera=useRef<MapCamera|null>(null);
  const clusterRequest=useRef(0);
  const [ready,setReady]=useState(false),[status,setStatus]=useState('Loading map…'),[choices,setChoices]=useState<SiteCard[]>([]);
@@ -96,11 +96,11 @@ export function SiteMap({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnav
  useEffect(()=>{
   const instance=map.current,card=cards.find(c=>c.key===activeKey);
   if(!ready||!instance)return;
-  if(selectionSeen.current===activeKey)return;
-  selectionSeen.current=activeKey;
+  if(selectionSeen.current.key===activeKey&&selectionSeen.current.sequence===focusSequence)return;
+  selectionSeen.current={key:activeKey,sequence:focusSequence};
   if(!card||!hasCoordinates(card))return;
-  if(!instance.getBounds().contains([card.longitude,card.latitude]))instance.easeTo({center:[card.longitude,card.latitude],duration:reducedMotion()?0:450});
- },[activeKey,ready,cards]);
+  instance.easeTo({center:[card.longitude,card.latitude],duration:reducedMotion()?0:450});
+ },[activeKey,focusSequence,ready,cards]);
  useEffect(()=>{
   const instance=map.current;if(!ready||!instance||!camera)return;
   const published=publishedCamera.current;
