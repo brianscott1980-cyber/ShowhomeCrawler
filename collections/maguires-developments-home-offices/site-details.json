@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://www.m-d.co.uk/park/woodlands-park/",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.m-d.co.uk/park/greenfields-estate/",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.m-d.co.uk/park/tavern-park/",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 167950,
+        "bedrooms": 2,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.m-d.co.uk/park/grovelands-park/",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 135000,
+        "bedrooms": 2,
+        "style": "Detached"
+      },
+      {
+        "price": 138000,
+        "bedrooms": 2,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.m-d.co.uk/park/ithon-valley-park/",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": 2,
+        "style": "Detached"
+      },
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  }
+]
