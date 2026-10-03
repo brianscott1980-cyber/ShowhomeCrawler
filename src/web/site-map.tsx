@@ -49,7 +49,7 @@ export function SiteMap({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnav
     instance.on('click','site-clusters',async e=>{
      const feature=e.features?.[0];if(!feature||feature.geometry.type!=='Point')return;
      const zoom=await (instance.getSource('sites') as GeoJSONSource).getClusterExpansionZoom(Number(feature.properties?.cluster_id));
-     if(!disposed)instance.easeTo({center:feature.geometry.coordinates as [number,number],zoom,duration:reducedMotion()?0:450});
+     if(!disposed)instance.easeTo({center:feature.geometry.coordinates as [number,number],zoom:Math.max(zoom,instance.getZoom()+1),duration:reducedMotion()?0:450});
     });
     instance.on('click','site-dots',e=>{
      const feature=e.features?.[0];if(!feature||feature.geometry.type!=='Point')return;
