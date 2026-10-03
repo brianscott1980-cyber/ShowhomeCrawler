@@ -11,7 +11,7 @@ export function createPublicGalleryParser(config:{origin:string;developmentPatte
   $('a[href]').each((_,e)=>{
    const link=$(e),target=new URL(link.attr('href')!,origin);if(target.origin!==origin||!config.homePattern.test(target.pathname))return;target.hash='';
    const card=link.closest('article,.card-with-media,.uk-card,tr,.property-card,.card,.panel__card,.plot,.plot-card,.house-type,.property_development_plot_stub_item,.search-results__result');
-   const text=(card.length?card.text():link.parent().text()).replace(/\s+/g,' ').trim();
+   const text=(card.length?card.clone().find('*').append(' ').end().text():link.parent().text()).replace(/\s+/g,' ').trim();
    const name=(card.find('h2,h3,h4,.house-name,.plot_name').first().text()||link.text()).replace(/\s+/g,' ').trim();if(!name)return;
    homes.set(target.href,{externalId:target.pathname,name,url:target.href,bedrooms:Number(text.match(/(\d+)\s*(?:bedrooms?|beds?)/i)?.[1])||null,price:Number(text.match(/£\s*([\d,]+)/)?.[1]?.replaceAll(',',''))||null,propertyType:/apartment|flat/i.test(text)?'apartment':'house',isDetached:/semi[ -]?detached/i.test(text)?false:/\bdetached\b/i.test(text)?true:null,available:!/sold|reserved/i.test(text),status:/sold|reserved/i.test(text)?'reserved':'advertised'});
   });

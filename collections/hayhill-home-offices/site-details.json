@@ -1,0 +1,145 @@
+[
+  {
+    "url": "https://www.hayhilldevelopments.co.uk/development/hallrig-heights-tarbolton/",
+    "country": "Scotland",
+    "scope": "Published homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.hayhilldevelopments.co.uk/development/hillhead-heights-mauchline/",
+    "country": "Scotland",
+    "scope": "Published homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.hayhilldevelopments.co.uk/development/belston-park-sinclairston/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 245000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 245000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 245000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 245000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 265000,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.hayhilldevelopments.co.uk/development/water-of-coyle-drongan/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 266250,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 155500,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 155500,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 157000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 157000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 155500,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 155500,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 320000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 205000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 266500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 248000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 248000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 266500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 230000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  }
+]

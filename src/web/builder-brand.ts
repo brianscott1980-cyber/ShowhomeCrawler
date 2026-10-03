@@ -34,6 +34,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'dandara':{primary:'#153050',secondary:'#7dbeb7',parts:['Dandara']},
  'bancon-homes':{primary:'#111111',secondary:'#555555',parts:['Bancon ','Homes']},
  'ajc-homes':{primary:'#c41230',secondary:'#ffffff',parts:['AJC ','Homes']},
+ 'hayhill':{primary:'#C11F3D',secondary:'#969899',parts:['Hayhill Developments']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {

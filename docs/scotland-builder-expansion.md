@@ -10,7 +10,7 @@ Process builders sequentially, publishing genuine visual classification of all n
 | Dandara | https://www.dandara.com/scotland/ | Published 2 current Scottish developments, 20 property/development galleries, 42 unique classified images and 20 room/exterior matches. Both sites have Scottish country metadata and coordinates. Audited 9 sitemap entries: 6 retired URLs and 1 redirect alias are recorded and excluded. |
 | Bancon Homes | https://banconhomes.com/our-developments/ | Published 7 Scottish developments, 76 property/development galleries and 290 unique classified images; 206 room/exterior/garden matches. All sites have coordinates. Coverage gaps explicitly retained: 5 oversized original photos (16 repeated source references) and 1 property URL returning HTTP 404. |
 | AJC Homes | https://ajcscotland.com/developments | Published 4 current Scottish developments, 38 property/development galleries, 123 unique classified images and 82 room/exterior/garden matches. All four sites have coordinates; no crawl errors. Current directory used because the XML sitemap lists obsolete developments. |
-| Hayhill | https://www.hayhilldevelopments.co.uk/ | Pending |
+| Hayhill | https://www.hayhilldevelopments.co.uk/ | Audited 5 Scottish developments; published galleries and coordinates for 4, including sold-out sites. 26 property/development galleries, 296 unique classified images and 266 room/exterior/garden matches. Coming-soon Laurelbank has no supported image gallery and is explicitly recorded as a gap. |
 | Ogilvie Homes | https://ogilviehomes.co.uk/locations/ | Pending |
 | Mactaggart & Mickel | https://www.macmic.co.uk/homes-for-sale | Pending |
 
