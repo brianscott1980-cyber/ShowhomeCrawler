@@ -8,7 +8,7 @@ Process builders sequentially, publishing genuine visual classification of all n
 | --- | --- | --- |
 | Lovell Homes | https://newhomes.lovell.co.uk/find-your-new-lovell-home/lovell-homes-in-scotland/ | Published 3 Scottish developments, 29 property/development galleries and 192 unique classified images; 135 room/exterior/garden matches. All three sites have verified coordinates and Scottish country metadata. Remaining UK developments are deferred. |
 | Dandara | https://www.dandara.com/scotland/ | Published 2 current Scottish developments, 20 property/development galleries, 42 unique classified images and 20 room/exterior matches. Both sites have Scottish country metadata and coordinates. Audited 9 sitemap entries: 6 retired URLs and 1 redirect alias are recorded and excluded. |
-| Bancon Homes | https://banconhomes.com/our-developments/ | Pending |
+| Bancon Homes | https://banconhomes.com/our-developments/ | Published 7 Scottish developments, 76 property/development galleries and 290 unique classified images; 206 room/exterior/garden matches. All sites have coordinates. Coverage gaps explicitly retained: 5 oversized original photos (16 repeated source references) and 1 property URL returning HTTP 404. |
 | AJC Homes | https://ajcscotland.com/developments | Pending |
 | Hayhill | https://www.hayhilldevelopments.co.uk/ | Pending |
 | Ogilvie Homes | https://ogilviehomes.co.uk/locations/ | Pending |
