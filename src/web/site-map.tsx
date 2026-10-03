@@ -2,6 +2,7 @@
 
 import {useEffect, useRef, useState} from 'react';
 import type {Map as MapInstance, Marker, GeoJSONSource} from 'maplibre-gl';
+import {siteExpansionZoom} from './site-cluster-focus';
 import {fullyVisibleSiteKeys} from './map-marker-visibility';
 import {developers} from '../adapters/developers';
 import {builderMapBrand,BUILDER_ICON_ZOOM} from './builder-map-brand';
@@ -166,7 +167,18 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
   if(selectionSeen.current.key===activeKey&&selectionSeen.current.sequence===focusSequence)return;
   selectionSeen.current={key:activeKey,sequence:focusSequence};
   if(!card||!hasCoordinates(card))return;
-  instance.easeTo({center:[card.longitude,card.latitude],duration:reducedMotion()?0:450});
+  let disposed=false;
+  const request=++clusterRequest.current;
+  void (async()=>{
+   try {
+    const zoom=await siteExpansionZoom(instance.getSource('sites') as GeoJSONSource,instance.queryRenderedFeatures({layers:['site-clusters']}),card.key,instance.getZoom());
+    if(disposed||request!==clusterRequest.current)return;
+    instance.easeTo({center:[card.longitude,card.latitude],...(zoom===undefined?{}:{zoom:Math.min(instance.getMaxZoom(),zoom)}),duration:reducedMotion()?0:450});
+   } catch {
+    if(!disposed&&request===clusterRequest.current)instance.easeTo({center:[card.longitude,card.latitude],duration:reducedMotion()?0:450});
+   }
+  })();
+  return()=>{disposed=true;};
  },[activeKey,focusSequence,ready,cards]);
  useEffect(()=>{
   const instance=map.current;if(!ready||!instance||!camera)return;

@@ -8,7 +8,7 @@ vi.mock('maplibre-gl',()=>({
  setWorkerUrl:vi.fn(),NavigationControl:class {},LngLatBounds:class {},
  Map:class {
   handlers=new Map<string,Function>();center={lng:0,lat:51};zoom=5;
-  source={setData:vi.fn(),getClusterExpansionZoom:vi.fn(async()=>9),getClusterLeaves:vi.fn(async(id:number)=>[{properties:{key:id===7?'one':'other'}}])};
+  source={setData:vi.fn(),getClusterExpansionZoom:vi.fn(async()=>9),getClusterChildren:vi.fn(async()=>[{properties:{key:'one'}}]),getClusterLeaves:vi.fn(async(id:number)=>[{properties:{key:id===7?'one':'other'}}])};
   loadImage=vi.fn(async()=>({data:{}}));addImage=vi.fn();
   queryRenderedFeatures=vi.fn(()=>[] as any[]);setPaintProperty=vi.fn();layers:any[]=[];
   easeTo=vi.fn();stop=vi.fn();remove=vi.fn();resize=vi.fn();
@@ -68,5 +68,11 @@ it('highlights the containing cluster with its count and retains cluster navigat
    expect(map.easeTo).toHaveBeenLastCalledWith({center:[0,51],duration:450});
    expect(map.easeTo).toHaveBeenCalledTimes(sequence);
   }
+  map.queryRenderedFeatures.mockReturnValue([{properties:{cluster_id:7,point_count:2}}]);
+  map.source.getClusterLeaves.mockImplementation(async()=>[{properties:{key:'one'}}]);
+  map.source.getClusterChildren.mockImplementation(async(id:number)=>id===7?[{properties:{cluster_id:9,point_count:2}}]:[{properties:{key:'one'}}]);
+  map.source.getClusterExpansionZoom.mockImplementation(async(id:number)=>id===7?10:12);
+  await act(async()=>root.render(<SiteMap {...props} camera={{lng:-3,lat:54,zoom:9}} focusSequence={3}/>));
+  expect(map.easeTo).toHaveBeenLastCalledWith({center:[0,51],zoom:12,duration:450});
  }finally{await act(async()=>root.unmount());dom.window.close();vi.unstubAllGlobals();}
 });
