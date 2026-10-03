@@ -38,6 +38,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'ajc-homes':{primary:'#c41230',secondary:'#ffffff',parts:['AJC ','Homes']},
  'hayhill':{primary:'#C11F3D',secondary:'#969899',parts:['Hayhill Developments']},
  'hopkins-homes':{primary:'#ccaf74',secondary:'#242245',parts:['Hopkins ','Homes']},
+ 'larkfleet-homes':{primary:'#b88e00',secondary:'#111111',parts:['Larkfleet ','Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {

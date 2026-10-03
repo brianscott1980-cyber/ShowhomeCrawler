@@ -1,3 +1,4 @@
+import * as larkfleet from './larkfleet/site-parser.js';
 import * as hopkins from './hopkins/site-parser.js';
 import * as maguires from './maguires/site-parser.js';
 import * as wain from './wain/site-parser.js';
@@ -63,6 +64,7 @@ export function builderSite(slug='bellway') {
  if(slug==='ajc-homes')return {name:'AJC Homes',slug,websiteUrl:'https://ajcscotland.com',sitemap:'https://ajcscotland.com/developments',...ajc};
  if(slug==='hayhill')return {name:'Hayhill Developments',slug,websiteUrl:'https://www.hayhilldevelopments.co.uk',sitemap:'https://www.hayhilldevelopments.co.uk/sitemap_index.xml',...hayhill};
  if(slug==='hopkins-homes')return {name:'Hopkins Homes',slug,websiteUrl:'https://www.hopkinshomes.co.uk',sitemap:'https://www.hopkinshomes.co.uk/sitemap-xml/',...hopkins};
+ if(slug==='larkfleet-homes')return {name:'Larkfleet Homes',slug,websiteUrl:'https://allison-homes.co.uk',sitemap:'https://allison-homes.co.uk/development-sitemap.xml',...larkfleet};
  throw new Error('Unsupported builder.');
 }
 import * as redrow from './redrow/site-parser.js';
