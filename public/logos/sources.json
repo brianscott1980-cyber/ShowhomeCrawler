@@ -128,5 +128,10 @@
     "slug": "harron-homes",
     "source": "https://media.harronhomes.com/wp-content/uploads/2020/06/24172620/harron_logo-01.svg",
     "file": "harron-homes.svg"
+  },
+  {
+    "slug": "anwyl-homes",
+    "source": "https://www.anwylhomes.co.uk/app/themes/anwyl-homes/dist/images/Anwyl_95th_anniversary_logo.png",
+    "file": "anwyl-homes.png"
   }
 ]
