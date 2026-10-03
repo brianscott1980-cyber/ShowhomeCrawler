@@ -9,6 +9,8 @@ async function saveArtifact(path: string, body: string) {
  await rename(temporary, path);
 }
 export interface ImageCategorisation {
+ categorisationSource?:'gemini'|'description-rules';
+ categorisationModel?:string;
  mainCategory: string;
  subCategory: string;
  isRoom: boolean;

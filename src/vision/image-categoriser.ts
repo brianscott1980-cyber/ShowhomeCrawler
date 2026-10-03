@@ -1,3 +1,5 @@
+import {GeminiModelPool,classificationModels} from './gemini-model-pool.js';
+const categorisationPools=new Map<string,GeminiModelPool>();
 import {bedroomSubCategory} from './bedroom-category.js';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -233,6 +235,7 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
  const hasComputer = /\b(computer|laptop|pc\b|monitor|imac)\b/.test(lower);
 
  return {
+  categorisationSource:'description-rules',
   mainCategory,
   subCategory,
   isRoom: isRoom && mainCategory !== 'Floorplan',
@@ -252,6 +255,9 @@ export async function categoriseBatchWithGemini(
  model = 'gemini-3.1-flash-lite'
 ): Promise<Map<string, ImageCategorisation>> {
  const results = new Map<string, ImageCategorisation>();
+ const poolKey=apiKey+':'+model;
+ let pool=categorisationPools.get(poolKey);
+ if(!pool){pool=new GeminiModelPool(classificationModels(model));categorisationPools.set(poolKey,pool);}
  const prompt = 'You are an expert interior design classifier. For each property image description, extract structured room details.\n' +
   'Return JSON object with "images" array containing exactly one element for every input item.\n' +
   'Taxonomy:\n' +
@@ -268,9 +274,11 @@ export async function categoriseBatchWithGemini(
   'Input items:\n' + JSON.stringify(items);
 
  for (let attempt = 0; attempt < 5; attempt++) {
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`, {
-   method: 'POST',
-   headers: { 'Content-Type': 'application/json' },
+  let response;
+  try {response=await pool.run(async selectedModel=>{
+  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(selectedModel)}:generateContent`, {
+   method: 'POST', signal:AbortSignal.timeout(60000),
+   headers: { 'Content-Type': 'application/json', 'x-goog-api-key':apiKey },
    body: JSON.stringify({
     contents: [{ parts: [{ text: prompt }] }],
     generationConfig: {
@@ -305,11 +313,15 @@ export async function categoriseBatchWithGemini(
    })
   });
 
-  if (res.status === 429) {
-   console.log('Gemini rate limit exceeded in image categorisation. Pausing for 2 minutes before retrying...');
-   for (let s = 0; s < 120; s += 10) await new Promise(resolve => setTimeout(resolve, 10000));
+  if(res.status===429||res.status===404)throw Object.assign(new Error(`Gemini HTTP ${res.status}`),{status:res.status});
+  return res;
+  });}catch(error){
+   if((error as {status?:number}).status!==429)throw error;
+   console.log('All available Gemini models are quota limited in categorisation. Pausing for 2 minutes before retrying...');
+   for(let s=0;s<120;s+=10)await new Promise(resolve=>setTimeout(resolve,10000));
    continue;
   }
+  const res=response.value;
 
   if (res.ok) {
    const data = await res.json() as any;
@@ -317,6 +329,8 @@ export async function categoriseBatchWithGemini(
    for (const img of parsed.images ?? []) {
     if (img.id) {
      results.set(img.id, {
+      categorisationSource:'gemini',
+      categorisationModel:response.model,
       mainCategory: img.mainCategory || 'Other',
       subCategory: img.mainCategory==='Bedroom'?bedroomSubCategory(items.find(i=>i.id===img.id)?.desc,items.find(i=>i.id===img.id)?.room,items.find(i=>i.id===img.id)?.reason,img.subCategory):img.subCategory || img.mainCategory || 'Other',
       isRoom: !isNonRoom(img.subCategory || img.mainCategory),
