@@ -1,0 +1,93 @@
+[
+  {
+    "url": "https://newhomes.lovell.co.uk/development/oakwood-edge-mayfield/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 304995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 308995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 374995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://newhomes.lovell.co.uk/development/glow-garren-hamilton/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 424995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://newhomes.lovell.co.uk/development/the-crossings-south-queensferry/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 339995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 373995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": null,
+        "style": null
+      }
+    ]
+  }
+]

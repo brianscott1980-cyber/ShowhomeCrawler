@@ -30,6 +30,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'harron-homes':{primary:'#e84129',secondary:'#161412',parts:['Harron Homes']},
  'anwyl-homes':{primary:'#003a5d',secondary:'#00bbb4',parts:['Anwyl ','Homes']},
  'castle-green-homes':{primary:'#384d3b',secondary:'#667961',parts:['Castle Green ','Homes']},
+ 'lovell':{primary:'#c10a27',secondary:'#701427',parts:['Lovell ','Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {

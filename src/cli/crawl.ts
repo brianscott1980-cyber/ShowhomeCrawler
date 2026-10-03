@@ -20,7 +20,7 @@ async function exists(path: string) { try { await readFile(path); return true; }
 async function atomic(path: string, value: unknown) { const temporary = path + '.' + randomUUID() + '.tmp'; await writeFile(temporary, JSON.stringify(value)); await rename(temporary, path); }
 async function main() {
  const env = readEnv();
- const { values } = parseArgs({ options: { 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean' }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string' }, persist: { type: 'boolean' } } });
+ const { values } = parseArgs({ options: { 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean' }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
  const site = builderSite(values.builder); const { developmentUrls, discoverHomes, galleryImages } = site;
  const number = (v: string, max: number) => { const n = Number(v); if (!Number.isInteger(n) || n <= 0 || n > max) throw new Error('Invalid crawl limit.'); return n; };
  const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 20000);
@@ -59,7 +59,7 @@ async function main() {
   const all = await discoverSitemapDevelopments(site.sitemap, developmentUrls, sourceText);
   if (!all.length) throw new Error('No development URLs found.');
   let urls = all.slice(0, maxDevs);
-  if (values.development) { if (!all.includes(values.development)) throw new Error('Development is not in the builder sitemap.'); urls = [values.development]; }
+  if (values.development) { if (values.development.some(url=>!all.includes(url))) throw new Error('Development is not in the builder sitemap.'); urls = [...new Set(values.development)]; }
   report.metrics.sitemapDevelopments = all.length;
   console.log(JSON.stringify({ stage: 'discovery', sitemapDevelopments: all.length, selected: urls.length }));
   const discovered = await mapLimit(urls, Math.min(3, env.MAX_CONCURRENCY), async url => {
