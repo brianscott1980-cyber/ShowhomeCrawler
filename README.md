@@ -26,6 +26,8 @@ Job status is stored in `results/.app-job.json`. If a worker is forcibly termina
 
 The Builders directory and builder results show categorised rooms and property exteriors, including builders with no office matches. Legacy office-only exports retain their original names for compatibility.
 
+Published catalogue metadata under `collections/` is tracked in Git. Downloaded `collections/*/images/` and the crawler's `results/` archive are local, ignored files. Keep a separate backup of those downloads if you need an independent image archive. The web asset route serves local images when available and otherwise redirects to each image's original HTTPS `sourceUrl`; deployments therefore do not need the downloaded binaries. Availability of remote images depends on the builder retaining its original files. Removing files from tracking does not remove their blobs from existing Git history.
+
 Collect every advertised home without a bedroom filter, deduplicate the gallery images, then classify every unique image and publish the collection:
 
 ```sh
