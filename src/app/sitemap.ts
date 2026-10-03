@@ -3,7 +3,6 @@ import { developers, readCollection, assetUrl } from '../web/collections';
 import {readGroups,type GroupKind} from '../web/groups';
 import {groupRoutes} from '../web/group-routes';
 import { absoluteUrl } from '../web/seo';
-export const dynamic='force-dynamic';
 export default async function sitemap():Promise<MetadataRoute.Sitemap>{
  const collections=await Promise.all(developers.map(async d=>({developer:d,report:await readCollection(d.slug)})));
  const grouped=await Promise.all((['locations','interiors','buildings'] as GroupKind[]).map(async kind=>{const groups=await readGroups(kind);return {kind,groups,routes:groupRoutes(kind,groups)};}));

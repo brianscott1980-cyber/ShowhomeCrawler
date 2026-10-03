@@ -6,7 +6,6 @@ import { Gallery } from '../web/gallery';
 import { absoluteUrl, jsonLd } from '../web/seo';
 import './home.css';
 export const metadata = { title: 'Showhome Explorer | Explore New Homes & Interior Inspiration', description: 'Discover UK builders, locations and house types. Explore real showhome interiors and save ideas for your home.', alternates: { canonical: '/' } };
-export const dynamic = 'force-dynamic';
 const journeys = [
  { title: 'Explore homes near you', description: 'Discover locations and the homes behind them, in your area and beyond.', href: '/locations', link: 'Explore locations', number: '01' },
  { title: 'Find decorating inspiration', description: 'From kitchens to cosy bedrooms. Find ideas for every room, across builders.', href: '/interiors', link: 'Browse interiors', number: '02' },
