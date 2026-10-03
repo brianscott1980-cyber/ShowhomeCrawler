@@ -29,6 +29,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'morris-homes':{primary:'#00396f',secondary:'#00a4e8',parts:['Morris Homes']},
  'harron-homes':{primary:'#e84129',secondary:'#161412',parts:['Harron Homes']},
  'anwyl-homes':{primary:'#003a5d',secondary:'#00bbb4',parts:['Anwyl ','Homes']},
+ 'castle-green-homes':{primary:'#384d3b',secondary:'#667961',parts:['Castle Green ','Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {

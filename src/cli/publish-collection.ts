@@ -1,3 +1,4 @@
+import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { mkdir, readFile, copyFile, rm, access } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { parseArgs } from 'node:util';
@@ -8,6 +9,7 @@ const source = resolve('results', `${values.builder}-home-offices`);
 const target = resolve('collections', `${values.builder}-home-offices`);
 const report: RunReport = JSON.parse(await readFile(`${source}/results.json`, 'utf8'));
 if (report.analysisVersion === 'all-property-images-v1' && report.images.some(i => !i.categorisation)) throw new Error('Finish all-image categorisation before publishing.');
+if (report.images.some(i => isInferredAnalysis(i.verdict))) throw new Error('Replace filename-inferred labels with genuine image analysis before publishing.');
 if (report.images.some(i => !i.verdict)) throw new Error('Finish classification before publishing.');
 const publishedImages = report.images.filter(i => i.categorisation || i.verdict?.matches);
 for (const image of publishedImages) {
