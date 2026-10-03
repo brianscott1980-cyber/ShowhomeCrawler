@@ -41,7 +41,12 @@ export class RequestClient {
  }
  async bytes(url: string, maxBytes = 20_000_000): Promise<Buffer> {
   const parsed = new URL(url);
-  if (parsed.protocol !== 'https:' || !['res.cloudinary.com', 'mvdataappstorageeunlprod.blob.core.windows.net', 'accelerated-cf-eunl.mediavalet.com', 'cdn.mediavalet.com', 'scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk', ...developers.map(d => new URL(d.website).hostname)].includes(parsed.hostname)) throw new Error('URL outside crawler host allowlist.');
+  const isAllowedHost = ['res.cloudinary.com', 'mvdataappstorageeunlprod.blob.core.windows.net', 'accelerated-cf-eunl.mediavalet.com', 'cdn.mediavalet.com', 'scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk'].includes(parsed.hostname) ||
+    developers.some(d => {
+      const h = new URL(d.website).hostname;
+      return parsed.hostname === h || parsed.hostname.endsWith('.' + h.replace(/^www\./, ''));
+    });
+  if (parsed.protocol !== 'https:' || !isAllowedHost) throw new Error('URL outside crawler host allowlist.');
   for (let attempt = 0; ; attempt++) {
    await this.gate();
    try {

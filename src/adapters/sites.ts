@@ -3,6 +3,7 @@ import * as bloor from './bloor/site-parser.js';
 import * as keepmoat from './keepmoat/site-parser.js';
 import * as gleeson from './gleeson/site-parser.js';
 import * as morris from './morris/site-parser.js';
+import * as harron from './harron/site-parser.js';
 import * as tulloch from './tulloch/site-parser.js';
 import * as scotia from './scotia/site-parser.js';
 import * as robertson from './robertson/site-parser.js';
@@ -41,6 +42,7 @@ export function builderSite(slug='bellway') {
  if(slug==='keepmoat')return {name:'Keepmoat',slug,websiteUrl:'https://www.keepmoat.com',sitemap:'https://www.keepmoat.com/sitemap',...keepmoat};
  if(slug==='gleeson')return {name:'Gleeson Homes',slug,websiteUrl:'https://gleesonhomes.co.uk',sitemap:'https://gleesonhomes.co.uk/developments/',...gleeson};
  if(slug==='morris-homes')return {name:'Morris Homes',slug,websiteUrl:'https://www.morrishomes.co.uk',sitemap:'https://www.morrishomes.co.uk/development-sitemap.xml',...morris};
+ if(slug==='harron-homes')return {name:'Harron Homes',slug,websiteUrl:'https://www.harronhomes.com',sitemap:'https://www.harronhomes.com/harron_developments-sitemap.xml',...harron};
  throw new Error('Unsupported builder.');
 }
 import * as redrow from './redrow/site-parser.js';
