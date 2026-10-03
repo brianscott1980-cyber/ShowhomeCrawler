@@ -138,5 +138,10 @@
     "slug": "castle-green-homes",
     "source": "https://www.castlegreenhomes.uk/app/themes/castle-green/assets/img/logo-castle-green-horizontal.svg",
     "file": "castle-green-homes.svg"
+  },
+  {
+    "slug": "lovell",
+    "source": "https://newhomes.lovell.co.uk/images/lovell-logo.svg",
+    "file": "lovell.svg"
   }
 ]
