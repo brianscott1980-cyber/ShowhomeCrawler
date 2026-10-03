@@ -1,0 +1,4781 @@
+{
+  "builder": {
+    "name": "AJC Homes",
+    "slug": "ajc-homes",
+    "websiteUrl": "https://ajcscotland.com"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-03T13:16:46.546Z",
+  "model": "gemini-3.1-flash-lite",
+  "question": "All property gallery images",
+  "analysisVersion": "all-property-images-v1",
+  "developments": [
+    {
+      "url": "https://ajcscotland.com/developments/castlepark",
+      "name": "CastlePark",
+      "status": "complete",
+      "homes": 12,
+      "qualifying": 12
+    },
+    {
+      "url": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Culter house road",
+      "status": "complete",
+      "homes": 7,
+      "qualifying": 7
+    },
+    {
+      "url": "https://ajcscotland.com/developments/queen-elizabeth-drive",
+      "name": "Queen Elizabeth Drive",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 3
+    },
+    {
+      "url": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Discover Benton Crescent",
+      "status": "complete",
+      "homes": 16,
+      "qualifying": 16
+    }
+  ],
+  "properties": [
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Cairnwell",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-110",
+      "bedrooms": 4,
+      "price": 407500,
+      "plots": [
+        {
+          "price": 407500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0d346bf1e822e39c0b3f56248670f69b5eaa6a2e90f83d53e998a16af7942883",
+        "ca8623e7c53e0c7bd0ac86da534c87cd0074a9f8d953a7bb57c0ba463c8f0abe",
+        "94458a22b9e678ae272816e77583853a3cf8259ce158593126f507be92ab905f",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Foudland",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-111",
+      "bedrooms": 4,
+      "price": 437500,
+      "plots": [
+        {
+          "price": 437500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f93aa4ccd9e3c88846bf5bbc531221dc3e455bce6580ab63b8601f074fab8e64",
+        "f744378ffd056ad2509ad91c54c8298384212445dbf6fc236b97253d444501c0",
+        "5a4d58736558f5307c5198619db412755546d25ee83e4fa0e4466ea408e198f4",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Clachnaben",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-127",
+      "bedrooms": 5,
+      "price": 469500,
+      "plots": [
+        {
+          "price": 469500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8674a05277e7bb1ea3e74996b207afad1a8025a651ab37f3fcf30e15b83ebe41",
+        "92937f8014374fe544709b5da88540fe08d45747028f125a0a44d8be94095c1d",
+        "f9bc9cd0f654978ffad6037262416e70dcd720102655ba0c7ae3911b676b3734",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Lochnagar",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-125",
+      "bedrooms": 5,
+      "price": 515000,
+      "plots": [
+        {
+          "price": 515000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "26814d5748c00d124a994b0e0e8fb322f37851c063963f05da003fd2cc64f8bc",
+        "ac04267c90a9c8558e64bac026aff5aa5f6e708b854515e1984831103b4f5034",
+        "a232656c0729dd0bd0fda2cda5b46c129597365409b2046a6e14c12e2eb6df78",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Morven",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-124",
+      "bedrooms": 5,
+      "price": 675000,
+      "plots": [
+        {
+          "price": 675000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b47b761b04c87d5c2ae40dfc9627c3b4d129a165c0e2e5257265f94a9a1ed9dd",
+        "0ba1186b38094b88ea193e15c65afb38c042150938c0b2b9f047a2bc9803e435",
+        "3d1ad49dfb4c913dcb76cc3546f335db4a835619d42b8578101cb99ce83933f1",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Foudland",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-109",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "f93aa4ccd9e3c88846bf5bbc531221dc3e455bce6580ab63b8601f074fab8e64",
+        "f744378ffd056ad2509ad91c54c8298384212445dbf6fc236b97253d444501c0",
+        "5a4d58736558f5307c5198619db412755546d25ee83e4fa0e4466ea408e198f4",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Cairngorm",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-126",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "afb7ee1c52728895b25fda41b13c6bc666b38cb84d9a9f50f818b0affd15d09c",
+        "cd7cf3c4ad0bcb1e56e4fd3e0e9f3828a3c1e28b931ddab22fe3c65ad4cf2aff",
+        "2e837426322c626b8b32a465a4906efeaefeb60e72ae0bbe4fe8aea1d48cf079",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Foudland",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-128",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "f93aa4ccd9e3c88846bf5bbc531221dc3e455bce6580ab63b8601f074fab8e64",
+        "f744378ffd056ad2509ad91c54c8298384212445dbf6fc236b97253d444501c0",
+        "5a4d58736558f5307c5198619db412755546d25ee83e4fa0e4466ea408e198f4",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Cairnwell",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-129",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "0d346bf1e822e39c0b3f56248670f69b5eaa6a2e90f83d53e998a16af7942883",
+        "ca8623e7c53e0c7bd0ac86da534c87cd0074a9f8d953a7bb57c0ba463c8f0abe",
+        "94458a22b9e678ae272816e77583853a3cf8259ce158593126f507be92ab905f",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Bennachie",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-118",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "95dc9a44a82ad462baef0120359608bde2aa701377ad0bd308d3ba97ed751974",
+        "81ffde9d8e9d557559798116667cd4856dd7af0721bdc220f6bea9cb0a017d40",
+        "27f7894f2f6b3898234aa8360beba311eee580872cfcf1ffe678baa033d51b11",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "Cairngorm",
+      "url": "https://ajcscotland.com/developments/castlepark/homes/plot-117",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "afb7ee1c52728895b25fda41b13c6bc666b38cb84d9a9f50f818b0affd15d09c",
+        "cd7cf3c4ad0bcb1e56e4fd3e0e9f3828a3c1e28b931ddab22fe3c65ad4cf2aff",
+        "2e837426322c626b8b32a465a4906efeaefeb60e72ae0bbe4fe8aea1d48cf079",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "CastlePark",
+      "developmentUrl": "https://ajcscotland.com/developments/castlepark",
+      "name": "CastlePark development gallery",
+      "url": "https://ajcscotland.com/developments/castlepark",
+      "bedrooms": null,
+      "price": null,
+      "plots": [],
+      "imageIds": [
+        "38a0c3ae1e76c57b184bcb4f6d1013e14d61502371c4a80f0ce8f28f8cf726cd",
+        "08eb52deed19a00b79c99be3420304314a8a7e0b23d607d6b52b4011ebb6eaa4",
+        "b1aa8f323e0615f818521ff1c8a8c7a5deb1e805203a709016f543ea9a20a494",
+        "85268a50b57dc68a300c61cd74f4530e3c6d6704f0428508e8047b02a47e519a",
+        "984a4a16e1e4a662fa042dee670cbfa923f95aa505c15330fc9034a6e784f881",
+        "879d7a1b4e82bb70687763568e33fcc61c3837ddf2f1aefc0573664cc8f629ed",
+        "2d3804632a5c077e2739df5128cc49da805cdbdc4499de5d81dde58f98a834de",
+        "f6b8b1c95ffbac24543d66cae0245530222564fe2545a8b0faf0bbd36614341d",
+        "d8f9c2a571b0be81d6e5f286d8c53811bf56b7f3c59e508583e93dbaad019552",
+        "ef4da106bfef569d13e2345880632564756180da823b7a011566551b003c29d3",
+        "77f40738d7a878a634354ee40cb7ea80a5a8f71e85adcd9982896edf01f4e622",
+        "25120dc35746ce2f3e1e541b73d1772952e5ed5357ec77b13fef3a5cf29e938e",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2",
+        "6fb3b0777b1dd1df078d8123e290be5dd1217679322211225f29cac59e455bcc"
+      ]
+    },
+    {
+      "development": "Culter house road",
+      "developmentUrl": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Walnut",
+      "url": "https://ajcscotland.com/developments/culter-house-road/homes/plot-6",
+      "bedrooms": null,
+      "price": 899995,
+      "plots": [
+        {
+          "price": 899995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbb2d001cd589b9b9fb66fa90cd8def09b8a2150cbdcd4e76a8d0822f745e2e9",
+        "080dd7d02c7575b8993e429a62374767dfcb1e27a143f39547a49c0116ae09ed",
+        "b2cee309f58e0ee92858c89816f0e2e87fdacaf7fdab5bf8a46b4ae1146a2714",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3",
+        "2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "Culter house road",
+      "developmentUrl": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Walnut",
+      "url": "https://ajcscotland.com/developments/culter-house-road/homes/plot-8",
+      "bedrooms": null,
+      "price": 910000,
+      "plots": [
+        {
+          "price": 910000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbb2d001cd589b9b9fb66fa90cd8def09b8a2150cbdcd4e76a8d0822f745e2e9",
+        "080dd7d02c7575b8993e429a62374767dfcb1e27a143f39547a49c0116ae09ed",
+        "b2cee309f58e0ee92858c89816f0e2e87fdacaf7fdab5bf8a46b4ae1146a2714",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3",
+        "2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "Culter house road",
+      "developmentUrl": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Elm",
+      "url": "https://ajcscotland.com/developments/culter-house-road/homes/plot-7",
+      "bedrooms": null,
+      "price": 939950,
+      "plots": [
+        {
+          "price": 939950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "89560531e9bfa4a2a1e2a1248993a48b1c7dd596752b92e002a6d3a94b30affe",
+        "89f7ce7765b8aaf10c3d3c388d14a8e8edc17a8bd1b464de326cbb953688d955",
+        "1da0dbc14ed142ab7ff69a8f1410f1811a067d564482aabcfa1471899d4766cc",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3",
+        "2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "Culter house road",
+      "developmentUrl": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Elm",
+      "url": "https://ajcscotland.com/developments/culter-house-road/homes/plot-9",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "89560531e9bfa4a2a1e2a1248993a48b1c7dd596752b92e002a6d3a94b30affe",
+        "89f7ce7765b8aaf10c3d3c388d14a8e8edc17a8bd1b464de326cbb953688d955",
+        "1da0dbc14ed142ab7ff69a8f1410f1811a067d564482aabcfa1471899d4766cc",
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3",
+        "2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "Culter house road",
+      "developmentUrl": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Willow",
+      "url": "https://ajcscotland.com/developments/culter-house-road/homes/plot-10",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3",
+        "2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "Culter house road",
+      "developmentUrl": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Holly",
+      "url": "https://ajcscotland.com/developments/culter-house-road/homes/plot-11",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+        "c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3",
+        "2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2"
+      ]
+    },
+    {
+      "development": "Culter house road",
+      "developmentUrl": "https://ajcscotland.com/developments/culter-house-road",
+      "name": "Culter house road development gallery",
+      "url": "https://ajcscotland.com/developments/culter-house-road",
+      "bedrooms": null,
+      "price": null,
+      "plots": [],
+      "imageIds": [
+        "c9f9e2128bddfc1895e444c880d0211fc15db523ca3f112fcc353499dabca860",
+        "952e506acb5b25304cf3a1ed24f070c15e4a916c968b1ec5949c242c264601b2",
+        "44adb5c3272c9697e1d5cbd251579a1388443d626e6daacb482cd57f7b10de4e",
+        "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2",
+        "a29de3700560060ccd74614ad2d62e0bc6e8955edda5ef8c34942c3a83427d17",
+        "e7af51f3095fce73cbb700fb510740653d2d928241bd23dfa7a04e3a5f43ea94",
+        "87df16f0acf53126a85e024d9b1fabe5ddd3309566c023731c6954e41558de61",
+        "bdad8369bdb46827e14058a8999208e1180c610f128d0b75ae941fdec1835ce6",
+        "71d0c674ae5052684b3c26365411d11ec05cac183cae3477a09ec6fe23306d37",
+        "3904abd731f31c4e86e0042bbf350de93bf05f554d62ec9a1463b2d738eed4f0",
+        "d2a229a3672b8e56ba88d1e621589a9c41a6b4475f64e993b4316f7bb9059514",
+        "cb67c3cf5eedd78b55a0fcc38b59960197c5f5acb5a1fcb3c8ed0ca8fd085616",
+        "303ac442197b26fe57d9456c690f1c39ef1d0432221d59f28e95f5d712cbf04f",
+        "c52e33822f1cd77957d2f3b6b7ba41a0ed3761b13c4241d9fb3b10523323726a",
+        "c55da0e0ceceea0b406bbd9e114336b2394188d9a66f33a893e4007b57887691",
+        "940f9d1edd9af144a0776dbef64d862a8387ee2b633d41ea2b0a03b158d3b4e3",
+        "ae60ee8d2132dc3c4bdeb42bbe22e49197e1bb10b12ebea3ff7621ebd2edb690"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Marlborough",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-176",
+      "bedrooms": 2,
+      "price": 229500,
+      "plots": [
+        {
+          "price": 229500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e08a2edd96f86ac6d233b8b30aa7a57d2f0718270f5090cf29972260f093941d",
+        "304f6756127b3b4f737825a2d098e05747ad2cd4d8a4a63c2b4cee830c4846a6",
+        "b2ee9c18cb9a86f054f8a5e6276ceefd51c27290b03d11138e15a5008e46510a",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Marlborough",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-177",
+      "bedrooms": 2,
+      "price": 229500,
+      "plots": [
+        {
+          "price": 229500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e08a2edd96f86ac6d233b8b30aa7a57d2f0718270f5090cf29972260f093941d",
+        "304f6756127b3b4f737825a2d098e05747ad2cd4d8a4a63c2b4cee830c4846a6",
+        "b2ee9c18cb9a86f054f8a5e6276ceefd51c27290b03d11138e15a5008e46510a",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Marlborough",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-178",
+      "bedrooms": 2,
+      "price": 229500,
+      "plots": [
+        {
+          "price": 229500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e08a2edd96f86ac6d233b8b30aa7a57d2f0718270f5090cf29972260f093941d",
+        "304f6756127b3b4f737825a2d098e05747ad2cd4d8a4a63c2b4cee830c4846a6",
+        "b2ee9c18cb9a86f054f8a5e6276ceefd51c27290b03d11138e15a5008e46510a",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Richmond",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-179",
+      "bedrooms": 3,
+      "price": 295000,
+      "plots": [
+        {
+          "price": 295000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5a89c06297f535567e0158b77770bf6afd2159b3af0e8f92bc5fd2e8c8e3d9a4",
+        "6a8a1e05f0eb1a054da81714f82a34fc2483ff681c7d7f387ea9d43f11eed401",
+        "94df4ad8612b9c7ce7abecea6364167df46e181acbfab35eada9ca92cbb9ed84",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Richmond",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-180",
+      "bedrooms": 3,
+      "price": 295000,
+      "plots": [
+        {
+          "price": 295000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5a89c06297f535567e0158b77770bf6afd2159b3af0e8f92bc5fd2e8c8e3d9a4",
+        "6a8a1e05f0eb1a054da81714f82a34fc2483ff681c7d7f387ea9d43f11eed401",
+        "94df4ad8612b9c7ce7abecea6364167df46e181acbfab35eada9ca92cbb9ed84",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Fife",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-165",
+      "bedrooms": 3,
+      "price": 365000,
+      "plots": [
+        {
+          "price": 365000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f645ffae5acf69cfa22b69e33af8b40a456247578773805ca7dc5d00021c6f28",
+        "3519c632342bb1f7a9567775d18f0f62e21cda0a00708f7a45bd423faa681e3b",
+        "d206ab3dfba524fe2f84b469f71bda0cfda82024baeecd107fd7f729440887ae",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Buccleugh",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-167",
+      "bedrooms": 4,
+      "price": 387500,
+      "plots": [
+        {
+          "price": 387500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d98e0030adfed4dbdad6d4c9c3a06d0d7b6548bf29df3ed3c72d315b034d7644",
+        "9e99e75670e025a076cc62a575eb6f4a726865cfc72c4c6872d64d75e83c7f9d",
+        "585238e6557c84e2fee90bc1c746f10d0efe59ea9e70141da5e256ec5bf1d902",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Hamilton",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-162",
+      "bedrooms": 4,
+      "price": 10000,
+      "plots": [
+        {
+          "price": 10000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6e9f5594e50e32abf93ff29ad507a0e982e8d1def2bc1457ade25e0c7ad383f8",
+        "ed2d97296183bc690121b5e7d60e9a5bc4faee87a6e16f1ff8471c305cf8be56",
+        "973f8e193721bf3729ee2673d17267b4d60d287652f64358832fb0c8a01a32d3",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Montrose",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-160",
+      "bedrooms": 4,
+      "price": 10000,
+      "plots": [
+        {
+          "price": 10000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "094a8f6d8a7e5387604556562a1c2d469b35f4e78a004b0be6b2e112972cb03b",
+        "ccefb9933f34468b8d8d44907ed5cf797bb4fb3d007362afb093af862828b772",
+        "47ef22f05e3bcb4c11cfa6236fbc6ac31d722ac56748ea509ff977b16182a308",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Montrose",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-181",
+      "bedrooms": 4,
+      "price": 442000,
+      "plots": [
+        {
+          "price": 442000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "094a8f6d8a7e5387604556562a1c2d469b35f4e78a004b0be6b2e112972cb03b",
+        "ccefb9933f34468b8d8d44907ed5cf797bb4fb3d007362afb093af862828b772",
+        "47ef22f05e3bcb4c11cfa6236fbc6ac31d722ac56748ea509ff977b16182a308",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Gordon",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-159",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "92b9f69f4e6cf40dce791ea5d6fce83b4632d1f85ef8b0fa8d4bc94b8a73ef66",
+        "2d8257f6347b3bf0e38db8aa58890a685ee3a0f7cb1a5ff9535c58263ab7cd88",
+        "a7fe25a747a270468c0f2760b7d9e9ca674d0ef940bd468db792566dd00383e5",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Argyll",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-155",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "8360b7b1a4865561f4f8ac0ff5ae964b7abf63cf445c336c79c595b53c2134be",
+        "ca4f77427324c8898a219b43334e5b1c99a409ad51e4a7fb2240865416a778b6",
+        "f73af0c134f345a421631a5de2b879eb609c3f29c68cfb35d098fa1d8da99403",
+        "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+        "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+        "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+        "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+        "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+        "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+        "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+        "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Fife",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-170",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "f645ffae5acf69cfa22b69e33af8b40a456247578773805ca7dc5d00021c6f28",
+        "3519c632342bb1f7a9567775d18f0f62e21cda0a00708f7a45bd423faa681e3b",
+        "d206ab3dfba524fe2f84b469f71bda0cfda82024baeecd107fd7f729440887ae",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Roxburghe",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-172",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "b19589be91244978b9efd0bd3c5dedc2994903611e2251c1aec107683e32d4f1",
+        "d90cf3c5ed96aec542cf654e7b4ae193c282ca795b12441c36c9c9609e0b1384",
+        "dc92b53f285688ccabed60f4cca25780aa8a959aa446ba7c09b5888340c16568",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Richmond",
+      "url": "https://ajcscotland.com/developments/benton-crescent/homes/plot-173",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "5a89c06297f535567e0158b77770bf6afd2159b3af0e8f92bc5fd2e8c8e3d9a4",
+        "6a8a1e05f0eb1a054da81714f82a34fc2483ff681c7d7f387ea9d43f11eed401",
+        "94df4ad8612b9c7ce7abecea6364167df46e181acbfab35eada9ca92cbb9ed84",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Discover Benton Crescent",
+      "developmentUrl": "https://ajcscotland.com/developments/benton-crescent",
+      "name": "Discover Benton Crescent development gallery",
+      "url": "https://ajcscotland.com/developments/benton-crescent",
+      "bedrooms": null,
+      "price": null,
+      "plots": [],
+      "imageIds": [
+        "246f154f96f7e0e23900c0ecb239c718b2bf6b0318c9042d23007c0e7ec5efb7",
+        "e42265fc872653429d4d33611cd79274a160b68f2b2484141d587920536f1412",
+        "1f85790455b7962422646bfdb19ee0aa0a264ebaf4b401edd2c05401da8902aa",
+        "457e0970660842cf6e25b30531441b870e321a4a2999b127cfebe0e29b82a67d",
+        "79f785d81702eacfa990bbce645321da62cca8fbd22b827b9eacb9e5d67db2bf",
+        "40386e1cbf60b7e5fee80b16fa33e52c659dcfb393975aee4ae6e10f188c5567",
+        "fd0920db88a67cca20fde6304b1b8002acb327ef411e3ff67d42a4a7f38cbd86",
+        "dfdccacfe74ffb60e46712ba1bbeafe7ed72e901ad6880201f1169c0c62ae1c5",
+        "f1dd2a2afe813114644f58c177bdb1a1ef06fa465155e2d0f12ce629fc2715bb",
+        "84fab525b876f3670f93b4cd6d043ca5c41aed9787a55accf7b3046ba7ea6822",
+        "71029d9a1c9f0bbab191a2e31419bdd82067a2596e224736e1f9082826a10e59",
+        "90af8c9fb89e9aab68fd277a3a6f182260a94849e3d577053f1d301d93d5dcd0",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f",
+        "4730c631f63a211de952e3c17215c1188af7b9bb593c34151c20204909990830",
+        "5d15ba5ae321b816451e87e7f77892e6ce7e1956dae93e28110a19488a3bdbd6",
+        "0aff07a2d96774e7f6c66346cf9fbcb52c290b737be9ea84a0cf107da9d7a0a9",
+        "c9176b0675da7244534399a9a4722c9833fe2b377f01533a1000f8010998271c",
+        "dc2037b7428b1dbfa8c4831a0a7a768b0f91eef847b9b127a5cc3dc88818fc70",
+        "1bec49daae32775f435de79b5e272621a023afd76aeee20e7c9eae4ac23aa4aa",
+        "ff39f13ed0b415f4b36caa894ee6810f23a39277c04b67cb616a32a74dc2e73c"
+      ]
+    },
+    {
+      "development": "Queen Elizabeth Drive",
+      "developmentUrl": "https://ajcscotland.com/developments/queen-elizabeth-drive",
+      "name": "Douglas",
+      "url": "https://ajcscotland.com/developments/queen-elizabeth-drive/homes/plot-26",
+      "bedrooms": 5,
+      "price": 695000,
+      "plots": [
+        {
+          "price": 695000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "448076c1e7322bdf3aa9e6d9f243b922eaee9db8a5dc552469874df8c48e3a1f",
+        "cc94024a9c432f2fb391a6529e57abdad44ee0adafaf2019f91c898b269fc7d0",
+        "a0e6b401f350a6980daf09bf5d6557a72242db1de02db9d5a19ba267cc55eae0",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Queen Elizabeth Drive",
+      "developmentUrl": "https://ajcscotland.com/developments/queen-elizabeth-drive",
+      "name": "Douglas",
+      "url": "https://ajcscotland.com/developments/queen-elizabeth-drive/homes/plot-27",
+      "bedrooms": 5,
+      "price": 699950,
+      "plots": [
+        {
+          "price": 699950,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "448076c1e7322bdf3aa9e6d9f243b922eaee9db8a5dc552469874df8c48e3a1f",
+        "cc94024a9c432f2fb391a6529e57abdad44ee0adafaf2019f91c898b269fc7d0",
+        "a0e6b401f350a6980daf09bf5d6557a72242db1de02db9d5a19ba267cc55eae0",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    },
+    {
+      "development": "Queen Elizabeth Drive",
+      "developmentUrl": "https://ajcscotland.com/developments/queen-elizabeth-drive",
+      "name": "Queen Elizabeth Drive development gallery",
+      "url": "https://ajcscotland.com/developments/queen-elizabeth-drive",
+      "bedrooms": null,
+      "price": null,
+      "plots": [],
+      "imageIds": [
+        "0c2f2f17a09808cefa1a1ef70481da7da227e1581c570b1b862981df92e4aa9a",
+        "371da36746351f789de67803c62144b938e6e6473ae883504e4d0dbaef5e45d8",
+        "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "0d346bf1e822e39c0b3f56248670f69b5eaa6a2e90f83d53e998a16af7942883",
+      "path": "images/0d346bf1e822e39c0b3f56248670f69b5eaa6a2e90f83d53e998a16af7942883.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3795_25_Phase_4B2__Tarland_Road__Aboyne_Cairnwell_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with a beige rendered facade, stone-effect lower level, dark grey tiled roof, and a blue front door and garage door. There is a paved driveway and a small front lawn.",
+        "reason": "This is an exterior architectural rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8674a05277e7bb1ea3e74996b207afad1a8025a651ab37f3fcf30e15b83ebe41",
+      "path": "images/8674a05277e7bb1ea3e74996b207afad1a8025a651ab37f3fcf30e15b83ebe41.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3795_25_Phase_4B2__Tarland_Road__Aboyne_Clachnaben_DG_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with a beige rendered facade, stone-effect lower level, dark grey tiled roof, and red garage doors and front door. There is a paved driveway and a front lawn.",
+        "reason": "This is an exterior architectural rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ca8623e7c53e0c7bd0ac86da534c87cd0074a9f8d953a7bb57c0ba463c8f0abe",
+      "path": "images/ca8623e7c53e0c7bd0ac86da534c87cd0074a9f8d953a7bb57c0ba463c8f0abe.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Cairnwell_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout of a house, including a lounge, kitchen, dining area, family room, utility, WC, and garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f93aa4ccd9e3c88846bf5bbc531221dc3e455bce6580ab63b8601f074fab8e64",
+      "path": "images/f93aa4ccd9e3c88846bf5bbc531221dc3e455bce6580ab63b8601f074fab8e64.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3795_25_Phase_4B2__Tarland_Road__Aboyne_Foudland_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with a beige rendered facade, dark grey tiled roof, and sage green garage door and window frames. There is a paved driveway and a front lawn.",
+        "reason": "This is an exterior architectural rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Sage green",
+          "Green",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "92937f8014374fe544709b5da88540fe08d45747028f125a0a44d8be94095c1d",
+      "path": "images/92937f8014374fe544709b5da88540fe08d45747028f125a0a44d8be94095c1d.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Clachnaben_dg_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout of a house, including a lounge, kitchen, dining area, family room, utility, WC, and a double garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "94458a22b9e678ae272816e77583853a3cf8259ce158593126f507be92ab905f",
+      "path": "images/94458a22b9e678ae272816e77583853a3cf8259ce158593126f507be92ab905f.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Cairnwell_first.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper floor layout of a house, featuring four bedrooms, a bathroom, an en-suite, and a landing.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f744378ffd056ad2509ad91c54c8298384212445dbf6fc236b97253d444501c0",
+      "path": "images/f744378ffd056ad2509ad91c54c8298384212445dbf6fc236b97253d444501c0.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Foudland_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout of a house, including a lounge, kitchen, dining area, family room, utility, WC, bedroom 4, and a garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f9bc9cd0f654978ffad6037262416e70dcd720102655ba0c7ae3911b676b3734",
+      "path": "images/f9bc9cd0f654978ffad6037262416e70dcd720102655ba0c7ae3911b676b3734.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Clachnaben_dg_first.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper floor layout of a house, featuring five bedrooms, a bathroom, and two en-suites.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+      "path": "images/47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/006.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A close-up shot of a stainless steel built-in oven with the brand name Neff visible. The background is blurred, showing a glimpse of a living area with a lamp and soft furnishings.",
+        "reason": "The image shows a kitchen appliance in a residential setting."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5a4d58736558f5307c5198619db412755546d25ee83e4fa0e4466ea408e198f4",
+      "path": "images/5a4d58736558f5307c5198619db412755546d25ee83e4fa0e4466ea408e198f4.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Foudland_first.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of an upper floor, including three bedrooms, a bathroom, an en-suite, and a landing area.",
+        "reason": "This is a technical drawing of a property layout."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355",
+      "path": "images/263034ecc891698a3095834bab5c4a149bd0df9f752b996878a83d58c38da355.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/Castle_Park.AJC_Homes_NHastiePhoto_07_.18-47_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "The rear exterior view of a two-story detached house at dusk. The house has a light-coloured render, dark roof tiles, and dark window frames. French doors are open, revealing a dining room inside.",
+        "reason": "This is an exterior photograph of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House rear",
+        "isRoom": true,
+        "objects": [
+          "french doors"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad",
+      "path": "images/606e95a20a8d23293f59fa34c308a67f6087553b4ff4a1e3bea109d96f7d15ad.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/Spec_image_-_Internal.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "A bright, modern hallway with light cream walls, dark wood-effect flooring, and light oak doors. A staircase with a white banister and grey carpet is visible.",
+        "reason": "The image depicts the interior circulation space of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White",
+          "Cream / Neutral",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+      "path": "images/a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/IMG_1226_sm.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A close-up of a modern chrome shower head fixture, featuring a large circular main head and a smaller secondary head.",
+        "reason": "This is a detail shot of bathroom hardware."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "isRoom": true,
+        "objects": [
+          "shower"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19",
+      "path": "images/fcb8a5a39128d84f2bd56601f84544556271a9b99189588e4303891947bbec19.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/IMG_1068_sm.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A close-up of two white towels with decorative embossed patterns, hanging on a chrome heated towel rail.",
+        "reason": "This is a detail shot of bathroom accessories."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4",
+      "path": "images/a2d2e6a267a3132dc631cd571ce20474d2a46e0452ad7dcd2f06c3e7874463e4.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/St_Machar_Avenue_10_%2824%29_50863.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with white cabinetry, light stone-effect countertops, a stainless steel sink, and a built-in oven. There is a window looking out onto a wooden fence.",
+        "reason": "The image shows a fully fitted residential kitchen."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [
+          "cabinetry",
+          "vanity unit",
+          "fence"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020",
+      "path": "images/5c479db587cc7fbbc5f61990b76febb0e4b9b177d754d4e2353ea5555a3c3020.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/Castle_Park.AJC_Homes_NHastiePhoto_07_.18-6_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A street-level view of a row of modern detached houses with stone and rendered facades, dark tiled roofs, and wooden garage doors. There is a paved driveway and a green lawn in the foreground.",
+        "reason": "This is an exterior photograph of a residential development."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5",
+      "path": "images/5b81447c6a8e3f9d3f2ff8198d6917c37015af1bdfb1f4636410f1a2c9a97bb5.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/Castle_Park.AJC_Homes_NHastiePhoto_07_.18-9_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "The rear exterior of a two-story detached house with cream-colored render, dark grey roof tiles, and dark window frames. There is a paved patio area leading to a large, well-maintained green lawn enclosed by a dark green wooden fence. The sky is blue with scattered white clouds.",
+        "reason": "This is an exterior photograph of the property showing the rear garden and house facade."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House rear",
+        "isRoom": true,
+        "objects": [
+          "lawn",
+          "patio",
+          "fence"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Green",
+          "Grey",
+          "White",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb",
+      "path": "images/fa595a63b6c2405cb4dfeaf12ec6bc4b7ff12df6b6977efed8767d2094bb5bdb.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/NHBC_R_CMYK_BS.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "logo",
+        "description": "The NHBC Registered logo featuring the text 'NHBC' in white on a dark blue background with a red checkmark, and the word 'Registered' below on a grey bar.",
+        "reason": "This is a corporate logo and not a room or property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Navy",
+          "Blue",
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2",
+      "path": "images/cd9e28cd8353319ba5967a03f02ff523b927841ca9c5c25b13b94893f996c3d2.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/headshots/AJC_sambrill-0008_200_200_95_c1_c.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "promotional graphic",
+        "description": "A headshot of a blonde woman wearing glasses and a dark blazer, smiling at the camera.",
+        "reason": "This is a professional portrait/promotional image of a person, not a room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Document / Graphic",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "26814d5748c00d124a994b0e0e8fb322f37851c063963f05da003fd2cc64f8bc",
+      "path": "images/26814d5748c00d124a994b0e0e8fb322f37851c063963f05da003fd2cc64f8bc.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3795_25_Phase_4B2__Tarland_Road__Aboyne_Lochnagar_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of the front exterior of a two-story house. It features cream render, stone-effect cladding on the lower left, a blue front door, and two blue garage doors. There is a paved driveway and a small front lawn.",
+        "reason": "This is an architectural rendering of the property's exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b47b761b04c87d5c2ae40dfc9627c3b4d129a165c0e2e5257265f94a9a1ed9dd",
+      "path": "images/b47b761b04c87d5c2ae40dfc9627c3b4d129a165c0e2e5257265f94a9a1ed9dd.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3795_25_Phase_4B2_Tarland_Road_Aboyne_Morven_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of the front exterior of a two-story house. It features cream render, stone-effect cladding on the lower left, a red front door, and two red garage doors. There is a paved driveway and a small front lawn.",
+        "reason": "This is an architectural rendering of the property's exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ac04267c90a9c8558e64bac026aff5aa5f6e708b854515e1984831103b4f5034",
+      "path": "images/ac04267c90a9c8558e64bac026aff5aa5f6e708b854515e1984831103b4f5034.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Lochnagar_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout, including a lounge, hall, family/dining/kitchen area, utility room, WC, and a double garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0ba1186b38094b88ea193e15c65afb38c042150938c0b2b9f047a2bc9803e435",
+      "path": "images/0ba1186b38094b88ea193e15c65afb38c042150938c0b2b9f047a2bc9803e435.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Morven-CP-4B2_GF.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing an alternative ground floor layout, including a lounge, hall, family/dining/kitchen area, utility room, WC, and a double garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a232656c0729dd0bd0fda2cda5b46c129597365409b2046a6e14c12e2eb6df78",
+      "path": "images/a232656c0729dd0bd0fda2cda5b46c129597365409b2046a6e14c12e2eb6df78.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Lochnagar_first.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the first-floor layout, including five bedrooms, a landing, a family bathroom, and two en-suite bathrooms.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "afb7ee1c52728895b25fda41b13c6bc666b38cb84d9a9f50f818b0affd15d09c",
+      "path": "images/afb7ee1c52728895b25fda41b13c6bc666b38cb84d9a9f50f818b0affd15d09c.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3795_25_Phase_4B2__Tarland_Road__Aboyne_Cairngorm_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with a stone and render facade, a dark tiled roof with solar panels, and an attached garage.",
+        "reason": "This is an exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "3d1ad49dfb4c913dcb76cc3546f335db4a835619d42b8578101cb99ce83933f1",
+      "path": "images/3d1ad49dfb4c913dcb76cc3546f335db4a835619d42b8578101cb99ce83933f1.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Morven-CP-4B2_FF.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper level of a house, including five bedrooms, en-suites, a bathroom, and a study area.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cd7cf3c4ad0bcb1e56e4fd3e0e9f3828a3c1e28b931ddab22fe3c65ad4cf2aff",
+      "path": "images/cd7cf3c4ad0bcb1e56e4fd3e0e9f3828a3c1e28b931ddab22fe3c65ad4cf2aff.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Cairngorm_ground_floor.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground level of a house, including a kitchen, dining area, family room, lounge, utility, and garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2e837426322c626b8b32a465a4906efeaefeb60e72ae0bbe4fe8aea1d48cf079",
+      "path": "images/2e837426322c626b8b32a465a4906efeaefeb60e72ae0bbe4fe8aea1d48cf079.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Cairngorm_first_floor.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the upper level of a house, featuring five bedrooms, en-suites, a family bathroom, and a landing.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "38a0c3ae1e76c57b184bcb4f6d1013e14d61502371c4a80f0ce8f28f8cf726cd",
+      "path": "images/38a0c3ae1e76c57b184bcb4f6d1013e14d61502371c4a80f0ce8f28f8cf726cd.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/developments/headers/Hires_CP_1800_800_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A street-level view of several detached houses with varied exterior finishes, including render, stone, and painted timber cladding, with landscaped front gardens.",
+        "reason": "This is an exterior view of a property development."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "95dc9a44a82ad462baef0120359608bde2aa701377ad0bd308d3ba97ed751974",
+      "path": "images/95dc9a44a82ad462baef0120359608bde2aa701377ad0bd308d3ba97ed751974.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3795_25_Phase_4B2__Tarland_Road__Aboyne_Bennachie_HR_Medium.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a detached house with a stone and render exterior, dark roof tiles, and blue garage doors.",
+        "reason": "This is an exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "08eb52deed19a00b79c99be3420304314a8a7e0b23d607d6b52b4011ebb6eaa4",
+      "path": "images/08eb52deed19a00b79c99be3420304314a8a7e0b23d607d6b52b4011ebb6eaa4.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3795_25_Phase_4B2__Tarland_Road__Aboyne_Cairnwell_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a detached house with a stone and render exterior, dark roof tiles, solar panels, and a blue front door.",
+        "reason": "This is an exterior view of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "81ffde9d8e9d557559798116667cd4856dd7af0721bdc220f6bea9cb0a017d40",
+      "path": "images/81ffde9d8e9d557559798116667cd4856dd7af0721bdc220f6bea9cb0a017d40.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Floorplans_Castlepark_Bennachie_Floorplan_GF.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground level of a house, including a kitchen, dining area, lounge, and garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b1aa8f323e0615f818521ff1c8a8c7a5deb1e805203a709016f543ea9a20a494",
+      "path": "images/b1aa8f323e0615f818521ff1c8a8c7a5deb1e805203a709016f543ea9a20a494.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3795_25_Phase_4B2__Tarland_Road__Aboyne_Foudland_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with a light-coloured render, green timber cladding accents, a dark tiled roof with solar panels, and an integrated garage.",
+        "reason": "This is a promotional exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bbb2d001cd589b9b9fb66fa90cd8def09b8a2150cbdcd4e76a8d0822f745e2e9",
+      "path": "images/bbb2d001cd589b9b9fb66fa90cd8def09b8a2150cbdcd4e76a8d0822f745e2e9.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3337_20_Cutler_House_Additional_CGIs_AJC__2026_Plot_6_Sage_Green_Option_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a large detached house featuring a mix of stone and white render, a dark tiled roof, and a double garage with blue doors.",
+        "reason": "This is a promotional exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "27f7894f2f6b3898234aa8360beba311eee580872cfcf1ffe678baa033d51b11",
+      "path": "images/27f7894f2f6b3898234aa8360beba311eee580872cfcf1ffe678baa033d51b11.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Floorplans_Castlepark_Bennachie_Floorplan_FF.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A black and white architectural floorplan showing the layout of a residential floor, including multiple rooms, bathrooms, and a staircase.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "85268a50b57dc68a300c61cd74f4530e3c6d6704f0428508e8047b02a47e519a",
+      "path": "images/85268a50b57dc68a300c61cd74f4530e3c6d6704f0428508e8047b02a47e519a.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3795_25_Phase_4B2__Tarland_Road__Aboyne_Clachnaben_DG_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story house with a stone base, light render, dark roof, and prominent red garage doors and front door.",
+        "reason": "This is a promotional exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "080dd7d02c7575b8993e429a62374767dfcb1e27a143f39547a49c0116ae09ed",
+      "path": "images/080dd7d02c7575b8993e429a62374767dfcb1e27a143f39547a49c0116ae09ed.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/walnut-ground-floor.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A black and white ground floor plan showing a lounge, dining area, kitchen, utility room, bedroom 5, and a garage.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "984a4a16e1e4a662fa042dee670cbfa923f95aa505c15330fc9034a6e784f881",
+      "path": "images/984a4a16e1e4a662fa042dee670cbfa923f95aa505c15330fc9034a6e784f881.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3795_25_Phase_4B2__Tarland_Road__Aboyne_Lochnagar_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story house with a stone base, light render, dark roof, and blue garage doors and front door.",
+        "reason": "This is a promotional exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b2cee309f58e0ee92858c89816f0e2e87fdacaf7fdab5bf8a46b4ae1146a2714",
+      "path": "images/b2cee309f58e0ee92858c89816f0e2e87fdacaf7fdab5bf8a46b4ae1146a2714.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/walnut-first-floor.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A black and white first-floor plan showing four bedrooms, en-suite bathrooms, a family bathroom, and a central hallway.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "879d7a1b4e82bb70687763568e33fcc61c3837ddf2f1aefc0573664cc8f629ed",
+      "path": "images/879d7a1b4e82bb70687763568e33fcc61c3837ddf2f1aefc0573664cc8f629ed.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/Morven_not_plot_specific_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story house with a stone base, light render, dark roof, and red garage doors and front door.",
+        "reason": "This is a promotional exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4",
+      "path": "images/c13623a7411a4abb1d85cb71e7b0254de1f8770c7a6f2c1fda5e292942be7cb4.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/Culter_House_Road_62_%2823%290975.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "A bright, modern hallway with white walls, light wood-effect flooring, and a staircase featuring a wooden handrail and glass balustrade with light grey carpeted steps. Several light oak doors are visible.",
+        "reason": "This is an interior view of a residential hallway and staircase."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2d3804632a5c077e2739df5128cc49da805cdbdc4499de5d81dde58f98a834de",
+      "path": "images/2d3804632a5c077e2739df5128cc49da805cdbdc4499de5d81dde58f98a834de.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3795_25_Phase_4B2__Tarland_Road__Aboyne_Cairngorm_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with a beige rendered facade, stone-effect lower level, dark grey roof tiles, and a double garage with green doors. There is a paved driveway and a small front lawn.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb",
+      "path": "images/100631346b731f7c5219ec041b48e4fd3b99a177a6f1aace06c0dbc4bb4c8afb.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/IMG_1100_sm.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A close-up shot of a chrome shower fixture with a large rainfall shower head and a smaller handheld shower head, mounted against light-colored tiled walls.",
+        "reason": "This is a detail shot of bathroom fixtures."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "isRoom": true,
+        "objects": [
+          "shower"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f6b8b1c95ffbac24543d66cae0245530222564fe2545a8b0faf0bbd36614341d",
+      "path": "images/f6b8b1c95ffbac24543d66cae0245530222564fe2545a8b0faf0bbd36614341d.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3795_25_Phase_4B2__Tarland_Road__Aboyne_Bennachie_HR_Medium_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with a beige rendered facade, stone-effect lower level, dark grey roof tiles, and a double garage with blue doors. There is a paved driveway and a front lawn.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63",
+      "path": "images/b431e9b70b04bc2965db3e61568a3eb10bc54a6c2544137efee9c433078b6d63.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/Bedroom_five_en_suite.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "A modern bathroom featuring a corner shower enclosure with glass doors, a white toilet, a pedestal sink, and light-colored tiled flooring. The walls are painted a soft cream color.",
+        "reason": "This is an interior view of a residential bathroom."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Shower room",
+        "isRoom": true,
+        "objects": [
+          "shower",
+          "vanity unit",
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d8f9c2a571b0be81d6e5f286d8c53811bf56b7f3c59e508583e93dbaad019552",
+      "path": "images/d8f9c2a571b0be81d6e5f286d8c53811bf56b7f3c59e508583e93dbaad019552.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/Abpyne_3.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "garden",
+        "description": "A scenic outdoor view of a small waterfall cascading over a rocky cliff face into a dark pool, surrounded by lush green trees, ferns, and wild vegetation.",
+        "reason": "This is an exterior view of a natural garden or landscape feature."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3",
+      "path": "images/e1430a2d3013f585df9d9bda74c0dce1275023025f01d406552070d53482eef3.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/Vestibule.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "An entrance hallway featuring a dark grey front door with glass panels, light wood-effect flooring, and a set of light oak double doors leading to a storage area.",
+        "reason": "This is an interior view of a residential entrance hallway."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Entrance hall",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ef4da106bfef569d13e2345880632564756180da823b7a011566551b003c29d3",
+      "path": "images/ef4da106bfef569d13e2345880632564756180da823b7a011566551b003c29d3.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/Aboyne_4.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A street-level view of a small town center with traditional stone buildings, shops, a 20mph speed limit sign, and parked cars on the road.",
+        "reason": "This is an exterior view of a local area or street scene."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542",
+      "path": "images/2f5e049a853ec7cc5922a3c2fe299891bf8ea1f610306adcee5da7b078c0e542.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/developments/specs/The_Tor.Finzean_.AJC_Homes_NHastiePhoto_11_.18-26_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "Close-up of brushed metal electrical switches and sockets mounted on a white wall above a dark wood-effect skirting board.",
+        "reason": "This is a detail shot of interior fixtures within a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Entrance hall",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "77f40738d7a878a634354ee40cb7ea80a5a8f71e85adcd9982896edf01f4e622",
+      "path": "images/77f40738d7a878a634354ee40cb7ea80a5a8f71e85adcd9982896edf01f4e622.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/cpdrone.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "Aerial view of a large lake surrounded by green fields, a golf course, and dense woodland under a cloudy sky.",
+        "reason": "This is an exterior landscape view of the property's surroundings."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "25120dc35746ce2f3e1e541b73d1772952e5ed5357ec77b13fef3a5cf29e938e",
+      "path": "images/25120dc35746ce2f3e1e541b73d1772952e5ed5357ec77b13fef3a5cf29e938e.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/AJC_Castle_Park.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "Aerial view of a residential housing development nestled in a valley with rolling hills and forests in the background.",
+        "reason": "This is an exterior view of the residential area."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "89560531e9bfa4a2a1e2a1248993a48b1c7dd596752b92e002a6d3a94b30affe",
+      "path": "images/89560531e9bfa4a2a1e2a1248993a48b1c7dd596752b92e002a6d3a94b30affe.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3337_20_Cutler_House_Additional_CGIs_AJC__2026_Plot_7_Sage_Green_Option_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a large, modern detached house with a stone and white render facade, a double garage, and a paved driveway.",
+        "reason": "This is an exterior architectural rendering of the property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "6fb3b0777b1dd1df078d8123e290be5dd1217679322211225f29cac59e455bcc",
+      "path": "images/6fb3b0777b1dd1df078d8123e290be5dd1217679322211225f29cac59e455bcc.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/Abpyne_2.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A stone gate entrance with decorative iron fencing, stone pillars, and black planters filled with colorful flowers.",
+        "reason": "This is an exterior view of the property grounds or local area."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "89f7ce7765b8aaf10c3d3c388d14a8e8edc17a8bd1b464de326cbb953688d955",
+      "path": "images/89f7ce7765b8aaf10c3d3c388d14a8e8edc17a8bd1b464de326cbb953688d955.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/elm-ground-floor.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout of a house, including a garage, kitchen, lounge, and utility room.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1da0dbc14ed142ab7ff69a8f1410f1811a067d564482aabcfa1471899d4766cc",
+      "path": "images/1da0dbc14ed142ab7ff69a8f1410f1811a067d564482aabcfa1471899d4766cc.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/elm-first-floor.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the first floor layout of a house, including multiple bedrooms, bathrooms, and en-suites.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c9f9e2128bddfc1895e444c880d0211fc15db523ca3f112fcc353499dabca860",
+      "path": "images/c9f9e2128bddfc1895e444c880d0211fc15db523ca3f112fcc353499dabca860.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/developments/headers/3337_20_Cutler_House_Additional_CGIs_AJC__2026_Plot_7_Sage_Green_Option_HR_1800_800_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a large, modern detached house with a stone and white render facade, a double garage, and a paved driveway.",
+        "reason": "This is an exterior architectural rendering of the property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "952e506acb5b25304cf3a1ed24f070c15e4a916c968b1ec5949c242c264601b2",
+      "path": "images/952e506acb5b25304cf3a1ed24f070c15e4a916c968b1ec5949c242c264601b2.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3337_20_Cutler_House_Additional_CGIs_AJC__2026_Plot_6_Sage_Green_Option_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a large, two-story detached house with a mix of grey stone and white render exterior walls, a dark slate roof, and a paved driveway.",
+        "reason": "This is an architectural visualization of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e08a2edd96f86ac6d233b8b30aa7a57d2f0718270f5090cf29972260f093941d",
+      "path": "images/e08a2edd96f86ac6d233b8b30aa7a57d2f0718270f5090cf29972260f093941d.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3812_25_B60_Marlborough_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a pair of semi-detached houses with cream-colored walls, dark grey roof tiles, and bright red front doors, set behind a low hedge.",
+        "reason": "This is an architectural visualization of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "44adb5c3272c9697e1d5cbd251579a1388443d626e6daacb482cd57f7b10de4e",
+      "path": "images/44adb5c3272c9697e1d5cbd251579a1388443d626e6daacb482cd57f7b10de4e.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3337_20_Cutler_House_Additional_CGIs_AJC__2026_Plot_7_Sage_Green_Option_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a large detached house featuring a combination of stone and white render, a dark slate roof with solar panels, and green garage doors.",
+        "reason": "This is an architectural visualization of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "304f6756127b3b4f737825a2d098e05747ad2cd4d8a4a63c2b4cee830c4846a6",
+      "path": "images/304f6756127b3b4f737825a2d098e05747ad2cd4d8a4a63c2b4cee830c4846a6.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/Marlborough_ground_1.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D black and white floorplan showing a ground floor layout with a lounge, kitchen, WC, and hallway.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a29de3700560060ccd74614ad2d62e0bc6e8955edda5ef8c34942c3a83427d17",
+      "path": "images/a29de3700560060ccd74614ad2d62e0bc6e8955edda5ef8c34942c3a83427d17.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/AJC_Milltimber_0064_%281%29_%281%29.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a detached house with white render walls, a dark slate roof, and wooden garage doors, set in a landscaped area with a paved driveway.",
+        "reason": "This is an architectural visualization of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b2ee9c18cb9a86f054f8a5e6276ceefd51c27290b03d11138e15a5008e46510a",
+      "path": "images/b2ee9c18cb9a86f054f8a5e6276ceefd51c27290b03d11138e15a5008e46510a.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/AJC_Marlborough_top_floor.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D black and white floorplan showing an upper floor layout with two bedrooms, a bathroom, and a hallway.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e7af51f3095fce73cbb700fb510740653d2d928241bd23dfa7a04e3a5f43ea94",
+      "path": "images/e7af51f3095fce73cbb700fb510740653d2d928241bd23dfa7a04e3a5f43ea94.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/AJC_Milltimber_0086_%281%29.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a large detached house with stone and white render walls, a dark slate roof, and wooden garage doors, viewed from a grassy lawn.",
+        "reason": "This is an architectural visualization of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f",
+      "path": "images/59dea39d0a0b1d4b9536ab94dcff3090f9c5db89967257be4336e8f1c5000b9f.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/headshots/AJC_sambrill-0013_200_200_95_c1_c.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "portrait",
+        "description": "A headshot of a woman with blonde hair and glasses wearing a black top.",
+        "reason": "This is a promotional portrait photograph, not a room or property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "87df16f0acf53126a85e024d9b1fabe5ddd3309566c023731c6954e41558de61",
+      "path": "images/87df16f0acf53126a85e024d9b1fabe5ddd3309566c023731c6954e41558de61.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/AJC_Milltimber_0047_%281%29_%281%29.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Garden",
+        "description": "A well-maintained garden with a green lawn, a stone patio area, and a raised bank with a wooden fence. There are several potted plants arranged along a low white wall.",
+        "reason": "The image shows the exterior garden area of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "lawn",
+          "patio",
+          "fence"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bdad8369bdb46827e14058a8999208e1180c610f128d0b75ae941fdec1835ce6",
+      "path": "images/bdad8369bdb46827e14058a8999208e1180c610f128d0b75ae941fdec1835ce6.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/AJC_Milltimber_0091_%281%29.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Exterior",
+        "description": "The front exterior of a modern two-story house with a mix of stone and white rendered walls, a slate roof, and a paved driveway. It features a double garage with wooden doors and a small balcony.",
+        "reason": "The image shows the exterior facade of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Balcony / Terrace",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5a89c06297f535567e0158b77770bf6afd2159b3af0e8f92bc5fd2e8c8e3d9a4",
+      "path": "images/5a89c06297f535567e0158b77770bf6afd2159b3af0e8f92bc5fd2e8c8e3d9a4.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3812_25_B60_Richmond_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Exterior",
+        "description": "The front exterior of a pair of semi-detached houses with cream-colored walls, dark grey roofs, and green front doors. There is a paved sidewalk and manicured hedges in front.",
+        "reason": "The image shows the exterior facade of residential properties."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "71d0c674ae5052684b3c26365411d11ec05cac183cae3477a09ec6fe23306d37",
+      "path": "images/71d0c674ae5052684b3c26365411d11ec05cac183cae3477a09ec6fe23306d37.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/Culter_House_Road_60_%2823%29_0184_%281%29.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Kitchen",
+        "description": "A modern kitchen featuring dark blue cabinetry, white marble-effect countertops, a central island with a wine cooler, and light wood-effect herringbone flooring.",
+        "reason": "The image shows the interior of a kitchen."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "isRoom": true,
+        "objects": [
+          "kitchen island",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Navy",
+          "Blue",
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "6a8a1e05f0eb1a054da81714f82a34fc2483ff681c7d7f387ea9d43f11eed401",
+      "path": "images/6a8a1e05f0eb1a054da81714f82a34fc2483ff681c7d7f387ea9d43f11eed401.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/richmond_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "Floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout, including a lounge, kitchen, dining area, WC, and hallway.",
+        "reason": "The image is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "3904abd731f31c4e86e0042bbf350de93bf05f554d62ec9a1463b2d738eed4f0",
+      "path": "images/3904abd731f31c4e86e0042bbf350de93bf05f554d62ec9a1463b2d738eed4f0.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/Culter_House_Road_62_%2823%290971.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Kitchen",
+        "description": "A bright, open-plan kitchen with white cabinetry, a dark grey central island, light wood-effect flooring, and a wooden door with glass panels.",
+        "reason": "The image shows the interior of a kitchen."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "isRoom": true,
+        "objects": [
+          "kitchen island",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "94df4ad8612b9c7ce7abecea6364167df46e181acbfab35eada9ca92cbb9ed84",
+      "path": "images/94df4ad8612b9c7ce7abecea6364167df46e181acbfab35eada9ca92cbb9ed84.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/richmond_first.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "Floorplan",
+        "description": "A 2D architectural floorplan showing the upper floor layout, including three bedrooms, a bathroom, an en-suite, and a hallway.",
+        "reason": "The image is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d2a229a3672b8e56ba88d1e621589a9c41a6b4475f64e993b4316f7bb9059514",
+      "path": "images/d2a229a3672b8e56ba88d1e621589a9c41a6b4475f64e993b4316f7bb9059514.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/AJC_Milltimber_0005_%281%29.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Kitchen",
+        "description": "A modern kitchen with light-colored cabinetry, a central island with a wood-effect base, and integrated appliances. The flooring is wood-effect.",
+        "reason": "The image shows the interior of a kitchen."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "isRoom": true,
+        "objects": [
+          "kitchen island",
+          "cabinetry"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cb67c3cf5eedd78b55a0fcc38b59960197c5f5acb5a1fcb3c8ed0ca8fd085616",
+      "path": "images/cb67c3cf5eedd78b55a0fcc38b59960197c5f5acb5a1fcb3c8ed0ca8fd085616.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/Culter_House_Road_60_%2823%29_0189.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Living Room",
+        "description": "A bright, empty living room with white walls, herringbone wood-effect flooring, and double glass doors leading to a patio.",
+        "reason": "The image shows a vacant living space with modern finishes."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [
+          "patio"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f645ffae5acf69cfa22b69e33af8b40a456247578773805ca7dc5d00021c6f28",
+      "path": "images/f645ffae5acf69cfa22b69e33af8b40a456247578773805ca7dc5d00021c6f28.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3812_25_B60_Fife_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Exterior",
+        "description": "A digital rendering of a two-story detached house with beige render, a grey tiled roof, a light green front door, and a matching detached garage.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d98e0030adfed4dbdad6d4c9c3a06d0d7b6548bf29df3ed3c72d315b034d7644",
+      "path": "images/d98e0030adfed4dbdad6d4c9c3a06d0d7b6548bf29df3ed3c72d315b034d7644.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3725_23_B60_Buccleugh_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Exterior",
+        "description": "A digital rendering of a two-story detached house with light-colored render, dark window frames, a dark front door, and a detached garage with a dark door.",
+        "reason": "This is an architectural visualization of a property exterior."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "303ac442197b26fe57d9456c690f1c39ef1d0432221d59f28e95f5d712cbf04f",
+      "path": "images/303ac442197b26fe57d9456c690f1c39ef1d0432221d59f28e95f5d712cbf04f.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/Culter_House_Road_62_%2823%290970.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Living Room",
+        "description": "An empty living room featuring white walls, light wood-effect flooring, and a wooden door with glass panels.",
+        "reason": "The image depicts an interior living space."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "3519c632342bb1f7a9567775d18f0f62e21cda0a00708f7a45bd423faa681e3b",
+      "path": "images/3519c632342bb1f7a9567775d18f0f62e21cda0a00708f7a45bd423faa681e3b.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/fife_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "Floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout including a kitchen, dining area, lounge, hall, and WC.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "9e99e75670e025a076cc62a575eb6f4a726865cfc72c4c6872d64d75e83c7f9d",
+      "path": "images/9e99e75670e025a076cc62a575eb6f4a726865cfc72c4c6872d64d75e83c7f9d.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/buccleugh_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "Floorplan",
+        "description": "A 2D architectural floorplan showing a ground floor layout with a kitchen, dining area, family room, lounge, utility, and WC.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c52e33822f1cd77957d2f3b6b7ba41a0ed3761b13c4241d9fb3b10523323726a",
+      "path": "images/c52e33822f1cd77957d2f3b6b7ba41a0ed3761b13c4241d9fb3b10523323726a.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/Culter_House_Road_62_%2823%290979.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "Hallway",
+        "description": "A staircase with light grey carpet, wooden handrails, and glass balustrades, leading to a landing area.",
+        "reason": "The image shows the interior circulation space of a house."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d206ab3dfba524fe2f84b469f71bda0cfda82024baeecd107fd7f729440887ae",
+      "path": "images/d206ab3dfba524fe2f84b469f71bda0cfda82024baeecd107fd7f729440887ae.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/fife_first_1.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "Floorplan",
+        "description": "A 2D architectural floorplan showing the first-floor layout with three bedrooms, a bathroom, and an en-suite.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "585238e6557c84e2fee90bc1c746f10d0efe59ea9e70141da5e256ec5bf1d902",
+      "path": "images/585238e6557c84e2fee90bc1c746f10d0efe59ea9e70141da5e256ec5bf1d902.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/buccleugh_first.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of an upper floor with four bedrooms, a bathroom, an en-suite, and a central hall with stairs.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c55da0e0ceceea0b406bbd9e114336b2394188d9a66f33a893e4007b57887691",
+      "path": "images/c55da0e0ceceea0b406bbd9e114336b2394188d9a66f33a893e4007b57887691.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/AJC_Milltimber_0067_%281%29.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "An exterior view of a white rendered house with a double garage, slate roof, and wooden cladding on the dormer window.",
+        "reason": "This is a photograph of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "940f9d1edd9af144a0776dbef64d862a8387ee2b633d41ea2b0a03b158d3b4e3",
+      "path": "images/940f9d1edd9af144a0776dbef64d862a8387ee2b633d41ea2b0a03b158d3b4e3.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/chr-gallery-7.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "garden",
+        "description": "A large, well-maintained green lawn behind a white house with a slate roof, enclosed by wooden fencing.",
+        "reason": "This is a photograph of the rear garden of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House rear",
+        "isRoom": true,
+        "objects": [
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "6e9f5594e50e32abf93ff29ad507a0e982e8d1def2bc1457ade25e0c7ad383f8",
+      "path": "images/6e9f5594e50e32abf93ff29ad507a0e982e8d1def2bc1457ade25e0c7ad383f8.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/421981_AJC_Benton_Crescent_web_HAMILTON_839x629.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a white house with red trim, a dark grey front door, and a double garage.",
+        "reason": "This is a promotional exterior rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "094a8f6d8a7e5387604556562a1c2d469b35f4e78a004b0be6b2e112972cb03b",
+      "path": "images/094a8f6d8a7e5387604556562a1c2d469b35f4e78a004b0be6b2e112972cb03b.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/421981_AJC_Benton_Crescent_web_MONTROSE_839x629.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a cream-colored house with green trim, a dark green front door, and a front garden with flowering bushes.",
+        "reason": "This is a promotional exterior rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ae60ee8d2132dc3c4bdeb42bbe22e49197e1bb10b12ebea3ff7621ebd2edb690",
+      "path": "images/ae60ee8d2132dc3c4bdeb42bbe22e49197e1bb10b12ebea3ff7621ebd2edb690.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/Culter_House_Road_62_%2823%290985.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A rear exterior view of a white house with a slate roof, a conservatory, a paved patio area, and a green lawn.",
+        "reason": "This is a photograph of the rear exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House rear",
+        "isRoom": true,
+        "objects": [
+          "lawn",
+          "patio"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ed2d97296183bc690121b5e7d60e9a5bc4faee87a6e16f1ff8471c305cf8be56",
+      "path": "images/ed2d97296183bc690121b5e7d60e9a5bc4faee87a6e16f1ff8471c305cf8be56.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/421981_AJC_Benton_Crescent_web_Hamilton_GF.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout including a kitchen, dining area, lounge, utility, WC, and entrance hall.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ccefb9933f34468b8d8d44907ed5cf797bb4fb3d007362afb093af862828b772",
+      "path": "images/ccefb9933f34468b8d8d44907ed5cf797bb4fb3d007362afb093af862828b772.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/ajc_benton_crescent_montrose_GF.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout with thick black walls, including a kitchen, dining area, lounge, utility, WC, and entrance hall.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "973f8e193721bf3729ee2673d17267b4d60d287652f64358832fb0c8a01a32d3",
+      "path": "images/973f8e193721bf3729ee2673d17267b4d60d287652f64358832fb0c8a01a32d3.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/421981_AJC_Benton_Crescent_web_Hamilton_FF.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of an upper floor with four bedrooms, a bathroom, an en-suite, and a central hall.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "47ef22f05e3bcb4c11cfa6236fbc6ac31d722ac56748ea509ff977b16182a308",
+      "path": "images/47ef22f05e3bcb4c11cfa6236fbc6ac31d722ac56748ea509ff977b16182a308.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/ajc_benton_crescent_montrose_FF.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of an upper floor with four bedrooms, a bathroom, an en-suite, and a central hall.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "92b9f69f4e6cf40dce791ea5d6fce83b4632d1f85ef8b0fa8d4bc94b8a73ef66",
+      "path": "images/92b9f69f4e6cf40dce791ea5d6fce83b4632d1f85ef8b0fa8d4bc94b8a73ef66.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/421981_AJC_Benton_Crescent_web_GORDON_839x629.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white walls, a dark roof, a red front door, and a detached double garage with a car parked in front.",
+        "reason": "This is a promotional exterior rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8360b7b1a4865561f4f8ac0ff5ae964b7abf63cf445c336c79c595b53c2134be",
+      "path": "images/8360b7b1a4865561f4f8ac0ff5ae964b7abf63cf445c336c79c595b53c2134be.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/421981_AJC_Benton_Crescent_web_ARGYLL_839x629.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white walls, dark blue window frames, a teal front door, and a detached double garage.",
+        "reason": "This is a promotional exterior rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Navy",
+          "Blue",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2d8257f6347b3bf0e38db8aa58890a685ee3a0f7cb1a5ff9535c58263ab7cd88",
+      "path": "images/2d8257f6347b3bf0e38db8aa58890a685ee3a0f7cb1a5ff9535c58263ab7cd88.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/4B-H-161_RH_Gordon_BL-01A_-_gf-1.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout including a kitchen, dining area, lounge, utility room, WC, and hall.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ca4f77427324c8898a219b43334e5b1c99a409ad51e4a7fb2240865416a778b6",
+      "path": "images/ca4f77427324c8898a219b43334e5b1c99a409ad51e4a7fb2240865416a778b6.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/421981_AJC_Benton_Crescent_web_Argyll_GF.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the ground floor layout including a lounge, kitchen, dining area, family room, utility, and hall.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b19589be91244978b9efd0bd3c5dedc2994903611e2251c1aec107683e32d4f1",
+      "path": "images/b19589be91244978b9efd0bd3c5dedc2994903611e2251c1aec107683e32d4f1.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3812_25_B60_Roxburghe_HR.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A digital rendering of a two-story detached house with white walls, red window frames, a brown front door, and a chimney stack.",
+        "reason": "This is a promotional exterior rendering of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a7fe25a747a270468c0f2760b7d9e9ca674d0ef940bd468db792566dd00383e5",
+      "path": "images/a7fe25a747a270468c0f2760b7d9e9ca674d0ef940bd468db792566dd00383e5.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/4B-H-161_RH_Gordon_BL-02A_-_1-1.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A 2D architectural floorplan showing the layout of an upper floor with four bedrooms, a bathroom, an en-suite, and a central hall.",
+        "reason": "This is a technical floorplan drawing, not a photograph of a real room."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f73af0c134f345a421631a5de2b879eb609c3f29c68cfb35d098fa1d8da99403",
+      "path": "images/f73af0c134f345a421631a5de2b879eb609c3f29c68cfb35d098fa1d8da99403.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/421981_AJC_Benton_Crescent_web_Argyll_FF.jpg",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A technical architectural floorplan showing the layout of an upper floor with four bedrooms, a bathroom, an en-suite, and a central hallway.",
+        "reason": "This is a 2D architectural floorplan drawing."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d90cf3c5ed96aec542cf654e7b4ae193c282ca795b12441c36c9c9609e0b1384",
+      "path": "images/d90cf3c5ed96aec542cf654e7b4ae193c282ca795b12441c36c9c9609e0b1384.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/roxburghe_ground.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A technical architectural floorplan showing the ground floor layout including a lounge, kitchen, dining area, hall, and WC.",
+        "reason": "This is a 2D architectural floorplan drawing."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "toilet"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "246f154f96f7e0e23900c0ecb239c718b2bf6b0318c9042d23007c0e7ec5efb7",
+      "path": "images/246f154f96f7e0e23900c0ecb239c718b2bf6b0318c9042d23007c0e7ec5efb7.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/developments/headers/argyll-header_1230_600_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A detached two-story house with white rendered walls, blue-grey window frames, a matching blue front door, and a slate roof. There is a detached garage with solar panels and a paved driveway.",
+        "reason": "This is an exterior photograph of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway",
+          "solar panels"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "dc92b53f285688ccabed60f4cca25780aa8a959aa446ba7c09b5888340c16568",
+      "path": "images/dc92b53f285688ccabed60f4cca25780aa8a959aa446ba7c09b5888340c16568.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/roxburghe_first.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A technical architectural floorplan showing the layout of an upper floor with three bedrooms, a bathroom, an en-suite, and a central hallway.",
+        "reason": "This is a 2D architectural floorplan drawing."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e42265fc872653429d4d33611cd79274a160b68f2b2484141d587920536f1412",
+      "path": "images/e42265fc872653429d4d33611cd79274a160b68f2b2484141d587920536f1412.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3812_25_B60_Marlborough_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A semi-detached house exterior with cream-colored walls, dark grey roof tiles, and bright red front doors. The property features a small front garden with a manicured hedge.",
+        "reason": "This is an exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "448076c1e7322bdf3aa9e6d9f243b922eaee9db8a5dc552469874df8c48e3a1f",
+      "path": "images/448076c1e7322bdf3aa9e6d9f243b922eaee9db8a5dc552469874df8c48e3a1f.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/headers/3864_AJC_QED_web_DOUGLAS_839x629.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A large detached house with a mix of white render and stone cladding, a dark grey roof, and a double garage. The front features a paved driveway and landscaped garden.",
+        "reason": "This is an exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [
+          "garage",
+          "driveway"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1f85790455b7962422646bfdb19ee0aa0a264ebaf4b401edd2c05401da8902aa",
+      "path": "images/1f85790455b7962422646bfdb19ee0aa0a264ebaf4b401edd2c05401da8902aa.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3812_25_B60_Richmond_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A semi-detached house exterior with cream-colored walls, dark grey roof tiles, and muted green front doors. The property features a small front garden with a manicured hedge.",
+        "reason": "This is an exterior rendering of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Garden",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cc94024a9c432f2fb391a6529e57abdad44ee0adafaf2019f91c898b269fc7d0",
+      "path": "images/cc94024a9c432f2fb391a6529e57abdad44ee0adafaf2019f91c898b269fc7d0.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/5B-H-260_RH_Douglas_gf-plan.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A technical architectural floorplan showing the ground floor layout including a garage, utility room, bedroom, shower room, kitchen, family room, dining room, and lounge.",
+        "reason": "This is a 2D architectural floorplan drawing."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [
+          "shower",
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "457e0970660842cf6e25b30531441b870e321a4a2999b127cfebe0e29b82a67d",
+      "path": "images/457e0970660842cf6e25b30531441b870e321a4a2999b127cfebe0e29b82a67d.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3812_25_B60_Fife_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with beige render, a dark grey tiled roof, and a light green front door. There is a matching detached garage to the side and a manicured hedge in the foreground.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a0e6b401f350a6980daf09bf5d6557a72242db1de02db9d5a19ba267cc55eae0",
+      "path": "images/a0e6b401f350a6980daf09bf5d6557a72242db1de02db9d5a19ba267cc55eae0.png",
+      "sourceUrl": "https://ajcscotland.com/assets/housetypes/floorplans/5B-H-260_RH_Douglas_first-plan.png",
+      "verdict": {
+        "matches": false,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": true,
+        "roomType": "floorplan",
+        "description": "A black and white architectural floorplan showing the layout of a first floor, including four bedrooms, a bathroom, and two en-suite bathrooms.",
+        "reason": "This is a technical floorplan document."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Floorplan",
+        "subCategory": "Floorplan",
+        "isRoom": false,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "79f785d81702eacfa990bbce645321da62cca8fbd22b827b9eacb9e5d67db2bf",
+      "path": "images/79f785d81702eacfa990bbce645321da62cca8fbd22b827b9eacb9e5d67db2bf.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3725_23_B60_Buccleugh_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with light cream render, dark grey window frames, and a dark grey front door. A detached garage is visible on the left.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0c2f2f17a09808cefa1a1ef70481da7da227e1581c570b1b862981df92e4aa9a",
+      "path": "images/0c2f2f17a09808cefa1a1ef70481da7da227e1581c570b1b862981df92e4aa9a.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/developments/headers/3864_AJC_QED_web_DOUGLAS_header_1800x800_1800_800_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A large two-story detached house featuring a mix of white render and stone cladding, with a dark grey roof and an integrated double garage.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "40386e1cbf60b7e5fee80b16fa33e52c659dcfb393975aee4ae6e10f188c5567",
+      "path": "images/40386e1cbf60b7e5fee80b16fa33e52c659dcfb393975aee4ae6e10f188c5567.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/421981_AJC_Benton_Crescent_web_HAMILTON_839x629_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with white render, red-painted timber cladding around the entrance and dormer windows, and a dark grey roof.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "371da36746351f789de67803c62144b938e6e6473ae883504e4d0dbaef5e45d8",
+      "path": "images/371da36746351f789de67803c62144b938e6e6473ae883504e4d0dbaef5e45d8.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3864_AJC_QED_web_DOUGLAS_839x629_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A large two-story detached house with white render and stone cladding, featuring a dark grey roof and an integrated double garage.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "fd0920db88a67cca20fde6304b1b8002acb327ef411e3ff67d42a4a7f38cbd86",
+      "path": "images/fd0920db88a67cca20fde6304b1b8002acb327ef411e3ff67d42a4a7f38cbd86.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/421981_AJC_Benton_Crescent_web_MONTROSE_839x629_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with light beige render, green-painted window frames and front door, and a dark grey roof.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green",
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "dfdccacfe74ffb60e46712ba1bbeafe7ed72e901ad6880201f1169c0c62ae1c5",
+      "path": "images/dfdccacfe74ffb60e46712ba1bbeafe7ed72e901ad6880201f1169c0c62ae1c5.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/421981_AJC_Benton_Crescent_web_GORDON_839x629_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with white render, a red front door with timber-effect cladding, and a separate double garage with red doors.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f1dd2a2afe813114644f58c177bdb1a1ef06fa465155e2d0f12ce629fc2715bb",
+      "path": "images/f1dd2a2afe813114644f58c177bdb1a1ef06fa465155e2d0f12ce629fc2715bb.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/421981_AJC_Benton_Crescent_web_ARGYLL_839x629_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with white render, dark grey roof tiles, and dark blue window frames and front door. There is a detached garage to the left and a small hedge in the foreground.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [
+          "garage"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Navy",
+          "Blue",
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "84fab525b876f3670f93b4cd6d043ca5c41aed9787a55accf7b3046ba7ea6822",
+      "path": "images/84fab525b876f3670f93b4cd6d043ca5c41aed9787a55accf7b3046ba7ea6822.jpg",
+      "sourceUrl": "https://ajcscotland.com/images/made/assets/housetypes/thumbnails/3812_25_B60_Roxburghe_HR_500_360_95_c1_c.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with light beige render, dark grey roof tiles, and red window frames and door. The property is surrounded by a low wall and a hedge.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Cream / Neutral"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "71029d9a1c9f0bbab191a2e31419bdd82067a2596e224736e1f9082826a10e59",
+      "path": "images/71029d9a1c9f0bbab191a2e31419bdd82067a2596e224736e1f9082826a10e59.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/Plot_141_BC_1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A two-story detached house with white render, dark grey roof tiles, and sage green window frames and front door. Three people are standing in the doorway.",
+        "reason": "This is an exterior view of a residential property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Sage green",
+          "Green",
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "90af8c9fb89e9aab68fd277a3a6f182260a94849e3d577053f1d301d93d5dcd0",
+      "path": "images/90af8c9fb89e9aab68fd277a3a6f182260a94849e3d577053f1d301d93d5dcd0.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/View.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A rural landscape featuring green fields with grazing cattle, separated by stone walls and trees, under a clear blue sky.",
+        "reason": "This is an exterior view of the surrounding landscape."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "4730c631f63a211de952e3c17215c1188af7b9bb593c34151c20204909990830",
+      "path": "images/4730c631f63a211de952e3c17215c1188af7b9bb593c34151c20204909990830.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/IMG_8664_2.JPG",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A view of a green field leading towards the sea, with a building on the right featuring a sign that reads 'CHAPELTON'.",
+        "reason": "This is an exterior view of the property surroundings."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House front",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5d15ba5ae321b816451e87e7f77892e6ce7e1956dae93e28110a19488a3bdbd6",
+      "path": "images/5d15ba5ae321b816451e87e7f77892e6ce7e1956dae93e28110a19488a3bdbd6.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/ChapeltonofElsick_AJCHomes_NHastiePhoto_07.18-51_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A residential street scene with several detached houses, a paved road, and manicured green verges.",
+        "reason": "This is an exterior view of a residential development."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Green"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0aff07a2d96774e7f6c66346cf9fbcb52c290b737be9ea84a0cf107da9d7a0a9",
+      "path": "images/0aff07a2d96774e7f6c66346cf9fbcb52c290b737be9ea84a0cf107da9d7a0a9.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/ChapeltonofElsick_AJCHomes_NHastiePhoto_07.18-37_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "hallway",
+        "description": "A bright landing area with light grey carpet, white walls, and wooden doors. A glimpse of a bedroom with a bed is visible through one of the open doors.",
+        "reason": "This is an interior view of a hallway/landing."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Hallway",
+        "subCategory": "Landing & Stairs",
+        "isRoom": true,
+        "objects": [
+          "bed"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c9176b0675da7244534399a9a4722c9833fe2b377f01533a1000f8010998271c",
+      "path": "images/c9176b0675da7244534399a9a4722c9833fe2b377f01533a1000f8010998271c.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/ChapeltonofElsick_AJCHomes_NHastiePhoto_07.18-4_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "A modern kitchen with light wood-effect cabinets, a central island with a wooden top, and a dining area to the left with a round table and chairs.",
+        "reason": "This is an interior view of a kitchen and dining area."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen island",
+        "isRoom": true,
+        "objects": [
+          "kitchen island",
+          "cabinetry",
+          "dining chairs"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Warm wood / Oak"
+        ],
+        "chairs": [
+          "Dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "dc2037b7428b1dbfa8c4831a0a7a768b0f91eef847b9b127a5cc3dc88818fc70",
+      "path": "images/dc2037b7428b1dbfa8c4831a0a7a768b0f91eef847b9b127a5cc3dc88818fc70.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/ChapeltonofElsick_AJCHomes_NHastiePhoto_07.18-2_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "dining room",
+        "description": "A dining room with a wooden oval table, grey upholstered chairs, and a sideboard. The room features light-coloured walls, wood-effect flooring, and two pendant lights above the table. A decorative tree is in the corner.",
+        "reason": "This is a photograph of a dining area within a home."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Dining Room",
+        "subCategory": "Formal dining room",
+        "isRoom": true,
+        "objects": [
+          "pendant light"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Grey",
+          "Warm wood / Oak"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1bec49daae32775f435de79b5e272621a023afd76aeee20e7c9eae4ac23aa4aa",
+      "path": "images/1bec49daae32775f435de79b5e272621a023afd76aeee20e7c9eae4ac23aa4aa.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/ChapeltonofElsick_AJCHomes_NHastiePhoto_07.18-57_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "The rear exterior of a white detached house with a slate roof, blue window frames, and a small garden with a lawn and a wooden archway.",
+        "reason": "This is a photograph of the exterior of a property."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "House rear",
+        "isRoom": true,
+        "objects": [
+          "lawn"
+        ],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "Blue",
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ff39f13ed0b415f4b36caa894ee6810f23a39277c04b67cb616a32a74dc2e73c",
+      "path": "images/ff39f13ed0b415f4b36caa894ee6810f23a39277c04b67cb616a32a74dc2e73c.jpg",
+      "sourceUrl": "https://ajcscotland.com/assets/gallery/ChapeltonofElsick_AJCHomes_NHastiePhoto_07.18-60_.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "exterior",
+        "description": "A street view of a residential development at dusk, featuring white houses with slate roofs, stone walls, and street lighting.",
+        "reason": "This is a photograph of the exterior of a residential street."
+      },
+      "analysisModel": "gemini-3.1-flash-lite",
+      "categorisation": {
+        "mainCategory": "Exterior",
+        "subCategory": "Street scene",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [
+          "White"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 4,
+    "qualifyingDiscovered": 38,
+    "propertyLimitOmissions": 0,
+    "reusedImageSources": 177,
+    "reusedGalleries": 8,
+    "imagesAttempted": 123,
+    "pendingImages": 0,
+    "matchedImages": 82,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 123
+  },
+  "completedAt": "2026-10-03T13:19:02.195Z"
+}

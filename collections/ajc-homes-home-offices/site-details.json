@@ -1,0 +1,130 @@
+[
+  {
+    "url": "https://ajcscotland.com/developments/castlepark",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 407500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 437500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 469500,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 675000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://ajcscotland.com/developments/culter-house-road",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 899995,
+        "bedrooms": null,
+        "style": "Detached"
+      },
+      {
+        "price": 910000,
+        "bedrooms": null,
+        "style": "Detached"
+      },
+      {
+        "price": 939950,
+        "bedrooms": null,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://ajcscotland.com/developments/benton-crescent",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 229500,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 229500,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 229500,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 365000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 387500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 10000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 10000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 442000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://ajcscotland.com/developments/queen-elizabeth-drive",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 695000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 699950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  }
+]
