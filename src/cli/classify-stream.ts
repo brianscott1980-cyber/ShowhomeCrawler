@@ -1,3 +1,4 @@
+import {saveGeminiState} from '../reports/gemini-status.js';
 import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { access, readFile, writeFile, rename, open, unlink } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
@@ -20,6 +21,7 @@ async function main() {
    const report: RunReport = JSON.parse(await readFile(`${folder}/checkpoint.json`, 'utf8'));
    const model = values.model ?? report.model;
    const version = values['all-images'] ? 'all-property-images-v1' : analysisVersion;
+   await saveGeminiState(folder,{state:'analysing',model});
    const running = await access(`${folder}/.lock`).then(() => true, () => false);
    const pending = [];
    for (const image of report.images) {
@@ -33,7 +35,7 @@ async function main() {
     if (pending.length === 24) break;
    }
    if (!pending.length || (running && pending.length < 8)) {
-    if (!running && !pending.length) break;
+    if (!running && !pending.length) {await saveGeminiState(folder,{state:'complete',model});break;}
     await sleep(10000); continue;
    }
    const batch = await Promise.all(pending.map(async i => {
@@ -43,6 +45,7 @@ async function main() {
    await Promise.all(Array.from({length: Math.ceil(batch.length / 8)}, (_, index) => batch.slice(index * 8, index * 8 + 8)).map(async group => {
    let answers;
    for (let attempt = 0; ; attempt++) {
+    if(stopped)return;
     try { answers = await classifyBatch(group, env.GEMINI_API_KEY!, model, values['all-images']); break; }
     catch (error) {
      const failure = error as {status?: number;retrySeconds?: number;quotaViolations?: unknown};
@@ -52,6 +55,7 @@ async function main() {
      if (isRateLimit) {
       console.log('Gemini rate limit exceeded. Pausing for 30 minutes before retrying...');
       const delaySeconds = Math.max(failure.retrySeconds ?? 1800, 1800);
+      await saveGeminiState(folder,{state:'quota_wait',model,httpStatus:429,retryAt:new Date(Date.now()+delaySeconds*1000).toISOString()});
       for (let s = 0; s < delaySeconds && !stopped; s += 10) await sleep(Math.min(10, delaySeconds - s) * 1000);
       continue;
      }
@@ -64,6 +68,7 @@ async function main() {
       break;
      }
      if (attempt >= 3 || (status && ![429,500,502,503,504].includes(status))) throw error;
+     await saveGeminiState(folder,{state:'retrying',model,httpStatus:status});
      const delay = Math.min(120000, Math.max(10000 * 2 ** attempt, (failure.retrySeconds ?? 0) * 1000));
      for (let elapsed=0;elapsed<delay;elapsed+=10000) await sleep(Math.min(10000,delay-elapsed));
     }
