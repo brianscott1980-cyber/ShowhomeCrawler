@@ -42,4 +42,19 @@ describe('Locations explorer',()=>{
    expect(document.querySelectorAll('.collection-card')).toHaveLength(2);
   }finally{await act(async()=>root.unmount());dom.window.close();}
  });
+ it('supports mobile carousel swipe synchronization and scrollIntoView',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test/locations'});
+  Object.defineProperty(dom.window,'innerWidth',{value:390,writable:true});
+  let scrollIntoViewCalled=false;
+  dom.window.HTMLElement.prototype.scrollIntoView=vi.fn(()=>{scrollIntoViewCalled=true;});
+  for(const [key,value] of Object.entries({window:dom.window,self:dom.window,document:dom.window.document,sessionStorage:dom.window.sessionStorage,HTMLElement:dom.window.HTMLElement,requestAnimationFrame:(cb:()=>void)=>{cb();return 1;},IS_REACT_ACT_ENVIRONMENT:true}))vi.stubGlobal(key,value);
+  const root=createRoot(document.getElementById('root')!);
+  try{
+   await act(async()=>root.render(<SiteDirectory cards={cards} defaultView="map"/>));
+   const button=(text:string)=>[...document.querySelectorAll('button')].find(b=>b.textContent===text)!;
+   await act(async()=>button('Select map dot').click());
+   expect(scrollIntoViewCalled).toBe(true);
+   expect(document.querySelector('#site-card-one')?.classList.contains('is-map-active')).toBe(true);
+  }finally{await act(async()=>root.unmount());dom.window.close();}
+ });
 });
