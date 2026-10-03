@@ -8,11 +8,13 @@ vi.mock('maplibre-gl',()=>({
  setWorkerUrl:vi.fn(),NavigationControl:class {},LngLatBounds:class {},
  Map:class {
   handlers=new Map<string,Function>();center={lng:0,lat:51};zoom=5;
-  source={setData:vi.fn(),getClusterExpansionZoom:vi.fn(async()=>9)};
+  source={setData:vi.fn(),getClusterExpansionZoom:vi.fn(async()=>9),getClusterLeaves:vi.fn(async(id:number)=>[{properties:{key:id===7?'one':'other'}}])};
+  queryRenderedFeatures=vi.fn(()=>[] as any[]);setPaintProperty=vi.fn();layers:any[]=[];
   easeTo=vi.fn();stop=vi.fn();remove=vi.fn();resize=vi.fn();
   constructor(){state.instance=this;queueMicrotask(()=>this.handlers.get('load')?.());}
   on(event:string,layerOrHandler:string|Function,handler?:Function){this.handlers.set(handler?event+':'+layerOrHandler:event,handler??layerOrHandler as Function);}
-  addControl(){} addSource(){} addLayer(){} getSource(){return this.source;}
+  off(event:string){this.handlers.delete(event);}
+  addControl(){} addSource(){} addLayer(layer:any){this.layers.push(layer);} getSource(){return this.source;}
   getCenter(){return this.center;}getZoom(){return this.zoom;}getMaxZoom(){return 22;}isStyleLoaded(){return true;}
   getCanvas(){return document.createElement('canvas');}
   getBounds(){return {getWest:()=>this.center.lng-1,getEast:()=>this.center.lng+1,getSouth:()=>this.center.lat-1,getNorth:()=>this.center.lat+1,contains:()=>true};}
@@ -20,7 +22,7 @@ vi.mock('maplibre-gl',()=>({
  },
  Marker:class {element:HTMLElement;constructor({element}:{element:HTMLElement}){this.element=element;}setLngLat(){return this;}addTo(){return this;}remove(){}getElement(){return this.element;}},
 }));
-it('centres and expands a cluster immediately, publishes its bounds and retains the camera after list refresh',async()=>{
+it('highlights the containing cluster with its count and retains cluster navigation after list refresh',async()=>{
  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});
  for(const [key,value] of Object.entries({window:dom.window,document:dom.window.document,ResizeObserver:class {observe(){}disconnect(){}},IS_REACT_ACT_ENVIRONMENT:true}))vi.stubGlobal(key,value);
  const root=createRoot(document.getElementById('root')!);
@@ -31,6 +33,21 @@ it('centres and expands a cluster immediately, publishes its bounds and retains 
   await act(async()=>root.render(<SiteMap {...props}/>));
   await act(async()=>{await vi.waitFor(()=>expect(state.instance).not.toBeNull());});
   const map=state.instance;
+  const counts=map.layers.find((layer:any)=>layer.id==='site-cluster-count');
+  expect(counts.layout['text-field']).toEqual(['to-string',['get','point_count']]);
+  expect(counts.layout['text-allow-overlap']).toBe(true);
+  map.queryRenderedFeatures.mockReturnValue([{properties:{cluster_id:8,point_count:3}},{properties:{cluster_id:7,point_count:2}}]);
+  await act(async()=>root.render(<SiteMap {...props} activeKey={null} hoverKey="one"/>));
+  expect(map.source.getClusterLeaves).toHaveBeenCalledWith(7,2,0);
+  expect(map.setPaintProperty).toHaveBeenCalledWith('site-clusters','circle-color',['case',['==',['get','cluster_id'],7],'#b89256','#193963']);
+  await act(async()=>root.render(<SiteMap {...props} activeKey={null} hoverKey={null}/>));
+  expect(map.setPaintProperty).toHaveBeenLastCalledWith('site-clusters','circle-stroke-width',2);
+  await act(async()=>root.render(<SiteMap {...props}/>));
+  map.queryRenderedFeatures.mockReturnValue([]);
+  await act(async()=>map.handlers.get('idle')?.());
+  expect(map.setPaintProperty).toHaveBeenCalledWith('site-clusters','circle-color','#193963');
+
+  map.easeTo.mockClear();
   await act(async()=>map.handlers.get('click:site-clusters')({features:[{geometry:{type:'Point',coordinates:[-3,54]},properties:{cluster_id:7}}]}));
   expect(map.source.getClusterExpansionZoom).toHaveBeenCalledWith(7);
   expect(map.jumpTo).toHaveBeenLastCalledWith({center:[-3,54],zoom:9});

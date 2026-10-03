@@ -48,7 +48,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
     if(disposed)return;
     instance.addSource('sites',{type:'geojson',data:siteFeatures(latest.current.cards),cluster:true,clusterRadius:38,clusterMaxZoom:13});
     instance.addLayer({id:'site-clusters',type:'circle',source:'sites',filter:['has','point_count'],paint:{'circle-color':'#193963','circle-radius':['step',['get','point_count'],17,20,21,100,25],'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
-    instance.addLayer({id:'site-cluster-count',type:'symbol',source:'sites',filter:['has','point_count'],layout:{'text-field':['get','point_count_abbreviated'],'text-font':['Noto Sans Regular'],'text-size':12},paint:{'text-color':'#ffffff'}});
+    instance.addLayer({id:'site-cluster-count',type:'symbol',source:'sites',filter:['has','point_count'],layout:{'text-field':['to-string',['get','point_count']],'text-font':['Noto Sans Regular'],'text-size':12,'text-allow-overlap':true,'text-ignore-placement':true},paint:{'text-color':'#ffffff'}});
     instance.addLayer({id:'site-dots',type:'circle',source:'sites',filter:['!',['has','point_count']],paint:{'circle-color':'#193963','circle-radius':7,'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
     instance.on('click','site-clusters',async e=>{
      const feature=e.features?.[0];if(!feature||feature.geometry.type!=='Point')return;
@@ -90,8 +90,35 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
  },[cards,ready]);
  useEffect(()=>{
   const instance=map.current,marker=highlight.current;if(!ready||!instance||!marker)return;
-  const card=cards.find(c=>c.key===(hoverKey||activeKey));
-  if(card&&hasCoordinates(card)){marker.setLngLat([card.longitude,card.latitude]).addTo(instance);marker.getElement().setAttribute('aria-label',`Select ${card.name}, ${card.developer}`);}else marker.remove();
+  let disposed=false,request=0,paintedCluster:number|null|undefined;
+  const paintCluster=(id:number|null)=>{
+   if(map.current!==instance||paintedCluster===id)return;
+   paintedCluster=id;
+   instance.setPaintProperty('site-clusters','circle-color',id===null?'#193963':['case',['==',['get','cluster_id'],id],'#b89256','#193963']);
+   instance.setPaintProperty('site-clusters','circle-stroke-width',id===null?2:['case',['==',['get','cluster_id'],id],4,2]);
+  };
+  const update=async()=>{
+   const current=++request;
+   const card=cards.find(c=>c.key===(hoverKey||activeKey));
+   marker.remove();
+   if(!card||!hasCoordinates(card)){paintCluster(null);return;}
+   const source=instance.getSource('sites') as GeoJSONSource;
+   const clusters=instance.queryRenderedFeatures({layers:['site-clusters']});
+   const unique=new Map(clusters.map(feature=>[Number(feature.properties.cluster_id),feature]));
+   try {
+    const memberships=await Promise.all([...unique].map(async([id,feature])=>{
+     const leaves=await source.getClusterLeaves(id,Number(feature.properties.point_count),0);
+     return leaves.some(leaf=>leaf.properties?.key===card.key)?id:null;
+    }));
+    if(disposed||current!==request)return;
+    const cluster=memberships.find(id=>id!==null)??null;
+    paintCluster(cluster);
+    if(cluster===null){marker.setLngLat([card.longitude,card.latitude]).addTo(instance);marker.getElement().setAttribute('aria-label',`Select ${card.name}, ${card.developer}`);}
+   } catch { /* Source updates can invalidate cluster IDs; the next idle event retries. */ }
+  };
+  instance.on('idle',update);
+  void update();
+  return()=>{disposed=true;request++;instance.off('idle',update);paintCluster(null);marker.remove();};
  },[activeKey,hoverKey,cards,ready]);
  useEffect(()=>{
   const instance=map.current,card=cards.find(c=>c.key===activeKey);
