@@ -15,7 +15,7 @@ vi.mock('maplibre-gl',()=>({
   addControl(){} addSource(){} addLayer(){} getSource(){return this.source;}
   getCenter(){return this.center;}getZoom(){return this.zoom;}getMaxZoom(){return 22;}isStyleLoaded(){return true;}
   getCanvas(){return document.createElement('canvas');}
-  getBounds(){return {getWest:()=>this.center.lng-1,getEast:()=>this.center.lng+1,getSouth:()=>this.center.lat-1,getNorth:()=>this.center.lat+1,contains:()=>false};}
+  getBounds(){return {getWest:()=>this.center.lng-1,getEast:()=>this.center.lng+1,getSouth:()=>this.center.lat-1,getNorth:()=>this.center.lat+1,contains:()=>true};}
   jumpTo=vi.fn((next:{center:[number,number];zoom:number})=>{this.center={lng:next.center[0],lat:next.center[1]};this.zoom=next.zoom;this.handlers.get('moveend')?.();});
  },
  Marker:class {element:HTMLElement;constructor({element}:{element:HTMLElement}){this.element=element;}setLngLat(){return this;}addTo(){return this;}remove(){}getElement(){return this.element;}},
@@ -40,5 +40,10 @@ it('centres and expands a cluster immediately, publishes its bounds and retains 
   expect(map.easeTo).not.toHaveBeenCalled();
   expect(map.center).toEqual({lng:-3,lat:54});expect(map.zoom).toBe(9);
   expect(map.jumpTo).toHaveBeenCalledTimes(1);
+  for(const sequence of [1,2]){
+   await act(async()=>root.render(<SiteMap {...props} cards={[{...card}]} camera={{lng:-3,lat:54,zoom:9}} focusSequence={sequence}/>));
+   expect(map.easeTo).toHaveBeenLastCalledWith({center:[0,51],duration:450});
+   expect(map.easeTo).toHaveBeenCalledTimes(sequence);
+  }
  }finally{await act(async()=>root.unmount());dom.window.close();vi.unstubAllGlobals();}
 });
