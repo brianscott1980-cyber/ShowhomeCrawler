@@ -53,7 +53,7 @@ function register(element:HTMLElement,advance:Entry['advance']){
  }
  return ()=>{entries.delete(entry);if(!entries.size)stop?.();};
 }
-export function ScrollCollectionImage({images,image,description,layout}:{images?:CollectionImage[];image:string;description:string;layout:string}){
+export function ScrollCollectionImage({images,image,description,layout,caption=false}:{images?:CollectionImage[];image:string;description:string;layout:string;caption?:boolean}){
  const items=images?.length?images:[{src:image,alt:description}];
  const ref=useRef<HTMLDivElement>(null);
  const [slide,setSlide]=useState({index:0,previous:0,direction:1,sequence:0});
@@ -76,5 +76,6 @@ export function ScrollCollectionImage({images,image,description,layout}:{images?
  return <div ref={ref} className="collection-image">
   {slide.sequence>0&&<img className={`collection-image-previous${previous.kind==='logo'?' collection-image-logo':''}`} style={{background:previous.background}} src={previous.src} alt="" aria-hidden="true"/>}
   <img key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={current.src} alt={current.alt} loading="lazy"/>
+  {caption&&<span className="site-photo-caption">{(current.alt.match(/\b(home office|living room|dining room|kitchen|bathroom|bedroom|hallway|garden|exterior)\b/i)?.[0]??'Development preview').replace(/^./,letter=>letter.toUpperCase())}</span>}
  </div>;
 }
