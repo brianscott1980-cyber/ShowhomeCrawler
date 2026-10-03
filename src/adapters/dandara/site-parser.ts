@@ -5,7 +5,7 @@ export function developmentUrls(xml:string){
  const $=load(xml,{xml:true});
  return [...new Set($('url > loc').map((_,e)=>$(e).text().trim()).get().filter(value=>{
   const url=new URL(value),parts=url.pathname.split('/').filter(Boolean);
-  return url.origin===origin&&parts.length===4&&parts[0]==='new-homes-for-sale'&&['scotland','new-homes-east-lothian','new-homes-midlothian','new-homes-stirling'].includes(parts[1]!);
+  return url.origin===origin&&parts.length===4&&parts[0]==='new-homes-for-sale';
  }))];
 }
 export function discoverHomes(html:string,url:string){

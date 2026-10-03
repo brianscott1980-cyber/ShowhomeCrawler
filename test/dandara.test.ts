@@ -1,9 +1,9 @@
 import {expect,it} from 'vitest';
 import {developmentUrls,discoverHomes,galleryImages} from '../src/adapters/dandara/site-parser';
-it('prioritises Scottish development pages without mistaking plots or English developments for sites',()=>{
+it('discovers Scottish and English developments while excluding plot pages',()=>{
  const origin='https://www.dandara.com';
  const urls=['/new-homes-for-sale/scotland/aberdeen/hazelwood/','/new-homes-for-sale/scotland/aberdeen/hazelwood/the-ash/','/new-homes-for-sale/new-homes-east-lothian/wallyford/wallyford/','/new-homes-for-sale/new-homes-west-sussex/yapton/paddock-view/'];
- expect(developmentUrls('<urlset>'+urls.map(u=>`<url><loc>${origin}${u}</loc></url>`).join('')+'</urlset>')).toEqual([origin+urls[0],origin+urls[2]]);
+ expect(developmentUrls('<urlset>'+urls.map(u=>`<url><loc>${origin}${u}</loc></url>`).join('')+'</urlset>')).toEqual([origin+urls[0],origin+urls[2],origin+urls[3]]);
 });
 it('collects smaller homes and the site gallery while retaining advertised prices',()=>{
  const url='https://www.dandara.com/new-homes-for-sale/scotland/aberdeen/hazelwood/';

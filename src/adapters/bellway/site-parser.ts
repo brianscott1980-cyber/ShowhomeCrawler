@@ -24,10 +24,10 @@ export function discoverHomes(html: string, url: string) {
   const card = $(el).closest('.text-container');
   const description = card.find('.result-description').text();
   const bedroom = description.match(/(\d+)\s*bedroom/i) ?? linked.pathname.match(/-(\d+)-bedroom/);
-  if (!bedroom) return;
+  if (!bedroom && !card.find('.result-title').length) return;
   const name = card.find('.result-title').text().trim() || $(el).text().trim() || linked.pathname.split('/').at(-1)!;
   const type = description.replace(/^\s*\d+\s*bedroom\s*/i, '').replace(/\s*home\s*$/i, '').trim().toLowerCase() || null;
-  homes.set(linked.href, { externalId: 'house-style:' + linked.pathname, name, url: linked.href, bedrooms: Number(bedroom[1]), price: parsePrice(card.find('.result-pricing').text()), propertyType: type, isDetached: type ? type === 'detached' : null, available: true, status: 'advertised_house_style' });
+  homes.set(linked.href, { externalId: 'house-style:' + linked.pathname, name, url: linked.href, bedrooms: bedroom ? Number(bedroom[1]) : null, price: parsePrice(card.find('.result-pricing').text()), propertyType: type, isDetached: type ? type === 'detached' : null, available: true, status: 'advertised_house_style' });
  });
  for (const plot of plots) {
   const home = homes.get(plot.url);
@@ -43,6 +43,7 @@ export function galleryImages(html: string): GalleryImageCandidate[] {
  const expressions = $('[x-data]').toArray().map(el => $(el).attr('x-data')!).filter(value => value.startsWith('multiImageCarousel('));
  const urls: string[] = [];
  for (const expression of expressions) {
+  if (/^multiImageCarousel\(\{\s*images:\s*\[\s*\]\s*\}\)$/.test(expression)) continue;
   const match = expression.match(/JSON\.parse\('((?:\\.|[^'\\])*)'\)/s);
   if (!match) throw new Error('Unknown Bellway gallery encoding.');
   // Decode the single-quoted JS string as JSON string content; never eval.

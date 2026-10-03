@@ -91,3 +91,7 @@ it('filters minimum bedrooms without imposing detached or price criteria', async
 });
 
 it('rejects floorplans even when desks are drawn and requires the floorplan flag',()=>{const verdict={imageId:'a',matches:true,hasDesk:true,hasBed:false,hasFloorplan:true,roomType:'office',description:'Drawn desk',reason:'Desk drawn'};expect(()=>validateBatch({images:[verdict]},['a'])).toThrow('Contradictory');expect(()=>validateBatch({images:[{...verdict,hasFloorplan:false,roomType:'floor plan'}]},['a'])).toThrow('Contradictory');const {hasFloorplan,...missing}=verdict;expect(()=>validateBatch({images:[missing]},['a'])).toThrow();expect(validateBatch({images:[{...verdict,matches:false}]},['a'])[0]?.verdict.matches).toBe(false);});
+
+it('accepts an explicitly empty Bellway carousel without executing expressions',()=>{expect(galleryImages('<div x-data="multiImageCarousel({ images: [] })"></div>')).toEqual([]);expect(()=>galleryImages('<div x-data="multiImageCarousel({ images: dangerous() })"></div>')).toThrow('Unknown Bellway gallery encoding');});
+
+it('retains named Bellway house-style cards whose bedroom metadata is missing',()=>{const r=discoverHomes('<h1>New site</h1><div class="text-container"><h3 class="result-title">The New Home</h3><a href="/new-homes/division/new-site/the-new-home">Details</a></div>','https://www.bellway.co.uk/new-homes/division/new-site');expect(r.homes[0]).toMatchObject({name:'The New Home',bedrooms:null,url:'https://www.bellway.co.uk/new-homes/division/new-site/the-new-home'});});
