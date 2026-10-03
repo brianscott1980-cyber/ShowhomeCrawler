@@ -28,6 +28,7 @@ export const developers = [
  { slug: 'anwyl-homes', name: 'Anwyl Homes', website: 'https://www.anwylhomes.co.uk', sitemap: '/development-sitemap.xml' },
  {slug:'castle-green-homes',name:'Castle Green Homes',website:'https://www.castlegreenhomes.uk',sitemap:'/our_developments-sitemap.xml'},
  {slug:'lovell',name:'Lovell Homes',website:'https://newhomes.lovell.co.uk',sitemap:'/sitemap.xml'},
+ {slug:'wain-homes',name:'Wain Homes',website:'https://www.wainhomes.co.uk',sitemap:'/development-sitemap.xml'},
  {slug:'dandara',name:'Dandara',website:'https://www.dandara.com',sitemap:'/sitemap.xml'},
  {slug:'bancon-homes',name:'Bancon Homes',website:'https://banconhomes.com',sitemap:'/sitemap.xml'},
  {slug:'ajc-homes',name:'AJC Homes',website:'https://ajcscotland.com',sitemap:'/developments'},

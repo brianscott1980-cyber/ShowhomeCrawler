@@ -31,6 +31,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'anwyl-homes':{primary:'#003a5d',secondary:'#00bbb4',parts:['Anwyl ','Homes']},
  'castle-green-homes':{primary:'#384d3b',secondary:'#667961',parts:['Castle Green ','Homes']},
  'lovell':{primary:'#c10a27',secondary:'#701427',parts:['Lovell ','Homes']},
+ 'wain-homes':{primary:'#141c4b',secondary:'#e61b48',parts:['Wain ','Homes']},
  'dandara':{primary:'#153050',secondary:'#7dbeb7',parts:['Dandara']},
  'bancon-homes':{primary:'#111111',secondary:'#555555',parts:['Bancon ','Homes']},
  'ajc-homes':{primary:'#c41230',secondary:'#ffffff',parts:['AJC ','Homes']},
