@@ -3,6 +3,7 @@ import {BuilderName} from './builder-name';
 import Link from 'next/link';
 import {useState,useEffect,useMemo,lazy,Suspense,useRef} from 'react';
 import {hasCoordinates,type MapCamera} from './site-map';
+import type {FocusArea} from './map-marker-visibility';
 import {developers as builderRegistry} from '../adapters/developers';
 import logos from '../../public/logos/sources.json';
 const SiteMap=lazy(()=>import('./site-map').then(module=>({default:module.SiteMap})));
@@ -19,7 +20,7 @@ function range(values:(number|null)[],format:(n:number)=>string){const known=val
 export function SiteDirectory({
  cards,
  basePath = '/locations',
- defaultView = 'compact',
+ defaultView = 'list',
  storageKey = 'showhome-locations-view',
 }:{
  cards:SiteCard[];
@@ -36,6 +37,7 @@ export function SiteDirectory({
  const [sheetExpanded,setSheetExpanded]=useState(false);
  const sheetStart=useRef<number|null>(null);
  const [mapUnavailable,setMapUnavailable]=useState(false);
+ const [focusArea,setFocusArea]=useState<FocusArea|undefined>(undefined);
  const [savedView,saveView]=useCardView(storageKey,defaultView==='map'?'compact':defaultView);
  const [urlFilters,setUrlFilters]=useUrlFilters(urlDefaults);
  const {postcode,order}=urlFilters;
@@ -51,6 +53,37 @@ export function SiteDirectory({
   measure();window.addEventListener('resize',measure);document.addEventListener('toggle',measure,true);
   return()=>{window.removeEventListener('resize',measure);document.removeEventListener('toggle',measure,true);};
  },[mapView]);
+ useEffect(()=>{
+  if(!mapView){setFocusArea(undefined);return;}
+  const computeFocus=()=>{
+   const explorer=explorerPanel.current;
+   const preview=resultsPanel.current;
+   if(!explorer)return;
+   const expRect=explorer.getBoundingClientRect();
+   const isMobile=window.innerWidth<=900;
+   if(isMobile){
+    const prevRect=preview?.getBoundingClientRect();
+    const bottomHeight=prevRect?Math.min(expRect.height-80,prevRect.height):150;
+    setFocusArea({
+     left:12,
+     top:12,
+     right:Math.max(24,expRect.width-12),
+     bottom:Math.max(24,expRect.height-bottomHeight-12)
+    });
+   }else{
+    const prevWidth=preview?Math.min(expRect.width*0.55,preview.offsetWidth):440;
+    setFocusArea({
+     left:prevWidth+24,
+     top:16,
+     right:Math.max(prevWidth+60,expRect.width-16),
+     bottom:Math.max(40,expRect.height-16)
+    });
+   }
+  };
+  computeFocus();
+  window.addEventListener('resize',computeFocus);
+  return()=>window.removeEventListener('resize',computeFocus);
+ },[mapView,sheetExpanded]);
  const filters:SiteFilters=useMemo(()=>({developer:urlFilters.developer,country:urlFilters.country,minPrice:urlFilters.minPrice,maxPrice:urlFilters.maxPrice,minBeds:urlFilters.minBeds,maxBeds:urlFilters.maxBeds,style:urlFilters.style,radius:urlFilters.radius}),[urlFilters.developer,urlFilters.country,urlFilters.minPrice,urlFilters.maxPrice,urlFilters.minBeds,urlFilters.maxBeds,urlFilters.style,urlFilters.radius]);
  const setFilters=(value:SiteFilters|((previous:SiteFilters)=>SiteFilters))=>setUrlFilters(previous=>({...previous,...(typeof value==='function'?value(previous):value)}));
  const setPostcode=(value:string)=>setUrlFilters(previous=>({...previous,postcode:value}));
@@ -96,7 +129,7 @@ export function SiteDirectory({
  {mapView&&<label className="site-map-search"><input type="checkbox" checked={searchMap} onChange={e=>setSearchMap(e.target.checked)}/> Search as I move</label>}
  </div>
  <div ref={explorerPanel} className={mapView?'site-map-directory location-explorer'+(sheetExpanded?' sheet-expanded':''):'location-directory'}>
- {mapView&&<Suspense fallback={<aside className="site-map-panel"><p className="empty">Loading map…</p></aside>}><SiteMap cards={matching} activeKey={activeKey} focusSequence={focusSequence} hoverKey={hoverKey} camera={camera} onCameraChange={updateCamera} onBoundsChange={()=>setMapUnavailable(false)} onVisibleSitesChange={setVisibleKeys} onSelect={selectSite} onUnavailable={()=>setMapUnavailable(true)}/></Suspense>}
+ {mapView&&<Suspense fallback={<aside className="site-map-panel"><p className="empty">Loading map…</p></aside>}><SiteMap cards={matching} activeKey={activeKey} focusSequence={focusSequence} hoverKey={hoverKey} camera={camera} onCameraChange={updateCamera} onBoundsChange={()=>setMapUnavailable(false)} onVisibleSitesChange={setVisibleKeys} onSelect={selectSite} onUnavailable={()=>setMapUnavailable(true)} focusArea={focusArea}/></Suspense>}
  <div className="site-preview-panel" ref={resultsPanel}>
  {mapView&&<button className="site-sheet-handle" type="button" aria-expanded={sheetExpanded} aria-label={sheetExpanded?'Collapse development previews':'Expand development previews'} onClick={()=>setSheetExpanded(value=>!value)} onTouchStart={e=>{sheetStart.current=e.touches[0]?.clientY??null;}} onTouchEnd={e=>{const y=e.changedTouches[0]?.clientY;if(sheetStart.current!==null&&y!==undefined&&Math.abs(y-sheetStart.current)>20)setSheetExpanded(y<sheetStart.current);sheetStart.current=null;}}><span/><b>{visible.length} developments · {sheetExpanded?'Show map':'View previews'}</b></button>}
  <div className={`collection-grid directory-${mapView?'compact':view}`}>
