@@ -6,8 +6,6 @@ import { ResultsPage } from '../../../web/results-page';
 import { absoluteUrl, jsonLd } from '../../../web/seo';
 
 type Props = { params: Promise<{ slug: string }> };
-export const dynamic = 'force-dynamic';
-export const runtime = 'nodejs';
 async function collection(slug: string) {
  const developer = developers.find(d => d.slug === slug);
  if (!developer) notFound();
