@@ -20,6 +20,9 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'lynch-homes':{primary:'#333333',secondary:'#666666',parts:['Lynch ','Homes']},
  'story-homes':{primary:'#003f60',secondary:'#6b6052',parts:['Story ','Homes']},
  'hill-group':{primary:'#111111',secondary:'#666666',parts:['Hill ','Group']},
+ 'bovis-homes':{primary:'#193963',secondary:'#666666',parts:['Bovis Homes']},
+ 'linden-homes':{primary:'#193963',secondary:'#666666',parts:['Linden Homes']},
+ 'countryside-homes':{primary:'#193963',secondary:'#666666',parts:['Countryside Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {

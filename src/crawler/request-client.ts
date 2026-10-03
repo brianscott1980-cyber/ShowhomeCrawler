@@ -1,6 +1,34 @@
 import { developers } from '../adapters/developers.js';
 import { setTimeout as sleep } from 'node:timers/promises';
+import { spawn } from 'node:child_process';
 export class RequestError extends Error { constructor(public readonly status: number) { super(`HTTP ${status}`); } }
+
+function curlFallback(url: string, timeoutMs: number): Promise<Response> {
+ return new Promise((resolve, reject) => {
+  const proc = spawn('curl', [
+   '-sL',
+   '--http1.1',
+   '-i',
+   '--max-time', String(Math.ceil(timeoutMs / 1000)),
+   '-H', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+   '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+   url
+  ]);
+  const chunks: Buffer[] = [];
+  proc.stdout.on('data', c => chunks.push(c));
+  proc.on('close', code => {
+   if (code !== 0) return reject(new Error(`curl exited ${code}`));
+   const buf = Buffer.concat(chunks);
+   const sep = buf.indexOf(Buffer.from('\r\n\r\n'));
+   const headerStr = sep > -1 ? buf.slice(0, sep).toString('utf8') : '';
+   const body = sep > -1 ? buf.slice(sep + 4) : buf;
+   const statusLine = headerStr.split('\r\n')[0] ?? '';
+   const status = parseInt(statusLine.split(' ')[1] ?? '200', 10);
+   resolve(new Response(body, { status, statusText: status >= 200 && status < 300 ? 'OK' : 'Error' }));
+  });
+ });
+}
+
 export class RequestClient {
  private tail: Promise<void> = Promise.resolve();
  private requests = 0;
@@ -13,12 +41,18 @@ export class RequestClient {
  }
  async bytes(url: string, maxBytes = 20_000_000): Promise<Buffer> {
   const parsed = new URL(url);
-  if (parsed.protocol !== 'https:' || !['scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk', ...developers.map(d => new URL(d.website).hostname)].includes(parsed.hostname)) throw new Error('URL outside crawler host allowlist.');
+  if (parsed.protocol !== 'https:' || !['res.cloudinary.com', 'mvdataappstorageeunlprod.blob.core.windows.net', 'accelerated-cf-eunl.mediavalet.com', 'cdn.mediavalet.com', 'scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk', ...developers.map(d => new URL(d.website).hostname)].includes(parsed.hostname)) throw new Error('URL outside crawler host allowlist.');
   for (let attempt = 0; ; attempt++) {
    await this.gate();
    try {
     const request = async (target: string, redirects = 0): Promise<Response> => {
-     const response = await this.fetcher(target, { redirect: 'manual', signal: AbortSignal.timeout(this.options.timeout), headers: { 'User-Agent': 'ShowhomeCrawler/0.2 (bounded public showhome gallery crawler)' } });
+     let response = await this.fetcher(target, { redirect: 'manual', signal: AbortSignal.timeout(this.options.timeout), headers: { 'User-Agent': 'ShowhomeCrawler/0.2 (bounded public showhome gallery crawler)' } });
+     if (response.status === 403) {
+      try {
+       const fallback = await curlFallback(target, this.options.timeout);
+       if (fallback.ok) response = fallback;
+      } catch {}
+     }
      if (![301, 302, 303, 307, 308].includes(response.status)) return response;
      const location = response.headers.get('location');
      if (!location || redirects >= 3) throw new Error('Invalid or excessive redirect.');

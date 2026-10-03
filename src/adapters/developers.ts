@@ -17,6 +17,9 @@ export const developers = [
  { slug: 'hill-group', name: 'Hill Group', website: 'https://www.hill.co.uk', sitemap: '/sitemap.xml' },
  { slug: 'tulloch-homes', name: 'Tulloch Homes', website: 'https://www.tulloch-homes.com', sitemap: '/homes-for-sale' },
  { slug: 'scotia-homes', name: 'Scotia Homes', website: 'https://www.scotia-homes.co.uk', sitemap: '/sitemap.xml' },
+ { slug: 'bovis-homes', name: 'Bovis Homes', website: 'https://www.bovishomes.co.uk', sitemap: '/sitemap.xml' },
+ { slug: 'linden-homes', name: 'Linden Homes', website: 'https://www.lindenhomes.co.uk', sitemap: '/sitemap.xml' },
+ { slug: 'countryside-homes', name: 'Countryside Homes', website: 'https://www.countrysidehomes.com', sitemap: '/sitemap.xml' },
 ] as const;
 export type DeveloperSlug = typeof developers[number]['slug'];
 export const crawlOrder: DeveloperSlug[] = developers.slice(3).map(d => d.slug);

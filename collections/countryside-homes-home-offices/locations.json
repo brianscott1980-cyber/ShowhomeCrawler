@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Hazel Meadows",
+    "url": "https://www.countrysidehomes.com/developments/yorkshire/hazel-meadows-knottingley",
+    "latitude": 53.696844,
+    "longitude": -1.235952,
+    "postcode": "WF11 0DH"
+  },
+  {
+    "name": "Coppice Hill",
+    "url": "https://www.countrysidehomes.com/developments/bedfordshire/coppice-hill-houghton-regis",
+    "latitude": 51.90543,
+    "longitude": -0.52987,
+    "postcode": "LU5 6SZ"
+  },
+  {
+    "name": "Coopers Hill",
+    "url": "https://www.countrysidehomes.com/developments/berkshire/coopers-hill-bracknell",
+    "latitude": 51.41145,
+    "longitude": -0.75134,
+    "postcode": "RG12 7AU"
+  },
+  {
+    "name": "Fletton Folly",
+    "url": "https://www.countrysidehomes.com/developments/cambridgeshire/fletton-folly-great-haddon",
+    "latitude": 52.5155,
+    "longitude": -0.27194,
+    "postcode": "PE7 7AB"
+  },
+  {
+    "name": "The Gwel, Truro",
+    "url": "https://www.countrysidehomes.com/developments/cornwall/the-gwel-truro",
+    "latitude": 50.25474,
+    "longitude": -5.04864,
+    "postcode": "TR1 2SN"
+  },
+  {
+    "name": "Countryside Homes @ Sherford",
+    "url": "https://www.countrysidehomes.com/developments/devon/sherford-countrysidehomes",
+    "latitude": 50.365658,
+    "longitude": -4.054376,
+    "postcode": "PL9 8FA"
+  },
+  {
+    "name": "The Gateway",
+    "url": "https://www.countrysidehomes.com/developments/east-sussex/the-gateway-bexhill",
+    "latitude": 50.85553,
+    "longitude": 0.48538,
+    "postcode": "TN40 2GS"
+  },
+  {
+    "name": "Wolsey Park",
+    "url": "https://www.countrysidehomes.com/developments/essex/wolsey-park-rayleigh",
+    "latitude": 51.605,
+    "longitude": 0.59,
+    "postcode": "SS6 9XS"
+  },
+  {
+    "name": "Westcombe Park",
+    "url": "https://www.countrysidehomes.com/developments/essex/westcombe-park-heybridge",
+    "latitude": 51.748454,
+    "longitude": 0.677011,
+    "postcode": "CM9 4EG"
+  },
+  {
+    "name": "Beaulieu Heath",
+    "url": "https://www.countrysidehomes.com/developments/essex/beaulieu-heath-chelmsford",
+    "latitude": 51.766195,
+    "longitude": 0.501747,
+    "postcode": "CM1 6HS"
+  },
+  {
+    "name": "Base at Newhall",
+    "url": "https://www.countrysidehomes.com/developments/essex/base-newhall-harlow",
+    "latitude": 51.775146,
+    "longitude": 0.133345,
+    "postcode": "CM17 9TW"
+  },
+  {
+    "name": "Amber Mews",
+    "url": "https://www.countrysidehomes.com/developments/essex/amber-mews-saffron-walden",
+    "latitude": 52.013067,
+    "longitude": 0.26004,
+    "postcode": "CB10 2SG"
+  },
+  {
+    "name": "Hartshead View",
+    "url": "https://www.countrysidehomes.com/developments/greater-manchester/hartshead-view-oldham",
+    "latitude": 53.524011,
+    "longitude": -2.09946,
+    "postcode": "OL8 2LL"
+  },
+  {
+    "name": "The Fairways at Brackley Village",
+    "url": "https://www.countrysidehomes.com/developments/greater-manchester/the-fairways-at-brackley-village-little-hulton",
+    "latitude": 53.537665,
+    "longitude": -2.442973,
+    "postcode": "M38 9AZ"
+  },
+  {
+    "name": "Calico Grove",
+    "url": "https://www.countrysidehomes.com/developments/greater-manchester/calico-grove-rochdale",
+    "latitude": 53.599689,
+    "longitude": -2.17404,
+    "postcode": "OL11 3ET"
+  },
+  {
+    "name": "South Oxhey Central",
+    "url": "https://www.countrysidehomes.com/developments/hertfordshire/south-oxhey-central",
+    "latitude": 51.628081,
+    "longitude": -0.386389,
+    "postcode": "WD19 7DT"
+  },
+  {
+    "name": "Beaumont Manor",
+    "url": "https://www.countrysidehomes.com/developments/hertfordshire/beaumont-manor-hemel-hempstead",
+    "postcode": "HP2 7EN",
+    "latitude": 51.770662,
+    "longitude": -0.434311
+  },
+  {
+    "name": "Morella Woods",
+    "url": "https://www.countrysidehomes.com/developments/kent/morella-woods-lenham",
+    "latitude": 51.235889,
+    "longitude": 0.70153,
+    "postcode": "ME17 2LR"
+  },
+  {
+    "name": "Rosewood",
+    "url": "https://www.countrysidehomes.com/developments/kent/rosewood-maidstone",
+    "latitude": 51.237888,
+    "longitude": 0.57216,
+    "postcode": "ME17 3NQ"
+  },
+  {
+    "name": "Greenwood Gardens",
+    "url": "https://www.countrysidehomes.com/developments/kent/greenwood-gardens-herne-bay",
+    "latitude": 51.356674,
+    "longitude": 1.130117,
+    "postcode": "CT6 7FR"
+  },
+  {
+    "name": "Rochester Riverside",
+    "url": "https://www.countrysidehomes.com/developments/kent/rochester-phase-7-dp",
+    "latitude": 51.389917,
+    "longitude": 0.507967,
+    "postcode": "ME1 1PZ"
+  },
+  {
+    "name": "Ashmere",
+    "url": "https://www.countrysidehomes.com/developments/kent/ashmere-ebbsfleet-garden-city",
+    "latitude": 51.44066,
+    "longitude": 0.28343,
+    "postcode": "DA10 1FU"
+  }
+]
