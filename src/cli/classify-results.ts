@@ -1,3 +1,4 @@
+import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { readFile, writeFile, rename, open, unlink } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
 import { load } from 'cheerio';
@@ -15,7 +16,10 @@ async function main() {
  const version = values['all-images'] ? 'all-property-images-v1' : analysisVersion;
  if (values['all-images']) { report.question = 'All property gallery images'; report.analysisVersion = version; }
  const classificationModel = values.model ?? report.model;
- for (const image of report.images) if (image.verdict) image.analysisModel ??= report.model;
+ for (const image of report.images) {
+  if (isInferredAnalysis(image.verdict)) { delete image.verdict; delete image.categorisation; delete image.analysisModel; }
+  if (image.verdict) image.analysisModel ??= report.model;
+ }
  for (const development of report.developments) if (development.name) development.name = load(development.name).text();
  for (const property of report.properties) { property.development = load(property.development).text(); property.name = load(property.name).text(); }
  const lock = await open(folder + '/.lock', 'wx');
@@ -30,6 +34,7 @@ async function main() {
      const cache = `results/.cache/analysis/${sha256(`${image.id}:${model}:${version}`)}.json`;
      try {
       const cached = JSON.parse(await readFile(cache, 'utf8'));
+      if (isInferredAnalysis(cached)) continue;
       image.verdict = verdictSchema.parse(cached);
       image.analysisModel = cached.analysisModel ?? model;
       delete image.error;

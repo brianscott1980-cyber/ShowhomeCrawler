@@ -41,7 +41,7 @@ export class RequestClient {
  }
  async bytes(url: string, maxBytes = 20_000_000): Promise<Buffer> {
   const parsed = new URL(url);
-  const isAllowedHost = ['res.cloudinary.com', 'mvdataappstorageeunlprod.blob.core.windows.net', 'accelerated-cf-eunl.mediavalet.com', 'cdn.mediavalet.com', 'scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk'].includes(parsed.hostname) ||
+  const isAllowedHost = ['collegepark.uk', 'res.cloudinary.com', 'mvdataappstorageeunlprod.blob.core.windows.net', 'accelerated-cf-eunl.mediavalet.com', 'cdn.mediavalet.com', 'scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk'].includes(parsed.hostname) ||
     developers.some(d => {
       const h = new URL(d.website).hostname;
       return parsed.hostname === h || parsed.hostname.endsWith('.' + h.replace(/^www\./, ''));

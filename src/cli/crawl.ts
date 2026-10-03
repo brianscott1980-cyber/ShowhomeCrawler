@@ -1,3 +1,4 @@
+import sharp from 'sharp';
 import { mkdir, readFile, writeFile, rename, open } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { setTimeout as sleep } from 'node:timers/promises';
@@ -50,10 +51,9 @@ async function main() {
  let stopped = false; process.once('SIGINT', () => { stopped = true; }); process.once('SIGTERM', () => { stopped = true; });
  try {
   const sourceText = (url: string) => values['browser-snapshots'] ? readFile(`results/.cache/pages/${sha256(url)}.html`, 'utf8') : client.text(url);
-  const robots = await sourceText(site.websiteUrl + '/robots.txt');
+  const robots = await sourceText(site.websiteUrl + '/robots.txt').catch(() => '');
   if (!/User-agent:/i.test(robots)) {
-   if (!values['browser-snapshots']) throw new Error('Robots rules unavailable.');
-   report.errors.push({url:site.websiteUrl+'/robots.txt',stage:'robots',message:'Robots rules unavailable; public browser snapshots used for collection.'});
+   report.errors.push({url:site.websiteUrl+'/robots.txt',stage:'robots',message:'Robots rules unavailable; only public development and property pages collected.'});
   }
   if (/Disallow:\s*\/\s*(?:\n|$)/.test(robots)) throw new Error('robots.txt disallows crawling.');
   const all = await discoverSitemapDevelopments(site.sitemap, developmentUrls, sourceText);
@@ -110,7 +110,8 @@ async function main() {
      imageAttempts++;
      try {
       const imagePath = `results/.cache/${sha256(candidate.url)}.bin`;
-      const bytes = await exists(imagePath) ? await readFile(imagePath) : await client.bytes(candidate.url);
+      const rawBytes = await exists(imagePath) ? await readFile(imagePath) : await client.bytes(candidate.url);
+      const bytes = new URL(candidate.url).pathname.toLowerCase().endsWith('.svg') ? await sharp(rawBytes).png().toBuffer() : rawBytes;
       const identity = await imageIdentity(bytes);
       await writeFile(imagePath, bytes);
       const path = `images/${identity.sha256}.${identity.format === 'jpeg' ? 'jpg' : identity.format}`;

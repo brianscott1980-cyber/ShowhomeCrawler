@@ -1,3 +1,4 @@
+import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { readdir, readFile, writeFile, mkdir, copyFile, rm, access } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -14,46 +15,6 @@ import type { Verdict } from '../vision/gemini-classifier.js';
 
 dotenv.config();
 dotenv.config({ path: '.env.local' });
-
-function inferVerdict(sourceUrl: string, altText?: string): Verdict {
-  const text = `${decodeURIComponent(sourceUrl)} ${altText || ''}`.toLowerCase();
-  const isFloorplan = /\b(floor[ -]?plan|schematic|site[ -]?plan)\b/i.test(text);
-  const isGraphic = /\b(banner|graphic|logo|badge|award|icon|coming[ -]?soon|c-soon|hero-image-bh)\b/i.test(text);
-  const isOffice = /\b(study|home[ -]?office|workstation|desk)\b/i.test(text);
-  const isBed = /\b(bed|bedroom|nursery)\b/i.test(text);
-  const isKitchen = /\b(kitchen|dining|breakfast)\b/i.test(text);
-  const isLiving = /\b(lounge|living|sitting|family[ -]?room|snug)\b/i.test(text);
-  const isBath = /\b(bath|bathroom|en-?suite|shower|wc|toilet|cloakroom)\b/i.test(text);
-  const isHall = /\b(hall|hallway|stairs|landing|entrance)\b/i.test(text);
-  const isUtility = /\b(utility|laundry|boot)\b/i.test(text);
-  const isExt = /\b(ext|exterior|elevation|street|garden|patio|driveway|aerial|facade)\b/i.test(text);
-
-  let roomType = 'interior space';
-  if (isFloorplan) roomType = 'floorplan';
-  else if (isGraphic) roomType = 'graphic';
-  else if (isOffice) roomType = 'home office';
-  else if (isBed) roomType = 'bedroom';
-  else if (isKitchen) roomType = 'kitchen';
-  else if (isLiving) roomType = 'living room';
-  else if (isBath) roomType = 'bathroom';
-  else if (isHall) roomType = 'hallway';
-  else if (isUtility) roomType = 'utility room';
-  else if (isExt) roomType = 'exterior';
-
-  const matches = !isFloorplan && !isGraphic;
-  const description = `${roomType.charAt(0).toUpperCase() + roomType.slice(1)} interior showing contemporary design, styling and finishes.`;
-  const reason = isFloorplan ? 'Floorplan layout graphic.' : isGraphic ? 'Promotional graphic or logo.' : `Staged showhome ${roomType}.`;
-
-  return {
-    matches,
-    hasDesk: isOffice,
-    hasBed: isBed,
-    hasFloorplan: isFloorplan,
-    roomType,
-    description,
-    reason
-  };
-}
 
 const postcodePattern = /\b(?:GIR\s?0AA|[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2})\b/i;
 
@@ -163,7 +124,7 @@ function extractLocation(html: string, url?: string) {
   return { postcode: text.match(postcodePattern)?.[0] };
 }
 
-async function finalizeBuilder(builderSlug: string) {
+async function finalizeBuilder(builderSlug: string, persist = false) {
   const sourceFolder = resolve('results', `${builderSlug}-home-offices`);
   const targetFolder = resolve('collections', `${builderSlug}-home-offices`);
 
@@ -189,48 +150,17 @@ async function finalizeBuilder(builderSlug: string) {
   await mkdir('results/.cache/analysis', { recursive: true });
   await mkdir('results/.cache/categorisation', { recursive: true });
 
-  // 2. Ensure every image has verdict & categorisation
-  let newVerdicts = 0;
-  let cachedVerdicts = 0;
-  for (const img of report.images) {
-    if (!img.verdict) {
-      // Check cache first
-      let cached: Verdict | null = null;
-      for (const model of ['gemini-flash-latest', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite']) {
-        for (const version of ['all-property-images-v1', 'home-office-no-beds-or-floorplans-v2']) {
-          const cacheFile = `results/.cache/analysis/${sha256(`${img.id}:${model}:${version}`)}.json`;
-          if (existsSync(cacheFile)) {
-            try {
-              cached = JSON.parse(await readFile(cacheFile, 'utf8'));
-              break;
-            } catch {}
-          }
-        }
-        if (cached) break;
-      }
-
-      if (cached) {
-        img.verdict = cached;
-        cachedVerdicts++;
-      } else {
-        img.verdict = inferVerdict(img.sourceUrl);
-        newVerdicts++;
-        // Cache it
-        const cacheFile = `results/.cache/analysis/${sha256(`${img.id}:gemini-flash-latest:all-property-images-v1`)}.json`;
-        await writeFile(cacheFile, JSON.stringify(img.verdict, null, 2));
-      }
-      img.analysisModel ??= 'gemini-flash-latest';
-      delete (img as any).error;
-    }
-
-    if (!img.categorisation) {
-      img.categorisation = extractBaseCategorisation(img.verdict.roomType, img.verdict.description, img.verdict.reason);
-    }
+  // Publication requires completed visual analysis; never manufacture missing verdicts.
+  if (existsSync(resolve(sourceFolder, '.lock'))) throw new Error('A crawl or classification is still running.');
+  if (!report.images.length) throw new Error('No images collected.');
+  if (report.images.some(img => !img.verdict || !img.categorisation || isInferredAnalysis(img.verdict))) {
+    throw new Error('Run results:classify --all-images to complete genuine image analysis before finalizing.');
   }
-
-  console.log(`Verdicts: ${cachedVerdicts} from cache, ${newVerdicts} newly inferred. All ${report.images.length} images now have verdicts & categorisations.`);
-
-  report.status = 'completed';
+  for (const img of report.images) {
+    if (!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(img.path)) throw new Error('Invalid image path');
+    await access(resolve(sourceFolder, img.path));
+  }
+  report.status = report.errors.length || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';
   report.completedAt = new Date().toISOString();
   report.analysisVersion = 'all-property-images-v1';
   report.metrics.pendingImages = 0;
@@ -266,7 +196,7 @@ async function finalizeBuilder(builderSlug: string) {
     metrics: { ...report.metrics, collectedUniqueImages: report.images.length }
   });
   await rm(resolve(targetFolder, 'checkpoint.json'), { force: true });
-  await rm(resolve(sourceFolder, '.lock'), { force: true });
+
 
   // 5. Generate locations.json
   console.log(`Generating locations.json for ${builderSlug}...`);
@@ -286,6 +216,13 @@ async function finalizeBuilder(builderSlug: string) {
     const pageCache = `results/.cache/pages/${sha256(devUrl)}.html`;
     let html = existsSync(pageCache) ? await readFile(pageCache, 'utf8') : '';
     let loc = extractLocation(html, devUrl);
+    if (!('latitude' in loc) && !loc.postcode) {
+      const home = homesWithImages.find(p => p.developmentUrl === devUrl && p.url !== devUrl);
+      if (home) {
+        const homeHtml = await readFile(`results/.cache/pages/${sha256(home.url)}.html`, 'utf8').catch(() => '');
+        loc = extractLocation(homeHtml, home.url);
+      }
+    }
 
     if (!('latitude' in loc) && loc.postcode) {
       try {
@@ -312,7 +249,7 @@ async function finalizeBuilder(builderSlug: string) {
 
   for (const devUrl of devUrls) {
     let properties: any[] = [];
-    let scope = 'Published homes';
+    let scope = 'Advertised homes';
     const pageCache = `results/.cache/pages/${sha256(devUrl)}.html`;
     try {
       if (existsSync(pageCache)) {
@@ -339,13 +276,21 @@ async function finalizeBuilder(builderSlug: string) {
             }))
           : [{ identity: p.url, price: p.price, bedrooms: p.bedrooms, style: null }]
         );
-      scope = 'Advertised homes';
+      scope = 'Published homes';
     }
 
     const loc = entries.find(e => e.url === devUrl);
+    let country: string | null = devUrl.includes('/north-wales/') ? 'Wales' : devUrl.includes('/north-west/') ? 'England' : null;
+    if (!country && loc?.latitude && loc?.longitude) {
+      try {
+        const response = await fetch(`https://api.postcodes.io/postcodes?lon=${loc.longitude}&lat=${loc.latitude}&radius=2000&limit=1`, {signal:AbortSignal.timeout(5000)});
+        const data = await response.json() as any;
+        if (response.ok) country = data.result?.[0]?.country ?? null;
+      } catch {}
+    }
     details.push({
       url: devUrl,
-      country: null,
+      country,
       scope,
       properties: [...new Map(properties.map(p => [p.identity, p])).values()].map(({ identity, ...p }) => p)
     });
@@ -355,7 +300,7 @@ async function finalizeBuilder(builderSlug: string) {
   console.log(`site-details.json: ${details.length} sites recorded.`);
 
   // 7. Sync to database if available
-  if (process.env.DATABASE_URL) {
+  if (persist && process.env.DATABASE_URL) {
     console.log(`Syncing images to Supabase database...`);
     try {
       const sql = postgres(process.env.DATABASE_URL, { max: 3, ssl: 'require', connect_timeout: 10 });
@@ -381,9 +326,9 @@ async function finalizeBuilder(builderSlug: string) {
 }
 
 async function main() {
-  const { values } = parseArgs({ options: { builder: { type: 'string' } } });
+  const { values } = parseArgs({ options: { builder: { type: 'string' }, persist: {type:'boolean'} } });
   if (!values.builder) throw new Error('--builder slug required (e.g. --builder bovis-homes)');
-  await finalizeBuilder(values.builder);
+  await finalizeBuilder(values.builder, values.persist);
 }
 
 main().catch(err => {

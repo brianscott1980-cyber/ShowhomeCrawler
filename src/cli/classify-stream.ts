@@ -1,3 +1,4 @@
+import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { access, readFile, writeFile, rename, open, unlink } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import { parseArgs } from 'node:util';
@@ -22,11 +23,11 @@ async function main() {
    const running = await access(`${folder}/.lock`).then(() => true, () => false);
    const pending = [];
    for (const image of report.images) {
-    if (values['all-images'] ? image.categorisation : image.verdict) continue;
+    if (!isInferredAnalysis(image.verdict) && (values['all-images'] ? image.categorisation : image.verdict)) continue;
     let cached = false;
     for (const cachedModel of [...new Set([model, report.model, ...(values['reuse-model'] ?? [])])]) {
      const path = `results/.cache/analysis/${sha256(`${image.id}:${cachedModel}:${version}`)}.json`;
-     try { verdictSchema.parse(JSON.parse(await readFile(path, 'utf8'))); cached = true; break; } catch {}
+     try { const answer=JSON.parse(await readFile(path, 'utf8')); if(isInferredAnalysis(answer))continue; verdictSchema.parse(answer); cached = true; break; } catch {}
     }
     if (!cached) pending.push(image);
     if (pending.length === 24) break;

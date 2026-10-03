@@ -1,3 +1,4 @@
+import * as castleGreen from './castle-green/site-parser.js';
 import { createVistryParser } from './vistry/site-parser.js';
 import * as bloor from './bloor/site-parser.js';
 import * as keepmoat from './keepmoat/site-parser.js';
@@ -45,6 +46,7 @@ export function builderSite(slug='bellway') {
  if(slug==='morris-homes')return {name:'Morris Homes',slug,websiteUrl:'https://www.morrishomes.co.uk',sitemap:'https://www.morrishomes.co.uk/development-sitemap.xml',...morris};
  if(slug==='harron-homes')return {name:'Harron Homes',slug,websiteUrl:'https://www.harronhomes.com',sitemap:'https://www.harronhomes.com/harron_developments-sitemap.xml',...harron};
  if(slug==='anwyl-homes')return {name:'Anwyl Homes',slug,websiteUrl:'https://www.anwylhomes.co.uk',sitemap:'https://www.anwylhomes.co.uk/development-sitemap.xml',...anwyl};
+ if(slug==='castle-green-homes')return {name:'Castle Green Homes',slug,websiteUrl:'https://www.castlegreenhomes.uk',sitemap:'https://www.castlegreenhomes.uk/our_developments-sitemap.xml',...castleGreen};
  throw new Error('Unsupported builder.');
 }
 import * as redrow from './redrow/site-parser.js';

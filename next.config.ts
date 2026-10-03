@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next';
 const config: NextConfig = {
+ // Images use the asset route's existing source redirect when not bundled.
+ outputFileTracingExcludes: { '/*': ['./collections/*/images/**/*', './results/**/*'] },
  outputFileTracingIncludes: { '/': ['./collections/*/locations.json'] },
  serverExternalPackages: ['sharp', 'postgres'],
  // The report renderer also runs as compiled Node ESM in the crawler.

@@ -26,6 +26,7 @@ export const developers = [
  { slug: 'morris-homes', name: 'Morris Homes', website: 'https://www.morrishomes.co.uk', sitemap: '/development-sitemap.xml' },
  { slug: 'harron-homes', name: 'Harron Homes', website: 'https://www.harronhomes.com', sitemap: '/harron_developments-sitemap.xml' },
  { slug: 'anwyl-homes', name: 'Anwyl Homes', website: 'https://www.anwylhomes.co.uk', sitemap: '/development-sitemap.xml' },
+ {slug:'castle-green-homes',name:'Castle Green Homes',website:'https://www.castlegreenhomes.uk',sitemap:'/our_developments-sitemap.xml'},
 ] as const;
 export type DeveloperSlug = typeof developers[number]['slug'];
 export const crawlOrder: DeveloperSlug[] = developers.slice(3).map(d => d.slug);

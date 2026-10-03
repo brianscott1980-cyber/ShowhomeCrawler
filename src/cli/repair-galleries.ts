@@ -23,7 +23,8 @@ async function main() {
    const html=await readFile(`results/.cache/pages/${sha256(property.url)}.html`,'utf8').catch(()=>null);
    if(!html)continue;
    let candidates;try{candidates=site.galleryImages(html);}catch{continue;}
-   if(!failures.has(property.url)&&!candidates.some(i=>failedImages.has(i.url)))continue;
+   const failedInPage=[...failedImages].filter(url=>html.includes(url));
+   if(!failures.has(property.url)&&!candidates.some(i=>failedImages.has(i.url))&&!failedInPage.length)continue;
    let complete=!!candidates.length;
    for(const candidate of candidates) {
     let id=sources.get(candidate.url);
@@ -44,7 +45,7 @@ async function main() {
     if(!property.imageIds.includes(id))property.imageIds.push(id);
     recovered.add(candidate.url);
    }
-   if(complete)recovered.add(property.url);
+   if(complete){recovered.add(property.url);for(const url of failedInPage)recovered.add(url);}
   }
   report.errors=report.errors.filter(e=>!(['gallery','image'].includes(e.stage)&&recovered.has(e.url)));
   report.metrics.pendingImages=report.images.filter(i=>report.analysisVersion==='all-property-images-v1'?!i.categorisation:!i.verdict).length;

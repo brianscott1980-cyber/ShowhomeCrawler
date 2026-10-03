@@ -133,5 +133,10 @@
     "slug": "anwyl-homes",
     "source": "https://www.anwylhomes.co.uk/app/themes/anwyl-homes/dist/images/Anwyl_95th_anniversary_logo.png",
     "file": "anwyl-homes.png"
+  },
+  {
+    "slug": "castle-green-homes",
+    "source": "https://www.castlegreenhomes.uk/app/themes/castle-green/assets/img/logo-castle-green-horizontal.svg",
+    "file": "castle-green-homes.svg"
   }
 ]
