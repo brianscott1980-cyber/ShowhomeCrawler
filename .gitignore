@@ -8,6 +8,8 @@ coverage/
 supabase/.temp/
 *.log
 results/
+# Downloaded collection assets stay local; catalogue metadata retains source URLs.
+collections/*/images/
 .next/
 *.tsbuildinfo
 next-env.d.ts
