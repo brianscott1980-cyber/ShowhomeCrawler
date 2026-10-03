@@ -14,7 +14,6 @@ nav{align-items:center}nav>a{display:inline-flex;align-items:center;gap:6px;line
 .tag-tech{background:#e7ece8;color:#283f33;font-weight:600}
 .tag-decor{background:#f5f3ec;color:#5a5449}
 
-
 /* Collection images change only as their cards cross the scroll threshold. */
 .collection-image{position:relative;overflow:hidden;width:100%;height:350px;background:#eee8de;flex-shrink:0;isolation:isolate}
 .collection-card .collection-image img{position:absolute;inset:0;width:100%;height:100%;min-height:0;object-fit:cover}
@@ -33,7 +32,6 @@ nav{align-items:center}nav>a{display:inline-flex;align-items:center;gap:6px;line
 .collection-card .collection-image img.collection-image-logo{object-fit:contain;padding:24px;box-sizing:border-box}
 @media(max-width:700px){.directory-list .collection-image img.collection-image-logo{padding:12px}}
 
-body:has(> main.homepage) > .site-header{display:none}
 
 .site-map-directory{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}.site-map-panel{grid-column:2;grid-row:1;position:sticky;top:20px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#e9ece8}.site-map-directory>div{grid-column:1;grid-row:1;min-width:0}.site-map{height:calc(100vh - 100px);min-height:420px;max-height:850px}.site-map-fit{position:absolute;top:12px;left:12px;background:white;border:1px solid var(--line);border-radius:20px;padding:10px 14px;box-shadow:0 2px 8px #0002}.site-map-status{position:absolute;bottom:35px;left:12px;right:12px;background:white;padding:12px;border-radius:8px;font-size:13px}.site-map-marker{border:2px solid white;border-radius:50%;background:var(--ink);color:white;width:26px;height:26px;padding:0;box-shadow:0 2px 5px #0004;line-height:20px}.site-map-marker:hover,.site-map-marker:focus-visible,.site-map-marker.is-active{background:#b87930;outline:3px solid #b8793055;z-index:2}.site-map-search{display:flex;align-items:center;gap:8px;font-size:13px}.site-map-directory .directory-compact,.site-map-directory .directory-large{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.site-map-directory .collection-card{border-radius:12px;overflow:hidden}.site-map-directory .card-body{padding:16px}.site-map-directory .card-body h2{font-size:24px}.site-map-directory .collection-card.is-map-active{border-color:var(--ink);box-shadow:0 0 0 2px var(--ink)}.site-map-directory .directory-list .collection-image{width:130px}.site-map-directory .directory-large .collection-image{height:220px}@media(max-width:900px){.site-map-directory{grid-template-columns:1fr}.site-map-panel{grid-column:1;grid-row:1;position:relative;top:0}.site-map-directory>div{grid-row:2}.site-map{height:420px;min-height:320px}}@media(max-width:450px){.site-map-directory .directory-large{grid-template-columns:1fr}.site-map-directory .directory-compact .card-body h2{font-size:20px}}
 /* Locations explorer: shared catalogue views and a viewport-driven map. */
