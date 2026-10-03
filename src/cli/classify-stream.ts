@@ -7,7 +7,7 @@ import { sha256 } from '../galleries/image-hasher.js';
 import { analysisVersion, classifyBatch, verdictSchema } from '../vision/gemini-classifier.js';
 import type { RunReport } from '../reports/report.js';
 async function main() {
- const { values } = parseArgs({ options: { 'all-images':{type:'boolean'}, model:{type:'string'}, folder: { type: 'string' } } });
+ const { values } = parseArgs({ options: { 'reuse-model':{type:'string',multiple:true}, 'all-images':{type:'boolean'}, model:{type:'string'}, folder: { type: 'string' } } });
  const folder = values.folder; if (!folder?.startsWith('results/') || folder.includes('..')) throw new Error('Local result folder required.');
  const env = readEnv(); if (!env.GEMINI_API_KEY) throw new Error('Gemini key required.');
  let stopped = false;
@@ -23,9 +23,12 @@ async function main() {
    const pending = [];
    for (const image of report.images) {
     if (values['all-images'] ? image.categorisation : image.verdict) continue;
-    const path = `results/.cache/analysis/${sha256(`${image.id}:${model}:${version}`)}.json`;
-    try { verdictSchema.parse(JSON.parse(await readFile(path, 'utf8'))); }
-    catch { pending.push(image); }
+    let cached = false;
+    for (const cachedModel of [...new Set([model, report.model, ...(values['reuse-model'] ?? [])])]) {
+     const path = `results/.cache/analysis/${sha256(`${image.id}:${cachedModel}:${version}`)}.json`;
+     try { verdictSchema.parse(JSON.parse(await readFile(path, 'utf8'))); cached = true; break; } catch {}
+    }
+    if (!cached) pending.push(image);
     if (pending.length === 24) break;
    }
    if (!pending.length || (running && pending.length < 8)) {

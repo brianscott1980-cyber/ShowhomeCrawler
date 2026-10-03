@@ -8,7 +8,7 @@ import { sha256 } from '../galleries/image-hasher.js';
 import { analysisVersion, classifyBatch, verdictSchema } from '../vision/gemini-classifier.js';
 import { writeReport, type RunReport } from '../reports/report.js';
 async function main() {
- const { values } = parseArgs({ options: { 'all-images': {type:'boolean'}, model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
+ const { values } = parseArgs({ options: { 'reuse-model': {type:'string',multiple:true}, 'all-images': {type:'boolean'}, model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
  const folder = values.folder, env = readEnv();
  if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY required.');
  const report: RunReport = JSON.parse(await readFile(folder + '/results.json', 'utf8'));
@@ -26,7 +26,7 @@ async function main() {
    const images = pending.slice(offset, offset + 8);
    const remaining = [];
    for (const image of images) {
-    for (const model of [...new Set([report.model, classificationModel])]) {
+    for (const model of [...new Set([report.model, classificationModel, ...(values['reuse-model'] ?? [])])]) {
      const cache = `results/.cache/analysis/${sha256(`${image.id}:${model}:${version}`)}.json`;
      try {
       const cached = JSON.parse(await readFile(cache, 'utf8'));
