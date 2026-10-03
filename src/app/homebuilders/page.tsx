@@ -5,7 +5,6 @@ import {absoluteUrl,jsonLd} from '../../web/seo';
 import {readFile} from 'node:fs/promises';
 import {DeveloperDirectory,type DeveloperCard} from '../../web/directory';
 export const metadata={title:'Builders | Showhome Explorer',description:'Explore showhome interiors from UK housebuilders.',alternates:{canonical:'/homebuilders'}};
-export const dynamic='force-dynamic';
 export default async function Builders(){
  const cards=await Promise.all(developers.map(async developer=>{
   const report=await readCollection(developer.slug);if(!report)return null;const matches=report?.images.filter(i=>i.categorisation?(i.categorisation.isRoom||i.categorisation.mainCategory==='Exterior'):i.verdict?.matches)??[];const hero=matches[0];if(!hero)return null;
