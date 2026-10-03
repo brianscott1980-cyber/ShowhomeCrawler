@@ -2,6 +2,7 @@
 
 import {useEffect, useRef, useState} from 'react';
 import type {Map as MapInstance, Marker, GeoJSONSource} from 'maplibre-gl';
+import {fullyVisibleSiteKeys} from './map-marker-visibility';
 import {developers} from '../adapters/developers';
 import {builderMapBrand,BUILDER_ICON_ZOOM} from './builder-map-brand';
 import type {SiteCard} from './site-filters';
@@ -21,10 +22,10 @@ function siteFeatures(cards:SiteCard[]) {
  return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderIcon:`builder-${builderMapBrand(card.developer).slug}`}}))};
 }
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange}:{cards:SiteCard[];activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void}) {
+export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange}:{cards:SiteCard[];activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void}) {
  const container=useRef<HTMLDivElement>(null), map=useRef<MapInstance|null>(null), highlight=useRef<Marker|null>(null);
- const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange});
- latest.current={cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange};
+ const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange});
+ latest.current={cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange};
  const selectionSeen=useRef({key:activeKey,sequence:focusSequence});
  const publishedCamera=useRef<MapCamera|null>(null);
  const clusterRequest=useRef(0);
@@ -99,6 +100,25 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
  useEffect(()=>{
   if(!ready||!map.current)return;
   (map.current.getSource('sites') as GeoJSONSource)?.setData(siteFeatures(cards));setChoices([]);
+ },[cards,ready]);
+ useEffect(()=>{
+  const instance=map.current;if(!ready||!instance)return;
+  let disposed=false,request=0,lastKeys:string|undefined;
+  const invalidate=()=>{request++;};
+  const update=async()=>{
+   if(!latest.current.onVisibleSitesChange)return;
+   const current=++request;
+   const canvas=instance.getCanvas(),center=instance.getCenter();
+   try {
+    const keys=await fullyVisibleSiteKeys(instance.queryRenderedFeatures({layers:['site-clusters','site-dots']}),([lng,lat])=>instance.project([lng+360*Math.round((center.lng-lng)/360),lat]),{width:canvas.clientWidth,height:canvas.clientHeight},instance.getZoom(),(id,count)=>(instance.getSource('sites') as GeoJSONSource).getClusterLeaves(id,count,0));
+    if(disposed||current!==request)return;
+    const signature=keys.join('\n');
+    if(signature!==lastKeys){lastKeys=signature;latest.current.onVisibleSitesChange?.(keys);}
+   } catch { /* Retry on idle after a source or camera change invalidates cluster IDs. */ }
+  };
+  instance.on('movestart',invalidate);instance.on('idle',update);
+  void update();
+  return()=>{disposed=true;request++;instance.off('movestart',invalidate);instance.off('idle',update);};
  },[cards,ready]);
  useEffect(()=>{
   const instance=map.current,marker=highlight.current;if(!ready||!instance||!marker)return;

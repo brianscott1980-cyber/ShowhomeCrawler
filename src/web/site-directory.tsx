@@ -2,7 +2,7 @@
 import {BuilderName} from './builder-name';
 import Link from 'next/link';
 import {useState,useEffect,useMemo,lazy,Suspense,useRef} from 'react';
-import {inMapBounds,hasCoordinates,type MapBounds,type MapCamera} from './site-map';
+import {hasCoordinates,type MapCamera} from './site-map';
 import {developers as builderRegistry} from '../adapters/developers';
 import logos from '../../public/logos/sources.json';
 const SiteMap=lazy(()=>import('./site-map').then(module=>({default:module.SiteMap})));
@@ -27,7 +27,7 @@ export function SiteDirectory({
  defaultView?: CardViewMode;
  storageKey?: string;
 }){
- const [bounds,setBounds]=useState<MapBounds|null>(null);
+ const [visibleKeys,setVisibleKeys]=useState<string[]>([]);
  const [searchMap,setSearchMap]=useState(true);
  const [focusSequence,setFocusSequence]=useState(0);
  const [hoverKey,setHoverKey]=useState<string|null>(null);
@@ -62,7 +62,7 @@ export function SiteDirectory({
  function useLocation(){if(busy)return;if(!navigator.geolocation){setMessage('Location is unavailable. Enter a postcode instead.');return;}setPoint(null);setBusy(true);setMessage('Waiting for your location permission…');navigator.geolocation.getCurrentPosition(p=>{setPoint({latitude:p.coords.latitude,longitude:p.coords.longitude});setBusy(false);setOrder('distance');setMessage('Distances from your current location');},()=>{setBusy(false);setMessage('Location unavailable. Enter a postcode instead.');},{timeout:15000,maximumAge:300000});}
  const invalid=(filters.minPrice!==''&&filters.maxPrice!==''&&Number(filters.minPrice)>Number(filters.maxPrice))||(filters.minBeds!==''&&filters.maxBeds!==''&&Number(filters.minBeds)>Number(filters.maxBeds));
  const matching=useMemo(()=>(invalid?[]:filterSites(cards,filters,point)).sort((a,b)=>order==='distance'&&point?(a.miles??Infinity)-(b.miles??Infinity)||a.name.localeCompare(b.name):a.name.localeCompare(b.name)),[cards,invalid,filters,point,order]);
- const visible=mapView&&searchMap&&bounds&&!mapUnavailable?matching.filter(card=>inMapBounds(card,bounds)):matching;
+ const visible=mapView&&searchMap&&!mapUnavailable?matching.filter(card=>visibleKeys.includes(card.key)):matching;
  const unmapped=matching.filter(card=>!hasCoordinates(card)).length;
  function selectCard(key:string){setFocusSequence(value=>value+1);selectSite(key);}
  function selectSite(key:string){setUrlFilters(previous=>({...previous,selected:key}));setSheetExpanded(true);requestAnimationFrame(()=>{const card=document.getElementById('site-card-'+key),panel=resultsPanel.current;if(card&&panel){const rect=card.getBoundingClientRect(),parent=panel.getBoundingClientRect();panel.scrollTo?.({top:panel.scrollTop+rect.top-parent.top-12,behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}});}
@@ -76,7 +76,7 @@ export function SiteDirectory({
  {mapView&&<label className="site-map-search"><input type="checkbox" checked={searchMap} onChange={e=>setSearchMap(e.target.checked)}/> Search as I move</label>}
  </div>
  <div ref={explorerPanel} className={mapView?'site-map-directory location-explorer'+(sheetExpanded?' sheet-expanded':''):'location-directory'}>
- {mapView&&<Suspense fallback={<aside className="site-map-panel"><p className="empty">Loading map…</p></aside>}><SiteMap cards={matching} activeKey={activeKey} focusSequence={focusSequence} hoverKey={hoverKey} camera={camera} onCameraChange={updateCamera} onBoundsChange={next=>{setBounds(next);setMapUnavailable(false);}} onSelect={selectSite} onUnavailable={()=>setMapUnavailable(true)}/></Suspense>}
+ {mapView&&<Suspense fallback={<aside className="site-map-panel"><p className="empty">Loading map…</p></aside>}><SiteMap cards={matching} activeKey={activeKey} focusSequence={focusSequence} hoverKey={hoverKey} camera={camera} onCameraChange={updateCamera} onBoundsChange={()=>setMapUnavailable(false)} onVisibleSitesChange={setVisibleKeys} onSelect={selectSite} onUnavailable={()=>setMapUnavailable(true)}/></Suspense>}
  <div className="site-preview-panel" ref={resultsPanel}>
  {mapView&&<button className="site-sheet-handle" type="button" aria-expanded={sheetExpanded} aria-label={sheetExpanded?'Collapse development previews':'Expand development previews'} onClick={()=>setSheetExpanded(value=>!value)} onTouchStart={e=>{sheetStart.current=e.touches[0]?.clientY??null;}} onTouchEnd={e=>{const y=e.changedTouches[0]?.clientY;if(sheetStart.current!==null&&y!==undefined&&Math.abs(y-sheetStart.current)>20)setSheetExpanded(y<sheetStart.current);sheetStart.current=null;}}><span/><b>{visible.length} developments · {sheetExpanded?'Show map':'View previews'}</b></button>}
  <div className={`collection-grid directory-${mapView?'compact':view}`}>
