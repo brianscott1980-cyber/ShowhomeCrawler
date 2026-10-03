@@ -20,10 +20,10 @@ async function exists(path: string) { try { await readFile(path); return true; }
 async function atomic(path: string, value: unknown) { const temporary = path + '.' + randomUUID() + '.tmp'; await writeFile(temporary, JSON.stringify(value)); await rename(temporary, path); }
 async function main() {
  const env = readEnv();
- const { values } = parseArgs({ options: { 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean' }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
+ const { values } = parseArgs({ options: { 'refresh-pages': { type: 'boolean' }, 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean' }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
  const site = builderSite(values.builder); const { developmentUrls, discoverHomes, galleryImages } = site;
  const number = (v: string, max: number) => { const n = Number(v); if (!Number.isInteger(n) || n <= 0 || n > max) throw new Error('Invalid crawl limit.'); return n; };
- const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 20000);
+ const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 100000);
  if (values['all-images'] && !values['discover-only']) throw new Error('All-images crawling requires --discover-only; categorise with results:classify --all-images.');
  const model = env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
  if (!values['discover-only'] && !env.GEMINI_API_KEY) throw new Error('Set GEMINI_API_KEY locally or use --discover-only.');
@@ -38,7 +38,7 @@ async function main() {
    for (let attempt = 0; attempt < 60 && !await exists(path); attempt++) await sleep(1000);
    if (!await exists(path)) throw new Error('Browser snapshot unavailable.');
   }
-  if (await exists(path)) return readFile(path, 'utf8');
+  if (!values['refresh-pages'] && await exists(path)) return readFile(path, 'utf8');
   let html = await client.text(url);
   if ('enrichPage' in site && site.enrichPage) html = await site.enrichPage(html, async apiUrl => client.text(apiUrl));
   // Remove transient Livewire/session data from local cached pages.

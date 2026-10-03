@@ -18,3 +18,7 @@ describe('Hill source extraction',()=>{
  it('rejects an inventory whose advertised total is not fully collected',()=>{expect(()=>discoverHomes('<h1>Test</h1><main>Showing 1 of 2 homes available<table>'+row(1,3)+'</table></main>',url)).toThrow('Incomplete plot pagination');});
  it('scopes images to the property gallery',()=>{expect(galleryImages('<img src="/sites/default/files/logo.jpg"><img class="image-style-media-gallery" src="/sites/default/files/office.jpg">')).toEqual([{url:'https://www.hill.co.uk/sites/default/files/office.jpg',position:0,altText:undefined}]);});
 });
+
+it('reports an unsupported smaller-home microsite as a coverage gap rather than empty inventory',()=>{expect(()=>discoverHomes('<h1>Current</h1><main>2, 3 and 4 bedroom homes. Visit the dedicated website.</main>',url)).toThrow('No supported current plot list');expect(discoverHomes('<h1>Current</h1><table>'+row(1,2)+'</table>',url).homes[0]?.bedrooms).toBe(2);});
+
+it('retains a linked Hill home with unknown bedroom metadata for unrestricted collection',()=>{expect(discoverHomes('<h1>Test</h1><table>'+row(1,3).replace('>3</td>','></td>')+'</table>',url).homes[0]?.bedrooms).toBeNull();});
