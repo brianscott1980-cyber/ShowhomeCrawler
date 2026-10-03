@@ -40,7 +40,7 @@ export async function classifyBatch(items: { id: string; bytes: Buffer }[], apiK
   let retrySeconds = response.status === 429 ? 120 : 30;
   const body = await response.json().catch(() => null) as { error?: { details?: { retryDelay?: string; violations?: {quotaMetric?: string; quotaId?: string; quotaValue?: string}[] }[] } } | null;
   for (const detail of body?.error?.details ?? []) if (detail.retryDelay) retrySeconds = Math.max(retrySeconds, Math.ceil(parseFloat(detail.retryDelay)));
-  if (response.status === 429) retrySeconds = Math.max(retrySeconds, 120);
+  if (response.status === 429) retrySeconds = 120;
   throw Object.assign(new Error(`Gemini HTTP ${response.status}`), { status: response.status, retrySeconds, quotaViolations: body?.error?.details?.flatMap(d => d.violations ?? []) });
  }
  const body = await response.json() as { candidates?: { content?: { parts?: { text?: string }[] }; finishReason?: string }[] };

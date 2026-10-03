@@ -57,7 +57,7 @@ async function main() {
       console.log(JSON.stringify({ stage: 'batch_retry', status: failure.status ?? 'invalid_response', quota: failure.quotaViolations, reason: error instanceof Error && /^(Gemini did not complete classification\.|Batch image identifiers do not match\.|Contradictory classification\.)$/.test(error.message) ? error.message : undefined, attempt: attempt + 1 }));
       if (isRateLimit) {
        console.log('Gemini rate limit exceeded. Pausing for 2 minutes before retrying...');
-       const delaySeconds = Math.max(failure.retrySeconds ?? 120, 120);
+       const delaySeconds = 120;
        await saveGeminiState(folder,{state:'quota_wait',model:classificationModel,httpStatus:429,retryAt:new Date(Date.now()+delaySeconds*1000).toISOString()});
        await writeReport(folder,report);
        for (let seconds = 0; seconds < delaySeconds; seconds += 10) await sleep(Math.min(10, delaySeconds - seconds) * 1000);
