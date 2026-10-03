@@ -20,16 +20,19 @@ async function exists(path: string) { try { await readFile(path); return true; }
 async function atomic(path: string, value: unknown) { const temporary = path + '.' + randomUUID() + '.tmp'; await writeFile(temporary, JSON.stringify(value)); await rename(temporary, path); }
 async function main() {
  const env = readEnv();
- const { values } = parseArgs({ options: { 'refresh-pages': { type: 'boolean' }, 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean' }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
+ const { values } = parseArgs({ options: { resume: {type:'boolean'}, 'refresh-pages': { type: 'boolean' }, 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean' }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
  const site = builderSite(values.builder); const { developmentUrls, discoverHomes, galleryImages } = site;
  const number = (v: string, max: number) => { const n = Number(v); if (!Number.isInteger(n) || n <= 0 || n > max) throw new Error('Invalid crawl limit.'); return n; };
  const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 100000);
  if (values['all-images'] && !values['discover-only']) throw new Error('All-images crawling requires --discover-only; categorise with results:classify --all-images.');
+ if(values.resume && (!values['all-images'] || !values['discover-only']))throw new Error('Resume requires all-images discovery.');
  const model = env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
  if (!values['discover-only'] && !env.GEMINI_API_KEY) throw new Error('Set GEMINI_API_KEY locally or use --discover-only.');
  const folder = resolve(values.output ?? `results/${site.slug}-home-offices`);
  if (!folder.startsWith(resolve('results') + '/')) throw new Error('Output must be within results/.');
  await mkdir(folder + '/images', { recursive: true }); await mkdir('results/.cache/pages', { recursive: true }); await mkdir('results/.cache/analysis', { recursive: true });
+ const previous:RunReport|undefined=values.resume?JSON.parse(await readFile(folder+'/checkpoint.json','utf8')):undefined;
+ if(previous && (previous.builder?.slug!==site.slug || previous.analysisVersion!=='all-property-images-v1'))throw new Error('Resume checkpoint does not match this builder and mode.');
  const lock = await open(folder + '/.lock', 'wx').catch(() => { throw new Error('This output folder is already locked by another crawl.'); });
  const client = new RequestClient({ delay: Math.max(500, env.REQUEST_DELAY_MS), retries: env.MAX_RETRIES, timeout: env.REQUEST_TIMEOUT_MS, maxRequests: 40000 });
  const page = async (url: string) => {
@@ -48,6 +51,7 @@ async function main() {
  const sql = values.persist ? createDatabase() : null;
  const repo = sql ? new PostgresCatalogRepository(sql, site) : null;
  const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question: values['all-images'] ? 'All property gallery images' : question, analysisVersion: values['all-images'] ? 'all-property-images-v1' : analysisVersion, developments: [], properties: [], images: [], errors: [], metrics: {} };
+ if(previous){report.startedAt=previous.startedAt;report.images=previous.images;report.errors=previous.errors.filter(e=>e.stage==='image');report.properties=previous.properties.filter(p=>p.imageIds.length>0&&!previous.errors.some(e=>e.url===p.url));}
  let stopped = false; process.once('SIGINT', () => { stopped = true; }); process.once('SIGTERM', () => { stopped = true; });
  try {
   const sourceText = (url: string) => values['browser-snapshots'] ? readFile(`results/.cache/pages/${sha256(url)}.html`, 'utf8') : client.text(url);
@@ -84,10 +88,12 @@ async function main() {
   const sourceTasks = new ImageSourceCache<string>();
   const identities: { identity: Awaited<ReturnType<typeof imageIdentity>>; image: ReportImage }[] = [];
   const galleryCache = new Map<string, string[]>();
+  for(const image of report.images){if(!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(image.path))throw new Error('Invalid resume image path.');const identity=await imageIdentity(await readFile(`${folder}/${image.path}`));if(identity.sha256!==image.id)throw new Error('Resume image does not match its identifier.');identities.push({identity,image});sourceImages.set(image.sourceUrl,image);}
+  const completedProperties=new Set(report.properties.map(p=>p.url));
   let imageAttempts = 0, analysisUnavailable = false;
   // All-images runs share at most three gallery workers, each with one image request at a time.
   await mapLimit(homes.slice(0, maxProperties), values['all-images'] ? Math.min(3, env.MAX_CONCURRENCY) : 1, async ({ home, development, plots }) => {
-   if (stopped) return;
+   if (stopped || completedProperties.has(home.url)) return;
    const property = { development: development.name, developmentUrl: development.url, name: home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
    report.properties.push(property);
    try {
