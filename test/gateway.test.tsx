@@ -6,7 +6,7 @@ vi.mock('../src/web/collections', () => ({
  assetUrl: (slug: string, path: string) => `/api/assets/${slug}/${path}`,
  readCollection: async (slug: string) => slug === 'missing' ? null : ({ images: slug === 'empty' ? [] : [{ path: 'image.jpg', verdict: slug === 'pending' ? undefined : { matches: slug !== 'rejected' } }] }),
 }));
-import Home from '../src/app/homebuilders/page';
+import Home from '../src/page-views/homebuilders/page';
 it('lists only collections containing qualifying images', async () => {
  const dom = new JSDOM(renderToStaticMarkup(await Home()));
  expect([...dom.window.document.querySelectorAll('.collection-card')].map(card => card.getAttribute('href'))).toEqual(['/developers/visible']);

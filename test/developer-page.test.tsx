@@ -15,9 +15,9 @@ vi.mock('../src/web/collections', async importOriginal => ({
  ...await importOriginal<typeof import('../src/web/collections')>(), readCollection: vi.fn(async () => report),
 }));
 vi.mock('../src/web/groups', () => ({ readGroups: vi.fn(async () => [{ key: 'abbot', name: 'Abbot Walk', developers: ['Avant'], count: 2, collections: [{ slug: 'avant', name: 'Avant', report }] }]) }));
-import Page, { generateMetadata } from '../src/app/developers/[slug]/page';
+import Page, { generateMetadata } from '../src/page-views/developers/[slug]/page';
 import { groupMetadata, GroupDetail } from '../src/web/group-pages';
-import Favourites from '../src/app/favourites/page';
+import Favourites from '../src/page-views/favourites/page';
 import { readCollection } from '../src/web/collections';
 import { Navigation } from '../src/web/navigation';
 const props = { params: Promise.resolve({ slug: 'avant' }) };

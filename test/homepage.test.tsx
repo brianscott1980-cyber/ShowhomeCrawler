@@ -2,7 +2,7 @@ import { expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { JSDOM } from 'jsdom';
 vi.mock('../src/web/homepage-data', () => ({ homepageData: async () => ({ hero: {src:'/hero.jpg',alt:'A living room',builder:'Bellway',category:'Living Room'},journeyPhotos:[],featured:[],mapPhotos:[],points:[{latitude:52,longitude:-1,name:'Test site',builder:'Bellway'}],counts:{locations:12,builders:3,buildings:8} }) }));
-import Home from '../src/app/page';
+import Home from '../src/page-views/page';
 import { CoverageMap, coverageClusters, projectLocation } from '../src/web/coverage-map';
 it('gives the homepage three distinct journeys and a real coverage overview', async () => {
  const dom=new JSDOM(renderToStaticMarkup(await Home()));const doc=dom.window.document;
