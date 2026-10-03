@@ -24,7 +24,7 @@ export function SiteDirectory({
 }:{
  cards:SiteCard[];
  basePath?: string;
- defaultView?: CardViewMode;
+ defaultView?: CardViewMode|'map';
  storageKey?: string;
 }){
  const [visibleKeys,setVisibleKeys]=useState<string[]>([]);
@@ -36,10 +36,10 @@ export function SiteDirectory({
  const [sheetExpanded,setSheetExpanded]=useState(false);
  const sheetStart=useRef<number|null>(null);
  const [mapUnavailable,setMapUnavailable]=useState(false);
- const [savedView,saveView]=useCardView(storageKey,defaultView);
+ const [savedView,saveView]=useCardView(storageKey,defaultView==='map'?'compact':defaultView);
  const [urlFilters,setUrlFilters]=useUrlFilters(urlDefaults);
  const {postcode,order}=urlFilters;
- const mapView=urlFilters.view==='map';
+ const mapView=urlFilters.view==='map'||(!urlFilters.view&&defaultView==='map');
  const view:CardViewMode=['list','large','compact'].includes(urlFilters.view)?urlFilters.view as CardViewMode:savedView;
  const activeKey=urlFilters.selected||null;
  const camera:MapCamera|undefined=urlFilters.lat&&urlFilters.lng&&urlFilters.zoom&&Number.isFinite(Number(urlFilters.lat))&&Math.abs(Number(urlFilters.lat))<=85&&Number.isFinite(Number(urlFilters.lng))&&Math.abs(Number(urlFilters.lng))<=180&&Number(urlFilters.zoom)>=0&&Number(urlFilters.zoom)<=22?{lat:Number(urlFilters.lat),lng:Number(urlFilters.lng),zoom:Number(urlFilters.zoom)}:undefined;
