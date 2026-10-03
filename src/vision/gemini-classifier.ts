@@ -37,10 +37,10 @@ export async function classifyBatch(items: { id: string; bytes: Buffer }[], apiK
   body: JSON.stringify({ contents: [{ parts }], generationConfig: { temperature: 0, responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { images: { type: 'ARRAY', items: { type: 'OBJECT', properties: fields, required: Object.keys(fields) } } }, required: ['images'] } } })
  });
  if (!response.ok) {
-  let retrySeconds = response.status === 429 ? 1800 : 30;
+  let retrySeconds = response.status === 429 ? 120 : 30;
   const body = await response.json().catch(() => null) as { error?: { details?: { retryDelay?: string; violations?: {quotaMetric?: string; quotaId?: string; quotaValue?: string}[] }[] } } | null;
   for (const detail of body?.error?.details ?? []) if (detail.retryDelay) retrySeconds = Math.max(retrySeconds, Math.ceil(parseFloat(detail.retryDelay)));
-  if (response.status === 429) retrySeconds = Math.max(retrySeconds, 1800);
+  if (response.status === 429) retrySeconds = Math.max(retrySeconds, 120);
   throw Object.assign(new Error(`Gemini HTTP ${response.status}`), { status: response.status, retrySeconds, quotaViolations: body?.error?.details?.flatMap(d => d.violations ?? []) });
  }
  const body = await response.json() as { candidates?: { content?: { parts?: { text?: string }[] }; finishReason?: string }[] };

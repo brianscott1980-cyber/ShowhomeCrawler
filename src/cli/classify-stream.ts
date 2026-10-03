@@ -53,8 +53,8 @@ async function main() {
      const isRateLimit = status === 429 || /rate|quota|exhausted|429/i.test(String(error));
      console.log(JSON.stringify({stage:'stream_retry',developer:report.builder?.name,status:status ?? 'invalid_response',quota:failure.quotaViolations,attempt:attempt+1}));
      if (isRateLimit) {
-      console.log('Gemini rate limit exceeded. Pausing for 30 minutes before retrying...');
-      const delaySeconds = Math.max(failure.retrySeconds ?? 1800, 1800);
+      console.log('Gemini rate limit exceeded. Pausing for 2 minutes before retrying...');
+      const delaySeconds = Math.max(failure.retrySeconds ?? 120, 120);
       await saveGeminiState(folder,{state:'quota_wait',model,httpStatus:429,retryAt:new Date(Date.now()+delaySeconds*1000).toISOString()});
       for (let s = 0; s < delaySeconds && !stopped; s += 10) await sleep(Math.min(10, delaySeconds - s) * 1000);
       continue;

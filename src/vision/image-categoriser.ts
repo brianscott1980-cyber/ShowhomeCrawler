@@ -306,8 +306,8 @@ export async function categoriseBatchWithGemini(
   });
 
   if (res.status === 429) {
-   console.log('Gemini rate limit exceeded in image categorisation. Pausing for 30 minutes before retrying...');
-   for (let s = 0; s < 1800; s += 10) await new Promise(resolve => setTimeout(resolve, 10000));
+   console.log('Gemini rate limit exceeded in image categorisation. Pausing for 2 minutes before retrying...');
+   for (let s = 0; s < 120; s += 10) await new Promise(resolve => setTimeout(resolve, 10000));
    continue;
   }
 
