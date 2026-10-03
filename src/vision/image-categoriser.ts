@@ -267,62 +267,72 @@ export async function categoriseBatchWithGemini(
   '- hasComputer: boolean\n\n' +
   'Input items:\n' + JSON.stringify(items);
 
- const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({
-   contents: [{ parts: [{ text: prompt }] }],
-   generationConfig: {
-    temperature: 0,
-    responseMimeType: 'application/json',
-    responseSchema: {
-     type: 'OBJECT',
-     properties: {
-      images: {
-       type: 'ARRAY',
-       items: {
-        type: 'OBJECT',
-        properties: {
-         id: { type: 'STRING' },
-         mainCategory: { type: 'STRING' },
-         subCategory: { type: 'STRING' },
-         objects: { type: 'ARRAY', items: { type: 'STRING' } },
-         wallpaper: { type: 'STRING' },
-         curtains: { type: 'STRING' },
-         colours: { type: 'ARRAY', items: { type: 'STRING' } },
-         chairs: { type: 'ARRAY', items: { type: 'STRING' } },
-         hasTelevision: { type: 'BOOLEAN' },
-         hasComputer: { type: 'BOOLEAN' }
-        },
-        required: ['id', 'mainCategory', 'subCategory', 'objects', 'colours', 'chairs', 'hasTelevision', 'hasComputer']
+ for (let attempt = 0; attempt < 5; attempt++) {
+  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`, {
+   method: 'POST',
+   headers: { 'Content-Type': 'application/json' },
+   body: JSON.stringify({
+    contents: [{ parts: [{ text: prompt }] }],
+    generationConfig: {
+     temperature: 0,
+     responseMimeType: 'application/json',
+     responseSchema: {
+      type: 'OBJECT',
+      properties: {
+       images: {
+        type: 'ARRAY',
+        items: {
+         type: 'OBJECT',
+         properties: {
+          id: { type: 'STRING' },
+          mainCategory: { type: 'STRING' },
+          subCategory: { type: 'STRING' },
+          objects: { type: 'ARRAY', items: { type: 'STRING' } },
+          wallpaper: { type: 'STRING' },
+          curtains: { type: 'STRING' },
+          colours: { type: 'ARRAY', items: { type: 'STRING' } },
+          chairs: { type: 'ARRAY', items: { type: 'STRING' } },
+          hasTelevision: { type: 'BOOLEAN' },
+          hasComputer: { type: 'BOOLEAN' }
+         },
+         required: ['id', 'mainCategory', 'subCategory', 'objects', 'colours', 'chairs', 'hasTelevision', 'hasComputer']
+        }
        }
-      }
-     },
-     required: ['images']
+      },
+      required: ['images']
+     }
+    }
+   })
+  });
+
+  if (res.status === 429) {
+   console.log('Gemini rate limit exceeded in image categorisation. Pausing for 30 minutes before retrying...');
+   for (let s = 0; s < 1800; s += 10) await new Promise(resolve => setTimeout(resolve, 10000));
+   continue;
+  }
+
+  if (res.ok) {
+   const data = await res.json() as any;
+   const parsed = JSON.parse(data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}');
+   for (const img of parsed.images ?? []) {
+    if (img.id) {
+     results.set(img.id, {
+      mainCategory: img.mainCategory || 'Other',
+      subCategory: img.mainCategory==='Bedroom'?bedroomSubCategory(items.find(i=>i.id===img.id)?.desc,items.find(i=>i.id===img.id)?.room,items.find(i=>i.id===img.id)?.reason,img.subCategory):img.subCategory || img.mainCategory || 'Other',
+      isRoom: !isNonRoom(img.subCategory || img.mainCategory),
+      objects: Array.isArray(img.objects) ? img.objects : [],
+      wallpaper: img.wallpaper && img.wallpaper !== 'null' ? img.wallpaper : null,
+      curtains: img.curtains && img.curtains !== 'null' ? img.curtains : null,
+      colours: Array.isArray(img.colours) ? img.colours : [],
+      chairs: Array.isArray(img.chairs) ? img.chairs : [],
+      hasTelevision: !!img.hasTelevision,
+      hasComputer: !!img.hasComputer,
+     });
     }
    }
-  })
- });
-
- if (res.ok) {
-  const data = await res.json() as any;
-  const parsed = JSON.parse(data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}');
-  for (const img of parsed.images ?? []) {
-   if (img.id) {
-    results.set(img.id, {
-     mainCategory: img.mainCategory || 'Other',
-     subCategory: img.mainCategory==='Bedroom'?bedroomSubCategory(items.find(i=>i.id===img.id)?.desc,items.find(i=>i.id===img.id)?.room,items.find(i=>i.id===img.id)?.reason,img.subCategory):img.subCategory || img.mainCategory || 'Other',
-     isRoom: !isNonRoom(img.subCategory || img.mainCategory),
-     objects: Array.isArray(img.objects) ? img.objects : [],
-     wallpaper: img.wallpaper && img.wallpaper !== 'null' ? img.wallpaper : null,
-     curtains: img.curtains && img.curtains !== 'null' ? img.curtains : null,
-     colours: Array.isArray(img.colours) ? img.colours : [],
-     chairs: Array.isArray(img.chairs) ? img.chairs : [],
-     hasTelevision: !!img.hasTelevision,
-     hasComputer: !!img.hasComputer,
-    });
-   }
+   break;
   }
+  break;
  }
  return results;
 }

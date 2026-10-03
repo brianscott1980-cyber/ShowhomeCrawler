@@ -50,8 +50,14 @@ async function main() {
      try { answers = await classifyBatch(remaining, env.GEMINI_API_KEY, classificationModel, values['all-images']); break; }
      catch (error) {
       const failure = error as { status?: number; retrySeconds?: number; quotaViolations?: {quotaMetric?: string; quotaId?: string; quotaValue?: string}[] };
+      const isRateLimit = failure.status === 429 || /rate|quota|exhausted|429/i.test(String(error));
       console.log(JSON.stringify({ stage: 'batch_retry', status: failure.status ?? 'invalid_response', quota: failure.quotaViolations, reason: error instanceof Error && /^(Gemini did not complete classification\.|Batch image identifiers do not match\.|Contradictory classification\.)$/.test(error.message) ? error.message : undefined, attempt: attempt + 1 }));
-      if ((failure.retrySeconds ?? 0) > 120) throw error;
+      if (isRateLimit) {
+       console.log('Gemini rate limit exceeded. Pausing for 30 minutes before retrying...');
+       const delaySeconds = Math.max(failure.retrySeconds ?? 1800, 1800);
+       for (let seconds = 0; seconds < delaySeconds; seconds += 10) await sleep(Math.min(10, delaySeconds - seconds) * 1000);
+       continue;
+      }
       if (failure.status && ![429, 500, 502, 503, 504].includes(failure.status)) throw error;
       if (attempt >= 3) {
        if (failure.status) {

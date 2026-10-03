@@ -3,7 +3,7 @@
 import {useEffect, useRef, useState} from 'react';
 import type {Map as MapInstance, Marker, GeoJSONSource} from 'maplibre-gl';
 import {siteExpansionZoom} from './site-cluster-focus';
-import {fullyVisibleSiteKeys} from './map-marker-visibility';
+import {fullyVisibleSiteKeys,type FocusArea} from './map-marker-visibility';
 import {developers} from '../adapters/developers';
 import {builderMapBrand,BUILDER_ICON_ZOOM} from './builder-map-brand';
 import type {SiteCard} from './site-filters';
@@ -23,10 +23,10 @@ function siteFeatures(cards:SiteCard[]) {
  return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderIcon:`builder-${builderMapBrand(card.developer).slug}`}}))};
 }
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange}:{cards:SiteCard[];activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void}) {
+export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
  const container=useRef<HTMLDivElement>(null), map=useRef<MapInstance|null>(null), highlight=useRef<Marker|null>(null);
- const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange});
- latest.current={cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange};
+ const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea});
+ latest.current={cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea};
  const selectionSeen=useRef({key:activeKey,sequence:focusSequence});
  const publishedCamera=useRef<MapCamera|null>(null);
  const clusterRequest=useRef(0);
@@ -111,7 +111,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
    const current=++request;
    const canvas=instance.getCanvas(),center=instance.getCenter();
    try {
-    const keys=await fullyVisibleSiteKeys(instance.queryRenderedFeatures({layers:['site-clusters','site-dots']}),([lng,lat])=>instance.project([lng+360*Math.round((center.lng-lng)/360),lat]),{width:canvas.clientWidth,height:canvas.clientHeight},instance.getZoom(),(id,count)=>(instance.getSource('sites') as GeoJSONSource).getClusterLeaves(id,count,0));
+    const keys=await fullyVisibleSiteKeys(instance.queryRenderedFeatures({layers:['site-clusters','site-dots']}),([lng,lat])=>instance.project([lng+360*Math.round((center.lng-lng)/360),lat]),{width:canvas.clientWidth,height:canvas.clientHeight},instance.getZoom(),(id,count)=>(instance.getSource('sites') as GeoJSONSource).getClusterLeaves(id,count,0),latest.current.focusArea);
     if(disposed||current!==request)return;
     const signature=keys.join('\n');
     if(signature!==lastKeys){lastKeys=signature;latest.current.onVisibleSitesChange?.(keys);}
@@ -120,7 +120,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
   instance.on('movestart',invalidate);instance.on('idle',update);
   void update();
   return()=>{disposed=true;request++;instance.off('movestart',invalidate);instance.off('idle',update);};
- },[cards,ready]);
+ },[cards,ready,focusArea]);
  useEffect(()=>{
   const instance=map.current,marker=highlight.current;if(!ready||!instance||!marker)return;
   let disposed=false,request=0,paintedCluster:number|null|undefined;
@@ -188,6 +188,17 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
   const center=instance.getCenter();
   if(Math.abs(center.lng-camera.lng)>.001||Math.abs(center.lat-camera.lat)>.001||Math.abs(instance.getZoom()-camera.zoom)>.02)instance.jumpTo({center:[camera.lng,camera.lat],zoom:camera.zoom});
  },[camera?.lng,camera?.lat,camera?.zoom,ready]);
- function fitAll(){const mapped=cards.filter(hasCoordinates);if(!map.current||!mapped.length)return;map.current.fitBounds([[Math.min(...mapped.map(c=>c.longitude)),Math.min(...mapped.map(c=>c.latitude))],[Math.max(...mapped.map(c=>c.longitude)),Math.max(...mapped.map(c=>c.latitude))]],{padding:55,maxZoom:12,duration:reducedMotion()?0:450});}
- return <aside className="site-map-panel" aria-label="Explore development locations"><div className="site-map" ref={container}/><button type="button" className="site-map-fit" onClick={fitAll} disabled={!ready}>Show all matching sites</button>{status&&<p className="site-map-status" role="status">{status}</p>}{choices.length>0&&<div className="site-map-choices" aria-label="Developments at this location"><button className="site-map-close" onClick={()=>setChoices([])} aria-label="Close location choices">×</button><p>Developments at this location</p>{choices.map(c=><button key={c.key} onClick={()=>{latest.current.onSelect(c.key);setChoices([]);}}>{c.name}<span>{c.developer}</span></button>)}</div>}</aside>;
+ function fitAll(){
+  const mapped=cards.filter(hasCoordinates);
+  if(!map.current||!mapped.length)return;
+  const canvas=map.current.getCanvas();
+  const padding=focusArea?{
+    left:Math.max(30,focusArea.left+24),
+    top:Math.max(30,focusArea.top+24),
+    right:Math.max(30,(canvas.clientWidth-focusArea.right)+24),
+    bottom:Math.max(30,(canvas.clientHeight-focusArea.bottom)+24)
+  }:55;
+  map.current.fitBounds([[Math.min(...mapped.map(c=>c.longitude)),Math.min(...mapped.map(c=>c.latitude))],[Math.max(...mapped.map(c=>c.longitude)),Math.max(...mapped.map(c=>c.latitude))]],{padding,maxZoom:12,duration:reducedMotion()?0:450});
+ }
+ return <aside className="site-map-panel" aria-label="Explore development locations"><div className="site-map" ref={container}/>{focusArea&&<div className="site-map-focus-boundary" style={{left:focusArea.left,top:focusArea.top,width:Math.max(0,focusArea.right-focusArea.left),height:Math.max(0,focusArea.bottom-focusArea.top)}} aria-hidden="true"><span className="site-map-focus-badge">Search area</span></div>}<button type="button" className="site-map-fit" onClick={fitAll} disabled={!ready}>Show all matching sites</button>{status&&<p className="site-map-status" role="status">{status}</p>}{choices.length>0&&<div className="site-map-choices" aria-label="Developments at this location"><button className="site-map-close" onClick={()=>setChoices([])} aria-label="Close location choices">×</button><p>Developments at this location</p>{choices.map(c=><button key={c.key} onClick={()=>{latest.current.onSelect(c.key);setChoices([]);}}>{c.name}<span>{c.developer}</span></button>)}</div>}</aside>;
 }
