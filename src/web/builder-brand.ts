@@ -33,6 +33,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'lovell':{primary:'#c10a27',secondary:'#701427',parts:['Lovell ','Homes']},
  'wain-homes':{primary:'#141c4b',secondary:'#e61b48',parts:['Wain ','Homes']},
  'dandara':{primary:'#153050',secondary:'#7dbeb7',parts:['Dandara']},
+ 'maguires-developments':{primary:'#c5b358',secondary:'#319aad',parts:['Maguires ','Developments']},
  'bancon-homes':{primary:'#111111',secondary:'#555555',parts:['Bancon ','Homes']},
  'ajc-homes':{primary:'#c41230',secondary:'#ffffff',parts:['AJC ','Homes']},
  'hayhill':{primary:'#C11F3D',secondary:'#969899',parts:['Hayhill Developments']},

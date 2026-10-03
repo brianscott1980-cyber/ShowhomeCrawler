@@ -1,3 +1,4 @@
+import * as maguires from './maguires/site-parser.js';
 import * as wain from './wain/site-parser.js';
 import * as hayhill from './hayhill/site-parser.js';
 import * as ajc from './ajc/site-parser.js';
@@ -56,6 +57,7 @@ export function builderSite(slug='bellway') {
  if(slug==='lovell')return {name:'Lovell Homes',slug,websiteUrl:'https://newhomes.lovell.co.uk',sitemap:'https://newhomes.lovell.co.uk/sitemap.xml',...lovell};
  if(slug==='wain-homes')return {name:'Wain Homes',slug,websiteUrl:'https://www.wainhomes.co.uk',sitemap:'https://www.wainhomes.co.uk/development-sitemap.xml',...wain};
  if(slug==='dandara')return {name:'Dandara',slug,websiteUrl:'https://www.dandara.com',sitemap:'https://www.dandara.com/sitemap.xml',...dandara};
+ if(slug==='maguires-developments')return {name:'Maguires Developments',slug,websiteUrl:'https://www.m-d.co.uk',sitemap:'https://www.m-d.co.uk/sitemap.xml',...maguires};
  if(slug==='bancon-homes')return {name:'Bancon Homes',slug,websiteUrl:'https://banconhomes.com',sitemap:'https://banconhomes.com/sitemap.xml',...bancon};
  if(slug==='ajc-homes')return {name:'AJC Homes',slug,websiteUrl:'https://ajcscotland.com',sitemap:'https://ajcscotland.com/developments',...ajc};
  if(slug==='hayhill')return {name:'Hayhill Developments',slug,websiteUrl:'https://www.hayhilldevelopments.co.uk',sitemap:'https://www.hayhilldevelopments.co.uk/sitemap_index.xml',...hayhill};
