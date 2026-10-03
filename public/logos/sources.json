@@ -178,5 +178,10 @@
     "slug": "hopkins-homes",
     "source": "https://www.hopkinshomes.co.uk",
     "file": "hopkins-homes.svg"
+  },
+  {
+    "slug": "larkfleet-homes",
+    "source": "https://allison-homes.co.uk/wp-content/themes/larkfleet-2022/img/allison-logo-header.png",
+    "file": "larkfleet-homes.png"
   }
 ]
