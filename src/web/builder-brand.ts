@@ -26,6 +26,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'bloor-homes':{primary:'#003865',secondary:'#75787b',parts:['Bloor Homes']},
  'keepmoat':{primary:'#004179',secondary:'#f9b247',parts:['Keepmoat']},
  'gleeson':{primary:'#49a942',secondary:'#1e392a',parts:['Gleeson Homes']},
+ 'morris-homes':{primary:'#00396f',secondary:'#00a4e8',parts:['Morris Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {

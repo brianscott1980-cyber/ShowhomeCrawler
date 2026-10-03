@@ -1,0 +1,4326 @@
+{
+  "builder": {
+    "name": "Morris Homes",
+    "slug": "morris-homes",
+    "websiteUrl": "https://www.morrishomes.co.uk"
+  },
+  "status": "completed",
+  "startedAt": "2026-10-03T01:58:51.864Z",
+  "model": "gemini-3.5-flash-lite",
+  "question": "All property gallery images",
+  "analysisVersion": "all-property-images-v1",
+  "developments": [
+    {
+      "url": "https://www.morrishomes.co.uk/development/wintringham/",
+      "name": "Wintringham",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/st-michaels-park/",
+      "name": "St Michael’s Park",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/the-grange/",
+      "name": "The Grange",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/deerwood-fold/",
+      "name": "Deerwood Fold",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/the-beacons/",
+      "name": "Houlton",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/hugglescote-grange/",
+      "name": "Hugglescote Grange",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/greenmount-manor/",
+      "name": "Greenmount Manor",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/princes-meadows/",
+      "name": "Princes Meadows",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/station-grange/",
+      "name": "Station Grange",
+      "status": "complete",
+      "homes": 3,
+      "qualifying": 3
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/bartle-meadows/",
+      "name": "Bartle Meadows",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/st-marys-park/",
+      "name": "St Mary’s Park",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/ashton-green/",
+      "name": "Ashton Green",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/houlton/",
+      "name": "Houlton",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/loves-farm/",
+      "name": "Love’s Farm",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/the-meadow/",
+      "name": "The Meadow",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/waters-edge/",
+      "name": "Water’s Edge",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/alconbury-weald/",
+      "name": "Alconbury Weald",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/arden-park/",
+      "name": "Arden Park",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/rivington-park/",
+      "name": "Rivington Park",
+      "status": "complete",
+      "homes": 4,
+      "qualifying": 4
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/arkall-farm/",
+      "name": "Arkall Farm",
+      "status": "complete",
+      "homes": 1,
+      "qualifying": 1
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/nottingham-road-melton-mowbray/",
+      "name": "Nottingham Road, Melton Mowbray",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/hampton-water/",
+      "name": "Hampton Water",
+      "status": "complete",
+      "homes": 2,
+      "qualifying": 2
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/monastery-lane/",
+      "name": "Monastery Lane",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    },
+    {
+      "url": "https://www.morrishomes.co.uk/development/egerton-park/",
+      "name": "Egerton Park",
+      "status": "complete",
+      "homes": 0,
+      "qualifying": 0
+    }
+  ],
+  "properties": [
+    {
+      "development": "St Michael’s Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/st-michaels-park/",
+      "name": "warwick",
+      "url": "https://www.morrishomes.co.uk/development/st-michaels-park/warwick/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "796788fbb742d81eb89763e41337e2e3937512c2f67374e708a98906593a0a1d",
+        "430dd4e4b7a77213c9e0b6da98d454f7c29dd731e10151ccc1b69e339b383923",
+        "b97a9bdebffd8c827ea9ee53696bb27f2b919d40a71ccaf9350756362b7853de",
+        "f3b970304ebe46a0a61d802fde24925705b0f190783ccbe4c4a0344ea228e0fc",
+        "1bc82247e0a3726f8424e93e522f1b53c8b125b17b3312d2fc3785f1f56cc88f"
+      ]
+    },
+    {
+      "development": "Wintringham",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/wintringham/",
+      "name": "chichester",
+      "url": "https://www.morrishomes.co.uk/development/wintringham/chichester/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "452f03ba358c86a4fe0dad5f53541017ac9c7366cf3d1cb69fa4d50b5e38efba",
+        "50aa1f78478b3e3d8ef7d84e04ff25f4b6c0838be9da8eca975413984f727e32",
+        "5f61a8212a22e8ec37c95d1acd3a3640d966a22455993f9dc96aa5bd991c22a6",
+        "ba56de6543146cbaca40f1556e8d92e9db358eb00dd227849b635c33aa884d45"
+      ]
+    },
+    {
+      "development": "The Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/the-grange/",
+      "name": "kensington",
+      "url": "https://www.morrishomes.co.uk/development/the-grange/kensington/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f21ca3972308226653f281d26a72de55c7ac6b102e2dfd2791ba0f34f5ad4abe",
+        "55a4df78e6b7163ae6730844968e11a3e479f16f43efa5cf91cb6b837485ed3b",
+        "e3b630ba8d0dbbd29d5dcf1570f459b63303226cf166da5ee81e2a8c90cc4531",
+        "367a47c8a421d54f358bdd59c318d878b21d3540cf401a39419199c96d1f5e64"
+      ]
+    },
+    {
+      "development": "The Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/the-grange/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CRANLEIGH-STANDARD_1800x1620-3.jpg\" alt=\"Cranleigh\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/the-grange/cranleigh/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "213bc9a5b7975147f586b1ca2ed4d469ad8a6b3a470cb40d37213c7960a7589d",
+        "c36e060f77896d0d2c58ec1d036c93f4ee793f8ed91a345dc1c10dc733036549",
+        "dc159c5d3beb71d4ca4c90c32d2e4b56413c629c5e8eb55c1778264119e814a7",
+        "bc15147a5a6080baca3d8adec106613e14c5e110d0dae259515a786411fc02f4",
+        "8b39bfd748368fcf312beebb4edf217d5c2234b8df907cc097d7bf62d86789de"
+      ]
+    },
+    {
+      "development": "Deerwood Fold",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/deerwood-fold/",
+      "name": "camberley",
+      "url": "https://www.morrishomes.co.uk/development/deerwood-fold/camberley/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "99b3a079123eec00634538e67fbc4f3e55b13b81db26fed20a581f0273646274",
+        "ab96387f80b72672bf8cad908daffbfbfd61dd75f2973e60e277adb411abec30",
+        "10061bcc5ff894f8682e35321c4047ccf3e5a89830deaf3f5d7484d606897a2f",
+        "75ccaff0de90320707662c68242ebff939f6c8d618d3748e8bf4a10b0426a7b6"
+      ]
+    },
+    {
+      "development": "Hugglescote Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/hugglescote-grange/",
+      "name": "daresbury",
+      "url": "https://www.morrishomes.co.uk/development/hugglescote-grange/daresbury/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "603d884923ffa8d494a85a8d447f9cf40f1e4ba83b7142121ab63e9199972090",
+        "c00f7edf3567b17d29eee98f57c26ca10be72c31d9eb2243ce2892bb84833485",
+        "f2c8364a1ae597f32a4fd9ec9b3d644a60774789ccb740d4bc263c89a25f6d9c",
+        "f5eeeae13563c2666e3388467504569f32a1940a7f5b6c303a32697a4116c0b5"
+      ]
+    },
+    {
+      "development": "Hugglescote Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/hugglescote-grange/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/WINSTER-COUNTRY-Hugglescote-Grange1800x1620.jpg\" alt=\"Winster\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/hugglescote-grange/winster/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4a52b967f352c3729738c518b82db3406cb8a3c7b1be89a59807e42294fe67f7",
+        "fd6475847a0d781d03e27ae5b8b14bf37f68f949784b0d009dcc93fa257582c3",
+        "bfb32d2a78a9de08c2c5152e703e6bfae5e19fc2ccdb6fc5917b23a2cf47e507",
+        "43dc0e4e3ad17d6581b4256910aac94ffc4f54af79d8e09f060ef7d7cb6762ed"
+      ]
+    },
+    {
+      "development": "Hugglescote Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/hugglescote-grange/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/DAVENHAM1-e1767352829163.webp\" alt=\"Davenham\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/hugglescote-grange/davenham/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "36a76a2fd8483dd3a7424659cf92eaed3f63c105c90b2ae8842fc248fd986c55",
+        "a19770e38a7f13b28738d8502b2b4cec2bc7ae94dfb5bf94dd0bc6627b3c14c1",
+        "1e80e682952b3903750d9d6a8fe5b841c6ee67e7bfd3b5510559cfe32b8780d7",
+        "cdc5d2e2a3c0d1c2169d125f1a09101b7efa15ed8e440d8d1e347cac3420066a",
+        "3babdfd5b72dc5b194435d068ee3ce0f1d08d3bb40e225381583d1509180bf58"
+      ]
+    },
+    {
+      "development": "Greenmount Manor",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/greenmount-manor/",
+      "name": "disley",
+      "url": "https://www.morrishomes.co.uk/development/greenmount-manor/disley/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "cbe72c56b090b152839c2d2fa8f396b875023424aaab42b32c3f8e38cedf84bb",
+        "3765946166b6a16b8a0a2348b6f474b82d89625b4d890fadc9f5aa53e5bb2981",
+        "021bfaee558dbd72db9b0dbd80800c4e19b60dcde11fbd837ceb432145806eb8",
+        "a48093b20cc38ce139ef48385bbc275fbfb1e2cef162a5027ea642e977edc6d7"
+      ]
+    },
+    {
+      "development": "Greenmount Manor",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/greenmount-manor/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2026/02/HENLEY-STANDARD-NC.webp\" alt=\"Henley\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/greenmount-manor/henley/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8d1a6418911d836e9356316aa67ceedfe465424c982ae6b3b4aa9497a7d62c50",
+        "1746eeb719cb95fa56eb4026408e31b271d4ee46b9aa8bd3fd5bdd8b62df8a36",
+        "c4018c5a1a5572bc58a528d6eac149b1eb80c77e1af3071fe26c436adc29fe41",
+        "7df2da6495d08fdb86dd95dc4d49bc777e730ef37e6e09d37b7bc0378aabea17",
+        "d6834f7b78075e969b3cac1e4e58c8aef0d6475cc7cca761f2be73fdb9e9b6cb"
+      ]
+    },
+    {
+      "development": "Princes Meadows",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/princes-meadows/",
+      "name": "cranleigh",
+      "url": "https://www.morrishomes.co.uk/development/princes-meadows/cranleigh/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "922234935f191b9b4ac29bf611375895d44d01c3f2ed58fb69e062e32daf2d6d",
+        "4d2eb99847b06c79bf94c291af77871564b809d1cef5193e02b842b0cafd8d03",
+        "48df06e10737c0a3b3c9d8b1ea9eb25c1a36d5a75106dc6b3cdbd87681f0522b",
+        "dc159c5d3beb71d4ca4c90c32d2e4b56413c629c5e8eb55c1778264119e814a7"
+      ]
+    },
+    {
+      "development": "Princes Meadows",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/princes-meadows/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/NORFOLK-STANDARD-NC_1800x1620-1.jpg\" alt=\"Norfolk\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/princes-meadows/norfolk/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ed9706485e2f1121172800263e74889931446cb01b86f0ed0fcf13ee0addf904",
+        "1ec2f5c8c8f1098e995df6505ebdf78205d8a510b13d3e9c65ab3a2ec780fc94",
+        "7df14f39baf6a0001ba5ce7c1cd8b7d2f50c964368b01ae2ce57cd8e064aefb8",
+        "6aaef9b046d5f3ef61a44cb2718a8cefa21e265acb5c04e8a67cd98a747a6391",
+        "e8e7351718cae151bd57a8af148703ac4cc1acddb20341b88bc198c528c12a9d"
+      ]
+    },
+    {
+      "development": "Station Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/station-grange/",
+      "name": "dalton",
+      "url": "https://www.morrishomes.co.uk/development/station-grange/dalton/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "567a8dea89eb5c45de81a857a9d9cd46626aee110a7a2c85e3bc81c46c0536ab",
+        "7e1a5a5d9241e539a934c8f9cb719e4224fee6fa9c6d9956890c66ba0653631f",
+        "ad5e228f7fc196587b33874d1cdbd922b74ba33f17037da04dea4dec3807e50f",
+        "88f90792c0dfc62d36e48e77a7ec6737ca25ec705452c9214fac5b4cd9d99a75"
+      ]
+    },
+    {
+      "development": "Station Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/station-grange/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/11/CRANLEIGH-STANDARD-NC1-e1767092961901.webp\" alt=\"Cranleigh\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/station-grange/cranleigh/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8df7881479a9577c9a374c633a7cff0d2fb9d2f09fddde7bc5c9a7133cfaf149",
+        "b84956258d76793648c18f66346552f186b966c5096e27f70f83d28d7c652229",
+        "5dc60d14a6a97a3fc691fca232332dfcce6c17fdddfdf85314571cc3fc3e9226",
+        "a831e9ff0baf90edd8cbe9d86699a05d1ff52011a416ce9a079f151dff722a28"
+      ]
+    },
+    {
+      "development": "Station Grange",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/station-grange/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/11/Davenham-Standard-Station-Grange1800x1620.jpg\" alt=\"Davenham\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/station-grange/davenham/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0b20422cf9dc2c8523aaee22b7aa62942cdd5d2f117c969a5504cab7d81d451d",
+        "40de95c0976c8e6aea07f35ef00099be5029a89be5227990e9f064369709f6a1",
+        "101923c07cee3f59a21eeb4da174eb1bda5ce765416499859525dd73f160e0d1",
+        "5b7acab013d9433411f481b8f2315406edd9f0716fb156bba302116621fa63eb"
+      ]
+    },
+    {
+      "development": "Bartle Meadows",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/bartle-meadows/",
+      "name": "bartle meadows beresford",
+      "url": "https://www.morrishomes.co.uk/development/bartle-meadows/bartle-meadows-beresford/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "30bbed39f12d0471004bf5f0d4658046a96dc7b579d3c432cd07fb0ab8df2df5",
+        "42414566765c72f82bbf63e53b70b9cb011dc0c7cbe77735cb8762d9b53ce876",
+        "204bb9df31305d6a79004634e11963bad0cc1d4ae98645af8b566305b52d504a",
+        "c916a1aa50092e7c4dbf9c580f908683cdf1f0792ad37dd5a7aa57ccca38f150"
+      ]
+    },
+    {
+      "development": "St Mary’s Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/st-marys-park/",
+      "name": "warwick",
+      "url": "https://www.morrishomes.co.uk/development/st-marys-park/warwick/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e96e40fd16e62377e983f236ef49ab09d0786adb3515327197f337acdbc24ff1",
+        "72fc5d80c5f83842fefe996fb8ba62a0f9c8f322563daa089942e184cd44a24a",
+        "cc8a02c5dd504ecb4d20122a6bb515bebe708649b9d825b9b313f1301d87d0d4",
+        "b371747b4453909c17081ecb9cdb706a16c878fdf5fe8a6738232e5e52b227fa"
+      ]
+    },
+    {
+      "development": "St Mary’s Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/st-marys-park/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/1-SUFFOLK1-1-e1767093826481.webp\" alt=\"Suffolk\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/st-marys-park/suffolk/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "52925dbdadf23b03f065ce3bb530bb1d9e017f54ee2463f955d3b326c2caf13c",
+        "274be432a950eb065de12fc2e5ef1e69322a61da87885c5e80e1feb5c34cac2e",
+        "2d017ee7eebbb2a80f1b612d265926660d2a8de834e43bc98ca2074285750a7e",
+        "8a74363363b713a9705ef977885a66eb3ef6905f9daf2fb0d4206cf68ff2b5b4",
+        "92ff7532bf0050aa31475e3236e1e9c6a777b69ae7a68f259d172115a42f937a"
+      ]
+    },
+    {
+      "development": "The Meadow",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/the-meadow/",
+      "name": "waddesdon",
+      "url": "https://www.morrishomes.co.uk/development/the-meadow/waddesdon/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c14a860a0118bb61f60f465daf7fc5b4fc02c5d8e83721b6eb3fa6bd55d1930d",
+        "1bc82247e0a3726f8424e93e522f1b53c8b125b17b3312d2fc3785f1f56cc88f",
+        "b97a9bdebffd8c827ea9ee53696bb27f2b919d40a71ccaf9350756362b7853de",
+        "95930b5a02e7b6137728e08db45c1ade08465fd3152403af688442564b55544c"
+      ]
+    },
+    {
+      "development": "Water’s Edge",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/waters-edge/",
+      "name": "cranleigh",
+      "url": "https://www.morrishomes.co.uk/development/waters-edge/cranleigh/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "704c68d0be3930f6c0acd028b60cfe0be8b91a87e926955e09b553f33bd6f08c",
+        "5697efe6e51f88788650bc17dfc32f6fee20e2ff78ad20c248bc83a8b56423e0",
+        "564aaeace5a41377f71a5b2b0188b85383235b0f095fe1f251d6c8ec2e3afaf2",
+        "fab5b29f42ee32b2f7b755a1ad52c07823692548e61b91fed865672742bcedde",
+        "a831e9ff0baf90edd8cbe9d86699a05d1ff52011a416ce9a079f151dff722a28"
+      ]
+    },
+    {
+      "development": "Water’s Edge",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/waters-edge/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/NORFOLK-STANDARD-NC1_1800x1620-1.jpg\" alt=\"Norfolk\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/waters-edge/norfolk/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5ddf6f579da568b5286a279a6cd9947e087a1e54d396a8bc5b5110419813afba",
+        "b9f3494d31b4933a9c70215e4aaee7772c31ee4cfdd1ce33bc022b0143002a9e",
+        "f28773bdd4aab3a7be31db463c0c2c88fe8ade086df486b9eedc83785ca62cc8",
+        "8d1e0c9a53595f22202139d74ae6c623e89b0e5947b34aec81d285b7509fad71"
+      ]
+    },
+    {
+      "development": "Water’s Edge",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/waters-edge/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2026/01/ABINGDON1_1800x1620-2.jpg\" alt=\"Abingdon\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/waters-edge/abingdon/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "55ea5e79659c9275a2dd4149fdc444501e49e4c69a7c6efd750a58703c285b00",
+        "440dfa4262cc9533d6faa83461c23df166f2e25acc6e2684e96f3ede649cdd21",
+        "db31f5ab4c0d16427e7dabe45aa1bedc7c50de1686bc58b0a6d2bb4cc7fcf8a5",
+        "ef3ee8748c6f20a9394aac3d4c7ada1b6601aeb724bc10ceb4b98a0ab692cf72"
+      ]
+    },
+    {
+      "development": "Water’s Edge",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/waters-edge/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2026/01/DAVENHAM1_1800x1620.jpg\" alt=\"Davenham\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/waters-edge/davenham/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0b20422cf9dc2c8523aaee22b7aa62942cdd5d2f117c969a5504cab7d81d451d",
+        "b4d0d5ad4bf98c0240a27ce4a112d6d2cbe6e485197ba9be00845358fd65c908",
+        "066d10b5b9e9f99b440776ef40d2af9fb6a142a740496cfeff2a94418f99517c",
+        "97e72aa59eb467ee9f3b5c2f595e87baa09f6abd40d888a4ea86abc713ab0435"
+      ]
+    },
+    {
+      "development": "Alconbury Weald",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/alconbury-weald/",
+      "name": "bridgemere",
+      "url": "https://www.morrishomes.co.uk/development/alconbury-weald/bridgemere/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "be8b2c492ef905dc29c11701374aba52d879ace498d6f25f03ee5a1c42374189",
+        "f18f6826cc0fa0e3f2c69b3653fe0f487ff3053c5a13e3b99240526f9daf9bc7",
+        "6c7bc3f6b7598f49244aff47d0159b54a39079b9a938e20800a25b83e68045f1",
+        "2e79f3efd2c55e8522b88615c0080ceb9da9be462810355c0e798b7dc201c59e",
+        "1bc82247e0a3726f8424e93e522f1b53c8b125b17b3312d2fc3785f1f56cc88f"
+      ]
+    },
+    {
+      "development": "Arden Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/arden-park/",
+      "name": "winster",
+      "url": "https://www.morrishomes.co.uk/development/arden-park/winster/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7336b604ce061dfc5024ff5b7422cb4bb8c8699cb58df5223e5538e8db223c61",
+        "fd6475847a0d781d03e27ae5b8b14bf37f68f949784b0d009dcc93fa257582c3",
+        "2308063ad60cc17e708ee1e04c64e7592817e835cdcbbd6a61b2efa4b45bda37",
+        "bfb32d2a78a9de08c2c5152e703e6bfae5e19fc2ccdb6fc5917b23a2cf47e507"
+      ]
+    },
+    {
+      "development": "Arden Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/arden-park/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/12/DAVENHAM-STANDARD-Arden-Park1800x1620.jpg\" alt=\"Davenham\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/arden-park/davenham-2/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "4359d91b63753a49fa09e162d8451771c80260db84618f31d548643648b863e5",
+        "40de95c0976c8e6aea07f35ef00099be5029a89be5227990e9f064369709f6a1",
+        "101923c07cee3f59a21eeb4da174eb1bda5ce765416499859525dd73f160e0d1",
+        "5b7acab013d9433411f481b8f2315406edd9f0716fb156bba302116621fa63eb"
+      ]
+    },
+    {
+      "development": "Rivington Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/rivington-park/",
+      "name": "adlington",
+      "url": "https://www.morrishomes.co.uk/development/rivington-park/adlington/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c50b8b82171466d0e34d2b225ca339fb8d7a9baf085f3f8c0af52cbb54c8b823",
+        "fcaa8bee1a3edc4553fd77bfa4c650f749a4af9e3ba7a76672abeda34cc65c04",
+        "1e80e682952b3903750d9d6a8fe5b841c6ee67e7bfd3b5510559cfe32b8780d7",
+        "19ecf95a231d77b6ee2279fe8b31164fc4fd17a17e4c1c2afa7694e2baa47891"
+      ]
+    },
+    {
+      "development": "Rivington Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/rivington-park/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/NORFOLK-STANDARD-NC_1800x1620-1-1.jpg\" alt=\"Norfolk\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/rivington-park/norfolk/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "ed9706485e2f1121172800263e74889931446cb01b86f0ed0fcf13ee0addf904",
+        "9f65b6b82584864d318154f44037f60759e466ae04ea9aca4155661e358a8a06",
+        "52caf0e7d357dfda3eb49c29aa96789842ced9db5f52389a935158a53834f1e3",
+        "f75cdd97796da9dc56f5ba4e6cbfe80c5b23ac2fe44ded219c3a42cc80eb3fc5"
+      ]
+    },
+    {
+      "development": "Rivington Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/rivington-park/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/DAVENHAM-STANDARD-NC.webp\" alt=\"Davenham\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/rivington-park/davenham/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bc1a8da5dd5a03f04e4d104f05b4cdb955b0b0ca12348e7c98e45892d2f9b9c9",
+        "7e4ad17daf092b22e186ab4181c37eca79ee30182d2a321fb994093ef4b74f95",
+        "0fc1303749355c28cb653022f2ae1a983a45ac88ba28cc8a92bfb89d9e1fdf33",
+        "62fe8c5cc4a08e0dcf65781abd0171a9192fea9909fb3dd9b7b79677920d51ea"
+      ]
+    },
+    {
+      "development": "Rivington Park",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/rivington-park/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CRANLEIGH-STANDARD-NC_1800x1620-1.jpg\" alt=\"Cranleigh\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/rivington-park/cranleigh/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "04bd98905c4a73670b911c5bfb6bbdd12b7a13c8a6f93b3b18881836a98368d5",
+        "2c1bac78be7f1b1c7a61c88490c78ca2802782fb3accdbfc42222439d5322b68",
+        "2d03e32fa85a19bc90720e5bfa6e4fbd411d6d9f4f60fdec6c2a8b90f6d02b77",
+        "1096ae060a6d16e1dff76be3e8602a540d0dc596d4a94e0f5b6c76345a2c37cf"
+      ]
+    },
+    {
+      "development": "Arkall Farm",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/arkall-farm/",
+      "name": "houghton",
+      "url": "https://www.morrishomes.co.uk/development/arkall-farm/houghton/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0dc73f65e98eb323668a31c6eaa9ecb842a392ff40d6796b45479e01f6677be3",
+        "5c717a0c259dc8a07f6805214fdf740ece851a6a125a9bfec3923ecd6cdb264b",
+        "e36c166d6760762e504a1ab857b296a6c0c032500fec9c5c6c125c3691ad3e6b",
+        "009e38b8bfd2e3306a0555d78129aaa314cfe4fb76b4ea0138d75a82562727e8",
+        "932266c1b8d606a2645f32883dabd4dcd430c9412595defdf93961b7a9a64928"
+      ]
+    },
+    {
+      "development": "Hampton Water",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/hampton-water/",
+      "name": "disley",
+      "url": "https://www.morrishomes.co.uk/development/hampton-water/disley/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7bc845a37f017f1a42d88c4a35c59ab9b8ce5483a079482233641931764e20b8",
+        "ad12650c8df94fcf64503d323243943e5178257405752583456a5f1789cac21e",
+        "27ef88d88fe63fb0143b4dce85e45589d6a152b1499449f3c8b00202be9f03a9",
+        "584bea896e2cb9d24e8f0ca7d8c276dfcb729022dd69a92af24b974747eb24c0"
+      ]
+    },
+    {
+      "development": "Hampton Water",
+      "developmentUrl": "https://www.morrishomes.co.uk/development/hampton-water/",
+      "name": "<img src=\"https://www.morrishomes.co.uk/wp-content/uploads/2025/12/Melford-Contemporary-Hampton-Water1800x1620.jpg\" alt=\"Melford\" data-eio=\"l\">",
+      "url": "https://www.morrishomes.co.uk/development/hampton-water/melford/",
+      "bedrooms": null,
+      "price": null,
+      "plots": [
+        {
+          "price": null,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9059b7f406ba7c3ec1b83800752692f40d12fce8e559edaf0eb757b1819d295d",
+        "cf77fdee07a79ad70f849b74ba39b6433c81faae51c7953fb614d6f3e22426b5",
+        "112279c43db51fff99165a32f6d78e90a23889858604f1bcfa8a038079fe95c0",
+        "009e38b8bfd2e3306a0555d78129aaa314cfe4fb76b4ea0138d75a82562727e8",
+        "bc33a11081cbd1bc0bd635c44005dd9d781dedaf444807c0ccf096a318b3c5cc"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "796788fbb742d81eb89763e41337e2e3937512c2f67374e708a98906593a0a1d",
+      "path": "images/796788fbb742d81eb89763e41337e2e3937512c2f67374e708a98906593a0a1d.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Warwick-Contemporary-St-Michaels-Park1800x1620-1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "452f03ba358c86a4fe0dad5f53541017ac9c7366cf3d1cb69fa4d50b5e38efba",
+      "path": "images/452f03ba358c86a4fe0dad5f53541017ac9c7366cf3d1cb69fa4d50b5e38efba.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Chichester-Contemporary-Wintringham_1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f21ca3972308226653f281d26a72de55c7ac6b102e2dfd2791ba0f34f5ad4abe",
+      "path": "images/f21ca3972308226653f281d26a72de55c7ac6b102e2dfd2791ba0f34f5ad4abe.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Apartments-CGI_1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "430dd4e4b7a77213c9e0b6da98d454f7c29dd731e10151ccc1b69e339b383923",
+      "path": "images/430dd4e4b7a77213c9e0b6da98d454f7c29dd731e10151ccc1b69e339b383923.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE23140-1116-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "50aa1f78478b3e3d8ef7d84e04ff25f4b6c0838be9da8eca975413984f727e32",
+      "path": "images/50aa1f78478b3e3d8ef7d84e04ff25f4b6c0838be9da8eca975413984f727e32.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Kitchen-Dining-2-Chester-Wintringham-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "55a4df78e6b7163ae6730844968e11a3e479f16f43efa5cf91cb6b837485ed3b",
+      "path": "images/55a4df78e6b7163ae6730844968e11a3e479f16f43efa5cf91cb6b837485ed3b.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26040-2mb-545.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b97a9bdebffd8c827ea9ee53696bb27f2b919d40a71ccaf9350756362b7853de",
+      "path": "images/b97a9bdebffd8c827ea9ee53696bb27f2b919d40a71ccaf9350756362b7853de.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-3-Warwick-Arkall-Farm-2-768x512-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5f61a8212a22e8ec37c95d1acd3a3640d966a22455993f9dc96aa5bd991c22a6",
+      "path": "images/5f61a8212a22e8ec37c95d1acd3a3640d966a22455993f9dc96aa5bd991c22a6.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE24011-A5-0357-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e3b630ba8d0dbbd29d5dcf1570f459b63303226cf166da5ee81e2a8c90cc4531",
+      "path": "images/e3b630ba8d0dbbd29d5dcf1570f459b63303226cf166da5ee81e2a8c90cc4531.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26040-2mb-283.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f3b970304ebe46a0a61d802fde24925705b0f190783ccbe4c4a0344ea228e0fc",
+      "path": "images/f3b970304ebe46a0a61d802fde24925705b0f190783ccbe4c4a0344ea228e0fc.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/WARWICK-2-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ba56de6543146cbaca40f1556e8d92e9db358eb00dd227849b635c33aa884d45",
+      "path": "images/ba56de6543146cbaca40f1556e8d92e9db358eb00dd227849b635c33aa884d45.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE24011-A5-0486-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "367a47c8a421d54f358bdd59c318d878b21d3540cf401a39419199c96d1f5e64",
+      "path": "images/367a47c8a421d54f358bdd59c318d878b21d3540cf401a39419199c96d1f5e64.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26040-2mb-748.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1bc82247e0a3726f8424e93e522f1b53c8b125b17b3312d2fc3785f1f56cc88f",
+      "path": "images/1bc82247e0a3726f8424e93e522f1b53c8b125b17b3312d2fc3785f1f56cc88f.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE22174-0046-4-768x512-4.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "213bc9a5b7975147f586b1ca2ed4d469ad8a6b3a470cb40d37213c7960a7589d",
+      "path": "images/213bc9a5b7975147f586b1ca2ed4d469ad8a6b3a470cb40d37213c7960a7589d.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CRANLEIGH-STANDARD_1800x1620-3.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "99b3a079123eec00634538e67fbc4f3e55b13b81db26fed20a581f0273646274",
+      "path": "images/99b3a079123eec00634538e67fbc4f3e55b13b81db26fed20a581f0273646274.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Camberley-Standard-Deerwood-Fold1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "603d884923ffa8d494a85a8d447f9cf40f1e4ba83b7142121ab63e9199972090",
+      "path": "images/603d884923ffa8d494a85a8d447f9cf40f1e4ba83b7142121ab63e9199972090.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Daresbury-Standard-Hugglescote-Grange1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c36e060f77896d0d2c58ec1d036c93f4ee793f8ed91a345dc1c10dc733036549",
+      "path": "images/c36e060f77896d0d2c58ec1d036c93f4ee793f8ed91a345dc1c10dc733036549.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-3-Cranleigh-Lathom-Grange-768x512-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ab96387f80b72672bf8cad908daffbfbfd61dd75f2973e60e277adb411abec30",
+      "path": "images/ab96387f80b72672bf8cad908daffbfbfd61dd75f2973e60e277adb411abec30.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE24031-A5-209-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c00f7edf3567b17d29eee98f57c26ca10be72c31d9eb2243ce2892bb84833485",
+      "path": "images/c00f7edf3567b17d29eee98f57c26ca10be72c31d9eb2243ce2892bb84833485.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-2-Daresbury-The-Willows-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "dc159c5d3beb71d4ca4c90c32d2e4b56413c629c5e8eb55c1778264119e814a7",
+      "path": "images/dc159c5d3beb71d4ca4c90c32d2e4b56413c629c5e8eb55c1778264119e814a7.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-2-Cranleigh-Lathom-Grange-2-768x512-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "10061bcc5ff894f8682e35321c4047ccf3e5a89830deaf3f5d7484d606897a2f",
+      "path": "images/10061bcc5ff894f8682e35321c4047ccf3e5a89830deaf3f5d7484d606897a2f.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE24031-A5-292.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f2c8364a1ae597f32a4fd9ec9b3d644a60774789ccb740d4bc263c89a25f6d9c",
+      "path": "images/f2c8364a1ae597f32a4fd9ec9b3d644a60774789ccb740d4bc263c89a25f6d9c.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-4-Daresbury-The-Willows-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bc15147a5a6080baca3d8adec106613e14c5e110d0dae259515a786411fc02f4",
+      "path": "images/bc15147a5a6080baca3d8adec106613e14c5e110d0dae259515a786411fc02f4.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-3-Cranleigh-Lathom-Grange-1-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "75ccaff0de90320707662c68242ebff939f6c8d618d3748e8bf4a10b0426a7b6",
+      "path": "images/75ccaff0de90320707662c68242ebff939f6c8d618d3748e8bf4a10b0426a7b6.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE24031-A5-053-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f5eeeae13563c2666e3388467504569f32a1940a7f5b6c303a32697a4116c0b5",
+      "path": "images/f5eeeae13563c2666e3388467504569f32a1940a7f5b6c303a32697a4116c0b5.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-3-Daventry-Hugglescote-Grange-2-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8b39bfd748368fcf312beebb4edf217d5c2234b8df907cc097d7bf62d86789de",
+      "path": "images/8b39bfd748368fcf312beebb4edf217d5c2234b8df907cc097d7bf62d86789de.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-2-Cranleigh-Lathom-Grange-1-768x512-3.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "4a52b967f352c3729738c518b82db3406cb8a3c7b1be89a59807e42294fe67f7",
+      "path": "images/4a52b967f352c3729738c518b82db3406cb8a3c7b1be89a59807e42294fe67f7.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/WINSTER-COUNTRY-Hugglescote-Grange1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "36a76a2fd8483dd3a7424659cf92eaed3f63c105c90b2ae8842fc248fd986c55",
+      "path": "images/36a76a2fd8483dd3a7424659cf92eaed3f63c105c90b2ae8842fc248fd986c55.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/DAVENHAM1-e1767352829163.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cbe72c56b090b152839c2d2fa8f396b875023424aaab42b32c3f8e38cedf84bb",
+      "path": "images/cbe72c56b090b152839c2d2fa8f396b875023424aaab42b32c3f8e38cedf84bb.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Disley-Standard-Deerwood-Fold1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "fd6475847a0d781d03e27ae5b8b14bf37f68f949784b0d009dcc93fa257582c3",
+      "path": "images/fd6475847a0d781d03e27ae5b8b14bf37f68f949784b0d009dcc93fa257582c3.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-2-Winster-Hugglescote-Grange-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a19770e38a7f13b28738d8502b2b4cec2bc7ae94dfb5bf94dd0bc6627b3c14c1",
+      "path": "images/a19770e38a7f13b28738d8502b2b4cec2bc7ae94dfb5bf94dd0bc6627b3c14c1.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Dining-4-Davenham-Arkall-Farm-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "3765946166b6a16b8a0a2348b6f474b82d89625b4d890fadc9f5aa53e5bb2981",
+      "path": "images/3765946166b6a16b8a0a2348b6f474b82d89625b4d890fadc9f5aa53e5bb2981.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-2-Disley-St-Michaels-Park-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bfb32d2a78a9de08c2c5152e703e6bfae5e19fc2ccdb6fc5917b23a2cf47e507",
+      "path": "images/bfb32d2a78a9de08c2c5152e703e6bfae5e19fc2ccdb6fc5917b23a2cf47e507.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-2-Winster-Hugglescote-Grange-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1e80e682952b3903750d9d6a8fe5b841c6ee67e7bfd3b5510559cfe32b8780d7",
+      "path": "images/1e80e682952b3903750d9d6a8fe5b841c6ee67e7bfd3b5510559cfe32b8780d7.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-2-Davenham-Arkall-Farm-1-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "021bfaee558dbd72db9b0dbd80800c4e19b60dcde11fbd837ceb432145806eb8",
+      "path": "images/021bfaee558dbd72db9b0dbd80800c4e19b60dcde11fbd837ceb432145806eb8.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Boughton-Grange-Disley-bedroom-768x511-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "43dc0e4e3ad17d6581b4256910aac94ffc4f54af79d8e09f060ef7d7cb6762ed",
+      "path": "images/43dc0e4e3ad17d6581b4256910aac94ffc4f54af79d8e09f060ef7d7cb6762ed.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-2-Winster-Hugglescote-Grange-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cdc5d2e2a3c0d1c2169d125f1a09101b7efa15ed8e440d8d1e347cac3420066a",
+      "path": "images/cdc5d2e2a3c0d1c2169d125f1a09101b7efa15ed8e440d8d1e347cac3420066a.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Bathroom-1-Davenham-Hugglescote-Grange-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "Bathroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bathroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a48093b20cc38ce139ef48385bbc275fbfb1e2cef162a5027ea642e977edc6d7",
+      "path": "images/a48093b20cc38ce139ef48385bbc275fbfb1e2cef162a5027ea642e977edc6d7.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-6-Daventry-Hugglescote-Grange-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "3babdfd5b72dc5b194435d068ee3ce0f1d08d3bb40e225381583d1509180bf58",
+      "path": "images/3babdfd5b72dc5b194435d068ee3ce0f1d08d3bb40e225381583d1509180bf58.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-1-Davenham-Arkall-Farm-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8d1a6418911d836e9356316aa67ceedfe465424c982ae6b3b4aa9497a7d62c50",
+      "path": "images/8d1a6418911d836e9356316aa67ceedfe465424c982ae6b3b4aa9497a7d62c50.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/02/HENLEY-STANDARD-NC.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "922234935f191b9b4ac29bf611375895d44d01c3f2ed58fb69e062e32daf2d6d",
+      "path": "images/922234935f191b9b4ac29bf611375895d44d01c3f2ed58fb69e062e32daf2d6d.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CRANLEIGH-STANDARD-NC_1800x1620-1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1746eeb719cb95fa56eb4026408e31b271d4ee46b9aa8bd3fd5bdd8b62df8a36",
+      "path": "images/1746eeb719cb95fa56eb4026408e31b271d4ee46b9aa8bd3fd5bdd8b62df8a36.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Greenmount-Manor-Henley-19.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ed9706485e2f1121172800263e74889931446cb01b86f0ed0fcf13ee0addf904",
+      "path": "images/ed9706485e2f1121172800263e74889931446cb01b86f0ed0fcf13ee0addf904.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/NORFOLK-STANDARD-NC-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "4d2eb99847b06c79bf94c291af77871564b809d1cef5193e02b842b0cafd8d03",
+      "path": "images/4d2eb99847b06c79bf94c291af77871564b809d1cef5193e02b842b0cafd8d03.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-Dining-2-Cranleigh-Princes-Meadows-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c4018c5a1a5572bc58a528d6eac149b1eb80c77e1af3071fe26c436adc29fe41",
+      "path": "images/c4018c5a1a5572bc58a528d6eac149b1eb80c77e1af3071fe26c436adc29fe41.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Greenmount-Manor-Henley-10.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1ec2f5c8c8f1098e995df6505ebdf78205d8a510b13d3e9c65ab3a2ec780fc94",
+      "path": "images/1ec2f5c8c8f1098e995df6505ebdf78205d8a510b13d3e9c65ab3a2ec780fc94.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-1-Norfolk-Princes-Meadows-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "48df06e10737c0a3b3c9d8b1ea9eb25c1a36d5a75106dc6b3cdbd87681f0522b",
+      "path": "images/48df06e10737c0a3b3c9d8b1ea9eb25c1a36d5a75106dc6b3cdbd87681f0522b.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-1-Cranleigh-Princes-Meadows-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "7df2da6495d08fdb86dd95dc4d49bc777e730ef37e6e09d37b7bc0378aabea17",
+      "path": "images/7df2da6495d08fdb86dd95dc4d49bc777e730ef37e6e09d37b7bc0378aabea17.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Greenmount-Manor-Henley-11-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "7df14f39baf6a0001ba5ce7c1cd8b7d2f50c964368b01ae2ce57cd8e064aefb8",
+      "path": "images/7df14f39baf6a0001ba5ce7c1cd8b7d2f50c964368b01ae2ce57cd8e064aefb8.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Dining-1-Norfolk-Princes-Meadows-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "d6834f7b78075e969b3cac1e4e58c8aef0d6475cc7cca761f2be73fdb9e9b6cb",
+      "path": "images/d6834f7b78075e969b3cac1e4e58c8aef0d6475cc7cca761f2be73fdb9e9b6cb.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Greenmount-Manor-Henley-21.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "6aaef9b046d5f3ef61a44cb2718a8cefa21e265acb5c04e8a67cd98a747a6391",
+      "path": "images/6aaef9b046d5f3ef61a44cb2718a8cefa21e265acb5c04e8a67cd98a747a6391.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-5-Norfolk-Princes-Meadows-19.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e8e7351718cae151bd57a8af148703ac4cc1acddb20341b88bc198c528c12a9d",
+      "path": "images/e8e7351718cae151bd57a8af148703ac4cc1acddb20341b88bc198c528c12a9d.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-1-Norfolk-Upton-Dene-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "567a8dea89eb5c45de81a857a9d9cd46626aee110a7a2c85e3bc81c46c0536ab",
+      "path": "images/567a8dea89eb5c45de81a857a9d9cd46626aee110a7a2c85e3bc81c46c0536ab.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/Dalton-Detached-Standard-Station-Grange1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8df7881479a9577c9a374c633a7cff0d2fb9d2f09fddde7bc5c9a7133cfaf149",
+      "path": "images/8df7881479a9577c9a374c633a7cff0d2fb9d2f09fddde7bc5c9a7133cfaf149.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/CRANLEIGH-STANDARD-NC1-e1767092961901.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "7e1a5a5d9241e539a934c8f9cb719e4224fee6fa9c6d9956890c66ba0653631f",
+      "path": "images/7e1a5a5d9241e539a934c8f9cb719e4224fee6fa9c6d9956890c66ba0653631f.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/Dalton-Kitchen1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b84956258d76793648c18f66346552f186b966c5096e27f70f83d28d7c652229",
+      "path": "images/b84956258d76793648c18f66346552f186b966c5096e27f70f83d28d7c652229.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-2293-REDUCED.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0b20422cf9dc2c8523aaee22b7aa62942cdd5d2f117c969a5504cab7d81d451d",
+      "path": "images/0b20422cf9dc2c8523aaee22b7aa62942cdd5d2f117c969a5504cab7d81d451d.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/Davenham-Standard-Station-Grange1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ad5e228f7fc196587b33874d1cdbd922b74ba33f17037da04dea4dec3807e50f",
+      "path": "images/ad5e228f7fc196587b33874d1cdbd922b74ba33f17037da04dea4dec3807e50f.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/Dalton-Lounge1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5dc60d14a6a97a3fc691fca232332dfcce6c17fdddfdf85314571cc3fc3e9226",
+      "path": "images/5dc60d14a6a97a3fc691fca232332dfcce6c17fdddfdf85314571cc3fc3e9226.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-2966-REDUCED.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "40de95c0976c8e6aea07f35ef00099be5029a89be5227990e9f064369709f6a1",
+      "path": "images/40de95c0976c8e6aea07f35ef00099be5029a89be5227990e9f064369709f6a1.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/CGE26001-2mb-1910.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "88f90792c0dfc62d36e48e77a7ec6737ca25ec705452c9214fac5b4cd9d99a75",
+      "path": "images/88f90792c0dfc62d36e48e77a7ec6737ca25ec705452c9214fac5b4cd9d99a75.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/Dalton-Bedroom1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "a831e9ff0baf90edd8cbe9d86699a05d1ff52011a416ce9a079f151dff722a28",
+      "path": "images/a831e9ff0baf90edd8cbe9d86699a05d1ff52011a416ce9a079f151dff722a28.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-2053-REDUCED.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "101923c07cee3f59a21eeb4da174eb1bda5ce765416499859525dd73f160e0d1",
+      "path": "images/101923c07cee3f59a21eeb4da174eb1bda5ce765416499859525dd73f160e0d1.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/CGE26001-2mb-1365.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5b7acab013d9433411f481b8f2315406edd9f0716fb156bba302116621fa63eb",
+      "path": "images/5b7acab013d9433411f481b8f2315406edd9f0716fb156bba302116621fa63eb.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/CGE26001-2mb-1547.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "30bbed39f12d0471004bf5f0d4658046a96dc7b579d3c432cd07fb0ab8df2df5",
+      "path": "images/30bbed39f12d0471004bf5f0d4658046a96dc7b579d3c432cd07fb0ab8df2df5.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/02/BERESFORD.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e96e40fd16e62377e983f236ef49ab09d0786adb3515327197f337acdbc24ff1",
+      "path": "images/e96e40fd16e62377e983f236ef49ab09d0786adb3515327197f337acdbc24ff1.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/WARWICK-STANDARD-NC_1800x1620-2.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "42414566765c72f82bbf63e53b70b9cb011dc0c7cbe77735cb8762d9b53ce876",
+      "path": "images/42414566765c72f82bbf63e53b70b9cb011dc0c7cbe77735cb8762d9b53ce876.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/02/Camberley-26.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "72fc5d80c5f83842fefe996fb8ba62a0f9c8f322563daa089942e184cd44a24a",
+      "path": "images/72fc5d80c5f83842fefe996fb8ba62a0f9c8f322563daa089942e184cd44a24a.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Lounge-3-Warwick-Arkall-Farm-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "living room",
+        "description": "Living room interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome living room."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Living Room",
+        "subCategory": "Formal lounge",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "52925dbdadf23b03f065ce3bb530bb1d9e017f54ee2463f955d3b326c2caf13c",
+      "path": "images/52925dbdadf23b03f065ce3bb530bb1d9e017f54ee2463f955d3b326c2caf13c.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/1-SUFFOLK1-1-e1767093826481.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "204bb9df31305d6a79004634e11963bad0cc1d4ae98645af8b566305b52d504a",
+      "path": "images/204bb9df31305d6a79004634e11963bad0cc1d4ae98645af8b566305b52d504a.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/02/Camberley-34.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cc8a02c5dd504ecb4d20122a6bb515bebe708649b9d825b9b313f1301d87d0d4",
+      "path": "images/cc8a02c5dd504ecb4d20122a6bb515bebe708649b9d825b9b313f1301d87d0d4.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE22174-0557-1-768x512-4.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "274be432a950eb065de12fc2e5ef1e69322a61da87885c5e80e1feb5c34cac2e",
+      "path": "images/274be432a950eb065de12fc2e5ef1e69322a61da87885c5e80e1feb5c34cac2e.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/2-St-Marys-Park_800x550-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c916a1aa50092e7c4dbf9c580f908683cdf1f0792ad37dd5a7aa57ccca38f150",
+      "path": "images/c916a1aa50092e7c4dbf9c580f908683cdf1f0792ad37dd5a7aa57ccca38f150.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/02/Camberley-6.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b371747b4453909c17081ecb9cdb706a16c878fdf5fe8a6738232e5e52b227fa",
+      "path": "images/b371747b4453909c17081ecb9cdb706a16c878fdf5fe8a6738232e5e52b227fa.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-4-Warwick-Arkall-Farm-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2d017ee7eebbb2a80f1b612d265926660d2a8de834e43bc98ca2074285750a7e",
+      "path": "images/2d017ee7eebbb2a80f1b612d265926660d2a8de834e43bc98ca2074285750a7e.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/3-St-Marys-Park_800x550-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8a74363363b713a9705ef977885a66eb3ef6905f9daf2fb0d4206cf68ff2b5b4",
+      "path": "images/8a74363363b713a9705ef977885a66eb3ef6905f9daf2fb0d4206cf68ff2b5b4.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/4-st-marys-min-scaled-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c14a860a0118bb61f60f465daf7fc5b4fc02c5d8e83721b6eb3fa6bd55d1930d",
+      "path": "images/c14a860a0118bb61f60f465daf7fc5b4fc02c5d8e83721b6eb3fa6bd55d1930d.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/WADDESDON-PLOT26-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "704c68d0be3930f6c0acd028b60cfe0be8b91a87e926955e09b553f33bd6f08c",
+      "path": "images/704c68d0be3930f6c0acd028b60cfe0be8b91a87e926955e09b553f33bd6f08c.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CRANLEIGH1_1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "92ff7532bf0050aa31475e3236e1e9c6a777b69ae7a68f259d172115a42f937a",
+      "path": "images/92ff7532bf0050aa31475e3236e1e9c6a777b69ae7a68f259d172115a42f937a.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/07/Family-Dining-7-Suffolk-St-Marys-Park.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5697efe6e51f88788650bc17dfc32f6fee20e2ff78ad20c248bc83a8b56423e0",
+      "path": "images/5697efe6e51f88788650bc17dfc32f6fee20e2ff78ad20c248bc83a8b56423e0.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/2-Lathom-Grange_800x550-1-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "564aaeace5a41377f71a5b2b0188b85383235b0f095fe1f251d6c8ec2e3afaf2",
+      "path": "images/564aaeace5a41377f71a5b2b0188b85383235b0f095fe1f251d6c8ec2e3afaf2.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-1-Oxford-St-Marys-Park.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5ddf6f579da568b5286a279a6cd9947e087a1e54d396a8bc5b5110419813afba",
+      "path": "images/5ddf6f579da568b5286a279a6cd9947e087a1e54d396a8bc5b5110419813afba.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/NORFOLK-STANDARD-NC1_1800x1620-1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "95930b5a02e7b6137728e08db45c1ade08465fd3152403af688442564b55544c",
+      "path": "images/95930b5a02e7b6137728e08db45c1ade08465fd3152403af688442564b55544c.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/11/CGE22174-0324-1024x683-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "fab5b29f42ee32b2f7b755a1ad52c07823692548e61b91fed865672742bcedde",
+      "path": "images/fab5b29f42ee32b2f7b755a1ad52c07823692548e61b91fed865672742bcedde.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bathroom-3-Cranleigh-Lathom-Grange.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "bathroom",
+        "description": "Bathroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bathroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bathroom",
+        "subCategory": "Family bathroom",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b9f3494d31b4933a9c70215e4aaee7772c31ee4cfdd1ce33bc022b0143002a9e",
+      "path": "images/b9f3494d31b4933a9c70215e4aaee7772c31ee4cfdd1ce33bc022b0143002a9e.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/04/CGE26122-A5-2588.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f28773bdd4aab3a7be31db463c0c2c88fe8ade086df486b9eedc83785ca62cc8",
+      "path": "images/f28773bdd4aab3a7be31db463c0c2c88fe8ade086df486b9eedc83785ca62cc8.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/04/CGE26122-A5-2195.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "55ea5e79659c9275a2dd4149fdc444501e49e4c69a7c6efd750a58703c285b00",
+      "path": "images/55ea5e79659c9275a2dd4149fdc444501e49e4c69a7c6efd750a58703c285b00.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/ABINGDON-STANDARD-NC-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "b4d0d5ad4bf98c0240a27ce4a112d6d2cbe6e485197ba9be00845358fd65c908",
+      "path": "images/b4d0d5ad4bf98c0240a27ce4a112d6d2cbe6e485197ba9be00845358fd65c908.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26122-A5-0894.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "8d1e0c9a53595f22202139d74ae6c623e89b0e5947b34aec81d285b7509fad71",
+      "path": "images/8d1e0c9a53595f22202139d74ae6c623e89b0e5947b34aec81d285b7509fad71.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/04/CGE26122-A5-2386.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "440dfa4262cc9533d6faa83461c23df166f2e25acc6e2684e96f3ede649cdd21",
+      "path": "images/440dfa4262cc9533d6faa83461c23df166f2e25acc6e2684e96f3ede649cdd21.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26122-A5-1591.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "066d10b5b9e9f99b440776ef40d2af9fb6a142a740496cfeff2a94418f99517c",
+      "path": "images/066d10b5b9e9f99b440776ef40d2af9fb6a142a740496cfeff2a94418f99517c.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26122-A5-1096.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "db31f5ab4c0d16427e7dabe45aa1bedc7c50de1686bc58b0a6d2bb4cc7fcf8a5",
+      "path": "images/db31f5ab4c0d16427e7dabe45aa1bedc7c50de1686bc58b0a6d2bb4cc7fcf8a5.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26122-A5-1968.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "97e72aa59eb467ee9f3b5c2f595e87baa09f6abd40d888a4ea86abc713ab0435",
+      "path": "images/97e72aa59eb467ee9f3b5c2f595e87baa09f6abd40d888a4ea86abc713ab0435.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26122-A5-0424.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "be8b2c492ef905dc29c11701374aba52d879ace498d6f25f03ee5a1c42374189",
+      "path": "images/be8b2c492ef905dc29c11701374aba52d879ace498d6f25f03ee5a1c42374189.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Alconbury-Weald-Bridgemere-Parkland-CGI-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ef3ee8748c6f20a9394aac3d4c7ada1b6601aeb724bc10ceb4b98a0ab692cf72",
+      "path": "images/ef3ee8748c6f20a9394aac3d4c7ada1b6601aeb724bc10ceb4b98a0ab692cf72.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2026/01/CGE26122-A5-1459.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f18f6826cc0fa0e3f2c69b3653fe0f487ff3053c5a13e3b99240526f9daf9bc7",
+      "path": "images/f18f6826cc0fa0e3f2c69b3653fe0f487ff3053c5a13e3b99240526f9daf9bc7.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen-1-Anderton-Bridgewater-Park-768x512-4.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "kitchen",
+        "description": "Kitchen interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome kitchen."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Kitchen",
+        "subCategory": "Fitted kitchen",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "7336b604ce061dfc5024ff5b7422cb4bb8c8699cb58df5223e5538e8db223c61",
+      "path": "images/7336b604ce061dfc5024ff5b7422cb4bb8c8699cb58df5223e5538e8db223c61.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/12/WINSTER-STANDARD-DG-Brightened-.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "6c7bc3f6b7598f49244aff47d0159b54a39079b9a938e20800a25b83e68045f1",
+      "path": "images/6c7bc3f6b7598f49244aff47d0159b54a39079b9a938e20800a25b83e68045f1.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24011-A5-1347-768x512-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "4359d91b63753a49fa09e162d8451771c80260db84618f31d548643648b863e5",
+      "path": "images/4359d91b63753a49fa09e162d8451771c80260db84618f31d548643648b863e5.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/12/DAVENHAM-STANDARD-Arden-Park1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2e79f3efd2c55e8522b88615c0080ceb9da9be462810355c0e798b7dc201c59e",
+      "path": "images/2e79f3efd2c55e8522b88615c0080ceb9da9be462810355c0e798b7dc201c59e.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE25108-A5-196.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2308063ad60cc17e708ee1e04c64e7592817e835cdcbbd6a61b2efa4b45bda37",
+      "path": "images/2308063ad60cc17e708ee1e04c64e7592817e835cdcbbd6a61b2efa4b45bda37.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Bedroom-1-Winster-Arkall-Farm.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false,
+        "roomType": "bedroom",
+        "description": "Bedroom interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome bedroom."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "c50b8b82171466d0e34d2b225ca339fb8d7a9baf085f3f8c0af52cbb54c8b823",
+      "path": "images/c50b8b82171466d0e34d2b225ca339fb8d7a9baf085f3f8c0af52cbb54c8b823.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/ADLINGTON-STANDARD3_1800x1620-1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "fcaa8bee1a3edc4553fd77bfa4c650f749a4af9e3ba7a76672abeda34cc65c04",
+      "path": "images/fcaa8bee1a3edc4553fd77bfa4c650f749a4af9e3ba7a76672abeda34cc65c04.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Kitchen4-Dunham-The-Beacons-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bc1a8da5dd5a03f04e4d104f05b4cdb955b0b0ca12348e7c98e45892d2f9b9c9",
+      "path": "images/bc1a8da5dd5a03f04e4d104f05b4cdb955b0b0ca12348e7c98e45892d2f9b9c9.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/DAVENHAM-STANDARD-NC.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "9f65b6b82584864d318154f44037f60759e466ae04ea9aca4155661e358a8a06",
+      "path": "images/9f65b6b82584864d318154f44037f60759e466ae04ea9aca4155661e358a8a06.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-0152.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "19ecf95a231d77b6ee2279fe8b31164fc4fd17a17e4c1c2afa7694e2baa47891",
+      "path": "images/19ecf95a231d77b6ee2279fe8b31164fc4fd17a17e4c1c2afa7694e2baa47891.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE26001-A5-1519.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "7e4ad17daf092b22e186ab4181c37eca79ee30182d2a321fb994093ef4b74f95",
+      "path": "images/7e4ad17daf092b22e186ab4181c37eca79ee30182d2a321fb994093ef4b74f95.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Rivington-Park_Davenham_Living-1-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "52caf0e7d357dfda3eb49c29aa96789842ced9db5f52389a935158a53834f1e3",
+      "path": "images/52caf0e7d357dfda3eb49c29aa96789842ced9db5f52389a935158a53834f1e3.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-0308-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0fc1303749355c28cb653022f2ae1a983a45ac88ba28cc8a92bfb89d9e1fdf33",
+      "path": "images/0fc1303749355c28cb653022f2ae1a983a45ac88ba28cc8a92bfb89d9e1fdf33.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Rivington-Park_Davenham_Master-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "f75cdd97796da9dc56f5ba4e6cbfe80c5b23ac2fe44ded219c3a42cc80eb3fc5",
+      "path": "images/f75cdd97796da9dc56f5ba4e6cbfe80c5b23ac2fe44ded219c3a42cc80eb3fc5.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-0694-768x512-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "04bd98905c4a73670b911c5bfb6bbdd12b7a13c8a6f93b3b18881836a98368d5",
+      "path": "images/04bd98905c4a73670b911c5bfb6bbdd12b7a13c8a6f93b3b18881836a98368d5.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CRANLEIGH-STANDARD-NC-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "62fe8c5cc4a08e0dcf65781abd0171a9192fea9909fb3dd9b7b79677920d51ea",
+      "path": "images/62fe8c5cc4a08e0dcf65781abd0171a9192fea9909fb3dd9b7b79677920d51ea.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/Rivington-Park_Davenham_Kitchen-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2c1bac78be7f1b1c7a61c88490c78ca2802782fb3accdbfc42222439d5322b68",
+      "path": "images/2c1bac78be7f1b1c7a61c88490c78ca2802782fb3accdbfc42222439d5322b68.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-2238-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "0dc73f65e98eb323668a31c6eaa9ecb842a392ff40d6796b45479e01f6677be3",
+      "path": "images/0dc73f65e98eb323668a31c6eaa9ecb842a392ff40d6796b45479e01f6677be3.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Houghton-Country-Arkall-Farm1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "2d03e32fa85a19bc90720e5bfa6e4fbd411d6d9f4f60fdec6c2a8b90f6d02b77",
+      "path": "images/2d03e32fa85a19bc90720e5bfa6e4fbd411d6d9f4f60fdec6c2a8b90f6d02b77.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24071-A5-0506-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "7bc845a37f017f1a42d88c4a35c59ab9b8ce5483a079482233641931764e20b8",
+      "path": "images/7bc845a37f017f1a42d88c4a35c59ab9b8ce5483a079482233641931764e20b8.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/Disley-Contemporary-Hampton-Water1800x1620.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "5c717a0c259dc8a07f6805214fdf740ece851a6a125a9bfec3923ecd6cdb264b",
+      "path": "images/5c717a0c259dc8a07f6805214fdf740ece851a6a125a9bfec3923ecd6cdb264b.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/2-Arkall-Farm_800x550-768x528-2.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "1096ae060a6d16e1dff76be3e8602a540d0dc596d4a94e0f5b6c76345a2c37cf",
+      "path": "images/1096ae060a6d16e1dff76be3e8602a540d0dc596d4a94e0f5b6c76345a2c37cf.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/09/CGE24150-A5-2042-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "ad12650c8df94fcf64503d323243943e5178257405752583456a5f1789cac21e",
+      "path": "images/ad12650c8df94fcf64503d323243943e5178257405752583456a5f1789cac21e.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE25013-A5-168-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "e36c166d6760762e504a1ab857b296a6c0c032500fec9c5c6c125c3691ad3e6b",
+      "path": "images/e36c166d6760762e504a1ab857b296a6c0c032500fec9c5c6c125c3691ad3e6b.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/4-Arkall-Farm_800x550-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "27ef88d88fe63fb0143b4dce85e45589d6a152b1499449f3c8b00202be9f03a9",
+      "path": "images/27ef88d88fe63fb0143b4dce85e45589d6a152b1499449f3c8b00202be9f03a9.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE25013-A5-528-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "009e38b8bfd2e3306a0555d78129aaa314cfe4fb76b4ea0138d75a82562727e8",
+      "path": "images/009e38b8bfd2e3306a0555d78129aaa314cfe4fb76b4ea0138d75a82562727e8.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/10/Part-Exchange.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "9059b7f406ba7c3ec1b83800752692f40d12fce8e559edaf0eb757b1819d295d",
+      "path": "images/9059b7f406ba7c3ec1b83800752692f40d12fce8e559edaf0eb757b1819d295d.jpg",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/12/Melford-Contemporary-Hampton-Water1800x1620-1.jpg",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "584bea896e2cb9d24e8f0ca7d8c276dfcb729022dd69a92af24b974747eb24c0",
+      "path": "images/584bea896e2cb9d24e8f0ca7d8c276dfcb729022dd69a92af24b974747eb24c0.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/CGE25013-A5-264-1-768x512-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "932266c1b8d606a2645f32883dabd4dcd430c9412595defdf93961b7a9a64928",
+      "path": "images/932266c1b8d606a2645f32883dabd4dcd430c9412595defdf93961b7a9a64928.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/3-Arkall-Farm_800x550-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "cf77fdee07a79ad70f849b74ba39b6433c81faae51c7953fb614d6f3e22426b5",
+      "path": "images/cf77fdee07a79ad70f849b74ba39b6433c81faae51c7953fb614d6f3e22426b5.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/2-Hampton-Water-2_800x550-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "112279c43db51fff99165a32f6d78e90a23889858604f1bcfa8a038079fe95c0",
+      "path": "images/112279c43db51fff99165a32f6d78e90a23889858604f1bcfa8a038079fe95c0.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/4-Hampton-Water_800x550-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    },
+    {
+      "id": "bc33a11081cbd1bc0bd635c44005dd9d781dedaf444807c0ccf096a318b3c5cc",
+      "path": "images/bc33a11081cbd1bc0bd635c44005dd9d781dedaf444807c0ccf096a318b3c5cc.webp",
+      "sourceUrl": "https://www.morrishomes.co.uk/wp-content/uploads/2025/08/3-Hampton-Water_800x550-768x528-1.webp",
+      "verdict": {
+        "matches": true,
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false,
+        "roomType": "interior space",
+        "description": "Interior space interior showing contemporary design, styling and finishes.",
+        "reason": "Staged showhome interior space."
+      },
+      "analysisModel": "gemini-flash-latest",
+      "categorisation": {
+        "mainCategory": "Other",
+        "subCategory": "Empty room",
+        "isRoom": true,
+        "objects": [],
+        "wallpaper": null,
+        "curtains": null,
+        "colours": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sitemapDevelopments": 24,
+    "qualifyingDiscovered": 33,
+    "propertyLimitOmissions": 0,
+    "reusedImages": 8,
+    "reusedImageSources": 6,
+    "imagesAttempted": 136,
+    "pendingImages": 0,
+    "matchedImages": 128,
+    "developmentLimitOmissions": 0,
+    "collectedUniqueImages": 128
+  },
+  "completedAt": "2026-10-03T02:00:34.226Z"
+}
