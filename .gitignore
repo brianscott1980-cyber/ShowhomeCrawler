@@ -13,3 +13,6 @@ collections/*/images/
 .next/
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated from the installed MapLibre version before dev/build.
+public/maps/worker/

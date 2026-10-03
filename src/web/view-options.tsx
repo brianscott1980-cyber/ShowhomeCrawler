@@ -75,7 +75,7 @@ export function ViewOptions({
  onChange,
  ariaLabel = 'Card layout',
 }: {
- view: CardViewMode;
+ view: CardViewMode | 'map';
  onChange: (mode: CardViewMode) => void;
  ariaLabel?: string;
 }) {
