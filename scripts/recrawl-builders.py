@@ -90,6 +90,7 @@ class Queue:
             current = read_json(ROOT / self.args.wait_state, {})
             if current.get('stage') in ('complete_paused', 'complete'):
                 self.state['currentBuilderFinished'] = True
+                self.manifest = read_json(MANIFEST, {})
                 if self.args.after in self.manifest:
                     self.manifest[self.args.after].update({'status': 'published', 'publishedAt': now()})
                     save_json(MANIFEST, self.manifest)
@@ -153,6 +154,7 @@ class Queue:
                         **compare_reports(baseline, report)})
         audit[builder] = history
         save_json(audit_path, audit)
+        subprocess.run(['git', 'merge', '--ff-only', 'main'], cwd=self.work, check=True)
         self.run(['npm', 'run', 'typecheck'], builder, 'typecheck')
         self.run(['npm', 'run', 'build'], builder, 'build')
         self.run(['git', 'diff', '--check'], builder, 'diff_check')
@@ -160,6 +162,7 @@ class Queue:
         files = [str(p.relative_to(self.work)) for p in folder.iterdir() if p.is_file() and p.suffix in ('.json', '.html', '.csv')]
         self.run(['git', 'add', '--', *files, 'docs/builder-recrawl-audit.json'], builder, 'staging')
         self.run(['git', 'commit', '-m', f'Refresh {builder} galleries and genuine image categorisation'], builder, 'committing')
+        subprocess.run(['git', 'rebase', 'main'], cwd=self.work, check=True)
         subprocess.run(['git', 'merge', '--ff-only', self.branch], cwd=ROOT, check=True)
         subprocess.run(['git', 'push', 'origin', 'main'], cwd=ROOT, check=True)
         shutil.copytree(folder / 'images', ROOT / 'collections' / f'{builder}-home-offices' / 'images', dirs_exist_ok=True)
