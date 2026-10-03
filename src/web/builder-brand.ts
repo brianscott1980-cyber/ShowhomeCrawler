@@ -23,6 +23,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'bovis-homes':{primary:'#193963',secondary:'#666666',parts:['Bovis Homes']},
  'linden-homes':{primary:'#193963',secondary:'#666666',parts:['Linden Homes']},
  'countryside-homes':{primary:'#193963',secondary:'#666666',parts:['Countryside Homes']},
+ 'bloor-homes':{primary:'#003865',secondary:'#75787b',parts:['Bloor Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {

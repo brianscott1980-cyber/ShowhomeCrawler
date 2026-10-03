@@ -4,260 +4,182 @@
     "url": "https://www.taylorwimpey.co.uk/new-homes/wynyard/manor-gardens",
     "postcode": "TS22 5JR",
     "latitude": 54.639775,
-    "longitude": -1.333546,
-    "geography": {
-      "district": "Hartlepool",
-      "county": null,
-      "region": "North East",
-      "country": "England"
-    }
+    "longitude": -1.333546
   },
   {
     "name": "Bronze Park",
     "url": "https://www.taylorwimpey.co.uk/new-homes/milton-keynes/bronze-park",
     "postcode": "MK7 6HL",
     "latitude": 52.026949,
-    "longitude": -0.702207,
-    "geography": {
-      "district": "Milton Keynes",
-      "county": null,
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": -0.702207
   },
   {
     "name": "St Mary View",
     "url": "https://www.taylorwimpey.co.uk/new-homes/collaton-st-mary/st-mary-view",
     "postcode": "TQ4 7PW",
     "latitude": 50.4294,
-    "longitude": -3.6064,
-    "geography": {
-      "district": "Torbay",
-      "county": null,
-      "region": "South West",
-      "country": "England"
-    }
+    "longitude": -3.6064
   },
   {
     "name": "The Asps",
     "url": "https://www.taylorwimpey.co.uk/new-homes/warwick/the-asps",
     "postcode": "CV34 6ST",
     "latitude": 52.261016,
-    "longitude": -1.57035,
-    "geography": {
-      "district": "Warwick",
-      "county": "Warwickshire",
-      "region": "West Midlands",
-      "country": "England"
-    }
+    "longitude": -1.57035
   },
   {
     "name": "Clare Garden Village",
     "url": "https://www.taylorwimpey.co.uk/new-homes/cowbridge/clare-garden-village",
     "postcode": "CF71 7FG",
     "latitude": 51.462759,
-    "longitude": -3.467399,
-    "geography": {
-      "district": "Vale of Glamorgan",
-      "county": null,
-      "region": null,
-      "country": "Wales"
-    }
+    "longitude": -3.467399
   },
   {
     "name": "Bow Meadows",
     "url": "https://www.taylorwimpey.co.uk/new-homes/coventry/bow-meadows",
     "postcode": "CV6 6HN",
     "latitude": 52.45689,
-    "longitude": -1.491999,
-    "geography": {
-      "district": "Coventry",
-      "county": null,
-      "region": "West Midlands",
-      "country": "England"
-    }
+    "longitude": -1.491999
   },
   {
     "name": "Twill Meadow",
     "url": "https://www.taylorwimpey.co.uk/new-homes/bulkington/twill-meadow",
     "postcode": "CV12 9QR",
     "latitude": 52.480775,
-    "longitude": -1.423766,
-    "geography": {
-      "district": "Nuneaton and Bedworth",
-      "county": "Warwickshire",
-      "region": "West Midlands",
-      "country": "England"
-    }
+    "longitude": -1.423766
   },
   {
     "name": "The Heath",
     "url": "https://www.taylorwimpey.co.uk/new-homes/codicote/the-heath",
     "postcode": "SG4 8YG",
     "latitude": 51.849212,
-    "longitude": -0.241901,
-    "geography": {
-      "district": "North Hertfordshire",
-      "county": "Hertfordshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.241901
+  },
+  {
+    "name": "Fountains Walk",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/ripon/fountains-walk",
+    "postcode": "HG4 2LQ",
+    "latitude": 54.12364,
+    "longitude": -1.53827
   },
   {
     "name": "Appledown Gate",
     "url": "https://www.taylorwimpey.co.uk/new-homes/keresley/appledown-gate",
     "postcode": "CV7 8JG",
     "latitude": 52.44646,
-    "longitude": -1.54418,
-    "geography": {
-      "district": "Coventry",
-      "county": null,
-      "region": "West Midlands",
-      "country": "England"
-    }
+    "longitude": -1.54418
   },
   {
     "name": "Minsmere Green",
     "url": "https://www.taylorwimpey.co.uk/new-homes/keynsham/minsmere-green",
     "postcode": "BS31 1PT",
     "latitude": 51.405765,
-    "longitude": -2.483525,
-    "geography": {
-      "district": "Bath and North East Somerset",
-      "county": null,
-      "region": "South West",
-      "country": "England"
-    }
+    "longitude": -2.483525
   },
   {
     "name": "Burghley Green at West Cambourne",
     "url": "https://www.taylorwimpey.co.uk/new-homes/west-cambourne/burghley-green-at-west-cambourne",
     "postcode": "CB23 6LL",
     "latitude": 52.220795,
-    "longitude": -0.095312,
-    "geography": {
-      "district": "South Cambridgeshire",
-      "county": "Cambridgeshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.095312
   },
   {
     "name": "Parc Llandaf",
     "url": "https://www.taylorwimpey.co.uk/new-homes/llandaff/parc-llandaf",
     "postcode": "CF5 2FH",
     "latitude": 51.497763,
-    "longitude": -3.227191,
-    "geography": {
-      "district": "Cardiff",
-      "county": null,
-      "region": null,
-      "country": "Wales"
-    }
+    "longitude": -3.227191
+  },
+  {
+    "name": "Dargavel View",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/bishopton/dargavel-view",
+    "postcode": "PA7 5FT",
+    "latitude": 55.902462,
+    "longitude": -4.519656
+  },
+  {
+    "name": "Oakwood Grove",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/hamilton/oakwood-grove",
+    "postcode": "ML3 8RN",
+    "latitude": 55.751453,
+    "longitude": -4.071777
+  },
+  {
+    "name": "Burdon Manor",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/sunderland/burdon-manor",
+    "postcode": "SR3 2PN",
+    "latitude": 54.861709,
+    "longitude": -1.399888
   },
   {
     "name": "Seton Rise",
     "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
     "postcode": "EH52 6YX",
     "latitude": 55.963766,
-    "longitude": -3.452642,
-    "geography": {
-      "district": "West Lothian",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.452642
+  },
+  {
+    "name": "Heathwood at Brunton Rise",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/heathwood-at-brunton-rise",
+    "postcode": "NE13 9FD",
+    "latitude": 55.035572,
+    "longitude": -1.663825
   },
   {
     "name": "Rose Meadows",
     "url": "https://www.taylorwimpey.co.uk/new-homes/st-albans/rose-meadows",
     "postcode": "AL2 3AJ",
     "latitude": 51.726964,
-    "longitude": -0.366103,
-    "geography": {
-      "district": "St Albans",
-      "county": "Hertfordshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.366103
   },
   {
     "name": "Stortford Fields",
     "url": "https://www.taylorwimpey.co.uk/new-homes/bishop's-stortford/stortford-fields",
     "postcode": "CM23 0BU",
     "latitude": 51.883875,
-    "longitude": 0.151202,
-    "geography": {
-      "district": "East Hertfordshire",
-      "county": "Hertfordshire",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.151202
   },
   {
     "name": "Ravensheugh Heights",
     "url": "https://www.taylorwimpey.co.uk/new-homes/wallyford/ravensheugh-heights",
     "postcode": "EH21 8JU",
     "latitude": 55.943269,
-    "longitude": -3.001351,
-    "geography": {
-      "district": "East Lothian",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.001351
   },
   {
     "name": "Mindenhurst",
     "url": "https://www.taylorwimpey.co.uk/new-homes/deepcut/mindenhurst",
     "postcode": "GU16 6RS",
     "latitude": 51.303884,
-    "longitude": -0.702347,
-    "geography": {
-      "district": "Surrey Heath",
-      "county": "Surrey",
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": -0.702347
   },
   {
     "name": "Belhaven Way",
     "url": "https://www.taylorwimpey.co.uk/new-homes/dunbar/belhaven-way",
     "postcode": "EH42 1FL",
     "latitude": 55.993692,
-    "longitude": -2.531171,
-    "geography": {
-      "district": "East Lothian",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -2.531171
   },
   {
     "name": "Riven Stones",
     "url": "https://www.taylorwimpey.co.uk/new-homes/blackburn/riven-stones",
     "postcode": "BB3 0LL",
     "latitude": 53.719114,
-    "longitude": -2.51476,
-    "geography": {
-      "district": "Blackburn with Darwen",
-      "county": null,
-      "region": "North West",
-      "country": "England"
-    }
+    "longitude": -2.51476
+  },
+  {
+    "name": "Sondes Meadows",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/dorking/sondes-meadows",
+    "postcode": "RH4 3EB",
+    "latitude": 51.23039,
+    "longitude": -0.34252
   },
   {
     "name": "Hampden View",
     "url": "https://www.taylorwimpey.co.uk/new-homes/costessey/hampden-view",
     "postcode": "NR5 0UW",
     "latitude": 52.6491,
-    "longitude": 1.192413,
-    "geography": {
-      "district": "South Norfolk",
-      "county": "Norfolk",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 1.192413
   },
   {
     "name": "Castle Manor",
@@ -271,285 +193,167 @@
     "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gate",
     "postcode": "KY12 0SY",
     "latitude": 56.085013,
-    "longitude": -3.424354,
-    "geography": {
-      "district": "Fife",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.424354
+  },
+  {
+    "name": "Melin Newydd",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/miskin/melin-newydd",
+    "postcode": "CF72 8SW",
+    "latitude": 51.527694,
+    "longitude": -3.378794
   },
   {
     "name": "Orchard Grove",
     "url": "https://www.taylorwimpey.co.uk/new-homes/taunton/orchard-grove",
     "postcode": "TA4 1FF",
     "latitude": 51.003787,
-    "longitude": -3.143879,
-    "geography": {
-      "district": "Somerset",
-      "county": null,
-      "region": "South West",
-      "country": "England"
-    }
+    "longitude": -3.143879
   },
   {
     "name": "Greenlaw Mains",
     "url": "https://www.taylorwimpey.co.uk/new-homes/penicuik/greenlaw-mains",
     "postcode": "EH26 0NW",
     "latitude": 55.847543,
-    "longitude": -3.214007,
-    "geography": {
-      "district": "Midlothian",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.214007
   },
   {
     "name": "Ockley Park",
     "url": "https://www.taylorwimpey.co.uk/new-homes/hassocks/ockley-park",
     "postcode": "BN6 8FQ",
     "latitude": 50.933395,
-    "longitude": -0.130291,
-    "geography": {
-      "district": "Mid Sussex",
-      "county": "West Sussex",
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": -0.130291
   },
   {
     "name": "Hadley Grange at Clipstone Park",
     "url": "https://www.taylorwimpey.co.uk/new-homes/leighton-buzzard/hadley-grange-at-clipstone-park",
     "postcode": "LU7 3GU",
     "latitude": 51.920964,
-    "longitude": -0.631661,
-    "geography": {
-      "district": "Central Bedfordshire",
-      "county": null,
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.631661
   },
   {
     "name": "Capstone Oaks",
     "url": "https://www.taylorwimpey.co.uk/new-homes/chatham/capstone-oaks",
     "postcode": "ME5 8EH",
     "latitude": 51.353068,
-    "longitude": 0.543604,
-    "geography": {
-      "district": "Medway",
-      "county": null,
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": 0.543604
   },
   {
     "name": "Wellington Place",
     "url": "https://www.taylorwimpey.co.uk/new-homes/market-harborough/wellington-place",
     "postcode": "LE16 7EA",
     "latitude": 52.490139,
-    "longitude": -0.94028,
-    "geography": {
-      "district": "Harborough",
-      "county": "Leicestershire",
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -0.94028
   },
   {
     "name": "Whitefield Gardens",
     "url": "https://www.taylorwimpey.co.uk/new-homes/dunfermline/whitefield-gardens",
     "postcode": "KY12 0SY",
     "latitude": 56.084877,
-    "longitude": -3.425809,
-    "geography": {
-      "district": "Fife",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.425809
   },
   {
     "name": "Fortibus Fields at Apsham Grange",
     "url": "https://www.taylorwimpey.co.uk/new-homes/topsham/fortibus-fields-at-apsham-grange",
     "postcode": "EX3 0FU",
     "latitude": 50.695559,
-    "longitude": -3.468338,
-    "geography": {
-      "district": "Exeter",
-      "county": "Devon",
-      "region": "South West",
-      "country": "England"
-    }
+    "longitude": -3.468338
   },
   {
     "name": "Springhill Gardens",
     "url": "https://www.taylorwimpey.co.uk/new-homes/barrhead/springhill-gardens",
     "postcode": "G78 2JP",
     "latitude": 55.790873,
-    "longitude": -4.37804,
-    "geography": {
-      "district": "East Renfrewshire",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -4.37804
   },
   {
     "name": "Stour View",
     "url": "https://www.taylorwimpey.co.uk/new-homes/brantham/stour-view",
     "postcode": "CO11 1FL",
     "latitude": 51.95828,
-    "longitude": 1.06642,
-    "geography": {
-      "district": "Babergh",
-      "county": "Suffolk",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 1.06642
   },
   {
     "name": "The Arboretum",
     "url": "https://www.taylorwimpey.co.uk/new-homes/haverhill/the-arboretum",
     "postcode": "CB9 7FB",
     "latitude": 52.091961,
-    "longitude": 0.40478,
-    "geography": {
-      "district": "West Suffolk",
-      "county": "Suffolk",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.40478
   },
   {
     "name": "Heather Gardens",
     "url": "https://www.taylorwimpey.co.uk/new-homes/hethersett/heather-gardens",
     "postcode": "NR9 3JL",
     "latitude": 52.605621,
-    "longitude": 1.17935,
-    "geography": {
-      "district": "South Norfolk",
-      "county": "Norfolk",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 1.17935
   },
   {
     "name": "Deben Park at Brightwell Lakes",
     "url": "https://www.taylorwimpey.co.uk/new-homes/martlesham/deben-park-at-brightwell-lakes",
     "postcode": "IP5 4AE",
     "latitude": 52.052991,
-    "longitude": 1.293289,
-    "geography": {
-      "district": "East Suffolk",
-      "county": "Suffolk",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 1.293289
   },
   {
     "name": "The Vista at Barton Grange",
     "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/the-vista-at-barton-grange",
     "postcode": "MK45 4LT",
     "latitude": 51.975367,
-    "longitude": -0.415632,
-    "geography": {
-      "district": "Central Bedfordshire",
-      "county": null,
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.415632
+  },
+  {
+    "name": "Seaham Garden Village Phase 2",
+    "url": "https://www.taylorwimpey.co.uk/new-homes/county-durham/seaham-garden-village-phase-2",
+    "postcode": "SR7 8RN",
+    "latitude": 54.817827,
+    "longitude": -1.335718
   },
   {
     "name": "Swinnow Park",
     "url": "https://www.taylorwimpey.co.uk/new-homes/wetherby/swinnow-park",
     "postcode": "LS22 5EG",
     "latitude": 53.940493,
-    "longitude": -1.364157,
-    "geography": {
-      "district": "Leeds",
-      "county": null,
-      "region": "Yorkshire and The Humber",
-      "country": "England"
-    }
+    "longitude": -1.364157
   },
   {
     "name": "Alresford Down",
     "url": "https://www.taylorwimpey.co.uk/new-homes/winchester/alresford-down",
     "postcode": "SO24 9UE",
     "latitude": 51.084843,
-    "longitude": -1.159392,
-    "geography": {
-      "district": "Winchester",
-      "county": "Hampshire",
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": -1.159392
   },
   {
     "name": "Clayridge Park at Barton Grange",
     "url": "https://www.taylorwimpey.co.uk/new-homes/barton-le-clay/clayridge-park-at-barton-grange",
     "postcode": "MK45 4RB",
     "latitude": 51.975394,
-    "longitude": -0.416707,
-    "geography": {
-      "district": "Central Bedfordshire",
-      "county": null,
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.416707
   },
   {
     "name": "The Atrium at Overstone",
     "url": "https://www.taylorwimpey.co.uk/new-homes/overstone/the-atrium-at-overstone",
     "postcode": "NN3 7DW",
     "latitude": 52.284685,
-    "longitude": -0.836821,
-    "geography": {
-      "district": "West Northamptonshire",
-      "county": null,
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -0.836821
   },
   {
     "name": "Barkby Fields",
     "url": "https://www.taylorwimpey.co.uk/new-homes/syston/barkby-fields",
     "postcode": "LE7 2AF",
     "latitude": 52.693956,
-    "longitude": -1.05833,
-    "geography": {
-      "district": "Charnwood",
-      "county": "Leicestershire",
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -1.05833
   },
   {
     "name": "Millstone Walk",
     "url": "https://www.taylorwimpey.co.uk/new-homes/eggborough/millstone-walk",
     "postcode": "DN14 0LJ",
     "latitude": 53.701338,
-    "longitude": -1.154459,
-    "geography": {
-      "district": "North Yorkshire",
-      "county": null,
-      "region": "Yorkshire and The Humber",
-      "country": "England"
-    }
+    "longitude": -1.154459
   },
   {
     "name": "Hartford Green",
     "url": "https://www.taylorwimpey.co.uk/new-homes/colchester/hartford-green",
     "postcode": "CO7 8TH",
     "latitude": 51.855796,
-    "longitude": 1.075031,
-    "geography": {
-      "district": "Tendring",
-      "county": "Essex",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 1.075031
   }
 ]

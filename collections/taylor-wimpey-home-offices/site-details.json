@@ -331,6 +331,58 @@
     ]
   },
   {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/ripon/fountains-walk",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 280000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 304995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 480000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 615000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.taylorwimpey.co.uk/new-homes/keresley/appledown-gate",
     "country": "England",
     "scope": "Advertised homes",
@@ -664,6 +716,157 @@
     ]
   },
   {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/bishopton/dargavel-view",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 545995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 549995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 549995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 554995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 599995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 698000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/hamilton/oakwood-grove",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 273000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 334000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 350000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 379000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 384000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 385000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 412000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/sunderland/burdon-manor",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 243995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 294995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 294995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 344995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 344995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 474995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.taylorwimpey.co.uk/new-homes/winchburgh/seton-rise",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -725,6 +928,83 @@
       },
       {
         "price": 589995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/newcastle-upon-tyne/heathwood-at-brunton-rise",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 174995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 179995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 184995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 214995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 276995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 276995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 294995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 294995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 349995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 464995,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -1118,6 +1398,58 @@
     ]
   },
   {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/dorking/sondes-meadows",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 625000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 635000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 675000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 790000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 850000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 899000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 950000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 1150000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.taylorwimpey.co.uk/new-homes/costessey/hampden-view",
     "country": "England",
     "scope": "Advertised homes",
@@ -1318,6 +1650,63 @@
       },
       {
         "price": null,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/miskin/melin-newydd",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 556500,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 693000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 695000,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -2021,6 +2410,68 @@
       },
       {
         "price": 815000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.taylorwimpey.co.uk/new-homes/county-durham/seaham-garden-village-phase-2",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 156995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 164995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 169995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 199995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 214995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 246995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 246995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 267995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 274995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 399995,
         "bedrooms": 5,
         "style": "Detached"
       }

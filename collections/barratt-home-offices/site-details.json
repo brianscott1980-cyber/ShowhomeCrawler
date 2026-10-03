@@ -52,6 +52,130 @@
     ]
   },
   {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002825-sycamore-gardens/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 409995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 321995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 321995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 390995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 417995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 418995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 426995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 430995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 441995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 447995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev001909-gilmerton-heights/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 402995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 450995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 456995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 474995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.barratthomes.co.uk/new-homes/dev-001136-bernets-nook/",
     "country": "England",
     "scope": "Advertised homes",
@@ -124,6 +248,73 @@
       {
         "price": null,
         "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002954-new-lubbesthorpe/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 259995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 259995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 259995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 344995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 349995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 359995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 414995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 414995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 564995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
         "style": null
       }
     ]
@@ -318,6 +509,329 @@
     ]
   },
   {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002684-cuckoo-fields-barratt-homes/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 450000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 465000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 355000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 390000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 445000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002581-old-durham-gate/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 244995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 304995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 232995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 236995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 294995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 312995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 429995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 434995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 434995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 435995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 437995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 438995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 439995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-002651-the-poppies---barratt-homes/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 487500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 405000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 535000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 540000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 620000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 645000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-002639-brookside-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 140000,
+        "bedrooms": 1,
+        "style": null
+      },
+      {
+        "price": 147000,
+        "bedrooms": 1,
+        "style": null
+      },
+      {
+        "price": 173600,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 175000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 175000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 348000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 375000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 378000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 395000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 410000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 417000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 425000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 545000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 600000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.barratthomes.co.uk/new-homes/dev002665-somer-meadows/",
     "country": "England",
     "scope": "Advertised homes",
@@ -370,6 +884,667 @@
       {
         "price": null,
         "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev003147-wigston-meadows-at-kilby-bridge/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 389995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 394995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 469695,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 469995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 489995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 509995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 539995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002971-barratt-homes-at-sholden-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 397995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002968-century-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 430000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 457500,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 482000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 495000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 615000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 625000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 640000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev001355-willow-grove/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 376995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 326995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 338345,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 376995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 379995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 380995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 424995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 425995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 477995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 684995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002687-hollygate-green/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 414995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 539995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 239995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 244995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 249995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 249995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 252995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 359995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 437995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-002652-the-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 256995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 256995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 394995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 433995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 434995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 509995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 514995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev003070-foxglove-park/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 393995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 395995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 396995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 397995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 405995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 435995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev-001093-king's-meadow/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 259995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 323195,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 329995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 334995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 419145,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 424195,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 549995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 559995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
         "style": null
       }
     ]
@@ -437,6 +1612,83 @@
       {
         "price": null,
         "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev000446-aston-grange/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 299995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 299995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 347995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 349995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 445995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 599995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
         "style": null
       }
     ]
@@ -636,6 +1888,68 @@
       {
         "price": null,
         "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.barratthomes.co.uk/new-homes/dev002702-barratt-homes-at-thoresby-vale/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 194995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 314995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 354995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 464995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 479995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 484995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
         "style": null
       }
     ]

@@ -4,129 +4,118 @@
     "url": "https://www.crestnicholson.com/developments/hampshire/curbridge-meadows",
     "postcode": "PO15 7PZ",
     "latitude": 50.896247,
-    "longitude": -1.256487,
-    "geography": {
-      "district": "Winchester",
-      "county": "Hampshire",
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": -1.256487
+  },
+  {
+    "name": "Westwood Park",
+    "url": "https://www.crestnicholson.com/developments/west-midlands/westwood-park",
+    "postcode": "CV4 8NS",
+    "latitude": 52.385956,
+    "longitude": -1.591236
   },
   {
     "name": "Sketchley Gardens",
     "url": "https://www.crestnicholson.com/developments/warwickshire/sketchley-gardens",
     "postcode": "CV11 6WZ",
     "latitude": 52.518749,
-    "longitude": -1.441544,
-    "geography": {
-      "district": "Nuneaton and Bedworth",
-      "county": "Warwickshire",
-      "region": "West Midlands",
-      "country": "England"
-    }
+    "longitude": -1.441544
+  },
+  {
+    "name": "Crown Meadows",
+    "url": "https://www.crestnicholson.com/developments/kent/crown-meadows",
+    "postcode": "ME13 8GW",
+    "latitude": 51.310106,
+    "longitude": 0.910276
+  },
+  {
+    "name": "Marston Leys",
+    "url": "https://www.crestnicholson.com/developments/warwickshire/marston-leys",
+    "postcode": "CV37 8YE",
+    "latitude": 52.120069,
+    "longitude": -1.760331
   },
   {
     "name": "Lewin Park",
     "url": "https://www.crestnicholson.com/developments/bedfordshire/lewin-park",
     "postcode": "SG18 9PL",
     "latitude": 52.047519,
-    "longitude": -0.26491,
-    "geography": {
-      "district": "Central Bedfordshire",
-      "county": null,
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": -0.26491
+  },
+  {
+    "name": "Perrybrook",
+    "url": "https://www.crestnicholson.com/developments/gloucester/perrybrook",
+    "postcode": "GL3 4WL",
+    "latitude": 51.85466,
+    "longitude": -2.163245
   },
   {
     "name": "Crest Nicholson at Malabar",
     "url": "https://www.crestnicholson.com/developments/northamptonshire/malabar",
     "postcode": "NN11 4NN",
     "latitude": 52.253074,
-    "longitude": -1.190863,
-    "geography": {
-      "district": "West Northamptonshire",
-      "county": null,
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -1.190863
+  },
+  {
+    "name": "Crest Nicholson at Branston Locks",
+    "url": "https://www.crestnicholson.com/developments/staffordshire/branston-locks",
+    "postcode": "DE13 9GS",
+    "latitude": 52.793899,
+    "longitude": -1.682386
+  },
+  {
+    "name": "Rowden Gate",
+    "url": "https://www.crestnicholson.com/developments/wiltshire/rowden-gate",
+    "postcode": "SN15 2NR",
+    "latitude": 51.449887,
+    "longitude": -2.133331
   },
   {
     "name": "Copley Park",
     "url": "https://www.crestnicholson.com/developments/south-yorkshire/copley-park",
     "postcode": "DN5 7NU",
     "latitude": 53.513278,
-    "longitude": -1.194106,
-    "geography": {
-      "district": "Doncaster",
-      "county": null,
-      "region": "Yorkshire and The Humber",
-      "country": "England"
-    }
+    "longitude": -1.194106
   },
   {
     "name": "Cygnet View",
     "url": "https://www.crestnicholson.com/developments/east-riding-of-yorkshire/cygnet-view",
     "postcode": "HU14 3GD",
     "latitude": 53.740242,
-    "longitude": -0.496632,
-    "geography": {
-      "district": "East Riding of Yorkshire",
-      "county": null,
-      "region": "Yorkshire and The Humber",
-      "country": "England"
-    }
+    "longitude": -0.496632
   },
   {
     "name": "Meadow Fields",
     "url": "https://www.crestnicholson.com/developments/north-yorkshire/meadow-fields",
     "postcode": "YO13 9HT",
     "latitude": 54.254258,
-    "longitude": -0.470563,
-    "geography": {
-      "district": "North Yorkshire",
-      "county": null,
-      "region": "Yorkshire and The Humber",
-      "country": "England"
-    }
+    "longitude": -0.470563
   },
   {
     "name": "Windsor Gate",
     "url": "https://www.crestnicholson.com/developments/berkshire/windsor-gate",
     "postcode": "SL4 5TZ",
     "latitude": 51.486611,
-    "longitude": -0.660383,
-    "geography": {
-      "district": "Windsor and Maidenhead",
-      "county": null,
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": -0.660383
   },
   {
     "name": "Westcombe Park",
     "url": "https://www.crestnicholson.com/developments/essex/westcombe-park",
     "postcode": "CM9 4HD",
     "latitude": 51.747944,
-    "longitude": 0.68347,
-    "geography": {
-      "district": "Maldon",
-      "county": "Essex",
-      "region": "East of England",
-      "country": "England"
-    }
+    "longitude": 0.68347
+  },
+  {
+    "name": "Meadow Views",
+    "url": "https://www.crestnicholson.com/developments/east-sussex/meadow-views",
+    "postcode": "BN27 2BY",
+    "latitude": 50.854252,
+    "longitude": 0.267668
   },
   {
     "name": "Newlands Place",
     "url": "https://www.crestnicholson.com/developments/berkshire/newlands-place",
     "postcode": "RG2 9GJ",
     "latitude": 51.385797,
-    "longitude": -0.887126,
-    "geography": {
-      "district": "Wokingham",
-      "county": null,
-      "region": "South East",
-      "country": "England"
-    }
+    "longitude": -0.887126
   }
 ]

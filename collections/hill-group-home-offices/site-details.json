@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://www.hill.co.uk/eden-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 924950,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.hill.co.uk/millside-grange",
     "country": "England",
     "scope": "Advertised homes",
@@ -55,6 +67,53 @@
         "price": 949950,
         "bedrooms": 5,
         "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hill.co.uk/canalside-quarter",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 409950,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 529950,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 554950,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 649950,
+        "bedrooms": 3,
+        "style": "Apartment"
+      },
+      {
+        "price": 830000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 910000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 1345000,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 1495000,
+        "bedrooms": 5,
+        "style": "Attached / terraced"
       }
     ]
   },

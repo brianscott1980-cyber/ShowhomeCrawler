@@ -1,41 +1,51 @@
 [
   {
+    "name": "Castle Gate, Winchburgh, EH52 6QN",
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/winchburgh/",
+    "postcode": "EH52 6QN",
+    "latitude": 55.961974,
+    "longitude": -3.443994
+  },
+  {
     "name": "Meadowside, Crawfield Road, Bo'ness, EH51 0PA",
     "url": "https://www.robertsonhomes.co.uk/homes-for-sale/boness/",
     "postcode": "EH51 0PA",
     "latitude": 56.003455,
-    "longitude": -3.617504,
-    "geography": {
-      "district": "Falkirk",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.617504
+  },
+  {
+    "name": "Almondell, Calderwood Road, East Calder, EH53 0WN",
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-almondell-calderwood/",
+    "postcode": "EH53 0WN",
+    "latitude": 55.90534,
+    "longitude": -3.453596
   },
   {
     "name": "St. Margarets, Firth Road, Rosslynlee, EH25 9QF",
     "url": "https://www.robertsonhomes.co.uk/homes-for-sale/st-margarets/",
     "postcode": "EH25 9QF",
     "latitude": 55.834807,
-    "longitude": -3.171851,
-    "geography": {
-      "district": "Midlothian",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.171851
+  },
+  {
+    "name": "Lionfields, Lambton Park, Chester-le-Street, County Durham, DH3 4DS",
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/lionfields/",
+    "postcode": "DH3 4DS",
+    "latitude": 54.859745,
+    "longitude": -1.516239
+  },
+  {
+    "name": "Torvean, Golf View Road, Inverness, IV3 8FE",
+    "url": "https://www.robertsonhomes.co.uk/homes-for-sale/robertson-homes-at-torvean/",
+    "postcode": "IV3 8FE",
+    "latitude": 57.463783,
+    "longitude": -4.258416
   },
   {
     "name": "Wynyard Woods, Stoneywood Drive, Wynyard, TS22 5UP",
     "url": "https://www.robertsonhomes.co.uk/homes-for-sale/wynyard-woods/",
     "postcode": "TS22 5UP",
     "latitude": 54.641593,
-    "longitude": -1.370501,
-    "geography": {
-      "district": "Stockton-on-Tees",
-      "county": null,
-      "region": "North East",
-      "country": "England"
-    }
+    "longitude": -1.370501
   }
 ]

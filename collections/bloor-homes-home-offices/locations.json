@@ -1,0 +1,149 @@
+[
+  {
+    "name": "The Brambles",
+    "url": "https://bloorhomes.com/new-homes/warwickshire/rugby/the-brambles",
+    "latitude": 52.376129,
+    "longitude": -1.304067,
+    "postcode": "CV23 9GL"
+  },
+  {
+    "name": "Atherstone Place",
+    "url": "https://bloorhomes.com/new-homes/warwickshire/atherstone/atherstone-place",
+    "latitude": 52.58788252351539,
+    "longitude": -1.5524468633303747,
+    "postcode": "CV9 2HD"
+  },
+  {
+    "name": "Shottery View",
+    "url": "https://bloorhomes.com/new-homes/warwickshire/shottery/shottery-view",
+    "latitude": 52.196654,
+    "longitude": -1.743967,
+    "postcode": "CV37 9QX"
+  },
+  {
+    "name": "Poppy Fields",
+    "url": "https://bloorhomes.com/new-homes/bedfordshire/lower-stondon/poppy-fields",
+    "latitude": 52.00706066399936,
+    "longitude": -0.3119412949720143,
+    "postcode": "SG16 6EA"
+  },
+  {
+    "name": "The Manors",
+    "url": "https://bloorhomes.com/new-homes/bedfordshire/westoning/the-manors",
+    "latitude": 51.97927946064543,
+    "longitude": -0.4991262224529847,
+    "postcode": "MK45 5LE"
+  },
+  {
+    "name": "Evesham Gate",
+    "url": "https://bloorhomes.com/new-homes/worcestershire/evesham/evesham-gate",
+    "latitude": 52.075044,
+    "longitude": -1.954071,
+    "postcode": "WR11 2BE"
+  },
+  {
+    "name": "Elgar Park",
+    "url": "https://bloorhomes.com/new-homes/worcestershire/worcester/elgar-park",
+    "latitude": 52.20426,
+    "longitude": -2.252687,
+    "postcode": "WR2 6RF"
+  },
+  {
+    "name": "Hilltop Park",
+    "url": "https://bloorhomes.com/new-homes/wiltshire/chippenham/hilltop-park",
+    "latitude": 51.445465576348965,
+    "longitude": -2.1436211353648327,
+    "postcode": "SN14 0FY"
+  },
+  {
+    "name": "Avon Rise",
+    "url": "https://bloorhomes.com/new-homes/wiltshire/malmesbury/avon-rise",
+    "latitude": 51.59494903267081,
+    "longitude": -2.0920265785469,
+    "postcode": "SN16 9JN"
+  },
+  {
+    "name": "Priors Meadow",
+    "url": "https://bloorhomes.com/new-homes/west-sussex/southbourne/priors-meadow",
+    "latitude": 50.8491276,
+    "longitude": -0.9048426,
+    "postcode": "PO10 8LQ"
+  },
+  {
+    "name": "Frankley Park",
+    "url": "https://bloorhomes.com/new-homes/west-midlands/birmingham/frankley-park",
+    "latitude": 52.405039,
+    "longitude": -1.991766,
+    "postcode": "B31 5EG"
+  },
+  {
+    "name": "The Asps",
+    "url": "https://bloorhomes.com/new-homes/warwickshire/warwick/the-asps",
+    "latitude": 52.259837,
+    "longitude": -1.564293,
+    "postcode": "CV34 0AA"
+  },
+  {
+    "name": "Monarchs View",
+    "url": "https://bloorhomes.com/new-homes/berkshire/binfield/monarchs-view",
+    "latitude": 51.4320535380104,
+    "longitude": -0.783626918864423,
+    "postcode": "RG42 4HA"
+  },
+  {
+    "name": "Weston Mead Grange",
+    "url": "https://bloorhomes.com/new-homes/buckinghamshire/aylesbury/weston-mead-grange",
+    "latitude": 51.809211766137885,
+    "longitude": -0.7648921542583188,
+    "postcode": "HP22 5AA"
+  },
+  {
+    "name": "Aspen Brook",
+    "url": "https://bloorhomes.com/new-homes/cheshire/widnes/aspen-brook",
+    "latitude": 53.38616,
+    "longitude": -2.69575,
+    "postcode": "WA8 3UB"
+  },
+  {
+    "name": "Foxcote",
+    "url": "https://bloorhomes.com/new-homes/cheshire/cheadle/foxcote",
+    "latitude": 53.3638508293239,
+    "longitude": -2.2157192906047207,
+    "postcode": "SK8 3NN"
+  },
+  {
+    "name": "Holly Grange",
+    "url": "https://bloorhomes.com/new-homes/cheshire/warrington/holly-grange",
+    "latitude": 53.40922,
+    "longitude": -2.649191,
+    "postcode": "WA5 3ZH"
+  },
+  {
+    "name": "Alcester Park",
+    "url": "https://bloorhomes.com/new-homes/warwickshire/alcester/alcester-park",
+    "latitude": 52.219298,
+    "longitude": -1.880159,
+    "postcode": "B49 5EH"
+  },
+  {
+    "name": "The Paddocks",
+    "url": "https://bloorhomes.com/new-homes/surrey/ash-green/the-paddocks",
+    "latitude": 51.245381,
+    "longitude": -0.707137,
+    "postcode": "GU12 6JH"
+  },
+  {
+    "name": "Thurston Grove",
+    "url": "https://bloorhomes.com/new-homes/suffolk/bury-st-edmunds/thurston-grove",
+    "latitude": 52.248221689192356,
+    "longitude": 0.8110733635964692,
+    "postcode": "IP31 3QX"
+  },
+  {
+    "name": "Bloor Homes at Great Wilsey Park",
+    "url": "https://bloorhomes.com/new-homes/suffolk/haverhill/bloor-homes-at-great-wilsey-park",
+    "latitude": 52.092363959721915,
+    "longitude": 0.45127521720645286,
+    "postcode": "CB9 7UD"
+  }
+]

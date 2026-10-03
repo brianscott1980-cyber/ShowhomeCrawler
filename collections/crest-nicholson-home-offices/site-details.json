@@ -12,6 +12,28 @@
     ]
   },
   {
+    "url": "https://www.crestnicholson.com/developments/west-midlands/westwood-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.crestnicholson.com/developments/warwickshire/sketchley-gardens",
     "country": "England",
     "scope": "Advertised homes",
@@ -23,6 +45,40 @@
       },
       {
         "price": 480000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/kent/crown-meadows",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 665000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 690000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/warwickshire/marston-leys",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 575000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 575000,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -41,12 +97,88 @@
     ]
   },
   {
+    "url": "https://www.crestnicholson.com/developments/gloucester/perrybrook",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 550000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.crestnicholson.com/developments/northamptonshire/malabar",
     "country": "England",
     "scope": "Advertised homes",
     "properties": [
       {
         "price": 535000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/staffordshire/branston-locks",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 280000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 305000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 340000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 365000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 435000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/wiltshire/rowden-gate",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 565000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 585000,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -147,6 +279,18 @@
     "properties": [
       {
         "price": 680000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.crestnicholson.com/developments/east-sussex/meadow-views",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 625000,
         "bedrooms": 5,
         "style": "Detached"
       }

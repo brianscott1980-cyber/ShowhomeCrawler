@@ -1,5 +1,102 @@
 [
   {
+    "url": "https://www.storyhomes.co.uk/developments/edgehill-park/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 169950,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 189950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 239950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 294950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 339950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 379950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 424950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 174950,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 239950,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 299950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 379950,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 424950,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.storyhomes.co.uk/developments/foxbridge-rise/",
     "country": "England",
     "scope": "Advertised homes",
@@ -465,6 +562,78 @@
     ]
   },
   {
+    "url": "https://www.storyhomes.co.uk/developments/heritage-fields/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 239995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 239995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 287995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 349995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 409995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 312995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 344995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 349995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 356995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.storyhomes.co.uk/developments/killingworth-gate/",
     "country": "England",
     "scope": "Advertised homes",
@@ -668,6 +837,68 @@
       {
         "price": 759995,
         "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.storyhomes.co.uk/developments/stonebrook-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 322995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 6,
+        "style": null
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 474995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 284995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 324995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 412995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 479995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 509995,
+        "bedrooms": 6,
         "style": null
       }
     ]

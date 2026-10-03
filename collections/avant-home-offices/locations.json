@@ -1,119 +1,93 @@
 [
   {
+    "name": "Hackett Grange",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/radcliffe-on-trent/hackett-grange",
+    "postcode": "NG12 2DW",
+    "latitude": 52.943199,
+    "longitude": -1.051869
+  },
+  {
     "name": "Bennerley View",
     "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
     "postcode": "NG16 2SJ",
     "latitude": 52.986317,
-    "longitude": -1.290875,
-    "geography": {
-      "district": "Broxtowe",
-      "county": "Nottinghamshire",
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -1.290875
   },
   {
     "name": "Lawrence Point",
     "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/eastwood/lawrence-point",
     "postcode": "NG16 3ER",
     "latitude": 53.020127,
-    "longitude": -1.296678,
-    "geography": {
-      "district": "Broxtowe",
-      "county": "Nottinghamshire",
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -1.296678
+  },
+  {
+    "name": "Seely Fields",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/somercotes/birchwood-lane-somercotes",
+    "postcode": "DE55 4NF",
+    "latitude": 53.081577,
+    "longitude": -1.353732
   },
   {
     "name": "Althamer View",
     "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/blindwells/althamer-view",
     "postcode": "EH32 9GT",
     "latitude": 55.953998,
-    "longitude": -2.949327,
-    "geography": {
-      "district": "East Lothian",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -2.949327
   },
   {
     "name": "Darach Fields",
     "url": "https://www.avanthomes.co.uk/new-build-homes/glasgow/robroyston/darach-fields",
     "postcode": "G33 6PQ",
     "latitude": 55.889235,
-    "longitude": -4.171355,
-    "geography": {
-      "district": "Glasgow City",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -4.171355
+  },
+  {
+    "name": "Honeyman Park",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/bathgate/armadale/honeyman-park",
+    "postcode": "EH48 3ED",
+    "latitude": 55.896286,
+    "longitude": -3.718625
   },
   {
     "name": "Thistle Meadows",
     "url": "https://www.avanthomes.co.uk/new-build-homes/east-lothian/tranent/thistle-meadows",
     "postcode": "EH33 2FX",
     "latitude": 55.933254,
-    "longitude": -2.949005,
-    "geography": {
-      "district": "East Lothian",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -2.949005
   },
   {
     "name": "Stewart's Quarter",
     "url": "https://www.avanthomes.co.uk/new-build-homes/fife/rosyth/stewarts-quarter",
     "postcode": "KY11 2ZQ",
     "latitude": 56.037282,
-    "longitude": -3.437628,
-    "geography": {
-      "district": "Fife",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.437628
   },
   {
     "name": "Edmonstone Village",
     "url": "https://www.avanthomes.co.uk/new-build-homes/edinburgh/edmonstone/edmonstone-village",
     "postcode": "EH16 4SP",
     "latitude": 55.913924,
-    "longitude": -3.117122,
-    "geography": {
-      "district": "City of Edinburgh",
-      "county": null,
-      "region": null,
-      "country": "Scotland"
-    }
+    "longitude": -3.117122
+  },
+  {
+    "name": "Craigowl Law",
+    "url": "https://www.avanthomes.co.uk/new-build-homes/angus/dundee/craigowl-law",
+    "postcode": "DD3 0FG",
+    "latitude": 56.501409,
+    "longitude": -3.018541
   },
   {
     "name": "Bishop's Quarter",
     "url": "https://www.avanthomes.co.uk/new-build-homes/north-yorkshire/leeds/bishops-quarter",
     "postcode": "LS25 6GT",
     "latitude": 53.800912,
-    "longitude": -1.240366,
-    "geography": {
-      "district": "North Yorkshire",
-      "county": null,
-      "region": "Yorkshire and The Humber",
-      "country": "England"
-    }
+    "longitude": -1.240366
   },
   {
     "name": "Cadley Village",
     "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/swadlincote/cadley-village",
     "postcode": "DE11 0BB",
     "latitude": 52.774065,
-    "longitude": -1.562344,
-    "geography": {
-      "district": "South Derbyshire",
-      "county": "Derbyshire",
-      "region": "East Midlands",
-      "country": "England"
-    }
+    "longitude": -1.562344
   }
 ]

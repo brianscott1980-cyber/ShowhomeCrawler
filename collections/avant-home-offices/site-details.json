@@ -1,5 +1,42 @@
 [
   {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/radcliffe-on-trent/hackett-grange",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 310000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.avanthomes.co.uk/new-build-homes/nottinghamshire/awsworth/bennerley-view",
     "country": "England",
     "scope": "Advertised homes",
@@ -83,6 +120,98 @@
       },
       {
         "price": 425000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/derbyshire/somercotes/birchwood-lane-somercotes",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 188000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 212000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 220000,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 250000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 250000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 265000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 299000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 320000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 330000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 370000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 410000,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -192,6 +321,68 @@
       },
       {
         "price": 555995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/bathgate/armadale/honeyman-park",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 221995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 239995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 243995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 276995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 281995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 291995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 291995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 331995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 331995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 331995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 341995,
         "bedrooms": 5,
         "style": "Detached"
       }
@@ -433,6 +624,23 @@
       },
       {
         "price": 499995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.avanthomes.co.uk/new-build-homes/angus/dundee/craigowl-law",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 329995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 354995,
         "bedrooms": 5,
         "style": "Detached"
       }

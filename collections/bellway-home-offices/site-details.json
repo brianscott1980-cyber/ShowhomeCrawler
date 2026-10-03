@@ -42,6 +42,192 @@
     ]
   },
   {
+    "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 229995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 239995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 409995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 664995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 374995,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 249995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 274995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 427995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 624995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 627995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 599950,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 660000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 750000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 465000,
+        "bedrooms": 2,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 595000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 410000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 415000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 460000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 495000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 800000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 400000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
     "country": "England",
     "scope": "Advertised homes",
@@ -151,6 +337,453 @@
       {
         "price": 535000,
         "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/north-west/alderstone-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 284995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 284995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 421995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 135000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 135000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 135000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 246995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 246995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 246995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 374995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 120000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/north-london/hares-leap",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 725000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1125000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 920000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 825000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 840000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 920000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 735000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 1000000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1100000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1125000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 800000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 820000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 820000,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/north-london/pennwood-grange",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 875000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 900000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 900000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 900000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 905000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 580000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 670000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 682500,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 685000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 685000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 690000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 690000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 690000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 490000,
+        "bedrooms": 2,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 780000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 785000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 670000,
+        "bedrooms": 3,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/wales/longwood-grange",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 574995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 519995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 529995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 589995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 589995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 589995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 589995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 649995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 344995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/west-midlands/harvino",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 940000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 609995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 609995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 392000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 392000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 660000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 680000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/southern-counties/elmfield-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 540000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 725000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 725000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 615000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 800000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 515000,
+        "bedrooms": 3,
         "style": "Detached"
       }
     ]
@@ -581,6 +1214,183 @@
     ]
   },
   {
+    "url": "https://www.bellway.co.uk/new-homes/north-london/regents-gate",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 305000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 315000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1425000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1425000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 850000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 875000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 635000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 530000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 620000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 635000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 635000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 640000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 295000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 310000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 310000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 1150000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 1275000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 1250000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 430000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 440000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 300000,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 1075000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 420000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 975000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.bellway.co.uk/new-homes/scotland-west/landsdale",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -1002,6 +1812,58 @@
     ]
   },
   {
+    "url": "https://www.bellway.co.uk/new-homes/manchester/hopwood-meadows",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 484995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 349995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 369995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 369995,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.bellway.co.uk/new-homes/thames-valley/alexander-park",
     "country": "England",
     "scope": "Advertised homes",
@@ -1090,6 +1952,108 @@
         "price": 740000,
         "bedrooms": 4,
         "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/north-west/lydiate-gate",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 235995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 245995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 245995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 387995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 387995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 271995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 271995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 335995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 335995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 374995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
       }
     ]
   },
@@ -1218,6 +2182,48 @@
       {
         "price": 635000,
         "bedrooms": 3,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/south-west/lavender-rise",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 600000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 5,
         "style": "Detached"
       }
     ]
@@ -1487,6 +2493,83 @@
         "price": 262950,
         "bedrooms": 3,
         "style": "Semi-detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/north-west/poulton-rise",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 155996,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 308995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 308995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 294995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 462995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 339995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 161596,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 161596,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": "Detached"
       }
     ]
   },
@@ -2258,6 +3341,205 @@
     ]
   },
   {
+    "url": "https://www.bellway.co.uk/new-homes/durham/the-old-foundry",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 339995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 509995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 234995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 234995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 409995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 319995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 329995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 334995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/kent/clavering-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 469995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 359995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 396995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 392995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 395995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 395995,
+        "bedrooms": 2,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 395995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 434995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 452995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 454995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 719995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 719995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 725995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 499995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 682995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 682995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 789995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 793995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 799995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 664995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 674995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 674995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 677995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 344995,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 798995,
+        "bedrooms": 5,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -2397,6 +3679,73 @@
     ]
   },
   {
+    "url": "https://www.bellway.co.uk/new-homes/north-west/lathom-pastures",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 384995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 272995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 272995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 272995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 272995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 422995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 313995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 313995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 353995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 353995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.bellway.co.uk/new-homes/north-london/scholars-walk",
     "country": "England",
     "scope": "Advertised homes",
@@ -2495,6 +3844,123 @@
       },
       {
         "price": 539995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/north-west/mountain-view",
+    "country": "Wales",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 369995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 372995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 89597,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 90997,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 90997,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 90997,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 90997,
+        "bedrooms": 1,
+        "style": "Apartment"
+      },
+      {
+        "price": 369995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 369995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 371995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 411995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 414995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 299995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 114097,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 114097,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 115497,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 115497,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 115497,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 115497,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 468995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 367995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 367995,
         "bedrooms": 4,
         "style": "Detached"
       }
@@ -2706,6 +4172,148 @@
         "price": 525000,
         "bedrooms": 3,
         "style": "Semi-detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/kent/blenheim-green",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 429995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 449995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 455995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 455995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 455995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 455995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 455995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 459995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 462995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 464995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 524995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 524995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 527995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 527995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 527995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 529995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 534995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 573995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 573995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 484995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 489995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 491995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 906995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 906995,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 354995,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 354995,
+        "bedrooms": 2,
+        "style": "Apartment"
       }
     ]
   },
@@ -3238,6 +4846,58 @@
     ]
   },
   {
+    "url": "https://www.bellway.co.uk/new-homes/scotland-east/pilgrim-manor",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 295995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 308995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 322995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 270995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 279995,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 398995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 388995,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 355995,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
     "url": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens",
     "country": "Scotland",
     "scope": "Advertised homes",
@@ -3591,6 +5251,78 @@
     ]
   },
   {
+    "url": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 995000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 580000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 585000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 799950,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 799950,
+        "bedrooms": 4,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 915000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 925000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 699950,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 650000,
+        "bedrooms": 3,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      },
+      {
+        "price": 965000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 450000,
+        "bedrooms": 2,
+        "style": "Apartment"
+      }
+    ]
+  },
+  {
     "url": "https://www.bellway.co.uk/new-homes/east-midlands/barleywoods",
     "country": "England",
     "scope": "Advertised homes",
@@ -3771,6 +5503,138 @@
       },
       {
         "price": 610000,
+        "bedrooms": 4,
+        "style": "Detached"
+      }
+    ]
+  },
+  {
+    "url": "https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 690000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 527500,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 530000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 530000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 695000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 720000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 475000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 570000,
+        "bedrooms": 4,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 390000,
+        "bedrooms": 2,
+        "style": "Attached / terraced"
+      },
+      {
+        "price": 750000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 775000,
+        "bedrooms": 5,
+        "style": "Detached"
+      },
+      {
+        "price": 600000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 610000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 615000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 620000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 625000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 630000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 535000,
+        "bedrooms": 3,
+        "style": "Semi-detached"
+      },
+      {
+        "price": 575000,
+        "bedrooms": 4,
+        "style": "Detached"
+      },
+      {
+        "price": 590000,
         "bedrooms": 4,
         "style": "Detached"
       }

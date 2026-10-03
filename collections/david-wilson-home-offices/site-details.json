@@ -77,6 +77,229 @@
     ]
   },
   {
+    "url": "https://www.dwh.co.uk/new-homes/dev002858-ashbourne-airfield/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 269995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 284995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 349995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 357995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 369995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 424995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 439995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 444995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 479995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 494995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 496995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 497995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 514995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev001889-ashlawn-gardens/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 719995,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev-002607-ashtree-grove/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 485000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 500000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 700000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 705000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 840000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 850000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 1100000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1400000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 1400000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev002567-bluebell-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 324995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 329995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 329995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 344995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 409995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 464595,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.dwh.co.uk/new-homes/dev-002635-buckley-gardens/",
     "country": "England",
     "scope": "Advertised homes",
@@ -260,6 +483,68 @@
     ]
   },
   {
+    "url": "https://www.dwh.co.uk/new-homes/dev-001089-david-wilson-homes-the-woodlands/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 259995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 427995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 549995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 432995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 599995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.dwh.co.uk/new-homes/dev-001135-doxford-green/",
     "country": "England",
     "scope": "Advertised homes",
@@ -352,6 +637,115 @@
       {
         "price": null,
         "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev002576-drakelow-park/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 319995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 321995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 339995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 404995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 419995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 421995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev002959-dwh-@-chaulden-meadows/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 575000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 825000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 665000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 675000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 815000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
         "style": null
       }
     ]
@@ -816,6 +1210,48 @@
     ]
   },
   {
+    "url": "https://www.dwh.co.uk/new-homes/dev002705-foundry-lea/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 345000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 380000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 435000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 470000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 620000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.dwh.co.uk/new-homes/dev002670-glenvale-park/",
     "country": "England",
     "scope": "Advertised homes",
@@ -920,6 +1356,232 @@
       {
         "price": 659995,
         "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev002867-harlestone-grange/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 389995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 409995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 452995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 509995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 527995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 614995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 619995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 644995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 659995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev-002643-henley-gate/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 375000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 375000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 425000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 425000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 485000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 490000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 500000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 520000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 542500,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 645000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 650000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 675000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev001910-heritage-grange-@-upper-lighthorne/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 550000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 565000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 607000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 610000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 620000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
         "style": null
       }
     ]
@@ -1064,6 +1726,18 @@
       {
         "price": null,
         "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev-002589-imperial-court/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 970000,
+        "bedrooms": 5,
         "style": null
       }
     ]
@@ -1382,6 +2056,187 @@
     ]
   },
   {
+    "url": "https://www.dwh.co.uk/new-homes/dev000290-mulberry-rise-at-applegate-park/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 699995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 484995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 504995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 565995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 569995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 569995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 699995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 722995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev000784-new-lubbesthorpe/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 474995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 265000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 284995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 284995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 414995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 424995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 554999,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 559995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev002668-nursery-fields/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 430000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 525000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 540000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 545000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 680000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 699000,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.dwh.co.uk/new-homes/dev002865-oak-view/",
     "country": "England",
     "scope": "Advertised homes",
@@ -1454,6 +2309,73 @@
       {
         "price": null,
         "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev-002658-otters-reach-at-benthall-grange/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 250000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 270000,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 372000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 375000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 390000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 390000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 400000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 475000,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
         "style": null
       }
     ]
@@ -1779,6 +2701,53 @@
     ]
   },
   {
+    "url": "https://www.dwh.co.uk/new-homes/dev-001087-saxon-fields/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 569995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 599995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 564995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 564995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 576995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 579995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 579995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.dwh.co.uk/new-homes/dev002678-sholden-meadows/",
     "country": "England",
     "scope": "Advertised homes",
@@ -1836,6 +2805,68 @@
       {
         "price": null,
         "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev002826-sycamore-grange/",
+    "country": "Scotland",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 429995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 459995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": 499995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 507995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 509995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 525995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 534995,
+        "bedrooms": 5,
         "style": null
       },
       {
@@ -2060,6 +3091,160 @@
     ]
   },
   {
+    "url": "https://www.dwh.co.uk/new-homes/dev-002617-the-poppies/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 220000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 230000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 449995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 534995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 614995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 634995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 634995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev001010-the-skylarks/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 325000,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 349995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 254995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 259995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 262995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 309995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 319995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 339995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 341995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 354995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 634995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 634995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 636995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 674995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 3,
+        "style": null
+      }
+    ]
+  },
+  {
     "url": "https://www.dwh.co.uk/new-homes/dev002898-the-stables/",
     "country": "England",
     "scope": "Advertised homes",
@@ -2122,6 +3307,103 @@
       {
         "price": null,
         "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.dwh.co.uk/new-homes/dev-002657-the-watlings-at-towcester/",
+    "country": "England",
+    "scope": "Advertised homes",
+    "properties": [
+      {
+        "price": 559995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 569995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 569995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 289995,
+        "bedrooms": 2,
+        "style": null
+      },
+      {
+        "price": 399995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 407995,
+        "bedrooms": 3,
+        "style": null
+      },
+      {
+        "price": 504995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 507995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 544995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 544995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 579995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 589995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 605995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 697995,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": 753995,
+        "bedrooms": 5,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 4,
+        "style": null
+      },
+      {
+        "price": null,
+        "bedrooms": 5,
         "style": null
       },
       {
