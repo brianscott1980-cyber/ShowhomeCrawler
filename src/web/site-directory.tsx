@@ -1,4 +1,5 @@
 'use client';
+import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
 import Link from 'next/link';
 import {useState,useEffect,useMemo,lazy,Suspense,useRef} from 'react';
@@ -59,30 +60,39 @@ export function SiteDirectory({
    const explorer=explorerPanel.current;
    const preview=resultsPanel.current;
    if(!explorer)return;
-   const expRect=explorer.getBoundingClientRect();
+   const expRect=explorer.querySelector('.site-map-panel')?.getBoundingClientRect()??explorer.getBoundingClientRect();
+   const toolbar=explorer.parentElement?.querySelector('.location-explorer-toolbar')?.getBoundingClientRect();
+   const header=document.querySelector('.site-header')?.getBoundingClientRect();
+   const footer=document.querySelector('body>footer')?.getBoundingClientRect();
+   const top=Math.max(header?.bottom??0,toolbar?.bottom??0)+12;
+   explorer.parentElement?.style.setProperty('--map-content-top',top+'px');
+   explorer.parentElement?.style.setProperty('--map-header-bottom',(header?.bottom??0)+'px');
+   const floor=footer?Math.min(expRect.bottom,footer.top):expRect.bottom;
+   explorer.parentElement?.style.setProperty('--map-footer-height',(footer?.height??48)+'px');
    const isMobile=window.innerWidth<=900;
    if(isMobile){
     const prevRect=preview?.getBoundingClientRect();
     const bottomHeight=prevRect?Math.min(expRect.height-80,prevRect.height):150;
     setFocusArea({
      left:12,
-     top:12,
+     top:top-expRect.top,
      right:Math.max(24,expRect.width-12),
-     bottom:Math.max(24,expRect.height-bottomHeight-12)
+     bottom:Math.max(top+40-expRect.top,(prevRect?.top??floor)-expRect.top-12)
     });
    }else{
-    const prevWidth=preview?Math.min(expRect.width*0.55,preview.offsetWidth):440;
+    const prevWidth=preview?preview.getBoundingClientRect().right-expRect.left:440;
     setFocusArea({
      left:prevWidth+24,
-     top:16,
+     top:top-expRect.top,
      right:Math.max(prevWidth+60,expRect.width-16),
-     bottom:Math.max(40,expRect.height-16)
+     bottom:Math.max(top+40-expRect.top,floor-expRect.top-12)
     });
    }
   };
   computeFocus();
+  const observer=new ResizeObserver(computeFocus);if(resultsPanel.current)observer.observe(resultsPanel.current);const header=document.querySelector('.site-header');if(header)observer.observe(header);const footer=document.querySelector('body>footer');if(footer)observer.observe(footer);const filters=explorerPanel.current?.parentElement?.querySelector('.location-filter-panel');if(filters)observer.observe(filters);
   window.addEventListener('resize',computeFocus);
-  return()=>window.removeEventListener('resize',computeFocus);
+  return()=>{observer.disconnect();window.removeEventListener('resize',computeFocus);};
  },[mapView,sheetExpanded]);
  const filters:SiteFilters=useMemo(()=>({developer:urlFilters.developer,country:urlFilters.country,minPrice:urlFilters.minPrice,maxPrice:urlFilters.maxPrice,minBeds:urlFilters.minBeds,maxBeds:urlFilters.maxBeds,style:urlFilters.style,radius:urlFilters.radius}),[urlFilters.developer,urlFilters.country,urlFilters.minPrice,urlFilters.maxPrice,urlFilters.minBeds,urlFilters.maxBeds,urlFilters.style,urlFilters.radius]);
  const setFilters=(value:SiteFilters|((previous:SiteFilters)=>SiteFilters))=>setUrlFilters(previous=>({...previous,...(typeof value==='function'?value(previous):value)}));
@@ -102,17 +112,16 @@ export function SiteDirectory({
  useEffect(()=>{if(activeKey&&!matching.some(card=>card.key===activeKey))setUrlFilters(previous=>({...previous,selected:''}));},[matching,activeKey]);
  const developers=[...new Set(cards.map(c=>c.developer))].sort(),countries=[...new Set(cards.map(c=>c.country??'Unknown'))].sort();
  useEffect(()=>{if(!mapView||!activeKey)return;const element=document.getElementById('site-card-'+activeKey),panel=resultsPanel.current;if(element&&panel){const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(isMobile){element.scrollIntoView({behavior:'auto',inline:'center',block:'nearest'});}else{const top=element.getBoundingClientRect().top-panel.getBoundingClientRect().top+panel.scrollTop;panel.scrollTo?.({top:Math.max(0,top-12),behavior:'auto'});}}},[activeKey,mapView,visible.map(c=>c.key).join(',')]);
- useEffect(()=>{if(!mapView)return;const panel=resultsPanel.current;if(!panel)return;const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(!isMobile)return;const grid=panel.querySelector('.collection-grid');if(!grid)return;let timer:ReturnType<typeof setTimeout>;const onScroll=()=>{clearTimeout(timer);timer=setTimeout(()=>{const gridRect=grid.getBoundingClientRect();const centerX=gridRect.left+gridRect.width/2;const cards=grid.querySelectorAll<HTMLElement>('.collection-card');let closestKey:string|null=null,minDist=Infinity;cards.forEach(card=>{const rect=card.getBoundingClientRect();const cardCenter=rect.left+rect.width/2;const dist=Math.abs(cardCenter-centerX);if(dist<minDist){minDist=dist;const key=card.id.replace('site-card-','');if(key)closestKey=key;}});if(closestKey&&minDist<gridRect.width*0.45){setUrlFilters(prev=>prev.selected===closestKey?prev:({...prev,selected:closestKey!}));}},120);};grid.addEventListener('scroll',onScroll,{passive:true});return()=>{clearTimeout(timer);grid.removeEventListener('scroll',onScroll);};},[mapView,visible.map(c=>c.key).join(',')]);
+ useEffect(()=>{if(!mapView)return;const panel=resultsPanel.current;if(!panel)return;const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(!isMobile)return;const grid=panel.querySelector('.collection-grid');if(!grid)return;let timer:ReturnType<typeof setTimeout>;let userScrolled=false;const onPointerDown=()=>{userScrolled=true;};const onScroll=()=>{if(!userScrolled)return;clearTimeout(timer);timer=setTimeout(()=>{const gridRect=grid.getBoundingClientRect();const centerX=gridRect.left+gridRect.width/2;const cards=grid.querySelectorAll<HTMLElement>('.collection-card');let closestKey:string|null=null,minDist=Infinity;cards.forEach(card=>{const rect=card.getBoundingClientRect();const cardCenter=rect.left+rect.width/2;const dist=Math.abs(cardCenter-centerX);if(dist<minDist){minDist=dist;const key=card.id.replace('site-card-','');if(key)closestKey=key;}});userScrolled=false;if(closestKey&&minDist<gridRect.width*0.45){setUrlFilters(prev=>prev.selected===closestKey?prev:({...prev,selected:closestKey!}));}},120);};grid.addEventListener('pointerdown',onPointerDown,{passive:true});grid.addEventListener('scroll',onScroll,{passive:true});return()=>{clearTimeout(timer);grid.removeEventListener('pointerdown',onPointerDown);grid.removeEventListener('scroll',onScroll);};},[mapView,visible.map(c=>c.key).join(',')]);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
  return <section aria-label="Filter locations">
  <div className="site-filter-panel location-filter-panel">
- <div className="filters site-filters location-primary-filters" role="search" aria-label="Common location filters">
+ <DirectoryFilters className="filters site-filters location-primary-filters" label="Location filters">
   <label>Builder<select value={filters.developer} onChange={e=>change('developer',e.target.value)}><option value="">All builders</option>{developers.map(d=><option key={d}>{d}</option>)}</select></label>
   <label>Country<select value={filters.country} onChange={e=>change('country',e.target.value)}><option value="">All countries</option>{countries.map(c=><option key={c}>{c}</option>)}</select></label>
   <label>Minimum bedrooms<input type="number" min="1" step="1" value={filters.minBeds} onChange={e=>change('minBeds',e.target.value)} placeholder="Any"/></label>
   <label>Maximum price (£)<input type="number" min="0" step="1000" value={filters.maxPrice} onChange={e=>change('maxPrice',e.target.value)} placeholder="No maximum"/></label>
   <button className="location-filter-reset" type="button" disabled={busy} onClick={()=>{setUrlFilters(previous=>({...urlDefaults,view:previous.view,lat:previous.lat,lng:previous.lng,zoom:previous.zoom}));setPoint(null);setMessage('');}}>Reset filters</button>
- </div>
  <details className="location-filter-disclosure">
   <summary>More filters <span>House style, price range and distance</span></summary>
   <div className="filters site-filters">
@@ -122,6 +131,7 @@ export function SiteDirectory({
   </div>
 <div className="site-location-controls"><form onSubmit={locate}><label htmlFor="site-postcode">Distance from postcode</label><div className="site-postcode-input"><input id="site-postcode" value={postcode} onChange={e=>setPostcode(e.target.value)} autoComplete="postal-code" placeholder="e.g. SW1A 1AA" required maxLength={10}/><button disabled={busy}>Find location</button></div></form><button type="button" disabled={busy} onClick={useLocation}>Use my location</button><label>Within<select disabled={!point} value={filters.radius} onChange={e=>change('radius',e.target.value)}><option value="">Any distance</option>{[5,10,25,50,100,200].map(n=><option key={n} value={n}>{n} miles</option>)}</select></label><label>Order by<select value={order} onChange={e=>setOrder(e.target.value)}><option value="name">Location name A–Z</option><option value="distance" disabled={!point}>Nearest first</option></select></label></div><p role="status" className="subtle">{message||'Enter a postcode or use your location to filter by distance.'} Distances are straight-line miles.</p><p className="subtle">A location matches when an advertised home meets all selected property filters. Prices and availability reflect the latest collection update; unknown prices and bedrooms do not match numeric limits.</p>
  </details>
+ </DirectoryFilters>
  {invalid&&<p role="alert" className="error">Minimum price and bedrooms must not exceed their maximum values.</p>}
  </div>
 <div className="directory-toolbar location-explorer-toolbar">
