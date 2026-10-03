@@ -130,8 +130,9 @@ function extractLocation(html: string, url?: string) {
     } catch {}
   }
 
-  for (const el of $('[data-lat][data-lon]').toArray()) {
-    const latitude = Number($(el).attr('data-lat')), longitude = Number($(el).attr('data-lon'));
+  for (const el of $('[data-lat]').toArray()) {
+    const latitude = Number($(el).attr('data-lat'));
+    const longitude = Number($(el).attr('data-lon') ?? $(el).attr('data-lng') ?? $(el).attr('data-long'));
     if (latitude >= 49 && latitude <= 61.2 && longitude >= -9 && longitude <= 3) return { latitude, longitude };
   }
 
