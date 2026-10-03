@@ -23,6 +23,9 @@ export function SiteMap({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnav
  const container=useRef<HTMLDivElement>(null), map=useRef<MapInstance|null>(null), highlight=useRef<Marker|null>(null);
  const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange});
  latest.current={cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnavailable,camera,onCameraChange};
+ const selectionSeen=useRef(activeKey);
+ const publishedCamera=useRef<MapCamera|null>(null);
+ const clusterRequest=useRef(0);
  const [ready,setReady]=useState(false),[status,setStatus]=useState('Loading map…'),[choices,setChoices]=useState<SiteCard[]>([]);
  useEffect(()=>{
   let disposed=false,resize:ResizeObserver|undefined;
@@ -37,7 +40,8 @@ export function SiteMap({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnav
     if(disposed)return;
     const b=instance.getBounds(),c=instance.getCenter();
     latest.current.onBoundsChange({west:b.getWest(),east:b.getEast(),south:b.getSouth(),north:b.getNorth()});
-    latest.current.onCameraChange?.({lng:c.lng,lat:c.lat,zoom:instance.getZoom()});
+    const position={lng:c.lng,lat:c.lat,zoom:instance.getZoom()};
+    publishedCamera.current=position;latest.current.onCameraChange?.(position);
    };
    instance.on('moveend',publish);
    instance.on('load',()=>{
@@ -48,8 +52,15 @@ export function SiteMap({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnav
     instance.addLayer({id:'site-dots',type:'circle',source:'sites',filter:['!',['has','point_count']],paint:{'circle-color':'#193963','circle-radius':7,'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
     instance.on('click','site-clusters',async e=>{
      const feature=e.features?.[0];if(!feature||feature.geometry.type!=='Point')return;
-     const zoom=await (instance.getSource('sites') as GeoJSONSource).getClusterExpansionZoom(Number(feature.properties?.cluster_id));
-     if(!disposed)instance.easeTo({center:feature.geometry.coordinates as [number,number],zoom:Math.max(zoom,instance.getZoom()+1),duration:reducedMotion()?0:450});
+     const request=++clusterRequest.current;
+     setChoices([]);
+     try {
+      const zoom=await (instance.getSource('sites') as GeoJSONSource).getClusterExpansionZoom(Number(feature.properties?.cluster_id));
+      if(disposed||request!==clusterRequest.current)return;
+      instance.stop();
+      instance.jumpTo({center:feature.geometry.coordinates as [number,number],zoom:Math.min(instance.getMaxZoom(),Math.max(zoom,instance.getZoom()+1))});
+      publish();
+     } catch { /* A cluster can disappear when filters change while its zoom is resolved. */ }
     });
     instance.on('click','site-dots',e=>{
      const feature=e.features?.[0];if(!feature||feature.geometry.type!=='Point')return;
@@ -84,11 +95,17 @@ export function SiteMap({cards,activeKey,hoverKey,onBoundsChange,onSelect,onUnav
  },[activeKey,hoverKey,cards,ready]);
  useEffect(()=>{
   const instance=map.current,card=cards.find(c=>c.key===activeKey);
-  if(!ready||!instance||!card||!hasCoordinates(card))return;
+  if(!ready||!instance)return;
+  if(selectionSeen.current===activeKey)return;
+  selectionSeen.current=activeKey;
+  if(!card||!hasCoordinates(card))return;
   if(!instance.getBounds().contains([card.longitude,card.latitude]))instance.easeTo({center:[card.longitude,card.latitude],duration:reducedMotion()?0:450});
  },[activeKey,ready,cards]);
  useEffect(()=>{
   const instance=map.current;if(!ready||!instance||!camera)return;
+  const published=publishedCamera.current;
+  // Camera values echoed through the URL must never undo an in-progress map interaction.
+  if(published&&Math.abs(published.lng-camera.lng)<.00002&&Math.abs(published.lat-camera.lat)<.00002&&Math.abs(published.zoom-camera.zoom)<.01)return;
   const center=instance.getCenter();
   if(Math.abs(center.lng-camera.lng)>.001||Math.abs(center.lat-camera.lat)>.001||Math.abs(instance.getZoom()-camera.zoom)>.02)instance.jumpTo({center:[camera.lng,camera.lat],zoom:camera.zoom});
  },[camera?.lng,camera?.lat,camera?.zoom,ready]);
