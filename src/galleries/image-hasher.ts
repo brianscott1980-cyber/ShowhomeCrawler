@@ -10,10 +10,15 @@ export async function imageIdentity(bytes: Buffer) {
  const thumb = await image.clone().rotate().resize(32, 32, { fit: 'fill' }).removeAlpha().raw().toBuffer();
  return { sha256: sha256(bytes), dhash: bits.toString(16).padStart(16, '0'), width: metadata.width!, height: metadata.height!, format: metadata.format!, thumb: thumb.toString('base64') };
 }
-export function hashDistance(a: string, b: string) { let bits = BigInt('0x' + a) ^ BigInt('0x' + b), count = 0; while (bits) { count += Number(bits & 1n); bits >>= 1n; } return count; }
+/** With a limit, return as soon as the distance exceeds it. */
+export function hashDistance(a: string, b: string, limit = 64) {
+ let bits = BigInt('0x' + a) ^ BigInt('0x' + b), count = 0;
+ while (bits && count <= limit) { bits &= bits - 1n; count++; }
+ return count;
+}
 export function sameVisual(a: Awaited<ReturnType<typeof imageIdentity>>, b: Awaited<ReturnType<typeof imageIdentity>>) {
  if (a.sha256 === b.sha256) return true;
- if (Math.abs(a.width / a.height - b.width / b.height) > 0.02 || hashDistance(a.dhash, b.dhash) > 2) return false;
+ if (Math.abs(a.width / a.height - b.width / b.height) > 0.02 || hashDistance(a.dhash, b.dhash, 2) > 2) return false;
  const left = Buffer.from(a.thumb, 'base64'), right = Buffer.from(b.thumb, 'base64');
  if (left.length !== right.length) return false;
  let square = 0; for (let i = 0; i < left.length; i++) square += (left[i]! - right[i]!) ** 2;
