@@ -28,6 +28,7 @@ export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
  'gleeson':{primary:'#49a942',secondary:'#1e392a',parts:['Gleeson Homes']},
  'morris-homes':{primary:'#00396f',secondary:'#00a4e8',parts:['Morris Homes']},
  'harron-homes':{primary:'#e84129',secondary:'#161412',parts:['Harron Homes']},
+ 'anwyl-homes':{primary:'#003a5d',secondary:'#00bbb4',parts:['Anwyl ','Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {
