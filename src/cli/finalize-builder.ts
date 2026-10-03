@@ -57,8 +57,34 @@ function inferVerdict(sourceUrl: string, altText?: string): Verdict {
 
 const postcodePattern = /\b(?:GIR\s?0AA|[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2})\b/i;
 
-function extractLocation(html: string) {
+function extractLocation(html: string, url?: string) {
   const $ = cheerio.load(html);
+
+  const rawDevJson = $('.js-dev-json').text().trim();
+  if (rawDevJson) {
+    try {
+      const list = JSON.parse(rawDevJson.replace(/\|/g, '"'));
+      const pathname = url ? new URL(url).pathname.replace(/\/$/, '') : '';
+      const item = list.find((d: any) =>
+        (d.DocumentUrlPath && d.DocumentUrlPath.replace(/\/$/, '') === pathname) ||
+        (d.NodeAliasPath && d.NodeAliasPath.replace(/\/$/, '') === pathname)
+      );
+      if (item && item.Latitude && item.Longitude) {
+        const lat = Number(item.Latitude), lon = Number(item.Longitude);
+        if (Number.isFinite(lat) && Number.isFinite(lon) && lat >= 49 && lat <= 61.2 && lon >= -9 && lon <= 3) {
+          const pcMatch = item.Address?.match(postcodePattern);
+          return { latitude: lat, longitude: lon, postcode: pcMatch ? pcMatch[0] : undefined };
+        }
+      }
+    } catch {}
+  }
+
+  const inpLat = Number($('input#latitude, input[name*="Latitude"]').val());
+  const inpLon = Number($('input#longitude, input[name*="Longitude"]').val());
+  if (Number.isFinite(inpLat) && Number.isFinite(inpLon) && inpLat >= 49 && inpLat <= 61.2 && inpLon >= -9 && inpLon <= 3) {
+    return { latitude: inpLat, longitude: inpLon };
+  }
+
   const nodes: any[] = [];
   function walk(v: any) {
     if (!v || typeof v !== 'object') return;
@@ -242,7 +268,7 @@ async function finalizeBuilder(builderSlug: string) {
 
     const pageCache = `results/.cache/pages/${sha256(devUrl)}.html`;
     let html = existsSync(pageCache) ? await readFile(pageCache, 'utf8') : '';
-    let loc = extractLocation(html);
+    let loc = extractLocation(html, devUrl);
 
     if (!('latitude' in loc) && loc.postcode) {
       try {

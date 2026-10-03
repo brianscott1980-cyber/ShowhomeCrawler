@@ -108,5 +108,10 @@
     "slug": "bloor-homes",
     "source": "https://bloorhomes.com/assets/images/logo.png",
     "file": "bloor-homes.png"
+  },
+  {
+    "slug": "keepmoat",
+    "source": "https://www.keepmoat.com/getmedia/c49b6577-7dad-4199-aa2b-53c40846d6c3/KeepmoatLogoMaster.svg",
+    "file": "keepmoat.svg"
   }
 ]

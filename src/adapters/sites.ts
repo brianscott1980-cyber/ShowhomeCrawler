@@ -1,5 +1,6 @@
 import { createVistryParser } from './vistry/site-parser.js';
 import * as bloor from './bloor/site-parser.js';
+import * as keepmoat from './keepmoat/site-parser.js';
 import * as tulloch from './tulloch/site-parser.js';
 import * as scotia from './scotia/site-parser.js';
 import * as robertson from './robertson/site-parser.js';
@@ -35,6 +36,7 @@ export function builderSite(slug='bellway') {
  if(slug==='linden-homes')return {name:'Linden Homes',slug,websiteUrl:'https://www.lindenhomes.co.uk',sitemap:'https://www.lindenhomes.co.uk/sitemap.xml',...createVistryParser('https://www.lindenhomes.co.uk')};
  if(slug==='countryside-homes')return {name:'Countryside Homes',slug,websiteUrl:'https://www.countrysidehomes.com',sitemap:'https://www.countrysidehomes.com/sitemap.xml',...createVistryParser('https://www.countrysidehomes.com')};
  if(slug==='bloor-homes')return {name:'Bloor Homes',slug,websiteUrl:'https://bloorhomes.com',sitemap:'https://bloorhomes.com/sitemap.xml',...bloor};
+ if(slug==='keepmoat')return {name:'Keepmoat',slug,websiteUrl:'https://www.keepmoat.com',sitemap:'https://www.keepmoat.com/sitemap',...keepmoat};
  throw new Error('Unsupported builder.');
 }
 import * as redrow from './redrow/site-parser.js';
