@@ -85,6 +85,14 @@ function extractLocation(html: string, url?: string) {
     return { latitude: inpLat, longitude: inpLon };
   }
 
+  const mapMatch = html.match(/mapLocation\([^,]+,\s*['"](-?\d+\.\d+)['"],\s*['"](-?\d+\.\d+)['"]\)/);
+  if (mapMatch) {
+    const lat = Number(mapMatch[1]), lon = Number(mapMatch[2]);
+    if (Number.isFinite(lat) && Number.isFinite(lon) && lat >= 49 && lat <= 61.2 && lon >= -9 && lon <= 3) {
+      return { latitude: lat, longitude: lon };
+    }
+  }
+
   const nodes: any[] = [];
   function walk(v: any) {
     if (!v || typeof v !== 'object') return;
