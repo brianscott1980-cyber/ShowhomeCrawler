@@ -27,6 +27,8 @@ async function main() {
  try {
   const pending = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict);
   await saveGeminiState(folder,{state:'analysing',model:classificationModel});
+  report.metrics.skippedExistingAnalyses=report.images.length-pending.length;
+  report.metrics.analysisCacheHits=0;
   report.status = 'classifying'; await writeReport(folder, report);
   for (let offset = 0; offset < pending.length; offset += 8) {
    const images = pending.slice(offset, offset + 8);
@@ -39,6 +41,7 @@ async function main() {
       if (isInferredAnalysis(cached)) continue;
       image.verdict = verdictSchema.parse(cached);
       image.analysisModel = cached.analysisModel ?? model;
+      report.metrics.analysisCacheHits++;
       delete image.error;
       if (values['all-images']) image.categorisation = cached.categorisation ?? extractBaseCategorisation(image.verdict.roomType, image.verdict.description, image.verdict.reason);
       break;

@@ -90,10 +90,12 @@ async function main() {
   const galleryCache = new Map<string, string[]>();
   for(const image of report.images){if(!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(image.path))throw new Error('Invalid resume image path.');const identity=await imageIdentity(await readFile(`${folder}/${image.path}`));if(identity.sha256!==image.id)throw new Error('Resume image does not match its identifier.');identities.push({identity,image});sourceImages.set(image.sourceUrl,image);}
   const completedProperties=new Set(report.properties.map(p=>p.url));
+  report.metrics.skippedCompletedGalleries=0;
   let imageAttempts = 0, analysisUnavailable = false;
   // All-images runs share at most three gallery workers, each with one image request at a time.
   await mapLimit(homes.slice(0, maxProperties), values['all-images'] ? Math.min(3, env.MAX_CONCURRENCY) : 1, async ({ home, development, plots }) => {
-   if (stopped || completedProperties.has(home.url)) return;
+   if (stopped) return;
+   if (completedProperties.has(home.url)){report.metrics.skippedCompletedGalleries=(report.metrics.skippedCompletedGalleries??0)+1;return;}
    const property = { development: development.name, developmentUrl: development.url, name: home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
    report.properties.push(property);
    try {
@@ -111,7 +113,7 @@ async function main() {
      if (stopped) return null;
      return sourceTasks.get(candidate.url, async () => {
      const known = sourceImages.get(candidate.url);
-     if (known) return known.id;
+     if (known) {report.metrics.reusedImageSources=(report.metrics.reusedImageSources??0)+1;return known.id;}
      if (imageAttempts >= maxImages) { report.metrics.imageLimitOmissions = (report.metrics.imageLimitOmissions ?? 0) + 1; return null; }
      imageAttempts++;
      try {
