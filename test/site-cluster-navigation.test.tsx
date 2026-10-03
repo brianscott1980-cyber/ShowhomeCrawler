@@ -9,6 +9,7 @@ vi.mock('maplibre-gl',()=>({
  Map:class {
   handlers=new Map<string,Function>();center={lng:0,lat:51};zoom=5;
   source={setData:vi.fn(),getClusterExpansionZoom:vi.fn(async()=>9),getClusterLeaves:vi.fn(async(id:number)=>[{properties:{key:id===7?'one':'other'}}])};
+  loadImage=vi.fn(async()=>({data:{}}));addImage=vi.fn();
   queryRenderedFeatures=vi.fn(()=>[] as any[]);setPaintProperty=vi.fn();layers:any[]=[];
   easeTo=vi.fn();stop=vi.fn();remove=vi.fn();resize=vi.fn();
   constructor(){state.instance=this;queueMicrotask(()=>this.handlers.get('load')?.());}
@@ -26,13 +27,18 @@ it('highlights the containing cluster with its count and retains cluster navigat
  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});
  for(const [key,value] of Object.entries({window:dom.window,document:dom.window.document,ResizeObserver:class {observe(){}disconnect(){}},IS_REACT_ACT_ENVIRONMENT:true}))vi.stubGlobal(key,value);
  const root=createRoot(document.getElementById('root')!);
- const card={key:'one',name:'Site',developer:'Builder',image:'',description:'',count:1,country:'England',properties:[],latitude:51,longitude:0};
+ const card={key:'one',name:'Site',developer:'Gleeson Homes',image:'',description:'',count:1,country:'England',properties:[],latitude:51,longitude:0};
  const bounds=vi.fn(),camera=vi.fn();
  const props={cards:[card],activeKey:'one',camera:{lng:0,lat:51,zoom:5},onBoundsChange:bounds,onCameraChange:camera,onSelect:vi.fn(),onUnavailable:vi.fn()};
  try{
   await act(async()=>root.render(<SiteMap {...props}/>));
   await act(async()=>{await vi.waitFor(()=>expect(state.instance).not.toBeNull());});
   const map=state.instance;
+  expect(map.source.setData.mock.calls.at(-1)[0].features[0].properties).toMatchObject({builderColour:'#49a942',builderIcon:'builder-gleeson'});
+  expect(map.addImage).toHaveBeenCalledWith('builder-gleeson',{}, {pixelRatio:2});
+  const badges=map.layers.find((layer:any)=>layer.id==='site-builder-icons');
+  expect(badges.minzoom).toBe(15);
+  expect(map.layers.find((layer:any)=>layer.id==='site-dots').paint['circle-color']).toEqual(['get','builderColour']);
   const counts=map.layers.find((layer:any)=>layer.id==='site-cluster-count');
   expect(counts.layout['text-field']).toEqual(['to-string',['get','point_count']]);
   expect(counts.layout['text-allow-overlap']).toBe(true);
