@@ -11,13 +11,16 @@ vi.mock('../src/web/site-map',async importOriginal=>{
 const cards:SiteCard[]=[{key:'one',name:'Southern Gardens',developer:'Bellway',image:'/one.jpg',description:'Kitchen',count:2,country:'England',latitude:51,longitude:0,properties:[]},{key:'two',name:'Northern Gardens',developer:'Cala',image:'/two.jpg',description:'Living room',count:3,country:'Scotland',latitude:55,longitude:-4,properties:[]}];
 afterEach(()=>vi.unstubAllGlobals());
 describe('Locations explorer',()=>{
- it('loads the map on demand, filters its viewport and synchronises selections in both directions',async()=>{
+ it('defaults to Map, supports explicit layouts and synchronises viewport selections',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test/locations'});
   for(const [key,value] of Object.entries({window:dom.window,self:dom.window,document:dom.window.document,sessionStorage:dom.window.sessionStorage,HTMLElement:dom.window.HTMLElement,requestAnimationFrame:(callback:()=>void)=>{callback();return 1;},IS_REACT_ACT_ENVIRONMENT:true}))vi.stubGlobal(key,value);
   const root=createRoot(document.getElementById('root')!);
   try{
-   await act(async()=>root.render(<SiteDirectory cards={cards}/>));
+   await act(async()=>root.render(<SiteDirectory cards={cards} defaultView="map"/>));
+   expect(document.querySelector('[data-testid="map"]')).not.toBeNull();
+   await act(async()=>[...document.querySelectorAll('button')].find(b=>b.textContent==='List')!.click());
    expect(document.querySelector('[data-testid="map"]')).toBeNull();
+   expect(window.location.search).toContain('view=list');
    await act(async()=>document.querySelector<HTMLButtonElement>('[aria-label="Map"]')!.click());
    expect(document.querySelector('[data-testid="map"]')).not.toBeNull();
    await act(async()=>document.querySelector<HTMLButtonElement>('[aria-label="Select Northern Gardens on map"]')!.click());
