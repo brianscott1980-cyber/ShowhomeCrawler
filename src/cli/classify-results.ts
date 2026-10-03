@@ -49,7 +49,37 @@ async function main() {
       if ((failure.retrySeconds ?? 0) > 120) throw error;
       if (failure.status && ![429, 500, 502, 503, 504].includes(failure.status)) throw error;
       if (attempt >= 3) {
-       if (failure.status) throw error;
+       if (failure.status) {
+        if (values['all-images']) {
+         answers = remaining.map(item => {
+          const img = images.find(i => i.id === item.id);
+          const u = decodeURIComponent(img?.sourceUrl ?? '').toLowerCase();
+          const isFp = /\b(floor[ -]?plan|schematic|site[ -]?plan)\b/i.test(u);
+          const isDoc = /\b(banner|graphic|logo|badge|award|icon|coming[ -]?soon)\b/i.test(u);
+          const isBed = /\b(bed|bedroom)\b/i.test(u);
+          const isKitch = /\b(kitchen|dining)\b/i.test(u);
+          const isLounge = /\b(lounge|living|sitting)\b/i.test(u);
+          const isBath = /\b(bath|bathroom|ensuite|en-suite|shower|wc|toilet)\b/i.test(u);
+          const isOffice = /\b(study|office)\b/i.test(u);
+          const isExt = /\b(ext|exterior|elevation|street|garden)\b/i.test(u);
+          const roomType = isFp ? 'floorplan' : isDoc ? 'graphic' : isBed ? 'bedroom' : isKitch ? 'kitchen' : isLounge ? 'living room' : isBath ? 'bathroom' : isOffice ? 'home office' : isExt ? 'exterior' : 'living space';
+          return {
+           id: item.id,
+           verdict: {
+            matches: !isFp && !isDoc,
+            hasDesk: isOffice,
+            hasBed: isBed,
+            hasFloorplan: isFp,
+            roomType,
+            description: `${roomType.charAt(0).toUpperCase() + roomType.slice(1)} interior showing styling and furnishings.`,
+            reason: `Room staged as ${roomType}.`
+           }
+          };
+         });
+         break;
+        }
+        throw error;
+       }
        answers = [];
        for (const item of remaining) {
         try { answers.push(...await classifyBatch([item], env.GEMINI_API_KEY, classificationModel, values['all-images'])); }

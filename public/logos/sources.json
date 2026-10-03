@@ -88,5 +88,20 @@
     "slug": "scotia-homes",
     "source": "https://www.scotia-homes.co.uk/assets/img/scotia-homes-logo-navy.svg",
     "file": "scotia-homes.svg"
+  },
+  {
+    "slug": "bovis-homes",
+    "source": "https://www.bovishomes.co.uk/images/bovis-logo.png",
+    "file": "bovis-homes.png"
+  },
+  {
+    "slug": "linden-homes",
+    "source": "https://www.lindenhomes.co.uk/images/linden-logo.png",
+    "file": "linden-homes.png"
+  },
+  {
+    "slug": "countryside-homes",
+    "source": "https://www.countrysidehomes.com/images/countryside-logo.png",
+    "file": "countryside-homes.png"
   }
 ]

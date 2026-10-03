@@ -1,0 +1,625 @@
+[
+  {
+    "name": "Finchwood Park",
+    "url": "https://www.bovishomes.co.uk/developments/berkshire/finchwood-park-finchampstead",
+    "latitude": 51.397856,
+    "longitude": -0.814027,
+    "postcode": "RG40 4BL"
+  },
+  {
+    "name": "Holme Meadows",
+    "url": "https://www.bovishomes.co.uk/developments/berkshire/holme-meadows-wokingham",
+    "latitude": 51.403506,
+    "longitude": -0.808398,
+    "postcode": "RG40 3BY"
+  },
+  {
+    "name": "Castle Fields",
+    "url": "https://www.bovishomes.co.uk/developments/gloucestershire/castle-fields",
+    "latitude": 51.625155,
+    "longitude": -2.530557,
+    "postcode": "BS35 1RD"
+  },
+  {
+    "name": "Battledown Mews",
+    "url": "https://www.bovishomes.co.uk/developments/gloucestershire/battledown-mews-cheltenham",
+    "latitude": 51.898745,
+    "longitude": -2.045941,
+    "postcode": "GL52 6PP"
+  },
+  {
+    "name": "Bovis at Linby Meadows",
+    "url": "https://www.bovishomes.co.uk/developments/nottinghamshire/bovis-at-linby-meadows",
+    "latitude": 53.049759,
+    "longitude": -1.219047,
+    "postcode": "NG15 8AZ"
+  },
+  {
+    "name": "FORDHAM",
+    "url": "https://www.bovishomes.co.uk/developments/west-sussex/fordham-ford",
+    "latitude": 50.826382,
+    "longitude": -0.596698,
+    "postcode": "BN18 0DF"
+  },
+  {
+    "name": "Glebe Fields",
+    "url": "https://www.bovishomes.co.uk/developments/west-sussex/glebe-fields-steyning",
+    "latitude": 50.891077,
+    "longitude": -0.320932,
+    "postcode": "BN44 3YU"
+  },
+  {
+    "name": "Highfield Park",
+    "url": "https://www.bovishomes.co.uk/developments/yorkshire/highfield-park-waverley",
+    "latitude": 53.384398,
+    "longitude": -1.369613,
+    "postcode": "S60 8DD"
+  },
+  {
+    "name": "Bovis Homes at Simpson Park",
+    "url": "https://www.bovishomes.co.uk/developments/yorkshire/simpson-park",
+    "latitude": 53.413099,
+    "longitude": -1.056833,
+    "postcode": "DN11 8FN"
+  },
+  {
+    "name": "Maple Grange",
+    "url": "https://www.bovishomes.co.uk/developments/yorkshire/maple-grange",
+    "latitude": 53.586785,
+    "longitude": -1.490879,
+    "postcode": "S75 6DL"
+  },
+  {
+    "name": "Blackmoor Heath",
+    "url": "https://www.bovishomes.co.uk/developments/yorkshire/blackmoorfoot-road-huddersfield",
+    "latitude": 53.627307,
+    "longitude": -1.825906,
+    "postcode": "HD4 7AE"
+  },
+  {
+    "name": "Bamford Park at Windmill View",
+    "url": "https://www.bovishomes.co.uk/developments/warwickshire/bamford-park-lighthorne",
+    "latitude": 52.20771,
+    "longitude": -1.49573,
+    "postcode": "CV35 0AE"
+  },
+  {
+    "name": "The Arboretum",
+    "url": "https://www.bovishomes.co.uk/developments/warwickshire/balsall-common",
+    "latitude": 52.38374,
+    "longitude": -1.631905,
+    "postcode": "CV7 7GX"
+  },
+  {
+    "name": "The Skylarks",
+    "url": "https://www.bovishomes.co.uk/developments/bedfordshire/the-skylarks-westoning",
+    "latitude": 51.984859,
+    "longitude": -0.496361,
+    "postcode": "MK45 5FL"
+  },
+  {
+    "name": "Buckler's Park",
+    "url": "https://www.bovishomes.co.uk/developments/berkshire/bucklers-park-crowthorne",
+    "latitude": 51.383946,
+    "longitude": -0.787439,
+    "postcode": "RG40 3GA"
+  },
+  {
+    "name": "Windsor Arch, Windsor",
+    "url": "https://www.bovishomes.co.uk/developments/berkshire/windsor-arch-windsor",
+    "latitude": 51.479349,
+    "longitude": -0.658357,
+    "postcode": "SL4 4LH"
+  },
+  {
+    "name": "Emmer Green Drive",
+    "url": "https://www.bovishomes.co.uk/developments/berkshire/emmer-green-drive-caversham",
+    "latitude": 51.485098,
+    "longitude": -0.967133,
+    "postcode": "RG4 8SQ"
+  },
+  {
+    "name": "Willow Park",
+    "url": "https://www.bovishomes.co.uk/developments/buckinghamshire/willow-park-buckingham",
+    "latitude": 51.98647,
+    "longitude": -0.989753,
+    "postcode": "MK18 1TG"
+  },
+  {
+    "name": "Lunar Park",
+    "url": "https://www.bovishomes.co.uk/developments/cambridgeshire/lunar-park-west-cambourne",
+    "latitude": 52.219392,
+    "longitude": -0.096271,
+    "postcode": "CB23 6LL"
+  },
+  {
+    "name": "Bovis Homes @ King James' Park",
+    "url": "https://www.bovishomes.co.uk/developments/cambridgeshire/king-james-park-newmarket",
+    "latitude": 52.25866,
+    "longitude": 0.40116,
+    "postcode": "CB8 7XL"
+  },
+  {
+    "name": "Bovis Homes @ Northstowe",
+    "url": "https://www.bovishomes.co.uk/developments/cambridgeshire/bovis-homes-northstowe",
+    "latitude": 52.289489,
+    "longitude": 0.056249,
+    "postcode": "CB24 1DE"
+  },
+  {
+    "name": "Bovis Homes @ Quantum Fields",
+    "url": "https://www.bovishomes.co.uk/developments/cambridgeshire/quantum-fields-littleport",
+    "latitude": 52.450115,
+    "longitude": 0.288783,
+    "postcode": "CB6 1TB"
+  },
+  {
+    "name": "Heatherfields",
+    "url": "https://www.bovishomes.co.uk/developments/cheshire/heatherfields-bovis-warrington",
+    "latitude": 53.419971,
+    "longitude": -2.56989,
+    "postcode": "WA2 0LX"
+  },
+  {
+    "name": "The Cornish Quarter",
+    "url": "https://www.bovishomes.co.uk/developments/cornwall/the-cornish-quarter",
+    "latitude": 50.51645,
+    "longitude": -4.82159,
+    "postcode": "PL27 6AY"
+  },
+  {
+    "name": "Brimington Heights",
+    "url": "https://www.bovishomes.co.uk/developments/derbyshire/brimington-heights-chesterfield",
+    "latitude": 53.25652,
+    "longitude": -1.39747,
+    "postcode": "S43 1AB"
+  },
+  {
+    "name": "Meadowbrook Gate, Sherford",
+    "url": "https://www.bovishomes.co.uk/developments/devon/sherford-plymouth",
+    "latitude": 50.365799,
+    "longitude": -4.05692,
+    "postcode": "PL9 8FA"
+  },
+  {
+    "name": "Tor View, Tavistock",
+    "url": "https://www.bovishomes.co.uk/developments/devon/tor-view-tavistock",
+    "latitude": 50.540587,
+    "longitude": -4.162845,
+    "postcode": "PL19 8GP"
+  },
+  {
+    "name": "Haldon Reach, Alphington",
+    "url": "https://www.bovishomes.co.uk/developments/devon/haldon-reach-alphington",
+    "latitude": 50.687099,
+    "longitude": -3.517607,
+    "postcode": "EX2 8YP"
+  },
+  {
+    "name": "The Hedgerows at Matford Brook",
+    "url": "https://www.bovishomes.co.uk/developments/devon/matford-brook-exeter",
+    "latitude": 50.692292,
+    "longitude": -3.531904,
+    "postcode": "EX2 0DA"
+  },
+  {
+    "name": "Pebble Beach",
+    "url": "https://www.bovishomes.co.uk/developments/devon/pebble-beach-seaton",
+    "latitude": 50.704547,
+    "longitude": -3.065483,
+    "postcode": "EX12 2FT"
+  },
+  {
+    "name": "Harrington Gardens, Pinhoe",
+    "url": "https://www.bovishomes.co.uk/developments/devon/harrington-gardens-pinhoe",
+    "latitude": 50.740849,
+    "longitude": -3.47896,
+    "postcode": "EX4 8NS"
+  },
+  {
+    "name": "Bay View",
+    "url": "https://www.bovishomes.co.uk/developments/devon/bay-view-northam",
+    "latitude": 51.037296,
+    "longitude": -4.231512,
+    "postcode": "EX39 1FT"
+  },
+  {
+    "name": "Foundry Lea, Bridport",
+    "url": "https://www.bovishomes.co.uk/developments/dorset/foundry-lea-bridport",
+    "latitude": 50.734905,
+    "longitude": -2.773426,
+    "postcode": "DT6 6AF"
+  },
+  {
+    "name": "The Gateway",
+    "url": "https://www.bovishomes.co.uk/developments/east-sussex/the-gateway-bexhill",
+    "latitude": 50.855792,
+    "longitude": 0.485163,
+    "postcode": "TN40 2GS"
+  },
+  {
+    "name": "Liberty Place",
+    "url": "https://www.bovishomes.co.uk/developments/east-sussex/liberty-place-hailsham",
+    "latitude": 50.864578,
+    "longitude": 0.27015,
+    "postcode": "BN27 2RE"
+  },
+  {
+    "name": "Heath Farm",
+    "url": "https://www.bovishomes.co.uk/developments/greater-manchester/heath-farm-bovis-partington",
+    "latitude": 53.41806,
+    "longitude": -2.415693,
+    "postcode": "M31 4SA"
+  },
+  {
+    "name": "Hollin Bank",
+    "url": "https://www.bovishomes.co.uk/developments/greater-manchester/hollin-bank-littleborough",
+    "latitude": 53.638763,
+    "longitude": -2.099192,
+    "postcode": "OL15 0AU"
+  },
+  {
+    "name": "Whiteley Meadows",
+    "url": "https://www.bovishomes.co.uk/developments/hampshire/whiteley-meadows-whiteley",
+    "latitude": 50.904072,
+    "longitude": -1.244564,
+    "postcode": "SO30 2EE"
+  },
+  {
+    "name": "Hopfields",
+    "url": "https://www.bovishomes.co.uk/developments/herefordshire/hopfields-ledbury",
+    "latitude": 52.026334,
+    "longitude": -2.422676,
+    "postcode": "HR8 2WG"
+  },
+  {
+    "name": "Oakridge Grange",
+    "url": "https://www.bovishomes.co.uk/developments/kent/oakridge-grange-tenterden",
+    "latitude": 51.069069,
+    "longitude": 0.704137,
+    "postcode": "TN30 7BE"
+  },
+  {
+    "name": "Pippins Place",
+    "url": "https://www.bovishomes.co.uk/developments/kent/pippins-place-west-malling",
+    "latitude": 51.298077,
+    "longitude": 0.426615,
+    "postcode": "ME19 5EY"
+  },
+  {
+    "name": "Artemis View",
+    "url": "https://www.bovishomes.co.uk/developments/kent/artemis-view-thanet",
+    "latitude": 51.36935,
+    "longitude": 1.3849,
+    "postcode": "CT9 4HW"
+  },
+  {
+    "name": "Collingwood Park",
+    "url": "https://www.bovishomes.co.uk/developments/lancashire/collingwood-park-darwen",
+    "latitude": 53.70599,
+    "longitude": -2.455252,
+    "postcode": "BB3 3BL"
+  },
+  {
+    "name": "Sunnybower Meadow",
+    "url": "https://www.bovishomes.co.uk/developments/lancashire/sunnybower-meadow",
+    "latitude": 53.766882,
+    "longitude": -2.461936,
+    "postcode": "BB1 5QL"
+  },
+  {
+    "name": "Collingtree Park",
+    "url": "https://www.bovishomes.co.uk/developments/northamptonshire/collingtree-park-northampton",
+    "latitude": 52.197888,
+    "longitude": -0.904316,
+    "postcode": "NN4 0BF"
+  },
+  {
+    "name": "Western Gate",
+    "url": "https://www.bovishomes.co.uk/developments/northamptonshire/western-gate-northampton",
+    "latitude": 52.238937,
+    "longitude": -0.972792,
+    "postcode": "NN7 4AP"
+  },
+  {
+    "name": "The Atrium",
+    "url": "https://www.bovishomes.co.uk/developments/northamptonshire/the-atrium-overstone",
+    "latitude": 52.284362,
+    "longitude": -0.8369,
+    "postcode": "NN6 0AA"
+  },
+  {
+    "name": "Wendelburie Rise at Stanton Cross",
+    "url": "https://www.bovishomes.co.uk/developments/northamptonshire/wendelburie-rise-wellingborough",
+    "latitude": 52.306067,
+    "longitude": -0.667324,
+    "postcode": "NN8 1TA"
+  },
+  {
+    "name": "Bovis Homes @ Priors Hall Park",
+    "url": "https://www.bovishomes.co.uk/developments/northamptonshire/priors-hall-corby",
+    "latitude": 52.504077,
+    "longitude": -0.629672,
+    "postcode": "NN17 5DE"
+  },
+  {
+    "name": "Edwalton Fields, Nottingham",
+    "url": "https://www.bovishomes.co.uk/developments/nottinghamshire/edwalton-fields-nottingham",
+    "latitude": 52.906166,
+    "longitude": -1.123481,
+    "postcode": "NG12 4JE"
+  },
+  {
+    "name": "Appletons at Kingsgrove",
+    "url": "https://www.bovishomes.co.uk/developments/oxfordshire/appletons-at-kingsgrove-wantage",
+    "latitude": 51.596802,
+    "longitude": -1.408526,
+    "postcode": "OX12 7FY"
+  },
+  {
+    "name": "Kidlington Park",
+    "url": "https://www.bovishomes.co.uk/developments/oxfordshire/kidlington-park-oxford",
+    "latitude": 51.811795,
+    "longitude": -1.275157,
+    "postcode": "OX5 2PR"
+  },
+  {
+    "name": "The Rambles",
+    "url": "https://www.bovishomes.co.uk/developments/shropshire/the-rambles-telford",
+    "latitude": 52.655832,
+    "longitude": -2.419789,
+    "postcode": "TF7 4FE"
+  },
+  {
+    "name": "The Quarters @ Redhill",
+    "url": "https://www.bovishomes.co.uk/developments/shropshire/the-quarters-redhill",
+    "latitude": 52.69498,
+    "longitude": -2.40054,
+    "postcode": "TF2 9SA"
+  },
+  {
+    "name": "Partridge Walk",
+    "url": "https://www.bovishomes.co.uk/developments/staffordshire/partridge-walk-stafford",
+    "latitude": 52.836992,
+    "longitude": -2.134106,
+    "postcode": "ST16 1ZH"
+  },
+  {
+    "name": "Scholars' Meadows",
+    "url": "https://www.bovishomes.co.uk/developments/tyne-and-wear/scholars-meadows",
+    "latitude": 54.927972,
+    "longitude": -1.775528,
+    "postcode": "NE39 2BX"
+  },
+  {
+    "name": "The Chancery",
+    "url": "https://www.bovishomes.co.uk/developments/warwickshire/the-chancery-shottery",
+    "latitude": 52.18599,
+    "longitude": -1.73265,
+    "postcode": "CV37 9RZ"
+  },
+  {
+    "name": "Stoneleigh View",
+    "url": "https://www.bovishomes.co.uk/developments/warwickshire/stoneleigh-view-kenilworth",
+    "latitude": 52.344356,
+    "longitude": -1.552492,
+    "postcode": "CV8 2SB"
+  },
+  {
+    "name": "Austin Heights",
+    "url": "https://www.bovishomes.co.uk/developments/west-midlands/austin-heights-longbridge",
+    "latitude": 52.391987,
+    "longitude": -1.986869,
+    "postcode": "B31 2GY"
+  },
+  {
+    "name": "Walstead Park",
+    "url": "https://www.bovishomes.co.uk/developments/west-sussex/walstead-park-lindfield",
+    "latitude": 51.003441,
+    "longitude": -0.06769,
+    "postcode": "RH16 2QG"
+  },
+  {
+    "name": "Marshalls Green, Devizes",
+    "url": "https://www.bovishomes.co.uk/developments/wiltshire/marshalls-green-devizes",
+    "latitude": 51.340489,
+    "longitude": -1.977267,
+    "postcode": "SN10 3FY"
+  },
+  {
+    "name": "Buckley Place",
+    "url": "https://www.bovishomes.co.uk/developments/wiltshire/buckley-place-hullavington",
+    "latitude": 51.541125,
+    "longitude": -2.147509,
+    "postcode": "SN14 6EF"
+  },
+  {
+    "name": "Redlands Grove",
+    "url": "https://www.bovishomes.co.uk/developments/wiltshire/redlands-grove-wanborough",
+    "latitude": 51.559311,
+    "longitude": -1.70713,
+    "postcode": "SN3 0AE"
+  },
+  {
+    "name": "King George Park",
+    "url": "https://www.bovishomes.co.uk/developments/wiltshire/king-george-park-swindon",
+    "latitude": 51.564398,
+    "longitude": -1.717798,
+    "postcode": "SN4 0SN"
+  },
+  {
+    "name": "Woodlands",
+    "url": "https://www.bovishomes.co.uk/developments/wiltshire/woodlands-south-marston",
+    "latitude": 51.585418,
+    "longitude": -1.714347,
+    "postcode": "SN3 4ST"
+  },
+  {
+    "name": "Elgar Park",
+    "url": "https://www.bovishomes.co.uk/developments/worcestershire/elgar-park-worcester",
+    "latitude": 52.203449,
+    "longitude": -2.250305,
+    "postcode": "WR2 6RF"
+  },
+  {
+    "name": "Potteric Edge",
+    "url": "https://www.bovishomes.co.uk/developments/yorkshire/potteric-edge-lakeside-doncaster",
+    "latitude": 53.50621,
+    "longitude": -1.10195,
+    "postcode": "DN4 5FY"
+  },
+  {
+    "name": "Greenwell Park",
+    "url": "https://www.bovishomes.co.uk/developments/yorkshire/greenwell-park-garforth",
+    "latitude": 53.786249,
+    "longitude": -1.402865,
+    "postcode": "LS25 1LF"
+  },
+  {
+    "name": "Spring Vale",
+    "url": "https://www.bovishomes.co.uk/developments/yorkshire/spring-vale-knaresborough",
+    "latitude": 54.008754,
+    "longitude": -1.444498,
+    "postcode": "HG5 0FY"
+  },
+  {
+    "name": "Broxborough Park",
+    "url": "https://www.bovishomes.co.uk/developments/surrey/broxborough-park-ottershaw",
+    "latitude": 51.35957,
+    "longitude": -0.53148,
+    "postcode": "KT16 0LQ"
+  },
+  {
+    "name": "Hatters Chase",
+    "url": "https://www.bovishomes.co.uk/developments/cheshire/hatters-chase-sandymoor",
+    "latitude": 53.339516,
+    "longitude": -2.656382,
+    "postcode": "WA7 1EB"
+  },
+  {
+    "name": "Bovis Homes at Bollin Grange",
+    "url": "https://www.bovishomes.co.uk/developments/cheshire/bollin-grange-macclesfield",
+    "latitude": 53.23439,
+    "longitude": -2.13204,
+    "postcode": "SK11 0JZ"
+  },
+  {
+    "name": "Coppice Green at Pickford Gate",
+    "url": "https://www.bovishomes.co.uk/developments/west-midlands/pickford-gate-coventry",
+    "latitude": 52.42632,
+    "longitude": -1.59873,
+    "postcode": "CV5 9AQ"
+  },
+  {
+    "name": "The Riverside",
+    "url": "https://www.bovishomes.co.uk/developments/staffordshire/riverside-drakelow",
+    "latitude": 52.777991,
+    "longitude": -1.647772,
+    "postcode": "DE15 9WQ"
+  },
+  {
+    "name": "Stone Walk",
+    "url": "https://www.bovishomes.co.uk/developments/staffordshire/stone-walk-seabridge",
+    "latitude": 52.990711,
+    "longitude": -2.2397,
+    "postcode": "ST5 3UB"
+  },
+  {
+    "name": "Habberley Park",
+    "url": "https://www.bovishomes.co.uk/developments/worcestershire/habberley-park-kidderminster",
+    "latitude": 52.38444,
+    "longitude": -2.29497,
+    "postcode": "DY11 5RJ"
+  },
+  {
+    "name": "Clover View, Boulton Moor, Derby",
+    "url": "https://www.bovishomes.co.uk/developments/derbyshire/clover-view-derby",
+    "latitude": 52.880044,
+    "longitude": -1.413044,
+    "postcode": "DE24 5AX"
+  },
+  {
+    "name": "Summerhill Gardens",
+    "url": "https://www.bovishomes.co.uk/developments/east-sussex/summerhill-gardens-hailsham",
+    "latitude": 50.847412,
+    "longitude": 0.255274,
+    "postcode": "BN27 2RG"
+  },
+  {
+    "name": "Elsenham Brook",
+    "url": "https://www.bovishomes.co.uk/developments/hertfordshire/elsenham-brook-hertfordshire",
+    "latitude": 51.913731,
+    "longitude": 0.23562,
+    "postcode": "CM22 6DN"
+  },
+  {
+    "name": "Coggeshall Mill",
+    "url": "https://www.bovishomes.co.uk/developments/essex/coggeshall-mill-essex",
+    "postcode": "CO6 1ZN",
+    "latitude": 51.87346,
+    "longitude": 0.69829
+  },
+  {
+    "name": "Mill View",
+    "url": "https://www.bovishomes.co.uk/developments/west-sussex/mill-view-pagham",
+    "latitude": 50.78403,
+    "longitude": -0.72933,
+    "postcode": "PO21 3US"
+  },
+  {
+    "name": "Orchard Park",
+    "url": "https://www.bovishomes.co.uk/developments/west-sussex/orchard-park-kirdford",
+    "latitude": 51.035014,
+    "longitude": -0.55527,
+    "postcode": "RH14 0JR"
+  },
+  {
+    "name": "Meadow View",
+    "url": "https://www.bovishomes.co.uk/developments/east-sussex/meadow-view-crowborough",
+    "latitude": 51.041433,
+    "longitude": 0.175762,
+    "postcode": "TN6 3GF"
+  },
+  {
+    "name": "St James Gate",
+    "url": "https://www.bovishomes.co.uk/developments/warwickshire/st-james-gate-bulkington",
+    "latitude": 52.47371,
+    "longitude": -1.43123,
+    "postcode": "CV12 9NJ"
+  },
+  {
+    "name": "Roman Fields",
+    "url": "https://www.bovishomes.co.uk/developments/oxfordshire/roman-fields-banbury",
+    "latitude": 52.080914,
+    "longitude": -1.369297,
+    "postcode": "OX16 1AR"
+  },
+  {
+    "name": "St Nicholas Place",
+    "url": "https://www.bovishomes.co.uk/developments/surrey/st-nicholas-place-alfold",
+    "latitude": 51.098885,
+    "longitude": -0.495753,
+    "postcode": "GU6 8JE"
+  },
+  {
+    "name": "Broadnook Garden Village",
+    "url": "https://www.bovishomes.co.uk/developments/leicestershire/broadnook-garden-village-rothley",
+    "latitude": 52.695067,
+    "longitude": -1.139381,
+    "postcode": "LE7 6AU"
+  },
+  {
+    "name": "Windrush Place Apartments",
+    "url": "https://www.bovishomes.co.uk/developments/oxfordshire/windrush-place-apartments-witney",
+    "latitude": 51.782515,
+    "longitude": -1.519394,
+    "postcode": "OX29 7BW"
+  },
+  {
+    "name": "Orchard Grove",
+    "url": "https://www.bovishomes.co.uk/developments/somerset/orchard-grove-comeytrowe",
+    "latitude": 51.003422,
+    "longitude": -3.13476,
+    "postcode": "TA4 1FE"
+  }
+]
