@@ -209,8 +209,9 @@ export function Gallery({
   <section aria-label="Image collection" className={featured ? 'featured-gallery' : undefined}>
    {introduction && <>
     <section className={`results-hero${introduction.details?' builder-results-hero':''}`}>
+     {introduction.details&&introduction.back&&<Link className="results-back builder-results-back" href={introduction.back.href}>{introduction.back.label}</Link>}
      <div className="results-hero-copy">
-      {introduction.back && <Link className="results-back" href={introduction.back.href}>{introduction.back.label}</Link>}
+      {!introduction.details&&introduction.back && <Link className="results-back" href={introduction.back.href}>{introduction.back.label}</Link>}
       {introduction.eyebrow&&<p className="eyebrow">{introduction.eyebrow}</p>}
       <h1>{introduction.title}</h1>
       <p>{introduction.description}</p>
