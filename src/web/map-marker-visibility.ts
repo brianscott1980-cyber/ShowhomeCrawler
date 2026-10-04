@@ -1,5 +1,4 @@
 import type {MapGeoJSONFeature} from 'maplibre-gl';
-import {BUILDER_ICON_ZOOM} from './builder-map-brand';
 
 export interface FocusArea {
  left: number;
@@ -24,7 +23,7 @@ export async function fullyVisibleSiteKeys(features:Pick<MapGeoJSONFeature,'geom
   const properties=feature.properties;
   const count=Number(properties.point_count??0);
   // Include the white outline; cluster allowance also accommodates its highlighted outline.
-  const radius=count?(count>=100?25:count>=20?21:17)+4:zoom>=BUILDER_ICON_ZOOM?16:9;
+  const radius=count?(count>=100?25:count>=20?21:17)+4:16;
   if(!markerFitsViewport(project(feature.geometry.coordinates as [number,number]),radius,size,focusArea))return;
   if(count){
    const id=Number(properties.cluster_id);if(clusters.has(id))return;clusters.add(id);

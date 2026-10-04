@@ -5,8 +5,7 @@ import {useEffect, useRef, useState} from 'react';
 import type {Map as MapInstance, Marker, GeoJSONSource} from 'maplibre-gl';
 import {siteExpansionZoom} from './site-cluster-focus';
 import {fullyVisibleSiteKeys,type FocusArea} from './map-marker-visibility';
-import {developers} from '../adapters/developers';
-import {builderMapBrand,BUILDER_ICON_ZOOM} from './builder-map-brand';
+import {builderMapBrand} from './builder-map-brand';
 import type {SiteCard} from './site-filters';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -21,7 +20,7 @@ export function inMapBounds(card:SiteCard, bounds:MapBounds) {
  return card.latitude>=bounds.south && card.latitude<=bounds.north && longitude<=bounds.east;
 }
 function siteFeatures(cards:SiteCard[]) {
- return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderIcon:`builder-${builderMapBrand(card.developer).slug}`}}))};
+ return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderInitial:builderMapBrand(card.developer).initial}}))};
 }
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
@@ -54,17 +53,8 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
     instance.addSource('sites',{type:'geojson',data:siteFeatures(latest.current.cards),cluster:true,clusterRadius:38,clusterMaxZoom:13});
     instance.addLayer({id:'site-clusters',type:'circle',source:'sites',filter:['has','point_count'],paint:{'circle-color':'#193963','circle-radius':['step',['get','point_count'],17,20,21,100,25],'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
     instance.addLayer({id:'site-cluster-count',type:'symbol',source:'sites',filter:['has','point_count'],layout:{'text-field':['to-string',['get','point_count']],'text-font':['Noto Sans Regular'],'text-size':12,'text-allow-overlap':true,'text-ignore-placement':true},paint:{'text-color':'#ffffff'}});
-    instance.addLayer({id:'site-dots',type:'circle',source:'sites',filter:['!',['has','point_count']],paint:{'circle-color':['get','builderColour'],'circle-radius':['step',['zoom'],7,BUILDER_ICON_ZOOM,14],'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
-    // Keep the coloured dot as a fallback if a badge image cannot be loaded.
-    void Promise.all([...developers.map(d=>d.slug),'unknown'].map(async slug=>{
-     try {
-      const image=await instance.loadImage(`/maps/builders/${slug}.png`);
-      if(!disposed)instance.addImage(`builder-${slug}`,image.data,{pixelRatio:2});
-     } catch { /* The builder-coloured dot remains usable if its badge is unavailable. */ }
-    })).then(()=>{
-     if(disposed)return;
-     instance.addLayer({id:'site-builder-icons',type:'symbol',source:'sites',minzoom:BUILDER_ICON_ZOOM,filter:['!',['has','point_count']],layout:{'icon-image':['get','builderIcon'],'icon-allow-overlap':true,'icon-ignore-placement':true}});
-    });
+    instance.addLayer({id:'site-builder-badges',type:'circle',source:'sites',filter:['!',['has','point_count']],paint:{'circle-color':['get','builderColour'],'circle-radius':14,'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
+    instance.addLayer({id:'site-builder-icons',type:'symbol',source:'sites',filter:['!',['has','point_count']],layout:{'text-field':['get','builderInitial'],'text-font':['Noto Sans Regular'],'text-size':16,'text-allow-overlap':true,'text-ignore-placement':true},paint:{'text-color':'#ffffff'}});
     instance.on('click','site-clusters',async e=>{
      const feature=e.features?.[0];if(!feature||feature.geometry.type!=='Point')return;
      const request=++clusterRequest.current;
@@ -77,13 +67,13 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
       publish();
      } catch { /* A cluster can disappear when filters change while its zoom is resolved. */ }
     });
-    instance.on('click',['site-dots','site-builder-icons'],e=>{
+    instance.on('click',['site-builder-badges','site-builder-icons'],e=>{
      const feature=e.features?.[0];if(!feature||feature.geometry.type!=='Point')return;
      const [lng,lat]=feature.geometry.coordinates;
      const coincident=latest.current.cards.filter(c=>hasCoordinates(c)&&Math.abs(c.longitude-lng!)<0.00001&&Math.abs(c.latitude-lat!)<0.00001);
      if(coincident.length>1)setChoices(coincident);else if(feature.properties?.key)latest.current.onSelect(String(feature.properties.key));
     });
-    for(const layer of ['site-clusters','site-dots','site-builder-icons']){
+    for(const layer of ['site-clusters','site-builder-badges','site-builder-icons']){
      instance.on('mouseenter',layer,()=>{instance.getCanvas().style.cursor='pointer';});
      instance.on('mouseleave',layer,()=>{instance.getCanvas().style.cursor='';});
     }
@@ -112,7 +102,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
    const current=++request;
    const canvas=instance.getCanvas(),center=instance.getCenter();
    try {
-    const keys=await fullyVisibleSiteKeys(instance.queryRenderedFeatures({layers:['site-clusters','site-dots']}),([lng,lat])=>instance.project([lng+360*Math.round((center.lng-lng)/360),lat]),{width:canvas.clientWidth,height:canvas.clientHeight},instance.getZoom(),(id,count)=>(instance.getSource('sites') as GeoJSONSource).getClusterLeaves(id,count,0),latest.current.focusArea);
+    const keys=await fullyVisibleSiteKeys(instance.queryRenderedFeatures({layers:['site-clusters','site-builder-badges']}),([lng,lat])=>instance.project([lng+360*Math.round((center.lng-lng)/360),lat]),{width:canvas.clientWidth,height:canvas.clientHeight},instance.getZoom(),(id,count)=>(instance.getSource('sites') as GeoJSONSource).getClusterLeaves(id,count,0),latest.current.focusArea);
     if(disposed||current!==request)return;
     const signature=keys.join('\n');
     if(signature!==lastKeys){lastKeys=signature;latest.current.onVisibleSitesChange?.(keys);}
@@ -148,11 +138,11 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
     const cluster=memberships.find(id=>id!==null)??null;
     paintCluster(cluster);
     if(cluster===null){
-     const brand=builderMapBrand(card.developer),element=marker.getElement(),streetLevel=instance.getZoom()>=BUILDER_ICON_ZOOM;
+     const brand=builderMapBrand(card.developer),element=marker.getElement();
      element.style.background=brand.primary;
-     element.style.width=element.style.height=streetLevel?'36px':'24px';
+     element.style.width=element.style.height='36px';
      element.style.fontSize='16px';element.style.fontWeight='700';element.style.lineHeight='30px';
-     element.textContent=streetLevel?brand.initial:'';
+     element.textContent=brand.initial;
      element.setAttribute('aria-label',`Select ${card.name}, ${card.developer}`);
      marker.setLngLat([card.longitude,card.latitude]).addTo(instance);
     }

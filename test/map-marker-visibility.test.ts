@@ -15,9 +15,9 @@ it('constrains marker visibility to a focus area when specified',()=>{
  // Marker outside the focus area right boundary
  expect(markerFitsViewport({x:75,y:50},9,size,focusArea)).toBe(false);
 });
-it('accounts for the larger street-level badge when filtering sites',async()=>{
+it('accounts for the initial badge at every zoom when filtering sites',async()=>{
  const features=[point(10,50,{key:'edge'}),point(16,50,{key:'fits'})];
- expect(await fullyVisibleSiteKeys(features,project,size,14,vi.fn())).toEqual(['edge','fits']);
+ expect(await fullyVisibleSiteKeys(features,project,size,14,vi.fn())).toEqual(['fits']);
  expect(await fullyVisibleSiteKeys(features,project,size,15,vi.fn())).toEqual(['fits']);
 });
 it('lists members only of fully visible clusters, including outlines and deduplicating tile copies',async()=>{
