@@ -10,6 +10,14 @@ spec=spec_from_file_location('recrawl',ROOT/'scripts/recrawl-builders.py');legac
 CACHE=ROOT/'results/.cache';STATE=CACHE/'builder-pipeline-state.json';LOGS=CACHE/'recrawl-logs'
 STAGES=('gallery','website','ai')
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def link_images(source,target):
+ """Reuse immutable downloaded images without duplicating their disk space."""
+ target.mkdir(parents=True,exist_ok=True)
+ for src in source.rglob('*'):
+  if not src.is_file():continue
+  dst=target/src.relative_to(source);dst.parent.mkdir(parents=True,exist_ok=True)
+  if dst.exists() and os.path.samefile(src,dst):continue
+  dst.unlink(missing_ok=True);os.link(src,dst)
 def eligible(stage,order,builders,active):
  index=STAGES.index(stage)
  for slug in order:
@@ -37,6 +45,15 @@ class Pipeline:
   return candidate
  def run(self,slug,stage,command,cwd=ROOT):
   log=LOGS/f'{slug}-pipeline-{stage}.log'
+  existing=self.state['streams'].get(stage,{})
+  if existing.get('builder')==slug and existing.get('status')=='running' and existing.get('pid'):
+   pid=existing['pid']
+   while True:
+    try:os.kill(pid,0)
+    except ProcessLookupError:break
+    time.sleep(3)
+   self.state['streams'][stage]['status']='resumed';self.save()
+   # Rerun through cached results to validate a worker adopted after restart.
   with log.open('a') as output:
    proc=subprocess.Popen(command,cwd=cwd,env=self.env,stdout=output,stderr=subprocess.STDOUT)
    with self.state_lock:self.state['streams'][stage]={'builder':slug,'pid':proc.pid,'status':'running','log':str(log.relative_to(ROOT))}
@@ -96,7 +113,7 @@ class Pipeline:
    report=legacy.read_json(folder/'results.json',{})
   commit=self.checkpoint(slug,stage,folder,report)
   if stage=='ai':
-   shutil.copytree(self.work/'collections'/f'{slug}-home-offices'/'images',ROOT/'collections'/f'{slug}-home-offices'/'images',dirs_exist_ok=True)
+   for base in (self.work,ROOT):link_images(folder/'images',base/'collections'/f'{slug}-home-offices'/'images')
   return {'status':'complete','completedAt':now(),'commit':commit,'images':len(report['images'])}
  def execute(self):
   # Preserve previous publications; review jobs have separate, fresh candidate folders.

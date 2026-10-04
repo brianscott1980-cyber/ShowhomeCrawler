@@ -1,7 +1,17 @@
-import importlib.util,unittest
+import importlib.util,unittest,tempfile,os
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('pipeline',Path(__file__).parents[1]/'scripts/builder-pipeline.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 class Scheduling(unittest.TestCase):
+ def test_images_share_storage_and_repair_partial_copies(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   source=Path(tmp)/'source';target=Path(tmp)/'target'
+   source.mkdir();target.mkdir()
+   (source/'image.jpg').write_bytes(b'complete image')
+   (target/'image.jpg').write_bytes(b'partial')
+   m.link_images(source,target)
+   self.assertTrue(os.path.samefile(source/'image.jpg',target/'image.jpg'))
+   self.assertEqual((target/'image.jpg').read_bytes(),b'complete image')
+   m.link_images(source,target)
  def test_independent_stages_follow_dependencies(self):
   order=['taylor','david','miller'];state={'taylor':{'gallery':{'status':'complete'},'website':{'status':'complete'},'ai':{'status':'running'}}}
   self.assertEqual(m.eligible('gallery',order,state,{'taylor'}),'david')
