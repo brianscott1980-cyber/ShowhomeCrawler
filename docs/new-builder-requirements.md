@@ -62,3 +62,7 @@ Store a short record in `docs/<builder-slug>-source-analysis.md`:
 - Gallery / website / AI stage commit IDs:
 - Publication checks and outcome:
 ```
+
+## Logo slide background
+
+Set `logoBackground` in the builder’s `builderBrands` entry (`src/web/builder-brand.ts`). Match the logo artwork’s backdrop independently of the primary text colour; transparent coloured logos can stay on white. The builder ratings sync saves this value in Supabase `builders.logo_background_color`.

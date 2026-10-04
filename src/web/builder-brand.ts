@@ -1,44 +1,44 @@
 import {developers,type DeveloperSlug} from '../adapters/developers';
-export interface BuilderBrand {primary:string;secondary:string;parts:readonly [string,...string[]]}
+export interface BuilderBrand {primary:string;secondary:string;logoBackground:string;parts:readonly [string,...string[]]}
 // Logo hues and tonal companions from the local official marks.
 export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
- 'bellway':{primary:'#f3613c',secondary:'#a63c22',parts:['Bellway']},
- 'cala':{primary:'#454545',secondary:'#6b6b6b',parts:['Cala']},
- 'barratt':{primary:'#333333',secondary:'#666666',parts:['Barratt']},
- 'taylor-wimpey':{primary:'#C61A41',secondary:'#3B1953',parts:['Taylor ','Wimpey']},
- 'david-wilson':{primary:'#333333',secondary:'#a97742',parts:['David Wilson ','Homes']},
- 'miller-homes':{primary:'#0C1975',secondary:'#009BAA',parts:['Miller ','Homes']},
- 'avant':{primary:'#9d1d64',secondary:'#6c1445',parts:['Avant']},
- 'springfield':{primary:'#4A7729',secondary:'#63A50B',parts:['Springfield']},
- 'persimmon':{primary:'#004d50',secondary:'#008561',parts:['Persimmon']},
- 'robertson-homes':{primary:'#333333',secondary:'#666666',parts:['Robertson ','Homes']},
- 'redrow':{primary:'#d01030',secondary:'#960c23',parts:['Redrow']},
- 'berkeley-group':{primary:'#d10020',secondary:'#111111',parts:['The Berkeley ','Group']},
- 'crest-nicholson':{primary:'#002246',secondary:'#3b5875',parts:['Crest ','Nicholson']},
- 'tulloch-homes':{primary:'#006937',secondary:'#63a51d',parts:['Tulloch ','Homes']},
- 'scotia-homes':{primary:'#131e29',secondary:'#b18c4a',parts:['Scotia ','Homes']},
- 'lynch-homes':{primary:'#333333',secondary:'#666666',parts:['Lynch ','Homes']},
- 'story-homes':{primary:'#003f60',secondary:'#6b6052',parts:['Story ','Homes']},
- 'hill-group':{primary:'#111111',secondary:'#666666',parts:['Hill ','Group']},
- 'bovis-homes':{primary:'#143858',secondary:'#666666',parts:['Bovis Homes']},
- 'linden-homes':{primary:'#890a3d',secondary:'#666666',parts:['Linden Homes']},
- 'countryside-homes':{primary:'#003840',secondary:'#666666',parts:['Countryside Homes']},
- 'bloor-homes':{primary:'#003865',secondary:'#75787b',parts:['Bloor Homes']},
- 'keepmoat':{primary:'#004179',secondary:'#f9b247',parts:['Keepmoat']},
- 'gleeson':{primary:'#49a942',secondary:'#1e392a',parts:['Gleeson Homes']},
- 'morris-homes':{primary:'#00396f',secondary:'#00a4e8',parts:['Morris Homes']},
- 'harron-homes':{primary:'#e84129',secondary:'#161412',parts:['Harron Homes']},
- 'anwyl-homes':{primary:'#003a5d',secondary:'#00bbb4',parts:['Anwyl ','Homes']},
- 'castle-green-homes':{primary:'#384d3b',secondary:'#667961',parts:['Castle Green ','Homes']},
- 'lovell':{primary:'#c10a27',secondary:'#701427',parts:['Lovell ','Homes']},
- 'wain-homes':{primary:'#141c4b',secondary:'#e61b48',parts:['Wain ','Homes']},
- 'dandara':{primary:'#153050',secondary:'#7dbeb7',parts:['Dandara']},
- 'maguires-developments':{primary:'#c5b358',secondary:'#319aad',parts:['Maguires ','Developments']},
- 'bancon-homes':{primary:'#111111',secondary:'#555555',parts:['Bancon ','Homes']},
- 'ajc-homes':{primary:'#c41230',secondary:'#ffffff',parts:['AJC ','Homes']},
- 'hayhill':{primary:'#C11F3D',secondary:'#969899',parts:['Hayhill Developments']},
- 'hopkins-homes':{primary:'#ccaf74',secondary:'#242245',parts:['Hopkins ','Homes']},
- 'larkfleet-homes':{primary:'#b88e00',secondary:'#111111',parts:['Larkfleet ','Homes']},
+ 'bellway':{logoBackground:'#ffffff',primary:'#f3613c',secondary:'#a63c22',parts:['Bellway']},
+ 'cala':{logoBackground:'#163f48',primary:'#454545',secondary:'#6b6b6b',parts:['Cala']},
+ 'barratt':{logoBackground:'#163f48',primary:'#333333',secondary:'#666666',parts:['Barratt']},
+ 'taylor-wimpey':{logoBackground:'#ffffff',primary:'#C61A41',secondary:'#3B1953',parts:['Taylor ','Wimpey']},
+ 'david-wilson':{logoBackground:'#163f48',primary:'#333333',secondary:'#a97742',parts:['David Wilson ','Homes']},
+ 'miller-homes':{logoBackground:'#ffffff',primary:'#0C1975',secondary:'#009BAA',parts:['Miller ','Homes']},
+ 'avant':{logoBackground:'#ffffff',primary:'#9d1d64',secondary:'#6c1445',parts:['Avant']},
+ 'springfield':{logoBackground:'#ffffff',primary:'#4A7729',secondary:'#63A50B',parts:['Springfield']},
+ 'persimmon':{logoBackground:'#ffffff',primary:'#004d50',secondary:'#008561',parts:['Persimmon']},
+ 'robertson-homes':{logoBackground:'#163f48',primary:'#333333',secondary:'#666666',parts:['Robertson ','Homes']},
+ 'redrow':{logoBackground:'#ffffff',primary:'#d01030',secondary:'#960c23',parts:['Redrow']},
+ 'berkeley-group':{logoBackground:'#ffffff',primary:'#d10020',secondary:'#111111',parts:['The Berkeley ','Group']},
+ 'crest-nicholson':{logoBackground:'#ffffff',primary:'#002246',secondary:'#3b5875',parts:['Crest ','Nicholson']},
+ 'tulloch-homes':{logoBackground:'#ffffff',primary:'#006937',secondary:'#63a51d',parts:['Tulloch ','Homes']},
+ 'scotia-homes':{logoBackground:'#ffffff',primary:'#131e29',secondary:'#b18c4a',parts:['Scotia ','Homes']},
+ 'lynch-homes':{logoBackground:'#163f48',primary:'#333333',secondary:'#666666',parts:['Lynch ','Homes']},
+ 'story-homes':{logoBackground:'#013c5e',primary:'#003f60',secondary:'#6b6052',parts:['Story ','Homes']},
+ 'hill-group':{logoBackground:'#ffffff',primary:'#111111',secondary:'#666666',parts:['Hill ','Group']},
+ 'bovis-homes':{logoBackground:'#ffffff',primary:'#143858',secondary:'#666666',parts:['Bovis Homes']},
+ 'linden-homes':{logoBackground:'#ffffff',primary:'#890a3d',secondary:'#666666',parts:['Linden Homes']},
+ 'countryside-homes':{logoBackground:'#ffffff',primary:'#003840',secondary:'#666666',parts:['Countryside Homes']},
+ 'bloor-homes':{logoBackground:'#003865',primary:'#003865',secondary:'#75787b',parts:['Bloor Homes']},
+ 'keepmoat':{logoBackground:'#ffffff',primary:'#004179',secondary:'#f9b247',parts:['Keepmoat']},
+ 'gleeson':{logoBackground:'#ffffff',primary:'#49a942',secondary:'#1e392a',parts:['Gleeson Homes']},
+ 'morris-homes':{logoBackground:'#ffffff',primary:'#00396f',secondary:'#00a4e8',parts:['Morris Homes']},
+ 'harron-homes':{logoBackground:'#161412',primary:'#e84129',secondary:'#161412',parts:['Harron Homes']},
+ 'anwyl-homes':{logoBackground:'#ffffff',primary:'#003a5d',secondary:'#00bbb4',parts:['Anwyl ','Homes']},
+ 'castle-green-homes':{logoBackground:'#212822',primary:'#384d3b',secondary:'#667961',parts:['Castle Green ','Homes']},
+ 'lovell':{logoBackground:'#ffffff',primary:'#c10a27',secondary:'#701427',parts:['Lovell ','Homes']},
+ 'wain-homes':{logoBackground:'#ffffff',primary:'#141c4b',secondary:'#e61b48',parts:['Wain ','Homes']},
+ 'dandara':{logoBackground:'#ffffff',primary:'#153050',secondary:'#7dbeb7',parts:['Dandara']},
+ 'maguires-developments':{logoBackground:'#000000',primary:'#c5b358',secondary:'#319aad',parts:['Maguires ','Developments']},
+ 'bancon-homes':{logoBackground:'#ffffff',primary:'#111111',secondary:'#555555',parts:['Bancon ','Homes']},
+ 'ajc-homes':{logoBackground:'#c41230',primary:'#c41230',secondary:'#ffffff',parts:['AJC ','Homes']},
+ 'hayhill':{logoBackground:'#ffffff',primary:'#C11F3D',secondary:'#969899',parts:['Hayhill Developments']},
+ 'hopkins-homes':{logoBackground:'#ffffff',primary:'#ccaf74',secondary:'#242245',parts:['Hopkins ','Homes']},
+ 'larkfleet-homes':{logoBackground:'#ffffff',primary:'#b88e00',secondary:'#111111',parts:['Larkfleet ','Homes']},
 };
 /** Keep logo hues while adjusting brightness for readable text on its background. */
 export function brandTextColour(colour:string,background='#ffffff'):string {
@@ -56,9 +56,7 @@ export function builderNameHtml(nameOrSlug:string,background='#ffffff'){
  return brand.parts.map((part,i)=>`<i style="font:inherit;color:${brandTextColour(i===0?brand.primary:brand.secondary,background)}">${part}</i>`).join('');
 }
 
-/** Match the official logo artwork backdrop; transparent coloured marks stay on white. */
+/** The logo slide backdrop is independent of the builder’s primary text colour. */
 export function builderLogoBackground(slug:DeveloperSlug):string {
- if(slug==='ajc-homes')return '#c41230';
- if(slug==='harron-homes')return '#161412';
- return ['cala','barratt','david-wilson','robertson-homes','lynch-homes'].includes(slug)?'#163f48':'#ffffff';
+ return builderBrands[slug].logoBackground;
 }
