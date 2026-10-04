@@ -1,0 +1,554 @@
+{
+  "source": "website-html",
+  "images": {
+    "8111c4c7fc6f5d5e3bbea7aaab5a3dc082c3bba12565a836ff00286a80880540": {
+      "mainCategory": "Living Room",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - lounge",
+          "categories": [
+            "Living Room"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - lounge",
+          "categories": [
+            "Living Room"
+          ]
+        }
+      ]
+    },
+    "6a4bd526f19fb616419736901ed3957e2013c003f7f1a66c0d879be5f572fc7c": {
+      "mainCategory": "Living Room",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - lounge",
+          "categories": [
+            "Living Room"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - lounge",
+          "categories": [
+            "Living Room"
+          ]
+        }
+      ]
+    },
+    "5c6fdd782cde9d615ca3dfa89d9d003a1736b7ee9e90cf8e67c0231877e15ed6": {
+      "mainCategory": "Hallway",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - hallway",
+          "categories": [
+            "Hallway"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - hallway",
+          "categories": [
+            "Hallway"
+          ]
+        }
+      ]
+    },
+    "5450d1ea892f6936f23b4806ee3e2a11f064aa56985915a9b17d8b6e113fdea7": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 1",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 1",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "bc52408a275c7ca2b2328a1c8897568d5ab26fe372e817ff02fd363b98bb1a61": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 2",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 2",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "dd493c74941ecf3b2dae00a23eec002edf389111a64c0f1a34fc4f669269a42f": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 3",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 3",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "1f27be9f06882bc70f2c9f7c1f1d8a0955102c05287930bc1b8ee3b5292bad2a": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 4",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - bedroom 4",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "31a2246fa95305d1b98351ef7f537f7b834c3b687a0e863e13e9f3d2f3f116db": {
+      "mainCategory": "Study & Home Office",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - study",
+          "categories": [
+            "Study & Home Office"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - study",
+          "categories": [
+            "Study & Home Office"
+          ]
+        }
+      ]
+    },
+    "34f37f15c74c986d9a8c13cf5c328f3d032d1287c12d6625352e8c4561e22149": {
+      "mainCategory": "Bathroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+          "field": "alt",
+          "text": "Kincraig show home - bathroom",
+          "categories": [
+            "Bathroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+          "field": "alt",
+          "text": "Kincraig show home - bathroom",
+          "categories": [
+            "Bathroom"
+          ]
+        }
+      ]
+    },
+    "65b9f039e13999c49060a3cd2b8a6c4ea9c91957f74f20967543449309fad0fe": {
+      "mainCategory": "Exterior",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "Culbin Ex Show home exterior B DSC00921",
+          "categories": [
+            "Exterior"
+          ]
+        }
+      ]
+    },
+    "3a2618ec1b5b79e05b269d1b66618f24c887a4fd00b7c4201bfedcd880bb41ac": {
+      "mainCategory": "Living Room",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD culbin lounge 1920",
+          "categories": [
+            "Living Room"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD culbin lounge 1920",
+          "categories": [
+            "Living Room"
+          ]
+        }
+      ]
+    },
+    "5827e97341a439ac5a22a783eea45c927be0b7281f9a42a773a832ebf34dfb6c": {
+      "mainCategory": "Kitchen",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD culbin kitchen 3 1920",
+          "categories": [
+            "Kitchen"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD culbin kitchen 3 1920",
+          "categories": [
+            "Kitchen"
+          ]
+        }
+      ]
+    },
+    "c3e7141d3ab82f8bf1bef8ca497948ff7d44c61bf3a0eb8be19dc45c21529bee": {
+      "mainCategory": "Kitchen",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD culbin kitchen 1920",
+          "categories": [
+            "Kitchen"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD culbin kitchen 1920",
+          "categories": [
+            "Kitchen"
+          ]
+        }
+      ]
+    },
+    "f93e34c58577235438fa1fce9b46df67c8c7601b9b4157b99e5588ebc8c06fe6": {
+      "mainCategory": "Dining Room",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD culbin dining room 2x 1920",
+          "categories": [
+            "Dining Room"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD culbin dining room 2x 1920",
+          "categories": [
+            "Dining Room"
+          ]
+        }
+      ]
+    },
+    "d75d0cb0eb0e933b547834ad4ac34f8eab0c7fec8bbe846540256a3189e01220": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 2 B 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 2 B 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "ed7c2eeed9a60a4b069941f29f1ab71b8f334d57a1b2234cb01198b06894cf0c": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 1 C 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 1 C 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "0a050a4f6e0137ff0d155489346c093c6fa6e97fc658a01e0e43fafba4888253": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 3 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 3 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "1f218cd93b5223b4cd5b56e2c15a7e5dcae35add35f4593c699f1065006f8f84": {
+      "mainCategory": "Living Room",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - lounge",
+          "categories": [
+            "Living Room"
+          ]
+        }
+      ]
+    },
+    "3e2895124ab848167619bc59ee6e784460765f24cde21cd501a3ceb3c9ebdec7": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 4 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD Culbin bedroom 4 1920",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "6e650e11948b9442db4691c8fa0a33b43160ea1eea6a8e5c27e4831c65140000": {
+      "mainCategory": "Hallway",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - entrance hallway",
+          "categories": [
+            "Hallway"
+          ]
+        }
+      ]
+    },
+    "1a87618c150f2bcdba98ca54fa23c62c873a50bc0fd505d6e1db490cab444ea1": {
+      "mainCategory": "Study & Home Office",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - study",
+          "categories": [
+            "Study & Home Office"
+          ]
+        }
+      ]
+    },
+    "941d0c056899da2756024c3878997d558afe9316e9c135d45f3564f21cba501f": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - bedroom 1",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "5e6603fd4a93b8245b61b7e1e7adc1fc34008b87d902ef68461034d4de0eb7f6": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - bedroom 2",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "c235435649ffff1f1fcecc0ae2a8127fda5f81efca9afc4487d97a412be6b293": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - bedroom 3",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "f21174a043547471353a48b0a79448cc7d4e98bea43467b8baf8fd299e122877": {
+      "mainCategory": "Bedroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - bedroom 4",
+          "categories": [
+            "Bedroom"
+          ]
+        }
+      ]
+    },
+    "804c2b2b9d44c45335b8a4814e451815826c22bf219a22cfe4330cc8d5ad11fc": {
+      "mainCategory": "Bathroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+          "field": "alt",
+          "text": "Dunrobin show home - bathroom",
+          "categories": [
+            "Bathroom"
+          ]
+        }
+      ]
+    },
+    "0e1aaec24cda6bdeb1da91964c6d8c5ba691fda3e7cee5aeb903ac1b5189a94b": {
+      "mainCategory": "Bathroom",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+          "field": "alt",
+          "text": "DD Culbin Bathroom A 1920",
+          "categories": [
+            "Bathroom"
+          ]
+        },
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+          "field": "alt",
+          "text": "DD Culbin Bathroom A 1920",
+          "categories": [
+            "Bathroom"
+          ]
+        }
+      ]
+    },
+    "076f828b94a215df7a7010b167c5df310e7eed78d4df4b7b3c9131eb2a678e8e": {
+      "mainCategory": "Exterior",
+      "source": "website-html",
+      "evidence": [
+        {
+          "pageUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth/1817-melford-show-home",
+          "field": "alt",
+          "text": "Melford exterior Bertha Park p1002",
+          "categories": [
+            "Exterior"
+          ]
+        }
+      ]
+    }
+  },
+  "counts": {
+    "Living Room": 4,
+    "Hallway": 2,
+    "Bedroom": 12,
+    "Study & Home Office": 2,
+    "Bathroom": 3,
+    "Exterior": 2,
+    "Kitchen": 2,
+    "Dining Room": 1
+  },
+  "conflictingImages": 2,
+  "stage": "website",
+  "recordedAt": "2026-10-04T16:45:09.969736+00:00"
+}
