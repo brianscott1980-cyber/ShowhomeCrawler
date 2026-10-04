@@ -56,13 +56,24 @@ def extract(report, page_cache):
   if len(found)==1:result[image['id']]={'mainCategory':next(iter(found)),'source':'website-html','evidence':labels}
  return {'source':'website-html','images':result,'counts':dict(Counter(v['mainCategory'] for v in result.values())),'conflictingImages':conflicts}
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--folder',required=True);parser.add_argument('--watch',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--folder',required=True);parser.add_argument('--watch',action='store_true');parser.add_argument('--apply',action='store_true');args=parser.parse_args()
  folder=Path(args.folder).resolve();root=Path('results').resolve()
  if not folder.is_relative_to(root):raise ValueError('Folder must be inside results')
  cache={}
  while True:
   report=json.loads((folder/'checkpoint.json').read_text());result=extract(report,cache)
   target=folder/'direct-categories.json';temporary=target.with_suffix('.json.tmp');temporary.write_text(json.dumps(result));temporary.replace(target)
+  if args.apply:
+   if args.watch or (folder/'.lock').exists() or (folder/'.analysis-stream.lock').exists():raise ValueError('Apply only after other workers have stopped')
+   for image in report['images']:
+    entry=result['images'].get(image['id'])
+    if not entry:continue
+    category=entry['mainCategory']
+    image['categorisation']={'categorisationSource':'website-html','mainCategory':category,'subCategory':'','isRoom':category not in ['Exterior','Floorplan'],'objects':[],'colours':[],'chairs':[],'hasTelevision':False,'hasComputer':False}
+    image['siteCategoryEvidence']=entry['evidence']
+   report['metrics']['pendingImages']=sum(not i.get('categorisation') for i in report['images'])
+   for name in ['checkpoint.json','results.json']:
+    target=folder/name;temporary=target.with_suffix('.site.tmp');temporary.write_text(json.dumps(report));temporary.replace(target)
   print(json.dumps({'direct':len(result['images']),'images':len(report['images']),'conflicts':result['conflictingImages'],'crawlStatus':report['status']}),flush=True)
   if not args.watch or report['status'] not in ('running','classifying'):break
   time.sleep(30)

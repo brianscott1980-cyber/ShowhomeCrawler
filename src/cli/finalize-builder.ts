@@ -1,3 +1,4 @@
+import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { readdir, readFile, writeFile, mkdir, copyFile, rm, access } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -153,7 +154,7 @@ async function finalizeBuilder(builderSlug: string, persist = false) {
   // Publication requires completed visual analysis; never manufacture missing verdicts.
   if (existsSync(resolve(sourceFolder, '.lock'))) throw new Error('A crawl or classification is still running.');
   if (!report.images.length) throw new Error('No images collected.');
-  if (report.images.some(img => !img.verdict || !img.categorisation || isInferredAnalysis(img.verdict))) {
+  if (report.images.some(img => !hasSiteCategorisation(img)&&(!img.verdict || !img.categorisation || isInferredAnalysis(img.verdict)))) {
     throw new Error('Run results:classify --all-images to complete genuine image analysis before finalizing.');
   }
   for (const img of report.images) {

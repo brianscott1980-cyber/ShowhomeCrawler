@@ -1,3 +1,4 @@
+import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import {GeminiModelPool,classificationModels} from '../vision/gemini-model-pool.js';
 import {saveGeminiState} from '../reports/gemini-status.js';
 import { isInferredAnalysis } from '../vision/analysis-provenance.js';
@@ -32,6 +33,7 @@ async function main() {
    const running = await access(`${folder}/.lock`).then(() => true, () => false);
    const pending = [];
    for (const image of report.images) {
+    if(values['all-images']&&hasSiteCategorisation(image))continue;
     if (!isInferredAnalysis(image.verdict) && (values['all-images'] ? image.categorisation : image.verdict)) continue;
     let cached = false;
     for (const cachedModel of [...new Set([...pool.models,report.model,...(values['reuse-model'] ?? [])])]) {

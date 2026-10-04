@@ -1,3 +1,4 @@
+import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import {GeminiModelPool,classificationModels} from '../vision/gemini-model-pool.js';
 import {saveGeminiState} from '../reports/gemini-status.js';
 import { isInferredAnalysis } from '../vision/analysis-provenance.js';
@@ -24,6 +25,7 @@ async function main() {
   return result.value.map(answer=>({...answer,analysisModel:result.model}));
  };
  for (const image of report.images) {
+  if (values['all-images']&&hasSiteCategorisation(image))continue;
   if (isInferredAnalysis(image.verdict)) { delete image.verdict; delete image.categorisation; delete image.analysisModel; }
   if (image.verdict) image.analysisModel ??= report.model;
  }
