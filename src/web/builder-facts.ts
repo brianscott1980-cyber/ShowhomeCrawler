@@ -1,5 +1,5 @@
 import googleReviews from '../data/builder-google-reviews.json';
-export type BuilderFacts={rating?:{stars:number;year:number;source:string;scope?:string};reviews?:{average:number;count:number;sources:{name:string;rating:number;count:number;url:string;checkedAt:string}[]};incentives?:{source:string;checkedAt:string}};
+export type BuilderFacts={rating?:{stars:number;score:number;value:number;year:number;source:string;scope?:string};reviews?:{average:number;count:number;sources:{name:string;rating:number;count:number;url:string;checkedAt:string}[]};incentives?:{source:string;checkedAt:string}};
 import builderRatings from '../data/builder-ratings.json';
 const offers:Record<string,string>={
  bellway:'https://www.bellway.co.uk/autumn-incentives',
@@ -21,5 +21,5 @@ export function builderFacts(slug:string):BuilderFacts{
  if(google?.status==='verified'&&google.rating!==null&&google.reviewCount&&google.url)sources.push({name:'Google (main office)',rating:google.rating,count:google.reviewCount,url:google.url,checkedAt:google.checkedAt});
  const count=sources.reduce((total,source)=>total+source.count,0);
  const reviews=count?{average:sources.reduce((total,source)=>total+source.rating*source.count,0)/count,count,sources}:undefined;
- return {...(reviews?{reviews}:{}),...(hbf?.rating?{rating:{stars:hbf.rating,year:hbf.year,source:hbf.source,...(hbf.scope?{scope:hbf.scope}:{})}}:{}),...(offers[slug]?{incentives:{source:offers[slug],checkedAt:'2026-10-04'}}:{})};
+ return {...(reviews?{reviews}:{}),...(hbf?.rating&&hbf.compositeScore!==null?{rating:{stars:hbf.rating,score:hbf.compositeScore,value:Math.round(hbf.compositeScore*2)/2,year:hbf.year,source:hbf.compositeSource!,...(hbf.scope?{scope:hbf.scope}:{})}}:{}),...(offers[slug]?{incentives:{source:offers[slug],checkedAt:'2026-10-04'}}:{})};
 }
