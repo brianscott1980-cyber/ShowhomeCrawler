@@ -1,4 +1,5 @@
-export type BuilderFacts={rating?:{stars:number;year:number;source:string;scope?:string};incentives?:{source:string;checkedAt:string}};
+import googleReviews from '../data/builder-google-reviews.json';
+export type BuilderFacts={rating?:{stars:number;year:number;source:string;scope?:string};reviews?:{average:number;count:number;sources:{name:string;rating:number;count:number;url:string;checkedAt:string}[]};incentives?:{source:string;checkedAt:string}};
 import builderRatings from '../data/builder-ratings.json';
 const offers:Record<string,string>={
  bellway:'https://www.bellway.co.uk/autumn-incentives',
@@ -11,6 +12,14 @@ const offers:Record<string,string>={
  redrow:'https://www.redrow.co.uk/buying-with-redrow/'
 };
 export function builderFacts(slug:string):BuilderFacts{
- const hbf=builderRatings.find(builder=>builder.slug===slug)?.hbf;
- return {...(hbf?.rating?{rating:{stars:hbf.rating,year:hbf.year,source:hbf.source,...(hbf.scope?{scope:hbf.scope}:{})}}:{}),...(offers[slug]?{incentives:{source:offers[slug],checkedAt:'2026-10-04'}}:{})};
+ const builder=builderRatings.find(builder=>builder.slug===slug);
+ const hbf=builder?.hbf;
+ const google=googleReviews.find(builder=>builder.slug===slug);
+ const sources:NonNullable<BuilderFacts['reviews']>['sources']=[];
+ const trustpilot=builder?.trustpilot;
+ if(trustpilot?.status==='verified_profile'&&trustpilot.rating!==null&&trustpilot.reviewCount&&trustpilot.url)sources.push({name:'Trustpilot',rating:trustpilot.rating,count:trustpilot.reviewCount,url:trustpilot.url,checkedAt:trustpilot.checkedAt});
+ if(google?.status==='verified'&&google.rating!==null&&google.reviewCount&&google.url)sources.push({name:'Google (main office)',rating:google.rating,count:google.reviewCount,url:google.url,checkedAt:google.checkedAt});
+ const count=sources.reduce((total,source)=>total+source.count,0);
+ const reviews=count?{average:sources.reduce((total,source)=>total+source.rating*source.count,0)/count,count,sources}:undefined;
+ return {...(reviews?{reviews}:{}),...(hbf?.rating?{rating:{stars:hbf.rating,year:hbf.year,source:hbf.source,...(hbf.scope?{scope:hbf.scope}:{})}}:{}),...(offers[slug]?{incentives:{source:offers[slug],checkedAt:'2026-10-04'}}:{})};
 }
