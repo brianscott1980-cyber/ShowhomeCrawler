@@ -1,0 +1,111 @@
+{
+  "builder": "taylor-wimpey",
+  "completedAt": "2026-10-04T16:39:33.034353+00:00",
+  "images": 9427,
+  "siteCategorised": 5527,
+  "aiCategorised": 3900,
+  "sourceErrors": [
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/greenwich/greenwich-millennium-village",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/roslin/sinclair-gardens",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/sawtry/archers-place",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/highworth/pentylands-place",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/prescot/orchard-park",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/barry/latitude-at-the-quays",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/devizes/marshalls-green",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/st-helens/sherdley-green",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/brentwood/brentwood-75",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/new-homes/london/postmark-london",
+      "stage": "development",
+      "message": "Development extraction or persistence failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-East/House-Types/Current-House-Types/Plumdale/CGI/7---Bedroom-1---CGI.jpg?mw=1800&hash=D4997CD42C6E44442382F6F76928A0FE",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/North-East/House-Types/Current-House-Types/Plumdale/CGI/10---Bedroom-3---CGI.jpg?mw=1800&hash=F0B644B3D878ED8647E9158729D1ADC5",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/NEW-SHOW-HOME-INTERIORS/NEW-HOUSE-TYPES/SCOTTISH-VERSIONS/Colford/NEW/03-STA43---COLFORD-INTERIOR---Kitchen-01-(1).jpg?mw=1800&hash=E5043DABF45B8F471964615A3CFE3B67",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/NEW-SHOW-HOME-INTERIORS/NEW-HOUSE-TYPES/SCOTTISH-VERSIONS/Colford/NEW/13-STA43---COLFORD-INTERIOR---Bathroom-(1).jpg?mw=1800&hash=146B6E3C7DF937E3E8DB254C4269736A",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/Floor-Plans/3D-Floor-Plans/NEW-HOUSE-TYPES/TW-National-Houstype-floorplans-for-web---Plumdale-GF.jpg?mw=1800&hash=FEAC184434E07CDCE4C996DC6FA20265",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/East-Scotland/Sales/Floor-Plans/3D-Floor-Plans/NEW-HOUSE-TYPES/TWES-Floorplans-for-web41--Elterham-GF-with-gas.jpg?mw=1800&hash=C9EEB4509FEA6C431C431FA7D6C6E216",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/PH4-Burleyfields/Web---Floorplans/ETA35-Tettford-GF.png?mw=1800&hash=718B0E499C85213DAA0E1864E760DD62",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/PH4-Burleyfields/Web---Floorplans/ETA35-Tettford-FF.png?mw=1800&hash=CF51D263BCD4699D2B63FF10176D3A1D",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/Regency-Gate/CGI-Floorplans-PH2/Web---Floorplans/EMT31-Aynesdale-FF.png?mw=1800&hash=09553082C57C02985D738AC5F6646A9F",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    },
+    {
+      "url": "https://www.taylorwimpey.co.uk/-/twdxmedia/Images/Business-Units/West-Midlands/Sales/Regency-Gate/CGI-Floorplans-PH2/Web---Floorplans/EMT31-Aynesdale-FF.png?mw=1800&hash=09553082C57C02985D738AC5F6646A9F",
+      "stage": "image",
+      "message": "Image download or hashing failed"
+    }
+  ],
+  "stage": "ai",
+  "recordedAt": "2026-10-04T16:39:33.038200+00:00"
+}
