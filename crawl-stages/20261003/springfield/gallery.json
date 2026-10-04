@@ -1,0 +1,3369 @@
+{
+  "builder": {
+    "name": "Springfield",
+    "slug": "springfield",
+    "websiteUrl": "https://www.springfield.co.uk"
+  },
+  "status": "completed_with_gaps",
+  "startedAt": "2026-10-04T15:27:45.767Z",
+  "completedAt": "2026-10-04T15:30:01.489Z",
+  "developments": [
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Buckie",
+      "status": "complete",
+      "homes": 30,
+      "qualifying": 30
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Elgin",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 8
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Dundee",
+      "status": "complete",
+      "homes": 13,
+      "qualifying": 13
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Inverness",
+      "status": "complete",
+      "homes": 37,
+      "qualifying": 37
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Elgin",
+      "status": "complete",
+      "homes": 29,
+      "qualifying": 29
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Millerhill",
+      "status": "complete",
+      "homes": 8,
+      "qualifying": 8
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Perth",
+      "status": "complete",
+      "homes": 15,
+      "qualifying": 15
+    }
+  ],
+  "properties": [
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Moray \u00b7 Plot 331",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1425-moray",
+      "bedrooms": 2,
+      "price": 210000,
+      "plots": [
+        {
+          "number": "331",
+          "price": 210000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c38513aad40599f1083635ae0fc9ec63c4426282b6c2cef35773dbe9494352c"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Moray \u00b7 Plot 333",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1427-moray",
+      "bedrooms": 2,
+      "price": 210000,
+      "plots": [
+        {
+          "number": "333",
+          "price": 210000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c38513aad40599f1083635ae0fc9ec63c4426282b6c2cef35773dbe9494352c"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Dunbar \u00b7 Plot 330",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1424-dunbar",
+      "bedrooms": 2,
+      "price": 220000,
+      "plots": [
+        {
+          "number": "330",
+          "price": 220000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c38513aad40599f1083635ae0fc9ec63c4426282b6c2cef35773dbe9494352c"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Dunbar \u00b7 Plot 332",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1426-dunbar",
+      "bedrooms": 2,
+      "price": 220000,
+      "plots": [
+        {
+          "number": "332",
+          "price": 220000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7c38513aad40599f1083635ae0fc9ec63c4426282b6c2cef35773dbe9494352c"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Cupar \u00b7 Plot 238",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1436-cupar",
+      "bedrooms": 3,
+      "price": 243000,
+      "plots": [
+        {
+          "number": "238",
+          "price": 243000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "29b8e327809eb7ee9c2f4e957eae7558a97d6c406905a9130bb542b76f310e4d"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Cupar \u00b7 Plot 337",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1399-cupar",
+      "bedrooms": 3,
+      "price": 246000,
+      "plots": [
+        {
+          "number": "337",
+          "price": 246000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "debab220bd8f90fec97a5616f420ed11941c066b228889eec9358965d211cc85"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Cupar with sunroom \u00b7 Plot 237",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1435-cupar",
+      "bedrooms": 3,
+      "price": 270000,
+      "plots": [
+        {
+          "number": "237",
+          "price": 270000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7869516f3257f2c5b84bf3233fd15b9e68d93387a491a3872daeae29b16cf42a"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Cupar with sunroom \u00b7 Plot 338",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1400-cupar",
+      "bedrooms": 3,
+      "price": 275000,
+      "plots": [
+        {
+          "number": "338",
+          "price": 275000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3d864ba46e80a719d4bf43a887d0a627da13518b23e8e5eeb9d8101c8efb4380"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Arden \u00b7 Plot 240",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1438-arden",
+      "bedrooms": 4,
+      "price": 278000,
+      "plots": [
+        {
+          "number": "240",
+          "price": 278000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d7388f3503a4d91fbfbb9331242ec499e2e9142736c3b89772f4433b311477fc"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Cupar detached with sunroom \u00b7 Plot 336",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1431-cupar-detached",
+      "bedrooms": 3,
+      "price": 285000,
+      "plots": [
+        {
+          "number": "336",
+          "price": 285000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "21e4135ce6e0c0d6b8d53ec186282a4f66df661152575b6553743eb650247782"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Nairn with sunroom \u00b7 Plot 235",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1349-nairn",
+      "bedrooms": 3,
+      "price": 296000,
+      "plots": [
+        {
+          "number": "235",
+          "price": 296000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "82ee79b10ed36483b1884d7180367dba64381589cdc17c76ae5d37aaf2ea5c85"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Cullen with sunroom \u00b7 Plot 234",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1348-cullen",
+      "bedrooms": 3,
+      "price": 306000,
+      "plots": [
+        {
+          "number": "234",
+          "price": 306000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "589647ccbf535afc7fa0e5e8a6c428e812c32a1cdb8de62aa30e158458e700ea"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Arden with sunroom \u00b7 Plot 226",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1342-arden",
+      "bedrooms": 4,
+      "price": 307000,
+      "plots": [
+        {
+          "number": "226",
+          "price": 307000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ac97600f234683ca9d43df0db0d1cfe336e13fb856347b780cb717cb461ce63"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Arden with sunroom \u00b7 Plot 326",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1395-arden",
+      "bedrooms": 4,
+      "price": 308000,
+      "plots": [
+        {
+          "number": "326",
+          "price": 308000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6fdb9ee37d914d409775b7841ed162fdbd3dd4fb7e64f33cc5ed7d20f5f299f6"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Balerno with sunroom \u00b7 Plot 239",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1437-balerno",
+      "bedrooms": 4,
+      "price": 312000,
+      "plots": [
+        {
+          "number": "239",
+          "price": 312000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f6b2bce2d42d57df6b85925dda62d3cfa91a35de0ddcca63d35ed8735107878e"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Arden with sunroom \u00b7 Plot 222",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1339-arden",
+      "bedrooms": 4,
+      "price": 316630,
+      "plots": [
+        {
+          "number": "222",
+          "price": 316630,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3ac97600f234683ca9d43df0db0d1cfe336e13fb856347b780cb717cb461ce63"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Nethy with integrated garage and sunroom \u00b7 Plot 322",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1391-nethy-with-integrated-garage",
+      "bedrooms": 3,
+      "price": 319000,
+      "plots": [
+        {
+          "number": "322",
+          "price": 319000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b31b360f0cc9abcda3708cfef37a7ee015a926afde68b0669bf5121bb787001c"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Nethy with detached garage & sunroom \u00b7 Plot 339",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1401-nethy-with-detached-garage",
+      "bedrooms": 3,
+      "price": 325000,
+      "plots": [
+        {
+          "number": "339",
+          "price": 325000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "efb370d784d856d28fc325dac20113bd19701dacc9dca2c36fd94fd9077adfc1"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Crail with sunroom \u00b7 Plot 229",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1345-crail",
+      "bedrooms": 4,
+      "price": 337000,
+      "plots": [
+        {
+          "number": "229",
+          "price": 337000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "92ce60a7a1d9bcc49a3bf775a1ce3a534ec85b874bb75dd5f6ff38bbe138b578"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Dunning with detached garage and sunroom \u00b7 Plot 329",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1398-dunning-with-detached-garage",
+      "bedrooms": 4,
+      "price": 376000,
+      "plots": [
+        {
+          "number": "329",
+          "price": 376000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a308ecdb00e39482b273a4491ff29cdaa22cd665b33b57f13d825cab4686f070"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Kincraig \u00b7 Plot 323",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1392-kincraig",
+      "bedrooms": 4,
+      "price": 378000,
+      "plots": [
+        {
+          "number": "323",
+          "price": 378000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Kincraig \u00b7 Plot 328",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1397-kincraig",
+      "bedrooms": 4,
+      "price": 378000,
+      "plots": [
+        {
+          "number": "328",
+          "price": 378000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fc8a8f5d132cb23ed042b6650293c70d96c4d742812801f9738d8434e2423d66"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Dunning with detached garage & sunroom \u00b7 Plot 341",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1403-dunning-with-detached-garage",
+      "bedrooms": 4,
+      "price": 381000,
+      "plots": [
+        {
+          "number": "341",
+          "price": 381000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a308ecdb00e39482b273a4491ff29cdaa22cd665b33b57f13d825cab4686f070"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Prestwick \u00b7 Plot 224",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1522-prestwick",
+      "bedrooms": 5,
+      "price": 395000,
+      "plots": [
+        {
+          "number": "224",
+          "price": 395000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fef6a3b49c8a0ac45ea9dd574b39d89a79d8236b75786c7274011b06f3b396fd"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Prestwick \u00b7 Plot 230",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1527-prestwick",
+      "bedrooms": 5,
+      "price": 397000,
+      "plots": [
+        {
+          "number": "230",
+          "price": 397000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "138daebb59c5e83ec8b114caecc85f1f12886886d6d12462e38e545dca5de220"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Kincraig with sunroom \u00b7 Plot 225",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1341-prestwick",
+      "bedrooms": 4,
+      "price": 402000,
+      "plots": [
+        {
+          "number": "225",
+          "price": 402000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Kincraig with sunroom \u00b7 Plot 340",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1402-kincraig",
+      "bedrooms": 4,
+      "price": 409000,
+      "plots": [
+        {
+          "number": "340",
+          "price": 409000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fc8a8f5d132cb23ed042b6650293c70d96c4d742812801f9738d8434e2423d66"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Nairn \u00b7 Plot 327",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1396-nairn",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "327",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "e65aa893d1b3a71f36e9594d7e857b50d7f7e2d3f3a4f3e19c4a932182dce78f"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Arden \u00b7 Plot 231",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1346-arden",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "231",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "0041c8c63ee8380871447531c10ccf36277c1e21d4f04e036ec90b4026d9d4f0"
+      ]
+    },
+    {
+      "development": "Buckie",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/26-buckie",
+      "name": "Nethy with detached garage \u00b7 Plot 218",
+      "url": "https://www.springfield.co.uk/homes-for-sale/26-buckie/1335-nethy-with-detached-garage",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "218",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "efb370d784d856d28fc325dac20113bd19701dacc9dca2c36fd94fd9077adfc1"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Braemar \u00b7 Plot 17",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1571-braemar",
+      "bedrooms": 4,
+      "price": 370000,
+      "plots": [
+        {
+          "number": "17",
+          "price": 370000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "adaf81dc49db693956f7e15cc1df3c67e43a84fe83671f73a003a0d1362f38d9"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Cramond with sunroom \u00b7 Plot 18",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1570-cramond",
+      "bedrooms": 4,
+      "price": 407000,
+      "plots": [
+        {
+          "number": "18",
+          "price": 407000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f8bf6cb010d2c8d41f57b73578086ac20cc10036ca38c31d514dd8d3796f950e"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Kincraig \u00b7 Plot 309",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1549-kincraig",
+      "bedrooms": 5,
+      "price": 437000,
+      "plots": [
+        {
+          "number": "309",
+          "price": 437000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "30d6286d2e78e9ee52e870e9f061f1c952e2843925aa05d8e482759f6bcee931",
+        "8111c4c7fc6f5d5e3bbea7aaab5a3dc082c3bba12565a836ff00286a80880540",
+        "4b79351919ca69cd718d5eb7d2f5f156b7b0bb88e621f2f7f93bbe46b93413df",
+        "6a4bd526f19fb616419736901ed3957e2013c003f7f1a66c0d879be5f572fc7c",
+        "5c6fdd782cde9d615ca3dfa89d9d003a1736b7ee9e90cf8e67c0231877e15ed6",
+        "5450d1ea892f6936f23b4806ee3e2a11f064aa56985915a9b17d8b6e113fdea7",
+        "bc52408a275c7ca2b2328a1c8897568d5ab26fe372e817ff02fd363b98bb1a61",
+        "dd493c74941ecf3b2dae00a23eec002edf389111a64c0f1a34fc4f669269a42f",
+        "1f27be9f06882bc70f2c9f7c1f1d8a0955102c05287930bc1b8ee3b5292bad2a",
+        "31a2246fa95305d1b98351ef7f537f7b834c3b687a0e863e13e9f3d2f3f116db",
+        "34f37f15c74c986d9a8c13cf5c328f3d032d1287c12d6625352e8c4561e22149"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Culbin \u00b7 Plot 323",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1554-culbin",
+      "bedrooms": 4,
+      "price": 470000,
+      "plots": [
+        {
+          "number": "323",
+          "price": 470000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e39d7362f551c84f7b7e948fc5a24900289844cb659dae55b45a5b236a216cfa",
+        "3a2618ec1b5b79e05b269d1b66618f24c887a4fd00b7c4201bfedcd880bb41ac",
+        "5827e97341a439ac5a22a783eea45c927be0b7281f9a42a773a832ebf34dfb6c",
+        "c3e7141d3ab82f8bf1bef8ca497948ff7d44c61bf3a0eb8be19dc45c21529bee",
+        "f93e34c58577235438fa1fce9b46df67c8c7601b9b4157b99e5588ebc8c06fe6",
+        "d75d0cb0eb0e933b547834ad4ac34f8eab0c7fec8bbe846540256a3189e01220",
+        "ed7c2eeed9a60a4b069941f29f1ab71b8f334d57a1b2234cb01198b06894cf0c",
+        "0a050a4f6e0137ff0d155489346c093c6fa6e97fc658a01e0e43fafba4888253",
+        "3e2895124ab848167619bc59ee6e784460765f24cde21cd501a3ceb3c9ebdec7",
+        "0e1aaec24cda6bdeb1da91964c6d8c5ba691fda3e7cee5aeb903ac1b5189a94b"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Culbin show home \u00b7 Plot 140",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/308-culbin",
+      "bedrooms": 4,
+      "price": 475000,
+      "plots": [
+        {
+          "number": "140",
+          "price": 475000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "65b9f039e13999c49060a3cd2b8a6c4ea9c91957f74f20967543449309fad0fe",
+        "3a2618ec1b5b79e05b269d1b66618f24c887a4fd00b7c4201bfedcd880bb41ac",
+        "5827e97341a439ac5a22a783eea45c927be0b7281f9a42a773a832ebf34dfb6c",
+        "c3e7141d3ab82f8bf1bef8ca497948ff7d44c61bf3a0eb8be19dc45c21529bee",
+        "f93e34c58577235438fa1fce9b46df67c8c7601b9b4157b99e5588ebc8c06fe6",
+        "d75d0cb0eb0e933b547834ad4ac34f8eab0c7fec8bbe846540256a3189e01220",
+        "ed7c2eeed9a60a4b069941f29f1ab71b8f334d57a1b2234cb01198b06894cf0c",
+        "0a050a4f6e0137ff0d155489346c093c6fa6e97fc658a01e0e43fafba4888253",
+        "3e2895124ab848167619bc59ee6e784460765f24cde21cd501a3ceb3c9ebdec7",
+        "0e1aaec24cda6bdeb1da91964c6d8c5ba691fda3e7cee5aeb903ac1b5189a94b"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Bowmore \u00b7 Plot 331",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1560-bowmore",
+      "bedrooms": 5,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "331",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0519101fc02e76c6a1ef9496d309c854c83c913f16e2894fe4664c2100e326b5"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Bowmore with sunroom \u00b7 Plot 329",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1564-bowmore-with-sunroom",
+      "bedrooms": 5,
+      "price": 522000,
+      "plots": [
+        {
+          "number": "329",
+          "price": 522000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d4b334296e1ee885c812fcd2fe75959245cd6dcaa503548d406c4a9b4d7cabea"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Dunrobin with sunroom \u00b7 Plot 310",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1550-dunrobin",
+      "bedrooms": 5,
+      "price": 527000,
+      "plots": [
+        {
+          "number": "310",
+          "price": 527000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "da392374dbd0a58ebddd4bc6477e98ff01dd243341677bef2befdfa8717a6c96",
+        "d6495a9b24d9df79cf828d82320b775ed04066ebe16669c87947994d1d856f9f",
+        "1f218cd93b5223b4cd5b56e2c15a7e5dcae35add35f4593c699f1065006f8f84",
+        "6e650e11948b9442db4691c8fa0a33b43160ea1eea6a8e5c27e4831c65140000",
+        "1a87618c150f2bcdba98ca54fa23c62c873a50bc0fd505d6e1db490cab444ea1",
+        "941d0c056899da2756024c3878997d558afe9316e9c135d45f3564f21cba501f",
+        "5e6603fd4a93b8245b61b7e1e7adc1fc34008b87d902ef68461034d4de0eb7f6",
+        "c235435649ffff1f1fcecc0ae2a8127fda5f81efca9afc4487d97a412be6b293",
+        "f21174a043547471353a48b0a79448cc7d4e98bea43467b8baf8fd299e122877",
+        "804c2b2b9d44c45335b8a4814e451815826c22bf219a22cfe4330cc8d5ad11fc"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Braemar \u00b7 Plot 322",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1553-braemar",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "322",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "c6c024d5b93298b9032ab4f63dddaeb84e1648679aa3b57b16240e91d13f65f0"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Cramond \u00b7 Plot 326",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1557-cramond",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "326",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "f9dcd78fdc04bdf03b9ef389e23ec606aa5f4d2802ebdda1dbd3c50897ef9ab9"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Braemar with sunroom \u00b7 Plot 321",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1552-braemar-with-sunroom",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "321",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "523c157a0147bd8a746ad7b50456bc03f09abbc77b38a559204ebfdcd816dae7"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Cramond with sunroom \u00b7 Plot 327",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1551-cramond",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "327",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "a4f95d170caa5e6b1975d8cef0b7fef167fac3f1576f6ce9aa32e37509dfe071"
+      ]
+    },
+    {
+      "development": "Dundee",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/7-dundee",
+      "name": "Kincraig with sunroom \u00b7 Plot 2116",
+      "url": "https://www.springfield.co.uk/homes-for-sale/7-dundee/1325-kincraig-with-sunroom",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "2116",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "2448954220490467f34dac285deabe1befc77638afd8e03d64d12fcaec9c19c4",
+        "8111c4c7fc6f5d5e3bbea7aaab5a3dc082c3bba12565a836ff00286a80880540",
+        "4b79351919ca69cd718d5eb7d2f5f156b7b0bb88e621f2f7f93bbe46b93413df",
+        "6a4bd526f19fb616419736901ed3957e2013c003f7f1a66c0d879be5f572fc7c",
+        "5c6fdd782cde9d615ca3dfa89d9d003a1736b7ee9e90cf8e67c0231877e15ed6",
+        "5450d1ea892f6936f23b4806ee3e2a11f064aa56985915a9b17d8b6e113fdea7",
+        "bc52408a275c7ca2b2328a1c8897568d5ab26fe372e817ff02fd363b98bb1a61",
+        "dd493c74941ecf3b2dae00a23eec002edf389111a64c0f1a34fc4f669269a42f",
+        "1f27be9f06882bc70f2c9f7c1f1d8a0955102c05287930bc1b8ee3b5292bad2a",
+        "31a2246fa95305d1b98351ef7f537f7b834c3b687a0e863e13e9f3d2f3f116db",
+        "34f37f15c74c986d9a8c13cf5c328f3d032d1287c12d6625352e8c4561e22149"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Dallachy \u00b7 Plot 204",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1540-dallachy",
+      "bedrooms": 3,
+      "price": 243000,
+      "plots": [
+        {
+          "number": "204",
+          "price": 243000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c46d76210d3c23b613e49b114a9a21ca7a780730a216d1933a5c8eefd3ecf61a"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Dallachy with sunroom \u00b7 Plot 203",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1539-dallachy",
+      "bedrooms": 3,
+      "price": 281210,
+      "plots": [
+        {
+          "number": "203",
+          "price": 281210,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8329644d777d4785c19fce3d4c30df5dbfa2ce08cc9b2e8263359c975f339d3c"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Kincraig with sunroom \u00b7 Plot 180",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1565-kincraig",
+      "bedrooms": 4,
+      "price": 447850,
+      "plots": [
+        {
+          "number": "180",
+          "price": 447850,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f162d2a213ca51771a29b95e38ff7c0ccb0e8f8ea6c6d0440a293414db8a6de0"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Auldearn \u00b7 Plot 179",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1569-auldearn",
+      "bedrooms": 2,
+      "price": null,
+      "plots": [
+        {
+          "number": "179",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "d37ad66ac908d719553614dd9c152411c7933fc9e430795873584a896d0f014f"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Dunbar \u00b7 Plot 166",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1103-dunbar",
+      "bedrooms": 2,
+      "price": null,
+      "plots": [
+        {
+          "number": "166",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "3755194f1688d42f9ed7fc3b4383cec86759c3052f9833cc8fd133a6907799e4"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Dunning with detached garage and sunroom \u00b7 Plot 185",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1203-dunning",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "185",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "08e5727d11236ab7e22523531a1cc2c98a8b71a45736b75d1ab5f8ace1a457be"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Culbin \u00b7 Plot 162",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1191-culbin",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "162",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "bd90714baedb7c98713d865813a7f1a840d1ac2b3952e84b8325d295fbeda090"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/25-elgin",
+      "name": "Culbin \u00b7 Plot 186",
+      "url": "https://www.springfield.co.uk/homes-for-sale/25-elgin/1204-culbin",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "186",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "3d1d9c0e6f2e88f2f2c41c63bcd9cbb9d8ce783aa27638207a51b2ca720287c2"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Moray \u00b7 Plot 67",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1658-moray",
+      "bedrooms": 2,
+      "price": 236000,
+      "plots": [
+        {
+          "number": "67",
+          "price": 236000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e981652dec10dd8468293913d465c730f4a10d9b9aa60c5d4d28d9dde6fb623f"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Moray \u00b7 Plot 69",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1660-moray",
+      "bedrooms": 2,
+      "price": 236000,
+      "plots": [
+        {
+          "number": "69",
+          "price": 236000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e981652dec10dd8468293913d465c730f4a10d9b9aa60c5d4d28d9dde6fb623f"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Dunbar \u00b7 Plot 66",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1657-dunbar",
+      "bedrooms": 2,
+      "price": 246000,
+      "plots": [
+        {
+          "number": "66",
+          "price": 246000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "30a737131a3b78146b56129c3b827a07b9a763728318eda39a29f8cb9ef417ba"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Dunbar \u00b7 Plot 68",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1659-dunbar",
+      "bedrooms": 2,
+      "price": 246000,
+      "plots": [
+        {
+          "number": "68",
+          "price": 246000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "30a737131a3b78146b56129c3b827a07b9a763728318eda39a29f8cb9ef417ba"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Cupar mid-terrace \u00b7 Plot 214",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1767-cupar-mid-terrace",
+      "bedrooms": 3,
+      "price": 254000,
+      "plots": [
+        {
+          "number": "214",
+          "price": 254000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "195b962668043ee60be3e8aa83960e044c90f38b5030fdf434fbc3eb17e10a07"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Cupar end-terrace \u00b7 Plot 213",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1766-cupar-end-terrace",
+      "bedrooms": 3,
+      "price": 257000,
+      "plots": [
+        {
+          "number": "213",
+          "price": 257000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "50bf6f4998d83c25e7244eb6e4bcc473257a97c4db78635a520a1cdac6ee1ea5"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Cupar end-terrace \u00b7 Plot 215",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1768-cupar-end-terrace",
+      "bedrooms": 3,
+      "price": 257000,
+      "plots": [
+        {
+          "number": "215",
+          "price": 257000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "195b962668043ee60be3e8aa83960e044c90f38b5030fdf434fbc3eb17e10a07"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Forfar \u00b7 Plot 7",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1620-forfar",
+      "bedrooms": 3,
+      "price": 260000,
+      "plots": [
+        {
+          "number": "7",
+          "price": 260000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7fc13e2bf64c5314e7919a98bb8bffa390aa3ad9a4a3481c54962e818b907053"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Forfar \u00b7 Plot 8",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1621-forfar",
+      "bedrooms": 3,
+      "price": 260000,
+      "plots": [
+        {
+          "number": "8",
+          "price": 260000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b9d3a5b1e36409fba58ff6aed9cebdefc8fa03af03b05d5a44051843592c6d7e"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Tain \u00b7 Plot 3",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1635-tain",
+      "bedrooms": 3,
+      "price": 295000,
+      "plots": [
+        {
+          "number": "3",
+          "price": 295000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d934e101addaa3c9e0dc5c673c0fe82420ca98025d7c5577d2081978e9cda153"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Ardgay Semi-Detached with sunroom \u00b7 Plot 62",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1628-ardgay-semi-detached",
+      "bedrooms": 3,
+      "price": 299000,
+      "plots": [
+        {
+          "number": "62",
+          "price": 299000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5ff4215f2dbc8c5bf090f93dbef590c36d2847ef074977e1e949d23351d788aa"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Musselburgh \u00b7 Plot 2",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1634-musselburgh",
+      "bedrooms": 4,
+      "price": 316000,
+      "plots": [
+        {
+          "number": "2",
+          "price": 316000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "41f1f831b7b4a3cc2a1d16df935586ee741ecbe7ef15f9477daf8acd8172d09b"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Maverston \u00b7 Plot 9",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1622-maverston",
+      "bedrooms": 4,
+      "price": 335000,
+      "plots": [
+        {
+          "number": "9",
+          "price": 335000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7fc43b4d0f89709cc1500d3fd6a8b0dcff5ff613dbbfa6001e2c319d3dfec08f"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Musselburgh with sunroom \u00b7 Plot 5",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1637-musselburgh",
+      "bedrooms": 4,
+      "price": 343000,
+      "plots": [
+        {
+          "number": "5",
+          "price": 343000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "41f1f831b7b4a3cc2a1d16df935586ee741ecbe7ef15f9477daf8acd8172d09b"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Maverston with sunroom \u00b7 Plot 6",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1619-maverston",
+      "bedrooms": 4,
+      "price": 362000,
+      "plots": [
+        {
+          "number": "6",
+          "price": 362000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c78d5ebfaea6f2265fb91c3208369ef4698a414dc057cb5d837f44105a911fb6"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Maverston with sunroom \u00b7 Plot 70",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1630-maverston",
+      "bedrooms": 4,
+      "price": 362000,
+      "plots": [
+        {
+          "number": "70",
+          "price": 362000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c78d5ebfaea6f2265fb91c3208369ef4698a414dc057cb5d837f44105a911fb6"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Scotscraig \u00b7 Plot 73",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1641-scotscraig",
+      "bedrooms": 4,
+      "price": 370000,
+      "plots": [
+        {
+          "number": "73",
+          "price": 370000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "80c6fe9cdf543fad9779428fda9a48341fecf43462119238f08c9427516378b6"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Scotscraig \u00b7 Plot 160",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1704-scotscraig",
+      "bedrooms": 4,
+      "price": 370000,
+      "plots": [
+        {
+          "number": "160",
+          "price": 370000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e39145c3a124f351e1ebeb06d67f7be9aba705b778c04276ac331a62d1c7de27"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Scotscraig with sunroom \u00b7 Plot 64",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1639-scotscraig",
+      "bedrooms": 4,
+      "price": 397000,
+      "plots": [
+        {
+          "number": "64",
+          "price": 397000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "80c6fe9cdf543fad9779428fda9a48341fecf43462119238f08c9427516378b6"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Elie \u00b7 Plot 71",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1631-elie",
+      "bedrooms": 4,
+      "price": 420000,
+      "plots": [
+        {
+          "number": "71",
+          "price": 420000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e46ae557d909516e968e0b1532227bd5ecc28698d24dcfd8054a1a3d6b0d427a"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Panmure \u00b7 Plot 162",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1706-panmure",
+      "bedrooms": 4,
+      "price": 427000,
+      "plots": [
+        {
+          "number": "162",
+          "price": 427000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Elie with sunroom \u00b7 Plot 72",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1632-elie",
+      "bedrooms": 4,
+      "price": 447000,
+      "plots": [
+        {
+          "number": "72",
+          "price": 447000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "02994564a46401ee05e7ed9a5a6bd39eee95370c789aaf0ef109bc13eb4c7ecc"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Elie with sunroom \u00b7 Plot 161",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1705-elie",
+      "bedrooms": 4,
+      "price": 451000,
+      "plots": [
+        {
+          "number": "161",
+          "price": 451000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "02994564a46401ee05e7ed9a5a6bd39eee95370c789aaf0ef109bc13eb4c7ecc"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Gleneagles with sunroom \u00b7 Plot 63",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1629-gleneagles",
+      "bedrooms": 4,
+      "price": 452000,
+      "plots": [
+        {
+          "number": "63",
+          "price": 452000,
+          "available": true
+        }
+      ],
+      "imageIds": []
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Prestwick \u00b7 Plot 74",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1642-prestwick",
+      "bedrooms": 5,
+      "price": 457000,
+      "plots": [
+        {
+          "number": "74",
+          "price": 457000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8b73140e67a592ac0670505d8f4de26a239b18d0f3676667b340237a1ef8ed7d"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Prestwick with sunroom \u00b7 Plot 65",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1640-prestwick",
+      "bedrooms": 5,
+      "price": 484000,
+      "plots": [
+        {
+          "number": "65",
+          "price": 484000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "8b73140e67a592ac0670505d8f4de26a239b18d0f3676667b340237a1ef8ed7d"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Ardgay Semi-Detached \u00b7 Plot 57",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1624-ardgay-semi-detached",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "57",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "5ff4215f2dbc8c5bf090f93dbef590c36d2847ef074977e1e949d23351d788aa"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Tain \u00b7 Plot 4",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1636-tain",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "4",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "d934e101addaa3c9e0dc5c673c0fe82420ca98025d7c5577d2081978e9cda153"
+      ]
+    },
+    {
+      "development": "Elgin",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/30-elgin",
+      "name": "Lundin with sunroom \u00b7 Plot 59",
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1626-lundin",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "59",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "75206f5801a2983e3226104d9bb706a9871545658df69969c89166f6f061336a"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Moray \u00b7 Plot 94",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1515-moray",
+      "bedrooms": 2,
+      "price": 259000,
+      "plots": [
+        {
+          "number": "94",
+          "price": 259000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e64fc6e2ef64687c2a72ba04a47ea5b4519e67c56a60d15d1d8e128b58b0d5aa"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Moray \u00b7 Plot 96",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1516-moray",
+      "bedrooms": 2,
+      "price": 259000,
+      "plots": [
+        {
+          "number": "96",
+          "price": 259000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e64fc6e2ef64687c2a72ba04a47ea5b4519e67c56a60d15d1d8e128b58b0d5aa"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Dunbar \u00b7 Plot 97",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1520-dunbar",
+      "bedrooms": 2,
+      "price": 270000,
+      "plots": [
+        {
+          "number": "97",
+          "price": 270000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "e64fc6e2ef64687c2a72ba04a47ea5b4519e67c56a60d15d1d8e128b58b0d5aa"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Cupar \u00b7 Plot 13",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1453-cupar",
+      "bedrooms": 3,
+      "price": 305000,
+      "plots": [
+        {
+          "number": "13",
+          "price": 305000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "746eded60db1208135680c56a5feb75e7e2c9e5746ba0d0dd696820e031d9886"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Cupar \u00b7 Plot 14",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1454-cupar",
+      "bedrooms": 3,
+      "price": 305000,
+      "plots": [
+        {
+          "number": "14",
+          "price": 305000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7869516f3257f2c5b84bf3233fd15b9e68d93387a491a3872daeae29b16cf42a"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Cupar \u00b7 Plot 82",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1489-cupar",
+      "bedrooms": 3,
+      "price": 305000,
+      "plots": [
+        {
+          "number": "82",
+          "price": 305000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "746eded60db1208135680c56a5feb75e7e2c9e5746ba0d0dd696820e031d9886"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Balerno \u00b7 Plot 84",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1491-balerno",
+      "bedrooms": 4,
+      "price": 372000,
+      "plots": [
+        {
+          "number": "84",
+          "price": 372000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "0a2c171134dbf5660a3f694d13e7c3ec6a961c4f414be271a903466653cdefe2"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Roslin with sunroom \u00b7 Plot 110",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1508-roslin",
+      "bedrooms": 4,
+      "price": 384000,
+      "plots": [
+        {
+          "number": "110",
+          "price": 384000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "76d4c8bc45b43faa5d32e9a3f9cb153277ea70de71179da0d3017e7d96af1c98"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Melford \u00b7 Plot 12",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1531-melford",
+      "bedrooms": 4,
+      "price": 425000,
+      "plots": [
+        {
+          "number": "12",
+          "price": 425000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f03306c0f4cd776369d94796c24e2c280f4aeddda16502056a94ff74a4321aa2"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Melford \u00b7 Plot 109",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1537-melford",
+      "bedrooms": 4,
+      "price": 425000,
+      "plots": [
+        {
+          "number": "109",
+          "price": 425000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f03306c0f4cd776369d94796c24e2c280f4aeddda16502056a94ff74a4321aa2"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kintore \u00b7 Plot 17",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1457-kintore",
+      "bedrooms": 4,
+      "price": 435000,
+      "plots": [
+        {
+          "number": "17",
+          "price": 435000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kintore \u00b7 Plot 87",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1494-kintore",
+      "bedrooms": 4,
+      "price": 437000,
+      "plots": [
+        {
+          "number": "87",
+          "price": 437000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kintore \u00b7 Plot 88",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1495-kintore",
+      "bedrooms": 4,
+      "price": 437000,
+      "plots": [
+        {
+          "number": "88",
+          "price": 437000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kintore \u00b7 Plot 91",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1498-kintore",
+      "bedrooms": 4,
+      "price": 437000,
+      "plots": [
+        {
+          "number": "91",
+          "price": 437000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kintore \u00b7 Plot 85",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1492-kintore",
+      "bedrooms": 4,
+      "price": 438000,
+      "plots": [
+        {
+          "number": "85",
+          "price": 438000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Dunning with detached garage \u00b7 Plot 103",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1502-dunning",
+      "bedrooms": 4,
+      "price": 443000,
+      "plots": [
+        {
+          "number": "103",
+          "price": 443000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a308ecdb00e39482b273a4491ff29cdaa22cd665b33b57f13d825cab4686f070"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Melford with sunroom \u00b7 Plot 23",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1532-melford",
+      "bedrooms": 4,
+      "price": 452000,
+      "plots": [
+        {
+          "number": "23",
+          "price": 452000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d8db7b6e8f2b23eb10df48c3e84f3ea3d6589e198cbf9173a83b4cd4b410be6a"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Melford with sunroom \u00b7 Plot 111",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1538-melford",
+      "bedrooms": 4,
+      "price": 452000,
+      "plots": [
+        {
+          "number": "111",
+          "price": 452000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "f03306c0f4cd776369d94796c24e2c280f4aeddda16502056a94ff74a4321aa2"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig \u00b7 Plot 89",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1496-kincraig",
+      "bedrooms": 4,
+      "price": 465000,
+      "plots": [
+        {
+          "number": "89",
+          "price": 465000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig \u00b7 Plot 104",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1503-kincraig",
+      "bedrooms": 4,
+      "price": 467000,
+      "plots": [
+        {
+          "number": "104",
+          "price": 467000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fc8a8f5d132cb23ed042b6650293c70d96c4d742812801f9738d8434e2423d66"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig \u00b7 Plot 105",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1504-kincraig",
+      "bedrooms": 4,
+      "price": 467000,
+      "plots": [
+        {
+          "number": "105",
+          "price": 467000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig \u00b7 Plot 108",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1507-kincraig",
+      "bedrooms": 4,
+      "price": 467000,
+      "plots": [
+        {
+          "number": "108",
+          "price": 467000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "fc8a8f5d132cb23ed042b6650293c70d96c4d742812801f9738d8434e2423d66"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Dunning with detached garage and sunroom \u00b7 Plot 107",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1506-dunning-with-detached-garage",
+      "bedrooms": 4,
+      "price": 472000,
+      "plots": [
+        {
+          "number": "107",
+          "price": 472000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "08e5727d11236ab7e22523531a1cc2c98a8b71a45736b75d1ab5f8ace1a457be"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig with sunroom \u00b7 Plot 112",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1509-kincraig",
+      "bedrooms": 4,
+      "price": 494000,
+      "plots": [
+        {
+          "number": "112",
+          "price": 494000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "6145b15c4f7f34ea5aa2589f14fdedfba53eb605481ae30aefca181e8e216a34"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig with sunroom \u00b7 Plot 22",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1462-kincraig",
+      "bedrooms": 4,
+      "price": 495000,
+      "plots": [
+        {
+          "number": "22",
+          "price": 495000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Moray \u00b7 Plot 92",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1514-moray",
+      "bedrooms": 2,
+      "price": null,
+      "plots": [
+        {
+          "number": "92",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "e64fc6e2ef64687c2a72ba04a47ea5b4519e67c56a60d15d1d8e128b58b0d5aa"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Dunbar \u00b7 Plot 95",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1519-dunbar",
+      "bedrooms": 2,
+      "price": null,
+      "plots": [
+        {
+          "number": "95",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "e64fc6e2ef64687c2a72ba04a47ea5b4519e67c56a60d15d1d8e128b58b0d5aa"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Cupar \u00b7 Plot 83",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1490-cupar",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "83",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "7869516f3257f2c5b84bf3233fd15b9e68d93387a491a3872daeae29b16cf42a"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Cupar \u00b7 Plot 106",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1505-cupar",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "106",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "382b574b5b371f1a6b3fecfb9e1d7f7bb994fb360307fce0c6fb9e655abbddde"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Arden \u00b7 Plot 15",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1455-arden",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "15",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "8a1ac66f6d36b76d2f3493c5492b255ddd45aa9c88f8c865b94377ebfb23b1d7"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Roslin with sunroom \u00b7 Plot 21",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1461-roslin",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "21",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "76d4c8bc45b43faa5d32e9a3f9cb153277ea70de71179da0d3017e7d96af1c98"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Arden with sunroom \u00b7 Plot 25",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1464-arden",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "25",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "8a1ac66f6d36b76d2f3493c5492b255ddd45aa9c88f8c865b94377ebfb23b1d7"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Melford \u00b7 Plot 8",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1530-melford",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "8",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "f03306c0f4cd776369d94796c24e2c280f4aeddda16502056a94ff74a4321aa2"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kintore \u00b7 Plot 18",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1458-kintore",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "18",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig \u00b7 Plot 4",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1447-kincraig",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "4",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Kincraig with sunroom \u00b7 Plot 24",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1463-kincraig",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "24",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54"
+      ]
+    },
+    {
+      "development": "Inverness",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/27-inverness",
+      "name": "Culbin with sunroom \u00b7 Plot 20",
+      "url": "https://www.springfield.co.uk/homes-for-sale/27-inverness/1460-culbin",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "20",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "4ba8b9b58ddbd71ef358e7715896718fe158797315c13871afa74422425c7841"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Askernish \u00b7 Plot 105",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1584-askernish",
+      "bedrooms": 3,
+      "price": 332000,
+      "plots": [
+        {
+          "number": "105",
+          "price": 332000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "7b8db7a587250583f641390d8ef3bd93efc85746422ac5ad4e4ef4b5191cf604"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Askernish \u00b7 Plot 106",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1585-askernish",
+      "bedrooms": 3,
+      "price": 340000,
+      "plots": [
+        {
+          "number": "106",
+          "price": 340000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "5dbb4a1c0fc32ffd385badf4b8d0fd23d587b4d9d2d352bd1e285e4166355822"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Askernish \u00b7 Plot 101",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1580-askernish",
+      "bedrooms": 3,
+      "price": 355000,
+      "plots": [
+        {
+          "number": "101",
+          "price": 355000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "2c9b3656e04a6266bc18d80e2e7c1ff502a89e145bbd36286d51cc16d6dabced"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Musselburgh \u00b7 Plot 103",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1582-musselburgh",
+      "bedrooms": 4,
+      "price": 395000,
+      "plots": [
+        {
+          "number": "103",
+          "price": 395000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c1630d7b725a720bdaaa24623ad1421cc4ae0987debe5b2a6c426b8c38b92c68"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Panmure (with detached garage) \u00b7 Plot 95",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1576-panmure",
+      "bedrooms": 4,
+      "price": 499000,
+      "plots": [
+        {
+          "number": "95",
+          "price": 499000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d9b49aead6174df7d5dc4946b607818507f9e9eca95b93726bba22ade14a3601"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Gleneagles \u00b7 Plot 98",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1577-gleneagles",
+      "bedrooms": 5,
+      "price": 549995,
+      "plots": [
+        {
+          "number": "98",
+          "price": 549995,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "279b3aee3de4c890257c0488d4d634e30759be7c0cbadb144a4c91413b6c0e57"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Craigielaw \u00b7 Plot 104",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1583-craigielaw",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "104",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "ba5a490cec85312499c25f668aeca7b9d7688f477101699481c8447885bea641"
+      ]
+    },
+    {
+      "development": "Millerhill",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/29-millerhill",
+      "name": "Musselburgh \u00b7 Plot 96",
+      "url": "https://www.springfield.co.uk/homes-for-sale/29-millerhill/1574-panmure",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "96",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "107e7c21dd54afa34c69a27a9c4043c54dc237c2b655cb8455b7fe5fb171aadd"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Forfar mid terrace \u00b7 Plot 5073",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1798-forfar-mid-terrace",
+      "bedrooms": 3,
+      "price": 260500,
+      "plots": [
+        {
+          "number": "5073",
+          "price": 260500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "a268b3c3fc2076908b1dbe8e6210b6ff1b9803479883ee7168a4747e5dcb7ff7"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Forfar end terrace \u00b7 Plot 5074",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1799-forfar-end-terrace",
+      "bedrooms": 3,
+      "price": 266500,
+      "plots": [
+        {
+          "number": "5074",
+          "price": 266500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "3c2117c9c355150559076e45a2fea3297503149c7fdde6729f9cd28201d0565e"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Askernish \u00b7 Plot 6101",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1807-askernish",
+      "bedrooms": 3,
+      "price": 300000,
+      "plots": [
+        {
+          "number": "6101",
+          "price": 300000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b4c540c2458a02dc350350a275488833cf65c169d086fddf085d7c2a0c86d582"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Askernish \u00b7 Plot 6099",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1805-askernish",
+      "bedrooms": 3,
+      "price": 306000,
+      "plots": [
+        {
+          "number": "6099",
+          "price": 306000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b4c540c2458a02dc350350a275488833cf65c169d086fddf085d7c2a0c86d582"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Askernish \u00b7 Plot 6100",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1806-askernish",
+      "bedrooms": 3,
+      "price": 306000,
+      "plots": [
+        {
+          "number": "6100",
+          "price": 306000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "b4c540c2458a02dc350350a275488833cf65c169d086fddf085d7c2a0c86d582"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Mortonhall \u00b7 Plot 5061",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1786-mortonhall",
+      "bedrooms": 4,
+      "price": 342000,
+      "plots": [
+        {
+          "number": "5061",
+          "price": 342000,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "9045a90df35ae670496f76938e4435087d0beaf9ec6842c37c558913ae2ec07e"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Dundonald \u00b7 Plot 6103",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1809-dundonald",
+      "bedrooms": 4,
+      "price": 413500,
+      "plots": [
+        {
+          "number": "6103",
+          "price": 413500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "c290e26db98b985f3052d44c21609e23903c7e3270545674a70ffb7a935c4fa2"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Gleneagles \u00b7 Plot 5062",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1787-gleneagles",
+      "bedrooms": 5,
+      "price": 441500,
+      "plots": [
+        {
+          "number": "5062",
+          "price": 441500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "52af570cf74e54778689493964bd495384f8ec1a53c593265c3960f930e25c09"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Prestwick \u00b7 Plot 5063",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1788-prestwick",
+      "bedrooms": 5,
+      "price": 455500,
+      "plots": [
+        {
+          "number": "5063",
+          "price": 455500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "d389284e0d183ce36cc0e5839674e94ff5811bf2778a1a1d0eda52e3c847acc1"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Carnoustie \u00b7 Plot 5075",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1800-carnoustie",
+      "bedrooms": 5,
+      "price": 488500,
+      "plots": [
+        {
+          "number": "5075",
+          "price": 488500,
+          "available": true
+        }
+      ],
+      "imageIds": [
+        "36a52146b07b7cde9ac29b641fb6ad68405d0ef60cc24533a7d90c065ba4c909"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Askernish \u00b7 Plot 6102",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1808-askernish",
+      "bedrooms": 3,
+      "price": null,
+      "plots": [
+        {
+          "number": "6102",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "b4c540c2458a02dc350350a275488833cf65c169d086fddf085d7c2a0c86d582"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Letham with sunroom \u00b7 Plot 1001",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1818-letham",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "1001",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "b202dd18b2dcd2e5ddb81ba8a4aed7a3aa094024962545c0a22f4f7ed5bf8c51"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Melford show home \u00b7 Plot 1002",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1817-melford-show-home",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "1002",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "076f828b94a215df7a7010b167c5df310e7eed78d4df4b7b3c9131eb2a678e8e"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Dumbarnie \u00b7 Plot 5076",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1801-dumbarnie",
+      "bedrooms": 4,
+      "price": null,
+      "plots": [
+        {
+          "number": "5076",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "b154c63227498a9c53f695f6f5290e6071dc24e0d49f369f3a4663c137fa35c4"
+      ]
+    },
+    {
+      "development": "Perth",
+      "developmentUrl": "https://www.springfield.co.uk/homes-for-sale/3-perth",
+      "name": "Gleneagles \u00b7 Plot 5077",
+      "url": "https://www.springfield.co.uk/homes-for-sale/3-perth/1802-gleneagles",
+      "bedrooms": 5,
+      "price": null,
+      "plots": [
+        {
+          "number": "5077",
+          "price": null,
+          "available": false
+        }
+      ],
+      "imageIds": [
+        "428b7782567e29e8de14c0e2828995cdba454aad49c02aaf5ecb64de85e6fc92"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "7c38513aad40599f1083635ae0fc9ec63c4426282b6c2cef35773dbe9494352c",
+      "path": "images/7c38513aad40599f1083635ae0fc9ec63c4426282b6c2cef35773dbe9494352c.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/157/Springfield_Homes_North_-_Moray-Dunbar_3_Terrace_-_Master_B_300dpi_plot_detail_image.jpg?1675932534",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "29b8e327809eb7ee9c2f4e957eae7558a97d6c406905a9130bb542b76f310e4d",
+      "path": "images/29b8e327809eb7ee9c2f4e957eae7558a97d6c406905a9130bb542b76f310e4d.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/578/238_-_Cupar_plot_detail_image.jpg?1790075146",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "debab220bd8f90fec97a5616f420ed11941c066b228889eec9358965d211cc85",
+      "path": "images/debab220bd8f90fec97a5616f420ed11941c066b228889eec9358965d211cc85.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/000/765/Cupar_North_OPP_plot_detail_image.jpg?1652181513",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "7869516f3257f2c5b84bf3233fd15b9e68d93387a491a3872daeae29b16cf42a",
+      "path": "images/7869516f3257f2c5b84bf3233fd15b9e68d93387a491a3872daeae29b16cf42a.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/657/Springfield_Homes_North_-_Cupar_Semi_-_B_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691409134",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "3d864ba46e80a719d4bf43a887d0a627da13518b23e8e5eeb9d8101c8efb4380",
+      "path": "images/3d864ba46e80a719d4bf43a887d0a627da13518b23e8e5eeb9d8101c8efb4380.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/000/764/Cupar_North_AS_plot_detail_image.jpg?1652181541",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d7388f3503a4d91fbfbb9331242ec499e2e9142736c3b89772f4433b311477fc",
+      "path": "images/d7388f3503a4d91fbfbb9331242ec499e2e9142736c3b89772f4433b311477fc.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/580/240_-_Arden_plot_detail_image.jpg?1790075433",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "21e4135ce6e0c0d6b8d53ec186282a4f66df661152575b6553743eb650247782",
+      "path": "images/21e4135ce6e0c0d6b8d53ec186282a4f66df661152575b6553743eb650247782.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/417/Cupar_detached_AS_original_NEW_DOOR_C_300dpi_plot_detail_image.jpg?1782380051",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "82ee79b10ed36483b1884d7180367dba64381589cdc17c76ae5d37aaf2ea5c85",
+      "path": "images/82ee79b10ed36483b1884d7180367dba64381589cdc17c76ae5d37aaf2ea5c85.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/579/235_-_Nairn_%28darker%29_plot_detail_image.jpg?1790076144",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "589647ccbf535afc7fa0e5e8a6c428e812c32a1cdb8de62aa30e158458e700ea",
+      "path": "images/589647ccbf535afc7fa0e5e8a6c428e812c32a1cdb8de62aa30e158458e700ea.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/581/234_-_Cullen_%28darker%29_plot_detail_image.jpg?1790075598",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "3ac97600f234683ca9d43df0db0d1cfe336e13fb856347b780cb717cb461ce63",
+      "path": "images/3ac97600f234683ca9d43df0db0d1cfe336e13fb856347b780cb717cb461ce63.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/663/Springfield_Homes_North_-_Arden_Wide_D_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691409925",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "6fdb9ee37d914d409775b7841ed162fdbd3dd4fb7e64f33cc5ed7d20f5f299f6",
+      "path": "images/6fdb9ee37d914d409775b7841ed162fdbd3dd4fb7e64f33cc5ed7d20f5f299f6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/150/Springfield_Homes_North_-_Arden_Wide_B_300dpi_plot_detail_image.jpg?1675353356",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "f6b2bce2d42d57df6b85925dda62d3cfa91a35de0ddcca63d35ed8735107878e",
+      "path": "images/f6b2bce2d42d57df6b85925dda62d3cfa91a35de0ddcca63d35ed8735107878e.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/582/239_-_Balerno_plot_detail_image.jpg?1790075700",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "b31b360f0cc9abcda3708cfef37a7ee015a926afde68b0669bf5121bb787001c",
+      "path": "images/b31b360f0cc9abcda3708cfef37a7ee015a926afde68b0669bf5121bb787001c.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/001/243/Springfield_Homes_North_-_Nethy_Int_Garage_C_300dpi_-13-08-21_plot_detail_image.jpg?1653054156",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "efb370d784d856d28fc325dac20113bd19701dacc9dca2c36fd94fd9077adfc1",
+      "path": "images/efb370d784d856d28fc325dac20113bd19701dacc9dca2c36fd94fd9077adfc1.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/427/Springfield_Homes_North_-_Nethy_-_Detached_Garage_F_300dpi_%28new_door_2026%29_plot_detail_image.jpg?1782475689",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "92ce60a7a1d9bcc49a3bf775a1ce3a534ec85b874bb75dd5f6ff38bbe138b578",
+      "path": "images/92ce60a7a1d9bcc49a3bf775a1ce3a534ec85b874bb75dd5f6ff38bbe138b578.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/000/755/Crail_North_AS_plot_detail_image.jpg?1652180759",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "a308ecdb00e39482b273a4491ff29cdaa22cd665b33b57f13d825cab4686f070",
+      "path": "images/a308ecdb00e39482b273a4491ff29cdaa22cd665b33b57f13d825cab4686f070.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/295/Springfield_Homes_North_-_Dunning_C_300dpi_AS_%28new_door_2026%29_plot_detail_image.jpg?1781773583",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54",
+      "path": "images/bbb8b48723e7d26a6da6ad104e410e03a0f69552232814d0e3838d879271fe54.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/297/Springfield_Homes_North_-_Kincraig_D_300dpi_OPP_%28new_door_2026%29-01_plot_detail_image.jpg?1781774314",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "fc8a8f5d132cb23ed042b6650293c70d96c4d742812801f9738d8434e2423d66",
+      "path": "images/fc8a8f5d132cb23ed042b6650293c70d96c4d742812801f9738d8434e2423d66.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/298/Springfield_Homes_North_-_Kincraig_D_300dpi_AS_%28new_door_2026%29_plot_detail_image.jpg?1781774369",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "fef6a3b49c8a0ac45ea9dd574b39d89a79d8236b75786c7274011b06f3b396fd",
+      "path": "images/fef6a3b49c8a0ac45ea9dd574b39d89a79d8236b75786c7274011b06f3b396fd.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/583/224_-_Prestwick_plot_detail_image.jpg?1790075783",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "138daebb59c5e83ec8b114caecc85f1f12886886d6d12462e38e545dca5de220",
+      "path": "images/138daebb59c5e83ec8b114caecc85f1f12886886d6d12462e38e545dca5de220.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/257/Prestwick_OPP_plot_detail_image.jpg?1782997403",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "e65aa893d1b3a71f36e9594d7e857b50d7f7e2d3f3a4f3e19c4a932182dce78f",
+      "path": "images/e65aa893d1b3a71f36e9594d7e857b50d7f7e2d3f3a4f3e19c4a932182dce78f.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/000/882/Springfield_Homes_North_-_Nairn_-_Master_I_300dpi_plot_detail_image.jpg?1707835922",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "0041c8c63ee8380871447531c10ccf36277c1e21d4f04e036ec90b4026d9d4f0",
+      "path": "images/0041c8c63ee8380871447531c10ccf36277c1e21d4f04e036ec90b4026d9d4f0.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/001/041/Arden_OPP_plot_detail_image.jpg?1675353545",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "adaf81dc49db693956f7e15cc1df3c67e43a84fe83671f73a003a0d1362f38d9",
+      "path": "images/adaf81dc49db693956f7e15cc1df3c67e43a84fe83671f73a003a0d1362f38d9.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/236/Gemini_Generated_Image_vvf1eevvf1eevvf1_plot_detail_image.jpg?1779290602",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "f8bf6cb010d2c8d41f57b73578086ac20cc10036ca38c31d514dd8d3796f950e",
+      "path": "images/f8bf6cb010d2c8d41f57b73578086ac20cc10036ca38c31d514dd8d3796f950e.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/237/ChatGPT_Image_May_20__2026__09_59_03_AM_plot_detail_image.jpg?1779290569",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "30d6286d2e78e9ee52e870e9f061f1c952e2843925aa05d8e482759f6bcee931",
+      "path": "images/30d6286d2e78e9ee52e870e9f061f1c952e2843925aa05d8e482759f6bcee931.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/506/Kincraig_-_Dykes_of_Grey_Dundee_C-06_AS_plot_detail_image.jpg?1730732448",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "8111c4c7fc6f5d5e3bbea7aaab5a3dc082c3bba12565a836ff00286a80880540",
+      "path": "images/8111c4c7fc6f5d5e3bbea7aaab5a3dc082c3bba12565a836ff00286a80880540.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/789/3_Kincraig_lounge_1_A_CROP_plot_detail_image.jpg?1750674026",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "4b79351919ca69cd718d5eb7d2f5f156b7b0bb88e621f2f7f93bbe46b93413df",
+      "path": "images/4b79351919ca69cd718d5eb7d2f5f156b7b0bb88e621f2f7f93bbe46b93413df.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/787/1_Kincraig_dining_kitchen_1_plot_detail_image.jpg?1750673081",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "6a4bd526f19fb616419736901ed3957e2013c003f7f1a66c0d879be5f572fc7c",
+      "path": "images/6a4bd526f19fb616419736901ed3957e2013c003f7f1a66c0d879be5f572fc7c.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/791/4_Kincraig_lounge_3_B_CROP_plot_detail_image.jpg?1750673946",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "5c6fdd782cde9d615ca3dfa89d9d003a1736b7ee9e90cf8e67c0231877e15ed6",
+      "path": "images/5c6fdd782cde9d615ca3dfa89d9d003a1736b7ee9e90cf8e67c0231877e15ed6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/790/5_Kincraig_hall_2_plot_detail_image.jpg?1790348408",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "5450d1ea892f6936f23b4806ee3e2a11f064aa56985915a9b17d8b6e113fdea7",
+      "path": "images/5450d1ea892f6936f23b4806ee3e2a11f064aa56985915a9b17d8b6e113fdea7.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/792/7_Kincraig_bedroom_1_A_CROP_plot_detail_image.jpg?1750674365",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "bc52408a275c7ca2b2328a1c8897568d5ab26fe372e817ff02fd363b98bb1a61",
+      "path": "images/bc52408a275c7ca2b2328a1c8897568d5ab26fe372e817ff02fd363b98bb1a61.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/794/8_Kincraig_bedroom_2_A_crop_plot_detail_image.jpg?1750674514",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "dd493c74941ecf3b2dae00a23eec002edf389111a64c0f1a34fc4f669269a42f",
+      "path": "images/dd493c74941ecf3b2dae00a23eec002edf389111a64c0f1a34fc4f669269a42f.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/795/9_Kincraig_bedroom_3_A_CROP_plot_detail_image.jpg?1750674595",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "1f27be9f06882bc70f2c9f7c1f1d8a0955102c05287930bc1b8ee3b5292bad2a",
+      "path": "images/1f27be9f06882bc70f2c9f7c1f1d8a0955102c05287930bc1b8ee3b5292bad2a.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/796/10_Kincraig_bedroom_4_A_curves_plot_detail_image.jpg?1750674679",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "e39d7362f551c84f7b7e948fc5a24900289844cb659dae55b45a5b236a216cfa",
+      "path": "images/e39d7362f551c84f7b7e948fc5a24900289844cb659dae55b45a5b236a216cfa.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/585/Culbin_-_C-06_OP_plot_detail_image.jpg?1690204139",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "31a2246fa95305d1b98351ef7f537f7b834c3b687a0e863e13e9f3d2f3f116db",
+      "path": "images/31a2246fa95305d1b98351ef7f537f7b834c3b687a0e863e13e9f3d2f3f116db.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/799/13_Kincraig_office_1_plot_detail_image.jpg?1750674868",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "34f37f15c74c986d9a8c13cf5c328f3d032d1287c12d6625352e8c4561e22149",
+      "path": "images/34f37f15c74c986d9a8c13cf5c328f3d032d1287c12d6625352e8c4561e22149.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/800/14_Kincraig_bathroom_B_plot_detail_image.jpg?1750674901",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "65b9f039e13999c49060a3cd2b8a6c4ea9c91957f74f20967543449309fad0fe",
+      "path": "images/65b9f039e13999c49060a3cd2b8a6c4ea9c91957f74f20967543449309fad0fe.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/072/Culbin_Ex_Show_home_exterior_B_DSC00921_plot_detail_image.jpg?1775745366",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "3a2618ec1b5b79e05b269d1b66618f24c887a4fd00b7c4201bfedcd880bb41ac",
+      "path": "images/3a2618ec1b5b79e05b269d1b66618f24c887a4fd00b7c4201bfedcd880bb41ac.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/419/DD_culbin_lounge_1920_plot_detail_image.jpg?1751294713",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "5827e97341a439ac5a22a783eea45c927be0b7281f9a42a773a832ebf34dfb6c",
+      "path": "images/5827e97341a439ac5a22a783eea45c927be0b7281f9a42a773a832ebf34dfb6c.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/416/DD_culbin_kitchen_3_1920_plot_detail_image.jpg?1751294735",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "c3e7141d3ab82f8bf1bef8ca497948ff7d44c61bf3a0eb8be19dc45c21529bee",
+      "path": "images/c3e7141d3ab82f8bf1bef8ca497948ff7d44c61bf3a0eb8be19dc45c21529bee.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/418/DD_culbin_kitchen_1920_plot_detail_image.jpg?1751294770",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "0519101fc02e76c6a1ef9496d309c854c83c913f16e2894fe4664c2100e326b5",
+      "path": "images/0519101fc02e76c6a1ef9496d309c854c83c913f16e2894fe4664c2100e326b5.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/951/Springfield_Homes_-_Bowmore_-_Dykes_of_Grey_Dundee_C-05_B_300dpi_plot_detail_image.jpg?1770825496",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "f93e34c58577235438fa1fce9b46df67c8c7601b9b4157b99e5588ebc8c06fe6",
+      "path": "images/f93e34c58577235438fa1fce9b46df67c8c7601b9b4157b99e5588ebc8c06fe6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/414/DD_culbin_dining_room_2x_1920_plot_detail_image.jpg?1751294804",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d75d0cb0eb0e933b547834ad4ac34f8eab0c7fec8bbe846540256a3189e01220",
+      "path": "images/d75d0cb0eb0e933b547834ad4ac34f8eab0c7fec8bbe846540256a3189e01220.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/410/DD_Culbin_bedroom_2_B_1920_plot_detail_image.jpg?1751294913",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d4b334296e1ee885c812fcd2fe75959245cd6dcaa503548d406c4a9b4d7cabea",
+      "path": "images/d4b334296e1ee885c812fcd2fe75959245cd6dcaa503548d406c4a9b4d7cabea.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/953/OP_Springfield_Homes_-_Bowmore_-_Dykes_of_Grey_Dundee_C-05_B_300dpi_plot_detail_image.jpg?1770826856",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "ed7c2eeed9a60a4b069941f29f1ab71b8f334d57a1b2234cb01198b06894cf0c",
+      "path": "images/ed7c2eeed9a60a4b069941f29f1ab71b8f334d57a1b2234cb01198b06894cf0c.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/409/DD_Culbin_bedroom_1_C_1920_plot_detail_image.jpg?1751294928",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "0a050a4f6e0137ff0d155489346c093c6fa6e97fc658a01e0e43fafba4888253",
+      "path": "images/0a050a4f6e0137ff0d155489346c093c6fa6e97fc658a01e0e43fafba4888253.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/412/DD_Culbin_bedroom_3_1920_plot_detail_image.jpg?1750681860",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "da392374dbd0a58ebddd4bc6477e98ff01dd243341677bef2befdfa8717a6c96",
+      "path": "images/da392374dbd0a58ebddd4bc6477e98ff01dd243341677bef2befdfa8717a6c96.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/325/Dunrobin_DYKES_C6_NEW_OP_plot_detail_image.jpg?1714039360",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d6495a9b24d9df79cf828d82320b775ed04066ebe16669c87947994d1d856f9f",
+      "path": "images/d6495a9b24d9df79cf828d82320b775ed04066ebe16669c87947994d1d856f9f.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/715/Dunrobin_Dining_kitchen_1_CROP_plot_detail_image.jpg?1751292929",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "1f218cd93b5223b4cd5b56e2c15a7e5dcae35add35f4593c699f1065006f8f84",
+      "path": "images/1f218cd93b5223b4cd5b56e2c15a7e5dcae35add35f4593c699f1065006f8f84.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/722/Dunrobin_lounge_2_CROP_plot_detail_image.jpg?1751293047",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "3e2895124ab848167619bc59ee6e784460765f24cde21cd501a3ceb3c9ebdec7",
+      "path": "images/3e2895124ab848167619bc59ee6e784460765f24cde21cd501a3ceb3c9ebdec7.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/411/DD_Culbin_bedroom_4_1920_plot_detail_image.jpg?1750681931",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "6e650e11948b9442db4691c8fa0a33b43160ea1eea6a8e5c27e4831c65140000",
+      "path": "images/6e650e11948b9442db4691c8fa0a33b43160ea1eea6a8e5c27e4831c65140000.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/718/Dunrobin_ground_floor_hall_2_CROP_plot_detail_image.jpg?1751292986",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "1a87618c150f2bcdba98ca54fa23c62c873a50bc0fd505d6e1db490cab444ea1",
+      "path": "images/1a87618c150f2bcdba98ca54fa23c62c873a50bc0fd505d6e1db490cab444ea1.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/720/Dunrobin_home_office_CROP_AM_plot_detail_image.jpg?1751293009",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "941d0c056899da2756024c3878997d558afe9316e9c135d45f3564f21cba501f",
+      "path": "images/941d0c056899da2756024c3878997d558afe9316e9c135d45f3564f21cba501f.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/705/Dunrobin_bedroom_1_D_CROP_plot_detail_image.jpg?1751292621",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "5e6603fd4a93b8245b61b7e1e7adc1fc34008b87d902ef68461034d4de0eb7f6",
+      "path": "images/5e6603fd4a93b8245b61b7e1e7adc1fc34008b87d902ef68461034d4de0eb7f6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/709/Dunrobin_bedroom_2B_CROP_plot_detail_image.jpg?1751292675",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "c235435649ffff1f1fcecc0ae2a8127fda5f81efca9afc4487d97a412be6b293",
+      "path": "images/c235435649ffff1f1fcecc0ae2a8127fda5f81efca9afc4487d97a412be6b293.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/725/Dunrobin_bedroom_3C_CROP_AM_plot_detail_image.jpg?1751292788",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "f21174a043547471353a48b0a79448cc7d4e98bea43467b8baf8fd299e122877",
+      "path": "images/f21174a043547471353a48b0a79448cc7d4e98bea43467b8baf8fd299e122877.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/712/Dunrobin_bedroom_4_CROP_plot_detail_image.jpg?1751292852",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "804c2b2b9d44c45335b8a4814e451815826c22bf219a22cfe4330cc8d5ad11fc",
+      "path": "images/804c2b2b9d44c45335b8a4814e451815826c22bf219a22cfe4330cc8d5ad11fc.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/701/Dunrobin_bathroom_CROP_plot_detail_image.jpg?1751292531",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "0e1aaec24cda6bdeb1da91964c6d8c5ba691fda3e7cee5aeb903ac1b5189a94b",
+      "path": "images/0e1aaec24cda6bdeb1da91964c6d8c5ba691fda3e7cee5aeb903ac1b5189a94b.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/405/DD_Culbin_Bathroom_A_1920_plot_detail_image.jpg?1750676447",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "c6c024d5b93298b9032ab4f63dddaeb84e1648679aa3b57b16240e91d13f65f0",
+      "path": "images/c6c024d5b93298b9032ab4f63dddaeb84e1648679aa3b57b16240e91d13f65f0.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/920/Braemar_DYKES_C6_NEW_OP_plot_detail_image.jpg?1764601612",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "523c157a0147bd8a746ad7b50456bc03f09abbc77b38a559204ebfdcd816dae7",
+      "path": "images/523c157a0147bd8a746ad7b50456bc03f09abbc77b38a559204ebfdcd816dae7.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/311/Braemar_DYKES_C6_NEW_AS_plot_detail_image.jpg?1764601371",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "f9dcd78fdc04bdf03b9ef389e23ec606aa5f4d2802ebdda1dbd3c50897ef9ab9",
+      "path": "images/f9dcd78fdc04bdf03b9ef389e23ec606aa5f4d2802ebdda1dbd3c50897ef9ab9.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/498/Springfield_Homes_-_Crammond_-_Dykes_of_Grey_Dundee_C05_A_300dpi_AS_plot_detail_image.jpg?1730731277",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "a4f95d170caa5e6b1975d8cef0b7fef167fac3f1576f6ce9aa32e37509dfe071",
+      "path": "images/a4f95d170caa5e6b1975d8cef0b7fef167fac3f1576f6ce9aa32e37509dfe071.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/499/Springfield_Homes_-_Crammond_-_Dykes_of_Grey_Dundee_C05_A_300dpi_OPP_plot_detail_image.jpg?1730731305",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "c46d76210d3c23b613e49b114a9a21ca7a780730a216d1933a5c8eefd3ecf61a",
+      "path": "images/c46d76210d3c23b613e49b114a9a21ca7a780730a216d1933a5c8eefd3ecf61a.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/811/Dallachy_SD_OPP_plot_detail_image.jpg?1696257307",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "2448954220490467f34dac285deabe1befc77638afd8e03d64d12fcaec9c19c4",
+      "path": "images/2448954220490467f34dac285deabe1befc77638afd8e03d64d12fcaec9c19c4.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/507/Kincraig_-_Dykes_of_Grey_Dundee_C-06_OPP_plot_detail_image.jpg?1730732477",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "8329644d777d4785c19fce3d4c30df5dbfa2ce08cc9b2e8263359c975f339d3c",
+      "path": "images/8329644d777d4785c19fce3d4c30df5dbfa2ce08cc9b2e8263359c975f339d3c.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/810/Springfield_Homes_North_-_Dallachy_Semi_E_300dpi_plot_detail_image.jpg?1696257185",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "f162d2a213ca51771a29b95e38ff7c0ccb0e8f8ea6c6d0440a293414db8a6de0",
+      "path": "images/f162d2a213ca51771a29b95e38ff7c0ccb0e8f8ea6c6d0440a293414db8a6de0.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/528/Springfield_Homes_North_-_Kincraig_B_300dpi_%281%29_plot_detail_image.jpg?1691141479",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d37ad66ac908d719553614dd9c152411c7933fc9e430795873584a896d0f014f",
+      "path": "images/d37ad66ac908d719553614dd9c152411c7933fc9e430795873584a896d0f014f.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/000/748/Auldearn_North_AS_plot_detail_image.jpg?1652180882",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "3755194f1688d42f9ed7fc3b4383cec86759c3052f9833cc8fd133a6907799e4",
+      "path": "images/3755194f1688d42f9ed7fc3b4383cec86759c3052f9833cc8fd133a6907799e4.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/158/Moray-Dunbar_3_Terrace_OPP_plot_detail_image.jpg?1675932648",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "08e5727d11236ab7e22523531a1cc2c98a8b71a45736b75d1ab5f8ace1a457be",
+      "path": "images/08e5727d11236ab7e22523531a1cc2c98a8b71a45736b75d1ab5f8ace1a457be.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/651/Springfield_Homes_North_-_Dunning_A_300dpi_%281%29_plot_detail_image.jpg?1691142671",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "bd90714baedb7c98713d865813a7f1a840d1ac2b3952e84b8325d295fbeda090",
+      "path": "images/bd90714baedb7c98713d865813a7f1a840d1ac2b3952e84b8325d295fbeda090.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/648/Springfield_Homes_North_-_Culbin_-_B_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691141704",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "3d1d9c0e6f2e88f2f2c41c63bcd9cbb9d8ce783aa27638207a51b2ca720287c2",
+      "path": "images/3d1d9c0e6f2e88f2f2c41c63bcd9cbb9d8ce783aa27638207a51b2ca720287c2.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/477/DSCF0393_plot_detail_image.jpg?1784280863",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "e981652dec10dd8468293913d465c730f4a10d9b9aa60c5d4d28d9dde6fb623f",
+      "path": "images/e981652dec10dd8468293913d465c730f4a10d9b9aa60c5d4d28d9dde6fb623f.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/000/877/Moray___Dunbar_2_Terrace_-_Extra_Sky_plot_detail_image.jpg?1676302514",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "30a737131a3b78146b56129c3b827a07b9a763728318eda39a29f8cb9ef417ba",
+      "path": "images/30a737131a3b78146b56129c3b827a07b9a763728318eda39a29f8cb9ef417ba.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/000/881/Moray___Dunbar_2_Terrace_-_Extra_Sky_plot_detail_image.jpg?1676302643",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "195b962668043ee60be3e8aa83960e044c90f38b5030fdf434fbc3eb17e10a07",
+      "path": "images/195b962668043ee60be3e8aa83960e044c90f38b5030fdf434fbc3eb17e10a07.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/372/Springfield_Homes_North_-_Cupar_Terrace_-_B_300dpi_%28new_door_2026%29_OPP_plot_detail_image.jpg?1785846083",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "50bf6f4998d83c25e7244eb6e4bcc473257a97c4db78635a520a1cdac6ee1ea5",
+      "path": "images/50bf6f4998d83c25e7244eb6e4bcc473257a97c4db78635a520a1cdac6ee1ea5.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/359/Springfield_Homes_North_-_Cupar_Terrace_-_B_300dpi_%28new_door_2026%29_AS_plot_detail_image.jpg?1785846033",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "7fc13e2bf64c5314e7919a98bb8bffa390aa3ad9a4a3481c54962e818b907053",
+      "path": "images/7fc13e2bf64c5314e7919a98bb8bffa390aa3ad9a4a3481c54962e818b907053.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/090/Forfar_AS_plot_detail_image.jpg?1782827192",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "b9d3a5b1e36409fba58ff6aed9cebdefc8fa03af03b05d5a44051843592c6d7e",
+      "path": "images/b9d3a5b1e36409fba58ff6aed9cebdefc8fa03af03b05d5a44051843592c6d7e.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/091/Forfar_Opp_plot_detail_image.jpg?1782827333",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d934e101addaa3c9e0dc5c673c0fe82420ca98025d7c5577d2081978e9cda153",
+      "path": "images/d934e101addaa3c9e0dc5c673c0fe82420ca98025d7c5577d2081978e9cda153.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/475/Springfield_Homes_North_-_Tain_D_300dpi_plot_detail_image.jpg?1784197205",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "5ff4215f2dbc8c5bf090f93dbef590c36d2847ef074977e1e949d23351d788aa",
+      "path": "images/5ff4215f2dbc8c5bf090f93dbef590c36d2847ef074977e1e949d23351d788aa.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/119/Ardgay_Semi-Detached_AS_plot_detail_image.jpg?1782141439",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "41f1f831b7b4a3cc2a1d16df935586ee741ecbe7ef15f9477daf8acd8172d09b",
+      "path": "images/41f1f831b7b4a3cc2a1d16df935586ee741ecbe7ef15f9477daf8acd8172d09b.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/170/Musselburgh_OPP_wide_angle_plot_detail_image.jpg?1782136424",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "7fc43b4d0f89709cc1500d3fd6a8b0dcff5ff613dbbfa6001e2c319d3dfec08f",
+      "path": "images/7fc43b4d0f89709cc1500d3fd6a8b0dcff5ff613dbbfa6001e2c319d3dfec08f.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/432/Maverston_AS_wide_angle_plot_detail_image.jpg?1782833595",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "c78d5ebfaea6f2265fb91c3208369ef4698a414dc057cb5d837f44105a911fb6",
+      "path": "images/c78d5ebfaea6f2265fb91c3208369ef4698a414dc057cb5d837f44105a911fb6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/433/Maverston_OPP_wide_angle_plot_detail_image.jpg?1782833645",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "80c6fe9cdf543fad9779428fda9a48341fecf43462119238f08c9427516378b6",
+      "path": "images/80c6fe9cdf543fad9779428fda9a48341fecf43462119238f08c9427516378b6.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/464/Springfield_Homes_North_-_Scotscraig_C_300dpi_OPP_plot_detail_image.jpg?1783602922",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "e39145c3a124f351e1ebeb06d67f7be9aba705b778c04276ac331a62d1c7de27",
+      "path": "images/e39145c3a124f351e1ebeb06d67f7be9aba705b778c04276ac331a62d1c7de27.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/463/Springfield_Homes_North_-_Scotscraig_C_300dpi_AS_plot_detail_image.jpg?1783602813",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "e46ae557d909516e968e0b1532227bd5ecc28698d24dcfd8054a1a3d6b0d427a",
+      "path": "images/e46ae557d909516e968e0b1532227bd5ecc28698d24dcfd8054a1a3d6b0d427a.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/452/Elie_AS_plot_detail_image.jpg?1782983509",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "02994564a46401ee05e7ed9a5a6bd39eee95370c789aaf0ef109bc13eb4c7ecc",
+      "path": "images/02994564a46401ee05e7ed9a5a6bd39eee95370c789aaf0ef109bc13eb4c7ecc.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/453/Elie_OPP_plot_detail_image.jpg?1782983485",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "8b73140e67a592ac0670505d8f4de26a239b18d0f3676667b340237a1ef8ed7d",
+      "path": "images/8b73140e67a592ac0670505d8f4de26a239b18d0f3676667b340237a1ef8ed7d.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/422/Springfield_Homes_North_-_Prestwick_D_OPP_original_C_plot_detail_image.jpg?1782380461",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "75206f5801a2983e3226104d9bb706a9871545658df69969c89166f6f061336a",
+      "path": "images/75206f5801a2983e3226104d9bb706a9871545658df69969c89166f6f061336a.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/116/Lundin_OPP_plot_detail_image.jpg?1782209795",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "e64fc6e2ef64687c2a72ba04a47ea5b4519e67c56a60d15d1d8e128b58b0d5aa",
+      "path": "images/e64fc6e2ef64687c2a72ba04a47ea5b4519e67c56a60d15d1d8e128b58b0d5aa.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/924/Moray-Dunbar_4_Terrace_Drumossie_Braes_AS_plot_detail_image.jpg?1765969165",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "746eded60db1208135680c56a5feb75e7e2c9e5746ba0d0dd696820e031d9886",
+      "path": "images/746eded60db1208135680c56a5feb75e7e2c9e5746ba0d0dd696820e031d9886.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/658/Springfield_Homes_North_-_Cupar_Semi_-_B_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691409244",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "0a2c171134dbf5660a3f694d13e7c3ec6a961c4f414be271a903466653cdefe2",
+      "path": "images/0a2c171134dbf5660a3f694d13e7c3ec6a961c4f414be271a903466653cdefe2.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/666/Springfield_Homes_North_-_Balerno_-_A_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691410302",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "76d4c8bc45b43faa5d32e9a3f9cb153277ea70de71179da0d3017e7d96af1c98",
+      "path": "images/76d4c8bc45b43faa5d32e9a3f9cb153277ea70de71179da0d3017e7d96af1c98.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/662/Springfield_Homes_North_-_Roslin_Wide_A_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691409579",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "f03306c0f4cd776369d94796c24e2c280f4aeddda16502056a94ff74a4321aa2",
+      "path": "images/f03306c0f4cd776369d94796c24e2c280f4aeddda16502056a94ff74a4321aa2.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/755/Melford_North_AS_plot_detail_image.jpg?1752568825",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59",
+      "path": "images/49d2e873f4d29150ff1b52df31c3672d32a93a74f835d41e86e50d4cc7a1ac59.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/650/Springfield_Homes_North_-_Kintore_-_F_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691142342",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d8db7b6e8f2b23eb10df48c3e84f3ea3d6589e198cbf9173a83b4cd4b410be6a",
+      "path": "images/d8db7b6e8f2b23eb10df48c3e84f3ea3d6589e198cbf9173a83b4cd4b410be6a.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/754/Springfield_Homes_North_-_Melford_A_300dpi_%281%29_plot_detail_image.jpg?1752568552",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "6145b15c4f7f34ea5aa2589f14fdedfba53eb605481ae30aefca181e8e216a34",
+      "path": "images/6145b15c4f7f34ea5aa2589f14fdedfba53eb605481ae30aefca181e8e216a34.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/529/Springfield_Homes_North_-_Kincraig_B_300dpi_%281%29_plot_detail_image.jpg?1689324020",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "382b574b5b371f1a6b3fecfb9e1d7f7bb994fb360307fce0c6fb9e655abbddde",
+      "path": "images/382b574b5b371f1a6b3fecfb9e1d7f7bb994fb360307fce0c6fb9e655abbddde.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/003/592/Cupar_detached_OPP_original_NEW_DOOR_plot_detail_image.jpg?1742288196",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "8a1ac66f6d36b76d2f3493c5492b255ddd45aa9c88f8c865b94377ebfb23b1d7",
+      "path": "images/8a1ac66f6d36b76d2f3493c5492b255ddd45aa9c88f8c865b94377ebfb23b1d7.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/664/Springfield_Homes_North_-_Arden_Wide_D_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691410078",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "4ba8b9b58ddbd71ef358e7715896718fe158797315c13871afa74422425c7841",
+      "path": "images/4ba8b9b58ddbd71ef358e7715896718fe158797315c13871afa74422425c7841.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/002/647/Springfield_Homes_North_-_Culbin_-_B_300dpi_-_NEW_DOOR_plot_detail_image.jpg?1691141603",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "7b8db7a587250583f641390d8ef3bd93efc85746422ac5ad4e4ef4b5191cf604",
+      "path": "images/7b8db7a587250583f641390d8ef3bd93efc85746422ac5ad4e4ef4b5191cf604.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/354/Askernish_Craigielaw_TE_-_Millerhill_-_Zone_2_plot_detail_image.jpg?1787327117",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "5dbb4a1c0fc32ffd385badf4b8d0fd23d587b4d9d2d352bd1e285e4166355822",
+      "path": "images/5dbb4a1c0fc32ffd385badf4b8d0fd23d587b4d9d2d352bd1e285e4166355822.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/380/Askernish_End_Craigielaw_TE_-_Millerhill_-_Zone_2_plot_detail_image.jpg?1782306393",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "2c9b3656e04a6266bc18d80e2e7c1ff502a89e145bbd36286d51cc16d6dabced",
+      "path": "images/2c9b3656e04a6266bc18d80e2e7c1ff502a89e145bbd36286d51cc16d6dabced.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/389/Askernish_DT_-_Millerhill_-_Zone_4_OP_plot_detail_image.jpg?1782307833",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "c1630d7b725a720bdaaa24623ad1421cc4ae0987debe5b2a6c426b8c38b92c68",
+      "path": "images/c1630d7b725a720bdaaa24623ad1421cc4ae0987debe5b2a6c426b8c38b92c68.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/400/Musselburgh_-_Millerhill_-_Zone_4_OP_plot_detail_image.jpg?1782310083",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d9b49aead6174df7d5dc4946b607818507f9e9eca95b93726bba22ade14a3601",
+      "path": "images/d9b49aead6174df7d5dc4946b607818507f9e9eca95b93726bba22ade14a3601.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/411/Panmure_-_Millerhill_-_Zone_4_OP_plot_detail_image.jpg?1787300522",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "279b3aee3de4c890257c0488d4d634e30759be7c0cbadb144a4c91413b6c0e57",
+      "path": "images/279b3aee3de4c890257c0488d4d634e30759be7c0cbadb144a4c91413b6c0e57.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/414/Gleneagles_-_Millerhill_-_Zone_4_OP_plot_detail_image.jpg?1782313348",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "ba5a490cec85312499c25f668aeca7b9d7688f477101699481c8447885bea641",
+      "path": "images/ba5a490cec85312499c25f668aeca7b9d7688f477101699481c8447885bea641.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/383/Craigielaw_Askernish_TE_-_Millerhill_-_Zone_2_plot_detail_image.jpg?1782306831",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "107e7c21dd54afa34c69a27a9c4043c54dc237c2b655cb8455b7fe5fb171aadd",
+      "path": "images/107e7c21dd54afa34c69a27a9c4043c54dc237c2b655cb8455b7fe5fb171aadd.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/397/Musselburgh_-_Millerhill_-_Zone_4_plot_detail_image.jpg?1782309907",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "a268b3c3fc2076908b1dbe8e6210b6ff1b9803479883ee7168a4747e5dcb7ff7",
+      "path": "images/a268b3c3fc2076908b1dbe8e6210b6ff1b9803479883ee7168a4747e5dcb7ff7.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/187/Forfar_TE_-_2026_04_29_OP_plot_detail_image.jpg?1778764638",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "3c2117c9c355150559076e45a2fea3297503149c7fdde6729f9cd28201d0565e",
+      "path": "images/3c2117c9c355150559076e45a2fea3297503149c7fdde6729f9cd28201d0565e.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/568/Forfar_ET_-_AS_plot_detail_image.jpg?1789465983",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "b4c540c2458a02dc350350a275488833cf65c169d086fddf085d7c2a0c86d582",
+      "path": "images/b4c540c2458a02dc350350a275488833cf65c169d086fddf085d7c2a0c86d582.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/115/Askernish_DT_-_2026_04_29_OP_plot_detail_image.jpg?1778503499",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "9045a90df35ae670496f76938e4435087d0beaf9ec6842c37c558913ae2ec07e",
+      "path": "images/9045a90df35ae670496f76938e4435087d0beaf9ec6842c37c558913ae2ec07e.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/197/Mortonhall_-_2026_04_29_OP_plot_detail_image.jpg?1787327558",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "c290e26db98b985f3052d44c21609e23903c7e3270545674a70ffb7a935c4fa2",
+      "path": "images/c290e26db98b985f3052d44c21609e23903c7e3270545674a70ffb7a935c4fa2.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/182/Dundonald_-_2026_05_01_AS_plot_detail_image.jpg?1778763636",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "52af570cf74e54778689493964bd495384f8ec1a53c593265c3960f930e25c09",
+      "path": "images/52af570cf74e54778689493964bd495384f8ec1a53c593265c3960f930e25c09.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/188/Gleneagles_-_2026_04_29_AS_plot_detail_image.jpg?1778764846",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "d389284e0d183ce36cc0e5839674e94ff5811bf2778a1a1d0eda52e3c847acc1",
+      "path": "images/d389284e0d183ce36cc0e5839674e94ff5811bf2778a1a1d0eda52e3c847acc1.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/201/Prestwick_-_2026_04_29_OP_plot_detail_image.jpg?1778769232",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "36a52146b07b7cde9ac29b641fb6ad68405d0ef60cc24533a7d90c065ba4c909",
+      "path": "images/36a52146b07b7cde9ac29b641fb6ad68405d0ef60cc24533a7d90c065ba4c909.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/174/Carnoustie_-_2026_04_17_AS_plot_detail_image.jpg?1778761818",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "076f828b94a215df7a7010b167c5df310e7eed78d4df4b7b3c9131eb2a678e8e",
+      "path": "images/076f828b94a215df7a7010b167c5df310e7eed78d4df4b7b3c9131eb2a678e8e.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/565/Melford_exterior_plot_detail_image.jpg?1789381556",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "b202dd18b2dcd2e5ddb81ba8a4aed7a3aa094024962545c0a22f4f7ed5bf8c51",
+      "path": "images/b202dd18b2dcd2e5ddb81ba8a4aed7a3aa094024962545c0a22f4f7ed5bf8c51.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/566/Letham_Bertha_Park_plot_1001_plot_detail_image.jpg?1789398786",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "b154c63227498a9c53f695f6f5290e6071dc24e0d49f369f3a4663c137fa35c4",
+      "path": "images/b154c63227498a9c53f695f6f5290e6071dc24e0d49f369f3a4663c137fa35c4.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/180/Dumbarnie_-_2026_05_01_AS_plot_detail_image.jpg?1778763442",
+      "error": "Classification not requested"
+    },
+    {
+      "id": "428b7782567e29e8de14c0e2828995cdba454aad49c02aaf5ecb64de85e6fc92",
+      "path": "images/428b7782567e29e8de14c0e2828995cdba454aad49c02aaf5ecb64de85e6fc92.jpg",
+      "sourceUrl": "https://www.springfield.co.uk/assets/000/004/189/Gleneagles_-_2026_04_29_OP_plot_detail_image.jpg?1778764986",
+      "error": "Classification not requested"
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1706-panmure",
+      "stage": "gallery",
+      "message": "House page or gallery extraction failed"
+    },
+    {
+      "url": "https://www.springfield.co.uk/homes-for-sale/30-elgin/1629-gleneagles",
+      "stage": "gallery",
+      "message": "House page or gallery extraction failed"
+    }
+  ],
+  "metrics": {
+    "sitemapDevelopments": 7,
+    "qualifyingDiscovered": 140,
+    "propertyLimitOmissions": 0,
+    "skippedCompletedGalleries": 0,
+    "reusedImageSources": 31,
+    "reusedGalleries": 31,
+    "reusedImages": 4,
+    "imagesAttempted": 123,
+    "pendingImages": 119,
+    "matchedImages": 0,
+    "developmentLimitOmissions": 0
+  },
+  "stage": "gallery",
+  "recordedAt": "2026-10-04T15:30:01.660121+00:00"
+}
