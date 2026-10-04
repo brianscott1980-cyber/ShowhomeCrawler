@@ -215,7 +215,7 @@ export function Gallery({
       {introduction.eyebrow&&<p className="eyebrow">{introduction.eyebrow}</p>}
       <h1>{introduction.title}</h1>
       <p>{introduction.description}</p>
-      <a className="results-cta" href="#collection">Discover the collection ↓</a>
+      {!introduction.details&&<a className="results-cta" href="#collection">Discover the collection ↓</a>}
      </div>
      {introduction.details&&<div className="builder-results-details">{introduction.details}</div>}
      {(heroImage||introduction.map) && <div ref={hero} className={`results-hero-photo${selected || pageHidden ? ' is-paused' : ''}`} role="region" aria-label="Builder developments and image carousel" onKeyDown={e => {
