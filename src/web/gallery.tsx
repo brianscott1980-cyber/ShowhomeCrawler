@@ -38,7 +38,7 @@ export function Gallery({
  includeUnclassified?: boolean;
  featured?: boolean;
  places?: Record<string,string[]>;
- introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; back?: { href: string; label: string } };
+ introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; back?: { href: string; label: string }; map?:ReactNode;counts?:Record<string,number> };
 }) {
  const [view, changeView] = useCardView('showhome-gallery-view', 'large');
  const [favourites, setFavourites] = useState<string[]>([]);
@@ -62,7 +62,7 @@ export function Gallery({
  }, []);
  const thumbnails = useRef<HTMLDivElement>(null);
  const returnFocus = useRef<HTMLElement | null>(null);
- const [heroId, setHeroId] = useState<string | null>(null);
+ const [heroId, setHeroId] = useState<string | null>(introduction?.map?'builder-map':null);
  const [controlsVisible, setControlsVisible] = useState(true);
  const idleTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
  function showControls() {
@@ -175,8 +175,9 @@ export function Gallery({
  const heroImages = images;
  const heroImage = heroImages.find(i => i.uid === heroId) ?? heroImages[0];
  function heroStep(direction: number) {
-  const index = heroImages.findIndex(i => i.uid === heroImage?.uid);
-  setHeroId(heroImages[(index + direction + heroImages.length) % heroImages.length]?.uid ?? null);
+  const slides=[...(introduction?.map?['builder-map']:[]),...heroImages.map(i=>i.uid)];
+  const index=slides.indexOf(heroId??heroImage?.uid??'');
+  setHeroId(slides[(index+direction+slides.length)%slides.length]??null);
  }
  useEffect(() => {
   if (selected && !current) { dialog.current?.close(); setSelected(null); }
@@ -210,25 +211,25 @@ export function Gallery({
     <section className="results-hero">
      <div className="results-hero-copy">
       {introduction.back && <Link className="results-back" href={introduction.back.href}>{introduction.back.label}</Link>}
-      <p className="eyebrow">{introduction.eyebrow}</p>
+      {introduction.eyebrow&&<p className="eyebrow">{introduction.eyebrow}</p>}
       <h1>{introduction.title}</h1>
       <p>{introduction.description}</p>
       <a className="results-cta" href="#collection">Discover the collection ↓</a>
      </div>
-     {heroImage && <div ref={hero} className={`results-hero-photo${selected || pageHidden ? ' is-paused' : ''}`} role="region" aria-label="Interior image carousel" onKeyDown={e => {
+     {(heroImage||introduction.map) && <div ref={hero} className={`results-hero-photo${selected || pageHidden ? ' is-paused' : ''}`} role="region" aria-label="Builder developments and image carousel" onKeyDown={e => {
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); heroStep(e.key === 'ArrowLeft' ? -1 : 1); }
      }}>
-      <button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
-      <span key={heroImage.uid} className="results-hero-room-type">{heroImage.categorisation?.subCategory ?? heroImage.categorisation?.mainCategory ?? 'Showhome interior'}</span>
-      {heroImages.length > 1 && <div className="results-slide-progress" aria-hidden="true"><span key={heroImage.uid} onAnimationEnd={() => heroStep(1)}/></div>}
+      {heroId==='builder-map'&&introduction.map?<div className="builder-hero-map">{introduction.map}</div>:heroImage?<><button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
+      <span key={heroImage.uid} className="results-hero-room-type">{heroImage.categorisation?.subCategory ?? heroImage.categorisation?.mainCategory ?? 'Showhome interior'}</span></>:null}
+      {heroImage&&heroId!=='builder-map'&&heroImages.length > 1 && <div className="results-slide-progress" aria-hidden="true"><span key={heroImage.uid} onAnimationEnd={() => heroStep(1)}/></div>}
       <button className="results-arrow results-prev" onClick={() => heroStep(-1)} aria-label="Previous preview image">‹</button>
       <button className="results-arrow results-next" onClick={() => heroStep(1)} aria-label="Next preview image">›</button>
      </div>}
     </section>
     <div className="results-stats">
-     <div><strong>{favouritesOnly && !ready ? '…' : available.length}</strong><span>Unique images</span></div>
+     {introduction.counts?Object.entries(introduction.counts).map(([label,count])=><div key={label}><strong>{count.toLocaleString('en-GB')}</strong><span>{label}</span></div>):<><div><strong>{favouritesOnly && !ready ? '…' : available.length}</strong><span>Unique images</span></div>
      <div><strong>{sites.length}</strong><span>Developments</span></div>
-     <div><strong>{new Set(available.flatMap(i => i.homes.map(h => `${i.slug}:${h.url}`))).size}</strong><span>Properties</span></div>
+     <div><strong>{new Set(available.flatMap(i => i.homes.map(h => `${i.slug}:${h.url}`))).size}</strong><span>Properties</span></div></>}
     </div>
     <div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : 'Explore the collection'}</h2></div>
    </>}

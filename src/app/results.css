@@ -36,3 +36,5 @@
 }
 .results-hero-photo:hover .results-hero-room-type,.results-hero-photo:focus-within .results-hero-room-type,.results-hero-photo.is-paused .results-hero-room-type{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.results-hero-room-type{animation:none}}
+
+.builder-results-logo{display:block;max-width:100%;width:340px;height:180px;object-fit:contain;padding:24px}.builder-hero-map .site-map-panel{position:relative;top:auto;height:350px;width:100%;min-height:0}.builder-hero-map .site-map{height:350px;min-height:0}.builder-hero-map .site-map-fit{top:12px;bottom:auto;font-size:12px;padding:8px 10px}.builder-hero-map .site-map-choices{bottom:50px!important}@media(max-width:640px){.builder-results-logo{height:150px;width:280px}.builder-hero-map .site-map-panel,.builder-hero-map .site-map{height:300px}}
