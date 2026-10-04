@@ -54,6 +54,12 @@ export function Gallery({
  const dialog = useRef<HTMLDialogElement>(null);
  const hero = useRef<HTMLDivElement>(null);
  const [pageHidden, setPageHidden] = useState(false);
+ const [heroInteracting, setHeroInteracting] = useState(false);
+ const [heroTimerVersion, setHeroTimerVersion] = useState(0);
+ function restartHeroProgress() {
+  setHeroInteracting(false);
+  setHeroTimerVersion(version => version + 1);
+ }
  useEffect(() => {
   const read = () => setPageHidden(document.hidden);
   read();
@@ -218,15 +224,17 @@ export function Gallery({
       {!introduction.details&&<a className="results-cta" href="#collection">Discover the collection ↓</a>}
      </div>
      {introduction.details&&<div className="builder-results-details">{introduction.details}</div>}
-     {(heroImage||introduction.map) && <div ref={hero} className={`results-hero-photo${selected || pageHidden ? ' is-paused' : ''}`} role="region" aria-label="Builder developments and image carousel" onKeyDown={e => {
+     {(heroImage||introduction.map) && <div ref={hero} className={`results-hero-photo${selected || pageHidden || heroInteracting ? ' is-paused' : ''}${heroInteracting?' is-interacting':''}`} onMouseEnter={() => setHeroInteracting(true)} onMouseLeave={restartHeroProgress} onFocus={() => setHeroInteracting(true)} onBlur={event => {
+      if (!event.currentTarget.contains(event.relatedTarget)) restartHeroProgress();
+     }} role="region" aria-label="Builder developments and image carousel" onKeyDown={e => {
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); heroStep(e.key === 'ArrowLeft' ? -1 : 1); }
      }}>
       {heroId==='builder-map'&&introduction.map?<div className="builder-hero-map">{introduction.map}</div>:heroImage?<><button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
       </>:null}
-      <div key={heroId==='builder-map'?'builder-map':heroImage?.uid} className="results-hero-room-type">
+      <div key={`${heroId==='builder-map'?'builder-map':heroImage?.uid}:${heroTimerVersion}`} className="results-hero-room-type">
        {heroId==='builder-map'?'Developments':heroImage?.categorisation?.subCategory??heroImage?.categorisation?.mainCategory??'Showhome interior'}
       </div>
-      {heroImages.length+(introduction.map?1:0)>1&&<div className="results-slide-progress" aria-hidden="true"><span key={heroId==='builder-map'?'builder-map':heroImage?.uid} onAnimationEnd={()=>heroStep(1)}/></div>}
+      {heroImages.length+(introduction.map?1:0)>1&&<div className="results-slide-progress" aria-hidden="true"><span key={`${heroId==='builder-map'?'builder-map':heroImage?.uid}:${heroTimerVersion}`} onAnimationEnd={()=>heroStep(1)}/></div>}
       <button className="results-arrow results-prev" onClick={() => heroStep(-1)} aria-label="Previous preview image">‹</button>
       <button className="results-arrow results-next" onClick={() => heroStep(1)} aria-label="Next preview image">›</button>
      </div>}
