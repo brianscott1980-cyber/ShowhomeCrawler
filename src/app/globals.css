@@ -134,3 +134,5 @@ body:has(.location-explorer) .directory-intro-heading>p{font-size:14px;margin:8p
 /* Keep filter allocation independent of the current selection. */
 .multi-filter summary>span:last-child{flex-shrink:0}
 @media(min-width:901px){.directory-filter-row.filters{display:flex;flex-wrap:nowrap}.directory-filter-row .multi-filter{flex:var(--filter-weight,12) 1 0;min-width:0}.directory-filter-row label{flex:16 1 0;min-width:0!important}.directory-filter-row input,.directory-filter-row select{width:100%;min-width:0;max-width:none;text-overflow:ellipsis}.directory-filter-row .location-filter-reset,.directory-filter-row .results-reset{flex:0 0 auto}.site-location-controls>.distance-filter{flex:0 0 190px;width:190px;min-width:0}}
+
+.multi-filter{position:relative}.multi-filter.has-selection summary{padding-right:48px}.multi-filter .filter-clear{position:absolute;top:calc(1lh + 16px);right:8px;z-index:41;display:grid;place-items:center;width:28px;height:32px;min-height:0;padding:0;border:0;background:white;color:var(--muted);font-size:20px;line-height:1;letter-spacing:0}.multi-filter .filter-clear:hover{color:var(--ink);background:var(--paper)}
