@@ -1,3 +1,4 @@
+import {BuilderOverviewDetails} from '../../../web/builder-overview-details';
 import logos from '../../../../public/logos/sources.json';
 import {builderLogoBackground} from '../../../web/builder-brand';
 import {BuilderOverviewMap} from '../../../web/builder-overview-map';
@@ -41,7 +42,7 @@ export default async function Page({ params }: Props) {
  const mapCards=locations.map(location=>({key:`${slug}:${location.url}`,name:location.name,developer:developer.name,latitude:location.latitude,longitude:location.longitude,country:location.geography?.country??null,image:'',description:location.name,count:0,properties:[],href:(()=>{const group=locationGroups.find(group=>group.collections.some(collection=>collection.report.properties.some(home=>home.developmentUrl===location.url)));return group?`/locations/${group.key}`:`/locations?developer=${encodeURIComponent(developer.name)}`;})()}));
  return <ResultsPage title={logo?<><span className="sr-only">{developer.name}</span><img className="builder-results-logo" src={`/logos/${logo.file}`} alt={`${developer.name} logo`} style={{background:builderLogoBackground(developer.slug)}}/></>:<BuilderName name={developer.name}/>} eyebrow={null}
   description={`Discover ${developer.name} developments, explore their house types and find inspiration in their showhome rooms.`}
-  builderOverview={{map:<BuilderOverviewMap cards={mapCards}/>,counts:{Locations:locations.length,'Building types':groupCollections(collections,'buildings').length,'Room types':groupCollections(collections,'interiors').filter(group=>group.name!=='Exterior'&&group.name!=='Uncategorised').length}}}
+  builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards}/>,counts:{Locations:locations.length,'Building types':groupCollections(collections,'buildings').length,'Room types':groupCollections(collections,'interiors').filter(group=>group.name!=='Exterior'&&group.name!=='Uncategorised').length}}}
   back={{ href: '/homebuilders', label: '← All builders' }} collections={report ? [{ slug, name: developer.name, report }] : []} includeUnclassified>
   {report ? <div className="download-links"><a href={assetUrl(slug, 'matches.csv')}>Download matches</a><a href={assetUrl(slug, 'full-report.html')}>Full results &amp; coverage</a></div> : <p className="empty">Interiors from {developer.name} are coming soon.</p>}
   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }}/>

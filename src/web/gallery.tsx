@@ -38,7 +38,7 @@ export function Gallery({
  includeUnclassified?: boolean;
  featured?: boolean;
  places?: Record<string,string[]>;
- introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; back?: { href: string; label: string }; map?:ReactNode;counts?:Record<string,number> };
+ introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
 }) {
  const [view, changeView] = useCardView('showhome-gallery-view', 'large');
  const [favourites, setFavourites] = useState<string[]>([]);
@@ -208,7 +208,7 @@ export function Gallery({
  return (
   <section aria-label="Image collection" className={featured ? 'featured-gallery' : undefined}>
    {introduction && <>
-    <section className="results-hero">
+    <section className={`results-hero${introduction.details?' builder-results-hero':''}`}>
      <div className="results-hero-copy">
       {introduction.back && <Link className="results-back" href={introduction.back.href}>{introduction.back.label}</Link>}
       {introduction.eyebrow&&<p className="eyebrow">{introduction.eyebrow}</p>}
@@ -216,6 +216,7 @@ export function Gallery({
       <p>{introduction.description}</p>
       <a className="results-cta" href="#collection">Discover the collection ↓</a>
      </div>
+     {introduction.details&&<div className="builder-results-details">{introduction.details}</div>}
      {(heroImage||introduction.map) && <div ref={hero} className={`results-hero-photo${selected || pageHidden ? ' is-paused' : ''}`} role="region" aria-label="Builder developments and image carousel" onKeyDown={e => {
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); heroStep(e.key === 'ArrowLeft' ? -1 : 1); }
      }}>
@@ -225,12 +226,13 @@ export function Gallery({
       <button className="results-arrow results-prev" onClick={() => heroStep(-1)} aria-label="Previous preview image">‹</button>
       <button className="results-arrow results-next" onClick={() => heroStep(1)} aria-label="Next preview image">›</button>
      </div>}
+     {introduction.details&&introduction.counts&&<div className="results-stats builder-results-stats">{Object.entries(introduction.counts).map(([label,count])=><div key={label}><strong>{count.toLocaleString('en-GB')}</strong><span>{label}</span></div>)}</div>}
     </section>
-    <div className="results-stats">
+    {!introduction.details&&<div className="results-stats">
      {introduction.counts?Object.entries(introduction.counts).map(([label,count])=><div key={label}><strong>{count.toLocaleString('en-GB')}</strong><span>{label}</span></div>):<><div><strong>{favouritesOnly && !ready ? '…' : available.length}</strong><span>Unique images</span></div>
      <div><strong>{sites.length}</strong><span>Developments</span></div>
      <div><strong>{new Set(available.flatMap(i => i.homes.map(h => `${i.slug}:${h.url}`))).size}</strong><span>Properties</span></div></>}
-    </div>
+    </div>}
     <div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : 'Explore the collection'}</h2></div>
    </>}
    {!featured && <><DirectoryFilters className="filters">
