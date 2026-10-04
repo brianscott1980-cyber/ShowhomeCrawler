@@ -10,7 +10,7 @@ export function DistanceFilter({value,location,onChange,onChangeLocation}:{value
  return <div className="multi-filter distance-filter"><span id={id}>Within</span><details ref={details} onKeyDown={event=>{if(event.key==='Escape'){event.stopPropagation();close();details.current?.querySelector('summary')?.focus();}}}>
   <summary aria-labelledby={`${id} ${id}-selection`} aria-controls={`${id}-options`}><span id={`${id}-selection`}>{value?`${value} miles`:'Any distance'}</span><span aria-hidden="true">⌄</span></summary>
   <div className="multi-filter-panel distance-filter-panel" id={`${id}-options`}>
-   <div className="distance-filter-location"><span>Your area</span><strong>{location?<LocationLabel location={location}/>:'No location selected'}</strong><button type="button" onClick={()=>{close();onChangeLocation();}}>{location?'Change location':'Set location'}</button></div>
+   <div className="distance-filter-location"><div className="distance-filter-location-heading"><span>Your area</span><button type="button" aria-label={location?'Change location':'Set location'} onClick={()=>{close();onChangeLocation();}}>{location?'Change':'Set location'}</button></div><strong>{location?<LocationLabel location={location}/>:'No location selected'}</strong></div>
    <div className="distance-filter-options" role="group" aria-label="Distance options">{['', '5','10','25','50','100','200'].map(option=><button type="button" key={option} aria-pressed={value===option} onClick={()=>{onChange(option);close();details.current?.querySelector('summary')?.focus();}}><span>{option?`${option} miles`:'Any distance'}</span><span aria-hidden="true">{value===option?'✓':''}</span></button>)}</div>
   </div>
  </details></div>;
