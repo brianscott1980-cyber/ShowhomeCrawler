@@ -23,7 +23,7 @@ function siteFeatures(cards:SiteCard[]) {
  return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderInitial:builderMapBrand(card.developer).initial}}))};
 }
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
+export function SiteMap({cards,clusterColor='#193963',activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];clusterColor?:string;activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
  const container=useRef<HTMLDivElement>(null), map=useRef<MapInstance|null>(null), highlight=useRef<Marker|null>(null);
  const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea});
  latest.current={cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea};
@@ -51,7 +51,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
    instance.on('load',()=>{
     if(disposed)return;
     instance.addSource('sites',{type:'geojson',data:siteFeatures(latest.current.cards),cluster:true,clusterRadius:38,clusterMaxZoom:13});
-    instance.addLayer({id:'site-clusters',type:'circle',source:'sites',filter:['has','point_count'],paint:{'circle-color':'#193963','circle-radius':['step',['get','point_count'],17,20,21,100,25],'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
+    instance.addLayer({id:'site-clusters',type:'circle',source:'sites',filter:['has','point_count'],paint:{'circle-color':clusterColor,'circle-radius':['step',['get','point_count'],17,20,21,100,25],'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
     instance.addLayer({id:'site-cluster-count',type:'symbol',source:'sites',filter:['has','point_count'],layout:{'text-field':['to-string',['get','point_count']],'text-font':['Noto Sans Regular'],'text-size':12,'text-allow-overlap':true,'text-ignore-placement':true},paint:{'text-color':'#ffffff'}});
     instance.addLayer({id:'site-builder-badges',type:'circle',source:'sites',filter:['!',['has','point_count']],paint:{'circle-color':['get','builderColour'],'circle-radius':14,'circle-stroke-width':2,'circle-stroke-color':'#ffffff'}});
     instance.addLayer({id:'site-builder-icons',type:'symbol',source:'sites',filter:['!',['has','point_count']],layout:{'text-field':['get','builderInitial'],'text-font':['Noto Sans Regular'],'text-size':16,'text-allow-overlap':true,'text-ignore-placement':true},paint:{'text-color':'#ffffff'}});
@@ -118,7 +118,7 @@ export function SiteMap({cards,activeKey,focusSequence=0,hoverKey,onBoundsChange
   const paintCluster=(id:number|null)=>{
    if(map.current!==instance||paintedCluster===id)return;
    paintedCluster=id;
-   instance.setPaintProperty('site-clusters','circle-color',id===null?'#193963':['case',['==',['get','cluster_id'],id],'#b89256','#193963']);
+   instance.setPaintProperty('site-clusters','circle-color',id===null?clusterColor:['case',['==',['get','cluster_id'],id],'#b89256',clusterColor]);
    instance.setPaintProperty('site-clusters','circle-stroke-width',id===null?2:['case',['==',['get','cluster_id'],id],4,2]);
   };
   const update=async()=>{
