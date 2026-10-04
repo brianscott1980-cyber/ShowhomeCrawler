@@ -1,7 +1,5 @@
 export type BuilderFacts={rating?:{stars:number;year:number;source:string;scope?:string};incentives?:{source:string;checkedAt:string}};
-const ratingSource='https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf';
-// Explicit matches to the published 2026 award list. Group awards retain their scope.
-const rated:Record<string,string|undefined>={bellway:undefined,cala:'CALA Group','taylor-wimpey':undefined,'miller-homes':undefined,persimmon:undefined,'robertson-homes':undefined,'crest-nicholson':undefined,'story-homes':undefined,'hill-group':undefined,'bloor-homes':undefined,keepmoat:undefined,'morris-homes':'Morris Homes Group','castle-green-homes':undefined,dandara:undefined,barratt:'Barratt Redrow',redrow:'Barratt Redrow','david-wilson':'Barratt Redrow','bovis-homes':'Vistry Homes','linden-homes':'Vistry Homes','countryside-homes':'Vistry Homes'};
+import builderRatings from '../data/builder-ratings.json';
 const offers:Record<string,string>={
  bellway:'https://www.bellway.co.uk/autumn-incentives',
  barratt:'https://www.barratthomes.co.uk/offers/deposit-boost/',
@@ -13,5 +11,6 @@ const offers:Record<string,string>={
  redrow:'https://www.redrow.co.uk/buying-with-redrow/'
 };
 export function builderFacts(slug:string):BuilderFacts{
- return {...(Object.hasOwn(rated,slug)?{rating:{stars:5,year:2026,source:ratingSource,...(rated[slug]?{scope:rated[slug]}:{})}}:{}),...(offers[slug]?{incentives:{source:offers[slug],checkedAt:'2026-10-04'}}:{})};
+ const hbf=builderRatings.find(builder=>builder.slug===slug)?.hbf;
+ return {...(hbf?.rating?{rating:{stars:hbf.rating,year:hbf.year,source:hbf.source,...(hbf.scope?{scope:hbf.scope}:{})}}:{}),...(offers[slug]?{incentives:{source:offers[slug],checkedAt:'2026-10-04'}}:{})};
 }

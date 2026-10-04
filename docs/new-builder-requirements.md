@@ -28,9 +28,9 @@ Missing coordinates must remain unknown. Such developments may appear in the dir
 
 Check both for every new builder, but neither a rating nor an incentive is required to list it.
 
-- **HBF:** use the official annual HBF award publication. Record stars, award year, source URL and the exact awarded builder/group name. Apply a group award to a brand only when membership is verified, and show the group scope. Never assume five stars from membership, another brand's award, or an older year. If no award is verified, display **Not available**. Current display records live in `src/web/builder-facts.ts`; retain the exact award identity and verification details in the onboarding record below.
+- **HBF:** use the official annual HBF award publication. Record stars, award year, source URL and the exact awarded builder/group name. Apply a group award to a brand only when membership is verified, and show the group scope. Never assume five stars from membership, another brand's award, or an older year. If no award is verified, display **Not available**. Current reviewed records live in `src/data/builder-ratings.json`, consumed by `src/web/builder-facts.ts`; retain the exact award identity and verification details in the onboarding record below.
 - **Incentives:** use an official builder offer page. Record its URL and verification date; check whether it is current and applies only to selected homes. Show **Selected homes** where applicable. If an offer cannot be verified, display **Not verified** rather than claiming no offers exist.
-- **Reviews:** optional. Do not treat HBF stars as a public review score. Any added review score needs its own named source, scale, review count and verification date.
+- **Reviews:** research Trustpilot and the Google main-office listing for every builder. Record verified scores or an explicit unknown outcome; a published rating is not required for listing. Capture each provider's displayed score/average, scale, review count, profile link, scope and verification date. Google uses reviewed web snapshots without a Places API key. Do not treat HBF stars as a public review score. See [builder ratings and Site Rank](builder-ratings.md) for the dataset and sync workflow.
 
 ## Processing and publication
 

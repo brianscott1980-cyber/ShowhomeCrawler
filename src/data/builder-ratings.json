@@ -1,0 +1,1112 @@
+[
+  {
+    "slug": "bellway",
+    "name": "Bellway",
+    "website": "https://www.bellway.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Bellway Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.4,
+      "reviewCount": 7923,
+      "url": "https://www.trustpilot.com/review/www.bellway.co.uk",
+      "profileName": "Bellway",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "cala",
+    "name": "Cala",
+    "website": "https://www.cala.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "CALA Group",
+      "scope": "CALA Group",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.6,
+      "reviewCount": 4540,
+      "url": "https://www.trustpilot.com/review/cala.co.uk",
+      "profileName": "Cala Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "barratt",
+    "name": "Barratt",
+    "website": "https://www.barratthomes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Barratt Redrow",
+      "scope": "Barratt Redrow",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": "https://www.barrattredrow.co.uk/about-us/our-brands",
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.5,
+      "reviewCount": 9816,
+      "url": "https://www.trustpilot.com/review/www.barratthomes.co.uk",
+      "profileName": "Barratt Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "taylor-wimpey",
+    "name": "Taylor Wimpey",
+    "website": "https://www.taylorwimpey.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Taylor Wimpey",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.1,
+      "reviewCount": 11610,
+      "url": "https://www.trustpilot.com/review/www.taylorwimpey.co.uk",
+      "profileName": "Taylor Wimpey",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "david-wilson",
+    "name": "David Wilson Homes",
+    "website": "https://www.dwh.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Barratt Redrow",
+      "scope": "Barratt Redrow",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": "https://www.barrattredrow.co.uk/about-us/our-brands",
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.4,
+      "reviewCount": 6979,
+      "url": "https://www.trustpilot.com/review/www.dwh.co.uk",
+      "profileName": "David Wilson Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "miller-homes",
+    "name": "Miller Homes",
+    "website": "https://www.millerhomes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Miller Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.7,
+      "reviewCount": 6763,
+      "url": "https://www.trustpilot.com/review/millerhomes.co.uk",
+      "profileName": "Miller Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "avant",
+    "name": "Avant",
+    "website": "https://www.avanthomes.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.5,
+      "reviewCount": 3334,
+      "url": "https://www.trustpilot.com/review/www.avanthomes.co.uk",
+      "profileName": "Avant Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "springfield",
+    "name": "Springfield",
+    "website": "https://www.springfield.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 2.4,
+      "reviewCount": 35,
+      "url": "https://www.trustpilot.com/review/springfield.co.uk",
+      "profileName": "Springfield",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "persimmon",
+    "name": "Persimmon",
+    "website": "https://www.persimmonhomes.com",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Persimmon Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.5,
+      "reviewCount": 13491,
+      "url": "https://www.trustpilot.com/review/www.persimmonhomes.com",
+      "profileName": "Persimmon Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "robertson-homes",
+    "name": "Robertson Homes",
+    "website": "https://www.robertsonhomes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Robertson Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 3.9,
+      "reviewCount": 469,
+      "url": "https://www.trustpilot.com/review/www.robertsonhomes.co.uk",
+      "profileName": "Robertson Homes UK",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_verified",
+      "evidenceMethod": "Trustpilot search-index snapshot; direct profile fetch unavailable",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "redrow",
+    "name": "Redrow",
+    "website": "https://www.redrow.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Barratt Redrow",
+      "scope": "Barratt Redrow",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": "https://www.barrattredrow.co.uk/about-us/our-brands",
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.3,
+      "reviewCount": 9738,
+      "url": "https://www.trustpilot.com/review/www.redrow.co.uk",
+      "profileName": "Redrow",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "berkeley-group",
+    "name": "The Berkeley Group",
+    "website": "https://www.berkeleygroup.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 3.6,
+      "reviewCount": 632,
+      "url": "https://www.trustpilot.com/review/www.berkeleygroup.co.uk",
+      "profileName": "Berkeley Group Plc",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "crest-nicholson",
+    "name": "Crest Nicholson",
+    "website": "https://www.crestnicholson.com",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Crest Nicholson",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 3.9,
+      "reviewCount": 2633,
+      "url": "https://www.trustpilot.com/review/www.crestnicholson.com",
+      "profileName": "Crest Nicholson",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "lynch-homes",
+    "name": "Lynch Homes",
+    "website": "https://www.lynchhomes.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": null,
+      "reviewCount": null,
+      "url": null,
+      "profileName": null,
+      "rank": null,
+      "rankCategory": null,
+      "status": "no_verified_profile",
+      "rankStatus": "not_verified",
+      "evidenceMethod": "Website-domain profile lookup and builder-name search; no verified match",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "story-homes",
+    "name": "Story Homes",
+    "website": "https://www.storyhomes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Story Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.9,
+      "reviewCount": 2440,
+      "url": "https://www.trustpilot.com/review/www.storyhomes.co.uk",
+      "profileName": "Story Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "hill-group",
+    "name": "Hill Group",
+    "website": "https://www.hill.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Hill Group",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.9,
+      "reviewCount": 4359,
+      "url": "https://www.trustpilot.com/review/www.hill.co.uk",
+      "profileName": "Hill",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "tulloch-homes",
+    "name": "Tulloch Homes",
+    "website": "https://www.tulloch-homes.com",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": null,
+      "reviewCount": null,
+      "url": null,
+      "profileName": null,
+      "rank": null,
+      "rankCategory": null,
+      "status": "no_verified_profile",
+      "rankStatus": "not_verified",
+      "evidenceMethod": "Website-domain profile lookup and builder-name search; no verified match",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "scotia-homes",
+    "name": "Scotia Homes",
+    "website": "https://www.scotia-homes.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": null,
+      "reviewCount": null,
+      "url": null,
+      "profileName": null,
+      "rank": null,
+      "rankCategory": null,
+      "status": "no_verified_profile",
+      "rankStatus": "not_verified",
+      "evidenceMethod": "Website-domain profile lookup and builder-name search; no verified match",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "bovis-homes",
+    "name": "Bovis Homes",
+    "website": "https://www.bovishomes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Vistry Homes",
+      "scope": "Vistry Homes",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": "https://www.vistry.co.uk/how-we-operate/our-retail-brands",
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.4,
+      "reviewCount": 966,
+      "url": "https://www.trustpilot.com/review/www.bovishomes.co.uk",
+      "profileName": "Bovis Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "linden-homes",
+    "name": "Linden Homes",
+    "website": "https://www.lindenhomes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Vistry Homes",
+      "scope": "Vistry Homes",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": "https://www.vistry.co.uk/how-we-operate/our-retail-brands",
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.5,
+      "reviewCount": 1131,
+      "url": "https://www.trustpilot.com/review/lindenhomes.co.uk",
+      "profileName": "Linden Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "countryside-homes",
+    "name": "Countryside Homes",
+    "website": "https://www.countrysidehomes.com",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Vistry Homes",
+      "scope": "Vistry Homes",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": "https://www.vistry.co.uk/how-we-operate/our-retail-brands",
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.1,
+      "reviewCount": 1173,
+      "url": "https://www.trustpilot.com/review/www.countrysidehomes.com",
+      "profileName": "Countryside Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "bloor-homes",
+    "name": "Bloor Homes",
+    "website": "https://bloorhomes.com",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Bloor Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.7,
+      "reviewCount": 6252,
+      "url": "https://www.trustpilot.com/review/bloorhomes.com",
+      "profileName": "Bloor Homes & Fitchett by Bloor",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "keepmoat",
+    "name": "Keepmoat",
+    "website": "https://www.keepmoat.com",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Keepmoat",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.5,
+      "reviewCount": 5185,
+      "url": "https://www.trustpilot.com/review/www.keepmoat.com",
+      "profileName": "Keepmoat",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "gleeson",
+    "name": "Gleeson Homes",
+    "website": "https://gleesonhomes.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.4,
+      "reviewCount": 1541,
+      "url": "https://www.trustpilot.com/review/gleesonhomes.co.uk",
+      "profileName": "Gleeson Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "morris-homes",
+    "name": "Morris Homes",
+    "website": "https://www.morrishomes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Morris Homes Group",
+      "scope": "Morris Homes Group",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.6,
+      "reviewCount": 1277,
+      "url": "https://www.trustpilot.com/review/morrishomes.co.uk",
+      "profileName": "Morris Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "harron-homes",
+    "name": "Harron Homes",
+    "website": "https://www.harronhomes.com",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.3,
+      "reviewCount": 1640,
+      "url": "https://www.trustpilot.com/review/harronhomes.com",
+      "profileName": "Harron Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "anwyl-homes",
+    "name": "Anwyl Homes",
+    "website": "https://www.anwylhomes.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.8,
+      "reviewCount": 1834,
+      "url": "https://www.trustpilot.com/review/anwylhomes.co.uk",
+      "profileName": "Anwyl Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "castle-green-homes",
+    "name": "Castle Green Homes",
+    "website": "https://www.castlegreenhomes.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Castle Green Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.7,
+      "reviewCount": 569,
+      "url": "https://www.trustpilot.com/review/www.castlegreenhomes.uk",
+      "profileName": "Castle Green Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "lovell",
+    "name": "Lovell Homes",
+    "website": "https://newhomes.lovell.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.5,
+      "reviewCount": 1326,
+      "url": "https://www.trustpilot.com/review/www.lovell.co.uk",
+      "profileName": "Lovell Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "wain-homes",
+    "name": "Wain Homes",
+    "website": "https://www.wainhomes.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.4,
+      "reviewCount": 1660,
+      "url": "https://www.trustpilot.com/review/wainhomes.co.uk",
+      "profileName": "Wain Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "dandara",
+    "name": "Dandara",
+    "website": "https://www.dandara.com",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Dandara Homes",
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.8,
+      "reviewCount": 3109,
+      "url": "https://www.trustpilot.com/review/www.dandara.com",
+      "profileName": "Dandara",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "maguires-developments",
+    "name": "Maguires Developments",
+    "website": "https://www.m-d.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": null,
+      "reviewCount": null,
+      "url": null,
+      "profileName": null,
+      "rank": null,
+      "rankCategory": null,
+      "status": "no_verified_profile",
+      "rankStatus": "not_verified",
+      "evidenceMethod": "Website-domain profile lookup and builder-name search; no verified match",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "bancon-homes",
+    "name": "Bancon Homes",
+    "website": "https://banconhomes.com",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 2.6,
+      "reviewCount": 5,
+      "url": "https://www.trustpilot.com/review/www.banconhomes.com",
+      "profileName": "banconhomes.com",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "ajc-homes",
+    "name": "AJC Homes",
+    "website": "https://ajcscotland.com",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": null,
+      "reviewCount": null,
+      "url": null,
+      "profileName": null,
+      "rank": null,
+      "rankCategory": null,
+      "status": "no_verified_profile",
+      "rankStatus": "not_verified",
+      "evidenceMethod": "Website-domain profile lookup and builder-name search; no verified match",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "hayhill",
+    "name": "Hayhill Developments",
+    "website": "https://www.hayhilldevelopments.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": null,
+      "reviewCount": null,
+      "url": null,
+      "profileName": null,
+      "rank": null,
+      "rankCategory": null,
+      "status": "no_verified_profile",
+      "rankStatus": "not_verified",
+      "evidenceMethod": "Website-domain profile lookup and builder-name search; no verified match",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "hopkins-homes",
+    "name": "Hopkins Homes",
+    "website": "https://www.hopkinshomes.co.uk",
+    "hbf": {
+      "rating": null,
+      "rank": null,
+      "year": 2026,
+      "awardName": null,
+      "scope": null,
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "not_listed_in_2026_awards",
+      "relationshipSource": null,
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.3,
+      "reviewCount": 607,
+      "url": "https://www.trustpilot.com/review/www.hopkinshomes.co.uk",
+      "profileName": "Hopkins Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": null
+    }
+  },
+  {
+    "slug": "larkfleet-homes",
+    "name": "Larkfleet Homes",
+    "website": "https://allison-homes.co.uk",
+    "hbf": {
+      "rating": 5,
+      "rank": null,
+      "year": 2026,
+      "awardName": "Allison Homes",
+      "scope": "Allison Homes",
+      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
+      "status": "verified",
+      "relationshipSource": "https://www.lincs-chamber.co.uk/allison-homes-larkfleet/",
+      "rankStatus": "not_published",
+      "checkedAt": "2026-10-04"
+    },
+    "trustpilot": {
+      "rating": 4.7,
+      "reviewCount": 685,
+      "url": "https://www.trustpilot.com/review/allison-homes.co.uk",
+      "profileName": "Allison Homes",
+      "rank": null,
+      "rankCategory": null,
+      "status": "verified_profile",
+      "rankStatus": "not_published_on_profile",
+      "evidenceMethod": "Trustpilot profile via web retrieval (may be cached)",
+      "checkedAt": "2026-10-04",
+      "scope": "Allison Homes (successor to Larkfleet Homes)"
+    }
+  }
+]

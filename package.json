@@ -28,7 +28,9 @@
     "build:crawler": "tsc -p tsconfig.crawler.json",
     "images:normalise-bedrooms": "tsx src/cli/normalise-bedrooms.ts",
     "predev": "node scripts/copy-map-worker.mjs",
-    "prebuild": "node scripts/copy-map-worker.mjs"
+    "prebuild": "node scripts/copy-map-worker.mjs",
+    "builders:ratings:sync": "tsx src/cli/sync-builder-ratings.ts",
+    "builders:ratings:crawl": "tsx src/cli/crawl-builder-ratings.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
