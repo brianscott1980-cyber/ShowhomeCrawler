@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
  const { developer, report } = await collection(slug);
  const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : i.verdict?.matches) ?? [];
  const title = `${developer.name} Showhome Ideas | Showhome Explorer`;
- const description = `Explore ${images.length} ${developer.name} showhome photographs for home inspiration. Discover house types, development locations and individual plot details.`;
+ const description = `Explore ${images.length} ${developer.name} showhome photographs for home inspiration. Discover house types, developments and individual plot details.`;
  const image = images[0] ? absoluteUrl(assetUrl(slug, images[0].path)) : undefined;
  return { title, description, alternates: { canonical: `/developers/${slug}` }, robots: { index: images.length > 0, follow: true },
   openGraph: { title, description, url: `/developers/${slug}`, ...(image ? { images: [image] } : {}) },

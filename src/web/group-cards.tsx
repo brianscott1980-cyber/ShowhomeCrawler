@@ -1,9 +1,12 @@
 'use client';
+import {useDirectoryCounts} from './directory-counts';
+import {MultiSelectFilter} from './multi-select-filter';
+import {matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
 import {useUrlFilters} from './url-filters';
 import {withFilters} from './url-query';
-const filterDefaults={developer:'',bedrooms:'',location:'',site:''};
+const filterDefaults={developer:'',bedrooms:'',location:'',site:'',type:''};
 import {matchesBuildingPlace,type BuildingPlace} from './building-place-filter';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import Link from 'next/link';
@@ -15,13 +18,14 @@ export interface GroupCardItem {
  name: string;
  developers: string[];
  count: number;
+ interiorIds?:string[];
  images?: CollectionImage[];
  image: string;
  description: string;
  bedrooms?: number[];
  locations?: string[];
  sites?: string[];
- places?: BuildingPlace[];
+ places?: (BuildingPlace & {siteId?:string;imageIds?:string[]})[];
 }
 
 export function GroupCards({
@@ -47,72 +51,43 @@ export function GroupCards({
 
  const isBuildings = pathPrefix === 'buildings';
 
- const developers = isBuildings
-  ? [...new Set(cards.flatMap(c => c.developers))].sort()
-  : [];
+ const placeMatches=(card:GroupCardItem,place:BuildingPlace,omit='')=>
+  (omit==='developer'||!place.developer||matchesAnySelection(developer,[place.developer]))&&
+  (omit==='bedrooms'||matchesAnySelection(bedrooms,place.bedrooms===undefined?(card.bedrooms??[]).map(String):[String(place.bedrooms)]))&&
+  matchesBuildingPlace([place],omit==='site'?'':site,omit==='location'?'':location);
+ const matches=(card:GroupCardItem,omit='')=>{
+  if(omit!=='developer'&&!matchesAnySelection(developer,card.developers))return false;
+  if(omit!=='type'&&!matchesAnySelection(filters.type,[card.name]))return false;
+  if(omit!=='bedrooms'&&!matchesAnySelection(bedrooms,(card.bedrooms??[]).map(String)))return false;
+  if(((omit!=='site'&&site)||(omit!=='location'&&location)||(omit!=='bedrooms'&&bedrooms))&&!(card.places??[]).some(place=>placeMatches(card,place,omit)))return false;
+  return true;
+ };
+ const facet=(key:string)=>cards.filter(card=>matches(card,key));
+ const developers=[...new Set(facet('developer').flatMap(c=>(site||location||bedrooms)?(c.places??[]).filter(place=>placeMatches(c,place,'developer')).flatMap(place=>place.developer?[place.developer]:c.developers):c.developers))].sort();
+ const bedroomOptions=[...new Set(facet('bedrooms').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'bedrooms')).flatMap(place=>place.bedrooms===undefined?c.bedrooms??[]:[place.bedrooms])))].sort((a,b)=>a-b);
+ const locationOptions=[...new Set(facet('location').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'location')).flatMap(place=>place.locations)))].sort();
+ const siteOptions=[...new Set(facet('site').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'site')).map(place=>place.site)))].sort();
+ const typeOptions=[...new Set(facet('type').map(c=>c.name))].sort();
+ const visible=cards.filter(card=>matches(card));
 
- const bedroomOptions = isBuildings
-  ? [...new Set(cards.flatMap(c => c.bedrooms ?? []))].sort((a, b) => a - b)
-  : [];
-
- const locationOptions = isBuildings
-  ? [...new Set(cards.flatMap(c => c.locations ?? []))].sort()
-  : [];
-
- const siteOptions=isBuildings?[...new Set(cards.flatMap(c=>c.sites??[]))].sort():[];
- const visible = isBuildings
-  ? cards.filter(card => {
-     if (developer && !card.developers.includes(developer)) return false;
-     if (bedrooms && !card.bedrooms?.includes(Number(bedrooms))) return false;
-     if ((site||location)&&!matchesBuildingPlace(card.places??[],site,location)) return false;
-     return true;
-    })
-  : cards;
-
- const hasActiveFilters = Boolean(developer || bedrooms || location || site);
+ const rooms=visible.filter(card=>!['Exterior','Uncategorised'].includes(card.name));
+ const matchingPlaces=visible.flatMap(card=>(card.places??[]).filter(place=>placeMatches(card,place)));
+ useDirectoryCounts(isBuildings?{Styles:visible.length,Developments:new Set(matchingPlaces.map(place=>place.siteId??`${place.developer}:${place.site}`)).size}:{'Room types':rooms.length,Interiors:new Set(rooms.flatMap(card=>(developer||bedrooms||location||site)?(card.places??[]).filter(place=>placeMatches(card,place)).flatMap(place=>place.imageIds??[]):card.interiorIds??[])).size});
+ const hasActiveFilters = Boolean(developer || bedrooms || location || site || filters.type);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
 
  function resetFilters() { setFilters(filterDefaults); }
 
  return (
   <>
-   {isBuildings && (
+   {(
     <div className="site-filter-panel" style={{marginBottom: 24}}>
-     <DirectoryFilters className="filters site-filters" label="Filter buildings">
-      <label>
-       Builder
-       <select value={developer} onChange={e => setDeveloper(e.target.value)}>
-        <option value="">All builders</option>
-        {developers.map(d => (
-         <option key={d} value={d}>{d}</option>
-        ))}
-       </select>
-      </label>
-      <label>
-       Bedrooms
-       <select value={bedrooms} onChange={e => setBedrooms(e.target.value)}>
-        <option value="">All bedrooms</option>
-        {bedroomOptions.map(b => (
-         <option key={b} value={String(b)}>{b} {b === 1 ? 'bedroom' : 'bedrooms'}</option>
-        ))}
-       </select>
-      </label>
-      <label>
-       Location
-       <select value={location} onChange={e => setLocation(e.target.value)}>
-        <option value="">All locations</option>
-        {locationOptions.map(l => (
-         <option key={l} value={l}>{l}</option>
-        ))}
-       </select>
-      </label>
-      <label>
-       Site
-       <select value={site} onChange={e=>setSite(e.target.value)}>
-        <option value="">All sites</option>
-        {siteOptions.map(s=><option key={s} value={s}>{s}</option>)}
-       </select>
-      </label>
+     <DirectoryFilters className="filters site-filters" label={`Filter ${kindLabel.toLowerCase()}`}>
+      <MultiSelectFilter label="Builders" value={developer} options={developers} onChange={setDeveloper}/>
+      <MultiSelectFilter label={isBuildings?'Styles':'Room types'} value={filters.type} options={typeOptions} onChange={value=>setFilters(previous=>({...previous,type:value}))}/>
+      <MultiSelectFilter label="Bedrooms" value={bedrooms} options={bedroomOptions.map(b=>({value:String(b),label:`${b} bedrooms`}))} onChange={setBedrooms}/>
+      <MultiSelectFilter label="Areas" value={location} options={locationOptions} onChange={setLocation}/>
+      <MultiSelectFilter label="Developments" value={site} options={siteOptions} onChange={setSite}/>
       {hasActiveFilters && (
        <button
         type="button"

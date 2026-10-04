@@ -1,0 +1,17 @@
+'use client';
+import {useEffect,useId,useRef} from 'react';
+import {LocationLabel} from './location-label';
+import type {SavedLocation} from './location-preferences';
+
+export function DistanceFilter({value,location,onChange,onChangeLocation}:{value:string;location:SavedLocation|null;onChange:(value:string)=>void;onChangeLocation:()=>void}){
+ const id=useId(),details=useRef<HTMLDetailsElement>(null);
+ function close(){if(details.current)details.current.open=false;}
+ useEffect(()=>{const outside=(event:PointerEvent)=>{if(details.current&&!details.current.contains(event.target as Node))close();};document.addEventListener('pointerdown',outside);return()=>document.removeEventListener('pointerdown',outside);},[]);
+ return <div className="multi-filter distance-filter"><span id={id}>Within</span><details ref={details} onKeyDown={event=>{if(event.key==='Escape'){event.stopPropagation();close();details.current?.querySelector('summary')?.focus();}}}>
+  <summary aria-labelledby={`${id} ${id}-selection`} aria-controls={`${id}-options`}><span id={`${id}-selection`}>{value?`${value} miles`:'Any distance'}</span><span aria-hidden="true">⌄</span></summary>
+  <div className="multi-filter-panel distance-filter-panel" id={`${id}-options`}>
+   <div className="distance-filter-location"><span>Your area</span><strong>{location?<LocationLabel location={location}/>:'No location selected'}</strong><button type="button" onClick={()=>{close();onChangeLocation();}}>{location?'Change location':'Set location'}</button></div>
+   <div className="distance-filter-options" role="group" aria-label="Distance options">{['', '5','10','25','50','100','200'].map(option=><button type="button" key={option} aria-pressed={value===option} onClick={()=>{onChange(option);close();details.current?.querySelector('summary')?.focus();}}><span>{option?`${option} miles`:'Any distance'}</span><span aria-hidden="true">{value===option?'✓':''}</span></button>)}</div>
+  </div>
+ </details></div>;
+}

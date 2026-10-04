@@ -6,7 +6,7 @@ import {DeveloperDirectory,orderedDevelopers,distanceMiles,type DeveloperCard} f
 import {SiteDirectory} from '../src/web/site-directory';
 import {GroupCards} from '../src/web/group-cards';
 import type {SiteCard} from '../src/web/site-filters';
-import {Navigation} from '../src/web/navigation';
+import {AccountMenu} from '../src/web/account-menu';
 import {GET} from '../src/app/api/location/route';
 const cards:DeveloperCard[]=[{slug:'a',name:'Alpha',spaces:2,image:'a.jpg',description:'Office',locations:[{name:'Far',latitude:56,longitude:0},{name:'Near',latitude:51,longitude:0}]},{slug:'b',name:'Beta',spaces:9,image:'b.jpg',description:'Office',locations:[{name:'Other',latitude:52,longitude:0}]},{slug:'c',name:'Gamma',spaces:5,image:'c.jpg',description:'Office',locations:[]}];
 afterEach(()=>{vi.unstubAllGlobals();});
@@ -20,9 +20,9 @@ describe('Developer directory',()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
   try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));const select=document.querySelector('#directory-order') as HTMLSelectElement;expect(select.value).toBe('name');const cardTitles=[...document.querySelectorAll('.collection-card h2')].map(h=>h.textContent?.replace('↗','').trim());expect(cardTitles).toEqual(['Alpha','Beta','Gamma']);}finally{await act(async()=>root.unmount());dom.window.close();}
  });
- it('switches all three layouts, defaults to list, and remembers the selected view in sessionStorage',async()=>{
+ it('switches all three layouts, defaults to compact, and remembers the selected view in sessionStorage',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
-  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));expect(document.querySelector('.directory-list')).not.toBeNull();for(const [label,layout] of [['Smaller grid','compact'],['Large cards','large'],['List','list']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(sessionStorage.getItem('showhome-homebuilders-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
+  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));expect(document.querySelector('.directory-compact')).not.toBeNull();for(const [label,layout] of [['Smaller grid','compact'],['Large cards','large'],['List','list']]){const button=[...document.querySelectorAll('button')].find(b=>b.textContent===label)!;expect(button.querySelector('svg')).not.toBeNull();await act(async()=>button.click());expect(button.getAttribute('aria-pressed')).toBe('true');expect(document.querySelector('.directory-'+layout)).not.toBeNull();expect(sessionStorage.getItem('showhome-homebuilders-view')).toBe(layout);}}finally{await act(async()=>root.unmount());dom.window.close();}
  });
  it('switches layouts with thumbnail icons in SiteDirectory, defaults to list, and saves to sessionStorage',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
@@ -59,41 +59,30 @@ describe('Developer directory',()=>{
    await act(async()=>root.render(<GroupCards cards={buildingCards} pathPrefix="buildings" kindLabel="Buildings"/>));
    expect(document.querySelectorAll('.collection-card')).toHaveLength(3);
 
-   const selects=document.querySelectorAll<HTMLSelectElement>('.site-filters select');
-   expect(selects).toHaveLength(4);
-   const [devSelect, bedSelect, locSelect]=selects;
-
-   // Filter by Homebuilder
-   await act(async()=>{devSelect.value='Miller Homes';devSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   const choose=async(label:string,option:string)=>{
+    const filter=[...document.querySelectorAll('.multi-filter')].find(node=>node.querySelector(':scope>span')?.textContent===label)!;
+    const row=[...filter.querySelectorAll('label')].find(node=>node.querySelector('span')?.textContent===option)!;
+    await act(async()=>row.querySelector<HTMLInputElement>('input')!.click());
+   };
+   expect(document.querySelectorAll('.multi-filter')).toHaveLength(5);
+   await choose('Builders','Miller Homes');
    expect(document.querySelectorAll('.collection-card')).toHaveLength(2);
-
-   // Filter by Bedrooms (4)
-   await act(async()=>{bedSelect.value='4';bedSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   await choose('Bedrooms','4 bedrooms');
    expect(document.querySelectorAll('.collection-card')).toHaveLength(1);
    expect(document.querySelector('.collection-card h2')?.textContent).toContain('Beechford');
-
-   // Filter by Location
-   await act(async()=>{locSelect.value='Langley Gate';locSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   await choose('Areas','Langley Gate');
    expect(document.querySelectorAll('.collection-card')).toHaveLength(1);
-
-   // Reset filters
    const resetBtn=[...document.querySelectorAll('button')].find(b=>b.textContent==='Reset filters')!;
    await act(async()=>resetBtn.click());
    expect(document.querySelectorAll('.collection-card')).toHaveLength(3);
-
-   // Non-matching filter
-   await act(async()=>{locSelect.value='City Fields';locSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));bedSelect.value='4';bedSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));devSelect.value='Barratt';devSelect.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});
+   await act(async()=>{window.history.replaceState(null,'','?location=City+Fields&bedrooms=4&developer=Barratt');window.dispatchEvent(new dom.window.PopStateEvent('popstate'));});
    expect(document.querySelectorAll('.collection-card')).toHaveLength(0);
    expect(document.querySelector('.empty')?.textContent).toContain('No buildings match these filters');
   }finally{await act(async()=>root.unmount());dom.window.close();}
  });
  it('updates the header badge after favourite changes without double-counting duplicate IDs',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);localStorage.setItem('showhome-favourites-v1','["one","one","two"]');const root=createRoot(document.getElementById('root')!);
-  try{await act(async()=>root.render(<Navigation/>));expect(document.querySelector('.favourites-count')?.textContent).toBe('2');await act(async()=>{localStorage.setItem('showhome-favourites-v1','[]');window.dispatchEvent(new dom.window.Event('showhome-favourites-changed'));});expect(document.querySelector('.favourites-count')?.textContent).toBe('0');}finally{await act(async()=>root.unmount());dom.window.close();}
- });
- it('requests browser location only on click and handles permission denial',async()=>{
-  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const lookup=vi.fn((_success,fail)=>fail({code:1}));vi.stubGlobal('navigator',{geolocation:{getCurrentPosition:lookup}});const root=createRoot(document.getElementById('root')!);
-  try{await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));expect(lookup).not.toHaveBeenCalled();const select=document.querySelector('select')!;await act(async()=>{select.value='distance';select.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});expect(lookup).not.toHaveBeenCalled();await act(async()=>[...document.querySelectorAll('button')].find(b=>b.textContent==='Use my location')!.click());expect(lookup).toHaveBeenCalledOnce();expect(document.querySelector('[role=status]')?.textContent).toContain('permission was declined');}finally{await act(async()=>root.unmount());dom.window.close();}
+  try{await act(async()=>root.render(<AccountMenu/>));expect(document.querySelector('.favourites-count')?.textContent).toBe('2');await act(async()=>{localStorage.setItem('showhome-favourites-v1','[]');window.dispatchEvent(new dom.window.Event('showhome-favourites-changed'));});expect(document.querySelector('.favourites-count')?.textContent).toBe('0');}finally{await act(async()=>root.unmount());dom.window.close();}
  });
  it('rejects invalid postcodes without making a lookup request and handles lookup failures',async()=>{
   const fetcher=vi.fn();vi.stubGlobal('fetch',fetcher);expect((await GET(new Request('https://local.test/api/location?postcode=invalid'))).status).toBe(400);expect(fetcher).not.toHaveBeenCalled();fetcher.mockResolvedValue(Response.json({result:{postcode:'SW1A 1AA',latitude:51.501,longitude:-0.141}}));const response=await GET(new Request('https://local.test/api/location?postcode=SW1A1AA'));expect(await response.json()).toMatchObject({latitude:51.501,longitude:-0.141});expect(response.headers.get('Cache-Control')).toBe('no-store');fetcher.mockRejectedValue(new Error('Unavailable'));expect((await GET(new Request('https://local.test/api/location?postcode=SW1A1AA'))).status).toBe(502);

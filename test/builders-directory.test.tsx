@@ -4,7 +4,7 @@ vi.mock('../src/web/collections',()=>({assetUrl:(slug:string,path:string)=>`/api
 import Builders from '../src/page-views/homebuilders/page';
 it('shows a builder with categorised property photographs even when there are no office matches',async()=>{
  const html=renderToStaticMarkup(await Builders());
- expect(html).toContain('<h1>Builders</h1>');
+ expect(html).toContain('<h1 id="builders-heading">Builders</h1>');
  expect(html).toContain('/developers/lynch-homes');
  expect(html).toContain('Lynch Homes');
 });

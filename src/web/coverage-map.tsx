@@ -22,10 +22,10 @@ export function CoverageMap({ points, activeSiteIds = [] }: { points: CoveragePo
  const palette = ['#2563eb', '#e95428', '#7c3aed', '#008575', '#c02565', '#b57900', '#0891b2', '#513c9a', '#61862a', '#af432c', '#526275', '#a43d9b', '#176147', '#567bd1', '#d15f94', '#765332'];
  const colours = new Map(builders.map((builder, index) => [builder, palette[index] ?? `hsl(${(index * 137.5) % 360} 65% 40%)`]));
  return <figure className={`home-map${activeSiteIds.length ? ' has-active-sites' : ''}`}>
-  <svg viewBox="-20 36.57 340 487.5" role="img" aria-label="Showhome locations across the United Kingdom" aria-describedby="coverage-description">
-   <desc id="coverage-description">{points.length} mapped locations in the collection. Colours identify builders. Enlarged dots identify locations associated with the displayed photo.</desc>
+  <svg viewBox="-20 36.57 340 487.5" role="img" aria-label="Showhome developments across the United Kingdom" aria-describedby="coverage-description">
+   <desc id="coverage-description">{points.length} mapped developments in the collection. Colours identify builders. Enlarged dots identify developments associated with the displayed photo.</desc>
    {outlines.map(outline => <path key={outline.name} d={outline.path} className={outline.name === 'United Kingdom' ? 'map-land' : 'map-context'}/>)}
-   {coverageClusters(points, points.map(point => point.siteId ?? `${point.builder}:${point.name}`)).sort((a, b) => Number(a.siteIds.some(id => activeSiteIds.includes(id))) - Number(b.siteIds.some(id => activeSiteIds.includes(id)))).map(c => <circle key={c.siteIds.join('|')} cx={c.x.toFixed(3)} cy={c.y.toFixed(3)} r={Math.min(5.5, 2.4 + Math.log2(c.count) * .55)} className={`map-site${c.siteIds.some(id => activeSiteIds.includes(id)) ? ' is-active-site' : ''}`} fill={colours.get(c.builder)} aria-label={`${c.builder}: ${c.count} ${c.count === 1 ? 'location' : 'nearby locations'}`}/>)}
+   {coverageClusters(points, points.map(point => point.siteId ?? `${point.builder}:${point.name}`)).sort((a, b) => Number(a.siteIds.some(id => activeSiteIds.includes(id))) - Number(b.siteIds.some(id => activeSiteIds.includes(id)))).map(c => <circle key={c.siteIds.join('|')} cx={c.x.toFixed(3)} cy={c.y.toFixed(3)} r={Math.min(5.5, 2.4 + Math.log2(c.count) * .55)} className={`map-site${c.siteIds.some(id => activeSiteIds.includes(id)) ? ' is-active-site' : ''}`} fill={colours.get(c.builder)} aria-label={`${c.builder}: ${c.count} ${c.count === 1 ? 'development' : 'nearby developments'}`}/>)}
   </svg>
  </figure>;
 }

@@ -22,6 +22,7 @@
     "results:reports": "tsx src/cli/reports.ts",
     "images:categorise": "tsx src/cli/categorise-all.ts",
     "sites:sync": "tsx src/cli/sync-site-filtering.ts",
+    "locations:geography": "tsx src/cli/location-geography.ts",
     "dev": "next dev --hostname 127.0.0.1",
     "start": "next start --hostname 127.0.0.1",
     "build:crawler": "tsc -p tsconfig.crawler.json",
@@ -30,6 +31,7 @@
     "prebuild": "node scripts/copy-map-worker.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
     "cheerio": "^1.2.0",
     "dotenv": "^18.0.5",
     "maplibre-gl": "^6.11.2",

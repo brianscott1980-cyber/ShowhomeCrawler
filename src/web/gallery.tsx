@@ -1,4 +1,6 @@
 'use client';
+import {MultiSelectFilter} from './multi-select-filter';
+import {matchesSelection,matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
 import { homeTypeName, plotDetails } from '../reports/home-display';
 import { type ReactNode, type ComponentProps, type CSSProperties, useEffect, useRef, useState } from 'react';
@@ -45,7 +47,7 @@ export function Gallery({
  const {q:query,development,category:mainCategory,room:subCategory}=filters;
  const setQuery=(value:string)=>setFilters(previous=>({...previous,q:value}));
  const setDevelopment=(value:string)=>setFilters(previous=>({...previous,development:value}));
- const setMainCategory=(value:string)=>setFilters(previous=>({...previous,category:value,room:''}));
+ const setMainCategory=(value:string)=>setFilters(previous=>({...previous,category:value}));
  const setSubCategory=(value:string)=>setFilters(previous=>({...previous,room:value}));
  const [selected, setSelected] = useState<string | null>(null);
  const openedInitialImage = useRef<string | null>(null);
@@ -126,39 +128,16 @@ export function Gallery({
   return image.verdict?.matches || includeUnclassified;
  });
 
- const mainCategories = [...new Set(available.map(img => img.categorisation?.mainCategory).filter(Boolean) as string[])].sort();
-
- const subCategories = [...new Set(
-  available
-   .filter(img => !mainCategory || img.categorisation?.mainCategory === mainCategory)
-   .map(img => img.categorisation?.subCategory)
-   .filter(Boolean) as string[]
- )].sort();
-
- const sites = [...new Map(available.flatMap(image => image.homes.map(p => [p.developmentUrl, p.development] as const))).entries()].sort((a, b) => a[1].localeCompare(b[1]));
-
- useEffect(() => {
-  if (development && !sites.some(([url]) => url === development)) setDevelopment('');
- }, [development, sites]);
-
- useEffect(() => {
-  if (subCategory && !subCategories.includes(subCategory)) setSubCategory('');
- }, [subCategory, subCategories]);
-
- const images = available.filter(image => {
-  if (filters.developer && image.developer !== filters.developer) return false;
-  if ((filters.bedrooms || filters.location || filters.site) && !image.homes.some(home =>
-   (!filters.bedrooms || home.bedrooms === Number(filters.bedrooms)) &&
-   (!filters.site || home.development === filters.site) &&
-   (!filters.location || places?.[`${image.slug}:${home.developmentUrl}`]?.includes(filters.location))
-  )) return false;
+ const homeMatches=(image:(typeof available)[number],home:(typeof available)[number]['homes'][number],f:typeof filters)=>matchesSelection(f.bedrooms,String(home.bedrooms))&&matchesSelection(f.site,home.development)&&matchesSelection(f.development,home.developmentUrl)&&matchesAnySelection(f.location,places?.[`${image.slug}:${home.developmentUrl}`]??[]);
+ const matches=(image:(typeof available)[number],f:typeof filters)=>{
+  if(!matchesSelection(f.developer,image.developer))return false;
+  if((f.bedrooms||f.location||f.site||f.development)&&!image.homes.some(home=>homeMatches(image,home,f)))return false;
   if (favouritesOnly && !favourites.includes(image.id)) return false;
   if (!favouritesOnly && !image.verdict?.matches && !includeUnclassified) return false;
-  if (mainCategory && image.categorisation?.mainCategory !== mainCategory) return false;
-  if (subCategory && image.categorisation?.subCategory !== subCategory) return false;
-  if (development && !image.homes.some(h => h.developmentUrl === development)) return false;
+  if(!matchesSelection(f.category,image.categorisation?.mainCategory??''))return false;
+  if(!matchesSelection(f.room,image.categorisation?.subCategory??''))return false;
 
-  if (query) {
+  if (f.q) {
    const cat = image.categorisation;
    const searchCorpus = [
     image.developer,
@@ -176,11 +155,21 @@ export function Gallery({
     ...image.homes.map(h => `${h.name} ${h.development}`),
    ].join(' ').toLowerCase();
 
-   if (!searchCorpus.includes(query.toLowerCase())) return false;
+   if (!searchCorpus.includes(f.q.toLowerCase())) return false;
   }
 
   return true;
- });
+ };
+ const images=available.filter(image=>matches(image,filters));
+ const facet=(key:keyof typeof filters)=>available.filter(image=>matches(image,{...filters,[key]:''}));
+ const mainCategories=[...new Set(facet('category').map(i=>i.categorisation?.mainCategory).filter((v):v is string=>Boolean(v)))].sort();
+ const subCategories=[...new Set(facet('room').map(i=>i.categorisation?.subCategory).filter((v):v is string=>Boolean(v)))].sort();
+ const facetHomes=(key:keyof typeof filters)=>facet(key).flatMap(image=>image.homes.filter(home=>homeMatches(image,home,{...filters,[key]:''})).map(home=>({home,slug:image.slug})));
+ const sites=[...new Map(facetHomes('development').map(({home})=>[home.developmentUrl,home.development])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
+ const builderOptions=[...new Set(facet('developer').map(i=>i.developer))].sort();
+ const bedroomOptions=[...new Set(facetHomes('bedrooms').map(({home})=>home.bedrooms).filter((n):n is number=>n!==null))].sort((a,b)=>a-b);
+ const areaOptions=[...new Set(facetHomes('location').flatMap(({home,slug})=>places?.[`${slug}:${home.developmentUrl}`]??[]))].sort();
+ const siteOptions=[...new Set(facetHomes('site').map(({home})=>home.development))].sort();
 
  const current = images.find(i => i.uid === selected);
  const heroImages = images;
@@ -252,49 +241,14 @@ export function Gallery({
       placeholder="Room, furniture, colour, style…"
      />
     </label>
-    {mainCategories.length > 1 && (
-     <label>
-      Interior type
-      <select
-       value={mainCategory}
-       onChange={e => {
-        setMainCategory(e.target.value);
-       }}
-      >
-       <option value="">All interiors ({mainCategories.length})</option>
-       {mainCategories.map(cat => (
-        <option key={cat} value={cat}>{cat}</option>
-       ))}
-      </select>
-     </label>
-    )}
-    {subCategories.length > 1 && (
-     <label>
-      Room type
-      <select
-       value={subCategory}
-       onChange={e => setSubCategory(e.target.value)}
-      >
-       <option value="">All room types ({subCategories.length})</option>
-       {subCategories.map(sub => (
-        <option key={sub} value={sub}>{sub}</option>
-       ))}
-      </select>
-     </label>
-    )}
-    <label>
-     Development
-     <select value={development} onChange={e => setDevelopment(e.target.value)}>
-      <option value="">All developments</option>
-      {sites.map(([url, name]) => (
-       <option key={url} value={url}>{name}</option>
-      ))}
-     </select>
-    </label>
-    {places && <>
-     <label>Bedrooms<select value={filters.bedrooms} onChange={e=>setFilters({...filters,bedrooms:e.target.value})}><option value="">All bedrooms</option>{[...new Set(available.flatMap(i=>i.homes.map(h=>h.bedrooms)).filter((n):n is number=>n!==null))].sort((a,b)=>a-b).map(n=><option key={n} value={n}>{n} bedrooms</option>)}</select></label>
-     <label>Location<select value={filters.location} onChange={e=>setFilters({...filters,location:e.target.value})}><option value="">All locations</option>{[...new Set(Object.values(places).flat())].sort().map(name=><option key={name}>{name}</option>)}</select></label>
-     <label>Site<select value={filters.site} onChange={e=>setFilters({...filters,site:e.target.value})}><option value="">All sites</option>{[...new Set(available.flatMap(i=>i.homes.map(h=>h.development)))].sort().map(name=><option key={name}>{name}</option>)}</select></label>
+    <MultiSelectFilter label="Builders" value={filters.developer} options={builderOptions} onChange={value=>setFilters(previous=>({...previous,developer:value}))}/>
+    <MultiSelectFilter label="Interior types" value={mainCategory} options={mainCategories} onChange={setMainCategory}/>
+    <MultiSelectFilter label="Room types" value={subCategory} options={subCategories} onChange={setSubCategory}/>
+    <MultiSelectFilter label="Developments" value={development} options={sites.map(([value,label])=>({value,label}))} onChange={setDevelopment}/>
+    {places&&<>
+     <MultiSelectFilter label="Bedrooms" value={filters.bedrooms} options={bedroomOptions.map(n=>({value:String(n),label:`${n} bedrooms`}))} onChange={value=>setFilters(previous=>({...previous,bedrooms:value}))}/>
+     <MultiSelectFilter label="Areas" value={filters.location} options={areaOptions} onChange={value=>setFilters(previous=>({...previous,location:value}))}/>
+     <MultiSelectFilter label="Developments" value={filters.site} options={siteOptions} onChange={value=>setFilters(previous=>({...previous,site:value}))}/>
     </>}
     <button className="results-reset" onClick={() => setFilters(galleryDefaults)}>Clear filters</button>
    </DirectoryFilters>

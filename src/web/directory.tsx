@@ -1,26 +1,55 @@
 'use client';
+import type {BuilderFacts} from './builder-facts';
+import {useDirectoryCounts} from './directory-counts';
+import {DistanceFilter} from './distance-filter';
+import {MultiSelectFilter} from './multi-select-filter';
+import {filterBuilders,matchingBuilderLocations} from './builder-filters';
+import {useUrlFilters} from './url-filters';
 import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
-import {useState} from 'react';
+import {useEffect,useState} from 'react';
+import {useLocationRequest} from './location-dialog';
+import {useSavedLocation} from './location-preferences';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 export interface Point {latitude:number;longitude:number}
-export interface DeveloperCard {slug:string;name:string;spaces:number;image:string;description:string;logo?:string;images?:CollectionImage[];locations:(Point&{name:string})[]}
+const builderDefaults={region:'',location:'',radius:''};
+export interface DeveloperCard extends BuilderFacts {slug:string;name:string;spaces:number;image:string;description:string;logo?:string;images?:CollectionImage[];locations:{buildingTypes?:string[];latitude?:number;longitude?:number;name:string;region?:string;key?:string}[]}
 export function distanceMiles(a:Point,b:Point){const rad=(n:number)=>n*Math.PI/180;const dlat=rad(b.latitude-a.latitude),dlon=rad(b.longitude-a.longitude);const h=Math.sin(dlat/2)**2+Math.cos(rad(a.latitude))*Math.cos(rad(b.latitude))*Math.sin(dlon/2)**2;return 3958.7613*2*Math.atan2(Math.sqrt(h),Math.sqrt(Math.max(0,1-h)));}
-export function orderedDevelopers(cards:DeveloperCard[],sort:string,point:Point|null){return cards.map(card=>({...card,nearest:point?card.locations.map(location=>({...location,miles:distanceMiles(point,location)})).sort((a,b)=>a.miles-b.miles)[0]:undefined})).sort((a,b)=>sort==='name'?a.name.localeCompare(b.name):sort==='distance'&&point?(a.nearest?.miles??Infinity)-(b.nearest?.miles??Infinity)||a.name.localeCompare(b.name):b.spaces-a.spaces||a.name.localeCompare(b.name));}
+export function orderedDevelopers(cards:DeveloperCard[],sort:string,point:Point|null){return cards.map(card=>({...card,nearest:point?card.locations.filter(location=>Number.isFinite(location.latitude)&&Number.isFinite(location.longitude)).map(location=>({...location,miles:distanceMiles(point,{latitude:location.latitude!,longitude:location.longitude!})})).sort((a,b)=>a.miles-b.miles)[0]:undefined})).sort((a,b)=>sort==='name'?a.name.localeCompare(b.name):sort==='distance'&&point?(a.nearest?.miles??Infinity)-(b.nearest?.miles??Infinity)||a.name.localeCompare(b.name):b.spaces-a.spaces||a.name.localeCompare(b.name));}
 export function DeveloperDirectory({
  cards,
- defaultView = 'list',
+ defaultView = 'compact',
  storageKey = 'showhome-homebuilders-view',
 }:{
  cards:DeveloperCard[];
  defaultView?: CardViewMode;
  storageKey?: string;
 }){
- const [view,changeView]=useCardView(storageKey,defaultView);const [sort,setSort]=useState('name');const [postcode,setPostcode]=useState('');const [point,setPoint]=useState<Point|null>(null);const [message,setMessage]=useState('');const [busy,setBusy]=useState(false);
- async function locatePostcode(e:React.FormEvent){e.preventDefault();if(busy)return;setPoint(null);setBusy(true);setMessage('Looking up postcode…');try{const response=await fetch('/api/location?postcode='+encodeURIComponent(postcode.trim()));const data=await response.json();if(!response.ok)throw new Error(data.error??'Postcode lookup failed.');setPoint(data);setSort('distance');setMessage('Distances from '+data.postcode);}catch(error){setMessage(error instanceof Error?error.message:'Postcode lookup failed.');}finally{setBusy(false);}}
- function locateBrowser(){if(busy)return;if(!navigator.geolocation){setMessage('Location lookup is unavailable. Enter a postcode instead.');return;}setPoint(null);setBusy(true);setMessage('Waiting for your location permission…');navigator.geolocation.getCurrentPosition(position=>{setPoint({latitude:position.coords.latitude,longitude:position.coords.longitude});setSort('distance');setBusy(false);setMessage('Distances from your current location');},error=>{setBusy(false);setMessage(error.code===1?'Location permission was declined. Enter a postcode instead.':'Your location could not be found. Enter a postcode instead.');},{enableHighAccuracy:false,timeout:15000,maximumAge:300000});}
- const ordered=orderedDevelopers(cards,sort,point);
+ const [view,changeView]=useCardView(storageKey,defaultView);
+ const [sort,setSort]=useState('name');
+ const [point,setPoint]=useState<Point|null>(null);
+ const savedLocation=useSavedLocation();
+ useEffect(()=>{setPoint(savedLocation);},[savedLocation]);
+ const [filters,setFilters]=useUrlFilters(builderDefaults);
+ const {requestLocation,dialog}=useLocationRequest((location,intent)=>{setPoint(location);if(intent.key==='radius')setFilters(previous=>({...previous,radius:intent.value}));else setSort(intent.value);});
+ const change=(key:keyof typeof filters,value:string)=>{if(key==='radius'&&value){void requestLocation(location=>{setPoint(location);setFilters(previous=>({...previous,radius:value}));},{key:'radius',value});}else setFilters(previous=>({...previous,[key]:value}));};
+ const changeSort=(value:string)=>{if(value==='distance'){void requestLocation(location=>{setPoint(location);setSort(value);},{key:'order',value});}else setSort(value);};
+ const filtered=filterBuilders(cards,filters,point);
+ const regions=[...new Set(cards.flatMap(card=>matchingBuilderLocations(card,{...filters,region:''},point).map(location=>location.region??'Unknown')))].sort();
+ const locations=[...new Map(cards.flatMap(card=>matchingBuilderLocations(card,{...filters,location:''},point).map(location=>[location.key??location.name,{value:location.key??location.name,label:`${location.name} · ${card.name}`}]))).values()].sort((a,b)=>a.label.localeCompare(b.label));
+ const ordered=orderedDevelopers(filtered.map(card=>({...card,locations:matchingBuilderLocations(card,filters,point)})),sort,point);
+ useDirectoryCounts({Builders:ordered.length,Developments:new Set(ordered.flatMap(card=>card.locations.map(location=>location.key??`${card.slug}:${location.name}`))).size,'Building types':new Set(ordered.flatMap(card=>card.locations.flatMap(location=>(location.buildingTypes??[]).map(type=>`${card.slug}:${type}`)))).size});
  const imageLayout=`${view}:${ordered.map(c=>c.slug).join(",")}`;
- return <section aria-label="Builder collections"><div className="directory-toolbar"><ViewOptions view={view} onChange={changeView} ariaLabel="Collection layout"/><DirectoryFilters primaryCount={1} className="filters builder-directory-filters" label="Builder filters"><div className="sort-control"><label htmlFor="directory-order">Order by</label><select id="directory-order" value={sort} onChange={e=>setSort(e.target.value)}><option value="name">Name A–Z</option><option value="spaces">Most interiors</option><option value="distance">Nearest distance</option></select></div>{sort==='distance'&&<div className="distance-controls"><form onSubmit={locatePostcode}><label htmlFor="distance-postcode">Your postcode</label><div><input id="distance-postcode" autoComplete="postal-code" value={postcode} onChange={e=>setPostcode(e.target.value)} placeholder="e.g. SW1A 1AA" required maxLength={10}/><button disabled={busy}>Find distance</button></div></form><button type="button" disabled={busy} onClick={locateBrowser}>Use my location</button><p className="subtle">Straight-line miles to each homebuilder’s nearest development with matching interiors.</p><p role="status" className="location-status">{message||'Enter a postcode or allow browser location to sort by distance.'}</p></div>}</DirectoryFilters></div><div className={`collection-grid directory-${view}`}>{ordered.map(card=><a className="collection-card" href={`/developers/${card.slug}`} key={card.slug}><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/><div className="card-body"><p className="eyebrow">THE HOMEBUILDER COLLECTION</p><h2><BuilderName name={card.name}/><span aria-hidden="true">↗</span></h2><p>{card.spaces} inspiring interiors</p>{sort==='distance'&&point&&<p className="subtle">{card.nearest?`${card.nearest.miles.toFixed(1)} miles · ${card.nearest.name}`:'Location unavailable'}</p>}<span className="subtle">Explore collection →</span></div></a>)}</div></section>;
+ return <section aria-label="Builder collections">{dialog}
+  <div className="site-filter-panel builder-filter-panel">
+   <DirectoryFilters className="filters" label="Builder filters">
+    <MultiSelectFilter label="Regions" value={filters.region} options={regions} onChange={value=>change('region',value)}/>
+    <MultiSelectFilter label="Developments" value={filters.location} options={locations} onChange={value=>change('location',value)}/>
+    <DistanceFilter value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
+    <button type="button" className="location-filter-reset" onClick={()=>setFilters(builderDefaults)}>Reset filters</button>
+   </DirectoryFilters>
+
+  </div>
+  <div className="directory-toolbar"><ViewOptions view={view} onChange={changeView} ariaLabel="Collection layout"/><p className="count" aria-live="polite">{ordered.length} of {cards.length} builders</p><div className="sort-control"><label htmlFor="directory-order">Order by</label><select id="directory-order" value={sort} onChange={e=>changeSort(e.target.value)}><option value="name">Name A–Z</option><option value="spaces">Most interiors</option><option value="distance">Nearest distance</option></select></div></div><div className={`collection-grid directory-${view}`}>{ordered.map(card=><a className="collection-card" href={`/developers/${card.slug}`} key={card.slug}><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/><div className="card-body"><p className="eyebrow">THE HOMEBUILDER COLLECTION</p><h2><BuilderName name={card.name}/><span aria-hidden="true">↗</span></h2><dl className="builder-card-facts"><div><dt>HBF rating</dt><dd title={card.rating?`${card.rating.scope?card.rating.scope+' group award. ':''}Source: ${card.rating.source}`:'No verified HBF rating available'}>{card.rating?<><span className="builder-rating-stars" aria-hidden="true">{'★'.repeat(card.rating.stars)}</span><span className="sr-only">{card.rating.stars} stars</span> <span className="builder-rating-year">{card.rating.year}{card.rating.scope?' · Group':''}</span></>:'Not available'}</dd></div><div><dt>Incentives</dt><dd title={card.incentives?`Advertised on selected homes; eligibility and terms apply. Checked ${card.incentives.checkedAt}. Source: ${card.incentives.source}`:'Offer availability has not been verified'}>{card.incentives?'Selected homes':'Not verified'}</dd></div></dl><p>{card.spaces} inspiring interiors</p>{sort==='distance'&&point&&<p className="subtle">{card.nearest?`${card.nearest.miles.toFixed(1)} miles · ${card.nearest.name}`:'Location unavailable'}</p>}<span className="subtle">Explore collection →</span></div></a>)}</div>{!ordered.length&&<p className="empty">No builders match these filters. Try widening your search.</p>}</section>;
 }

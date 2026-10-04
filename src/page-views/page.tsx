@@ -5,17 +5,17 @@ import { HomepageMap } from '../web/homepage-map';
 import { Gallery } from '../web/gallery';
 import { absoluteUrl, jsonLd } from '../web/seo';
 import '../app/home.css';
-export const metadata = { title: 'Showhome Explorer | Explore New Homes & Interior Inspiration', description: 'Discover UK builders, locations and house types. Explore real showhome interiors and save ideas for your home.', alternates: { canonical: '/' } };
+export const metadata = { title: 'Showhome Explorer | Explore New Homes & Interior Inspiration', description: 'Discover UK builders, developments and house types. Explore real showhome interiors and save ideas for your home.', alternates: { canonical: '/' } };
 const journeys = [
- { title: 'Explore homes near you', description: 'Discover locations and the homes behind them, in your area and beyond.', href: '/locations', link: 'Explore locations', number: '01' },
+ { title: 'Explore homes near you', description: 'Discover developments and the homes behind them, in your area and beyond.', href: '/locations', link: 'Explore developments', number: '01' },
  { title: 'Find decorating inspiration', description: 'From kitchens to cosy bedrooms. Find ideas for every room, across builders.', href: '/interiors', link: 'Browse interiors', number: '02' },
- { title: 'Explore your house type', description: 'See how the same home has been styled in showhomes at different locations.', href: '/buildings', link: 'Find a house type', number: '03' },
+ { title: 'Explore your house type', description: 'See how the same home has been styled in showhomes at different developments.', href: '/buildings', link: 'Find a house type', number: '03' },
 ];
 export default async function Home() {
  const { journeyPhotos, featured, mapPhotos, points, counts } = await homepageData();
  return <main className="homepage">
   <section className="home-hero" aria-labelledby="home-title">
-   <div className="home-hero-copy"><p className="eyebrow">A little inspiration. A place of your own.</p><h1 id="home-title">Explore new homes.<br/><em>Find ideas for yours.</em></h1><p>Discover builders, locations and house types across the UK, with real showhome interiors to inspire you.</p><dl className="home-coverage-counts"><div><dt>Locations</dt><dd><RollingCount value={counts.locations}/></dd></div><div><dt>Builders</dt><dd><RollingCount value={counts.builders}/></dd></div><div><dt>House types</dt><dd><RollingCount value={counts.buildings}/></dd></div></dl><a className="home-button" href="#start-exploring">Find your starting point <span aria-hidden="true">↓</span></a></div>
+   <div className="home-hero-copy"><p className="eyebrow">A little inspiration. A place of your own.</p><h1 id="home-title">Explore new homes.<br/><em>Find ideas for yours.</em></h1><p>Discover builders, developments and house types across the UK, with real showhome interiors to inspire you.</p><dl className="home-coverage-counts"><div><dt>Developments</dt><dd><RollingCount value={counts.locations}/></dd></div><div><dt>Builders</dt><dd><RollingCount value={counts.builders}/></dd></div><div><dt>House types</dt><dd><RollingCount value={counts.buildings}/></dd></div></dl><a className="home-button" href="#start-exploring">Find your starting point <span aria-hidden="true">↓</span></a></div>
    <HomepageMap points={points} photos={mapPhotos}/>
   </section>
   <section className="home-journeys" id="start-exploring" aria-labelledby="journeys-title">

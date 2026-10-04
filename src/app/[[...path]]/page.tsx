@@ -1,3 +1,4 @@
+import {Profile} from '../../web/profile';
 import type { Metadata } from 'next';
 import { notFound, permanentRedirect } from 'next/navigation';
 import * as Home from '../../page-views/page';
@@ -21,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
  const path = (await params).path ?? [];
  if (!path.length) return Home.metadata;
  if (path.length === 1) {
+  if (path[0] === 'profile') return {title:'Your profile | Showhome Explorer',robots:{index:false,follow:false}};
   if (path[0] === 'homebuilders') return Builders.metadata;
   if (path[0] === 'favourites') return Favourites.metadata;
   const kind = directory(path[0]!);
@@ -35,6 +37,7 @@ export default async function Page({ params, searchParams }: Props) {
  const path = (await params).path ?? [];
  if (!path.length) return <Home.default/>;
  if (path.length === 1) {
+  if (path[0] === 'profile') return <Profile/>;
   if (path[0] === 'homebuilders') return <Builders.default/>;
   if (path[0] === 'favourites') return <Favourites.default/>;
   const kind = directory(path[0]!);
