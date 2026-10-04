@@ -59,7 +59,6 @@ class Pipeline:
    subprocess.run(['git','add','--',*files],cwd=self.work,check=True)
    subprocess.run(['git','diff','--cached','--check'],cwd=self.work,check=True)
    subprocess.run(['git','commit','-m',f'Complete {slug} {stage} processing'],cwd=self.work,check=True)
-   subprocess.run(['git','rebase','main'],cwd=self.work,check=True)
    subprocess.run(['git','merge','--ff-only','codex/sequential-builder-recrowls'],cwd=ROOT,check=True)
    subprocess.run(['git','push','origin','main'],cwd=ROOT,check=True)
    return subprocess.check_output(['git','rev-parse','HEAD'],cwd=self.work,text=True).strip()
