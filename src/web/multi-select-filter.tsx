@@ -1,5 +1,5 @@
 'use client';
-import {useEffect,useId,useRef,useState,type CSSProperties} from 'react';
+import {useEffect,useLayoutEffect,useId,useRef,useState,type CSSProperties} from 'react';
 import {selectedValues,selectionValue} from './filter-selection';
 export type FilterOption={value:string;label:string};
 export function MultiSelectFilter({label,value,options,onChange}:{label:string;value:string;options:(string|FilterOption)[];onChange:(value:string)=>void}){
@@ -8,10 +8,18 @@ export function MultiSelectFilter({label,value,options,onChange}:{label:string;v
  const supplied=options.map(option=>typeof option==='string'?{value:option,label:option}:option);
  const all=[...supplied,...selected.filter(value=>!supplied.some(option=>option.value===value)).map(value=>({value,label:value}))];
  const widthWeight=useRef(Math.min(28,Math.max(12,...supplied.map(option=>option.label.length))));
+ const selectionText=selected.map(value=>all.find(option=>option.value===value)?.label??value).join(', ');
+ const selectionRef=useRef<HTMLSpanElement>(null),measureRef=useRef<HTMLSpanElement>(null);
+ const [fits,setFits]=useState(false);
+ useLayoutEffect(()=>{
+  const element=selectionRef.current,measure=measureRef.current;if(!element||!measure)return;
+  const update=()=>setFits(measure.getBoundingClientRect().width<=element.clientWidth);
+  update();const observer=new ResizeObserver(update);observer.observe(element);observer.observe(measure);return()=>observer.disconnect();
+ },[selectionText]);
  const shown=all.filter(option=>option.label.toLowerCase().includes(query.toLowerCase()));
  useEffect(()=>{const close=(e:PointerEvent)=>{if(details.current&&!details.current.contains(e.target as Node))details.current.open=false;};document.addEventListener('pointerdown',close);return()=>document.removeEventListener('pointerdown',close);},[]);
  return <div className={`multi-filter${selected.length?' has-selection':''}`} style={{'--filter-weight':widthWeight.current} as CSSProperties}><span id={id}>{label}</span><details ref={details} onToggle={()=>{if(!details.current?.open)setQuery('');}} onKeyDown={e=>{if(e.key==='Escape'&&details.current){details.current.open=false;details.current.querySelector('summary')?.focus();}}}>
-  <summary aria-labelledby={`${id} ${id}-selection`} aria-controls={`${id}-options`}><span className="multi-filter-selection" id={`${id}-selection`}>{selected.length===0?'All':selected.length===1?(all.find(o=>o.value===selected[0])?.label??selected[0]):'Multiple'}</span><svg className="filter-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+  <summary aria-labelledby={`${id} ${id}-selection`} aria-controls={`${id}-options`}><span ref={selectionRef} className="multi-filter-selection" id={`${id}-selection`} title={selectionText||undefined}>{selected.length===0?'All':selected.length===1||fits?selectionText:'Multiple'}<span ref={measureRef} className="filter-selection-measure" aria-hidden="true">{selectionText}</span></span><svg className="filter-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
   <div className="multi-filter-panel" id={`${id}-options`} role="group" aria-labelledby={id}>
    {all.length>6&&<input type="search" aria-label={`Search ${label.toLowerCase()} options`} placeholder="Search options…" value={query} onChange={e=>setQuery(e.target.value)}/>}
    {selected.length>0&&<button type="button" onClick={()=>onChange('')}>Clear selection</button>}
