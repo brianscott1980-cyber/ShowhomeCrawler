@@ -51,3 +51,5 @@
 
 .results-page:has(.builder-results-hero){max-width:1440px;padding-inline:5%}.results-hero.builder-results-hero{margin-inline:0;padding-inline:0}
 .results-hero-photo.is-interacting .results-hero-room-type{animation:none;opacity:1;transform:translateY(0)}
+
+.builder-results-hero .results-hero-copy>p:not(.eyebrow){margin-bottom:0}.builder-results-hero .builder-results-stats{margin-top:-8px}
