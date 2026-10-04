@@ -53,3 +53,5 @@
 .results-hero-photo.is-interacting .results-hero-room-type{animation:none;opacity:1;transform:translateY(0)}
 
 .builder-results-hero .results-hero-copy>p:not(.eyebrow){margin-bottom:0}.builder-results-hero .builder-results-stats{margin-top:-8px}
+
+.builder-results-hero .builder-results-details{padding-left:24px}@media(max-width:640px){.builder-results-hero .builder-results-details{padding-left:0}}
