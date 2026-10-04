@@ -44,7 +44,7 @@ export function DeveloperDirectory({
  return <section aria-label="Builder collections">{dialog}
   <div className="site-filter-panel builder-filter-panel">
    <DirectoryFilters className="filters" label="Builder filters">
-    <MultiSelectFilter label="Regions" value={filters.region} options={regions} onChange={value=>change('region',value)}/>
+    <MultiSelectFilter label="Site Locations" value={filters.region} options={regions} onChange={value=>change('region',value)}/>
     <DistanceFilter value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
     <button type="button" className="location-filter-reset" onClick={()=>setFilters(builderDefaults)}>Reset filters</button>
    </DirectoryFilters>
