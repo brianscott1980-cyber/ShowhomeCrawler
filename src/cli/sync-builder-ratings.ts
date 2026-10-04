@@ -3,7 +3,7 @@ import {createDatabase} from '../database/postgres.js';
 import {developers} from '../adapters/developers.js';
 import {z} from 'zod';
 import {readGoogleSnapshots,syncGoogleSnapshots} from '../ratings/google-snapshots.js';
-const entry=z.object({slug:z.string(),hbf:z.object({rating:z.number().int().min(1).max(5).nullable(),year:z.number().int(),awardName:z.string().nullable(),source:z.url(),checkedAt:z.string(),status:z.string(),scope:z.string().nullable(),relationshipSource:z.string().nullable()}),trustpilot:z.object({rating:z.number().min(0).max(5).nullable(),reviewCount:z.number().int().positive().nullable(),url:z.url().nullable(),profileName:z.string().nullable(),checkedAt:z.string(),status:z.string(),evidenceMethod:z.string(),scope:z.string().nullable()})});
+const entry=z.object({slug:z.string(),hbf:z.object({rating:z.number().int().min(1).max(5).nullable(),year:z.number().int(),awardName:z.string().nullable(),source:z.url(),checkedAt:z.string(),status:z.string(),scope:z.string().nullable(),relationshipSource:z.string().nullable(),recheck:z.json().optional()}),trustpilot:z.object({rating:z.number().min(0).max(5).nullable(),reviewCount:z.number().int().positive().nullable(),url:z.url().nullable(),profileName:z.string().nullable(),checkedAt:z.string(),status:z.string(),evidenceMethod:z.string(),scope:z.string().nullable()})});
 async function main(){
  const data=z.array(entry).parse(JSON.parse(await readFile('src/data/builder-ratings.json','utf8')));
  if(data.length!==developers.length||new Set(data.map(r=>r.slug)).size!==data.length||developers.some(b=>!data.some(r=>r.slug===b.slug)))throw new Error('Rating dataset must cover the complete builder registry exactly once.');

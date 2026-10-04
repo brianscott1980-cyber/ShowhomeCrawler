@@ -189,11 +189,26 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "matching_entry_found",
+        "directoryUrl": "https://www.hbf.co.uk/directory/homebuilders/avant-homes/",
+        "directoryName": "Avant Homes Ltd",
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating.",
+        "historicalRating": {
+          "year": 2025,
+          "rating": 5,
+          "awardName": "Avant Homes",
+          "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results"
+        }
+      }
     },
     "trustpilot": {
       "rating": 4.5,
@@ -219,11 +234,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": 2.4,
@@ -339,11 +363,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": 3.6,
@@ -399,11 +432,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": null,
@@ -489,11 +531,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": null,
@@ -519,11 +570,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": null,
@@ -699,11 +759,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "matching_entry_found",
+        "directoryUrl": "https://www.hbf.co.uk/directory/homebuilders/gleeson-homes-ltd/",
+        "directoryName": "Gleeson Homes Ltd",
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": 4.4,
@@ -759,11 +828,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "matching_entry_found",
+        "directoryUrl": "https://www.hbf.co.uk/directory/homebuilders/harron-homes-limited/",
+        "directoryName": "Harron Homes Limited",
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": 4.3,
@@ -789,11 +867,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "related_group_entry_found",
+        "directoryUrl": "https://www.hbf.co.uk/directory/homebuilders/anwyl-construction-co-ltd/",
+        "directoryName": "Anwyl Construction Co Ltd",
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": 4.8,
@@ -849,11 +936,26 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "matching_entry_found",
+        "directoryUrl": "https://www.hbf.co.uk/directory/homebuilders/lovell-partnerships-ltd/",
+        "directoryName": "Lovell Partnerships Ltd",
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating.",
+        "historicalRating": {
+          "year": 2025,
+          "rating": 5,
+          "awardName": "Lovell Partnerships",
+          "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results"
+        }
+      }
     },
     "trustpilot": {
       "rating": 4.5,
@@ -879,11 +981,26 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "related_group_entry_found",
+        "directoryUrl": "https://www.hbf.co.uk/directory/homebuilders/wainhomes-ltd/",
+        "directoryName": "Wain Group",
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating.",
+        "historicalRating": {
+          "year": 2025,
+          "rating": 5,
+          "awardName": "Wain Homes",
+          "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results"
+        }
+      }
     },
     "trustpilot": {
       "rating": 4.4,
@@ -939,11 +1056,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": null,
@@ -969,11 +1095,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": 2.6,
@@ -999,11 +1134,27 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating.",
+        "excludedMatch": {
+          "url": "https://www.hbf.co.uk/directory/homebuilders/ajc-developments-south-ltd/",
+          "name": "AJC Developments South Ltd",
+          "website": "https://ajcgroup.uk",
+          "reason": "Directory entry links to AJC Group (South West England), not our AJC Homes Scotland Ltd at ajcscotland.com (Aboyne, Aberdeenshire). No star rating appears on that membership page."
+        },
+        "identitySource": "https://ajcscotland.com/"
+      }
     },
     "trustpilot": {
       "rating": null,
@@ -1029,11 +1180,20 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "no_matching_entry_found",
+        "directoryUrl": null,
+        "directoryName": null,
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating."
+      }
     },
     "trustpilot": {
       "rating": null,
@@ -1059,11 +1219,26 @@
       "year": 2026,
       "awardName": null,
       "scope": null,
-      "source": "https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf",
-      "status": "not_listed_in_2026_awards",
+      "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+      "status": "no_verified_current_rating",
       "relationshipSource": null,
       "rankStatus": "not_published",
-      "checkedAt": "2026-10-04"
+      "checkedAt": "2026-10-04",
+      "recheck": {
+        "method": "Reviewed 2026 annual results embedded data (48 published builders) and all 27 HBF homebuilder directory pages (267 entries). Directory membership does not establish a star rating.",
+        "resultsSource": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results",
+        "directorySource": "https://www.hbf.co.uk/directory/",
+        "directoryStatus": "matching_entry_found",
+        "directoryUrl": "https://www.hbf.co.uk/directory/homebuilders/hopkins-homes-limited/",
+        "directoryName": "Hopkins Homes Limited",
+        "note": "No matching published 2026 annual star rating found. Absence does not establish non-participation or a lower rating.",
+        "historicalRating": {
+          "year": 2025,
+          "rating": 5,
+          "awardName": "Hopkins Homes",
+          "source": "https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/#results"
+        }
+      }
     },
     "trustpilot": {
       "rating": 4.3,

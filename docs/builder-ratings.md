@@ -6,6 +6,8 @@
 
 `builders` holds HBF stars, award year/name/source, verification date, and `site_rank`. Existing Trustpilot summary columns are retained for compatibility. `builder_review_sources` holds each provider's rating, average rating, review count, profile link/name, scope, status, date and evidence. Trustpilot's numerical TrustScore is its average-rating input; `rating` mirrors the source score for convenience. Google uses the verified main-office listing, not a mixture of development reviews. Unverified records have null scores and counts and do not contribute to ranking.
 
+The [unrated-builder recheck](hbf-rating-recheck.md) covers all 16 unresolved builders, HBF directory identity checks and historical results. Directory membership is not a star rating; no additional current awards were verified. Per-builder audit evidence is retained in Supabase.
+
 HBF ratings use the [official 2026 award list](https://www.hbf.co.uk/documents/15516/HBF_CSS_and_Star_ratings_2026_brochure_4.pdf). This is a five-star award list, not a league table; absence does not prove a lower rating. Barratt/Redrow/David Wilson and Vistry brands retain their group award scope and relationship evidence. The Larkfleet record points to its verified successor Allison Homes; its current award and Trustpilot profile are explicitly labelled as Allison, rather than historical Larkfleet ratings.
 
 `site_rank` is our ranking, recomputed by `refresh_builder_site_ranks()`:
