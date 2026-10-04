@@ -74,14 +74,16 @@ export function ViewOptions({
  view,
  onChange,
  ariaLabel = 'Card layout',
+ hideLarge = false,
 }: {
  view: CardViewMode | 'map';
  onChange: (mode: CardViewMode) => void;
  ariaLabel?: string;
+ hideLarge?: boolean;
 }) {
  return (
   <div className="view-options" role="group" aria-label={ariaLabel}>
-   {viewOptionItems.map(item => (
+   {viewOptionItems.filter(item => !hideLarge || item.value !== 'large').map(item => (
     <button
      key={item.value}
      type="button"
