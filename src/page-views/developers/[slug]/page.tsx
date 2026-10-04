@@ -3,7 +3,8 @@ import logos from '../../../../public/logos/sources.json';
 import {builderLogoBackground} from '../../../web/builder-brand';
 import {BuilderOverviewMap} from '../../../web/builder-overview-map';
 import {readLocationRows} from '../../../web/location-geography';
-import {groupCollections} from '../../../web/groups';
+import {groupCollections,spaceName} from '../../../web/groups';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { BuilderName } from '../../../web/builder-name';
@@ -38,13 +39,28 @@ export default async function Page({ params }: Props) {
  const locations=await readLocationRows(slug);
  const collections=report?[{slug,name:developer.name,report}]:[];
  const locationGroups=groupCollections(collections,'locations');
+ const buildingGroups=groupCollections(collections,'buildings');
+ const roomGroups=groupCollections(collections,'interiors').filter(group=>!['Exterior','Uncategorised'].includes(group.name));
+ const interiorImages=roomGroups.flatMap(group=>group.collections.flatMap(collection=>collection.report.images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,collection.report.question)!=='Exterior')));
+ const exterior=images.find(image=>image.categorisation?.mainCategory==='Exterior');
+ const interior=interiorImages[0];
+ const destinations=[
+  {path:'locations',label:'View developments',count:locations.length,unit:'developments',image:exterior??images[0]},
+  {path:'buildings',label:'View building types',count:buildingGroups.length,unit:'building types',image:exterior??images[0]},
+  {path:'interiors',label:'View interiors',count:new Set(interiorImages.map(image=>image.id)).size,unit:'interiors',image:interior},
+ ];
  const logo=logos.find(item=>item.slug===slug);
  const mapCards=locations.map(location=>({key:`${slug}:${location.url}`,name:location.name,developer:developer.name,latitude:location.latitude,longitude:location.longitude,country:location.geography?.country??null,image:'',description:location.name,count:0,properties:[],href:(()=>{const group=locationGroups.find(group=>group.collections.some(collection=>collection.report.properties.some(home=>home.developmentUrl===location.url)));return group?`/locations/${group.key}`:`/locations?developer=${encodeURIComponent(developer.name)}`;})()}));
  return <ResultsPage title={logo?<><span className="sr-only">{developer.name}</span><img className="builder-results-logo" src={`/logos/${logo.file}`} alt={`${developer.name} logo`} style={{background:builderLogoBackground(developer.slug)}}/></>:<BuilderName name={developer.name}/>} eyebrow={null}
   description={`Discover ${developer.name} developments, explore their house types and find inspiration in their showhome rooms.`}
-  builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards}/>,counts:{Locations:locations.length,'Building types':groupCollections(collections,'buildings').length,'Room types':groupCollections(collections,'interiors').filter(group=>group.name!=='Exterior'&&group.name!=='Uncategorised').length}}}
+  builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards}/>,counts:{Locations:locations.length,'Building types':buildingGroups.length,'Room types':roomGroups.length}}}
   back={{ href: '/homebuilders', label: '← All builders' }} collections={report ? [{ slug, name: developer.name, report }] : []} includeUnclassified>
-  {report ? <div className="download-links"><a href={assetUrl(slug, 'matches.csv')}>Download matches</a><a href={assetUrl(slug, 'full-report.html')}>Full results &amp; coverage</a></div> : <p className="empty">Interiors from {developer.name} are coming soon.</p>}
+  <nav className="builder-navigation" aria-label={`Explore ${developer.name}`}>
+   {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}?developer=${encodeURIComponent(developer.name)}`}>
+    {destination.image?<img src={assetUrl(slug,destination.image.path)} alt="" loading="lazy"/>:<div className="builder-navigation-placeholder">{developer.name}</div>}
+    <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
+   </Link>)}
+  </nav>
   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }}/>
  </ResultsPage>;
 }

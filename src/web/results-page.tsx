@@ -11,7 +11,7 @@ export function ResultsPage({ title, description, eyebrow, back, collections, fa
 }) {
  return <main className="results-page">
   <Gallery collections={collections} favouritesOnly={favouritesOnly} includeUnclassified={includeUnclassified}
-   places={places} initialImage={initialImage} introduction={{ title, description, eyebrow, back, ...builderOverview }}/>
+   places={places} initialImage={initialImage} overviewOnly={Boolean(builderOverview)} introduction={{ title, description, eyebrow, back, ...builderOverview }}/>
   {children}
  </main>;
 }

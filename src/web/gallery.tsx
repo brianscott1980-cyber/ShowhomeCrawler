@@ -29,6 +29,7 @@ export function Gallery({
  includeUnclassified = false,
  introduction,
  featured = false,
+ overviewOnly = false,
  places,
  initialImage,
 }: {
@@ -37,6 +38,7 @@ export function Gallery({
  favouritesOnly?: boolean;
  includeUnclassified?: boolean;
  featured?: boolean;
+ overviewOnly?: boolean;
  places?: Record<string,string[]>;
  introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
 }) {
@@ -245,8 +247,9 @@ export function Gallery({
      <div><strong>{sites.length}</strong><span>Developments</span></div>
      <div><strong>{new Set(available.flatMap(i => i.homes.map(h => `${i.slug}:${h.url}`))).size}</strong><span>Properties</span></div></>}
     </div>}
-    <div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : 'Explore the collection'}</h2></div>
+    {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : 'Explore the collection'}</h2></div>}
    </>}
+   {!overviewOnly&&<>
    {!featured && <><DirectoryFilters className="filters">
     <label>
      Search
@@ -359,6 +362,8 @@ export function Gallery({
       : 'No spaces found. Try another search or development.'}
     </div>
    )}
+
+   </>}
 
    <dialog
     ref={dialog}
