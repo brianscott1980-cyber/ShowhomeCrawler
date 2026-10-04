@@ -55,3 +55,10 @@ export function builderNameHtml(nameOrSlug:string,background='#ffffff'){
  const brand=builderBrand(nameOrSlug);if(!brand)return nameOrSlug.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
  return brand.parts.map((part,i)=>`<i style="font:inherit;color:${brandTextColour(i===0?brand.primary:brand.secondary,background)}">${part}</i>`).join('');
 }
+
+/** Match the official logo artwork backdrop; transparent coloured marks stay on white. */
+export function builderLogoBackground(slug:DeveloperSlug):string {
+ if(slug==='ajc-homes')return '#c41230';
+ if(slug==='harron-homes')return '#161412';
+ return ['cala','barratt','david-wilson','robertson-homes','lynch-homes'].includes(slug)?'#163f48':'#ffffff';
+}

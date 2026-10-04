@@ -1,4 +1,5 @@
 import {builderFacts} from '../../web/builder-facts';
+import {builderLogoBackground} from '../../web/builder-brand';
 import {homeTypeName} from '../../reports/home-display';
 import {DirectoryCountProvider,DirectoryCounts} from '../../web/directory-counts';
 import {cardImageCollection,reportCardImage} from '../../web/card-images';
@@ -17,7 +18,7 @@ export default async function Builders(){
   const publishedLocations=new Set(groupCollections([{slug:developer.slug,name:developer.name,report}],'locations').flatMap(group=>group.collections.flatMap(collection=>collection.report.properties.map(home=>home.developmentUrl))));
   const logo=logos.find(l=>l.slug===developer.slug);
   const logoUrl=logo?`/logos/${logo.file}`:undefined;
-  const logoBackground=['cala','barratt','david-wilson','robertson-homes','lynch-homes'].includes(developer.slug)?'#163f48':'#fff';
+  const logoBackground=builderLogoBackground(developer.slug);
   return {...builderFacts(developer.slug),slug:developer.slug,name:developer.name,spaces:matches.length,logo:logoUrl,
    ...cardImageCollection(matches.map(i=>reportCardImage(developer.slug,i)),logoUrl?{src:logoUrl,alt:`${developer.name} logo`,kind:'logo',background:logoBackground}:undefined),locations:locations.filter(p=>publishedLocations.has(p.url)).map(p=>({...p,key:`${developer.slug}:${p.url}`,region:p.geography?.region||p.geography?.country||'Unknown',buildingTypes:[...new Set(report.properties.filter(home=>home.developmentUrl===p.url).map(home=>homeTypeName(home.name).toLowerCase()))]}))} as DeveloperCard;
  }));
