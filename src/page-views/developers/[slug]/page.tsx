@@ -42,12 +42,24 @@ export default async function Page({ params }: Props) {
  const buildingGroups=groupCollections(collections,'buildings');
  const roomGroups=groupCollections(collections,'interiors').filter(group=>!['Exterior','Uncategorised'].includes(group.name));
  const interiorImages=roomGroups.flatMap(group=>group.collections.flatMap(collection=>collection.report.images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,collection.report.question)!=='Exterior')));
- const exterior=images.find(image=>image.categorisation?.mainCategory==='Exterior');
- const interior=interiorImages[0];
+ const developmentImageIds=new Set(report?.properties.filter(home=>home.developmentUrl).flatMap(home=>home.imageIds)??[]);
+ const developmentImages=images.filter(image=>developmentImageIds.has(image.id));
+ const buildingImages=buildingGroups.flatMap(group=>group.collections.flatMap(collection=>collection.report.images));
+ const pickedImages=new Set<string>();
+ function preview(candidates:typeof images,preferExterior=false){
+  const unique=[...new Map(candidates.map(image=>[image.id,image])).values()];
+  const exteriors=preferExterior?unique.filter(image=>image.categorisation?.mainCategory==='Exterior'):[];
+  const pool=exteriors.length?exteriors:unique;
+  const unused=pool.filter(image=>!pickedImages.has(image.id));
+  const available=unused.length?unused:pool;
+  const image=available[Math.floor(Math.random()*available.length)];
+  if(image)pickedImages.add(image.id);
+  return image;
+ }
  const destinations=[
-  {path:'locations',label:'View developments',count:locations.length,unit:'developments',image:exterior??images[0]},
-  {path:'buildings',label:'View building types',count:buildingGroups.length,unit:'building types',image:exterior??images[0]},
-  {path:'interiors',label:'View interiors',count:new Set(interiorImages.map(image=>image.id)).size,unit:'interiors',image:interior},
+  {path:'locations',label:'View developments',count:locations.length,unit:'developments',image:preview(developmentImages,true)},
+  {path:'buildings',label:'View building types',count:buildingGroups.length,unit:'building types',image:preview(buildingImages,true)},
+  {path:'interiors',label:'View interiors',count:new Set(interiorImages.map(image=>image.id)).size,unit:'interiors',image:preview(interiorImages)},
  ];
  const logo=logos.find(item=>item.slug===slug);
  const mapCards=locations.map(location=>({key:`${slug}:${location.url}`,name:location.name,developer:developer.name,latitude:location.latitude,longitude:location.longitude,country:location.geography?.country??null,image:'',description:location.name,count:0,properties:[],href:(()=>{const group=locationGroups.find(group=>group.collections.some(collection=>collection.report.properties.some(home=>home.developmentUrl===location.url)));return group?`/locations/${group.key}`:`/locations?developer=${encodeURIComponent(developer.name)}`;})()}));
