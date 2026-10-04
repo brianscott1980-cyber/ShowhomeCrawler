@@ -221,8 +221,12 @@ export function Gallery({
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); heroStep(e.key === 'ArrowLeft' ? -1 : 1); }
      }}>
       {heroId==='builder-map'&&introduction.map?<div className="builder-hero-map">{introduction.map}</div>:heroImage?<><button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
-      <span key={heroImage.uid} className="results-hero-room-type">{heroImage.categorisation?.subCategory ?? heroImage.categorisation?.mainCategory ?? 'Showhome interior'}</span></>:null}
-      {heroImage&&heroId!=='builder-map'&&heroImages.length > 1 && <div className="results-slide-progress" aria-hidden="true"><span key={heroImage.uid} onAnimationEnd={() => heroStep(1)}/></div>}
+      </>:null}
+      <div key={heroId==='builder-map'?'builder-map':heroImage?.uid} className="results-hero-room-type">
+       <strong>{heroId==='builder-map'?'Development locations':heroImage?.categorisation?.subCategory??heroImage?.categorisation?.mainCategory??'Showhome interior'}</strong>
+       <span>{heroId==='builder-map'?`Explore all ${collections[0]?.name??'builder'} developments on the map.`:heroImage?.verdict?.description??'Discover this showhome interior.'}</span>
+      </div>
+      {heroImages.length+(introduction.map?1:0)>1&&<div className="results-slide-progress" aria-hidden="true"><span key={heroId==='builder-map'?'builder-map':heroImage?.uid} onAnimationEnd={()=>heroStep(1)}/></div>}
       <button className="results-arrow results-prev" onClick={() => heroStep(-1)} aria-label="Previous preview image">‹</button>
       <button className="results-arrow results-next" onClick={() => heroStep(1)} aria-label="Next preview image">›</button>
      </div>}
