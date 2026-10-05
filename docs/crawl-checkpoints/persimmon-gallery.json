@@ -1,0 +1,11 @@
+{
+  "builder": "persimmon",
+  "stage": "gallery",
+  "recordedAt": "2026-10-05T23:26:54.645446+00:00",
+  "developments": 234,
+  "houseTypes": 1889,
+  "images": 4636,
+  "htmlCategorised": 112,
+  "aiCategorised": 0,
+  "sourceErrors": 13
+}
