@@ -1,7 +1,8 @@
 import { groupRoutes } from './group-routes';
 import logos from '../../public/logos/sources.json';
-import { readFile } from 'node:fs/promises';
-import { developers, readCollection, collectionFolder, assetUrl } from './collections';
+import {readLocationRows} from './location-geography';
+import {builderBrand} from './builder-brand';
+import { developers, readCollection, assetUrl } from './collections';
 import { groupCollections, type Collection } from './groups';
 import { isRoomImage } from '../vision/room-classifier';
 
@@ -23,19 +24,16 @@ export async function homepageData() {
   if (!photoBuildings.has(key)) photoBuildings.set(key, { houseType: group.name, houseTypeHref: `${buildingRoutes.get(group.key)!}?image=${encodeURIComponent(`${collection.slug}:${image.id}`)}` });
  }
  const coordinates = new Map(await Promise.all(collections.map(async c => {
-  const rows = await readFile(`${collectionFolder(c.slug)}/locations.json`, 'utf8').then(value => JSON.parse(value) as (CoveragePoint & { url: string })[]).catch(error => {
-   if ((error as NodeJS.ErrnoException).code === 'ENOENT') return [];
-   throw error;
-  });
+  const rows = await readLocationRows(c.slug);
   return [c.slug, rows] as const;
  })));
  const points = locations.flatMap(group => {
   const c = group.collections[0]!;
-  const url = c.report.properties[0]?.developmentUrl;
+  const url = group.developmentUrl??c.report.properties[0]?.developmentUrl;
   const point = coordinates.get(c.slug)?.find(row => row.url === url);
-  return point && Number.isFinite(point.latitude) && Number.isFinite(point.longitude)
+  return point && typeof point.latitude==='number' && typeof point.longitude==='number' && Number.isFinite(point.latitude) && Number.isFinite(point.longitude)
    && point.latitude >= 49.5 && point.latitude <= 61.2 && point.longitude >= -9 && point.longitude <= 2.5
-   ? [{ latitude: point.latitude, longitude: point.longitude, name: group.name, builder: c.name, siteId: `${c.slug}:${url}` }] : [];
+   ? [{ latitude: point.latitude!, longitude: point.longitude!, name: group.name, builder: c.name, siteId: `${c.slug}:${url}` }] : [];
  });
  const candidates = collections.flatMap(c => c.report.images.filter(image => isRoomImage(image) && image.categorisation?.mainCategory !== 'Exterior' && (image.categorisation?.isRoom || image.verdict?.matches)).map(image => ({ collection: c, image })));
  const selected: typeof candidates = [];
@@ -48,7 +46,7 @@ export async function homepageData() {
   if (selected.length >= 4) break;
   if (!selected.some(s => s.collection.slug === item.collection.slug && s.image.id === item.image.id)) selected.push(item);
  }
- const photo = (item: typeof candidates[number]): HomePhoto => ({ ...photoBuildings.get(`${item.collection.slug}:${item.image.id}`), src: assetUrl(item.collection.slug, item.image.path), alt: item.image.verdict?.description ?? 'Showhome interior', builder: item.collection.name, category: item.image.categorisation?.mainCategory ?? 'Interior', logo: builderLogos.get(item.collection.slug), logoBackground: ['cala','barratt','david-wilson','robertson-homes','lynch-homes'].includes(item.collection.slug) ? '#163f48' : '#fff', siteIds: [...new Set(item.collection.report.properties.filter(property => property.imageIds.includes(item.image.id) && property.developmentUrl).map(property => `${item.collection.slug}:${property.developmentUrl}`))] });
+ const photo = (item: typeof candidates[number]): HomePhoto => ({ ...photoBuildings.get(`${item.collection.slug}:${item.image.id}`), src: assetUrl(item.collection.slug, item.image.path), alt: item.image.verdict?.description ?? 'Showhome interior', builder: item.collection.name, category: item.image.categorisation?.mainCategory ?? 'Interior', logo: builderLogos.get(item.collection.slug), logoBackground: builderBrand(item.collection.slug)?.logoBackground??'#fff', siteIds: [...new Set(item.collection.report.properties.filter(property => property.imageIds.includes(item.image.id) && property.developmentUrl).map(property => `${item.collection.slug}:${property.developmentUrl}`))] });
  const mappedSites = new Set(points.map(point => point.siteId));
  const mapPhotos = collections.flatMap(collection => {
   const options = candidates.filter(item => item.collection.slug === collection.slug && photo(item).houseTypeHref && photo(item).siteIds?.some(siteId => mappedSites.has(siteId)));

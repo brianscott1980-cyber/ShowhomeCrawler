@@ -208,3 +208,22 @@ body:has(.location-explorer) .directory-intro-heading>p{font-size:14px;margin:8p
 .location-explorer-toolbar .development-order{order:3;margin-left:auto;justify-content:flex-end}
 
 .development-image-pending{display:grid;place-items:center;min-height:220px;height:100%;background:var(--paper);color:var(--muted);font-size:14px;text-align:center;padding:20px}
+
+.single-select-filter{display:block;min-width:0;gap:0}
+.single-select-filter .multi-filter-panel{width:max(100%,180px);padding:6px;max-height:280px;overflow:auto}
+.single-select-options button,.money-input-options button,.distance-filter-options button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:40px;padding:10px;border:0;background:white;color:var(--ink);text-align:left;font:inherit;font-size:14px;line-height:1.4;cursor:pointer}
+.single-select-options button:hover,.single-select-options button:focus-visible,.single-select-options button[aria-selected=true]{background:var(--paper)}
+.development-range-filter .single-select-filter{flex:1 1 0;min-width:76px}
+.development-range-filter .single-select-filter summary{padding-left:10px;padding-right:10px;font-size:15px}
+.development-order>.single-select-filter{width:230px}
+.sort-control>.single-select-filter{min-width:180px}
+.money-input-options,.multi-filter-panel{border-radius:0;box-shadow:0 8px 24px #23342e20;border:1px solid var(--line);background:white}
+.development-order:has(details[open]),.sort-control:has(details[open]){position:relative;z-index:1002}
+.location-explorer-toolbar:has(details[open]){z-index:1001}
+.directory-filter-row .single-select-filter{flex:1 1 0}
+
+.multi-filter-panel.single-select-options>button,.money-input-options>button,.distance-filter-options>button{text-decoration:none;font-weight:400;letter-spacing:0}
+
+.site-preview-photo{position:relative}
+.collection-card .site-preview-photo .development-builder-logo{position:absolute;top:10px;right:10px;z-index:3;width:80px;height:42px;max-width:45%;object-fit:contain;padding:6px;border:1px solid #ffffff80;border-radius:4px;box-shadow:0 2px 8px #0002}
+.location-explorer .collection-card .site-preview-photo .development-builder-logo{width:60px;height:32px;top:6px;right:6px;padding:4px;max-width:75%}

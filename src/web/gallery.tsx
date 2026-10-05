@@ -1,4 +1,5 @@
 'use client';
+import {developmentName} from './development-name';
 import {CardResults} from './card-results';
 import {BreadcrumbBack} from './breadcrumb-back';
 import {MultiSelectFilter} from './multi-select-filter';
@@ -268,11 +269,11 @@ export function Gallery({
     <MultiSelectFilter label="Builders" value={filters.developer} options={builderOptions} onChange={value=>setFilters(previous=>({...previous,developer:value}))}/>
     <MultiSelectFilter label="Interior types" value={mainCategory} options={mainCategories} onChange={setMainCategory}/>
     <MultiSelectFilter label="Room types" value={subCategory} options={subCategories} onChange={setSubCategory}/>
-    <MultiSelectFilter label="Developments" value={development} options={sites.map(([value,label])=>({value,label}))} onChange={setDevelopment}/>
+    <MultiSelectFilter label="Developments" value={development} options={sites.map(([value,label])=>({value,label:developmentName(label)}))} onChange={setDevelopment}/>
     {places&&<>
      <MultiSelectFilter label="Bedrooms" value={filters.bedrooms} options={bedroomOptions.map(n=>({value:String(n),label:`${n} bedrooms`}))} onChange={value=>setFilters(previous=>({...previous,bedrooms:value}))}/>
      <MultiSelectFilter label="Areas" value={filters.location} options={areaOptions} onChange={value=>setFilters(previous=>({...previous,location:value}))}/>
-     <MultiSelectFilter label="Developments" value={filters.site} options={siteOptions} onChange={value=>setFilters(previous=>({...previous,site:value}))}/>
+     <MultiSelectFilter label="Developments" value={filters.site} options={siteOptions.map(value=>({value,label:developmentName(value)}))} onChange={value=>setFilters(previous=>({...previous,site:value}))}/>
     </>}
     <button className="results-reset" onClick={() => setFilters(galleryDefaults)}>Clear filters</button>
    </DirectoryFilters>
@@ -348,7 +349,7 @@ export function Gallery({
            {homeTypeName(home.name)} ↗
           </a>
           <span>
-           {home.development} · {home.bedrooms} beds
+           {developmentName(home.development)} · {home.bedrooms} beds
            {home.price !== null ? ` · £${home.price.toLocaleString('en-GB')}` : ''}
           </span>
           <span>{plotDetails(home)}</span>

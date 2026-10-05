@@ -1,6 +1,7 @@
 'use client';
 import {anyBedrooms,bedroomRangeOptions} from './bedroom-range';
 import {priceRangeOptions} from './price-range';
+import {SingleSelectFilter} from './single-select-filter';
 import {MoneyInput} from './money-input';
 import {CardResults} from './card-results';
 import {useDirectoryCounts} from './directory-counts';
@@ -10,6 +11,7 @@ import {useLocationRequest} from './location-dialog';
 import {useSavedLocation} from './location-preferences';
 import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
+import {builderBrand} from './builder-brand';
 import Link from 'next/link';
 import {useState,useEffect,useMemo,lazy,Suspense,useRef} from 'react';
 import {hasCoordinates,type MapCamera} from './site-map';
@@ -136,9 +138,9 @@ export function SiteDirectory({
   <MultiSelectFilter label="Builders" value={filters.developer} options={developers} onChange={value=>change('developer',value)}/>
   <DistanceFilter label="Within Distance" value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
   <fieldset className="development-range-filter"><legend>Bedrooms range</legend><div>
-   <label className="sr-only" htmlFor="development-min-beds">Minimum bedrooms</label><select id="development-min-beds" aria-label="Minimum bedrooms" value={bedroomRange.minValue} onChange={e=>change('minBeds',e.target.value||anyBedrooms)}><option value="">Any</option>{bedroomRange.numbers.map(count=><option key={count} value={count}>{count} {count===1?'bed':'beds'}</option>)}</select>
+   <SingleSelectFilter label="Minimum bedrooms" value={bedroomRange.minValue} options={[{value:'',label:'Any'},...bedroomRange.numbers.map(count=>({value:String(count),label:`${count} ${count===1?'bed':'beds'}`}))]} onChange={value=>change('minBeds',value||anyBedrooms)}/>
    <span aria-hidden="true">–</span>
-   <label className="sr-only" htmlFor="development-max-beds">Maximum bedrooms</label><select id="development-max-beds" aria-label="Maximum bedrooms" value={bedroomRange.maxValue} onChange={e=>change('maxBeds',e.target.value||anyBedrooms)}><option value="">Any</option>{bedroomRange.maxNumbers.map(count=><option key={count} value={count}>{count} {count===1?'bed':'beds'}</option>)}</select>
+   <SingleSelectFilter label="Maximum bedrooms" value={bedroomRange.maxValue} options={[{value:'',label:'Any'},...bedroomRange.maxNumbers.map(count=>({value:String(count),label:`${count} ${count===1?'bed':'beds'}`}))]} onChange={value=>change('maxBeds',value||anyBedrooms)}/>
   </div></fieldset>
   <fieldset className="development-range-filter"><legend>Price range (£)</legend><div>
    <MoneyInput label="Minimum price" value={minimumPrice} options={priceRange.options} onChange={value=>change('minPrice',value||'any')}/>
@@ -151,7 +153,7 @@ export function SiteDirectory({
  </div>
 <div className="directory-toolbar location-explorer-toolbar">
  <div className="location-view-controls"><ViewOptions view={mapView?'map':view} onChange={changeView} ariaLabel="Developments layout"/><button type="button" className="location-map-toggle" aria-label="Map" aria-pressed={mapView} onClick={()=>{setMapUnavailable(false);setUrlFilters(previous=>({...previous,view:'map'}));}}>▧ <span>Map</span></button></div>
- <label className="development-order">Order by<select value={order} onChange={e=>setOrder(e.target.value)}><option value="name">Development name A–Z</option><option value="distance">Nearest first</option></select></label>
+ <div className="development-order"><span>Order by</span><SingleSelectFilter label="Order developments by" value={order} options={[{value:'name',label:'Development name A–Z'},{value:'distance',label:'Nearest first'}]} onChange={setOrder}/></div>
  {mapView&&<label className="site-map-search"><input type="checkbox" checked={searchMap} onChange={e=>setSearchMap(e.target.checked)}/> Search as I move</label>}
  </div>
  <div ref={explorerPanel} className={mapView?'site-map-directory location-explorer'+(sheetExpanded?' sheet-expanded':''):'location-directory'}>
@@ -161,9 +163,9 @@ export function SiteDirectory({
  <CardResults className={`collection-grid directory-${mapView?'compact':view}`} label="Developments" identity={JSON.stringify(filters)} paginate={!mapView}>
  {visible.map(card=>{
  const href=card.href??`${basePath}/${card.key}`;
- const content=<><div className="site-preview-photo">{card.image?<ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/>:<div className="development-image-pending">Images not yet available</div>}</div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line">{builderLogo(card.developer)&&<img className="site-builder-logo" style={{background:['Bloor Homes','Cala','Barratt','David Wilson Homes','Robertson Homes','Lynch Homes'].includes(card.developer)?'#193963':undefined}} src={builderLogo(card.developer)} alt="" loading="lazy"/>}<BuilderName name={card.developer}/></p><p className="subtle">{card.country??'Country unavailable'}{point&&` · ${card.miles===null?'Distance unavailable':card.miles.toFixed(1)+' miles'}`}</p><dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].join(' · ')||'Not available'}</dd></div></dl><p className="subtle site-image-count">{card.count} {card.count===1?'image':'images'}{card.propertyScope==='Published homes'?' · Published homes only':''}</p>{mapView?<Link className="site-explore-link" href={href} onClick={e=>e.stopPropagation()}>Explore development →</Link>:<span className="subtle">Explore collection →</span>}</div></>;
+ const content=<><div className="site-preview-photo">{card.image?<ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/>:<div className="development-image-pending">Images not yet available</div>}<>{builderLogo(card.developer)&&<img className="development-builder-logo" style={{background:builderBrand(card.developer)?.logoBackground??'#fff'}} src={builderLogo(card.developer)} alt={`${card.developer} logo`} loading="lazy"/>}</></div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line"><BuilderName name={card.developer}/></p><p className="subtle development-location">{[card.country,card.town].filter(Boolean).join(', ')||'Location unavailable'}</p>{point&&<p className="subtle development-distance">{card.miles===null?'Distance unavailable':`${card.miles.toFixed(1)} miles`}</p>}<dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].join(' · ')||'Not available'}</dd></div></dl><p className="subtle site-image-count">{card.count} {card.count===1?'image':'images'}{card.propertyScope==='Published homes'?' · Published homes only':''}</p></div></>;
  const className=`collection-card${activeKey===card.key?' is-map-active':''}${hoverKey===card.key?' is-map-hovered':''}`;
- return mapView?<article id={'site-card-'+card.key} key={card.key} className={className} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)}><button className="site-card-select" aria-label={`Select ${card.name} on map`} aria-pressed={activeKey===card.key} onClick={()=>selectCard(card.key)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}/>{content}</article>:<Link id={'site-card-'+card.key} key={card.key} className={className} href={href}>{content}</Link>;
+ return <Link id={'site-card-'+card.key} key={card.key} className={className} href={href} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}>{content}</Link>;
  })}
  </CardResults>
  {!visible.length&&<p className="empty">{mapView?'No developments in this area match your filters. Move the map or show all matching sites.':'No developments match your filters. Try widening your search.'}</p>}

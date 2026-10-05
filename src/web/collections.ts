@@ -29,7 +29,10 @@ export async function readCollection(slug: string): Promise<RunReport | null> {
   try { return JSON.parse(await readFile(`${folder}/${file}`, 'utf8')) as RunReport; }
   catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null; throw error; }
  }));
- return reports.filter((r): r is RunReport => r !== null).sort((a, b) => Date.parse(b.completedAt ?? b.startedAt) - Date.parse(a.completedAt ?? a.startedAt))[0] ?? null;
+ const report=reports.filter((r): r is RunReport => r !== null).sort((a,b)=>Date.parse(b.completedAt??b.startedAt)-Date.parse(a.completedAt??a.startedAt))[0];
+ if(!report)return null;
+ const places:Record<string,{town?:string|null;country?:string|null}>=await readFile('collections/development-places.json','utf8').then(JSON.parse).catch(()=>({}));
+ return {...report,developments:report.developments.map(development=>{const place=places[`${slug}:${development.url}`];return {...development,town:place?.town??development.town??null,country:place?.country??development.country??null};})};
 }
 export function assetUrl(slug: string, path: string) {
  return `/api/assets/${slug}/${path.split('/').map(encodeURIComponent).join('/')}`;

@@ -14,7 +14,7 @@ export function groupRoutes(kind: GroupKind, groups: Group[]) {
  });
  for (const group of sorted) {
   const prefix = groupPrefix(kind);
-  const base = `/${prefix}/${prefix === 'interiors' ? '' : `${group.collections[0]!.slug}/`}${routeSlug(group.name)}`;
+  const base = `/${prefix}/${prefix === 'interiors' ? '' : `${group.collections[0]!.slug}/`}${routeSlug(group.routeName??group.name)}`;
   let path = base;
   // Rare same-builder, same-name locations remain distinct without exposing hashes.
   if (used.has(path)) {

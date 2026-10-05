@@ -7,9 +7,9 @@ import { CoverageMap, coverageClusters, projectLocation } from '../src/web/cover
 it('gives the homepage three distinct journeys and a real coverage overview', async () => {
  const dom=new JSDOM(renderToStaticMarkup(await Home()));const doc=dom.window.document;
  expect(doc.querySelectorAll('h1')).toHaveLength(1);
- expect([...doc.querySelectorAll('.home-journey')].map(a=>a.getAttribute('href'))).toEqual(['/locations','/interiors','/buildings']);
- expect(doc.querySelector('[href="/homebuilders"]')).not.toBeNull();
- expect(doc.querySelector('.home-coverage-counts')?.textContent).toContain('Locations12');
+ expect([...doc.querySelectorAll('.home-journey')].map(a=>a.getAttribute('href'))).toEqual(['/developments','/interiors','/buildings']);
+ expect(doc.querySelector('[href="/builders"]')).not.toBeNull();
+ expect(doc.querySelector('.home-coverage-counts')?.textContent).toContain('Developments12');
  expect(doc.querySelector('.home-map svg')?.getAttribute('aria-label')).toContain('United Kingdom');
  expect(doc.querySelectorAll('.home-map .map-site')).toHaveLength(1);
  expect(doc.querySelector('.home-saved a')?.getAttribute('href')).toBe('/favourites');
@@ -20,7 +20,7 @@ it('projects northern locations above southern ones and clusters points without 
  expect(north.y).toBeLessThan(south.y);expect(north.x).toBe(south.x);
  const points=[{latitude:52,longitude:-1,name:'A',builder:'Bellway'},{latitude:52,longitude:-1,name:'B',builder:'Bellway'},{latitude:57,longitude:-3,name:'C',builder:'Cala'}];
  const clusters=coverageClusters(points);expect(clusters).toHaveLength(2);expect(clusters.reduce((sum,c)=>sum+c.count,0)).toBe(3);
- const dom=new JSDOM(renderToStaticMarkup(<CoverageMap points={points}/>));expect(dom.window.document.querySelector('desc')?.textContent).toContain('3 mapped locations');dom.window.close();
+ const dom=new JSDOM(renderToStaticMarkup(<CoverageMap points={points}/>));expect(dom.window.document.querySelector('desc')?.textContent).toContain('3 mapped developments');dom.window.close();
 });
 
 it('keeps builders separate in shared map cells and gives them different labelled colours',()=>{
@@ -29,7 +29,7 @@ it('keeps builders separate in shared map cells and gives them different labelle
  const dom=new JSDOM(renderToStaticMarkup(<CoverageMap points={points}/>));
  const circles=[...dom.window.document.querySelectorAll('.map-site')];
  expect(new Set(circles.map(c=>c.getAttribute('fill'))).size).toBe(2);
- expect(circles.map(c=>c.getAttribute('aria-label'))).toEqual(['Bellway: 1 location','Cala: 1 location']);
+ expect(circles.map(c=>c.getAttribute('aria-label'))).toEqual(['Bellway: 1 development','Cala: 1 development']);
  expect(dom.window.document.querySelector('.home-map-legend')).toBeNull();
  expect(dom.window.document.querySelector('.home-map title')).toBeNull();
  dom.window.close();
