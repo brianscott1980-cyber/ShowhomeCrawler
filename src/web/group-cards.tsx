@@ -1,11 +1,11 @@
 'use client';
+import {CardResults} from './card-results';
 import {useDirectoryCounts} from './directory-counts';
 import {MultiSelectFilter} from './multi-select-filter';
 import {matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
 import {useUrlFilters} from './url-filters';
-import {withFilters} from './url-query';
 const filterDefaults={developer:'',bedrooms:'',location:'',site:'',type:''};
 import {matchesBuildingPlace,type BuildingPlace} from './building-place-filter';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
@@ -94,7 +94,7 @@ export function GroupCards({
         onClick={resetFilters}
         style={{alignSelf: 'end', height: 46, padding: '0 16px', background: 'transparent', border: '1px solid var(--line)', cursor: 'pointer'}}
        >
-        Reset filters
+        Reset
        </button>
       )}
      </DirectoryFilters>
@@ -106,9 +106,9 @@ export function GroupCards({
      {hasActiveFilters ? `${visible.length} of ${cards.length} ${kindLabel.toLowerCase()}` : `${cards.length} ${kindLabel.toLowerCase()}`}
     </p>
    </div>
-   <div className={`collection-grid directory-${view}`}>
+   <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)}>
     {visible.map(card => (
-     <Link className="collection-card" href={withFilters(card.href ?? `/${pathPrefix}/${card.key}`,filters)} key={card.key}>
+     <Link className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} key={card.key}>
       <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
       <div className="card-body">
        <h2>{card.name}</h2>
@@ -124,7 +124,7 @@ export function GroupCards({
       </div>
      </Link>
     ))}
-   </div>
+   </CardResults>
    {!cards.length && <p className="empty">No {kindLabel.toLowerCase()} available yet.</p>}
    {Boolean(cards.length && !visible.length) && (
     <p className="empty">No {kindLabel.toLowerCase()} match these filters. Try widening your search.</p>

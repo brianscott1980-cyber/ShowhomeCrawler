@@ -1,0 +1,23 @@
+{
+  "bargate-homes": {
+    "website": "https://www.bargatehomes.co.uk",
+    "registrationName": "Bargate Homes Ltd",
+    "status": "collected",
+    "developments": 5,
+    "galleries": 21,
+    "images": 122,
+    "gaps": [
+      "The Bluebells and Horizon Wood have no supported photo gallery.",
+      "The Crook house-type page contains no property photographs."
+    ]
+  },
+  "jones-homes": {
+    "website": "https://www.jones-homes.co.uk",
+    "directory": "https://www.jones-homes.co.uk/our-developments/",
+    "status": "adapter_research_pending"
+  },
+  "davidsons-homes": {
+    "website": "https://davidsonsgroup.co.uk",
+    "status": "adapter_research_pending"
+  }
+}

@@ -23,7 +23,7 @@ it('opens the requested image immediately and does not reopen it after closing',
   expect(container.querySelector('[aria-current="true"]')?.getAttribute('aria-label')).toBe('View image 2');
   await act(async () => container.querySelector<HTMLButtonElement>('[aria-label="Close image"]')!.click());
   expect(close).toHaveBeenCalledTimes(1);
-  expect(window.location.pathname + window.location.search + window.location.hash).toBe('/buildings/builder/example?category=Living+Room#collection');
+  expect(window.location.pathname + window.location.search + window.location.hash).toBe('/buildings/builder/example#collection');
   expect(container.querySelector('dialog')?.hasAttribute('open')).toBe(false);
   expect(show).toHaveBeenCalledTimes(1);
   expect(container.querySelector('.results-hero-image img')?.getAttribute('src')).toBe('/api/assets/builder/clicked.jpg');

@@ -36,6 +36,7 @@ export const developers = [
  {slug:'hayhill',name:'Hayhill Developments',website:'https://www.hayhilldevelopments.co.uk',sitemap:'/sitemap_index.xml'},
  {slug:'hopkins-homes',name:'Hopkins Homes',website:'https://www.hopkinshomes.co.uk',sitemap:'/sitemap-xml/'},
  {slug:'larkfleet-homes',name:'Larkfleet Homes',website:'https://allison-homes.co.uk',sitemap:'/development-sitemap.xml'},
+ {slug:'bargate-homes',name:'Bargate Homes',website:'https://www.bargatehomes.co.uk',sitemap:'/hbp_developments-sitemap.xml'},
 ] as const;
 export type DeveloperSlug = typeof developers[number]['slug'];
 export const crawlOrder: DeveloperSlug[] = developers.slice(3).map(d => d.slug);

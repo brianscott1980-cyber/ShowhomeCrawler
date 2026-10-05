@@ -2,7 +2,7 @@ import type { Group, GroupKind } from './groups';
 
 export const routeSlug = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '') || 'collection';
 export function groupPrefix(kind: GroupKind) {
- return kind === 'sites' ? 'locations' : kind === 'spaces' ? 'interiors' : kind;
+ return kind === 'sites'||kind==='locations' ? 'developments' : kind === 'spaces' ? 'interiors' : kind;
 }
 /** Keep internal grouping keys private; public routes use builder and collection names. */
 export function groupRoutes(kind: GroupKind, groups: Group[]) {

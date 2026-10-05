@@ -1,3 +1,4 @@
+import * as bargate from './bargate/site-parser.js';
 import * as larkfleet from './larkfleet/site-parser.js';
 import * as hopkins from './hopkins/site-parser.js';
 import * as maguires from './maguires/site-parser.js';
@@ -28,6 +29,7 @@ import * as bellway from './bellway/site-parser.js';
 import * as barratt from './barratt/site-parser.js';
 import * as cala from './cala/site-parser.js';
 export function builderSite(slug='bellway') {
+ if(slug==='bargate-homes')return {name:'Bargate Homes',slug,websiteUrl:'https://www.bargatehomes.co.uk',sitemap:'https://www.bargatehomes.co.uk/hbp_developments-sitemap.xml',...bargate};
  if(slug==='bellway')return {name:'Bellway',slug,websiteUrl:'https://www.bellway.co.uk',sitemap:'https://www.bellway.co.uk/developments-sitemap.xml',...bellway};
  if(slug==='cala')return {name:'Cala',slug,websiteUrl:'https://www.cala.co.uk',sitemap:'https://www.cala.co.uk/sitemap.xml',...cala};
  if(slug==='barratt')return {name:'Barratt',slug,websiteUrl:'https://www.barratthomes.co.uk',sitemap:'https://www.barratthomes.co.uk/sitemaps/sitemap-barratt-developments.xml',...barratt};

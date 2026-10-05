@@ -1,7 +1,7 @@
 'use client';
 import {focusPadding} from './map-focus';
 
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useId, useRef, useState} from 'react';
 import type {Map as MapInstance, Marker, GeoJSONSource} from 'maplibre-gl';
 import {siteExpansionZoom} from './site-cluster-focus';
 import {fullyVisibleSiteKeys,type FocusArea} from './map-marker-visibility';
@@ -23,7 +23,7 @@ function siteFeatures(cards:SiteCard[]) {
  return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderInitial:builderMapBrand(card.developer).initial}}))};
 }
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-export function SiteMap({cards,clusterColor='#193963',activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];clusterColor?:string;activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
+export function SiteMap({cards,clusterColor='#193963',simpleAttribution=false,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];clusterColor?:string;simpleAttribution?:boolean;activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
  const container=useRef<HTMLDivElement>(null), map=useRef<MapInstance|null>(null), highlight=useRef<Marker|null>(null);
  const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea});
  latest.current={cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea};
@@ -31,13 +31,20 @@ export function SiteMap({cards,clusterColor='#193963',activeKey,focusSequence=0,
  const publishedCamera=useRef<MapCamera|null>(null);
  const clusterRequest=useRef(0);
  const [ready,setReady]=useState(false),[status,setStatus]=useState('Loading map…'),[choices,setChoices]=useState<SiteCard[]>([]);
+ const attributionId=useId(),attributionTouched=useRef(false);
+ const [attributionOpen,setAttributionOpen]=useState(true);
+ useEffect(()=>{
+  if(!simpleAttribution||!ready)return;
+  const timer=window.setTimeout(()=>{if(!attributionTouched.current)setAttributionOpen(false);},5000);
+  return()=>window.clearTimeout(timer);
+ },[simpleAttribution,ready]);
  useEffect(()=>{
   let disposed=false,resize:ResizeObserver|undefined;
   import('maplibre-gl').then(({Map,NavigationControl,LngLatBounds,Marker,setWorkerUrl})=>{
    if(disposed||!container.current)return;
    setWorkerUrl('/maps/worker/maplibre-gl-worker.mjs');
    const saved=latest.current.camera;
-   const instance=new Map({container:container.current,style:'/maps/showhome.json',center:saved?[saved.lng,saved.lat]:[-3,55],zoom:saved?.zoom??4.5,dragRotate:false,touchPitch:false,maxPitch:0});
+   const instance=new Map({container:container.current,style:'/maps/showhome.json',attributionControl:simpleAttribution?false:undefined,center:saved?[saved.lng,saved.lat]:[-3,55],zoom:saved?.zoom??4.5,dragRotate:false,touchPitch:false,maxPitch:0});
    map.current=instance;
    instance.addControl(new NavigationControl({showCompass:false}),'top-right');
    const publish=()=>{
@@ -192,5 +199,5 @@ export function SiteMap({cards,clusterColor='#193963',activeKey,focusSequence=0,
   }:55;
   map.current.fitBounds([[Math.min(...mapped.map(c=>c.longitude)),Math.min(...mapped.map(c=>c.latitude))],[Math.max(...mapped.map(c=>c.longitude)),Math.max(...mapped.map(c=>c.latitude))]],{padding,maxZoom:12,duration:reducedMotion()?0:450});
  }
- return <aside className="site-map-panel" aria-label="Explore developments"><div className="site-map" ref={container}/>{focusArea&&<div className="site-map-focus-boundary" style={{left:focusArea.left,top:focusArea.top,width:Math.max(0,focusArea.right-focusArea.left),height:Math.max(0,focusArea.bottom-focusArea.top)}} aria-hidden="true"><span className="site-map-focus-badge">Search area</span></div>}<button type="button" className="site-map-fit" onClick={fitAll} disabled={!ready}>Show all matching developments</button>{status&&<p className="site-map-status" role="status">{status}</p>}{choices.length>0&&<div className="site-map-choices" aria-label="Developments at this location"><button className="site-map-close" onClick={()=>setChoices([])} aria-label="Close location choices">×</button><p>Developments at this location</p>{choices.map(c=><button key={c.key} onClick={()=>{latest.current.onSelect(c.key);setChoices([]);}}>{c.name}<span>{c.developer}</span></button>)}</div>}</aside>;
+ return <aside className="site-map-panel" aria-label="Explore developments"><div className="site-map" ref={container}/>{simpleAttribution&&<div className={`site-map-attribution${attributionOpen?' is-open':''}`}><div id={attributionId} className="site-map-attribution-reveal" inert={!attributionOpen} aria-hidden={!attributionOpen}><div className="site-map-attribution-text"><a href="https://openmaptiles.org/" target="_blank" rel="noopener noreferrer">© OpenMapTiles</a><span> · </span><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a></div></div><button type="button" className="site-map-attribution-toggle" aria-label="Map attribution" aria-expanded={attributionOpen} aria-controls={attributionId} onClick={()=>{attributionTouched.current=true;setAttributionOpen(open=>!open);}}><svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="currentColor"/><path d="M10 9v5" stroke="white" strokeWidth="2"/><circle cx="10" cy="6" r="1" fill="white"/></svg></button></div>}{focusArea&&<div className="site-map-focus-boundary" style={{left:focusArea.left,top:focusArea.top,width:Math.max(0,focusArea.right-focusArea.left),height:Math.max(0,focusArea.bottom-focusArea.top)}} aria-hidden="true"><span className="site-map-focus-badge">Search area</span></div>}<button type="button" className="site-map-fit" onClick={fitAll} disabled={!ready}>Show all matching developments</button>{status&&<p className="site-map-status" role="status">{status}</p>}{choices.length>0&&<div className="site-map-choices" aria-label="Developments at this location"><button className="site-map-close" onClick={()=>setChoices([])} aria-label="Close location choices">×</button><p>Developments at this location</p>{choices.map(c=><button key={c.key} onClick={()=>{latest.current.onSelect(c.key);setChoices([]);}}>{c.name}<span>{c.developer}</span></button>)}</div>}</aside>;
 }

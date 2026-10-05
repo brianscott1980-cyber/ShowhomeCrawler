@@ -9,7 +9,7 @@ import {absoluteUrl,jsonLd} from '../../web/seo';
 import {readLocationRows} from '../../web/location-geography';
 import {groupCollections,type Collection} from '../../web/groups';
 import {DeveloperDirectory,type DeveloperCard} from '../../web/directory';
-export const metadata={title:'Builders | Showhome Explorer',description:'Explore showhome interiors from UK housebuilders.',alternates:{canonical:'/homebuilders'}};
+export const metadata={title:'Builders | Showhome Explorer',description:'Explore showhome interiors from UK housebuilders.',alternates:{canonical:'/builders'}};
 export default async function Builders(){
  const reports:Collection[]=[];
  const cards=await Promise.all(developers.map(async developer=>{
@@ -25,7 +25,7 @@ export default async function Builders(){
  const collections=cards.filter((c):c is DeveloperCard=>c!==null);
  const locationCount=groupCollections(reports,'locations').length;
  const buildingTypeCount=groupCollections(reports,'buildings').length;
- const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Builders',url:absoluteUrl('/homebuilders'),description:'UK showhome interiors and home office inspiration'};
+ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Builders',url:absoluteUrl('/builders'),description:'UK showhome interiors and home office inspiration'};
  return <DirectoryCountProvider><main>
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd(schema)}}/>
   <section className="intro directory-intro" aria-labelledby="builders-heading">
@@ -35,8 +35,8 @@ export default async function Builders(){
     <DirectoryCounts initial={{Builders:collections.length,Developments:locationCount,'Building types':buildingTypeCount}}/>
    </div>
    <div className="directory-intro-feature">
-    <h2>Discover each builder’s sense of home.</h2>
-    <p>Explore how UK builders bring their showhomes to life—from welcoming kitchens to restful bedrooms. Compare their interiors, find ideas you love, and save your favourites.</p>
+    <h2>Discover new homes and fresh interior ideas.</h2>
+    <p>Find your next new build home or inspiration for the home you have. Explore UK builders and their developments, compare showhome interiors—from welcoming kitchens to restful bedrooms—and save your favourites.</p>
    </div>
   </section>
   <DeveloperDirectory cards={collections}/>

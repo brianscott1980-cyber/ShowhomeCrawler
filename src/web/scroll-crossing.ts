@@ -17,3 +17,8 @@ export function rowScrollCrossing(previous:number,current:number,column:number,c
 }
 export function atPageBottom(scrollY:number,viewportHeight:number,pageHeight:number){return scrollY+viewportHeight>=pageHeight-2;}
 export function bottomRemainder(list:boolean,edges:CardEdges,progress:number,column:number,columns:number,midpoint:number,large=false){return list?edges.bottom>=midpoint:progress<rowTrigger(column,columns,large);}
+
+/** Pair forward and reverse transitions so missed or repeated crossings cannot wrap a card. */
+export function cardTransition(advanced:boolean,direction:number):number {
+ return direction>0&&!advanced?1:direction<0&&advanced?-1:0;
+}

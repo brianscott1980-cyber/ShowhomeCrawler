@@ -1,4 +1,6 @@
 'use client';
+import {CardResults} from './card-results';
+import {BreadcrumbBack} from './breadcrumb-back';
 import {MultiSelectFilter} from './multi-select-filter';
 import {matchesSelection,matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
@@ -217,9 +219,9 @@ export function Gallery({
   <section aria-label="Image collection" className={featured ? 'featured-gallery' : undefined}>
    {introduction && <>
     <section className={`results-hero${introduction.details?' builder-results-hero':''}`}>
-     {introduction.details&&introduction.back&&<Link className="results-back builder-results-back" href={introduction.back.href}>{introduction.back.label}</Link>}
+     {introduction.details&&introduction.back&&<BreadcrumbBack className="results-back builder-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
      <div className="results-hero-copy">
-      {!introduction.details&&introduction.back && <Link className="results-back" href={introduction.back.href}>{introduction.back.label}</Link>}
+      {!introduction.details&&introduction.back && <BreadcrumbBack className="results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
       {introduction.eyebrow&&<p className="eyebrow">{introduction.eyebrow}</p>}
       <h1>{introduction.title}</h1>
       <p>{introduction.description}</p>
@@ -281,7 +283,7 @@ export function Gallery({
    </div>
 
    </>}
-   <div className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`}>
+   <CardResults className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
      <article className="image-card" key={image.uid}>
       <div className="results-photo-frame">
@@ -353,7 +355,7 @@ export function Gallery({
       </div>
      </article>
     ))}
-   </div>
+   </CardResults>
 
    {!images.length && ready && (
     <div className="empty">

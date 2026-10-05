@@ -5,7 +5,7 @@ export const absoluteUrl = (path:string) => new URL(path, siteUrl).href;
 export const jsonLd = (value:unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
 const escape = (value:string) => value.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 export function developerSeo(name:string,slug:string,images:{path:string;description?:string}[]) {
- const url=absoluteUrl(`/developers/${slug}`),title=`${name} Showhome & Home Office Ideas | Showhome Explorer`;
+ const url=absoluteUrl(`/builders/${slug}`),title=`${name} Showhome & Home Office Ideas | Showhome Explorer`;
  const description=`Explore ${images.length} ${name} showhome interior photographs for home office inspiration. Discover house types, development locations and individual plot details.`;
  const image=images[0]?absoluteUrl(images[0].path):null;
  const schema={'@context':'https://schema.org','@type':'CollectionPage',name:title,description,url,mainEntity:{'@type':'ItemList',numberOfItems:images.length,itemListElement:images.map((i,index)=>({'@type':'ListItem',position:index+1,item:{'@type':'ImageObject',contentUrl:absoluteUrl(i.path),caption:i.description??'Showhome interior'}}))}};

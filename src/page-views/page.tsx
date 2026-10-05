@@ -7,7 +7,7 @@ import { absoluteUrl, jsonLd } from '../web/seo';
 import '../app/home.css';
 export const metadata = { title: 'Showhome Explorer | Explore New Homes & Interior Inspiration', description: 'Discover UK builders, developments and house types. Explore real showhome interiors and save ideas for your home.', alternates: { canonical: '/' } };
 const journeys = [
- { title: 'Explore homes near you', description: 'Discover developments and the homes behind them, in your area and beyond.', href: '/locations', link: 'Explore developments', number: '01' },
+ { title: 'Explore homes near you', description: 'Discover developments and the homes behind them, in your area and beyond.', href: '/developments', link: 'Explore developments', number: '01' },
  { title: 'Find decorating inspiration', description: 'From kitchens to cosy bedrooms. Find ideas for every room, across builders.', href: '/interiors', link: 'Browse interiors', number: '02' },
  { title: 'Explore your house type', description: 'See how the same home has been styled in showhomes at different developments.', href: '/buildings', link: 'Find a house type', number: '03' },
 ];
@@ -19,7 +19,7 @@ export default async function Home() {
    <HomepageMap points={points} photos={mapPhotos}/>
   </section>
   <section className="home-journeys" id="start-exploring" aria-labelledby="journeys-title">
-   <div className="home-section-heading"><div><p className="eyebrow">Make yourself at home</p><h2 id="journeys-title">Where would you like to begin?</h2></div><Link href="/homebuilders" className="home-text-link">Browse all builders <span aria-hidden="true">↗</span></Link></div>
+   <div className="home-section-heading"><div><p className="eyebrow">Make yourself at home</p><h2 id="journeys-title">Where would you like to begin?</h2></div><Link href="/builders" className="home-text-link">Browse all builders <span aria-hidden="true">↗</span></Link></div>
    <div className="home-journey-grid">{journeys.map((journey, index) => <Link key={journey.href} href={journey.href} className="home-journey">
     {journeyPhotos[index] && <div className="home-journey-photo"><img src={journeyPhotos[index]!.src} alt="" loading="lazy"/></div>}
     <div className="home-journey-copy"><span className="home-step">{journey.number}</span><h3>{journey.title}</h3><p>{journey.description}</p><span className="home-text-link">{journey.link} <span aria-hidden="true">↗</span></span></div>

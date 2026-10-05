@@ -71,7 +71,9 @@ class Queue:
 
     def setup(self):
         if not self.work.exists():
-            subprocess.run(['git', 'worktree', 'add', '-b', self.branch, str(self.work), 'main'], cwd=ROOT, check=True)
+            exists = subprocess.run(['git','show-ref','--verify','--quiet','refs/heads/'+self.branch],cwd=ROOT).returncode == 0
+            command = ['git','worktree','add','--force',str(self.work),self.branch] if exists else ['git','worktree','add','-b',self.branch,str(self.work),'main']
+            subprocess.run(command,cwd=ROOT,check=True)
         if not (self.work / 'node_modules').exists():
             if sys.platform == 'darwin':
                 subprocess.run(['cp', '-cR', str(ROOT / 'node_modules'), str(self.work / 'node_modules')], check=True)
@@ -175,7 +177,7 @@ class Queue:
     def execute(self):
         self.wait_for_current()
         self.setup()
-        order = (ROOT / 'docs/builder-recrawl-order.txt').read_text().splitlines()
+        order = (ROOT / self.args.order_file).read_text().splitlines()
         builders = remaining_order(order, self.args.after)
         self.args.review_index = len(builders) - 3
         self.state['builders'] = builders
@@ -192,7 +194,7 @@ class Queue:
             baseline = read_json(self.work / 'collections' / f'{builder}-home-offices/results.json')
             candidate = ROOT / 'results' / f'{builder}-unrestricted-scan-{self.run_id}'
             canonical = ROOT / 'results' / f'{builder}-home-offices'
-            if not candidate.exists() and self.manifest.get(builder, {}).get('folder') == str(canonical.relative_to(ROOT)) and self.manifest.get(builder, {}).get('status') in ('collected', 'categorising'):
+            if self.manifest.get(builder, {}).get('folder') == str(canonical.relative_to(ROOT)) and self.manifest.get(builder, {}).get('status') in ('collected', 'categorising'):
                 candidate = canonical
             self.update('collecting', activeBuilder=builder, nextIndex=index)
             try:
@@ -215,6 +217,7 @@ class Queue:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--after', default='barratt')
+    parser.add_argument('--order-file', default='docs/builder-recrawl-order.txt')
     parser.add_argument('--wait-state', default='results/.cache/barratt-completion-state.json')
     parser.add_argument('--worktree', default='/tmp/showhome-sequential-recrowls')
     parser.add_argument('--run-id', default='20261003')

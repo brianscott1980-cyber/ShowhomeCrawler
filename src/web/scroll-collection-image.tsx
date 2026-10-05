@@ -1,8 +1,8 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {collectionIndex,scrollCrossing,rowProgress,rowScrollCrossing,rowTrigger,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
+import {collectionIndex,cardTransition,rowProgress,rowTrigger,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
 export interface CollectionImage {src:string;alt:string;kind?:'logo';background?:string}
-interface Entry {element:HTMLElement;edges:CardEdges;progress:number;bottomAdvanced:boolean;advance:(direction:number)=>void}
+interface Entry {element:HTMLElement;edges:CardEdges;progress:number;bottomAdvanced:boolean;advanced:boolean;advance:(direction:number)=>void}
 interface Measurement {edges:DOMRect;progress:number;column:number;columns:number;list:boolean;large:boolean}
 const entries=new Set<Entry>();
 let stop:undefined|(()=>void);
@@ -13,9 +13,9 @@ function measureCards(){
  for(const grid of grids){
   // Include static one-image cards so their position still occupies a column in the row.
   const cards=[...grid.children].filter((child):child is HTMLElement=>child instanceof HTMLElement&&child.classList.contains('collection-card'))
-   .map(element=>({element,edges:element.getBoundingClientRect()})).sort((a,b)=>a.edges.top-b.edges.top||a.edges.left-b.edges.left);
+   .map(element=>({element,edges:element.getBoundingClientRect(),rowTop:element.offsetTop})).sort((a,b)=>a.rowTop-b.rowTop||a.edges.left-b.edges.left);
   const rows:typeof cards[]=[];
-  for(const card of cards){const last=rows.at(-1);if(last&&Math.abs(last[0]!.edges.top-card.edges.top)<2)last.push(card);else rows.push([card]);}
+  for(const card of cards){const last=rows.at(-1);if(last&&Math.abs(last[0]!.rowTop-card.rowTop)<2)last.push(card);else rows.push([card]);}
   for(const row of rows){
    row.sort((a,b)=>a.edges.left-b.edges.left);
    const progress=rowProgress({top:row[0]!.edges.top,bottom:Math.max(...row.map(card=>card.edges.bottom))},midpoint);
@@ -25,7 +25,7 @@ function measureCards(){
  return measurements;
 }
 function register(element:HTMLElement,advance:Entry['advance']){
- const entry:Entry={element,advance,edges:element.getBoundingClientRect(),progress:0,bottomAdvanced:false};entries.add(entry);
+ const entry:Entry={element,advance,edges:element.getBoundingClientRect(),progress:0,bottomAdvanced:false,advanced:false};entries.add(entry);
  entry.progress=measureCards().get(element)?.progress??0;
  if(!stop){
   let scrollY=window.scrollY,frame=0;
@@ -37,14 +37,19 @@ function register(element:HTMLElement,advance:Entry['advance']){
    const bottom=atPageBottom(scrollY,window.innerHeight,document.documentElement.scrollHeight);
    for(const item of entries){
     const next=measurements.get(item.element);if(!next)continue;
-    let direction=next.list?scrollCrossing(item.edges,next.edges,window.innerHeight*.5,delta):rowScrollCrossing(item.progress,next.progress,next.column,next.columns,delta,next.large);
+    // Reconcile with position rather than requiring the crossing to be observed.
+    // Resize, hover transforms and layout shifts may move a trigger between frames.
+    let direction=delta>0?(next.list?next.edges.bottom<midpoint:next.progress>=rowTrigger(next.column,next.columns,next.large))?1:0
+     :delta<0?(next.list?next.edges.top>midpoint:next.progress<rowTrigger(next.column,next.columns,next.large))?-1:0:0;
     // At the page end, finish only cards whose usual trigger is still unreachable.
     if(delta>0&&bottom&&!item.bottomAdvanced&&bottomRemainder(next.list,next.edges,next.progress,next.column,next.columns,midpoint,next.large)){
      direction=1;item.bottomAdvanced=true;
     }else if(delta<0&&item.bottomAdvanced&&(direction===-1||(next.list?next.edges.top>midpoint:next.progress<rowTrigger(next.column,next.columns,next.large)))){
      direction=-1;item.bottomAdvanced=false;
     }
-    item.edges=next.edges;item.progress=next.progress;if(direction)item.advance(direction);
+    item.edges=next.edges;item.progress=next.progress;
+    const transition=cardTransition(item.advanced,direction);
+    if(transition){item.advanced=transition>0;item.advance(transition);}
    }
   };
   const scroll=()=>{if(!frame)frame=requestAnimationFrame(update);};
@@ -59,7 +64,7 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  const [slide,setSlide]=useState({index:0,previous:0,direction:1,sequence:0});
  const [loadedSrc,setLoadedSrc]=useState(image);
  const identity=items.map(item=>item.src).join('\n');
- useEffect(()=>{setSlide({index:0,previous:0,direction:1,sequence:0});},[identity]);
+ useEffect(()=>{setSlide({index:0,previous:0,direction:1,sequence:0});},[identity,layout]);
  useEffect(()=>{
   const element=ref.current?.closest<HTMLElement>('.collection-card');
   if(!element||items.length<2)return;

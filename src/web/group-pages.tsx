@@ -12,7 +12,7 @@ import {GroupCards} from './group-cards';
 import {ResultsPage} from './results-page';
 const labels:Record<GroupKind,string>={sites:'Developments',locations:'Developments',spaces:'Interiors',interiors:'Interiors',buildings:'Buildings'};
 const descriptions:Record<GroupKind,string>={sites:'Explore homebuilder developments by name and discover their published interiors.',locations:'Explore homebuilder developments by name and discover their published interiors.',spaces:'Explore interiors grouped by room and space type.',interiors:'Explore interiors grouped by room and space type.',buildings:'Explore homebuilder house types by name and discover their interiors.'};
-function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')return 'locations';if(kind==='spaces'||kind==='interiors')return 'interiors';return kind;}
+function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')return 'developments';if(kind==='spaces'||kind==='interiors')return 'interiors';return kind;}
 export async function GroupDirectory({kind}:{kind:GroupKind}){
  const groups=await readGroups(kind);const pathPrefix=prefixFor(kind);const routes=groupRoutes(kind,groups);
  if(kind==='sites'||kind==='locations'){
@@ -29,7 +29,7 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
      <p>Explore the showhomes behind each development—from welcoming kitchens to restful bedrooms. Discover developments near you, compare their interiors, and save ideas for your own home.</p>
     </div>
    </section>
-   <SiteDirectory cards={cards} basePath="/locations" defaultView="compact"/>
+   <SiteDirectory cards={cards} basePath="/developments" defaultView="compact"/>
   </main></DirectoryCountProvider>;
  }
  const geography=await buildingLocationIndex(groups);
@@ -62,6 +62,6 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
  const {group,path}=await findGroup(kind,id);const pathPrefix=prefixFor(kind);
  if(path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));
  const places=Object.fromEntries(await buildingLocationIndex([group]));
- return <ResultsPage title={group.name} eyebrow={group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:withFilters(`/${pathPrefix}`,Object.fromEntries(Object.entries(searchParams).filter(([key])=>['developer','bedrooms','location','site','type','region','country','minPrice','maxPrice','minBeds','maxBeds','style','radius','postcode','order'].includes(key)))),label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={kind==='buildings' && typeof searchParams.image==='string' ? searchParams.image : undefined} includeUnclassified/>;
+ return <ResultsPage title={group.name} eyebrow={group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={kind==='buildings' && typeof searchParams.image==='string' ? searchParams.image : undefined} includeUnclassified/>;
 }
 export async function groupMetadata(kind:GroupKind,id:string){const {group,path}=await findGroup(kind,id);return {title:`${group.name} | Showhome Explorer`,description:`Explore ${group.count} images from ${group.name} by ${group.developers.join(', ')}.`,alternates:{canonical:path}};}

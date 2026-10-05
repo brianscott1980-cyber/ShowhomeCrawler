@@ -1,5 +1,5 @@
 import {expect,it} from 'vitest';
-import {scrollCrossing,collectionIndex} from '../src/web/scroll-crossing';
+import {scrollCrossing,collectionIndex,cardTransition} from '../src/web/scroll-crossing';
 const edges=(top:number,bottom:number)=>({top,bottom});
 it('waits for the bottom edge when scrolling down, then advances once',()=>{
  expect(scrollCrossing(edges(230,430),edges(190,390),200,40)).toBe(0);
@@ -57,4 +57,22 @@ it('brings the second large card forward without changing compact grids or the f
  expect(rowScrollCrossing(.2,.3,0,2,100,true)).toBe(1);
  expect(bottomRemainder(false,{top:0,bottom:400},.55,1,2,200,true)).toBe(false);
  expect(bottomRemainder(false,{top:0,bottom:400},.55,1,2,200,false)).toBe(true);
+});
+
+it('keeps partial reverse scrolling paired with a previous forward transition',()=>{
+ let advanced=false,index=0;
+ const apply=(direction:number)=>{const transition=cardTransition(advanced,direction);if(transition){advanced=transition>0;index=collectionIndex(index,transition,4);}};
+ // A card registered below its trigger must not wrap backwards to its last image.
+ apply(-1);expect(index).toBe(0);
+ apply(1);expect(index).toBe(1);
+ apply(-1);expect(index).toBe(0);
+ apply(-1);expect(index).toBe(0);
+ apply(1);expect(index).toBe(1);
+});
+it('ignores duplicate page-bottom and normal crossings in both directions',()=>{
+ expect(cardTransition(true,1)).toBe(0);
+ expect(cardTransition(true,-1)).toBe(-1);
+ expect(cardTransition(false,-1)).toBe(0);
+ expect(cardTransition(false,1)).toBe(1);
+ expect(cardTransition(true,0)).toBe(0);
 });

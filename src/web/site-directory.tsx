@@ -1,4 +1,5 @@
 'use client';
+import {CardResults} from './card-results';
 import {useDirectoryCounts} from './directory-counts';
 import {DistanceFilter} from './distance-filter';
 import {MultiSelectFilter} from './multi-select-filter';
@@ -15,7 +16,6 @@ import logos from '../../public/logos/sources.json';
 const SiteMap=lazy(()=>import('./site-map').then(module=>({default:module.SiteMap})));
 function builderLogo(name:string){const builder=builderRegistry.find(b=>b.name===name);const logo=logos.find(l=>l.slug===builder?.slug);return logo?'/logos/'+logo.file:undefined;}
 import {useUrlFilters} from './url-filters';
-import {withFilters} from './url-query';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import {filterSites,type SiteCard,type SiteFilters,type LocationPoint} from './site-filters';
 import {ViewOptions,useCardView,type CardViewMode} from './view-options';
@@ -25,7 +25,7 @@ const money=(n:number)=>'£'+n.toLocaleString('en-GB');
 function range(values:(number|null)[],format:(n:number)=>string){const known=values.filter((v):v is number=>v!==null&&Number.isFinite(v));if(!known.length)return 'Not available';const min=Math.min(...known),max=Math.max(...known);return min===max?format(min):`${format(min)} – ${format(max)}`;}
 export function SiteDirectory({
  cards,
- basePath = '/locations',
+ basePath = '/developments',
  defaultView = 'list',
  storageKey = 'showhome-locations-view',
 }:{
@@ -132,7 +132,7 @@ export function SiteDirectory({
   <MultiSelectFilter label="Developments" value={filters.location??''} options={locationOptions} onChange={value=>change('location',value)}/>
   <label>Minimum bedrooms<input type="number" min="1" step="1" value={filters.minBeds} onChange={e=>change('minBeds',e.target.value)} placeholder="Any"/></label>
   <label>Maximum price (£)<input type="number" min="0" step="1000" value={filters.maxPrice} onChange={e=>change('maxPrice',e.target.value)} placeholder="No maximum"/></label>
-  <button className="location-filter-reset" type="button" onClick={()=>{setUrlFilters(previous=>({...urlDefaults,view:previous.view,lat:previous.lat,lng:previous.lng,zoom:previous.zoom}));}}>Reset filters</button>
+  <button className="location-filter-reset" type="button" onClick={()=>{setUrlFilters(previous=>({...urlDefaults,view:previous.view,lat:previous.lat,lng:previous.lng,zoom:previous.zoom}));}}>Reset</button>
  <details className="location-filter-disclosure">
   <summary>More filters <span>House style, price range and distance</span></summary>
   <div className="filters site-filters">
@@ -154,14 +154,14 @@ export function SiteDirectory({
  {mapView&&<Suspense fallback={<aside className="site-map-panel"><p className="empty">Loading map…</p></aside>}><SiteMap cards={matching} activeKey={activeKey} focusSequence={focusSequence} hoverKey={hoverKey} camera={camera} onCameraChange={updateCamera} onBoundsChange={()=>setMapUnavailable(false)} onVisibleSitesChange={setVisibleKeys} onSelect={selectSite} onUnavailable={()=>setMapUnavailable(true)} focusArea={focusArea}/></Suspense>}
  <div className="site-preview-panel" ref={resultsPanel}>
  {mapView&&<button className="site-sheet-handle" type="button" aria-expanded={sheetExpanded} aria-label={sheetExpanded?'Collapse development previews':'Expand development previews'} onClick={()=>setSheetExpanded(value=>!value)} onTouchStart={e=>{sheetStart.current=e.touches[0]?.clientY??null;}} onTouchEnd={e=>{const y=e.changedTouches[0]?.clientY;if(sheetStart.current!==null&&y!==undefined&&Math.abs(y-sheetStart.current)>20)setSheetExpanded(y<sheetStart.current);sheetStart.current=null;}}><span/><b>{visible.length} developments · {sheetExpanded?'Show map':'View previews'}</b></button>}
- <div className={`collection-grid directory-${mapView?'compact':view}`}>
+ <CardResults className={`collection-grid directory-${mapView?'compact':view}`} label="Developments" identity={JSON.stringify(filters)} paginate={!mapView}>
  {visible.map(card=>{
- const href=withFilters(card.href??`${basePath}/${card.key}`,{...Object.fromEntries(Object.keys(defaults).filter(key=>key!=='location').map(key=>[key,urlFilters[key as keyof typeof urlFilters]])),order:order==='name'?'':order});
+ const href=card.href??`${basePath}/${card.key}`;
  const content=<><div className="site-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/></div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line">{builderLogo(card.developer)&&<img className="site-builder-logo" style={{background:['Bloor Homes','Cala','Barratt','David Wilson Homes','Robertson Homes','Lynch Homes'].includes(card.developer)?'#193963':undefined}} src={builderLogo(card.developer)} alt="" loading="lazy"/>}<BuilderName name={card.developer}/></p><p className="subtle">{card.country??'Country unavailable'}{point&&` · ${card.miles===null?'Distance unavailable':card.miles.toFixed(1)+' miles'}`}</p><dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].join(' · ')||'Not available'}</dd></div></dl><p className="subtle site-image-count">{card.count} {card.count===1?'image':'images'}{card.propertyScope==='Published homes'?' · Published homes only':''}</p>{mapView?<Link className="site-explore-link" href={href} onClick={e=>e.stopPropagation()}>Explore development →</Link>:<span className="subtle">Explore collection →</span>}</div></>;
  const className=`collection-card${activeKey===card.key?' is-map-active':''}${hoverKey===card.key?' is-map-hovered':''}`;
  return mapView?<article id={'site-card-'+card.key} key={card.key} className={className} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)}><button className="site-card-select" aria-label={`Select ${card.name} on map`} aria-pressed={activeKey===card.key} onClick={()=>selectCard(card.key)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}/>{content}</article>:<Link id={'site-card-'+card.key} key={card.key} className={className} href={href}>{content}</Link>;
  })}
- </div>
+ </CardResults>
  {!visible.length&&<p className="empty">{mapView?'No developments in this area match your filters. Move the map or show all matching sites.':'No developments match your filters. Try widening your search.'}</p>}
  {mapView&&unmapped>0&&<p className="subtle site-unmapped">{unmapped} matching {unmapped===1?'development has':'developments have'} no map coordinates. Browse List or Cards to see them.</p>}
  </div></div></section>;

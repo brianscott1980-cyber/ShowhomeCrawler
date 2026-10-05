@@ -72,7 +72,8 @@ async function main() {
        await saveGeminiState(folder,{state:'quota_wait',model:pool.currentModel,...pool.snapshot(),httpStatus:429,retryAt:new Date(Date.now()+delaySeconds*1000).toISOString()});
        await writeReport(folder,report);
        for (let seconds = 0; seconds < delaySeconds; seconds += 10) await sleep(Math.min(10, delaySeconds - seconds) * 1000);
-       continue;
+       attempt--; // Quota waits do not consume transient-error retries.
+continue;
       }
       if (failure.status && ![429, 500, 502, 503, 504].includes(failure.status)) throw error;
       if (attempt >= 3) {

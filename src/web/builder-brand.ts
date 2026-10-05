@@ -2,6 +2,7 @@ import {developers,type DeveloperSlug} from '../adapters/developers';
 export interface BuilderBrand {primary:string;secondary:string;logoBackground:string;parts:readonly [string,...string[]]}
 // Logo hues and tonal companions from the local official marks.
 export const builderBrands:Record<DeveloperSlug,BuilderBrand>={
+ 'bargate-homes':{logoBackground:'#ffffff',primary:'#23342e',secondary:'#23342e',parts:['Bargate ','Homes']},
  'bellway':{logoBackground:'#ffffff',primary:'#f3613c',secondary:'#a63c22',parts:['Bellway']},
  'cala':{logoBackground:'#163f48',primary:'#454545',secondary:'#6b6b6b',parts:['Cala']},
  'barratt':{logoBackground:'#163f48',primary:'#333333',secondary:'#666666',parts:['Barratt']},
