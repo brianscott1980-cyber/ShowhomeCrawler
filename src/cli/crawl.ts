@@ -42,7 +42,7 @@ async function main() {
   }
   if (!values['refresh-pages'] && await exists(path)) return readFile(path, 'utf8');
   let html = await client.text(url);
-  if ('enrichPage' in site && site.enrichPage) html = await site.enrichPage(html, async apiUrl => client.text(apiUrl));
+  if ('enrichPage' in site && site.enrichPage) html = await site.enrichPage(html, async (apiUrl,body?:string) => client.text(apiUrl,body));
   // Remove transient Livewire/session data from local cached pages.
   const $ = load(html); $('[wire\\:initial-data]').removeAttr('wire:initial-data'); $('script').not('[type="application/ld+json"], [type="application/json"]').remove(); $('input[type="hidden"]').remove();
   const sanitized = $.html(); await writeFile(path, sanitized); return sanitized;
@@ -103,7 +103,7 @@ async function main() {
      const name = site.houseTypeName(html);
      if (name) property.name = name;
     }
-    const images = galleryImages(html);
+    const images = galleryImages(html,home.url);
     if (!images.length) report.errors.push({ url: home.url, stage: 'gallery', message: 'No supported image gallery found; not treated as a negative match.' });
     const galleryKey = sha256(JSON.stringify([...new Set(images.map(i => imageSourceKey(i.url)))].sort()));
     const reused = galleryCache.get(galleryKey);

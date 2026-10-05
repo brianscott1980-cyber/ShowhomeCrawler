@@ -1,16 +1,16 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {collectionIndex,cardTransition,rowProgress,rowTrigger,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
+import {carouselTriggerLine,collectionIndex,cardTransition,rowProgress,rowTrigger,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
 export interface CollectionImage {src:string;alt:string;kind?:'logo';background?:string}
 interface Entry {element:HTMLElement;edges:CardEdges;progress:number;bottomAdvanced:boolean;advanced:boolean;advance:(direction:number)=>void}
-interface Measurement {edges:DOMRect;progress:number;column:number;columns:number;list:boolean;large:boolean}
+interface Measurement {midpoint:number;edges:DOMRect;progress:number;column:number;columns:number;list:boolean;large:boolean}
 const entries=new Set<Entry>();
 let stop:undefined|(()=>void);
 function measureCards(){
  const measurements=new Map<HTMLElement,Measurement>();
  const grids=new Set([...entries].map(entry=>entry.element.parentElement).filter((grid):grid is HTMLElement=>Boolean(grid)));
- const midpoint=window.innerHeight*.5;
  for(const grid of grids){
+  const midpoint=carouselTriggerLine(window.innerHeight,Boolean(grid.querySelector('.builder-card')));
   // Include static one-image cards so their position still occupies a column in the row.
   const cards=[...grid.children].filter((child):child is HTMLElement=>child instanceof HTMLElement&&child.classList.contains('collection-card'))
    .map(element=>({element,edges:element.getBoundingClientRect(),rowTop:element.offsetTop})).sort((a,b)=>a.rowTop-b.rowTop||a.edges.left-b.edges.left);
@@ -19,7 +19,7 @@ function measureCards(){
   for(const row of rows){
    row.sort((a,b)=>a.edges.left-b.edges.left);
    const progress=rowProgress({top:row[0]!.edges.top,bottom:Math.max(...row.map(card=>card.edges.bottom))},midpoint);
-   row.forEach((card,column)=>measurements.set(card.element,{edges:card.edges,progress,column,columns:row.length,list:grid.classList.contains('directory-list'),large:grid.classList.contains('directory-large')}));
+   row.forEach((card,column)=>measurements.set(card.element,{midpoint,edges:card.edges,progress,column,columns:row.length,list:grid.classList.contains('directory-list'),large:grid.classList.contains('directory-large')}));
   }
  }
  return measurements;
@@ -33,10 +33,10 @@ function register(element:HTMLElement,advance:Entry['advance']){
   const update=()=>{
    frame=0;const delta=window.scrollY-scrollY;scrollY=window.scrollY;
    const measurements=measureCards();
-   const midpoint=window.innerHeight*.5;
    const bottom=atPageBottom(scrollY,window.innerHeight,document.documentElement.scrollHeight);
    for(const item of entries){
     const next=measurements.get(item.element);if(!next)continue;
+    const midpoint=next.midpoint;
     // Reconcile with position rather than requiring the crossing to be observed.
     // Resize, hover transforms and layout shifts may move a trigger between frames.
     let direction=delta>0?(next.list?next.edges.bottom<midpoint:next.progress>=rowTrigger(next.column,next.columns,next.large))?1:0
@@ -58,7 +58,7 @@ function register(element:HTMLElement,advance:Entry['advance']){
  }
  return ()=>{entries.delete(entry);if(!entries.size)stop?.();};
 }
-export function ScrollCollectionImage({images,image,description,layout,caption=false}:{images?:CollectionImage[];image:string;description:string;layout:string;caption?:boolean}){
+export function ScrollCollectionImage({images,image,description,layout,caption=false,showBuilderLogo=false}:{images?:CollectionImage[];image:string;description:string;layout:string;caption?:boolean;showBuilderLogo?:boolean}){
  const items=images?.length?images:[{src:image,alt:description}];
  const ref=useRef<HTMLDivElement>(null);
  const [slide,setSlide]=useState({index:0,previous:0,direction:1,sequence:0});
@@ -78,9 +78,11 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  },[identity,slide.index]);
  const current=items[slide.index]??items[0]!;
  const previous=items[slide.previous]??items[0]!;
+ const logo=showBuilderLogo?items.find(item=>item.kind==='logo'):undefined;
  return <div ref={ref} className="collection-image">
   {slide.sequence>0&&<img className={`collection-image-previous${previous.kind==='logo'?' collection-image-logo':''}`} style={{background:previous.background}} src={previous.src} alt="" aria-hidden="true"/>}
   <img key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={current.src} alt={current.alt} loading="lazy"/>
+  {logo&&current.kind!=='logo'&&<img className="collection-builder-logo" src={logo.src} alt={logo.alt} style={{background:logo.background}} loading="lazy"/>}
   {caption&&<span className="site-photo-caption">{(current.alt.match(/\b(home office|living room|dining room|kitchen|bathroom|bedroom|hallway|garden|exterior)\b/i)?.[0]??'Development preview').replace(/^./,letter=>letter.toUpperCase())}</span>}
  </div>;
 }

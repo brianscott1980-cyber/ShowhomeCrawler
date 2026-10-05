@@ -76,3 +76,10 @@ it('ignores duplicate page-bottom and normal crossings in both directions',()=>{
  expect(cardTransition(false,1)).toBe(1);
  expect(cardTransition(true,0)).toBe(0);
 });
+
+it('starts builder previews 15 percent of the viewport earlier',async()=>{
+ const {carouselTriggerLine,rowProgress}=await import('../src/web/scroll-crossing');
+ expect(carouselTriggerLine(800,true)).toBe(520);
+ expect(carouselTriggerLine(800)).toBe(400);
+ expect(rowProgress({top:450,bottom:850},carouselTriggerLine(800,true))).toBeGreaterThan(rowProgress({top:450,bottom:850},carouselTriggerLine(800)));
+});

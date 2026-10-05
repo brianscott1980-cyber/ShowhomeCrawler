@@ -1,3 +1,5 @@
+import logos from '../../public/logos/sources.json';
+import {builderBrand} from './builder-brand';
 import {developmentName} from './development-name';
 import {DirectoryCountProvider,DirectoryCounts} from './directory-counts';
 import {buildingLocationIndex} from './building-locations';
@@ -63,6 +65,9 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
  const {group,path}=await findGroup(kind,id);const pathPrefix=prefixFor(kind);
  if(path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));
  const places=Object.fromEntries(await buildingLocationIndex([group]));
- return <ResultsPage title={group.name} eyebrow={group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={kind==='buildings' && typeof searchParams.image==='string' ? searchParams.image : undefined} includeUnclassified/>;
+ const isDevelopment=kind==='sites'||kind==='locations';
+ const builder=group.collections[0]!;
+ const logo=isDevelopment?logos.find(logo=>logo.slug===builder.slug):undefined;
+ return <ResultsPage title={group.name} titleAccessory={logo?<img className="development-title-logo" src={`/logos/${logo.file}`} alt={`${builder.name} logo`} style={{background:builderBrand(builder.slug)?.logoBackground??'#fff'}}/>:undefined} eyebrow={isDevelopment?null:group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={kind==='buildings' && typeof searchParams.image==='string' ? searchParams.image : undefined} includeUnclassified/>;
 }
 export async function groupMetadata(kind:GroupKind,id:string){const {group,path}=await findGroup(kind,id);return {title:`${group.name} | Showhome Explorer`,description:`Explore ${group.count} images from ${group.name} by ${group.developers.join(', ')}.`,alternates:{canonical:path}};}

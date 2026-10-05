@@ -3,7 +3,7 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import { spawn } from 'node:child_process';
 export class RequestError extends Error { constructor(public readonly status: number) { super(`HTTP ${status}`); } }
 
-function curlFallback(url: string, timeoutMs: number): Promise<Response> {
+function curlFallback(url: string, timeoutMs: number, body?:string): Promise<Response> {
  return new Promise((resolve, reject) => {
   const proc = spawn('curl', [
    '-sL',
@@ -12,6 +12,7 @@ function curlFallback(url: string, timeoutMs: number): Promise<Response> {
    '--max-time', String(Math.ceil(timeoutMs / 1000)),
    '-H', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
    '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+   ...(body===undefined?[]:['-X','POST','--data',body]),
    url
   ]);
   const chunks: Buffer[] = [];
@@ -39,7 +40,7 @@ export class RequestClient {
   await previous;
   if (++this.requests > this.options.maxRequests) throw new Error('Request budget exhausted.');
  }
- async bytes(url: string, maxBytes = 20_000_000): Promise<Buffer> {
+ async bytes(url: string, maxBytes = 20_000_000, body?:string): Promise<Buffer> {
   const parsed = new URL(url);
   const isAllowedHost = ['collegepark.uk', 'res.cloudinary.com', 'mvdataappstorageeunlprod.blob.core.windows.net', 'accelerated-cf-eunl.mediavalet.com', 'cdn.mediavalet.com', 'scotia-homes-img.s3.amazonaws.com', 'cms.bellway.co.uk', 'data.openasset.com', 'www.marleighpark.co.uk'].includes(parsed.hostname) ||
     developers.some(d => {
@@ -51,10 +52,10 @@ export class RequestClient {
    await this.gate();
    try {
     const request = async (target: string, redirects = 0): Promise<Response> => {
-     let response = await this.fetcher(target, { redirect: 'manual', signal: AbortSignal.timeout(this.options.timeout), headers: { 'User-Agent': 'ShowhomeCrawler/0.2 (bounded public showhome gallery crawler)' } });
+     let response = await this.fetcher(target, { redirect: 'manual', signal: AbortSignal.timeout(this.options.timeout), method:body===undefined?'GET':'POST',body,headers: { ...(body===undefined?{}:{'Content-Type':'application/x-www-form-urlencoded'}), 'User-Agent': 'ShowhomeCrawler/0.2 (bounded public showhome gallery crawler)' } });
      if (response.status === 403) {
       try {
-       const fallback = await curlFallback(target, this.options.timeout);
+       const fallback = await curlFallback(target, this.options.timeout,body);
        if (fallback.ok) response = fallback;
       } catch {}
      }
@@ -78,7 +79,7 @@ export class RequestClient {
    }
   }
  }
- async text(url: string) { return (await this.bytes(url, 10_000_000)).toString('utf8'); }
+ async text(url: string,body?:string) { return (await this.bytes(url, 10_000_000,body)).toString('utf8'); }
 }
 export async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T, index: number) => Promise<R>): Promise<R[]> {
  const output: R[] = []; let next = 0;

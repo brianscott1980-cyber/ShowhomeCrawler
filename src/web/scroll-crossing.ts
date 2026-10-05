@@ -22,3 +22,6 @@ export function bottomRemainder(list:boolean,edges:CardEdges,progress:number,col
 export function cardTransition(advanced:boolean,direction:number):number {
  return direction>0&&!advanced?1:direction<0&&advanced?-1:0;
 }
+
+/** Builder previews start earlier, before their row reaches the viewport centre. */
+export function carouselTriggerLine(viewportHeight:number,builderCards=false){return viewportHeight*(builderCards?.65:.5);}

@@ -43,7 +43,7 @@ export function Gallery({
  featured?: boolean;
  overviewOnly?: boolean;
  places?: Record<string,string[]>;
- introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
+ introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
 }) {
  const [view, changeView] = useCardView('showhome-gallery-view', 'large');
  const [favourites, setFavourites] = useState<string[]>([]);
@@ -220,12 +220,13 @@ export function Gallery({
  return (
   <section aria-label="Image collection" className={featured ? 'featured-gallery' : undefined}>
    {introduction && <>
-    <section className={`results-hero${introduction.details?' builder-results-hero':''}`}>
+    <section className={`results-hero${introduction.details?' builder-results-hero':introduction.titleAccessory?' development-results-hero':''}`}>
      {introduction.details&&introduction.back&&<BreadcrumbBack className="results-back builder-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
+     {introduction.titleAccessory&&introduction.back&&<BreadcrumbBack className="results-back development-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
      <div className="results-hero-copy">
-      {!introduction.details&&introduction.back && <BreadcrumbBack className="results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
+      {!introduction.details&&!introduction.titleAccessory&&introduction.back && <BreadcrumbBack className="results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
       {introduction.eyebrow&&<p className="eyebrow">{introduction.eyebrow}</p>}
-      <h1>{introduction.title}</h1>
+      {introduction.titleAccessory?<div className="development-title-row"><h1>{introduction.title}</h1>{introduction.titleAccessory}</div>:<h1>{introduction.title}</h1>}
       <p>{introduction.description}</p>
       {!introduction.details&&<a className="results-cta" href="#collection">Discover the collection ↓</a>}
      </div>

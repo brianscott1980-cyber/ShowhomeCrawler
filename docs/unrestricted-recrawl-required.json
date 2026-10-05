@@ -20,5 +20,24 @@
     "springfield",
     "story-homes"
   ],
-  "status": "pending_resume"
+  "status": "in_progress",
+  "completedBuilders": [
+    "avant",
+    "bellway",
+    "berkeley-group",
+    "cala",
+    "david-wilson",
+    "hill-group",
+    "robertson-homes"
+  ],
+  "activeBuilder": "miller-homes",
+  "queuedBuilders": [
+    "persimmon",
+    "redrow",
+    "springfield",
+    "story-homes"
+  ],
+  "requiresRepair": {
+    "crest-nicholson": "Rendered plot-list extraction required; unrestricted run collected no galleries."
+  }
 }
