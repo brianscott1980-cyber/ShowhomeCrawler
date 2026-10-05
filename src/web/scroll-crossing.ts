@@ -23,5 +23,5 @@ export function cardTransition(advanced:boolean,direction:number):number {
  return direction>0&&!advanced?1:direction<0&&advanced?-1:0;
 }
 
-/** Builder previews start earlier, before their row reaches the viewport centre. */
-export function carouselTriggerLine(viewportHeight:number,builderCards=false){return viewportHeight*(builderCards?.65:.5);}
+/** Grid previews start when their row reaches the lower viewport trigger line. */
+export function carouselTriggerLine(viewportHeight:number,gridCards=true){return viewportHeight*(gridCards?.7:.5);}

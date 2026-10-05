@@ -5,6 +5,7 @@ import Script from 'next/script';
 import { analyticsSource, analyticsSetup } from '../web/analytics';
 import './globals.css';
 import './results.css';
+import './filter-controls.css';
 import {siteUrl,siteTitle,siteDescription} from '../web/seo';
 import {Navigation} from '../web/navigation';
 import {AccountMenu} from '../web/account-menu';

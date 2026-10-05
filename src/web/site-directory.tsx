@@ -1,10 +1,11 @@
 'use client';
 import {anyBedrooms,bedroomRangeOptions} from './bedroom-range';
 import {priceRangeOptions} from './price-range';
+import {compareDevelopmentPrices} from './development-price-order';
 import {SingleSelectFilter} from './single-select-filter';
 import {MoneyInput} from './money-input';
 import {CardResults} from './card-results';
-import {useDirectoryCounts} from './directory-counts';
+import {usePublishDirectoryMapCards,useDirectoryCounts} from './directory-counts';
 import {DistanceFilter} from './distance-filter';
 import {MultiSelectFilter} from './multi-select-filter';
 import {useLocationRequest} from './location-dialog';
@@ -22,7 +23,7 @@ const SiteMap=lazy(()=>import('./site-map').then(module=>({default:module.SiteMa
 function builderLogo(name:string){const builder=builderRegistry.find(b=>b.name===name);const logo=logos.find(l=>l.slug===builder?.slug);return logo?'/logos/'+logo.file:undefined;}
 import {useUrlFilters} from './url-filters';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
-import {filterSites,type SiteCard,type SiteFilters,type LocationPoint} from './site-filters';
+import {sitePropertyFacet,filterSites,type SiteCard,type SiteFilters,type LocationPoint} from './site-filters';
 import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 const defaults:SiteFilters={developer:'',country:'',region:'',location:'',minPrice:'',maxPrice:'',minBeds:'',maxBeds:'',style:'',radius:''};
 const urlDefaults={...defaults,minBeds:anyBedrooms,maxBeds:anyBedrooms,minPrice:'any',maxPrice:'any',postcode:'',order:'name',view:'',selected:'',lat:'',lng:'',zoom:''};
@@ -111,18 +112,18 @@ export function SiteDirectory({
  const {requestLocation,dialog}=useLocationRequest((location,intent)=>{setPoint(location);setUrlFilters(previous=>({...previous,[intent.key]:intent.value}));});
  useEffect(()=>{setPoint(savedLocation);},[savedLocation]);
  const setOrder=(value:string)=>{if(value==='distance'){void requestLocation(location=>{setPoint(location);setUrlFilters(previous=>({...previous,order:value}));},{key:'order',value});}else setUrlFilters(previous=>({...previous,order:value}));};
- function change(key:keyof SiteFilters,value:string){if(key==='radius'&&value){void requestLocation(location=>{setPoint(location);setFilters(previous=>({...previous,radius:value}));},{key:'radius',value});}else setFilters(previous=>({...previous,[key]:value,...(key==='minBeds'&&value&&value!==anyBedrooms&&previous.maxBeds&&previous.maxBeds!==anyBedrooms&&Number(previous.maxBeds)<Number(value)?{maxBeds:value}:{})}));}
+ function change(key:keyof SiteFilters,value:string){if(key==='radius'&&value){void requestLocation(location=>{setPoint(location);setFilters(previous=>({...previous,radius:value}));},{key:'radius',value});}else setFilters(previous=>({...previous,[key]:value,...(key==='minBeds'&&value&&value!==anyBedrooms&&previous.maxBeds&&previous.maxBeds!==anyBedrooms&&Number(previous.maxBeds)<Number(value)?{maxBeds:value}:{}),...(key==='minPrice'&&value&&value!=='any'&&previous.maxPrice&&previous.maxPrice!=='any'&&Number(previous.maxPrice)<Number(value)?{maxPrice:value}:{}),...(key==='maxPrice'&&value&&value!=='any'&&previous.minPrice&&previous.minPrice!=='any'&&Number(previous.minPrice)>Number(value)?{minPrice:value}:{})}));}
  const invalid=(filters.minPrice!==''&&filters.maxPrice!==''&&Number(filters.minPrice)>Number(filters.maxPrice))||(filters.minBeds!==''&&filters.maxBeds!==''&&Number(filters.minBeds)>Number(filters.maxBeds));
- const matching=useMemo(()=>(invalid?[]:filterSites(cards,filters,point)).sort((a,b)=>order==='distance'&&point?(a.miles??Infinity)-(b.miles??Infinity)||a.name.localeCompare(b.name):a.name.localeCompare(b.name)),[cards,invalid,filters,point,order]);
+ const matching=useMemo(()=>(invalid?[]:filterSites(cards,filters,point)).sort((a,b)=>order==='price-asc'||order==='price-desc'?compareDevelopmentPrices(a,b,filters,order==='price-desc'):order==='distance'&&point?(a.miles??Infinity)-(b.miles??Infinity)||a.name.localeCompare(b.name):order==='name-desc'?b.name.localeCompare(a.name):a.name.localeCompare(b.name)),[cards,invalid,filters,point,order]);
  const visible=mapView&&searchMap&&!mapUnavailable?matching.filter(card=>visibleKeys.includes(card.key)):matching;
  const unmapped=matching.filter(card=>!hasCoordinates(card)).length;
  function selectCard(key:string){setFocusSequence(value=>value+1);selectSite(key);}
  function selectSite(key:string){setUrlFilters(previous=>({...previous,selected:key}));setSheetExpanded(true);requestAnimationFrame(()=>{const card=document.getElementById('site-card-'+key),panel=resultsPanel.current;if(card&&panel){const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(isMobile){card.scrollIntoView({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',inline:'center',block:'nearest'});}else{const rect=card.getBoundingClientRect(),parent=panel.getBoundingClientRect();panel.scrollTo?.({top:panel.scrollTop+rect.top-parent.top-12,behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}}});}
  useEffect(()=>{if(activeKey&&!matching.some(card=>card.key===activeKey))setUrlFilters(previous=>({...previous,selected:''}));},[matching,activeKey]);
  const facet=(key:keyof SiteFilters)=>filterSites(cards,{...filters,[key]:''},point);
- const bedroomDevelopments=filterSites(cards,{...filters,minBeds:'',maxBeds:''},point);
- const bedroomCounts=[...new Set(bedroomDevelopments.flatMap(card=>card.properties.map(property=>property.bedrooms)).filter((count):count is number=>count!==null&&Number.isInteger(count)&&count>0))].sort((a,b)=>a-b);
- const priceProperties=filterSites(cards,{...filters,minPrice:'',maxPrice:''},point).flatMap(card=>card.properties).filter(property=>(!filters.minBeds||(property.bedrooms!==null&&property.bedrooms>=Number(filters.minBeds)))&&(!filters.maxBeds||(property.bedrooms!==null&&property.bedrooms<=Number(filters.maxBeds))));
+ const bedroomProperties=sitePropertyFacet(cards,filters,point,'bedrooms');
+ const bedroomCounts=[...new Set(bedroomProperties.map(property=>property.bedrooms).filter((count):count is number=>count!==null&&Number.isInteger(count)&&count>0))].sort((a,b)=>a-b);
+ const priceProperties=sitePropertyFacet(cards,filters,point,'price');
  const priceRange=priceRangeOptions(priceProperties.map(property=>property.price).filter((price):price is number=>price!==null));
  const minimumPrice=filters.minPrice;
  const maximumPrice=filters.maxPrice;
@@ -132,18 +133,19 @@ export function SiteDirectory({
  useEffect(()=>{if(!mapView)return;const panel=resultsPanel.current;if(!panel)return;const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(!isMobile)return;const grid=panel.querySelector('.collection-grid');if(!grid)return;let timer:ReturnType<typeof setTimeout>;let userScrolled=false;const onPointerDown=()=>{userScrolled=true;};const onScroll=()=>{if(!userScrolled)return;clearTimeout(timer);timer=setTimeout(()=>{const gridRect=grid.getBoundingClientRect();const centerX=gridRect.left+gridRect.width/2;const cards=grid.querySelectorAll<HTMLElement>('.collection-card');let closestKey:string|null=null,minDist=Infinity;cards.forEach(card=>{const rect=card.getBoundingClientRect();const cardCenter=rect.left+rect.width/2;const dist=Math.abs(cardCenter-centerX);if(dist<minDist){minDist=dist;const key=card.id.replace('site-card-','');if(key)closestKey=key;}});userScrolled=false;if(closestKey&&minDist<gridRect.width*0.45){setUrlFilters(prev=>prev.selected===closestKey?prev:({...prev,selected:closestKey!}));}},120);};grid.addEventListener('pointerdown',onPointerDown,{passive:true});grid.addEventListener('scroll',onScroll,{passive:true});return()=>{clearTimeout(timer);grid.removeEventListener('pointerdown',onPointerDown);grid.removeEventListener('scroll',onScroll);};},[mapView,visible.map(c=>c.key).join(',')]);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
  useDirectoryCounts({Developments:visible.length});
+ usePublishDirectoryMapCards(matching);
  return <section aria-label="Filter developments">{dialog}
  <div className="site-filter-panel location-filter-panel">
  <DirectoryFilters className="filters site-filters location-primary-filters" label="Development filters">
   <MultiSelectFilter label="Builders" value={filters.developer} options={developers} onChange={value=>change('developer',value)}/>
   <DistanceFilter label="Within Distance" value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
   <fieldset className="development-range-filter"><legend>Bedrooms range</legend><div>
-   <SingleSelectFilter label="Minimum bedrooms" value={bedroomRange.minValue} options={[{value:'',label:'Any'},...bedroomRange.numbers.map(count=>({value:String(count),label:`${count} ${count===1?'bed':'beds'}`}))]} onChange={value=>change('minBeds',value||anyBedrooms)}/>
+   <SingleSelectFilter label="Minimum bedrooms" value={bedroomRange.minValue} options={[{value:'',label:'Any'},...bedroomRange.minNumbers.map(count=>({value:String(count),label:`${count} ${count===1?'bed':'beds'}`}))]} onChange={value=>change('minBeds',value||anyBedrooms)}/>
    <span aria-hidden="true">–</span>
    <SingleSelectFilter label="Maximum bedrooms" value={bedroomRange.maxValue} options={[{value:'',label:'Any'},...bedroomRange.maxNumbers.map(count=>({value:String(count),label:`${count} ${count===1?'bed':'beds'}`}))]} onChange={value=>change('maxBeds',value||anyBedrooms)}/>
   </div></fieldset>
   <fieldset className="development-range-filter"><legend>Price range (£)</legend><div>
-   <MoneyInput label="Minimum price" value={minimumPrice} options={priceRange.options} onChange={value=>change('minPrice',value||'any')}/>
+   <MoneyInput label="Minimum price" value={minimumPrice} options={priceRange.options.filter(price=>!maximumPrice||price<=Number(maximumPrice))} onChange={value=>change('minPrice',value||'any')}/>
    <span aria-hidden="true">–</span>
    <MoneyInput label="Maximum price" value={maximumPrice} options={priceRange.options.filter(price=>!minimumPrice||price>=Number(minimumPrice))} onChange={value=>change('maxPrice',value||'any')}/>
   </div></fieldset>
@@ -153,7 +155,7 @@ export function SiteDirectory({
  </div>
 <div className="directory-toolbar location-explorer-toolbar">
  <div className="location-view-controls"><ViewOptions view={mapView?'map':view} onChange={changeView} ariaLabel="Developments layout"/><button type="button" className="location-map-toggle" aria-label="Map" aria-pressed={mapView} onClick={()=>{setMapUnavailable(false);setUrlFilters(previous=>({...previous,view:'map'}));}}>▧ <span>Map</span></button></div>
- <div className="development-order"><span>Order by</span><SingleSelectFilter label="Order developments by" value={order} options={[{value:'name',label:'Development name A–Z'},{value:'distance',label:'Nearest first'}]} onChange={setOrder}/></div>
+ <div className="development-order"><span>Order by</span><SingleSelectFilter label="Order developments by" value={order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'},{value:'price-asc',label:'Price Asc'},{value:'price-desc',label:'Price Desc'},{value:'distance',label:'Nearest first'}]} onChange={setOrder}/></div>
  {mapView&&<label className="site-map-search"><input type="checkbox" checked={searchMap} onChange={e=>setSearchMap(e.target.checked)}/> Search as I move</label>}
  </div>
  <div ref={explorerPanel} className={mapView?'site-map-directory location-explorer'+(sheetExpanded?' sheet-expanded':''):'location-directory'}>
@@ -163,7 +165,7 @@ export function SiteDirectory({
  <CardResults className={`collection-grid directory-${mapView?'compact':view}`} label="Developments" identity={JSON.stringify(filters)} paginate={!mapView}>
  {visible.map(card=>{
  const href=card.href??`${basePath}/${card.key}`;
- const content=<><div className="site-preview-photo">{card.image?<ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/>:<div className="development-image-pending">Images not yet available</div>}<>{builderLogo(card.developer)&&<img className="development-builder-logo" style={{background:builderBrand(card.developer)?.logoBackground??'#fff'}} src={builderLogo(card.developer)} alt={`${card.developer} logo`} loading="lazy"/>}</></div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line"><BuilderName name={card.developer}/></p><p className="subtle development-location">{[card.country,card.town].filter(Boolean).join(', ')||'Location unavailable'}</p>{point&&<p className="subtle development-distance">{card.miles===null?'Distance unavailable':`${card.miles.toFixed(1)} miles`}</p>}<dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].join(' · ')||'Not available'}</dd></div></dl><p className="subtle site-image-count">{card.count} {card.count===1?'image':'images'}{card.propertyScope==='Published homes'?' · Published homes only':''}</p></div></>;
+ const content=<><div className="site-preview-photo">{card.image?<ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/>:<div className="development-image-pending">Images not yet available</div>}<>{builderLogo(card.developer)&&<img className="development-builder-logo" style={{background:builderBrand(card.developer)?.logoBackground??'#fff'}} src={builderLogo(card.developer)} alt={`${card.developer} logo`} loading="lazy"/>}</></div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line"><BuilderName name={card.developer}/></p><p className="subtle development-location">{[card.country,card.town].filter(Boolean).join(', ')||'Location unavailable'}{point&&<> · {card.miles===null?'Distance unavailable':`${card.miles.toFixed(1)} miles away`}</>}</p><dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].map(style=><span className="development-style" key={style}>{style}</span>)}</dd></div></dl></div></>;
  const className=`collection-card${activeKey===card.key?' is-map-active':''}${hoverKey===card.key?' is-map-hovered':''}`;
  return <Link id={'site-card-'+card.key} key={card.key} className={className} href={href} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}>{content}</Link>;
  })}

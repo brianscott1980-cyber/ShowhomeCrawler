@@ -97,7 +97,7 @@ def data():
   active=streams.get('ai',{}).get('builder') or control.get('activeBuilder','')
   worker={}
   if re.fullmatch(r'[a-z0-9-]+',active):
-   paths=[p for p in [ROOT/'results'/f'{active}-home-offices/gemini-state.json',ROOT/'results'/f'{active}-unrestricted-scan-20261003/gemini-state.json'] if p.exists()]
+   paths=[p for p in [ROOT/'results'/f'{active}-home-offices/gemini-state.json',ROOT/'results'/f'{active}-unrestricted-scan-20261003/gemini-state.json',ROOT/manifest.get(active,{}).get('folder','results/.cache')/'gemini-state.json'] if p.exists()]
    if paths:
     try:worker=json.loads(max(paths,key=lambda p:p.stat().st_mtime_ns).read_text())
     except (OSError,ValueError):pass

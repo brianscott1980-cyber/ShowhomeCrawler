@@ -1,4 +1,9 @@
 'use client';
+import {RollingCount} from './rolling-count';
+import {SingleSelectFilter} from './single-select-filter';
+import {MoneyInput} from './money-input';
+import {priceRangeOptions} from './price-range';
+import {bedroomRangeOptions} from './bedroom-range';
 import {developmentName} from './development-name';
 import {CardResults} from './card-results';
 import {BreadcrumbBack} from './breadcrumb-back';
@@ -12,7 +17,7 @@ import { ViewOptions, useCardView } from './view-options';
 import { isRoomImage } from '../vision/room-classifier';
 import Link from 'next/link';
 import {useUrlFilters} from './url-filters';
-const galleryDefaults={q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:''};
+const galleryDefaults={q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
 import { heartIcon } from '../reports/gallery-ui';
 
 interface Collection { slug: string; name: string; report: RunReport }
@@ -43,7 +48,7 @@ export function Gallery({
  featured?: boolean;
  overviewOnly?: boolean;
  places?: Record<string,string[]>;
- introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
+ introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; developmentDetails?:ReactNode; developmentLocation?:ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
 }) {
  const [view, changeView] = useCardView('showhome-gallery-view', 'large');
  const [favourites, setFavourites] = useState<string[]>([]);
@@ -140,10 +145,11 @@ export function Gallery({
   return image.verdict?.matches || includeUnclassified;
  });
 
- const homeMatches=(image:(typeof available)[number],home:(typeof available)[number]['homes'][number],f:typeof filters)=>matchesSelection(f.bedrooms,String(home.bedrooms))&&matchesSelection(f.site,home.development)&&matchesSelection(f.development,home.developmentUrl)&&matchesAnySelection(f.location,places?.[`${image.slug}:${home.developmentUrl}`]??[]);
+ const isDevelopment=Boolean(introduction?.developmentDetails);
+ const homeMatches=(image:(typeof available)[number],home:(typeof available)[number]['homes'][number],f:typeof filters)=>(!f.minBeds||(home.bedrooms!==null&&home.bedrooms>=Number(f.minBeds)))&&(!f.maxBeds||(home.bedrooms!==null&&home.bedrooms<=Number(f.maxBeds)))&&(!f.minPrice||(home.price!==null&&home.price>=Number(f.minPrice)))&&(!f.maxPrice||(home.price!==null&&home.price<=Number(f.maxPrice)))&&matchesSelection(f.bedrooms,String(home.bedrooms))&&matchesSelection(f.site,home.development)&&matchesSelection(f.development,home.developmentUrl)&&matchesAnySelection(f.location,places?.[`${image.slug}:${home.developmentUrl}`]??[]);
  const matches=(image:(typeof available)[number],f:typeof filters)=>{
   if(!matchesSelection(f.developer,image.developer))return false;
-  if((f.bedrooms||f.location||f.site||f.development)&&!image.homes.some(home=>homeMatches(image,home,f)))return false;
+  if((f.minBeds||f.maxBeds||f.minPrice||f.maxPrice||f.bedrooms||f.location||f.site||f.development)&&!image.homes.some(home=>homeMatches(image,home,f)))return false;
   if (favouritesOnly && !favourites.includes(image.id)) return false;
   if (!favouritesOnly && !image.verdict?.matches && !includeUnclassified) return false;
   if(!matchesSelection(f.category,image.categorisation?.mainCategory??''))return false;
@@ -173,6 +179,15 @@ export function Gallery({
   return true;
  };
  const images=available.filter(image=>matches(image,filters));
+ const matchingHomes=images.flatMap(image=>image.homes.filter(home=>homeMatches(image,home,filters)).map(home=>({home,slug:image.slug})));
+ const interiorImages=images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&image.verdict?.roomType!=='Exterior');
+ const roomNames=images.map(image=>image.categorisation?.mainCategory??(image.verdict?.matches?(/office|study/i.test(image.verdict.roomType??'')?'Study & Home Office':image.verdict.roomType?.replace(/[_-]/g,' ').replace(/\b\w/g,c=>c.toUpperCase())??'Study & Home Office'):'Uncategorised'));
+ const resultCounts=isDevelopment?{
+  'Building Types':new Set(matchingHomes.filter(({home})=>homeTypeName(home.name)!=='Development gallery').map(({home,slug})=>`${slug}:${homeTypeName(home.name).toLowerCase()}`)).size,
+  'Room Types':new Set(roomNames.filter(name=>!['Exterior','Other','Uncategorised'].includes(name))).size,
+  Interiors:new Set(interiorImages.map(image=>image.uid)).size,
+ }:{'Unique images':images.length,Developments:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.developmentUrl}`)).size,Properties:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.url}`)).size};
+ const displayedCounts=overviewOnly?introduction?.counts??resultCounts:resultCounts;
  const facet=(key:keyof typeof filters)=>available.filter(image=>matches(image,{...filters,[key]:''}));
  const mainCategories=[...new Set(facet('category').map(i=>i.categorisation?.mainCategory).filter((v):v is string=>Boolean(v)))].sort();
  const subCategories=[...new Set(facet('room').map(i=>i.categorisation?.subCategory).filter((v):v is string=>Boolean(v)))].sort();
@@ -182,6 +197,14 @@ export function Gallery({
  const bedroomOptions=[...new Set(facetHomes('bedrooms').map(({home})=>home.bedrooms).filter((n):n is number=>n!==null))].sort((a,b)=>a-b);
  const areaOptions=[...new Set(facetHomes('location').flatMap(({home,slug})=>places?.[`${slug}:${home.developmentUrl}`]??[]))].sort();
  const siteOptions=[...new Set(facetHomes('site').map(({home})=>home.development))].sort();
+
+ const rangeHomes=(range:'bedrooms'|'price')=>{
+  const remaining={...filters,...(range==='bedrooms'?{minBeds:'',maxBeds:''}:{minPrice:'',maxPrice:''})};
+  return available.filter(image=>matches(image,remaining)).flatMap(image=>image.homes.filter(home=>homeMatches(image,home,remaining)));
+ };
+ const bedsRange=bedroomRangeOptions(rangeHomes('bedrooms').map(home=>home.bedrooms).filter((value):value is number=>value!==null),filters.minBeds,filters.maxBeds);
+ const pricesRange=priceRangeOptions(rangeHomes('price').map(home=>home.price).filter((value):value is number=>value!==null));
+ const changeRange=(key:'minBeds'|'maxBeds'|'minPrice'|'maxPrice',value:string)=>setFilters(previous=>({...previous,[key]:value,...(key==='minBeds'&&value&&previous.maxBeds&&Number(value)>Number(previous.maxBeds)?{maxBeds:value}:{}),...(key==='minPrice'&&value&&previous.maxPrice&&Number(value)>Number(previous.maxPrice)?{maxPrice:value}:{}),...(key==='maxPrice'&&value&&previous.minPrice&&Number(value)<Number(previous.minPrice)?{minPrice:value}:{})}));
 
  const current = images.find(i => i.uid === selected);
  const heroImages = images;
@@ -220,16 +243,19 @@ export function Gallery({
  return (
   <section aria-label="Image collection" className={featured ? 'featured-gallery' : undefined}>
    {introduction && <>
-    <section className={`results-hero${introduction.details?' builder-results-hero':introduction.titleAccessory?' development-results-hero':''}`}>
+    <section className={`results-hero${introduction.details?' builder-results-hero':introduction.titleAccessory?` development-results-hero${introduction.developmentDetails?' development-three-column':''}`:''}`}>
      {introduction.details&&introduction.back&&<BreadcrumbBack className="results-back builder-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
      {introduction.titleAccessory&&introduction.back&&<BreadcrumbBack className="results-back development-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
-     <div className="results-hero-copy">
+     {introduction.developmentDetails?<>
+      <div className="results-hero-copy development-logo-column"><h1>{introduction.title}</h1><p>{introduction.description}</p>{introduction.developmentLocation}</div>
+      <div className="development-details-column">{introduction.developmentDetails}</div>
+     </>:<div className="results-hero-copy">
       {!introduction.details&&!introduction.titleAccessory&&introduction.back && <BreadcrumbBack className="results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
       {introduction.eyebrow&&<p className="eyebrow">{introduction.eyebrow}</p>}
       {introduction.titleAccessory?<div className="development-title-row"><h1>{introduction.title}</h1>{introduction.titleAccessory}</div>:<h1>{introduction.title}</h1>}
       <p>{introduction.description}</p>
       {!introduction.details&&<a className="results-cta" href="#collection">Discover the collection ↓</a>}
-     </div>
+     </div>}
      {introduction.details&&<div className="builder-results-details">{introduction.details}</div>}
      {(heroImage||introduction.map) && <div ref={hero} className={`results-hero-photo${selected || pageHidden || heroInteracting || !heroPlaying ? ' is-paused' : ''}${heroInteracting?' is-interacting':''}${!heroPlaying?' is-manually-paused':''}`} onMouseEnter={() => setHeroInteracting(true)} onMouseLeave={restartHeroProgress} onFocus={() => setHeroInteracting(true)} onBlur={event => {
       if (!event.currentTarget.contains(event.relatedTarget)) restartHeroProgress();
@@ -238,6 +264,7 @@ export function Gallery({
      }}>
       {heroId==='builder-map'&&introduction.map?<div className="builder-hero-map">{introduction.map}</div>:heroImage?<><button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
       </>:null}
+      {introduction.developmentDetails&&introduction.titleAccessory&&<div className="development-carousel-logo">{introduction.titleAccessory}</div>}
       <div key={`${heroId==='builder-map'?'builder-map':heroImage?.uid}:${heroTimerVersion}`} className="results-hero-room-type">
        {heroId==='builder-map'?'Developments':heroImage?.categorisation?.subCategory??heroImage?.categorisation?.mainCategory??'Showhome interior'}
       </div>
@@ -248,17 +275,27 @@ export function Gallery({
       <button className="results-arrow results-prev" onClick={() => heroStep(-1)} aria-label="Previous preview image">‹</button>
       <button className="results-arrow results-next" onClick={() => heroStep(1)} aria-label="Next preview image">›</button>
      </div>}
-     {introduction.details&&introduction.counts&&<div className="results-stats builder-results-stats">{Object.entries(introduction.counts).map(([label,count])=><div key={label}><strong>{count.toLocaleString('en-GB')}</strong><span>{label}</span></div>)}</div>}
+     {introduction.details&&introduction.counts&&<div className="results-stats builder-results-stats">{Object.entries(introduction.counts).map(([label,count])=><div key={label}><strong><RollingCount key={count} value={count}/></strong><span>{label}</span></div>)}</div>}
     </section>
-    {!introduction.details&&<div className="results-stats">
-     {introduction.counts?Object.entries(introduction.counts).map(([label,count])=><div key={label}><strong>{count.toLocaleString('en-GB')}</strong><span>{label}</span></div>):<><div><strong>{favouritesOnly && !ready ? '…' : available.length}</strong><span>Unique images</span></div>
-     <div><strong>{sites.length}</strong><span>Developments</span></div>
-     <div><strong>{new Set(available.flatMap(i => i.homes.map(h => `${i.slug}:${h.url}`))).size}</strong><span>Properties</span></div></>}
+    {!introduction.details&&<div className="results-stats" aria-live="polite">
+     {Object.entries(displayedCounts).map(([label,count])=><div key={label}><strong>{favouritesOnly&&!ready?'…':<RollingCount key={count} value={count}/>}</strong><span>{label}</span></div>)}
     </div>}
-    {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : 'Explore the collection'}</h2></div>}
+    {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : isDevelopment?'Explore the development':'Explore the collection'}</h2></div>}
    </>}
    {!overviewOnly&&<>
-   {!featured && <><DirectoryFilters className="filters">
+   {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':undefined}><DirectoryFilters className={isDevelopment?'filters site-filters development-detail-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
+    {isDevelopment?<>
+     <fieldset className="development-range-filter"><legend>Bedrooms Range</legend><div>
+      <SingleSelectFilter label="Minimum bedrooms" value={bedsRange.minValue} options={[{value:'',label:'Any'},...bedsRange.minNumbers.map(value=>({value:String(value),label:`${value} Beds`}))]} onChange={value=>changeRange('minBeds',value)}/>
+      <span aria-hidden="true">–</span>
+      <SingleSelectFilter label="Maximum bedrooms" value={bedsRange.maxValue} options={[{value:'',label:'Any'},...bedsRange.maxNumbers.map(value=>({value:String(value),label:`${value} Beds`}))]} onChange={value=>changeRange('maxBeds',value)}/>
+     </div></fieldset>
+     <fieldset className="development-range-filter"><legend>Price Range (£)</legend><div>
+      <MoneyInput label="Minimum price" value={filters.minPrice} options={pricesRange.options.filter(price=>!filters.maxPrice||price<=Number(filters.maxPrice))} onChange={value=>changeRange('minPrice',value)}/>
+      <span aria-hidden="true">–</span>
+      <MoneyInput label="Maximum price" value={filters.maxPrice} options={pricesRange.options.filter(price=>!filters.minPrice||price>=Number(filters.minPrice))} onChange={value=>changeRange('maxPrice',value)}/>
+     </div></fieldset>
+    </>:<>
     <label>
      Search
      <input
@@ -276,8 +313,9 @@ export function Gallery({
      <MultiSelectFilter label="Areas" value={filters.location} options={areaOptions} onChange={value=>setFilters(previous=>({...previous,location:value}))}/>
      <MultiSelectFilter label="Developments" value={filters.site} options={siteOptions.map(value=>({value,label:developmentName(value)}))} onChange={value=>setFilters(previous=>({...previous,site:value}))}/>
     </>}
-    <button className="results-reset" onClick={() => setFilters(galleryDefaults)}>Clear filters</button>
-   </DirectoryFilters>
+    </>}
+    <button className={isDevelopment?'location-filter-reset':'results-reset'} onClick={() => setFilters(galleryDefaults)}>Reset</button>
+   </DirectoryFilters></div>
 
    <div className="directory-toolbar" style={{ marginTop: 24 }}>
     <ViewOptions view={view} onChange={changeView} ariaLabel="Image card layout" />

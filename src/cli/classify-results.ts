@@ -12,7 +12,7 @@ import { sha256 } from '../galleries/image-hasher.js';
 import { analysisVersion, classifyBatch, verdictSchema } from '../vision/gemini-classifier.js';
 import { writeReport, type RunReport } from '../reports/report.js';
 async function main() {
- const { values } = parseArgs({ options: { 'reuse-model': {type:'string',multiple:true}, 'all-images': {type:'boolean',default:true}, model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
+ const { values } = parseArgs({ options: { 'reuse-model': {type:'string',multiple:true}, 'all-images': {type:'boolean',default:true}, model: {type:'string'}, 'priority-development':{type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
  const folder = values.folder, env = readEnv();
  if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY required.');
  const report: RunReport = JSON.parse(await readFile(folder + '/results.json', 'utf8'));
@@ -33,11 +33,14 @@ async function main() {
  for (const property of report.properties) { property.development = load(property.development).text(); property.name = load(property.name).text(); }
  const lock = await open(folder + '/.lock', 'wx');
  try {
-  const pending = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict);
+  const priorityIds=new Set(report.properties.filter(home=>values['priority-development']&&home.development.toLowerCase().includes(values['priority-development'].toLowerCase())).flatMap(home=>home.imageIds));
+  const pending = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).sort((a,b)=>Number(priorityIds.has(b.id))-Number(priorityIds.has(a.id)));
+  if(priorityIds.size)console.log(JSON.stringify({stage:'priority_development',development:values['priority-development'],images:priorityIds.size}));
   await saveGeminiState(folder,{state:'analysing',model:pool.currentModel,...pool.snapshot()});
   report.metrics.skippedExistingAnalyses=report.images.length-pending.length;
   report.metrics.analysisCacheHits=0;
-  report.status = 'classifying'; await writeReport(folder, report);
+  // Already collected developments remain available while categories are added.
+  report.status = ['completed','completed_with_gaps'].includes(report.status)?'completed_with_gaps':'classifying'; await writeReport(folder, report);
   for (let offset = 0; offset < pending.length; offset += 8) {
    const images = pending.slice(offset, offset + 8);
    const remaining = [];

@@ -9,3 +9,5 @@ it('keeps Any selected after choosing a minimum and offers only valid maxima',()
 it('allows Any for both limits and handles developments without bedroom counts',()=>{
  expect(bedroomRangeOptions([2,3],'any','any').minValue).toBe('');expect(bedroomRangeOptions([],'','').maxValue).toBe('');
 });
+
+it('limits minimum choices to the selected maximum',()=>{expect(bedroomRangeOptions([2,3,4,5],'any','3').minNumbers).toEqual([2,3]);});

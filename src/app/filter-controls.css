@@ -1,0 +1,54 @@
+/* Shared filter design tokens. Page styles own layout, never control typography. */
+:root{--filter-control-height:46px;--filter-font:15px;--filter-label-font:13px;--filter-option-font:14px;--filter-padding:12px;--filter-label-gap:8px}
+.multi-filter,.directory-filter-row .multi-filter{gap:0;font:var(--filter-label-font)/1.4 Arial,Helvetica,sans-serif;letter-spacing:normal;color:var(--muted)}
+.multi-filter>span{display:block;margin-bottom:var(--filter-label-gap);text-transform:capitalize}
+.multi-filter>details{font:var(--filter-font)/1.4 Arial,Helvetica,sans-serif;letter-spacing:normal;color:var(--ink)}
+.multi-filter.single-select-filter{gap:0}
+.multi-filter>details>summary,.directory-filter-row .multi-filter>details>summary,.development-range-filter .single-select-filter>details>summary{height:var(--filter-control-height);min-height:var(--filter-control-height);padding:10px var(--filter-padding);gap:12px;border:1px solid var(--line);border-radius:0;background:#fff;color:var(--ink);font:var(--filter-font)/1.4 Arial,Helvetica,sans-serif;letter-spacing:normal;text-transform:none}
+.multi-filter.has-selection>details>summary{padding-right:52px}
+.multi-filter .filter-clear{margin-top:9px}
+.directory-filter-row .development-range-filter{padding:0;border:0}
+.development-range-filter legend,.development-detail-filter-panel .development-range-filter legend{margin:0 0 var(--filter-label-gap);padding:0;font:var(--filter-label-font)/1.4 Arial,Helvetica,sans-serif;color:var(--muted);letter-spacing:normal;text-transform:capitalize}
+.directory-filter-row.filters>label,.results-page .directory-filter-row.filters>label{font:var(--filter-label-font)/1.4 Arial,Helvetica,sans-serif;letter-spacing:normal;text-transform:capitalize;color:var(--muted);gap:var(--filter-label-gap)}
+.directory-filter-row.filters input:not([type="checkbox"]),.directory-filter-row .development-range-filter .money-input input{height:var(--filter-control-height);min-height:var(--filter-control-height);padding:10px var(--filter-padding);border:1px solid var(--line);border-radius:0;background:#fff;color:var(--ink);font:var(--filter-font)/1.4 Arial,Helvetica,sans-serif;letter-spacing:normal;text-transform:none}
+.directory-filter-row .development-range-filter .money-input input{padding-right:36px}
+.money-input input::placeholder{color:var(--muted);opacity:1}
+.money-input .money-input-toggle{right:8px;width:20px}
+.directory-filter-row .location-filter-reset,.directory-filter-row .results-reset,.development-detail-filter-panel .location-filter-reset{height:var(--filter-control-height);min-height:var(--filter-control-height);padding:10px 16px;border:1px solid var(--line);border-radius:0;background:white;color:var(--ink);font:var(--filter-font)/1.4 Arial,Helvetica,sans-serif;letter-spacing:normal}
+.multi-filter-panel.single-select-options>button,.money-input-options>button,.distance-filter .distance-filter-options>button,.filters .multi-filter-options>label,.results-page .filters .multi-filter-options>label{min-height:40px;padding:10px;font:var(--filter-option-font)/1.4 Arial,Helvetica,sans-serif;letter-spacing:normal;text-transform:none;color:var(--ink);text-decoration:none}
+.multi-filter-panel.single-select-options,.money-input-options,.distance-filter-options{padding:6px}
+.multi-filter-panel,.money-input-options{border:1px solid var(--line);border-radius:0;background:white;box-shadow:0 8px 24px #23342e20}
+.directory-filters-pinned .multi-filter .filter-clear{margin-top:9px}
+
+/* Sticky bars share their surface and spacing regardless of the page layout. */
+.directory-filter-row.directory-filters-pinned,
+.results-page .directory-filter-row.directory-filters-pinned{
+ padding-block:9px 16px;
+ gap:18px;
+ align-items:end;
+ background:var(--paper);
+ border:0;
+ border-bottom:1px solid var(--line);
+ font:var(--filter-font)/1.4 Arial,Helvetica,sans-serif;
+ letter-spacing:normal;
+}
+.directory-filter-row.filters label:has(>input:not([type="checkbox"])){
+ font:var(--filter-label-font)/1.4 Arial,Helvetica,sans-serif;
+ letter-spacing:normal;
+ text-transform:capitalize;
+ gap:var(--filter-label-gap);
+ color:var(--muted);
+}
+.directory-filter-row .directory-drawer-toggle{
+ height:var(--filter-control-height);
+ min-height:var(--filter-control-height);
+ padding:10px 8px;
+ border:1px solid var(--line);
+ border-radius:0;
+ background:white;
+ color:var(--ink);
+}
+@media(max-width:900px){
+ .directory-filter-row.directory-filters-pinned,
+ .results-page .directory-filter-row.directory-filters-pinned{gap:8px}
+}

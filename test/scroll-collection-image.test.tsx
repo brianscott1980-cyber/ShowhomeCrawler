@@ -16,7 +16,7 @@ it('returns to the logo without wrapping when page-bottom and row triggers rever
  const grid=document.createElement('div');grid.className='directory-compact';document.body.append(grid);
  const mounts=Array.from({length:4},(_,column)=>{
   const card=document.createElement('div');card.className='collection-card';grid.append(card);
-  vi.spyOn(card,'getBoundingClientRect').mockImplementation(()=>({top:450-y-(hovered&&column===2?3:0),bottom:850-y-(hovered&&column===2?3:0),left:column*200,right:(column+1)*200,width:200,height:400,x:column*200,y:450-y,toJSON(){}}));
+  vi.spyOn(card,'getBoundingClientRect').mockImplementation(()=>({top:610-y-(hovered&&column===2?3:0),bottom:1010-y-(hovered&&column===2?3:0),left:column*200,right:(column+1)*200,width:200,height:400,x:column*200,y:610-y,toJSON(){}}));
   return {card,root:createRoot(card)};
  });
  const images=[{src:'/logo.svg',alt:'Builder',kind:'logo' as const},{src:'/exterior.jpg',alt:'Exterior'},{src:'/room.jpg',alt:'Room'}];

@@ -32,15 +32,15 @@ it('searches option lists only when there are more than six options',async()=>{
   expect(host.querySelectorAll('input[type=checkbox]')).toHaveLength(1);await act(async()=>host.querySelector<HTMLInputElement>('input[type=checkbox]')!.click());expect(change).toHaveBeenCalledWith('Scotland');
  }finally{await act(async()=>root.unmount());host.remove();}
 });
-it('narrows locations after choosing a region and supports selecting two regions',async()=>{
+it('filters builders by multiple development regions',async()=>{
  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const host=document.createElement('div');document.body.append(host);const root=createRoot(host);
  const cards:DeveloperCard[]=[{slug:'alpha',name:'Alpha',spaces:1,image:'a.jpg',description:'A',locations:[{name:'Leeds',key:'leeds',region:'Yorkshire',latitude:53.8,longitude:-1.5}]},{slug:'beta',name:'Beta',spaces:1,image:'b.jpg',description:'B',locations:[{name:'Edinburgh',key:'edinburgh',region:'Scotland',latitude:55.9,longitude:-3.2}]}];
  const filter=(name:string)=>[...host.querySelectorAll('.multi-filter')].find(node=>node.querySelector(':scope>span')?.textContent===name)!;
  try{
   await act(async()=>root.render(<DeveloperDirectory cards={cards}/>));
-  const choose=async(value:string)=>{const label=[...filter('Regions').querySelectorAll('label')].find(node=>node.querySelector('span')?.textContent===value)!;await act(async()=>label.querySelector<HTMLInputElement>('input')!.click());};
-  await choose('Scotland');expect(host.querySelectorAll('.collection-card')).toHaveLength(1);expect(filter('Developments').textContent).toContain('Edinburgh');expect(filter('Developments').textContent).not.toContain('Leeds');
-  await choose('Yorkshire');expect(host.querySelectorAll('.collection-card')).toHaveLength(2);expect(selectedValues(new URLSearchParams(window.location.search).get('region')!)).toEqual(['Scotland','Yorkshire']);
+  const choose=async(value:string)=>{const label=[...filter('Development Locations').querySelectorAll('label')].find(node=>node.querySelector('span')?.textContent===value)!;await act(async()=>label.querySelector<HTMLInputElement>('input')!.click());};
+  await choose('Scotland');expect(host.querySelectorAll('.collection-card')).toHaveLength(1);expect(host.querySelector('.collection-card')?.textContent).toContain('Beta');
+  await choose('Yorkshire');expect(host.querySelectorAll('.collection-card')).toHaveLength(2);expect(filter('Development Locations').querySelectorAll('input:checked')).toHaveLength(2);expect(filter('Development Locations').querySelector('.multi-filter-selection')?.textContent).toBe('Multiple');expect(window.location.search).toBe('');
  }finally{await act(async()=>root.unmount());host.remove();}
 });
 

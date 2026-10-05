@@ -1,12 +1,13 @@
 'use client';
 import {CardResults} from './card-results';
+import {SingleSelectFilter} from './single-select-filter';
 import {useDirectoryCounts} from './directory-counts';
 import {MultiSelectFilter} from './multi-select-filter';
 import {matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
 import {useUrlFilters} from './url-filters';
-const filterDefaults={developer:'',bedrooms:'',location:'',site:'',type:''};
+const filterDefaults={developer:'',bedrooms:'',location:'',site:'',type:'',order:'name'};
 import {matchesBuildingPlace,type BuildingPlace} from './building-place-filter';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import Link from 'next/link';
@@ -68,7 +69,7 @@ export function GroupCards({
  const locationOptions=[...new Set(facet('location').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'location')).flatMap(place=>place.locations)))].sort();
  const siteOptions=[...new Set(facet('site').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'site')).map(place=>place.site)))].sort();
  const typeOptions=[...new Set(facet('type').map(c=>c.name))].sort();
- const visible=cards.filter(card=>matches(card));
+ const visible=cards.filter(card=>matches(card)).sort((a,b)=>filters.order==='name-desc'?b.name.localeCompare(a.name):a.name.localeCompare(b.name));
 
  const rooms=visible.filter(card=>!['Exterior','Uncategorised'].includes(card.name));
  const matchingPlaces=visible.flatMap(card=>(card.places??[]).filter(place=>placeMatches(card,place)));
@@ -92,7 +93,7 @@ export function GroupCards({
        <button
         type="button"
         onClick={resetFilters}
-        style={{alignSelf: 'end', height: 46, padding: '0 16px', background: 'transparent', border: '1px solid var(--line)', cursor: 'pointer'}}
+        className="location-filter-reset"
        >
         Reset
        </button>
@@ -102,9 +103,7 @@ export function GroupCards({
    )}
    <div className="directory-toolbar">
     <ViewOptions view={view} onChange={changeView} ariaLabel={`${kindLabel} layout`} />
-    <p className="count" style={{margin:0}} aria-live="polite">
-     {hasActiveFilters ? `${visible.length} of ${cards.length} ${kindLabel.toLowerCase()}` : `${cards.length} ${kindLabel.toLowerCase()}`}
-    </p>
+    <div className="sort-control"><span>Order by</span><SingleSelectFilter label={`Order ${kindLabel.toLowerCase()} by`} value={filters.order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'}]} onChange={order=>setFilters(previous=>({...previous,order}))}/></div>
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)}>
     {visible.map(card => (

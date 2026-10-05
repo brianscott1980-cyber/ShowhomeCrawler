@@ -4,7 +4,7 @@ const builderNames=new Set(developers.flatMap(builder=>[
  builder.name.toLowerCase(),
  builder.name.toLowerCase().replace(/\s+homes$/, ''),
  `${builder.name.toLowerCase()} homes`,
-]).concat(['barrat','barrat homes']));
+]).concat(['barrat','barrat homes','dwh']));
 
 /** Remove builder prefixes and comma-separated location qualifiers for display. */
 export function developmentName(name:string):string {

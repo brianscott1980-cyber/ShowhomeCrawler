@@ -10,7 +10,7 @@ function measureCards(){
  const measurements=new Map<HTMLElement,Measurement>();
  const grids=new Set([...entries].map(entry=>entry.element.parentElement).filter((grid):grid is HTMLElement=>Boolean(grid)));
  for(const grid of grids){
-  const midpoint=carouselTriggerLine(window.innerHeight,Boolean(grid.querySelector('.builder-card')));
+  const midpoint=carouselTriggerLine(window.innerHeight,!grid.classList.contains('directory-list'));
   // Include static one-image cards so their position still occupies a column in the row.
   const cards=[...grid.children].filter((child):child is HTMLElement=>child instanceof HTMLElement&&child.classList.contains('collection-card'))
    .map(element=>({element,edges:element.getBoundingClientRect(),rowTop:element.offsetTop})).sort((a,b)=>a.rowTop-b.rowTop||a.edges.left-b.edges.left);

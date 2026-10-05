@@ -6,6 +6,8 @@ describe('development display names',()=>{
   ["Aylett's Green, Kelvedon, Essex", "Aylett's Green"],
   ['Barratt Homes @ Alconbury Weald','Alconbury Weald'],
   ['Barrat @ West Craigs','West Craigs'],
+  ['DWH @ Eaglesham View','Eaglesham View'],
+  ['DWH at Eaglesham View, Glasgow','Eaglesham View'],
   ['Barrat at Overstone Gate','Overstone Gate'],
   ['CALA Homes at Oak Place, Essex','Oak Place'],
   ['David Wilson Homes @ Oak Place','Oak Place'],

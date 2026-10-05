@@ -12,13 +12,21 @@ export function filterSites(cards:SiteCard[],filters:SiteFilters,point:LocationP
  if(filters.radius&&point&&(card.miles===null||card.miles>Number(filters.radius)))return false;
  const active=filters.minPrice||filters.maxPrice||filters.minBeds||filters.maxBeds||filters.style;
  return !active||card.properties.some(p=>{
-  if(filters.minPrice&&(p.price===null||p.price<Number(filters.minPrice)))return false;
-  if(filters.maxPrice&&(p.price===null||p.price>Number(filters.maxPrice)))return false;
-  if(filters.minBeds&&(p.bedrooms===null||p.bedrooms<Number(filters.minBeds)))return false;
-  if(filters.maxBeds&&(p.bedrooms===null||p.bedrooms>Number(filters.maxBeds)))return false;
-  return matchesSelection(filters.style,p.style??'Unknown');
+  return matchesSiteProperty(p,filters);
  });
 });}
+export function matchesSiteProperty(property:SiteProperty,filters:SiteFilters){
+  if(filters.minPrice&&(property.price===null||property.price<Number(filters.minPrice)))return false;
+  if(filters.maxPrice&&(property.price===null||property.price>Number(filters.maxPrice)))return false;
+  if(filters.minBeds&&(property.bedrooms===null||property.bedrooms<Number(filters.minBeds)))return false;
+  if(filters.maxBeds&&(property.bedrooms===null||property.bedrooms>Number(filters.maxBeds)))return false;
+  return matchesSelection(filters.style,property.style??'Unknown');
+}
+/** Facets use the same matching homes as results, ignoring only their own range. */
+export function sitePropertyFacet(cards:SiteCard[],filters:SiteFilters,point:LocationPoint|null,range:'bedrooms'|'price'){
+ const remaining={...filters,...(range==='bedrooms'?{minBeds:'',maxBeds:''}:{minPrice:'',maxPrice:''})};
+ return filterSites(cards,remaining,point).flatMap(card=>card.properties).filter(property=>matchesSiteProperty(property,remaining));
+}
 export function propertyStyle(type:string|null,detached:boolean|null,name?:string|null):string|null{
  if(type){
   if(/semi[ -]?detached/i.test(type))return 'Semi-detached';
