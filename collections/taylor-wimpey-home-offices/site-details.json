@@ -220,11 +220,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 585000,
-        "bedrooms": 4,
-        "style": "Semi-detached"
-      },
-      {
         "price": 690000,
         "bedrooms": 4,
         "style": "Detached"
@@ -958,11 +953,6 @@
         "price": 680000,
         "bedrooms": 4,
         "style": "Detached"
-      },
-      {
-        "price": 770000,
-        "bedrooms": 5,
-        "style": "Detached"
       }
     ]
   },
@@ -982,18 +972,8 @@
         "style": "Semi-detached"
       },
       {
-        "price": 395000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
         "price": 405000,
         "bedrooms": 3,
-        "style": "Detached"
-      },
-      {
-        "price": 500000,
-        "bedrooms": 4,
         "style": "Detached"
       },
       {
@@ -1466,11 +1446,6 @@
         "price": 445000,
         "bedrooms": 4,
         "style": "Detached"
-      },
-      {
-        "price": 449500,
-        "bedrooms": 4,
-        "style": "Detached"
       }
     ]
   },
@@ -1488,6 +1463,11 @@
         "price": 189995,
         "bedrooms": 2,
         "style": "Attached / terraced"
+      },
+      {
+        "price": 229995,
+        "bedrooms": 3,
+        "style": "Semi-detached"
       },
       {
         "price": 229995,
@@ -2134,12 +2114,12 @@
       {
         "price": 300000,
         "bedrooms": 3,
-        "style": "Attached / terraced"
+        "style": "Semi-detached"
       },
       {
         "price": 300000,
         "bedrooms": 3,
-        "style": "Semi-detached"
+        "style": "Attached / terraced"
       },
       {
         "price": 400000,
@@ -2627,11 +2607,6 @@
         "style": "Detached"
       },
       {
-        "price": 395000,
-        "bedrooms": 4,
-        "style": "Detached"
-      },
-      {
         "price": 397000,
         "bedrooms": 4,
         "style": "Detached"
@@ -2670,11 +2645,6 @@
       },
       {
         "price": 257000,
-        "bedrooms": 2,
-        "style": "Apartment"
-      },
-      {
-        "price": 260000,
         "bedrooms": 2,
         "style": "Apartment"
       },
@@ -2744,6 +2714,11 @@
         "price": 300000,
         "bedrooms": 3,
         "style": "Semi-detached"
+      },
+      {
+        "price": 335000,
+        "bedrooms": 3,
+        "style": "Detached"
       },
       {
         "price": 395000,
@@ -3175,11 +3150,6 @@
     "scope": "Advertised homes",
     "properties": [
       {
-        "price": 435000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
         "price": 565000,
         "bedrooms": 4,
         "style": "Detached"
@@ -3417,12 +3387,12 @@
       {
         "price": 340000,
         "bedrooms": 3,
-        "style": "Attached / terraced"
+        "style": "Semi-detached"
       },
       {
         "price": 340000,
         "bedrooms": 3,
-        "style": "Semi-detached"
+        "style": "Attached / terraced"
       },
       {
         "price": 375000,
@@ -4355,12 +4325,12 @@
       {
         "price": 298995,
         "bedrooms": 3,
-        "style": "Semi-detached"
+        "style": "Attached / terraced"
       },
       {
         "price": 298995,
         "bedrooms": 3,
-        "style": "Attached / terraced"
+        "style": "Semi-detached"
       },
       {
         "price": 317995,
@@ -4454,12 +4424,12 @@
       {
         "price": 375000,
         "bedrooms": 3,
-        "style": "Attached / terraced"
+        "style": "Semi-detached"
       },
       {
         "price": 375000,
         "bedrooms": 3,
-        "style": "Semi-detached"
+        "style": "Attached / terraced"
       },
       {
         "price": 385000,
@@ -4519,11 +4489,6 @@
     "scope": "Advertised homes",
     "properties": [
       {
-        "price": 565000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
         "price": 575000,
         "bedrooms": 3,
         "style": "Semi-detached"
@@ -4551,11 +4516,6 @@
       {
         "price": 665000,
         "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
-        "price": 675000,
-        "bedrooms": 4,
         "style": "Semi-detached"
       },
       {
@@ -5066,11 +5026,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 300000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
         "price": 320000,
         "bedrooms": 3,
         "style": "Semi-detached"
@@ -5500,11 +5455,6 @@
         "style": "Apartment"
       },
       {
-        "price": 520000,
-        "bedrooms": 2,
-        "style": "Apartment"
-      },
-      {
         "price": 524000,
         "bedrooms": 2,
         "style": "Apartment"
@@ -5689,11 +5639,6 @@
       {
         "price": 485000,
         "bedrooms": 4,
-        "style": "Detached"
-      },
-      {
-        "price": 565000,
-        "bedrooms": 5,
         "style": "Detached"
       },
       {
@@ -6147,11 +6092,6 @@
         "style": "Detached"
       },
       {
-        "price": 440000,
-        "bedrooms": 4,
-        "style": "Detached"
-      },
-      {
         "price": 475000,
         "bedrooms": 4,
         "style": "Detached"
@@ -6194,11 +6134,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 310000,
-        "bedrooms": 3,
-        "style": "Attached / terraced"
-      },
-      {
         "price": 317000,
         "bedrooms": 3,
         "style": "Semi-detached"
@@ -6227,11 +6162,6 @@
         "price": 410000,
         "bedrooms": 4,
         "style": "Semi-detached"
-      },
-      {
-        "price": 425000,
-        "bedrooms": 4,
-        "style": "Detached"
       },
       {
         "price": 475000,
@@ -6407,11 +6337,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 313500,
-        "bedrooms": 2,
-        "style": "Semi-detached"
-      },
-      {
         "price": 379995,
         "bedrooms": 3,
         "style": "Semi-detached"
@@ -6529,16 +6454,6 @@
         "price": 268000,
         "bedrooms": 2,
         "style": "Attached / terraced"
-      },
-      {
-        "price": 320000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
-        "price": 320000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
       },
       {
         "price": 325000,
@@ -7583,11 +7498,6 @@
     "scope": "Advertised homes",
     "properties": [
       {
-        "price": 399995,
-        "bedrooms": 2,
-        "style": "Semi-detached"
-      },
-      {
         "price": 449995,
         "bedrooms": 3,
         "style": "Attached / terraced"
@@ -7637,11 +7547,6 @@
       {
         "price": 500000,
         "bedrooms": 3,
-        "style": null
-      },
-      {
-        "price": 500000,
-        "bedrooms": 3,
         "style": "Semi-detached"
       },
       {
@@ -7681,11 +7586,6 @@
     "country": "England",
     "scope": "Advertised homes",
     "properties": [
-      {
-        "price": 330000,
-        "bedrooms": 3,
-        "style": "Detached"
-      },
       {
         "price": 340000,
         "bedrooms": 3,
@@ -7751,11 +7651,6 @@
       {
         "price": 260000,
         "bedrooms": 2,
-        "style": "Semi-detached"
-      },
-      {
-        "price": 285000,
-        "bedrooms": 3,
         "style": "Semi-detached"
       },
       {
@@ -7868,11 +7763,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 325000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
         "price": 385000,
         "bedrooms": 4,
         "style": "Detached"
@@ -7920,11 +7810,6 @@
         "style": "Detached"
       },
       {
-        "price": 815000,
-        "bedrooms": 5,
-        "style": "Detached"
-      },
-      {
         "price": 830000,
         "bedrooms": 5,
         "style": "Detached"
@@ -7968,11 +7853,6 @@
       },
       {
         "price": 350000,
-        "bedrooms": 3,
-        "style": "Detached"
-      },
-      {
-        "price": 365000,
         "bedrooms": 3,
         "style": "Detached"
       },
@@ -8307,11 +8187,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 349950,
-        "bedrooms": 3,
-        "style": "Detached"
-      },
-      {
         "price": 365000,
         "bedrooms": 3,
         "style": "Detached"
@@ -8464,11 +8339,6 @@
       },
       {
         "price": 375000,
-        "bedrooms": 4,
-        "style": "Detached"
-      },
-      {
-        "price": 405000,
         "bedrooms": 4,
         "style": "Detached"
       },
@@ -8777,11 +8647,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 279995,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
         "price": 284995,
         "bedrooms": 3,
         "style": "Semi-detached"
@@ -8798,11 +8663,6 @@
       },
       {
         "price": 320995,
-        "bedrooms": 4,
-        "style": "Detached"
-      },
-      {
-        "price": 344995,
         "bedrooms": 4,
         "style": "Detached"
       },
@@ -8887,6 +8747,11 @@
         "price": 590000,
         "bedrooms": 5,
         "style": "Detached"
+      },
+      {
+        "price": 590000,
+        "bedrooms": 5,
+        "style": "Detached"
       }
     ]
   },
@@ -8935,17 +8800,17 @@
       {
         "price": 305995,
         "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 305995,
+        "bedrooms": 3,
+        "style": "Detached"
+      },
+      {
+        "price": 305995,
+        "bedrooms": 3,
         "style": "Semi-detached"
-      },
-      {
-        "price": 305995,
-        "bedrooms": 3,
-        "style": "Detached"
-      },
-      {
-        "price": 305995,
-        "bedrooms": 3,
-        "style": "Detached"
       },
       {
         "price": 382995,
@@ -9110,11 +8975,6 @@
     "country": "England",
     "scope": "Advertised homes",
     "properties": [
-      {
-        "price": 304995,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
       {
         "price": 304995,
         "bedrooms": 3,
@@ -9307,11 +9167,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 369995,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
-      {
         "price": 384995,
         "bedrooms": 4,
         "style": "Semi-detached"
@@ -9320,11 +9175,6 @@
         "price": 389995,
         "bedrooms": 4,
         "style": "Semi-detached"
-      },
-      {
-        "price": 389995,
-        "bedrooms": 3,
-        "style": "Detached"
       },
       {
         "price": 391995,
@@ -9513,11 +9363,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 460000,
-        "bedrooms": 4,
-        "style": "Detached"
-      },
-      {
         "price": 480000,
         "bedrooms": 4,
         "style": "Detached"
@@ -9581,11 +9426,6 @@
     "country": "England",
     "scope": "Advertised homes",
     "properties": [
-      {
-        "price": 315000,
-        "bedrooms": 3,
-        "style": "Semi-detached"
-      },
       {
         "price": 315000,
         "bedrooms": 3,
@@ -9696,11 +9536,6 @@
         "style": "Semi-detached"
       },
       {
-        "price": 440000,
-        "bedrooms": 4,
-        "style": "Semi-detached"
-      },
-      {
         "price": 575000,
         "bedrooms": 4,
         "style": "Detached"
@@ -9724,13 +9559,13 @@
       },
       {
         "price": 450000,
-        "bedrooms": 3,
-        "style": "Attached / terraced"
+        "bedrooms": 4,
+        "style": "Semi-detached"
       },
       {
         "price": 450000,
-        "bedrooms": 4,
-        "style": "Semi-detached"
+        "bedrooms": 3,
+        "style": "Attached / terraced"
       },
       {
         "price": 465000,
@@ -9744,17 +9579,12 @@
       },
       {
         "price": 485000,
-        "bedrooms": 3,
+        "bedrooms": 4,
         "style": "Detached"
       },
       {
         "price": 485000,
-        "bedrooms": 4,
-        "style": "Detached"
-      },
-      {
-        "price": 490000,
-        "bedrooms": 4,
+        "bedrooms": 3,
         "style": "Detached"
       },
       {
