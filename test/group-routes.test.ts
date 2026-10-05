@@ -10,7 +10,7 @@ describe('Readable result routes', () => {
   expect([...groupRoutes('buildings', groups).values()]).toEqual(['/buildings/bellway/thesunningdale', '/buildings/cala/thesunningdale']);
  });
  it('uses readable location and interior names', () => {
-  expect(groupRoutes('locations', [group('hash', 'persimmon', 'Abbot Walk')]).get('hash')).toBe('/locations/persimmon/abbotwalk');
+  expect(groupRoutes('locations', [group('hash', 'persimmon', 'Abbot Walk')]).get('hash')).toBe('/developments/persimmon/abbotwalk');
   expect(groupRoutes('interiors', [group('hash', 'bellway', 'Study & Home Office')]).get('hash')).toBe('/interiors/studyhomeoffice');
   expect(routeSlug('Éden’s Place')).toBe('edensplace');
  });

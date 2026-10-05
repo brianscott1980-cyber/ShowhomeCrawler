@@ -162,3 +162,49 @@ body:has(.location-explorer) .directory-intro-heading>p{font-size:14px;margin:8p
 .more-pressure-outline{fill:none;stroke:currentColor;stroke-width:1.5;opacity:.6}
 .more-pressure-fill{fill:currentColor;transform-origin:12px 12px;transition:transform .12s ease}
 @media(prefers-reduced-motion:reduce){.more-pressure,.more-pressure-fill{transition:none}}
+
+.development-range-filter{margin:0;padding:0;border:0;min-width:0}
+.development-range-filter legend{padding:0;margin:0 0 10px;font-size:12px;color:var(--muted)}
+.development-range-filter>div{display:flex;align-items:center;gap:8px}
+.development-range-filter input{flex:1;width:0;min-width:0}
+.development-order{display:flex;align-items:center;gap:10px;font-size:13px}
+.development-order select{max-width:230px}
+.location-primary-filters{grid-template-columns:repeat(4,minmax(0,1fr)) auto}
+@media(max-width:900px){.location-primary-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.development-order{flex-wrap:wrap}.location-explorer-toolbar{flex-wrap:wrap}}
+@media(max-width:620px){.location-primary-filters{grid-template-columns:minmax(0,1fr) auto}}
+
+.development-range-filter select{flex:1;width:0;min-width:0}
+
+/* Raise the entire filter stacking context while a menu is open. */
+.site-filter-panel:has(.multi-filter>details[open]),.builder-filter-panel:has(.multi-filter>details[open]){z-index:1000}
+.builder-filter-panel:has(.multi-filter>details[open]){position:relative}
+.directory-filter-row:has(.multi-filter>details[open]){z-index:1001}
+.directory-filter-row:not(.directory-filters-pinned):has(.multi-filter>details[open]){position:relative}
+.multi-filter:has(>details[open]){z-index:1002}
+.multi-filter>details[open],.multi-filter-panel{z-index:1003}
+.multi-filter:has(>details[open]) .filter-clear{z-index:1004}
+
+.directory-filter-row .development-range-filter{flex:20 1 0;min-width:180px}
+.development-range-filter>div{width:100%;min-width:0}
+.directory-filter-row .development-range-filter select{flex:1 1 0;width:100%;min-width:76px;padding-left:10px;padding-right:28px;color:var(--ink);text-overflow:clip;background-position:right 8px center}
+.directory-filter-row .development-range-filter input{flex:1 1 0;width:100%;min-width:0}
+@media(min-width:901px) and (max-width:1150px){.directory-filter-row.location-primary-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto}.location-primary-filters .development-range-filter{min-width:0}}
+.directory-filter-drawer .development-range-filter{min-width:0;width:100%}
+
+.money-input{position:relative;flex:1 1 0;min-width:0}
+.directory-filter-row .development-range-filter .money-input input{width:100%;padding-left:10px;padding-right:28px}
+.money-input-toggle{position:absolute;right:4px;top:0;bottom:0;display:grid;place-items:center;width:24px;min-height:0!important;padding:0!important;background:none!important;border:0!important;color:var(--ink);cursor:pointer}
+.money-input-options{position:absolute;top:calc(100% + 6px);right:0;width:max(100%,160px);max-height:260px;overflow:auto;background:white;border:1px solid var(--line);box-shadow:0 8px 24px #23342e20;padding:6px;z-index:1003}
+.money-input-options button{display:block;width:100%;padding:10px;border:0;background:white;text-align:left;color:var(--ink);cursor:pointer}
+.money-input-options button:hover,.money-input-options button:focus-visible,.money-input-options button[aria-selected=true]{background:var(--paper)}
+.money-input-error{display:block;font-size:11px;color:#a52a2a;margin-top:6px}
+.site-filter-panel:has(.money-input-options){z-index:1000}
+.directory-filter-row:has(.money-input-options){z-index:1001}
+.directory-filter-row:not(.directory-filters-pinned):has(.money-input-options){position:relative}
+.money-input:has(.money-input-options){z-index:1002}
+
+.location-explorer-toolbar .location-view-controls{order:1}
+.location-explorer-toolbar .site-map-search{order:2}
+.location-explorer-toolbar .development-order{order:3;margin-left:auto;justify-content:flex-end}
+
+.development-image-pending{display:grid;place-items:center;min-height:220px;height:100%;background:var(--paper);color:var(--muted);font-size:14px;text-align:center;padding:20px}

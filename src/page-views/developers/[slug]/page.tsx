@@ -22,7 +22,7 @@ async function collection(slug: string) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
  const { slug } = await params;
  const { developer, report } = await collection(slug);
- const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : i.verdict?.matches) ?? [];
+ const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : (i.verdict?.matches??true)) ?? [];
  const title = `${developer.name} Showhome Ideas | Showhome Explorer`;
  const description = `Explore ${images.length} ${developer.name} showhome photographs for home inspiration. Discover house types, developments and individual plot details.`;
  const image = images[0] ? absoluteUrl(assetUrl(slug, images[0].path)) : undefined;
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
  const { slug } = await params;
  const { developer, report } = await collection(slug);
- const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : i.verdict?.matches) ?? [];
+ const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : (i.verdict?.matches??true)) ?? [];
  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${developer.name} Showhome Ideas`, url: absoluteUrl(`/builders/${slug}`),
   mainEntity: { '@type': 'ItemList', numberOfItems: images.length, itemListElement: images.map((image, index) => ({ '@type': 'ListItem', position: index + 1,
    item: { '@type': 'ImageObject', contentUrl: absoluteUrl(assetUrl(slug, image.path)), caption: image.verdict?.description ?? 'Showhome interior' } })) } };
@@ -58,7 +58,7 @@ export default async function Page({ params }: Props) {
   return image;
  }
  const destinations=[
-  {path:'locations',label:'View developments',count:locations.length,unit:'developments',image:preview(developmentImages,true)},
+  {path:'developments',label:'View developments',count:locations.length,unit:'developments',image:preview(developmentImages,true)},
   {path:'buildings',label:'View building types',count:buildingGroups.length,unit:'building types',image:preview(buildingImages,true)},
   {path:'interiors',label:'View interiors',count:new Set(interiorImages.map(image=>image.id)).size,unit:'interiors',image:preview(interiorImages)},
  ];
@@ -70,7 +70,7 @@ export default async function Page({ params }: Props) {
   back={{ href: '/builders', label: '← All builders' }} collections={report ? [{ slug, name: developer.name, report }] : []} includeUnclassified>
   <div className="results-heading builder-explore-heading"><h2>Explore {developer.name}</h2></div>
   <nav className="builder-navigation" aria-label={`Explore ${developer.name}`}>
-   {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}?developer=${encodeURIComponent(developer.name)}`}>
+   {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}`} data-filters={JSON.stringify({developer:developer.name})}>
     {destination.image?<img src={assetUrl(slug,destination.image.path)} alt="" loading="lazy"/>:<div className="builder-navigation-placeholder">{developer.name}</div>}
     <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
    </Link>)}

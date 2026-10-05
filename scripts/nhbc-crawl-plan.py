@@ -25,6 +25,9 @@ def main():
         else:unverified.append({'slug':slug,'brand':name,'status':'no_public_register_name_match'})
     pending=[{**row,'status':'website_and_adapter_research_required'} for row in snapshot['builders'] if (row['name'].strip(),row['county']) not in matched]
     plan={'source':snapshot['source'],'retrievedAt':snapshot['retrievedAt'],'publicRegistrationCount':len(snapshot['builders']),'method':'Name-based brand aliases; legal entities are retained separately. Missing public matches are not evidence of unregistered status.','supportedBrands':supported,'unmatchedExistingBrands':unverified,'pendingRegistrations':pending}
+    requests_path=ROOT/'docs/builder-crawl-requests.json'
+    requests=json.loads(requests_path.read_text()).get('builders',[]) if requests_path.exists() else []
+    plan['requestedBrands']=[{**builder,'registrationEvidence':[row for row in snapshot['builders'] if matches(row['name'],[builder['name']])]} for builder in requests]
     (ROOT/'docs/nhbc-builder-crawl-plan.json').write_text(json.dumps(plan,indent=2)+'\n')
     slugs={row['slug'] for row in supported}
     original=(ROOT/'docs/builder-recrawl-order.txt').read_text().splitlines()

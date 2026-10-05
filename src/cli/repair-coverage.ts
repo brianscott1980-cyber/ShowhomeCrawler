@@ -16,7 +16,7 @@ async function main() {
    try {
    const cached=`results/.cache/pages/${sha256(development.url)}.html`;
    const html=await readFile(cached,'utf8').catch(()=>client.text(development.url)), result=discoverHomes(html,development.url);
-   const qualifying=result.homes.filter(p=>(p.bedrooms??0)>=5);
+   const qualifying=result.homes;
    if(qualifying.some(p=>!report.properties.some(existing=>existing.url===p.url))) throw new Error('Repair found new qualifying work; rerun crawler.');
    const $=load(html); $('[wire\\:initial-data]').removeAttr('wire:initial-data'); $('script').not('[type="application/ld+json"], [type="application/json"]').remove(); $('input[type="hidden"]').remove();
    await writeFile(`results/.cache/pages/${sha256(development.url)}.html`,$.html());

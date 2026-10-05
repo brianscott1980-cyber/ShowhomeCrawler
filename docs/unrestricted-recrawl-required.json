@@ -1,0 +1,24 @@
+{
+  "reason": "Published collection still limited to five-plus-bedroom homes; fresh discovery required",
+  "restrictions": {
+    "bedrooms": null,
+    "prices": null,
+    "roomTypes": null
+  },
+  "builders": [
+    "avant",
+    "bellway",
+    "berkeley-group",
+    "cala",
+    "crest-nicholson",
+    "david-wilson",
+    "hill-group",
+    "miller-homes",
+    "persimmon",
+    "redrow",
+    "robertson-homes",
+    "springfield",
+    "story-homes"
+  ],
+  "status": "pending_resume"
+}

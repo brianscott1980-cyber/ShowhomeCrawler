@@ -1,0 +1,40 @@
+{
+  "builders": [
+    {
+      "slug": "barwood-homes",
+      "name": "Barwood Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified"
+    },
+    {
+      "slug": "bewley-homes",
+      "name": "Bewley Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified"
+    },
+    {
+      "slug": "cavanna-homes",
+      "name": "Cavanna Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified"
+    },
+    {
+      "slug": "cruden-homes",
+      "name": "Cruden Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified"
+    },
+    {
+      "slug": "davidsons-homes",
+      "name": "Davidsons Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified"
+    },
+    {
+      "slug": "edenstone-homes",
+      "name": "Edenstone Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified"
+    }
+  ]
+}

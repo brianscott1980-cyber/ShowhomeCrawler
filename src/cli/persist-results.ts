@@ -19,7 +19,7 @@ async function main() {
   const site = builderSite(report.builder?.slug); const { discoverHomes } = site;
   const repo = new PostgresCatalogRepository(sql, site);
   const [builder] = await sql`insert into builders(name,slug,website_url) values (${site.name},${site.slug},${site.websiteUrl}) on conflict(slug) do update set name=excluded.name returning id`;
-  const [job] = await sql`insert into crawl_jobs(builder_id, started_at, status, filter_config) values (${builder!.id}, ${report.startedAt}, 'running', ${sql.json({ minBedrooms: 5, imageQuestion: report.question })}) returning id`;
+  const [job] = await sql`insert into crawl_jobs(builder_id, started_at, status, filter_config) values (${builder!.id}, ${report.startedAt}, 'running', ${sql.json({ imageQuestion: report.question, analysisVersion: report.analysisVersion ?? null })}) returning id`;
   try {
    persistenceStage = 'catalogue';
    await mapLimit(report.developments.filter(dev => dev.status !== 'failed'), 3, async dev => {

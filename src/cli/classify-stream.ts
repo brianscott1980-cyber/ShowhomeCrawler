@@ -11,7 +11,7 @@ import { sha256 } from '../galleries/image-hasher.js';
 import { analysisVersion, classifyBatch, verdictSchema } from '../vision/gemini-classifier.js';
 import type { RunReport } from '../reports/report.js';
 async function main() {
- const { values } = parseArgs({ options: { 'reuse-model':{type:'string',multiple:true}, 'all-images':{type:'boolean'}, model:{type:'string'}, folder: { type: 'string' } } });
+ const { values } = parseArgs({ options: { 'reuse-model':{type:'string',multiple:true}, 'all-images':{type:'boolean',default:true}, model:{type:'string'}, folder: { type: 'string' } } });
  const folder = values.folder; if (!folder?.startsWith('results/') || folder.includes('..')) throw new Error('Local result folder required.');
  const env = readEnv(); if (!env.GEMINI_API_KEY) throw new Error('Gemini key required.');
  let stopped = false;
@@ -67,7 +67,7 @@ async function main() {
       await saveGeminiState(folder,{state:'quota_wait',model:pool.currentModel,...pool.snapshot(),httpStatus:429,retryAt:new Date(Date.now()+delaySeconds*1000).toISOString()});
       for (let s = 0; s < delaySeconds && !stopped; s += 10) await sleep(Math.min(10, delaySeconds - s) * 1000);
       attempt--; // Quota waits do not consume transient-error retries.
-continue;
+      continue;
      }
      if (attempt >= 3 && !status) {
       answers = [];

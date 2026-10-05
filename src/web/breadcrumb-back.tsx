@@ -11,6 +11,8 @@ export function BreadcrumbBack({href,children,className}:{href:string;children:R
   try {setSource(rememberedPageSource(window.sessionStorage,pathname,window.location.origin));}catch{setSource(null);}
  },[pathname]);
  const target=source??href.replace(/\?[^#]*/, '');
+ const directoryLabels:Record<string,string>={'/builders':'builders','/developments':'developments','/buildings':'building types','/interiors':'interiors'};
+ const returnLabel=source?directoryLabels[target.split(/[?#]/)[0]!]:null;
  const samePage=target.split(/[?#]/)[0]===href.split(/[?#]/)[0];
- return <Link data-breadcrumb="true" className={className} href={target}>{samePage?children:'← Back'}</Link>;
+ return <Link data-breadcrumb="true" className={className} href={target}>{returnLabel?`← Return to ${returnLabel}`:samePage?children:'← Back'}</Link>;
 }

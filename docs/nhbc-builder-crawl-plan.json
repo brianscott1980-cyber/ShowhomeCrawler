@@ -24748,5 +24748,113 @@
       "yearsRegistered": "",
       "status": "website_and_adapter_research_required"
     }
+  ],
+  "requestedBrands": [
+    {
+      "slug": "barwood-homes",
+      "name": "Barwood Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified",
+      "registrationEvidence": []
+    },
+    {
+      "slug": "bewley-homes",
+      "name": "Bewley Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified",
+      "registrationEvidence": [
+        {
+          "name": "Bewley Homes Plc",
+          "county": "HAMPSHIRE",
+          "yearsRegistered": ""
+        }
+      ]
+    },
+    {
+      "slug": "cavanna-homes",
+      "name": "Cavanna Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified",
+      "registrationEvidence": [
+        {
+          "name": "Cavanna Homes (Cornwall) Limited",
+          "county": "DEVON",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cavanna Homes (Devon) Limited",
+          "county": "DEVON",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cavanna Homes (South West) Limited",
+          "county": "DEVON",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cavanna Homes (West Country) Limited",
+          "county": "DEVON",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cavanna Homes Ltd",
+          "county": "DEVON",
+          "yearsRegistered": ""
+        }
+      ]
+    },
+    {
+      "slug": "cruden-homes",
+      "name": "Cruden Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified",
+      "registrationEvidence": [
+        {
+          "name": "Cruden Homes (Barnton Avenue) Limited",
+          "county": "EDINBURGH",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cruden Homes (Longniddry South) Limited",
+          "county": "EDINBURGH",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cruden Homes (Millerhill) LLP",
+          "county": "EDINBURGH",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cruden Homes (West Craigs) Limited",
+          "county": "EDINBURGH",
+          "yearsRegistered": ""
+        },
+        {
+          "name": "Cruden Homes Limited",
+          "county": "EDINBURGH",
+          "yearsRegistered": ""
+        }
+      ]
+    },
+    {
+      "slug": "davidsons-homes",
+      "name": "Davidsons Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified",
+      "registrationEvidence": []
+    },
+    {
+      "slug": "edenstone-homes",
+      "name": "Edenstone Homes",
+      "status": "website_and_adapter_research_required",
+      "htmlCategories": "unverified",
+      "registrationEvidence": [
+        {
+          "name": "Edenstone Homes Limited",
+          "county": "MAGOR",
+          "yearsRegistered": ""
+        }
+      ]
+    }
   ]
 }

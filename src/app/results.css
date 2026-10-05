@@ -79,3 +79,8 @@
 .results-hero.builder-results-hero{padding-bottom:0;margin-bottom:0}
 .builder-explore-heading{padding-block:40px}
 .builder-explore-heading h2{margin:0}
+
+.results-hero-playback{position:absolute;right:8px;bottom:3px;z-index:4;width:35px;height:35px;display:grid;place-items:center;border:0;border-radius:50%;padding:0;background:var(--results-navy,#15243a);color:#fff;cursor:pointer}
+.results-hero-playback:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+.results-hero-photo.is-manually-paused .results-hero-room-type{animation:none;opacity:1;transform:none}
+.results-hero-photo.is-manually-paused .results-slide-progress{visibility:hidden}

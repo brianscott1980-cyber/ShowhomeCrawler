@@ -13,3 +13,18 @@ export function rememberedPageSource(storage:Pick<Storage,'getItem'>,destination
  if(typeof value!=='string')return null;
  try {const url=new URL(value,origin);return url.origin===origin?url.pathname+url.hash:null;}catch{return null;}
 }
+
+// Navigation intent lives only in this document: a fresh direct arrival starts clean.
+let filterReturnPath:string|null=null;
+export function markFilterNavigation(storage:Pick<Storage,'getItem'>,from:string,to:string,origin:string){
+ incomingFilters=null;
+ const source=rememberedPageSource(storage,from.split(/[?#]/)[0]!,origin);
+ filterReturnPath=source?.split(/[?#]/)[0]===to.split(/[?#]/)[0]?to.split(/[?#]/)[0]!:null;
+}
+export function shouldRestorePageFilters(path:string){return filterReturnPath===path;}
+
+let incomingFilters:{path:string;values:Record<string,string>}|null=null;
+export function setIncomingPageFilters(path:string,values:Record<string,string>|null){
+ incomingFilters=values?{path,values}:null;
+}
+export function incomingPageFilters(path:string):Record<string,string>{return incomingFilters?.path===path?incomingFilters.values:{};}

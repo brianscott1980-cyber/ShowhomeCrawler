@@ -12,7 +12,7 @@ import { sha256 } from '../galleries/image-hasher.js';
 import { analysisVersion, classifyBatch, verdictSchema } from '../vision/gemini-classifier.js';
 import { writeReport, type RunReport } from '../reports/report.js';
 async function main() {
- const { values } = parseArgs({ options: { 'reuse-model': {type:'string',multiple:true}, 'all-images': {type:'boolean'}, model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
+ const { values } = parseArgs({ options: { 'reuse-model': {type:'string',multiple:true}, 'all-images': {type:'boolean',default:true}, model: {type:'string'}, folder: { type: 'string', default: 'results/bellway-home-offices' } } });
  const folder = values.folder, env = readEnv();
  if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY required.');
  const report: RunReport = JSON.parse(await readFile(folder + '/results.json', 'utf8'));
@@ -73,7 +73,7 @@ async function main() {
        await writeReport(folder,report);
        for (let seconds = 0; seconds < delaySeconds; seconds += 10) await sleep(Math.min(10, delaySeconds - seconds) * 1000);
        attempt--; // Quota waits do not consume transient-error retries.
-continue;
+      continue;
       }
       if (failure.status && ![429, 500, 502, 503, 504].includes(failure.status)) throw error;
       if (attempt >= 3) {

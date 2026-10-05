@@ -54,3 +54,19 @@ export function buildingCardImageCollection(images:CardImage[],random:()=>number
  const ordered=[...first,...randomRoomImages(available.filter(image=>!pinned.has(image.src)),random)];
  return {images:ordered,image:ordered[0]?.src??'',description:ordered[0]?.alt??'Showhome interior'};
 }
+
+/** Development cards begin with a site overview, street scene or home exterior. */
+export function developmentCardImageCollection(images:CardImage[],random:()=>number=Math.random){
+ const exteriorImages=images.filter(image=>/^exterior(?:\s|$)|street|aerial/i.test(image.roomType?.trim()??''));
+ const rank=(image:CardImage)=>{
+  const description=`${image.subCategory??''} ${image.alt}`;
+  if(/aerial|bird.?s.eye|development overview|site overview|multiple (?:houses|homes)|row of (?:houses|homes)/i.test(description))return 3;
+  if(/street scene|streetscape|street view|cul-de-sac/i.test(description))return 2;
+  if(/front|fa[cç]ade|elevation/i.test(description)&&! /rear|back|garden/i.test(description))return 1;
+  return 0;
+ };
+ const best=Math.max(...exteriorImages.map(rank));
+ const candidates=exteriorImages.filter(image=>rank(image)===best);
+ const first=candidates.length?candidates[Math.floor(random()*candidates.length)]:undefined;
+ return cardImageCollection(images,first,random);
+}

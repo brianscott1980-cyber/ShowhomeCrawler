@@ -1,4 +1,7 @@
 'use client';
+import {anyBedrooms,bedroomRangeOptions} from './bedroom-range';
+import {priceRangeOptions} from './price-range';
+import {MoneyInput} from './money-input';
 import {CardResults} from './card-results';
 import {useDirectoryCounts} from './directory-counts';
 import {DistanceFilter} from './distance-filter';
@@ -20,7 +23,7 @@ import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-im
 import {filterSites,type SiteCard,type SiteFilters,type LocationPoint} from './site-filters';
 import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 const defaults:SiteFilters={developer:'',country:'',region:'',location:'',minPrice:'',maxPrice:'',minBeds:'',maxBeds:'',style:'',radius:''};
-const urlDefaults={...defaults,postcode:'',order:'name',view:'',selected:'',lat:'',lng:'',zoom:''};
+const urlDefaults={...defaults,minBeds:anyBedrooms,maxBeds:anyBedrooms,minPrice:'any',maxPrice:'any',postcode:'',order:'name',view:'',selected:'',lat:'',lng:'',zoom:''};
 const money=(n:number)=>'£'+n.toLocaleString('en-GB');
 function range(values:(number|null)[],format:(n:number)=>string){const known=values.filter((v):v is number=>v!==null&&Number.isFinite(v));if(!known.length)return 'Not available';const min=Math.min(...known),max=Math.max(...known);return min===max?format(min):`${format(min)} – ${format(max)}`;}
 export function SiteDirectory({
@@ -99,14 +102,14 @@ export function SiteDirectory({
   window.addEventListener('resize',computeFocus);
   return()=>{observer.disconnect();window.removeEventListener('resize',computeFocus);};
  },[mapView,sheetExpanded]);
- const filters:SiteFilters=useMemo(()=>({developer:urlFilters.developer,country:urlFilters.country,region:urlFilters.region,location:urlFilters.location,minPrice:urlFilters.minPrice,maxPrice:urlFilters.maxPrice,minBeds:urlFilters.minBeds,maxBeds:urlFilters.maxBeds,style:urlFilters.style,radius:urlFilters.radius}),[urlFilters.developer,urlFilters.country,urlFilters.region,urlFilters.location,urlFilters.minPrice,urlFilters.maxPrice,urlFilters.minBeds,urlFilters.maxBeds,urlFilters.style,urlFilters.radius]);
+ const filters:SiteFilters=useMemo(()=>({developer:urlFilters.developer,country:'',region:'',location:'',minPrice:urlFilters.minPrice==='any'?'':urlFilters.minPrice,maxPrice:urlFilters.maxPrice==='any'?'':urlFilters.maxPrice,minBeds:urlFilters.minBeds===anyBedrooms?'':urlFilters.minBeds,maxBeds:urlFilters.maxBeds===anyBedrooms?'':urlFilters.maxBeds,style:'',radius:urlFilters.radius}),[urlFilters.developer,urlFilters.country,urlFilters.region,urlFilters.location,urlFilters.minPrice,urlFilters.maxPrice,urlFilters.minBeds,urlFilters.maxBeds,urlFilters.style,urlFilters.radius]);
  const setFilters=(value:SiteFilters|((previous:SiteFilters)=>SiteFilters))=>setUrlFilters(previous=>({...previous,...(typeof value==='function'?value(previous):value)}));
  const [point,setPoint]=useState<LocationPoint|null>(null);
  const savedLocation=useSavedLocation();
  const {requestLocation,dialog}=useLocationRequest((location,intent)=>{setPoint(location);setUrlFilters(previous=>({...previous,[intent.key]:intent.value}));});
  useEffect(()=>{setPoint(savedLocation);},[savedLocation]);
  const setOrder=(value:string)=>{if(value==='distance'){void requestLocation(location=>{setPoint(location);setUrlFilters(previous=>({...previous,order:value}));},{key:'order',value});}else setUrlFilters(previous=>({...previous,order:value}));};
- function change(key:keyof SiteFilters,value:string){if(key==='radius'&&value){void requestLocation(location=>{setPoint(location);setFilters(previous=>({...previous,radius:value}));},{key:'radius',value});}else setFilters(previous=>({...previous,[key]:value}));}
+ function change(key:keyof SiteFilters,value:string){if(key==='radius'&&value){void requestLocation(location=>{setPoint(location);setFilters(previous=>({...previous,radius:value}));},{key:'radius',value});}else setFilters(previous=>({...previous,[key]:value,...(key==='minBeds'&&value&&value!==anyBedrooms&&previous.maxBeds&&previous.maxBeds!==anyBedrooms&&Number(previous.maxBeds)<Number(value)?{maxBeds:value}:{})}));}
  const invalid=(filters.minPrice!==''&&filters.maxPrice!==''&&Number(filters.minPrice)>Number(filters.maxPrice))||(filters.minBeds!==''&&filters.maxBeds!==''&&Number(filters.minBeds)>Number(filters.maxBeds));
  const matching=useMemo(()=>(invalid?[]:filterSites(cards,filters,point)).sort((a,b)=>order==='distance'&&point?(a.miles??Infinity)-(b.miles??Infinity)||a.name.localeCompare(b.name):a.name.localeCompare(b.name)),[cards,invalid,filters,point,order]);
  const visible=mapView&&searchMap&&!mapUnavailable?matching.filter(card=>visibleKeys.includes(card.key)):matching;
@@ -115,10 +118,14 @@ export function SiteDirectory({
  function selectSite(key:string){setUrlFilters(previous=>({...previous,selected:key}));setSheetExpanded(true);requestAnimationFrame(()=>{const card=document.getElementById('site-card-'+key),panel=resultsPanel.current;if(card&&panel){const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(isMobile){card.scrollIntoView({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',inline:'center',block:'nearest'});}else{const rect=card.getBoundingClientRect(),parent=panel.getBoundingClientRect();panel.scrollTo?.({top:panel.scrollTop+rect.top-parent.top-12,behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}}});}
  useEffect(()=>{if(activeKey&&!matching.some(card=>card.key===activeKey))setUrlFilters(previous=>({...previous,selected:''}));},[matching,activeKey]);
  const facet=(key:keyof SiteFilters)=>filterSites(cards,{...filters,[key]:''},point);
- const developers=[...new Set(facet('developer').map(c=>c.developer))].sort(),countries=[...new Set(facet('country').map(c=>c.country??'Unknown'))].sort();
- const regions=[...new Set(facet('region').map(c=>c.region??c.country??'Unknown'))].sort();
- const locationOptions=facet('location').map(c=>({value:c.key,label:`${c.name} · ${c.developer}`})).sort((a,b)=>a.label.localeCompare(b.label));
- const styles=[...new Set(facet('style').flatMap(c=>c.properties.filter(p=>(!filters.minPrice||(p.price!==null&&p.price>=Number(filters.minPrice)))&&(!filters.maxPrice||(p.price!==null&&p.price<=Number(filters.maxPrice)))&&(!filters.minBeds||(p.bedrooms!==null&&p.bedrooms>=Number(filters.minBeds)))&&(!filters.maxBeds||(p.bedrooms!==null&&p.bedrooms<=Number(filters.maxBeds)))).map(p=>p.style??'Unknown')))].sort();
+ const bedroomDevelopments=filterSites(cards,{...filters,minBeds:'',maxBeds:''},point);
+ const bedroomCounts=[...new Set(bedroomDevelopments.flatMap(card=>card.properties.map(property=>property.bedrooms)).filter((count):count is number=>count!==null&&Number.isInteger(count)&&count>0))].sort((a,b)=>a-b);
+ const priceProperties=filterSites(cards,{...filters,minPrice:'',maxPrice:''},point).flatMap(card=>card.properties).filter(property=>(!filters.minBeds||(property.bedrooms!==null&&property.bedrooms>=Number(filters.minBeds)))&&(!filters.maxBeds||(property.bedrooms!==null&&property.bedrooms<=Number(filters.maxBeds))));
+ const priceRange=priceRangeOptions(priceProperties.map(property=>property.price).filter((price):price is number=>price!==null));
+ const minimumPrice=filters.minPrice;
+ const maximumPrice=filters.maxPrice;
+ const bedroomRange=bedroomRangeOptions(bedroomCounts,urlFilters.minBeds,urlFilters.maxBeds);
+ const developers=[...new Set(facet('developer').map(c=>c.developer))].sort();
  useEffect(()=>{if(!mapView||!activeKey)return;const element=document.getElementById('site-card-'+activeKey),panel=resultsPanel.current;if(element&&panel){const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(isMobile){element.scrollIntoView({behavior:'auto',inline:'center',block:'nearest'});}else{const top=element.getBoundingClientRect().top-panel.getBoundingClientRect().top+panel.scrollTop;panel.scrollTo?.({top:Math.max(0,top-12),behavior:'auto'});}}},[activeKey,mapView,visible.map(c=>c.key).join(',')]);
  useEffect(()=>{if(!mapView)return;const panel=resultsPanel.current;if(!panel)return;const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(!isMobile)return;const grid=panel.querySelector('.collection-grid');if(!grid)return;let timer:ReturnType<typeof setTimeout>;let userScrolled=false;const onPointerDown=()=>{userScrolled=true;};const onScroll=()=>{if(!userScrolled)return;clearTimeout(timer);timer=setTimeout(()=>{const gridRect=grid.getBoundingClientRect();const centerX=gridRect.left+gridRect.width/2;const cards=grid.querySelectorAll<HTMLElement>('.collection-card');let closestKey:string|null=null,minDist=Infinity;cards.forEach(card=>{const rect=card.getBoundingClientRect();const cardCenter=rect.left+rect.width/2;const dist=Math.abs(cardCenter-centerX);if(dist<minDist){minDist=dist;const key=card.id.replace('site-card-','');if(key)closestKey=key;}});userScrolled=false;if(closestKey&&minDist<gridRect.width*0.45){setUrlFilters(prev=>prev.selected===closestKey?prev:({...prev,selected:closestKey!}));}},120);};grid.addEventListener('pointerdown',onPointerDown,{passive:true});grid.addEventListener('scroll',onScroll,{passive:true});return()=>{clearTimeout(timer);grid.removeEventListener('pointerdown',onPointerDown);grid.removeEventListener('scroll',onScroll);};},[mapView,visible.map(c=>c.key).join(',')]);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
@@ -127,27 +134,24 @@ export function SiteDirectory({
  <div className="site-filter-panel location-filter-panel">
  <DirectoryFilters className="filters site-filters location-primary-filters" label="Development filters">
   <MultiSelectFilter label="Builders" value={filters.developer} options={developers} onChange={value=>change('developer',value)}/>
-  <MultiSelectFilter label="Regions" value={filters.region??''} options={regions} onChange={value=>change('region',value)}/>
-  <MultiSelectFilter label="Countries" value={filters.country} options={countries} onChange={value=>change('country',value)}/>
-  <MultiSelectFilter label="Developments" value={filters.location??''} options={locationOptions} onChange={value=>change('location',value)}/>
-  <label>Minimum bedrooms<input type="number" min="1" step="1" value={filters.minBeds} onChange={e=>change('minBeds',e.target.value)} placeholder="Any"/></label>
-  <label>Maximum price (£)<input type="number" min="0" step="1000" value={filters.maxPrice} onChange={e=>change('maxPrice',e.target.value)} placeholder="No maximum"/></label>
+  <DistanceFilter label="Within Distance" value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
+  <fieldset className="development-range-filter"><legend>Bedrooms range</legend><div>
+   <label className="sr-only" htmlFor="development-min-beds">Minimum bedrooms</label><select id="development-min-beds" aria-label="Minimum bedrooms" value={bedroomRange.minValue} onChange={e=>change('minBeds',e.target.value||anyBedrooms)}><option value="">Any</option>{bedroomRange.numbers.map(count=><option key={count} value={count}>{count} {count===1?'bed':'beds'}</option>)}</select>
+   <span aria-hidden="true">–</span>
+   <label className="sr-only" htmlFor="development-max-beds">Maximum bedrooms</label><select id="development-max-beds" aria-label="Maximum bedrooms" value={bedroomRange.maxValue} onChange={e=>change('maxBeds',e.target.value||anyBedrooms)}><option value="">Any</option>{bedroomRange.maxNumbers.map(count=><option key={count} value={count}>{count} {count===1?'bed':'beds'}</option>)}</select>
+  </div></fieldset>
+  <fieldset className="development-range-filter"><legend>Price range (£)</legend><div>
+   <MoneyInput label="Minimum price" value={minimumPrice} options={priceRange.options} onChange={value=>change('minPrice',value||'any')}/>
+   <span aria-hidden="true">–</span>
+   <MoneyInput label="Maximum price" value={maximumPrice} options={priceRange.options.filter(price=>!minimumPrice||price>=Number(minimumPrice))} onChange={value=>change('maxPrice',value||'any')}/>
+  </div></fieldset>
   <button className="location-filter-reset" type="button" onClick={()=>{setUrlFilters(previous=>({...urlDefaults,view:previous.view,lat:previous.lat,lng:previous.lng,zoom:previous.zoom}));}}>Reset</button>
- <details className="location-filter-disclosure">
-  <summary>More filters <span>House style, price range and distance</span></summary>
-  <div className="filters site-filters">
-   <label>Minimum price (£)<input type="number" min="0" step="1000" value={filters.minPrice} onChange={e=>change('minPrice',e.target.value)} placeholder="No minimum"/></label>
-   <label>Maximum bedrooms<input type="number" min="1" step="1" value={filters.maxBeds} onChange={e=>change('maxBeds',e.target.value)} placeholder="Any"/></label>
-   <MultiSelectFilter label="House styles" value={filters.style} options={styles} onChange={value=>change('style',value)}/>
-  </div>
-<div className="site-location-controls"><DistanceFilter value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/><label>Order by<select value={order} onChange={e=>setOrder(e.target.value)}><option value="name">Development name A–Z</option><option value="distance">Nearest first</option></select></label></div><p className="subtle">A development matches when an advertised home meets all selected property filters. Prices and availability reflect the latest collection update; unknown prices and bedrooms do not match numeric limits.</p>
- </details>
  </DirectoryFilters>
  {invalid&&<p role="alert" className="error">Minimum price and bedrooms must not exceed their maximum values.</p>}
  </div>
 <div className="directory-toolbar location-explorer-toolbar">
  <div className="location-view-controls"><ViewOptions view={mapView?'map':view} onChange={changeView} ariaLabel="Developments layout"/><button type="button" className="location-map-toggle" aria-label="Map" aria-pressed={mapView} onClick={()=>{setMapUnavailable(false);setUrlFilters(previous=>({...previous,view:'map'}));}}>▧ <span>Map</span></button></div>
- <p className="count" aria-live="polite">{visible.length} {visible.length===1?'development':'developments'}{mapView&&searchMap?' in this area':''}</p>
+ <label className="development-order">Order by<select value={order} onChange={e=>setOrder(e.target.value)}><option value="name">Development name A–Z</option><option value="distance">Nearest first</option></select></label>
  {mapView&&<label className="site-map-search"><input type="checkbox" checked={searchMap} onChange={e=>setSearchMap(e.target.checked)}/> Search as I move</label>}
  </div>
  <div ref={explorerPanel} className={mapView?'site-map-directory location-explorer'+(sheetExpanded?' sheet-expanded':''):'location-directory'}>
@@ -157,7 +161,7 @@ export function SiteDirectory({
  <CardResults className={`collection-grid directory-${mapView?'compact':view}`} label="Developments" identity={JSON.stringify(filters)} paginate={!mapView}>
  {visible.map(card=>{
  const href=card.href??`${basePath}/${card.key}`;
- const content=<><div className="site-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/></div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line">{builderLogo(card.developer)&&<img className="site-builder-logo" style={{background:['Bloor Homes','Cala','Barratt','David Wilson Homes','Robertson Homes','Lynch Homes'].includes(card.developer)?'#193963':undefined}} src={builderLogo(card.developer)} alt="" loading="lazy"/>}<BuilderName name={card.developer}/></p><p className="subtle">{card.country??'Country unavailable'}{point&&` · ${card.miles===null?'Distance unavailable':card.miles.toFixed(1)+' miles'}`}</p><dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].join(' · ')||'Not available'}</dd></div></dl><p className="subtle site-image-count">{card.count} {card.count===1?'image':'images'}{card.propertyScope==='Published homes'?' · Published homes only':''}</p>{mapView?<Link className="site-explore-link" href={href} onClick={e=>e.stopPropagation()}>Explore development →</Link>:<span className="subtle">Explore collection →</span>}</div></>;
+ const content=<><div className="site-preview-photo">{card.image?<ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/>:<div className="development-image-pending">Images not yet available</div>}</div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line">{builderLogo(card.developer)&&<img className="site-builder-logo" style={{background:['Bloor Homes','Cala','Barratt','David Wilson Homes','Robertson Homes','Lynch Homes'].includes(card.developer)?'#193963':undefined}} src={builderLogo(card.developer)} alt="" loading="lazy"/>}<BuilderName name={card.developer}/></p><p className="subtle">{card.country??'Country unavailable'}{point&&` · ${card.miles===null?'Distance unavailable':card.miles.toFixed(1)+' miles'}`}</p><dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].join(' · ')||'Not available'}</dd></div></dl><p className="subtle site-image-count">{card.count} {card.count===1?'image':'images'}{card.propertyScope==='Published homes'?' · Published homes only':''}</p>{mapView?<Link className="site-explore-link" href={href} onClick={e=>e.stopPropagation()}>Explore development →</Link>:<span className="subtle">Explore collection →</span>}</div></>;
  const className=`collection-card${activeKey===card.key?' is-map-active':''}${hoverKey===card.key?' is-map-hovered':''}`;
  return mapView?<article id={'site-card-'+card.key} key={card.key} className={className} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)}><button className="site-card-select" aria-label={`Select ${card.name} on map`} aria-pressed={activeKey===card.key} onClick={()=>selectCard(card.key)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}/>{content}</article>:<Link id={'site-card-'+card.key} key={card.key} className={className} href={href}>{content}</Link>;
  })}

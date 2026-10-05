@@ -1,11 +1,10 @@
 import sharp from 'sharp';
-import { mkdir, readFile, writeFile, rename, open } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, rename, open, link } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { randomUUID } from 'node:crypto';
 import { parseArgs } from 'node:util';
 import { load } from 'cheerio';
-import { matchesPropertyFilter } from '../filters/property-filter.js';
 import { readEnv } from '../config/env.js';
 import { RequestClient, mapLimit } from '../crawler/request-client.js';
 import { discoverSitemapDevelopments } from '../crawler/sitemaps.js';
@@ -20,10 +19,10 @@ async function exists(path: string) { try { await readFile(path); return true; }
 async function atomic(path: string, value: unknown) { const temporary = path + '.' + randomUUID() + '.tmp'; await writeFile(temporary, JSON.stringify(value)); await rename(temporary, path); }
 async function main() {
  const env = readEnv();
- const { values } = parseArgs({ options: { resume: {type:'boolean'}, 'refresh-pages': { type: 'boolean' }, 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean' }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '5' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean' }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
+ const { values } = parseArgs({ options: { resume: {type:'boolean'}, 'refresh-pages': { type: 'boolean' }, 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean', default: true }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '1' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean', default: true }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
  const site = builderSite(values.builder); const { developmentUrls, discoverHomes, galleryImages } = site;
  const number = (v: string, max: number) => { const n = Number(v); if (!Number.isInteger(n) || n <= 0 || n > max) throw new Error('Invalid crawl limit.'); return n; };
- const minBeds = number(values['min-bedrooms'], 20), maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 100000);
+ const maxDevs = number(values['max-developments'], 1000), maxProperties = number(values['max-properties'], 10000), maxImages = number(values['max-images'], 100000);
  if (values['all-images'] && !values['discover-only']) throw new Error('All-images crawling requires --discover-only; categorise with results:classify --all-images.');
  if(values.resume && (!values['all-images'] || !values['discover-only']))throw new Error('Resume requires all-images discovery.');
  const model = env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
@@ -71,7 +70,7 @@ async function main() {
    try {
     const result = discoverHomes(await page(url), url);
     if (repo && result.plots.length) await repo.saveDevelopment(result.development, result.plots);
-    const qualifying = result.homes.filter(p => values['all-images'] || matchesPropertyFilter(p, { minBedrooms: minBeds }));
+    const qualifying = result.homes;
     report.developments.push({ url, name: result.development.name, status: result.plotError ? 'complete_with_warning' : 'complete', homes: result.homes.length, qualifying: qualifying.length, warning: result.plotError ?? (result.development.url !== url ? 'Redirected to ' + result.development.url : undefined) });
     console.log(JSON.stringify({ stage: 'development', developer: site.name, completed: report.developments.length, total: urls.length, name: result.development.name, homes: result.homes.length, qualifying: qualifying.length }));
     await atomic(folder + '/checkpoint.json', report);
@@ -121,16 +120,16 @@ async function main() {
       const rawBytes = await exists(imagePath) ? await readFile(imagePath) : await client.bytes(candidate.url);
       const bytes = new URL(candidate.url).pathname.toLowerCase().endsWith('.svg') ? await sharp(rawBytes).png().toBuffer() : rawBytes;
       const identity = await imageIdentity(bytes);
-      await writeFile(imagePath, bytes);
+      if(!await exists(imagePath))await writeFile(imagePath, bytes);
       const path = `images/${identity.sha256}.${identity.format === 'jpeg' ? 'jpg' : identity.format}`;
-      await writeFile(`${folder}/${path}`, bytes);
+      if(!await exists(`${folder}/${path}`))await link(imagePath,`${folder}/${path}`).catch(()=>writeFile(`${folder}/${path}`,bytes));
       // Claim identity synchronously after file I/O so concurrent copies cannot both be registered.
       const existing = identities.find(i => sameVisual(i.identity, identity));
       if (existing) { sourceImages.set(candidate.url, existing.image); report.metrics.reusedImages = (report.metrics.reusedImages ?? 0) + 1; return existing.image.id; }
       const image: ReportImage = { id: identity.sha256, path, sourceUrl: candidate.url };
       identities.push({ identity, image }); sourceImages.set(candidate.url, image); report.images.push(image);
       const key = sha256(`${identity.sha256}:${model}:${analysisVersion}`), analysisPath = `results/.cache/analysis/${key}.json`;
-      if (await exists(analysisPath)) image.verdict = verdictSchema.parse(JSON.parse(await readFile(analysisPath, 'utf8')));
+      if (!values['discover-only'] && await exists(analysisPath)) image.verdict = verdictSchema.parse(JSON.parse(await readFile(analysisPath, 'utf8')));
       else if (!values['discover-only'] && !analysisUnavailable) {
        try {
         image.verdict = await classify(bytes, env.GEMINI_API_KEY!, model);

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import {shouldRestorePageFilters,incomingPageFilters} from './navigation-memory';
 import {usePathname} from 'next/navigation';
 
 /** Keep each page's criteria in this tab's session, without adding them to URLs. */
@@ -12,9 +13,10 @@ export function useUrlFilters<T extends Record<string, string>>(defaults: T) {
  useEffect(() => {
   const read = () => {
    let saved:Record<string,string>={};
-   try{saved=JSON.parse(window.sessionStorage.getItem(storageKey())??'{}')??{};}catch{}
+   try{if(shouldRestorePageFilters(window.location.pathname))saved=JSON.parse(window.sessionStorage.getItem(storageKey())??'{}')??{};}catch{}
    const url=new URL(window.location.href);
-   const value=Object.fromEntries(Object.entries(defaults).map(([key,fallback])=>[key,url.searchParams.get(key)??(typeof saved[key]==='string'?saved[key]:fallback)])) as T;
+   const incoming=incomingPageFilters(window.location.pathname);
+   const value=Object.fromEntries(Object.entries(defaults).map(([key,fallback])=>[key,url.searchParams.get(key)??incoming[key]??(typeof saved[key]==='string'?saved[key]:fallback)])) as T;
    latest.current=value;setFilters(value);save(value);
    // Import existing deep links once, then keep subsequent navigation clean.
    let cleaned=false;

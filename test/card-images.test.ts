@@ -59,3 +59,12 @@ it('starts with an interior when only rear exteriors or no exterior exist',async
  expect(images).toContainEqual(buildingCardImageCollection(images,()=>.8).images[0]);
  expect(buildingCardImageCollection([]).images).toEqual([]);
 });
+
+it('development previews prefer site overviews, then streets, then home exteriors',async()=>{
+ const {developmentCardImageCollection}=await import('../src/web/card-images');
+ const images=[{src:'kitchen',alt:'Kitchen',roomType:'Kitchen'},{src:'front',alt:'House front elevation',roomType:'Exterior'},{src:'street',alt:'Street scene',roomType:'Exterior'},{src:'site',alt:'Aerial development overview',roomType:'Exterior'}];
+ expect(developmentCardImageCollection(images,()=>0).image).toBe('site');
+ expect(developmentCardImageCollection(images.slice(0,3),()=>0).image).toBe('street');
+ expect(developmentCardImageCollection(images.slice(0,2),()=>0).image).toBe('front');
+ expect(developmentCardImageCollection(images.slice(0,1),()=>0).image).toBe('kitchen');
+});
