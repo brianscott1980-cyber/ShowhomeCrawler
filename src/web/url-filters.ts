@@ -7,6 +7,7 @@ import {usePathname} from 'next/navigation';
 export function useUrlFilters<T extends Record<string, string>>(defaults: T) {
  const pathname=usePathname();
  const [filters, setFilters] = useState(defaults);
+ const [readyPath,setReadyPath]=useState<string|null>(null);
  const latest=useRef(defaults);
  const storageKey=()=>`showhome-page-filters:${window.location.pathname}`;
  const save=(value:T)=>{try{window.sessionStorage.setItem(storageKey(),JSON.stringify(value));}catch{/* Filters remain usable without storage. */}};
@@ -17,7 +18,7 @@ export function useUrlFilters<T extends Record<string, string>>(defaults: T) {
    const url=new URL(window.location.href);
    const incoming=incomingPageFilters(window.location.pathname);
    const value=Object.fromEntries(Object.entries(defaults).map(([key,fallback])=>[key,url.searchParams.get(key)??incoming[key]??(typeof saved[key]==='string'?saved[key]:fallback)])) as T;
-   latest.current=value;setFilters(value);save(value);
+   latest.current=value;setFilters(value);save(value);setReadyPath(window.location.pathname);
    // Import existing deep links once, then keep subsequent navigation clean.
    let cleaned=false;
    for(const key of Object.keys(defaults)){if(url.searchParams.has(key)){url.searchParams.delete(key);cleaned=true;}}
@@ -29,7 +30,7 @@ export function useUrlFilters<T extends Record<string, string>>(defaults: T) {
  }, [defaults,pathname]);
  function change(next: T | ((previous: T) => T)) {
   const value = typeof next === 'function' ? next(latest.current) : next;
-  latest.current=value;setFilters(value);save(value);
+  latest.current=value;setFilters(value);save(value);setReadyPath(window.location.pathname);
  }
- return [filters, change] as const;
+ return [filters, change,readyPath===pathname] as const;
 }

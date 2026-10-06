@@ -30,7 +30,8 @@ function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')
 export async function GroupDirectory({kind}:{kind:GroupKind}){
  const normalized=kind==='sites'?'locations':kind==='spaces'?'interiors':kind;
  const pathPrefix=prefixFor(kind),isBuildings=kind==='buildings';
- const initial=await queryDirectory({kind:normalized}),counts=initial.counts;
+ // Session criteria are browser-only: avoid an unfiltered database round trip before hydration.
+ const initial=normalized==='locations'?{pendingInitial:true,cards:[],total:0,nextOffset:0,hasMore:false,facets:{},counts:{Developments:0},mapCards:[]}:await queryDirectory({kind:normalized}),counts=initial.counts;
  if(normalized==='locations'){
   const cards=initial.cards as SiteCard[];
   return <DirectoryCountProvider><main>
@@ -40,7 +41,7 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
      <p>{descriptions.locations}</p>
      <DirectoryCounts initial={counts}/>
     </div>
-    <DevelopmentDirectoryMap initialCards={initial.mapCards??[]}/>
+    <DevelopmentDirectoryMap initialCards={initial.mapCards??[]} initialLoading/>
    </section>
    <SiteDirectory cards={cards} initial={initial} basePath="/developments" defaultView="compact"/>
   </main></DirectoryCountProvider>;

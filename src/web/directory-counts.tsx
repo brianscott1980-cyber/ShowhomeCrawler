@@ -20,8 +20,10 @@ export function useDirectoryCounts(counts:Counts){
 }
 
 export function useDirectoryMapCards(initial:SiteCard[]){return useContext(Context)?.mapCards??initial;}
-export function usePublishDirectoryMapCards(cards:SiteCard[]){
+export function usePublishDirectoryMapCards(cards:SiteCard[],ready=true){
  const update=useContext(Context)?.updateMapCards;
  const signature=cards.map(card=>card.key).sort().join('|');
- useEffect(()=>{update?.(cards);},[update,signature]);
+ useEffect(()=>{if(ready)update?.(cards);},[update,signature,ready]);
 }
+
+export function useDirectoryMapPending(){return useContext(Context)?.mapCards===null;}

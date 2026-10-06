@@ -33,3 +33,16 @@ it('requests another four rows and preserves existing card elements',async()=>{
   await act(async()=>render(32));expect(mount.querySelectorAll('article')).toHaveLength(32);expect(mount.querySelector('article')).toBe(first);
  }finally{await act(async()=>root.unmount());vi.restoreAllMocks();vi.unstubAllGlobals();}
 });
+
+it('waits for restored filters before the first development request',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);vi.useFakeTimers();
+ const fetcher=vi.fn(async(_url,options)=>Response.json({cards:[],total:0,nextOffset:0,hasMore:false,facets:{},counts:{Developments:0}}));vi.stubGlobal('fetch',fetcher);
+ const seed={pendingInitial:true,cards:[],total:0,nextOffset:0,hasMore:false,facets:{},counts:{Developments:0}};
+ function Harness({ready=false,developer=''}:{ready?:boolean;developer?:string}){useDirectoryQuery('locations',{developer},null,seed,undefined,undefined,ready);return null;}
+ const root=createRoot(document.createElement('div'));
+ try{
+  await act(async()=>root.render(<Harness/>));await act(async()=>vi.advanceTimersByTime(200));expect(fetcher).not.toHaveBeenCalled();
+  await act(async()=>root.render(<Harness ready developer="Bellway"/>));await act(async()=>vi.advanceTimersByTime(100));expect(fetcher).toHaveBeenCalledOnce();
+  const body=JSON.parse(fetcher.mock.calls[0]![1].body);expect(body.filters.developer).toBe('Bellway');expect(body.offset).toBe(0);
+ }finally{await act(async()=>root.unmount());vi.useRealTimers();vi.unstubAllGlobals();}
+});

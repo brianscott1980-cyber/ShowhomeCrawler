@@ -54,7 +54,7 @@ export function SiteDirectory({
  const [mapUnavailable,setMapUnavailable]=useState(false);
  const [focusArea,setFocusArea]=useState<FocusArea|undefined>(undefined);
  const [savedView,saveView]=useCardView(storageKey,defaultView==='map'?'compact':defaultView);
- const [urlFilters,setUrlFilters]=useUrlFilters(urlDefaults);
+ const [urlFilters,setUrlFilters,filtersReady]=useUrlFilters(urlDefaults);
  const {order}=urlFilters;
  const mapView=urlFilters.view==='map'||(!urlFilters.view&&defaultView==='map');
  const view:CardViewMode=['list','large','compact'].includes(urlFilters.view)?urlFilters.view as CardViewMode:savedView;
@@ -117,7 +117,7 @@ export function SiteDirectory({
  const setOrder=(value:string)=>{if(value==='distance'){void requestLocation(location=>{setPoint(location);setUrlFilters(previous=>({...previous,order:value}));},{key:'order',value});}else setUrlFilters(previous=>({...previous,order:value}));};
  function change(key:keyof SiteFilters,value:string){if(key==='radius'&&value){void requestLocation(location=>{setPoint(location);setFilters(previous=>({...previous,radius:value}));},{key:'radius',value});}else setFilters(previous=>({...previous,[key]:value,...(key==='minBeds'&&value&&value!==anyBedrooms&&previous.maxBeds&&previous.maxBeds!==anyBedrooms&&Number(previous.maxBeds)<Number(value)?{maxBeds:value}:{}),...(key==='minPrice'&&value&&value!=='any'&&previous.maxPrice&&previous.maxPrice!=='any'&&Number(previous.maxPrice)<Number(value)?{maxPrice:value}:{}),...(key==='maxPrice'&&value&&value!=='any'&&previous.minPrice&&previous.minPrice!=='any'&&Number(previous.minPrice)>Number(value)?{minPrice:value}:{})}));}
  const invalid=(filters.minPrice!==''&&filters.maxPrice!==''&&Number(filters.minPrice)>Number(filters.maxPrice))||(filters.minBeds!==''&&filters.maxBeds!==''&&Number(filters.minBeds)>Number(filters.maxBeds));
- const remote=useDirectoryQuery('locations',urlFilters,point,initial,mapView&&searchMap&&!mapUnavailable&&hasMapBounds?visibleKeys:undefined,mapView?activeKey??undefined:undefined);
+ const remote=useDirectoryQuery('locations',urlFilters,point,initial,mapView&&searchMap&&!mapUnavailable&&hasMapBounds?visibleKeys:undefined,mapView?activeKey??undefined:undefined,filtersReady);
  const matching=useMemo(()=>remote?remote.cards.map(card=>({...card,miles:(card as SiteCard&{miles?:number|null}).miles??null})):(invalid?[]:filterSites(cards,filters,point)).sort((a,b)=>order==='price-asc'||order==='price-desc'?compareDevelopmentPrices(a,b,filters,order==='price-desc'):order==='distance'&&point?(a.miles??Infinity)-(b.miles??Infinity)||a.name.localeCompare(b.name):order==='name-desc'?b.name.localeCompare(a.name):a.name.localeCompare(b.name)),[cards,invalid,filters,point,order,remote?.cards]);
  const mapMatching=remote?.mapCards??matching;
  const visible=!remote&&mapView&&searchMap&&!mapUnavailable?matching.filter(card=>visibleKeys.includes(card.key)):matching;
@@ -129,7 +129,7 @@ export function SiteDirectory({
  const bedroomProperties=sitePropertyFacet(cards,filters,point,'bedrooms');
  const bedroomCounts=(remote?.facets.beds as number[]|undefined)??[...new Set(bedroomProperties.map(property=>property.bedrooms).filter((count):count is number=>count!==null&&Number.isInteger(count)&&count>0))].sort((a,b)=>a-b);
  const priceProperties=sitePropertyFacet(cards,filters,point,'price');
- const priceRange=priceRangeOptions(remote?(remote.facets.price as number[]):priceProperties.map(property=>property.price).filter((price):price is number=>price!==null));
+ const priceRange=priceRangeOptions(remote?((remote.facets.price??[]) as number[]):priceProperties.map(property=>property.price).filter((price):price is number=>price!==null));
  const minimumPrice=filters.minPrice;
  const maximumPrice=filters.maxPrice;
  const bedroomRange=bedroomRangeOptions(bedroomCounts,urlFilters.minBeds,urlFilters.maxBeds);
@@ -138,7 +138,7 @@ export function SiteDirectory({
  useEffect(()=>{if(!mapView)return;const panel=resultsPanel.current;if(!panel)return;const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(!isMobile)return;const grid=panel.querySelector('.collection-grid');if(!grid)return;let timer:ReturnType<typeof setTimeout>;let userScrolled=false;const onPointerDown=()=>{userScrolled=true;};const onScroll=()=>{if(!userScrolled)return;clearTimeout(timer);timer=setTimeout(()=>{const gridRect=grid.getBoundingClientRect();const centerX=gridRect.left+gridRect.width/2;const cards=grid.querySelectorAll<HTMLElement>('.collection-card');let closestKey:string|null=null,minDist=Infinity;cards.forEach(card=>{const rect=card.getBoundingClientRect();const cardCenter=rect.left+rect.width/2;const dist=Math.abs(cardCenter-centerX);if(dist<minDist){minDist=dist;const key=card.id.replace('site-card-','');if(key)closestKey=key;}});userScrolled=false;if(closestKey&&minDist<gridRect.width*0.45){setUrlFilters(prev=>prev.selected===closestKey?prev:({...prev,selected:closestKey!}));}},120);};grid.addEventListener('pointerdown',onPointerDown,{passive:true});grid.addEventListener('scroll',onScroll,{passive:true});return()=>{clearTimeout(timer);grid.removeEventListener('pointerdown',onPointerDown);grid.removeEventListener('scroll',onScroll);};},[mapView,visible.map(c=>c.key).join(',')]);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
  useDirectoryCounts(remote?.counts??{Developments:visible.length});
- usePublishDirectoryMapCards(mapMatching);
+ usePublishDirectoryMapCards(mapMatching,!remote?.pendingInitial);
  return <section aria-label="Filter developments" aria-busy={remote?.loading}>{dialog}<DirectoryQueryStatus query={remote}/>
  <div className="site-filter-panel location-filter-panel">
  <DirectoryFilters className="filters site-filters location-primary-filters" label="Development filters">
@@ -175,7 +175,8 @@ export function SiteDirectory({
  return <Link prefetch={false} id={'site-card-'+card.key} key={card.key} className={className} href={href} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}>{content}</Link>;
  })}
  </CardResults>
- {!visible.length&&<p className="empty">{mapView?'No developments in this area match your filters. Move the map or show all matching sites.':'No developments match your filters. Try widening your search.'}</p>}
+ {remote?.loading&&!visible.length&&<p className="empty" role="status">Loading matching developments…</p>}
+ {!remote?.loading&&!remote?.error&&!visible.length&&<p className="empty">{mapView?'No developments in this area match your filters. Move the map or show all matching sites.':'No developments match your filters. Try widening your search.'}</p>}
  {mapView&&unmapped>0&&<p className="subtle site-unmapped">{unmapped} matching {unmapped===1?'development has':'developments have'} no map coordinates. Browse List or Cards to see them.</p>}
  </div></div></section>;
 }
