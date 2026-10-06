@@ -1,0 +1,42 @@
+[
+  {
+    "builder": "ajc-homes",
+    "id": "0d346bf1e822e39c0b3f56248670f69b5eaa6a2e90f83d53e998a16af7942883",
+    "scenario": "Exterior"
+  },
+  {
+    "builder": "ajc-homes",
+    "id": "ca8623e7c53e0c7bd0ac86da534c87cd0074a9f8d953a7bb57c0ba463c8f0abe",
+    "scenario": "Floorplan"
+  },
+  {
+    "builder": "ajc-homes",
+    "id": "47a58f2f35590556169b8c9b3c681a7cbe0e1a777a672a4d7412f13d6a24b936",
+    "scenario": "Kitchen"
+  },
+  {
+    "builder": "ajc-homes",
+    "id": "a6d697ba3a1f0b0398f7112ac91b434c886e254b857ce8452b6fbd47946d649f",
+    "scenario": "Bathroom"
+  },
+  {
+    "builder": "ajc-homes",
+    "id": "cb67c3cf5eedd78b55a0fcc38b59960197c5f5acb5a1fcb3c8ed0ca8fd085616",
+    "scenario": "Living Room"
+  },
+  {
+    "builder": "anwyl-homes",
+    "id": "8b718af0f9418958844c65d769c1e318201433b4cab9bf0dd35e39db7c81db4d",
+    "scenario": "Bedroom"
+  },
+  {
+    "builder": "avant",
+    "id": "a50e26c6fa785619b4d50859d87325685e0e41287c1201772bc7d5beb086526d",
+    "scenario": "Wallpaper pattern"
+  },
+  {
+    "builder": "barratt",
+    "id": "d9ddfc90961a6832d47d7617ee0f296f7d907e4efda3f95134cb7c03bcb54eab",
+    "scenario": "Furnishing texture"
+  }
+]

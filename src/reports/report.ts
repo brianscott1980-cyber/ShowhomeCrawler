@@ -9,7 +9,7 @@ async function saveArtifact(path: string, body: string) {
  await rename(temporary, path);
 }
 export interface ImageCategorisation {
- categorisationSource?:'gemini'|'description-rules'|'website-html';
+ categorisationSource?:'gemini'|'description-rules'|'website-html'|'ollama';
  categorisationModel?:string;
  categorisationVersion?:string;
  decor?:string[];
