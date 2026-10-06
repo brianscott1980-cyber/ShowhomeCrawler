@@ -14,10 +14,9 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
  function range(field:string,key:string,comparison:string,omit:string){const value=filters[key];return key===omit||omit==='beds'&&/Beds$/.test(key)||omit==='price'&&/Price$/.test(key)||!value||value==='any'?'true':`${field}${comparison}${param(Number(value))}::numeric`;}
  function rowWhere(omit=''){
   const conditions=[`r.kind=${kindParam}`,`(${pointLat}::float8 is null or (${pointLat}::float8 between -90 and 90 and ${pointLon}::float8 between -180 and 180))`,selection('r.developer','developer',omit),selection('c.name','type',omit),selection('r.site','site',omit),selection('r.region','region',omit)];
-  if(kind==='locations')conditions.push(`(c.builder_slug,c.development_url) in(select d.builder_slug,d.source_url from showhome_web.developments d join showhome_web.galleries g on g.development_key=d.key join showhome_web.gallery_images gi on gi.gallery_key=g.key join showhome_web.images i on i.key=gi.image_key where i.eligible and nullif(trim(i.main_category),'') is not null and lower(trim(i.main_category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map'))`);
-  if(kind==='buildings')conditions.push(`(c.builder_slug,lower(c.building_name)) in(select i.builder_slug,lower(name) from showhome_web.gallery_cards i cross join lateral unnest(i.building_names) name where i.eligible and nullif(trim(i.category),'') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map'))`);
+  if(kind==='locations'||kind==='buildings')conditions.push('c.is_ready=true');
   if(kind==='interiors')conditions.push("lower(trim(c.name)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map','exterior','floorplan','floor plan')");
-  if(kind==='interiors'&&omit!=='building'&&filters.building)conditions.push(`exists(select 1 from showhome_web.gallery_memberships h join showhome_web.gallery_cards i on i.uid=h.uid where i.category=c.category and i.eligible and i.builder_name=r.developer and (r.site is null or h.development=r.site) and (r.bedrooms is null or h.bedrooms=r.bedrooms) and ${selection('h.building_name','building',omit)})`);
+  if(kind==='interiors'&&omit!=='building'&&filters.building)conditions.push(`exists(select 1 from showhome_web.gallery_memberships h join showhome_web.gallery_card_index i on i.uid=h.uid where i.category=c.category and i.eligible and i.builder_name=r.developer and (r.site is null or h.development=r.site) and (r.bedrooms is null or h.bedrooms=r.bedrooms) and ${selection('h.building_name','building',omit)})`);
   if(omit!=='bedrooms' &&filters.bedrooms)conditions.push(selection('r.bedrooms::text','bedrooms',omit));
   if(omit!=='location'&&filters.location)conditions.push(`r.areas && array(select jsonb_array_elements_text(${param(sql.json(selectedValues(filters.location)))}::jsonb))`);
   for(const [field,key,op] of [['r.bedrooms','minBeds','>='],['r.bedrooms','maxBeds','<='],['r.price','minPrice','>='],['r.price','maxPrice','<=']] as const)conditions.push(range(field,key,op,omit));
@@ -26,7 +25,9 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
  }
  const baseWhere=rowWhere(),baseValues=values.slice();
  const keys=input.keys!==undefined?`and c.key in(select jsonb_array_elements_text(${param(sql.json(input.keys!))}::jsonb))`:'';
- const matched=`select c.key,c.name,min(r.price) as min_price,max(r.price) as max_price,min(${miles}) as miles,max(coalesce((c.payload->>'spaces')::int,0)) as spaces from showhome_web.directory_cards c join showhome_web.directory_filter_rows r on r.kind=c.kind and r.card_key=c.key where ${baseWhere} ${keys} group by c.kind,c.key,c.name`;
+ const spacesExpr=kind==='builders'?"max(coalesce((c.payload->>'spaces')::int,0))":"0";
+ const milesExpr=point?`min(${miles})`:"null::float8";
+ const matched=`select c.key,c.name,min(r.price) as min_price,max(r.price) as max_price,${milesExpr} as miles,${spacesExpr} as spaces from showhome_web.directory_cards c join showhome_web.directory_filter_rows r on r.kind=c.kind and r.card_key=c.key where ${baseWhere} ${keys} group by c.kind,c.key,c.name`;
  const sort=filters.order==='name-desc'?'m.name desc,m.key':filters.order==='price-asc'?'m.min_price asc nulls last,m.name,m.key':filters.order==='price-desc'?'m.max_price desc nulls last,m.name,m.key':filters.order==='distance'?'m.miles asc nulls last,m.name,m.key':filters.order==='spaces'?'m.spaces desc,m.name,m.key':'m.name,m.key';
  const matchedValues=values.slice();
  const preferred=input.selectedKey?`case when m.key=${param(input.selectedKey)} then 0 else 1 end,`:'';
@@ -42,14 +43,37 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
   const where=rowWhere(key);
   const field=key==='building'?'h.building_name':key==='beds'||key==='bedrooms'?'r.bedrooms':key==='price'?'r.price':key==='type'?'c.name':key==='location'?'a.area':key==='developer'?'r.developer':key==='site'?'r.site':'r.region';
   const projection=key==='price'?`jsonb_build_array(min(${field}),max(${field}))`:`coalesce(jsonb_agg(distinct ${field} order by ${field}) filter(where ${field} is not null),'[]'::jsonb)`;
-  return {key,query:`select ${projection} as options from showhome_web.directory_cards c join showhome_web.directory_filter_rows r on r.kind=c.kind and r.card_key=c.key ${key==='building'?"join showhome_web.gallery_cards i on i.category=c.category and i.builder_name=r.developer and i.eligible join showhome_web.gallery_memberships h on h.uid=i.uid and (r.site is null or h.development=r.site) and (r.bedrooms is null or h.bedrooms=r.bedrooms)":''} ${key==='location'?'cross join lateral unnest(r.areas) a(area)':''} where ${where}`,values:values.slice()};
+  if(key==='building'){
+   values.splice(0,values.length,...baseValues.slice(0,3));
+   const conditions=["i.eligible","lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map','exterior','floorplan','floor plan')"];
+   if(filters.developer)conditions.push(selection('i.builder_name','developer','building'));
+   if(filters.type)conditions.push(selection('i.category','type','building'));
+   if(filters.site)conditions.push(selection('h.development','site','building'));
+   if(filters.bedrooms)conditions.push(selection('h.bedrooms::text','bedrooms','building'));
+   if(filters.location)conditions.push(`h.areas && array(select jsonb_array_elements_text(${param(sql.json(selectedValues(filters.location)))}::jsonb))`);
+   const hasFilters=Boolean(filters.developer||filters.type||filters.site||filters.bedrooms||filters.location);
+   const query=hasFilters
+    ?`select ${projection} as options from showhome_web.gallery_memberships h join showhome_web.gallery_card_index i on i.uid=h.uid where ${conditions.join(' and ')}`
+    :`select coalesce(jsonb_agg(distinct c.building_name order by c.building_name) filter(where c.building_name is not null),'[]'::jsonb) as options from showhome_web.directory_cards c where c.kind='buildings' and c.is_ready=true`;
+   return {key,query,values:values.slice()};
+  }
+  return {key,query:`select ${projection} as options from showhome_web.directory_cards c join showhome_web.directory_filter_rows r on r.kind=c.kind and r.card_key=c.key ${key==='location'?'cross join lateral unnest(r.areas) a(area)':''} where ${where}`,values:values.slice()};
  });
  const mapQuery=`select jsonb_build_object('key',c.key,'name',c.name,'href',c.href,'developer',c.payload->>'developer','latitude',c.payload->'latitude','longitude',c.payload->'longitude','country',c.payload->'country','town',c.payload->'town','image','','description',c.name,'count',c.payload->'count','properties','[]'::jsonb) as payload from showhome_web.directory_cards c where c.kind=${kindParam} and exists(select 1 from showhome_web.directory_filter_rows r where r.kind=c.kind and r.card_key=c.key and ${baseWhere}) order by c.name,c.key`;
- const [cards,totalRows,countRows,facetRows,mapRows]=await Promise.all([
-  sql.unsafe(pageQuery,pageValues as never),sql.unsafe(summaryQuery,matchedValues as never),sql.unsafe(aggregateQuery,matchedValues as never),
-  Promise.all(facetQueries.map(async f=>({key:f.key,rows:await sql.unsafe(f.query,f.values as never)}))),
-  kind==='locations'?sql.unsafe(mapQuery,baseValues as never):Promise.resolve([])
- ]);
+ const combinedValues=baseValues.slice(0,3);
+ const branch=(query:string,parameters:unknown[])=>{
+  const offset=combinedValues.length-3;combinedValues.push(...parameters.slice(3));
+  return query.replace(/\$(\d+)/g,(_,number:string)=>'$'+(Number(number)>3?Number(number)+offset:Number(number)));
+ };
+ const pageBranch=branch(pageQuery,pageValues),summaryBranch=branch(summaryQuery,matchedValues),countBranch=branch(aggregateQuery,matchedValues);
+ const options=facetQueries.map(f=>({key:f.key,query:branch(f.query,f.values)}));
+ const mapBranch=kind==='locations'?branch(mapQuery,baseValues):'';
+ const combined=`with page_result as (${pageBranch}),total_result as (${summaryBranch}),count_result as (${countBranch})
+ select coalesce((select jsonb_agg(payload) from page_result),'[]'::jsonb) as cards,(select row_to_json(total_result) from total_result) as totals,(select row_to_json(count_result) from count_result) as counts,jsonb_build_object(${options.map(f=>`'${f.key}',(${f.query})`).join(',')}) as facets,${mapBranch?`coalesce((select jsonb_agg(payload) from (${mapBranch}) pins),'[]'::jsonb)`:"'[]'::jsonb"} as map_cards`;
+ const [result]=await sql.unsafe(combined,combinedValues as never);
+ const cards=(result!.cards as any[]).map(payload=>({payload})),totalRows=[result!.totals],countRows=[result!.counts];
+ const facetRows=Object.entries(result!.facets).map(([key,options])=>({key,rows:[{options:options as (string|number)[]}]}));
+ const mapRows=(result!.map_cards as any[]).map(payload=>({payload}));
  if(kind==='interiors'&&cards.length){
   const counts=await interiorCardCounts(filters.building?totalRows[0]?.keys??[]:cards.map(c=>c.payload.key),filters,sql);
   if(filters.building&&countRows[0])countRows[0].interiors=[...counts.uniqueCounts.values()].reduce((sum,value)=>sum+value,0);

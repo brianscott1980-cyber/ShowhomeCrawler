@@ -30,6 +30,7 @@ export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
    }
   }
   for(const card of builder.cards)await tx`insert into showhome_web.directory_cards(kind,key,name,href,builder_slug,collection_slugs,payload) values('builders',${card.slug},${card.name},${'/builders/'+card.slug},${card.slug},${[card.slug]},${tx.json(card as never)})`;
+  await refreshDirectoryReadiness(tx);
   const memberships=[...directories,{kind:'builders',cards:builder.cards}].flatMap(({kind,cards})=>cards.flatMap(card=>directoryFilterRows(kind,card)));
   for(let offset=0;offset<memberships.length;offset+=500){
    const rows=memberships.slice(offset,offset+500).map(row=>({developer:null,bedrooms:null,price:null,style:null,site:null,site_id:null,areas:[],region:null,latitude:null,longitude:null,image_ids:[],building_types:[],...row}));
@@ -43,4 +44,9 @@ export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
  });
  await sql`analyze showhome_web.images,showhome_web.galleries,showhome_web.directory_cards,showhome_web.directory_filter_rows`;
  console.log('Website projections published atomically');
+}
+export async function refreshDirectoryReadiness(sql:{unsafe:(query:string,values?:unknown[])=>Promise<unknown>}){
+ const eligible="i.eligible and nullif(trim(i.category),'') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')";
+ await sql.unsafe(`update showhome_web.directory_cards c set is_ready=exists(select 1 from showhome_web.gallery_memberships h join showhome_web.gallery_card_index i on i.uid=h.uid where h.builder_slug=c.builder_slug and h.development_url=c.development_url and ${eligible}) where c.kind='locations'`);
+ await sql.unsafe(`update showhome_web.directory_cards c set is_ready=exists(select 1 from showhome_web.gallery_card_index i where i.builder_slug=c.builder_slug and i.building_names @> array[lower(c.building_name)] and ${eligible}) where c.kind='buildings'`);
 }

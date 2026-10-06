@@ -3,11 +3,13 @@ import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import type postgres from 'postgres';
 import {queryDirectory} from '../src/database/directory-query';
+import {refreshDirectoryReadiness} from '../src/catalogue/publish';
 const db=new PGlite();
 const sql={json:JSON.stringify,unsafe:async(query:string,values:unknown[])=> (await db.query(query,values)).rows} as unknown as postgres.Sql;
 beforeAll(async()=>{
  await db.exec('create role anon; create role authenticated;');
- for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000300_directory_filter_rows.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
+ for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000300_directory_filter_rows.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql','20261006001200_directory_ready_flag.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
+ await db.exec('create view showhome_web.gallery_card_index as select * from showhome_web.gallery_cards');
  await db.exec(`insert into showhome_web.directory_cards(kind,key,name,payload) values
  ('locations','a','A','{"key":"a","name":"A","properties":[]}'),('locations','b','B','{"key":"b","name":"B","properties":[]}'),
  ('buildings','house','House','{"key":"house","name":"House","places":[{}],"interiorIds":["one"]}'),
@@ -86,6 +88,7 @@ it('excludes stale developments whose linked images are not categorised',async()
  insert into showhome_web.gallery_images values('stale','stale',0);
  insert into showhome_web.gallery_cards(uid,builder_slug,image_id,builder_name,category,eligible,verdict_matches,search_text,payload) values('stale-image','alpha','stale','Alpha','Uncategorised',true,false,'','{}');
  insert into showhome_web.gallery_memberships(uid,gallery_key,builder_slug,url,development_url,development,building_name) values('stale-image','stale','alpha','stale','stale','Stale','house');`);
+ await refreshDirectoryReadiness(sql);
  const result=await queryDirectory({kind:'locations'},sql);
  expect(result.cards.map(card=>card.key)).toEqual(['a','b']);expect(result.counts.Developments).toBe(2);
  expect(result.mapCards?.some(card=>card.key==='stale')).toBe(false);
@@ -100,6 +103,7 @@ it('hides empty and uncategorised building types from results and facets',async(
  await db.exec(`insert into showhome_web.directory_cards(kind,key,name,builder_slug,building_name,payload) values('buildings','empty','Empty','alpha','empty','{"key":"empty"}');
  insert into showhome_web.directory_filter_rows(kind,card_key,developer,site,building_types) values('buildings','empty','Alpha','North','{empty}');
  update showhome_web.gallery_cards set building_names=array['empty'] where uid='stale-image';`);
+ await refreshDirectoryReadiness(sql);
  const result=await queryDirectory({kind:'buildings'},sql);
  expect(result.cards.map(card=>card.key)).toEqual(['house']);
  expect(result.total).toBe(1);expect(result.facets.type).not.toContain('Empty');
