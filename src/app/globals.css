@@ -203,7 +203,7 @@ body:has(.location-explorer) .directory-intro-heading>p{font-size:14px;margin:8p
 .directory-filter-row:not(.directory-filters-pinned):has(.money-input-options){position:relative}
 .money-input:has(.money-input-options){z-index:1002}
 
-.location-explorer-toolbar .location-view-controls{order:1}
+.location-explorer-toolbar>.directory-view-status{order:1}
 .location-explorer-toolbar .site-map-search{order:2}
 .location-explorer-toolbar .development-order{order:3;margin-left:auto;justify-content:flex-end}
 
