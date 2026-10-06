@@ -27,6 +27,10 @@ def snapshot():
             pass
     if progress.get('status') == 'running' and not alive:
         progress['status'] = 'stopped'
+    try:
+        progress['previewExceptions'] = len(json.loads((ROOT / '.showhome/preview-failures.json').read_text()))
+    except (OSError, ValueError):
+        progress['previewExceptions'] = 0
     progress.update(workerAlive=alive, localFreeBytes=shutil.disk_usage(ROOT).free, updatedAt=time.time())
     return progress
 
