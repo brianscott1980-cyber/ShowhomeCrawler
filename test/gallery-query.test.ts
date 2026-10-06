@@ -2,6 +2,7 @@ import {beforeAll,afterAll,expect,it} from 'vitest';
 import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import type postgres from 'postgres';
+import {interiorCardCounts} from '../src/database/interior-card-counts';
 import {queryGallery} from '../src/database/gallery-query';
 const db=new PGlite();
 const sql=Object.assign(async(strings:TemplateStringsArray,...values:unknown[])=>{const query=strings.reduce((q,s,i)=>q+s+(i<values.length?'$'+(i+1):''),'');return (await db.query(query,values)).rows;},{json:JSON.stringify,unsafe:async(query:string,values:unknown[])=>(await db.query(query,values)).rows}) as unknown as postgres.Sql;
@@ -57,4 +58,12 @@ it('paginates shared images by house type and correlates filters with that type'
  expect(filtered.images.filter(image=>image.id==='a').map(image=>image.uid)).toEqual(['alpha:a:house:house']);
  const first=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},limit:1,selectedUid:'alpha:a'},sql);
  expect(first.images[0]?.id).toBe('a');expect(first.nextOffset).toBe(1);expect(first.hasMore).toBe(true);
+});
+
+it('room card counts equal gallery totals for correlated filters and shared house types',async()=>{
+ for(const filters of [{},{developer:'Alpha'},{bedrooms:'2'},{bedrooms:'5',site:'North'},{location:'North',site:'North'}]){
+  const counts=await interiorCardCounts(['bedroom'],filters,sql);
+  const gallery=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},filters},sql);
+  expect(counts.get('bedroom')??0).toBe(gallery.total);
+ }
 });

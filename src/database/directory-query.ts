@@ -1,3 +1,4 @@
+import {interiorCardCounts} from './interior-card-counts';
 import type postgres from 'postgres';
 import {websiteDatabase} from './website';
 import {selectedValues} from '../web/filter-selection';
@@ -46,6 +47,10 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
   Promise.all(facetQueries.map(async f=>({key:f.key,rows:await sql.unsafe(f.query,f.values as never)}))),
   kind==='locations'?sql.unsafe(mapQuery,baseValues as never):Promise.resolve([])
  ]);
+ if(kind==='interiors'&&cards.length){
+  const counts=await interiorCardCounts(cards.map(c=>c.payload.key),filters,sql);
+  for(const card of cards)card.payload={...card.payload,count:counts.get(card.payload.key)??0};
+ }
  const total=Number(totalRows[0]?.total??0),counts:Record<string,unknown>=countRows[0]??{};
  return {cards:cards.map(c=>c.payload),total,nextOffset:offset+cards.length,hasMore:offset+cards.length<total,facets:Object.fromEntries(facetRows.map(f=>[f.key,(f.rows[0]?.options??[]).filter((v:unknown)=>v!==null)])),counts:kind==='locations'?{Developments:total}:kind==='builders'?{Builders:total,Developments:Number(counts.developments),'Building types':Number(counts.buildings)}:kind==='buildings'?{Styles:total,Developments:Number(counts.developments)}:{'Room types':Number(counts.rooms),Interiors:Number(counts.interiors)},...(kind==='locations'?{mapCards:mapRows.map(r=>r.payload)}:{})};
 }

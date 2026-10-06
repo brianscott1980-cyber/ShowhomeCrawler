@@ -7,7 +7,7 @@ const db=new PGlite();
 const sql={json:JSON.stringify,unsafe:async(query:string,values:unknown[])=> (await db.query(query,values)).rows} as unknown as postgres.Sql;
 beforeAll(async()=>{
  await db.exec('create role anon; create role authenticated;');
- for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000300_directory_filter_rows.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
+ for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000300_directory_filter_rows.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
  await db.exec(`insert into showhome_web.directory_cards(kind,key,name,payload) values
  ('locations','a','A','{"key":"a","name":"A","properties":[]}'),('locations','b','B','{"key":"b","name":"B","properties":[]}'),
  ('buildings','house','House','{"key":"house","name":"House","places":[{}],"interiorIds":["one"]}'),
