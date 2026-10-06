@@ -17,7 +17,7 @@ import {BuilderName} from './builder-name';
 import {builderBrand} from './builder-brand';
 import Link from 'next/link';
 import {useState,useEffect,useMemo,lazy,Suspense,useRef} from 'react';
-import {hasCoordinates,type MapCamera} from './site-map';
+import {hasCoordinates,type MapCamera} from './map-coordinates';
 import type {FocusArea} from './map-marker-visibility';
 import {developers as builderRegistry} from '../adapters/developers';
 const SiteMap=lazy(()=>import('./site-map').then(module=>({default:module.SiteMap})));
@@ -172,7 +172,7 @@ export function SiteDirectory({
  const href=card.href??`${basePath}/${card.key}`;
  const content=<><div className="site-preview-photo">{card.image?<ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout} caption={mapView}/>:<div className="development-image-pending">Images not yet available</div>}<>{card.logo&&<img className="development-builder-logo" style={{background:card.logoBackground??'#fff'}} src={card.logo} alt={`${card.developer} logo`} loading="lazy"/>}</></div><div className="card-body"><h2>{card.name}</h2><p className="site-builder-line"><BuilderName name={card.developer}/></p><p className="subtle development-location">{[card.country,card.town].filter(Boolean).join(', ')||'Location unavailable'}{point&&<> · {card.miles===null?'Distance unavailable':`${card.miles.toFixed(1)} miles away`}</>}</p><dl className={`site-property-summary${mapView?' site-compact-facts':''}`}><div><dt>Prices</dt><dd>{range(card.properties.map(p=>p.price),money)}</dd></div><div><dt>Bedrooms</dt><dd>{range(card.properties.map(p=>p.bedrooms),String)}</dd></div><div className="site-style-fact"><dt>Styles</dt><dd>{[...new Set(card.properties.map(p=>p.style??'Unknown'))].map(style=><span className="development-style" key={style}>{style}</span>)}</dd></div></dl></div></>;
  const className=`collection-card${activeKey===card.key?' is-map-active':''}${hoverKey===card.key?' is-map-hovered':''}`;
- return <Link id={'site-card-'+card.key} key={card.key} className={className} href={href} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}>{content}</Link>;
+ return <Link prefetch={false} id={'site-card-'+card.key} key={card.key} className={className} href={href} onMouseEnter={()=>setHoverKey(card.key)} onMouseLeave={()=>setHoverKey(null)} onFocus={()=>setHoverKey(card.key)} onBlur={()=>setHoverKey(null)}>{content}</Link>;
  })}
  </CardResults>
  {!visible.length&&<p className="empty">{mapView?'No developments in this area match your filters. Move the map or show all matching sites.':'No developments match your filters. Try widening your search.'}</p>}

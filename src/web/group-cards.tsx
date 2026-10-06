@@ -112,7 +112,7 @@ export function GroupCards({
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore}>
     {visible.map(card => (
-     <Link className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} key={card.key}>
+     <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} key={card.key}>
       <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
       <div className="card-body">
        <h2>{card.name}</h2>

@@ -1,4 +1,7 @@
 'use client';
+import {useGalleryQuery} from './use-gallery-query';
+import type {GalleryScope,GalleryPageData,GalleryImage} from './gallery-page-data';
+import {DirectoryQueryStatus} from './use-directory-query';
 import {RollingCount} from './rolling-count';
 import {SingleSelectFilter} from './single-select-filter';
 import {MoneyInput} from './money-input';
@@ -40,8 +43,10 @@ export function Gallery({
  overviewOnly = false,
  places,
  initialImage,
+ galleryScope, galleryPage,
 }: {
  collections: Collection[];
+ galleryScope?:GalleryScope; galleryPage?:GalleryPageData;
  initialImage?: string;
  favouritesOnly?: boolean;
  includeUnclassified?: boolean;
@@ -178,7 +183,8 @@ export function Gallery({
 
   return true;
  };
- const images=available.filter(image=>matches(image,filters));
+ const remote=useGalleryQuery(galleryScope,galleryPage,filters,favourites,initialImage);
+ const images:GalleryImage[]=remote?.images??available.filter(image=>matches(image,filters));
  const matchingHomes=images.flatMap(image=>image.homes.filter(home=>homeMatches(image,home,filters)).map(home=>({home,slug:image.slug})));
  const interiorImages=images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&image.verdict?.roomType!=='Exterior');
  const roomNames=images.map(image=>image.categorisation?.mainCategory??(image.verdict?.matches?(/office|study/i.test(image.verdict.roomType??'')?'Study & Home Office':image.verdict.roomType?.replace(/[_-]/g,' ').replace(/\b\w/g,c=>c.toUpperCase())??'Study & Home Office'):'Uncategorised'));
@@ -187,16 +193,16 @@ export function Gallery({
   'Room Types':new Set(roomNames.filter(name=>!['Exterior','Other','Uncategorised'].includes(name))).size,
   Interiors:new Set(interiorImages.map(image=>image.uid)).size,
  }:{'Unique images':images.length,Developments:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.developmentUrl}`)).size,Properties:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.url}`)).size};
- const displayedCounts=overviewOnly?introduction?.counts??resultCounts:resultCounts;
+ const displayedCounts=overviewOnly?introduction?.counts??resultCounts:remote?.counts??resultCounts;
  const facet=(key:keyof typeof filters)=>available.filter(image=>matches(image,{...filters,[key]:''}));
- const mainCategories=[...new Set(facet('category').map(i=>i.categorisation?.mainCategory).filter((v):v is string=>Boolean(v)))].sort();
- const subCategories=[...new Set(facet('room').map(i=>i.categorisation?.subCategory).filter((v):v is string=>Boolean(v)))].sort();
+ const mainCategories=remote?.facets.category??[...new Set(facet('category').map(i=>i.categorisation?.mainCategory).filter((v):v is string=>Boolean(v)))].sort();
+ const subCategories=remote?.facets.room??[...new Set(facet('room').map(i=>i.categorisation?.subCategory).filter((v):v is string=>Boolean(v)))].sort();
  const facetHomes=(key:keyof typeof filters)=>facet(key).flatMap(image=>image.homes.filter(home=>homeMatches(image,home,{...filters,[key]:''})).map(home=>({home,slug:image.slug})));
- const sites=[...new Map(facetHomes('development').map(({home})=>[home.developmentUrl,home.development])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
- const builderOptions=[...new Set(facet('developer').map(i=>i.developer))].sort();
- const bedroomOptions=[...new Set(facetHomes('bedrooms').map(({home})=>home.bedrooms).filter((n):n is number=>n!==null))].sort((a,b)=>a-b);
- const areaOptions=[...new Set(facetHomes('location').flatMap(({home,slug})=>places?.[`${slug}:${home.developmentUrl}`]??[]))].sort();
- const siteOptions=[...new Set(facetHomes('site').map(({home})=>home.development))].sort();
+ const sites=remote?.facets.development??[...new Map(facetHomes('development').map(({home})=>[home.developmentUrl,home.development])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
+ const builderOptions=remote?.facets.developer??[...new Set(facet('developer').map(i=>i.developer))].sort();
+ const bedroomOptions=remote?.facets.bedrooms??[...new Set(facetHomes('bedrooms').map(({home})=>home.bedrooms).filter((n):n is number=>n!==null))].sort((a,b)=>a-b);
+ const areaOptions=remote?.facets.location??[...new Set(facetHomes('location').flatMap(({home,slug})=>places?.[`${slug}:${home.developmentUrl}`]??[]))].sort();
+ const siteOptions=remote?.facets.site??[...new Set(facetHomes('site').map(({home})=>home.development))].sort();
 
  const rangeHomes=(range:'bedrooms'|'price')=>{
   const remaining={...filters,...(range==='bedrooms'?{minBeds:'',maxBeds:''}:{minPrice:'',maxPrice:''})};
@@ -206,7 +212,10 @@ export function Gallery({
  const pricesRange=priceRangeOptions(rangeHomes('price').map(home=>home.price).filter((value):value is number=>value!==null));
  const changeRange=(key:'minBeds'|'maxBeds'|'minPrice'|'maxPrice',value:string)=>setFilters(previous=>({...previous,[key]:value,...(key==='minBeds'&&value&&previous.maxBeds&&Number(value)>Number(previous.maxBeds)?{maxBeds:value}:{}),...(key==='minPrice'&&value&&previous.maxPrice&&Number(value)>Number(previous.maxPrice)?{maxPrice:value}:{}),...(key==='maxPrice'&&value&&previous.minPrice&&Number(value)<Number(previous.minPrice)?{minPrice:value}:{})}));
 
- const current = images.find(i => i.uid === selected);
+ const [viewerImage,setViewerImage]=useState<GalleryImage|null>(null);
+ const viewerSequence=useRef(0);
+ useEffect(()=>{viewerSequence.current++;setViewerImage(null);},[remote?.identity]);
+ const current = images.find(i => i.uid === selected)??(viewerImage?.uid===selected?viewerImage:undefined);
  const heroImages = images;
  const heroImage = heroImages.find(i => i.uid === heroId) ?? heroImages[0];
  function heroStep(direction: number) {
@@ -220,6 +229,7 @@ export function Gallery({
 
  function open(uid: string) {
   returnFocus.current = document.activeElement as HTMLElement;
+  viewerSequence.current++;setViewerImage(null);
   setSelected(uid);
   showControls();
   dialog.current?.showModal();
@@ -234,8 +244,9 @@ export function Gallery({
   }
  }, [ready, initialImage, images.map(image => image.uid).join('|')]);
 
- function step(direction: number) {
+ async function step(direction: number) {
   showControls();
+  if(remote&&current?.position!==undefined&&remote.total){const position=(current.position+direction+remote.total)%remote.total;const loaded=remote.images.find(i=>i.position===position);if(loaded){setViewerImage(null);setSelected(loaded.uid);return;}const sequence=++viewerSequence.current,next=await remote.getImage(position);if(next&&sequence===viewerSequence.current){setViewerImage(next);setSelected(next.uid);}return;}
   const index = images.findIndex(i => i.uid === selected);
   setSelected(images[(index + direction + images.length) % images.length]?.uid ?? null);
  }
@@ -322,12 +333,13 @@ export function Gallery({
     <p className="count" style={{ margin: 0 }}>
      {favouritesOnly && !ready
       ? 'Loading favourites…'
-      : `${images.length} ${images.length === 1 ? 'image' : 'images'}`}
+      : `${remote?.total??images.length} ${(remote?.total??images.length) === 1 ? 'image' : 'images'}`}
     </p>
    </div>
 
    </>}
-   <CardResults className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
+   <DirectoryQueryStatus query={remote}/>
+   <CardResults hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
      <article className="image-card" key={image.uid}>
       <div className="results-photo-frame">
@@ -401,7 +413,7 @@ export function Gallery({
     ))}
    </CardResults>
 
-   {!images.length && ready && (
+   {!images.length && ready && !remote?.loading && (
     <div className="empty">
      {favouritesOnly
       ? 'No saved spaces match. Add favourites using the heart on a developer’s images.'
@@ -416,7 +428,7 @@ export function Gallery({
     className={`viewer results-viewer ${controlsVisible ? 'controls-visible' : ''}`}
     aria-label="Fullscreen interior gallery"
     onClose={() => {
-     setSelected(null);
+     viewerSequence.current++;setViewerImage(null);setSelected(null);
      const url = new URL(window.location.href);
      if (url.searchParams.has('image')) {
       url.searchParams.delete('image');

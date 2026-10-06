@@ -11,6 +11,8 @@ The website catalogue is now stored in the backend-only `showhome_web` PostgreSQ
 - `images`: builder-scoped image IDs, source/local paths, content hash and categorisation metadata.
 - `gallery_images`: ordered many-to-many image links. Shared house-type photography retains every development relationship.
 - `offers`: deduplicated bedroom/price/style combinations advertised at a development, so filters match bedrooms and price on the same offer.
+- `gallery_cards`: prepared image metadata and scoped home details, with indexed builder/category/building membership for image batches. Compact `gallery_memberships`, derived from normalized gallery/development relationships during publication, serve counts and facets without repeatedly reading image metadata.
+- `publication_revision` and `query_cache`: shared response cache with five-minute expiry; publication increments the generation and clears entries atomically. Location-dependent searches, map viewport criteria, favourites and gallery search text bypass shared caching. A result computed against an older generation cannot be written into the newer cache.
 - `directory_cards` and `presentations`: derived database response caches for directories, counters and homepage data. These are generated from normalized records, not report-file blobs.
 
 The existing `public` crawl tables/history are preserved. The serving schema has no anonymous or authenticated browser-role access. The application uses the server-only `DATABASE_URL`, transaction pooling, disabled prepared statements and a maximum of three connections per process. Migrations use `DIRECT_URL`.
@@ -38,6 +40,12 @@ Directory requests read prepared database responses instead of parsing/reconstru
 All four directories initially send 16 cards. The private POST `/api/directory` queries matching records for filters, ordering, exact counters and cascading facets, then returns the next batch for the More button or scroll pressure trigger. Criteria remain in session state rather than URLs. Bedroom and price criteria match the same offer; building/development/area criteria match the same membership. Category counters count distinct images, including unlinked images. Development maps receive lightweight metadata for all matching locations independently of the loaded cards; viewport queries and selected-map cards use server pagination. Publication rebuilds typed filter rows in the same transaction as serving cards.
 
 Measured database response sizes were approximately 167 KB for the first building batch (previous full page about 17 MB), 330 KB for builders, 300 KB for interiors, and 572 KB for developments including all map locations. These are uncompressed data measurements, not browser paint timings.
+
+## Gallery and browser performance
+
+Building and interior detail galleries send 16 images initially and fetch further batches through `/api/gallery`. Favourites fetch only IDs saved in the browser; they no longer download every builder catalogue. Counters and cascading facets cover the full matching gallery, including unlinked category images. Image positions support fullscreen next/previous navigation throughout the catalogue without loading all thumbnails. Builder/development overview carousels retain their existing small previews.
+
+Maps mount near the viewport after browser idle time, with lazy chunks for homepage photo animations and builder maps; the homepage’s static coverage map remains server-rendered. Explicit directory Map view mounts immediately on selection. Card-link automatic prefetch is disabled, and carousel next-image warming runs at low priority during idle time near the viewport. Publication refreshes PostgreSQL statistics after rebuilding serving rows.
 
 ## Release checks
 

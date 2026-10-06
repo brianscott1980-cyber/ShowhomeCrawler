@@ -21,17 +21,17 @@ export default async function Home() {
    <HomepageMap points={points} photos={mapPhotos}/>
   </section>
   <section className="home-journeys" id="start-exploring" aria-labelledby="journeys-title">
-   <div className="home-section-heading"><div><p className="eyebrow">Make yourself at home</p><h2 id="journeys-title">Where would you like to begin?</h2></div><Link href="/builders" className="home-text-link">Browse all builders <span aria-hidden="true">↗</span></Link></div>
-   <div className="home-journey-grid">{journeys.map((journey, index) => <Link key={journey.href} href={journey.href} className="home-journey">
+   <div className="home-section-heading"><div><p className="eyebrow">Make yourself at home</p><h2 id="journeys-title">Where would you like to begin?</h2></div><Link prefetch={false} href="/builders" className="home-text-link">Browse all builders <span aria-hidden="true">↗</span></Link></div>
+   <div className="home-journey-grid">{journeys.map((journey, index) => <Link prefetch={false} key={journey.href} href={journey.href} className="home-journey">
     {journeyPhotos[index] && <div className="home-journey-photo"><Image src={optimizedImageSource(journeyPhotos[index]!.src)} alt="" width={640} height={480} sizes="(max-width: 700px) 100vw, 33vw"/></div>}
     <div className="home-journey-copy"><span className="home-step">{journey.number}</span><h3>{journey.title}</h3><p>{journey.description}</p><span className="home-text-link">{journey.link} <span aria-hidden="true">↗</span></span></div>
    </Link>)}</div>
   </section>
   {featured.length > 0 && <section className="home-inspiration" aria-labelledby="inspiration-title">
-   <div className="home-section-heading"><div><p className="eyebrow">From the collection</p><h2 id="inspiration-title">Ideas worth saving.</h2></div><Link className="home-text-link" href="/interiors">Explore all interiors <span aria-hidden="true">↗</span></Link></div>
+   <div className="home-section-heading"><div><p className="eyebrow">From the collection</p><h2 id="inspiration-title">Ideas worth saving.</h2></div><Link prefetch={false} className="home-text-link" href="/interiors">Explore all interiors <span aria-hidden="true">↗</span></Link></div>
    <Gallery collections={featured} includeUnclassified featured/>
   </section>}
-  <section className="home-saved"><div><p className="eyebrow">For your home, in your own time</p><h2>Keep your favourite ideas together.</h2><p>Save the spaces that catch your eye using the heart on any image. Your favourites stay here in this browser, ready when you are.</p></div><Link className="home-button home-button-outline" href="/favourites">Your favourites <span aria-hidden="true">↗</span></Link></section>
+  <section className="home-saved"><div><p className="eyebrow">For your home, in your own time</p><h2>Keep your favourite ideas together.</h2><p>Save the spaces that catch your eye using the heart on any image. Your favourites stay here in this browser, ready when you are.</p></div><Link prefetch={false} className="home-button home-button-outline" href="/favourites">Your favourites <span aria-hidden="true">↗</span></Link></section>
   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd({ '@context': 'https://schema.org', '@type': 'WebSite', name: 'Showhome Explorer', url: absoluteUrl('/'), description: metadata.description }) }}/>
  </main>;
 }

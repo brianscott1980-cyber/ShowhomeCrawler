@@ -75,9 +75,10 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  },[identity,layout]);
  useEffect(()=>{
   if(items.length<2||!ref.current)return;
+  let idle:number|undefined,timer:ReturnType<typeof setTimeout>|undefined;
   // Warm the next image only near the viewport, rather than downloading every collection.
-  const observer=new IntersectionObserver(events=>{if(events.some(event=>event.isIntersecting)){const preload=new Image();const next=items[collectionIndex(slide.index,1,items.length)]!;const props=getImageProps({src:optimizedImageSource(next.src),alt:'',fill:true,sizes,unoptimized:next.kind==='logo'}).props;preload.fetchPriority='low';preload.sizes=sizes;if(props.srcSet)preload.srcset=props.srcSet;preload.src=props.src;observer.disconnect();}},{rootMargin:'200px'});
-  observer.observe(ref.current);return ()=>observer.disconnect();
+  const observer=new IntersectionObserver(events=>{if(events.some(event=>event.isIntersecting)){const warm=()=>{const preload=new Image();const next=items[collectionIndex(slide.index,1,items.length)]!;const props=getImageProps({src:optimizedImageSource(next.src),alt:'',fill:true,sizes,unoptimized:next.kind==='logo'}).props;preload.fetchPriority='low';preload.sizes=sizes;if(props.srcSet)preload.srcset=props.srcSet;preload.src=props.src;};if(window.requestIdleCallback)idle=window.requestIdleCallback(warm,{timeout:1500});else timer=setTimeout(warm,250);observer.disconnect();}},{rootMargin:'50px'});
+  observer.observe(ref.current);return ()=>{observer.disconnect();if(idle!==undefined)window.cancelIdleCallback?.(idle);clearTimeout(timer);};
  },[identity,slide.index,sizes]);
  const current=items[slide.index]??items[0]!;
  const previous=items[slide.previous]??items[0]!;

@@ -9,16 +9,8 @@ import {builderMapBrand} from './builder-map-brand';
 import type {SiteCard} from './site-filters';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-export interface MapBounds {west:number; east:number; south:number; north:number}
-export interface MapCamera {lng:number;lat:number;zoom:number}
-export function hasCoordinates(card:SiteCard):card is SiteCard & {latitude:number;longitude:number} {
- return Number.isFinite(card.latitude) && Number.isFinite(card.longitude) && Math.abs(card.latitude!)<=90 && Math.abs(card.longitude!)<=180;
-}
-export function inMapBounds(card:SiteCard, bounds:MapBounds) {
- if(!hasCoordinates(card))return false;
- const longitude=((card.longitude-bounds.west)%360+360)%360+bounds.west;
- return card.latitude>=bounds.south && card.latitude<=bounds.north && longitude<=bounds.east;
-}
+import {hasCoordinates,type MapBounds,type MapCamera} from './map-coordinates';
+export {hasCoordinates,inMapBounds,type MapBounds,type MapCamera} from './map-coordinates';
 function siteFeatures(cards:SiteCard[]) {
  return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderInitial:builderMapBrand(card.developer).initial}}))};
 }

@@ -1,4 +1,5 @@
-import {queryDirectory} from '../database/directory-query';
+import {cachedGallery as queryGallery} from '../database/gallery-cache';
+import {cachedDirectory as queryDirectory} from '../database/directory-cache';
 import {readDirectoryCards,readPresentation,findDirectoryReference,readWebsiteCollection,readWebsiteBuilder} from '../database/website';
 import type {SiteCard} from './site-filters';
 import type {GroupCardItem} from './group-cards';
@@ -71,7 +72,14 @@ async function findGroup(kind:GroupKind,id:string){
  return {group,path:reference.href};
 }
 export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:string;searchParams?:SearchValues}){
- const {group,path}=await findGroup(kind,id);const pathPrefix=prefixFor(kind);
+ const pathPrefix=prefixFor(kind);
+ if(kind==='buildings'||kind==='interiors'||kind==='spaces'){
+  const galleryScope={kind:kind==='buildings'?'buildings' as const:'interiors' as const,href:`/${pathPrefix}/${id}`};
+  const reference=await findDirectoryReference(galleryScope.kind,galleryScope.href);if(!reference)notFound();
+  const galleryPage=await queryGallery({scope:galleryScope,...(typeof searchParams.image==='string'?{selectedUid:searchParams.image}:{})});
+  return <ResultsPage title={reference.name} eyebrow={reference.payload.developers?.join(' · ')} description={`Explore interiors from ${reference.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={[]} places={{}} galleryScope={galleryScope} galleryPage={galleryPage} initialImage={typeof searchParams.image==='string'?searchParams.image:undefined} includeUnclassified/>;
+ }
+ const {group,path}=await findGroup(kind,id);
  if(path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));
  const places=Object.fromEntries(await buildingLocationIndex([group]));
  const isDevelopment=kind==='sites'||kind==='locations';
@@ -96,6 +104,6 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
   </nav>
  </>:undefined;
 
- return <ResultsPage title={group.name} counts={developmentCounts} developmentDetails={detailCard?<DevelopmentOverviewDetails card={detailCard} contact={contact}/>:undefined} titleAccessory={logo?<img className="builder-results-logo development-builder-overview-logo" src={logo} alt={`${builder.name} logo`} style={{background:brand?.logo_background??'#fff'}}/>:undefined} eyebrow={isDevelopment?null:group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={kind==='buildings' && typeof searchParams.image==='string' ? searchParams.image : undefined} includeUnclassified>{navigation}</ResultsPage>;
+ return <ResultsPage title={group.name} counts={developmentCounts} developmentDetails={detailCard?<DevelopmentOverviewDetails card={detailCard} contact={contact}/>:undefined} titleAccessory={logo?<img className="builder-results-logo development-builder-overview-logo" src={logo} alt={`${builder.name} logo`} style={{background:brand?.logo_background??'#fff'}}/>:undefined} eyebrow={isDevelopment?null:group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={undefined} includeUnclassified>{navigation}</ResultsPage>;
 }
-export async function groupMetadata(kind:GroupKind,id:string){const {group,path}=await findGroup(kind,id);return {title:`${group.name} | Showhome Explorer`,description:`Explore ${group.count} images from ${group.name} by ${group.developers.join(', ')}.`,alternates:{canonical:path}};}
+export async function groupMetadata(kind:GroupKind,id:string){if(kind==='buildings'||kind==='interiors'||kind==='spaces'){const path=`/${prefixFor(kind)}/${id}`,reference=await findDirectoryReference(kind==='spaces'?'interiors':kind,path);if(!reference)notFound();return {title:`${reference.name} | Showhome Explorer`,description:`Explore ${reference.payload.count} images from ${reference.name}.`,alternates:{canonical:path}};}const {group,path}=await findGroup(kind,id);return {title:`${group.name} | Showhome Explorer`,description:`Explore ${group.count} images from ${group.name} by ${group.developers.join(', ')}.`,alternates:{canonical:path}};}

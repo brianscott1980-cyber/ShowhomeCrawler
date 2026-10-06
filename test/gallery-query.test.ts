@@ -1,0 +1,43 @@
+import {beforeAll,afterAll,expect,it} from 'vitest';
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+import type postgres from 'postgres';
+import {queryGallery} from '../src/database/gallery-query';
+const db=new PGlite();
+const sql=Object.assign(async(strings:TemplateStringsArray,...values:unknown[])=>{const query=strings.reduce((q,s,i)=>q+s+(i<values.length?'$'+(i+1):''),'');return (await db.query(query,values)).rows;},{json:JSON.stringify,unsafe:async(query:string,values:unknown[])=>(await db.query(query,values)).rows}) as unknown as postgres.Sql;
+beforeAll(async()=>{
+ await db.exec('create role anon; create role authenticated;');
+ for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
+ await db.exec(`insert into showhome_web.directory_cards(kind,key,name,href,collection_slugs,building_name,category,payload) values ('buildings','house','House','/buildings/alpha/house','{alpha}','House',null,'{}'),('interiors','bedroom','Bedroom','/interiors/bedroom','{alpha}',null,'Bedroom','{}')`);
+ await db.exec(`insert into showhome_web.builders(slug,name,website_url) values('alpha','Alpha','https://example.com');
+ insert into showhome_web.developments(key,builder_slug,source_url,name,display_name,geography) values('North','alpha','North','North','North','{"area":"North"}'),('South','alpha','South','South','South','{"area":"South"}');
+ insert into showhome_web.buildings(key,builder_slug,name) values('house','alpha','house');
+ insert into showhome_web.galleries(key,builder_slug,development_key,building_key,name,source_url,bedrooms,price) values('north','alpha','North','house','House','North',2,100000),('south500','alpha','South','house','House','South',5,500000),('south400','alpha','South','house','House','South',5,400000);`);
+ const home=(site:string,beds:number,price:number)=>({name:'House',buildingName:'House',url:site,development:site,developmentUrl:site,bedrooms:beds,price,areas:[site],plots:[],imageIds:[]});
+ for(const [id,homes,eligible] of [['a',[home('North',2,100000),home('South',5,500000)],true],['b',[home('South',5,400000)],true],['orphan',[],true],['logo',[],false]] as const){
+ await db.query('insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url) values($1,$2,$3,$4,$5)',[id,'alpha',id,'images/'+id+'.jpg','https://example.com/'+id]);
+ const payload={uid:'alpha:'+id,id,slug:'alpha',developer:'Alpha',homes,path:'images/'+id+'.jpg'};
+ await db.query('insert into showhome_web.gallery_cards values($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)',[payload.uid,'alpha',id,'Alpha','Bedroom','Double Bedroom',eligible,true,'blue bedroom',JSON.stringify(payload),homes.length?['house']:[]]);
+ }
+ await db.exec("insert into showhome_web.gallery_images values('north','a',0),('south500','a',0),('south400','b',0)");
+ await db.exec(`insert into showhome_web.gallery_memberships select c.uid,g.key,g.builder_slug,g.source_url,g.bedrooms,g.price,d.source_url,d.name,b.name,array(select value from jsonb_each_text(d.geography)) from showhome_web.gallery_cards c join showhome_web.images i on i.catalogue_id=c.image_id and i.builder_slug=c.builder_slug join showhome_web.gallery_images gi on gi.image_key=i.key join showhome_web.galleries g on g.key=gi.gallery_key join showhome_web.developments d on d.key=g.development_key join showhome_web.buildings b on b.key=g.building_key`);
+});
+afterAll(()=>db.close());
+it('paginates galleries without changing full counters and includes orphan category images',async()=>{
+ const first=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},limit:1},sql);
+ expect(first.total).toBe(3);expect(first.images).toHaveLength(1);expect(first.counts.Developments).toBe(2);
+ const next=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},limit:2,offset:first.nextOffset},sql);
+ expect(next.images.map(i=>i.id)).toEqual(['b','orphan']);expect(next.hasMore).toBe(false);
+});
+it('correlates home filters and calculates facets from unloaded records',async()=>{
+ const data=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'},filters:{bedrooms:'5',site:'North'}},sql);
+ expect(data.total).toBe(0);expect(data.facets.bedrooms).toEqual([2]);expect(data.facets.site).toEqual(['South']);
+ const price=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'},filters:{minBeds:'5',maxPrice:'150000'}},sql);expect(price.total).toBe(0);
+});
+it('scopes favourites to requested IDs and pins a linked image in the first batch',async()=>{
+ const saved=await queryGallery({scope:{kind:'favourites',href:'/favourites'},favourites:['logo']},sql);expect(saved.images.map(i=>i.id)).toEqual(['logo']);
+ const linked=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},selectedUid:'alpha:orphan',limit:1},sql);expect(linked.images[0]?.id).toBe('orphan');expect(linked.total).toBe(3);
+});
+it('applies text and category filters to the complete gallery',async()=>{
+ const data=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},filters:{q:'BLUE',category:'Bedroom',room:'Double Bedroom'}},sql);expect(data.total).toBe(3);
+});

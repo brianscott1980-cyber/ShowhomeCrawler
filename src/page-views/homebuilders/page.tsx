@@ -1,4 +1,4 @@
-import {queryDirectory} from '../../database/directory-query';
+import {cachedDirectory as queryDirectory} from '../../database/directory-cache';
 import {readDirectoryCards,readPresentation} from '../../database/website';
 import {DirectoryCountProvider,DirectoryCounts} from '../../web/directory-counts';
 import {absoluteUrl,jsonLd} from '../../web/seo';
