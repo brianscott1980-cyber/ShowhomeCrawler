@@ -37,7 +37,8 @@
     "website:publish": "tsx src/cli/publish-website.ts",
     "ai:local:setup": "tsx src/cli/local-ai-setup.ts",
     "ai:local:sample": "tsx src/cli/classify-local.ts --sample",
-    "ai:local": "tsx src/cli/classify-local.ts"
+    "ai:local": "tsx src/cli/classify-local.ts",
+    "website:repair-builder": "tsx src/cli/repair-builder-projections.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
