@@ -67,3 +67,15 @@ it('room card counts equal gallery totals for correlated filters and shared hous
   expect(counts.get('bedroom')??0).toBe(gallery.total);
  }
 });
+
+it('shares scoped relations in one statement for counts, facets and page data',async()=>{
+ const statements:string[]=[];
+ const measured=Object.assign((...args:unknown[])=>(sql as any)(...args),{json:sql.json,unsafe:(query:string,values:unknown[])=>{statements.push(query);return sql.unsafe(query,values as never);}}) as unknown as postgres.Sql;
+ const result=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},filters:{developer:'Alpha',building:'house',site:'South',q:'blue'},limit:1},measured);
+ expect(result.total).toBe(2);expect(result.images).toHaveLength(1);
+ expect(statements).toHaveLength(1);
+ expect(statements[0]).toContain('homes as materialized');
+ expect(result.facets.site).toEqual(['North','South']);
+ const image=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},selectedUid:'alpha:b',imageOnly:true,limit:1},sql);
+ expect(image.images[0]?.id).toBe('b');
+});

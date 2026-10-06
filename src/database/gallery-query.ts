@@ -48,7 +48,28 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
   const projection=key==='development'?`coalesce(jsonb_agg(distinct jsonb_build_array(h.development_url,h.development)) filter(where h.development_url is not null),'[]'::jsonb)`:`coalesce(jsonb_agg(distinct ${homeFacet?homeField:imageField} order by ${homeFacet?homeField:imageField}) filter(where ${homeFacet?homeField:imageField} is not null),'[]'::jsonb)`;
   return {key,values:values.slice(),query:`with ${ctes} select ${projection} as options from source s ${homeFacet?'join homes h on h.uid=s.uid':''} ${key==='location'?"cross join lateral unnest(h.areas) a(area)":''} where ${w} ${homeFacet?'and '+hw:''}`};
  });
- const [cards,totals,options]=await Promise.all([sql.unsafe(page,pageValues as never),sql.unsafe(summary,matchValues as never),Promise.all(facets.map(async f=>({key:f.key,rows:await sql.unsafe(f.query,f.values as never)})))]);
+ // Reuse the scoped image and home relations for the page, counters and every
+ // cascading facet. Separate statements rebuilt these relations nine times.
+ const combinedValues=baseValues.slice();
+ const branch=(query:string,parameters:unknown[])=>{
+  const offset=combinedValues.length-baseValues.length;
+  combinedValues.push(...parameters.slice(baseValues.length));
+  return query.slice(`with ${ctes} `.length).replace(/\$(\d+)/g,(_,number:string)=>{
+   const index=Number(number);return '$'+(index>baseValues.length?index+offset:index);
+  });
+ };
+ const pageBranch=branch(page,pageValues);
+ const summaryBranch=branch(summary,matchValues);
+ const facetBranches=facets.map(f=>({key:f.key,query:branch(f.query,f.values)}));
+ const combined=`with source as materialized (${source}),homes as materialized (${homeSource}),
+ page_result as (with ${pageBranch}),summary_result as (${summaryBranch})
+ select coalesce((select jsonb_agg(payload) from page_result),'[]'::jsonb) as cards,
+ (select row_to_json(summary_result) from summary_result) as totals,
+ jsonb_build_object(${facetBranches.map(f=>`'${f.key}',(${f.query})`).join(',')}) as facets`;
+ const [result]=await sql.unsafe(combined,combinedValues as never);
+ const cards=(result!.cards as GalleryPageData['images']).map(payload=>({payload}));
+ const totals=[result!.totals];
+ const options=Object.entries(result!.facets).map(([key,options])=>({key,rows:[{options}]}));
  const total=Number(totals[0]!.total),nextOffset=(input.offset??0)+cards.length;
  return {images:cards.map(c=>c.payload),total,nextOffset,hasMore:nextOffset<total,counts:{'Unique images':Number(totals[0]!.unique_images),Developments:Number(totals[0]!.developments),Properties:Number(totals[0]!.properties)},facets:Object.fromEntries(options.map(o=>[o.key,o.rows[0]!.options])) as GalleryPageData['facets']};
 }

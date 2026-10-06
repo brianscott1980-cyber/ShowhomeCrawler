@@ -20,3 +20,18 @@ The backup is a repeatable-read snapshot of all physical `showhome_web` tables, 
 Classification JSONB remains useful for flexible tags. Storage is reduced by removing duplicate response JSON and string-heavy relationships, rather than discarding image descriptions or classifications. Review flags and content eligibility should also be persisted alongside this canonical metadata, never decided through image analysis during page rendering.
 
 Applied on 6 October 2026: database size fell from 937 MB to 375 MB. All 63,135 image records, 18,650 galleries, 196,440 image links, 58,611 serving records and 178,083 derived memberships were preserved. The complete image-metadata checksum matched before and after migration, a sampled filtered gallery retained its IDs and totals, and a normal write transaction succeeded. A 53 MB compressed pre-migration snapshot is on the NAS under `ShowhomeCrawler-content/database-backups/2026-10-06-pre-compaction/`.
+
+### Shared gallery query work
+
+Gallery pagination, summary counts and seven cascading facets now share one SQL
+statement with materialized scoped-image and house-type relations. Previously,
+nine separate statements rebuilt these joins and competed for the three database
+connections. Image-only requests retain their lightweight page query.
+
+A live Bellway / Bedroom / four-bedroom request (three preview images) measured
+47.4 seconds before and 4.3 seconds after this change. The selected images,
+classifications, 929 entries, 799 distinct images, 174 developments and 625
+properties matched. These are individual live timings, not a latency guarantee.
+An instrumented EXPLAIN ANALYZE run took 13.4 seconds; the remaining largest cost
+was constructing the house-type relation, rather than the reused facet queries.
+The plan is saved privately in `.showhome/gallery-query-plan.json`.
