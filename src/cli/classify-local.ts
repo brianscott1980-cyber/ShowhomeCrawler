@@ -1,3 +1,4 @@
+import {requireLocalContentRoot} from './local-ai-config.js';
 import {parseArgs} from 'node:util';
 import {readFile,writeFile,mkdir,rename,open,unlink,access} from 'node:fs/promises';
 import {resolve,basename,relative} from 'node:path';
@@ -38,6 +39,7 @@ async function review(){
  await writeFile(resolve(folder,'report.html'),`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Local image classification review</title><style>body{font:16px system-ui;background:#f4f1e9;color:#21352e;margin:30px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}article{background:white;border:1px solid #ddd;border-radius:18px;padding:20px}img{width:100%;height:260px;object-fit:contain;background:#eee}h2{font-size:20px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}</style><h1>Local classification: ${escape(model)}</h1><p>${entries.filter(entry=>!entry.error).length} completed · ${entries.filter(entry=>entry.error).length} failed. Reference categories are earlier model classifications, not verified ground truth.</p><main>${html}</main></html>`);
 }
 async function main(){
+ values['content-root']=await requireLocalContentRoot(values['content-root']);
  await mkdir(resolve(folder,'previews'),{recursive:true});
  const tags=await fetch(host.replace(/\/$/,'')+'/api/tags',{signal:AbortSignal.timeout(5000)}).catch(()=>null);
  if(!tags?.ok)throw new Error('Ollama is unavailable; run npm run ai:local:setup first.');

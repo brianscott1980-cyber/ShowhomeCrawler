@@ -2,7 +2,9 @@
 
 Requires Node.js 22+ and [Ollama](https://ollama.com/download). No Gemini key or paid API is needed. Ollama uses your own hardware; it must be running on the classification computer.
 
-After cloning/pulling this repository:
+After cloning/pulling this repository, install Ollama and run the commands below. The setup prompts for your NAS content folder when LOCAL_CONTENT_ROOT is missing, checks that its assets directory is readable, and saves it to the Git-ignored .env.local. Classifier commands also perform this check before any inference. Existing .env.local credentials remain intact. Non-interactive commands fail clearly if the path is absent or unavailable. The Mac path does not travel through Git; enter the Windows UNC path or drive path on the PC.
+
+Commands:
 
 ```sh
 npm ci
@@ -44,7 +46,7 @@ npm run ai:local -- --content-root "Z:\ShowhomeCrawler-content" --model qwen3-vl
 
 If an image is missing, the script attempts its original source URL, then the deployed website asset endpoint, and caches it locally. Unavailable images are marked failed and retried on the next run. This needs internet access for missing images, but AI inference stays local. Git contains catalogue metadata and sample IDs, not original images or model weights.
 
-`LOCAL_AI_MODEL`, `OLLAMA_HOST` and `LOCAL_CONTENT_ROOT` can be set in the shell instead of flags. Default Ollama endpoint: `http://127.0.0.1:11434`; default concurrency: 1. Download/model memory requirements vary; model download size is not total RAM required.
+`LOCAL_AI_MODEL`, `OLLAMA_HOST` and `LOCAL_CONTENT_ROOT` can be set in `.env.local`, in the shell, or with flags. Default Ollama endpoint: `http://127.0.0.1:11434`; default concurrency: 1. Download/model memory requirements vary; model download size is not total RAM required.
 
 Local caches and HTML reports are deliberately ignored by Git. To resume the same cache on another PC, copy `.showhome/local-ai/` there (or use `--cache-dir` on a writable shared folder, with only one writer). Applied catalogue changes can be committed and pushed; the next machine skips those classified records. Use the repository's existing website import/publication workflow to update Supabase; this command never publishes or writes to Supabase automatically.
 

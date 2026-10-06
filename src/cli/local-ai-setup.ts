@@ -1,8 +1,10 @@
+import {requireLocalContentRoot} from './local-ai-config.js';
 import {parseArgs} from 'node:util';
 import {spawn} from 'node:child_process';
 const {values}=parseArgs({options:{model:{type:'string',default:process.env.LOCAL_AI_MODEL??'qwen3-vl:2b-instruct'},host:{type:'string',default:process.env.OLLAMA_HOST??'http://127.0.0.1:11434'}}});
 const host=values.host!.replace(/\/$/,'');
 try{
+ await requireLocalContentRoot();
  let available=await fetch(host+'/api/tags',{signal:AbortSignal.timeout(3000)}).then(response=>response.ok).catch(()=>false);
  if(!available){
   console.log('Starting Ollama. If it is not installed, install it from https://ollama.com/download and rerun this command.');
