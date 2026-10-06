@@ -12,11 +12,12 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  scopeConditions.push("nullif(trim(lower(i.category)), '') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')");
  if(scope.kind==='interiors')scopeConditions.push("lower(trim(i.category)) not in ('exterior','floorplan','floor plan')");
  if(scope.kind==='interiors'&&reference.category)scopeConditions.push(`i.category=${p(reference.category)}`);
- const baseBuildingParam=scope.kind==='buildings'?p(reference.building_name):'',homeScope=scope.kind==='buildings'?`lower(h->>'buildingName')=lower(${baseBuildingParam}::text)`:'true';
+ const baseBuildingParam=scope.kind==='buildings'?p(reference.building_name):'';
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);
- const homesProjection=scope.kind==='buildings'?`coalesce((select jsonb_agg(h) from jsonb_array_elements(i.payload->'homes') h where ${homeScope}),'[]'::jsonb)`: `i.payload->'homes'`;
- const source=`select i.uid,i.builder_slug,i.builder_name,i.category,i.room,${filters.q?'i.search_text':"''::text as search_text"} from showhome_web.gallery_cards i where ${scopeConditions.join(' and ')}`;
- const homeSource=`select h.* from showhome_web.gallery_memberships h join source s on s.uid=h.uid ${scope.kind==='buildings'?`where h.building_name=lower(${baseBuildingParam}::text)`:''}`;
+ if(scope.kind==='buildings')scopeConditions.push(`t.building_name=lower(${baseBuildingParam}::text)`);
+ const homesProjection=`coalesce((select jsonb_agg(h) from jsonb_array_elements(i.payload->'homes') h where r.building_name is null or lower(h->>'buildingName')=r.building_name),'[]'::jsonb)`;
+ const source=`select case when cardinality(i.building_names)>1 then i.uid||':house:'||t.building_name else i.uid end as uid,i.uid as image_uid,t.building_name,i.builder_slug,i.builder_name,i.category,i.room,${filters.q?'i.search_text':"''::text as search_text"} from showhome_web.gallery_cards i left join lateral(select distinct lower(name) as building_name from unnest(i.building_names) name) t on true where ${scopeConditions.join(' and ')}`;
+ const homeSource=`select s.uid,h.gallery_key,h.builder_slug,h.url,h.bedrooms,h.price,h.development_url,h.development,h.building_name,h.areas from showhome_web.gallery_memberships h join source s on s.image_uid=h.uid and (s.building_name is null or h.building_name=s.building_name)`;
  const ctes=`source as (${source}),homes as (${homeSource})`;
  const baseValues=values.slice();
  const selection=(field:string,key:string,omit:string)=>{const selected=selectedValues(filters[key]??'');return omit===key||!selected.length?'true':`${field} in(select jsonb_array_elements_text(${p(sql.json(selected))}::jsonb))`;};
@@ -35,11 +36,11 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  }
  const matched=where(),matchedValues=values.slice(),matchingHome=homeWhere(),matchValues=values.slice();
  values.splice(0,values.length,...matchedValues);
- const selected=input.selectedUid?`case when r.uid=${p(input.selectedUid)} then 0 else 1 end,`:'';
- const page=`with ${ctes},ranked as(select s.uid,row_number() over(order by s.uid)-1 as position from source s where ${matched}),batch as(select r.* from ranked r order by ${selected}r.uid limit ${p(input.limit??16)} offset ${p(input.offset??0)}) select i.payload||jsonb_build_object('homes',${homesProjection},'position',r.position) as payload from batch r join showhome_web.gallery_cards i on i.uid=r.uid order by ${selected}r.uid`;
+ const selected=input.selectedUid?`case when (r.uid=${p(input.selectedUid)} or r.image_uid=${p(input.selectedUid)}) then 0 else 1 end,`:'';
+ const page=`with ${ctes},ranked as(select s.uid,s.image_uid,s.building_name,row_number() over(order by s.uid)-1 as position from source s where ${matched}),batch as(select r.* from ranked r order by ${selected}r.uid limit ${p(input.limit??16)} offset ${p(input.offset??0)}) select i.payload||jsonb_build_object('uid',r.uid,'imageUid',r.image_uid,'homes',${homesProjection},'position',r.position) as payload from batch r join showhome_web.gallery_cards i on i.uid=r.image_uid order by ${selected}r.uid`;
  const pageValues=values.slice();
  if(input.imageOnly){const cards=await sql.unsafe(page,pageValues as never);return {images:cards.map(c=>c.payload),total:0,nextOffset:0,hasMore:false,counts:{},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}};}
- const summary=`with ${ctes} select count(distinct s.uid)::int as total,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct h.builder_slug||':'||h.url)::int as properties from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`;
+ const summary=`with ${ctes} select count(distinct s.uid)::int as total,count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct h.builder_slug||':'||h.url)::int as properties from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`;
  const facets=['category','room','developer','bedrooms','location','site','development'].map(key=>{
   values.splice(0,values.length,...baseValues);const homeFacet=['bedrooms','location','site','development'].includes(key),w=where(key),hw=homeFacet?homeWhere(key):'true';
   const imageField=key==='developer'?'s.builder_name':key==='room'?'s.room':'s.category';
@@ -49,5 +50,5 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  });
  const [cards,totals,options]=await Promise.all([sql.unsafe(page,pageValues as never),sql.unsafe(summary,matchValues as never),Promise.all(facets.map(async f=>({key:f.key,rows:await sql.unsafe(f.query,f.values as never)})))]);
  const total=Number(totals[0]!.total),nextOffset=(input.offset??0)+cards.length;
- return {images:cards.map(c=>c.payload),total,nextOffset,hasMore:nextOffset<total,counts:{'Unique images':total,Developments:Number(totals[0]!.developments),Properties:Number(totals[0]!.properties)},facets:Object.fromEntries(options.map(o=>[o.key,o.rows[0]!.options])) as GalleryPageData['facets']};
+ return {images:cards.map(c=>c.payload),total,nextOffset,hasMore:nextOffset<total,counts:{'Unique images':Number(totals[0]!.unique_images),Developments:Number(totals[0]!.developments),Properties:Number(totals[0]!.properties)},facets:Object.fromEntries(options.map(o=>[o.key,o.rows[0]!.options])) as GalleryPageData['facets']};
 }

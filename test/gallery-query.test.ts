@@ -46,3 +46,15 @@ it('excludes uncategorised images even when saved as favourites',async()=>{
  const result=await queryGallery({scope:{kind:'favourites',href:'/favourites'},favourites:['uncategorised']},sql);
  expect(result.total).toBe(0);expect(result.images).toEqual([]);
 });
+it('paginates shared images by house type and correlates filters with that type',async()=>{
+ await db.exec(`update showhome_web.gallery_cards set building_names=array['house','other'],payload=payload||jsonb_build_object('homes',(payload->'homes')||'[ {"name":"Other","buildingName":"Other","url":"Other","development":"North","developmentUrl":"North","bedrooms":3,"price":200000,"imageIds":[],"plots":[]} ]'::jsonb) where image_id='a';
+ insert into showhome_web.gallery_memberships values('alpha:a','other','alpha','Other',3,200000,'North','North','other','{North}');`);
+ const data=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'}},sql);
+ expect(data.total).toBe(4);expect(data.counts['Unique images']).toBe(3);
+ const shared=data.images.filter(image=>image.id==='a');expect(shared).toHaveLength(2);
+ expect(shared.map(image=>new Set(image.homes.map(home=>home.buildingName)).size)).toEqual([1,1]);
+ const filtered=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},filters:{minBeds:'5'}},sql);
+ expect(filtered.images.filter(image=>image.id==='a').map(image=>image.uid)).toEqual(['alpha:a:house:house']);
+ const first=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},limit:1,selectedUid:'alpha:a'},sql);
+ expect(first.images[0]?.id).toBe('a');expect(first.nextOffset).toBe(1);expect(first.hasMore).toBe(true);
+});

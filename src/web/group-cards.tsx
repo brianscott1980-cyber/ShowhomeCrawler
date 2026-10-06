@@ -1,4 +1,6 @@
 'use client';
+import {homeTypeName} from '../reports/home-display';
+import {roomLabel} from './shared-image-cards';
 import {useDirectoryQuery,DirectoryQueryStatus} from './use-directory-query';
 import type {DirectoryPageData} from './directory-page-data';
 import {CardResults} from './card-results';
@@ -115,8 +117,8 @@ export function GroupCards({
      <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} key={card.key}>
       <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
       <div className="card-body">
-       <h2>{card.name}</h2>
-       <p className="subtle">{card.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)}</p>
+       <h2>{isBuildings?homeTypeName(card.name):roomLabel(card.name)}</h2>
+       {pathPrefix!=='interiors'&&pathPrefix!=='spaces'&&<p className="subtle">{card.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)}</p>}
        {card.bedrooms && card.bedrooms.length > 0 && (
         <p className="subtle">
          {card.bedrooms.map(b => `${b} bed`).join(' · ')}

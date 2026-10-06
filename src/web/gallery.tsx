@@ -1,5 +1,6 @@
 'use client';
 import {isCategorisedImage,isInteriorCategory} from './image-classification';
+import {sharedImageCards,roomLabel} from './shared-image-cards';
 import {useGalleryQuery} from './use-gallery-query';
 import type {GalleryScope,GalleryPageData,GalleryImage} from './gallery-page-data';
 import {DirectoryQueryStatus} from './use-directory-query';
@@ -134,14 +135,14 @@ export function Gallery({
   }
  }
 
- const all = collections.flatMap(c =>
-  c.report.images.map(image => ({
+ const all:GalleryImage[] = collections.flatMap(c =>
+  c.report.images.flatMap(image => {const card={
    ...image,
    slug: c.slug,
    developer: c.name,
    homes: c.report.properties.filter(p => p.imageIds.includes(image.id)),
    uid: `${c.slug}:${image.id}`,
-  }))
+  };return featured?[{...card,imageUid:card.uid}]:sharedImageCards(card);})
  );
 
  const available = all.filter(image => {
@@ -243,9 +244,10 @@ export function Gallery({
  useEffect(() => {
   if (!ready || !initialImage || openedInitialImage.current === initialImage) return;
   openedInitialImage.current = initialImage;
-  if (images.some(image => image.uid === initialImage)) {
-   setHeroId(initialImage);
-   open(initialImage);
+  const requested=images.find(image => image.uid === initialImage||image.imageUid===initialImage);
+  if (requested) {
+   setHeroId(requested.uid);
+   open(requested.uid);
   }
  }, [ready, initialImage, images.map(image => image.uid).join('|')]);
 
@@ -282,7 +284,7 @@ export function Gallery({
       </>:null}
       {introduction.developmentDetails&&introduction.titleAccessory&&<div className="development-carousel-logo">{introduction.titleAccessory}</div>}
       <div key={`${heroId==='builder-map'?'builder-map':heroImage?.uid}:${heroTimerVersion}`} className="results-hero-room-type">
-       {heroId==='builder-map'?'Developments':heroImage?.categorisation?.subCategory??heroImage?.categorisation?.mainCategory??'Showhome interior'}
+       {heroId==='builder-map'?'Developments':roomLabel(heroImage?.categorisation?.subCategory??heroImage?.categorisation?.mainCategory??'Showhome interior')}
       </div>
       {heroImages.length+(introduction.map?1:0)>1&&<div className="results-slide-progress" aria-hidden="true"><span key={`${heroId==='builder-map'?'builder-map':heroImage?.uid}:${heroTimerVersion}`} onAnimationEnd={()=>{if(heroPlaying&&!selected&&!pageHidden&&!heroInteracting)heroStep(1);}}/></div>}
       {introduction.map&&<button className="results-hero-playback" aria-label={heroPlaying?'Pause carousel':'Play carousel'} onClick={()=>{setHeroPlaying(playing=>!playing);setHeroTimerVersion(version=>version+1);}}>
@@ -358,7 +360,7 @@ export function Gallery({
         src={imageUrl(image.slug, image.path)}
         alt={image.verdict?.description ?? 'Showhome interior'}
        />
-       {image.categorisation?.subCategory!==''&&<span className="photo-caption">{image.categorisation?.subCategory ?? 'Showhome interior'}</span>}
+       {image.categorisation?.subCategory!==''&&<span className="photo-caption">{roomLabel(image.categorisation?.subCategory ?? 'Showhome interior')}</span>}
       </button>
       <button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>
       </div>
@@ -369,7 +371,7 @@ export function Gallery({
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
          <p className="eyebrow" style={{ margin: 0 }}>{image.developer}</p>
          {image.categorisation?.subCategory && (
-          <span className="badge-pill">{image.categorisation.subCategory}</span>
+          <span className="badge-pill">{roomLabel(image.categorisation.subCategory)}</span>
          )}
         </div>
        </div>

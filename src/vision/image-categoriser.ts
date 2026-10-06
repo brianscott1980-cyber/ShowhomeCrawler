@@ -230,6 +230,8 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
   if (regex.test(lower)) colours.push(name);
  }
 
+ if(isRoom&&/\b(?:empty|unfurnished) (?:room|bedroom|living room|lounge|kitchen|interior)\b/.test(lower)){subCategory='Empty';if(mainCategory==='Other')mainCategory='Empty';}
+
  // 7. Chairs
  const chairs: string[] = [];
  if (/\b(dining chairs?|chairs around the table|table with.*chairs|table and.*chairs)\b/.test(lower)) chairs.push('Dining chairs');
@@ -272,7 +274,8 @@ export async function categoriseBatchWithGemini(
  const prompt = 'You are an expert interior design classifier. For each property image description, extract structured room details.\n' +
   'Return JSON object with "images" array containing exactly one element for every input item.\n' +
   'Taxonomy:\n' +
-  '- mainCategory: One of [Living Room, Dining Room, Kitchen, Bedroom, Bathroom, Toilet, Study & Home Office, Hallway, Exterior, Utility Room, Dressing Room, Home Gym, Media & Games Room, Conservatory, Floorplan, Infographic, Illustration, Other]\n' +
+  '- mainCategory: One of [Living Room, Dining Room, Kitchen, Bedroom, Bathroom, Toilet, Study & Home Office, Hallway, Exterior, Utility Room, Dressing Room, Home Gym, Media & Games Room, Conservatory, Floorplan, Infographic, Illustration, Empty, Other]\n' +
+  '- For an empty or unfurnished room use subCategory Empty; preserve the known room category, or mainCategory Empty if the room function is unknown.\n' +
   '- subCategory: Specific type: e.g. Double bedroom, Single bedroom, Family bathroom, En suite, Cloakroom / WC, House front, House rear, Garden, Kitchen island, Open-plan kitchen, Formal lounge, Snug / Family room, Dedicated study, Balcony / terrace, Street scene\n' +
   '- Bedroom subCategory must be Double bedroom for double/full/queen/king beds, Single bedroom for single/twin/bunk beds, Nursery for cot-only rooms, or Bedroom (bed size unclear) if size is not stated. Two sleeping pillows side by side at the head of one bed for two people are evidence of a double bed; stacked pillows or decorative cushions alone are not. Never infer size from master, primary, guest, child, room dimensions or en-suite access.\n' +
   '- objects: String array of visible object types, independently of their attributes (furniture, appliances, fixtures, outdoor features).\n' +

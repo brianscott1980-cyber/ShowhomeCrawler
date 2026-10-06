@@ -99,8 +99,8 @@ describe('Image categorisation', () => {
  it('identifies rooms vs non-room graphics, documents and maps', () => {
   const emptyRoom = extractBaseCategorisation('empty room', 'An empty room with white walls and carpet');
   expect(emptyRoom.isRoom).toBe(true);
-  expect(emptyRoom.mainCategory).toBe('Other');
-  expect(emptyRoom.subCategory).toBe('Empty room');
+  expect(emptyRoom.mainCategory).toBe('Empty');
+  expect(emptyRoom.subCategory).toBe('Empty');
 
   const unknownRoom = extractBaseCategorisation('', 'A spacious room with bay windows and wooden floorboards');
   expect(unknownRoom.isRoom).toBe(true);

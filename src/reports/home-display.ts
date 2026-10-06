@@ -1,6 +1,6 @@
 import type { ReportProperty } from './report.js';
 export function homeTypeName(name: string): string {
- return cleanHomeName(name).replace(/^Plot\s+\S+\s*[-–—]\s*/i, '').replace(/\s*·\s*Plot\s+\S+.*$/i, '').trim();
+ return cleanHomeName(name).replace(/\bMore\s+Information\b/gi,'').replace(/\s+/g,' ').replace(/^Plot\s+\S+\s*[-–—]\s*/i, '').replace(/\s*·\s*Plot\s+\S+.*$/i, '').replace(/\s*[-–—·|:]\s*$/,'').trim();
 }
 export function plotDetails(home: ReportProperty): string {
  return [...new Map(home.plots.filter(p => p.number).map(p => [p.number, p])).values()]
