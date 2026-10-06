@@ -270,3 +270,8 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 .results-update-spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: results-update-spin .8s linear infinite; }
 @keyframes results-update-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .results-update-spinner { animation: none; } }
+
+.directory-view-status{display:flex;align-items:center;gap:20px;min-width:0;justify-content:flex-start}
+.directory-view-status .directory-update-status{margin:0;white-space:nowrap}
+.directory-list .collection-card>.group-preview-photo{flex:0 0 220px;width:220px}
+@media(max-width:700px){.directory-view-status{gap:12px}.directory-list .collection-card>.group-preview-photo{flex-basis:115px;width:115px}}

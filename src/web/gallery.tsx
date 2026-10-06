@@ -336,8 +336,8 @@ export function Gallery({
    </DirectoryFilters></div>
 
    <div className="directory-toolbar" style={{ marginTop: 24 }}>
-    <ViewOptions view={view} onChange={changeView} ariaLabel="Image card layout" />
-    <DirectoryQueryStatus query={remote} visible/>
+    <div className="directory-view-status"><ViewOptions view={view} onChange={changeView} ariaLabel="Image card layout" />
+    <DirectoryQueryStatus query={remote} visible/></div>
     <p className="count" style={{ margin: 0 }}>
      {favouritesOnly && !ready
       ? 'Loading favourites…'

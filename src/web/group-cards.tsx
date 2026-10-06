@@ -20,6 +20,8 @@ import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 export interface GroupCardItem {
  key: string;
  href?: string;
+ logo?:string;
+ logoBackground?:string;
  name: string;
  developers: string[];
  count: number;
@@ -116,14 +118,14 @@ export function GroupCards({
     </div>
    )}
    <div className="directory-toolbar">
-    <ViewOptions view={view} onChange={changeView} ariaLabel={`${kindLabel} layout`} />
-    <DirectoryQueryStatus query={remote} visible/>
+    <div className="directory-view-status"><ViewOptions view={view} onChange={changeView} ariaLabel={`${kindLabel} layout`} />
+    <DirectoryQueryStatus query={remote} visible/></div>
     <div className="sort-control"><span>Order by</span><SingleSelectFilter label={`Order ${kindLabel.toLowerCase()} by`} value={filters.order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'}]} onChange={order=>setFilters(previous=>({...previous,order}))}/></div>
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore}>
     {visible.map(card => (
      <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
-      <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
+      <div className="site-preview-photo group-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>{isBuildings&&card.logo&&<img className="development-builder-logo" src={card.logo} alt={`${card.developers[0]??'Builder'} logo`} style={{background:card.logoBackground??'#fff'}} loading="lazy"/>}</div>
       <div className="card-body">
        <h2>{isBuildings?homeTypeName(card.name):roomLabel(card.name)}</h2>
        {pathPrefix!=='interiors'&&pathPrefix!=='spaces'&&<p className="subtle">{card.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)}</p>}

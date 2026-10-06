@@ -17,6 +17,16 @@ beforeAll(async()=>{
  ('locations','b','Beta',5,400000,'B','b','{}','{}'),
  ('buildings','house','Alpha',2,null,'North','north','{North}','{}'),('buildings','house','Alpha',5,null,'South','south','{South}','{}'),
  ('interiors','room','Alpha',2,null,'North','north','{North}','{one,two}'),('interiors','room','Alpha',5,null,'South','south','{South}','{two}'),('interiors','room','Alpha',null,null,null,null,'{}','{orphan}');`);
+ await db.exec(`insert into showhome_web.builders(slug,name,website_url,logo_url,logo_background) values('alpha','Alpha','https://example.com','/logos/alpha.png','#123456');
+ update showhome_web.directory_cards set builder_slug='alpha' where kind='buildings';
+ insert into showhome_web.buildings(key,builder_slug,name) values('house','alpha','House');
+ insert into showhome_web.developments(key,builder_slug,source_url,name,display_name) values('a','alpha','a','A','A'),('b','alpha','b','B','B');
+ insert into showhome_web.galleries(key,builder_slug,development_key,building_key,name,source_url) values('a','alpha','a','house','House','a'),('b','alpha','b','house','House','b');
+ insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,main_category,eligible) values('a','alpha','a','a.jpg','a','Exterior',true),('b','alpha','b','b.jpg','b','Bedroom',true);
+ insert into showhome_web.gallery_images values('a','a',0),('b','b',0);`);
+ await db.exec(`update showhome_web.directory_cards set builder_slug='alpha',development_url=key where kind='locations';
+ insert into showhome_web.gallery_cards(uid,builder_slug,image_id,builder_name,category,eligible,verdict_matches,search_text,payload) values('ready-a','alpha','a','Alpha','Exterior',true,true,'','{}'),('ready-b','alpha','b','Alpha','Bedroom',true,true,'','{}');
+ insert into showhome_web.gallery_memberships(uid,gallery_key,builder_slug,url,development_url,development,building_name) values('ready-a','a','alpha','a','a','A','house'),('ready-b','b','alpha','b','b','B','house');`);
 });
 afterAll(()=>db.close());
 it('paginates stable results while counts include unloaded cards',async()=>{
@@ -64,4 +74,23 @@ it('cascades development and building options with builder and development selec
  expect(house.facets.site).toEqual(['North']);
  const absent=await queryDirectory({kind:'interiors',filters:{developer:'Beta'}},sql);
  expect(absent.facets.site).toEqual([]);expect(absent.facets.building).toEqual([]);
+});
+
+it('excludes stale developments whose linked images are not categorised',async()=>{
+ await db.exec(`insert into showhome_web.directory_cards(kind,key,name,builder_slug,development_url,payload) values('locations','stale','Stale','alpha','stale','{"key":"stale"}');
+ insert into showhome_web.directory_filter_rows(kind,card_key,developer,site) values('locations','stale','Alpha','Stale');
+ insert into showhome_web.developments(key,builder_slug,source_url,name,display_name) values('stale','alpha','stale','Stale','Stale');
+ insert into showhome_web.galleries(key,builder_slug,development_key,building_key,name,source_url) values('stale','alpha','stale','house','House','stale');
+ insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,main_category,eligible) values('stale','alpha','stale','stale.jpg','stale','Uncategorised',true);
+ insert into showhome_web.gallery_images values('stale','stale',0);
+ insert into showhome_web.gallery_cards(uid,builder_slug,image_id,builder_name,category,eligible,verdict_matches,search_text,payload) values('stale-image','alpha','stale','Alpha','Uncategorised',true,false,'','{}');
+ insert into showhome_web.gallery_memberships(uid,gallery_key,builder_slug,url,development_url,development,building_name) values('stale-image','stale','alpha','stale','stale','Stale','house');`);
+ const result=await queryDirectory({kind:'locations'},sql);
+ expect(result.cards.map(card=>card.key)).toEqual(['a','b']);expect(result.counts.Developments).toBe(2);
+ expect(result.mapCards?.some(card=>card.key==='stale')).toBe(false);
+});
+
+it('returns the current builder logo and backdrop on building cards',async()=>{
+ const result=await queryDirectory({kind:'buildings'},sql);
+ expect(result.cards[0]).toMatchObject({logo:'/logos/alpha.png',logoBackground:'#123456'});
 });
