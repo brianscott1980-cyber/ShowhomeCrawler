@@ -61,7 +61,7 @@ export function Gallery({
  const [view, changeView] = useCardView('showhome-gallery-view', 'large');
  const [favourites, setFavourites] = useState<string[]>([]);
  const [ready, setReady] = useState(false);
- const [filters,setFilters]=useUrlFilters(galleryDefaults);
+ const [filters,setFilters,filtersReady]=useUrlFilters(galleryDefaults);
  const {q:query,development,category:mainCategory,room:subCategory}=filters;
  const setQuery=(value:string)=>setFilters(previous=>({...previous,q:value}));
  const setDevelopment=(value:string)=>setFilters(previous=>({...previous,development:value}));
@@ -189,7 +189,7 @@ export function Gallery({
 
   return true;
  };
- const remote=useGalleryQuery(galleryScope,galleryPage,filters,favourites,initialImage);
+ const remote=useGalleryQuery(galleryScope,galleryPage,filters,favourites,initialImage,filtersReady);
  const images:GalleryImage[]=remote?.images??available.filter(image=>matches(image,filters));
  const matchingHomes=images.flatMap(image=>image.homes.filter(home=>homeMatches(image,home,filters)).map(home=>({home,slug:image.slug})));
  const interiorImages=images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&image.verdict?.roomType!=='Exterior');

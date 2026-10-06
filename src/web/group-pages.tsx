@@ -80,7 +80,7 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
  if(kind==='buildings'||kind==='interiors'||kind==='spaces'){
   const galleryScope={kind:kind==='buildings'?'buildings' as const:'interiors' as const,href:`/${pathPrefix}/${id}`};
   const reference=await findDirectoryReference(galleryScope.kind,galleryScope.href);if(!reference)notFound();
-  const galleryPage=await queryGallery({scope:galleryScope,...(typeof searchParams.image==='string'?{selectedUid:searchParams.image}:{})});
+  const galleryPage=galleryScope.kind==='interiors'?{pendingInitial:true,images:[],total:0,nextOffset:0,hasMore:false,counts:{},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}}:await queryGallery({scope:galleryScope,...(typeof searchParams.image==='string'?{selectedUid:searchParams.image}:{})});
   return <ResultsPage title={kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)} eyebrow={kind==='interiors'||kind==='spaces'?null:reference.payload.developers?.join(' · ')} description={`Explore interiors from ${kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={[]} places={{}} galleryScope={galleryScope} galleryPage={galleryPage} initialImage={typeof searchParams.image==='string'?searchParams.image:undefined} includeUnclassified/>;
  }
  const {group,path}=await findGroup(kind,id);
