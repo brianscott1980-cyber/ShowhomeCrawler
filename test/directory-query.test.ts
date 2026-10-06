@@ -52,3 +52,16 @@ it('filters room cards, counts and cascading facets by building type',async()=>{
  expect(data.cards).toHaveLength(1);expect(data.cards[0].count).toBe(1);expect(data.counts.Interiors).toBe(1);expect(data.facets.building).toEqual(['house']);
  const empty=await queryDirectory({kind:'interiors',filters:{building:'missing'}},sql);expect(empty.cards).toEqual([]);expect(empty.counts.Interiors).toBe(0);
 });
+
+it('cascades development and building options with builder and development selections',async()=>{
+ await db.exec(`insert into showhome_web.gallery_cards(uid,builder_slug,image_id,builder_name,category,eligible,verdict_matches,search_text,payload,building_names) values('alpha:south','alpha','south','Alpha','Bedroom',true,true,'','{}','{other}');
+ insert into showhome_web.gallery_memberships values('alpha:south','south','alpha','other',5,200000,'South','South','other','{South}');`);
+ const builder=await queryDirectory({kind:'interiors',filters:{developer:'Alpha'}},sql);
+ expect(builder.facets.site).toEqual(['North','South']);expect(builder.facets.building).toEqual(['house','other']);
+ const north=await queryDirectory({kind:'interiors',filters:{developer:'Alpha',site:'North'}},sql);
+ expect(north.facets.building).toEqual(['house']);expect(north.cards[0].count).toBe(1);
+ const house=await queryDirectory({kind:'interiors',filters:{developer:'Alpha',building:'house'}},sql);
+ expect(house.facets.site).toEqual(['North']);
+ const absent=await queryDirectory({kind:'interiors',filters:{developer:'Beta'}},sql);
+ expect(absent.facets.site).toEqual([]);expect(absent.facets.building).toEqual([]);
+});

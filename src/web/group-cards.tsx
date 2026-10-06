@@ -51,10 +51,10 @@ export function GroupCards({
  const [view, changeView] = useCardView(storageKey, defaultView);
  const [filters,setFilters]=useUrlFilters(filterDefaults);
  const {developer,bedrooms,location,site}=filters;
- const setDeveloper=(value:string)=>setFilters(previous=>({...previous,developer:value}));
+ const setDeveloper=(value:string)=>setFilters(previous=>({...previous,developer:value,...(pathPrefix==='interiors'?{site:'',building:''}:{})}));
  const setBedrooms=(value:string)=>setFilters(previous=>({...previous,bedrooms:value}));
  const setLocation=(value:string)=>setFilters(previous=>({...previous,location:value}));
- const setSite=(value:string)=>setFilters(previous=>({...previous,site:value}));
+ const setSite=(value:string)=>setFilters(previous=>({...previous,site:value,...(pathPrefix==='interiors'?{building:''}:{})}));
 
  const isBuildings = pathPrefix === 'buildings';
  const remote=useDirectoryQuery(isBuildings?'buildings':'interiors',filters,null,initial);
@@ -98,7 +98,10 @@ export function GroupCards({
       <MultiSelectFilter label="Bedrooms" value={bedrooms} options={bedroomOptions.map(b=>({value:String(b),label:`${b} bedrooms`}))} onChange={setBedrooms}/>
       <MultiSelectFilter label="Areas" value={location} options={locationOptions} onChange={setLocation}/>
       <MultiSelectFilter label="Developments" value={site} options={siteOptions} onChange={setSite}/>
-      </>:<MultiSelectFilter label="Building Types" value={filters.building} options={buildingOptions.map(name=>({value:name,label:homeTypeName(name).replace(/\b\w/g,letter=>letter.toUpperCase())}))} onChange={building=>setFilters(previous=>({...previous,building}))}/>}
+      </>:<>
+      <MultiSelectFilter label="Developments" value={site} options={siteOptions} onChange={setSite}/>
+      <MultiSelectFilter label="Building Types" value={filters.building} options={buildingOptions.map(name=>({value:name,label:homeTypeName(name).replace(/\b\w/g,letter=>letter.toUpperCase())}))} onChange={building=>setFilters(previous=>({...previous,building}))}/>
+      </>}
       {hasActiveFilters && (
        <button
         type="button"
