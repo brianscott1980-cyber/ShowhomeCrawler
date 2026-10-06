@@ -139,7 +139,7 @@ export function SiteDirectory({
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
  useDirectoryCounts(remote?.counts??{Developments:visible.length});
  usePublishDirectoryMapCards(mapMatching,!remote?.pendingInitial);
- return <section aria-label="Filter developments" aria-busy={remote?.loading}>{dialog}<DirectoryQueryStatus query={remote}/>
+ return <section aria-label="Filter developments" aria-busy={remote?.loading}>{dialog}
  <div className="site-filter-panel location-filter-panel">
  <DirectoryFilters pending={Boolean(remote?.loading)} className="filters site-filters location-primary-filters" label="Development filters">
   <MultiSelectFilter label="Builders" value={filters.developer} options={developers} onChange={value=>change('developer',value)}/>
@@ -160,6 +160,7 @@ export function SiteDirectory({
  </div>
 <div className="directory-toolbar location-explorer-toolbar">
  <div className="location-view-controls"><ViewOptions view={mapView?'map':view} onChange={changeView} ariaLabel="Developments layout"/><button type="button" className="location-map-toggle" aria-label="Map" aria-pressed={mapView} onClick={()=>{setMapUnavailable(false);setUrlFilters(previous=>({...previous,view:'map'}));}}>▧ <span>Map</span></button></div>
+ <DirectoryQueryStatus query={remote} visible/>
  <div className="development-order"><span>Order by</span><SingleSelectFilter label="Order developments by" value={order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'},{value:'price-asc',label:'Price Asc'},{value:'price-desc',label:'Price Desc'},{value:'distance',label:'Nearest first'}]} onChange={setOrder}/></div>
  {mapView&&<label className="site-map-search"><input type="checkbox" checked={searchMap} onChange={e=>setSearchMap(e.target.checked)}/> Search as I move</label>}
  </div>

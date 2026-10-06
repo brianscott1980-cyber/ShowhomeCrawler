@@ -337,6 +337,7 @@ export function Gallery({
 
    <div className="directory-toolbar" style={{ marginTop: 24 }}>
     <ViewOptions view={view} onChange={changeView} ariaLabel="Image card layout" />
+    <DirectoryQueryStatus query={remote} visible/>
     <p className="count" style={{ margin: 0 }}>
      {favouritesOnly && !ready
       ? 'Loading favourites…'
@@ -345,7 +346,7 @@ export function Gallery({
    </div>
 
    </>}
-   <DirectoryQueryStatus query={remote}/>
+   {featured&&<DirectoryQueryStatus query={remote}/>}
    <GalleryCardResults featured={featured} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
      <article className="image-card" key={image.uid}>
