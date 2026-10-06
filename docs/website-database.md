@@ -36,3 +36,9 @@ Builder finalization and `results:publish` now run both the import and serving-c
 Directory requests read prepared database responses instead of parsing/reconstructing all crawl reports. Individual development/building/interior routes resolve their serving URL and query the corresponding builder/development/building/category records. Asset-source lookup is a single indexed image query. The homepage and individual builder overviews each read a prepared database presentation, including exact full-catalogue counts. Overview carousels send up to 24 diverse previews; full catalogue counts remain server-calculated and full galleries remain available through the directory links.
 
 Directory filtering and the existing More behavior still run in the browser over the prepared card payload. Moving the catalogue into a database does not eliminate that payload size: server pagination/facet endpoints would be a separate frontend change. No claim of server-side pagination is made by this migration.
+
+## Release checks
+
+Production deployment `8563141` returned HTTP 200 without application errors for the homepage, all four directories, Bellway's builder overview and Landsdale's development page. Observed complete response times were 1.43 seconds for builders, 0.75 seconds for Bellway and 2.05 seconds for Landsdale. These are single network measurements, not ongoing performance percentiles. Bellway's response was about 197 KB. Server tracing included no collections/results/private-storage files.
+
+The production build and 57 targeted checks passed, including actual PostgreSQL-engine catalogue reader/schema tests and import parity across all 38 builders. The broader test suite is not fully green: its initial run had older UI fixture failures, including invalid relative image URLs and incomplete browser/map mocks. The database migration does not claim to repair that whole suite.
