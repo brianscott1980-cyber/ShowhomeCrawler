@@ -21,7 +21,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
  if (relative.startsWith('images/')) {
   try {
    const id=relative.replace(/^images\/|\.[^.]+$/g,'');
-   const {bytes,extension}=await storedImage(id,relative.split('.').at(-1)!);
+   const {bytes,extension}=await storedImage(id,relative.split('.').at(-1)!,resolve(collectionFolder(slug),relative));
    const types:Record<string,string>={jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp',avif:'image/avif',gif:'image/gif',tiff:'image/tiff'};
    return new Response(new Uint8Array(bytes),{headers:{'Content-Type':types[extension]??'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
   }catch{ /* Try the legacy collection below. */ }

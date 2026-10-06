@@ -38,7 +38,7 @@ def main():
   except (ProcessLookupError,TypeError):lock.unlink()
   else:raise RuntimeError('Migration already running')
  save(lock,{'pid':os.getpid()})
- progress=read(LOCAL/'migration-progress.json',{'filesMoved':0,'bytesMoved':0,'imagesMoved':0});progress.update(status='running',pid=os.getpid(),scope='images' if args.images_only else 'all',phase='indexing',startedAt=time.time());save(LOCAL/'migration-progress.json',progress)
+ progress=read(LOCAL/'migration-progress.json',{'filesMoved':0,'bytesMoved':0,'imagesMoved':0});progress.pop('error',None);progress.update(status='running',pid=os.getpid(),scope='images' if args.images_only else 'all',phase='indexing',startedAt=time.time());save(LOCAL/'migration-progress.json',progress)
  try:
   status=read(LOCAL/'storage-status.json',{});config=read(LOCAL/'storage-config.json',{})
   nas=Path(status['contentRoot'])
@@ -63,7 +63,7 @@ def main():
   for path in (ROOT/'results/.cache').glob('*.bin'):
    st=path.stat();groups.setdefault((st.st_dev,st.st_ino),[]).append(path)
   progress.update(phase='copying_images',totalImageGroups=len(groups),totalImageBytes=sum(paths[0].stat().st_size for paths in groups.values()));save(LOCAL/'migration-progress.json',progress)
-  raw=read(LOCAL/'raw-image-index.json',{});pending=[]
+  raw=read(LOCAL/'raw-image-index.json',{});image_index=read(LOCAL/'image-index.json',{});pending=[]
   def flush():
    if not pending:return
    health();previews=[]
@@ -73,11 +73,15 @@ def main():
      if not target.exists():previews.append({'source':str(nas/'assets'/blob),'target':str(target)})
     for p in paths:
      if p.suffix=='.bin':raw[p.stem]=blob
+     elif p.parent.name=='images':
+      image_index[str(p.relative_to(ROOT))]=blob
+      if p.name not in image_index or p.stem==blob.split('.')[0]:image_index[p.name]=blob
    if previews:
     batch=LOCAL/'preview-batch.json';save(batch,previews)
     subprocess.run(['node','scripts/storage-previews.mjs',str(batch)],cwd=ROOT,check=True)
    # Persist download knowledge before removing the local original.
    save(LOCAL/'raw-image-index.json',raw)
+   save(LOCAL/'image-index.json',image_index)
    health()
    for paths,blob,size in pending:
     for p in paths:p.unlink(missing_ok=True);progress['filesMoved']+=1
@@ -87,7 +91,7 @@ def main():
    health();source=paths[0];size=source.stat().st_size
    image=next((p for p in paths if p.parent.name=='images'),None)
    sha=digest(source);blob=sha+(image.suffix if image else '.bin')
-   if image and image.stem!=sha:raise RuntimeError('Image content hash does not match its catalogue identifier')
+   if image and image.stem!=sha:progress['legacyIdentifiers']=progress.get('legacyIdentifiers',0)+1
    verified_copy(source,nas/'assets'/blob,sha);pending.append((paths,blob,size))
    if len(pending)>=50:flush()
   flush();progress['status']='complete';save(LOCAL/'migration-progress.json',progress)
