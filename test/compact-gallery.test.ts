@@ -1,0 +1,44 @@
+import {afterAll,expect,it} from 'vitest';
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+import type postgres from 'postgres';
+import {clearGalleryProjection,insertGalleryProjection,refreshGalleryMemberships} from '../src/catalogue/gallery-storage';
+import {queryGallery} from '../src/database/gallery-query';
+const db=new PGlite();
+const sql=Object.assign(async(strings:TemplateStringsArray,...values:unknown[])=>{const query=strings.reduce((q,s,i)=>q+s+(i<values.length?'$'+(i+1):''),'');return (await db.query(query,values)).rows;},{json:JSON.stringify,unsafe:async(query:string,values:unknown[])=>(await db.query(query,values)).rows}) as unknown as postgres.Sql;
+afterAll(()=>db.close());
+it('preserves paginated galleries and legacy imports after normalising serving data and links',async()=>{
+ await db.exec('create role anon;create role authenticated;');
+ for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
+ await db.exec(`insert into showhome_web.builders(slug,name,website_url) values('alpha','Alpha','https://example.com');
+ insert into showhome_web.developments(key,builder_slug,source_url,name,display_name,geography) values('north','alpha','North','North','North','{"area":"North"}');
+ insert into showhome_web.buildings(key,builder_slug,name) values('house','alpha','house');
+ insert into showhome_web.galleries(key,builder_slug,development_key,building_key,name,source_url,bedrooms,price) values('gallery','alpha','north','house','House','House URL',3,250000);
+ insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,metadata) values('alpha:a','alpha','a','images/a.jpg','https://example.com/a','{"id":"a","path":"images/a.jpg","categorisation":{"mainCategory":"Bedroom","isRoom":true},"verdict":{"description":"Blue bedroom"}}');
+ insert into showhome_web.gallery_images values('gallery','alpha:a',0);
+ insert into showhome_web.gallery_cards values('alpha:a','alpha','a','Alpha','Bedroom','Double Bedroom',true,true,'blue bedroom','{"id":"a","path":"images/a.jpg","categorisation":{"mainCategory":"Bedroom","isRoom":true},"verdict":{"description":"Blue bedroom"},"homes":[{"name":"House","buildingName":"house","development":"North","developmentUrl":"North","url":"House URL","bedrooms":3,"price":250000,"areas":["North"],"plots":[],"imageIds":[]}]}','{house}');
+ insert into showhome_web.gallery_memberships values('alpha:a','gallery','alpha','House URL',3,250000,'North','North','house','{North}');
+ insert into showhome_web.directory_cards(kind,key,name,href,collection_slugs,category,payload) values('interiors','bedroom','Bedroom','/interiors/bedroom','{alpha}','Bedroom','{}');`);
+ const input={scope:{kind:'interiors' as const,href:'/interiors/bedroom'},filters:{developer:'Alpha',building:'house',site:'North',bedrooms:'3'}};
+ const before=await queryGallery(input,sql);
+ for(const file of ['20261006000900_compact_gallery_serving.sql','20261006001000_numeric_gallery_links.sql']){
+  await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
+  const after=await queryGallery(input,sql);
+  expect(after.total).toBe(before.total);expect(after.counts).toEqual(before.counts);expect(after.facets).toEqual(before.facets);
+  expect(after.images[0].id).toBe('a');expect(after.images[0].categorisation).toEqual(before.images[0].categorisation);expect(after.images[0].homes).toEqual(before.images[0].homes);
+ }
+ const card=(await db.query('select * from showhome_web.gallery_cards')).rows[0];
+ await db.exec("delete from showhome_web.gallery_cards where uid='alpha:a'");
+ await db.query('insert into showhome_web.gallery_cards select * from jsonb_populate_recordset(null::showhome_web.gallery_cards,$1::jsonb)',[JSON.stringify([card])]);
+ expect((await queryGallery(input,sql)).total).toBe(1);
+ await clearGalleryProjection(sql,'alpha');
+ await insertGalleryProjection(sql,[card as Record<string,unknown>]);
+ await refreshGalleryMemberships(sql,'alpha');
+ expect((await queryGallery(input,sql)).total).toBe(1);
+ expect((await db.query("select count(*)::int as count from showhome_web.gallery_memberships")).rows[0].count).toBe(1);
+ await db.exec("delete from showhome_web.gallery_images where image_key='alpha:a';insert into showhome_web.gallery_images values('gallery','alpha:a',0);");
+ expect((await db.query('select * from showhome_web.gallery_image_links')).rows).toHaveLength(1);
+ await db.exec("delete from showhome_web.images where key='alpha:a'");
+ expect((await db.query('select * from showhome_web.gallery_image_links')).rows).toHaveLength(0);
+ expect((await db.query('select * from showhome_web.gallery_cards')).rows).toHaveLength(0);
+},60000);

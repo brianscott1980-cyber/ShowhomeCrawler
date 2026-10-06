@@ -1,3 +1,4 @@
+import {clearGalleryProjection,insertGalleryProjection,refreshGalleryMemberships} from './gallery-storage';
 import {galleryProjection} from './gallery-projection';
 import {directoryFilterRows} from './filter-rows';
 import {builderOverviewProjection} from './builder-overview';
@@ -17,9 +18,9 @@ export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
  for(const kind of ['locations','buildings','interiors'] as const){const data=await groupDirectoryData(kind,collections);directories.push({kind,...data});console.log(kind,data.cards.length);}
  const home=await computeHomepageData(collections);
  const overviews=await Promise.all(collections.map(async c=>({key:`builder:${c.slug}`,payload:await builderOverviewProjection(c)})));
-  await tx`delete from showhome_web.gallery_cards`;
-  for(const collection of collections){const rows=await galleryProjection(collection);for(let offset=0;offset<rows.length;offset+=200)await tx.unsafe('insert into showhome_web.gallery_cards select * from jsonb_populate_recordset(null::showhome_web.gallery_cards,$1::jsonb)',[tx.json(rows.slice(offset,offset+200) as never)]);}
-  await tx`insert into showhome_web.gallery_memberships select c.uid,g.key,g.builder_slug,g.source_url,g.bedrooms,g.price,d.source_url,d.name,b.name,array(select distinct value from jsonb_each_text(d.geography) where value is not null and value<>'') from showhome_web.gallery_cards c join showhome_web.images i on i.builder_slug=c.builder_slug and i.catalogue_id=c.image_id join showhome_web.gallery_images gi on gi.image_key=i.key join showhome_web.galleries g on g.key=gi.gallery_key join showhome_web.developments d on d.key=g.development_key join showhome_web.buildings b on b.key=g.building_key`;
+  await clearGalleryProjection(tx);
+  for(const collection of collections)await insertGalleryProjection(tx,await galleryProjection(collection));
+  await refreshGalleryMemberships(tx);
   await tx`delete from showhome_web.directory_cards`;
   for(const {kind,cards,references} of directories){
    const ref=new Map(references.map(r=>[r.key,r]));
@@ -40,6 +41,6 @@ export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
   await tx`update showhome_web.publication_revision set revision=revision+1 where singleton=true`;
   await tx`delete from showhome_web.query_cache`;
  });
- await sql`analyze showhome_web.gallery_memberships,showhome_web.gallery_cards,showhome_web.directory_cards,showhome_web.directory_filter_rows`;
+ await sql`analyze showhome_web.images,showhome_web.galleries,showhome_web.directory_cards,showhome_web.directory_filter_rows`;
  console.log('Website projections published atomically');
 }

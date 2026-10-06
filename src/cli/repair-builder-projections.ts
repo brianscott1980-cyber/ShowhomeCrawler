@@ -1,3 +1,4 @@
+import {clearGalleryProjection,insertGalleryProjection,refreshGalleryMemberships} from '../catalogue/gallery-storage';
 import {parseArgs} from 'node:util';
 import {websiteDatabase,readWebsiteCollection} from '../database/website';
 import {builderDirectoryData,groupDirectoryData} from '../catalogue/directory-projections';
@@ -25,10 +26,9 @@ try{
   for(const card of builder.cards)await tx`insert into showhome_web.directory_cards(kind,key,name,href,builder_slug,collection_slugs,payload) values('builders',${slug},${card.name},${'/builders/'+slug},${slug},${[slug]},${tx.json(card as never)})`;
   const filterRows=[...directories,{kind:'builders',cards:builder.cards}].flatMap(({kind,cards})=>cards.flatMap(card=>directoryFilterRows(kind,card))).map(row=>({developer:null,bedrooms:null,price:null,style:null,site:null,site_id:null,areas:[],region:null,latitude:null,longitude:null,image_ids:[],building_types:[],...row}));
   for(let offset=0;offset<filterRows.length;offset+=250)await tx.unsafe(`insert into showhome_web.directory_filter_rows(kind,card_key,developer,bedrooms,price,style,site,site_id,areas,region,latitude,longitude,image_ids,building_types) select kind,card_key,developer,bedrooms,price,style,site,site_id,areas,region,latitude,longitude,image_ids,building_types from jsonb_populate_recordset(null::showhome_web.directory_filter_rows,$1::jsonb)`,[tx.json(filterRows.slice(offset,offset+250) as never)]);
-  await tx`delete from showhome_web.gallery_cards where builder_slug=${slug}`;
-  const galleries=await galleryProjection(collection);
-  await tx.unsafe('insert into showhome_web.gallery_cards select * from jsonb_populate_recordset(null::showhome_web.gallery_cards,$1::jsonb)',[tx.json(galleries as never)]);
-  await tx`insert into showhome_web.gallery_memberships select c.uid,g.key,g.builder_slug,g.source_url,g.bedrooms,g.price,d.source_url,d.name,b.name,array(select distinct value from jsonb_each_text(d.geography) where value is not null and value<>'') from showhome_web.gallery_cards c join showhome_web.images i on i.builder_slug=c.builder_slug and i.catalogue_id=c.image_id join showhome_web.gallery_images gi on gi.image_key=i.key join showhome_web.galleries g on g.key=gi.gallery_key join showhome_web.developments d on d.key=g.development_key join showhome_web.buildings b on b.key=g.building_key where c.builder_slug=${slug}`;
+  await clearGalleryProjection(tx,slug);
+  await insertGalleryProjection(tx,await galleryProjection(collection));
+  await refreshGalleryMemberships(tx,slug);
   await tx`update showhome_web.presentations set payload=${tx.json(overview as never)},updated_at=now() where key=${'builder:'+slug}`;
   await tx`update showhome_web.publication_revision set revision=revision+1 where singleton=true`;
   await tx`delete from showhome_web.query_cache`;

@@ -39,7 +39,8 @@
     "ai:local:sample": "tsx src/cli/classify-local.ts --sample",
     "ai:local": "tsx src/cli/classify-local.ts",
     "website:repair-builder": "tsx src/cli/repair-builder-projections.ts",
-    "db:space": "tsx scripts/database-space.ts"
+    "db:space": "tsx scripts/database-space.ts",
+    "db:backup": "tsx scripts/backup-website-database.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
