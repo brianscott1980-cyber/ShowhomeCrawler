@@ -64,7 +64,7 @@ function register(element:HTMLElement,advance:Entry['advance']){
 }
 export function ScrollCollectionImage({images,image,description,layout,caption=false,showBuilderLogo=false}:{images?:CollectionImage[];image:string;description:string;layout:string;caption?:boolean;showBuilderLogo?:boolean}){
  const items=(images??[]).filter(item=>item.kind==='logo'||hasImageCategory(item.roomType));
- const sizes=layout==='list'?'220px':layout==='compact'?'(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 25vw':'(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw';
+ const sizes=layout.split(':')[0]==='list'?'220px':layout.split(':')[0]==='compact'?'(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 25vw':'(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw';
  const ref=useRef<HTMLDivElement>(null);
  const [slide,setSlide]=useState({index:0,previous:0,direction:1,sequence:0});
  const [loadedSrc,setLoadedSrc]=useState('');
@@ -77,10 +77,22 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  },[identity,layout]);
  useEffect(()=>{
   if(items.length<2||!ref.current)return;
-  let idle:number|undefined,timer:ReturnType<typeof setTimeout>|undefined;
-  // Warm the next image only near the viewport, rather than downloading every collection.
-  const observer=new IntersectionObserver(events=>{if(events.some(event=>event.isIntersecting)){const warm=()=>{const preload=new Image();const next=items[collectionIndex(slide.index,1,items.length)]!;const props=getImageProps({src:optimizedImageSource(next.src),alt:'',fill:true,sizes,unoptimized:next.kind==='logo'}).props;preload.fetchPriority='low';preload.sizes=sizes;if(props.srcSet)preload.srcset=props.srcSet;preload.src=props.src;};if(window.requestIdleCallback)idle=window.requestIdleCallback(warm,{timeout:1500});else timer=setTimeout(warm,250);observer.disconnect();}},{rootMargin:'50px'});
-  observer.observe(ref.current);return ()=>{observer.disconnect();if(idle!==undefined)window.cancelIdleCallback?.(idle);clearTimeout(timer);};
+  const preloads:HTMLImageElement[]=[];
+  // Begin as cards approach the viewport; scroll transitions should not wait for idle time.
+  const observer=new IntersectionObserver(events=>{
+   if(!events.some(event=>event.isIntersecting))return;
+   for(const index of new Set([collectionIndex(slide.index,1,items.length),collectionIndex(slide.index,-1,items.length)])){
+    const next=items[index]!;
+    const props=getImageProps({src:optimizedImageSource(next.src),alt:'',fill:true,sizes,unoptimized:next.kind==='logo'}).props;
+    const preload=new Image();preload.decoding='async';preload.fetchPriority='auto';preload.sizes=sizes;
+    if(props.srcSet)preload.srcset=props.srcSet;
+    preload.src=props.src;
+    void preload.decode().catch(()=>{});
+    preloads.push(preload);
+   }
+   observer.disconnect();
+  },{rootMargin:'800px 0px'});
+  observer.observe(ref.current);return ()=>{observer.disconnect();};
  },[identity,slide.index,sizes]);
  const current=items[slide.index]??items[0]!;
  const previous=items[slide.previous]??items[0]!;
@@ -88,7 +100,7 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  if(!current)return <div ref={ref} className="collection-image" aria-label="No categorised preview available"/>;
  return <div ref={ref} className="collection-image">
   {slide.sequence>0&&<NextImage fill sizes={sizes} unoptimized={previous.kind==='logo'} className={`collection-image-previous${previous.kind==='logo'?' collection-image-logo':''}`} style={{background:previous.background}} src={optimizedImageSource(previous.src)} alt="" aria-hidden="true"/>}
-  <NextCardImage fill sizes={sizes} unoptimized={current.kind==='logo'} key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={optimizedImageSource(current.src)} alt={current.alt} loading="lazy"/>
+  <NextCardImage showLoading={slide.sequence===0} fill sizes={sizes} unoptimized={current.kind==='logo'} key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={optimizedImageSource(current.src)} alt={current.alt} loading="lazy"/>
   {logo&&current.kind!=='logo'&&<img className="collection-builder-logo" src={logo.src} alt={logo.alt} style={{background:logo.background}} loading="lazy"/>}
   {caption&&<span className="site-photo-caption">{(current.alt.match(/\b(home office|living room|dining room|kitchen|bathroom|bedroom|hallway|garden|exterior)\b/i)?.[0]??'Development preview').replace(/^./,letter=>letter.toUpperCase())}</span>}
  </div>;

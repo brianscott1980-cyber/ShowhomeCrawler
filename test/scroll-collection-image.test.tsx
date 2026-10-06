@@ -19,7 +19,7 @@ it('returns to the logo without wrapping when page-bottom and row triggers rever
   vi.spyOn(card,'getBoundingClientRect').mockImplementation(()=>({top:610-y-(hovered&&column===2?3:0),bottom:1010-y-(hovered&&column===2?3:0),left:column*200,right:(column+1)*200,width:200,height:400,x:column*200,y:610-y,toJSON(){}}));
   return {card,root:createRoot(card)};
  });
- const images=[{src:'/logo.svg',alt:'Builder',kind:'logo' as const},{src:'/exterior.jpg',alt:'Exterior'},{src:'/room.jpg',alt:'Room'}];
+ const images=[{src:'/logo.svg',alt:'Builder',kind:'logo' as const},{src:'/exterior.jpg',alt:'Exterior',roomType:'Exterior'},{src:'/room.jpg',alt:'Room',roomType:'Living Room'}];
  const scroll=async(position:number)=>{await act(async()=>{y=position;window.dispatchEvent(new Event('scroll'));const callback=frame;frame=undefined;callback?.(0);});};
  const sources=()=>mounts.map(({card})=>{const src=card.querySelector('.collection-image-current')?.getAttribute('src');const url=src?new URL(src,'https://example.com'):null;return url?.pathname==='/_next/image'?url.searchParams.get('url'):url?.pathname;});
  try {
@@ -41,4 +41,18 @@ it('returns to the logo without wrapping when page-bottom and row triggers rever
  } finally {
   await act(async()=>{for(const {root} of mounts)root.unmount();});grid.remove();vi.restoreAllMocks();vi.unstubAllGlobals();
  }
+});
+
+it('preloads and decodes adjacent images before the card reaches the viewport',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ let notify:IntersectionObserverCallback|undefined,margin='';
+ vi.stubGlobal('IntersectionObserver',class {constructor(callback:IntersectionObserverCallback,options:IntersectionObserverInit){notify=callback;margin=options.rootMargin!;}observe(){}disconnect(){}});
+ const warmed:{src:string;srcset:string;sizes:string;fetchPriority:string;decode:ReturnType<typeof vi.fn>}[]=[];
+ vi.stubGlobal('Image',class {src='';srcset='';sizes='';fetchPriority='';decode=vi.fn(async()=>{});constructor(){warmed.push(this);}});
+ const host=document.createElement('div'),root=createRoot(host);
+ try{
+  await act(async()=>root.render(<ScrollCollectionImage images={[{src:'/one.jpg',alt:'One',roomType:'Bedroom'},{src:'/two.jpg',alt:'Two',roomType:'Kitchen'}]} image="/one.jpg" description="" layout="compact:cards"/>));
+  await act(async()=>notify?.([{isIntersecting:true}] as IntersectionObserverEntry[],{} as IntersectionObserver));
+  expect(margin).toBe('800px 0px');expect(warmed).toHaveLength(1);expect(warmed[0].src).toContain('two.jpg');expect(warmed[0].sizes).toContain('25vw');expect(warmed[0].fetchPriority).toBe('auto');expect(warmed[0].decode).toHaveBeenCalledOnce();
+ }finally{await act(async()=>root.unmount());vi.unstubAllGlobals();}
 });

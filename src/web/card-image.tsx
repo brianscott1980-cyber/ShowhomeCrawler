@@ -27,10 +27,10 @@ export function CardImage({onLoad,onError,style,...props}:ComponentProps<'img'>)
  </span>;
 }
 
-export function NextCardImage({onLoad,onError,style,...props}:ComponentProps<typeof NextImage>){
+export function NextCardImage({onLoad,onError,style,showLoading=true,...props}:ComponentProps<typeof NextImage>&{showLoading?:boolean}){
  const state=useImageState(props.src);
  return <span className={`card-image-space${props.fill?' card-image-fill':''}`}>
-  {(!state.ready||state.failed)&&<LoadingMark failed={Boolean(state.failed)}/>}
+  {showLoading&&(!state.ready||state.failed)&&<LoadingMark failed={Boolean(state.failed)}/>}
   <NextImage {...props} ref={state.ref} style={{...style,opacity:state.ready&&!state.failed?style?.opacity:0}}
    onLoad={event=>{state.loaded();onLoad?.(event);}} onError={event=>{state.failedLoad();onError?.(event);}}/>
  </span>;
