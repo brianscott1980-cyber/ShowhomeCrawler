@@ -26,7 +26,7 @@ import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-im
 import {sitePropertyFacet,filterSites,type SiteCard,type SiteFilters,type LocationPoint} from './site-filters';
 import {ViewOptions,useCardView,type CardViewMode} from './view-options';
 const defaults:SiteFilters={developer:'',country:'',region:'',location:'',minPrice:'',maxPrice:'',minBeds:'',maxBeds:'',style:'',radius:''};
-const urlDefaults={...defaults,minBeds:anyBedrooms,maxBeds:anyBedrooms,minPrice:'any',maxPrice:'any',postcode:'',order:'name',view:'',selected:'',lat:'',lng:'',zoom:''};
+const urlDefaults={...defaults,minBeds:anyBedrooms,maxBeds:anyBedrooms,minPrice:'any',maxPrice:'any',postcode:'',order:'',view:'',selected:'',lat:'',lng:'',zoom:''};
 const money=(n:number)=>'£'+n.toLocaleString('en-GB');
 function range(values:(number|null)[],format:(n:number)=>string){const known=values.filter((v):v is number=>v!==null&&Number.isFinite(v));if(!known.length)return 'Not available';const min=Math.min(...known),max=Math.max(...known);return min===max?format(min):`${format(min)} – ${format(max)}`;}
 export function SiteDirectory({
@@ -55,7 +55,6 @@ export function SiteDirectory({
  const [focusArea,setFocusArea]=useState<FocusArea|undefined>(undefined);
  const [savedView,saveView]=useCardView(storageKey,defaultView==='map'?'compact':defaultView);
  const [urlFilters,setUrlFilters,filtersReady]=useUrlFilters(urlDefaults);
- const {order}=urlFilters;
  const mapView=urlFilters.view==='map'||(!urlFilters.view&&defaultView==='map');
  const view:CardViewMode=['list','large','compact'].includes(urlFilters.view)?urlFilters.view as CardViewMode:savedView;
  const activeKey=urlFilters.selected||null;
@@ -112,12 +111,13 @@ export function SiteDirectory({
  const setFilters=(value:SiteFilters|((previous:SiteFilters)=>SiteFilters))=>setUrlFilters(previous=>({...previous,...(typeof value==='function'?value(previous):value)}));
  const [point,setPoint]=useState<LocationPoint|null>(null);
  const savedLocation=useSavedLocation();
+ const order=urlFilters.order||(point?'distance':'name');
  const {requestLocation,dialog}=useLocationRequest((location,intent)=>{setPoint(location);setUrlFilters(previous=>({...previous,[intent.key]:intent.value}));});
  useEffect(()=>{setPoint(savedLocation);},[savedLocation]);
  const setOrder=(value:string)=>{if(value==='distance'){void requestLocation(location=>{setPoint(location);setUrlFilters(previous=>({...previous,order:value}));},{key:'order',value});}else setUrlFilters(previous=>({...previous,order:value}));};
  function change(key:keyof SiteFilters,value:string){if(key==='radius'&&value){void requestLocation(location=>{setPoint(location);setFilters(previous=>({...previous,radius:value}));},{key:'radius',value});}else setFilters(previous=>({...previous,[key]:value,...(key==='minBeds'&&value&&value!==anyBedrooms&&previous.maxBeds&&previous.maxBeds!==anyBedrooms&&Number(previous.maxBeds)<Number(value)?{maxBeds:value}:{}),...(key==='minPrice'&&value&&value!=='any'&&previous.maxPrice&&previous.maxPrice!=='any'&&Number(previous.maxPrice)<Number(value)?{maxPrice:value}:{}),...(key==='maxPrice'&&value&&value!=='any'&&previous.minPrice&&previous.minPrice!=='any'&&Number(previous.minPrice)>Number(value)?{minPrice:value}:{})}));}
  const invalid=(filters.minPrice!==''&&filters.maxPrice!==''&&Number(filters.minPrice)>Number(filters.maxPrice))||(filters.minBeds!==''&&filters.maxBeds!==''&&Number(filters.minBeds)>Number(filters.maxBeds));
- const remote=useDirectoryQuery('locations',urlFilters,point,initial,mapView&&searchMap&&!mapUnavailable&&hasMapBounds?visibleKeys:undefined,mapView?activeKey??undefined:undefined,filtersReady);
+ const remote=useDirectoryQuery('locations',{...urlFilters,order},point,initial,mapView&&searchMap&&!mapUnavailable&&hasMapBounds?visibleKeys:undefined,mapView?activeKey??undefined:undefined,filtersReady);
  const matching=useMemo(()=>remote?remote.cards.map(card=>({...card,miles:(card as SiteCard&{miles?:number|null}).miles??null})):(invalid?[]:filterSites(cards,filters,point)).sort((a,b)=>order==='price-asc'||order==='price-desc'?compareDevelopmentPrices(a,b,filters,order==='price-desc'):order==='distance'&&point?(a.miles??Infinity)-(b.miles??Infinity)||a.name.localeCompare(b.name):order==='name-desc'?b.name.localeCompare(a.name):a.name.localeCompare(b.name)),[cards,invalid,filters,point,order,remote?.cards]);
  const mapMatching=remote?.mapCards??matching;
  const visible=!remote&&mapView&&searchMap&&!mapUnavailable?matching.filter(card=>visibleKeys.includes(card.key)):matching;
