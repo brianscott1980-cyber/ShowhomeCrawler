@@ -25,3 +25,15 @@ Local production build on the development laptop, using its full catalogue, one 
 The homepage snapshot read alone measured about 6 ms. A 640-pixel image returned HTTP 200 as WebP (36,916 bytes). Production builds and 22 focused tests passed. Browser checks confirmed the homepage and the development directory's loading state, filters and results render. Server trace checks confirmed the snapshot is included and private NAS data is excluded.
 
 The deployed homepage baseline sampled before these changes took about 17.7 seconds to first byte; this is a different environment and is not a controlled before/after comparison. Initial local directory responses were roughly 10.6–42.0 MiB before payload reductions. The buildings directory still has a substantial complete-catalogue payload. A future improvement is fetching additional card data in batches while preserving global filter facets and counts, rather than sending every card in the initial response.
+
+## Live deployment verification
+
+Vercel reported commit `f2504f9` successfully deployed. Single HTTPS requests immediately after deployment returned HTTP 200:
+
+| Page | First byte | Complete response | Uncompressed response |
+| --- | ---: | ---: | ---: |
+| Homepage | 1.735 s | 2.028 s | 674,991 bytes |
+| Interiors | 2.417 s | 5.390 s | 4,372,382 bytes |
+| Buildings | 1.550 s | 5.575 s | 9,172,975 bytes |
+
+The deployed homepage contains the streaming loading boundary and optimized image URLs. A 640-pixel production image request returned HTTP 200 as WebP, 45,306 bytes. These are individual post-deployment requests with different cache/cold-start conditions from the earlier baseline; browser paint metrics and sustained production performance remain to be measured.
