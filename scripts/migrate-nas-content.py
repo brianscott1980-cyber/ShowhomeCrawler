@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Resumable verified NAS migration. Catalogue JSON and AI analyses stay local."""
-import argparse,hashlib,json,os,subprocess,time,uuid
+import argparse,hashlib,json,os,re,subprocess,time,uuid
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];LOCAL=ROOT/'.showhome'
 def read(p,default=None):
@@ -28,7 +28,7 @@ def verified_copy(source,target,checksum=None):
  return checksum
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--confirmed',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--confirmed',action='store_true');parser.add_argument('--images-only',action='store_true');args=parser.parse_args()
  if not args.confirmed and not read(LOCAL/'storage-config.json',{}).get('migrationApproved',False):
   raise SystemExit('Migration has not been approved. No content was moved.')
  lock=LOCAL/'migration.lock'
@@ -38,7 +38,7 @@ def main():
   except (ProcessLookupError,TypeError):lock.unlink()
   else:raise RuntimeError('Migration already running')
  save(lock,{'pid':os.getpid()})
- progress=read(LOCAL/'migration-progress.json',{'filesMoved':0,'bytesMoved':0,'imagesMoved':0});progress.update(status='running',pid=os.getpid())
+ progress=read(LOCAL/'migration-progress.json',{'filesMoved':0,'bytesMoved':0,'imagesMoved':0});progress.update(status='running',pid=os.getpid(),scope='images' if args.images_only else 'all',phase='indexing',startedAt=time.time());save(LOCAL/'migration-progress.json',progress)
  try:
   status=read(LOCAL/'storage-status.json',{});config=read(LOCAL/'storage-config.json',{})
   nas=Path(status['contentRoot'])
@@ -46,7 +46,7 @@ def main():
    if read(nas/'.showhome-storage.json',{}).get('id')!=config['identity']:raise RuntimeError('NAS disconnected or storage identity changed')
   health()
   # HTML is reproducible, but keep a verified archive for extraction and contact details.
-  for source in (ROOT/'results/.cache/pages').glob('*.html'):
+  for source in ([] if args.images_only else (ROOT/'results/.cache/pages').glob('*.html')):
    health();size=source.stat().st_size;stamp=source.stat().st_mtime_ns
    verified_copy(source,nas/'archive'/source.relative_to(ROOT))
    if source.stat().st_mtime_ns!=stamp:continue
@@ -59,9 +59,10 @@ def main():
     images=folder/'images'
     if images.is_dir() and not (folder/'.lock').exists():
      for path in images.iterdir():
-      if path.is_file():st=path.stat();groups.setdefault((st.st_dev,st.st_ino),[]).append(path)
+      if path.is_file() and re.fullmatch(r'[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)',path.name):st=path.stat();groups.setdefault((st.st_dev,st.st_ino),[]).append(path)
   for path in (ROOT/'results/.cache').glob('*.bin'):
    st=path.stat();groups.setdefault((st.st_dev,st.st_ino),[]).append(path)
+  progress.update(phase='copying_images',totalImageGroups=len(groups),totalImageBytes=sum(paths[0].stat().st_size for paths in groups.values()));save(LOCAL/'migration-progress.json',progress)
   raw=read(LOCAL/'raw-image-index.json',{});pending=[]
   def flush():
    if not pending:return
@@ -90,7 +91,9 @@ def main():
    verified_copy(source,nas/'assets'/blob,sha);pending.append((paths,blob,size))
    if len(pending)>=50:flush()
   flush();progress['status']='complete';save(LOCAL/'migration-progress.json',progress)
-  config['migrationComplete']=True;save(LOCAL/'storage-config.json',config)
+  config['imagesMigrationComplete']=True
+  if not args.images_only:config['migrationComplete']=True
+  save(LOCAL/'storage-config.json',config)
  except Exception as error:
   progress.update(status='needs_attention',error=str(error));save(LOCAL/'migration-progress.json',progress);raise
  finally:lock.unlink(missing_ok=True)
