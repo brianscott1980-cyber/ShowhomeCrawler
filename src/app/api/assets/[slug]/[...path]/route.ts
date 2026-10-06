@@ -42,6 +42,15 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
    const imageId = relative.replace(/^images\/|\.[^.]+$/g, '');
    const image = report?.images.find(i => i.path === relative || i.id === imageId);
    if (image?.sourceUrl) {
+    if(new URL(_request.url).searchParams.get('optimize')==='1'){
+     const source=new URL(image.sourceUrl);
+     if(source.protocol!=='https:')return new Response('Invalid image source',{status:502});
+     const response=await fetch(source,{signal:AbortSignal.timeout(15000)});
+     if(!response.ok||Number(response.headers.get('content-length')??0)>20*1024*1024)return new Response('Image source unavailable',{status:502});
+     const bytes=await response.arrayBuffer();
+     if(bytes.byteLength>20*1024*1024)return new Response('Image too large',{status:413});
+     return new Response(bytes,{headers:{'Content-Type':response.headers.get('content-type')??'application/octet-stream','Cache-Control':'public, max-age=86400','X-Content-Type-Options':'nosniff'}});
+    }
     return new Response(null, { status: 307, headers: { Location: image.sourceUrl, 'Cache-Control': 'public, max-age=86400' } });
    }
   } catch {

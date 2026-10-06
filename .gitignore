@@ -23,3 +23,6 @@ __pycache__/
 
 # Private home network configuration and runtime status.
 .showhome/
+
+# Compact catalogue snapshots generated during deployment builds.
+.generated/

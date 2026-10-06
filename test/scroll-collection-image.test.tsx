@@ -21,7 +21,7 @@ it('returns to the logo without wrapping when page-bottom and row triggers rever
  });
  const images=[{src:'/logo.svg',alt:'Builder',kind:'logo' as const},{src:'/exterior.jpg',alt:'Exterior'},{src:'/room.jpg',alt:'Room'}];
  const scroll=async(position:number)=>{await act(async()=>{y=position;window.dispatchEvent(new Event('scroll'));const callback=frame;frame=undefined;callback?.(0);});};
- const sources=()=>mounts.map(({card})=>card.querySelector('.collection-image-current')?.getAttribute('src'));
+ const sources=()=>mounts.map(({card})=>{const src=card.querySelector('.collection-image-current')?.getAttribute('src');return src?.startsWith('/_next/image?')?new URL(src,'https://example.com').searchParams.get('url'):src;});
  try {
   await act(async()=>{for(const {root} of mounts)root.render(<ScrollCollectionImage images={images} image="/logo.svg" description="Builder" layout="compact"/>);});
   await scroll(300);expect(sources()).toEqual(Array(4).fill('/exterior.jpg'));

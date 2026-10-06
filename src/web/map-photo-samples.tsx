@@ -1,4 +1,6 @@
 'use client';
+import {optimizedImageSource} from './optimized-image-source';
+import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { HomePhoto } from './homepage-data';
 
@@ -62,7 +64,7 @@ export function MapPhotoSamples({ photos, onActiveSitesChange }: { photos: HomeP
  return <div className="map-photo-samples">
   <figure key={sample.cycle} data-phase={phase} className={`map-photo-sample map-photo-position-${sample.position} map-photo-motion-${sample.motion}${visible ? ' is-visible' : ''}${interacting ? ' is-interacting' : ''}`} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)}>
    <a className="map-photo-link" href={photo.houseTypeHref} tabIndex={visible ? 0 : -1} aria-label={`Explore ${photo.houseType ?? photo.builder} interiors`}>
-   <div className="map-photo-window"><img src={photo.src} alt="" decoding="async" onLoad={() => setPhase('focus')} onError={() => { failed.current.add(sample.index); advance(); }}/></div>
+   <div className="map-photo-window"><Image src={optimizedImageSource(photo.src)} alt="" width={480} height={360} sizes="(max-width: 700px) 62vw, 372px" loading="eager" fetchPriority="low" onLoad={() => setPhase('focus')} onError={() => { failed.current.add(sample.index); advance(); }}/></div>
    {photo.logo && <span className="map-photo-builder" style={{ backgroundColor: photo.logoBackground }}><img src={photo.logo} alt={`${photo.builder} logo`}/></span>}
    {photo.houseType && <span className="map-photo-house-type">{photo.houseType}<span aria-hidden="true"> ↗</span></span>}
    </a>

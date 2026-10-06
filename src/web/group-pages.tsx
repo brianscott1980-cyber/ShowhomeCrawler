@@ -1,3 +1,4 @@
+import {directoryPreview,directoryIdentityEncoder,compactDirectoryPlaces} from './directory-payload';
 import {developmentNavigationImages} from './development-navigation-images';
 import Link from 'next/link';
 import {readDevelopmentContact} from './read-development-contact';
@@ -32,13 +33,27 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
      <p>{descriptions.locations}</p>
      <DirectoryCounts initial={{Developments:cards.length}}/>
     </div>
-    <DevelopmentDirectoryMap initialCards={cards}/>
+    <DevelopmentDirectoryMap initialCards={cards.map(card=>({...card,images:[],properties:[]}))}/>
    </section>
    <SiteDirectory cards={cards} basePath="/developments" defaultView="compact"/>
   </main></DirectoryCountProvider>;
  }
  const geography=await buildingLocationIndex(groups);
- const cards=groups.map(group=>{const properties=group.collections.flatMap(c=>c.report.properties??[]);const bedrooms=[...new Set(properties.map(p=>p.bedrooms).filter((b):b is number=>typeof b==='number'&&Number.isFinite(b)))].sort((a,b)=>a-b);const sites=[...new Set(properties.map(p=>p.development?developmentName(p.development):undefined).filter((d):d is string=>Boolean(d)))].sort();const places=group.collections.flatMap(c=>c.report.properties.map(p=>({site:developmentName(p.development),siteId:`${c.slug}:${p.developmentUrl}`,imageIds:c.report.images.filter(image=>p.imageIds.includes(image.id)&&(image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,c.report.question)!=='Exterior')).map(image=>`${c.slug}:${image.id}`),developer:c.name,bedrooms:p.bedrooms,locations:geography.get(`${c.slug}:${p.developmentUrl}`)??[]})));const locations=[...new Set(places.flatMap(p=>p.locations))].sort();return {key:group.key,href:routes.get(group.key)!,name:group.name,interiorIds:group.collections.flatMap(c=>c.report.images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,c.report.question)!=='Exterior').map(image=>`${c.slug}:${image.id}`)),developers:[...new Set(group.developers)],count:group.count,...(kind==='buildings'?buildingCardImageCollection:cardImageCollection)(group.collections.flatMap(c=>c.report.images.map(i=>reportCardImage(c.slug,i)))),bedrooms,locations,sites,places};});
+ const encodeIdentity=directoryIdentityEncoder();
+ const cards=groups.map(group=>{
+  const properties=group.collections.flatMap(c=>c.report.properties??[]);
+  const bedrooms=[...new Set(properties.map(p=>p.bedrooms).filter((b):b is number=>typeof b==='number'&&Number.isFinite(b)))].sort((a,b)=>a-b);
+  const sites=[...new Set(properties.map(p=>p.development?developmentName(p.development):undefined).filter((d):d is string=>Boolean(d)))].sort();
+  const interiorIds:string[]=[];
+  const places=compactDirectoryPlaces(group.collections.flatMap(c=>{
+   const roomIds=new Set(c.report.images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,c.report.question)!=='Exterior').map(image=>image.id));
+   interiorIds.push(...[...roomIds].map(id=>encodeIdentity(`${c.slug}:${id}`)));
+   return c.report.properties.map(p=>({site:developmentName(p.development),siteId:`${c.slug}:${p.developmentUrl}`,imageIds:[...new Set(p.imageIds)].filter(id=>roomIds.has(id)).map(id=>encodeIdentity(`${c.slug}:${id}`)),developer:c.name,bedrooms:p.bedrooms,locations:geography.get(`${c.slug}:${p.developmentUrl}`)??[]}));
+  }));
+  const locations=[...new Set(places.flatMap(p=>p.locations))].sort();
+  const previews=(kind==='buildings'?buildingCardImageCollection:cardImageCollection)(group.collections.flatMap(c=>c.report.images.map(i=>reportCardImage(c.slug,i))));
+  return {key:group.key,href:routes.get(group.key)!,name:group.name,interiorIds,developers:[...new Set(group.developers)],count:group.count,...directoryPreview(previews),bedrooms,locations,sites,places};
+ });
  const isBuildings=kind==='buildings';
  const locationCount=new Set(groups.flatMap(group=>group.collections.flatMap(c=>c.report.properties.filter(p=>p.developmentUrl).map(p=>`${c.slug}:${p.developmentUrl}`)))).size;
  const roomGroups=groups.filter(group=>!['Exterior','Uncategorised'].includes(group.name));

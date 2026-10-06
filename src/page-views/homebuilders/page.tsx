@@ -1,3 +1,4 @@
+import {directoryPreview} from '../../web/directory-payload';
 import {builderFacts} from '../../web/builder-facts';
 import {builderLogoBackground} from '../../web/builder-brand';
 import {homeTypeName} from '../../reports/home-display';
@@ -20,7 +21,7 @@ export default async function Builders(){
   const logoUrl=logo?`/logos/${logo.file}`:undefined;
   const logoBackground=builderLogoBackground(developer.slug);
   return {...builderFacts(developer.slug),slug:developer.slug,name:developer.name,spaces:matches.length,logo:logoUrl,
-   ...cardImageCollection(matches.map(i=>reportCardImage(developer.slug,i)),logoUrl?{src:logoUrl,alt:`${developer.name} logo`,kind:'logo',background:logoBackground}:undefined),locations:locations.filter(p=>publishedLocations.has(p.url)).map(p=>({...p,key:`${developer.slug}:${p.url}`,region:p.geography?.region||p.geography?.country||'Unknown',buildingTypes:[...new Set(report.properties.filter(home=>home.developmentUrl===p.url).map(home=>homeTypeName(home.name).toLowerCase()))]}))} as DeveloperCard;
+   ...directoryPreview(cardImageCollection(matches.map(i=>reportCardImage(developer.slug,i)),logoUrl?{src:logoUrl,alt:`${developer.name} logo`,kind:'logo',background:logoBackground}:undefined)),locations:locations.filter(p=>publishedLocations.has(p.url)).map(p=>({...p,key:`${developer.slug}:${p.url}`,region:p.geography?.region||p.geography?.country||'Unknown',buildingTypes:[...new Set(report.properties.filter(home=>home.developmentUrl===p.url).map(home=>homeTypeName(home.name).toLowerCase()))]}))} as DeveloperCard;
  }));
  const collections=cards.filter((c):c is DeveloperCard=>c!==null);
  const locationCount=groupCollections(reports,'locations').length;

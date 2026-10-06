@@ -1,3 +1,4 @@
+import {readFile} from 'node:fs/promises';
 import { groupRoutes } from './group-routes';
 import logos from '../../public/logos/sources.json';
 import {readLocationRows} from './location-geography';
@@ -10,7 +11,7 @@ const builderLogos = new Map(logos.map(logo => [logo.slug, `/logos/${logo.file}`
 
 export interface CoveragePoint { latitude: number; longitude: number; name: string; builder: string; siteId?: string }
 export interface HomePhoto { src: string; alt: string; builder: string; category: string; siteIds?: string[]; logo?: string; logoBackground?: string; houseType?: string; houseTypeHref?: string }
-export async function homepageData() {
+export async function computeHomepageData() {
  const collections: Collection[] = (await Promise.all(developers.map(async developer => {
   const report = await readCollection(developer.slug);
   return report ? { slug: developer.slug, name: developer.name, report } : null;
@@ -46,10 +47,15 @@ export async function homepageData() {
   if (selected.length >= 4) break;
   if (!selected.some(s => s.collection.slug === item.collection.slug && s.image.id === item.image.id)) selected.push(item);
  }
- const photo = (item: typeof candidates[number]): HomePhoto => ({ ...photoBuildings.get(`${item.collection.slug}:${item.image.id}`), src: assetUrl(item.collection.slug, item.image.path), alt: item.image.verdict?.description ?? 'Showhome interior', builder: item.collection.name, category: item.image.categorisation?.mainCategory ?? 'Interior', logo: builderLogos.get(item.collection.slug), logoBackground: builderBrand(item.collection.slug)?.logoBackground??'#fff', siteIds: [...new Set(item.collection.report.properties.filter(property => property.imageIds.includes(item.image.id) && property.developmentUrl).map(property => `${item.collection.slug}:${property.developmentUrl}`))] });
+ const imageSites=new Map<string,Set<string>>();
+ for(const c of collections)for(const property of c.report.properties){
+  if(!property.developmentUrl)continue;
+  for(const id of property.imageIds){const key=`${c.slug}:${id}`;let sites=imageSites.get(key);if(!sites){sites=new Set();imageSites.set(key,sites);}sites.add(`${c.slug}:${property.developmentUrl}`);}
+ }
+ const photo = (item: typeof candidates[number]): HomePhoto => ({ ...photoBuildings.get(`${item.collection.slug}:${item.image.id}`), src: assetUrl(item.collection.slug, item.image.path), alt: item.image.verdict?.description ?? 'Showhome interior', builder: item.collection.name, category: item.image.categorisation?.mainCategory ?? 'Interior', logo: builderLogos.get(item.collection.slug), logoBackground: builderBrand(item.collection.slug)?.logoBackground??'#fff', siteIds: [...(imageSites.get(`${item.collection.slug}:${item.image.id}`)??[])] });
  const mappedSites = new Set(points.map(point => point.siteId));
  const mapPhotos = collections.flatMap(collection => {
-  const options = candidates.filter(item => item.collection.slug === collection.slug && photo(item).houseTypeHref && photo(item).siteIds?.some(siteId => mappedSites.has(siteId)));
+  const options = candidates.filter(item => item.collection.slug === collection.slug && photoBuildings.has(`${collection.slug}:${item.image.id}`) && [...(imageSites.get(`${collection.slug}:${item.image.id}`)??[])].some(siteId => mappedSites.has(siteId)));
   const categories = [...new Set(options.map(item => item.image.categorisation?.mainCategory))];
   return categories.slice(0, 4).flatMap(category => {
    const rooms = options.filter(item => item.image.categorisation?.mainCategory === category);
@@ -72,4 +78,11 @@ export async function homepageData() {
   journeyPhotos: [exterior ? photo(exterior) : selected[0] ? photo(selected[0]) : null, selected[1] ? photo(selected[1]) : null, selected[2] ? photo(selected[2]) : null],
   featured, mapPhotos, points, counts: { locations: locations.length, buildings: buildings.length, builders: collections.filter(c => c.report.images.some(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : i.verdict?.matches)).length },
  };
+}
+
+export async function homepageData(){
+ if(process.env.NODE_ENV==='production'){
+  try{return JSON.parse(await readFile('.generated/homepage.json','utf8')) as Awaited<ReturnType<typeof computeHomepageData>>;}catch{/* Development and unpublished builds compute from the catalogue. */}
+ }
+ return computeHomepageData();
 }

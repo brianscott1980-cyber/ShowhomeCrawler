@@ -21,7 +21,7 @@ async function nasRoot(){
 function timed<T>(promise:Promise<T>):Promise<T>{return new Promise((accept,reject)=>{const timer=setTimeout(()=>reject(new Error('NAS unavailable')),3000);promise.then(value=>{clearTimeout(timer);accept(value)},error=>{clearTimeout(timer);reject(error)});});}
 export async function storedFile(localPath:string,allowPreview=false):Promise<Buffer>{
  try{return await readFile(localPath)}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
- const rel=relative(resolve('.'),resolve(localPath)).split(sep).join('/');
+ const rel=relative(resolve(/* turbopackIgnore: true */ '.'),resolve(localPath)).split(sep).join('/');
  if(rel.startsWith('../'))throw new Error('Invalid content path');
  const raw=rel.match(/^results\/\.cache\/([a-f0-9]{64})\.bin$/);
  const image=rel.match(/(?:^|\/)images\/([a-f0-9]{64}\.(?:jpg|jpeg|png|webp|avif|gif|tiff))$/);
@@ -29,7 +29,7 @@ export async function storedFile(localPath:string,allowPreview=false):Promise<Bu
  const blob=raw?(await rawIndex())[raw[1]!]:image?(images[rel]??images[image[1]!]??image[1]):undefined;
  const root=await timed(nasRoot());
  if(root){try{return await timed(readFile(resolve(root,blob?'assets/'+blob:'archive/'+rel)))}catch{}}
- if(image&&allowPreview){try{return await readFile(resolve('.showhome/previews',(blob??image[1]!).split('.')[0]+'.webp'))}catch{}}
+ if(image&&allowPreview){try{return await readFile(resolve(/* turbopackIgnore: true */ '.showhome/previews',(blob??image[1]!).split('.')[0]+'.webp'))}catch{}}
  throw Object.assign(new Error(raw&&blob?'Image already downloaded; reconnect NAS to access it':'Content unavailable'),{code:'ENOENT',storedOnNas:Boolean(raw&&blob)});
 }
 export async function storedImage(id:string,extension:string,localPath?:string){

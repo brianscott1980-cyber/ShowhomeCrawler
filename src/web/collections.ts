@@ -1,10 +1,19 @@
 import { readFile } from 'node:fs/promises';
-import { existsSync,readFileSync } from 'node:fs';
+import { existsSync,readFileSync,statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { RunReport } from '../reports/report';
 
 import { developers } from '../adapters/developers';
 export { developers };
+// Keep only selection metadata; retaining every full report would inflate server memory.
+const folderMetadata=new Map<string,{stamp:string;status:string;time:number}>();
+function reportMetadata(file:string){
+ const st=statSync(file),stamp=`${st.mtimeMs}:${st.size}`;
+ const cached=folderMetadata.get(file);if(cached?.stamp===stamp)return cached;
+ const report=JSON.parse(readFileSync(file,'utf8')) as RunReport;
+ const value={stamp,status:report.status,time:Date.parse(report.completedAt??report.startedAt)};
+ folderMetadata.set(file,value);return value;
+}
 export function collectionFolder(slug: string) {
  if (!developers.some(d => d.slug === slug)) throw new Error('Unknown developer');
  const published=resolve('collections',`${slug}-home-offices`),canonical=resolve('results',`${slug}-home-offices`);
@@ -17,8 +26,8 @@ export function collectionFolder(slug: string) {
   }
  }catch{/* Published data remains available without a crawl manifest. */}
  const complete=candidates.flatMap(folder=>{
-  try{const report=JSON.parse(readFileSync(folder+'/results.json','utf8')) as RunReport;
-   return ['completed','completed_with_gaps'].includes(report.status)?[{folder,time:Date.parse(report.completedAt??report.startedAt)}]:[];
+  try{const report=reportMetadata(folder+'/results.json');
+   return ['completed','completed_with_gaps'].includes(report.status)?[{folder,time:report.time}]:[];
   }catch{return [];}
  }).sort((a,b)=>b.time-a.time);
  return complete[0]?.folder??(existsSync(published+'/results.json')?published:canonical);

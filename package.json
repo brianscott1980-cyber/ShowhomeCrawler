@@ -28,7 +28,7 @@
     "build:crawler": "tsc -p tsconfig.crawler.json",
     "images:normalise-bedrooms": "tsx src/cli/normalise-bedrooms.ts",
     "predev": "node scripts/copy-map-worker.mjs",
-    "prebuild": "node scripts/copy-map-worker.mjs",
+    "prebuild": "node scripts/copy-map-worker.mjs && tsx scripts/build-homepage-data.ts",
     "builders:ratings:sync": "tsx src/cli/sync-builder-ratings.ts",
     "builders:ratings:crawl": "tsx src/cli/crawl-builder-ratings.ts",
     "storage:status": "python3 scripts/nas-storage.py",

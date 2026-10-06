@@ -23,15 +23,17 @@ export function groupCollections(collections:Collection[],kind:GroupKind):Group[
  const isSpaces=kind==='spaces'||kind==='interiors';
  const isSites=kind==='sites'||kind==='locations';
  for(const collection of collections){
-  const maps=new Map<string,{name:string;images:ReportImage[];properties:RunReport['properties']}>();
-  if(isSites)for(const development of collection.report.developments){maps.set(`${collection.slug}:${development.url}`,{name:development.name??development.url.split('/').at(-1)??'Development',images:[],properties:collection.report.properties.filter(property=>property.developmentUrl===development.url)});}
+  const imageHomes=new Map<string,RunReport['properties']>();
+  for(const property of collection.report.properties??[])for(const id of new Set(property.imageIds)){const homes=imageHomes.get(id);if(homes)homes.push(property);else imageHomes.set(id,[property]);}
+  const maps=new Map<string,{name:string;images:ReportImage[];imageIds:Set<string>;properties:RunReport['properties']}>();
+  if(isSites)for(const development of collection.report.developments){maps.set(`${collection.slug}:${development.url}`,{name:development.name??development.url.split('/').at(-1)??'Development',images:[],imageIds:new Set(),properties:collection.report.properties.filter(property=>property.developmentUrl===development.url)});}
   const targetImages=isSpaces
    ? collection.report.images.filter(image => spaceName(image, collection.report.question) !== 'Uncategorised' || isRoomImage(image))
    : collection.report.images.filter(i=>i.categorisation?(i.categorisation.isRoom||((isSites||kind==='buildings')&&i.categorisation.mainCategory==='Exterior')):!i.verdict||i.verdict.matches);
   for(const image of targetImages){
-   const homes=(collection.report.properties??[]).filter(p=>p.imageIds.includes(image.id));
+   const homes=imageHomes.get(image.id)??[];
    const entries=isSpaces?[{identity:spaceName(image,collection.report.question),name:spaceName(image,collection.report.question),homes}]:homes.map(p=>({identity:isSites?`${collection.slug}:${p.developmentUrl}`:`${collection.slug}:${homeTypeName(p.name).toLowerCase()}`,name:isSites?p.development:homeTypeName(p.name),homes:[p]}));
-   for(const entry of entries){let item=maps.get(entry.identity);if(!item){item={name:entry.name,images:[],properties:[]};maps.set(entry.identity,item);}if(!item.images.some(i=>i.id===image.id))item.images.push(image);for(const home of entry.homes)if(!item.properties.includes(home))item.properties.push(home);}
+   for(const entry of entries){let item=maps.get(entry.identity);if(!item){item={name:entry.name,images:[],imageIds:new Set(),properties:[]};maps.set(entry.identity,item);}if(!item.imageIds.has(image.id)){item.imageIds.add(image.id);item.images.push(image);}for(const home of entry.homes)if(!item.properties.includes(home))item.properties.push(home);}
   }
   for(const [identity,item] of maps){const key=keyFor(identity);let group=groups.get(key);if(!group){group={key,name:isSites?developmentName(item.name):item.name,...(isSites?{routeName:item.name}:{}),developers:[],collections:[],count:0,...(isSites?{developmentUrl:identity.slice(collection.slug.length+1)}:{})};groups.set(key,group);}group.developers.push(collection.name);group.count+=item.images.length;group.collections.push({...collection,report:{...collection.report,images:item.images,properties:item.properties}});}
  }

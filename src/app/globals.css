@@ -244,3 +244,5 @@ body:has(.location-explorer) .directory-intro-heading>p{font-size:14px;margin:8p
 .site-property-summary .development-style{display:block}
 .development-directory-map{position:relative;min-width:0;height:320px;border:var(--card-border);border-radius:var(--card-radius);overflow:hidden}.development-directory-map .site-map-panel{position:relative;top:auto;height:100%;border:0;border-radius:0}.development-directory-map .site-map{height:100%;min-height:0;max-height:none}.directory-map-empty{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:24px;background:#f5f2ebdd;text-align:center;pointer-events:none}.development-directory-intro{margin-bottom:24px}
 @media(max-width:700px){.development-directory-map{height:280px}}
+
+.directory-loading{min-height:60vh;padding:48px max(24px,4vw);font-size:18px;color:var(--ink)}
