@@ -1,10 +1,11 @@
 'use client';
+import {hasImageCategory} from './image-classification';
 import {NextCardImage} from './card-image';
 import {optimizedImageSource} from './optimized-image-source';
 import NextImage,{getImageProps} from 'next/image';
 import {useEffect,useRef,useState} from 'react';
 import {carouselTriggerLine,collectionIndex,cardTransition,rowProgress,rowTrigger,atPageBottom,bottomRemainder,type CardEdges} from './scroll-crossing';
-export interface CollectionImage {src:string;alt:string;kind?:'logo';background?:string}
+export interface CollectionImage {src:string;alt:string;roomType?:string;kind?:'logo';background?:string}
 interface Entry {element:HTMLElement;edges:CardEdges;progress:number;bottomAdvanced:boolean;advanced:boolean;advance:(direction:number)=>void}
 interface Measurement {midpoint:number;edges:DOMRect;progress:number;column:number;columns:number;list:boolean;large:boolean}
 const entries=new Set<Entry>();
@@ -62,7 +63,7 @@ function register(element:HTMLElement,advance:Entry['advance']){
  return ()=>{entries.delete(entry);if(!entries.size)stop?.();};
 }
 export function ScrollCollectionImage({images,image,description,layout,caption=false,showBuilderLogo=false}:{images?:CollectionImage[];image:string;description:string;layout:string;caption?:boolean;showBuilderLogo?:boolean}){
- const items=images?.length?images:[{src:image,alt:description}];
+ const items=(images??[]).filter(item=>item.kind==='logo'||hasImageCategory(item.roomType));
  const sizes=layout==='list'?'220px':layout==='compact'?'(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 25vw':'(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw';
  const ref=useRef<HTMLDivElement>(null);
  const [slide,setSlide]=useState({index:0,previous:0,direction:1,sequence:0});
@@ -84,6 +85,7 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  const current=items[slide.index]??items[0]!;
  const previous=items[slide.previous]??items[0]!;
  const logo=showBuilderLogo?items.find(item=>item.kind==='logo'):undefined;
+ if(!current)return <div ref={ref} className="collection-image" aria-label="No categorised preview available"/>;
  return <div ref={ref} className="collection-image">
   {slide.sequence>0&&<NextImage fill sizes={sizes} unoptimized={previous.kind==='logo'} className={`collection-image-previous${previous.kind==='logo'?' collection-image-logo':''}`} style={{background:previous.background}} src={optimizedImageSource(previous.src)} alt="" aria-hidden="true"/>}
   <NextCardImage fill sizes={sizes} unoptimized={current.kind==='logo'} key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={optimizedImageSource(current.src)} alt={current.alt} loading="lazy"/>

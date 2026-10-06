@@ -1,4 +1,5 @@
 'use client';
+import {isCategorisedImage} from './image-classification';
 import {useGalleryQuery} from './use-gallery-query';
 import type {GalleryScope,GalleryPageData,GalleryImage} from './gallery-page-data';
 import {DirectoryQueryStatus} from './use-directory-query';
@@ -144,6 +145,7 @@ export function Gallery({
  );
 
  const available = all.filter(image => {
+  if (!isCategorisedImage(image)) return false;
   if (favouritesOnly) return favourites.includes(image.id);
   if (image.categorisation && !image.categorisation.isRoom && image.categorisation.mainCategory !== 'Exterior') return false;
   const isUncategorised = !image.categorisation || image.categorisation.mainCategory === 'Other';

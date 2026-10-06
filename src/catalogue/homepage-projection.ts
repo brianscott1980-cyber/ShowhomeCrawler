@@ -1,3 +1,4 @@
+import {isCategorisedImage} from '../web/image-classification';
 import { groupRoutes } from '../web/group-routes';
 import {readWebsiteBuilder} from '../database/website';
 import {readLocationRows} from '../web/location-geography';
@@ -36,7 +37,7 @@ export async function computeHomepageData(loaded?:Collection[]) {
    && point.latitude >= 49.5 && point.latitude <= 61.2 && point.longitude >= -9 && point.longitude <= 2.5
    ? [{ latitude: point.latitude!, longitude: point.longitude!, name: group.name, builder: c.name, siteId: `${c.slug}:${url}` }] : [];
  });
- const candidates = collections.flatMap(c => c.report.images.filter(image => isRoomImage(image) && image.categorisation?.mainCategory !== 'Exterior' && (image.categorisation?.isRoom || image.verdict?.matches)).map(image => ({ collection: c, image })));
+ const candidates = collections.flatMap(c => c.report.images.filter(image => isCategorisedImage(image) && isRoomImage(image) && image.categorisation?.mainCategory !== 'Exterior' && (image.categorisation?.isRoom || image.verdict?.matches)).map(image => ({ collection: c, image })));
  const selected: typeof candidates = [];
  for (const category of ['Living Room', 'Kitchen', 'Bedroom', 'Study & Home Office']) {
   const options = candidates.filter(c => c.image.categorisation?.mainCategory === category && !selected.some(s => s.image.id === c.image.id && s.collection.slug === c.collection.slug));

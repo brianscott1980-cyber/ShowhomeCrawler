@@ -1,3 +1,4 @@
+import {hasImageCategory} from './image-classification';
 import type {ReportImage} from '../reports/report';
 import {assetUrl} from './collections';
 export interface CardImage {src:string;alt:string;roomType?:string;subCategory?:string;kind?:'logo';background?:string}
@@ -30,6 +31,8 @@ export function reportCardImage(slug:string,image:ReportImage):CardImage {
 }
 /** Generate on the server so the browser hydrates the same random starting image and order. */
 export function cardImageCollection(images:CardImage[],firstImage?:CardImage,random:()=>number=Math.random){
+ firstImage=firstImage?.kind==='logo'||hasImageCategory(firstImage?.roomType)?firstImage:undefined;
+ images=images.filter(i=>i.kind==='logo'||hasImageCategory(i.roomType));
  const available=[...new Map(images.filter(i=>i.src!==firstImage?.src).map(i=>[i.src,i])).values()];
  const exteriors=firstImage?.kind==='logo'?available.filter(i=>/^exterior(?:\s|$)/i.test(i.roomType?.trim()??'')):[];
  const exterior=exteriors.length?exteriors[Math.floor(random()*exteriors.length)]:undefined;
@@ -40,6 +43,7 @@ export function cardImageCollection(images:CardImage[],firstImage?:CardImage,ran
 
 /** Building previews favour a front elevation, then an interior from that same building. */
 export function buildingCardImageCollection(images:CardImage[],random:()=>number=Math.random){
+ images=images.filter(i=>hasImageCategory(i.roomType));
  const available=[...new Map(images.map(image=>[image.src,image])).values()];
  const isExterior=(image:CardImage)=>/^exterior(?:\s|$)/i.test(image.roomType?.trim()??'');
  const exteriors=available.filter(isExterior);

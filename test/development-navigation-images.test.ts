@@ -11,8 +11,8 @@ it('does not substitute an exterior for a missing interior or a gallery image fo
  const report={properties:[{name:'Development gallery',developmentUrl:'/current',imageIds:['front']}],images:[{id:'front',categorisation:{mainCategory:'Exterior',isRoom:true}}]} as unknown as RunReport;
  expect(developmentNavigationImages([{slug:'builder',report}],'builder','/current')).toEqual({exterior:undefined,interior:undefined});
 });
-it('uses development-specific media paths when an HTML-only crawl has no categories',()=>{
+it('does not infer categories from media paths when classification is absent',()=>{
  const report={properties:[{name:'House',developmentUrl:'/landsdale',imageIds:['other','cgi','front','room']}],images:[{id:'other',sourceUrl:'https://cms.bellway.co.uk/Showhome-Photography/Home/other/_large/1/Home_03.webp'},{id:'cgi',sourceUrl:'https://cms.bellway.co.uk/landsdale/CGIs/_large/2/House.webp'},{id:'front',sourceUrl:'https://cms.bellway.co.uk/Showhome-Photography/Home/Landsdale/_large/3/Home_01.webp'},{id:'room',sourceUrl:'https://cms.bellway.co.uk/Showhome-Photography/Home/Landsdale/_large/4/Home_03.webp'}]} as unknown as RunReport;
  const result=developmentNavigationImages([{slug:'bellway',report}],'bellway','/landsdale');
- expect(result.exterior?.image.id).toBe('cgi');expect(result.interior?.image.id).toBe('room');
+ expect(result).toEqual({exterior:undefined,interior:undefined});
 });

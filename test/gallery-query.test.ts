@@ -14,10 +14,10 @@ beforeAll(async()=>{
  insert into showhome_web.buildings(key,builder_slug,name) values('house','alpha','house');
  insert into showhome_web.galleries(key,builder_slug,development_key,building_key,name,source_url,bedrooms,price) values('north','alpha','North','house','House','North',2,100000),('south500','alpha','South','house','House','South',5,500000),('south400','alpha','South','house','House','South',5,400000);`);
  const home=(site:string,beds:number,price:number)=>({name:'House',buildingName:'House',url:site,development:site,developmentUrl:site,bedrooms:beds,price,areas:[site],plots:[],imageIds:[]});
- for(const [id,homes,eligible] of [['a',[home('North',2,100000),home('South',5,500000)],true],['b',[home('South',5,400000)],true],['orphan',[],true],['logo',[],false]] as const){
+ for(const [id,homes,eligible] of [['a',[home('North',2,100000),home('South',5,500000)],true],['b',[home('South',5,400000)],true],['orphan',[],true],['logo',[],false],['uncategorised',[],true]] as const){
  await db.query('insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url) values($1,$2,$3,$4,$5)',[id,'alpha',id,'images/'+id+'.jpg','https://example.com/'+id]);
  const payload={uid:'alpha:'+id,id,slug:'alpha',developer:'Alpha',homes,path:'images/'+id+'.jpg'};
- await db.query('insert into showhome_web.gallery_cards values($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)',[payload.uid,'alpha',id,'Alpha','Bedroom','Double Bedroom',eligible,true,'blue bedroom',JSON.stringify(payload),homes.length?['house']:[]]);
+ await db.query('insert into showhome_web.gallery_cards values($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)',[payload.uid,'alpha',id,'Alpha',id==='uncategorised'?'Uncategorised':'Bedroom','Double Bedroom',eligible,true,'blue bedroom',JSON.stringify(payload),homes.length?['house']:[]]);
  }
  await db.exec("insert into showhome_web.gallery_images values('north','a',0),('south500','a',0),('south400','b',0)");
  await db.exec(`insert into showhome_web.gallery_memberships select c.uid,g.key,g.builder_slug,g.source_url,g.bedrooms,g.price,d.source_url,d.name,b.name,array(select value from jsonb_each_text(d.geography)) from showhome_web.gallery_cards c join showhome_web.images i on i.catalogue_id=c.image_id and i.builder_slug=c.builder_slug join showhome_web.gallery_images gi on gi.image_key=i.key join showhome_web.galleries g on g.key=gi.gallery_key join showhome_web.developments d on d.key=g.development_key join showhome_web.buildings b on b.key=g.building_key`);
@@ -40,4 +40,9 @@ it('scopes favourites to requested IDs and pins a linked image in the first batc
 });
 it('applies text and category filters to the complete gallery',async()=>{
  const data=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},filters:{q:'BLUE',category:'Bedroom',room:'Double Bedroom'}},sql);expect(data.total).toBe(3);
+});
+
+it('excludes uncategorised images even when saved as favourites',async()=>{
+ const result=await queryGallery({scope:{kind:'favourites',href:'/favourites'},favourites:['uncategorised']},sql);
+ expect(result.total).toBe(0);expect(result.images).toEqual([]);
 });

@@ -1,3 +1,4 @@
+import {isCategorisedImage} from '../web/image-classification';
 import {cache} from 'react';
 import type postgres from 'postgres';
 import {createDatabase} from './postgres';
@@ -22,7 +23,7 @@ export const readWebsiteCollection=cache(async(slug:string,scope?:CollectionScop
  ]);
  const ids=new Map<string,string[]>();for(const link of links){const list=ids.get(link.gallery_key)??[];list.push(link.catalogue_id);ids.set(link.gallery_key,list);}
  const properties:ReportProperty[]=galleries.map(g=>({development:g.development_name,developmentUrl:g.development_url,name:g.name,url:g.source_url,bedrooms:g.bedrooms,price:g.price===null?null:Number(g.price),plots:g.plots,imageIds:ids.get(g.key)??[]}));
- return {...builder.report_metadata,builder:{slug,name:builder.name,websiteUrl:builder.website_url},errors:[],developments:developments.map(d=>({...d.crawl_metadata,url:d.source_url,name:d.name,town:d.town,country:d.country})),properties,images:images.map(i=>i.metadata as ReportImage)} as RunReport;
+ return {...builder.report_metadata,builder:{slug,name:builder.name,websiteUrl:builder.website_url},errors:[],developments:developments.map(d=>({...d.crawl_metadata,url:d.source_url,name:d.name,town:d.town,country:d.country})),properties,images:images.map(i=>i.metadata as ReportImage).filter(isCategorisedImage)} as RunReport;
 });
 export const readWebsiteLocations=cache(async(slug:string):Promise<LocationRow[]>=>{
  const rows=await websiteDatabase()`select name,source_url as url,town,country,postcode,latitude,longitude,geography from showhome_web.developments where builder_slug=${slug}`;
@@ -39,6 +40,7 @@ export async function readDirectoryCards<T>(kind:string):Promise<T[]>{
 export async function readPresentation<T>(key:string):Promise<T>{
  const [row]=await websiteDatabase()`select payload from showhome_web.presentations where key=${key}`;
  if(!row)throw new Error('Website catalogue has not been published: '+key);
+ if(key.startsWith('builder:')&&row.payload.report)row.payload.report.images=row.payload.report.images.filter(isCategorisedImage);
  return row.payload as T;
 }
 export const findDirectoryReference=cache(async(kind:string,href:string)=>{
