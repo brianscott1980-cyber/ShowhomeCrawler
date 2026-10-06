@@ -354,7 +354,7 @@ export function Gallery({
         src={imageUrl(image.slug, image.path)}
         alt={image.verdict?.description ?? 'Showhome interior'}
        />
-       <span>{image.categorisation?.subCategory ?? 'Showhome interior'}</span>
+       {image.categorisation?.subCategory!==''&&<span className="photo-caption">{image.categorisation?.subCategory ?? 'Showhome interior'}</span>}
       </button>
       <button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>
       </div>
