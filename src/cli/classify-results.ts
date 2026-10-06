@@ -1,3 +1,4 @@
+import {classificationOrder,classificationBatches} from '../vision/classification-order.js';
 import {storedFile} from '../web/content-storage.js';
 import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import {GeminiModelPool,classificationModels} from '../vision/gemini-model-pool.js';
@@ -35,15 +36,15 @@ async function main() {
  const lock = await open(folder + '/.lock', 'wx');
  try {
   const priorityIds=new Set(report.properties.filter(home=>values['priority-development']&&home.development.toLowerCase().includes(values['priority-development'].toLowerCase())).flatMap(home=>home.imageIds));
-  const pending = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).sort((a,b)=>Number(priorityIds.has(b.id))-Number(priorityIds.has(a.id)));
+  const pending = classificationOrder(report,values['priority-development']).images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict);
   if(priorityIds.size)console.log(JSON.stringify({stage:'priority_development',development:values['priority-development'],images:priorityIds.size}));
   await saveGeminiState(folder,{state:'analysing',model:pool.currentModel,...pool.snapshot()});
   report.metrics.skippedExistingAnalyses=report.images.length-pending.length;
   report.metrics.analysisCacheHits=0;
   // Already collected developments remain available while categories are added.
   report.status = ['completed','completed_with_gaps'].includes(report.status)?'completed_with_gaps':'classifying'; await writeReport(folder, report);
-  for (let offset = 0; offset < pending.length; offset += 8) {
-   const images = pending.slice(offset, offset + 8);
+  let processed=0;
+  for (const images of classificationBatches(report,pending,8,values['priority-development'])) {
    const remaining = [];
    for (const image of images) {
     for (const model of [...new Set([...pool.models,report.model,...(values['reuse-model'] ?? [])])]) {
@@ -109,7 +110,8 @@ async function main() {
    report.metrics.pendingImages = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).length;
    report.metrics.matchedImages = report.images.filter(i => i.verdict?.matches).length;
    await writeReport(folder, report);
-   console.log(JSON.stringify({ stage: 'batch_complete', processed: Math.min(offset + 8, pending.length), total: pending.length, matches: report.metrics.matchedImages }));
+   processed+=images.length;
+   console.log(JSON.stringify({ stage: 'batch_complete', processed, total: pending.length, matches: report.metrics.matchedImages }));
    if (remaining.length) await sleep(4000);
   }
   report.status = report.errors.length || report.metrics.pendingImages || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';

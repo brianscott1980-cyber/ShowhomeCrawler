@@ -1,3 +1,4 @@
+import {classificationOrder,classificationBatches} from '../vision/classification-order.js';
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -31,9 +32,9 @@ async function main() {
   try {
    const report: RunReport = JSON.parse(await readFile(jsonPath, 'utf8'));
    builderReports.set(folder, report);
-   for (const img of report.images) {
+   for (const img of classificationOrder(report).images) {
     totalImages++;
-    allImagesMap.set(img.id, {
+    if(!allImagesMap.has(img.id))allImagesMap.set(img.id, {
      id: img.id,
      roomType: img.verdict?.roomType,
      description: img.verdict?.description,
@@ -48,17 +49,16 @@ async function main() {
  console.log(`Total unique images across builders: ${allImagesMap.size} (total image references: ${totalImages})`);
  console.log('Categorising all images...');
 
- const categorisations = await categoriseAllImages(
-  [...allImagesMap.values()],
-  process.env.GEMINI_API_KEY,
-  {
-   onProgress: (done, total) => {
-    if (done === total || done % 500 === 0) {
-     console.log(`Progress: ${done} / ${total} images categorised`);
-    }
-   }
+ const categorisations=new Map<string,ImageCategorisation>();
+ for(const report of builderReports.values()){
+  for(const batch of classificationBatches(report,report.images,32)){
+   const items=batch.filter(image=>!categorisations.has(image.id)).map(image=>allImagesMap.get(image.id)!);
+   if(!items.length)continue;
+   const results=await categoriseAllImages(items,process.env.GEMINI_API_KEY);
+   for(const [id,category] of results)categorisations.set(id,category);
+   console.log(`Progress: ${categorisations.size} / ${allImagesMap.size} images categorised`);
   }
- );
+ }
 
  console.log('Categorisation complete. Updating results and collections JSON files...');
 
@@ -67,7 +67,7 @@ async function main() {
 
  for (const [folder, report] of builderReports.entries()) {
   let modified = false;
-  for (const img of report.images) {
+  for (const img of classificationOrder(report).images) {
    const cat = categorisations.get(img.id);
    if (cat) {
     img.categorisation = cat;

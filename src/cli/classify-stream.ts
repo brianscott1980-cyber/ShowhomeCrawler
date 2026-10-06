@@ -1,3 +1,4 @@
+import {classificationOrder,classificationBatches} from '../vision/classification-order.js';
 import {storedFile} from '../web/content-storage.js';
 import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import {GeminiModelPool,classificationModels} from '../vision/gemini-model-pool.js';
@@ -33,7 +34,7 @@ async function main() {
    await saveGeminiState(folder,{state:'analysing',model:pool.currentModel,...pool.snapshot()});
    const running = await access(`${folder}/.lock`).then(() => true, () => false);
    const pending = [];
-   for (const image of report.images) {
+   for (const image of classificationOrder(report).images) {
     if(values['all-images']&&hasSiteCategorisation(image))continue;
     if (!isInferredAnalysis(image.verdict) && (values['all-images'] ? image.categorisation : image.verdict)) continue;
     let cached = false;
@@ -44,7 +45,7 @@ async function main() {
     if (!cached) pending.push(image);
     if (pending.length === 24) break;
    }
-   if (!pending.length || (running && pending.length < 8)) {
+   if (!pending.length) {
     if (!running && !pending.length) {await saveGeminiState(folder,{state:'complete',model:pool.currentModel,...pool.snapshot()});break;}
     await sleep(10000); continue;
    }
@@ -52,7 +53,8 @@ async function main() {
     if (!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(i.path)) throw new Error('Invalid image path.');
     return { id: i.id, bytes: await storedFile(`${folder}/${i.path}`) };
    }));
-   await Promise.all(Array.from({length: Math.ceil(batch.length / 8)}, (_, index) => batch.slice(index * 8, index * 8 + 8)).map(async group => {
+   for (const images of classificationBatches(report,pending)) {
+   const ids=new Set(images.map(image=>image.id));const group=batch.filter(image=>ids.has(image.id));
    let answers;
    for (let attempt = 0; ; attempt++) {
     if(stopped)return;
@@ -89,7 +91,7 @@ async function main() {
     const temp = path + '.' + randomUUID() + '.tmp'; await writeFile(temp, JSON.stringify({...answer.verdict,analysisModel:answer.analysisModel})); await rename(temp, path);
    }
    console.log(JSON.stringify({stage:'stream_batch_cached',developer:report.builder?.name,images:answers.length,matches:answers.filter(a=>a.verdict.matches).length,discoveredImages:report.images.length}));
-   }));
+   }
    await sleep(12000);
   }
  } finally { await lock.close(); await unlink(`${folder}/.analysis-stream.lock`); }
