@@ -37,8 +37,8 @@ export function CardResults({children,className,label,identity,paginate=true,has
    }
    accumulated+=Math.min(distance,120);
    clearTimeout(decay);
-   if(accumulated>=240){reset();loadMore();return;}
-   setPressure(accumulated/240);
+   if(accumulated>=120){reset();loadMore();return;}
+   setPressure(accumulated/120);
    decay=setTimeout(reset,900);
   };
   const wheel=(event:WheelEvent)=>{if(event.ctrlKey||Math.abs(event.deltaX)>Math.abs(event.deltaY))return;push(event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?window.innerHeight:1),event.target);};
