@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Resumable verified NAS migration. Catalogue JSON and AI analyses stay local."""
-import argparse,hashlib,json,os,re,subprocess,time,uuid
+import argparse,hashlib,json,os,re,signal,subprocess,time,uuid
+from concurrent.futures import ThreadPoolExecutor
+STOP=False
+def stop(*_):
+ global STOP
+ STOP=True
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];LOCAL=ROOT/'.showhome'
 def read(p,default=None):
@@ -28,7 +33,8 @@ def verified_copy(source,target,checksum=None):
  return checksum
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--confirmed',action='store_true');parser.add_argument('--images-only',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--confirmed',action='store_true');parser.add_argument('--images-only',action='store_true');parser.add_argument('--workers',type=int,default=8);args=parser.parse_args()
+ signal.signal(signal.SIGTERM,stop);signal.signal(signal.SIGINT,stop)
  if not args.confirmed and not read(LOCAL/'storage-config.json',{}).get('migrationApproved',False):
   raise SystemExit('Migration has not been approved. No content was moved.')
  lock=LOCAL/'migration.lock'
@@ -62,7 +68,7 @@ def main():
       if path.is_file() and re.fullmatch(r'[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)',path.name):st=path.stat();groups.setdefault((st.st_dev,st.st_ino),[]).append(path)
   for path in (ROOT/'results/.cache').glob('*.bin'):
    st=path.stat();groups.setdefault((st.st_dev,st.st_ino),[]).append(path)
-  progress.update(phase='copying_images',totalImageGroups=len(groups),totalImageBytes=sum(paths[0].stat().st_size for paths in groups.values()));save(LOCAL/'migration-progress.json',progress)
+  progress.update(phase='copying_images',totalImageGroups=len(groups)+progress['imagesMoved'],totalImageBytes=sum(paths[0].stat().st_size for paths in groups.values())+progress['bytesMoved']);save(LOCAL/'migration-progress.json',progress)
   raw=read(LOCAL/'raw-image-index.json',{});image_index=read(LOCAL/'image-index.json',{});pending=[]
   def flush():
    if not pending:return
@@ -70,13 +76,14 @@ def main():
    for paths,blob,size in pending:
     if any(p.parent.name=='images' for p in paths):
      target=LOCAL/'previews'/f'{blob.split(".")[0]}.webp'
-     if not target.exists():previews.append({'source':str(nas/'assets'/blob),'target':str(target)})
+     if not target.exists():previews.append({'source':str(paths[0]),'target':str(target)})
     for p in paths:
      if p.suffix=='.bin':raw[p.stem]=blob
      elif p.parent.name=='images':
       image_index[str(p.relative_to(ROOT))]=blob
       if p.name not in image_index or p.stem==blob.split('.')[0]:image_index[p.name]=blob
    if previews:
+    previews=list({item['target']:item for item in previews}.values())
     batch=LOCAL/'preview-batch.json';save(batch,previews)
     subprocess.run(['node','scripts/storage-previews.mjs',str(batch)],cwd=ROOT,check=True)
    # Persist download knowledge before removing the local original.
@@ -87,13 +94,28 @@ def main():
     for p in paths:p.unlink(missing_ok=True);progress['filesMoved']+=1
     progress['bytesMoved']+=size;progress['imagesMoved']+=1
    save(LOCAL/'migration-progress.json',progress);print(json.dumps(progress),flush=True);pending.clear()
-  for paths in groups.values():
-   health();source=paths[0];size=source.stat().st_size
+  def copy_group(paths):
+   source=paths[0];size=source.stat().st_size
    image=next((p for p in paths if p.parent.name=='images'),None)
    sha=digest(source);blob=sha+(image.suffix if image else '.bin')
-   if image and image.stem!=sha:progress['legacyIdentifiers']=progress.get('legacyIdentifiers',0)+1
-   verified_copy(source,nas/'assets'/blob,sha);pending.append((paths,blob,size))
-   if len(pending)>=50:flush()
+   verified_copy(source,nas/'assets'/blob,sha)
+   return paths,blob,size,bool(image and image.stem!=sha)
+  items=iter(groups.values())
+  with ThreadPoolExecutor(max_workers=max(1,min(args.workers,16))) as workers:
+   while not STOP:
+    batch=[]
+    for _ in range(50):
+     paths=next(items,None)
+     if paths is None:break
+     batch.append(paths)
+    if not batch:break
+    health()
+    for paths,blob,size,legacy in workers.map(copy_group,batch):
+     if legacy:progress['legacyIdentifiers']=progress.get('legacyIdentifiers',0)+1
+     pending.append((paths,blob,size))
+    flush()
+  if STOP:
+   progress['status']='paused';save(LOCAL/'migration-progress.json',progress);return
   flush();progress['status']='complete';save(LOCAL/'migration-progress.json',progress)
   config['imagesMigrationComplete']=True
   if not args.images_only:config['migrationComplete']=True
