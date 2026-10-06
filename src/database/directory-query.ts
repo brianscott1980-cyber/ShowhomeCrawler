@@ -13,7 +13,7 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
  function range(field:string,key:string,comparison:string,omit:string){const value=filters[key];return key===omit||omit==='beds'&&/Beds$/.test(key)||omit==='price'&&/Price$/.test(key)||!value||value==='any'?'true':`${field}${comparison}${param(Number(value))}::numeric`;}
  function rowWhere(omit=''){
   const conditions=[`r.kind=${kindParam}`,`(${pointLat}::float8 is null or (${pointLat}::float8 between -90 and 90 and ${pointLon}::float8 between -180 and 180))`,selection('r.developer','developer',omit),selection('c.name','type',omit),selection('r.site','site',omit),selection('r.region','region',omit)];
-  if(kind==='interiors')conditions.push("lower(trim(c.name)) not in ('other','uncategorised','uncategorized','unknown','interior')");
+  if(kind==='interiors')conditions.push("lower(trim(c.name)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map','exterior','floorplan','floor plan')");
   if(omit!=='bedrooms'&&filters.bedrooms)conditions.push(selection('r.bedrooms::text','bedrooms',omit));
   if(omit!=='location'&&filters.location)conditions.push(`r.areas && array(select jsonb_array_elements_text(${param(sql.json(selectedValues(filters.location)))}::jsonb))`);
   for(const [field,key,op] of [['r.bedrooms','minBeds','>='],['r.bedrooms','maxBeds','<='],['r.price','minPrice','>='],['r.price','maxPrice','<=']] as const)conditions.push(range(field,key,op,omit));

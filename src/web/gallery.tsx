@@ -1,5 +1,5 @@
 'use client';
-import {isCategorisedImage} from './image-classification';
+import {isCategorisedImage,isInteriorCategory} from './image-classification';
 import {useGalleryQuery} from './use-gallery-query';
 import type {GalleryScope,GalleryPageData,GalleryImage} from './gallery-page-data';
 import {DirectoryQueryStatus} from './use-directory-query';
@@ -146,6 +146,7 @@ export function Gallery({
 
  const available = all.filter(image => {
   if (!isCategorisedImage(image)) return false;
+  if(galleryScope?.kind==='interiors'&&!isInteriorCategory(image.categorisation?.mainCategory??image.verdict?.roomType))return false;
   if (favouritesOnly) return favourites.includes(image.id);
   if (image.categorisation && !image.categorisation.isRoom && image.categorisation.mainCategory !== 'Exterior') return false;
   const isUncategorised = !image.categorisation || image.categorisation.mainCategory === 'Other';
@@ -174,6 +175,7 @@ export function Gallery({
     ...(cat?.objects ?? []),
     ...(cat?.colours ?? []),
     ...(cat?.chairs ?? []),
+    ...(cat?.decor??[]),...(cat?.wallpaperTags??[]),...(cat?.curtainTags??[]),...(cat?.fabricTags??[]),...(cat?.furnishingTags??[]),
     cat?.wallpaper ?? '',
     cat?.curtains ?? '',
     cat?.hasTelevision ? 'television tv' : '',
@@ -378,7 +380,7 @@ export function Gallery({
        {image.categorisation && (
         <div className="feature-tags">
          {image.categorisation.colours.slice(0, 3).map(c => (
-          <span key={c} className="tag tag-colour">{c}</span>
+          <button type="button" key={c} className="tag tag-colour" aria-pressed={query===c} onClick={()=>setQuery(query===c?'':c)} title={`Filter by ${c}`}>{c}</button>
          ))}
          {image.categorisation.hasTelevision && (
           <span className="tag tag-tech" title="Television present">📺 TV</span>
@@ -386,11 +388,12 @@ export function Gallery({
          {image.categorisation.hasComputer && (
           <span className="tag tag-tech" title="Computer / Workspace present">💻 PC</span>
          )}
+         {[...new Set([...(image.categorisation.decor??[]),...(image.categorisation.wallpaperTags??[]),...(image.categorisation.curtainTags??[]),...(image.categorisation.fabricTags??[]),...(image.categorisation.furnishingTags??[])])].map(tag=><button type="button" key={tag} className="tag tag-decor" aria-pressed={query===tag} onClick={()=>setQuery(query===tag?'':tag)} title={`Filter by ${tag}`}>{tag}</button>)}
          {image.categorisation.wallpaper && (
-          <span className="tag tag-decor">{image.categorisation.wallpaper}</span>
+          <button type="button" className="tag tag-decor" aria-pressed={query===image.categorisation.wallpaper} onClick={()=>setQuery(query===image.categorisation!.wallpaper?'':image.categorisation!.wallpaper!)}>{image.categorisation.wallpaper}</button>
          )}
          {image.categorisation.curtains && (
-          <span className="tag tag-decor">{image.categorisation.curtains}</span>
+          <button type="button" className="tag tag-decor" aria-pressed={query===image.categorisation.curtains} onClick={()=>setQuery(query===image.categorisation!.curtains?'':image.categorisation!.curtains!)}>{image.categorisation.curtains}</button>
          )}
         </div>
        )}

@@ -13,3 +13,9 @@ it('removes uncategorised card previews while retaining builder branding',async(
  const logo={src:'/logo.svg',alt:'Builder',kind:'logo' as const};
  expect(cardImageCollection([{src:'/unknown',alt:'Unknown'},{src:'/room',alt:'Bedroom',roomType:'Bedroom'}],logo).images.map(image=>image.src)).toEqual(['/logo.svg','/room']);
 });
+it('hides illustrations and infographics globally while excluding exteriors and floorplans only from interiors',async()=>{
+ const {isInteriorCategory}=await import('../src/web/image-classification');
+ for(const category of ['Infographic','Illustration'])expect(hasImageCategory(category)).toBe(false);
+ for(const category of ['Exterior','Floorplan']){expect(hasImageCategory(category)).toBe(true);expect(isInteriorCategory(category)).toBe(false);}
+ expect(isInteriorCategory('Bedroom')).toBe(true);
+});

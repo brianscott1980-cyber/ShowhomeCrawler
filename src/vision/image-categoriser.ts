@@ -1,3 +1,4 @@
+import {decorDetails} from './decor-details.js';
 import {GeminiModelPool,classificationModels} from './gemini-model-pool.js';
 const categorisationPools=new Map<string,GeminiModelPool>();
 import {bedroomSubCategory} from './bedroom-category.js';
@@ -18,7 +19,11 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
  // 1. Main Category
  let mainCategory = 'Other';
 
- if (/\b(floor[ -]?plan|schematic)\b/.test(roomLower)) {
+ if (/\binfographic\b/.test(roomLower)) {
+  mainCategory='Infographic';
+ } else if (/\billustration\b/.test(roomLower)) {
+  mainCategory='Illustration';
+ } else if (/\b(floor[ -]?plan|schematic)\b/.test(roomLower)) {
   mainCategory = 'Floorplan';
  } else if (
   /\b(cloakroom|powder room|wc|toilet|w\.c\.)\b/.test(roomLower) ||
@@ -52,6 +57,10 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
   mainCategory = 'Media & Games Room';
  } else if (/\b(sunroom|conservatory|orangery)\b/.test(roomLower)) {
   mainCategory = 'Conservatory';
+ } else if (/\binfographic\b/.test(roomLower)) {
+  mainCategory='Infographic';
+ } else if (/\billustration\b/.test(roomLower)) {
+  mainCategory='Illustration';
  } else if (/\b(floor[ -]?plan|schematic)\b/.test(roomLower)) {
   mainCategory = 'Floorplan';
  } else if (/\b(home office|study room|study desk)\b/.test(lower)) {
@@ -236,6 +245,8 @@ export function extractBaseCategorisation(roomType?: string, description?: strin
 
  return {
   categorisationSource:'description-rules',
+  categorisationVersion:'decor-furnishings-v3',
+  ...decorDetails(fullText,colours),
   mainCategory,
   subCategory,
   isRoom: isRoom && mainCategory !== 'Floorplan',
@@ -261,13 +272,19 @@ export async function categoriseBatchWithGemini(
  const prompt = 'You are an expert interior design classifier. For each property image description, extract structured room details.\n' +
   'Return JSON object with "images" array containing exactly one element for every input item.\n' +
   'Taxonomy:\n' +
-  '- mainCategory: One of [Living Room, Dining Room, Kitchen, Bedroom, Bathroom, Toilet, Study & Home Office, Hallway, Exterior, Utility Room, Dressing Room, Home Gym, Media & Games Room, Conservatory, Floorplan, Other]\n' +
+  '- mainCategory: One of [Living Room, Dining Room, Kitchen, Bedroom, Bathroom, Toilet, Study & Home Office, Hallway, Exterior, Utility Room, Dressing Room, Home Gym, Media & Games Room, Conservatory, Floorplan, Infographic, Illustration, Other]\n' +
   '- subCategory: Specific type: e.g. Double bedroom, Single bedroom, Family bathroom, En suite, Cloakroom / WC, House front, House rear, Garden, Kitchen island, Open-plan kitchen, Formal lounge, Snug / Family room, Dedicated study, Balcony / terrace, Street scene\n' +
-  '- Bedroom subCategory must be Double bedroom for double/full/queen/king beds, Single bedroom for single/twin/bunk beds, Nursery for cot-only rooms, or Bedroom (bed size unclear) if size is not stated. Never infer size from master, primary, guest, child, room dimensions or en-suite access.\n' +
-  '- objects: String array of visible items (furniture, appliances, fixtures, outdoor features)\n' +
+  '- Bedroom subCategory must be Double bedroom for double/full/queen/king beds, Single bedroom for single/twin/bunk beds, Nursery for cot-only rooms, or Bedroom (bed size unclear) if size is not stated. Two sleeping pillows side by side at the head of one bed for two people are evidence of a double bed; stacked pillows or decorative cushions alone are not. Never infer size from master, primary, guest, child, room dimensions or en-suite access.\n' +
+  '- objects: String array of visible object types, independently of their attributes (furniture, appliances, fixtures, outdoor features).\n' +
+  '- furnishingTags: Object-specific independent colour, material/texture, shape and style tags for visible furnishings, e.g. Gold lamp, Geometric lamp, Round mirror, Brass mirror, Bouclé armchair, Marble table, Wooden table, Minimalist chair. Cover tables, lamps, mirrors, chairs, sofas, rugs, headboards, cabinets and ornaments. Use only observed evidence; do not invent brands, products or hidden materials. Keep colours in colours and plain object types in objects as well.\n' +
   '- wallpaper: Wallpaper style/pattern (e.g. geometric, floral, textured, feature wall, paneling) or null\n' +
   '- curtains: Window dressing type (e.g. floor-length curtains, roman blinds, roller blinds, shutters) or null\n' +
-  '- colours: Array of prominent colours\n' +
+  '- colours: Array of prominent colours, including accent colours independently of decor tags\n' +
+  '- decor: Array such as Blue decor when a highlight colour repeats across multiple distinct items (pillows, cushions, ornaments, tablecloths or accent walls). Do not infer repetition from one item.\n' +
+  '- wallpaperTags: Independent pattern, feature use and colour tags, e.g. Geometric wallpaper, Floral wallpaper, Jungle wallpaper, Feature wallpaper, Blue wallpaper. Only when wallpaper is stated; painted walls and wood paneling are not wallpaper.\n' +
+  '- curtainTags: Independent pattern and colour tags, e.g. Floral curtains, Blue curtains.\n' +
+  '- fabricTags: Independent object-specific pattern and colour tags, e.g. Geometric bedding, Green bedding, Floral cushions, Blue cushions, Striped tablecloth.\n' +
+  '- Classify infographics as Infographic and non-realistic drawings as Illustration, even if they depict rooms. Photorealistic architectural CGIs are not illustrations.\n' +
   '- chairs: Array of chair types present (e.g. dining chairs, armchair, office chair, bar stools) or empty\n' +
   '- hasTelevision: boolean\n' +
   '- hasComputer: boolean\n\n' +
@@ -299,11 +316,16 @@ export async function categoriseBatchWithGemini(
           wallpaper: { type: 'STRING' },
           curtains: { type: 'STRING' },
           colours: { type: 'ARRAY', items: { type: 'STRING' } },
+          furnishingTags: { type: 'ARRAY', items: { type: 'STRING' } },
+          decor: { type: 'ARRAY', items: { type: 'STRING' } },
+          wallpaperTags: { type: 'ARRAY', items: { type: 'STRING' } },
+          curtainTags: { type: 'ARRAY', items: { type: 'STRING' } },
+          fabricTags: { type: 'ARRAY', items: { type: 'STRING' } },
           chairs: { type: 'ARRAY', items: { type: 'STRING' } },
           hasTelevision: { type: 'BOOLEAN' },
           hasComputer: { type: 'BOOLEAN' }
          },
-         required: ['id', 'mainCategory', 'subCategory', 'objects', 'colours', 'chairs', 'hasTelevision', 'hasComputer']
+         required: ['id', 'mainCategory', 'subCategory', 'objects', 'colours', 'decor', 'wallpaperTags', 'curtainTags', 'fabricTags', 'furnishingTags', 'chairs', 'hasTelevision', 'hasComputer']
         }
        }
       },
@@ -330,6 +352,12 @@ export async function categoriseBatchWithGemini(
     if (img.id) {
      results.set(img.id, {
       categorisationSource:'gemini',
+      categorisationVersion:'decor-furnishings-v3',
+      furnishingTags:Array.isArray(img.furnishingTags)?img.furnishingTags:[],
+      decor:Array.isArray(img.decor)?img.decor:[],
+      wallpaperTags:Array.isArray(img.wallpaperTags)?img.wallpaperTags:[],
+      curtainTags:Array.isArray(img.curtainTags)?img.curtainTags:[],
+      fabricTags:Array.isArray(img.fabricTags)?img.fabricTags:[],
       categorisationModel:response.model,
       mainCategory: img.mainCategory || 'Other',
       subCategory: img.mainCategory==='Bedroom'?bedroomSubCategory(items.find(i=>i.id===img.id)?.desc,items.find(i=>i.id===img.id)?.room,items.find(i=>i.id===img.id)?.reason,img.subCategory):img.subCategory || img.mainCategory || 'Other',
@@ -368,7 +396,7 @@ export async function categoriseAllImages(
   if (existsSync(cachePath)) {
    try {
     const data = JSON.parse(await readFile(cachePath, 'utf8')) as ImageCategorisation;
-    if (data.isRoom !== undefined) {
+    if (data.isRoom !== undefined && data.categorisationVersion==='decor-furnishings-v3') {
      if(data.mainCategory==='Bedroom')data.subCategory=bedroomSubCategory(img.description,img.roomType,img.reason,data.subCategory);
      map.set(img.id, data);
      continue;

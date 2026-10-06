@@ -17,7 +17,7 @@ export function CardResults({children,className,label,identity,paginate=true,has
   const observer=new ResizeObserver(measure);observer.observe(element);return()=>observer.disconnect();
  },[className]);
  const shown=paginate?Math.min(cards.length,rows*columns):cards.length;
- const loadMore=()=>{if(loading)return;if(shown>=cards.length&&hasMore){onLoadMore?.(columns*4);}cooldown.current=performance.now()+900;setPressure(0);setBatch({identity,rows:rows+4});};
+ const loadMore=()=>{if(loading)return;const target=(rows+4)*columns;if(target>cards.length&&hasMore){onLoadMore?.(target-cards.length);}cooldown.current=performance.now()+900;setPressure(0);setBatch({identity,rows:rows+4});};
  useEffect(()=>{
   setPressure(0);
   if((!paginate||shown>=cards.length)&&!hasMore||loading)return;

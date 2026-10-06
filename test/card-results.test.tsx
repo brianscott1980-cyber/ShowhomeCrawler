@@ -50,3 +50,15 @@ it('fills only at the bottom, resets on reverse scrolling and loads once per pre
   expect(mount.querySelectorAll('article')).toHaveLength(40);expect(mount.querySelector('button')).toBeNull();
  }finally{await act(async()=>root.unmount());mount.remove();vi.restoreAllMocks();vi.unstubAllGlobals();}
 });
+it('tops up leftover server cards to complete four more rows of three',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ vi.spyOn(window,'getComputedStyle').mockReturnValue({gridTemplateColumns:'200px 200px 200px'} as CSSStyleDeclaration);
+ const mount=document.createElement('div');document.body.append(mount);const root=createRoot(mount),load=vi.fn();
+ const render=(count:number)=>root.render(<CardResults className="image-grid" label="Interiors" identity="all" hasMore onLoadMore={load}>{Array.from({length:count},(_,i)=><article key={i}>{i}</article>)}</CardResults>);
+ try{
+  await act(async()=>render(16));expect(mount.querySelectorAll('article')).toHaveLength(12);
+  await act(async()=>mount.querySelector<HTMLButtonElement>('button')!.click());expect(load).toHaveBeenLastCalledWith(8);
+  await act(async()=>render(24));expect(mount.querySelectorAll('article')).toHaveLength(24);
+  await act(async()=>mount.querySelector<HTMLButtonElement>('button')!.click());expect(load).toHaveBeenLastCalledWith(12);
+ }finally{await act(async()=>root.unmount());mount.remove();vi.restoreAllMocks();vi.unstubAllGlobals();}
+});

@@ -9,7 +9,8 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const [reference]=favourite?[{collection_slugs:[],category:null,building_name:null}]:await sql`select * from showhome_web.directory_cards where kind=${scope.kind} and href=${scope.href}`;
  if(!reference)throw new Error('Gallery not found');
  const scopeConditions=favourite?[`i.image_id in(select jsonb_array_elements_text(${p(sql.json(input.favourites??[]))}::jsonb))`]:[`i.builder_slug in(select jsonb_array_elements_text(${p(sql.json(reference.collection_slugs))}::jsonb))`,'i.eligible'];
- scopeConditions.push("nullif(trim(lower(i.category)), '') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior')");
+ scopeConditions.push("nullif(trim(lower(i.category)), '') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')");
+ if(scope.kind==='interiors')scopeConditions.push("lower(trim(i.category)) not in ('exterior','floorplan','floor plan')");
  if(scope.kind==='interiors'&&reference.category)scopeConditions.push(`i.category=${p(reference.category)}`);
  const baseBuildingParam=scope.kind==='buildings'?p(reference.building_name):'',homeScope=scope.kind==='buildings'?`lower(h->>'buildingName')=lower(${baseBuildingParam}::text)`:'true';
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);

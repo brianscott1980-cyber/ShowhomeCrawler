@@ -1,3 +1,4 @@
+import {isCategorisedImage,isInteriorCategory} from './image-classification';
 import {developmentName} from './development-name';
 import {createHash} from 'node:crypto';
 import {developers,readCollection} from './collections';
@@ -28,7 +29,7 @@ export function groupCollections(collections:Collection[],kind:GroupKind):Group[
   const maps=new Map<string,{name:string;images:ReportImage[];imageIds:Set<string>;properties:RunReport['properties']}>();
   if(isSites)for(const development of collection.report.developments){maps.set(`${collection.slug}:${development.url}`,{name:development.name??development.url.split('/').at(-1)??'Development',images:[],imageIds:new Set(),properties:collection.report.properties.filter(property=>property.developmentUrl===development.url)});}
   const targetImages=isSpaces
-   ? collection.report.images.filter(image => spaceName(image, collection.report.question) !== 'Uncategorised' || isRoomImage(image))
+   ? collection.report.images.filter(image => isCategorisedImage(image)&&isInteriorCategory(spaceName(image,collection.report.question)))
    : collection.report.images.filter(i=>i.categorisation?(i.categorisation.isRoom||((isSites||kind==='buildings')&&i.categorisation.mainCategory==='Exterior')):!i.verdict||i.verdict.matches);
   for(const image of targetImages){
    const homes=imageHomes.get(image.id)??[];

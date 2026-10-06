@@ -12,3 +12,8 @@ it('does not guess sizes from room names and handles nurseries or mixed beds',()
  expect(bedroomSubCategory('Nursery with a crib')).toBe('Nursery');
  expect(bedroomSubCategory('Double bed and a single bed')).toBe('Double bedroom');
 });
+it('uses side-by-side sleeping pillows on one bed without mistaking stacked pillows or twin beds',()=>{
+ expect(bedroomSubCategory('A bed with two pillows side by side for two people')).toBe('Double bedroom');
+ expect(bedroomSubCategory('A single bed with two pillows side by side')).toBe('Single bedroom');
+ expect(bedroomSubCategory('A bed with two stacked pillows')).toBe('Bedroom (bed size unclear)');
+});

@@ -4,10 +4,10 @@ export function isNonRoom(roomType?: string, description?: string, reason?: stri
  const re = (reason || '').toLowerCase();
  const text = `${r} ${d} ${re}`;
 
- if (/\b(infographic|document|energy assessment|energy performance|energy rating|site plan|map graphic|marketing image|promotional graphic|predicted energy assessment|epc chart|epc document|certificate document|rating chart)\b/i.test(text)) {
+ if (/\b(infographic|floor[ -]?plan|document|energy assessment|energy performance|energy rating|site plan|map graphic|marketing image|promotional graphic|predicted energy assessment|epc chart|epc document|certificate document|rating chart)\b/i.test(text)) {
   return true;
  }
- if (/\b(map|site plan|site_plan|infographic|document|energy_assessment|energy rating chart|text)\b/i.test(r)) {
+ if (/\b(illustration|map|site plan|site_plan|infographic|document|energy_assessment|energy rating chart|text)\b/i.test(r)) {
   return true;
  }
  if (/\bnot a room\b/i.test(re) && !/\b(exterior|garden|patio|facade|balcony|street|front of the house|rear garden)\b/i.test(text)) {

@@ -11,6 +11,12 @@ async function saveArtifact(path: string, body: string) {
 export interface ImageCategorisation {
  categorisationSource?:'gemini'|'description-rules'|'website-html';
  categorisationModel?:string;
+ categorisationVersion?:string;
+ decor?:string[];
+ wallpaperTags?:string[];
+ curtainTags?:string[];
+ fabricTags?:string[];
+ furnishingTags?:string[];
  mainCategory: string;
  subCategory: string;
  isRoom: boolean;
