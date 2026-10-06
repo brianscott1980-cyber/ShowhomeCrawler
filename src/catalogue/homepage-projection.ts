@@ -64,7 +64,12 @@ export async function computeHomepageData(loaded?:Collection[]) {
  });
  const exterior = collections.flatMap(c => c.report.images.filter(i => i.categorisation?.mainCategory === 'Exterior').map(image => ({ collection: c, image })))[0];
  const featured: Collection[] = [];
- for (const item of selected) {
+ const inspiration = [...candidates];
+ for (let index = inspiration.length - 1; index > 0; index--) {
+  const other = Math.floor(Math.random() * (index + 1));
+  [inspiration[index], inspiration[other]] = [inspiration[other]!, inspiration[index]!];
+ }
+ for (const item of inspiration.slice(0, 20)) {
   let c = featured.find(c => c.slug === item.collection.slug);
   if (!c) {
    c = { ...item.collection, report: { ...item.collection.report, images: [], properties: [], developments: [], errors: [], metrics: {} } };

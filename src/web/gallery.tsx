@@ -8,7 +8,7 @@ import {MoneyInput} from './money-input';
 import {priceRangeOptions} from './price-range';
 import {bedroomRangeOptions} from './bedroom-range';
 import {developmentName} from './development-name';
-import {CardResults} from './card-results';
+import {GalleryCardResults} from './inspiration-row';
 import {BreadcrumbBack} from './breadcrumb-back';
 import {MultiSelectFilter} from './multi-select-filter';
 import {matchesSelection,matchesAnySelection} from './filter-selection';
@@ -339,7 +339,7 @@ export function Gallery({
 
    </>}
    <DirectoryQueryStatus query={remote}/>
-   <CardResults hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
+   <GalleryCardResults featured={featured} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
      <article className="image-card" key={image.uid}>
       <div className="results-photo-frame">
@@ -411,7 +411,7 @@ export function Gallery({
       </div>
      </article>
     ))}
-   </CardResults>
+   </GalleryCardResults>
 
    {!images.length && ready && !remote?.loading && (
     <div className="empty">
