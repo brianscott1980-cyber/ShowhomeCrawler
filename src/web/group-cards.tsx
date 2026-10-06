@@ -80,7 +80,7 @@ export function GroupCards({
 
  const rooms=visible.filter(card=>!['Exterior','Uncategorised'].includes(card.name));
  const matchingPlaces=visible.flatMap(card=>(card.places??[]).filter(place=>placeMatches(card,place)));
- useDirectoryCounts(remote?.counts??(isBuildings?{Styles:visible.length,Developments:new Set(matchingPlaces.map(place=>place.siteId??`${place.developer}:${place.site}`)).size}:{'Room types':rooms.length,Interiors:new Set(rooms.flatMap(card=>(developer||bedrooms||location||site)?(card.places??[]).filter(place=>placeMatches(card,place)).flatMap(place=>place.imageIds??[]):card.interiorIds??[])).size}));
+ useDirectoryCounts(remote?.counts??(isBuildings?{Styles:visible.length,Developments:new Set(matchingPlaces.map(place=>place.siteId??`${place.developer}:${place.site}`)).size}:{'Room types':rooms.length,Interiors:new Set(rooms.flatMap(card=>(developer||bedrooms||location||site)?(card.places??[]).filter(place=>placeMatches(card,place)).flatMap(place=>place.imageIds??[]):card.interiorIds??[])).size}),Boolean(remote?.loading));
  const hasActiveFilters = Boolean(developer || bedrooms || location || site || filters.type);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
 
@@ -110,6 +110,7 @@ export function GroupCards({
    )}
    <div className="directory-toolbar">
     <ViewOptions view={view} onChange={changeView} ariaLabel={`${kindLabel} layout`} />
+    <DirectoryQueryStatus query={remote} visible/>
     <div className="sort-control"><span>Order by</span><SingleSelectFilter label={`Order ${kindLabel.toLowerCase()} by`} value={filters.order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'}]} onChange={order=>setFilters(previous=>({...previous,order}))}/></div>
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore}>

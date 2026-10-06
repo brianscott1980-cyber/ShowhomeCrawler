@@ -29,7 +29,7 @@ export function useDirectoryQuery<T>(kind:DirectoryKind,filters:Record<string,st
  useEffect(()=>()=>controller.current?.abort(),[]);
  return initial?{...state.data!,pendingInitial:state.pending,loading:loading||(state.pending||state.identity!==identity)&&!error,error,identity,loadMore:(limit=16)=>{if(!busy.current&&state.identity===identity&&state.data?.hasMore)void fetchPage(state.data.nextOffset,Math.min(64,limit),true);},retry:()=>setRetry(value=>value+1)}:null;
 }
-export function DirectoryQueryStatus({query}:{query:{loading:boolean;error:string;retry:()=>void}|null}){
+export function DirectoryQueryStatus({query,visible=false}:{query:{loading:boolean;error:string;retry:()=>void}|null;visible?:boolean}){
  if(!query)return null;
- return <><p className="sr-only" role="status" aria-live="polite">{query.loading?'Updating results…':''}</p>{query.error&&<p role="alert" className="directory-query-error">{query.error} <button type="button" onClick={query.retry}>Retry</button></p>}</>;
+ return <><p className={visible?"directory-update-status":"sr-only"} role="status" aria-live="polite">{query.loading?<>{visible&&<span className="results-update-spinner" aria-hidden="true"/>}Updating Results…</>:''}</p>{query.error&&<p role="alert" className="directory-query-error">{query.error} <button type="button" onClick={query.retry}>Retry</button></p>}</>;
 }

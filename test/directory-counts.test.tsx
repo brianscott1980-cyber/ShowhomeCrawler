@@ -21,3 +21,15 @@ it('updates summary totals and restarts the rolling animation when builders are 
   expect(Array.from(host.querySelectorAll('.directory-intro-counts .sr-only')).map(element=>element.textContent)).toEqual(['2','2','2']);
  }finally{await act(async()=>root.unmount());host.remove();vi.unstubAllGlobals();}
 });
+
+it('shows calculating status until filtered counts are ready',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ const {useDirectoryCounts}=await import('../src/web/directory-counts');
+ function Publisher({pending}:{pending:boolean}){useDirectoryCounts({Interiors:pending?100:12},pending);return null;}
+ const host=document.createElement('div'),root=createRoot(host);
+ const render=(pending:boolean)=>root.render(<DirectoryCountProvider><DirectoryCounts initial={{Interiors:100}}/><Publisher pending={pending}/></DirectoryCountProvider>);
+ try{
+  await act(async()=>render(true));expect(host.querySelector('[role=status]')?.textContent).toContain('Updating Results');expect(host.querySelector('dl')?.getAttribute('aria-busy')).toBe('true');
+  await act(async()=>render(false));expect(host.querySelector('[role=status]')).toBeNull();expect(host.querySelector('.sr-only')?.textContent).toBe('12');
+ }finally{await act(async()=>root.unmount());vi.unstubAllGlobals();}
+});
