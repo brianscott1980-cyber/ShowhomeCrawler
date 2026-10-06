@@ -6,9 +6,10 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const {scope,filters={}}=input,values:unknown[]=[];
  const p=(v:unknown)=>{values.push(v);return '$'+values.length;};
  const favourite=scope.kind==='favourites';
- const [reference]=favourite?[{collection_slugs:[],category:null,building_name:null}]:await sql`select * from showhome_web.directory_cards where kind=${scope.kind} and href=${scope.href}`;
+ const isAll=(scope.kind==='interiors'||scope.kind==='spaces')&&(scope.href==='/interiors/all'||scope.href==='/interiors');
+ const [reference]=favourite||isAll?[{collection_slugs:[],category:null,building_name:null}]:await sql`select * from showhome_web.directory_cards where kind=${scope.kind} and href=${scope.href}`;
  if(!reference)throw new Error('Gallery not found');
- const scopeConditions=favourite?[`i.image_id in(select jsonb_array_elements_text(${p(sql.json(input.favourites??[]))}::jsonb))`]:[`i.builder_slug in(select jsonb_array_elements_text(${p(sql.json(reference.collection_slugs))}::jsonb))`,'i.eligible'];
+ const scopeConditions=favourite?[`i.image_id in(select jsonb_array_elements_text(${p(sql.json(input.favourites??[]))}::jsonb))`]:isAll?['i.eligible']:[`i.builder_slug in(select jsonb_array_elements_text(${p(sql.json(reference.collection_slugs))}::jsonb))`,'i.eligible'];
  scopeConditions.push("nullif(trim(lower(i.category)), '') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')");
  if(scope.kind==='interiors')scopeConditions.push("lower(trim(i.category)) not in ('exterior','floorplan','floor plan')");
  if(scope.kind==='interiors'&&reference.category)scopeConditions.push(`i.category=${p(reference.category)}`);

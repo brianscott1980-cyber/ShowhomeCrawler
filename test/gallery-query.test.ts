@@ -80,3 +80,9 @@ it('shares scoped relations in one statement for counts, facets and page data',a
  const image=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},selectedUid:'alpha:b',imageOnly:true,limit:1},sql);
  expect(image.images[0]?.id).toBe('b');
 });
+
+it('queries all room types when scoped to /interiors/all',async()=>{
+ const all=await queryGallery({scope:{kind:'interiors',href:'/interiors/all'}},sql);
+ expect(all.total).toBeGreaterThan(0);
+ expect(all.facets.category).toContain('Bedroom');
+});

@@ -12,7 +12,7 @@ export function CardResults({children,className,label,identity,paginate=true,has
  const cards=Children.toArray(children);
  useEffect(()=>{
   const element=grid.current;if(!element)return;
-  const measure=()=>{const tracks=getComputedStyle(element).gridTemplateColumns;setColumns(tracks&&tracks!=='none'?tracks.split(/\s+/).length:1);};
+  const measure=()=>{if(typeof getComputedStyle==='undefined')return;const tracks=getComputedStyle(element).gridTemplateColumns;setColumns(tracks&&tracks!=='none'?tracks.split(/\s+/).length:1);};
   measure();
   if(typeof ResizeObserver==='undefined')return;
   const observer=new ResizeObserver(measure);observer.observe(element);return()=>observer.disconnect();

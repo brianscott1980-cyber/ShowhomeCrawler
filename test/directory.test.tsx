@@ -48,6 +48,37 @@ describe('Developer directory',()=>{
    expect(sessionStorage.getItem('showhome-buildings-view')).toBe('large');
   }finally{await act(async()=>root.unmount());dom.window.close();}
  });
+ it('prefixes Interiors cards with All Room Types card only when more than 1 room type is returned',async()=>{
+  const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});
+  class MockIntersectionObserver { observe() {} unobserve() {} disconnect() {} }
+  vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);
+  vi.stubGlobal('HTMLElement',dom.window.HTMLElement);vi.stubGlobal('localStorage',dom.window.localStorage);
+  vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+  vi.stubGlobal('IntersectionObserver',MockIntersectionObserver);
+  vi.stubGlobal('requestAnimationFrame',(cb:FrameRequestCallback)=>setTimeout(cb,0));
+  vi.stubGlobal('cancelAnimationFrame',(id:number)=>clearTimeout(id));
+  const root=createRoot(document.getElementById('root')!);
+  const multipleRooms=[
+   {key:'bathroom',name:'Bathroom',developers:['Alpha'],count:5,image:'/bath.jpg',description:'Bath'},
+   {key:'bedroom',name:'Bedroom',developers:['Alpha'],count:8,image:'/bed.jpg',description:'Bed'},
+  ];
+  const singleRoom=[
+   {key:'bathroom',name:'Bathroom',developers:['Alpha'],count:5,image:'/bath.jpg',description:'Bath'},
+  ];
+  try{
+   await act(async()=>root.render(<GroupCards cards={multipleRooms} pathPrefix="interiors" kindLabel="Interiors"/>));
+   const cardHeadings=[...document.querySelectorAll('.collection-card h2')].map(h=>h.textContent?.trim());
+   expect(cardHeadings[0]).toBe('All Room Types');
+   expect(cardHeadings).toEqual(['All Room Types','Bathroom','Bedroom']);
+   const allCard=document.querySelector('.collection-card') as HTMLAnchorElement;
+   expect(allCard.getAttribute('href')).toBe('/interiors/all');
+
+   await act(async()=>root.render(<GroupCards cards={singleRoom} pathPrefix="interiors" kindLabel="Interiors"/>));
+   const singleHeadings=[...document.querySelectorAll('.collection-card h2')].map(h=>h.textContent?.trim());
+   expect(singleHeadings).toEqual(['Bathroom']);
+   expect(singleHeadings).not.toContain('All Room Types');
+  }finally{await act(async()=>root.unmount());dom.window.close();}
+ });
  it('filters Buildings by Homebuilder, Bedrooms, and Locations with reset functionality',async()=>{
   const dom=new JSDOM('<div id="root"></div>',{url:'https://local.test'});vi.stubGlobal('window',dom.window);vi.stubGlobal('self',dom.window);vi.stubGlobal('document',dom.window.document);vi.stubGlobal('localStorage',dom.window.localStorage);vi.stubGlobal('sessionStorage',dom.window.sessionStorage);vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const root=createRoot(document.getElementById('root')!);
   const buildingCards=[

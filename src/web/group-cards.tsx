@@ -84,9 +84,21 @@ export function GroupCards({
  const rooms=visible.filter(card=>!['Exterior','Uncategorised'].includes(card.name));
  const matchingPlaces=visible.flatMap(card=>(card.places??[]).filter(place=>placeMatches(card,place)));
  useDirectoryCounts(remote?.counts??(isBuildings?{Styles:visible.length,Developments:new Set(matchingPlaces.map(place=>place.siteId??`${place.developer}:${place.site}`)).size}:{'Room Types':rooms.length,Interiors:new Set(rooms.flatMap(card=>(developer||bedrooms||location||site)?(card.places??[]).filter(place=>placeMatches(card,place)).flatMap(place=>place.imageIds??[]):card.interiorIds??[])).size}),Boolean(remote?.loading));
- const hasActiveFilters = Boolean(developer || bedrooms || location || site || filters.type || filters.building);
- const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
+ const isInteriors = pathPrefix === 'interiors' || pathPrefix === 'spaces';
+ const allRoomCard: GroupCardItem | null = isInteriors && visible.length > 1 ? {
+  key: 'all',
+  name: 'All Room Types',
+  href: `/${pathPrefix}/all`,
+  description: 'Explore showhome interiors across all room types.',
+  count: remote?.counts?.['Interiors'] ?? visible.reduce((sum, c) => sum + (c.count ?? 0), 0),
+  image: visible.find(c => c.images?.[0]?.src || c.image)?.image ?? visible[0]?.image ?? '',
+  images: visible.flatMap(c => (c.images && c.images.length > 0 ? [c.images[0]!] : c.image ? [{alt: c.name, src: c.image, roomType: c.name}] : [])).slice(0, 12),
+  developers: [...new Set(visible.flatMap(c => c.developers ?? []))],
+ } : null;
+ const displayCards = allRoomCard ? [allRoomCard, ...visible] : visible;
+ const imageLayout=`${view}:${displayCards.map(c=>c.key).join(",")}`;
 
+ const hasActiveFilters = Boolean(developer || bedrooms || location || site || filters.type || filters.building);
  function resetFilters() { setFilters(filterDefaults); }
 
  return (
@@ -123,11 +135,11 @@ export function GroupCards({
     <div className="sort-control"><span>Order by</span><SingleSelectFilter label={`Order ${kindLabel.toLowerCase()} by`} value={filters.order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'}]} onChange={order=>setFilters(previous=>({...previous,order}))}/></div>
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore}>
-    {visible.map(card => (
+    {displayCards.map(card => (
      <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
       <div className="site-preview-photo group-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>{isBuildings&&card.logo&&<img className="development-builder-logo" src={card.logo} alt={`${card.developers[0]??'Builder'} logo`} style={{background:card.logoBackground??'#fff'}} loading="lazy"/>}</div>
       <div className="card-body">
-       <h2>{isBuildings?homeTypeName(card.name):roomLabel(card.name)}</h2>
+       <h2>{card.key==='all'?'All Room Types':(isBuildings?homeTypeName(card.name):roomLabel(card.name))}</h2>
        {pathPrefix!=='interiors'&&pathPrefix!=='spaces'&&<p className="subtle">{card.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)}</p>}
        {card.bedrooms && card.bedrooms.length > 0 && (
         <p className="subtle">
