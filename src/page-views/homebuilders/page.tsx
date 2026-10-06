@@ -1,10 +1,11 @@
+import {queryDirectory} from '../../database/directory-query';
 import {readDirectoryCards,readPresentation} from '../../database/website';
 import {DirectoryCountProvider,DirectoryCounts} from '../../web/directory-counts';
 import {absoluteUrl,jsonLd} from '../../web/seo';
 import {DeveloperDirectory,type DeveloperCard} from '../../web/directory';
 export const metadata={title:'Builders | Showhome Explorer',description:'Explore showhome interiors from UK housebuilders.',alternates:{canonical:'/builders'}};
 export default async function Builders(){
- const [collections,counts]=await Promise.all([readDirectoryCards<DeveloperCard>('builders'),readPresentation<Record<string,number>>('counts:builders')]);
+ const initial=await queryDirectory({kind:'builders'}),collections=initial.cards,counts=initial.counts;
  const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Builders',url:absoluteUrl('/builders'),description:'UK showhome interiors and home office inspiration'};
  return <DirectoryCountProvider><main>
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd(schema)}}/>
@@ -19,6 +20,6 @@ export default async function Builders(){
     <p>Find your next new build home or inspiration for the home you have. Explore UK builders and their developments, compare showhome interiors—from welcoming kitchens to restful bedrooms—and save your favourites.</p>
    </div>
   </section>
-  <DeveloperDirectory cards={collections}/>
+  <DeveloperDirectory cards={collections} initial={initial}/>
  </main></DirectoryCountProvider>;
 }

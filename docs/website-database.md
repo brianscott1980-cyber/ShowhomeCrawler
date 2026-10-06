@@ -15,7 +15,7 @@ The website catalogue is now stored in the backend-only `showhome_web` PostgreSQ
 
 The existing `public` crawl tables/history are preserved. The serving schema has no anonymous or authenticated browser-role access. The application uses the server-only `DATABASE_URL`, transaction pooling, disabled prepared statements and a maximum of three connections per process. Migrations use `DIRECT_URL`.
 
-Indexes cover builder/name, development/bedrooms/price, building/development relationships, reverse image relationships, category, valid coordinates, directory URLs and name/price ordering. Price bounds are populated in serving cards. A future server-paginated directory can use these indexes without changing the entity model.
+Indexes cover builder/name, development/bedrooms/price, building/development relationships, reverse image relationships, category, valid coordinates, directory URLs and name/price ordering. Typed `directory_filter_rows` index each card’s builder, development, bedrooms, price, area, coordinates and image relationships for server filtering and pagination.
 
 ## Publication
 
@@ -35,7 +35,9 @@ Builder finalization and `results:publish` now run both the import and serving-c
 
 Directory requests read prepared database responses instead of parsing/reconstructing all crawl reports. Individual development/building/interior routes resolve their serving URL and query the corresponding builder/development/building/category records. Asset-source lookup is a single indexed image query. The homepage and individual builder overviews each read a prepared database presentation, including exact full-catalogue counts. Overview carousels send up to 24 diverse previews; full catalogue counts remain server-calculated and full galleries remain available through the directory links.
 
-Directory filtering and the existing More behavior still run in the browser over the prepared card payload. Moving the catalogue into a database does not eliminate that payload size: server pagination/facet endpoints would be a separate frontend change. No claim of server-side pagination is made by this migration.
+All four directories initially send 16 cards. The private POST `/api/directory` queries matching records for filters, ordering, exact counters and cascading facets, then returns the next batch for the More button or scroll pressure trigger. Criteria remain in session state rather than URLs. Bedroom and price criteria match the same offer; building/development/area criteria match the same membership. Category counters count distinct images, including unlinked images. Development maps receive lightweight metadata for all matching locations independently of the loaded cards; viewport queries and selected-map cards use server pagination. Publication rebuilds typed filter rows in the same transaction as serving cards.
+
+Measured database response sizes were approximately 167 KB for the first building batch (previous full page about 17 MB), 330 KB for builders, 300 KB for interiors, and 572 KB for developments including all map locations. These are uncompressed data measurements, not browser paint timings.
 
 ## Release checks
 

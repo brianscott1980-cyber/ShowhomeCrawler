@@ -1,7 +1,7 @@
 'use client';
 import {Children,useEffect,useRef,useState,type ReactNode} from 'react';
 
-export function CardResults({children,className,label,identity,paginate=true}:{children:ReactNode;className:string;label:string;identity:string;paginate?:boolean}){
+export function CardResults({children,className,label,identity,paginate=true,hasMore=false,loading=false,onLoadMore}:{children:ReactNode;className:string;label:string;identity:string;paginate?:boolean;hasMore?:boolean;loading?:boolean;onLoadMore?:(limit:number)=>void}){
  const grid=useRef<HTMLDivElement>(null),more=useRef<HTMLButtonElement>(null);
  const [pressure,setPressure]=useState(0);
  const cooldown=useRef(0);
@@ -17,10 +17,10 @@ export function CardResults({children,className,label,identity,paginate=true}:{c
   const observer=new ResizeObserver(measure);observer.observe(element);return()=>observer.disconnect();
  },[className]);
  const shown=paginate?Math.min(cards.length,rows*columns):cards.length;
- const loadMore=()=>{cooldown.current=performance.now()+900;setPressure(0);setBatch({identity,rows:rows+4});};
+ const loadMore=()=>{if(loading)return;if(shown>=cards.length&&hasMore){onLoadMore?.(columns*4);}cooldown.current=performance.now()+900;setPressure(0);setBatch({identity,rows:rows+4});};
  useEffect(()=>{
   setPressure(0);
-  if(!paginate||shown>=cards.length)return;
+  if((!paginate||shown>=cards.length)&&!hasMore||loading)return;
   let accumulated=0,touchY:number|null=null,decay:ReturnType<typeof setTimeout>|undefined;
   const reset=()=>{accumulated=0;setPressure(0);clearTimeout(decay);};
   const atBottom=()=>{
@@ -48,6 +48,6 @@ export function CardResults({children,className,label,identity,paginate=true}:{c
   const scroll=()=>{if(!atBottom())reset();};
   window.addEventListener('wheel',wheel,{passive:true});window.addEventListener('touchstart',start,{passive:true});window.addEventListener('touchmove',move,{passive:true});window.addEventListener('touchend',end,{passive:true});window.addEventListener('touchcancel',end,{passive:true});window.addEventListener('scroll',scroll,{passive:true});
   return()=>{clearTimeout(decay);window.removeEventListener('wheel',wheel);window.removeEventListener('touchstart',start);window.removeEventListener('touchmove',move);window.removeEventListener('touchend',end);window.removeEventListener('touchcancel',end);window.removeEventListener('scroll',scroll);};
- },[identity,rows,columns,paginate,cards.length,shown]);
- return <div className="card-results"><div ref={grid} className={className}>{cards.slice(0,shown)}</div>{shown<cards.length&&<div className="more-results-row"><button ref={more} type="button" className="more-results" onClick={loadMore}>More {label}<span className="more-pressure" aria-hidden="true" style={{transform:`scale(${1+Math.max(0,pressure-.7)*.5})`}}><svg viewBox="0 0 24 24"><circle className="more-pressure-outline" cx="12" cy="12" r="9"/><circle className="more-pressure-fill" cx="12" cy="12" r="7" style={{transform:`scale(${pressure})`}}/></svg></span></button></div>}</div>;
+ },[identity,rows,columns,paginate,cards.length,shown,hasMore,loading]);
+ return <div className="card-results"><div ref={grid} className={className}>{cards.slice(0,shown)}</div>{(shown<cards.length||hasMore)&&<div className="more-results-row"><button ref={more} type="button" className="more-results" onClick={loadMore} disabled={loading}>{loading?'Loading…':`More ${label}`}<span className="more-pressure" aria-hidden="true" style={{transform:`scale(${1+Math.max(0,pressure-.7)*.5})`}}><svg viewBox="0 0 24 24"><circle className="more-pressure-outline" cx="12" cy="12" r="9"/><circle className="more-pressure-fill" cx="12" cy="12" r="7" style={{transform:`scale(${pressure})`}}/></svg></span></button></div>}</div>;
 }

@@ -1,0 +1,3 @@
+import {queryDirectory} from '../src/database/directory-query';
+import {websiteDatabase} from '../src/database/website';
+try{for(const input of [{kind:'builders'},{kind:'locations'},{kind:'buildings'},{kind:'interiors'},{kind:'locations',filters:{developer:'Bellway',minBeds:'5',order:'price-asc'}},{kind:'buildings',filters:{developer:'Bellway',site:'Landsdale'}}] as const){const start=Date.now();const data=await queryDirectory(input);console.log(JSON.stringify({input,ms:Date.now()-start,total:data.total,cards:data.cards.length,counts:data.counts,facets:Object.fromEntries(Object.entries(data.facets).map(([key,value])=>[key,value.length])),bytes:JSON.stringify(data).length}));}}finally{await websiteDatabase().end();}

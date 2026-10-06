@@ -1,3 +1,4 @@
+import {directoryFilterRows} from './filter-rows';
 import {builderOverviewProjection} from './builder-overview';
 const nullableMin=(values:number[])=>values.length?Math.min(...values):null;
 const nullableMax=(values:number[])=>values.length?Math.max(...values):null;
@@ -24,6 +25,11 @@ export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
    }
   }
   for(const card of builder.cards)await tx`insert into showhome_web.directory_cards(kind,key,name,href,builder_slug,collection_slugs,payload) values('builders',${card.slug},${card.name},${'/builders/'+card.slug},${card.slug},${[card.slug]},${tx.json(card as never)})`;
+  const memberships=[...directories,{kind:'builders',cards:builder.cards}].flatMap(({kind,cards})=>cards.flatMap(card=>directoryFilterRows(kind,card)));
+  for(let offset=0;offset<memberships.length;offset+=500){
+   const rows=memberships.slice(offset,offset+500).map(row=>({developer:null,bedrooms:null,price:null,style:null,site:null,site_id:null,areas:[],region:null,latitude:null,longitude:null,image_ids:[],building_types:[],...row}));
+   await tx.unsafe(`insert into showhome_web.directory_filter_rows(kind,card_key,developer,bedrooms,price,style,site,site_id,areas,region,latitude,longitude,image_ids,building_types) select kind,card_key,developer,bedrooms,price,style,site,site_id,areas,region,latitude,longitude,image_ids,building_types from jsonb_populate_recordset(null::showhome_web.directory_filter_rows,$1::jsonb)`,[tx.json(rows as never)]);
+  }
   for(const {kind,counts} of [...directories,{kind:'builders',counts:builder.counts}])await tx`insert into showhome_web.presentations(key,payload) values(${`counts:${kind}`},${tx.json(counts)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
   for(const overview of overviews)await tx`insert into showhome_web.presentations(key,payload) values(${overview.key},${tx.json(overview.payload as never)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
   await tx`insert into showhome_web.presentations(key,payload) values('homepage',${tx.json(home as never)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;

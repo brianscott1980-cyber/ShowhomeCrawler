@@ -1,3 +1,4 @@
+import {queryDirectory} from '../database/directory-query';
 import {readDirectoryCards,readPresentation,findDirectoryReference,readWebsiteCollection,readWebsiteBuilder} from '../database/website';
 import type {SiteCard} from './site-filters';
 import type {GroupCardItem} from './group-cards';
@@ -27,9 +28,9 @@ function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')
 export async function GroupDirectory({kind}:{kind:GroupKind}){
  const normalized=kind==='sites'?'locations':kind==='spaces'?'interiors':kind;
  const pathPrefix=prefixFor(kind),isBuildings=kind==='buildings';
- const counts=await readPresentation<Record<string,number>>(`counts:${normalized}`);
+ const initial=await queryDirectory({kind:normalized}),counts=initial.counts;
  if(normalized==='locations'){
-  const cards=await readDirectoryCards<SiteCard>('locations');
+  const cards=initial.cards as SiteCard[];
   return <DirectoryCountProvider><main>
    <section className="intro directory-intro development-directory-intro" aria-labelledby="locations-heading">
     <div className="directory-intro-heading">
@@ -37,12 +38,12 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
      <p>{descriptions.locations}</p>
      <DirectoryCounts initial={counts}/>
     </div>
-    <DevelopmentDirectoryMap initialCards={cards.map(card=>({...card,images:[],properties:[]}))}/>
+    <DevelopmentDirectoryMap initialCards={initial.mapCards??[]}/>
    </section>
-   <SiteDirectory cards={cards} basePath="/developments" defaultView="compact"/>
+   <SiteDirectory cards={cards} initial={initial} basePath="/developments" defaultView="compact"/>
   </main></DirectoryCountProvider>;
  }
- const cards=await readDirectoryCards<GroupCardItem>(normalized);
+ const cards=initial.cards as GroupCardItem[];
  return <DirectoryCountProvider><main>
   <section className="intro directory-intro" aria-labelledby="directory-heading">
    <div className="directory-intro-heading">
@@ -54,7 +55,7 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
     <p>{isBuildings?'Explore house styles from UK builders and see how their spaces come together. Compare layouts through their showhome photography and discover the developments behind each home.':'From welcoming kitchens to restful bedrooms, explore showhome inspiration by room type. Compare colours, finishes and furnishings, and save your favourite ideas for your own home.'}</p>
    </div>
   </section>
-  <GroupCards cards={cards} pathPrefix={pathPrefix} kindLabel={labels[kind]}/>
+  <GroupCards cards={cards} initial={initial} pathPrefix={pathPrefix} kindLabel={labels[kind]}/>
  </main></DirectoryCountProvider>;
 }
 async function findGroup(kind:GroupKind,id:string){
