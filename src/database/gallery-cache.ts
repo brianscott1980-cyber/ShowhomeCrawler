@@ -1,3 +1,4 @@
+import {cacheWrite} from './cache-write';
 import {createHash} from 'node:crypto';
 import {websiteDatabase} from './website';
 import {queryGallery} from './gallery-query';
@@ -9,6 +10,6 @@ export async function cachedGallery(input:GalleryRequest):Promise<GalleryPageDat
  const [row]=await sql`select r.revision,c.payload from showhome_web.publication_revision r left join showhome_web.query_cache c on c.key=${key} and c.revision=r.revision and c.expires_at>now() where r.singleton=true`;
  if(row?.payload){const data=row.payload as GalleryPageData;return {...data,counts:{'Unique images':data.counts['Unique images']!,Developments:data.counts.Developments!,Properties:data.counts.Properties!}};}
  const data=await queryGallery(input);
- await sql`insert into showhome_web.query_cache(key,revision,expires_at,payload) select ${key},revision,now()+interval '5 minutes',${sql.json(data as never)} from showhome_web.publication_revision where singleton=true and revision=${row!.revision} on conflict(key) do update set revision=excluded.revision,expires_at=excluded.expires_at,payload=excluded.payload`;
+ await cacheWrite(()=>sql`insert into showhome_web.query_cache(key,revision,expires_at,payload) select ${key},revision,now()+interval '5 minutes',${sql.json(data as never)} from showhome_web.publication_revision where singleton=true and revision=${row!.revision} on conflict(key) do update set revision=excluded.revision,expires_at=excluded.expires_at,payload=excluded.payload`);
  return data;
 }
