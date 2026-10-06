@@ -141,7 +141,7 @@ export function SiteDirectory({
  usePublishDirectoryMapCards(mapMatching,!remote?.pendingInitial);
  return <section aria-label="Filter developments" aria-busy={remote?.loading}>{dialog}<DirectoryQueryStatus query={remote}/>
  <div className="site-filter-panel location-filter-panel">
- <DirectoryFilters className="filters site-filters location-primary-filters" label="Development filters">
+ <DirectoryFilters pending={Boolean(remote?.loading)} className="filters site-filters location-primary-filters" label="Development filters">
   <MultiSelectFilter label="Builders" value={filters.developer} options={developers} onChange={value=>change('developer',value)}/>
   <DistanceFilter label="Within Distance" value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
   <fieldset className="development-range-filter"><legend>Bedrooms range</legend><div>

@@ -12,7 +12,7 @@ export function DirectoryCountProvider({children}:{children:ReactNode}){
 }
 export function DirectoryCounts({initial}:{initial:Counts}){
  const context=useContext(Context);
- return <dl className={`directory-intro-counts${context?.pending?' is-updating':''}`} aria-busy={context?.pending} aria-live="polite">{Object.entries(initial).map(([label,value])=><div key={label}><dt>{label}</dt><dd><RollingCount key={context?.counts[label]??value} value={context?.counts[label]??value}/></dd></div>)}{context?.pending&&<div className="directory-count-status" role="status"><dt>Updating Results…</dt><dd><span className="results-update-spinner" aria-hidden="true"/></dd></div>}</dl>;
+ return <dl className={`directory-intro-counts${context?.pending?' is-updating':''}`} aria-busy={context?.pending} aria-live="polite">{Object.entries(initial).map(([label,value])=><div key={label}><dt>{label}</dt><dd><RollingCount key={context?.counts[label]??value} value={context?.counts[label]??value}/></dd></div>)}</dl>;
 }
 export function useDirectoryCounts(counts:Counts,pending=false){
  const context=useContext(Context);

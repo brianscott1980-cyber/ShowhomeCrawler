@@ -268,8 +268,5 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 
 .directory-update-status { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted, #68736d); margin: 0; }
 .results-update-spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: results-update-spin .8s linear infinite; }
-.directory-intro-counts .directory-count-status { align-self: center; display: flex; align-items: center; gap: 8px; }
-.directory-intro-counts .directory-count-status dt { font-size: 14px; }
-.directory-intro-counts .directory-count-status dd { font-size: 14px; margin: 0; }
 @keyframes results-update-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .results-update-spinner { animation: none; } }

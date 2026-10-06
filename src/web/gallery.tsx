@@ -301,7 +301,7 @@ export function Gallery({
     {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : isDevelopment?'Explore the development':'Explore the collection'}</h2></div>}
    </>}
    {!overviewOnly&&<>
-   {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':undefined}><DirectoryFilters className={isDevelopment?'filters site-filters development-detail-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
+   {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':undefined}><DirectoryFilters pending={Boolean(remote?.loading)} className={isDevelopment?'filters site-filters development-detail-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
     {isDevelopment?<>
      <fieldset className="development-range-filter"><legend>Bedrooms Range</legend><div>
       <SingleSelectFilter label="Minimum bedrooms" value={bedsRange.minValue} options={[{value:'',label:'Any'},...bedsRange.minNumbers.map(value=>({value:String(value),label:`${value} Beds`}))]} onChange={value=>changeRange('minBeds',value)}/>

@@ -58,3 +58,15 @@ it('shows Multiple without pills and removes individual options using checkboxes
   expect(change).toHaveBeenLastCalledWith('');
  }finally{await act(async()=>root.unmount());host.remove();}
 });
+
+it('disables cascading choices and replaces their chevron while calculating',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ const {FilterPendingContext}=await import('../src/web/directory-filters');
+ const host=document.createElement('div'),root=createRoot(host),change=vi.fn();
+ const render=(pending:boolean)=>root.render(<FilterPendingContext.Provider value={pending}><MultiSelectFilter label="Builders" value="A" options={['A','B']} onChange={change}/></FilterPendingContext.Provider>);
+ try{
+  await act(async()=>render(true));expect(host.querySelector('.filter-chevron')).toBeNull();expect(host.querySelector('.results-update-spinner')).not.toBeNull();expect(host.querySelector('summary')?.getAttribute('aria-disabled')).toBe('true');
+  await act(async()=>host.querySelector<HTMLInputElement>('input')!.click());expect(change).not.toHaveBeenCalled();
+  await act(async()=>render(false));expect(host.querySelector('.filter-chevron')).not.toBeNull();expect(host.querySelector('.results-update-spinner')).toBeNull();expect(host.querySelector<HTMLInputElement>('input')!.disabled).toBe(false);
+ }finally{await act(async()=>root.unmount());}
+});

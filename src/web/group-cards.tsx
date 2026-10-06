@@ -91,7 +91,7 @@ export function GroupCards({
   <>
    {(
     <div className="site-filter-panel" style={{marginBottom: 24}}>
-     <DirectoryFilters className="filters site-filters" label={`Filter ${kindLabel.toLowerCase()}`}>
+     <DirectoryFilters pending={Boolean(remote?.loading)} className="filters site-filters" label={`Filter ${kindLabel.toLowerCase()}`}>
       <MultiSelectFilter label="Builders" value={developer} options={developers} onChange={setDeveloper}/>
       <MultiSelectFilter label={isBuildings?'Styles':'Room Types'} value={filters.type} options={typeOptions} onChange={value=>setFilters(previous=>({...previous,type:value}))}/>
       {isBuildings?<>
@@ -105,6 +105,7 @@ export function GroupCards({
       {hasActiveFilters && (
        <button
         type="button"
+        disabled={Boolean(remote?.loading)}
         onClick={resetFilters}
         className="location-filter-reset"
        >
