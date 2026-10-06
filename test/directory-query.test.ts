@@ -18,14 +18,15 @@ beforeAll(async()=>{
  ('buildings','house','Alpha',2,null,'North','north','{North}','{}'),('buildings','house','Alpha',5,null,'South','south','{South}','{}'),
  ('interiors','room','Alpha',2,null,'North','north','{North}','{one,two}'),('interiors','room','Alpha',5,null,'South','south','{South}','{two}'),('interiors','room','Alpha',null,null,null,null,'{}','{orphan}');`);
  await db.exec(`insert into showhome_web.builders(slug,name,website_url,logo_url,logo_background) values('alpha','Alpha','https://example.com','/logos/alpha.png','#123456');
- update showhome_web.directory_cards set builder_slug='alpha' where kind='buildings';
+ update showhome_web.directory_cards set builder_slug='alpha',building_name='house' where kind='buildings';
  insert into showhome_web.buildings(key,builder_slug,name) values('house','alpha','House');
  insert into showhome_web.developments(key,builder_slug,source_url,name,display_name) values('a','alpha','a','A','A'),('b','alpha','b','B','B');
  insert into showhome_web.galleries(key,builder_slug,development_key,building_key,name,source_url) values('a','alpha','a','house','House','a'),('b','alpha','b','house','House','b');
  insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,main_category,eligible) values('a','alpha','a','a.jpg','a','Exterior',true),('b','alpha','b','b.jpg','b','Bedroom',true);
  insert into showhome_web.gallery_images values('a','a',0),('b','b',0);`);
  await db.exec(`update showhome_web.directory_cards set builder_slug='alpha',development_url=key where kind='locations';
- insert into showhome_web.gallery_cards(uid,builder_slug,image_id,builder_name,category,eligible,verdict_matches,search_text,payload) values('ready-a','alpha','a','Alpha','Exterior',true,true,'','{}'),('ready-b','alpha','b','Alpha','Bedroom',true,true,'','{}');
+ insert into showhome_web.gallery_cards(uid,builder_slug,image_id,builder_name,category,eligible,verdict_matches,search_text,payload) values('ready-a','alpha','a','Alpha','Exterior',true,true,'','{}'),('ready-b','alpha','b','Alpha','Exterior',true,true,'','{}');
+ update showhome_web.gallery_cards set building_names=array['house'] where uid in('ready-a','ready-b');
  insert into showhome_web.gallery_memberships(uid,gallery_key,builder_slug,url,development_url,development,building_name) values('ready-a','a','alpha','a','a','A','house'),('ready-b','b','alpha','b','b','B','house');`);
 });
 afterAll(()=>db.close());
@@ -93,4 +94,13 @@ it('excludes stale developments whose linked images are not categorised',async()
 it('returns the current builder logo and backdrop on building cards',async()=>{
  const result=await queryDirectory({kind:'buildings'},sql);
  expect(result.cards[0]).toMatchObject({logo:'/logos/alpha.png',logoBackground:'#123456'});
+});
+
+it('hides empty and uncategorised building types from results and facets',async()=>{
+ await db.exec(`insert into showhome_web.directory_cards(kind,key,name,builder_slug,building_name,payload) values('buildings','empty','Empty','alpha','empty','{"key":"empty"}');
+ insert into showhome_web.directory_filter_rows(kind,card_key,developer,site,building_types) values('buildings','empty','Alpha','North','{empty}');
+ update showhome_web.gallery_cards set building_names=array['empty'] where uid='stale-image';`);
+ const result=await queryDirectory({kind:'buildings'},sql);
+ expect(result.cards.map(card=>card.key)).toEqual(['house']);
+ expect(result.total).toBe(1);expect(result.facets.type).not.toContain('Empty');
 });
