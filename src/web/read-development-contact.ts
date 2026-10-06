@@ -1,8 +1,6 @@
-import {storedFile} from './content-storage';
-import {createHash} from 'node:crypto';
-import {developmentContact} from './development-contact';
-export async function readDevelopmentContact(url:string){
- const key=createHash('sha256').update(url).digest('hex');
- const html=await storedFile(`results/.cache/pages/${key}.html`).then(bytes=>bytes.toString('utf8')).catch(()=>'');
- return developmentContact(html);
+import {websiteDatabase} from '../database/website';
+import type {DevelopmentContact} from './development-contact';
+export async function readDevelopmentContact(url:string):Promise<DevelopmentContact>{
+ const [row]=await websiteDatabase()`select contact from showhome_web.developments where source_url=${url} limit 1`;
+ return row?.contact??{};
 }

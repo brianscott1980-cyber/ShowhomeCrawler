@@ -1,3 +1,4 @@
+vi.mock('../src/database/website',()=>({findWebsiteImage:async()=>({sourceUrl:'https://builder.example/photo.jpg'})}));
 import {afterEach,expect,it,vi} from 'vitest';
 vi.mock('node:fs/promises',()=>({realpath:vi.fn().mockRejectedValue(Object.assign(new Error('Missing'),{code:'ENOENT'})),readFile:vi.fn()}));
 vi.mock('../src/web/content-storage',()=>({storedImage:vi.fn().mockRejectedValue(new Error('Unavailable'))}));

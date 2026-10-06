@@ -1,6 +1,8 @@
+import {readPresentation} from '../../../database/website';
+import type {BuilderOverviewProjection} from '../../../catalogue/builder-overview';
 import type {SearchValues} from '../../../web/url-query';
 import {BuilderOverviewDetails} from '../../../web/builder-overview-details';
-import logos from '../../../../public/logos/sources.json';
+import {readWebsiteBuilder} from '../../../database/website';
 import {builderLogoBackground} from '../../../web/builder-brand';
 import {BuilderOverviewMap} from '../../../web/builder-overview-map';
 import {readLocationRows} from '../../../web/location-geography';
@@ -17,14 +19,15 @@ type Props = { params: Promise<{ slug: string }>; searchParams?:Promise<SearchVa
 async function collection(slug: string) {
  const developer = developers.find(d => d.slug === slug);
  if (!developer) notFound();
- return { developer, report: await readCollection(slug) };
+ const overview=await readPresentation<BuilderOverviewProjection>(`builder:${slug}`);
+ return {developer,report:overview.report,overview};
 }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
  const { slug } = await params;
- const { developer, report } = await collection(slug);
+ const { developer, report, overview } = await collection(slug);
  const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : (i.verdict?.matches??true)) ?? [];
  const title = `${developer.name} Showhome Ideas | Showhome Explorer`;
- const description = `Explore ${images.length} ${developer.name} showhome photographs for home inspiration. Discover house types, developments and individual plot details.`;
+ const description = `Explore ${overview.imageCount} ${developer.name} showhome photographs for home inspiration. Discover house types, developments and individual plot details.`;
  const image = images[0] ? absoluteUrl(assetUrl(slug, images[0].path)) : undefined;
  return { title, description, alternates: { canonical: `/builders/${slug}` }, robots: { index: images.length > 0, follow: true },
   openGraph: { title, description, url: `/builders/${slug}`, ...(image ? { images: [image] } : {}) },
@@ -32,12 +35,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 export default async function Page({ params }: Props) {
  const { slug } = await params;
- const { developer, report } = await collection(slug);
+ const { developer, report, overview } = await collection(slug);
  const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : (i.verdict?.matches??true)) ?? [];
  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${developer.name} Showhome Ideas`, url: absoluteUrl(`/builders/${slug}`),
-  mainEntity: { '@type': 'ItemList', numberOfItems: images.length, itemListElement: images.map((image, index) => ({ '@type': 'ListItem', position: index + 1,
+  mainEntity: { '@type': 'ItemList', numberOfItems: overview.imageCount, itemListElement: images.slice(0,24).map((image, index) => ({ '@type': 'ListItem', position: index + 1,
    item: { '@type': 'ImageObject', contentUrl: absoluteUrl(assetUrl(slug, image.path)), caption: image.verdict?.description ?? 'Showhome interior' } })) } };
- const locations=await readLocationRows(slug);
+ const locations=overview.locations;
  const collections=report?[{slug,name:developer.name,report}]:[];
  const locationGroups=groupCollections(collections,'locations');
  const buildingGroups=groupCollections(collections,'buildings');
@@ -59,14 +62,14 @@ export default async function Page({ params }: Props) {
  }
  const destinations=[
   {path:'developments',label:'View developments',count:locations.length,unit:'developments',image:preview(developmentImages,true)},
-  {path:'buildings',label:'View building types',count:buildingGroups.length,unit:'building types',image:preview(buildingImages,true)},
-  {path:'interiors',label:'View interiors',count:new Set(interiorImages.map(image=>image.id)).size,unit:'interiors',image:preview(interiorImages)},
+  {path:'buildings',label:'View building types',count:overview.counts['Building types'],unit:'building types',image:preview(buildingImages,true)},
+  {path:'interiors',label:'View interiors',count:overview.interiors,unit:'interiors',image:preview(interiorImages)},
  ];
- const logo=logos.find(item=>item.slug===slug);
- const mapCards=locations.map(location=>({key:`${slug}:${location.url}`,name:location.name,developer:developer.name,latitude:location.latitude,longitude:location.longitude,country:location.geography?.country??null,image:'',description:location.name,count:0,properties:[],href:(()=>{const group=locationGroups.find(group=>group.collections.some(collection=>collection.report.properties.some(home=>home.developmentUrl===location.url)));return group?`/developments/${group.key}`:`/developments?developer=${encodeURIComponent(developer.name)}`;})()}));
- return <ResultsPage title={logo?<><span className="sr-only">{developer.name}</span><img className="builder-results-logo" src={`/logos/${logo.file}`} alt={`${developer.name} logo`} style={{background:builderLogoBackground(developer.slug)}}/></>:<BuilderName name={developer.name}/>} eyebrow={null}
+ const brand=await readWebsiteBuilder(slug),logo=brand?.logo_url;
+ const mapCards=locations.map(location=>({key:`${slug}:${location.url}`,name:location.name,developer:developer.name,latitude:location.latitude,longitude:location.longitude,country:location.geography?.country??null,image:'',description:location.name,count:0,properties:[],href:location.href}));
+ return <ResultsPage title={logo?<><span className="sr-only">{developer.name}</span><img className="builder-results-logo" src={logo} alt={`${developer.name} logo`} style={{background:brand?.logo_background??'#fff'}}/></>:<BuilderName name={developer.name}/>} eyebrow={null}
   description={`Discover ${developer.name} developments, explore their house types and find inspiration in their showhome rooms.`}
-  builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards}/>,counts:{Locations:locations.length,'Building types':buildingGroups.length,'Room types':roomGroups.length}}}
+  builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards}/>,counts:overview.counts}}
   back={{ href: '/builders', label: '← All builders' }} collections={report ? [{ slug, name: developer.name, report }] : []} includeUnclassified>
   <div className="results-heading builder-explore-heading"><h2>Explore {developer.name}</h2></div>
   <nav className="builder-navigation" aria-label={`Explore ${developer.name}`}>

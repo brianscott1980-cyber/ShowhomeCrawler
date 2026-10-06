@@ -1,0 +1,48 @@
+import { readFile } from 'node:fs/promises';
+import { existsSync,readFileSync,statSync } from 'node:fs';
+import { resolve } from 'node:path';
+import type { RunReport } from '../reports/report';
+
+import { developers } from '../adapters/developers';
+export { developers };
+// Keep only selection metadata; retaining every full report would inflate server memory.
+const folderMetadata=new Map<string,{stamp:string;status:string;time:number}>();
+function reportMetadata(file:string){
+ const st=statSync(file),stamp=`${st.mtimeMs}:${st.size}`;
+ const cached=folderMetadata.get(file);if(cached?.stamp===stamp)return cached;
+ const report=JSON.parse(readFileSync(file,'utf8')) as RunReport;
+ const value={stamp,status:report.status,time:Date.parse(report.completedAt??report.startedAt)};
+ folderMetadata.set(file,value);return value;
+}
+export function collectionFolder(slug: string) {
+ if (!developers.some(d => d.slug === slug)) throw new Error('Unknown developer');
+ const published=resolve('collections',`${slug}-home-offices`),canonical=resolve('results',`${slug}-home-offices`);
+ const candidates=[published,canonical];
+ try{
+  const manifest=JSON.parse(readFileSync(resolve('results/.cache/remaining-builder-scan-state.json'),'utf8'));
+  const folder=manifest[slug]?.folder;
+  if(typeof folder==='string'&&folder.startsWith('results/')){
+   const candidate=resolve(folder);if(candidate.startsWith(resolve('results')+'/'))candidates.push(candidate);
+  }
+ }catch{/* Published data remains available without a crawl manifest. */}
+ const complete=candidates.flatMap(folder=>{
+  try{const report=reportMetadata(folder+'/results.json');
+   return ['completed','completed_with_gaps'].includes(report.status)?[{folder,time:report.time}]:[];
+  }catch{return [];}
+ }).sort((a,b)=>b.time-a.time);
+ return complete[0]?.folder??(existsSync(published+'/results.json')?published:canonical);
+}
+export async function readCollection(slug: string): Promise<RunReport | null> {
+ const folder = collectionFolder(slug);
+ const reports = await Promise.all(['results.json', 'checkpoint.json'].map(async file => {
+  try { return JSON.parse(await readFile(`${folder}/${file}`, 'utf8')) as RunReport; }
+  catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null; throw error; }
+ }));
+ const report=reports.filter((r): r is RunReport => r !== null).sort((a,b)=>Date.parse(b.completedAt??b.startedAt)-Date.parse(a.completedAt??a.startedAt))[0];
+ if(!report)return null;
+ const places:Record<string,{town?:string|null;country?:string|null}>=await readFile('collections/development-places.json','utf8').then(JSON.parse).catch(()=>({}));
+ return {...report,developments:report.developments.map(development=>{const place=places[`${slug}:${development.url}`];return {...development,town:place?.town??development.town??null,country:place?.country??development.country??null};})};
+}
+export function assetUrl(slug: string, path: string) {
+ return `/api/assets/${slug}/${path.split('/').map(encodeURIComponent).join('/')}`;
+}

@@ -1,3 +1,7 @@
+import {createDatabase} from '../database/postgres';
+import {websiteDatabase} from '../database/website';
+import {importBuilder} from '../catalogue/import';
+import {publishWebsite} from '../catalogue/publish';
 import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { mkdir, readFile, copyFile, rm, access } from 'node:fs/promises';
 import { resolve } from 'node:path';
@@ -22,3 +26,6 @@ for (const image of publishedImages) await copyFile(`${source}/${image.path}`, `
 await writeReport(target, { ...report, images: report.images, properties: report.properties, metrics: { ...report.metrics, collectedUniqueImages: report.images.length } });
 await rm(`${target}/checkpoint.json`, { force: true });
 console.log(JSON.stringify({ stage: 'published_collection', developer: report.builder?.name, images: report.images.length, publishedImages: publishedImages.length, folder: target }));
+
+const websiteSql=createDatabase();
+ try{await importBuilder(websiteSql, values.builder);await publishWebsite(websiteSql);}finally{await websiteSql.end();await websiteDatabase().end();}

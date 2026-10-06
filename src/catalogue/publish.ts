@@ -1,0 +1,32 @@
+import {builderOverviewProjection} from './builder-overview';
+const nullableMin=(values:number[])=>values.length?Math.min(...values):null;
+const nullableMax=(values:number[])=>values.length?Math.max(...values):null;
+import {developers,readCollection} from '../web/collections';
+import type {Collection} from '../web/groups';
+import {createDatabase} from '../database/postgres';
+import {builderDirectoryData,groupDirectoryData} from './directory-projections';
+import {computeHomepageData} from './homepage-projection';
+export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
+ await sql.begin(async tx=>{
+  await tx`select pg_advisory_xact_lock(726391042)`;
+ const collections:Collection[]=(await Promise.all(developers.map(async d=>{const report=await readCollection(d.slug);return report?{slug:d.slug,name:d.name,report}:null;}))).filter(c=>c!==null);
+ const builder=await builderDirectoryData(collections);
+ const directories:(Awaited<ReturnType<typeof groupDirectoryData>>&{kind:string})[]=[];
+ for(const kind of ['locations','buildings','interiors'] as const){const data=await groupDirectoryData(kind,collections);directories.push({kind,...data});console.log(kind,data.cards.length);}
+ const home=await computeHomepageData(collections);
+ const overviews=await Promise.all(collections.map(async c=>({key:`builder:${c.slug}`,payload:await builderOverviewProjection(c)})));
+  await tx`delete from showhome_web.directory_cards`;
+  for(const {kind,cards,references} of directories){
+   const ref=new Map(references.map(r=>[r.key,r]));
+   for(let offset=0;offset<cards.length;offset+=100){
+    const rows=cards.slice(offset,offset+100).map(card=>{const reference=ref.get(card.key)!;return {kind,key:card.key,name:card.name,href:card.href,builder_slug:reference.builderSlug,collection_slugs:reference.slugs,development_url:reference.developmentUrl,building_name:reference.buildingName,category:reference.category,min_price:'properties' in card?nullableMin(card.properties.map(p=>p.price).filter((v):v is number=>typeof v==='number')):null,max_price:'properties' in card?nullableMax(card.properties.map(p=>p.price).filter((v):v is number=>typeof v==='number')):null,payload:card};});
+    await tx.unsafe(`insert into showhome_web.directory_cards(kind,key,name,href,builder_slug,collection_slugs,development_url,building_name,category,min_price,max_price,payload) select kind,key,name,href,builder_slug,collection_slugs,development_url,building_name,category,min_price,max_price,payload from jsonb_populate_recordset(null::showhome_web.directory_cards,$1::jsonb)`,[tx.json(rows as never)]);
+   }
+  }
+  for(const card of builder.cards)await tx`insert into showhome_web.directory_cards(kind,key,name,href,builder_slug,collection_slugs,payload) values('builders',${card.slug},${card.name},${'/builders/'+card.slug},${card.slug},${[card.slug]},${tx.json(card as never)})`;
+  for(const {kind,counts} of [...directories,{kind:'builders',counts:builder.counts}])await tx`insert into showhome_web.presentations(key,payload) values(${`counts:${kind}`},${tx.json(counts)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
+  for(const overview of overviews)await tx`insert into showhome_web.presentations(key,payload) values(${overview.key},${tx.json(overview.payload as never)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
+  await tx`insert into showhome_web.presentations(key,payload) values('homepage',${tx.json(home as never)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
+ });
+ console.log('Website projections published atomically');
+}

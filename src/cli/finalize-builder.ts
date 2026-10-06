@@ -1,3 +1,7 @@
+import {createDatabase} from '../database/postgres';
+import {websiteDatabase} from '../database/website';
+import {importBuilder} from '../catalogue/import';
+import {publishWebsite} from '../catalogue/publish';
 import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import { isInferredAnalysis } from '../vision/analysis-provenance.js';
 import { readdir, readFile, writeFile, mkdir, copyFile, rm, access } from 'node:fs/promises';
@@ -323,6 +327,8 @@ async function finalizeBuilder(builderSlug: string, persist = false) {
     }
   }
 
+  const websiteSql=createDatabase();
+  try{await importBuilder(websiteSql, builderSlug);await publishWebsite(websiteSql);}finally{await websiteSql.end();await websiteDatabase().end();}
   console.log(`\n Builder ${builderSlug} successfully finalized and published!\n`);
 }
 

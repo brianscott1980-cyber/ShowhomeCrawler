@@ -1,7 +1,8 @@
+import {findWebsiteImage} from '../../../../../database/website';
 import {storedImage} from '../../../../../web/content-storage';
 import { readFile, realpath } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
-import { collectionFolder, readCollection } from '../../../../../web/collections';
+import { collectionFolder } from '../../../../../web/collections';
 export const runtime = 'nodejs';
 export async function GET(_request: Request, { params }: { params: Promise<{ slug: string; path: string[] }> }) {
  const { slug, path } = await params;
@@ -38,9 +39,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
    // Results file not found locally
   }
   try {
-   const report = await readCollection(slug);
    const imageId = relative.replace(/^images\/|\.[^.]+$/g, '');
-   const image = report?.images.find(i => i.path === relative || i.id === imageId);
+   const image = await findWebsiteImage(slug,relative,imageId);
    if (image?.sourceUrl) {
     if(new URL(_request.url).searchParams.get('optimize')==='1'){
      const source=new URL(image.sourceUrl);

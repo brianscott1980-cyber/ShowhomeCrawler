@@ -1,9 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { GET as asset } from '../src/app/api/assets/[slug]/[...path]/route';
 import { POST as job } from '../src/app/api/jobs/route';
 import { collectionFolder } from '../src/web/collections';
 import { jobInput } from '../src/web/jobs';
 
+vi.mock('../src/web/content-storage',()=>({storedImage:async()=>{throw Object.assign(new Error('Uncached fixture'),{code:'ENOENT'});}}));
+vi.mock('../src/database/website',()=>({readWebsiteCollection:async()=>null,findWebsiteImage:async()=>({sourceUrl:'https://example.com/image.jpg'})}));
 describe('Web app boundaries', () => {
  it('rejects path traversal, credentials and unknown collections', async () => {
   for (const path of [['..', '..', '.env.local'], ['.lock'], ['checkpoint.json'], ['images', 'not-an-image.jpg']]) {
@@ -13,7 +15,7 @@ describe('Web app boundaries', () => {
   expect((await asset(new Request('http://localhost/api/assets'), { params: Promise.resolve({ slug: 'unknown', path: ['results.json'] }) })).status).toBe(404);
  });
  it('redirects uncached images to sourceUrl when available', async () => {
-  const response = await asset(new Request('http://localhost/api/assets'), { params: Promise.resolve({ slug: 'bellway', path: ['images', 'a0abbc711acf12951eee136566b099e99b206447bce006d2d8607f3c7c9f234a.jpg'] }) });
+  const response = await asset(new Request('http://localhost/api/assets'), { params: Promise.resolve({ slug: 'bellway', path: ['images', 'ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.jpg'] }) });
   expect(response.status).toBe(307);
   expect(response.headers.get('Location')).toContain('https://');
  });
