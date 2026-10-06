@@ -1,3 +1,4 @@
+import {storedFile} from '../web/content-storage.js';
 import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import {GeminiModelPool,classificationModels} from '../vision/gemini-model-pool.js';
 import {saveGeminiState} from '../reports/gemini-status.js';
@@ -49,7 +50,7 @@ async function main() {
    }
    const batch = await Promise.all(pending.map(async i => {
     if (!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(i.path)) throw new Error('Invalid image path.');
-    return { id: i.id, bytes: await readFile(`${folder}/${i.path}`) };
+    return { id: i.id, bytes: await storedFile(`${folder}/${i.path}`) };
    }));
    await Promise.all(Array.from({length: Math.ceil(batch.length / 8)}, (_, index) => batch.slice(index * 8, index * 8 + 8)).map(async group => {
    let answers;

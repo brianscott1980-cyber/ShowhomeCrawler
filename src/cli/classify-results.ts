@@ -1,3 +1,4 @@
+import {storedFile} from '../web/content-storage.js';
 import {hasSiteCategorisation} from '../vision/site-categorisation.js';
 import {GeminiModelPool,classificationModels} from '../vision/gemini-model-pool.js';
 import {saveGeminiState} from '../reports/gemini-status.js';
@@ -58,7 +59,7 @@ async function main() {
       break;
      } catch {}
     }
-    if (values['all-images'] ? !image.categorisation : !image.verdict) remaining.push({ id: image.id, bytes: await readFile(folder + '/' + image.path) });
+    if (values['all-images'] ? !image.categorisation : !image.verdict) remaining.push({ id: image.id, bytes: await storedFile(folder + '/' + image.path) });
    }
    if (remaining.length) {
     let answers;

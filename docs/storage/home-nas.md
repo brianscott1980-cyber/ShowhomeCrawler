@@ -11,3 +11,11 @@ The local LaunchAgent `uk.showhome.storage-detection` checks every 30 seconds an
 Detection does not migrate assets or redirect the application yet: `migrationComplete` remains false. Existing local crawl files remain intact. The next storage-layer migration will use this health signal to choose NAS assets or local offline previews/catalogue.
 
 To stop automatic checking: `launchctl bootout gui/$(id -u)/uk.showhome.storage-detection`.
+
+## Asset migration (awaiting explicit approval)
+
+The storage reader serves local originals first, verified NAS originals second, and local WebP previews when offline. AI workers never substitute previews for full-resolution originals. The raw-download index records NAS-only assets so disconnected crawls do not download them again.
+
+`scripts/migrate-nas-content.py` archives cached HTML and moves deduplicated image assets, retaining catalogue JSON and saved AI analyses locally. Every NAS copy is flushed and checked with SHA-256 before the local original is removed. All hard-link aliases are grouped; originals are removed only after local previews and the download index have been saved. Migration is resumable, with progress in `.showhome/migration-progress.json`.
+
+Migration is gated: no content is moved unless the command explicitly receives `--confirmed` or private configuration has `migrationApproved: true`. Background crawl jobs require this private approval flag too. The flag is currently false; no migration has started.

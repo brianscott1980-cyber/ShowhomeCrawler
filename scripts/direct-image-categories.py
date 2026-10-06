@@ -39,6 +39,11 @@ def extract(report, page_cache):
  ai_ids={i['id'] for i in report.get('images',[]) if i.get('verdict') or i.get('categorisation')}
  for prop in report.get('properties',[]):
   url=prop['url'];path=Path('results/.cache/pages')/(hashlib.sha256(url.encode()).hexdigest()+'.html')
+  if not path.exists():
+   try:
+    storage=json.loads(Path('.showhome/storage-status.json').read_text())
+    if storage.get('nasAvailable'):path=Path(storage['contentRoot'])/'archive'/path
+   except (OSError,ValueError,KeyError):pass
   if not path.exists():continue
   stamp=path.stat().st_mtime_ns
   if url not in page_cache or page_cache[url][0]!=stamp:

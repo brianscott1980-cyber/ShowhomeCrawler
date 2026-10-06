@@ -29,7 +29,7 @@ def probe(root,identity):
 
 def check(config,auto_mount=False):
  ssid=wifi_name(config.get('wifiInterface','en0'))
- status={'mode':'local','nasAvailable':False,'wifiName':ssid,'homeWifi':ssid in config['homeWifi'] if ssid else None,'reason':'NAS not mounted','contentRoot':None,'migrationComplete':False,'checkedAt':time.time()}
+ status={'mode':'local','nasAvailable':False,'wifiName':ssid,'homeWifi':ssid in config['homeWifi'] if ssid else None,'reason':'NAS not mounted','contentRoot':None,'migrationComplete':config.get('migrationComplete',False),'checkedAt':time.time()}
  if ssid and ssid not in config['homeWifi']:
   status['reason']='Connected Wi-Fi is not a configured home network';return status
  mounts=subprocess.run(['/sbin/mount'],capture_output=True,text=True,timeout=3).stdout

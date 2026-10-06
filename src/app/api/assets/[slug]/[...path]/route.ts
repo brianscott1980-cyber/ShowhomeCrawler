@@ -1,3 +1,4 @@
+import {storedImage} from '../../../../../web/content-storage';
 import { readFile, realpath } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
 import { collectionFolder, readCollection } from '../../../../../web/collections';
@@ -18,6 +19,13 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
   // Local collection file not found or not in collectionFolder
  }
  if (relative.startsWith('images/')) {
+  try {
+   const id=relative.replace(/^images\/|\.[^.]+$/g,'');
+   const {bytes,extension}=await storedImage(id,relative.split('.').at(-1)!);
+   const types:Record<string,string>={jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp',avif:'image/avif',gif:'image/gif',tiff:'image/tiff'};
+   return new Response(new Uint8Array(bytes),{headers:{'Content-Type':types[extension]??'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+  }catch{ /* Try the legacy collection below. */ }
+
   try {
    const resultsRoot = resolve('results', `${slug}-home-offices`);
    const localFile = await realpath(resolve(resultsRoot, relative));

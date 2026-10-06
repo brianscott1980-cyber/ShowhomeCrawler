@@ -1,3 +1,4 @@
+import {storedFile} from '../web/content-storage.js';
 import sharp from 'sharp';
 import { mkdir, readFile, writeFile, rename, open, link } from 'node:fs/promises';
 import { resolve } from 'node:path';
@@ -40,7 +41,7 @@ async function main() {
    for (let attempt = 0; attempt < 60 && !await exists(path); attempt++) await sleep(1000);
    if (!await exists(path)) throw new Error('Browser snapshot unavailable.');
   }
-  if (!values['refresh-pages'] && await exists(path)) return readFile(path, 'utf8');
+  if (!values['refresh-pages']) {try{return (await storedFile(path)).toString('utf8')}catch{}}
   let html = await client.text(url);
   if ('enrichPage' in site && site.enrichPage) html = await site.enrichPage(html, async (apiUrl,body?:string) => client.text(apiUrl,body));
   // Remove transient Livewire/session data from local cached pages.
@@ -87,7 +88,7 @@ async function main() {
   const sourceTasks = new ImageSourceCache<string>();
   const identities: { identity: Awaited<ReturnType<typeof imageIdentity>>; image: ReportImage }[] = [];
   const galleryCache = new Map<string, string[]>();
-  for(const image of report.images){if(!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(image.path))throw new Error('Invalid resume image path.');const identity=await imageIdentity(await readFile(`${folder}/${image.path}`));if(identity.sha256!==image.id)throw new Error('Resume image does not match its identifier.');identities.push({identity,image});sourceImages.set(image.sourceUrl,image);}
+  for(const image of report.images){if(!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(image.path))throw new Error('Invalid resume image path.');const identity=await imageIdentity(await storedFile(`${folder}/${image.path}`));if(identity.sha256!==image.id)throw new Error('Resume image does not match its identifier.');identities.push({identity,image});sourceImages.set(image.sourceUrl,image);}
   const completedProperties=new Set(report.properties.map(p=>p.url));
   report.metrics.skippedCompletedGalleries=0;
   let imageAttempts = 0, analysisUnavailable = false;
@@ -117,7 +118,10 @@ async function main() {
      imageAttempts++;
      try {
       const imagePath = `results/.cache/${sha256(candidate.url)}.bin`;
-      const rawBytes = await exists(imagePath) ? await readFile(imagePath) : await client.bytes(candidate.url);
+      const rawBytes = await storedFile(imagePath).catch(error=>{
+       if(error.storedOnNas)throw error; // Do not download an existing NAS image again while away.
+       return client.bytes(candidate.url);
+      });
       const bytes = new URL(candidate.url).pathname.toLowerCase().endsWith('.svg') ? await sharp(rawBytes).png().toBuffer() : rawBytes;
       const identity = await imageIdentity(bytes);
       if(!await exists(imagePath))await writeFile(imagePath, bytes);

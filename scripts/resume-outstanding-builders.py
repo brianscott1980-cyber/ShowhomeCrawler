@@ -54,6 +54,10 @@ def collect():
    report=read(ROOT/folder/'results.json',{})
    record(slug,status='awaiting_ai',developments=len(report.get('developments',[])),galleries=len(report.get('properties',[])),images=len(report.get('images',[])))
    update(slug,'website','complete')
+   storage=read(ROOT/'.showhome/storage-status.json',{})
+   if storage.get('nasAvailable') and read(ROOT/'.showhome/storage-config.json',{}).get('migrationApproved',False):
+    run(slug,'storage',['python3','scripts/migrate-nas-content.py'])
+    update(slug,'storage','complete')
   except Exception as error:
    record(slug,status='needs_review',error=str(error));update(slug,'gallery','failed',error=str(error))
    if 'Less than 1 GB' in str(error):break
