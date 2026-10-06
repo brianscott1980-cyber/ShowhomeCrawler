@@ -62,3 +62,24 @@ it('tops up leftover server cards to complete four more rows of three',async()=>
   await act(async()=>mount.querySelector<HTMLButtonElement>('button')!.click());expect(load).toHaveBeenLastCalledWith(12);
  }finally{await act(async()=>root.unmount());mount.remove();vi.restoreAllMocks();vi.unstubAllGlobals();}
 });
+
+it('replaces previous filter results with logo skeletons but preserves cards when appending',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ vi.spyOn(window,'getComputedStyle').mockReturnValue({gridTemplateColumns:'200px 200px 200px'} as CSSStyleDeclaration);
+ const mount=document.createElement('div');document.body.append(mount);const root=createRoot(mount);
+ const render=(replacing:boolean,loading:boolean,identity='all')=>root.render(<CardResults className="collection-grid" label="Buildings" identity={identity} replacing={replacing} loading={loading} hasMore>{Array.from({length:6},(_,i)=><article key={i}>Previous result {i}</article>)}</CardResults>);
+ try{
+  await act(async()=>render(false,false));expect(mount.querySelectorAll('article')).toHaveLength(6);
+  await act(async()=>render(true,true,'filtered'));
+  expect(mount.querySelectorAll('article')).toHaveLength(0);
+  expect(mount.querySelectorAll('.result-loading-card')).toHaveLength(6);
+  expect(mount.querySelectorAll('.card-image-loading')).toHaveLength(6);
+  expect(mount.querySelector('button')).toBeNull();
+  await act(async()=>render(false,false,'filtered'));
+  expect(mount.querySelectorAll('.result-loading-card')).toHaveLength(0);
+  const first=mount.querySelector('article');
+  await act(async()=>render(false,true,'filtered'));
+  expect(mount.querySelector('article')).toBe(first);
+  expect(mount.querySelector<HTMLButtonElement>('button')?.disabled).toBe(true);
+ }finally{await act(async()=>root.unmount());mount.remove();vi.restoreAllMocks();vi.unstubAllGlobals();}
+});

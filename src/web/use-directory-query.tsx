@@ -27,7 +27,7 @@ export function useDirectoryQuery<T>(kind:DirectoryKind,filters:Record<string,st
   return()=>{clearTimeout(timer);controller.current?.abort();};
  },[identity,retry,Boolean(initial),ready]);
  useEffect(()=>()=>controller.current?.abort(),[]);
- return initial?{...state.data!,pendingInitial:state.pending,loading:loading||(state.pending||state.identity!==identity)&&!error,error,identity,loadMore:(limit=16)=>{if(!busy.current&&state.identity===identity&&state.data?.hasMore)void fetchPage(state.data.nextOffset,Math.min(64,limit),true);},retry:()=>setRetry(value=>value+1)}:null;
+ return initial?{...state.data!,pendingInitial:state.pending,replacing:(state.pending||state.identity!==identity)&&!error,loading:loading||(state.pending||state.identity!==identity)&&!error,error,identity,loadMore:(limit=16)=>{if(!busy.current&&state.identity===identity&&state.data?.hasMore)void fetchPage(state.data.nextOffset,Math.min(64,limit),true);},retry:()=>setRetry(value=>value+1)}:null;
 }
 export function DirectoryQueryStatus({query,visible=false}:{query:{loading:boolean;error:string;retry:()=>void}|null;visible?:boolean}){
  if(!query)return null;

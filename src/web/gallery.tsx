@@ -347,7 +347,7 @@ export function Gallery({
 
    </>}
    {featured&&<DirectoryQueryStatus query={remote}/>}
-   <GalleryCardResults featured={featured} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
+   <GalleryCardResults featured={featured} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
      <article className="image-card" key={image.uid}>
       <div className="results-photo-frame">

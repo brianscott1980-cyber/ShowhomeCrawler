@@ -122,7 +122,7 @@ export function GroupCards({
     <DirectoryQueryStatus query={remote} visible/></div>
     <div className="sort-control"><span>Order by</span><SingleSelectFilter label={`Order ${kindLabel.toLowerCase()} by`} value={filters.order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'}]} onChange={order=>setFilters(previous=>({...previous,order}))}/></div>
    </div>
-   <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore}>
+   <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore}>
     {visible.map(card => (
      <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
       <div className="site-preview-photo group-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>{isBuildings&&card.logo&&<img className="development-builder-logo" src={card.logo} alt={`${card.developers[0]??'Builder'} logo`} style={{background:card.logoBackground??'#fff'}} loading="lazy"/>}</div>
@@ -141,8 +141,8 @@ export function GroupCards({
      </Link>
     ))}
    </CardResults>
-   {!cards.length && <p className="empty">No {kindLabel.toLowerCase()} available yet.</p>}
-   {Boolean(cards.length && !visible.length) && (
+   {!remote?.loading&&!cards.length && <p className="empty">No {kindLabel.toLowerCase()} available yet.</p>}
+   {Boolean(!remote?.loading&&cards.length && !visible.length) && (
     <p className="empty">No {kindLabel.toLowerCase()} match these filters. Try widening your search.</p>
    )}
   </>
