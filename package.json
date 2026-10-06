@@ -30,7 +30,9 @@
     "predev": "node scripts/copy-map-worker.mjs",
     "prebuild": "node scripts/copy-map-worker.mjs",
     "builders:ratings:sync": "tsx src/cli/sync-builder-ratings.ts",
-    "builders:ratings:crawl": "tsx src/cli/crawl-builder-ratings.ts"
+    "builders:ratings:crawl": "tsx src/cli/crawl-builder-ratings.ts",
+    "storage:status": "python3 scripts/nas-storage.py",
+    "storage:connect": "python3 scripts/nas-storage.py --auto-mount"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
