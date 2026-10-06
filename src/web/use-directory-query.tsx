@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import type {DirectoryKind,DirectoryPageData,DirectoryRequest} from './directory-page-data';
-const keysByKind={builders:['region','radius','order'],locations:['developer','minBeds','maxBeds','minPrice','maxPrice','radius','order'],buildings:['developer','bedrooms','location','site','type','order'],interiors:['developer','bedrooms','location','site','type','order']};
+const keysByKind={builders:['region','radius','order'],locations:['developer','minBeds','maxBeds','minPrice','maxPrice','radius','order'],buildings:['developer','bedrooms','location','site','type','order'],interiors:['developer','bedrooms','location','site','type','building','order']};
 export function useDirectoryQuery<T>(kind:DirectoryKind,filters:Record<string,string>,point:DirectoryRequest['point'],initial?:DirectoryPageData<T>,keys?:string[],selectedKey?:string,ready=true){
  const criteria={kind,filters:Object.fromEntries(keysByKind[kind].map(key=>[key,filters[key]??''])),point:point??null,...(keys!==undefined?{keys:[...keys].sort()}:{}),...(selectedKey?{selectedKey}:{})};
  const identity=JSON.stringify(criteria);

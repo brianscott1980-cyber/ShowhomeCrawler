@@ -22,7 +22,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const baseValues=values.slice();
  const selection=(field:string,key:string,omit:string)=>{const selected=selectedValues(filters[key]??'');return omit===key||!selected.length?'true':`${field} in(select jsonb_array_elements_text(${p(sql.json(selected))}::jsonb))`;};
  function homeWhere(omit=''){
-  const conditions=[selection("h.bedrooms::text",'bedrooms',omit),selection("h.development",'site',omit),selection("h.development_url",'development',omit)];
+  const conditions=[selection('h.building_name','building',omit),selection("h.bedrooms::text",'bedrooms',omit),selection("h.development",'site',omit),selection("h.development_url",'development',omit)];
   if(omit!=='location'&&filters.location)conditions.push(`h.areas && array(select jsonb_array_elements_text(${p(sql.json(selectedValues(filters.location)))}::jsonb))`);
   for(const [key,field,op] of [['minBeds','bedrooms','>='],['maxBeds','bedrooms','<='],['minPrice','price','>='],['maxPrice','price','<=']] as const)if(key!==omit&&filters[key])conditions.push(`h.${field}${op}${p(Number(filters[key]))}::numeric`);
   return conditions.join(' and ');
@@ -31,7 +31,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
   const conditions=[selection('s.builder_name','developer',omit),selection('s.category','category',omit),selection('s.room','room',omit)];
   if(omit!=='q'&&filters.q)conditions.push(`position(${p(filters.q.toLowerCase())} in s.search_text)>0`);
   const homes=homeWhere(omit);
-  if(['bedrooms','site','development','location','minBeds','maxBeds','minPrice','maxPrice'].some(k=>k!==omit&&filters[k]))conditions.push(`exists(select 1 from homes h where h.uid=s.uid and ${homes})`);
+  if(['building','bedrooms','site','development','location','minBeds','maxBeds','minPrice','maxPrice'].some(k=>k!==omit&&filters[k]))conditions.push(`exists(select 1 from homes h where h.uid=s.uid and ${homes})`);
   return conditions.join(' and ');
  }
  const matched=where(),matchedValues=values.slice(),matchingHome=homeWhere(),matchValues=values.slice();

@@ -61,7 +61,7 @@ it('paginates shared images by house type and correlates filters with that type'
 });
 
 it('room card counts equal gallery totals for correlated filters and shared house types',async()=>{
- for(const filters of [{},{developer:'Alpha'},{bedrooms:'2'},{bedrooms:'5',site:'North'},{location:'North',site:'North'}]){
+ for(const filters of [{},{developer:'Alpha'},{bedrooms:'2'},{bedrooms:'5',site:'North'},{location:'North',site:'North'},{building:'other'},{building:'house',site:'South'}]){
   const counts=await interiorCardCounts(['bedroom'],filters,sql);
   const gallery=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},filters},sql);
   expect(counts.get('bedroom')??0).toBe(gallery.total);

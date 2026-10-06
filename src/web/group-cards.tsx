@@ -11,7 +11,7 @@ import {matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
 import {BuilderName} from './builder-name';
 import {useUrlFilters} from './url-filters';
-const filterDefaults={developer:'',bedrooms:'',location:'',site:'',type:'',order:'name'};
+const filterDefaults={developer:'',bedrooms:'',location:'',site:'',type:'',building:'',order:'name'};
 import {matchesBuildingPlace,type BuildingPlace} from './building-place-filter';
 import {ScrollCollectionImage,type CollectionImage} from './scroll-collection-image';
 import Link from 'next/link';
@@ -75,13 +75,14 @@ export function GroupCards({
  const bedroomOptions=(remote?.facets.bedrooms as number[]|undefined)??[...new Set(facet('bedrooms').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'bedrooms')).flatMap(place=>place.bedrooms===undefined?c.bedrooms??[]:[place.bedrooms])))].sort((a,b)=>a-b);
  const locationOptions=(remote?.facets.location as string[]|undefined)??[...new Set(facet('location').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'location')).flatMap(place=>place.locations)))].sort();
  const siteOptions=(remote?.facets.site as string[]|undefined)??[...new Set(facet('site').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'site')).map(place=>place.site)))].sort();
+ const buildingOptions=(remote?.facets.building as string[]|undefined)??[];
  const typeOptions=(remote?.facets.type as string[]|undefined)??[...new Set(facet('type').map(c=>c.name))].sort();
  const visible=remote?.cards??cards.filter(card=>matches(card)).sort((a,b)=>filters.order==='name-desc'?b.name.localeCompare(a.name):a.name.localeCompare(b.name));
 
  const rooms=visible.filter(card=>!['Exterior','Uncategorised'].includes(card.name));
  const matchingPlaces=visible.flatMap(card=>(card.places??[]).filter(place=>placeMatches(card,place)));
- useDirectoryCounts(remote?.counts??(isBuildings?{Styles:visible.length,Developments:new Set(matchingPlaces.map(place=>place.siteId??`${place.developer}:${place.site}`)).size}:{'Room types':rooms.length,Interiors:new Set(rooms.flatMap(card=>(developer||bedrooms||location||site)?(card.places??[]).filter(place=>placeMatches(card,place)).flatMap(place=>place.imageIds??[]):card.interiorIds??[])).size}),Boolean(remote?.loading));
- const hasActiveFilters = Boolean(developer || bedrooms || location || site || filters.type);
+ useDirectoryCounts(remote?.counts??(isBuildings?{Styles:visible.length,Developments:new Set(matchingPlaces.map(place=>place.siteId??`${place.developer}:${place.site}`)).size}:{'Room Types':rooms.length,Interiors:new Set(rooms.flatMap(card=>(developer||bedrooms||location||site)?(card.places??[]).filter(place=>placeMatches(card,place)).flatMap(place=>place.imageIds??[]):card.interiorIds??[])).size}),Boolean(remote?.loading));
+ const hasActiveFilters = Boolean(developer || bedrooms || location || site || filters.type || filters.building);
  const imageLayout=`${view}:${visible.map(c=>c.key).join(",")}`;
 
  function resetFilters() { setFilters(filterDefaults); }
@@ -92,10 +93,12 @@ export function GroupCards({
     <div className="site-filter-panel" style={{marginBottom: 24}}>
      <DirectoryFilters className="filters site-filters" label={`Filter ${kindLabel.toLowerCase()}`}>
       <MultiSelectFilter label="Builders" value={developer} options={developers} onChange={setDeveloper}/>
-      <MultiSelectFilter label={isBuildings?'Styles':'Room types'} value={filters.type} options={typeOptions} onChange={value=>setFilters(previous=>({...previous,type:value}))}/>
+      <MultiSelectFilter label={isBuildings?'Styles':'Room Types'} value={filters.type} options={typeOptions} onChange={value=>setFilters(previous=>({...previous,type:value}))}/>
+      {isBuildings?<>
       <MultiSelectFilter label="Bedrooms" value={bedrooms} options={bedroomOptions.map(b=>({value:String(b),label:`${b} bedrooms`}))} onChange={setBedrooms}/>
       <MultiSelectFilter label="Areas" value={location} options={locationOptions} onChange={setLocation}/>
       <MultiSelectFilter label="Developments" value={site} options={siteOptions} onChange={setSite}/>
+      </>:<MultiSelectFilter label="Building Types" value={filters.building} options={buildingOptions.map(name=>({value:name,label:homeTypeName(name).replace(/\b\w/g,letter=>letter.toUpperCase())}))} onChange={building=>setFilters(previous=>({...previous,building}))}/>}
       {hasActiveFilters && (
        <button
         type="button"
@@ -115,7 +118,7 @@ export function GroupCards({
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} onLoadMore={remote?.loadMore}>
     {visible.map(card => (
-     <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site})} key={card.key}>
+     <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
       <ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>
       <div className="card-body">
        <h2>{isBuildings?homeTypeName(card.name):roomLabel(card.name)}</h2>

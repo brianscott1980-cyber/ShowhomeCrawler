@@ -43,3 +43,12 @@ it('counts distinct interior identities across galleries and orphan photographs'
 it('represents an empty map viewport without returning all cards',async()=>{
  const data=await queryDirectory({kind:'locations',keys:[]},sql);expect(data.total).toBe(0);expect(data.mapCards).toHaveLength(2);
 });
+
+it('filters room cards, counts and cascading facets by building type',async()=>{
+ await db.exec(`update showhome_web.directory_cards set category='Bedroom',collection_slugs='{alpha}' where kind='interiors';
+ insert into showhome_web.gallery_cards(uid,builder_slug,image_id,builder_name,category,eligible,verdict_matches,search_text,payload,building_names) values('alpha:one','alpha','one','Alpha','Bedroom',true,true,'','{}','{house}');
+ insert into showhome_web.gallery_memberships values('alpha:one','g','alpha','house',2,100000,'North','North','house','{North}');`);
+ const data=await queryDirectory({kind:'interiors',filters:{developer:'Alpha',building:'house'}},sql);
+ expect(data.cards).toHaveLength(1);expect(data.cards[0].count).toBe(1);expect(data.counts.Interiors).toBe(1);expect(data.facets.building).toEqual(['house']);
+ const empty=await queryDirectory({kind:'interiors',filters:{building:'missing'}},sql);expect(empty.cards).toEqual([]);expect(empty.counts.Interiors).toBe(0);
+});
