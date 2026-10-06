@@ -1,3 +1,4 @@
+import {orderedBatchPool} from '../vision/ordered-batch-pool.js';
 import {classificationOrder,classificationBatches} from '../vision/classification-order.js';
 import {storedFile} from '../web/content-storage.js';
 import {hasSiteCategorisation} from '../vision/site-categorisation.js';
@@ -53,7 +54,7 @@ async function main() {
     if (!/^images\/[a-f0-9]{64}\.(jpg|jpeg|png|webp|avif|gif|tiff)$/.test(i.path)) throw new Error('Invalid image path.');
     return { id: i.id, bytes: await storedFile(`${folder}/${i.path}`) };
    }));
-   for (const images of classificationBatches(report,pending)) {
+   await orderedBatchPool(classificationBatches(report,pending),3,async images=>{
    const ids=new Set(images.map(image=>image.id));const group=batch.filter(image=>ids.has(image.id));
    let answers;
    for (let attempt = 0; ; attempt++) {
@@ -91,7 +92,7 @@ async function main() {
     const temp = path + '.' + randomUUID() + '.tmp'; await writeFile(temp, JSON.stringify({...answer.verdict,analysisModel:answer.analysisModel})); await rename(temp, path);
    }
    console.log(JSON.stringify({stage:'stream_batch_cached',developer:report.builder?.name,images:answers.length,matches:answers.filter(a=>a.verdict.matches).length,discoveredImages:report.images.length}));
-   }
+   },()=>stopped);
    await sleep(12000);
   }
  } finally { await lock.close(); await unlink(`${folder}/.analysis-stream.lock`); }
