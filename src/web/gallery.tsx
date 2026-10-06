@@ -8,6 +8,7 @@ import {MoneyInput} from './money-input';
 import {priceRangeOptions} from './price-range';
 import {bedroomRangeOptions} from './bedroom-range';
 import {developmentName} from './development-name';
+import {CardImage} from './card-image';
 import {GalleryCardResults} from './inspiration-row';
 import {BreadcrumbBack} from './breadcrumb-back';
 import {MultiSelectFilter} from './multi-select-filter';
@@ -348,7 +349,7 @@ export function Gallery({
        onClick={() => open(image.uid)}
        aria-label={`Enlarge ${image.verdict?.description ?? 'gallery image'}`}
       >
-       <img
+       <CardImage
         loading="lazy"
         src={imageUrl(image.slug, image.path)}
         alt={image.verdict?.description ?? 'Showhome interior'}

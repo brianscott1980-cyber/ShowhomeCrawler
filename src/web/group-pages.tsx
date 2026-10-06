@@ -1,3 +1,4 @@
+import {CardImage} from './card-image';
 import {cachedGallery as queryGallery} from '../database/gallery-cache';
 import {cachedDirectory as queryDirectory} from '../database/directory-cache';
 import {readDirectoryCards,readPresentation,findDirectoryReference,readWebsiteCollection,readWebsiteBuilder} from '../database/website';
@@ -94,11 +95,11 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
   <div className="results-heading development-explore-heading"><h2>Explore the development</h2></div>
   <nav className="builder-navigation" aria-label={`Explore ${group.name}`}>
    <Link className="builder-navigation-card" href={`/builders/${builder.slug}`}>
-    {logo?<img src={logo} alt="" style={{objectFit:'contain',padding:24,background:brand?.logo_background??'#fff'}}/>:<div className="builder-navigation-placeholder">{builder.name}</div>}
+    {logo?<CardImage src={logo} alt="" style={{objectFit:'contain',padding:24,background:brand?.logo_background??'#fff'}}/>:<div className="builder-navigation-placeholder">{builder.name}</div>}
     <div className="builder-navigation-content"><h2>View Builder<span aria-hidden="true">→</span></h2><p>{builder.name}</p></div>
    </Link>
    {[{path:'buildings',label:'View Building Types',count:developmentCounts?.['Building Types']??0,unit:'building types',preview:exterior},{path:'interiors',label:'View Interiors',count:developmentCounts?.Interiors??0,unit:'interiors',preview:interior}].map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}`} data-filters={JSON.stringify({developer:builder.name,site:group.name})}>
-    {destination.preview?<img src={`/api/assets/${destination.preview.slug}/${destination.preview.image.path.split('/').map(encodeURIComponent).join('/')}`} alt="" loading="lazy"/>:<div className="builder-navigation-placeholder">{group.name}</div>}
+    {destination.preview?<CardImage src={`/api/assets/${destination.preview.slug}/${destination.preview.image.path.split('/').map(encodeURIComponent).join('/')}`} alt="" loading="lazy"/>:<div className="builder-navigation-placeholder">{group.name}</div>}
     <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
    </Link>)}
   </nav>

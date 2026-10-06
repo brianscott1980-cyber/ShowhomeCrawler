@@ -1,3 +1,4 @@
+import {CardImage} from '../../../web/card-image';
 import {readPresentation} from '../../../database/website';
 import type {BuilderOverviewProjection} from '../../../catalogue/builder-overview';
 import type {SearchValues} from '../../../web/url-query';
@@ -74,7 +75,7 @@ export default async function Page({ params }: Props) {
   <div className="results-heading builder-explore-heading"><h2>Explore {developer.name}</h2></div>
   <nav className="builder-navigation" aria-label={`Explore ${developer.name}`}>
    {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}`} data-filters={JSON.stringify({developer:developer.name})}>
-    {destination.image?<img src={assetUrl(slug,destination.image.path)} alt="" loading="lazy"/>:<div className="builder-navigation-placeholder">{developer.name}</div>}
+    {destination.image?<CardImage src={assetUrl(slug,destination.image.path)} alt="" loading="lazy"/>:<div className="builder-navigation-placeholder">{developer.name}</div>}
     <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
    </Link>)}
   </nav>

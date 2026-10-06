@@ -1,4 +1,5 @@
 'use client';
+import {NextCardImage} from './card-image';
 import {optimizedImageSource} from './optimized-image-source';
 import NextImage,{getImageProps} from 'next/image';
 import {useEffect,useRef,useState} from 'react';
@@ -65,7 +66,7 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  const sizes=layout==='list'?'220px':layout==='compact'?'(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 25vw':'(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw';
  const ref=useRef<HTMLDivElement>(null);
  const [slide,setSlide]=useState({index:0,previous:0,direction:1,sequence:0});
- const [loadedSrc,setLoadedSrc]=useState(image);
+ const [loadedSrc,setLoadedSrc]=useState('');
  const identity=items.map(item=>item.src).join('\n');
  useEffect(()=>{setSlide({index:0,previous:0,direction:1,sequence:0});},[identity,layout]);
  useEffect(()=>{
@@ -85,7 +86,7 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
  const logo=showBuilderLogo?items.find(item=>item.kind==='logo'):undefined;
  return <div ref={ref} className="collection-image">
   {slide.sequence>0&&<NextImage fill sizes={sizes} unoptimized={previous.kind==='logo'} className={`collection-image-previous${previous.kind==='logo'?' collection-image-logo':''}`} style={{background:previous.background}} src={optimizedImageSource(previous.src)} alt="" aria-hidden="true"/>}
-  <NextImage fill sizes={sizes} unoptimized={current.kind==='logo'} key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={optimizedImageSource(current.src)} alt={current.alt} loading="lazy"/>
+  <NextCardImage fill sizes={sizes} unoptimized={current.kind==='logo'} key={`${identity}:${slide.sequence}`} onLoad={()=>setLoadedSrc(current.src)} style={{background:current.background,...(slide.sequence&&loadedSrc!==current.src?{opacity:0}:{})}} className={`collection-image-current${current.kind==='logo'?' collection-image-logo':''}${slide.sequence&&loadedSrc===current.src?` collection-image-${slide.direction>0?'next':'back'}`:''}`} src={optimizedImageSource(current.src)} alt={current.alt} loading="lazy"/>
   {logo&&current.kind!=='logo'&&<img className="collection-builder-logo" src={logo.src} alt={logo.alt} style={{background:logo.background}} loading="lazy"/>}
   {caption&&<span className="site-photo-caption">{(current.alt.match(/\b(home office|living room|dining room|kitchen|bathroom|bedroom|hallway|garden|exterior)\b/i)?.[0]??'Development preview').replace(/^./,letter=>letter.toUpperCase())}</span>}
  </div>;

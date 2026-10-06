@@ -1,6 +1,6 @@
 import {optimizedImageSource} from '../web/optimized-image-source';
 import Link from 'next/link';
-import Image from 'next/image';
+import {NextCardImage} from '../web/card-image';
 import { homepageData } from '../web/homepage-data';
 import { RollingCount } from '../web/rolling-count';
 import { HomepageMap } from '../web/homepage-map';
@@ -23,7 +23,7 @@ export default async function Home() {
   <section className="home-journeys" id="start-exploring" aria-labelledby="journeys-title">
    <div className="home-section-heading"><div><p className="eyebrow">Make yourself at home</p><h2 id="journeys-title">Where would you like to begin?</h2></div><Link prefetch={false} href="/builders" className="home-text-link">Browse all builders <span aria-hidden="true">↗</span></Link></div>
    <div className="home-journey-grid">{journeys.map((journey, index) => <Link prefetch={false} key={journey.href} href={journey.href} className="home-journey">
-    {journeyPhotos[index] && <div className="home-journey-photo"><Image src={optimizedImageSource(journeyPhotos[index]!.src)} alt="" width={640} height={480} sizes="(max-width: 700px) 100vw, 33vw"/></div>}
+    {journeyPhotos[index] && <div className="home-journey-photo"><NextCardImage src={optimizedImageSource(journeyPhotos[index]!.src)} alt="" width={640} height={480} sizes="(max-width: 700px) 100vw, 33vw"/></div>}
     <div className="home-journey-copy"><span className="home-step">{journey.number}</span><h3>{journey.title}</h3><p>{journey.description}</p><span className="home-text-link">{journey.link} <span aria-hidden="true">↗</span></span></div>
    </Link>)}</div>
   </section>
