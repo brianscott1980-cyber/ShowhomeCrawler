@@ -390,23 +390,23 @@ export function Gallery({
         src={imageUrl(image.slug, image.path)}
         alt={image.verdict?.description ?? 'Showhome interior'}
        />
-       {image.categorisation?.subCategory!==''&&<span className="photo-caption">{roomLabel(image.categorisation?.subCategory ?? 'Showhome interior')}</span>}
+       {view!=='list'&&image.categorisation?.subCategory!==''&&<span className="photo-caption">{roomLabel(image.categorisation?.subCategory ?? 'Showhome interior')}</span>}
       </button>
       <button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>
       </div>
 
       <div className="image-body">
        {featured ? <><h3>{image.categorisation?.mainCategory ?? 'Showhome interior'}</h3><p className="subtle">{image.developer}</p></> : <>
-       <div className="image-heading">
+       {view!=='list'&&<div className="image-heading">
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
          <p className="eyebrow" style={{ margin: 0 }}>{image.developer}</p>
          {image.categorisation?.subCategory && (
           <span className="badge-pill">{roomLabel(image.categorisation.subCategory)}</span>
          )}
         </div>
-       </div>
+       </div>}
 
-       <h3>{uniqueHomeTypeNames(image.homes.map(home => homeTypeName(home.name))).join(' · ') || image.developer}</h3>
+       <h3 className={view==='list'?'image-room-title':undefined}>{view==='list'?roomLabel(image.categorisation?.subCategory||image.categorisation?.mainCategory||image.verdict?.roomType||'Showhome interior'):uniqueHomeTypeNames(image.homes.map(home => homeTypeName(home.name))).join(' · ') || image.developer}</h3>
        <p className="subtle">{image.verdict?.description ?? 'Showhome interior'}</p>
 
        {image.categorisation && (

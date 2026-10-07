@@ -392,3 +392,5 @@
  .building-type-results-page .development-overview-details>.site-property-summary{margin-bottom:0}
  .building-type-results-page .development-three-column+.results-stats{padding-top:24px;padding-bottom:24px;margin-top:0;margin-bottom:0}
 }
+
+@media(max-width:700px){.building-type-results-page .image-card .image-body>h3.image-room-title{display:block}}
