@@ -25,14 +25,6 @@ export function SiteHeader({children}:{children:ReactNode}){
  },[]);
 
  useEffect(()=>{
-  let frame=0;
-  const update=()=>{frame=0;const mobile=window.matchMedia?.('(max-width:700px)').matches;const bottom=header.current?.getBoundingClientRect().bottom??0;document.querySelectorAll<HTMLElement>('main .directory-toolbar').forEach(toolbar=>toolbar.classList.toggle('is-mobile-stuck',Boolean(mobile&&toolbar.getBoundingClientRect().top<=bottom+1)));};
-  const schedule=()=>{if(!frame)frame=requestAnimationFrame(update);};
-  window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule);schedule();
-  return()=>{cancelAnimationFrame(frame);window.removeEventListener('scroll',schedule);window.removeEventListener('resize',schedule);};
- },[sticky]);
-
- useEffect(()=>{
   const onScroll=()=>{
    setSticky(height!==undefined&&window.scrollY>=height);
   };

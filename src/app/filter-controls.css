@@ -104,8 +104,3 @@
  main .directory-toolbar{position:sticky;top:var(--site-header-height,46px);z-index:29;width:100vw;max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding:10px 2.5vw;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-sizing:border-box;box-shadow:0 4px 12px #23342e0c}
  main .directory-toolbar:has(details[open]){z-index:1002}
 }
-
-@media(max-width:700px){
- main .directory-toolbar{padding-left:5vw;padding-right:5vw}
- main .directory-toolbar.is-mobile-stuck{padding-left:2.5vw;padding-right:2.5vw}
-}
