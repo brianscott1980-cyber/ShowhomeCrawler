@@ -24,6 +24,11 @@ export function CardResults({children,className,label,identity,paginate=true,has
  useEffect(()=>{
   setPressure(0);
   if((!paginate||shown>=cards.length)&&!hasMore||loading)return;
+  if(window.matchMedia?.('(max-width:700px)').matches){
+   const button=more.current;if(!button||replacing||typeof IntersectionObserver==='undefined')return;
+   const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)&&!document.querySelector('dialog[open]')){observer.disconnect();loadMore();}},{threshold:0});
+   observer.observe(button);return()=>observer.disconnect();
+  }
   let accumulated=0,touchY:number|null=null,decay:ReturnType<typeof setTimeout>|undefined;
   const reset=()=>{accumulated=0;setPressure(0);clearTimeout(decay);};
   const atBottom=()=>{
@@ -51,6 +56,6 @@ export function CardResults({children,className,label,identity,paginate=true,has
   const scroll=()=>{if(!atBottom())reset();};
   window.addEventListener('wheel',wheel,{passive:true});window.addEventListener('touchstart',start,{passive:true});window.addEventListener('touchmove',move,{passive:true});window.addEventListener('touchend',end,{passive:true});window.addEventListener('touchcancel',end,{passive:true});window.addEventListener('scroll',scroll,{passive:true});
   return()=>{clearTimeout(decay);window.removeEventListener('wheel',wheel);window.removeEventListener('touchstart',start);window.removeEventListener('touchmove',move);window.removeEventListener('touchend',end);window.removeEventListener('touchcancel',end);window.removeEventListener('scroll',scroll);};
- },[identity,rows,columns,paginate,cards.length,shown,hasMore,loading]);
+ },[identity,rows,columns,paginate,cards.length,shown,hasMore,loading,replacing]);
  return <div className="card-results"><div ref={grid} className={className} aria-busy={replacing}>{replacing?Array.from({length:skeletonCount},(_,index)=><div className="collection-card image-card result-loading-card" key={`loading-${index}`} aria-hidden="true"><div className="result-loading-visual"><i className="card-image-loading"/></div><div className="result-loading-body"><i/><i/><i/></div></div>):cards.slice(0,shown)}</div>{!replacing&&(shown<cards.length||hasMore)&&<div className="more-results-row"><button ref={more} type="button" className="more-results" onClick={loadMore} disabled={loading}>{loading?'Loading…':`More ${label}`}<span className="more-pressure" aria-hidden="true" style={{transform:`scale(${1+Math.max(0,pressure-.7)*.5})`}}><svg viewBox="0 0 24 24"><circle className="more-pressure-outline" cx="12" cy="12" r="9"/><circle className="more-pressure-fill" cx="12" cy="12" r="7" style={{transform:`scale(${pressure})`}}/></svg></span></button></div>}</div>;
 }
