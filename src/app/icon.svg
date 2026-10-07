@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 152 152" role="img" aria-labelledby="title">
   <title id="title">Showhome Explorer</title>
-  <g fill="none" stroke="#123348" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+  <g fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
     <path d="M16 68 76 12l60 56v68H16Z"/>
   </g>
   <path fill="#e95428" fill-rule="evenodd" d="M76 53c-15 0-27 12-27 27 0 21 27 44 27 44s27-23 27-44c0-15-12-27-27-27Zm0 18a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"/>
