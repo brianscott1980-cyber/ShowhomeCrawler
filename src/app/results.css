@@ -273,3 +273,5 @@
 .building-developments-dialog-heading>button{width:56px;height:56px;padding:8px;background:#fff;font-size:inherit}
 .building-developments-dialog-heading .building-map-close-icon{display:block;width:38px;height:38px;flex-shrink:0}
 .building-developments-map .maplibregl-ctrl-top-right{top:80px}
+.building-developments-dialog-heading>button{width:42px;height:42px;padding:4px}
+.building-developments-dialog-heading .building-map-close-icon{width:32px;height:32px}
