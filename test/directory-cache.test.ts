@@ -2,6 +2,7 @@ import {beforeAll,afterAll,expect,it,vi} from 'vitest';
 import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import type postgres from 'postgres';
+import {cachedGallery} from '../src/database/gallery-cache';
 import {cachedDirectory} from '../src/database/directory-cache';
 const db=new PGlite();
 const sql=Object.assign(async(strings:TemplateStringsArray,...values:unknown[])=>{const query=strings.reduce((q,s,i)=>q+s+(i<values.length?'$'+(i+1):''),'');return (await db.query(query,values)).rows;},{json:JSON.stringify}) as unknown as postgres.Sql;
@@ -23,4 +24,25 @@ it('rejects late cache writes following a newer publication',async()=>{
  const query=async()=>{await db.exec('update showhome_web.publication_revision set revision=revision+1');return data;};
  await cachedDirectory({kind:'interiors'},sql,query);
  expect((await db.query("select count(*)::int as count from showhome_web.query_cache where payload->'counts'->>'Styles'='1' and revision=(select revision from showhome_web.publication_revision)")).rows).toEqual([{count:0}]);
+});
+
+it('keeps default directory pages until publication and isolates nearest-first locations',async()=>{
+ const query=vi.fn(async(_input:unknown)=>data);
+ const request={kind:'locations' as const,filters:{order:'distance'},point:{latitude:55,longitude:-4}};
+ await cachedDirectory(request,sql,query);await cachedDirectory(request,sql,query);
+ expect(query).toHaveBeenCalledTimes(1);
+ expect(query.mock.calls[0]?.[0]).toEqual(expect.objectContaining({point:request.point}));
+ expect(Number((await db.query("select count(*)::int as count from showhome_web.query_cache where expires_at='infinity'::timestamptz")).rows[0]?.count)).toBeGreaterThan(0);
+ await cachedDirectory({...request,point:{latitude:51,longitude:0}},sql,query);
+ expect(query).toHaveBeenCalledTimes(2);
+});
+it('persists unfiltered gallery first pages and invalidates after publication',async()=>{
+ const gallery={images:[],total:0,nextOffset:0,hasMore:false,counts:{'Unique images':0,Developments:0,Properties:0},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}};
+ const query=vi.fn(async()=>gallery),request={scope:{kind:'interiors' as const,href:'/interiors/bedroom'}};
+ await cachedGallery(request,sql,query);await cachedGallery({...request,filters:{developer:'',colour:''}},sql,query);
+ expect(query).toHaveBeenCalledTimes(1);
+ const rows=await db.query("select expires_at::text as expiry from showhome_web.query_cache where key like 'gallery:static-rolodex-v6:%'");
+ expect(rows.rows).toEqual([{expiry:'infinity'}]);
+ await db.exec('update showhome_web.publication_revision set revision=revision+1');
+ await cachedGallery(request,sql,query);expect(query).toHaveBeenCalledTimes(2);
 });

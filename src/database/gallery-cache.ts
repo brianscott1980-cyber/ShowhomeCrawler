@@ -4,13 +4,15 @@ import {createHash} from 'node:crypto';
 import {websiteDatabase} from './website';
 import {queryGallery} from './gallery-query';
 import type {GalleryRequest,GalleryPageData} from '../web/gallery-page-data';
-export async function cachedGallery(input:GalleryRequest):Promise<GalleryPageData>{
- if(input.scope.kind==='favourites'||input.imageOnly||input.filters?.q)return queryGallery(input);
+import type postgres from 'postgres';
+export async function cachedGallery(input:GalleryRequest,sql:postgres.Sql=websiteDatabase(),query:(input:GalleryRequest)=>Promise<GalleryPageData>=(input)=>queryGallery(input,sql)):Promise<GalleryPageData>{
+ if(input.scope.kind==='favourites'||input.imageOnly||input.filters?.q)return query(input);
  const filters=Object.fromEntries(Object.entries(input.filters??{}).filter(([,v])=>v).sort(([a],[b])=>a.localeCompare(b)));
- const key='gallery:static-rolodex-v5:'+createHash('sha256').update(JSON.stringify({scope:input.scope,filters,cascading:cascadingFiltersEnabled(),offset:input.offset??0,limit:input.limit??16,selectedUid:input.selectedUid??''})).digest('hex'),sql=websiteDatabase();
+ const defaultPage=(input.offset??0)===0&&!input.selectedUid&&Object.keys(filters).length===0;
+ const key='gallery:static-rolodex-v6:'+createHash('sha256').update(JSON.stringify({scope:input.scope,filters,cascading:cascadingFiltersEnabled(),offset:input.offset??0,limit:input.limit??16,selectedUid:input.selectedUid??''})).digest('hex');
  const [row]=await sql`select r.revision,c.payload from showhome_web.publication_revision r left join showhome_web.query_cache c on c.key=${key} and c.revision=r.revision and c.expires_at>now() where r.singleton=true`;
  if(row?.payload){const data=row.payload as GalleryPageData;return {...data,counts:{'Unique images':data.counts['Unique images']!,Developments:data.counts.Developments!,Properties:data.counts.Properties!}};}
- const data=await queryGallery(input);
- await cacheWrite(()=>sql`insert into showhome_web.query_cache(key,revision,expires_at,payload) select ${key},revision,now()+interval '24 hours',${sql.json(data as never)} from showhome_web.publication_revision where singleton=true and revision=${row!.revision} on conflict(key) do update set revision=excluded.revision,expires_at=excluded.expires_at,payload=excluded.payload`);
+ const data=await query(input);
+ await cacheWrite(()=>sql`insert into showhome_web.query_cache(key,revision,expires_at,payload) select ${key},revision,${defaultPage?'infinity':new Date(Date.now()+24*60*60*1000).toISOString()}::timestamptz,${sql.json(data as never)} from showhome_web.publication_revision where singleton=true and revision=${row!.revision} on conflict(key) do update set revision=excluded.revision,expires_at=excluded.expires_at,payload=excluded.payload`);
  return data;
 }
