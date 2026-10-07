@@ -386,3 +386,9 @@
 @media(max-width:700px){
  .building-type-results-page .results-stats{margin-bottom:0;padding-bottom:6px}
 }
+
+@media(max-width:700px){
+ .building-type-results-page .results-hero.development-three-column{padding-bottom:0;margin-bottom:0}
+ .building-type-results-page .development-overview-details>.site-property-summary{margin-bottom:0}
+ .building-type-results-page .development-three-column+.results-stats{padding-top:16px;padding-bottom:16px;margin-top:0;margin-bottom:0}
+}
