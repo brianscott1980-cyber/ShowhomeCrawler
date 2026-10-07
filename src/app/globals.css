@@ -292,4 +292,3 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 .location-explorer .result-loading-visual{width:120px;flex:0 0 120px;height:auto;min-height:168px}
 .location-explorer .result-loading-body{flex:1;min-width:0;padding:12px 14px}
 @media(max-width:450px){.location-explorer .result-loading-visual{width:95px;flex-basis:95px}}
-
