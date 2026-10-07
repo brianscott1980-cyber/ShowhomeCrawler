@@ -1,4 +1,4 @@
-export const siteUrl = 'https://showhomeexplorer.vercel.app';
+export const siteUrl = 'https://showhomeexplorer.co.uk';
 export const siteTitle = 'Showhome Explorer | UK Showhome & Home Office Inspiration';
 export const siteDescription = 'Explore UK showhome interiors and home office ideas from leading housebuilders. Browse photographs, house types and developments, and save your favourite interiors.';
 export const absoluteUrl = (path:string) => new URL(path, siteUrl).href;
