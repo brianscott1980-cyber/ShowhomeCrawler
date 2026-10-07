@@ -214,3 +214,6 @@
  .building-development-contact.building-development-facts{display:none}
  .building-developments-map .site-map-choices{bottom:40%!important}
 }
+@media(min-width:701px){
+ .building-development-card-logo{width:auto;height:auto;max-width:64px;max-height:36px;object-fit:contain}
+}
