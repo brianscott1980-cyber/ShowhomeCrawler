@@ -57,7 +57,7 @@ export async function GroupDirectory({kind,initial:provided,title,description}:{
  }
  const cards=initial.cards as GroupCardItem[];
  return <DirectoryCountProvider><main>
-  <section className="intro directory-intro" aria-labelledby="directory-heading">
+  <section className={`intro directory-intro${isBuildings?' buildings-directory-intro':''}`} aria-labelledby="directory-heading">
    <div className="directory-intro-heading">
     <h1 id="directory-heading">{title??labels[kind]}</h1><p>{description??descriptions[kind]}</p>
     <DirectoryCounts initial={counts}/>

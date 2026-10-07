@@ -51,7 +51,7 @@ export function GroupCards({
  defaultView?: CardViewMode;
  storageKey?: string;
 }) {
- const [view, changeView] = useCardView(storageKey, defaultView);
+ const [view, changeView] = useCardView(storageKey, defaultView, pathPrefix==='buildings'?'list':undefined);
  const [savedFilters,setFilters]=useUrlFilters(filterDefaults);
  const filters=pathPrefix==='interiors'?{...savedFilters,type:''}:savedFilters;
  const {developer,bedrooms,location,site}=filters;
@@ -132,7 +132,7 @@ export function GroupCards({
      </DirectoryFilters>
     </div>
    )}
-   <div className="directory-toolbar">
+   <div className={`directory-toolbar${isBuildings?' buildings-directory-toolbar':''}`}>
     <div className="directory-view-status"><ViewOptions view={view} onChange={changeView} ariaLabel={`${kindLabel} layout`} />
     <DirectoryQueryStatus query={remote} visible/></div>
     <div className="sort-control"><span>Order by</span><SingleSelectFilter label={`Order ${kindLabel.toLowerCase()} by`} value={filters.order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'}]} onChange={order=>setFilters(previous=>({...previous,order}))}/></div>
