@@ -67,7 +67,18 @@ export function Gallery({
  const {q:query,development,category:mainCategory,room:subCategory}=filters;
  const setQuery=(value:string)=>setFilters(previous=>({...previous,q:value}));
  const tagSelected=(value:string)=>galleryScope?.kind==='interiors'?matchesSelection(new RegExp(colourPattern,'i').test(value)?filters.colour:filters.tag,value)&&Boolean(new RegExp(colourPattern,'i').test(value)?filters.colour:filters.tag):query===value;
- const toggleTag=(value:string)=>{if(galleryScope?.kind!=='interiors'){setQuery(query===value?'':value);return;}const key=new RegExp(colourPattern,'i').test(value)?'colour':'tag';setFilters(previous=>({...previous,q:'',[key]:previous[key]===value?'':value}));};
+ const resultsStart=useRef<HTMLDivElement>(null);
+ const toggleTag=(value:string)=>{
+  if(galleryScope?.kind!=='interiors')setQuery(query===value?'':value);
+  else{const key=new RegExp(colourPattern,'i').test(value)?'colour':'tag';setFilters(previous=>({...previous,q:'',[key]:previous[key]===value?'':value}));}
+  requestAnimationFrame(()=>{
+   const target=resultsStart.current;if(!target)return;
+   const header=document.querySelector<HTMLElement>('.site-header');
+   const filterBar=target.closest('section')?.querySelector<HTMLElement>('.directory-filter-row');
+   const offset=(header?.getBoundingClientRect().height??0)+(filterBar?.getBoundingClientRect().height??0)+16;
+   window.scrollTo({top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-offset),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  });
+ };
  const setDevelopment=(value:string)=>setFilters(previous=>({...previous,development:value}));
  const setMainCategory=(value:string)=>setFilters(previous=>({...previous,category:value}));
  const setSubCategory=(value:string)=>setFilters(previous=>({...previous,room:value}));
@@ -360,6 +371,7 @@ export function Gallery({
 
    </>}
    {featured&&<DirectoryQueryStatus query={remote}/>}
+   <div ref={resultsStart} aria-hidden="true"/>
    <GalleryCardResults featured={featured} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
      <article className="image-card" key={image.uid}>
