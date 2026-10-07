@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
  const { slug } = await params;
  const { developer, report, overview } = await collection(slug);
  const images = report?.images.filter(i => i.categorisation ? i.categorisation.isRoom || i.categorisation.mainCategory === 'Exterior' : (i.verdict?.matches??true)) ?? [];
- const title = `${developer.name} Showhome Ideas | Showhome Explorer`;
- const description = `Explore ${overview.imageCount} ${developer.name} showhome photographs for home inspiration. Discover house types, developments and individual plot details.`;
+ const title = `${developer.name} Showhomes & Interior Ideas | Showhome Explorer`;
+ const description = `Explore ${developer.name} new build developments and house types. Compare showhome interiors and discover ideas for your next home or the home you have.`;
  const image = images[0] ? absoluteUrl(assetUrl(slug, images[0].path)) : undefined;
  return { title, description, alternates: { canonical: `/builders/${slug}` }, robots: { index: images.length > 0, follow: true },
   openGraph: { title, description, url: `/builders/${slug}`, ...(image ? { images: [image] } : {}) },

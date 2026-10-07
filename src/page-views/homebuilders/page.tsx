@@ -1,9 +1,10 @@
+import {searchListing} from '../../web/seo';
 import {cachedDirectory as queryDirectory} from '../../database/directory-cache';
 import {readDirectoryCards,readPresentation} from '../../database/website';
 import {DirectoryCountProvider,DirectoryCounts} from '../../web/directory-counts';
 import {absoluteUrl,jsonLd} from '../../web/seo';
 import {DeveloperDirectory,type DeveloperCard} from '../../web/directory';
-export const metadata={title:'Builders | Showhome Explorer',description:'Explore showhome interiors from UK housebuilders.',alternates:{canonical:'/builders'}};
+export const metadata=searchListing('UK Housebuilders, Developments & Showhomes','Explore UK housebuilders and their new build developments. Compare house types and real showhome interiors for your next home or interior inspiration.','/builders');
 export default async function Builders(){
  const initial=await queryDirectory({kind:'builders'}),collections=initial.cards,counts=initial.counts;
  const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Builders',url:absoluteUrl('/builders'),description:'UK showhome interiors and home office inspiration'};

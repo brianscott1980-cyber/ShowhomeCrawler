@@ -1,3 +1,4 @@
+import {searchListing} from './seo';
 import {homeTypeName} from '../reports/home-display';
 import {roomLabel} from './shared-image-cards';
 import {CardImage} from './card-image';
@@ -32,8 +33,8 @@ function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')
 export async function GroupDirectory({kind}:{kind:GroupKind}){
  const normalized=kind==='sites'?'locations':kind==='spaces'?'interiors':kind;
  const pathPrefix=prefixFor(kind),isBuildings=kind==='buildings';
- // Session criteria are browser-only: avoid an unfiltered database round trip before hydration.
- const initial=normalized==='locations'?{pendingInitial:true,cards:[],total:0,nextOffset:0,hasMore:false,facets:{},counts:{Developments:0},mapCards:[]}:await queryDirectory({kind:normalized}),counts=initial.counts;
+ // Render cached default results in the initial HTML; session criteria apply after hydration.
+ const initial=await queryDirectory({kind:normalized}),counts=initial.counts;
  if(normalized==='locations'){
   const cards=initial.cards as SiteCard[];
   return <DirectoryCountProvider><main>
@@ -43,7 +44,7 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
      <p>{descriptions.locations}</p>
      <DirectoryCounts initial={counts}/>
     </div>
-    <DevelopmentDirectoryMap initialCards={initial.mapCards??[]} initialLoading/>
+    <DevelopmentDirectoryMap initialCards={initial.mapCards??[]}/>
    </section>
    <SiteDirectory cards={cards} initial={initial} basePath="/developments" defaultView="compact"/>
   </main></DirectoryCountProvider>;
@@ -82,7 +83,7 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
   const galleryScope={kind:kind==='buildings'?'buildings' as const:'interiors' as const,href:`/${pathPrefix}/${id}`};
   const reference=isAll?{key:'all',name:'All Room Types',payload:{count:0,developers:[]}}:await findDirectoryReference(galleryScope.kind,galleryScope.href);
   if(!reference)notFound();
-  const galleryPage=galleryScope.kind==='interiors'?{pendingInitial:true,images:[],total:0,nextOffset:0,hasMore:false,counts:{},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}}:await queryGallery({scope:galleryScope,...(typeof searchParams.image==='string'?{selectedUid:searchParams.image}:{})});
+  const galleryPage=await queryGallery({scope:galleryScope,...(typeof searchParams.image==='string'?{selectedUid:searchParams.image}:{})});
   if(galleryScope.kind==='buildings'&&!galleryPage.total)notFound();
   return <ResultsPage title={kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)} eyebrow={kind==='interiors'||kind==='spaces'?null:reference.payload.developers?.join(' · ')} description={isAll?'Explore showhome inspiration across all room types. Discover the homes and developments behind each image.':`Explore interiors from ${kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={[]} places={{}} galleryScope={galleryScope} galleryPage={galleryPage} initialImage={typeof searchParams.image==='string'?searchParams.image:undefined} includeUnclassified/>;
  }
@@ -114,14 +115,21 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
  return <ResultsPage title={group.name} counts={developmentCounts} developmentDetails={detailCard?<DevelopmentOverviewDetails card={detailCard} contact={contact}/>:undefined} titleAccessory={logo?<img className="builder-results-logo development-builder-overview-logo" src={logo} alt={`${builder.name} logo`} style={{background:brand?.logo_background??'#fff'}}/>:undefined} eyebrow={isDevelopment||kind==='interiors'||kind==='spaces'?null:group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={undefined} includeUnclassified>{navigation}</ResultsPage>;
 }
 export async function groupMetadata(kind:GroupKind,id:string){
- if(kind==='buildings'||kind==='interiors'||kind==='spaces'){
-  const isAll=(kind==='interiors'||kind==='spaces')&&id==='all';
-  const path=`/${prefixFor(kind)}/${id}`;
-  if(isAll)return {title:'All Room Types | Showhome Explorer',description:'Explore showhome inspiration across all room types.',alternates:{canonical:path}};
-  const reference=await findDirectoryReference(kind==='spaces'?'interiors':kind,path);
-  if(!reference)notFound();
-  return {title:`${kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)} | Showhome Explorer`,description:`Explore ${reference.payload.count} images from ${kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)}.`,alternates:{canonical:path}};
+ const path=`/${prefixFor(kind)}/${id}`;
+ const isInterior=kind==='interiors'||kind==='spaces';
+ const isAll=isInterior&&id==='all';
+ if(isAll)return searchListing('Showhome Interiors & Room Ideas','Explore real showhome interiors across kitchens, bedrooms, living rooms and more. Compare colours, furnishings and features for your own home.',path);
+ const reference=await findDirectoryReference(kind==='spaces'?'interiors':kind==='sites'?'locations':kind,path);
+ if(!reference)notFound();
+ const card=reference.payload;
+ if(kind==='buildings'){
+  const name=homeTypeName(reference.name),builder=(card.developers??[])[0];
+  return searchListing(`${name}${builder?` by ${builder}`:''} | House Type & Interiors`,`Explore ${name}${builder?` by ${builder}`:''}. View house exterior photographs, floorplans where available and showhome interiors to compare layouts and room ideas.`,path);
  }
- const {group,path}=await findGroup(kind,id);
- return {title:`${group.name} | Showhome Explorer`,description:`Explore ${group.count} images from ${group.name} by ${group.developers.join(', ')}.`,alternates:{canonical:path}};
+ if(isInterior){
+  const name=roomLabel(reference.name);
+  return searchListing(`${name} Ideas | Showhome Interiors`,`Explore ${name.toLowerCase()} photographs from UK showhomes. Compare colours, furnishings and interior features, and save ideas for your own home.`,path);
+ }
+ const name=developmentName(reference.name),location=[card.town,card.country].filter(Boolean).join(', '),builder=card.developer;
+ return searchListing(`${name}${builder?` by ${builder}`:''} | New Homes`, `Explore ${name}${location?` in ${location}`:''}${builder?` by ${builder}`:''}. Discover building types and showhome interiors, and compare ideas for your next home.`,path);
 }

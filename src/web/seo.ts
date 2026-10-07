@@ -11,3 +11,8 @@ export function developerSeo(name:string,slug:string,images:{path:string;descrip
  const schema={'@context':'https://schema.org','@type':'CollectionPage',name:title,description,url,mainEntity:{'@type':'ItemList',numberOfItems:images.length,itemListElement:images.map((i,index)=>({'@type':'ListItem',position:index+1,item:{'@type':'ImageObject',contentUrl:absoluteUrl(i.path),caption:i.description??'Showhome interior'}}))}};
  return `<meta name="description" content="${escape(description)}"><link rel="canonical" href="${url}"><meta name="robots" content="${images.length?'index, follow, max-image-preview:large':'noindex, follow'}"><meta property="og:type" content="website"><meta property="og:site_name" content="Showhome Explorer"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${url}">${image?`<meta property="og:image" content="${escape(image)}">`:''}<meta name="twitter:card" content="${image?'summary_large_image':'summary'}"><script type="application/ld+json">${jsonLd(schema)}</script>`;
 }
+
+export function searchListing(name:string,description:string,path:string){
+ const title=`${name} | Showhome Explorer`;
+ return {title,description,alternates:{canonical:path},openGraph:{title,description,url:path},twitter:{title,description,card:'summary' as const}};
+}
