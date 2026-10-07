@@ -275,3 +275,5 @@
 .building-developments-map .maplibregl-ctrl-top-right{top:80px}
 .building-developments-dialog-heading>button{width:42px;height:42px;padding:4px}
 .building-developments-dialog-heading .building-map-close-icon{width:32px;height:32px}
+
+.building-developments-dialog .building-development-card{cursor:pointer}
