@@ -325,3 +325,5 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
  .directory-intro-counts{padding-bottom:10px}
  .intro.builders-directory-intro{margin-bottom:0;padding-bottom:0;row-gap:0}
 }
+
+@media(max-width:700px){.builder-card .card-body h2>span[aria-hidden="true"]{display:none}}
