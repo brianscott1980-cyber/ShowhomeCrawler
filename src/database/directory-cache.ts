@@ -1,3 +1,4 @@
+import {sharedBuildingExteriorPaths} from './shared-building-exteriors';
 import {cascadingFiltersEnabled} from '../web/filter-settings';
 import {cacheWrite} from './cache-write';
 import type postgres from 'postgres';
@@ -10,7 +11,7 @@ const allowed=['developer','region','radius','order','bedrooms','location','site
 export async function cachedDirectory(input:DirectoryRequest,sql:postgres.Sql=websiteDatabase(),query:(input:DirectoryRequest)=>Promise<DirectoryPageData>=(input)=>queryDirectory(input,sql)):Promise<DirectoryPageData>{
  const defaultPage=(input.offset??0)===0&&!input.selectedKey&&input.keys===undefined&&!allowed.some(key=>key!=='order'&&Boolean(input.filters?.[key])&&input.filters?.[key]!==input.fixedFilters?.[key]);
  const personal=Boolean(input.keys!==undefined||input.selectedKey||input.point&&(input.filters?.radius||input.filters?.order==='distance')&&!defaultPage);
- if(personal)return query(input);
+ if(personal)return cleanBuildingPreviews(await query(input),input.kind);
  const filters=Object.fromEntries(allowed.filter(k=>input.filters?.[k]).sort().map(k=>[k,input.filters![k]!]));
  const shared={kind:input.kind,...(input.fixedFilters?{fixedFilters:input.fixedFilters}:{}),filters,offset:input.offset??0,limit:input.limit??16,...(input.point&&filters.order==='distance'?{point:input.point}:{})};
  const key=createHash('sha256').update(JSON.stringify({...shared,visibility:"static-rolodex-v9",...(input.fixedFilters?{scopeCounts:"v2"}:{}),cascading:cascadingFiltersEnabled()})).digest('hex');
@@ -20,5 +21,11 @@ export async function cachedDirectory(input:DirectoryRequest,sql:postgres.Sql=we
  const labels={builders:['Builders','Developments','Building types'],locations:['Developments'],buildings:['Styles','Developments'],interiors:['Room types','Interiors']}[input.kind];
  data={...data,counts:Object.fromEntries(labels.map(label=>[label,data!.counts[label]!]))};
  if(input.point&&input.kind==='locations')return {...data,cards:data.cards.map(card=>({...card,miles:Number.isFinite(card.latitude)&&Number.isFinite(card.longitude)?distanceMiles(input.point!,{latitude:card.latitude,longitude:card.longitude}):null}))};
- return data;
+ return cleanBuildingPreviews(data,input.kind);
+}
+
+async function cleanBuildingPreviews(data:DirectoryPageData,kind:string):Promise<DirectoryPageData>{
+ if(kind!=='buildings')return data;
+ const generic=new Set(await sharedBuildingExteriorPaths());
+ return {...data,cards:data.cards.map(card=>{const images=(card.images??[]).filter((image:{src:string})=>!generic.has(image.src));return {...card,images,image:generic.has(card.image)?images[0]?.src??'':card.image};})};
 }
