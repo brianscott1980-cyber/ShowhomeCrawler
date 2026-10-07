@@ -372,3 +372,6 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
  .buildings-directory-toolbar .view-options{flex-wrap:nowrap}
  .buildings-directory-toolbar .view-options button{min-width:36px;padding:8px}
 }
+
+@media(min-width:701px){.site-header .header-controls nav{gap:32px}}
+@media(max-width:700px){.site-header .header-controls nav,.site-header.site-header-sticky .header-controls nav{gap:clamp(10px,2.8vw,18px)}}
