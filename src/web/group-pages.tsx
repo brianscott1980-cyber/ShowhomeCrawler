@@ -1,10 +1,11 @@
+import {DevelopmentDirectoryBuilderLogo} from './development-directory-builder-logo';
 import {searchListing} from './seo';
 import {homeTypeName} from '../reports/home-display';
 import {roomLabel} from './shared-image-cards';
 import {CardImage} from './card-image';
 import {cachedGallery as queryGallery} from '../database/gallery-cache';
 import {cachedDirectory as queryDirectory} from '../database/directory-cache';
-import {readDirectoryCards,readPresentation,findDirectoryReference,readWebsiteCollection,readWebsiteBuilder} from '../database/website';
+import {readBuilderLogos,readDirectoryCards,readPresentation,findDirectoryReference,readWebsiteCollection,readWebsiteBuilder} from '../database/website';
 import type {DirectoryPageData} from './directory-page-data';
 import type {SiteCard} from './site-filters';
 import type {GroupCardItem} from './group-cards';
@@ -37,11 +38,11 @@ export async function GroupDirectory({kind,initial:provided,title,description}:{
  // Render cached default results in the initial HTML; session criteria apply after hydration.
  const initial=provided??await queryDirectory({kind:normalized}),counts=initial.counts;
  if(normalized==='locations'){
-  const cards=initial.cards as SiteCard[];
+  const cards=initial.cards as SiteCard[],logos=await readBuilderLogos();
   return <DirectoryCountProvider><main>
    <section className="intro directory-intro development-directory-intro" aria-labelledby="locations-heading">
     <div className="directory-intro-heading">
-     <h1 id="locations-heading">{title??'Developments'}</h1>
+     <div className="development-directory-title-row"><h1 id="locations-heading">{title??'Developments'}</h1><DevelopmentDirectoryBuilderLogo logos={logos}/></div>
      <p>{description??descriptions.locations}</p>
      <DirectoryCounts initial={counts}/>
     </div>

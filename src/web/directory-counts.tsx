@@ -1,15 +1,18 @@
 'use client';
+import {useFixedPageFilters} from './fixed-page-filters';
 import {cascadingFiltersEnabled} from './filter-settings';
 import {createContext,useContext,useEffect,useState,useRef,type ReactNode} from 'react';
 import type {SiteCard} from './site-filters';
 import {RollingCount} from './rolling-count';
 type Counts=Record<string,number>;
-const Context=createContext<{pending:boolean;setPending:(pending:boolean)=>void;counts:Counts;update:(counts:Counts)=>void;mapCards:SiteCard[]|null;updateMapCards:(cards:SiteCard[])=>void}|null>(null);
+const Context=createContext<{builderSelection:string;setBuilderSelection:(value:string)=>void;pending:boolean;setPending:(pending:boolean)=>void;counts:Counts;update:(counts:Counts)=>void;mapCards:SiteCard[]|null;updateMapCards:(cards:SiteCard[])=>void}|null>(null);
 export function DirectoryCountProvider({children}:{children:ReactNode}){
+ const fixed=useFixedPageFilters();
+ const [builderSelection,setBuilderSelection]=useState(fixed.developer??'');
  const [pending,setPending]=useState(false);
  const [counts,update]=useState<Counts>({});
  const [mapCards,updateMapCards]=useState<SiteCard[]|null>(null);
- return <Context.Provider value={{counts,update,pending,setPending,mapCards,updateMapCards}}>{children}</Context.Provider>;
+ return <Context.Provider value={{builderSelection,setBuilderSelection,counts,update,pending,setPending,mapCards,updateMapCards}}>{children}</Context.Provider>;
 }
 export function DirectoryCounts({initial}:{initial:Counts}){
  const context=useContext(Context);
@@ -34,3 +37,9 @@ export function usePublishDirectoryMapCards(cards:SiteCard[],ready=true){
 }
 
 export function useDirectoryMapPending(){return useContext(Context)?.mapCards===null;}
+
+export function useDirectoryBuilderSelection(){return useContext(Context)?.builderSelection??'';}
+export function usePublishDirectoryBuilderSelection(value:string){
+ const update=useContext(Context)?.setBuilderSelection;
+ useEffect(()=>{update?.(value);},[update,value]);
+}

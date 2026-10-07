@@ -8,7 +8,7 @@ import {compareDevelopmentPrices} from './development-price-order';
 import {SingleSelectFilter} from './single-select-filter';
 import {MoneyInput} from './money-input';
 import {CardResults} from './card-results';
-import {usePublishDirectoryMapCards,useDirectoryCounts} from './directory-counts';
+import {usePublishDirectoryBuilderSelection,usePublishDirectoryMapCards,useDirectoryCounts} from './directory-counts';
 import {DistanceFilter} from './distance-filter';
 import {MultiSelectFilter} from './multi-select-filter';
 import {useLocationRequest} from './location-dialog';
@@ -56,6 +56,7 @@ export function SiteDirectory({
  const [focusArea,setFocusArea]=useState<FocusArea|undefined>(undefined);
  const [savedView,saveView]=useCardView(storageKey,defaultView==='map'?'compact':defaultView);
  const [urlFilters,setUrlFilters,filtersReady]=useUrlFilters(urlDefaults);
+ usePublishDirectoryBuilderSelection(urlFilters.developer);
  const mapView=urlFilters.view==='map'||(!urlFilters.view&&defaultView==='map');
  const view:CardViewMode=['list','large','compact'].includes(urlFilters.view)?urlFilters.view as CardViewMode:savedView;
  const activeKey=urlFilters.selected||null;

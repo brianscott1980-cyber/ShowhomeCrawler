@@ -44,6 +44,11 @@ export async function readPresentation<T>(key:string):Promise<T>{
  if(key.startsWith('builder:')&&row.payload.report)row.payload.report.images=row.payload.report.images.filter(isCategorisedImage);
  return row.payload as T;
 }
+export const readBuilderLogos=cache(async()=>{
+ const rows=await websiteDatabase()`select name,logo_url,logo_background from showhome_web.builders where logo_url is not null`;
+ return rows.map(row=>({name:String(row.name),logo:String(row.logo_url),background:row.logo_background as string|null}));
+});
+
 export const findDirectoryReference=cache(async(kind:string,href:string)=>{
  const [row]=await websiteDatabase()`select * from showhome_web.directory_cards where kind=${kind} and href=${href}`;
  return row;
