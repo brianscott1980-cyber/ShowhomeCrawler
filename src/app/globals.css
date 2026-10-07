@@ -302,3 +302,15 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 .site-header .account-menu .account-avatar-fallback{display:block;width:24px;height:24px;color:var(--ink)}
 .site-header.site-header-sticky .account-menu summary{width:32px;height:32px;min-height:32px}
 .site-header.site-header-sticky .account-menu .account-avatar-fallback{width:20px;height:20px}
+
+@media(max-width:700px){
+ .builder-directory-toolbar{flex-wrap:nowrap;gap:10px}
+ .builder-directory-toolbar>.directory-view-status{flex-shrink:0;gap:6px}
+ .builder-directory-toolbar .view-options{flex-wrap:nowrap}
+ .builder-directory-toolbar .view-options button{min-width:36px;padding:8px}
+ .builder-directory-toolbar>.sort-control{min-width:0;gap:6px;font-size:11px;flex:1}
+ .builder-directory-toolbar .sort-control>span{white-space:nowrap}
+ .builder-directory-toolbar .sort-control>.single-select-filter{min-width:0;width:140px;max-width:100%;font-size:12px}
+ .builder-directory-toolbar .directory-update-status{position:absolute;top:100%;left:0}
+ .builder-directory-toolbar{position:relative}
+}

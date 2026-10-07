@@ -49,7 +49,7 @@ export const viewOptionItems = [
  {value: 'list' as const, label: 'List', icon: <ListViewIcon/>},
 ];
 
-export function useCardView(storageKey = 'showhome-directory-view', defaultView: CardViewMode = 'large') {
+export function useCardView(storageKey = 'showhome-directory-view', defaultView: CardViewMode = 'large', mobileDefaultView?:CardViewMode) {
  const [view, setView] = useState<CardViewMode>(defaultView);
  useEffect(() => {
   try {
@@ -59,8 +59,8 @@ export function useCardView(storageKey = 'showhome-directory-view', defaultView:
     return;
    }
   } catch {}
-  setView(defaultView);
- }, [storageKey, defaultView]);
+  setView(mobileDefaultView&&window.matchMedia('(max-width: 700px)').matches?mobileDefaultView:defaultView);
+ }, [storageKey, defaultView, mobileDefaultView]);
  function changeView(next: CardViewMode) {
   setView(next);
   try {
