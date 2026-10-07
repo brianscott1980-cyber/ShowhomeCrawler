@@ -335,7 +335,7 @@ export function Gallery({
     </>:isInterior?<>
      <MultiSelectFilter label="Builders" value={filters.developer} options={builderOptions} onChange={value=>setFilters(previous=>({...previous,developer:value}))}/>
      <MultiSelectFilter label="Building Types" value={filters.building} options={(remote?.facets.building??[...new Set(facetHomes('building').map(({home})=>homeTypeName(home.buildingName??home.name).toLowerCase()))]).map(value=>({value,label:homeTypeName(value).replace(/\b\w/g,letter=>letter.toUpperCase())}))} onChange={value=>setFilters(previous=>({...previous,building:value}))}/>
-     <MultiSelectFilter colourSwatches label="Colour" value={filters.colour} options={remote?.facets.colour??[...new Set(facet('colour').flatMap(image=>interiorTags(image.categorisation).colour))]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>
+     <MultiSelectFilter colourSwatches label="Colours" value={filters.colour} options={remote?.facets.colour??[...new Set(facet('colour').flatMap(image=>interiorTags(image.categorisation).colour))]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>
      <MultiSelectFilter label="Features" value={filters.tag} options={remote?.facets.tag??[...new Set(facet('tag').flatMap(image=>interiorTags(image.categorisation).tag))]} onChange={value=>setFilters(previous=>({...previous,tag:value}))}/>
     </>:<>
     <label>
