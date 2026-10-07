@@ -336,3 +336,11 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 @media(max-width:700px){.directory-large .builder-card .card-body{padding-top:14px;padding-bottom:14px}}
 
 @media(max-width:700px){.site-header nav[aria-label="Main"] a[href="/developments"]{display:none}}
+
+@media(max-width:700px){
+ .site-header,.site-header.site-header-sticky{flex-wrap:nowrap;gap:10px;padding-top:12px;padding-bottom:12px}
+ .site-header .header-controls{flex:1;flex-basis:auto;width:auto;min-width:0;flex-wrap:nowrap;justify-content:space-between;gap:10px}
+ .site-header .header-controls nav{width:auto;flex:1;min-width:0;justify-content:center;gap:clamp(7px,2vw,14px);font-size:11px;white-space:nowrap}
+ .site-header .account-menu,.site-header.site-header-sticky .account-menu{position:relative;inset:auto;flex-shrink:0}
+ .site-header.site-header-sticky{padding-top:7px;padding-bottom:7px}
+}
