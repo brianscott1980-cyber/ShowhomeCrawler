@@ -59,7 +59,7 @@ export function useCardView(storageKey = 'showhome-directory-view', defaultView:
     return;
    }
   } catch {}
-  setView(mobileDefaultView&&window.matchMedia('(max-width: 700px)').matches?mobileDefaultView:defaultView);
+  setView(mobileDefaultView&&window.matchMedia?.('(max-width: 700px)').matches?mobileDefaultView:defaultView);
  }, [storageKey, defaultView, mobileDefaultView]);
  function changeView(next: CardViewMode) {
   setView(next);
