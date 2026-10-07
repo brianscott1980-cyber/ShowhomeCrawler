@@ -33,5 +33,5 @@ export function useDirectoryQuery<T>(kind:DirectoryKind,filters:Record<string,st
 }
 export function DirectoryQueryStatus({query,visible=false}:{query:{loading:boolean;error:string;retry:()=>void}|null;visible?:boolean}){
  if(!query)return null;
- return <><p className={visible?"directory-update-status":"sr-only"} role="status" aria-live="polite">{query.loading?<>{visible&&<span className="results-update-spinner" aria-hidden="true"/>}Updating Results…</>:''}</p>{query.error&&<p role="alert" className="directory-query-error">{query.error} <button type="button" onClick={query.retry}>Retry</button></p>}</>;
+ return <><p className={visible?"directory-update-status":"sr-only"} role="status" aria-live="polite">{query.loading?<>{visible&&<span className="results-update-spinner" aria-hidden="true"/>}<span className="sr-only">Updating Results…</span></>:''}</p>{query.error&&<p role="alert" className="directory-query-error">{query.error} <button type="button" onClick={query.retry}>Retry</button></p>}</>;
 }
