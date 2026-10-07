@@ -12,7 +12,7 @@ export function DirectoryFilters({children,className='',label='Directory filters
  const [pinned,setPinned]=useState<{top:number;insetLeft:number;insetRight:number}|null>(null);
  const [mobile,setMobile]=useState(false),[open,setOpen]=useState(false);const dialog=useRef<HTMLDialogElement>(null);
  useEffect(()=>{if(typeof window.matchMedia!=='function')return;const query=window.matchMedia('(max-width:900px)');const update=()=>{setMobile(query.matches);if(!query.matches)setOpen(false);};update();query.addEventListener('change',update);return()=>query.removeEventListener('change',update);},[]);
- useEffect(()=>{const element=dialog.current;if(!element)return;if(open){element.showModal();element.querySelectorAll('details').forEach(details=>details.open=true);}else if(element.open)element.close();},[open]);
+ useEffect(()=>{const element=dialog.current;if(!element)return;if(open){element.showModal();element.querySelectorAll('details').forEach(details=>details.open=false);}else if(element.open)element.close();},[open]);
  useEffect(()=>{
   const element=anchor.current,filters=row.current,header=document.querySelector<HTMLElement>('.site-header');
   if(!element||!filters||!header)return;
