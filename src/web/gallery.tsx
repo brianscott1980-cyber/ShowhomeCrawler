@@ -1,4 +1,5 @@
 'use client';
+import {ColourSwatch} from './colour-swatch';
 import {colourPattern,interiorTags} from './interior-tags';
 import {cascadingFiltersEnabled} from './filter-settings';
 import {isCategorisedImage,isInteriorCategory} from './image-classification';
@@ -408,7 +409,7 @@ export function Gallery({
        {image.categorisation && (
         <div className="feature-tags">
          {image.categorisation.colours.slice(0, 3).map(c => (
-          <button type="button" key={c} className="tag tag-colour" aria-pressed={tagSelected(c)} onClick={()=>toggleTag(c)} title={`Filter by ${c}`}>{c}</button>
+          <button type="button" key={c} className="tag tag-colour" aria-pressed={tagSelected(c)} onClick={()=>toggleTag(c)} title={`Filter by ${c}`}><ColourSwatch label={c}/>{c}</button>
          ))}
          {image.categorisation.hasTelevision && (
           <span className="tag tag-tech" title="Television present">📺 TV</span>
@@ -416,12 +417,12 @@ export function Gallery({
          {image.categorisation.hasComputer && (
           <span className="tag tag-tech" title="Computer / Workspace present">💻 PC</span>
          )}
-         {[...new Set([...(image.categorisation.decor??[]),...(image.categorisation.wallpaperTags??[]),...(image.categorisation.curtainTags??[]),...(image.categorisation.fabricTags??[]),...(image.categorisation.furnishingTags??[])])].map(tag=><button type="button" key={tag} className="tag tag-decor" aria-pressed={tagSelected(tag)} onClick={()=>toggleTag(tag)} title={`Filter by ${tag}`}>{tag}</button>)}
+         {[...new Set([...(image.categorisation.decor??[]),...(image.categorisation.wallpaperTags??[]),...(image.categorisation.curtainTags??[]),...(image.categorisation.fabricTags??[]),...(image.categorisation.furnishingTags??[])])].map(tag=><button type="button" key={tag} className="tag tag-decor" aria-pressed={tagSelected(tag)} onClick={()=>toggleTag(tag)} title={`Filter by ${tag}`}><ColourSwatch label={tag}/>{tag}</button>)}
          {image.categorisation.wallpaper && (
-          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.wallpaper)} onClick={()=>toggleTag(image.categorisation!.wallpaper!)}>{image.categorisation.wallpaper}</button>
+          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.wallpaper)} onClick={()=>toggleTag(image.categorisation!.wallpaper!)}><ColourSwatch label={image.categorisation.wallpaper}/>{image.categorisation.wallpaper}</button>
          )}
          {image.categorisation.curtains && (
-          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.curtains)} onClick={()=>toggleTag(image.categorisation!.curtains!)}>{image.categorisation.curtains}</button>
+          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.curtains)} onClick={()=>toggleTag(image.categorisation!.curtains!)}><ColourSwatch label={image.categorisation.curtains}/>{image.categorisation.curtains}</button>
          )}
         </div>
        )}
