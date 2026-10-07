@@ -294,3 +294,5 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 @media(max-width:450px){.location-explorer .result-loading-visual{width:95px;flex-basis:95px}}
 
 .development-directory-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.development-directory-title-row h1{min-width:0;flex:1}.development-directory-builder-logo{display:block;flex:0 0 auto;width:120px;height:72px;object-fit:contain;padding:8px;border-radius:4px}@media(max-width:700px){.development-directory-builder-logo{width:90px;height:54px}.development-directory-title-row{gap:12px}}
+
+@media(max-width:700px){.site-header .brand,.site-header.site-header-sticky .brand{width:42px}.site-header .brand img{width:42px;height:42px}.site-header.site-header-sticky .brand,.site-header.site-header-sticky .brand img{width:32px;height:32px}}
