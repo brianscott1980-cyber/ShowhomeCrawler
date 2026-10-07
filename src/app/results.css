@@ -329,3 +329,13 @@
  .building-developments-dialog .building-development-facts .building-development-distance,
  .building-developments-dialog .building-development-facts .building-development-telephone{display:none!important}
 }
+
+.building-developments-dialog .building-development-contact .building-development-telephone{display:none!important}
+@media(min-width:701px){
+ .building-developments-dialog .building-development-contact .building-development-telephone{display:grid!important}
+}
+@media(max-width:700px){
+ .building-developments-dialog .building-development-card{height:auto;align-self:flex-start;overflow-y:visible}
+ .building-developments-dialog .building-development-contact{padding-bottom:10px}
+ .building-developments-dialog .building-development-facts dt{overflow-wrap:normal;word-break:normal}
+}
