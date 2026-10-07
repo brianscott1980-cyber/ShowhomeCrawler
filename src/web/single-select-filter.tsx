@@ -1,4 +1,5 @@
 'use client';
+import {cascadingFiltersEnabled} from './filter-settings';
 import {FilterPendingContext} from './directory-filters';
 import {useContext,useEffect,useId,useRef} from 'react';
 import type {FilterOption} from './multi-select-filter';
@@ -19,6 +20,6 @@ export function SingleSelectFilter({label,value,options,onChange}:{label:string;
   }
  }}>
   <summary aria-disabled={pending} tabIndex={pending?-1:0} onClick={event=>{if(pending)event.preventDefault();}} aria-label={label} aria-haspopup="listbox" aria-controls={`${id}-options`}><span className="multi-filter-selection">{options.find(option=>option.value===value)?.label??value}</span>{pending?<span className="results-update-spinner" aria-hidden="true"/>:<svg className="filter-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>}</summary>
-  <div className="multi-filter-panel single-select-options" id={`${id}-options`} role="listbox" aria-label={label}>{options.map(option=><button disabled={pending} type="button" role="option" key={option.value} aria-selected={value===option.value} onClick={()=>{onChange(option.value);close();}}><span>{option.label}</span><span aria-hidden="true">{value===option.value?'✓':''}</span></button>)}</div>
+  <div className="multi-filter-panel single-select-options" id={`${id}-options`} role="listbox" aria-label={label}>{options.map(option=><button disabled={pending} type="button" role="option" key={option.value} aria-selected={value===option.value} onClick={()=>{onChange(option.value);if(cascadingFiltersEnabled())close();}}><span>{option.label}</span><span aria-hidden="true">{value===option.value?'✓':''}</span></button>)}</div>
  </details></div>;
 }

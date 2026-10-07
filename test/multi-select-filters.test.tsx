@@ -3,12 +3,13 @@ import {act} from 'react';
 import {createRoot} from 'react-dom/client';
 import {afterEach,expect,it,vi} from 'vitest';
 import {DeveloperDirectory,type DeveloperCard} from '../src/web/directory';
+import {DirectoryFilters} from '../src/web/directory-filters';
 import {MultiSelectFilter} from '../src/web/multi-select-filter';
 import {selectionValue,selectedValues} from '../src/web/filter-selection';
 import {filterSites,type SiteCard,type SiteFilters} from '../src/web/site-filters';
 import {filterBuilders} from '../src/web/builder-filters';
 vi.mock('../src/auth/browser',()=>({authClient:async()=>{throw new Error('Guest');}}));
-afterEach(()=>{localStorage.clear();sessionStorage.clear();window.history.replaceState(null,'','/');vi.unstubAllGlobals();});
+afterEach(()=>{localStorage.clear();sessionStorage.clear();window.history.replaceState(null,'','/');vi.unstubAllGlobals();vi.unstubAllEnvs();});
 it('preserves multiple values including labels with commas and legacy single-value URLs',()=>{
  expect(selectedValues(selectionValue(['North, East','Scotland']))).toEqual(['North, East','Scotland']);expect(selectedValues('Scotland')).toEqual(['Scotland']);
 });
@@ -69,4 +70,22 @@ it('disables cascading choices and replaces their chevron while calculating',asy
   await act(async()=>host.querySelector<HTMLInputElement>('input')!.click());expect(change).not.toHaveBeenCalled();
   await act(async()=>render(false));expect(host.querySelector('.filter-chevron')).not.toBeNull();expect(host.querySelector('.results-update-spinner')).toBeNull();expect(host.querySelector<HTMLInputElement>('input')!.disabled).toBe(false);
  }finally{await act(async()=>root.unmount());}
+});
+
+it('keeps independent filters interactive and menus open while results load',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ const host=document.createElement('div');document.body.append(host);const root=createRoot(host),change=vi.fn();
+ const render=(pending:boolean)=><DirectoryFilters pending={pending}><MultiSelectFilter label="Colours" value="" options={['Blue','Green']} onChange={change}/></DirectoryFilters>;
+ try{
+  await act(async()=>root.render(render(false)));
+  const menu=host.querySelector('details')!;menu.open=true;
+  await act(async()=>root.render(render(true)));
+  expect(menu.open).toBe(true);
+  expect(host.querySelector('.results-update-spinner')).toBeNull();
+  expect(host.querySelector('.directory-filter-row')?.getAttribute('aria-busy')).toBe('true');
+  const inputs=host.querySelectorAll<HTMLInputElement>('input[type=checkbox]');
+  expect(inputs[0]!.disabled).toBe(false);
+  await act(async()=>inputs[0]!.click());await act(async()=>inputs[1]!.click());
+  expect(change).toHaveBeenCalledTimes(2);expect(menu.open).toBe(true);
+ }finally{await act(async()=>root.unmount());host.remove();}
 });

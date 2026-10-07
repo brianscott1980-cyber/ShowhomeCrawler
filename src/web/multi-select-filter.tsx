@@ -6,7 +6,6 @@ import {selectedValues,selectionValue} from './filter-selection';
 export type FilterOption={value:string;label:string};
 export function MultiSelectFilter({label,value,options,onChange,colourSwatches=false}:{colourSwatches?:boolean;label:string;value:string;options:(string|FilterOption)[];onChange:(value:string)=>void}){
  const pending=useContext(FilterPendingContext);
- useEffect(()=>{if(pending&&details.current)details.current.open=false;},[pending]);
  const id=useId(),details=useRef<HTMLDetailsElement>(null),[query,setQuery]=useState('');
  const selected=selectedValues(value);
  const supplied=options.map(option=>typeof option==='string'?{value:option,label:option}:option);

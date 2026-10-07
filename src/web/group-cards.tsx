@@ -122,7 +122,7 @@ export function GroupCards({
       {hasActiveFilters && (
        <button
         type="button"
-        disabled={Boolean(remote?.loading)}
+        disabled={cascadingFiltersEnabled()&&Boolean(remote?.loading)}
         onClick={resetFilters}
         className="location-filter-reset"
        >
