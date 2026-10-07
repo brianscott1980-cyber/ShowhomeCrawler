@@ -359,3 +359,8 @@
  .building-type-results-page .image-card .image-body>h3{display:none}
  .building-type-results-page .development-results-hero{grid-template-columns:1fr}
 }
+
+@media(max-width:700px){
+ .building-type-results-page .results-stats{border-bottom:0;padding-top:0;margin-top:0;margin-bottom:12px}
+ .building-type-results-page .results-hero{margin-bottom:12px}
+}
