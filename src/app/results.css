@@ -302,3 +302,5 @@
  .building-development-mobile-price-value{display:inline}
  .building-development-desktop-price-value,.building-development-bedrooms{display:none!important}
 }
+
+@media(max-width:700px){.building-development-price-to{display:none!important}}
