@@ -295,7 +295,7 @@
 .building-development-mobile-price-value{display:none}
 .building-development-desktop-price-value>span{display:block}
 @media(min-width:701px){
- .building-developments-dialog .building-development-card{min-height:210px}
+ .building-developments-dialog .building-development-card{min-height:0;height:auto}
  .building-development-facts>div{grid-template-columns:70px minmax(0,1fr)}
 }
 @media(max-width:700px){
@@ -309,7 +309,7 @@
 .building-developments-dialog .building-development-facts>div{display:grid;align-items:start;column-gap:3px;margin:0}
 .building-developments-dialog .building-development-facts dt,.building-developments-dialog .building-development-facts dd{display:block;margin:0;font:inherit;line-height:inherit}
 @media(min-width:701px){
- .building-developments-dialog .building-development-card{grid-template-rows:auto auto 1fr;align-content:start}
+ .building-developments-dialog .building-development-card{grid-template-rows:auto auto auto;align-content:start}
  .building-development-select .card-body{padding-bottom:4px}
  .building-development-contact.building-development-facts{align-self:start;padding-top:0}
 }
