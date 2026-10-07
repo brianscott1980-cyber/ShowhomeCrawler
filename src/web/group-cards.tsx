@@ -107,7 +107,7 @@ export function GroupCards({
  return (
   <>
    {(
-    <div className="site-filter-panel" style={{marginBottom: 24}}>
+    <div className={`site-filter-panel${isBuildings?'':' interior-filter-panel'}`} style={{marginBottom: 24}}>
      <DirectoryFilters pending={Boolean(remote?.loading)} className="filters site-filters" label={`Filter ${kindLabel.toLowerCase()}`}>
       <MultiSelectFilter label="Builders" value={developer} options={developers} onChange={setDeveloper}/>
       {isBuildings&&<MultiSelectFilter label="Styles" value={filters.type} options={typeOptions} onChange={value=>setFilters(previous=>({...previous,type:value}))}/>}
