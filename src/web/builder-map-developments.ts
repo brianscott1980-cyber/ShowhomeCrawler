@@ -1,0 +1,10 @@
+import {cache} from 'react';
+import {websiteDatabase} from '../database/website';
+import {readDevelopmentPublicRoutes} from '../database/development-public-routes';
+import {builderBrand} from './builder-brand';
+import type {BuildingDevelopment} from './building-development-list';
+import type {SiteCard} from './site-filters';
+export const builderMapDevelopments=cache(async(slug:string):Promise<BuildingDevelopment[]>=>{
+ const [rows,{canonical}]=await Promise.all([websiteDatabase()`select c.payload,c.href,d.contact,d.town,d.latitude,d.longitude,b.logo_url,b.logo_background from showhome_web.directory_cards c join showhome_web.developments d on d.source_url=c.development_url and d.builder_slug=c.builder_slug join showhome_web.builders b on b.slug=c.builder_slug where c.kind='locations' and c.builder_slug=${slug} and c.is_ready order by c.name`,readDevelopmentPublicRoutes()]);
+ return rows.map(row=>{const card=row.payload as SiteCard;const prices=card.properties.map(p=>p.price).filter((p):p is number=>p!==null&&Number.isFinite(p));return {key:card.key,name:card.name,href:canonical[row.href]??row.href,developer:card.developer,image:card.image||null,logo:row.logo_url??null,logoBackground:row.logo_background??'#fff',primaryColour:builderBrand(slug)?.primary,town:row.town??null,latitude:row.latitude??null,longitude:row.longitude??null,telephone:row.contact?.telephone,openingHours:row.contact?.openingHours??[],price:prices.length?'£'+Math.min(...prices).toLocaleString('en-GB'):'Not available'};});
+});

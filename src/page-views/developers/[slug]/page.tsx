@@ -7,6 +7,7 @@ import type {SearchValues} from '../../../web/url-query';
 import {BuilderOverviewDetails} from '../../../web/builder-overview-details';
 import {readWebsiteBuilder} from '../../../database/website';
 import {builderLogoBackground} from '../../../web/builder-brand';
+import {builderMapDevelopments} from '../../../web/builder-map-developments';
 import {BuilderOverviewMap} from '../../../web/builder-overview-map';
 import {readLocationRows} from '../../../web/location-geography';
 import {groupCollections,spaceName} from '../../../web/groups';
@@ -70,10 +71,11 @@ export default async function Page({ params }: Props) {
   {path:'interiors',label:'View interiors',count:overview.interiors,unit:'interiors',image:preview(interiorImages)},
  ];
  const brand=await readWebsiteBuilder(slug),logo=brand?.logo_url;
+ const mapDevelopments=await builderMapDevelopments(slug);
  const mapCards=locations.map(location=>({key:`${slug}:${location.url}`,name:location.name,developer:developer.name,latitude:location.latitude,longitude:location.longitude,country:location.geography?.country??null,image:'',description:location.name,count:0,properties:[],href:location.href}));
  return <ResultsPage title={logo?<><span className="sr-only">{developer.name}</span><img className="builder-results-logo" src={logo} alt={`${developer.name} logo`} style={{background:brand?.logo_background??'#fff'}}/></>:<BuilderName name={developer.name}/>} eyebrow={null}
   description={`Discover ${developer.name} developments, explore their house types and find inspiration in their showhome rooms.`}
-  builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards}/>,counts:overview.counts}}
+  builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards} developments={mapDevelopments}/>,counts:overview.counts}}
   back={{ href: '/builders', label: '← All builders' }} collections={report ? [{ slug, name: developer.name, report }] : []} includeUnclassified>
   <div className="results-heading builder-explore-heading"><h2>Explore {developer.name}</h2></div>
   <nav className="builder-navigation" aria-label={`Explore ${developer.name}`}>
