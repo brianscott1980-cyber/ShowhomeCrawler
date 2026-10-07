@@ -52,7 +52,8 @@ export function GroupCards({
  storageKey?: string;
 }) {
  const [view, changeView] = useCardView(storageKey, defaultView);
- const [filters,setFilters]=useUrlFilters(filterDefaults);
+ const [savedFilters,setFilters]=useUrlFilters(filterDefaults);
+ const filters=pathPrefix==='interiors'?{...savedFilters,type:''}:savedFilters;
  const {developer,bedrooms,location,site}=filters;
  const setDeveloper=(value:string)=>setFilters(previous=>({...previous,developer:value,...(cascadingFiltersEnabled()&&pathPrefix==='interiors'?{site:'',building:''}:{})}));
  const setBedrooms=(value:string)=>setFilters(previous=>({...previous,bedrooms:value}));
@@ -109,7 +110,7 @@ export function GroupCards({
     <div className="site-filter-panel" style={{marginBottom: 24}}>
      <DirectoryFilters pending={Boolean(remote?.loading)} className="filters site-filters" label={`Filter ${kindLabel.toLowerCase()}`}>
       <MultiSelectFilter label="Builders" value={developer} options={developers} onChange={setDeveloper}/>
-      <MultiSelectFilter label={isBuildings?'Styles':'Room Types'} value={filters.type} options={typeOptions} onChange={value=>setFilters(previous=>({...previous,type:value}))}/>
+      {isBuildings&&<MultiSelectFilter label="Styles" value={filters.type} options={typeOptions} onChange={value=>setFilters(previous=>({...previous,type:value}))}/>}
       {isBuildings?<>
       <MultiSelectFilter label="Bedrooms" value={bedrooms} options={bedroomOptions.map(b=>({value:String(b),label:`${b} bedrooms`}))} onChange={setBedrooms}/>
       <MultiSelectFilter label="Areas" value={location} options={locationOptions} onChange={setLocation}/>
