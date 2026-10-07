@@ -21,8 +21,9 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);
  if(scope.kind==='buildings')scopeConditions.push(`t.building_name=lower(${baseBuildingParam}::text)`);
  const facetCache=!input.imageOnly&&!cascadingFiltersEnabled()?await staticGalleryFacets(sql,{scope,favourites:input.favourites}):undefined;
+ const fixed=scope.fixedFilters??{};
  const tagScope=scope.kind==='interiors';
- const needTags=tagScope&&Boolean(filters.colour||filters.tag||!input.imageOnly&&!facetCache?.facets);
+ const needTags=tagScope&&Boolean(fixed.colour||filters.colour||filters.tag||!input.imageOnly&&!facetCache?.facets);
  const tagArrays=['colours','objects','chairs','decor','wallpaperTags','curtainTags','fabricTags','furnishingTags'];
  const cat="m.metadata->'categorisation'";
  const tagJoin=needTags?`left join showhome_web.images m on m.builder_slug=i.builder_slug and m.catalogue_id=i.image_id left join lateral (
@@ -31,6 +32,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  ) tags on true`:'';
  const tagFields=needTags?',tags.colour_tags,tags.other_tags':",array[]::text[] as colour_tags,array[]::text[] as other_tags";
  const homesProjection=`coalesce((select jsonb_agg(h) from jsonb_array_elements(i.payload->'homes') h where r.building_name is null or lower(h->>'buildingName')=r.building_name),'[]'::jsonb)`;
+ if(fixed.colour)scopeConditions.push(`tags.colour_tags && array(select jsonb_array_elements_text(${p(sql.json(selectedValues(fixed.colour)))}::jsonb))`);
  const source=`select case when cardinality(i.building_names)>1 then i.uid||':house:'||t.building_name else i.uid end as uid,i.uid as image_uid,t.building_name,i.builder_slug,i.builder_name,i.category,i.room${tagFields},${filters.q?'i.search_text':"''::text as search_text"} from showhome_web.gallery_card_index i left join lateral(select distinct lower(name) as building_name from unnest(i.building_names) name) t on true ${tagJoin} where ${scopeConditions.join(' and ')}`;
  const homeSource=`select s.uid,h.gallery_key,h.builder_slug,h.url,h.bedrooms,h.price,h.development_url,h.development,h.building_name,h.areas from showhome_web.gallery_memberships h join source s on s.image_uid=h.uid and (s.building_name is null or h.building_name=s.building_name)`;
  const ctes=`source as (${source}),homes as (${homeSource})`;

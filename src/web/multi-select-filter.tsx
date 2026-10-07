@@ -1,10 +1,12 @@
 'use client';
+import {useFixedPageFilters,fixedFilterLabel} from './fixed-page-filters';
 import {ColourSwatch} from './colour-swatch';
 import {FilterPendingContext} from './directory-filters';
 import {useContext,useEffect,useId,useRef,useState,type CSSProperties} from 'react';
 import {selectedValues,selectionValue} from './filter-selection';
 export type FilterOption={value:string;label:string};
 export function MultiSelectFilter({label,value,options,onChange,colourSwatches=false}:{colourSwatches?:boolean;label:string;value:string;options:(string|FilterOption)[];onChange:(value:string)=>void}){
+ const fixed=useFixedPageFilters();
  const pending=useContext(FilterPendingContext);
  const id=useId(),details=useRef<HTMLDetailsElement>(null),[query,setQuery]=useState('');
  const selected=selectedValues(value);
@@ -14,6 +16,7 @@ export function MultiSelectFilter({label,value,options,onChange,colourSwatches=f
  const selectionText=selected.map(value=>all.find(option=>option.value===value)?.label??value).join(', ');
  const shown=all.filter(option=>option.label.toLowerCase().includes(query.toLowerCase()));
  useEffect(()=>{const close=(e:PointerEvent)=>{if(details.current&&!details.current.contains(e.target as Node))details.current.open=false;};document.addEventListener('pointerdown',close);return()=>document.removeEventListener('pointerdown',close);},[]);
+ if(fixedFilterLabel(label,fixed))return null;
  return <div className={`multi-filter${selected.length?' has-selection':''}`} style={{'--filter-weight':widthWeight.current} as CSSProperties}><span id={id}>{label}</span><details ref={details} onToggle={()=>{if(!details.current?.open)setQuery('');}} onKeyDown={e=>{if(e.key==='Escape'&&details.current){details.current.open=false;details.current.querySelector('summary')?.focus();}}}>
   <summary aria-disabled={pending} tabIndex={pending?-1:0} onClick={event=>{if(pending)event.preventDefault();}} onKeyDown={event=>{if(pending)event.preventDefault();}} aria-labelledby={`${id} ${id}-selection`} aria-controls={`${id}-options`}><span className="multi-filter-selection" id={`${id}-selection`} title={selectionText||undefined}>{colourSwatches&&selected.length===1&&<ColourSwatch label={selectionText}/>}{selected.length===0?'All':selected.length===1?selectionText:'Multiple'}</span>{pending?<span className="results-update-spinner" aria-hidden="true"/>:<svg className="filter-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>}</summary>
   <div className="multi-filter-panel" id={`${id}-options`} role="group" aria-labelledby={id}>

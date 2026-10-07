@@ -1,9 +1,11 @@
 'use client';
+import {useFixedPageFilters} from './fixed-page-filters';
 import {useEffect,useRef,useState} from 'react';
 import type {DirectoryKind,DirectoryPageData,DirectoryRequest} from './directory-page-data';
 const keysByKind={builders:['region','radius','order'],locations:['developer','minBeds','maxBeds','minPrice','maxPrice','radius','order'],buildings:['developer','bedrooms','location','site','type','order'],interiors:['developer','bedrooms','location','site','type','building','order']};
 export function useDirectoryQuery<T>(kind:DirectoryKind,filters:Record<string,string>,point:DirectoryRequest['point'],initial?:DirectoryPageData<T>,keys?:string[],selectedKey?:string,ready=true){
- const criteria={kind,filters:Object.fromEntries(keysByKind[kind].map(key=>[key,filters[key]??''])),point:point??null,...(keys!==undefined?{keys:[...keys].sort()}:{}),...(selectedKey?{selectedKey}:{})};
+ const fixedFilters=useFixedPageFilters();
+ const criteria={kind,...(Object.keys(fixedFilters).length?{fixedFilters}:{}),filters:Object.fromEntries(keysByKind[kind].map(key=>[key,filters[key]??''])),point:point??null,...(keys!==undefined?{keys:[...keys].sort()}:{}),...(selectedKey?{selectedKey}:{})};
  const identity=JSON.stringify(criteria);
  const [state,setState]=useState({identity,data:initial,pending:Boolean(initial?.pendingInitial)});
  const [loading,setLoading]=useState(false),[error,setError]=useState(''),[retry,setRetry]=useState(0);

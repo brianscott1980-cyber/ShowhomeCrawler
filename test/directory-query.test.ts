@@ -154,3 +154,16 @@ it('reuses totals across batches and filter options across criteria until public
  expect(refreshed).toContain('count(*)::int as total');
  expect(refreshed).toContain('jsonb_agg(distinct r.developer');
 });
+
+it('keeps a landing builder fixed for cards, counts and facets with cascading disabled',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ const scoped=await queryDirectory({kind:'locations',fixedFilters:{developer:'Alpha'},filters:{developer:'Beta'}},sql);
+ expect(scoped.cards.map(card=>card.key)).toEqual(['a']);
+ expect(scoped.counts).toEqual({Developments:1});
+ expect(scoped.facets.developer).toEqual(['Alpha']);
+ const queries:string[]=[];
+ const measured={json:sql.json,unsafe:async(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}} as unknown as postgres.Sql;
+ const next=await queryDirectory({kind:'locations',fixedFilters:{developer:'Alpha'},offset:1},measured);
+ expect(queries.find(query=>query.startsWith('with page_result'))).not.toContain('count(distinct r.site_id)');
+ expect(next.total).toBe(1);expect(next.cards).toEqual([]);
+});

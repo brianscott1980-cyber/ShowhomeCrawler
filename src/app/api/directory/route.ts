@@ -1,6 +1,6 @@
 import {z} from 'zod';
 import {cachedDirectory as queryDirectory} from '../../../database/directory-cache';
-const input=z.object({kind:z.enum(['builders','locations','buildings','interiors']),filters:z.record(z.string(),z.string().max(3000)).default({}),point:z.object({latitude:z.number().min(-90).max(90),longitude:z.number().min(-180).max(180)}).nullable().optional(),offset:z.number().int().min(0).max(10000).default(0),limit:z.number().int().min(1).max(64).default(16),selectedKey:z.string().max(100).optional(),keys:z.array(z.string().max(100)).max(3000).optional()});
+const input=z.object({kind:z.enum(['builders','locations','buildings','interiors']),fixedFilters:z.object({developer:z.string().max(200).optional()}).optional(),filters:z.record(z.string(),z.string().max(3000)).default({}),point:z.object({latitude:z.number().min(-90).max(90),longitude:z.number().min(-180).max(180)}).nullable().optional(),offset:z.number().int().min(0).max(10000).default(0),limit:z.number().int().min(1).max(64).default(16),selectedKey:z.string().max(100).optional(),keys:z.array(z.string().max(100)).max(3000).optional()});
 export async function POST(request:Request){
  try{
   const text=await request.text();if(text.length>100000)return Response.json({error:'Request too large'},{status:413});

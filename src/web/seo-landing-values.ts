@@ -1,0 +1,3 @@
+export const landingColours=['blue','green','red','pink','yellow','orange','purple','teal','navy','grey','black','white','cream','beige','gold','brown','neutral'] as const;
+export function colourLabels(colour:string,labels:string[]){return labels.filter(label=>(label.toLowerCase().match(/[a-z]+/g)??[]).some(word=>word===colour||colour==='grey'&&word==='gray'));}
+export function colourRoomTitle(colour:string,room:string){const names:Record<string,string>={Bedroom:'Bedrooms',Bathroom:'Bathrooms',Kitchen:'Kitchens','Living Room':'Living Rooms','Dining Room':'Dining Rooms','Home Office':'Home Offices'};return `${colour[0]!.toUpperCase()+colour.slice(1)} ${names[room]??`${room} Interiors`}`;}

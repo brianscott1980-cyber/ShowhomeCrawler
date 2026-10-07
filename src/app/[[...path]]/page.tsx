@@ -1,3 +1,4 @@
+import {seoLanding,seoLandingMetadata,SeoLandingPage} from '../../web/seo-landings';
 import {Profile} from '../../web/profile';
 import type { Metadata } from 'next';
 import { notFound, permanentRedirect } from 'next/navigation';
@@ -29,6 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (kind) return directories[kind].metadata;
  }
  if (path[0] === 'builders' && path.length === 2) return Developer.generateMetadata({ params: Promise.resolve({ slug: path[1]! }) });
+ const landing=path.length>1?await seoLandingMetadata('/'+path.join('/')):null;
+ if(landing)return landing;
  const kind = directory(path[0]!);
  if (kind && path.length > 1) return groupMetadata(kind, path.slice(1).join('/'));
  return {};
@@ -46,6 +49,8 @@ export default async function Page({ params, searchParams }: Props) {
   if (kind) { const View = directories[kind].default; return <View/>; }
  }
  if (path[0] === 'builders' && path.length === 2) return <Developer.default params={Promise.resolve({ slug: path[1]! })}/>;
+ const landing=path.length>1?await seoLanding('/'+path.join('/')):null;
+ if(landing){if('/'+path.join('/')!==landing.path)permanentRedirect(landing.path);return <SeoLandingPage landing={landing}/>;}
  const kind = directory(path[0]!);
  if (kind && path.length > 1) return <GroupDetail kind={kind} id={path.slice(1).join('/')} searchParams={await searchParams}/>;
  if (path[0] === 'sites' || path[0] === 'spaces') {

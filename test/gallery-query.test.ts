@@ -133,3 +133,18 @@ it('offers colour and non-colour tags across the scope and filters them before p
  expect(result.facets.building).toEqual(['house','other']);
  await db.exec(`update showhome_web.images set metadata='{}' where catalogue_id='a'`);
 });
+
+it('keeps a landing colour in the source scope, including counts and later batches',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ await db.exec(`update showhome_web.images set metadata='{"categorisation":{"colours":["Blue"],"decor":["Blue Decor"]}}' where catalogue_id='a'`);
+ try{
+  const scope={kind:'interiors' as const,href:'/interiors/bedroom',fixedFilters:{colour:'["Blue","Blue Decor"]'}};
+  const first=await queryGallery({scope,limit:1},sql);
+  expect(first.images.map(image=>image.id)).toEqual(['a']);
+  expect(first.total).toBe(2);expect(first.counts['Unique images']).toBe(1);
+  expect(first.facets.colour).toEqual(['Blue','Blue Decor']);
+  const next=await queryGallery({scope,offset:1},sql);
+  expect(next.images.map(image=>image.id)).toEqual(['a']);expect(next.counts).toEqual(first.counts);
+  expect((await queryGallery({scope,offset:2},sql)).images).toEqual([]);
+ }finally{await db.exec(`update showhome_web.images set metadata='{}' where catalogue_id='a'`);}
+});

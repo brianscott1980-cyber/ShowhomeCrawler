@@ -5,6 +5,7 @@ import {CardImage} from './card-image';
 import {cachedGallery as queryGallery} from '../database/gallery-cache';
 import {cachedDirectory as queryDirectory} from '../database/directory-cache';
 import {readDirectoryCards,readPresentation,findDirectoryReference,readWebsiteCollection,readWebsiteBuilder} from '../database/website';
+import type {DirectoryPageData} from './directory-page-data';
 import type {SiteCard} from './site-filters';
 import type {GroupCardItem} from './group-cards';
 import {directoryPreview,directoryIdentityEncoder,compactDirectoryPlaces} from './directory-payload';
@@ -30,18 +31,18 @@ import {ResultsPage} from './results-page';
 const labels:Record<GroupKind,string>={sites:'Developments',locations:'Developments',spaces:'Interiors',interiors:'Interiors',buildings:'Buildings'};
 const descriptions:Record<GroupKind,string>={sites:'Explore homebuilder developments by name and discover their published interiors.',locations:'Explore homebuilder developments by name and discover their published interiors.',spaces:'Explore interiors grouped by room and space type.',interiors:'Explore interiors grouped by room and space type.',buildings:'Explore homebuilder house types by name and discover their interiors.'};
 function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')return 'developments';if(kind==='spaces'||kind==='interiors')return 'interiors';return kind;}
-export async function GroupDirectory({kind}:{kind:GroupKind}){
+export async function GroupDirectory({kind,initial:provided,title,description}:{kind:GroupKind;initial?:DirectoryPageData;title?:string;description?:string}){
  const normalized=kind==='sites'?'locations':kind==='spaces'?'interiors':kind;
  const pathPrefix=prefixFor(kind),isBuildings=kind==='buildings';
  // Render cached default results in the initial HTML; session criteria apply after hydration.
- const initial=await queryDirectory({kind:normalized}),counts=initial.counts;
+ const initial=provided??await queryDirectory({kind:normalized}),counts=initial.counts;
  if(normalized==='locations'){
   const cards=initial.cards as SiteCard[];
   return <DirectoryCountProvider><main>
    <section className="intro directory-intro development-directory-intro" aria-labelledby="locations-heading">
     <div className="directory-intro-heading">
-     <h1 id="locations-heading">Developments</h1>
-     <p>{descriptions.locations}</p>
+     <h1 id="locations-heading">{title??'Developments'}</h1>
+     <p>{description??descriptions.locations}</p>
      <DirectoryCounts initial={counts}/>
     </div>
     <DevelopmentDirectoryMap initialCards={initial.mapCards??[]}/>
@@ -53,7 +54,7 @@ export async function GroupDirectory({kind}:{kind:GroupKind}){
  return <DirectoryCountProvider><main>
   <section className="intro directory-intro" aria-labelledby="directory-heading">
    <div className="directory-intro-heading">
-    <h1 id="directory-heading">{labels[kind]}</h1><p>{descriptions[kind]}</p>
+    <h1 id="directory-heading">{title??labels[kind]}</h1><p>{description??descriptions[kind]}</p>
     <DirectoryCounts initial={counts}/>
    </div>
    <div className="directory-intro-feature">
