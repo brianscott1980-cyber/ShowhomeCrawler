@@ -15,10 +15,14 @@ function siteFeatures(cards:SiteCard[]) {
  return {type:'FeatureCollection' as const,features:cards.filter(hasCoordinates).map(card=>({type:'Feature' as const,geometry:{type:'Point' as const,coordinates:[card.longitude,card.latitude]},properties:{key:card.key,name:card.name,builderColour:builderMapBrand(card.developer).primary,builderInitial:builderMapBrand(card.developer).initial}}))};
 }
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-export function SiteMap({cards,clusterColor='#193963',simpleAttribution=false,autoFit=false,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];clusterColor?:string;simpleAttribution?:boolean;autoFit?:boolean;activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
+function fitMapBounds(instance:MapInstance,bounds:Parameters<MapInstance['fitBounds']>[0],options:NonNullable<Parameters<MapInstance['fitBounds']>[1]>,zoomOut:number){
+ const fitted=zoomOut>0?instance.cameraForBounds(bounds,options):undefined;
+ instance.fitBounds(bounds,{...options,...(fitted?.zoom!==undefined?{maxZoom:Math.max(instance.getMinZoom(),fitted.zoom-zoomOut)}:{})});
+}
+export function SiteMap({cards,clusterColor='#193963',simpleAttribution=false,autoFit=false,fitZoomOut=0,activeKey,focusSequence=0,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea}:{cards:SiteCard[];clusterColor?:string;simpleAttribution?:boolean;autoFit?:boolean;fitZoomOut?:number;activeKey:string|null;focusSequence?:number;hoverKey?:string|null;onBoundsChange:(bounds:MapBounds)=>void;onVisibleSitesChange?:(keys:string[])=>void;onSelect:(key:string)=>void;onUnavailable:()=>void;camera?:MapCamera;onCameraChange?:(camera:MapCamera)=>void;focusArea?:FocusArea}) {
  const container=useRef<HTMLDivElement>(null), map=useRef<MapInstance|null>(null), highlight=useRef<Marker|null>(null);
- const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea});
- latest.current={cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea};
+ const latest=useRef({cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea,fitZoomOut});
+ latest.current={cards,activeKey,hoverKey,onBoundsChange,onVisibleSitesChange,onSelect,onUnavailable,camera,onCameraChange,focusArea,fitZoomOut};
  const selectionSeen=useRef({key:activeKey,sequence:focusSequence});
  const publishedCamera=useRef<MapCamera|null>(null);
  const clusterRequest=useRef(0);
@@ -83,7 +87,7 @@ export function SiteMap({cards,clusterColor='#193963',simpleAttribution=false,au
    });
    instance.on('error',()=>{if(!disposed&&!instance.isStyleLoaded()){setStatus('Map unavailable. Switch to List or Cards to browse every development.');latest.current.onUnavailable();}});
    const mapped=latest.current.cards.filter(hasCoordinates);
-   if(!saved&&mapped.length)instance.fitBounds(mapped.reduce((b,c)=>b.extend([c.longitude,c.latitude]),new LngLatBounds([mapped[0]!.longitude,mapped[0]!.latitude],[mapped[0]!.longitude,mapped[0]!.latitude])),{padding:latest.current.focusArea?{left:latest.current.focusArea.left+24,top:latest.current.focusArea.top+24,right:Math.max(24,instance.getCanvas().clientWidth-latest.current.focusArea.right+24),bottom:Math.max(24,instance.getCanvas().clientHeight-latest.current.focusArea.bottom+24)}:55,maxZoom:12,duration:0});
+   if(!saved&&mapped.length)fitMapBounds(instance,mapped.reduce((b,c)=>b.extend([c.longitude,c.latitude]),new LngLatBounds([mapped[0]!.longitude,mapped[0]!.latitude],[mapped[0]!.longitude,mapped[0]!.latitude])),{padding:latest.current.focusArea?{left:latest.current.focusArea.left+24,top:latest.current.focusArea.top+24,right:Math.max(24,instance.getCanvas().clientWidth-latest.current.focusArea.right+24),bottom:Math.max(24,instance.getCanvas().clientHeight-latest.current.focusArea.bottom+24)}:55,maxZoom:12,duration:0},latest.current.fitZoomOut);
    resize=new ResizeObserver(()=>instance.resize());resize.observe(container.current);
   }).catch(()=>{if(!disposed){setStatus('Map unavailable. Switch to List or Cards to browse every development.');latest.current.onUnavailable();}});
   return()=>{disposed=true;resize?.disconnect();highlight.current?.remove();highlight.current=null;map.current?.remove();map.current=null;};
@@ -189,7 +193,7 @@ export function SiteMap({cards,clusterColor='#193963',simpleAttribution=false,au
     right:Math.max(30,(canvas.clientWidth-focusArea.right)+24),
     bottom:Math.max(30,(canvas.clientHeight-focusArea.bottom)+24)
   }:55;
-  map.current.fitBounds([[Math.min(...mapped.map(c=>c.longitude)),Math.min(...mapped.map(c=>c.latitude))],[Math.max(...mapped.map(c=>c.longitude)),Math.max(...mapped.map(c=>c.latitude))]],{padding,maxZoom:12,duration:reducedMotion()?0:450});
+  fitMapBounds(map.current,[[Math.min(...mapped.map(c=>c.longitude)),Math.min(...mapped.map(c=>c.latitude))],[Math.max(...mapped.map(c=>c.longitude)),Math.max(...mapped.map(c=>c.latitude))]],{padding,maxZoom:12,duration:reducedMotion()?0:450},fitZoomOut);
  }
  const resultCoordinates=cards.map(card=>`${card.key}:${card.latitude}:${card.longitude}`).sort().join('|');
  useEffect(()=>{if(autoFit&&ready)fitAll();},[autoFit,ready,resultCoordinates]);
