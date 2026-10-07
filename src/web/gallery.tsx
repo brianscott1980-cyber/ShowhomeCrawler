@@ -433,7 +433,7 @@ export function Gallery({
         </div>
        )}
 
-       <details>
+       <details className="image-home-details">
         <summary>Explore this home</summary>
         {image.homes.map((home, index) => (
          <div className="property" key={`${home.url}:${index}`}>
