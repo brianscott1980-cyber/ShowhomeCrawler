@@ -1,4 +1,4 @@
-import {beforeAll,afterAll,expect,it} from 'vitest';
+import {beforeAll,afterAll,beforeEach,afterEach,vi,expect,it} from 'vitest';
 import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import type postgres from 'postgres';
@@ -6,6 +6,8 @@ import {interiorCardCounts} from '../src/database/interior-card-counts';
 import {queryGallery} from '../src/database/gallery-query';
 const db=new PGlite();
 const sql=Object.assign(async(strings:TemplateStringsArray,...values:unknown[])=>{const query=strings.reduce((q,s,i)=>q+s+(i<values.length?'$'+(i+1):''),'');return (await db.query(query,values)).rows;},{json:JSON.stringify,unsafe:async(query:string,values:unknown[])=>(await db.query(query,values)).rows}) as unknown as postgres.Sql;
+beforeEach(()=>vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','true'));
+afterEach(()=>vi.unstubAllEnvs());
 beforeAll(async()=>{
  await db.exec('create role anon; create role authenticated;');
  for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
@@ -85,4 +87,12 @@ it('queries all room types when scoped to /interiors/all',async()=>{
  const all=await queryGallery({scope:{kind:'interiors',href:'/interiors/all'}},sql);
  expect(all.total).toBeGreaterThan(0);
  expect(all.facets.category).toContain('Bedroom');
+});
+
+it('keeps independent gallery options when cascading is disabled',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ const result=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'},filters:{bedrooms:'5',site:'North'}},sql);
+ expect(result.total).toBe(0);
+ expect(result.facets.bedrooms).toEqual([2,5]);
+ expect(result.facets.site).toEqual(['North','South']);
 });

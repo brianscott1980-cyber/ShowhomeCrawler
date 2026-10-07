@@ -35,3 +35,15 @@ properties matched. These are individual live timings, not a latency guarantee.
 An instrumented EXPLAIN ANALYZE run took 13.4 seconds; the remaining largest cost
 was constructing the house-type relation, rather than the reused facet queries.
 The plan is saved privately in `.showhome/gallery-query-plan.json`.
+
+### Cascading filter switch
+
+`NEXT_PUBLIC_CASCADING_FILTERS=false` keeps dropdown options independent of the
+other selected filters. Selected criteria still filter cards and counts normally,
+and bedroom/price ranges still enforce a valid minimum and maximum. Selecting a
+builder no longer clears the chosen development or building type in this mode.
+
+Cascading is disabled by default. Set the variable to `true` to restore cascading
+options. Restart local Next.js after changing it; deployed sites need a rebuild
+because this public variable is included in the browser bundle. Directory and
+gallery cache keys include the mode so cached options cannot leak between modes.

@@ -1,4 +1,5 @@
 'use client';
+import {cascadingFiltersEnabled} from './filter-settings';
 import {homeTypeName} from '../reports/home-display';
 import {roomLabel} from './shared-image-cards';
 import {useDirectoryQuery,DirectoryQueryStatus} from './use-directory-query';
@@ -53,15 +54,16 @@ export function GroupCards({
  const [view, changeView] = useCardView(storageKey, defaultView);
  const [filters,setFilters]=useUrlFilters(filterDefaults);
  const {developer,bedrooms,location,site}=filters;
- const setDeveloper=(value:string)=>setFilters(previous=>({...previous,developer:value,...(pathPrefix==='interiors'?{site:'',building:''}:{})}));
+ const setDeveloper=(value:string)=>setFilters(previous=>({...previous,developer:value,...(cascadingFiltersEnabled()&&pathPrefix==='interiors'?{site:'',building:''}:{})}));
  const setBedrooms=(value:string)=>setFilters(previous=>({...previous,bedrooms:value}));
  const setLocation=(value:string)=>setFilters(previous=>({...previous,location:value}));
- const setSite=(value:string)=>setFilters(previous=>({...previous,site:value,...(pathPrefix==='interiors'?{building:''}:{})}));
+ const setSite=(value:string)=>setFilters(previous=>({...previous,site:value,...(cascadingFiltersEnabled()&&pathPrefix==='interiors'?{building:''}:{})}));
 
  const isBuildings = pathPrefix === 'buildings';
  const remote=useDirectoryQuery(isBuildings?'buildings':'interiors',filters,null,initial);
 
  const placeMatches=(card:GroupCardItem,place:BuildingPlace,omit='')=>
+  Boolean(omit&&!cascadingFiltersEnabled())||
   (omit==='developer'||!place.developer||matchesAnySelection(developer,[place.developer]))&&
   (omit==='bedrooms'||matchesAnySelection(bedrooms,place.bedrooms===undefined?(card.bedrooms??[]).map(String):[String(place.bedrooms)]))&&
   matchesBuildingPlace([place],omit==='site'?'':site,omit==='location'?'':location);
@@ -72,8 +74,8 @@ export function GroupCards({
   if(((omit!=='site'&&site)||(omit!=='location'&&location)||(omit!=='bedrooms'&&bedrooms))&&!(card.places??[]).some(place=>placeMatches(card,place,omit)))return false;
   return true;
  };
- const facet=(key:string)=>cards.filter(card=>matches(card,key));
- const developers=(remote?.facets.developer as string[]|undefined)??[...new Set(facet('developer').flatMap(c=>(site||location||bedrooms)?(c.places??[]).filter(place=>placeMatches(c,place,'developer')).flatMap(place=>place.developer?[place.developer]:c.developers):c.developers))].sort();
+ const facet=(key:string)=>!cascadingFiltersEnabled()?cards:cards.filter(card=>matches(card,key));
+ const developers=(remote?.facets.developer as string[]|undefined)??[...new Set(facet('developer').flatMap(c=>(cascadingFiltersEnabled()&&(site||location||bedrooms))?(c.places??[]).filter(place=>placeMatches(c,place,'developer')).flatMap(place=>place.developer?[place.developer]:c.developers):c.developers))].sort();
  const bedroomOptions=(remote?.facets.bedrooms as number[]|undefined)??[...new Set(facet('bedrooms').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'bedrooms')).flatMap(place=>place.bedrooms===undefined?c.bedrooms??[]:[place.bedrooms])))].sort((a,b)=>a-b);
  const locationOptions=(remote?.facets.location as string[]|undefined)??[...new Set(facet('location').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'location')).flatMap(place=>place.locations)))].sort();
  const siteOptions=(remote?.facets.site as string[]|undefined)??[...new Set(facet('site').flatMap(c=>(c.places??[]).filter(place=>placeMatches(c,place,'site')).map(place=>place.site)))].sort();

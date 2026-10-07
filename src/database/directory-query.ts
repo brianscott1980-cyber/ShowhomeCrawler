@@ -1,3 +1,4 @@
+import {cascadingFiltersEnabled} from '../web/filter-settings';
 import {interiorCardCounts} from './interior-card-counts';
 import type postgres from 'postgres';
 import {websiteDatabase} from './website';
@@ -10,17 +11,18 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
  const kindParam=param(kind);
  const pointLat=param(point?.latitude??null),pointLon=param(point?.longitude??null);
  const miles=`case when ${pointLat}::float8 is not null and r.latitude is not null and r.longitude is not null then 3958.7613*acos(least(1.0,greatest(-1.0,sin(radians(${pointLat}::float8))*sin(radians(r.latitude))+cos(radians(${pointLat}::float8))*cos(radians(r.latitude))*cos(radians(r.longitude-${pointLon}::float8))))) end`;
- function selection(field:string,key:string,omit:string){const selected=selectedValues(filters[key]??'');return key===omit||!selected.length?'true':`${field} in (select jsonb_array_elements_text(${param(sql.json(selected))}::jsonb))`;}
- function range(field:string,key:string,comparison:string,omit:string){const value=filters[key];return key===omit||omit==='beds'&&/Beds$/.test(key)||omit==='price'&&/Price$/.test(key)||!value||value==='any'?'true':`${field}${comparison}${param(Number(value))}::numeric`;}
+ function selection(field:string,key:string,omit:string){const selected=selectedValues(filters[key]??'');return omit&&!cascadingFiltersEnabled()||key===omit||!selected.length?'true':`${field} in (select jsonb_array_elements_text(${param(sql.json(selected))}::jsonb))`;}
+ function range(field:string,key:string,comparison:string,omit:string){const value=filters[key];return omit&&!cascadingFiltersEnabled()||key===omit||omit==='beds'&&/Beds$/.test(key)||omit==='price'&&/Price$/.test(key)||!value||value==='any'?'true':`${field}${comparison}${param(Number(value))}::numeric`;}
  function rowWhere(omit=''){
+  const applyFilters=!omit||cascadingFiltersEnabled();
   const conditions=[`r.kind=${kindParam}`,`(${pointLat}::float8 is null or (${pointLat}::float8 between -90 and 90 and ${pointLon}::float8 between -180 and 180))`,selection('r.developer','developer',omit),selection('c.name','type',omit),selection('r.site','site',omit),selection('r.region','region',omit)];
   if(kind==='locations'||kind==='buildings')conditions.push('c.is_ready=true');
   if(kind==='interiors')conditions.push("lower(trim(c.name)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map','exterior','floorplan','floor plan')");
-  if(kind==='interiors'&&omit!=='building'&&filters.building)conditions.push(`exists(select 1 from showhome_web.gallery_memberships h join showhome_web.gallery_card_index i on i.uid=h.uid where i.category=c.category and i.eligible and i.builder_name=r.developer and (r.site is null or h.development=r.site) and (r.bedrooms is null or h.bedrooms=r.bedrooms) and ${selection('h.building_name','building',omit)})`);
-  if(omit!=='bedrooms' &&filters.bedrooms)conditions.push(selection('r.bedrooms::text','bedrooms',omit));
-  if(omit!=='location'&&filters.location)conditions.push(`r.areas && array(select jsonb_array_elements_text(${param(sql.json(selectedValues(filters.location)))}::jsonb))`);
+  if(applyFilters&&kind==='interiors'&&omit!=='building'&&filters.building)conditions.push(`exists(select 1 from showhome_web.gallery_memberships h join showhome_web.gallery_card_index i on i.uid=h.uid where i.category=c.category and i.eligible and i.builder_name=r.developer and (r.site is null or h.development=r.site) and (r.bedrooms is null or h.bedrooms=r.bedrooms) and ${selection('h.building_name','building',omit)})`);
+  if(applyFilters&&omit!=='bedrooms' &&filters.bedrooms)conditions.push(selection('r.bedrooms::text','bedrooms',omit));
+  if(applyFilters&&omit!=='location'&&filters.location)conditions.push(`r.areas && array(select jsonb_array_elements_text(${param(sql.json(selectedValues(filters.location)))}::jsonb))`);
   for(const [field,key,op] of [['r.bedrooms','minBeds','>='],['r.bedrooms','maxBeds','<='],['r.price','minPrice','>='],['r.price','maxPrice','<=']] as const)conditions.push(range(field,key,op,omit));
-  if(omit!=='radius'&&filters.radius&&point)conditions.push(`${miles}<=${param(Number(filters.radius))}::float8`);
+  if(applyFilters&&omit!=='radius'&&filters.radius&&point)conditions.push(`${miles}<=${param(Number(filters.radius))}::float8`);
   return conditions.join(' and ');
  }
  const baseWhere=rowWhere(),baseValues=values.slice();
@@ -46,12 +48,12 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
   if(key==='building'){
    values.splice(0,values.length,...baseValues.slice(0,3));
    const conditions=["i.eligible","lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map','exterior','floorplan','floor plan')"];
-   if(filters.developer)conditions.push(selection('i.builder_name','developer','building'));
-   if(filters.type)conditions.push(selection('i.category','type','building'));
-   if(filters.site)conditions.push(selection('h.development','site','building'));
-   if(filters.bedrooms)conditions.push(selection('h.bedrooms::text','bedrooms','building'));
-   if(filters.location)conditions.push(`h.areas && array(select jsonb_array_elements_text(${param(sql.json(selectedValues(filters.location)))}::jsonb))`);
-   const hasFilters=Boolean(filters.developer||filters.type||filters.site||filters.bedrooms||filters.location);
+   if(cascadingFiltersEnabled()&&filters.developer)conditions.push(selection('i.builder_name','developer','building'));
+   if(cascadingFiltersEnabled()&&filters.type)conditions.push(selection('i.category','type','building'));
+   if(cascadingFiltersEnabled()&&filters.site)conditions.push(selection('h.development','site','building'));
+   if(cascadingFiltersEnabled()&&filters.bedrooms)conditions.push(selection('h.bedrooms::text','bedrooms','building'));
+   if(cascadingFiltersEnabled()&&filters.location)conditions.push(`h.areas && array(select jsonb_array_elements_text(${param(sql.json(selectedValues(filters.location)))}::jsonb))`);
+   const hasFilters=cascadingFiltersEnabled()&&Boolean(filters.developer||filters.type||filters.site||filters.bedrooms||filters.location);
    const query=hasFilters
     ?`select ${projection} as options from showhome_web.gallery_memberships h join showhome_web.gallery_card_index i on i.uid=h.uid where ${conditions.join(' and ')}`
     :`select coalesce(jsonb_agg(distinct c.building_name order by c.building_name) filter(where c.building_name is not null),'[]'::jsonb) as options from showhome_web.directory_cards c where c.kind='buildings' and c.is_ready=true`;

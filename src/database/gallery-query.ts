@@ -1,3 +1,4 @@
+import {cascadingFiltersEnabled} from '../web/filter-settings';
 import type postgres from 'postgres';
 import {websiteDatabase} from './website';
 import {selectedValues} from '../web/filter-selection';
@@ -6,7 +7,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const {scope,filters={}}=input,values:unknown[]=[];
  const p=(v:unknown)=>{values.push(v);return '$'+values.length;};
  const favourite=scope.kind==='favourites';
- const isAll=(scope.kind==='interiors'||scope.kind==='spaces')&&(scope.href==='/interiors/all'||scope.href==='/interiors');
+ const isAll=scope.kind==='interiors'&&(scope.href==='/interiors/all'||scope.href==='/interiors');
  const [reference]=favourite||isAll?[{collection_slugs:[],category:null,building_name:null}]:await sql`select * from showhome_web.directory_cards where kind=${scope.kind} and href=${scope.href}`;
  if(!reference)throw new Error('Gallery not found');
  const scopeConditions=favourite?[`i.image_id in(select jsonb_array_elements_text(${p(sql.json(input.favourites??[]))}::jsonb))`]:isAll?['i.eligible']:[`i.builder_slug in(select jsonb_array_elements_text(${p(sql.json(reference.collection_slugs))}::jsonb))`,'i.eligible'];
@@ -23,12 +24,14 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const baseValues=values.slice();
  const selection=(field:string,key:string,omit:string)=>{const selected=selectedValues(filters[key]??'');return omit===key||!selected.length?'true':`${field} in(select jsonb_array_elements_text(${p(sql.json(selected))}::jsonb))`;};
  function homeWhere(omit=''){
+  if(omit&&!cascadingFiltersEnabled())return 'true';
   const conditions=[selection('h.building_name','building',omit),selection("h.bedrooms::text",'bedrooms',omit),selection("h.development",'site',omit),selection("h.development_url",'development',omit)];
   if(omit!=='location'&&filters.location)conditions.push(`h.areas && array(select jsonb_array_elements_text(${p(sql.json(selectedValues(filters.location)))}::jsonb))`);
   for(const [key,field,op] of [['minBeds','bedrooms','>='],['maxBeds','bedrooms','<='],['minPrice','price','>='],['maxPrice','price','<=']] as const)if(key!==omit&&filters[key])conditions.push(`h.${field}${op}${p(Number(filters[key]))}::numeric`);
   return conditions.join(' and ');
  }
  function where(omit=''){
+  if(omit&&!cascadingFiltersEnabled())return 'true';
   const conditions=[selection('s.builder_name','developer',omit),selection('s.category','category',omit),selection('s.room','room',omit)];
   if(omit!=='q'&&filters.q)conditions.push(`position(${p(filters.q.toLowerCase())} in s.search_text)>0`);
   const homes=homeWhere(omit);

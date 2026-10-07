@@ -1,4 +1,5 @@
 'use client';
+import {cascadingFiltersEnabled} from './filter-settings';
 import {useDirectoryQuery,DirectoryQueryStatus} from './use-directory-query';
 import type {DirectoryPageData} from './directory-page-data';
 import {anyBedrooms,bedroomRangeOptions} from './bedroom-range';
@@ -125,10 +126,10 @@ export function SiteDirectory({
  function selectCard(key:string){setFocusSequence(value=>value+1);selectSite(key);}
  function selectSite(key:string){setUrlFilters(previous=>({...previous,selected:key}));setSheetExpanded(true);requestAnimationFrame(()=>{const card=document.getElementById('site-card-'+key),panel=resultsPanel.current;if(card&&panel){const isMobile=typeof window!=='undefined'&&window.innerWidth<=900;if(isMobile){card.scrollIntoView({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',inline:'center',block:'nearest'});}else{const rect=card.getBoundingClientRect(),parent=panel.getBoundingClientRect();panel.scrollTo?.({top:panel.scrollTop+rect.top-parent.top-12,behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}}});}
  useEffect(()=>{if(activeKey&&!mapMatching.some(card=>card.key===activeKey))setUrlFilters(previous=>({...previous,selected:''}));},[mapMatching,activeKey]);
- const facet=(key:keyof SiteFilters)=>filterSites(cards,{...filters,[key]:''},point);
- const bedroomProperties=sitePropertyFacet(cards,filters,point,'bedrooms');
+ const facet=(key:keyof SiteFilters)=>!cascadingFiltersEnabled()?cards:filterSites(cards,{...filters,[key]:''},point);
+ const bedroomProperties=sitePropertyFacet(cards,cascadingFiltersEnabled()?filters:defaults,cascadingFiltersEnabled()?point:null,'bedrooms');
  const bedroomCounts=(remote?.facets.beds as number[]|undefined)??[...new Set(bedroomProperties.map(property=>property.bedrooms).filter((count):count is number=>count!==null&&Number.isInteger(count)&&count>0))].sort((a,b)=>a-b);
- const priceProperties=sitePropertyFacet(cards,filters,point,'price');
+ const priceProperties=sitePropertyFacet(cards,cascadingFiltersEnabled()?filters:defaults,cascadingFiltersEnabled()?point:null,'price');
  const priceRange=priceRangeOptions(remote?((remote.facets.price??[]) as number[]):priceProperties.map(property=>property.price).filter((price):price is number=>price!==null));
  const minimumPrice=filters.minPrice;
  const maximumPrice=filters.maxPrice;

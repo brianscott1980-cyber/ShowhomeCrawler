@@ -1,3 +1,4 @@
+import type postgres from 'postgres';
 import {clearGalleryProjection,insertGalleryProjection,refreshGalleryMemberships} from './gallery-storage';
 import {galleryProjection} from './gallery-projection';
 import {directoryFilterRows} from './filter-rows';
@@ -45,7 +46,7 @@ export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
  await sql`analyze showhome_web.images,showhome_web.galleries,showhome_web.directory_cards,showhome_web.directory_filter_rows`;
  console.log('Website projections published atomically');
 }
-export async function refreshDirectoryReadiness(sql:{unsafe:(query:string,values?:unknown[])=>Promise<unknown>}){
+export async function refreshDirectoryReadiness(sql:postgres.Sql|postgres.TransactionSql){
  const eligible="i.eligible and nullif(trim(i.category),'') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')";
  await sql.unsafe(`update showhome_web.directory_cards c set is_ready=exists(select 1 from showhome_web.gallery_memberships h join showhome_web.gallery_card_index i on i.uid=h.uid where h.builder_slug=c.builder_slug and h.development_url=c.development_url and ${eligible}) where c.kind='locations'`);
  await sql.unsafe(`update showhome_web.directory_cards c set is_ready=exists(select 1 from showhome_web.gallery_card_index i where i.builder_slug=c.builder_slug and i.building_names @> array[lower(c.building_name)] and ${eligible}) where c.kind='buildings'`);

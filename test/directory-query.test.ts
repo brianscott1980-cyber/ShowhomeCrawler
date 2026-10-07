@@ -1,4 +1,4 @@
-import {beforeAll,afterAll,expect,it} from 'vitest';
+import {beforeAll,afterAll,beforeEach,afterEach,vi,expect,it} from 'vitest';
 import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import type postgres from 'postgres';
@@ -6,6 +6,8 @@ import {queryDirectory} from '../src/database/directory-query';
 import {refreshDirectoryReadiness} from '../src/catalogue/publish';
 const db=new PGlite();
 const sql={json:JSON.stringify,unsafe:async(query:string,values:unknown[])=> (await db.query(query,values)).rows} as unknown as postgres.Sql;
+beforeEach(()=>vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','true'));
+afterEach(()=>vi.unstubAllEnvs());
 beforeAll(async()=>{
  await db.exec('create role anon; create role authenticated;');
  for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000300_directory_filter_rows.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql','20261006001200_directory_ready_flag.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
@@ -107,4 +109,12 @@ it('hides empty and uncategorised building types from results and facets',async(
  const result=await queryDirectory({kind:'buildings'},sql);
  expect(result.cards.map(card=>card.key)).toEqual(['house']);
  expect(result.total).toBe(1);expect(result.facets.type).not.toContain('Empty');
+});
+
+it('keeps all filter options available when cascading is disabled while filtering results',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ const result=await queryDirectory({kind:'locations',filters:{developer:'Alpha',minBeds:'5'}},sql);
+ expect(result.cards.map(card=>card.key)).toEqual(['a']);
+ expect(result.facets.developer).toEqual(['Alpha','Beta']);
+ expect(result.facets.beds).toEqual([2,5]);
 });

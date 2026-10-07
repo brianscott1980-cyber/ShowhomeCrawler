@@ -1,4 +1,5 @@
 'use client';
+import {cascadingFiltersEnabled} from './filter-settings';
 import {useDirectoryQuery,DirectoryQueryStatus} from './use-directory-query';
 import type {DirectoryPageData} from './directory-page-data';
 import {CardResults} from './card-results';
@@ -48,7 +49,7 @@ export function DeveloperDirectory({
  const remote=useDirectoryQuery('builders',urlFilters,point,initial);
  const source=remote?.cards??cards;
  const filtered=remote?source:filterBuilders(source,filters,point);
- const regions=(remote?.facets.region as string[]|undefined)??[...new Set(cards.flatMap(card=>matchingBuilderLocations(card,{...filters,region:''},point).map(location=>location.region??'Unknown')))].sort();
+ const regions=(remote?.facets.region as string[]|undefined)??[...new Set(cards.flatMap(card=>(cascadingFiltersEnabled()?matchingBuilderLocations(card,{...filters,region:''},point):card.locations).map(location=>location.region??'Unknown')))].sort();
  const ordered=remote?filtered.map(card=>({...card,nearest:point?card.locations.filter(location=>Number.isFinite(location.latitude)&&Number.isFinite(location.longitude)).map(location=>({...location,miles:distanceMiles(point,{latitude:location.latitude!,longitude:location.longitude!})})).sort((a,b)=>a.miles-b.miles)[0]:undefined})):orderedDevelopers(filtered.map(card=>({...card,totalDevelopments:card.totalDevelopments??card.locations.length,locations:matchingBuilderLocations(card,filters,point)})),sort,point);
  useDirectoryCounts(remote?.counts??{Builders:ordered.length,Developments:new Set(ordered.flatMap(card=>card.locations.map(location=>location.key??`${card.slug}:${location.name}`))).size,'Building types':new Set(ordered.flatMap(card=>card.locations.flatMap(location=>(location.buildingTypes??[]).map(type=>`${card.slug}:${type}`)))).size});
  const imageLayout=`${view}:${ordered.map(c=>c.slug).join(",")}`;

@@ -1,3 +1,4 @@
+import {cascadingFiltersEnabled} from '../web/filter-settings';
 import {cacheWrite} from './cache-write';
 import type postgres from 'postgres';
 import {createHash} from 'node:crypto';
@@ -11,7 +12,7 @@ export async function cachedDirectory(input:DirectoryRequest,sql:postgres.Sql=we
  if(personal)return query(input);
  const filters=Object.fromEntries(allowed.filter(k=>input.filters?.[k]).sort().map(k=>[k,input.filters![k]!]));
  const shared={kind:input.kind,filters,offset:input.offset??0,limit:input.limit??16};
- const key=createHash('sha256').update(JSON.stringify({...shared,visibility:"compact-directory-serving-v7"})).digest('hex');
+ const key=createHash('sha256').update(JSON.stringify({...shared,visibility:"compact-directory-serving-v7",cascading:cascadingFiltersEnabled()})).digest('hex');
  const [row]=await sql`select r.revision,c.payload from showhome_web.publication_revision r left join showhome_web.query_cache c on c.key=${key} and c.revision=r.revision and c.expires_at>now() where r.singleton=true`;
  let data=row?.payload as DirectoryPageData|undefined;
  if(!data){data=await query(shared);await cacheWrite(()=>sql`insert into showhome_web.query_cache(key,revision,expires_at,payload) select ${key},revision,now()+interval '24 hours',${sql.json(data as never)} from showhome_web.publication_revision where singleton=true and revision=${row!.revision} on conflict(key) do update set revision=excluded.revision,expires_at=excluded.expires_at,payload=excluded.payload`);}

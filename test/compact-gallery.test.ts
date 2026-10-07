@@ -20,7 +20,9 @@ it('preserves paginated galleries and legacy imports after normalising serving d
  insert into showhome_web.gallery_memberships values('alpha:a','gallery','alpha','House URL',3,250000,'North','North','house','{North}');
  insert into showhome_web.directory_cards(kind,key,name,href,collection_slugs,category,payload) values('interiors','bedroom','Bedroom','/interiors/bedroom','{alpha}','Bedroom','{}');`);
  const input={scope:{kind:'interiors' as const,href:'/interiors/bedroom'},filters:{developer:'Alpha',building:'house',site:'North',bedrooms:'3'}};
+ await db.exec('create view showhome_web.gallery_card_index as select * from showhome_web.gallery_cards');
  const before=await queryGallery(input,sql);
+ await db.exec('drop view showhome_web.gallery_card_index');
  for(const file of ['20261006000900_compact_gallery_serving.sql','20261006001000_numeric_gallery_links.sql']){
   await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
   const after=await queryGallery(input,sql);

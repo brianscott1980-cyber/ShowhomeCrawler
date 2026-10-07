@@ -1,4 +1,5 @@
 'use client';
+import {cascadingFiltersEnabled} from './filter-settings';
 import {isCategorisedImage,isInteriorCategory} from './image-classification';
 import {sharedImageCards,roomLabel} from './shared-image-cards';
 import {useGalleryQuery} from './use-gallery-query';
@@ -200,10 +201,10 @@ export function Gallery({
   Interiors:new Set(interiorImages.map(image=>image.uid)).size,
  }:{'Unique images':images.length,Developments:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.developmentUrl}`)).size,Properties:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.url}`)).size};
  const displayedCounts=overviewOnly?introduction?.counts??resultCounts:remote?.counts??resultCounts;
- const facet=(key:keyof typeof filters)=>available.filter(image=>matches(image,{...filters,[key]:''}));
+ const facet=(key:keyof typeof filters)=>!cascadingFiltersEnabled()?available:available.filter(image=>matches(image,{...filters,[key]:''}));
  const mainCategories=remote?.facets.category??[...new Set(facet('category').map(i=>i.categorisation?.mainCategory).filter((v):v is string=>Boolean(v)))].sort();
  const subCategories=remote?.facets.room??[...new Set(facet('room').map(i=>i.categorisation?.subCategory).filter((v):v is string=>Boolean(v)))].sort();
- const facetHomes=(key:keyof typeof filters)=>facet(key).flatMap(image=>image.homes.filter(home=>homeMatches(image,home,{...filters,[key]:''})).map(home=>({home,slug:image.slug})));
+ const facetHomes=(key:keyof typeof filters)=>facet(key).flatMap(image=>image.homes.filter(home=>!cascadingFiltersEnabled()||homeMatches(image,home,{...filters,[key]:''})).map(home=>({home,slug:image.slug})));
  const sites=remote?.facets.development??[...new Map(facetHomes('development').map(({home})=>[home.developmentUrl,home.development])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
  const builderOptions=remote?.facets.developer??[...new Set(facet('developer').map(i=>i.developer))].sort();
  const bedroomOptions=remote?.facets.bedrooms??[...new Set(facetHomes('bedrooms').map(({home})=>home.bedrooms).filter((n):n is number=>n!==null))].sort((a,b)=>a-b);
@@ -211,6 +212,7 @@ export function Gallery({
  const siteOptions=remote?.facets.site??[...new Set(facetHomes('site').map(({home})=>home.development))].sort();
 
  const rangeHomes=(range:'bedrooms'|'price')=>{
+  if(!cascadingFiltersEnabled())return available.flatMap(image=>image.homes);
   const remaining={...filters,...(range==='bedrooms'?{minBeds:'',maxBeds:''}:{minPrice:'',maxPrice:''})};
   return available.filter(image=>matches(image,remaining)).flatMap(image=>image.homes.filter(home=>homeMatches(image,home,remaining)));
  };
