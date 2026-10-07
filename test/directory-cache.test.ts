@@ -46,3 +46,17 @@ it('persists unfiltered gallery first pages and invalidates after publication',a
  await db.exec('update showhome_web.publication_revision set revision=revision+1');
  await cachedGallery(request,sql,query);expect(query).toHaveBeenCalledTimes(2);
 });
+it('binds a boolean expiry policy rather than an infinity timestamp parameter',async()=>{
+ const parameters:unknown[][]=[];
+ const guardedSql=Object.assign(async(strings:TemplateStringsArray,...values:unknown[])=>{
+  parameters.push(values);
+  // postgres.js serializes timestamp parameters as JS dates. Infinity must be a SQL literal.
+  expect(values).not.toContain('infinity');
+  return sql(strings,...values);
+ },{json:JSON.stringify}) as unknown as postgres.Sql;
+ const query=async()=>data;
+ await cachedDirectory({kind:'builders',limit:7},guardedSql,query);
+ await cachedDirectory({kind:'builders',filters:{developer:'Alpha'},limit:7},guardedSql,query);
+ expect(parameters.some(values=>values.includes(true))).toBe(true);
+ expect(parameters.some(values=>values.includes(false))).toBe(true);
+});
