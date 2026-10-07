@@ -1,5 +1,6 @@
 'use client';
-import {createContext,useContext,useEffect,useState,type ReactNode} from 'react';
+import {cascadingFiltersEnabled} from './filter-settings';
+import {createContext,useContext,useEffect,useState,useRef,type ReactNode} from 'react';
 import type {SiteCard} from './site-filters';
 import {RollingCount} from './rolling-count';
 type Counts=Record<string,number>;
@@ -18,8 +19,10 @@ export function useDirectoryCounts(counts:Counts,pending=false){
  const context=useContext(Context);
  const update=context?.update;
  const setPending=context?.setPending;
- useEffect(()=>{setPending?.(pending);return()=>setPending?.(false);},[setPending,pending]);
- const signature=JSON.stringify(counts);
+ const frozen=useRef<Counts|null>(null);
+ if(!cascadingFiltersEnabled()&&!frozen.current&&Object.values(counts).some(value=>value>0))frozen.current=counts;
+ useEffect(()=>{setPending?.(cascadingFiltersEnabled()&&pending);return()=>setPending?.(false);},[setPending,pending]);
+ const signature=JSON.stringify(cascadingFiltersEnabled()?counts:frozen.current??counts);
  useEffect(()=>{update?.(JSON.parse(signature));},[update,signature]);
 }
 

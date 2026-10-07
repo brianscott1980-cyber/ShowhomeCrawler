@@ -1,3 +1,4 @@
+import {staticGalleryCounts} from './static-gallery-counts';
 import {cascadingFiltersEnabled} from '../web/filter-settings';
 import type postgres from 'postgres';
 import {websiteDatabase} from './website';
@@ -44,7 +45,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const page=`with ${ctes},ranked as(select s.uid,s.image_uid,s.building_name,row_number() over(order by s.uid)-1 as position from source s where ${matched}),batch as(select r.* from ranked r order by ${selected}r.uid limit ${p(input.limit??16)} offset ${p(input.offset??0)}) select i.payload||jsonb_build_object('uid',r.uid,'imageUid',r.image_uid,'homes',${homesProjection},'position',r.position) as payload from batch r join showhome_web.gallery_cards i on i.uid=r.image_uid order by ${selected}r.uid`;
  const pageValues=values.slice();
  if(input.imageOnly){const cards=await sql.unsafe(page,pageValues as never);return {images:cards.map(c=>c.payload),total:0,nextOffset:0,hasMore:false,counts:{},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}};}
- const summary=`with ${ctes} select count(distinct s.uid)::int as total,count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct h.builder_slug||':'||h.url)::int as properties from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`;
+ const summary=cascadingFiltersEnabled()?`with ${ctes} select count(distinct s.uid)::int as total,count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct h.builder_slug||':'||h.url)::int as properties from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`:`with ${ctes} select count(*)::int as total from source s where ${matched}`;
  const facets=['category','room','developer','bedrooms','location','site','development'].map(key=>{
   values.splice(0,values.length,...baseValues);const homeFacet=['bedrooms','location','site','development'].includes(key),w=where(key),hw=homeFacet?homeWhere(key):'true';
   const imageField=key==='developer'?'s.builder_name':key==='room'?'s.room':'s.category';
@@ -63,7 +64,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
   });
  };
  const pageBranch=branch(page,pageValues);
- const summaryBranch=branch(summary,matchValues);
+ const summaryBranch=branch(summary,cascadingFiltersEnabled()?matchValues:matchedValues);
  const facetBranches=facets.map(f=>({key:f.key,query:branch(f.query,f.values)}));
  const combined=`with source as materialized (${source}),homes as materialized (${homeSource}),
  page_result as (with ${pageBranch}),summary_result as (${summaryBranch})
@@ -74,6 +75,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const cards=(result!.cards as GalleryPageData['images']).map(payload=>({payload}));
  const totals=[result!.totals];
  const options=Object.entries(result!.facets).map(([key,options])=>({key,rows:[{options}]}));
+ const stableCounts=!cascadingFiltersEnabled()?await staticGalleryCounts(sql,{scope,favourites:input.favourites},`with ${ctes} select count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct h.builder_slug||':'||h.url)::int as properties from source s left join homes h on h.uid=s.uid`,baseValues):undefined;
  const total=Number(totals[0]!.total),nextOffset=(input.offset??0)+cards.length;
- return {images:cards.map(c=>c.payload),total,nextOffset,hasMore:nextOffset<total,counts:{'Unique images':Number(totals[0]!.unique_images),Developments:Number(totals[0]!.developments),Properties:Number(totals[0]!.properties)},facets:Object.fromEntries(options.map(o=>[o.key,o.rows[0]!.options])) as GalleryPageData['facets']};
+ return {images:cards.map(c=>c.payload),total,nextOffset,hasMore:nextOffset<total,counts:stableCounts??{'Unique images':Number(totals[0]!.unique_images),Developments:Number(totals[0]!.developments),Properties:Number(totals[0]!.properties)},facets:Object.fromEntries(options.map(o=>[o.key,o.rows[0]!.options])) as GalleryPageData['facets']};
 }

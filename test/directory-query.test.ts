@@ -118,3 +118,14 @@ it('keeps all filter options available when cascading is disabled while filterin
  expect(result.facets.developer).toEqual(['Alpha','Beta']);
  expect(result.facets.beds).toEqual([2,5]);
 });
+
+it('uses published totals and omits filtered rollup work when cascading is disabled',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ await db.exec(`insert into showhome_web.presentations(key,payload) values('counts:locations','{"Developments":2}') on conflict(key) do update set payload=excluded.payload`);
+ const queries:string[]=[];
+ const measured={json:sql.json,unsafe:async(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}} as unknown as postgres.Sql;
+ const result=await queryDirectory({kind:'locations',filters:{developer:'Alpha',minBeds:'5'}},measured);
+ expect(result.total).toBe(1);expect(result.counts).toEqual({Developments:2});
+ expect(queries).toHaveLength(1);expect(queries[0]).not.toContain('unnest(r.image_ids)');
+ expect(queries[0]).not.toContain('count(distinct r.site_id)');
+});

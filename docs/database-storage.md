@@ -47,3 +47,11 @@ Cascading is disabled by default. Set the variable to `true` to restore cascadin
 options. Restart local Next.js after changing it; deployed sites need a rebuild
 because this public variable is included in the browser bundle. Directory and
 gallery cache keys include the mode so cached options cannot leak between modes.
+
+The same switch also controls numeric summaries. When disabled, directory pages
+read published `counts:<kind>` totals instead of aggregating filtered membership
+rows. Filtered interior-card count queries are skipped, so card previews retain
+their published counts. Galleries cache unfiltered scope totals against the
+publication revision and reuse them across filter combinations. Rolodex numbers
+stay fixed and render without animation. Pagination still calculates the filtered
+result total needed to decide whether another batch is available.

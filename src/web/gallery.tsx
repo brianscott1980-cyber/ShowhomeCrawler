@@ -200,7 +200,8 @@ export function Gallery({
   'Room Types':new Set(roomNames.filter(name=>!['Exterior','Other','Uncategorised'].includes(name))).size,
   Interiors:new Set(interiorImages.map(image=>image.uid)).size,
  }:{'Unique images':images.length,Developments:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.developmentUrl}`)).size,Properties:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.url}`)).size};
- const displayedCounts=overviewOnly?introduction?.counts??resultCounts:remote?.counts??resultCounts;
+ const fixedLocalCounts=useRef(resultCounts);
+ const displayedCounts=overviewOnly?introduction?.counts??resultCounts:remote?.counts??(cascadingFiltersEnabled()?resultCounts:fixedLocalCounts.current);
  const facet=(key:keyof typeof filters)=>!cascadingFiltersEnabled()?available:available.filter(image=>matches(image,{...filters,[key]:''}));
  const mainCategories=remote?.facets.category??[...new Set(facet('category').map(i=>i.categorisation?.mainCategory).filter((v):v is string=>Boolean(v)))].sort();
  const subCategories=remote?.facets.room??[...new Set(facet('room').map(i=>i.categorisation?.subCategory).filter((v):v is string=>Boolean(v)))].sort();

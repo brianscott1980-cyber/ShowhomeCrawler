@@ -96,3 +96,16 @@ it('keeps independent gallery options when cascading is disabled',async()=>{
  expect(result.facets.bedrooms).toEqual([2,5]);
  expect(result.facets.site).toEqual(['North','South']);
 });
+
+it('reuses unfiltered gallery totals instead of recalculating them for new filters',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ const queries:string[]=[];
+ const measured=Object.assign((...args:unknown[])=>(sql as any)(...args),{json:sql.json,unsafe:(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}}) as unknown as postgres.Sql;
+ const scope={kind:'buildings' as const,href:'/buildings/alpha/house'};
+ const before=await queryGallery({scope},measured);
+ queries.length=0;
+ const after=await queryGallery({scope,filters:{bedrooms:'5',site:'North'}},measured);
+ expect(after.total).toBe(0);expect(after.counts).toEqual(before.counts);
+ expect(queries).toHaveLength(1);
+ expect(queries[0]).not.toContain('count(distinct h.builder_slug');
+});
