@@ -1,3 +1,5 @@
+import {FurnishingsPage,furnishingsMetadata,furnishingItem} from '../../web/furnishings-page';
+import {searchListing} from '../../web/seo';
 import {resolveDevelopmentPublicRoute} from '../../database/development-public-routes';
 import {seoLanding,seoLandingMetadata,SeoLandingPage} from '../../web/seo-landings';
 import {Profile} from '../../web/profile';
@@ -23,6 +25,7 @@ function directory(value: string) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
  const path = (await params).path ?? [];
  if (!path.length) return Home.metadata;
+ if(path[0]==='furnishings'){if(path.length===1)return furnishingsMetadata;if(path.length===2){const item=await furnishingItem(path[1]!);if(item)return searchListing(item.name,`Explore ${item.name.toLowerCase()} in real showhome interiors.`, `/furnishings/${item.slug}`);}return {};}
  if (path.length === 1) {
   if (path[0] === 'profile') return {title:'Your profile | Showhome Explorer',robots:{index:false,follow:false}};
   if (path[0] === 'builders') return Builders.metadata;
@@ -43,6 +46,7 @@ export default async function Page({ params, searchParams }: Props) {
  const legacy=path[0]==='homebuilders'||path[0]==='developers'?'builders':path[0]==='locations'?'developments':null;
  if(legacy)permanentRedirect(withFilters(`/${[legacy,...path.slice(1)].join('/')}`,await searchParams));
  if (!path.length) return <Home.default/>;
+ if(path[0]==='furnishings'&&path.length<=2)return <FurnishingsPage slug={path[1]}/>;
  if (path.length === 1) {
   if (path[0] === 'profile') return <Profile/>;
   if (path[0] === 'builders') return <Builders.default/>;

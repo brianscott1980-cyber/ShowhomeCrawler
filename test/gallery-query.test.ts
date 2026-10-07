@@ -3,6 +3,7 @@ import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import type postgres from 'postgres';
 import {interiorCardCounts} from '../src/database/interior-card-counts';
+import {queryFurnishings} from '../src/database/furnishings';
 import {queryGallery} from '../src/database/gallery-query';
 const db=new PGlite();
 const sql=Object.assign(async(strings:TemplateStringsArray,...values:unknown[])=>{const query=strings.reduce((q,s,i)=>q+s+(i<values.length?'$'+(i+1):''),'');return (await db.query(query,values)).rows;},{json:JSON.stringify,unsafe:async(query:string,values:unknown[])=>(await db.query(query,values)).rows}) as unknown as postgres.Sql;
@@ -146,5 +147,20 @@ it('keeps a landing colour in the source scope, including counts and later batch
   const next=await queryGallery({scope,offset:1},sql);
   expect(next.images.map(image=>image.id)).toEqual(['a']);expect(next.counts).toEqual(first.counts);
   expect((await queryGallery({scope,offset:2},sql)).images).toEqual([]);
+ }finally{await db.exec(`update showhome_web.images set metadata='{}' where catalogue_id='a'`);}
+});
+
+it('keeps furnishing galleries scoped while applying other filters',async()=>{
+ await db.exec(`update showhome_web.images set metadata='{"categorisation":{"furnishingTags":["Gold Lamp"]}}' where catalogue_id='a'`);
+ try{
+  const items=await queryFurnishings(sql);
+  expect(items.some(item=>item.name==='Gold Lamp')).toBe(true);
+  expect(items.some(item=>item.name==='Blue')).toBe(false);
+  const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:'gold lamp'};
+  const page=await queryGallery({scope},sql);
+  expect(page.images.length).toBeGreaterThan(0);
+  expect(page.images.every(image=>image.id==='a')).toBe(true);
+  const empty=await queryGallery({scope,filters:{developer:'Missing'}},sql);
+  expect(empty.total).toBe(0);
  }finally{await db.exec(`update showhome_web.images set metadata='{}' where catalogue_id='a'`);}
 });

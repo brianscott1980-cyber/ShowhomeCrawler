@@ -20,6 +20,10 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const baseBuildingParam=scope.kind==='buildings'?p(reference.building_name):'';
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);
  if(scope.kind==='buildings')scopeConditions.push(`t.building_name=lower(${baseBuildingParam}::text)`);
+ if(scope.furnishing){
+  const itemCat="fm.metadata->'categorisation'";
+  scopeConditions.push(`exists(select 1 from showhome_web.images fm cross join lateral jsonb_array_elements_text(coalesce(${itemCat}->'objects','[]'::jsonb)||coalesce(${itemCat}->'chairs','[]'::jsonb)||coalesce(${itemCat}->'furnishingTags','[]'::jsonb)||jsonb_build_array(case when ${itemCat}->>'hasTelevision'='true' then 'Television' end,case when ${itemCat}->>'hasComputer'='true' then 'Computer' end)) item where fm.builder_slug=i.builder_slug and fm.catalogue_id=i.image_id and lower(trim(item))=${p(scope.furnishing.toLowerCase())})`);
+ }
  const facetCache=!input.imageOnly&&!cascadingFiltersEnabled()?await staticGalleryFacets(sql,{scope,favourites:input.favourites}):undefined;
  const fixed=scope.fixedFilters??{};
  const tagScope=scope.kind==='interiors';

@@ -1,3 +1,4 @@
+import {readFurnishings} from '../database/furnishings';
 import {websiteDatabase} from '../database/website';
 import {cachedDirectory} from '../database/directory-cache';
 import {cachedGallery} from '../database/gallery-cache';
@@ -17,6 +18,7 @@ if(deployOnly&&process.env.VERCEL!=='1'&&process.env.WARM_WEBSITE_CACHES!=='true
   await warm('Homepage',()=>homepageData());
   // Sequential queries avoid competing with each other on the small database pool.
   for(const kind of ['builders','locations','buildings','interiors'] as const)await warm(`${kind} directory and counts`,()=>cachedDirectory({kind,offset:0,limit:16},sql));
+  await warm('Furnishings directory',()=>readFurnishings());
   const rooms=await sql`select distinct href from showhome_web.directory_cards where kind='interiors' and lower(trim(coalesce(category,''))) not in ('exterior','floorplan','floor plan','other','uncategorised','uncategorized','unknown','infographic','illustration','promotional graphic','marketing image','document','logo','map') order by href`;
   const hrefs=new Set(['/interiors/all',...rooms.map(room=>String(room.href))]);
   for(const href of hrefs)await warm(`${href} gallery and counts`,()=>cachedGallery({scope:{kind:'interiors',href},offset:0,limit:16},sql));
