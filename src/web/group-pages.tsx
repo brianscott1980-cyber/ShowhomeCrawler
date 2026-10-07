@@ -1,9 +1,10 @@
+import {optimizedImageSource} from './optimized-image-source';
 import {publicDevelopmentCards} from '../database/development-public-routes';
 import {DevelopmentDirectoryBuilderLogo} from './development-directory-builder-logo';
 import {searchListing} from './seo';
 import {homeTypeName} from '../reports/home-display';
 import {roomLabel} from './shared-image-cards';
-import {CardImage} from './card-image';
+import {CardImage,NextCardImage} from './card-image';
 import {cachedGallery as queryGallery} from '../database/gallery-cache';
 import {cachedDirectory as queryDirectory} from '../database/directory-cache';
 import {readBuilderLogos,readDirectoryCards,readPresentation,findDirectoryReference,readWebsiteCollection,readWebsiteBuilder} from '../database/website';
@@ -93,13 +94,16 @@ export async function GroupDetail({kind,id,searchParams={},canonicalPath}:{kind:
  }
  const {group,path}=await findGroup(kind,id);
  if(!canonicalPath&&path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));
- const places=Object.fromEntries(await buildingLocationIndex([group]));
  const isDevelopment=kind==='sites'||kind==='locations';
- const detailCard=isDevelopment?(await siteCards([group]))[0]:undefined;
- const contact=isDevelopment&&group.developmentUrl?await readDevelopmentContact(group.developmentUrl):undefined;
- const developmentCounts=isDevelopment?{'Building Types':groupCollections(group.collections,'buildings').filter(group=>group.name!=='Development gallery').length,'Room Types':groupCollections(group.collections,'interiors').filter(group=>!['Exterior','Uncategorised'].includes(group.name)).length,Interiors:new Set(group.collections.flatMap(collection=>collection.report.images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,collection.report.question)!=='Exterior').map(image=>`${collection.slug}:${image.id}`))).size}:undefined;
  const builder=group.collections[0]!;
- const brand=isDevelopment?await readWebsiteBuilder(builder.slug):undefined;
+ const [placeEntries,detailCards,contact,brand]=await Promise.all([
+  buildingLocationIndex([group]),
+  isDevelopment?siteCards([group]):Promise.resolve([]),
+  isDevelopment&&group.developmentUrl?readDevelopmentContact(group.developmentUrl):Promise.resolve(undefined),
+  isDevelopment?readWebsiteBuilder(builder.slug):Promise.resolve(undefined)
+ ]);
+ const places=Object.fromEntries(placeEntries),detailCard=detailCards[0];
+ const developmentCounts=isDevelopment?{'Building Types':groupCollections(group.collections,'buildings').filter(group=>group.name!=='Development gallery').length,'Room Types':groupCollections(group.collections,'interiors').filter(group=>!['Exterior','Uncategorised'].includes(group.name)).length,Interiors:new Set(group.collections.flatMap(collection=>collection.report.images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,collection.report.question)!=='Exterior').map(image=>`${collection.slug}:${image.id}`))).size}:undefined;
  const logo=brand?.logo_url;
  const {exterior,interior}=developmentNavigationImages(group.collections,builder.slug,group.developmentUrl);
  const navigation=isDevelopment?<>
@@ -110,7 +114,7 @@ export async function GroupDetail({kind,id,searchParams={},canonicalPath}:{kind:
     <div className="builder-navigation-content"><h2>View Builder<span aria-hidden="true">→</span></h2><p>{builder.name}</p></div>
    </Link>
    {[{path:'buildings',label:'View Building Types',count:developmentCounts?.['Building Types']??0,unit:'building types',preview:exterior},{path:'interiors',label:'View Interiors',count:developmentCounts?.Interiors??0,unit:'interiors',preview:interior}].map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}`} data-filters={JSON.stringify({developer:builder.name,site:group.name})}>
-    {destination.preview?<CardImage src={`/api/assets/${destination.preview.slug}/${destination.preview.image.path.split('/').map(encodeURIComponent).join('/')}`} alt="" loading="lazy"/>:<div className="builder-navigation-placeholder">{group.name}</div>}
+    {destination.preview?<NextCardImage src={optimizedImageSource(`/api/assets/${destination.preview.slug}/${destination.preview.image.path.split('/').map(encodeURIComponent).join('/')}`)} alt="" width={640} height={480} sizes="(max-width: 700px) 100vw, 33vw" loading="lazy"/>:<div className="builder-navigation-placeholder">{group.name}</div>}
     <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
    </Link>)}
   </nav>

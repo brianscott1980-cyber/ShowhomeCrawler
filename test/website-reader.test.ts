@@ -5,7 +5,7 @@ vi.mock('../src/database/postgres',()=>({createDatabase:()=>async(parts:Template
  const query=parts.reduce((text,part,index)=>text+(index?`$${index}`:'')+part,'');
  return (await (await database).query(query,values)).rows;
 }}));
-import {readWebsiteCollection} from '../src/database/website';
+import {readWebsiteOffers,readWebsiteCollection} from '../src/database/website';
 beforeAll(async()=>{
  const db=await database;
  await db.exec('create role anon; create role authenticated;');
@@ -15,8 +15,9 @@ beforeAll(async()=>{
  insert into showhome_web.buildings(key,builder_slug,name) values('building','test','the example');
  insert into showhome_web.galleries(key,builder_slug,development_key,building_key,name,source_url,bedrooms,price) values('gallery','test','development','building','The Example','https://example.com/gallery',3,250000);
  insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,main_category,is_room,eligible,metadata) values
- ('linked','test','linked','images/linked.jpg','https://example.com/linked.jpg','Bedroom',true,true,'{"id":"linked","path":"images/linked.jpg"}'),
- ('orphan','test','orphan','images/orphan.jpg','https://example.com/orphan.jpg','Bedroom',true,true,'{"id":"orphan","path":"images/orphan.jpg"}');
+ ('linked','test','linked','images/linked.jpg','https://example.com/linked.jpg','Bedroom',true,true,'{"id":"linked","path":"images/linked.jpg","categorisation":{"mainCategory":"Bedroom","isRoom":true}}'),
+ ('orphan','test','orphan','images/orphan.jpg','https://example.com/orphan.jpg','Bedroom',true,true,'{"id":"orphan","path":"images/orphan.jpg","categorisation":{"mainCategory":"Bedroom","isRoom":true}}');
+ insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,main_category,is_room,eligible,metadata) values('excluded','test','excluded','images/excluded.jpg','https://example.com/excluded.jpg','Bedroom',true,false,'{"id":"excluded","path":"images/excluded.jpg","categorisation":{"mainCategory":"Bedroom","isRoom":true}}');
  insert into showhome_web.gallery_images values('gallery','linked',0);`);
 });
 afterAll(async()=>{await (await database).close();});
@@ -30,3 +31,11 @@ it('restricts development galleries to their linked images',async()=>{
  expect(report?.images.map(i=>i.id)).toEqual(['linked']);
 });
 it('returns null for unknown builders',async()=>{expect(await readWebsiteCollection('missing')).toBeNull();});
+
+it('loads offers only for the requested development',async()=>{
+ const db=await database;
+ await db.exec(`insert into showhome_web.developments(key,builder_slug,source_url,name,display_name) values('unrelated','test','https://example.com/unrelated','Unrelated','Unrelated')`);
+ expect((await readWebsiteOffers('test')).map(row=>row.url).sort()).toEqual(['https://example.com/development','https://example.com/unrelated']);
+ expect((await readWebsiteOffers('test',['https://example.com/development'])).map(row=>row.url)).toEqual(['https://example.com/development']);
+ expect(await readWebsiteOffers('test',[])).toEqual([]);
+});

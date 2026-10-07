@@ -18,7 +18,7 @@ export const readWebsiteCollection=cache(async(slug:string,scope?:CollectionScop
  const galleries=await sql`select g.*,d.source_url as development_url,d.name as development_name from showhome_web.galleries g join showhome_web.developments d on d.key=g.development_key join showhome_web.buildings b on b.key=g.building_key where g.builder_slug=${slug} and (${scope?.developmentUrl??null}::text is null or d.source_url=${scope?.developmentUrl??null}) and (${scope?.buildingName??null}::text is null or b.name=${scope?.buildingName??null})`;
  const keys=galleries.map(g=>String(g.key));
  const [images,links,developments]=await Promise.all([
-  sql`select i.metadata from showhome_web.images i where i.builder_slug=${slug} and (${scope?.category??null}::text is null or i.main_category=${scope?.category??null}) and (${Boolean(scope?.developmentUrl||scope?.buildingName)}=false or exists(select 1 from showhome_web.gallery_images gi where gi.image_key=i.key and gi.gallery_key=any(${keys}::text[]))) order by i.catalogue_id`,
+  sql`select i.metadata from showhome_web.images i where i.builder_slug=${slug} and i.eligible=true and (${scope?.category??null}::text is null or i.main_category=${scope?.category??null}) and (${Boolean(scope?.developmentUrl||scope?.buildingName)}=false or exists(select 1 from showhome_web.gallery_images gi where gi.image_key=i.key and gi.gallery_key=any(${keys}::text[]))) order by i.catalogue_id`,
   sql`select gi.gallery_key,i.catalogue_id from showhome_web.gallery_images gi join showhome_web.images i on i.key=gi.image_key where gi.gallery_key=any(${keys}::text[]) order by gi.gallery_key,gi.position`,
   sql`select source_url,name,town,country,crawl_metadata from showhome_web.developments where builder_slug=${slug} and (${scope?.developmentUrl??null}::text is null or source_url=${scope?.developmentUrl??null})`
  ]);
@@ -30,20 +30,20 @@ export const readWebsiteLocations=cache(async(slug:string):Promise<LocationRow[]
  const rows=await websiteDatabase()`select name,source_url as url,town,country,postcode,latitude,longitude,geography from showhome_web.developments where builder_slug=${slug}`;
  return rows as unknown as LocationRow[];
 });
-export async function readWebsiteOffers(slug:string){
- const rows=await websiteDatabase()`select d.source_url as url,d.property_scope as scope,jsonb_agg(jsonb_build_object('price',o.price,'bedrooms',o.bedrooms,'style',o.style)) filter(where o.id is not null) as properties from showhome_web.developments d left join showhome_web.offers o on o.development_key=d.key where d.builder_slug=${slug} group by d.key`;
+export async function readWebsiteOffers(slug:string,developmentUrls?:string[]){
+ const rows=await websiteDatabase()`select d.source_url as url,d.property_scope as scope,jsonb_agg(jsonb_build_object('price',o.price,'bedrooms',o.bedrooms,'style',o.style)) filter(where o.id is not null) as properties from showhome_web.developments d left join showhome_web.offers o on o.development_key=d.key where d.builder_slug=${slug} and (${developmentUrls??null}::text[] is null or d.source_url=any(${developmentUrls??null}::text[])) group by d.key`;
  return rows.map(r=>({...r,properties:r.properties??[]}));
 }
 export async function readDirectoryCards<T>(kind:string):Promise<T[]>{
  const rows=await websiteDatabase()`select payload from showhome_web.directory_cards where kind=${kind} order by name,key`;
  return rows.map(r=>r.payload as T);
 }
-export async function readPresentation<T>(key:string):Promise<T>{
+export const readPresentation=cache(async function<T>(key:string):Promise<T>{
  const [row]=await websiteDatabase()`select payload from showhome_web.presentations where key=${key}`;
  if(!row)throw new Error('Website catalogue has not been published: '+key);
  if(key.startsWith('builder:')&&row.payload.report)row.payload.report.images=row.payload.report.images.filter(isCategorisedImage);
  return row.payload as T;
-}
+});
 export const readBuilderLogos=cache(async()=>{
  const rows=await websiteDatabase()`select name,logo_url,logo_background from showhome_web.builders where logo_url is not null`;
  return rows.map(row=>({name:String(row.name),logo:String(row.logo_url),background:row.logo_background as string|null}));

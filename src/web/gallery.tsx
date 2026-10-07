@@ -1,4 +1,5 @@
 'use client';
+import {optimizedImageSource} from './optimized-image-source';
 import {ColourSwatch} from './colour-swatch';
 import {colourPattern,interiorTags} from './interior-tags';
 import {cascadingFiltersEnabled} from './filter-settings';
@@ -13,7 +14,7 @@ import {MoneyInput} from './money-input';
 import {priceRangeOptions} from './price-range';
 import {bedroomRangeOptions} from './bedroom-range';
 import {developmentName} from './development-name';
-import {CardImage} from './card-image';
+import {NextCardImage,CardImage} from './card-image';
 import {GalleryCardResults} from './inspiration-row';
 import {BreadcrumbBack} from './breadcrumb-back';
 import {MultiSelectFilter} from './multi-select-filter';
@@ -34,10 +35,11 @@ const key = 'showhome-favourites-v1';
 const imageUrl = (slug: string, path: string) => `/api/assets/${slug}/${path.split('/').map(encodeURIComponent).join('/')}`;
 
 const galleryMotions = ['results-ken-burns', 'results-zoom-out', 'results-pan-ne', 'results-pan-sw', 'results-pan-nw', 'results-pan-se'];
-function AnimatedGalleryImage({ style, ...props }: ComponentProps<'img'>) {
+function AnimatedGalleryImage({ style, optimized=false, ...props }: ComponentProps<'img'>&{optimized?:boolean}) {
  const [motion, setMotion] = useState(galleryMotions[0]);
  useEffect(() => { setMotion(galleryMotions[Math.floor(Math.random() * galleryMotions.length)]); }, []);
- return <img {...props} style={{ ...style, '--gallery-motion': motion } as CSSProperties}/>;
+ const imageStyle={...style,'--gallery-motion':motion} as CSSProperties;
+ return optimized?<NextCardImage src={optimizedImageSource(String(props.src))} alt={props.alt??''} width={1200} height={900} sizes="(max-width: 1000px) 100vw, 45vw" loading="eager" fetchPriority="high" className={props.className} style={imageStyle}/>:<img {...props} style={imageStyle}/>;
 }
 
 export function Gallery({
@@ -300,7 +302,7 @@ export function Gallery({
      }} role="region" aria-label="Builder developments and image carousel" onKeyDown={e => {
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); heroStep(e.key === 'ArrowLeft' ? -1 : 1); }
      }}>
-      {heroId==='builder-map'&&introduction.map?<div className="builder-hero-map">{introduction.map}</div>:heroImage?<><button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
+      {heroId==='builder-map'&&introduction.map?<div className="builder-hero-map">{introduction.map}</div>:heroImage?<><button className="results-hero-image" onClick={() => open(heroImage.uid)} aria-label="Open current image fullscreen"><AnimatedGalleryImage optimized key={heroImage.uid} src={imageUrl(heroImage.slug, heroImage.path)} alt={heroImage.verdict?.description ?? 'Showhome interior'}/></button>
       </>:null}
       {introduction.developmentDetails&&introduction.titleAccessory&&<div className="development-carousel-logo">{introduction.titleAccessory}</div>}
       <div key={`${heroId==='builder-map'?'builder-map':heroImage?.uid}:${heroTimerVersion}`} className="results-hero-room-type">
