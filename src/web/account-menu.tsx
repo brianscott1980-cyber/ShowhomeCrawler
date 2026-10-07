@@ -8,6 +8,7 @@ export function AccountMenu(){
  const [count,setCount]=useState(0);useEffect(()=>{const read=()=>{try{const value=JSON.parse(localStorage.getItem('showhome-favourites-v1')??'[]');setCount(Array.isArray(value)?new Set(value.filter(v=>typeof v==='string')).size:0);}catch{setCount(0);}};read();window.addEventListener('storage',read);window.addEventListener('showhome-favourites-changed',read);window.addEventListener('pageshow',read);return()=>{window.removeEventListener('storage',read);window.removeEventListener('showhome-favourites-changed',read);window.removeEventListener('pageshow',read);};},[]);
 
  const [user,setUser]=useState<User|null>(null),[busy,setBusy]=useState<string|null>(null),[error,setError]=useState('');
+ const [failedAvatar,setFailedAvatar]=useState<string|null>(null);
  const menu=useRef<HTMLDetailsElement>(null);
  useEffect(()=>{
   let alive=true;let unsubscribe:(()=>void)|undefined;
@@ -37,8 +38,9 @@ export function AccountMenu(){
   catch{setError('Unable to sign out. Please try again.');}finally{setBusy(null);}
  }
  const name=String(user?.user_metadata?.full_name||user?.user_metadata?.name||user?.email?.split('@')[0]||'Account');
+ const avatar=typeof user?.user_metadata?.avatar_url==='string'?user.user_metadata.avatar_url:typeof user?.user_metadata?.picture==='string'?user.user_metadata.picture:null;
  return <details ref={menu} className="account-menu" onKeyDown={event=>{if(event.key==='Escape'&&menu.current){menu.current.open=false;menu.current.querySelector('summary')?.focus();}}}>
-  <summary aria-label={user?`Account: ${name}`:'Sign in to your account'}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg><span>{user?name:'Sign in'}</span><span aria-hidden="true">⌄</span></summary>
+  <summary aria-label={user?`Account: ${name}`:'Sign in to your account'}>{avatar&&failedAvatar!==avatar?<img className="account-avatar" src={avatar} alt="" width={36} height={36} referrerPolicy="no-referrer" onError={()=>setFailedAvatar(avatar)}/>:<svg className="account-avatar-fallback" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2Z"/></svg>}</summary>
   <div className="account-panel">
    {user?<><strong>{name}</strong>{user.email&&<p>{user.email}</p>}</>:<><strong>Your account</strong><p>Save your favourites and manage your location preferences.</p></>}
    <Link className="account-action" href="/favourites" onClick={()=>{if(menu.current)menu.current.open=false;}}>Favourites <span className="favourites-count" aria-label={`${count} favourites`}>{count}</span></Link>
