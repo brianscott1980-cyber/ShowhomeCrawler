@@ -121,7 +121,7 @@ export function SiteMap({cards,clusterColor='#193963',simpleAttribution=false,au
   const paintCluster=(id:number|null)=>{
    if(map.current!==instance||paintedCluster===id)return;
    paintedCluster=id;
-   instance.setPaintProperty('site-clusters','circle-color',id===null?clusterColor:['case',['==',['get','cluster_id'],id],'#b89256',clusterColor]);
+   instance.setPaintProperty('site-clusters','circle-color',id===null?clusterColor:['case',['==',['get','cluster_id'],id],builderMapBrand(cards.find(card=>card.key===(hoverKey||activeKey))?.developer??'').primary,clusterColor]);
    instance.setPaintProperty('site-clusters','circle-stroke-width',id===null?2:['case',['==',['get','cluster_id'],id],4,2]);
   };
   const update=async()=>{
@@ -154,7 +154,7 @@ export function SiteMap({cards,clusterColor='#193963',simpleAttribution=false,au
   instance.on('idle',update);
   void update();
   return()=>{disposed=true;request++;instance.off('idle',update);paintCluster(null);marker.remove();};
- },[activeKey,hoverKey,cards,ready]);
+ },[activeKey,hoverKey,cards,ready,clusterColor]);
  useEffect(()=>{const instance=map.current;if(ready&&instance)instance.setPadding(focusPadding(focusArea,instance.getCanvas()));},[ready,focusArea]);
  useEffect(()=>{
   const instance=map.current,card=cards.find(c=>c.key===activeKey);
