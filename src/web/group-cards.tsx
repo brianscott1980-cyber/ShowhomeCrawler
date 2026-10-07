@@ -139,7 +139,7 @@ export function GroupCards({
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore}>
     {displayCards.map(card => (
-     <Link prefetch={false} className="collection-card" href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
+     <Link prefetch={false} className={`collection-card${isBuildings?' building-card':''}`} href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
       <div className="site-preview-photo group-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>{isBuildings&&card.logo&&<img className="development-builder-logo" src={card.logo} alt={`${card.developers[0]??'Builder'} logo`} style={{background:card.logoBackground??'#fff'}} loading="lazy"/>}</div>
       <div className="card-body">
        <h2>{card.key==='all'?'All Room Types':(isBuildings?homeTypeName(card.name):roomLabel(card.name))}</h2>
