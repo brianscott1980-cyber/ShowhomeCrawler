@@ -392,3 +392,10 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 .collection-card img.development-builder-logo,
 .collection-card .building-development-card-logo>img,
 .collection-card .building-development-logo-fallback img{object-fit:contain;object-position:50% 50%}
+
+@media(max-width:700px){
+ .building-card .group-preview-photo{padding-bottom:42px;box-sizing:border-box}
+ .building-card .group-preview-photo>.collection-image{height:calc(100% - 42px);min-height:0}
+ .directory-list .building-card .group-preview-photo>.collection-image{position:absolute;top:0;left:0;width:100%;height:calc(100% - 42px);min-height:0}
+ .building-card .group-preview-photo>.development-builder-logo{bottom:0;height:42px}
+}
