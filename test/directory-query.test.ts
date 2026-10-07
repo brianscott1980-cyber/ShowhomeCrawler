@@ -126,6 +126,31 @@ it('uses published totals and omits filtered rollup work when cascading is disab
  const measured={json:sql.json,unsafe:async(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}} as unknown as postgres.Sql;
  const result=await queryDirectory({kind:'locations',filters:{developer:'Alpha',minBeds:'5'}},measured);
  expect(result.total).toBe(1);expect(result.counts).toEqual({Developments:2});
- expect(queries).toHaveLength(1);expect(queries[0]).not.toContain('unnest(r.image_ids)');
- expect(queries[0]).not.toContain('count(distinct r.site_id)');
+ const pages=queries.filter(query=>query.startsWith('with page_result'));
+ expect(pages).toHaveLength(1);expect(pages[0]).not.toContain('unnest(r.image_ids)');
+ expect(pages[0]).not.toContain('count(distinct r.site_id)');
+});
+
+it('reuses totals across batches and filter options across criteria until publication changes',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ const queries:string[]=[];
+ const measured={json:sql.json,unsafe:async(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}} as unknown as postgres.Sql;
+ const filters={developer:'Alpha',minBeds:'5'};
+ const first=await queryDirectory({kind:'locations',filters,limit:1},measured);
+ queries.length=0;
+ const next=await queryDirectory({kind:'locations',filters:{...filters,order:'name-desc'},limit:2,offset:1},measured);
+ const page=queries.find(query=>query.startsWith('with page_result'))!;
+ expect(next.total).toBe(first.total);expect(next.facets).toEqual(first.facets);
+ expect(page).not.toContain('count(*)::int as total');
+ expect(page).not.toContain('jsonb_agg(distinct r.developer');
+ queries.length=0;
+ const changed=await queryDirectory({kind:'locations',filters:{developer:'Beta'}},measured);
+ expect(changed.facets).toEqual(first.facets);
+ expect(queries.find(query=>query.startsWith('with page_result'))).not.toContain('jsonb_agg(distinct r.developer');
+ await db.exec('update showhome_web.publication_revision set revision=revision+1');
+ queries.length=0;
+ await queryDirectory({kind:'locations',filters},measured);
+ const refreshed=queries.find(query=>query.startsWith('with page_result'))!;
+ expect(refreshed).toContain('count(*)::int as total');
+ expect(refreshed).toContain('jsonb_agg(distinct r.developer');
 });

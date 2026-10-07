@@ -1,3 +1,4 @@
+import {directoryTotalCache} from './directory-total-cache';
 import {cascadingFiltersEnabled} from '../web/filter-settings';
 import {interiorCardCounts} from './interior-card-counts';
 import type postgres from 'postgres';
@@ -6,6 +7,7 @@ import {selectedValues} from '../web/filter-selection';
 import type {DirectoryPageData,DirectoryRequest} from '../web/directory-page-data';
 export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=websiteDatabase()):Promise<DirectoryPageData>{
  const {kind,filters={},point}=input,limit=input.limit??16,offset=input.offset??0;
+ const totalCache=!cascadingFiltersEnabled()?await directoryTotalCache(sql,input):undefined;
  const values:unknown[]=[];
  const param=(value:unknown)=>{values.push(value);return '$'+values.length;};
  const kindParam=param(kind);
@@ -36,10 +38,10 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
  const limitParam=param(limit),offsetParam=param(offset),pageValues=values.slice();
  const builderPayload=`jsonb_build_object('totalDevelopments',jsonb_array_length(c.payload->'locations'),'locations',coalesce((select jsonb_agg(jsonb_build_object('name',r.site,'key',r.site_id,'region',r.region,'latitude',r.latitude,'longitude',r.longitude,'buildingTypes',r.building_types)) from showhome_web.directory_filter_rows r where r.kind=c.kind and r.card_key=c.key and ${baseWhere}),'[]'::jsonb))`;
  const pageQuery=`with matched as (${matched}) select (c.payload-'places'-'interiorIds')||${kind==='builders'?builderPayload:kind==='buildings'?`jsonb_build_object('logo',(select b.logo_url from showhome_web.builders b where b.slug=c.builder_slug),'logoBackground',(select b.logo_background from showhome_web.builders b where b.slug=c.builder_slug))`:`'{}'::jsonb`}||jsonb_build_object('miles',m.miles) as payload from matched m join showhome_web.directory_cards c on c.kind=${kindParam} and c.key=m.key order by ${preferred}${sort} limit ${limitParam} offset ${offsetParam}`;
- const summaryQuery=`with matched as (${matched}) select count(*)::int as total,${cascadingFiltersEnabled()?'array_agg(key)':'null::text[]'} as keys from matched`;
+ const summaryQuery=totalCache?.total!==undefined?`select ${totalCache.total}::int as total,null::text[] as keys`:`with matched as (${matched}) select count(*)::int as total,${cascadingFiltersEnabled()?'array_agg(key)':'null::text[]'} as keys from matched`;
  const aggregateQuery=`select count(distinct c.key)::int as cards,count(distinct r.site_id)::int as developments,count(distinct (r.developer||':'||b.type))::int as buildings,count(distinct i.image)::int as interiors,count(distinct c.key) filter(where c.name not in('Exterior','Uncategorised'))::int as rooms from showhome_web.directory_cards c join showhome_web.directory_filter_rows r on r.kind=c.kind and r.card_key=c.key left join lateral unnest(r.building_types) b(type) on true left join lateral unnest(case when c.name not in('Exterior','Uncategorised') then r.image_ids else '{}'::text[] end) i(image) on true where ${baseWhere} ${keys}`;
  // Facets ignore their own selection but retain every other correlated criterion.
- const facetNames=kind==='locations'?['developer','beds','price']:kind==='builders'?['region']:['developer','bedrooms','location','site','type',...(kind==='interiors'?['building']:[])];
+ const facetNames=totalCache?.facets?[]:kind==='locations'?['developer','beds','price']:kind==='builders'?['region']:['developer','bedrooms','location','site','type',...(kind==='interiors'?['building']:[])];
  const facetQueries=facetNames.map(key=>{
   values.splice(0,values.length,...baseValues.slice(0,3));
   const where=rowWhere(key);
@@ -67,12 +69,14 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
   const offset=combinedValues.length-3;combinedValues.push(...parameters.slice(3));
   return query.replace(/\$(\d+)/g,(_,number:string)=>'$'+(Number(number)>3?Number(number)+offset:Number(number)));
  };
- const pageBranch=branch(pageQuery,pageValues),summaryBranch=branch(summaryQuery,matchedValues),countBranch=cascadingFiltersEnabled()?branch(aggregateQuery,matchedValues):'';
+ const pageBranch=branch(pageQuery,pageValues),summaryBranch=branch(summaryQuery,totalCache?.total!==undefined?baseValues.slice(0,3):matchedValues),countBranch=cascadingFiltersEnabled()?branch(aggregateQuery,matchedValues):'';
  const options=facetQueries.map(f=>({key:f.key,query:branch(f.query,f.values)}));
  const mapBranch=kind==='locations'?branch(mapQuery,baseValues):'';
  const combined=`with page_result as (${pageBranch}),total_result as (${summaryBranch}),count_result as (${countBranch||`select coalesce((select payload from showhome_web.presentations where key='counts:${kind}'),'{}'::jsonb) as published_counts`})
  select coalesce((select jsonb_agg(payload) from page_result),'[]'::jsonb) as cards,(select row_to_json(total_result) from total_result) as totals,${cascadingFiltersEnabled()?'(select row_to_json(count_result) from count_result)':'(select published_counts from count_result)'} as counts,jsonb_build_object(${options.map(f=>`'${f.key}',(${f.query})`).join(',')}) as facets,${mapBranch?`coalesce((select jsonb_agg(payload) from (${mapBranch}) pins),'[]'::jsonb)`:"'[]'::jsonb"} as map_cards`;
  const [result]=await sql.unsafe(combined,combinedValues as never);
+ if(totalCache?.facets)result!.facets=totalCache.facets;
+ else if(totalCache)await totalCache.saveFacets(result!.facets);
  const cards=(result!.cards as any[]).map(payload=>({payload})),totalRows=[result!.totals],countRows=[result!.counts];
  const facetRows=Object.entries(result!.facets).map(([key,options])=>({key,rows:[{options:options as (string|number)[]}]}));
  const mapRows=(result!.map_cards as any[]).map(payload=>({payload}));
@@ -82,5 +86,6 @@ export async function queryDirectory(input:DirectoryRequest,sql:postgres.Sql=web
   for(const card of cards)card.payload={...card.payload,count:counts.get(card.payload.key)??0};
  }
  const total=Number(totalRows[0]?.total??0),counts:Record<string,unknown>=countRows[0]??{};
+ if(totalCache&&totalCache.total===undefined)await totalCache.save(total);
  return {cards:cards.map(c=>c.payload),total,nextOffset:offset+cards.length,hasMore:offset+cards.length<total,facets:Object.fromEntries(facetRows.map(f=>[f.key,(f.rows[0]?.options??[]).filter((v:unknown)=>v!==null)])),counts:!cascadingFiltersEnabled()?counts as Record<string,number>:kind==='locations'?{Developments:total}:kind==='builders'?{Builders:total,Developments:Number(counts.developments),'Building types':Number(counts.buildings)}:kind==='buildings'?{Styles:total,Developments:Number(counts.developments)}:{'Room types':Number(counts.rooms),Interiors:Number(counts.interiors)},...(kind==='locations'?{mapCards:mapRows.map(r=>r.payload)}:{})};
 }

@@ -1,3 +1,4 @@
+import {staticGalleryFacets} from './static-gallery-facets';
 import {staticGalleryCounts} from './static-gallery-counts';
 import {cascadingFiltersEnabled} from '../web/filter-settings';
 import type postgres from 'postgres';
@@ -46,7 +47,8 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const pageValues=values.slice();
  if(input.imageOnly){const cards=await sql.unsafe(page,pageValues as never);return {images:cards.map(c=>c.payload),total:0,nextOffset:0,hasMore:false,counts:{},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}};}
  const summary=cascadingFiltersEnabled()?`with ${ctes} select count(distinct s.uid)::int as total,count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct h.builder_slug||':'||h.url)::int as properties from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`:`with ${ctes} select count(*)::int as total from source s where ${matched}`;
- const facets=['category','room','developer','bedrooms','location','site','development'].map(key=>{
+ const facetCache=!cascadingFiltersEnabled()?await staticGalleryFacets(sql,{scope,favourites:input.favourites}):undefined;
+ const facets=(facetCache?.facets?[]:['category','room','developer','bedrooms','location','site','development']).map(key=>{
   values.splice(0,values.length,...baseValues);const homeFacet=['bedrooms','location','site','development'].includes(key),w=where(key),hw=homeFacet?homeWhere(key):'true';
   const imageField=key==='developer'?'s.builder_name':key==='room'?'s.room':'s.category';
   const homeField=key==='bedrooms'?"h.bedrooms":key==='location'?'a.area':key==='site'?"h.development":"h.development_url";
@@ -72,6 +74,8 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  (select row_to_json(summary_result) from summary_result) as totals,
  jsonb_build_object(${facetBranches.map(f=>`'${f.key}',(${f.query})`).join(',')}) as facets`;
  const [result]=await sql.unsafe(combined,combinedValues as never);
+ if(facetCache?.facets)result!.facets=facetCache.facets;
+ else if(facetCache)await facetCache.save(result!.facets);
  const cards=(result!.cards as GalleryPageData['images']).map(payload=>({payload}));
  const totals=[result!.totals];
  const options=Object.entries(result!.facets).map(([key,options])=>({key,rows:[{options}]}));

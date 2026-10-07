@@ -109,3 +109,16 @@ it('reuses unfiltered gallery totals instead of recalculating them for new filte
  expect(queries).toHaveLength(1);
  expect(queries[0]).not.toContain('count(distinct h.builder_slug');
 });
+
+it('reuses initial gallery filter options across filter changes',async()=>{
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ const queries:string[]=[];
+ const measured=Object.assign((...args:unknown[])=>(sql as any)(...args),{json:sql.json,unsafe:(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}}) as unknown as postgres.Sql;
+ const scope={kind:'buildings' as const,href:'/buildings/alpha/house'};
+ const first=await queryGallery({scope},measured);
+ queries.length=0;
+ const filtered=await queryGallery({scope,filters:{bedrooms:'5'}},measured);
+ expect(filtered.facets).toEqual(first.facets);
+ expect(queries).toHaveLength(1);
+ expect(queries[0]).not.toContain('jsonb_agg(distinct h.bedrooms');
+});

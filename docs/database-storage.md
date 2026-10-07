@@ -55,3 +55,11 @@ their published counts. Galleries cache unfiltered scope totals against the
 publication revision and reuse them across filter combinations. Rolodex numbers
 stay fixed and render without animation. Pagination still calculates the filtered
 result total needed to decide whether another batch is available.
+
+With cascading disabled, directory matching totals are cached by criteria and
+publication revision, independently of page size, offset and sorting. Initial
+filter options are cached once per directory kind; gallery options are cached by
+page scope. Gallery summary totals and these option/total caches have no daily
+expiry. They refresh after publication changes the revision, and late writes from
+an older revision cannot populate the newer cache. Warm requests omit the count
+and option aggregation SQL while still querying the requested result cards.
