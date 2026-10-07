@@ -25,5 +25,5 @@ export function cleanHomeName(name:string){
 /** Plot identifiers are not house-type names; retain their source records separately. */
 export function isPlotName(name:string):boolean{
  const text=cleanHomeName(name);
- return /\bplot\b/i.test(text)||/^\d+\s*(?:,.*)?$/.test(text);
+ return /^\d/.test(text)||/\b(?:plot|development)\b/i.test(text);
 }
