@@ -361,3 +361,5 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
  .directory-intro-counts{justify-content:center;text-align:center}
  .directory-intro-counts>div{align-items:center}
 }
+
+@media(max-width:700px){.directory-toolbar .sort-control>span,.directory-toolbar .development-order>span{display:none}}
