@@ -1,5 +1,5 @@
 export const siteUrl = 'https://showhomeexplorer.co.uk';
-export const siteTitle = 'Showhome Explorer | UK Showhome & Home Office Inspiration';
+export const siteTitle = 'Showhome Explorer | New Homes & Interior Inspiration';
 export const siteDescription = 'Explore UK showhome interiors and home office ideas from leading housebuilders. Browse photographs, house types and developments, and save your favourite interiors.';
 export const absoluteUrl = (path:string) => new URL(path, siteUrl).href;
 export const jsonLd = (value:unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
