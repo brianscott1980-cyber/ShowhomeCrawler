@@ -352,3 +352,7 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 @media(max-width:700px){.directory-list .builder-card .card-body{padding-top:12px;padding-bottom:12px}}
 
 @media(max-width:700px){.builder-directory-toolbar .view-options button[aria-label="Smaller grid"]{display:none}}
+
+@media(max-width:700px){
+ .builder-directory-toolbar{border-top:1px solid var(--line);padding-top:16px;margin-top:12px}
+}
