@@ -1,6 +1,14 @@
 import type { ReportProperty } from './report.js';
 export function homeTypeName(name: string): string {
- return cleanHomeName(name).replace(/\bMore\s+Information\b/gi,'').replace(/\s+/g,' ').replace(/^Plot\s+\S+\s*[-–—]\s*/i, '').replace(/\s*·\s*Plot\s+\S+.*$/i, '').replace(/\s*[-–—·|:]\s*$/,'').trim();
+ const cleaned=cleanHomeName(name).replace(/\bMore\s+Information\b/gi,'').replace(/\s+/g,' ').replace(/^Plot\s+\S+\s*[-–—]\s*/i, '').replace(/\s*·\s*Plot\s+\S+.*$/i, '').replace(/\s*[-–—·|:]\s*$/,'').trim();
+ return uniqueHomeTypeNames(cleaned.split(/\s*·\s*/)).join(' · ');
+}
+export function uniqueHomeTypeNames(names:string[]):string[]{
+ const unique=new Map<string,string>();
+ for(const name of names){const text=name.trim();if(!text)continue;const key=text.toLowerCase(),previous=unique.get(key);
+  if(!previous||previous===previous.toUpperCase()&&text!==text.toUpperCase())unique.set(key,text);
+ }
+ return [...unique.values()];
 }
 export function plotDetails(home: ReportProperty): string {
  return [...new Map(home.plots.filter(p => p.number).map(p => [p.number, p])).values()]

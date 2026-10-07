@@ -20,7 +20,7 @@ import {BreadcrumbBack} from './breadcrumb-back';
 import {MultiSelectFilter} from './multi-select-filter';
 import {matchesSelection,matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
-import { homeTypeName, plotDetails } from '../reports/home-display';
+import { homeTypeName, uniqueHomeTypeNames, plotDetails } from '../reports/home-display';
 import { type ReactNode, type ComponentProps, type CSSProperties, useEffect, useRef, useState } from 'react';
 import type { RunReport } from '../reports/report';
 import { ViewOptions, useCardView } from './view-options';
@@ -405,7 +405,7 @@ export function Gallery({
         </div>
        </div>
 
-       <h3>{[...new Set(image.homes.map(home => homeTypeName(home.name)))].join(' · ') || image.developer}</h3>
+       <h3>{uniqueHomeTypeNames(image.homes.map(home => homeTypeName(home.name))).join(' · ') || image.developer}</h3>
        <p className="subtle">{image.verdict?.description ?? 'Showhome interior'}</p>
 
        {image.categorisation && (
