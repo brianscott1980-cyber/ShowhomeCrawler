@@ -40,7 +40,9 @@
     "ai:local": "tsx src/cli/classify-local.ts",
     "website:repair-builder": "tsx src/cli/repair-builder-projections.ts",
     "db:space": "tsx scripts/database-space.ts",
-    "db:backup": "tsx scripts/backup-website-database.ts"
+    "db:backup": "tsx scripts/backup-website-database.ts",
+    "website:warm": "tsx src/cli/warm-website-caches.ts",
+    "postbuild": "npm run website:warm -- --deploy-only"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

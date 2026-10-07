@@ -2,6 +2,7 @@ import {beforeAll,afterAll,expect,it,vi} from 'vitest';
 import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import type postgres from 'postgres';
+import {cachedPresentation} from '../src/database/presentation-cache';
 import {cachedGallery} from '../src/database/gallery-cache';
 import {cachedDirectory} from '../src/database/directory-cache';
 const db=new PGlite();
@@ -59,4 +60,13 @@ it('binds a boolean expiry policy rather than an infinity timestamp parameter',a
  await cachedDirectory({kind:'builders',filters:{developer:'Alpha'},limit:7},guardedSql,query);
  expect(parameters.some(values=>values.includes(true))).toBe(true);
  expect(parameters.some(values=>values.includes(false))).toBe(true);
+});
+
+it('caches homepage data until the publication revision changes',async()=>{
+ await db.exec("create table if not exists showhome_web.presentations(key text primary key,payload jsonb); insert into showhome_web.presentations values('homepage','{\"counts\":{\"builders\":12}}')");
+ expect(await cachedPresentation('homepage',sql)).toEqual({counts:{builders:12}});
+ await db.exec("update showhome_web.presentations set payload='{\"counts\":{\"builders\":13}}'");
+ expect(await cachedPresentation('homepage',sql)).toEqual({counts:{builders:12}});
+ await db.exec('update showhome_web.publication_revision set revision=revision+1');
+ expect(await cachedPresentation('homepage',sql)).toEqual({counts:{builders:13}});
 });
