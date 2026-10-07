@@ -1,3 +1,4 @@
+import {sharedBuildingExteriorPaths} from './shared-building-exteriors';
 import {colourPattern} from '../web/interior-tags';
 import {staticGalleryFacets} from './static-gallery-facets';
 import {staticGalleryCounts} from './static-gallery-counts';
@@ -17,6 +18,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  scopeConditions.push("nullif(trim(lower(i.category)), '') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')");
  if(scope.kind==='interiors')scopeConditions.push("lower(trim(i.category)) not in ('exterior','floorplan','floor plan')");
  if(scope.kind==='interiors'&&reference.category)scopeConditions.push(`i.category=${p(reference.category)}`);
+ if(scope.kind==='buildings'){const generic=(await sharedBuildingExteriorPaths()).map(path=>path.split('/').at(-1)!.replace(/\.[^.]+$/,''));if(generic.length)scopeConditions.push(`not(i.image_id=any(${p(generic)}::text[]))`);}
  const baseBuildingParam=scope.kind==='buildings'?p(reference.building_name):'';
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);
  if(scope.kind==='buildings')scopeConditions.push(`t.building_name=lower(${baseBuildingParam}::text)`);

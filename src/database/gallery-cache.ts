@@ -9,7 +9,7 @@ export async function cachedGallery(input:GalleryRequest,sql:postgres.Sql=websit
  if(input.scope.kind==='favourites'||input.imageOnly||input.filters?.q)return query(input);
  const filters=Object.fromEntries(Object.entries(input.filters??{}).filter(([,v])=>v).sort(([a],[b])=>a.localeCompare(b)));
  const defaultPage=(input.offset??0)===0&&!input.selectedUid&&!Object.entries(filters).some(([key,value])=>value!==input.scope.fixedFilters?.[key]);
- const key='gallery:static-rolodex-v7:'+createHash('sha256').update(JSON.stringify({scope:input.scope,filters,cascading:cascadingFiltersEnabled(),offset:input.offset??0,limit:input.limit??16,selectedUid:input.selectedUid??''})).digest('hex');
+ const key='gallery:static-rolodex-v7:'+createHash('sha256').update(JSON.stringify({scope:input.scope,...(input.scope.kind==='buildings'?{exteriorPolicy:'majority-v1'}:{}),filters,cascading:cascadingFiltersEnabled(),offset:input.offset??0,limit:input.limit??16,selectedUid:input.selectedUid??''})).digest('hex');
  const [row]=await sql`select r.revision,c.payload from showhome_web.publication_revision r left join showhome_web.query_cache c on c.key=${key} and c.revision=r.revision and c.expires_at>now() where r.singleton=true`;
  if(row?.payload){const data=row.payload as GalleryPageData;return {...data,counts:{'Unique images':data.counts['Unique images']!,Developments:data.counts.Developments!,Properties:data.counts.Properties!}};}
  const data=await query(input);
