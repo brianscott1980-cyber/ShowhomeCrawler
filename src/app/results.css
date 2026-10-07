@@ -339,3 +339,11 @@
  .building-developments-dialog .building-development-contact{padding-bottom:10px}
  .building-developments-dialog .building-development-facts dt{overflow-wrap:normal;word-break:normal}
 }
+
+.map-price-mobile{display:none}
+@media(max-width:700px){
+ .map-price-desktop{display:none}
+ .map-price-mobile{display:inline}
+ .building-developments-dialog .building-development-facts .building-development-bedrooms{display:grid!important}
+ .building-developments-dialog .building-development-facts>div{grid-template-columns:70px minmax(0,1fr)}
+}
