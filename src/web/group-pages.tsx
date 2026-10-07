@@ -1,3 +1,4 @@
+import {publicDevelopmentCards} from '../database/development-public-routes';
 import {DevelopmentDirectoryBuilderLogo} from './development-directory-builder-logo';
 import {searchListing} from './seo';
 import {homeTypeName} from '../reports/home-display';
@@ -36,7 +37,8 @@ export async function GroupDirectory({kind,initial:provided,title,description}:{
  const normalized=kind==='sites'?'locations':kind==='spaces'?'interiors':kind;
  const pathPrefix=prefixFor(kind),isBuildings=kind==='buildings';
  // Render cached default results in the initial HTML; session criteria apply after hydration.
- const initial=provided??await queryDirectory({kind:normalized}),counts=initial.counts;
+ const published=provided??await queryDirectory({kind:normalized});
+ const initial=normalized==='locations'?await publicDevelopmentCards(published):published,counts=initial.counts;
  if(normalized==='locations'){
   const cards=initial.cards as SiteCard[],logos=await readBuilderLogos();
   return <DirectoryCountProvider><main>
@@ -78,7 +80,7 @@ async function findGroup(kind:GroupKind,id:string){
  if(!group)notFound();
  return {group,path:reference.href};
 }
-export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:string;searchParams?:SearchValues}){
+export async function GroupDetail({kind,id,searchParams={},canonicalPath}:{kind:GroupKind;id:string;searchParams?:SearchValues;canonicalPath?:string}){
  const pathPrefix=prefixFor(kind);
  if(kind==='buildings'||kind==='interiors'||kind==='spaces'){
   const isAll=(kind==='interiors'||kind==='spaces')&&id==='all';
@@ -90,7 +92,7 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
   return <ResultsPage title={kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)} eyebrow={kind==='interiors'||kind==='spaces'?null:reference.payload.developers?.join(' · ')} description={isAll?'Explore showhome inspiration across all room types. Discover the homes and developments behind each image.':`Explore interiors from ${kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={[]} places={{}} galleryScope={galleryScope} galleryPage={galleryPage} initialImage={typeof searchParams.image==='string'?searchParams.image:undefined} includeUnclassified/>;
  }
  const {group,path}=await findGroup(kind,id);
- if(path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));
+ if(!canonicalPath&&path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));
  const places=Object.fromEntries(await buildingLocationIndex([group]));
  const isDevelopment=kind==='sites'||kind==='locations';
  const detailCard=isDevelopment?(await siteCards([group]))[0]:undefined;
@@ -116,12 +118,13 @@ export async function GroupDetail({kind,id,searchParams={}}:{kind:GroupKind;id:s
 
  return <ResultsPage title={group.name} counts={developmentCounts} developmentDetails={detailCard?<DevelopmentOverviewDetails card={detailCard} contact={contact}/>:undefined} titleAccessory={logo?<img className="builder-results-logo development-builder-overview-logo" src={logo} alt={`${builder.name} logo`} style={{background:brand?.logo_background??'#fff'}}/>:undefined} eyebrow={isDevelopment||kind==='interiors'||kind==='spaces'?null:group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={undefined} includeUnclassified>{navigation}</ResultsPage>;
 }
-export async function groupMetadata(kind:GroupKind,id:string){
- const path=`/${prefixFor(kind)}/${id}`;
+export async function groupMetadata(kind:GroupKind,id:string,canonicalPath?:string){
+ const sourcePath=`/${prefixFor(kind)}/${id}`;
+ const path=canonicalPath??sourcePath;
  const isInterior=kind==='interiors'||kind==='spaces';
  const isAll=isInterior&&id==='all';
  if(isAll)return searchListing('Showhome Interiors & Room Ideas','Explore real showhome interiors across kitchens, bedrooms, living rooms and more. Compare colours, furnishings and features for your own home.',path);
- const reference=await findDirectoryReference(kind==='spaces'?'interiors':kind==='sites'?'locations':kind,path);
+ const reference=await findDirectoryReference(kind==='spaces'?'interiors':kind==='sites'?'locations':kind,sourcePath);
  if(!reference)notFound();
  const card=reference.payload;
  if(kind==='buildings'){

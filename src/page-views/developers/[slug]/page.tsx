@@ -1,3 +1,4 @@
+import {readDevelopmentPublicRoutes} from '../../../database/development-public-routes';
 import {CardImage} from '../../../web/card-image';
 import {readPresentation} from '../../../database/website';
 import type {BuilderOverviewProjection} from '../../../catalogue/builder-overview';
@@ -41,7 +42,8 @@ export default async function Page({ params }: Props) {
  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${developer.name} Showhome Ideas`, url: absoluteUrl(`/builders/${slug}`),
   mainEntity: { '@type': 'ItemList', numberOfItems: overview.imageCount, itemListElement: images.slice(0,24).map((image, index) => ({ '@type': 'ListItem', position: index + 1,
    item: { '@type': 'ImageObject', contentUrl: absoluteUrl(assetUrl(slug, image.path)), caption: image.verdict?.description ?? 'Showhome interior' } })) } };
- const locations=overview.locations;
+ const {canonical}=await readDevelopmentPublicRoutes();
+ const locations=overview.locations.map(location=>({...location,href:canonical[location.href]??location.href}));
  const collections=report?[{slug,name:developer.name,report}]:[];
  const locationGroups=groupCollections(collections,'locations');
  const buildingGroups=groupCollections(collections,'buildings');

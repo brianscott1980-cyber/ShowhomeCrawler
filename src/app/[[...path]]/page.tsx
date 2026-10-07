@@ -1,3 +1,4 @@
+import {resolveDevelopmentPublicRoute} from '../../database/development-public-routes';
 import {seoLanding,seoLandingMetadata,SeoLandingPage} from '../../web/seo-landings';
 import {Profile} from '../../web/profile';
 import type { Metadata } from 'next';
@@ -32,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
  if (path[0] === 'builders' && path.length === 2) return Developer.generateMetadata({ params: Promise.resolve({ slug: path[1]! }) });
  const landing=path.length>1?await seoLandingMetadata('/'+path.join('/')):null;
  if(landing)return landing;
+ if(path[0]==='developments'&&path.length>1){const development=await resolveDevelopmentPublicRoute('/'+path.join('/'));if(development)return groupMetadata('locations',development.source.slice('/developments/'.length),development.canonical);}
  const kind = directory(path[0]!);
  if (kind && path.length > 1) return groupMetadata(kind, path.slice(1).join('/'));
  return {};
@@ -51,6 +53,10 @@ export default async function Page({ params, searchParams }: Props) {
  if (path[0] === 'builders' && path.length === 2) return <Developer.default params={Promise.resolve({ slug: path[1]! })}/>;
  const landing=path.length>1?await seoLanding('/'+path.join('/')):null;
  if(landing){if('/'+path.join('/')!==landing.path)permanentRedirect(landing.path);return <SeoLandingPage landing={landing}/>;}
+ if(path[0]==='developments'&&path.length>1){
+  const development=await resolveDevelopmentPublicRoute('/'+path.join('/'));
+  if(development){if('/'+path.join('/')!==development.canonical)permanentRedirect(development.canonical);return <GroupDetail kind="locations" id={development.source.slice('/developments/'.length)} canonicalPath={development.canonical} searchParams={await searchParams}/>;}
+ }
  const kind = directory(path[0]!);
  if (kind && path.length > 1) return <GroupDetail kind={kind} id={path.slice(1).join('/')} searchParams={await searchParams}/>;
  if (path[0] === 'sites' || path[0] === 'spaces') {

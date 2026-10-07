@@ -13,3 +13,9 @@ Colour pages match complete colour words in classification labels, including dec
 Only nonempty builder and room/colour destinations enter the sitemap. Empty combinations return not found. Red Bathrooms, for example, will only be indexed when eligible bathroom images have red classification labels. Individual ready development/building pages and valid room pages remain in the sitemap. Duplicate URLs, unready entries and the previous exhaustive image lists are removed.
 
 Default landing batches are cached until publication. Counts and options remain scoped and cached when cascading is disabled. Publishing invalidates these caches alongside the existing directory caches; the sitemap continues to use Next.js metadata-route caching.
+
+## Individual development names
+
+Unique, ready development names use `/developments/{name-slug}`, for example `/developments/landsdale`. Names are cleaned using the existing prefix/comma rules, with hyphens between words. Card links, builder-map links, metadata and sitemap entries use the short canonical URL. Older builder-qualified links permanently redirect to it.
+
+When names are shared, or a name would collide with a builder landing slug, the existing `/developments/{builder}/{name}` remains canonical. A shared name alone does not choose an arbitrary development. The routing index is cached by publication revision, so republishing refreshes readiness and collision checks.
