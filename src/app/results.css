@@ -257,3 +257,6 @@
 .building-developments-map .maplibregl-ctrl-top-right{top:136px}
 .building-developments-map .site-map-fit{top:auto;bottom:16px;left:auto;right:16px}
 @media(max-width:700px){.building-developments-map .site-map-fit{top:auto;bottom:calc(clamp(190px,32dvh,230px) + 24px);left:auto;right:16px;max-width:calc(100% - 32px)}}
+.opening-hours-days{margin:0;font:inherit}
+.opening-hours-days>div{display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px;margin:4px 0}
+.opening-hours-days dt,.opening-hours-days dd{margin:0;font:inherit}

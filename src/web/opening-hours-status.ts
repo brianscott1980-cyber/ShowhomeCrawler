@@ -32,3 +32,18 @@ export function openingHoursStatus(lines:string[],now:Date){
 }
 
 export function abbreviateOpeningDays(text:string){return text.replace(/Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday/g,day=>day.slice(0,3));}
+
+/** Expand published grouped days into a Monday–Sunday list without inventing missing hours. */
+export function openingHoursDays(lines:string[]){
+ const entries=new Map<number,string[]>();
+ const pattern=new RegExp(`((?:${dayPattern})(?:\\s*(?:,|and|&|[-–]|to)\\s*(?:${dayPattern}))*)\\s*:?\\s*(closed|${timePattern}\\s*(?:[-–]|to)\\s*${timePattern})`,'gi');
+ for(const line of lines)for(const match of line.matchAll(pattern)){
+  const indices=(match[1]!.match(new RegExp(dayPattern,'gi'))??[]).map(label=>days.findIndex(day=>day.toLowerCase().startsWith(label.slice(0,2).toLowerCase())));
+  const selected=new Set(indices);
+  if(/[-–]|\bto\b/i.test(match[1]!)&&indices.length===2){let day=indices[0]!;while(day!==indices[1]){selected.add(day);day=(day+1)%7;}}
+  const times=match[2]!.split(/\s*(?:[-–]|\bto\b)\s*/i),start=minutes(times[0]!),end=times[1]?minutes(times[1]):null;
+  const hours=/^closed$/i.test(match[2]!)?'Closed':start!==null&&end!==null?`${clock(start)} – ${clock(end)}`:match[2]!;
+  for(const day of selected)entries.set(day,[...new Set([...entries.get(day)??[],hours])]);
+ }
+ return entries.size?days.map((day,index)=>({day:day.slice(0,3),hours:entries.get(index)?.join(', ')??'Not available'})):[];
+}
