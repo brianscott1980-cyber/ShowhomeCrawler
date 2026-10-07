@@ -1,4 +1,5 @@
 'use client';
+import {colourPattern,interiorTags} from './interior-tags';
 import {cascadingFiltersEnabled} from './filter-settings';
 import {isCategorisedImage,isInteriorCategory} from './image-classification';
 import {sharedImageCards,roomLabel} from './shared-image-cards';
@@ -24,7 +25,7 @@ import { ViewOptions, useCardView } from './view-options';
 import { isRoomImage } from '../vision/room-classifier';
 import Link from 'next/link';
 import {useUrlFilters} from './url-filters';
-const galleryDefaults={building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
+const galleryDefaults={colour:'',tag:'',building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
 import { heartIcon } from '../reports/gallery-ui';
 
 interface Collection { slug: string; name: string; report: RunReport }
@@ -65,6 +66,8 @@ export function Gallery({
  const [filters,setFilters,filtersReady]=useUrlFilters(galleryDefaults);
  const {q:query,development,category:mainCategory,room:subCategory}=filters;
  const setQuery=(value:string)=>setFilters(previous=>({...previous,q:value}));
+ const tagSelected=(value:string)=>galleryScope?.kind==='interiors'?matchesSelection(new RegExp(colourPattern,'i').test(value)?filters.colour:filters.tag,value)&&Boolean(new RegExp(colourPattern,'i').test(value)?filters.colour:filters.tag):query===value;
+ const toggleTag=(value:string)=>{if(galleryScope?.kind!=='interiors'){setQuery(query===value?'':value);return;}const key=new RegExp(colourPattern,'i').test(value)?'colour':'tag';setFilters(previous=>({...previous,q:'',[key]:previous[key]===value?'':value}));};
  const setDevelopment=(value:string)=>setFilters(previous=>({...previous,development:value}));
  const setMainCategory=(value:string)=>setFilters(previous=>({...previous,category:value}));
  const setSubCategory=(value:string)=>setFilters(previous=>({...previous,room:value}));
@@ -156,11 +159,13 @@ export function Gallery({
   return image.verdict?.matches || includeUnclassified;
  });
 
+ const isInterior=galleryScope?.kind==='interiors';
  const isDevelopment=Boolean(introduction?.developmentDetails);
  const homeMatches=(image:(typeof available)[number],home:(typeof available)[number]['homes'][number],f:typeof filters)=>matchesSelection(f.building,homeTypeName(home.buildingName??home.name).toLowerCase())&&(!f.minBeds||(home.bedrooms!==null&&home.bedrooms>=Number(f.minBeds)))&&(!f.maxBeds||(home.bedrooms!==null&&home.bedrooms<=Number(f.maxBeds)))&&(!f.minPrice||(home.price!==null&&home.price>=Number(f.minPrice)))&&(!f.maxPrice||(home.price!==null&&home.price<=Number(f.maxPrice)))&&matchesSelection(f.bedrooms,String(home.bedrooms))&&matchesSelection(f.site,home.development)&&matchesSelection(f.development,home.developmentUrl)&&matchesAnySelection(f.location,places?.[`${image.slug}:${home.developmentUrl}`]??[]);
  const matches=(image:(typeof available)[number],f:typeof filters)=>{
   if(!matchesSelection(f.developer,image.developer))return false;
-  if((f.minBeds||f.maxBeds||f.minPrice||f.maxPrice||f.bedrooms||f.location||f.site||f.development)&&!image.homes.some(home=>homeMatches(image,home,f)))return false;
+  if(!matchesAnySelection(f.colour,interiorTags(image.categorisation).colour)||!matchesAnySelection(f.tag,interiorTags(image.categorisation).tag))return false;
+  if((f.building||f.minBeds||f.maxBeds||f.minPrice||f.maxPrice||f.bedrooms||f.location||f.site||f.development)&&!image.homes.some(home=>homeMatches(image,home,f)))return false;
   if (favouritesOnly && !favourites.includes(image.id)) return false;
   if (!favouritesOnly && !image.verdict?.matches && !includeUnclassified) return false;
   if(!matchesSelection(f.category,image.categorisation?.mainCategory??''))return false;
@@ -304,7 +309,7 @@ export function Gallery({
     {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : isDevelopment?'Explore the development':'Explore the collection'}</h2></div>}
    </>}
    {!overviewOnly&&<>
-   {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':undefined}><DirectoryFilters pending={Boolean(remote?.loading)} className={isDevelopment?'filters site-filters development-detail-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
+   {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':isInterior?'site-filter-panel':undefined}><DirectoryFilters pending={Boolean(remote?.loading)} className={isDevelopment?'filters site-filters development-detail-filters':isInterior?'filters site-filters location-primary-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
     {isDevelopment?<>
      <fieldset className="development-range-filter"><legend>Bedrooms Range</legend><div>
       <SingleSelectFilter label="Minimum bedrooms" value={bedsRange.minValue} options={[{value:'',label:'Any'},...bedsRange.minNumbers.map(value=>({value:String(value),label:`${value} Beds`}))]} onChange={value=>changeRange('minBeds',value)}/>
@@ -316,6 +321,11 @@ export function Gallery({
       <span aria-hidden="true">–</span>
       <MoneyInput label="Maximum price" value={filters.maxPrice} options={pricesRange.options.filter(price=>!filters.minPrice||price>=Number(filters.minPrice))} onChange={value=>changeRange('maxPrice',value)}/>
      </div></fieldset>
+    </>:isInterior?<>
+     <MultiSelectFilter label="Builders" value={filters.developer} options={builderOptions} onChange={value=>setFilters(previous=>({...previous,developer:value}))}/>
+     <MultiSelectFilter label="Building Types" value={filters.building} options={(remote?.facets.building??[...new Set(facetHomes('building').map(({home})=>homeTypeName(home.buildingName??home.name).toLowerCase()))]).map(value=>({value,label:homeTypeName(value).replace(/\b\w/g,letter=>letter.toUpperCase())}))} onChange={value=>setFilters(previous=>({...previous,building:value}))}/>
+     <MultiSelectFilter label="Colour" value={filters.colour} options={remote?.facets.colour??[...new Set(facet('colour').flatMap(image=>interiorTags(image.categorisation).colour))]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>
+     <MultiSelectFilter label="Tags" value={filters.tag} options={remote?.facets.tag??[...new Set(facet('tag').flatMap(image=>interiorTags(image.categorisation).tag))]} onChange={value=>setFilters(previous=>({...previous,tag:value}))}/>
     </>:<>
     <label>
      Search
@@ -335,7 +345,7 @@ export function Gallery({
      <MultiSelectFilter label="Developments" value={filters.site} options={siteOptions.map(value=>({value,label:developmentName(value)}))} onChange={value=>setFilters(previous=>({...previous,site:value}))}/>
     </>}
     </>}
-    <button className={isDevelopment?'location-filter-reset':'results-reset'} onClick={() => setFilters(galleryDefaults)}>Reset</button>
+    <button className={isDevelopment||isInterior?'location-filter-reset':'results-reset'} onClick={() => setFilters(galleryDefaults)}>Reset</button>
    </DirectoryFilters></div>
 
    <div className="directory-toolbar" style={{ marginTop: 24 }}>
@@ -386,7 +396,7 @@ export function Gallery({
        {image.categorisation && (
         <div className="feature-tags">
          {image.categorisation.colours.slice(0, 3).map(c => (
-          <button type="button" key={c} className="tag tag-colour" aria-pressed={query===c} onClick={()=>setQuery(query===c?'':c)} title={`Filter by ${c}`}>{c}</button>
+          <button type="button" key={c} className="tag tag-colour" aria-pressed={tagSelected(c)} onClick={()=>toggleTag(c)} title={`Filter by ${c}`}>{c}</button>
          ))}
          {image.categorisation.hasTelevision && (
           <span className="tag tag-tech" title="Television present">📺 TV</span>
@@ -394,12 +404,12 @@ export function Gallery({
          {image.categorisation.hasComputer && (
           <span className="tag tag-tech" title="Computer / Workspace present">💻 PC</span>
          )}
-         {[...new Set([...(image.categorisation.decor??[]),...(image.categorisation.wallpaperTags??[]),...(image.categorisation.curtainTags??[]),...(image.categorisation.fabricTags??[]),...(image.categorisation.furnishingTags??[])])].map(tag=><button type="button" key={tag} className="tag tag-decor" aria-pressed={query===tag} onClick={()=>setQuery(query===tag?'':tag)} title={`Filter by ${tag}`}>{tag}</button>)}
+         {[...new Set([...(image.categorisation.decor??[]),...(image.categorisation.wallpaperTags??[]),...(image.categorisation.curtainTags??[]),...(image.categorisation.fabricTags??[]),...(image.categorisation.furnishingTags??[])])].map(tag=><button type="button" key={tag} className="tag tag-decor" aria-pressed={tagSelected(tag)} onClick={()=>toggleTag(tag)} title={`Filter by ${tag}`}>{tag}</button>)}
          {image.categorisation.wallpaper && (
-          <button type="button" className="tag tag-decor" aria-pressed={query===image.categorisation.wallpaper} onClick={()=>setQuery(query===image.categorisation!.wallpaper?'':image.categorisation!.wallpaper!)}>{image.categorisation.wallpaper}</button>
+          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.wallpaper)} onClick={()=>toggleTag(image.categorisation!.wallpaper!)}>{image.categorisation.wallpaper}</button>
          )}
          {image.categorisation.curtains && (
-          <button type="button" className="tag tag-decor" aria-pressed={query===image.categorisation.curtains} onClick={()=>setQuery(query===image.categorisation!.curtains?'':image.categorisation!.curtains!)}>{image.categorisation.curtains}</button>
+          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.curtains)} onClick={()=>toggleTag(image.categorisation!.curtains!)}>{image.categorisation.curtains}</button>
          )}
         </div>
        )}

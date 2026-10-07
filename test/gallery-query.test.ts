@@ -122,3 +122,14 @@ it('reuses initial gallery filter options across filter changes',async()=>{
  expect(queries).toHaveLength(1);
  expect(queries[0]).not.toContain('jsonb_agg(distinct h.bedrooms');
 });
+it('offers colour and non-colour tags across the scope and filters them before pagination',async()=>{
+ await db.exec(`update showhome_web.images set metadata='{"categorisation":{"colours":["Blue"],"decor":["Blue Decor"],"wallpaperTags":["Floral Wallpaper"],"furnishingTags":["Gold Lamp","Boucle Chair"]}}' where catalogue_id='a'`);
+ const result=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},filters:{colour:'Blue Decor',tag:'Floral Wallpaper',building:'house'},limit:1},sql);
+ expect(result.total).toBe(1);
+ expect(result.images[0]?.id).toBe('a');
+ expect(result.facets.colour).toContain('Gold Lamp');
+ expect(result.facets.tag).toContain('Boucle Chair');
+ expect(result.facets.tag).not.toContain('Blue Decor');
+ expect(result.facets.building).toEqual(['house','other']);
+ await db.exec(`update showhome_web.images set metadata='{}' where catalogue_id='a'`);
+});

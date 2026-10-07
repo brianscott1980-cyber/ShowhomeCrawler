@@ -1,3 +1,4 @@
+import {colourPattern} from '../web/interior-tags';
 import {staticGalleryFacets} from './static-gallery-facets';
 import {staticGalleryCounts} from './static-gallery-counts';
 import {cascadingFiltersEnabled} from '../web/filter-settings';
@@ -19,8 +20,18 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const baseBuildingParam=scope.kind==='buildings'?p(reference.building_name):'';
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);
  if(scope.kind==='buildings')scopeConditions.push(`t.building_name=lower(${baseBuildingParam}::text)`);
+ const facetCache=!input.imageOnly&&!cascadingFiltersEnabled()?await staticGalleryFacets(sql,{scope,favourites:input.favourites}):undefined;
+ const tagScope=scope.kind==='interiors';
+ const needTags=tagScope&&Boolean(filters.colour||filters.tag||!input.imageOnly&&!facetCache?.facets);
+ const tagArrays=['colours','objects','chairs','decor','wallpaperTags','curtainTags','fabricTags','furnishingTags'];
+ const cat="m.metadata->'categorisation'";
+ const tagJoin=needTags?`left join showhome_web.images m on m.builder_slug=i.builder_slug and m.catalogue_id=i.image_id left join lateral (
+ select array_agg(distinct label) filter(where label ~* '${colourPattern}') as colour_tags,array_agg(distinct label) filter(where label !~* '${colourPattern}') as other_tags
+ from (select distinct trim(value) as label from jsonb_array_elements_text(${tagArrays.map(key=>`coalesce(${cat}->'${key}','[]'::jsonb)`).join('||')}||jsonb_build_array(${cat}->>'wallpaper',${cat}->>'curtains',case when ${cat}->>'hasTelevision'='true' then 'Television' end,case when ${cat}->>'hasComputer'='true' then 'Computer' end)) value where nullif(trim(value),'') is not null) labels
+ ) tags on true`:'';
+ const tagFields=needTags?',tags.colour_tags,tags.other_tags':",array[]::text[] as colour_tags,array[]::text[] as other_tags";
  const homesProjection=`coalesce((select jsonb_agg(h) from jsonb_array_elements(i.payload->'homes') h where r.building_name is null or lower(h->>'buildingName')=r.building_name),'[]'::jsonb)`;
- const source=`select case when cardinality(i.building_names)>1 then i.uid||':house:'||t.building_name else i.uid end as uid,i.uid as image_uid,t.building_name,i.builder_slug,i.builder_name,i.category,i.room,${filters.q?'i.search_text':"''::text as search_text"} from showhome_web.gallery_card_index i left join lateral(select distinct lower(name) as building_name from unnest(i.building_names) name) t on true where ${scopeConditions.join(' and ')}`;
+ const source=`select case when cardinality(i.building_names)>1 then i.uid||':house:'||t.building_name else i.uid end as uid,i.uid as image_uid,t.building_name,i.builder_slug,i.builder_name,i.category,i.room${tagFields},${filters.q?'i.search_text':"''::text as search_text"} from showhome_web.gallery_card_index i left join lateral(select distinct lower(name) as building_name from unnest(i.building_names) name) t on true ${tagJoin} where ${scopeConditions.join(' and ')}`;
  const homeSource=`select s.uid,h.gallery_key,h.builder_slug,h.url,h.bedrooms,h.price,h.development_url,h.development,h.building_name,h.areas from showhome_web.gallery_memberships h join source s on s.image_uid=h.uid and (s.building_name is null or h.building_name=s.building_name)`;
  const ctes=`source as (${source}),homes as (${homeSource})`;
  const baseValues=values.slice();
@@ -35,6 +46,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  function where(omit=''){
   if(omit&&!cascadingFiltersEnabled())return 'true';
   const conditions=[selection('s.builder_name','developer',omit),selection('s.category','category',omit),selection('s.room','room',omit)];
+  for(const [key,field] of [['colour','colour_tags'],['tag','other_tags']])if(omit!==key&&filters[key!])conditions.push(`s.${field} && array(select jsonb_array_elements_text(${p(sql.json(selectedValues(filters[key!]!)))}::jsonb))`);
   if(omit!=='q'&&filters.q)conditions.push(`position(${p(filters.q.toLowerCase())} in s.search_text)>0`);
   const homes=homeWhere(omit);
   if(['building','bedrooms','site','development','location','minBeds','maxBeds','minPrice','maxPrice'].some(k=>k!==omit&&filters[k]))conditions.push(`exists(select 1 from homes h where h.uid=s.uid and ${homes})`);
@@ -47,13 +59,12 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const pageValues=values.slice();
  if(input.imageOnly){const cards=await sql.unsafe(page,pageValues as never);return {images:cards.map(c=>c.payload),total:0,nextOffset:0,hasMore:false,counts:{},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}};}
  const summary=cascadingFiltersEnabled()?`with ${ctes} select count(distinct s.uid)::int as total,count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct h.builder_slug||':'||h.url)::int as properties from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`:`with ${ctes} select count(*)::int as total from source s where ${matched}`;
- const facetCache=!cascadingFiltersEnabled()?await staticGalleryFacets(sql,{scope,favourites:input.favourites}):undefined;
- const facets=(facetCache?.facets?[]:['category','room','developer','bedrooms','location','site','development']).map(key=>{
-  values.splice(0,values.length,...baseValues);const homeFacet=['bedrooms','location','site','development'].includes(key),w=where(key),hw=homeFacet?homeWhere(key):'true';
-  const imageField=key==='developer'?'s.builder_name':key==='room'?'s.room':'s.category';
-  const homeField=key==='bedrooms'?"h.bedrooms":key==='location'?'a.area':key==='site'?"h.development":"h.development_url";
+ const facets=(facetCache?.facets?[]:['category','room','developer','bedrooms','location','site','development','building',...(tagScope?['colour','tag']:[])]).map(key=>{
+  values.splice(0,values.length,...baseValues);const homeFacet=['bedrooms','location','site','development','building'].includes(key),w=where(key),hw=homeFacet?homeWhere(key):'true';
+  const imageField=key==='colour'||key==='tag'?'labels.label':key==='developer'?'s.builder_name':key==='room'?'s.room':'s.category';
+  const homeField=key==='building'?'h.building_name':key==='bedrooms'?"h.bedrooms":key==='location'?'a.area':key==='site'?"h.development":"h.development_url";
   const projection=key==='development'?`coalesce(jsonb_agg(distinct jsonb_build_array(h.development_url,h.development)) filter(where h.development_url is not null),'[]'::jsonb)`:`coalesce(jsonb_agg(distinct ${homeFacet?homeField:imageField} order by ${homeFacet?homeField:imageField}) filter(where ${homeFacet?homeField:imageField} is not null),'[]'::jsonb)`;
-  return {key,values:values.slice(),query:`with ${ctes} select ${projection} as options from source s ${homeFacet?'join homes h on h.uid=s.uid':''} ${key==='location'?"cross join lateral unnest(h.areas) a(area)":''} where ${w} ${homeFacet?'and '+hw:''}`};
+  return {key,values:values.slice(),query:`with ${ctes} select ${projection} as options from source s ${homeFacet?'join homes h on h.uid=s.uid':''} ${key==='colour'||key==='tag'?`cross join lateral unnest(s.${key==='colour'?'colour_tags':'other_tags'}) labels(label)`:''} ${key==='location'?"cross join lateral unnest(h.areas) a(area)":''} where ${w} ${homeFacet?'and '+hw:''}`};
  });
  // Reuse the scoped image and home relations for the page, counters and every
  // cascading facet. Separate statements rebuilt these relations nine times.
