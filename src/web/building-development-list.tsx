@@ -15,7 +15,14 @@ export function BuildingDevelopmentList({developments,buildingName}:{development
  const cardRefs=useRef(new Map<string,HTMLLIElement>());
  const mapContainer=useRef<HTMLDivElement>(null);
  const [focusArea,setFocusArea]=useState<FocusArea>();
- useEffect(()=>{if(!open||!mapContainer.current)return;const element=mapContainer.current;const measure=()=>{const width=element.clientWidth,height=element.clientHeight;const mobile=width<=700;setFocusArea({left:mobile?16:width*.3+28,top:24,right:width-76,bottom:mobile?height-(cardList.current?.clientHeight??280)-24:height-20});};measure();const observer=new ResizeObserver(measure);observer.observe(element);return()=>observer.disconnect();},[open]);
+ useEffect(()=>{
+  if(!open||!mapContainer.current)return;
+  const element=mapContainer.current,list=cardList.current;
+  const measure=()=>{const width=element.clientWidth,height=element.clientHeight,mapBounds=element.getBoundingClientRect(),cardsBounds=list?.getBoundingClientRect();const mobile=width<=700;
+   setFocusArea({left:mobile?16:cardsBounds?cardsBounds.right-mapBounds.left:width*.3+16,top:16,right:mobile?width-16:width,bottom:mobile&&cardsBounds?cardsBounds.top-mapBounds.top-16:height-16});
+  };
+  measure();const observer=new ResizeObserver(measure);observer.observe(element);if(list)observer.observe(list);return()=>observer.disconnect();
+ },[open]);
  const location=useSavedLocation();
  useEffect(()=>{
   const list=cardList.current;if(!open||!list)return;
