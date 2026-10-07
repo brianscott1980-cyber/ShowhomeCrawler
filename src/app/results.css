@@ -395,5 +395,6 @@
 
 @media(max-width:700px){.building-type-results-page .image-card .image-body>h3.image-room-title{display:block}}
 .results-page .image-grid-list .image-body{padding-top:12px;padding-bottom:12px}
+.results-page .image-card{cursor:pointer}
 .results-page .image-grid-list .image-body h3.image-room-title{font-size:22px;line-height:1.2;margin:0 0 10px}
 @media(max-width:700px){.results-page .image-grid-list .image-body{padding-top:10px;padding-bottom:10px}.results-page .image-grid-list .image-body h3.image-room-title{font-size:18px}}

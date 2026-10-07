@@ -378,7 +378,10 @@ export function Gallery({
    <div ref={resultsStart} aria-hidden="true"/>
    <GalleryCardResults featured={featured} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
-     <article className="image-card" key={image.uid}>
+     <article className="image-card" key={image.uid} onClick={event=>{
+      if((event.target as HTMLElement).closest('button,a,details,input,select,textarea'))return;
+      open(image.uid);
+     }}>
       <div className="results-photo-frame">
       <button
        className="photo-button"
