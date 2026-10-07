@@ -7,6 +7,7 @@ vi.mock('../src/web/location-preferences',()=>({useSavedLocation:()=>({latitude:
 vi.mock('../src/web/site-map',()=>({SiteMap:({activeKey,onSelect}:{activeKey:string|null;onSelect:(key:string)=>void})=><button data-active={activeKey??''} className="test-marker" onClick={()=>onSelect('far')}>Map marker</button>}));
 it('links card and marker selection, and sorts developments nearest first',async()=>{
  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ vi.stubGlobal('ResizeObserver',class {observe(){} disconnect(){}});
  const mount=document.createElement('div'),root=createRoot(mount),scroll=vi.fn();
  HTMLDialogElement.prototype.showModal=function(){this.open=true;};
  HTMLElement.prototype.scrollIntoView=scroll;
