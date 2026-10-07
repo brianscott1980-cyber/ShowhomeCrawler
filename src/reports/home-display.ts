@@ -21,3 +21,9 @@ export function cleanHomeName(name:string){
  const alt=decoded.match(/<img\b[^>]*\balt\s*=\s*["']([^"']+)["']/i)?.[1];
  return text||alt?.trim()||'Home type';
 }
+
+/** Plot identifiers are not house-type names; retain their source records separately. */
+export function isPlotName(name:string):boolean{
+ const text=cleanHomeName(name);
+ return /\bplot\b/i.test(text)||/^\d+\s*(?:,.*)?$/.test(text);
+}

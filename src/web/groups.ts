@@ -2,7 +2,7 @@ import {isCategorisedImage,isInteriorCategory} from './image-classification';
 import {developmentName} from './development-name';
 import {createHash} from 'node:crypto';
 import {developers,readCollection} from './collections';
-import {homeTypeName} from '../reports/home-display';
+import {homeTypeName,isPlotName} from '../reports/home-display';
 import {isRoomImage} from '../vision/room-classifier';
 import type {RunReport,ReportImage} from '../reports/report';
 export type GroupKind='sites'|'spaces'|'buildings'|'locations'|'interiors';
@@ -33,7 +33,7 @@ export function groupCollections(collections:Collection[],kind:GroupKind):Group[
    : collection.report.images.filter(i=>i.categorisation?(i.categorisation.isRoom||((isSites||kind==='buildings')&&i.categorisation.mainCategory==='Exterior')):!i.verdict||i.verdict.matches);
   for(const image of targetImages){
    const homes=imageHomes.get(image.id)??[];
-   const entries=isSpaces?[{identity:spaceName(image,collection.report.question),name:spaceName(image,collection.report.question),homes}]:homes.map(p=>({identity:isSites?`${collection.slug}:${p.developmentUrl}`:`${collection.slug}:${homeTypeName(p.name).toLowerCase()}`,name:isSites?p.development:homeTypeName(p.name),homes:[p]}));
+   const entries=isSpaces?[{identity:spaceName(image,collection.report.question),name:spaceName(image,collection.report.question),homes}]:homes.filter(p=>kind!=='buildings'||!isPlotName(p.name)).map(p=>({identity:isSites?`${collection.slug}:${p.developmentUrl}`:`${collection.slug}:${homeTypeName(p.name).toLowerCase()}`,name:isSites?p.development:homeTypeName(p.name),homes:[p]}));
    for(const entry of entries){let item=maps.get(entry.identity);if(!item){item={name:entry.name,images:[],imageIds:new Set(),properties:[]};maps.set(entry.identity,item);}if(!item.imageIds.has(image.id)){item.imageIds.add(image.id);item.images.push(image);}for(const home of entry.homes)if(!item.properties.includes(home))item.properties.push(home);}
   }
   for(const [identity,item] of maps){const key=keyFor(identity);let group=groups.get(key);if(!group){group={key,name:isSites?developmentName(item.name):item.name,...(isSites?{routeName:item.name}:{}),developers:[],collections:[],count:0,...(isSites?{developmentUrl:identity.slice(collection.slug.length+1)}:{})};groups.set(key,group);}group.developers.push(collection.name);group.count+=item.images.length;group.collections.push({...collection,report:{...collection.report,images:item.images,properties:item.properties}});}
