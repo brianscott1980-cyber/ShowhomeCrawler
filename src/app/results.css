@@ -372,3 +372,8 @@
 }
 
 .building-bedroom-icons{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.building-bedroom-icons svg{flex-shrink:0}
+
+@media(max-width:700px){
+ .building-type-results-page .results-stats{padding-bottom:0;margin-bottom:12px}
+ .building-type-results-page .directory-toolbar{margin-top:0!important}
+}
