@@ -1,7 +1,7 @@
 import type { ReportProperty } from './report.js';
 export function homeTypeName(name: string): string {
  const cleaned=cleanHomeName(name).replace(/\bMore\s+Information\b/gi,'').replace(/\s+/g,' ').replace(/^Plot\s+\S+\s*[-–—]\s*/i, '').replace(/\s*·\s*Plot\s+\S+.*$/i, '').replace(/\s*[-–—·|:]\s*$/,'').trim();
- return uniqueHomeTypeNames(cleaned.split(/\s*·\s*/)).join(' · ');
+ return uniqueHomeTypeNames(cleaned.split(/\s*·\s*/)).map(text=>text===text.toUpperCase()&&/[A-Z]/.test(text)?text.toLowerCase().replace(/(^|[\s-])([a-z])/g,(_,prefix:string,letter:string)=>prefix+letter.toUpperCase()):text).join(' · ');
 }
 export function uniqueHomeTypeNames(names:string[]):string[]{
  const unique=new Map<string,string>();
