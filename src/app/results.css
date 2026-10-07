@@ -246,17 +246,17 @@
  .builder-results-hero .builder-results-details{grid-row:2}
  .builder-results-hero .builder-results-stats{grid-row:3}
  .builder-results-hero .results-hero-photo{grid-row:4}
- .building-developments-dialog .building-developments-cards{height:calc(clamp(190px,32dvh,230px) + clamp(37.5px,5.5dvh,47.5px));max-height:277.5px}
+ .building-developments-dialog .building-developments-cards{height:calc(clamp(190px,32dvh,230px) + clamp(65.625px,9.625dvh,83.125px));max-height:337px}
  .building-development-select .building-development-mobile-location{display:block;margin:2px 0 4px;font-size:12px;line-height:1.2;color:var(--muted)}
  .building-development-select>h3{padding-top:7px;padding-bottom:1px;font-size:16px}
  .building-development-select>.card-body{padding-bottom:6px}
- .building-development-select>.site-preview-photo,.building-development-select>.building-development-logo-fallback,.building-development-select>.builder-navigation-placeholder{height:clamp(112.5px,16.5dvh,142.5px)}
+ .building-development-select>.site-preview-photo,.building-development-select>.building-development-logo-fallback,.building-development-select>.builder-navigation-placeholder{height:clamp(140.625px,20.625dvh,178.125px)}
  .building-developments-map .site-map-choices{bottom:34%!important}
 }
 .building-developments-dialog-heading>button{background:#fff;width:112px;height:112px;font-size:108px;line-height:1}
 .building-developments-map .maplibregl-ctrl-top-right{top:136px}
 .building-developments-map .site-map-fit{top:auto;bottom:16px;left:auto;right:16px}
-@media(max-width:700px){.building-developments-map .site-map-fit{top:auto;bottom:calc(clamp(190px,32dvh,230px) + clamp(37.5px,5.5dvh,47.5px) + 24px);left:auto;right:16px;max-width:calc(100% - 32px)}}
+@media(max-width:700px){.building-developments-map .site-map-fit{top:auto;bottom:calc(clamp(190px,32dvh,230px) + clamp(65.625px,9.625dvh,83.125px) + 24px);left:auto;right:16px;max-width:calc(100% - 32px)}}
 .opening-hours-days{margin:0;font:inherit}
 .opening-hours-days>div{display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px;margin:4px 0}
 .opening-hours-days dt,.opening-hours-days dd{margin:0;font:inherit}
@@ -277,3 +277,14 @@
 .building-developments-dialog-heading .building-map-close-icon{width:32px;height:32px}
 
 .building-developments-dialog .building-development-card{cursor:pointer}
+
+.building-development-mobile-price-label{display:none}
+@media(max-width:700px){
+ .building-development-desktop-price-label{display:none}
+ .building-development-mobile-price-label{display:inline}
+ .building-development-contact.building-development-facts{display:grid;padding:0 14px 8px;gap:3px;font-size:12px;line-height:1.25}
+ .building-development-contact .building-development-telephone{display:none}
+ .building-development-facts>div{grid-template-columns:50px minmax(0,1fr)}
+ .building-developments-dialog .building-developments-cards{height:calc(clamp(190px,32dvh,230px) + clamp(65.625px,9.625dvh,83.125px) + 24px)}
+ .building-developments-map .site-map-fit{bottom:calc(clamp(190px,32dvh,230px) + clamp(65.625px,9.625dvh,83.125px) + 48px)}
+}
