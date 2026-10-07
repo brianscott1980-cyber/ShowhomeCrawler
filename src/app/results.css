@@ -189,3 +189,18 @@
 .building-developments-dialog .building-developments-cards{top:16px}
 .building-developments-map .maplibregl-ctrl-top-right{top:76px}
 @media(max-width:700px){.building-developments-dialog .building-developments-cards{top:auto}.building-developments-map .site-map-fit{top:16px}.building-developments-dialog-heading{top:10px;right:10px}}
+.building-development-facts{margin:0;font:12px/1.5 Arial,Helvetica,sans-serif}
+.building-development-facts>div{display:grid;grid-template-columns:76px minmax(0,1fr);gap:6px;margin:0 0 6px}
+.building-development-facts dt,.building-development-facts dd{margin:0;font:inherit;overflow-wrap:anywhere}
+.building-development-facts dt{color:var(--muted)}
+.building-development-facts dd{color:var(--ink)}
+.building-development-contact.building-development-facts{margin:0;padding-top:0}
+@media(max-width:700px){
+ .building-development-distance{display:none!important}
+ .building-development-facts{display:flex;flex-direction:column;gap:6px}
+ .building-development-facts>div{display:block;margin:0}
+ .building-development-facts dt{display:none}
+ .building-development-address{order:0;color:var(--muted)}
+ .building-development-price{order:1}
+ .building-development-contact.building-development-facts{display:none}
+}
