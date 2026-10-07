@@ -219,7 +219,7 @@ export function Gallery({
   'Building Types':new Set(matchingHomes.filter(({home})=>homeTypeName(home.name)!=='Development gallery').map(({home,slug})=>`${slug}:${homeTypeName(home.name).toLowerCase()}`)).size,
   'Room Types':new Set(roomNames.filter(name=>!['Exterior','Other','Uncategorised'].includes(name))).size,
   Interiors:new Set(interiorImages.map(image=>image.uid)).size,
- }:{'Unique images':images.length,Developments:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.developmentUrl}`)).size,Properties:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.url}`)).size};
+ }:{'Unique images':images.length,Developments:new Set(matchingHomes.map(({home,slug})=>`${slug}:${home.developmentUrl}`)).size,'Room Types':new Set(images.map(image=>image.categorisation?.subCategory?.trim()).filter(name=>name&&name.toLowerCase()!=='blank')).size};
  const fixedLocalCounts=useRef(resultCounts);
  const displayedCounts=overviewOnly?introduction?.counts??resultCounts:remote?.counts??(cascadingFiltersEnabled()?resultCounts:fixedLocalCounts.current);
  const facet=(key:keyof typeof filters)=>!cascadingFiltersEnabled()?available:available.filter(image=>matches(image,{...filters,[key]:''}));
@@ -338,7 +338,7 @@ export function Gallery({
      </div></fieldset>
     </>:isBuilding?<>
      <MultiSelectFilter label="Developments" value={development} options={sites.map(([value,label])=>({value,label:developmentName(label)}))} onChange={setDevelopment}/>
-     <MultiSelectFilter label="Room Types" value={subCategory} options={subCategories} onChange={setSubCategory}/>
+     <MultiSelectFilter label="Room Types" value={subCategory} options={subCategories.filter(value=>value.trim()&&value.trim().toLowerCase()!=='blank')} onChange={setSubCategory}/>
      <MultiSelectFilter colourSwatches label="Colours" value={filters.colour} options={remote?.facets.colour??[]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>
      <MultiSelectFilter label="Furnishings" value={filters.furnishing} options={remote?.facets.furnishing??[]} onChange={value=>setFilters(previous=>({...previous,furnishing:value}))}/>
     </>:isInterior?<>
@@ -357,7 +357,7 @@ export function Gallery({
     </label>
     <MultiSelectFilter label="Builders" value={filters.developer} options={builderOptions} onChange={value=>setFilters(previous=>({...previous,developer:value}))}/>
     <MultiSelectFilter label="Interior types" value={mainCategory} options={mainCategories} onChange={setMainCategory}/>
-    <MultiSelectFilter label="Room types" value={subCategory} options={subCategories} onChange={setSubCategory}/>
+    <MultiSelectFilter label="Room types" value={subCategory} options={subCategories.filter(value=>value.trim()&&value.trim().toLowerCase()!=='blank')} onChange={setSubCategory}/>
     <MultiSelectFilter label="Developments" value={development} options={sites.map(([value,label])=>({value,label:developmentName(label)}))} onChange={setDevelopment}/>
     {places&&<>
      <MultiSelectFilter label="Bedrooms" value={filters.bedrooms} options={bedroomOptions.map(n=>({value:String(n),label:`${n} bedrooms`}))} onChange={value=>setFilters(previous=>({...previous,bedrooms:value}))}/>
