@@ -137,7 +137,7 @@
 .building-developments-map .site-map-focus-boundary{display:none}
 .building-developments-dialog .building-developments-cards{position:absolute;z-index:2;top:92px;bottom:16px;left:16px;width:30%;box-sizing:border-box;display:flex;flex-direction:column;gap:12px;list-style:none;margin:0;padding:4px 8px 4px 4px;overflow-y:auto}
 .building-developments-dialog .building-development-card{flex-shrink:0;padding:0;overflow:hidden;border:var(--card-border);border-radius:var(--card-radius);background:#fff;box-shadow:0 2px 8px #23342e14;transition:border-color .2s,box-shadow .2s}
-.building-development-card.is-selected{border-color:var(--ink);box-shadow:0 0 0 2px var(--ink)}
+.building-development-card.is-selected{border-color:var(--builder-primary,var(--ink));box-shadow:0 0 0 2px var(--builder-primary,var(--ink))}
 .building-development-select{display:grid;grid-template-columns:100px minmax(0,1fr);width:100%;border:0;padding:0;background:transparent;color:inherit;text-align:left;cursor:pointer;font:inherit}
 .building-development-select .site-preview-photo{position:relative;height:100%;min-height:100px;max-height:150px}
 .building-development-select .card-image-space{height:100%;width:100%}
