@@ -327,3 +327,8 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 }
 
 @media(max-width:700px){.builder-card .card-body h2>span[aria-hidden="true"]{display:none}}
+
+@media(max-width:700px){
+ .directory-large .builder-card .collection-image{height:168px}
+ [aria-label="Builder collections"] .directory-large .result-loading-visual{height:168px}
+}
