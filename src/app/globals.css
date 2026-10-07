@@ -346,3 +346,5 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 }
 
 @media(max-width:700px){.site-header,.site-header.site-header-sticky{padding-left:2.5%;padding-right:2.5%}}
+
+@media(max-width:700px){.site-header .header-controls nav,.site-header.site-header-sticky .header-controls nav{font-size:13px}}
