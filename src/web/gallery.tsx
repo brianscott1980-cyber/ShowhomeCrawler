@@ -371,11 +371,6 @@ export function Gallery({
    <div className="directory-toolbar" style={{ marginTop: 24 }}>
     <div className="directory-view-status"><ViewOptions view={view} onChange={changeView} ariaLabel="Image card layout" />
     <DirectoryQueryStatus query={remote} visible/></div>
-    <p className="count" style={{ margin: 0 }}>
-     {favouritesOnly && !ready
-      ? 'Loading favourites…'
-      : `${remote?.total??images.length} ${(remote?.total??images.length) === 1 ? 'image' : 'images'}`}
-    </p>
    </div>
 
    </>}
