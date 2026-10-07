@@ -25,6 +25,7 @@ export function useDirectoryQuery<T>(kind:DirectoryKind,filters:Record<string,st
  useEffect(()=>{
   if(!initial||!ready)return;
   if(state.identity===identity&&!state.pending&&!retry)return;
+  if(window.matchMedia?.('(max-width:700px)').matches){void fetchPage(0,16,false);return()=>controller.current?.abort();}
   const timer=setTimeout(()=>{void fetchPage(0,16,false);},80);
   return()=>{clearTimeout(timer);controller.current?.abort();};
  },[identity,retry,Boolean(initial),ready]);
