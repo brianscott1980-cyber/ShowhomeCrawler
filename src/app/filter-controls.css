@@ -52,3 +52,20 @@
  .directory-filter-row.directory-filters-pinned,
  .results-page .directory-filter-row.directory-filters-pinned{gap:8px}
 }
+
+/* The shared panel owns the surface and padding; gallery styles must not add a second layer. */
+.site-filter-panel .directory-filter-row.filters:not(.directory-filters-pinned),
+.results-page .site-filter-panel .directory-filter-row.filters:not(.directory-filters-pinned){
+ padding:0;
+ margin:0;
+ background:transparent;
+ gap:18px;
+ align-items:end;
+}
+@media(min-width:901px){
+ .results-page .site-filter-panel .directory-filter-row.filters:not(.directory-filters-pinned){flex-wrap:nowrap}
+}
+@media(max-width:900px){
+ .site-filter-panel .directory-filter-row.filters:not(.directory-filters-pinned),
+ .results-page .site-filter-panel .directory-filter-row.filters:not(.directory-filters-pinned){gap:8px}
+}

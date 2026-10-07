@@ -293,5 +293,3 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 .location-explorer .result-loading-body{flex:1;min-width:0;padding:12px 14px}
 @media(max-width:450px){.location-explorer .result-loading-visual{width:95px;flex-basis:95px}}
 
-/* Compact the outer interiors panel without changing shared control dimensions. */
-.site-filter-panel.interior-filter-panel{padding:12px}
