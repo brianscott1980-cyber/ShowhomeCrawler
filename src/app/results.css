@@ -349,6 +349,6 @@
 }
 
 @media(max-width:700px){
- .building-developments-dialog .building-developments-cards{bottom:0;align-items:flex-end;padding-bottom:0}
+ .building-developments-dialog .building-developments-cards{bottom:0;align-items:flex-end;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
  .building-developments-dialog .building-development-card{align-self:flex-end}
 }
