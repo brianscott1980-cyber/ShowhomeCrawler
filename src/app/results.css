@@ -396,6 +396,10 @@
 @media(max-width:700px){.building-type-results-page .image-card .image-body>h3.image-room-title{display:block}}
 .results-page .image-grid-list .image-body{padding-top:12px;padding-bottom:12px}
 .results-page .image-card{cursor:pointer}
+.results-page .image-grid-list .image-card{position:relative}
+.results-page .image-grid-list .image-card>.results-save{z-index:3}
+.results-page .image-grid-list .image-card:hover>.results-save,.results-page .image-grid-list .image-card:focus-within>.results-save{opacity:1}
+.results-page .image-grid-list .image-body h3.image-room-title{padding-right:50px}
 @media(max-width:700px){.image-card .image-home-details{display:none}}
 .results-page .image-grid-list .results-photo-frame{align-self:stretch;overflow:hidden}
 .results-page .image-grid-list .photo-button{position:absolute;inset:0;display:block;padding:0}

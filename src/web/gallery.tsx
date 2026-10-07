@@ -395,9 +395,10 @@ export function Gallery({
        />
        {view!=='list'&&image.categorisation?.subCategory!==''&&<span className="photo-caption">{roomLabel(image.categorisation?.subCategory ?? 'Showhome interior')}</span>}
       </button>
-      <button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>
+      {view!=='list'&&<button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>}
       </div>
 
+      {view==='list'&&<button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>}
       <div className="image-body">
        {featured ? <><h3>{image.categorisation?.mainCategory ?? 'Showhome interior'}</h3><p className="subtle">{image.developer}</p></> : <>
        {view!=='list'&&<div className="image-heading">
