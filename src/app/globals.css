@@ -314,3 +314,10 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
  .builder-directory-toolbar .directory-update-status{position:absolute;top:100%;left:0}
  .builder-directory-toolbar{position:relative}
 }
+
+.filter-label-mobile{display:none}
+@media(max-width:700px){
+ .builders-directory-intro .directory-intro-feature{display:none}
+ .filter-label-desktop{display:none}
+ .filter-label-mobile{display:inline}
+}

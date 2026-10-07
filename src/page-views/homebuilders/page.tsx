@@ -10,7 +10,7 @@ export default async function Builders(){
  const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Builders',url:absoluteUrl('/builders'),description:'UK showhome interiors and home office inspiration'};
  return <DirectoryCountProvider><main>
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd(schema)}}/>
-  <section className="intro directory-intro" aria-labelledby="builders-heading">
+  <section className="intro directory-intro builders-directory-intro" aria-labelledby="builders-heading">
    <div className="directory-intro-heading">
     <h1 id="builders-heading">Builders</h1>
     <p>Explore UK builders and discover their showhome interiors.</p>

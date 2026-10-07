@@ -56,8 +56,8 @@ export function DeveloperDirectory({
  return <section aria-label="Builder collections" aria-busy={remote?.loading}>{dialog}
   <div className="site-filter-panel builder-filter-panel">
    <DirectoryFilters pending={Boolean(remote?.loading)} className="filters" label="Builder filters">
-    <DistanceFilter label="Developments Within" value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
-    <MultiSelectFilter label="Development Locations" value={filters.region} options={regions} onChange={value=>change('region',value)}/>
+    <DistanceFilter label="Developments Within" mobileLabel="Within" value={filters.radius} location={savedLocation} onChange={value=>change('radius',value)} onChangeLocation={()=>{void requestLocation(location=>setPoint(location),{key:'radius',value:filters.radius},true);}}/>
+    <MultiSelectFilter label="Development Locations" mobileLabel="Developments" value={filters.region} options={regions} onChange={value=>change('region',value)}/>
     <button type="button" className="location-filter-reset" onClick={()=>setFilters(builderDefaults)}>Reset</button>
    </DirectoryFilters>
 
