@@ -320,7 +320,7 @@ export function Gallery({
     {!introduction.details&&<div className="results-stats" aria-live="polite">
      {Object.entries(displayedCounts).map(([label,count])=><div key={label}><strong>{favouritesOnly&&!ready?'…':<RollingCount key={count} value={count}/>}</strong><span>{label}</span></div>)}
     </div>}
-    {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : isDevelopment?'Explore the development':'Explore the collection'}</h2></div>}
+    {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : isDevelopment?'Explore the development':introduction?.buildingType?<>Explore {introduction.title}</>:'Explore the collection'}</h2></div>}
    </>}
    {!overviewOnly&&<>
    {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':isInterior?'site-filter-panel interior-filter-panel':undefined}><DirectoryFilters pending={Boolean(remote?.loading)} className={isDevelopment?'filters site-filters development-detail-filters':isInterior?'filters site-filters location-primary-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
