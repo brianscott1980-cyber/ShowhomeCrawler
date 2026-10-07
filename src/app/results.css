@@ -253,3 +253,7 @@
  .building-development-select>.site-preview-photo,.building-development-select>.building-development-logo-fallback,.building-development-select>.builder-navigation-placeholder{height:clamp(75px,11dvh,95px)}
  .building-developments-map .site-map-choices{bottom:34%!important}
 }
+.building-developments-dialog-heading>button{background:#fff;width:112px;height:112px;font-size:108px;line-height:1}
+.building-developments-map .maplibregl-ctrl-top-right{top:136px}
+.building-developments-map .site-map-fit{top:auto;bottom:16px;left:auto;right:16px}
+@media(max-width:700px){.building-developments-map .site-map-fit{top:auto;bottom:calc(clamp(190px,32dvh,230px) + 24px);left:auto;right:16px;max-width:calc(100% - 32px)}}
