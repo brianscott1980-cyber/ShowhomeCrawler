@@ -153,6 +153,10 @@ it('keeps a landing colour in the source scope, including counts and later batch
 it('keeps furnishing galleries scoped while applying other filters',async()=>{
  await db.exec(`update showhome_web.images set metadata='{"categorisation":{"furnishingTags":["Gold Lamp"]}}' where catalogue_id='a'`);
  try{
+  const building=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'},filters:{furnishing:'Gold Lamp'}},sql);
+  expect(building.facets.furnishing).toContain('Gold Lamp');
+  expect(building.images.length).toBeGreaterThan(0);
+  expect(building.images.every(image=>image.id==='a')).toBe(true);
   const items=await queryFurnishings(sql);
   expect(items.some(item=>item.name==='Gold Lamp')).toBe(true);
   expect(items.some(item=>item.name==='Blue')).toBe(false);

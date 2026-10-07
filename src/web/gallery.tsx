@@ -27,7 +27,7 @@ import { ViewOptions, useCardView } from './view-options';
 import { isRoomImage } from '../vision/room-classifier';
 import Link from 'next/link';
 import {useUrlFilters} from './url-filters';
-const galleryDefaults={colour:'',tag:'',building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
+const galleryDefaults={furnishing:'',colour:'',tag:'',building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
 import { heartIcon } from '../reports/gallery-ui';
 
 interface Collection { slug: string; name: string; report: RunReport }
@@ -173,6 +173,7 @@ export function Gallery({
   return image.verdict?.matches || includeUnclassified;
  });
 
+ const isBuilding=galleryScope?.kind==='buildings';
  const isInterior=galleryScope?.kind==='interiors';
  const isDevelopment=Boolean(introduction?.developmentDetails)&&!introduction?.buildingType;
  const homeMatches=(image:(typeof available)[number],home:(typeof available)[number]['homes'][number],f:typeof filters)=>matchesSelection(f.building,homeTypeName(home.buildingName??home.name).toLowerCase())&&(!f.minBeds||(home.bedrooms!==null&&home.bedrooms>=Number(f.minBeds)))&&(!f.maxBeds||(home.bedrooms!==null&&home.bedrooms<=Number(f.maxBeds)))&&(!f.minPrice||(home.price!==null&&home.price>=Number(f.minPrice)))&&(!f.maxPrice||(home.price!==null&&home.price<=Number(f.maxPrice)))&&matchesSelection(f.bedrooms,String(home.bedrooms))&&matchesSelection(f.site,home.development)&&matchesSelection(f.development,home.developmentUrl)&&matchesAnySelection(f.location,places?.[`${image.slug}:${home.developmentUrl}`]??[]);
@@ -323,7 +324,7 @@ export function Gallery({
     {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : isDevelopment?'Explore the development':introduction?.buildingType?<>Explore {introduction.title}</>:'Explore the collection'}</h2></div>}
    </>}
    {!overviewOnly&&<>
-   {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':isInterior?'site-filter-panel interior-filter-panel':undefined}><DirectoryFilters pending={Boolean(remote?.loading)} className={isDevelopment?'filters site-filters development-detail-filters':isInterior?'filters site-filters location-primary-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
+   {!featured && <><div className={isDevelopment?'site-filter-panel development-detail-filter-panel':isInterior||isBuilding?'site-filter-panel interior-filter-panel':undefined}><DirectoryFilters pending={Boolean(remote?.loading)} className={isDevelopment?'filters site-filters development-detail-filters':isInterior||isBuilding?'filters site-filters location-primary-filters':'filters'} label={isDevelopment?'Development filters':'Collection filters'}>
     {isDevelopment?<>
      <fieldset className="development-range-filter"><legend>Bedrooms Range</legend><div>
       <SingleSelectFilter label="Minimum bedrooms" value={bedsRange.minValue} options={[{value:'',label:'Any'},...bedsRange.minNumbers.map(value=>({value:String(value),label:`${value} Beds`}))]} onChange={value=>changeRange('minBeds',value)}/>
@@ -335,6 +336,11 @@ export function Gallery({
       <span aria-hidden="true">–</span>
       <MoneyInput label="Maximum price" value={filters.maxPrice} options={pricesRange.options.filter(price=>!filters.minPrice||price>=Number(filters.minPrice))} onChange={value=>changeRange('maxPrice',value)}/>
      </div></fieldset>
+    </>:isBuilding?<>
+     <MultiSelectFilter label="Developments" value={development} options={sites.map(([value,label])=>({value,label:developmentName(label)}))} onChange={setDevelopment}/>
+     <MultiSelectFilter label="Room Types" value={subCategory} options={subCategories} onChange={setSubCategory}/>
+     <MultiSelectFilter colourSwatches label="Colours" value={filters.colour} options={remote?.facets.colour??[]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>
+     <MultiSelectFilter label="Furnishings" value={filters.furnishing} options={remote?.facets.furnishing??[]} onChange={value=>setFilters(previous=>({...previous,furnishing:value}))}/>
     </>:isInterior?<>
      <MultiSelectFilter label="Builders" value={filters.developer} options={builderOptions} onChange={value=>setFilters(previous=>({...previous,developer:value}))}/>
      <MultiSelectFilter label="Building Types" value={filters.building} options={(remote?.facets.building??[...new Set(facetHomes('building').map(({home})=>homeTypeName(home.buildingName??home.name).toLowerCase()))]).map(value=>({value,label:homeTypeName(value).replace(/\b\w/g,letter=>letter.toUpperCase())}))} onChange={value=>setFilters(previous=>({...previous,building:value}))}/>
@@ -359,7 +365,7 @@ export function Gallery({
      <MultiSelectFilter label="Developments" value={filters.site} options={siteOptions.map(value=>({value,label:developmentName(value)}))} onChange={value=>setFilters(previous=>({...previous,site:value}))}/>
     </>}
     </>}
-    <button className={isDevelopment||isInterior?'location-filter-reset':'results-reset'} onClick={() => setFilters(galleryDefaults)}>Reset</button>
+    <button className={isDevelopment||isInterior||isBuilding?'location-filter-reset':'results-reset'} onClick={() => setFilters(galleryDefaults)}>Reset</button>
    </DirectoryFilters></div>
 
    <div className="directory-toolbar" style={{ marginTop: 24 }}>
