@@ -344,3 +344,10 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
  .site-header .account-menu,.site-header.site-header-sticky .account-menu{position:relative;inset:auto;flex-shrink:0}
  .site-header.site-header-sticky{padding-top:7px;padding-bottom:7px}
 }
+
+@media(max-width:700px){
+ main{padding-left:2.5%;padding-right:2.5%}
+ .site-header,.site-header.site-header-sticky{padding-left:2.5%;padding-right:2.5%}
+ main .site-filter-panel{padding-left:2.5vw;padding-right:2.5vw}
+ main .directory-filter-space:not(.site-filter-panel .directory-filter-space)>.directory-filter-row:not(.directory-filters-pinned){padding-left:2.5vw;padding-right:2.5vw}
+}
