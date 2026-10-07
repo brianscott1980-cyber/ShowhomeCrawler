@@ -1,9 +1,7 @@
-import {cascadingFiltersEnabled} from './filter-settings';
 import type { CSSProperties } from 'react';
 
 export function RollingCount({ value }: { value: number }) {
  const formatted = value.toLocaleString('en-GB');
- if(!cascadingFiltersEnabled())return <span className="rolling-count">{formatted}</span>;
  return <span className="rolling-count">
   <span className="sr-only">{formatted}</span>
   <span className="rolling-count-visual" aria-hidden="true">{[...formatted].map((character, index) => {
