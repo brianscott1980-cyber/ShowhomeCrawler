@@ -217,3 +217,8 @@
 @media(min-width:701px){
  .building-development-card-logo{width:auto;height:auto;max-width:64px;max-height:36px;object-fit:contain}
 }
+.building-development-select>h3{line-height:1.1}
+.building-development-facts{line-height:1.25}
+.building-development-facts>div{margin-bottom:4px}
+.building-development-contact>div{margin-top:3px}
+@media(max-width:700px){.building-development-facts{gap:3px}.building-development-select>h3{padding-bottom:2px}}
