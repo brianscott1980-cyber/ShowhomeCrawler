@@ -313,3 +313,19 @@
  .building-development-select .card-body{padding-bottom:4px}
  .building-development-contact.building-development-facts{align-self:start;padding-top:0}
 }
+
+@media(max-width:700px){
+ .building-developments-dialog .building-development-card{min-width:0;overflow-x:hidden}
+ .building-developments-dialog .building-development-select,
+ .building-developments-dialog .building-development-select>h3,
+ .building-developments-dialog .building-development-select>.card-body,
+ .building-developments-dialog .building-development-contact{box-sizing:border-box;width:100%;min-width:0}
+ .building-developments-dialog .building-development-select>h3{overflow-wrap:normal;word-break:normal}
+ .building-developments-dialog .building-development-facts>div{grid-template-columns:54px minmax(0,1fr)}
+ .building-developments-dialog .building-development-facts dt{white-space:nowrap}
+ .building-developments-dialog .building-development-facts dd{min-width:0;overflow-wrap:normal;word-break:normal}
+ .building-developments-dialog .building-development-facts .building-development-price-to,
+ .building-developments-dialog .building-development-facts .building-development-bedrooms,
+ .building-developments-dialog .building-development-facts .building-development-distance,
+ .building-developments-dialog .building-development-facts .building-development-telephone{display:none!important}
+}
