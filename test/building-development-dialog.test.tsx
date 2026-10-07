@@ -22,5 +22,13 @@ it('links card and marker selection, and sorts developments nearest first',async
   await act(async()=>mount.querySelector<HTMLButtonElement>('.test-marker')!.click());
   expect(cards[1]?.getAttribute('aria-pressed')).toBe('true');
   expect(scroll).toHaveBeenCalledOnce();
+  vi.stubGlobal('matchMedia',()=>({matches:true}));
+  const list=mount.querySelector<HTMLUListElement>('.building-developments-cards')!;
+  vi.spyOn(list,'getBoundingClientRect').mockReturnValue({left:0,right:400,width:400} as DOMRect);
+  const entries=mount.querySelectorAll<HTMLLIElement>('.building-development-card');
+  vi.spyOn(entries[0]!,'getBoundingClientRect').mockReturnValue({left:100,right:300,width:200} as DOMRect);
+  vi.spyOn(entries[1]!,'getBoundingClientRect').mockReturnValue({left:400,right:600,width:200} as DOMRect);
+  await act(async()=>{list.dispatchEvent(new Event('scroll'));await new Promise(resolve=>setTimeout(resolve,150));});
+  expect(mount.querySelector('.test-marker')?.getAttribute('data-active')).toBe('near');
  }finally{await act(async()=>root.unmount());vi.unstubAllGlobals();}
 });

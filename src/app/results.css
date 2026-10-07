@@ -204,3 +204,13 @@
  .building-development-price{order:1}
  .building-development-contact.building-development-facts{display:none}
 }
+@media(max-width:700px){
+ .building-developments-dialog .building-developments-cards{height:clamp(210px,38%,280px);max-height:280px}
+ .building-development-select>h3{font-size:18px;line-height:1.15;padding:8px 12px 3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .building-development-select>.card-body{padding:0 12px 8px}
+ .building-development-facts{font-size:12px;line-height:1.35;gap:4px}
+ .building-development-address dd{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .building-development-select>.site-preview-photo,.building-development-select>.building-development-logo-fallback,.building-development-select>.builder-navigation-placeholder{height:clamp(90px,14dvh,120px)}
+ .building-development-contact.building-development-facts{display:none}
+ .building-developments-map .site-map-choices{bottom:40%!important}
+}
