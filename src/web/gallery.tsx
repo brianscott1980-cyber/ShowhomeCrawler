@@ -61,7 +61,7 @@ export function Gallery({
  featured?: boolean;
  overviewOnly?: boolean;
  places?: Record<string,string[]>;
- introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; developmentDetails?:ReactNode; developmentLocation?:ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
+ introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; buildingType?:boolean; developmentDetails?:ReactNode; developmentLocation?:ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
 }) {
  const [view, changeView] = useCardView('showhome-gallery-view', 'large');
  const [favourites, setFavourites] = useState<string[]>([]);
@@ -174,7 +174,7 @@ export function Gallery({
  });
 
  const isInterior=galleryScope?.kind==='interiors';
- const isDevelopment=Boolean(introduction?.developmentDetails);
+ const isDevelopment=Boolean(introduction?.developmentDetails)&&!introduction?.buildingType;
  const homeMatches=(image:(typeof available)[number],home:(typeof available)[number]['homes'][number],f:typeof filters)=>matchesSelection(f.building,homeTypeName(home.buildingName??home.name).toLowerCase())&&(!f.minBeds||(home.bedrooms!==null&&home.bedrooms>=Number(f.minBeds)))&&(!f.maxBeds||(home.bedrooms!==null&&home.bedrooms<=Number(f.maxBeds)))&&(!f.minPrice||(home.price!==null&&home.price>=Number(f.minPrice)))&&(!f.maxPrice||(home.price!==null&&home.price<=Number(f.maxPrice)))&&matchesSelection(f.bedrooms,String(home.bedrooms))&&matchesSelection(f.site,home.development)&&matchesSelection(f.development,home.developmentUrl)&&matchesAnySelection(f.location,places?.[`${image.slug}:${home.developmentUrl}`]??[]);
  const matches=(image:(typeof available)[number],f:typeof filters)=>{
   if(!matchesSelection(f.developer,image.developer))return false;
@@ -283,9 +283,9 @@ export function Gallery({
  return (
   <section aria-label="Image collection" className={featured ? 'featured-gallery' : undefined}>
    {introduction && <>
-    <section className={`results-hero${introduction.details?' builder-results-hero':introduction.titleAccessory?` development-results-hero${introduction.developmentDetails?' development-three-column':''}`:''}`}>
+    <section className={`results-hero${introduction.details?' builder-results-hero':introduction.titleAccessory||introduction.developmentDetails?` development-results-hero${introduction.developmentDetails?' development-three-column':''}`:''}`}>
      {introduction.details&&introduction.back&&<BreadcrumbBack className="results-back builder-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
-     {introduction.titleAccessory&&introduction.back&&<BreadcrumbBack className="results-back development-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
+     {(introduction.titleAccessory||introduction.developmentDetails)&&introduction.back&&<BreadcrumbBack className="results-back development-results-back" href={introduction.back.href}>{introduction.back.label}</BreadcrumbBack>}
      {introduction.developmentDetails?<>
       <div className="results-hero-copy development-logo-column"><h1>{introduction.title}</h1><p>{introduction.description}</p>{introduction.developmentLocation}</div>
       <div className="development-details-column">{introduction.developmentDetails}</div>

@@ -5,8 +5,8 @@ import { Gallery } from './gallery';
 import type { Collection } from './groups';
 
 /** Shared by directory destinations and saved favourites. */
-export function ResultsPage({ title, description, eyebrow, titleAccessory, developmentDetails, developmentLocation, counts, back, collections, favouritesOnly = false, includeUnclassified = false, places, initialImage, builderOverview, galleryScope, galleryPage, children }: {
- title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; developmentDetails?:ReactNode; developmentLocation?:ReactNode; counts?:Record<string,number>; back?: { href: string; label: string };
+export function ResultsPage({ title, description, eyebrow, titleAccessory, buildingDetails, developmentDetails, developmentLocation, counts, back, collections, favouritesOnly = false, includeUnclassified = false, places, initialImage, builderOverview, galleryScope, galleryPage, children }: {
+ title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; buildingDetails?:ReactNode; developmentDetails?:ReactNode; developmentLocation?:ReactNode; counts?:Record<string,number>; back?: { href: string; label: string };
  builderOverview?: {map:ReactNode;details:ReactNode;counts:Record<string,number>};
  galleryScope?:GalleryScope; galleryPage?:GalleryPageData;
  initialImage?: string;
@@ -18,7 +18,7 @@ export function ResultsPage({ title, description, eyebrow, titleAccessory, devel
  const previewCollections=overviewOnly?collections.map(overviewCollection):collections;
  return <main className="results-page">
   <Gallery galleryScope={galleryScope} galleryPage={galleryPage} collections={previewCollections} favouritesOnly={favouritesOnly} includeUnclassified={includeUnclassified}
-   places={places} initialImage={initialImage} overviewOnly={overviewOnly} introduction={{ title, description, eyebrow, titleAccessory, developmentDetails, developmentLocation, counts, back, ...builderOverview }}/>
+   places={places} initialImage={initialImage} overviewOnly={overviewOnly} introduction={{ title, description, eyebrow, titleAccessory, buildingType:Boolean(buildingDetails), developmentDetails:buildingDetails??developmentDetails, developmentLocation, counts, back, ...builderOverview }}/>
   {children}
  </main>;
 }
