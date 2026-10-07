@@ -18,6 +18,13 @@ export function SiteHeader({children}:{children:ReactNode}){
  },[sticky]);
 
  useEffect(()=>{
+  const element=header.current;if(!element)return;
+  const measure=()=>document.documentElement.style.setProperty('--site-header-height',`${element.getBoundingClientRect().height}px`);
+  measure();const observer=new ResizeObserver(measure);observer.observe(element);
+  return()=>observer.disconnect();
+ },[]);
+
+ useEffect(()=>{
   const onScroll=()=>{
    setSticky(height!==undefined&&window.scrollY>=height);
   };
