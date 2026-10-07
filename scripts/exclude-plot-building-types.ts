@@ -1,7 +1,7 @@
 import {config} from 'dotenv';config({path:'.env.local',quiet:true});
 import {isPlotName} from '../src/reports/home-display';
 const {websiteDatabase}=await import('../src/database/website');const sql=websiteDatabase();
-const plotPattern='(^|[^a-z])(plot|development|block)([^a-z]|$)',numberPattern='^[0-9]';
+const plotPattern='(^|[^a-z])(plot|development|block)([^a-z]|$)|(^|[^a-z0-9])((ground|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|[0-9]+(st|nd|rd|th)?)[[:space:]]+floor|floor[[:space:]]+[0-9]+|f[[:space:]]*[0-9]+|(type|apartment|property|home)[[:space:]]*[0-9]+)([^a-z0-9]|$)',numberPattern='^[0-9]';
 const cards=await sql`select key,name from showhome_web.directory_cards where kind='buildings'`;
 const rejected=cards.filter(row=>isPlotName(row.name));console.log(`Removing ${rejected.length} plot-labelled building cards; source galleries retained`);
 await sql.begin(async tx=>{
