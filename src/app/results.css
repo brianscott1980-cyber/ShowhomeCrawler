@@ -269,3 +269,4 @@
  .building-development-select .card-body{padding-bottom:4px}
  .building-development-contact.building-development-facts{padding:0 14px 10px}
 }
+.opening-hours-days>div{grid-template-columns:26px minmax(0,1fr);gap:2px}
