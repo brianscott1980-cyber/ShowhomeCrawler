@@ -44003,7 +44003,42 @@
       "id": "cf1d1048f849ef1a9c2f83ffa6a2b76940c63f59dc49981503495a42eef6cd1f",
       "path": "images/cf1d1048f849ef1a9c2f83ffa6a2b76940c63f59dc49981503495a42eef6cd1f.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/thames-valley/the-paddock-at-chilsey-grange/images/_large/3026270/Sculptor_24.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark roof, white-trimmed windows, and a front door under a small awning. The house is surrounded by a paved driveway, low hedges, and some landscaping. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:51:02.860Z",
+        "classificationStatus": "completed",
+        "processingMs": 2305,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark roof, white-trimmed windows, and a front door under a small awning. The house is surrounded by a paved driveway, low hedges, and some landscaping. No interior is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "cf3dacf8587e962515cf3ceaf28ea8a94702d4955e5056ec23ef4a26326614b5",
@@ -44133,7 +44168,173 @@
       "id": "17329054b6a7ad6c6fddedb6f584a4b91c54af6ab0cac8478e829bd3df027c3e",
       "path": "images/17329054b6a7ad6c6fddedb6f584a4b91c54af6ab0cac8478e829bd3df027c3e.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834586/001-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "couch",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv stand",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "blue",
+              "white",
+              "beige"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "vases",
+            "colours": [
+              "terracotta",
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "tv",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with blue velvet sofas, a grey carpet, beige walls, and a wooden TV stand. The room features a black coffee table, a white ceiling lamp, and decorative plants and vases. The walls have a beige wallpaper with a subtle wave pattern.",
+        "objects": [
+          "sofa",
+          "couch",
+          "coffee table",
+          "tv stand",
+          "lamp",
+          "curtains",
+          "pillows",
+          "vases",
+          "tv"
+        ],
+        "colours": [
+          "blue",
+          "white",
+          "beige",
+          "grey",
+          "black",
+          "wood",
+          "terracotta",
+          "green"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Wave wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains"
+        ],
+        "fabricTags": [
+          "Velvet upholstery"
+        ],
+        "furnishingTags": [
+          "Round coffee table",
+          "Modern lamp",
+          "Wooden TV stand",
+          "Velvet sofa",
+          "Armchair"
+        ],
+        "chairs": [
+          "armchair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:47:49.695Z",
+        "classificationStatus": "completed",
+        "processingMs": 6822,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Wave wallpaper",
+        "curtains": "Solid curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with blue velvet sofas, a grey carpet, beige walls, and a wooden TV stand. The room features a black coffee table, a white ceiling lamp, and decorative plants and vases. The walls have a beige wallpaper with a subtle wave pattern.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "65232eafff2cb2f030083ef46aac221046838dea1077fed07a884d5181018de6",
@@ -44145,7 +44346,175 @@
       "id": "183d33ca1733d830b624b8b9c7c3a44e7820b95ab43bc67ec9df2bccd1da3cce",
       "path": "images/183d33ca1733d830b624b8b9c7c3a44e7820b95ab43bc67ec9df2bccd1da3cce.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834587/002-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "couch",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv stand",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "blue",
+              "white",
+              "beige"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "vases",
+            "colours": [
+              "terracotta",
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "blue",
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with blue velvet sofas, a black coffee table, a wooden TV stand, beige curtains, and abstract wall art. The walls and ceiling are beige, the floor is grey, and there is a large abstract painting on one wall. The room has a television and a chandelier.",
+        "objects": [
+          "sofa",
+          "couch",
+          "coffee table",
+          "tv stand",
+          "lamp",
+          "curtains",
+          "pillows",
+          "vases",
+          "artwork",
+          "television"
+        ],
+        "colours": [
+          "blue",
+          "black",
+          "beige",
+          "grey",
+          "white",
+          "terracotta"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Feature wallpaper",
+          "Beige wallpaper"
+        ],
+        "curtainTags": [
+          "Beige curtains"
+        ],
+        "fabricTags": [
+          "Striped cushions",
+          "Blue cushions",
+          "Beige cushions"
+        ],
+        "furnishingTags": [
+          "Velvet sofa",
+          "Round coffee table",
+          "Wooden TV stand",
+          "Modern lamp",
+          "Geometric chandelier"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:47:56.782Z",
+        "classificationStatus": "completed",
+        "processingMs": 7033,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Feature wallpaper · Beige wallpaper",
+        "curtains": "Beige curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with blue velvet sofas, a black coffee table, a wooden TV stand, beige curtains, and abstract wall art. The walls and ceiling are beige, the floor is grey, and there is a large abstract painting on one wall. The room has a television and a chandelier.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "b4ebc73dcc412c3cab6f837cb1766d7aab3b084197ea1c0626b5ce7d176fabfe",
@@ -44318,7 +44687,178 @@
       "id": "bc250591b2dc1c7a230c53c2d3b1a5477605dccb4071a75452f1be52ced4a29c",
       "path": "images/bc250591b2dc1c7a230c53c2d3b1a5477605dccb4071a75452f1be52ced4a29c.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834588/003-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "cream",
+              "yellow"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "blue",
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "blue",
+              "white",
+              "grey",
+              "beige",
+              "striped"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "orange",
+              "brown"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with a blue velvet sofa, beige walls, grey carpet, and contemporary furnishings including a black coffee table, side tables, and decorative lamps. Artwork and cushions add visual interest.",
+        "objects": [
+          "sofa",
+          "armchair",
+          "coffee table",
+          "side table",
+          "lamp",
+          "artwork",
+          "curtains",
+          "cushions",
+          "planters",
+          "tv stand"
+        ],
+        "colours": [
+          "blue",
+          "beige",
+          "grey",
+          "black",
+          "white",
+          "cream",
+          "yellow",
+          "striped",
+          "orange",
+          "brown"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "solid curtains"
+        ],
+        "fabricTags": [
+          "striped cushions",
+          "blue cushions",
+          "white cushions",
+          "grey cushions",
+          "beige cushions"
+        ],
+        "furnishingTags": [
+          "modern lamp",
+          "round coffee table",
+          "geometric side table",
+          "velvet sofa",
+          "armchair with black legs",
+          "abstract artwork"
+        ],
+        "chairs": [
+          "armchair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:40.896Z",
+        "classificationStatus": "completed",
+        "processingMs": 6959,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "solid curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with a blue velvet sofa, beige walls, grey carpet, and contemporary furnishings including a black coffee table, side tables, and decorative lamps. Artwork and cushions add visual interest.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9dee79bad327588413186ec61ddc50864852f6f08af8b91275446e5b1c5c74f9",
@@ -44465,7 +45005,169 @@
       "id": "c5d360268624d1e1280ef50dbd491e7f12e074bb2757dc7e880678023c2a8761",
       "path": "images/c5d360268624d1e1280ef50dbd491e7f12e074bb2757dc7e880678023c2a8761.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834590/005-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "cabinets",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "table",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinets",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "light fixtures",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plates",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "glasses",
+            "colours": [
+              "black",
+              "clear"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A modern dining room with a wooden table, beige chairs, and a blue accent wall. The room features white walls, a white ceiling, and light wood flooring. The dining table is set with black and white plates, black glasses, and a black vase with greenery. The kitchen area is visible in the background with light grey cabinets and a blue accent wall. The room has white pendant lights and a glass door leading to an outdoor area.",
+        "objects": [
+          "table",
+          "chairs",
+          "cabinets",
+          "light fixtures",
+          "vase",
+          "plates",
+          "glasses",
+          "wall",
+          "ceiling",
+          "floor",
+          "door",
+          "window",
+          "shelves",
+          "mirror",
+          "hanging light",
+          "plant",
+          "sink",
+          "countertop",
+          "stove",
+          "range hood",
+          "blinds",
+          "curtains"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "light wood",
+          "light grey",
+          "beige",
+          "black",
+          "green"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "white curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "wooden table",
+          "beige chairs",
+          "light grey cabinets",
+          "white pendant lights",
+          "black vase",
+          "black and white plates",
+          "black glasses"
+        ],
+        "chairs": [
+          "beige chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:54.584Z",
+        "classificationStatus": "completed",
+        "processingMs": 7186,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "white curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A modern dining room with a wooden table, beige chairs, and a blue accent wall. The room features white walls, a white ceiling, and light wood flooring. The dining table is set with black and white plates, black glasses, and a black vase with greenery. The kitchen area is visible in the background with light grey cabinets and a blue accent wall. The room has white pendant lights and a glass door leading to an outdoor area.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "d64b3ec861e802be6ac47ec74683b8dcb09e79720001bb6417c6ac0910cfda99",
@@ -44597,7 +45299,141 @@
       "id": "743e71da4815c42e13f1674fc22d6ff6b252111ccc635fc68a9bdbef3f653aae",
       "path": "images/743e71da4815c42e13f1674fc22d6ff6b252111ccc635fc68a9bdbef3f653aae.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834592/007-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "cabinets",
+            "colours": [
+              "white",
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "oven",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "range hood",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "kitchen sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "kettle",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "white",
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "shelves",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen",
+        "description": "A modern kitchen with white cabinets, a blue accent wall, light wood flooring, and white countertops.",
+        "objects": [
+          "cabinets",
+          "oven",
+          "range hood",
+          "kitchen sink",
+          "kettle",
+          "planters",
+          "shelves"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "light wood",
+          "black",
+          "green"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:22.383Z",
+        "classificationStatus": "completed",
+        "processingMs": 5449,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Kitchen",
+        "description": "A modern kitchen with white cabinets, a blue accent wall, light wood flooring, and white countertops.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "ed23882e07e607fc33ca96d9d47329f6ef951dd27cb57f49593c0ea7bacec81d",
@@ -44715,7 +45551,167 @@
       "id": "16b6ea4dcbeffafea5e6e33de128477c0c7b823c1b7808737d87c9fb0d8ffd31",
       "path": "images/16b6ea4dcbeffafea5e6e33de128477c0c7b823c1b7808737d87c9fb0d8ffd31.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834596/011-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white",
+              "light wood"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "kitchen cabinets",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "countertop",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white",
+              "wood"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "dining table",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "light fixture",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "rugs",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A modern dining room with a blue accent wall, white ceiling, light wood flooring, and beige chairs around a wooden table. The kitchen area is visible with light grey cabinets and white countertops. The room features a round mirror, pendant lights, and a large abstract painting.",
+        "objects": [
+          "kitchen cabinets",
+          "countertop",
+          "sink",
+          "mirror",
+          "dining table",
+          "chairs",
+          "light fixture",
+          "artwork",
+          "rugs"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "light wood",
+          "light grey",
+          "beige",
+          "black",
+          "grey"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Pendant light",
+          "Wooden table",
+          "Beige chairs",
+          "Abstract artwork"
+        ],
+        "chairs": [
+          "beige chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:47:42.797Z",
+        "classificationStatus": "completed",
+        "processingMs": 6972,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A modern dining room with a blue accent wall, white ceiling, light wood flooring, and beige chairs around a wooden table. The kitchen area is visible with light grey cabinets and white countertops. The room features a round mirror, pendant lights, and a large abstract painting.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "c0d3f181e2d3df5ed8cd6847b82d1eda5468182d980d9a90f286587da5975206",
@@ -44863,7 +45859,137 @@
       "id": "a89b57e5f510e1d528970250567ed04f69494c555812698c26974444c69b2622",
       "path": "images/a89b57e5f510e1d528970250567ed04f69494c555812698c26974444c69b2622.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834598/013-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "light pink"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "console table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "handbag",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Hallway",
+        "subCategory": "Hallway",
+        "description": "A hallway with light wood herringbone flooring, white walls, and a black console table with a round mirror above it. A dining room with blue walls is visible through an opening.",
+        "objects": [
+          "console table",
+          "mirror",
+          "plant",
+          "handbag",
+          "lamp",
+          "door",
+          "chairs",
+          "table",
+          "rug",
+          "painting",
+          "light fixture"
+        ],
+        "colours": [
+          "white",
+          "light pink",
+          "light wood",
+          "black",
+          "green",
+          "blue"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Black console table",
+          "Green plant",
+          "White lamp",
+          "White door"
+        ],
+        "chairs": [
+          "beige chair",
+          "beige chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:23.659Z",
+        "classificationStatus": "completed",
+        "processingMs": 5432,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Hallway",
+        "description": "A hallway with light wood herringbone flooring, white walls, and a black console table with a round mirror above it. A dining room with blue walls is visible through an opening.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a4279ac2225eb39ef74c31ed059b4cf79a55b927bac9a712b69b93b8c0eb927d",
@@ -44993,7 +46119,151 @@
       "id": "2dc9c8df3eb7cd1bbbb7dc8495c0d9f1ce12033414c916091127313f17600a63",
       "path": "images/2dc9c8df3eb7cd1bbbb7dc8495c0d9f1ce12033414c916091127313f17600a63.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834599/014-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "desk",
+            "colours": [
+              "black",
+              "wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "brown",
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "white",
+              "orange"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shelf",
+            "colours": [
+              "wood",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black",
+              "glass"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "ornament",
+            "colours": [
+              "black",
+              "wood"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "decorative wall mount",
+            "colours": [
+              "wood",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Other",
+        "description": "A modern home office with a desk, chair, armchair, shelves, and decorative elements. The walls are painted white and beige, the floor is light wood, and there is a window with blinds. A laptop is on the desk.",
+        "objects": [
+          "desk",
+          "chair",
+          "armchair",
+          "shelf",
+          "lamp",
+          "ornament",
+          "decorative wall mount",
+          "window",
+          "laptop"
+        ],
+        "colours": [
+          "white",
+          "beige",
+          "light wood",
+          "black",
+          "brown",
+          "orange",
+          "wood"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "chair",
+          "armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": true,
+        "classifiedAt": "2026-10-08T23:48:20.191Z",
+        "classificationStatus": "completed",
+        "processingMs": 5927,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Study & Home Office",
+        "description": "A modern home office with a desk, chair, armchair, shelves, and decorative elements. The walls are painted white and beige, the floor is light wood, and there is a window with blinds. A laptop is on the desk.",
+        "reason": "Local vision classification",
+        "hasDesk": true,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "de2819ed61215729648c3da355fe406c6d008109b4fda24adf6b1f083c92bcf5",
@@ -45126,7 +46396,196 @@
       "id": "6ee4acf7253c5996f4e6493e1702a0dd9e8314b37453cc340dbb123d7c84913f",
       "path": "images/6ee4acf7253c5996f4e6493e1702a0dd9e8314b37453cc340dbb123d7c84913f.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834600/015-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "bathroom walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "bathroom floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "grey",
+              "white",
+              "orange"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedside table",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black frame",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "cream"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "bedding",
+            "colours": [
+              "grey",
+              "white",
+              "orange"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "white",
+              "beige",
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with a grey bed, white and orange bedding, and a white ceiling. The room has a bathroom with beige tiles and a white toilet. The bedroom has a light wood bedside table, a white lamp, and cream curtains. The walls are white, and there is a black-framed mirror. The floor is grey carpet. Accent colours include orange, blue, and green from the bedding, cushions, and plant.",
+        "objects": [
+          "bed",
+          "bedside table",
+          "lamp",
+          "mirror",
+          "curtains",
+          "toilet",
+          "sink",
+          "bedding",
+          "cushions",
+          "vase",
+          "plant"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "orange",
+          "beige",
+          "cream",
+          "blue",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "solid curtains"
+        ],
+        "fabricTags": [
+          "solid bedding",
+          "solid cushions"
+        ],
+        "furnishingTags": [
+          "modern lamp",
+          "modern mirror",
+          "modern bedside table",
+          "modern bed",
+          "modern curtains",
+          "modern toilet",
+          "modern sink"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:16.815Z",
+        "classificationStatus": "completed",
+        "processingMs": 7774,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "solid curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A modern double bedroom with a grey bed, white and orange bedding, and a white ceiling. The room has a bathroom with beige tiles and a white toilet. The bedroom has a light wood bedside table, a white lamp, and cream curtains. The walls are white, and there is a black-framed mirror. The floor is grey carpet. Accent colours include orange, blue, and green from the bedding, cushions, and plant.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a54fac3924ff75994c0061a92faf4e0586b3cfcc7ce8cfd7faa9fd1d67790bab",
@@ -45266,7 +46725,175 @@
       "id": "91ddff1293f3a7e8c5d0168ed3eade9c856f7ab6855b13fedd1297f336d340bb",
       "path": "images/91ddff1293f3a7e8c5d0168ed3eade9c856f7ab6855b13fedd1297f336d340bb.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834601/016-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "grey",
+              "orange"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedside table",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "ottoman",
+            "colours": [
+              "light wood",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "cream"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "decorative pillows",
+            "colours": [
+              "white",
+              "beige",
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with a bed, bedside table, ottoman, mirror, lamp, curtains, artwork, decorative pillows, and vase. Walls, ceiling, and fixed surfaces are white. Floor is grey. Curtains are cream. Decorative pillows have white, beige, and blue accents. Artwork is black and white. Vase and lamp are white. Bed has white, grey, and orange bedding.",
+        "objects": [
+          "bed",
+          "bedside table",
+          "ottoman",
+          "mirror",
+          "lamp",
+          "curtains",
+          "artwork",
+          "decorative pillows",
+          "vase"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "orange",
+          "cream",
+          "black",
+          "beige",
+          "blue",
+          "light wood"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "solid curtains",
+          "cream curtains"
+        ],
+        "fabricTags": [
+          "textured bedding",
+          "white bedding",
+          "beige bedding",
+          "blue bedding"
+        ],
+        "furnishingTags": [
+          "modern lamp",
+          "round mirror",
+          "wooden table",
+          "wooden ottoman",
+          "solid curtains",
+          "textured bedding"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:57.107Z",
+        "classificationStatus": "completed",
+        "processingMs": 7046,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "solid curtains · cream curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A modern double bedroom with a bed, bedside table, ottoman, mirror, lamp, curtains, artwork, decorative pillows, and vase. Walls, ceiling, and fixed surfaces are white. Floor is grey. Curtains are cream. Decorative pillows have white, beige, and blue accents. Artwork is black and white. Vase and lamp are white. Bed has white, grey, and orange bedding.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "5281704bcae3a369f3e5a1b272ddfbe0538c4486b50da365ac9883ee057d6807",
@@ -45409,7 +47036,131 @@
       "id": "a65395f72d18695a5458e98cf48152ef20ca3593285e49e2116fa18454634d5c",
       "path": "images/a65395f72d18695a5458e98cf48152ef20ca3593285e49e2116fa18454634d5c.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834602/017-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "towel",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "reeds",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with beige tiled walls and floor, white fixtures including a sink, toilet, and shower, and a black-framed round mirror. Decor includes a white vase with greenery and white towels.",
+        "objects": [
+          "sink",
+          "toilet",
+          "shower",
+          "mirror",
+          "vase",
+          "towel",
+          "reeds"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "White sink",
+          "White toilet",
+          "Clear shower"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:18.176Z",
+        "classificationStatus": "completed",
+        "processingMs": 5247,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bathroom",
+        "description": "A modern bathroom with beige tiled walls and floor, white fixtures including a sink, toilet, and shower, and a black-framed round mirror. Decor includes a white vase with greenery and white towels.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "8f62831e7388e0cacb3252159fae73a00f9f32f5614c15f425f853b607f25a77",
@@ -45543,7 +47294,192 @@
       "id": "9824ed28dfbc82f2c56b0eccc998963e0a5ffd1ae9620cb925642219bf4c9ee0",
       "path": "images/9824ed28dfbc82f2c56b0eccc998963e0a5ffd1ae9620cb925642219bf4c9ee0.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834585/023-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "window sill",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "dark grey",
+              "orange",
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "ceiling light",
+            "colours": [
+              "black",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "wall shelf",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "black",
+              "white",
+              "orange"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "dark grey",
+              "orange",
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "blanket",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with a dark grey bed, white walls, black ceiling, and grey carpet. Decor includes framed artwork, a nightstand with medals, and a window with grey curtains.",
+        "objects": [
+          "bed",
+          "headboard",
+          "nightstand",
+          "lamp",
+          "ceiling light",
+          "radiator",
+          "curtains",
+          "wall shelf",
+          "artwork",
+          "pillows",
+          "blanket"
+        ],
+        "colours": [
+          "white",
+          "black",
+          "grey",
+          "orange",
+          "dark grey",
+          "light wood",
+          "brown"
+        ],
+        "decor": [
+          "orange decor",
+          "black decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "grey curtains"
+        ],
+        "fabricTags": [
+          "striped bedding",
+          "orange cushions",
+          "black cushions"
+        ],
+        "furnishingTags": [
+          "geometric lamp",
+          "black lamp",
+          "black ceiling light",
+          "white radiator",
+          "light wood nightstand"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:04.427Z",
+        "classificationStatus": "completed",
+        "processingMs": 7263,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "grey curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A modern double bedroom with a dark grey bed, white walls, black ceiling, and grey carpet. Decor includes framed artwork, a nightstand with medals, and a window with grey curtains.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "2fa772b194ac3f41be797b42830555ada79e39b17700c6f293464ef8a8b97981",
@@ -45741,7 +47677,120 @@
       "id": "ef1d6b8be731e4a05aa3c100e06cef79580987596cb8bf7f615438aa2805647c",
       "path": "images/ef1d6b8be731e4a05aa3c100e06cef79580987596cb8bf7f615438aa2805647c.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834603/018-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "blue",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Media & Games Room",
+        "subCategory": "Other",
+        "description": "A media room with a blue accent wall featuring a chalkboard movie poster, grey walls, grey carpet, and a grey sofa with decorative cushions. Furnishings include a black side table, a blue cabinet, and a black geometric lamp. A window with white blinds is visible.",
+        "objects": [
+          "sofa",
+          "side table",
+          "radiator",
+          "cabinet",
+          "lamp",
+          "window",
+          "poster",
+          "cushions",
+          "tray",
+          "books",
+          "drinks"
+        ],
+        "colours": [
+          "blue",
+          "grey",
+          "black",
+          "white",
+          "orange",
+          "brown"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:51:19.333Z",
+        "classificationStatus": "completed",
+        "processingMs": 4902,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Media & Games Room",
+        "description": "A media room with a blue accent wall featuring a chalkboard movie poster, grey walls, grey carpet, and a grey sofa with decorative cushions. Furnishings include a black side table, a blue cabinet, and a black geometric lamp. A window with white blinds is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "898bdc0387dcfa36ef9c3fbacb48c4c2e0373d8c7c695a2a2929525cc690ebdf",
@@ -45908,7 +47957,251 @@
       "id": "3cc79c2f3af1c5484be0bb666d0d58d8740d3cca24f234099aec78e29fc8a1ac",
       "path": "images/3cc79c2f3af1c5484be0bb666d0d58d8740d3cca24f234099aec78e29fc8a1ac.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834604/019-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "desk",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bench",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "rug",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtain",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lampshade",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "bedding",
+            "colours": [
+              "white",
+              "grey",
+              "blue",
+              "yellow",
+              "orange"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "white",
+              "grey",
+              "brown",
+              "orange"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "decorative items",
+            "colours": [
+              "white",
+              "brown",
+              "orange",
+              "blue",
+              "yellow"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Single bedroom",
+        "description": "A single bedroom with a bed, desk, bench, lamp, radiator, and various decorative items. The walls, ceiling, and fixed surfaces are white. The floor is grey. The bed has white and grey bedding with accent colours. The desk is white. The bench is white and grey. The lamp is black and gold. The radiator is white. The headboard is white. The cabinet is white. The chair is white and grey. The rug is grey. The curtain is white. The lampshade is gold. The bedding has white, grey, blue, yellow, and orange. The cushions have white, grey, brown, and orange. The decorative items have white, brown, orange, blue, and yellow.",
+        "objects": [
+          "bed",
+          "desk",
+          "bench",
+          "lamp",
+          "radiator",
+          "headboard",
+          "cabinet",
+          "chair",
+          "rug",
+          "curtain",
+          "lampshade",
+          "bedding",
+          "cushions",
+          "decorative items"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "gold",
+          "black",
+          "blue",
+          "yellow",
+          "orange",
+          "brown"
+        ],
+        "decor": [
+          "blue decor",
+          "yellow decor",
+          "orange decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "white curtains"
+        ],
+        "fabricTags": [
+          "striped bedding",
+          "white bedding",
+          "grey bedding",
+          "blue bedding",
+          "yellow bedding",
+          "orange bedding",
+          "brown cushions",
+          "white cushions",
+          "grey cushions",
+          "orange cushions"
+        ],
+        "furnishingTags": [
+          "white desk",
+          "white bench",
+          "black lamp",
+          "gold lamp",
+          "white radiator",
+          "white headboard",
+          "white cabinet",
+          "white chair",
+          "grey rug",
+          "white curtain",
+          "gold lampshade",
+          "striped bedding",
+          "white bedding",
+          "grey bedding",
+          "blue bedding",
+          "yellow bedding",
+          "orange bedding",
+          "brown cushions",
+          "white cushions",
+          "grey cushions",
+          "orange cushions"
+        ],
+        "chairs": [
+          "bench",
+          "chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:39.547Z",
+        "classificationStatus": "completed",
+        "processingMs": 10353,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "white curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A single bedroom with a bed, desk, bench, lamp, radiator, and various decorative items. The walls, ceiling, and fixed surfaces are white. The floor is grey. The bed has white and grey bedding with accent colours. The desk is white. The bench is white and grey. The lamp is black and gold. The radiator is white. The headboard is white. The cabinet is white. The chair is white and grey. The rug is grey. The curtain is white. The lampshade is gold. The bedding has white, grey, blue, yellow, and orange. The cushions have white, grey, brown, and orange. The decorative items have white, brown, orange, blue, and yellow.",
+        "reason": "Local vision classification",
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e17cf2c83450a50c704e2d54208803ae6fe4c18d5edd97111f263891baadbf7c",
@@ -46048,7 +48341,168 @@
       "id": "680fa1e7d4635c1e8231e14649ff984937277152bf5f17f1f3394c68826729e1",
       "path": "images/680fa1e7d4635c1e8231e14649ff984937277152bf5f17f1f3394c68826729e1.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Sculptor/The-Ferns-at-Kennett-Garden-Village/_large/2834607/022-BellwayEC_TheFerns_Sculptor_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "beige",
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel shelf",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower",
+            "colours": [
+              "clear",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green",
+              "beige"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "bottles",
+            "colours": [
+              "brown",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "towel",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "wooden bath mat",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with beige tiled walls and floor, white ceiling, white toilet, white sink, black-framed oval mirror, glass shower enclosure, and blue towels. Decor includes a green plant, brown bottles, and a wooden bath mat.",
+        "objects": [
+          "toilet",
+          "sink",
+          "mirror",
+          "towel shelf",
+          "shower",
+          "plant",
+          "bottles",
+          "towel",
+          "wooden bath mat"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "black",
+          "green",
+          "brown",
+          "blue",
+          "clear"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Glass shower",
+          "White sink",
+          "White toilet",
+          "Wooden bath mat"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:08.993Z",
+        "classificationStatus": "completed",
+        "processingMs": 6644,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bathroom",
+        "description": "A modern bathroom with beige tiled walls and floor, white ceiling, white toilet, white sink, black-framed oval mirror, glass shower enclosure, and blue towels. Decor includes a green plant, brown bottles, and a wooden bath mat.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "66c7a5b723169a0bca630b7fbedf9ca1c63ea30d6eafd9322ef7a6db353da937",
@@ -57107,7 +59561,42 @@
       "id": "9a1523f4bdbd40d9e4d788382a1d5b1b0e795c42ae723a2890637e932a1f85d4",
       "path": "images/9a1523f4bdbd40d9e4d788382a1d5b1b0e795c42ae723a2890637e932a1f85d4.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/north-east/centurion-chase/images/_large/2481547/Plane_CGI.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark grey roof, garage, and landscaped front garden. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:12.882Z",
+        "classificationStatus": "completed",
+        "processingMs": 2103,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark grey roof, garage, and landscaped front garden. No interior is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "abae5dc0faf3168f5a3ef2c4256aa44eb633f87a4e368a8b86d09336ad7af576",
@@ -57261,7 +59750,139 @@
       "id": "7e59c69564d0e2682f53c06fa63072a9479068582203d1f83dd53862de2b84b1",
       "path": "images/7e59c69564d0e2682f53c06fa63072a9479068582203d1f83dd53862de2b84b1.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493180/regency-december-2020-50.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "clear",
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with blue velvet sofas, a glass coffee table, and beige walls and floor. Decor includes framed art, a large mirror, and lamps.",
+        "objects": [
+          "sofa",
+          "cabinet",
+          "coffee table",
+          "mirror",
+          "lamp",
+          "tv"
+        ],
+        "colours": [
+          "blue",
+          "beige",
+          "brown",
+          "white",
+          "silver",
+          "black"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Feature wallpaper",
+          "Beige wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [
+          "Blue cushions",
+          "Grey cushions",
+          "Yellow cushions"
+        ],
+        "furnishingTags": [
+          "Velvet sofa",
+          "Wood cabinet",
+          "Glass coffee table",
+          "Silver mirror",
+          "White lamp",
+          "Black TV"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:38.595Z",
+        "classificationStatus": "completed",
+        "processingMs": 5440,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Feature wallpaper · Beige wallpaper",
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with blue velvet sofas, a glass coffee table, and beige walls and floor. Decor includes framed art, a large mirror, and lamps.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "2a51a6e4dc3e82297348286844083ec2e4572d2ae7ac789c2d0e46cda7b88cfe",
@@ -57408,7 +60029,137 @@
       "id": "1afceca32008632b3754753cd61e743d8e96d1d8d66244709944b8b8bef73c30",
       "path": "images/1afceca32008632b3754753cd61e743d8e96d1d8d66244709944b8b8bef73c30.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493179/regency-december-2020-49.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "silver",
+              "glass"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "blue",
+              "brown",
+              "yellow"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "art",
+            "colours": [
+              "brown",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A living room with two blue sofas, a glass coffee table, and grey walls. The ceiling has a chandelier, and there are lamps and artwork on the walls. The floor is beige carpet.",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "lamp",
+          "chandelier",
+          "cushions",
+          "art",
+          "door"
+        ],
+        "colours": [
+          "blue",
+          "grey",
+          "white",
+          "beige",
+          "brown",
+          "yellow",
+          "gold",
+          "silver"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:02.726Z",
+        "classificationStatus": "completed",
+        "processingMs": 5357,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A living room with two blue sofas, a glass coffee table, and grey walls. The ceiling has a chandelier, and there are lamps and artwork on the walls. The floor is beige carpet.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e43b3fd028d2584f329af9bca61405ed8e0074c4d6d375b188e668cbc94db1d8",
@@ -57526,7 +60277,139 @@
       "id": "8ec974c57aca336656d19b573a1c5faf8b1ecfb618103dc77d89073d3af51343",
       "path": "images/8ec974c57aca336656d19b573a1c5faf8b1ecfb618103dc77d89073d3af51343.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493175/regency-december-2020-36.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey",
+              "dark blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "clear glass",
+              "silver"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sofa",
+            "colours": [
+              "beige",
+              "yellow",
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "clear glass",
+              "metal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "dark blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A modern dining room with a glass-top table, beige upholstered chairs, and a dark blue accent wall. The room opens to an outdoor area through large glass doors. A living room area with a sofa and cushions is visible in the background.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "sofa",
+          "lamp",
+          "vase",
+          "artwork",
+          "curtains",
+          "door",
+          "wall",
+          "ceiling",
+          "floor"
+        ],
+        "colours": [
+          "beige",
+          "dark blue",
+          "white",
+          "grey",
+          "yellow",
+          "blue",
+          "silver",
+          "clear glass"
+        ],
+        "decor": [
+          "blue decor",
+          "yellow decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "beige upholstered chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:49.955Z",
+        "classificationStatus": "completed",
+        "processingMs": 5658,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A modern dining room with a glass-top table, beige upholstered chairs, and a dark blue accent wall. The room opens to an outdoor area through large glass doors. A living room area with a sofa and cushions is visible in the background.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "bec4ad259bff9ad77f845a0b52a9f7cfd8acfcad147292878cd580409e3422d8",
@@ -57675,7 +60558,143 @@
       "id": "7d38a3e1eb1e5270707d212cf85009f174594058f0197b174053fded3cb9b74f",
       "path": "images/7d38a3e1eb1e5270707d212cf85009f174594058f0197b174053fded3cb9b74f.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493176/regency-december-2020-38.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "backsplash",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "kitchen island",
+            "colours": [
+              "white",
+              "dark brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinets",
+            "colours": [
+              "white",
+              "dark brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "range hood",
+            "colours": [
+              "stainless steel"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "faucet",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "wall-mounted clock",
+            "colours": [
+              "brown",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Other",
+        "description": "Modern kitchen with white and dark brown cabinetry, white countertops, and a stainless steel range hood. Walls are white and grey, ceiling is white, floor is beige, and backsplash is black. No visible chairs, television, or computer.",
+        "objects": [
+          "kitchen island",
+          "cabinets",
+          "range hood",
+          "countertops",
+          "sink",
+          "faucet",
+          "wall-mounted clock"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "beige",
+          "black",
+          "dark brown",
+          "stainless steel",
+          "chrome",
+          "brown",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:33.036Z",
+        "classificationStatus": "completed",
+        "processingMs": 5827,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Kitchen",
+        "description": "Modern kitchen with white and dark brown cabinetry, white countertops, and a stainless steel range hood. Walls are white and grey, ceiling is white, floor is beige, and backsplash is black. No visible chairs, television, or computer.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "2f1a3910bb7db7df0bc571765b807cdf445be0d3e58974735d1a183563c9db07",
@@ -57867,7 +60886,146 @@
       "id": "c74c041fcaddb34c892981881a5c53eef7ef94e67ceced9f67b7e5f4d95a9895",
       "path": "images/c74c041fcaddb34c892981881a5c53eef7ef94e67ceced9f67b7e5f4d95a9895.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493178/regency-december-2020-46.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "backsplash",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "cabinets",
+            "colours": [
+              "white",
+              "dark brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "island",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "range hood",
+            "colours": [
+              "white",
+              "glass"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "oven",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen",
+        "description": "Modern kitchen with white cabinetry, dark brown lower cabinets, white countertops, and a central island. Walls and ceiling are white and grey respectively. Black backsplash and stainless steel appliances. Grey curtains and white radiator. Recessed lighting.",
+        "objects": [
+          "cabinets",
+          "countertops",
+          "island",
+          "range hood",
+          "oven",
+          "sink",
+          "curtains",
+          "radiator"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "black",
+          "dark brown"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "grey curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:51:00.457Z",
+        "classificationStatus": "completed",
+        "processingMs": 5823,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "grey curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Kitchen",
+        "description": "Modern kitchen with white cabinetry, dark brown lower cabinets, white countertops, and a central island. Walls and ceiling are white and grey respectively. Black backsplash and stainless steel appliances. Grey curtains and white radiator. Recessed lighting.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "0e00a509ca86523285b7ca540ea5efb2c181a6e64234c2d568b16a5655992599",
@@ -58002,7 +61160,131 @@
       "id": "4544d5cdba9f9f9c1c3b545df47fb989fe086ae25d7c142d331276cb3a672ab8",
       "path": "images/4544d5cdba9f9f9c1c3b545df47fb989fe086ae25d7c142d331276cb3a672ab8.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493173/regency-december-2020-32.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "clear",
+              "metal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "Modern dining room with glass table, white upholstered chairs, grey walls and floor, and large glass doors to an outdoor area.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "lamp",
+          "cabinet",
+          "vase",
+          "door",
+          "window",
+          "sink",
+          "oven",
+          "countertop",
+          "wall",
+          "ceiling",
+          "floor"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "black",
+          "clear"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "white upholstered chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:49.771Z",
+        "classificationStatus": "completed",
+        "processingMs": 5139,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "Modern dining room with glass table, white upholstered chairs, grey walls and floor, and large glass doors to an outdoor area.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "005f3f5efc29c9153dacea7a8588eb73e5c28293a9c8cf0648e49f2ddad069eb",
@@ -58145,7 +61427,139 @@
       "id": "5fbc2da0225f4966fa7047aefb2d550f7ff84a2f066b3c7069676042d1132b8e",
       "path": "images/5fbc2da0225f4966fa7047aefb2d550f7ff84a2f066b3c7069676042d1132b8e.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493177/regency-december-2020-45.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "tv",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white",
+              "dark wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "beige",
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "table",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "metallic"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green",
+              "gold"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "Modern living room with open-plan dining area, featuring grey walls, white ceiling, grey floor, mounted tv, floating cabinet, dining table with chairs, and decorative plants.",
+        "objects": [
+          "tv",
+          "cabinet",
+          "chairs",
+          "table",
+          "lamp",
+          "plant"
+        ],
+        "colours": [
+          "grey",
+          "white",
+          "beige",
+          "wood",
+          "black",
+          "green",
+          "gold"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "blue curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "wall-mounted tv",
+          "floating cabinet",
+          "modern chairs",
+          "glass table",
+          "pendant lamp",
+          "potted plant"
+        ],
+        "chairs": [
+          "beige chairs",
+          "wooden legs"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:02.287Z",
+        "classificationStatus": "completed",
+        "processingMs": 5419,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "blue curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "Modern living room with open-plan dining area, featuring grey walls, white ceiling, grey floor, mounted tv, floating cabinet, dining table with chairs, and decorative plants.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "774da029a7088a355ea8d29523ea178e2fdf6d139fe25be1555a43274d82397c",
@@ -58157,7 +61571,160 @@
       "id": "bd2aa977e4f3fac18589f7115726f3a366fbecde9fcad4a3e9b546c5a1f5c365",
       "path": "images/bd2aa977e4f3fac18589f7115726f3a366fbecde9fcad4a3e9b546c5a1f5c365.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493171/regency-december-2020-29.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "dark blue",
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "ottoman",
+            "colours": [
+              "blue",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv cabinet",
+            "colours": [
+              "white",
+              "dark wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "black",
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "laptop",
+            "colours": [
+              "silver",
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "yellow",
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green",
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cups",
+            "colours": [
+              "green",
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with dark blue accent walls, light grey ceiling and floor, beige sofa, and a mounted television. The room includes a large mirror, a glass coffee table, and decorative cushions in yellow and blue. A laptop is visible on the table.",
+        "objects": [
+          "sofa",
+          "ottoman",
+          "mirror",
+          "tv cabinet",
+          "coffee table",
+          "laptop",
+          "cushions",
+          "plant",
+          "cups"
+        ],
+        "colours": [
+          "dark blue",
+          "light grey",
+          "beige",
+          "blue",
+          "yellow",
+          "black",
+          "silver",
+          "white",
+          "green",
+          "gold"
+        ],
+        "decor": [
+          "blue decor",
+          "yellow decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": true,
+        "classifiedAt": "2026-10-08T23:50:47.296Z",
+        "classificationStatus": "completed",
+        "processingMs": 6343,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with dark blue accent walls, light grey ceiling and floor, beige sofa, and a mounted television. The room includes a large mirror, a glass coffee table, and decorative cushions in yellow and blue. A laptop is visible on the table.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "c0e14b0586b66984901ad977a6dac97d4d841afe44a076eb48840e083167e74c",
@@ -58302,7 +61869,132 @@
       "id": "d7b5b39579a4d1b07e9816cfbf34c20f3926b7d4430c52e6363e25f05e951724",
       "path": "images/d7b5b39579a4d1b07e9816cfbf34c20f3926b7d4430c52e6363e25f05e951724.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493172/regency-december-2020-30.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "blue",
+              "white",
+              "yellow",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with blue walls, white ceiling, and grey floor. The dominant furniture is a blue sofa with white cushions and yellow and blue decorative pillows. A black side table, brown lamp, and brown cabinet are visible. A black TV is mounted on the wall. The room has a large glass door leading to an outdoor area.",
+        "objects": [
+          "sofa",
+          "side table",
+          "lamp",
+          "cabinet",
+          "tv",
+          "curtains",
+          "wall art",
+          "plant",
+          "mug",
+          "magazine"
+        ],
+        "colours": [
+          "blue",
+          "white",
+          "yellow",
+          "grey",
+          "brown",
+          "black"
+        ],
+        "decor": [
+          "blue decor",
+          "yellow decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "blue curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "modern sofa",
+          "black side table",
+          "brown lamp",
+          "brown cabinet",
+          "black tv"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:51:08.501Z",
+        "classificationStatus": "completed",
+        "processingMs": 5468,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "blue curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with blue walls, white ceiling, and grey floor. The dominant furniture is a blue sofa with white cushions and yellow and blue decorative pillows. A black side table, brown lamp, and brown cabinet are visible. A black TV is mounted on the wall. The room has a large glass door leading to an outdoor area.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9c0087c542dca617cb99a02eff7278ce7f09a7b5890b7aeae84af7bca9b8f806",
@@ -58486,7 +62178,167 @@
       "id": "2fce5029ecfa88010ea77902b6ef72a12f584bf72d5bb76c204de5c7a6dfa919",
       "path": "images/2fce5029ecfa88010ea77902b6ef72a12f584bf72d5bb76c204de5c7a6dfa919.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493165/regency-december-2020-18.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "gold",
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "dresser",
+            "colours": [
+              "light wood",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "dark grey",
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with a large bed, nightstand, dresser, and chandelier. Walls are beige and grey, floor is beige carpet, ceiling is beige. Furniture includes a bed with white and grey bedding, a wooden nightstand, a light wood dresser, and a dark grey mirrored cabinet. Decor includes framed art and a potted plant.",
+        "objects": [
+          "bed",
+          "headboard",
+          "nightstand",
+          "lamp",
+          "chandelier",
+          "dresser",
+          "mirror",
+          "cabinet",
+          "pillows",
+          "art",
+          "plant"
+        ],
+        "colours": [
+          "beige",
+          "grey",
+          "white",
+          "brown",
+          "gold",
+          "silver",
+          "dark grey"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Textured wallpaper",
+          "Feature wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [
+          "Quilted bedding",
+          "Patterned cushions"
+        ],
+        "furnishingTags": [
+          "Geometric lamp",
+          "Round mirror",
+          "Wooden nightstand",
+          "Glass cabinet",
+          "Modern chandelier"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:27.013Z",
+        "classificationStatus": "completed",
+        "processingMs": 6771,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Textured wallpaper · Feature wallpaper",
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A modern double bedroom with a large bed, nightstand, dresser, and chandelier. Walls are beige and grey, floor is beige carpet, ceiling is beige. Furniture includes a bed with white and grey bedding, a wooden nightstand, a light wood dresser, and a dark grey mirrored cabinet. Decor includes framed art and a potted plant.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "67bba71fb78b22802c2ed605f2b0b61da47f60e92e582a223d3500fa5705ea5a",
@@ -58618,13 +62470,216 @@
       "id": "7aae03af94c099fc92714955c5dec44424aca21e806b8f16bb554c73577bede5",
       "path": "images/7aae03af94c099fc92714955c5dec44424aca21e806b8f16bb554c73577bede5.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493167/regency-december-2020-20.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "dresser",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold",
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with beige walls, ceiling, and carpet. The bed has a white sheet and grey quilted cover. A wooden dresser, a round mirror, and a chandelier are visible. A white door and mirrored closet are also present.",
+        "objects": [
+          "bed",
+          "dresser",
+          "mirror",
+          "lamp",
+          "door",
+          "closet"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "grey",
+          "brown",
+          "gold"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:27.131Z",
+        "classificationStatus": "completed",
+        "processingMs": 4701,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A modern double bedroom with beige walls, ceiling, and carpet. The bed has a white sheet and grey quilted cover. A wooden dresser, a round mirror, and a chandelier are visible. A white door and mirrored closet are also present.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "bab9e65e3eb50f0bddc2dd1e1507f60de174ead3844507d1ee504b4198fbb1e7",
       "path": "images/bab9e65e3eb50f0bddc2dd1e1507f60de174ead3844507d1ee504b4198fbb1e7.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/durham/regency-manor/images/The-Plane/_large/2493166/regency-december-2020-19.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "closet",
+            "colours": [
+              "glass",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "picture frames",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dressing Room",
+        "subCategory": "Dressing Room",
+        "description": "A dressing room with mirrored closet doors, grey walls, beige carpet, and white trim and radiator.",
+        "objects": [
+          "closet",
+          "picture frames",
+          "radiator"
+        ],
+        "colours": [
+          "grey",
+          "white",
+          "beige"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:33.888Z",
+        "classificationStatus": "completed",
+        "processingMs": 4053,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dressing Room",
+        "description": "A dressing room with mirrored closet doors, grey walls, beige carpet, and white trim and radiator.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e0d6812f21172d864f1c84f45a1af5d4faba6b509edc48673f8973ab5f301b61",
@@ -237614,61 +241669,1165 @@
       "id": "4a68af1018937fc90f592fa96fa6214526025e27b3316c82b3ad64f9689b15df",
       "path": "images/4a68af1018937fc90f592fa96fa6214526025e27b3316c82b3ad64f9689b15df.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/berwick-green/images/_large/3169254/Mason.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark roof, light green front door, and large windows. The house is surrounded by trees and a wooden fence, with a paved driveway and landscaped garden. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:52.052Z",
+        "classificationStatus": "completed",
+        "processingMs": 2225,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark roof, light green front door, and large windows. The house is surrounded by trees and a wooden fence, with a paved driveway and landscaped garden. No interior is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "336ce4515c67e2e3d2db169a35d6d8cf625069855c9e7c8fbb2ef34e6994a7f7",
       "path": "images/336ce4515c67e2e3d2db169a35d6d8cf625069855c9e7c8fbb2ef34e6994a7f7.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538364/1.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural render of a new residential development with brick houses, tiled roofs, and a Bellway sales centre. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:29.149Z",
+        "classificationStatus": "completed",
+        "processingMs": 2074,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "Photorealistic architectural render of a new residential development with brick houses, tiled roofs, and a Bellway sales centre. No interior is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "99fb90f453a8cee966b5946aff4662706aaf0cd9d94641287c5bd31823f28590",
       "path": "images/99fb90f453a8cee966b5946aff4662706aaf0cd9d94641287c5bd31823f28590.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538362/2.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "blue",
+              "white",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "blanket",
+            "colours": [
+              "beige",
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A living room with blue walls, white ceiling, beige carpet, white sofa, striped armchairs, and a white TV cabinet. Decor includes blue and beige cushions, a white lamp, and white curtains. A large framed painting hangs on the wall.",
+        "objects": [
+          "sofa",
+          "armchair",
+          "tv cabinet",
+          "lamp",
+          "curtains",
+          "blanket",
+          "cushions",
+          "painting",
+          "tv"
+        ],
+        "colours": [
+          "blue",
+          "white",
+          "beige"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "white curtains"
+        ],
+        "fabricTags": [
+          "striped fabric"
+        ],
+        "furnishingTags": [
+          "white sofa",
+          "white lamp",
+          "white tv cabinet",
+          "striped armchair"
+        ],
+        "chairs": [
+          "armchair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:10.319Z",
+        "classificationStatus": "completed",
+        "processingMs": 5843,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "white curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A living room with blue walls, white ceiling, beige carpet, white sofa, striped armchairs, and a white TV cabinet. Decor includes blue and beige cushions, a white lamp, and white curtains. A large framed painting hangs on the wall.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "4de2d7f0873802e96fd6ac05d13913dca021a2ef50e9c86e958a6cd43052e5c2",
       "path": "images/4de2d7f0873802e96fd6ac05d13913dca021a2ef50e9c86e958a6cd43052e5c2.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538363/3.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "blue",
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "blue",
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A living room with grey walls, white ceiling, beige carpet, and striped blue and white furniture. A white door is visible.",
+        "objects": [
+          "sofa",
+          "armchair",
+          "cabinet",
+          "curtains",
+          "window",
+          "door"
+        ],
+        "colours": [
+          "blue",
+          "white",
+          "grey",
+          "beige"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "beige curtains"
+        ],
+        "fabricTags": [
+          "striped upholstery"
+        ],
+        "furnishingTags": [
+          "striped armchair",
+          "striped sofa"
+        ],
+        "chairs": [
+          "armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:56.737Z",
+        "classificationStatus": "completed",
+        "processingMs": 4632,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "beige curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A living room with grey walls, white ceiling, beige carpet, and striped blue and white furniture. A white door is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e840cea722e78b64b7ea32eeb2b8aa7034314a8d2fc7c90b7c846d890de759b9",
       "path": "images/e840cea722e78b64b7ea32eeb2b8aa7034314a8d2fc7c90b7c846d890de759b9.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538361/4.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "kitchen counter",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bar stools",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sofa",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A dining room with a round wooden table, wicker chairs, and a feature wall with hot air balloon wallpaper. The room includes a kitchen island with bar stools and a sofa in the background. The floor is hardwood, and the ceiling has recessed lighting and pendant lights.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "bar stools",
+          "lamp",
+          "sofa",
+          "kitchen counter",
+          "wallpaper",
+          "floor",
+          "ceiling",
+          "windows",
+          "radiator"
+        ],
+        "colours": [
+          "white",
+          "brown",
+          "grey",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Hot Air Balloon Wallpaper",
+          "Feature Wallpaper",
+          "Multi-coloured Wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Wicker Chairs",
+          "Round Table",
+          "Pendant Lamp",
+          "Recessed Lighting",
+          "Kitchen Island"
+        ],
+        "chairs": [
+          "wicker chairs",
+          "bar stools"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:51:14.381Z",
+        "classificationStatus": "completed",
+        "processingMs": 5766,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Hot Air Balloon Wallpaper · Feature Wallpaper · Multi-coloured Wallpaper",
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A dining room with a round wooden table, wicker chairs, and a feature wall with hot air balloon wallpaper. The room includes a kitchen island with bar stools and a sofa in the background. The floor is hardwood, and the ceiling has recessed lighting and pendant lights.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "289dd33f70aa1606ad8c91c0020da6b13dbfc0ed6ddaf274457995f7505e148e",
       "path": "images/289dd33f70aa1606ad8c91c0020da6b13dbfc0ed6ddaf274457995f7505e148e.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538360/5.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "kitchen island",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "wicker",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "oven",
+            "colours": [
+              "white",
+              "stainless steel"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "range hood",
+            "colours": [
+              "stainless steel"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen",
+        "description": "A modern kitchen with white cabinetry, light wood flooring, and a central island with wicker bar stools. The walls and ceiling are white, with recessed lighting. A stainless steel range hood and oven are visible. A window with white blinds is present.",
+        "objects": [
+          "kitchen island",
+          "cabinets",
+          "chairs",
+          "oven",
+          "range hood",
+          "sink",
+          "window",
+          "countertops",
+          "floor",
+          "walls",
+          "ceiling"
+        ],
+        "colours": [
+          "white",
+          "light grey",
+          "light wood",
+          "stainless steel",
+          "wicker"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "wicker bar stools"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:08.647Z",
+        "classificationStatus": "completed",
+        "processingMs": 5846,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Kitchen",
+        "description": "A modern kitchen with white cabinetry, light wood flooring, and a central island with wicker bar stools. The walls and ceiling are white, with recessed lighting. A stainless steel range hood and oven are visible. A window with white blinds is present.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "b5db1b579bf804d30c127c91caf31aeae8db1dc6ca180307d8f3599d8c27ae6b",
       "path": "images/b5db1b579bf804d30c127c91caf31aeae8db1dc6ca180307d8f3599d8c27ae6b.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538358/9.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "light grey",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "white",
+              "pink",
+              "striped"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "white",
+              "grey",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv stand",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "table",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with light wood flooring, white walls and ceiling, and a large glass door leading to an outdoor area. The room features a light grey sofa with striped cushions, a wall-mounted abstract artwork, and a TV on a grey stand. The wallpaper has a hot air balloon pattern.",
+        "objects": [
+          "sofa",
+          "cushions",
+          "artwork",
+          "curtains",
+          "tv stand",
+          "table",
+          "tv",
+          "door"
+        ],
+        "colours": [
+          "white",
+          "light grey",
+          "pink",
+          "striped",
+          "grey",
+          "wood",
+          "light wood"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Hot air balloon wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains"
+        ],
+        "fabricTags": [
+          "Striped cushions"
+        ],
+        "furnishingTags": [
+          "Modern sofa",
+          "Abstract artwork",
+          "Solid curtains",
+          "Wood table",
+          "Grey TV stand"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:50:29.735Z",
+        "classificationStatus": "completed",
+        "processingMs": 6021,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Hot air balloon wallpaper",
+        "curtains": "Solid curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with light wood flooring, white walls and ceiling, and a large glass door leading to an outdoor area. The room features a light grey sofa with striped cushions, a wall-mounted abstract artwork, and a TV on a grey stand. The wallpaper has a hot air balloon pattern.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "8629706d3ee120889582c78e38fde38e1e5869e4e962c1f55e45c17ded10f98b",
       "path": "images/8629706d3ee120889582c78e38fde38e1e5869e4e962c1f55e45c17ded10f98b.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538359/8.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "wall clock",
+            "colours": [
+              "brown",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green",
+              "grey"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "washing machine",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "water heater",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "stainless steel"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "countertop",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Utility Room",
+        "subCategory": "Utility Room",
+        "description": "A utility room with white cabinets, a sink, a washing machine, a wall clock, and a potted plant. The walls and ceiling are beige, and the floor is light wood.",
+        "objects": [
+          "door",
+          "wall clock",
+          "plant",
+          "washing machine",
+          "water heater",
+          "sink",
+          "countertop",
+          "cabinets"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "light wood",
+          "green",
+          "brown",
+          "stainless steel",
+          "grey"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:49:44.236Z",
+        "classificationStatus": "completed",
+        "processingMs": 5589,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Utility Room",
+        "description": "A utility room with white cabinets, a sink, a washing machine, a wall clock, and a potted plant. The walls and ceiling are beige, and the floor is light wood.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "4101ed88433651c4bc616e60535cd9d2330d082b8815d653e3257af5022b1612",
       "path": "images/4101ed88433651c4bc616e60535cd9d2330d082b8815d653e3257af5022b1612.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538355/11.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "blue",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel",
+            "colours": [
+              "teal"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A bathroom with blue tiled walls, beige textured walls and ceiling, white sink and toilet, and a teal towel.",
+        "objects": [
+          "sink",
+          "toilet",
+          "radiator",
+          "towel",
+          "artwork"
+        ],
+        "colours": [
+          "blue",
+          "beige",
+          "white",
+          "teal",
+          "wood"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Feature wallpaper",
+          "Blue wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:44.583Z",
+        "classificationStatus": "completed",
+        "processingMs": 4450,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Feature wallpaper · Blue wallpaper",
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bathroom",
+        "description": "A bathroom with blue tiled walls, beige textured walls and ceiling, white sink and toilet, and a teal towel.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "29df85f07fe469db762a7ed990c10674ba519b9faa302c3fe1e9a5cb4858c361",
       "path": "images/29df85f07fe469db762a7ed990c10674ba519b9faa302c3fe1e9a5cb4858c361.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Mason/Berwick-Green/_large/2538357/10.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "staircase",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "staircase",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "basket",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "light switch",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "table",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Hallway",
+        "subCategory": "Hallway",
+        "description": "A hallway with a staircase, white walls, brown wooden floor, and a view into a dining room.",
+        "objects": [
+          "staircase",
+          "basket",
+          "light switch",
+          "lamp",
+          "chairs",
+          "table"
+        ],
+        "colours": [
+          "white",
+          "brown",
+          "beige",
+          "black",
+          "silver"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Striped wallpaper",
+          "Feature wallpaper",
+          "Blue wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "White balustrade",
+          "Beige carpet",
+          "Brown wooden floor",
+          "White chairs",
+          "Brown table",
+          "Black lamp"
+        ],
+        "chairs": [
+          "white chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:48:14.154Z",
+        "classificationStatus": "completed",
+        "processingMs": 5424,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Striped wallpaper · Feature wallpaper · Blue wallpaper",
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Hallway",
+        "description": "A hallway with a staircase, white walls, brown wooden floor, and a view into a dining room.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     }
   ],
   "errors": [
@@ -237896,11 +243055,9 @@
     }
   },
   "classificationProgress": {
-    "status": "running",
-    "updatedAt": "2026-10-08T23:45:42.136Z",
-    "currentDevelopments": [
-      "Woodbury Manor"
-    ],
+    "status": "completed",
+    "updatedAt": "2026-10-08T23:51:19.404Z",
+    "currentDevelopments": [],
     "model": "qwen3-vl:8b-instruct"
   }
 }

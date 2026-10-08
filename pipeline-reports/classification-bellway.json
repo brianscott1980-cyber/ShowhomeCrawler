@@ -2,20 +2,18 @@
   "phase": "classification",
   "builder": "bellway",
   "builderName": "Bellway",
-  "status": "running",
-  "updatedAt": "2026-10-08T23:45:42.136Z",
-  "currentDevelopments": [
-    "Woodbury Manor"
-  ],
+  "status": "completed",
+  "updatedAt": "2026-10-08T23:51:19.404Z",
+  "currentDevelopments": [],
   "totals": {
-    "completed": 2194,
+    "completed": 2233,
     "failed": 39,
-    "pending": 39,
+    "pending": 0,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 69,
-    "structuredImages": 1461
+    "structuredImages": 1500
   },
   "models": [
     {
@@ -24,7 +22,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1461
+      "count": 1500
     }
   ],
   "developments": [
@@ -2521,7 +2519,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/kent/woodbury-manor",
       "name": "Woodbury Manor",
-      "status": "running",
+      "status": "needs attention",
       "completed": 88,
       "failed": 1,
       "pending": 0,
