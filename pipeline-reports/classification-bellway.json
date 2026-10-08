@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T21:21:45.654Z",
+  "updatedAt": "2026-10-08T21:37:45.558Z",
   "currentDevelopments": [
-    "Berwick Green"
+    "Buttercross Meadows"
   ],
   "totals": {
-    "completed": 1118,
-    "failed": 13,
-    "pending": 1141,
+    "completed": 1249,
+    "failed": 17,
+    "pending": 1006,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 385
+    "structuredImages": 516
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 385
+      "count": 516
     }
   ],
   "developments": [
@@ -331,7 +331,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/south-west/berwick-green",
       "name": "Berwick Green",
-      "status": "running",
+      "status": "needs attention",
       "completed": 137,
       "failed": 5,
       "pending": 0,
@@ -391,10 +391,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/yorkshire/buttercross-meadows",
       "name": "Buttercross Meadows",
-      "status": "needs attention",
-      "completed": 39,
-      "failed": 1,
-      "pending": 135,
+      "status": "running",
+      "completed": 170,
+      "failed": 5,
+      "pending": 0,
       "total": 175,
       "images": 175
     },
@@ -761,10 +761,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/eastern-counties/elder-brook",
       "name": "Elder Brook",
-      "status": "pending",
-      "completed": 12,
-      "failed": 0,
-      "pending": 105,
+      "status": "needs attention",
+      "completed": 25,
+      "failed": 2,
+      "pending": 90,
       "total": 117,
       "images": 117
     },
@@ -1972,9 +1972,9 @@
       "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
       "name": "Sheasby Park",
       "status": "needs attention",
-      "completed": 84,
-      "failed": 1,
-      "pending": 124,
+      "completed": 97,
+      "failed": 3,
+      "pending": 109,
       "total": 209,
       "images": 209
     },
