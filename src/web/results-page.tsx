@@ -16,7 +16,7 @@ export function ResultsPage({ title, description, eyebrow, titleAccessory, build
  // Overview pages show a carousel and links, so send only its previews to the browser.
  // Counts and navigation are computed from the complete database catalogue on the server.
  const previewCollections=overviewOnly?collections.map(overviewCollection):collections;
- return <main className={`results-page${buildingDetails?' building-type-results-page':''}`}>
+ return <main className={`results-page${buildingDetails?' building-type-results-page':''}${galleryScope?.kind==='interiors'?' interiors-results-page':''}`}>
   <Gallery galleryScope={galleryScope} galleryPage={galleryPage} collections={previewCollections} favouritesOnly={favouritesOnly} includeUnclassified={includeUnclassified}
    places={places} initialImage={initialImage} overviewOnly={overviewOnly} introduction={{ title, description, eyebrow, titleAccessory, buildingType:Boolean(buildingDetails), developmentDetails:buildingDetails??developmentDetails, developmentLocation, counts, back, ...builderOverview }}/>
   {children}

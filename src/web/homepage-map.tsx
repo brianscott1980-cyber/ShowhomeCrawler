@@ -7,5 +7,5 @@ const MapPhotoSamples=lazy(()=>import('./map-photo-samples').then(m=>({default:m
 
 export function HomepageMap({ points, photos }: { points: CoveragePoint[]; photos: HomePhoto[] }) {
  const [activeSiteIds, setActiveSiteIds] = useState<string[]>([]);
- return <div className="home-hero-map"><CoverageMap points={points} activeSiteIds={activeSiteIds}/><div style={{position:'absolute',inset:0,pointerEvents:'none'}}><DeferredFeature label=""><Suspense fallback={null}><MapPhotoSamples photos={photos} onActiveSitesChange={setActiveSiteIds}/></Suspense></DeferredFeature></div></div>;
+ return <div className="home-hero-map"><CoverageMap points={points} activeSiteIds={activeSiteIds}/><div style={{position:'absolute',inset:0,pointerEvents:'none'}}><DeferredFeature label=""><Suspense fallback={null}><MapPhotoSamples points={points} photos={photos} onActiveSitesChange={setActiveSiteIds}/></Suspense></DeferredFeature></div></div>;
 }

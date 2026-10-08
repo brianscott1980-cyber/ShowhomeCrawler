@@ -2,7 +2,9 @@
 import {optimizedImageSource} from './optimized-image-source';
 import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { HomePhoto } from './homepage-data';
+import { projectLocation } from './coverage-map';
+import { choosePhotoPosition } from './map-photo-position';
+import type { CoveragePoint, HomePhoto } from './homepage-data';
 
 type Phase = 'loading' | 'focus' | 'enter' | 'hold' | 'exit' | 'restore';
 const sampleSequence = {
@@ -19,8 +21,11 @@ export function nextSampleIndex(length: number, previous: number, random = Math.
  return previous >= 0 && index >= previous ? index + 1 : index;
 }
 
-export function MapPhotoSamples({ photos, onActiveSitesChange }: { photos: HomePhoto[]; onActiveSitesChange?: (siteIds: string[]) => void }) {
+export function MapPhotoSamples({ photos, points, onActiveSitesChange }: { photos: HomePhoto[]; points: CoveragePoint[]; onActiveSitesChange?: (siteIds: string[]) => void }) {
  const [sample, setSample] = useState<{ index: number; position: number; motion: number; cycle: number } | null>(null);
+ const overlayRef = useRef<HTMLDivElement>(null);
+ const frameRef = useRef<HTMLElement>(null);
+ const [placement, setPlacement] = useState<{ left: number; top: number }>();
  const [phase, setPhase] = useState<Phase>('loading');
  const failed = useRef(new Set<number>());
  const [hovered, setHovered] = useState(false);
@@ -49,20 +54,43 @@ export function MapPhotoSamples({ photos, onActiveSitesChange }: { photos: HomeP
  }, [photos]);
  useEffect(() => {
   const focused = phase !== 'loading' && phase !== 'restore';
-  onActiveSitesChange?.(focused && sample ? photos[sample.index]?.siteIds ?? [] : []);
- }, [phase, sample, photos, onActiveSitesChange]);
+  const builder = sample ? photos[sample.index]?.builder : undefined;
+  onActiveSitesChange?.(focused && builder ? points.filter(point => point.builder === builder).map(point => point.siteId ?? `${point.builder}:${point.name}`) : []);
+ }, [phase, sample, photos, points, onActiveSitesChange]);
  useEffect(() => {
   if (phase === 'loading' || paused || reducedMotion || (interacting && phase === 'hold')) return;
   const step = sampleSequence[phase];
   const timer = window.setTimeout(() => phase === 'restore' ? advance() : setPhase(step.next), step.duration);
   return () => window.clearTimeout(timer);
  }, [phase, paused, reducedMotion, interacting, advance]);
+ useEffect(() => {
+  const overlay = overlayRef.current;
+  const frame = frameRef.current;
+  const svg = overlay?.closest('.home-hero-map')?.querySelector('svg');
+  if (!overlay || !frame || !svg || !sample) return;
+  const place = () => {
+   const matrix = svg.getScreenCTM();
+   if (!matrix) return;
+   const bounds = overlay.getBoundingClientRect();
+   const builder = photos[sample.index]?.builder;
+   const dots = points.map(point => {
+    const projected = projectLocation(point);
+    const screen = new DOMPoint(projected.x, projected.y).matrixTransform(matrix);
+    return { x: screen.x - bounds.left, y: screen.y - bounds.top, related: point.builder === builder };
+   });
+   setPlacement(choosePhotoPosition(bounds.width, bounds.height, frame.offsetWidth, frame.offsetHeight, dots));
+  };
+  place();
+  const observer = new ResizeObserver(place);
+  observer.observe(overlay); observer.observe(frame); observer.observe(svg);
+  return () => observer.disconnect();
+ }, [sample, photos, points]);
  if (!sample) return null;
  const photo = photos[sample.index];
  if (!photo) return null;
  const visible = phase === 'enter' || phase === 'hold' || (reducedMotion && phase === 'focus');
- return <div className="map-photo-samples">
-  <figure key={sample.cycle} data-phase={phase} className={`map-photo-sample map-photo-position-${sample.position} map-photo-motion-${sample.motion}${visible ? ' is-visible' : ''}${interacting ? ' is-interacting' : ''}`} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)}>
+ return <div ref={overlayRef} className="map-photo-samples">
+  <figure ref={frameRef} style={placement ? { ...placement, right: 'auto' } : undefined} key={sample.cycle} data-phase={phase} className={`map-photo-sample map-photo-position-${sample.position} map-photo-motion-${sample.motion}${visible ? ' is-visible' : ''}${interacting ? ' is-interacting' : ''}`} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)}>
    <a className="map-photo-link" href={photo.houseTypeHref} tabIndex={visible ? 0 : -1} aria-label={`Explore ${photo.houseType ?? photo.builder} interiors`}>
    <div className="map-photo-window"><Image src={optimizedImageSource(photo.src)} alt="" width={480} height={360} sizes="(max-width: 700px) 62vw, 372px" loading="eager" fetchPriority="low" onLoad={() => setPhase('focus')} onError={() => { failed.current.add(sample.index); advance(); }}/></div>
    {photo.logo && <span className="map-photo-builder" style={{ backgroundColor: photo.logoBackground }}><img src={photo.logo} alt={`${photo.builder} logo`}/></span>}

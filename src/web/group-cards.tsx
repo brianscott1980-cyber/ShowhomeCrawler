@@ -40,6 +40,7 @@ export function GroupCards({
  cards,
  initial,
  pathPrefix,
+ linkBase,
  kindLabel,
  defaultView = pathPrefix === 'buildings' ? 'compact' : 'large',
  storageKey = pathPrefix === 'buildings' ? 'showhome-buildings-view' : 'showhome-interiors-view',
@@ -47,6 +48,7 @@ export function GroupCards({
  cards: GroupCardItem[];
  initial?:DirectoryPageData<GroupCardItem>;
  pathPrefix: string;
+ linkBase?: string;
  kindLabel: string;
  defaultView?: CardViewMode;
  storageKey?: string;
@@ -132,14 +134,14 @@ export function GroupCards({
      </DirectoryFilters>
     </div>
    )}
-   <div className={`directory-toolbar${isBuildings?' buildings-directory-toolbar':''}`}>
+   <div className={`directory-toolbar${isBuildings?' buildings-directory-toolbar':' interiors-directory-toolbar'}`}>
     <div className="directory-view-status"><ViewOptions view={view} onChange={changeView} ariaLabel={`${kindLabel} layout`} />
     <DirectoryQueryStatus query={remote} visible/></div>
     <div className="sort-control"><span>Order by</span><SingleSelectFilter label={`Order ${kindLabel.toLowerCase()} by`} value={filters.order} options={[{value:'name',label:'Name Asc'},{value:'name-desc',label:'Name Desc'}]} onChange={order=>setFilters(previous=>({...previous,order}))}/></div>
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore}>
     {displayCards.map(card => (
-     <Link prefetch={false} className={`collection-card${isBuildings?' building-card':''}`} href={card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
+     <Link prefetch={false} className={`collection-card${isBuildings?' building-card':''}`} href={linkBase ? `${linkBase}/${(card.href ?? `/${pathPrefix}/${card.key}`).split('/').filter(Boolean).at(-1)}` : card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
       <div className="site-preview-photo group-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>{isBuildings&&card.logo&&<img className="development-builder-logo" src={card.logo} alt={`${card.developers[0]??'Builder'} logo`} style={{background:card.logoBackground??'#fff'}} loading="lazy"/>}</div>
       <div className="card-body">
        <h2>{card.key==='all'?'All Room Types':(isBuildings?homeTypeName(card.name):roomLabel(card.name))}</h2>

@@ -408,3 +408,13 @@
 .results-page .image-grid-list .photo-button img{width:100%;height:100%;min-height:0;aspect-ratio:auto;object-fit:cover;object-position:center}
 .results-page .image-grid-list .image-body h3.image-room-title{font-size:22px;line-height:1.2;margin:0 0 10px}
 @media(max-width:700px){.results-page .image-grid-list .image-body{padding-top:10px;padding-bottom:10px}.results-page .image-grid-list .image-body h3.image-room-title{font-size:18px}}
+
+@media(max-width:700px){
+ .interiors-results-page .results-hero-copy>p,
+ .interiors-results-page .results-cta,
+ .interiors-results-page .results-hero-photo,
+ .interiors-results-page .results-heading{display:none}
+ .interiors-results-page .results-hero{grid-template-columns:1fr;padding-bottom:0}
+ .interiors-results-page .results-hero h1{margin-bottom:12px}
+ .interiors-results-page .results-stats{border-bottom:0;padding:16px 0;margin:0}
+}

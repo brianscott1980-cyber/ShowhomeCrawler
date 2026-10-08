@@ -56,7 +56,7 @@ export default async function Page({ params, searchParams }: Props) {
  }
  if (path[0] === 'builders' && path.length === 2) return <Developer.default params={Promise.resolve({ slug: path[1]! })}/>;
  const landing=path.length>1?await seoLanding('/'+path.join('/')):null;
- if(landing){if('/'+path.join('/')!==landing.path)permanentRedirect(landing.path);return <SeoLandingPage landing={landing}/>;}
+ if(landing){if('/'+path.join('/')!==landing.path)permanentRedirect(withFilters(landing.path,await searchParams));return <SeoLandingPage landing={landing}/>;}
  if(path[0]==='developments'&&path.length>1){
   const development=await resolveDevelopmentPublicRoute('/'+path.join('/'));
   if(development){if('/'+path.join('/')!==development.canonical)permanentRedirect(development.canonical);return <GroupDetail kind="locations" id={development.source.slice('/developments/'.length)} canonicalPath={development.canonical} searchParams={await searchParams}/>;}

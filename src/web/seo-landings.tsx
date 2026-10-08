@@ -13,6 +13,25 @@ import type {GalleryScope} from './gallery-page-data';
 
 export const seoLanding=cache(async(path:string)=>{
  const parts=path.split('/').filter(Boolean),[kind,slug,colour]=parts;
+ if((kind==='interiors'||slug==='interiors')&&(parts.length===2||parts.length===3)){
+  const builder=await readWebsiteBuilder((kind==='interiors'?slug:kind)!.toLowerCase());
+  if(builder){
+  const fixedFilters={developer:builder.name},basePath=`/interiors/${builder.slug}`;
+  if(parts.length===2){
+   const initial=await cachedDirectory({kind:'interiors',filters:fixedFilters,fixedFilters});
+   const title=`${builder.name} Interiors`,description=`Explore ${builder.name} showhome interiors by room. Discover kitchens, bedrooms, bathrooms and ideas for your home.`;
+   return {type:'directory' as const,kind:'interiors' as const,fixedFilters,initial,title,description,path:basePath,linkBase:basePath};
+  }
+  const room=colour!.toLowerCase(),href=`/interiors/${room}`;
+  const reference=room==='all'?{name:'All Room Types'}:await findDirectoryReference('interiors',href);
+  if(!reference)return null;
+  const scope:GalleryScope={kind:'interiors',href,fixedFilters};
+  const initial=await cachedGallery({scope,filters:fixedFilters});
+  if(!initial.total)notFound();
+  const title=`${builder.name} ${room==='all'?'Interiors':reference.name}`,description=`Explore ${title.toLowerCase()} from real showhomes. Discover ideas, colours and furnishings for your home.`;
+  return {type:'gallery' as const,fixedFilters,scope,initial,title,description,path:`${basePath}/${room}`,back:basePath,backLabel:`← ${builder.name} Interiors`};
+  }
+ }
  if((kind==='developments'||kind==='buildings')&&parts.length===2){
   const builder=await readWebsiteBuilder(slug!.toLowerCase());
   if(!builder)return null;
@@ -39,5 +58,5 @@ export const seoLanding=cache(async(path:string)=>{
 });
 export async function seoLandingMetadata(path:string){const landing=await seoLanding(path);return landing?searchListing(landing.title,landing.description,landing.path):null;}
 export function SeoLandingPage({landing}:{landing:NonNullable<Awaited<ReturnType<typeof seoLanding>>>}){
- return <FixedPageFilters filters={landing.fixedFilters}>{landing.type==='directory'?<GroupDirectory kind={landing.kind} initial={landing.initial} title={landing.title} description={landing.description}/>:<ResultsPage title={landing.title} description={landing.description} eyebrow={null} collections={[]} places={{}} galleryScope={landing.scope} galleryPage={landing.initial} back={{href:landing.back,label:'← All '+landing.title.split(' ').slice(1).join(' ')}} includeUnclassified/>}</FixedPageFilters>;
+ return <FixedPageFilters filters={landing.fixedFilters}>{landing.type==='directory'?<GroupDirectory kind={landing.kind} initial={landing.initial} title={landing.title} description={landing.description} linkBase={'linkBase' in landing?landing.linkBase:undefined}/>:<ResultsPage title={landing.title} description={landing.description} eyebrow={null} collections={[]} places={{}} galleryScope={landing.scope} galleryPage={landing.initial} back={{href:landing.back,label:('backLabel' in landing?landing.backLabel:undefined)??'← All '+landing.title.split(' ').slice(1).join(' ')}} includeUnclassified/>}</FixedPageFilters>;
 }

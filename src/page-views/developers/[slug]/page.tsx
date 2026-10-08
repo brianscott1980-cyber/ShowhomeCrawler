@@ -79,7 +79,7 @@ export default async function Page({ params }: Props) {
   back={{ href: '/builders', label: '← All builders' }} collections={report ? [{ slug, name: developer.name, report }] : []} includeUnclassified>
   <div className="results-heading builder-explore-heading"><h2>Explore {developer.name}</h2></div>
   <nav className="builder-navigation" aria-label={`Explore ${developer.name}`}>
-   {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}`} data-filters={JSON.stringify({developer:developer.name})}>
+   {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={destination.path==='interiors'?`/interiors/${slug}`:`/${destination.path}`} data-filters={JSON.stringify({developer:developer.name})}>
     {destination.image?<NextCardImage src={optimizedImageSource(assetUrl(slug,destination.image.path))} alt="" width={640} height={480} sizes="(max-width: 700px) 100vw, 33vw" loading="lazy"/>:<div className="builder-navigation-placeholder">{developer.name}</div>}
     <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
    </Link>)}
