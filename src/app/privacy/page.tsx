@@ -1,0 +1,13 @@
+import type {Metadata} from 'next';
+
+export const metadata:Metadata={title:'Privacy Policy | Showhome Explorer',description:'How Showhome Explorer uses account, location and browsing information.',alternates:{canonical:'/privacy'}};
+
+export default function PrivacyPage(){
+ return <main className="legal-page"><h1>Privacy Policy</h1><p className="subtle">Last updated: 8 October 2026</p>
+ <p>Showhome Explorer is operated by Brian Scott, who is responsible for the personal information described here. For privacy questions or data requests, email <a href="mailto:info@showhomeexplorer.co.uk">info@showhomeexplorer.co.uk</a>.</p>
+ <h2>Information we use</h2><p>Signing in with Google provides account information such as your name, email address and profile image. We use this to provide and secure your account. We use your chosen postcode or device location to calculate nearby results; device location requires your browser permission.</p>
+ <h2>Storage and analytics</h2><p>Browser storage remembers favourites, filters and preferences. Guest location expires after 24 hours; account location stays saved until changed or removed. Browser favourites remain until removed or browser storage is cleared, and navigation filters are kept for your browser session. Account information is retained while your account exists, subject to necessary security and legal records.</p><p>Google Analytics collects browsing and device information using cookies to help us understand site usage. Hosting services may process IP addresses and technical logs to deliver and protect the site. You can manage cookies and site storage in your browser.</p>
+ <h2>Service providers</h2><p>We use Vercel for hosting, Supabase for accounts and database services, Google for sign-in and analytics, and Postcodes.io for location lookups. Postcode or coordinate lookups are sent to Postcodes.io. These providers may process information outside the UK under their applicable data protection arrangements.</p>
+ <h2>Purposes and your choices</h2><p>We process account information to provide the service you request, and technical information for our legitimate interests in operating, securing and improving the site. Providing location is optional. You can remove saved location and favourites, sign out, and revoke browser location permission.</p><p>Depending on the circumstances, you can request access, correction, deletion, restriction or portability of your personal data, object to processing, or withdraw consent where processing relies on consent. You can also complain to the <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner’s Office</a>.</p>
+ </main>;
+}
