@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T22:13:58.948Z",
+  "updatedAt": "2026-10-08T22:24:24.552Z",
   "currentDevelopments": [
-    "Hedworths Green at Lambton Park"
+    "Langmead Place"
   ],
   "totals": {
-    "completed": 1524,
-    "failed": 26,
-    "pending": 722,
+    "completed": 1612,
+    "failed": 28,
+    "pending": 632,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 791
+    "structuredImages": 879
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 791
+      "count": 879
     }
   ],
   "developments": [
@@ -1101,7 +1101,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
       "name": "Hedworths Green at Lambton Park",
-      "status": "running",
+      "status": "needs attention",
       "completed": 186,
       "failed": 3,
       "pending": 0,
@@ -1271,10 +1271,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/wessex/langmead-place",
       "name": "Langmead Place",
-      "status": "needs attention",
-      "completed": 57,
-      "failed": 1,
-      "pending": 90,
+      "status": "running",
+      "completed": 145,
+      "failed": 3,
+      "pending": 0,
       "total": 148,
       "images": 148
     },
@@ -1962,9 +1962,9 @@
       "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
       "name": "Sharnbrook Park",
       "status": "pending",
-      "completed": 18,
+      "completed": 19,
       "failed": 0,
-      "pending": 151,
+      "pending": 150,
       "total": 169,
       "images": 169
     },
@@ -2282,9 +2282,9 @@
       "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-paddock-at-chilsey-grange",
       "name": "The Paddock at Chilsey Grange",
       "status": "pending",
-      "completed": 0,
+      "completed": 24,
       "failed": 0,
-      "pending": 103,
+      "pending": 79,
       "total": 103,
       "images": 103
     },
