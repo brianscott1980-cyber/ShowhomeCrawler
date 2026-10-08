@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T21:05:55.161Z",
+  "updatedAt": "2026-10-08T21:21:45.654Z",
   "currentDevelopments": [
-    "Bellway at Hugglescote Grange"
+    "Berwick Green"
   ],
   "totals": {
-    "completed": 981,
-    "failed": 8,
-    "pending": 1283,
+    "completed": 1118,
+    "failed": 13,
+    "pending": 1141,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 248
+    "structuredImages": 385
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 248
+      "count": 385
     }
   ],
   "developments": [
@@ -251,7 +251,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/east-midlands/bellway-at-hugglescote-grange",
       "name": "Bellway at Hugglescote Grange",
-      "status": "running",
+      "status": "needs attention",
       "completed": 63,
       "failed": 2,
       "pending": 0,
@@ -331,10 +331,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/south-west/berwick-green",
       "name": "Berwick Green",
-      "status": "pending",
-      "completed": 0,
-      "failed": 0,
-      "pending": 142,
+      "status": "running",
+      "completed": 137,
+      "failed": 5,
+      "pending": 0,
       "total": 142,
       "images": 142
     },
@@ -1271,10 +1271,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/wessex/langmead-place",
       "name": "Langmead Place",
-      "status": "pending",
-      "completed": 0,
-      "failed": 0,
-      "pending": 148,
+      "status": "needs attention",
+      "completed": 29,
+      "failed": 1,
+      "pending": 118,
       "total": 148,
       "images": 148
     },
@@ -2101,10 +2101,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/wessex/st-marys-hill",
       "name": "St. Mary's Hill",
-      "status": "pending",
-      "completed": 0,
-      "failed": 0,
-      "pending": 38,
+      "status": "needs attention",
+      "completed": 6,
+      "failed": 1,
+      "pending": 31,
       "total": 38,
       "images": 38
     },
@@ -2332,9 +2332,9 @@
       "url": "https://www.bellway.co.uk/new-homes/east-midlands/torvill-park",
       "name": "Torvill Park",
       "status": "needs attention",
-      "completed": 32,
-      "failed": 1,
-      "pending": 206,
+      "completed": 50,
+      "failed": 2,
+      "pending": 187,
       "total": 239,
       "images": 239
     },
@@ -2442,9 +2442,9 @@
       "url": "https://www.bellway.co.uk/new-homes/south-west/weavers-meadow",
       "name": "Weavers Meadow",
       "status": "pending",
-      "completed": 11,
+      "completed": 23,
       "failed": 0,
-      "pending": 82,
+      "pending": 70,
       "total": 93,
       "images": 93
     },
