@@ -1,1 +1,862 @@
-{"phase":"classification","builder":"cala","builderName":"Cala","status":"recorded","updatedAt":"2026-10-02T10:56:16.258Z","currentDevelopments":[],"totals":{"completed":708,"failed":0,"pending":0,"total":708,"images":708,"developments":80,"developmentsCompleted":29,"structuredImages":0},"models":[{"name":"Not recorded","count":708}],"developments":[{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/availability-prices/","name":"Arabella Park, Great Kimble, Buckinghamshire","status":"completed","completed":39,"failed":0,"pending":0,"total":39,"images":39},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/ascot-gardens-ascot/availability-prices/","name":"Ascot Gardens, Ascot, Berkshire","status":"completed","completed":9,"failed":0,"pending":0,"total":9,"images":9},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/","name":"Aurs Meadows, Barrhead, East Renfrewshire","status":"completed","completed":61,"failed":0,"pending":0,"total":61,"images":61},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/","name":"Aylett's Green, Kelvedon, Essex","status":"completed","completed":14,"failed":0,"pending":0,"total":14,"images":14},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/","name":"Ballagan Woods, Killearn, Stirling","status":"completed","completed":59,"failed":0,"pending":0,"total":59,"images":59},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/","name":"Barden Croft, Tonbridge, Kent","status":"completed","completed":28,"failed":0,"pending":0,"total":28,"images":28},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/midlothian/belwood-oaks-penicuik/availability-prices/","name":"Belwood Oaks, Penicuik, Midlothian","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/birchwood-farnham/availability-prices/","name":"Birchwood, Farnham, Surrey","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/bliss-willows-chipping-norton/availability-prices/","name":"Bliss Willows, Chipping Norton, Oxfordshire","status":"completed","completed":13,"failed":0,"pending":0,"total":13,"images":13},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/botanist-green/availability-prices/","name":"Botanist Green, Hertfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/brickworks/availability-prices/","name":"Brickworks, West Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/brooklands-grove-weybridge/availability-prices/","name":"Brooklands Grove, Weybridge, Surrey","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/burnland-meadows-westhill/availability-prices/","name":"Burnland Meadows, Westhill, Aberdeenshire","status":"completed","completed":11,"failed":0,"pending":0,"total":11,"images":11},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-heights-crowthorne/availability-prices/","name":"Cala at Buckler's Park - The Heights, Crowthorne, Berkshire","status":"completed","completed":11,"failed":0,"pending":0,"total":11,"images":11},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-pines-crowthorne/availability-prices/","name":"Cala at Buckler's Park - The Pines, Crowthorne, Berkshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-finchwood-park-the-meadows-finchampstead/availability-prices/","name":"Cala at Finchwood Park - The Meadows, Finchampstead, Berkshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-finchwood-park-the-ridge-finchampstead/availability-prices/","name":"Cala at Finchwood Park - The Ridge, Finchampstead, Berkshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/east-england/peterborough/cala-at-hampton-lakes/availability-prices/","name":"Cala at Hampton Lakes, Peterborough","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-himley-village-bicester/availability-prices/","name":"Cala at Himley Village, Bicester, Oxfordshire","status":"completed","completed":13,"failed":0,"pending":0,"total":13,"images":13},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-nobel-park-phase-2-didcot/availability-prices/","name":"Cala at Nobel Park, Phase 2, Didcot, Oxfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-nobel-park-phase-6-didcot/availability-prices/","name":"Cala at Nobel Park, Phase 6, Didcot, Oxfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/cala-at-warlingham/availability-prices/","name":"Cala at Warlingham, Surrey","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/east-england/cambridgeshire/cala-at-waterbeach/availability-prices/","name":"Cala at Waterbeach, Cambridgeshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/availability-prices/","name":"Calderwood, East Calder, West Lothian","status":"completed","completed":38,"failed":0,"pending":0,"total":38,"images":38},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/","name":"Cedar Brae, Jackton, South Lanarkshire","status":"completed","completed":61,"failed":0,"pending":0,"total":61,"images":61},{"url":"https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/chariot-fields-biddenham/availability-prices/","name":"Chariot Fields, Biddenham, Bedfordshire","status":"completed","completed":28,"failed":0,"pending":0,"total":28,"images":28},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/availability-prices/","name":"Conglass Brae, Inverurie, Aberdeenshire","status":"completed","completed":14,"failed":0,"pending":0,"total":14,"images":14},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/","name":"Cornhill Village, Hamilton, South Lanarkshire","status":"completed","completed":59,"failed":0,"pending":0,"total":59,"images":59},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/midlothian/craighall-village-colliers-gate-millerhill/availability-prices/","name":"Craighall Village – Colliers Gate, Millerhill, Midlothian","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cross-trees-park-shrivenham/availability-prices/","name":"Cross Trees Park, Shrivenham, Oxfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/edmund-park-kings-langley/availability-prices/","name":"Edmund Park, Kings Langley, Hertfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/enton-meadows-milford/availability-prices/","name":"Enton Meadows, Milford, Surrey","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/furzefield-mowbray-village-horsham/availability-prices/","name":"Furzefield (Mowbray Village), Horsham, West Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/green-bank-at-grandhome/availability-prices/","name":"Green Bank at Grandhome, Aberdeen","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/hawksbourne-cala-at-mowbray/availability-prices/","name":"Hawksbourne (Cala at Mowbray), West Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/heritage-row-st-albans/availability-prices/","name":"Heritage Row, St Albans, Hertfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/","name":"Hillside Gardens, Aberdour, Fife","status":"completed","completed":48,"failed":0,"pending":0,"total":48,"images":48},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/hurland-the-island-mowbray-village-horsham/availability-prices/","name":"Hurland & The Island (Mowbray Village), Horsham, West Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/essex/ingatestone-grove-ingatestone/availability-prices/","name":"Ingatestone Grove, Ingatestone, Essex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/glasgow/jordanhill-park/availability-prices/","name":"Jordanhill Park, Glasgow","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/kings-barton-at-monarchs-mead/availability-prices/","name":"Kings Barton at Monarchs Mead, Hampshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/kings-barton-at-the-green/availability-prices/","name":"Kings Barton at The Green, Hampshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/availability-prices/","name":"Knights Grove, Newbury, Berkshire","status":"completed","completed":21,"failed":0,"pending":0,"total":21,"images":21},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/knightwood-chase-fordingbridge/availability-prices/","name":"Knightwood Chase, Fordingbridge, Hampshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/greater-london/langley-court/availability-prices/","name":"Langley Court, Greater London","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/langmead-place/availability-prices/","name":"Langmead Place, West Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/","name":"Lathallan Grange, Polmont, Falkirk","status":"completed","completed":53,"failed":0,"pending":0,"total":53,"images":53},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/","name":"Longbanks Green, Dunbar, East Lothian","status":"completed","completed":33,"failed":0,"pending":0,"total":33,"images":33},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/kent/maiden-view-woodchurch/availability-prices/","name":"Maiden View, Woodchurch, Kent","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/availability-prices/","name":"Mansefield Lea, East Calder, West Lothian","status":"completed","completed":37,"failed":0,"pending":0,"total":37,"images":37},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/maple-croft-egham/availability-prices/","name":"Maple Croft, Egham, Surrey","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/","name":"Millgate Lawns, Winchburgh, West Lothian","status":"completed","completed":38,"failed":0,"pending":0,"total":38,"images":38},{"url":"https://www.cala.co.uk/homes-for-sale/cotswolds/gloucestershire/millstone-green-fairford/availability-prices/","name":"Millstone Green, Fairford, Gloucestershire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/mosaic-fields-st-albans/availability-prices/","name":"Mosaic Fields, St Albans, Hertfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/east-england/cambridgeshire/netherhall-gardens-cambridge/availability-prices/","name":"Netherhall Gardens, Cambridge, Cambridgeshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/new-monks-park-phase-2/availability-prices/","name":"New Monks Park Phase 2, West Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/","name":"Oakwood Park, Wimborne, Dorset","status":"completed","completed":18,"failed":0,"pending":0,"total":18,"images":18},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/pinefields-livingston/availability-prices/","name":"Pinefields, Livingston, West Lothian","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/","name":"Raemoir Park, Banchory, Aberdeenshire","status":"completed","completed":52,"failed":0,"pending":0,"total":52,"images":52},{"url":"https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/randall-fields-stotfold/availability-prices/","name":"Randall Fields, Stotfold, Bedfordshire","status":"completed","completed":14,"failed":0,"pending":0,"total":14,"images":14},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/edinburgh/rosebery-wynd-south-queensferry/availability-prices/","name":"Rosebery Wynd, South Queensferry, Edinburgh","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/rosebrook-hambrook/availability-prices/","name":"Rosebrook, Hambrook, West Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/ryder-gardens-bovingdon/availability-prices/","name":"Ryder Gardens, Bovingdon, Hertfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/availability-prices/","name":"Sambrooke Park, Potters Bar, Hertfordshire","status":"completed","completed":32,"failed":0,"pending":0,"total":32,"images":32},{"url":"https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/samuel-gardens-arlesey/availability-prices/","name":"Samuel Gardens, Arlesey, Bedfordshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/silverburn-bridge-of-don/availability-prices/","name":"Silverburn, Bridge of Don, Aberdeen","status":"completed","completed":13,"failed":0,"pending":0,"total":13,"images":13},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/essex/staggs-farm-great-dunmow/availability-prices/","name":"Staggs Farm, Great Dunmow, Essex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/east-sussex/the-bluebells-uckfield/availability-prices/","name":"The Bluebells, Uckfield, East Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/availability-prices/","name":"The Crawfields, Bo'ness, Falkirk","status":"completed","completed":27,"failed":0,"pending":0,"total":27,"images":27},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/glasgow/the-foundry-cathcart/availability-prices/","name":"The Foundry, Cathcart, Glasgow","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/the-glades-at-mindenhurst-deepcut/availability-prices/","name":"The Glades at Mindenhurst, Deepcut, Surrey","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/east-sussex/the-oaks-wivelsfield/availability-prices/","name":"The Oaks, Wivelsfield, East Sussex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-west-england/wiltshire/the-orchards-purton/availability-prices/","name":"The Orchards, Purton, Wiltshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/the-willows-burridge/availability-prices/","name":"The Willows, Burridge, Hampshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/essex/ufford-chase-phase-2-great-bentley/availability-prices/","name":"Ufford Chase Phase 2, Great Bentley, Essex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/east-dunbartonshire/weaver-s-brae-kirkintilloch/availability-prices/","name":"Weaver's Brae, Kirkintilloch, East Dunbartonshire","status":"completed","completed":23,"failed":0,"pending":0,"total":23,"images":23},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/edinburgh/west-craigs/availability-prices/","name":"West Craigs, Edinburgh","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/essex/wivenhoe-gardens-wivenhoe/availability-prices/","name":"Wivenhoe Gardens, Wivenhoe, Essex","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/","name":"Woodhurst at Oldfold Village, Milltimber, Aberdeen","status":"completed","completed":60,"failed":0,"pending":0,"total":60,"images":60},{"url":"https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/worting-park-basingstoke/availability-prices/","name":"Worting Park, Basingstoke, Hampshire","status":"waiting for images","completed":0,"failed":0,"pending":0,"total":0,"images":0}]}
+{
+  "phase": "classification",
+  "builder": "cala",
+  "builderName": "Cala",
+  "status": "running",
+  "updatedAt": "2026-10-08T23:55:47.104Z",
+  "currentDevelopments": [
+    "Arabella Park, Great Kimble, Buckinghamshire"
+  ],
+  "totals": {
+    "completed": 733,
+    "failed": 0,
+    "pending": 2608,
+    "total": 3341,
+    "images": 3341,
+    "developments": 83,
+    "developmentsCompleted": 1,
+    "structuredImages": 25
+  },
+  "models": [
+    {
+      "name": "Not recorded",
+      "count": 708
+    },
+    {
+      "name": "qwen3-vl:8b-instruct",
+      "count": 25
+    }
+  ],
+  "developments": [
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/availability-prices/",
+      "name": "Arabella Park, Great Kimble, Buckinghamshire",
+      "status": "running",
+      "completed": 64,
+      "failed": 0,
+      "pending": 0,
+      "total": 64,
+      "images": 64
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/ascot-gardens-ascot/availability-prices/",
+      "name": "Ascot Gardens, Ascot, Berkshire",
+      "status": "pending",
+      "completed": 9,
+      "failed": 0,
+      "pending": 25,
+      "total": 34,
+      "images": 34
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
+      "name": "Aurs Meadows, Barrhead, East Renfrewshire",
+      "status": "pending",
+      "completed": 69,
+      "failed": 0,
+      "pending": 19,
+      "total": 88,
+      "images": 88
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/",
+      "name": "Aylett's Green, Kelvedon, Essex",
+      "status": "pending",
+      "completed": 14,
+      "failed": 0,
+      "pending": 53,
+      "total": 67,
+      "images": 67
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
+      "name": "Ballagan Woods, Killearn, Stirling",
+      "status": "pending",
+      "completed": 59,
+      "failed": 0,
+      "pending": 15,
+      "total": 74,
+      "images": 74
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
+      "name": "Barden Croft, Tonbridge, Kent",
+      "status": "pending",
+      "completed": 28,
+      "failed": 0,
+      "pending": 27,
+      "total": 55,
+      "images": 55
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/midlothian/belwood-oaks-penicuik/availability-prices/",
+      "name": "Belwood Oaks, Penicuik, Midlothian",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/birchwood-farnham/availability-prices/",
+      "name": "Birchwood, Farnham, Surrey",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 68,
+      "total": 68,
+      "images": 68
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/bliss-willows-chipping-norton/availability-prices/",
+      "name": "Bliss Willows, Chipping Norton, Oxfordshire",
+      "status": "pending",
+      "completed": 13,
+      "failed": 0,
+      "pending": 46,
+      "total": 59,
+      "images": 59
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/botanist-green/availability-prices/",
+      "name": "Botanist Green, Hertfordshire",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/botanist-green-hitchin/availability-prices/",
+      "name": "Botanist Green, Hitchin, Hertfordshire",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/brickworks/availability-prices/",
+      "name": "Brickworks, West Sussex",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/brooklands-grove-weybridge/availability-prices/",
+      "name": "Brooklands Grove, Weybridge, Surrey",
+      "status": "pending",
+      "completed": 3,
+      "failed": 0,
+      "pending": 77,
+      "total": 80,
+      "images": 80
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/burnland-meadows-westhill/availability-prices/",
+      "name": "Burnland Meadows, Westhill, Aberdeenshire",
+      "status": "completed",
+      "completed": 11,
+      "failed": 0,
+      "pending": 0,
+      "total": 11,
+      "images": 11
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-heights-crowthorne/availability-prices/",
+      "name": "Cala at Buckler's Park - The Heights, Crowthorne, Berkshire",
+      "status": "pending",
+      "completed": 11,
+      "failed": 0,
+      "pending": 46,
+      "total": 57,
+      "images": 57
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-pines-crowthorne/availability-prices/",
+      "name": "Cala at Buckler's Park - The Pines, Crowthorne, Berkshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 41,
+      "total": 41,
+      "images": 41
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-finchwood-park-the-meadows-finchampstead/availability-prices/",
+      "name": "Cala at Finchwood Park - The Meadows, Finchampstead, Berkshire",
+      "status": "pending",
+      "completed": 2,
+      "failed": 0,
+      "pending": 59,
+      "total": 61,
+      "images": 61
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-finchwood-park-the-ridge-finchampstead/availability-prices/",
+      "name": "Cala at Finchwood Park - The Ridge, Finchampstead, Berkshire",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 45,
+      "total": 46,
+      "images": 46
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/peterborough/cala-at-hampton-lakes/availability-prices/",
+      "name": "Cala at Hampton Lakes, Peterborough",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 27,
+      "total": 27,
+      "images": 27
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-himley-village-bicester/availability-prices/",
+      "name": "Cala at Himley Village, Bicester, Oxfordshire",
+      "status": "pending",
+      "completed": 13,
+      "failed": 0,
+      "pending": 57,
+      "total": 70,
+      "images": 70
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-nobel-park-phase-2-didcot/availability-prices/",
+      "name": "Cala at Nobel Park, Phase 2, Didcot, Oxfordshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 67,
+      "total": 67,
+      "images": 67
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cala-at-nobel-park-phase-6-didcot/availability-prices/",
+      "name": "Cala at Nobel Park, Phase 6, Didcot, Oxfordshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 45,
+      "total": 45,
+      "images": 45
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/cala-at-warlingham/availability-prices/",
+      "name": "Cala at Warlingham, Surrey",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 36,
+      "total": 36,
+      "images": 36
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/cambridgeshire/cala-at-waterbeach/availability-prices/",
+      "name": "Cala at Waterbeach, Cambridgeshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 31,
+      "total": 31,
+      "images": 31
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/calderwood-east-calder/availability-prices/",
+      "name": "Calderwood, East Calder, West Lothian",
+      "status": "pending",
+      "completed": 41,
+      "failed": 0,
+      "pending": 30,
+      "total": 71,
+      "images": 71
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cedar-brae-jackton/availability-prices/",
+      "name": "Cedar Brae, Jackton, South Lanarkshire",
+      "status": "pending",
+      "completed": 61,
+      "failed": 0,
+      "pending": 16,
+      "total": 77,
+      "images": 77
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/chariot-fields-biddenham/availability-prices/",
+      "name": "Chariot Fields, Biddenham, Bedfordshire",
+      "status": "pending",
+      "completed": 28,
+      "failed": 0,
+      "pending": 24,
+      "total": 52,
+      "images": 52
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/conglass-brae-inverurie/availability-prices/",
+      "name": "Conglass Brae, Inverurie, Aberdeenshire",
+      "status": "pending",
+      "completed": 14,
+      "failed": 0,
+      "pending": 36,
+      "total": 50,
+      "images": 50
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
+      "name": "Cornhill Village, Hamilton, South Lanarkshire",
+      "status": "pending",
+      "completed": 72,
+      "failed": 0,
+      "pending": 61,
+      "total": 133,
+      "images": 133
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/midlothian/craighall-village-colliers-gate-millerhill/availability-prices/",
+      "name": "Craighall Village – Colliers Gate, Millerhill, Midlothian",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 63,
+      "total": 63,
+      "images": 63
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/oxfordshire/cross-trees-park-shrivenham/availability-prices/",
+      "name": "Cross Trees Park, Shrivenham, Oxfordshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 78,
+      "total": 78,
+      "images": 78
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/edmund-park-kings-langley/availability-prices/",
+      "name": "Edmund Park, Kings Langley, Hertfordshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 66,
+      "total": 66,
+      "images": 66
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/enton-meadows-milford/availability-prices/",
+      "name": "Enton Meadows, Milford, Surrey",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 47,
+      "total": 47,
+      "images": 47
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/furzefield-mowbray-village-horsham/availability-prices/",
+      "name": "Furzefield (Mowbray Village), Horsham, West Sussex",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 35,
+      "total": 35,
+      "images": 35
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/green-bank-at-grandhome/availability-prices/",
+      "name": "Green Bank at Grandhome, Aberdeen",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 57,
+      "total": 57,
+      "images": 57
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/hawksbourne-cala-at-mowbray/availability-prices/",
+      "name": "Hawksbourne (Cala at Mowbray), West Sussex",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/heritage-row-st-albans/availability-prices/",
+      "name": "Heritage Row, St Albans, Hertfordshire",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/fife/hillside-gardens-aberdour/availability-prices/",
+      "name": "Hillside Gardens, Aberdour, Fife",
+      "status": "pending",
+      "completed": 48,
+      "failed": 0,
+      "pending": 30,
+      "total": 78,
+      "images": 78
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/hurland-the-island-mowbray-village-horsham/availability-prices/",
+      "name": "Hurland & The Island (Mowbray Village), Horsham, West Sussex",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 49,
+      "total": 50,
+      "images": 50
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/ingatestone-grove-ingatestone/availability-prices/",
+      "name": "Ingatestone Grove, Ingatestone, Essex",
+      "status": "pending",
+      "completed": 2,
+      "failed": 0,
+      "pending": 88,
+      "total": 90,
+      "images": 90
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/glasgow/jordanhill-park/availability-prices/",
+      "name": "Jordanhill Park, Glasgow",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 12
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/kings-barton-at-monarchs-mead/availability-prices/",
+      "name": "Kings Barton at Monarchs Mead, Hampshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 73,
+      "total": 73,
+      "images": 73
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/kings-barton-at-the-green/availability-prices/",
+      "name": "Kings Barton at The Green, Hampshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 82,
+      "total": 82,
+      "images": 82
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/knights-grove-newbury/availability-prices/",
+      "name": "Knights Grove, Newbury, Berkshire",
+      "status": "pending",
+      "completed": 21,
+      "failed": 0,
+      "pending": 24,
+      "total": 45,
+      "images": 45
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/knightwood-chase-fordingbridge/availability-prices/",
+      "name": "Knightwood Chase, Fordingbridge, Hampshire",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 71,
+      "total": 72,
+      "images": 72
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/greater-london/langley-court/availability-prices/",
+      "name": "Langley Court, Greater London",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/langmead-place/availability-prices/",
+      "name": "Langmead Place, West Sussex",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 49,
+      "total": 49,
+      "images": 49
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/larkspur-place-west-hoathly/availability-prices/",
+      "name": "Larkspur Place, West Hoathly, West Sussex",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
+      "name": "Lathallan Grange, Polmont, Falkirk",
+      "status": "pending",
+      "completed": 53,
+      "failed": 0,
+      "pending": 38,
+      "total": 91,
+      "images": 91
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-lothian/longbanks-green-dunbar/availability-prices/",
+      "name": "Longbanks Green, Dunbar, East Lothian",
+      "status": "pending",
+      "completed": 35,
+      "failed": 0,
+      "pending": 39,
+      "total": 74,
+      "images": 74
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/maiden-view-woodchurch/availability-prices/",
+      "name": "Maiden View, Woodchurch, Kent",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 56,
+      "total": 56,
+      "images": 56
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/mansefield-lea-east-calder/availability-prices/",
+      "name": "Mansefield Lea, East Calder, West Lothian",
+      "status": "pending",
+      "completed": 39,
+      "failed": 0,
+      "pending": 30,
+      "total": 69,
+      "images": 69
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/maple-croft-egham/availability-prices/",
+      "name": "Maple Croft, Egham, Surrey",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 11
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/millgate-lawns-winchburgh/availability-prices/",
+      "name": "Millgate Lawns, Winchburgh, West Lothian",
+      "status": "pending",
+      "completed": 38,
+      "failed": 0,
+      "pending": 32,
+      "total": 70,
+      "images": 70
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/cotswolds/gloucestershire/millstone-green-fairford/availability-prices/",
+      "name": "Millstone Green, Fairford, Gloucestershire",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/mosaic-fields-st-albans/availability-prices/",
+      "name": "Mosaic Fields, St Albans, Hertfordshire",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/cambridgeshire/netherhall-gardens-cambridge/availability-prices/",
+      "name": "Netherhall Gardens, Cambridge, Cambridgeshire",
+      "status": "pending",
+      "completed": 4,
+      "failed": 0,
+      "pending": 133,
+      "total": 137,
+      "images": 137
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/new-monks-park-phase-2/availability-prices/",
+      "name": "New Monks Park Phase 2, West Sussex",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 54,
+      "total": 54,
+      "images": 54
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/newlands/availability-prices/",
+      "name": "Newlands, Aberdeenshire",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
+      "name": "Oakwood Park, Wimborne, Dorset",
+      "status": "pending",
+      "completed": 23,
+      "failed": 0,
+      "pending": 86,
+      "total": 109,
+      "images": 109
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/west-lothian/pinefields-livingston/availability-prices/",
+      "name": "Pinefields, Livingston, West Lothian",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 27,
+      "total": 27,
+      "images": 27
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
+      "name": "Raemoir Park, Banchory, Aberdeenshire",
+      "status": "pending",
+      "completed": 52,
+      "failed": 0,
+      "pending": 59,
+      "total": 111,
+      "images": 111
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/randall-fields-stotfold/availability-prices/",
+      "name": "Randall Fields, Stotfold, Bedfordshire",
+      "status": "pending",
+      "completed": 18,
+      "failed": 0,
+      "pending": 60,
+      "total": 78,
+      "images": 78
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/edinburgh/rosebery-wynd-south-queensferry/availability-prices/",
+      "name": "Rosebery Wynd, South Queensferry, Edinburgh",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 61,
+      "total": 62,
+      "images": 62
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/rosebrook-hambrook/availability-prices/",
+      "name": "Rosebrook, Hambrook, West Sussex",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 69,
+      "total": 69,
+      "images": 69
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/ryder-gardens-bovingdon/availability-prices/",
+      "name": "Ryder Gardens, Bovingdon, Hertfordshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 9
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hertfordshire/sambrooke-park-potters-bar/availability-prices/",
+      "name": "Sambrooke Park, Potters Bar, Hertfordshire",
+      "status": "pending",
+      "completed": 32,
+      "failed": 0,
+      "pending": 38,
+      "total": 70,
+      "images": 70
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/samuel-gardens-arlesey/availability-prices/",
+      "name": "Samuel Gardens, Arlesey, Bedfordshire",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 102,
+      "total": 103,
+      "images": 103
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/silverburn-bridge-of-don/availability-prices/",
+      "name": "Silverburn, Bridge of Don, Aberdeen",
+      "status": "pending",
+      "completed": 13,
+      "failed": 0,
+      "pending": 51,
+      "total": 64,
+      "images": 64
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/staggs-farm-great-dunmow/availability-prices/",
+      "name": "Staggs Farm, Great Dunmow, Essex",
+      "status": "pending",
+      "completed": 2,
+      "failed": 0,
+      "pending": 46,
+      "total": 48,
+      "images": 48
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/east-sussex/the-bluebells-uckfield/availability-prices/",
+      "name": "The Bluebells, Uckfield, East Sussex",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 52,
+      "total": 52,
+      "images": 52
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/the-crawfields-bo-ness/availability-prices/",
+      "name": "The Crawfields, Bo'ness, Falkirk",
+      "status": "pending",
+      "completed": 27,
+      "failed": 0,
+      "pending": 34,
+      "total": 61,
+      "images": 61
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/glasgow/the-foundry-cathcart/availability-prices/",
+      "name": "The Foundry, Cathcart, Glasgow",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 29,
+      "total": 29,
+      "images": 29
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/the-glades-at-mindenhurst-deepcut/availability-prices/",
+      "name": "The Glades at Mindenhurst, Deepcut, Surrey",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 104,
+      "total": 105,
+      "images": 105
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/east-sussex/the-oaks-wivelsfield/availability-prices/",
+      "name": "The Oaks, Wivelsfield, East Sussex",
+      "status": "pending",
+      "completed": 4,
+      "failed": 0,
+      "pending": 65,
+      "total": 69,
+      "images": 69
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/wiltshire/the-orchards-purton/availability-prices/",
+      "name": "The Orchards, Purton, Wiltshire",
+      "status": "waiting for images",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/the-willows-burridge/availability-prices/",
+      "name": "The Willows, Burridge, Hampshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 32,
+      "total": 32,
+      "images": 32
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/ufford-chase-phase-2-great-bentley/availability-prices/",
+      "name": "Ufford Chase Phase 2, Great Bentley, Essex",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 88,
+      "total": 89,
+      "images": 89
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-dunbartonshire/weaver-s-brae-kirkintilloch/availability-prices/",
+      "name": "Weaver's Brae, Kirkintilloch, East Dunbartonshire",
+      "status": "pending",
+      "completed": 24,
+      "failed": 0,
+      "pending": 36,
+      "total": 60,
+      "images": 60
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/edinburgh/west-craigs/availability-prices/",
+      "name": "West Craigs, Edinburgh",
+      "status": "pending",
+      "completed": 1,
+      "failed": 0,
+      "pending": 82,
+      "total": 83,
+      "images": 83
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/wivenhoe-gardens-wivenhoe/availability-prices/",
+      "name": "Wivenhoe Gardens, Wivenhoe, Essex",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 61,
+      "total": 61,
+      "images": 61
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeen/woodhurst-at-oldfold-village-milltimber/availability-prices/",
+      "name": "Woodhurst at Oldfold Village, Milltimber, Aberdeen",
+      "status": "pending",
+      "completed": 60,
+      "failed": 0,
+      "pending": 20,
+      "total": 80,
+      "images": 80
+    },
+    {
+      "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/worting-park-basingstoke/availability-prices/",
+      "name": "Worting Park, Basingstoke, Hampshire",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 75,
+      "total": 75,
+      "images": 75
+    }
+  ]
+}
