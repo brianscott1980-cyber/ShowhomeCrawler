@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T21:56:36.725Z",
+  "updatedAt": "2026-10-08T22:13:58.948Z",
   "currentDevelopments": [
-    "Elder Brook"
+    "Hedworths Green at Lambton Park"
   ],
   "totals": {
-    "completed": 1371,
-    "failed": 23,
-    "pending": 878,
+    "completed": 1524,
+    "failed": 26,
+    "pending": 722,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 638
+    "structuredImages": 791
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 638
+      "count": 791
     }
   ],
   "developments": [
@@ -761,7 +761,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/eastern-counties/elder-brook",
       "name": "Elder Brook",
-      "status": "running",
+      "status": "needs attention",
       "completed": 111,
       "failed": 6,
       "pending": 0,
@@ -1101,10 +1101,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
       "name": "Hedworths Green at Lambton Park",
-      "status": "pending",
-      "completed": 33,
-      "failed": 0,
-      "pending": 156,
+      "status": "running",
+      "completed": 186,
+      "failed": 3,
+      "pending": 0,
       "total": 189,
       "images": 189
     },
@@ -1272,9 +1272,9 @@
       "url": "https://www.bellway.co.uk/new-homes/wessex/langmead-place",
       "name": "Langmead Place",
       "status": "needs attention",
-      "completed": 29,
+      "completed": 57,
       "failed": 1,
-      "pending": 118,
+      "pending": 90,
       "total": 148,
       "images": 148
     },
@@ -1962,9 +1962,9 @@
       "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
       "name": "Sharnbrook Park",
       "status": "pending",
-      "completed": 1,
+      "completed": 18,
       "failed": 0,
-      "pending": 168,
+      "pending": 151,
       "total": 169,
       "images": 169
     },
@@ -2522,9 +2522,9 @@
       "url": "https://www.bellway.co.uk/new-homes/kent/woodbury-manor",
       "name": "Woodbury Manor",
       "status": "pending",
-      "completed": 0,
+      "completed": 9,
       "failed": 0,
-      "pending": 89,
+      "pending": 80,
       "total": 89,
       "images": 89
     },
