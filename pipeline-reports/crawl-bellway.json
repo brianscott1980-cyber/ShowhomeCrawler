@@ -1,1 +1,2541 @@
-{"phase":"crawl","builder":"bellway","builderName":"bellway","status":"recorded","updatedAt":"2026-10-02T00:06:20.806Z","currentDevelopments":[],"totals":{"completed":118,"failed":0,"pending":0,"total":118,"images":733,"developments":252,"developmentsCompleted":0,"structuredImages":0},"models":[],"developments":[{"url":"https://www.bellway.co.uk/new-homes/east-midlands/abbey-fields-grange","name":"Abbey Fields Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/abbey-view","name":"Abbey View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/abercrombie-park","name":"Abercrombie Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/alder-grove","name":"Alder Grove","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/alderstone-park","name":"Alderstone Park","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/alexander-park","name":"Alexander Park","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":19},{"url":"https://www.bellway.co.uk/new-homes/kent/alkerden-heights","name":"Alkerden Heights","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/amberstone-park","name":"Amberstone Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/arden-glade","name":"Arden Glade","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":24},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/ashlands","name":"Ashlands","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/ashlar-village","name":"Ashlar Village","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/astley-fields","name":"Astley Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/astoria-park","name":"Astoria Park","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":21},{"url":"https://www.bellway.co.uk/new-homes/north-east/autumn-ford","name":"Autumn Ford","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange","name":"Baldwins Gate Grange","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":50},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/barleywoods","name":"Barleywoods","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":18},{"url":"https://www.bellway.co.uk/new-homes/manchester/barton-quarter","name":"Barton Quarter","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/durham/baydale-village","name":"Baydale Village","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":24},{"url":"https://www.bellway.co.uk/new-homes/essex/beaulieu-grange","name":"Beaulieu Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wessex/bellway-at-boorley-gardens","name":"Bellway at Boorley Gardens","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/wessex/bellway-at-brewery-square","name":"Bellway at Brewery Square","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/bellway-at-fonnereau-village","name":"Bellway at Fonnereau Village","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/bellway-at-hugglescote-grange","name":"Bellway at Hugglescote Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/bellway-at-rosewood","name":"Bellway at Rosewood","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/bellway-at-shawfair","name":"Bellway at Shawfair","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park","name":"Bellway at St James' Park","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":3},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/bellway-at-whitehouse-park","name":"Bellway at Whitehouse Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights","name":"Bellway at Whitford Heights","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":46},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/berry-hill-lea","name":"Berry Hill Lea","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/berry-hill-vale","name":"Berry Hill Vale","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/berwick-green","name":"Berwick Green","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/bishops-gate","name":"Bishops Gate","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/blackthorn-walk","name":"Blackthorn Walk","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/blenheim-green","name":"Blenheim Green","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/bronze-fields","name":"Bronze Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/brook-meadows","name":"Brook Meadows","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/buttercross-meadows","name":"Buttercross Meadows","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/carnatic-park","name":"Carnatic Park","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":24},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/carnegie-quarter-by-bellway","name":"Carnegie Quarter by Bellway","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/carters-court","name":"Carter's Court","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/castle-grange","name":"Castle Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/cathedral-rise","name":"Cathedral Rise","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/cavendish-grove","name":"Cavendish Grove","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/cedarcroft","name":"Cedarcroft","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/celtic-gardens","name":"Celtic Gardens","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/north-east/centurion-chase","name":"Centurion Chase","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":19},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-bridge","name":"Chamberlains Bridge","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath","name":"Chamberlains Heath","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":22},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/chestnut-vale","name":"Chestnut Vale","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/chilsey-grange","name":"Chilsey Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/durham/clarence-gate","name":"Clarence Gate","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/clavering-park","name":"Clavering Park","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":2},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/clifford-gardens","name":"Clifford Gardens","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":17},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/clover-fields","name":"Clover Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/cloverhill","name":"Cloverhill","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":21},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/cooper-square","name":"Cooper Square","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/copperhouse-green","name":"Copperhouse Green","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/coppice-heights","name":"Coppice Heights","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wessex/corallian-heights","name":"Corallian Heights","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/craig-y-parcau","name":"Craig y Parcau","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/cranfield-grange","name":"Cranfield Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/cromwell-grange","name":"Cromwell Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/crossways-quarter","name":"Crossways Quarter","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange","name":"Dalmore Grange","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":21},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/dargavel-village","name":"Dargavel Village","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/darwins-edge","name":"Darwin's Edge","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/dehavilland-place","name":"DeHavilland Place","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":25},{"url":"https://www.bellway.co.uk/new-homes/north-east/dh1","name":"DH1","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":44},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/earls-way","name":"Earl's Way","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/earlsbrook-court","name":"Earlsbrook Court","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/eastview","name":"Eastview","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/ebbsfleet-cross-at-garden-city","name":"Ebbsfleet Cross at Garden City","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/echelon","name":"Echelon","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":41},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/elder-brook","name":"Elder Brook","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-east/elemore","name":"Elemore","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens","name":"Elfenne Gardens","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":21},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/elizabeth-square","name":"Elizabeth Square","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/ellingwood","name":"Ellingwood","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/elmfield-green","name":"Elmfield Green","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/south-west/empress-gardens","name":"Empress Gardens","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/euxton-heights","name":"Euxton Heights","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-east/falcon-grove","name":"Falcon Grove","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":49},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/fallow-wood-view","name":"Fallow Wood View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/fardalehill","name":"Fardalehill","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-horizons","name":"Fielders Quarter - Horizons","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-west-circus","name":"Fielders Quarter - West Circus","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-at-barking-riverside","name":"Fielders Quarter - West Circus","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/fielders-quarter","name":"Fielders Quarter - West Circus","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/firview","name":"Firview","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/south-west/flowers-hill-grange","name":"Flowers Hill Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/forest-walk","name":"Forest Walk","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/forster-park","name":"Forster Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-east/foxton-mill","name":"Foxton Mill","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/francis-gardens","name":"Francis Gardens","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/garrison-point","name":"Garrison Point","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/genesis-at-berry-hill","name":"Genesis at Berry Hill","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/goodsyard","name":"Goodsyard","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/greenleys-gardens","name":"Greenleys Gardens","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/halewood-oaks","name":"Halewood Oaks","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/harbour-village","name":"Harbour Village","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/hares-leap","name":"Hare's Leap","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":3},{"url":"https://www.bellway.co.uk/new-homes/north-east/hartford-edge","name":"Hartford Edge","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":22},{"url":"https://www.bellway.co.uk/new-homes/durham/hartwell-park","name":"Hartwell Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/harvino","name":"Harvino","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":8},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/hatton-gate","name":"Hatton Gate","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/hawthorn-park","name":"Hawthorn Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/haycroft-gardens","name":"Haycroft Gardens","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park","name":"Hedworths Green at Lambton Park","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":33},{"url":"https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange","name":"High Leigh Grange","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":41},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/highlands-grange","name":"Highlands Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/highwoods-view","name":"Highwoods View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/holbrook-park","name":"Holbrook Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/holt-vale","name":"Holt Vale","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/hopwood-meadows","name":"Hopwood Meadows","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":11},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/indigo-park","name":"Indigo Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/ivy-hill","name":"Ivy Hill","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/durham/killinghall-grange","name":"Killinghall Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/king-georges-vale","name":"King George's Vale","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":44},{"url":"https://www.bellway.co.uk/new-homes/essex/kingsfleet-park","name":"Kingsfleet Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/kingsgate-park","name":"Kingsgate Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wessex/kingsmere-park","name":"Kingsmere Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/ladywell-coppice","name":"Ladywell Coppice","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold","name":"Lancaster Fold","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":42},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/landsdale","name":"Landsdale","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":24},{"url":"https://www.bellway.co.uk/new-homes/wessex/langmead-place","name":"Langmead Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/lathom-pastures","name":"Lathom Pastures","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/south-west/lavender-rise","name":"Lavender Rise","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/legacy-wharf","name":"Legacy Wharf","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/libbets-grange","name":"Libbets Grange","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":46},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/linmere-gateway","name":"Linmere Gateway","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/linmere-mews","name":"Linmere Mews","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/lock-keeper-gardens","name":"Lock Keeper Gardens","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":22},{"url":"https://www.bellway.co.uk/new-homes/essex/lockwood-place","name":"Lockwood Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wessex/longfield-place","name":"Longfield Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/longwood-grange","name":"Longwood Grange","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":2},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/lucas-green","name":"Lucas Green","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/lydiate-gate","name":"Lydiate Gate","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/mansion-gardens-at-fallow-wood-view","name":"Mansion Gardens at Fallow Wood View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/maple-creek","name":"Maple Creek","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/maplewood-grove","name":"Maplewood Grove","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/mayflower-mews","name":"Mayflower Mews","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-east/meadowcroft","name":"Meadowcroft","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":66},{"url":"https://www.bellway.co.uk/new-homes/north-london/millworks","name":"Millworks","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/montem-square","name":"Montem Square","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/montgomerie-park","name":"Montgomerie Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/durham/monument-meadows","name":"Monument Meadows","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/moreton-fields","name":"Moreton Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/moss-bank-gardens","name":"Moss Bank Gardens","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wessex/mount-royal-gardens","name":"Mount Royal Gardens","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/mountain-view","name":"Mountain View","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/manchester/narrowboat-view","name":"Narrowboat View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/navigators-walk","name":"Navigators Walk","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/neptune","name":"Neptune","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/new-cardington-fields","name":"New Cardington Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/oakhill-meadow","name":"Oakhill Meadow","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":16},{"url":"https://www.bellway.co.uk/new-homes/durham/oakwood-at-wynyard-park","name":"Oakwood at Wynyard Park","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":22},{"url":"https://www.bellway.co.uk/new-homes/manchester/old-brook-view","name":"Old Brook View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/old-royal-chace","name":"Old Royal Chace","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/oxenden-park","name":"Oxenden Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/palmers-grange","name":"Palmers Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/parc-mawr","name":"Parc Mawr","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/park-gate-village","name":"Park Gate Village","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/parsonage-place","name":"Parsonage Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/parsons-croft","name":"Parsons Croft","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":26},{"url":"https://www.bellway.co.uk/new-homes/north-london/pennwood-grange","name":"Pennwood Grange","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/penny-way","name":"Penny Way","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":21},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/perceval-grange","name":"Perceval Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/pilgrim-manor","name":"Pilgrim Manor","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/pinchbeck-fields","name":"Pinchbeck Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/pinewood-grange","name":"Pinewood Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wales/pomona-grove","name":"Pomona Grove","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/poppy-view","name":"Poppy View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/porters-grove","name":"Porters Grove","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/poulton-rise","name":"Poulton Rise","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/primrose-grove","name":"Primrose Grove","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/princes-gate","name":"Prince's Gate","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":17},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow","name":"Priors Meadow","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":47},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/quarrington-edge-at-handley-chase","name":"Quarrington Edge at Handley Chase","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/radley-reach","name":"Radley Reach","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":43},{"url":"https://www.bellway.co.uk/new-homes/north-london/radwinter-gardens","name":"Radwinter Gardens","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/essex/rectory-fields","name":"Rectory Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/redlands-grove","name":"Redlands Grove","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/durham/regency-manor","name":"Regency Manor","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":49},{"url":"https://www.bellway.co.uk/new-homes/north-london/regents-gate","name":"Regent's Gate","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":3},{"url":"https://www.bellway.co.uk/new-homes/scotland-west/ridgewood","name":"Ridgewood","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":17},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/roe-wood-park","name":"Roe Wood Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-east/roman-court","name":"Roman Court","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/roman-gate","name":"Roman Gate","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/roundhouse-fields","name":"Roundhouse Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/rowden-chase","name":"Rowden Chase","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/manchester/royal-bowland-park-phase-2","name":"Royal Bowland Park Phase 2","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/sapphire-fields-at-great-dunmow-grange","name":"Sapphire Fields at Great Dunmow Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/scholars-walk","name":"Scholars Walk","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":20},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park","name":"Sharnbrook Park","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":1},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park","name":"Sheasby Park","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":22},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/simpson-park","name":"Simpson Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/sky-plaza","name":"Sky Plaza","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/skyline","name":"Skyline","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/somerford-gate","name":"Somerford Gate","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wessex/spindrift-park","name":"Spindrift Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/spires-view","name":"Spires View","status":"recorded","completed":4,"failed":0,"pending":0,"total":4,"images":2},{"url":"https://www.bellway.co.uk/new-homes/wessex/spirewood-grange","name":"Spirewood Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/springstead-village","name":"Springstead Village","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/springwood","name":"Springwood","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/st-albans-gate","name":"St Albans Gate","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/st-oswalds-place","name":"St Oswald's Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/st-wilfrids-place","name":"St Wilfrid's Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/wessex/st-marys-hill","name":"St. Mary's Hill","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/stoughton-park","name":"Stoughton Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-east/summerhill-view","name":"Summerhill View","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/summers-bridge","name":"Summers Bridge","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/tattenhoe-meadows","name":"Tattenhoe Meadows","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-london/tavistock-quarter","name":"Tavistock Quarter","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/the-atrium","name":"The Atrium","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/the-comptons","name":"The Comptons","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/the-crescent","name":"The Crescent","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/eastern-counties/the-ferns-at-kennett-garden-village","name":"The Ferns at Kennett Garden Village","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/the-foresters-at-middlebeck","name":"The Foresters at Middlebeck","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/the-gatehouse","name":"The Gatehouse","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":16},{"url":"https://www.bellway.co.uk/new-homes/durham/the-green-at-dh1","name":"The Green at DH1","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/the-grove-at-riverbrook-place","name":"The Grove at Riverbrook Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-west/the-landings","name":"The Landings","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/the-lanes","name":"The Lanes","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":2},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/the-meadows-at-hampden-gardens","name":"The Meadows at Hampden Gardens","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":23},{"url":"https://www.bellway.co.uk/new-homes/durham/the-old-foundry","name":"The Old Foundry","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":23},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/the-paddock-at-chilsey-grange","name":"The Paddock at Chilsey Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/the-putting-green-at-brackley-village","name":"The Putting Green at Brackley Village","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/the-sidings-at-shawfair","name":"The Sidings at Shawfair","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/the-willows","name":"The Willows","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields","name":"Tiger Moth Fields","status":"recorded","completed":2,"failed":0,"pending":0,"total":2,"images":40},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/torvill-park","name":"Torvill Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/trident-way","name":"Trident Way","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":19},{"url":"https://www.bellway.co.uk/new-homes/manchester/trilogy","name":"Trilogy","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/essex/trinity-green","name":"Trinity Green","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/victoria-gate","name":"Victoria Gate","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/east-midlands/vita-at-holbrook-park","name":"Vita at Holbrook Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/wakeley-meadow","name":"Wakeley Meadow","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/southern-counties/walderside","name":"Walderside","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/watchmans-place","name":"Watchman's Place","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/manchester/weaver-green","name":"Weaver Green","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/weavers-fields","name":"Weavers Fields","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/south-west/weavers-meadow","name":"Weavers Meadow","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/durham/wellfield-rise","name":"Wellfield Rise","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-gateway/westcombe-park","name":"Westcombe Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/north-east/western-grange","name":"Western Grange","status":"recorded","completed":1,"failed":0,"pending":0,"total":1,"images":24},{"url":"https://www.bellway.co.uk/new-homes/northern-home-counties/whitehouse-gardens","name":"Whitehouse Gardens","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/willow-brook","name":"Willow Brook","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/thames-valley/willows-edge","name":"Willow's Edge","status":"recorded","completed":3,"failed":0,"pending":0,"total":3,"images":25},{"url":"https://www.bellway.co.uk/new-homes/scotland-east/winchburgh-grange","name":"Winchburgh Grange","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/kent/woodbury-manor","name":"Woodbury Manor","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/yorkshire/woodland-walk","name":"Woodland Walk","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0},{"url":"https://www.bellway.co.uk/new-homes/west-midlands/yew-tree-park","name":"Yew Tree Park","status":"no galleries recorded","completed":0,"failed":0,"pending":0,"total":0,"images":0}]}
+{
+  "phase": "crawl",
+  "builder": "bellway",
+  "builderName": "Bellway",
+  "status": "running",
+  "updatedAt": "2026-10-08T20:36:16.020Z",
+  "currentDevelopments": [],
+  "totals": {
+    "completed": 202,
+    "failed": 0,
+    "pending": 2362,
+    "total": 2564,
+    "images": 2272,
+    "developments": 252,
+    "developmentsCompleted": 13,
+    "structuredImages": 185
+  },
+  "models": [],
+  "developments": [
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/abbey-fields-grange",
+      "name": "Abbey Fields Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/abbey-view",
+      "name": "Abbey View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/abercrombie-park",
+      "name": "Abercrombie Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/alder-grove",
+      "name": "Alder Grove",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 23,
+      "total": 23,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/alderstone-park",
+      "name": "Alderstone Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/alexander-park",
+      "name": "Alexander Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 22,
+      "total": 22,
+      "images": 19
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/alkerden-heights",
+      "name": "Alkerden Heights",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/amberstone-park",
+      "name": "Amberstone Park",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade",
+      "name": "Arden Glade",
+      "status": "completed",
+      "completed": 18,
+      "failed": 0,
+      "pending": 0,
+      "total": 18,
+      "images": 215
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/ashlands",
+      "name": "Ashlands",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/ashlar-village",
+      "name": "Ashlar Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/astley-fields",
+      "name": "Astley Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/astoria-park",
+      "name": "Astoria Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 15,
+      "total": 15,
+      "images": 21
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/autumn-ford",
+      "name": "Autumn Ford",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 5,
+      "total": 5,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/baldwins-gate-grange",
+      "name": "Baldwins Gate Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 22,
+      "total": 22,
+      "images": 50
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/barleywoods",
+      "name": "Barleywoods",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 18
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/barton-quarter",
+      "name": "Barton Quarter",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/baydale-village",
+      "name": "Baydale Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 20,
+      "total": 20,
+      "images": 24
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/beaulieu-grange",
+      "name": "Beaulieu Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/bellway-at-boorley-gardens",
+      "name": "Bellway at Boorley Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/bellway-at-brewery-square",
+      "name": "Bellway at Brewery Square",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 25,
+      "total": 25,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/bellway-at-fonnereau-village",
+      "name": "Bellway at Fonnereau Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 21,
+      "total": 21,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/bellway-at-hugglescote-grange",
+      "name": "Bellway at Hugglescote Grange",
+      "status": "completed",
+      "completed": 4,
+      "failed": 0,
+      "pending": 0,
+      "total": 4,
+      "images": 65
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/bellway-at-rosewood",
+      "name": "Bellway at Rosewood",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/bellway-at-shawfair",
+      "name": "Bellway at Shawfair",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/bellway-at-st-james-park",
+      "name": "Bellway at St James' Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/bellway-at-whitehouse-park",
+      "name": "Bellway at Whitehouse Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/bellway-at-whitford-heights",
+      "name": "Bellway at Whitford Heights",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 46
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/berry-hill-lea",
+      "name": "Berry Hill Lea",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/berry-hill-vale",
+      "name": "Berry Hill Vale",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 16,
+      "total": 16,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/berwick-green",
+      "name": "Berwick Green",
+      "status": "pending",
+      "completed": 14,
+      "failed": 0,
+      "pending": 6,
+      "total": 20,
+      "images": 142
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/bishops-gate",
+      "name": "Bishops Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/blackthorn-walk",
+      "name": "Blackthorn Walk",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/blenheim-green",
+      "name": "Blenheim Green",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/bronze-fields",
+      "name": "Bronze Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/brook-meadows",
+      "name": "Brook Meadows",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/buttercross-meadows",
+      "name": "Buttercross Meadows",
+      "status": "completed",
+      "completed": 15,
+      "failed": 0,
+      "pending": 0,
+      "total": 15,
+      "images": 175
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/carnatic-park",
+      "name": "Carnatic Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 20,
+      "total": 20,
+      "images": 24
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/carnegie-quarter-by-bellway",
+      "name": "Carnegie Quarter by Bellway",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/carters-court",
+      "name": "Carter's Court",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 5,
+      "total": 5,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/castle-grange",
+      "name": "Castle Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/cathedral-rise",
+      "name": "Cathedral Rise",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/cavendish-grove",
+      "name": "Cavendish Grove",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/cedarcroft",
+      "name": "Cedarcroft",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/celtic-gardens",
+      "name": "Celtic Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/centurion-chase",
+      "name": "Centurion Chase",
+      "status": "pending",
+      "completed": 3,
+      "failed": 0,
+      "pending": 1,
+      "total": 4,
+      "images": 57
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-bridge",
+      "name": "Chamberlains Bridge",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chamberlains-heath",
+      "name": "Chamberlains Heath",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 22
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/chestnut-vale",
+      "name": "Chestnut Vale",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/chilsey-grange",
+      "name": "Chilsey Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/clarence-gate",
+      "name": "Clarence Gate",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/clavering-park",
+      "name": "Clavering Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/clifford-gardens",
+      "name": "Clifford Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 17
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/clover-fields",
+      "name": "Clover Fields",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/cloverhill",
+      "name": "Cloverhill",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 21
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/cooper-square",
+      "name": "Cooper Square",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/copperhouse-green",
+      "name": "Copperhouse Green",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/coppice-heights",
+      "name": "Coppice Heights",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/corallian-heights",
+      "name": "Corallian Heights",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/craig-y-parcau",
+      "name": "Craig y Parcau",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/cranfield-grange",
+      "name": "Cranfield Grange",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/cromwell-grange",
+      "name": "Cromwell Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/crossways-quarter",
+      "name": "Crossways Quarter",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/dalmore-grange",
+      "name": "Dalmore Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 21
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/dargavel-village",
+      "name": "Dargavel Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/darwins-edge",
+      "name": "Darwin's Edge",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/dehavilland-place",
+      "name": "DeHavilland Place",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 25
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/dh1",
+      "name": "DH1",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 24,
+      "total": 24,
+      "images": 44
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/earls-way",
+      "name": "Earl's Way",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/earlsbrook-court",
+      "name": "Earlsbrook Court",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/eastview",
+      "name": "Eastview",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/ebbsfleet-cross-at-garden-city",
+      "name": "Ebbsfleet Cross at Garden City",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/echelon",
+      "name": "Echelon",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 41
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/elder-brook",
+      "name": "Elder Brook",
+      "status": "completed",
+      "completed": 9,
+      "failed": 0,
+      "pending": 0,
+      "total": 9,
+      "images": 117
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/elemore",
+      "name": "Elemore",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/elfenne-gardens",
+      "name": "Elfenne Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 21
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/elizabeth-square",
+      "name": "Elizabeth Square",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/ellingwood",
+      "name": "Ellingwood",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/elmfield-green",
+      "name": "Elmfield Green",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/empress-gardens",
+      "name": "Empress Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/euxton-heights",
+      "name": "Euxton Heights",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/falcon-grove",
+      "name": "Falcon Grove",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 18,
+      "total": 18,
+      "images": 49
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/fallow-wood-view",
+      "name": "Fallow Wood View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 5,
+      "total": 5,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/fardalehill",
+      "name": "Fardalehill",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-horizons",
+      "name": "Fielders Quarter - Horizons",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 21,
+      "total": 21,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-west-circus",
+      "name": "Fielders Quarter - West Circus",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter-at-barking-riverside",
+      "name": "Fielders Quarter - West Circus",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/fielders-quarter",
+      "name": "Fielders Quarter - West Circus",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/firview",
+      "name": "Firview",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/flowers-hill-grange",
+      "name": "Flowers Hill Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 21,
+      "total": 21,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/forest-walk",
+      "name": "Forest Walk",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/forster-park",
+      "name": "Forster Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/foxton-mill",
+      "name": "Foxton Mill",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/francis-gardens",
+      "name": "Francis Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/garrison-point",
+      "name": "Garrison Point",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/genesis-at-berry-hill",
+      "name": "Genesis at Berry Hill",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/goodsyard",
+      "name": "Goodsyard",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/greenleys-gardens",
+      "name": "Greenleys Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/halewood-oaks",
+      "name": "Halewood Oaks",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/harbour-village",
+      "name": "Harbour Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 26,
+      "total": 26,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/hares-leap",
+      "name": "Hare's Leap",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/hartford-edge",
+      "name": "Hartford Edge",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 13,
+      "total": 13,
+      "images": 22
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/hartwell-park",
+      "name": "Hartwell Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/harvino",
+      "name": "Harvino",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 8
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/hatton-gate",
+      "name": "Hatton Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 16,
+      "total": 16,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/hawthorn-park",
+      "name": "Hawthorn Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/haycroft-gardens",
+      "name": "Haycroft Gardens",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/hedworths-green-at-lambton-park",
+      "name": "Hedworths Green at Lambton Park",
+      "status": "completed",
+      "completed": 25,
+      "failed": 0,
+      "pending": 0,
+      "total": 25,
+      "images": 189
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/high-leigh-grange",
+      "name": "High Leigh Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 20,
+      "total": 20,
+      "images": 41
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/highlands-grange",
+      "name": "Highlands Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/highwoods-view",
+      "name": "Highwoods View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/holbrook-park",
+      "name": "Holbrook Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 23,
+      "total": 23,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/holt-vale",
+      "name": "Holt Vale",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/hopwood-meadows",
+      "name": "Hopwood Meadows",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 11
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/indigo-park",
+      "name": "Indigo Park",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/ivy-hill",
+      "name": "Ivy Hill",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/killinghall-grange",
+      "name": "Killinghall Grange",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/king-georges-vale",
+      "name": "King George's Vale",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 44
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/kingsfleet-park",
+      "name": "Kingsfleet Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 24,
+      "total": 24,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/kingsgate-park",
+      "name": "Kingsgate Park",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/kingsmere-park",
+      "name": "Kingsmere Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 26,
+      "total": 26,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/ladywell-coppice",
+      "name": "Ladywell Coppice",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/lancaster-fold",
+      "name": "Lancaster Fold",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 42
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/landsdale",
+      "name": "Landsdale",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 24
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/langmead-place",
+      "name": "Langmead Place",
+      "status": "completed",
+      "completed": 14,
+      "failed": 0,
+      "pending": 0,
+      "total": 14,
+      "images": 148
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/lathom-pastures",
+      "name": "Lathom Pastures",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/lavender-rise",
+      "name": "Lavender Rise",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/legacy-wharf",
+      "name": "Legacy Wharf",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 4,
+      "total": 4,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/libbets-grange",
+      "name": "Libbets Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 27,
+      "total": 27,
+      "images": 46
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/linmere-gateway",
+      "name": "Linmere Gateway",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/linmere-mews",
+      "name": "Linmere Mews",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 22,
+      "total": 22,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/lock-keeper-gardens",
+      "name": "Lock Keeper Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 22
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/lockwood-place",
+      "name": "Lockwood Place",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/longfield-place",
+      "name": "Longfield Place",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/longwood-grange",
+      "name": "Longwood Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 20,
+      "total": 20,
+      "images": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/lucas-green",
+      "name": "Lucas Green",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/lydiate-gate",
+      "name": "Lydiate Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/mansion-gardens-at-fallow-wood-view",
+      "name": "Mansion Gardens at Fallow Wood View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/maple-creek",
+      "name": "Maple Creek",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/maplewood-grove",
+      "name": "Maplewood Grove",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/mayflower-mews",
+      "name": "Mayflower Mews",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/meadowcroft",
+      "name": "Meadowcroft",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 66
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/millworks",
+      "name": "Millworks",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/montem-square",
+      "name": "Montem Square",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 16,
+      "total": 16,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/montgomerie-park",
+      "name": "Montgomerie Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/monument-meadows",
+      "name": "Monument Meadows",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/moreton-fields",
+      "name": "Moreton Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/moss-bank-gardens",
+      "name": "Moss Bank Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 18,
+      "total": 18,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/mount-royal-gardens",
+      "name": "Mount Royal Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/mountain-view",
+      "name": "Mountain View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/narrowboat-view",
+      "name": "Narrowboat View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/navigators-walk",
+      "name": "Navigators Walk",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 26,
+      "total": 26,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/neptune",
+      "name": "Neptune",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/new-cardington-fields",
+      "name": "New Cardington Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/oakhill-meadow",
+      "name": "Oakhill Meadow",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 16
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/oakwood-at-wynyard-park",
+      "name": "Oakwood at Wynyard Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 13,
+      "total": 13,
+      "images": 22
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/old-brook-view",
+      "name": "Old Brook View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 15,
+      "total": 15,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/old-royal-chace",
+      "name": "Old Royal Chace",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/oxenden-park",
+      "name": "Oxenden Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 25,
+      "total": 25,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/palmers-grange",
+      "name": "Palmers Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/parc-mawr",
+      "name": "Parc Mawr",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/park-gate-village",
+      "name": "Park Gate Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/parsonage-place",
+      "name": "Parsonage Place",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 27,
+      "total": 27,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/parsons-croft",
+      "name": "Parsons Croft",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 26
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/pennwood-grange",
+      "name": "Pennwood Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 16,
+      "total": 16,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/penny-way",
+      "name": "Penny Way",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 21
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/perceval-grange",
+      "name": "Perceval Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/pilgrim-manor",
+      "name": "Pilgrim Manor",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 22,
+      "total": 22,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/pinchbeck-fields",
+      "name": "Pinchbeck Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 5,
+      "total": 5,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/pinewood-grange",
+      "name": "Pinewood Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 1,
+      "total": 1,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wales/pomona-grove",
+      "name": "Pomona Grove",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/poppy-view",
+      "name": "Poppy View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/porters-grove",
+      "name": "Porters Grove",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/poulton-rise",
+      "name": "Poulton Rise",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 23,
+      "total": 23,
+      "images": 1
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/primrose-grove",
+      "name": "Primrose Grove",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/princes-gate",
+      "name": "Prince's Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 17
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/priors-meadow",
+      "name": "Priors Meadow",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 16,
+      "total": 16,
+      "images": 47
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/quarrington-edge-at-handley-chase",
+      "name": "Quarrington Edge at Handley Chase",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 14,
+      "total": 14,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/radley-reach",
+      "name": "Radley Reach",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 15,
+      "total": 15,
+      "images": 43
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/radwinter-gardens",
+      "name": "Radwinter Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 4,
+      "total": 4,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/rectory-fields",
+      "name": "Rectory Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 15,
+      "total": 15,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/redlands-grove",
+      "name": "Redlands Grove",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 7,
+      "total": 7,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/regency-manor",
+      "name": "Regency Manor",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 5,
+      "total": 5,
+      "images": 49
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/regents-gate",
+      "name": "Regent's Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 24,
+      "total": 24,
+      "images": 3
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-west/ridgewood",
+      "name": "Ridgewood",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 17
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/roe-wood-park",
+      "name": "Roe Wood Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/roman-court",
+      "name": "Roman Court",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 10,
+      "total": 10,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/roman-gate",
+      "name": "Roman Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/roundhouse-fields",
+      "name": "Roundhouse Fields",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/rowden-chase",
+      "name": "Rowden Chase",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/royal-bowland-park-phase-2",
+      "name": "Royal Bowland Park Phase 2",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/sapphire-fields-at-great-dunmow-grange",
+      "name": "Sapphire Fields at Great Dunmow Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/scholars-walk",
+      "name": "Scholars Walk",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 21,
+      "total": 21,
+      "images": 20
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
+      "name": "Sharnbrook Park",
+      "status": "completed",
+      "completed": 17,
+      "failed": 0,
+      "pending": 0,
+      "total": 17,
+      "images": 169
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
+      "name": "Sheasby Park",
+      "status": "completed",
+      "completed": 19,
+      "failed": 0,
+      "pending": 0,
+      "total": 19,
+      "images": 209
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/simpson-park",
+      "name": "Simpson Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/sky-plaza",
+      "name": "Sky Plaza",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/skyline",
+      "name": "Skyline",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/somerford-gate",
+      "name": "Somerford Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/spindrift-park",
+      "name": "Spindrift Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 23,
+      "total": 23,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/spires-view",
+      "name": "Spires View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 23,
+      "total": 23,
+      "images": 2
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/spirewood-grange",
+      "name": "Spirewood Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/springstead-village",
+      "name": "Springstead Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 23,
+      "total": 23,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/springwood",
+      "name": "Springwood",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/st-albans-gate",
+      "name": "St Albans Gate",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/st-oswalds-place",
+      "name": "St Oswald's Place",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/st-wilfrids-place",
+      "name": "St Wilfrid's Place",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/wessex/st-marys-hill",
+      "name": "St. Mary's Hill",
+      "status": "completed",
+      "completed": 2,
+      "failed": 0,
+      "pending": 0,
+      "total": 2,
+      "images": 38
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/stoughton-park",
+      "name": "Stoughton Park",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/summerhill-view",
+      "name": "Summerhill View",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/summers-bridge",
+      "name": "Summers Bridge",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/tattenhoe-meadows",
+      "name": "Tattenhoe Meadows",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-london/tavistock-quarter",
+      "name": "Tavistock Quarter",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-atrium",
+      "name": "The Atrium",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 25,
+      "total": 25,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/the-comptons",
+      "name": "The Comptons",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 6,
+      "total": 6,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/the-crescent",
+      "name": "The Crescent",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 16,
+      "total": 16,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/eastern-counties/the-ferns-at-kennett-garden-village",
+      "name": "The Ferns at Kennett Garden Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 13,
+      "total": 13,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/the-foresters-at-middlebeck",
+      "name": "The Foresters at Middlebeck",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/the-gatehouse",
+      "name": "The Gatehouse",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 16
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/the-green-at-dh1",
+      "name": "The Green at DH1",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 18,
+      "total": 18,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/the-grove-at-riverbrook-place",
+      "name": "The Grove at Riverbrook Place",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-west/the-landings",
+      "name": "The Landings",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 18,
+      "total": 18,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes",
+      "name": "The Lanes",
+      "status": "completed",
+      "completed": 11,
+      "failed": 0,
+      "pending": 0,
+      "total": 11,
+      "images": 10
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-meadows-at-hampden-gardens",
+      "name": "The Meadows at Hampden Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 23
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/the-old-foundry",
+      "name": "The Old Foundry",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 23
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-paddock-at-chilsey-grange",
+      "name": "The Paddock at Chilsey Grange",
+      "status": "pending",
+      "completed": 12,
+      "failed": 0,
+      "pending": 2,
+      "total": 14,
+      "images": 103
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/the-putting-green-at-brackley-village",
+      "name": "The Putting Green at Brackley Village",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 12,
+      "total": 12,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/the-sidings-at-shawfair",
+      "name": "The Sidings at Shawfair",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/the-willows",
+      "name": "The Willows",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 2,
+      "total": 2,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/tiger-moth-fields",
+      "name": "Tiger Moth Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 40
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/torvill-park",
+      "name": "Torvill Park",
+      "status": "completed",
+      "completed": 22,
+      "failed": 0,
+      "pending": 0,
+      "total": 22,
+      "images": 239
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/trident-way",
+      "name": "Trident Way",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 19
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/trilogy",
+      "name": "Trilogy",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 8,
+      "total": 8,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/essex/trinity-green",
+      "name": "Trinity Green",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/victoria-gate",
+      "name": "Victoria Gate",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 21,
+      "total": 21,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/east-midlands/vita-at-holbrook-park",
+      "name": "Vita at Holbrook Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 20,
+      "total": 20,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/wakeley-meadow",
+      "name": "Wakeley Meadow",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/southern-counties/walderside",
+      "name": "Walderside",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/watchmans-place",
+      "name": "Watchman's Place",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 4,
+      "total": 4,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/manchester/weaver-green",
+      "name": "Weaver Green",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 3,
+      "total": 3,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/weavers-fields",
+      "name": "Weavers Fields",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 16,
+      "total": 16,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/south-west/weavers-meadow",
+      "name": "Weavers Meadow",
+      "status": "completed",
+      "completed": 9,
+      "failed": 0,
+      "pending": 0,
+      "total": 9,
+      "images": 93
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/durham/wellfield-rise",
+      "name": "Wellfield Rise",
+      "status": "no galleries recorded",
+      "completed": 0,
+      "failed": 0,
+      "pending": 0,
+      "total": 0,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-gateway/westcombe-park",
+      "name": "Westcombe Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 19,
+      "total": 19,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/north-east/western-grange",
+      "name": "Western Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 11,
+      "total": 11,
+      "images": 24
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/whitehouse-gardens",
+      "name": "Whitehouse Gardens",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 5,
+      "total": 5,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/willow-brook",
+      "name": "Willow Brook",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 21,
+      "total": 21,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/thames-valley/willows-edge",
+      "name": "Willow's Edge",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 22,
+      "total": 22,
+      "images": 25
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/scotland-east/winchburgh-grange",
+      "name": "Winchburgh Grange",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 4,
+      "total": 4,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/kent/woodbury-manor",
+      "name": "Woodbury Manor",
+      "status": "completed",
+      "completed": 8,
+      "failed": 0,
+      "pending": 0,
+      "total": 8,
+      "images": 89
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/yorkshire/woodland-walk",
+      "name": "Woodland Walk",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 9,
+      "total": 9,
+      "images": 0
+    },
+    {
+      "url": "https://www.bellway.co.uk/new-homes/west-midlands/yew-tree-park",
+      "name": "Yew Tree Park",
+      "status": "pending",
+      "completed": 0,
+      "failed": 0,
+      "pending": 17,
+      "total": 17,
+      "images": 0
+    }
+  ]
+}
