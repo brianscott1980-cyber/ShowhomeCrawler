@@ -37,13 +37,14 @@ async function finish(state:State){
  if(state.phase==='publication'){
   const sql=createDatabase();try{await importBuilder(sql,state.slug);await publishWebsite(sql);}finally{await sql.end();}
   await atomic(resolve('classification-reports',state.slug+'.json'),classificationSnapshot(state.slug,report,state.development,'published'));
+  await atomic(resolve('pipeline-reports','crawl-'+state.slug+'.json'),pipelineSummary(state.slug,report,'crawl'));
   await atomic(resolve('pipeline-reports','classification-'+state.slug+'.json'),pipelineSummary(state.slug,report,'classification'));
   state.phase='commit';await atomic(checkpoint,state);
  }
  if(state.phase==='commit'){
   await git('fetch');
   const paths=['results.json','full-report.html','index.html','properties.csv','matches.csv'].map(f=>relative(process.cwd(),resolve(state.sourceFolder,f)));
-  paths.push('classification-reports/'+state.slug+'.json','pipeline-reports/classification-'+state.slug+'.json');
+  paths.push('classification-reports/'+state.slug+'.json','pipeline-reports/classification-'+state.slug+'.json','pipeline-reports/crawl-'+state.slug+'.json');
   const staged=(await git('diff','--cached','--name-only')).split('\n').filter(Boolean);
   const allowed=new Set(paths.map(p=>p.replaceAll('\\','/')));
   if(staged.some(p=>!allowed.has(p)))throw new Error('Unrelated staged changes prevent an isolated classification commit.');

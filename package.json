@@ -44,7 +44,8 @@
     "website:warm": "tsx src/cli/warm-website-caches.ts",
     "postbuild": "npm run website:warm -- --deploy-only",
     "ai:local:publish": "tsx src/cli/classify-local.ts --apply --publish",
-    "classifications:reports": "tsx src/cli/classification-snapshots.ts"
+    "classifications:reports": "tsx src/cli/classification-snapshots.ts",
+    "process:local": "tsx src/cli/process-local.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
