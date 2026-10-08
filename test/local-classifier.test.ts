@@ -1,7 +1,7 @@
 import {afterEach,expect,it,vi} from 'vitest';
 import sharp from 'sharp';
 import {classifyLocal,localSchema} from '../src/vision/local-classifier';
-const fields={mainCategory:'Bedroom',subCategory:'Double bedroom',description:'A bedroom',objects:['bed'],colours:['Blue'],decor:['Blue decor'],wallpaperTags:[],curtainTags:[],fabricTags:['Blue bedding'],furnishingTags:[],chairs:[],hasTelevision:false,hasComputer:false};
+const fields={interiorColours:[],furnishings:[],mainCategory:'Bedroom',subCategory:'Double bedroom',description:'A bedroom',objects:['bed'],colours:['Blue'],decor:['Blue decor'],wallpaperTags:[],curtainTags:[],fabricTags:['Blue bedding'],furnishingTags:[],chairs:[],hasTelevision:false,hasComputer:false};
 afterEach(()=>vi.restoreAllMocks());
 it('requests structured vision JSON and records local provenance and searchable tags',async()=>{
  const fetch=vi.spyOn(globalThis,'fetch').mockResolvedValue(new Response(JSON.stringify({done:true,message:{content:JSON.stringify(fields)},eval_count:100})));

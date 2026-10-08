@@ -27,7 +27,7 @@ import { ViewOptions, useCardView } from './view-options';
 import { isRoomImage } from '../vision/room-classifier';
 import Link from 'next/link';
 import {useUrlFilters} from './url-filters';
-const galleryDefaults={furnishing:'',colour:'',tag:'',building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
+const galleryDefaults={interiorColour:'',furnishingColour:'',furnishing:'',colour:'',tag:'',building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
 import { heartIcon } from '../reports/gallery-ui';
 
 interface Collection { slug: string; name: string; report: RunReport }
@@ -339,12 +339,17 @@ export function Gallery({
     </>:isBuilding?<>
      <MultiSelectFilter label="Developments" value={development} options={sites.map(([value,label])=>({value,label:developmentName(label)}))} onChange={setDevelopment}/>
      <MultiSelectFilter label="Room Types" value={subCategory} options={subCategories.filter(value=>value.trim()&&value.trim().toLowerCase()!=='blank')} onChange={setSubCategory}/>
-     <MultiSelectFilter colourSwatches label="Colours" value={filters.colour} options={remote?.facets.colour??[]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>
+     <MultiSelectFilter colourSwatches label="Interior Colours" value={filters.interiorColour} options={remote?.facets.interiorColour??[]} onChange={value=>setFilters(previous=>({...previous,interiorColour:value}))}/>
+     <MultiSelectFilter colourSwatches label="Furnishing Colours" value={filters.furnishingColour} options={remote?.facets.furnishingColour??[]} onChange={value=>setFilters(previous=>({...previous,furnishingColour:value}))}/>
+     {!galleryScope?.furnishing&&<MultiSelectFilter colourSwatches label="Colours" value={filters.colour} options={remote?.facets.colour??[]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>}
      <MultiSelectFilter label="Furnishings" value={filters.furnishing} options={remote?.facets.furnishing??[]} onChange={value=>setFilters(previous=>({...previous,furnishing:value}))}/>
     </>:isInterior?<>
      <MultiSelectFilter label="Builders" value={filters.developer} options={builderOptions} onChange={value=>setFilters(previous=>({...previous,developer:value}))}/>
      <MultiSelectFilter label="Building Types" value={filters.building} options={(remote?.facets.building??[...new Set(facetHomes('building').map(({home})=>homeTypeName(home.buildingName??home.name).toLowerCase()))]).map(value=>({value,label:homeTypeName(value).replace(/\b\w/g,letter=>letter.toUpperCase())}))} onChange={value=>setFilters(previous=>({...previous,building:value}))}/>
-     <MultiSelectFilter colourSwatches label="Colours" value={filters.colour} options={remote?.facets.colour??[...new Set(facet('colour').flatMap(image=>interiorTags(image.categorisation).colour))]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>
+     {!galleryScope?.furnishing&&<MultiSelectFilter colourSwatches label="Colours" value={filters.colour} options={remote?.facets.colour??[...new Set(facet('colour').flatMap(image=>interiorTags(image.categorisation).colour))]} onChange={value=>setFilters(previous=>({...previous,colour:value}))}/>}
+     <MultiSelectFilter colourSwatches label="Interior Colours" value={filters.interiorColour} options={remote?.facets.interiorColour??[]} onChange={value=>setFilters(previous=>({...previous,interiorColour:value}))}/>
+     <MultiSelectFilter colourSwatches label={galleryScope?.furnishing?'Colours':'Furnishing Colours'} value={galleryScope?.furnishing?filters.colour:filters.furnishingColour} options={(galleryScope?.furnishing?remote?.facets.colour:remote?.facets.furnishingColour)??[]} onChange={value=>setFilters(previous=>({...previous,[galleryScope?.furnishing?'colour':'furnishingColour']:value}))}/>
+     {!galleryScope?.furnishing&&<MultiSelectFilter label="Furnishings" value={filters.furnishing} options={remote?.facets.furnishing??[]} onChange={value=>setFilters(previous=>({...previous,furnishing:value}))}/>}
      <MultiSelectFilter label="Features" value={filters.tag} options={remote?.facets.tag??[...new Set(facet('tag').flatMap(image=>interiorTags(image.categorisation).tag))]} onChange={value=>setFilters(previous=>({...previous,tag:value}))}/>
     </>:<>
     <label>

@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import {classificationOwnerId} from '../auth/classification-owner';
 import {useEffect,useRef,useState} from 'react';
 import type {User} from '@supabase/supabase-js';
 import {authClient} from '../auth/browser';
@@ -44,6 +45,7 @@ export function AccountMenu(){
   <div className="account-panel">
    {user?<><strong>{name}</strong>{user.email&&<p>{user.email}</p>}</>:<><strong>Your account</strong><p>Save your favourites and manage your location preferences.</p></>}
    <Link className="account-action" href="/favourites" onClick={()=>{if(menu.current)menu.current.open=false;}}>Favourites <span className="favourites-count" aria-label={`${count} favourites`}>{count}</span></Link>
+   {user?.id===classificationOwnerId&&<Link className="account-action" href="/classifications" onClick={()=>{if(menu.current)menu.current.open=false;}}>Classifications</Link>}
    {user&&<Link className="account-action" href="/profile" onClick={()=>{if(menu.current)menu.current.open=false;}}>Your profile</Link>}
    {user?<button type="button" disabled={!!busy} onClick={signOut}>{busy==='signout'?'Signing out…':'Sign out'}</button>:<><button type="button" disabled={!!busy} onClick={()=>signIn('google')}><span className="provider-mark google-mark" aria-hidden="true">G</span>{busy==='google'?'Connecting…':'Continue with Google'}</button>{/* Facebook login temporarily hidden. <button type="button" disabled={!!busy} onClick={()=>signIn('facebook')}><span className="provider-mark facebook-mark" aria-hidden="true">f</span>{busy==='facebook'?'Connecting…':'Continue with Facebook'}</button> */}</>}
    {error&&<p className="account-error" role="alert">{error}</p>}

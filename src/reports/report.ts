@@ -8,7 +8,13 @@ async function saveArtifact(path: string, body: string) {
  await writeFile(temporary, body);
  await rename(temporary, path);
 }
+export interface ColourAttribute { colours:string[]; prominence:'dominant'|'secondary'|'accent' }
 export interface ImageCategorisation {
+ interiorColours?:(ColourAttribute&{surface:string})[];
+ furnishings?:(ColourAttribute&{object:string})[];
+ classifiedAt?:string;
+ classificationStatus?:'completed';
+ processingMs?:number;
  categorisationSource?:'gemini'|'description-rules'|'website-html'|'ollama';
  categorisationModel?:string;
  categorisationVersion?:string;

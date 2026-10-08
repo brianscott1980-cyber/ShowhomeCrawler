@@ -28,6 +28,27 @@ beforeAll(async()=>{
  await db.exec(`insert into showhome_web.gallery_memberships select c.uid,g.key,g.builder_slug,g.source_url,g.bedrooms,g.price,d.source_url,d.name,b.name,array(select value from jsonb_each_text(d.geography)) from showhome_web.gallery_cards c join showhome_web.images i on i.catalogue_id=c.image_id and i.builder_slug=c.builder_slug join showhome_web.gallery_images gi on gi.image_key=i.key join showhome_web.galleries g on g.key=gi.gallery_key join showhome_web.developments d on d.key=g.development_key join showhome_web.buildings b on b.key=g.building_key`);
 });
 afterAll(()=>db.close());
+it('matches colours on the scoped furnishing, with plain object and colour facets',async()=>{
+ const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:'chair'};
+ const metadata={categorisation:{objects:['Chair','Curtain'],furnishings:[{object:'chair',colours:['brown'],prominence:'secondary'},{object:'curtain',colours:['blue'],prominence:'secondary'}],interiorColours:[{surface:'walls',colours:['white'],prominence:'dominant'},{surface:'wall',colours:['blue'],prominence:'accent'}]}};
+ await db.query('update showhome_web.images set metadata=$1 where catalogue_id=$2',[JSON.stringify(metadata),'b']);
+ try{
+  const page=await queryGallery({scope},sql);
+  expect(page.facets.furnishingColour).toEqual(['Brown']);
+  expect(page.facets.colour).toEqual(['Brown']);
+  expect((await queryGallery({scope,filters:{colour:'Blue'}},sql)).total).toBe(0);
+  expect(page.facets.furnishing).toContain('Chair');
+  expect(page.facets.furnishing).not.toContain('Blue chair');
+  expect((await queryGallery({scope,filters:{furnishingColour:'Blue'}},sql)).total).toBe(0);
+  expect((await queryGallery({scope,filters:{furnishingColour:'Brown'}},sql)).images.map(i=>i.id)).toEqual(['b']);
+  expect((await queryGallery({scope,filters:{interiorColour:'Blue'}},sql)).total).toBe(0);
+  metadata.categorisation.furnishings[0]!.colours=['blue'];
+  await db.query('update showhome_web.images set metadata=$1 where catalogue_id=$2',[JSON.stringify(metadata),'b']);
+  expect((await queryGallery({scope,filters:{furnishingColour:'Blue'}},sql)).images.map(i=>i.id)).toEqual(['b']);
+  const general=await queryGallery({scope:{kind:'interiors',href:'/interiors/all'},filters:{furnishing:'Chair',furnishingColour:'Blue'}},sql);
+  expect(general.images.map(i=>i.id)).toEqual(['b']);
+ }finally{await db.exec("update showhome_web.images set metadata='{}' where catalogue_id='b'");}
+});
 it('paginates galleries without changing full counters and includes orphan category images',async()=>{
  const first=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'},limit:1},sql);
  expect(first.total).toBe(3);expect(first.images).toHaveLength(1);expect(first.counts.Developments).toBe(2);
@@ -151,16 +172,16 @@ it('keeps a landing colour in the source scope, including counts and later batch
 });
 
 it('keeps furnishing galleries scoped while applying other filters',async()=>{
- await db.exec(`update showhome_web.images set metadata='{"categorisation":{"furnishingTags":["Gold Lamp"]}}' where catalogue_id='a'`);
+ await db.exec(`update showhome_web.images set metadata='{"categorisation":{"objects":["Lamp"],"furnishingTags":["Gold Lamp"]}}' where catalogue_id='a'`);
  try{
-  const building=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'},filters:{furnishing:'Gold Lamp'}},sql);
-  expect(building.facets.furnishing).toContain('Gold Lamp');
+  const building=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'},filters:{furnishing:'Lamp'}},sql);
+  expect(building.facets.furnishing).toContain('Lamp');
   expect(building.images.length).toBeGreaterThan(0);
   expect(building.images.every(image=>image.id==='a')).toBe(true);
   const items=await queryFurnishings(sql);
-  expect(items.some(item=>item.name==='Gold Lamp')).toBe(true);
+  expect(items.some(item=>item.name==='Lamp')).toBe(true);
   expect(items.some(item=>item.name==='Blue')).toBe(false);
-  const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:'gold lamp'};
+  const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:'lamp'};
   const page=await queryGallery({scope},sql);
   expect(page.images.length).toBeGreaterThan(0);
   expect(page.images.every(image=>image.id==='a')).toBe(true);
