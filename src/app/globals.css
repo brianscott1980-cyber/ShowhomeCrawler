@@ -420,3 +420,11 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
  .interiors-directory-intro .directory-intro-heading>p,
  .furnishings-directory-intro .directory-intro-heading>p{display:none}
 }
+
+@media(max-width:700px){
+ .furnishings-directory-intro .directory-intro-counts{margin:0;padding:16px 0;border-top:0;gap:0}
+ .furnishings-directory-intro .directory-intro-counts>div{flex:1;gap:8px}
+ .furnishings-directory-intro .directory-intro-counts dd{font:27px Georgia,serif}
+ .furnishings-directory-intro .directory-intro-counts dt{font-size:8px;letter-spacing:.6px;text-transform:uppercase}
+ .furnishings-directory-intro h1{margin-bottom:12px}
+}

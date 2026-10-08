@@ -119,3 +119,7 @@
 @media(max-width:700px){
  main.interiors-results-page .directory-toolbar{border-top:0;margin-top:0!important;margin-bottom:12px}
 }
+
+@media(max-width:700px){
+ main .furnishings-directory-toolbar{margin-top:0;margin-bottom:12px}
+}
