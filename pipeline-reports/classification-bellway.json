@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T22:54:52.468Z",
+  "updatedAt": "2026-10-08T23:00:01.175Z",
   "currentDevelopments": [
-    "Sheasby Park"
+    "St. Mary's Hill"
   ],
   "totals": {
-    "completed": 1867,
-    "failed": 32,
-    "pending": 373,
+    "completed": 1897,
+    "failed": 33,
+    "pending": 342,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 68,
-    "structuredImages": 1134
+    "structuredImages": 1164
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1134
+      "count": 1164
     }
   ],
   "developments": [
@@ -1971,7 +1971,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
       "name": "Sheasby Park",
-      "status": "running",
+      "status": "needs attention",
       "completed": 202,
       "failed": 7,
       "pending": 0,
@@ -2101,10 +2101,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/wessex/st-marys-hill",
       "name": "St. Mary's Hill",
-      "status": "needs attention",
-      "completed": 6,
-      "failed": 1,
-      "pending": 31,
+      "status": "running",
+      "completed": 36,
+      "failed": 2,
+      "pending": 0,
       "total": 38,
       "images": 38
     },
