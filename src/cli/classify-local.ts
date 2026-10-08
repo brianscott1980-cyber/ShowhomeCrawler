@@ -12,7 +12,7 @@ import {classificationOrder} from '../vision/classification-order.js';
 import {orderedBatchPool} from '../vision/ordered-batch-pool.js';
 import {classifyLocal,localClassificationVersion,localSchema} from '../vision/local-classifier.js';
 import type {ReportImage,RunReport} from '../reports/report.js';
-const {values}=parseArgs({options:{publish:{type:'boolean'},sample:{type:'boolean'},model:{type:'string',default:process.env.LOCAL_AI_MODEL??'qwen3-vl:8b-instruct'},host:{type:'string',default:process.env.OLLAMA_HOST??'http://127.0.0.1:11434'},builder:{type:'string'},development:{type:'string'},'house-type':{type:'string'},limit:{type:'string'},concurrency:{type:'string',default:'1'},'content-root':{type:'string',default:process.env.LOCAL_CONTENT_ROOT},apply:{type:'boolean'},'include-classified':{type:'boolean'},'cache-dir':{type:'string',default:'.showhome/local-ai'}}});
+const {values}=parseArgs({options:{'source-folder':{type:'string'},publish:{type:'boolean'},sample:{type:'boolean'},model:{type:'string',default:process.env.LOCAL_AI_MODEL??'qwen3-vl:8b-instruct'},host:{type:'string',default:process.env.OLLAMA_HOST??'http://127.0.0.1:11434'},builder:{type:'string'},development:{type:'string'},'house-type':{type:'string'},limit:{type:'string'},concurrency:{type:'string',default:'1'},'content-root':{type:'string',default:process.env.LOCAL_CONTENT_ROOT},apply:{type:'boolean'},'include-classified':{type:'boolean'},'cache-dir':{type:'string',default:'.showhome/local-ai'}}});
 const model=values.model!,host=values.host!,cacheRoot=resolve(values['cache-dir']!);
 const limit=values.limit?Number(values.limit):values.sample?8:Infinity,concurrency=Number(values.concurrency);
 if(!(limit>0)||!(Number.isInteger(concurrency)&&concurrency>=1&&concurrency<=8))throw new Error('Use a positive limit and concurrency between 1 and 8.');
@@ -53,8 +53,8 @@ async function main(){
  if(!selected.length)throw new Error('No matching builder. Use the builder slug, e.g. bellway.');
  for(const builder of selected){
   if(stopping||entries.length>=limit)break;
-  const report=await readCollection(builder.slug);if(!report)continue;
-  const sourceFolder=collectionFolder(builder.slug);
+  const sourceFolder=values['source-folder']?resolve(values['source-folder']):collectionFolder(builder.slug);
+  const report:RunReport|null=values['source-folder']?JSON.parse(await readFile(resolve(sourceFolder,'results.json'),'utf8')):await readCollection(builder.slug);if(!report)continue;
   const propertyIds=values.development||values['house-type']?new Set(report.properties.filter(home=>(!values.development||home.development.toLowerCase().includes(values.development.toLowerCase()))&&(!values['house-type']||home.name.toLowerCase().includes(values['house-type'].toLowerCase()))).flatMap(home=>home.imageIds)):null;
   const pending=classificationOrder(report).images.filter(image=>(!samples||samples.some(sample=>sample.builder===builder.slug&&sample.id===image.id))&&(!propertyIds||propertyIds.has(image.id))&&(samples||values['include-classified']||!image.categorisation)).slice(0,limit-entries.length);
   total+=pending.length;if(!pending.length)continue;
