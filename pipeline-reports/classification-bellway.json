@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T23:27:02.300Z",
+  "updatedAt": "2026-10-08T23:35:48.947Z",
   "currentDevelopments": [
-    "Torvill Park"
+    "Weavers Meadow"
   ],
   "totals": {
-    "completed": 2082,
-    "failed": 37,
-    "pending": 153,
+    "completed": 2115,
+    "failed": 38,
+    "pending": 119,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 69,
-    "structuredImages": 1349
+    "structuredImages": 1382
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1349
+      "count": 1382
     }
   ],
   "developments": [
@@ -2331,7 +2331,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/east-midlands/torvill-park",
       "name": "Torvill Park",
-      "status": "running",
+      "status": "needs attention",
       "completed": 234,
       "failed": 5,
       "pending": 0,
@@ -2441,10 +2441,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/south-west/weavers-meadow",
       "name": "Weavers Meadow",
-      "status": "needs attention",
-      "completed": 58,
-      "failed": 1,
-      "pending": 34,
+      "status": "running",
+      "completed": 91,
+      "failed": 2,
+      "pending": 0,
       "total": 93,
       "images": 93
     },

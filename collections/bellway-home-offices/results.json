@@ -166148,169 +166148,2638 @@
       "id": "00016597cbd7e1c20a7412a96c543f1f4eb7921fa355f46e066afcf888dddbb6",
       "path": "images/00016597cbd7e1c20a7412a96c543f1f4eb7921fa355f46e066afcf888dddbb6.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012691/70506-cooper.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural CGI of a two-story brick house with dark roof, windows, and front garden.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:35.616Z",
+        "classificationStatus": "completed",
+        "processingMs": 1957,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "Photorealistic architectural CGI of a two-story brick house with dark roof, windows, and front garden.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9549b18a83fd2b576ef9febd4008be740d4be7456e7640ec849d9ecc50ed77a3",
       "path": "images/9549b18a83fd2b576ef9febd4008be740d4be7456e7640ec849d9ecc50ed77a3.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1930761/70508-chandler_28_30.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural CGI of a two-story brick house with red tiled roof, surrounded by greenery and a paved driveway.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:28.156Z",
+        "classificationStatus": "completed",
+        "processingMs": 2002,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "Photorealistic architectural CGI of a two-story brick house with red tiled roof, surrounded by greenery and a paved driveway.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "5ed391640cf7e708b809cba19de48a75af6d1d9b9309d03d791f55a8537672a6",
       "path": "images/5ed391640cf7e708b809cba19de48a75af6d1d9b9309d03d791f55a8537672a6.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Chandler/Chamberlains-Bridge/_large/2486404/001-Bellway_ChamberlainsBridge_Chandley_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "yellow"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "wood",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv unit",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator cover",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "orange",
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "white",
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "vases",
+            "colours": [
+              "white",
+              "orange"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with a yellow sofa, white armchair, and blue and white walls. The room features a coffee table, side table, lamp, TV unit, and various decorative items including plants and artwork.",
+        "objects": [
+          "sofa",
+          "armchair",
+          "coffee table",
+          "side table",
+          "lamp",
+          "tv unit",
+          "radiator cover",
+          "curtains",
+          "pillows",
+          "planters",
+          "vases",
+          "artwork"
+        ],
+        "colours": [
+          "yellow",
+          "white",
+          "blue",
+          "orange",
+          "black",
+          "beige",
+          "wood"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "striped curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "wooden coffee table",
+          "black metal coffee table",
+          "wooden side table",
+          "wooden lamp",
+          "white armchair",
+          "yellow sofa",
+          "white rug"
+        ],
+        "chairs": [
+          "armchair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:26.093Z",
+        "classificationStatus": "completed",
+        "processingMs": 7728,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "striped curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with a yellow sofa, white armchair, and blue and white walls. The room features a coffee table, side table, lamp, TV unit, and various decorative items including plants and artwork.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "bf756b16368574ac08bf9593543407215763dbaca6c39211190b2def8a94f8ba",
       "path": "images/bf756b16368574ac08bf9593543407215763dbaca6c39211190b2def8a94f8ba.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Chandler/Chamberlains-Bridge/_large/2486411/016-Bellway_ChamberlainsBridge_Chandley_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "wardrobe",
+            "colours": [
+              "dark blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "desk",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "stool",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with white walls, a dark blue wardrobe, a white bed with grey throw, and abstract artwork on the wall.",
+        "objects": [
+          "bed",
+          "wardrobe",
+          "desk",
+          "stool",
+          "chandelier",
+          "mirror",
+          "artwork"
+        ],
+        "colours": [
+          "white",
+          "dark blue",
+          "grey",
+          "black"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [
+          "striped bedding",
+          "blue bedding"
+        ],
+        "furnishingTags": [
+          "geometric lamp",
+          "round mirror",
+          "geometric lamp"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:33.533Z",
+        "classificationStatus": "completed",
+        "processingMs": 5331,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A modern double bedroom with white walls, a dark blue wardrobe, a white bed with grey throw, and abstract artwork on the wall.",
+        "reason": "Local vision classification",
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "2b87a978f3868bea5d9e6b3aef270b4651ed388ea7b089135679c972cfbd1621",
       "path": "images/2b87a978f3868bea5d9e6b3aef270b4651ed388ea7b089135679c972cfbd1621.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Chandler/Chamberlains-Bridge/_large/2486415/021-Bellway_ChamberlainsBridge_Chandley_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "pink"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "pink",
+              "green"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "desk",
+            "colours": [
+              "white",
+              "pink",
+              "yellow"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "pink",
+              "yellow",
+              "green"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window blinds",
+            "colours": [
+              "yellow"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Single bedroom",
+        "description": "A single bedroom with a bed, nightstand, desk, and chairs. Walls are white with pink accent stripes and floral wallpaper. The bed has pink and green bedding. The room has a window with yellow blinds and white curtains.",
+        "objects": [
+          "bed",
+          "nightstand",
+          "desk",
+          "chairs",
+          "curtains",
+          "window blinds",
+          "wallpaper",
+          "lamp",
+          "cushions",
+          "decorative wall art"
+        ],
+        "colours": [
+          "white",
+          "pink",
+          "green",
+          "yellow",
+          "light grey"
+        ],
+        "decor": [
+          "pink decor",
+          "green decor",
+          "yellow decor"
+        ],
+        "wallpaperTags": [
+          "Floral wallpaper",
+          "Feature wallpaper",
+          "Pink wallpaper"
+        ],
+        "curtainTags": [
+          "White curtains"
+        ],
+        "fabricTags": [
+          "Pink bedding",
+          "Green bedding",
+          "Floral cushions"
+        ],
+        "furnishingTags": [
+          "White nightstand",
+          "White desk",
+          "Pink chairs",
+          "Yellow chairs",
+          "Green chairs",
+          "White lamp",
+          "White decorative wall art"
+        ],
+        "chairs": [
+          "pink chair",
+          "yellow chair",
+          "green chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:18.219Z",
+        "classificationStatus": "completed",
+        "processingMs": 6186,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Floral wallpaper · Feature wallpaper · Pink wallpaper",
+        "curtains": "White curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A single bedroom with a bed, nightstand, desk, and chairs. Walls are white with pink accent stripes and floral wallpaper. The bed has pink and green bedding. The room has a window with yellow blinds and white curtains.",
+        "reason": "Local vision classification",
+        "hasDesk": true,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "ac932be8e0b4588c5dd21413441c068f334014876206430cfd8e255e762e1aad",
       "path": "images/ac932be8e0b4588c5dd21413441c068f334014876206430cfd8e255e762e1aad.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012784/70505-thespian_95.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural CGI of a two-story stone house with dark grey roof and windows, set in a landscaped garden with trees and a fence.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:35:01.798Z",
+        "classificationStatus": "completed",
+        "processingMs": 2069,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "Photorealistic architectural CGI of a two-story stone house with dark grey roof and windows, set in a landscaped garden with trees and a fence.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "5503f2470476dc809b86d2fbf378244cd72cc6f372ca4750f29d8d828b14dde2",
       "path": "images/5503f2470476dc809b86d2fbf378244cd72cc6f372ca4750f29d8d828b14dde2.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012786/70500-thespian_73.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural CGI of a two-story house with brick and white siding, grey roof, and grey front door. No interior visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:28.609Z",
+        "classificationStatus": "completed",
+        "processingMs": 2089,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "Photorealistic architectural CGI of a two-story house with brick and white siding, grey roof, and grey front door. No interior visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "6f22620159689ca3438b044e8aa45c8f8366d80f3492ba42fdde46af2d854d1d",
       "path": "images/6f22620159689ca3438b044e8aa45c8f8366d80f3492ba42fdde46af2d854d1d.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012785/70506-thespian_47.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark grey roof, windows, and front door. The house is surrounded by greenery and a fence, with no visible interior.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:30.821Z",
+        "classificationStatus": "completed",
+        "processingMs": 2170,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark grey roof, windows, and front door. The house is surrounded by greenery and a fence, with no visible interior.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a931f394b4a9672c0d8fb11d34d40fae29e1a386485f09cb6419b95faedb7910",
       "path": "images/a931f394b4a9672c0d8fb11d34d40fae29e1a386485f09cb6419b95faedb7910.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474196/3Z9A2231.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "staircase",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cushion",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "curtain",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Hallway",
+        "subCategory": "Hallway",
+        "description": "A modern hallway with a staircase, a large round mirror, and a view into a living room. Walls are painted white and blue, the floor is light beige tile, and the staircase has beige carpet. The living room has a glass coffee table and blue cushions.",
+        "objects": [
+          "mirror",
+          "radiator",
+          "lamp",
+          "coffee table",
+          "cushion",
+          "curtain",
+          "staircase",
+          "door",
+          "picture frame"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "light beige",
+          "beige",
+          "silver",
+          "grey",
+          "clear"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "grey curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:59.624Z",
+        "classificationStatus": "completed",
+        "processingMs": 5477,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "grey curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Hallway",
+        "description": "A modern hallway with a staircase, a large round mirror, and a view into a living room. Walls are painted white and blue, the floor is light beige tile, and the staircase has beige carpet. The living room has a glass coffee table and blue cushions.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "edc7c426a62f7c06515ed5fd34857e97e7040dc61eedf6cf326294e447e8e8f5",
       "path": "images/edc7c426a62f7c06515ed5fd34857e97e7040dc61eedf6cf326294e447e8e8f5.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474191/3Z9A2171.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "glass",
+              "metal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "white",
+              "metal"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "tv stand",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "rug",
+            "colours": [
+              "beige",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "blue",
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with light grey sofas, a blue accent chair, a glass coffee table, and a blue accent wall. The room has white walls, a white ceiling, and a beige carpet. There is a TV on a white stand, and large windows with grey curtains. Decor includes framed black and white art, a round mirror, and potted plants.",
+        "objects": [
+          "sofa",
+          "armchair",
+          "coffee table",
+          "side table",
+          "tv stand",
+          "lamp",
+          "mirror",
+          "rug",
+          "cushions",
+          "curtains",
+          "tv"
+        ],
+        "colours": [
+          "blue",
+          "white",
+          "beige",
+          "grey",
+          "glass",
+          "metal",
+          "silver"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "grey curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "armchair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:35:48.935Z",
+        "classificationStatus": "completed",
+        "processingMs": 7091,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "grey curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with light grey sofas, a blue accent chair, a glass coffee table, and a blue accent wall. The room has white walls, a white ceiling, and a beige carpet. There is a TV on a white stand, and large windows with grey curtains. Decor includes framed black and white art, a round mirror, and potted plants.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a7496f704942b5830aa026f1eb3c8721520dc20c887f094e74df94fe1b713baa",
       "path": "images/a7496f704942b5830aa026f1eb3c8721520dc20c887f094e74df94fe1b713baa.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474193/3Z9A2188.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "kitchen cabinets",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "clear glass"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinets",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "light fixture",
+            "colours": [
+              "metal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vases",
+            "colours": [
+              "blue",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A modern dining room with a glass-top table, blue upholstered chairs, grey curtains, and a kitchen area with grey cabinets. The walls and ceiling are white, and the floor is light grey tile. The room has recessed lighting and a hanging light fixture over the table.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "curtains",
+          "cabinets",
+          "light fixture",
+          "vases",
+          "wall art",
+          "window",
+          "door",
+          "flooring",
+          "ceiling",
+          "walls",
+          "kitchen hood",
+          "countertop",
+          "sink",
+          "appliances",
+          "plants"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "blue",
+          "black",
+          "metal",
+          "green"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "grey curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "glass table",
+          "velvet chairs",
+          "metal light fixture",
+          "grey cabinets",
+          "white walls"
+        ],
+        "chairs": [
+          "blue velvet chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:54.065Z",
+        "classificationStatus": "completed",
+        "processingMs": 6278,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "grey curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A modern dining room with a glass-top table, blue upholstered chairs, grey curtains, and a kitchen area with grey cabinets. The walls and ceiling are white, and the floor is light grey tile. The room has recessed lighting and a hanging light fixture over the table.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a0828837d1c89986b96e9c8fcba706c664eed011767f2f0a39a57dc530b047da",
       "path": "images/a0828837d1c89986b96e9c8fcba706c664eed011767f2f0a39a57dc530b047da.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474195/3Z9A2204.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "cabinets",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "cabinets",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "range hood",
+            "colours": [
+              "stainless steel"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "picture frame",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen",
+        "description": "A modern kitchen with grey cabinets, white countertops, and a stainless steel range hood. Walls and ceiling are light grey and white respectively. Floor is light beige. Accent colours include blue curtains and black picture frame.",
+        "objects": [
+          "cabinets",
+          "countertops",
+          "range hood",
+          "sink",
+          "picture frame",
+          "curtains"
+        ],
+        "colours": [
+          "grey",
+          "white",
+          "light beige",
+          "stainless steel",
+          "chrome",
+          "black",
+          "blue"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "blue curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:47.731Z",
+        "classificationStatus": "completed",
+        "processingMs": 5554,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "blue curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Kitchen",
+        "description": "A modern kitchen with grey cabinets, white countertops, and a stainless steel range hood. Walls and ceiling are light grey and white respectively. Floor is light beige. Accent colours include blue curtains and black picture frame.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9da22cbc252b14c1c9270981c30c113ec64dd48979785b94447fbd9ac8a0a773",
       "path": "images/9da22cbc252b14c1c9270981c30c113ec64dd48979785b94447fbd9ac8a0a773.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474192/3Z9A2180.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "cabinet",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "clear glass",
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "pendant lights",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shelf",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "blue",
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A modern dining room with a glass-top table, blue velvet chairs, white walls, and light grey flooring. Curtains and artwork add blue accents.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "pendant lights",
+          "curtains",
+          "shelf",
+          "cabinet",
+          "artwork"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "light grey",
+          "black",
+          "grey"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "striped curtains",
+          "blue curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "velvet chairs",
+          "glass table",
+          "pendant lights",
+          "modern shelf",
+          "grey cabinet"
+        ],
+        "chairs": [
+          "blue velvet chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:41.890Z",
+        "classificationStatus": "completed",
+        "processingMs": 6012,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "striped curtains · blue curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A modern dining room with a glass-top table, blue velvet chairs, white walls, and light grey flooring. Curtains and artwork add blue accents.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "c4876367586bac62d236f57022c02a27ae2c9f4d44191a552e4a0342faa37450",
       "path": "images/c4876367586bac62d236f57022c02a27ae2c9f4d44191a552e4a0342faa37450.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474194/3Z9A2197.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "glass",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "blue",
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "wall shelf",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vases",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A modern dining room with a glass-top table, blue velvet chairs, white walls, and a large window with patterned curtains. Decor includes a black and white abstract painting, a wall-mounted shelf, and pendant lighting.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "wall shelf",
+          "artwork",
+          "curtains",
+          "lamp",
+          "vases",
+          "planters",
+          "cabinet"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "black",
+          "light grey",
+          "glass"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "patterned curtains",
+          "blue curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "velvet chairs",
+          "glass table",
+          "black wall shelf",
+          "pendant lamp",
+          "blue vases"
+        ],
+        "chairs": [
+          "blue velvet chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:35:13.795Z",
+        "classificationStatus": "completed",
+        "processingMs": 6655,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "patterned curtains · blue curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A modern dining room with a glass-top table, blue velvet chairs, white walls, and a large window with patterned curtains. Decor includes a black and white abstract painting, a wall-mounted shelf, and pendant lighting.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "de2d383135b3265f2e043fade4870e973c8169e98c60d09de5a42f86f63dd57a",
       "path": "images/de2d383135b3265f2e043fade4870e973c8169e98c60d09de5a42f86f63dd57a.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474186/3Z9A2095.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "purple",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "purple"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedside table",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "dresser",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "metal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "metal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "white",
+              "blue",
+              "purple"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "blanket",
+            "colours": [
+              "purple",
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a bed, headboard, bedside tables, lamps, curtains, and a chandelier. The walls are painted beige and blue, the ceiling is beige, and the floor is beige. The bed has white, purple, and blue bedding. The headboard is purple. The bedside tables and dresser are white. The lamps are white and metal. The curtains are beige. The radiator is white. The pillows are white, blue, and purple. The blanket is purple and blue. The plant is green and white. The window frame and door are white.",
+        "objects": [
+          "bed",
+          "headboard",
+          "bedside table",
+          "nightstand",
+          "dresser",
+          "lamp",
+          "chandelier",
+          "curtains",
+          "radiator",
+          "pillows",
+          "blanket",
+          "plant",
+          "window frame",
+          "door"
+        ],
+        "colours": [
+          "beige",
+          "blue",
+          "white",
+          "purple",
+          "green",
+          "metal"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Feature wallpaper",
+          "Blue wallpaper"
+        ],
+        "curtainTags": [
+          "Beige curtains"
+        ],
+        "fabricTags": [
+          "Purple bedding",
+          "Blue bedding",
+          "White bedding",
+          "Blue cushions",
+          "Purple cushions",
+          "White cushions"
+        ],
+        "furnishingTags": [
+          "White lamp",
+          "Metal lamp",
+          "White nightstand",
+          "White dresser",
+          "Beige curtains",
+          "White radiator",
+          "White window frame",
+          "White door"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:35:22.750Z",
+        "classificationStatus": "completed",
+        "processingMs": 8918,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Feature wallpaper · Blue wallpaper",
+        "curtains": "Beige curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A double bedroom with a bed, headboard, bedside tables, lamps, curtains, and a chandelier. The walls are painted beige and blue, the ceiling is beige, and the floor is beige. The bed has white, purple, and blue bedding. The headboard is purple. The bedside tables and dresser are white. The lamps are white and metal. The curtains are beige. The radiator is white. The pillows are white, blue, and purple. The blanket is purple and blue. The plant is green and white. The window frame and door are white.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "80ab7626aeb23077c8d95a3a77c3047dd60d649c4781c18c058a0655dc3e3ebe",
       "path": "images/80ab7626aeb23077c8d95a3a77c3047dd60d649c4781c18c058a0655dc3e3ebe.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474187/3Z9A2111.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel",
+            "colours": [
+              "grey",
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A clean, modern bathroom with white walls, a white pedestal sink, a white toilet, and a window with blinds. A green plant adds a touch of nature.",
+        "objects": [
+          "sink",
+          "toilet",
+          "mirror",
+          "towel",
+          "plant"
+        ],
+        "colours": [
+          "white",
+          "dark grey",
+          "green",
+          "grey",
+          "blue"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Pedestal sink",
+          "White toilet"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:35.824Z",
+        "classificationStatus": "completed",
+        "processingMs": 4962,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bathroom",
+        "description": "A clean, modern bathroom with white walls, a white pedestal sink, a white toilet, and a window with blinds. A green plant adds a touch of nature.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "2e67fafb1257b8d2c1731066d54da17e0133d65123a87868e6c77c06f8138d68",
       "path": "images/2e67fafb1257b8d2c1731066d54da17e0133d65123a87868e6c77c06f8138d68.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474189/3Z9A2144.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "light blue",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "blue",
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedding",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "nightstands",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamps",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "blue",
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with light blue walls, white ceiling, beige carpet, and a blue upholstered headboard. The bed has grey bedding and white pillows. Two black nightstands with lamps flank the bed. A large abstract painting hangs on the wall. A window with white trim lets in natural light. A white radiator is under the window. A white door is visible on the right.",
+        "objects": [
+          "bed",
+          "headboard",
+          "bedding",
+          "nightstands",
+          "lamps",
+          "artwork",
+          "curtains",
+          "radiator",
+          "door"
+        ],
+        "colours": [
+          "light blue",
+          "white",
+          "beige",
+          "blue",
+          "grey",
+          "black"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "patterned curtains",
+          "beige curtains"
+        ],
+        "fabricTags": [
+          "striped bedding",
+          "grey bedding"
+        ],
+        "furnishingTags": [
+          "geometric lamp",
+          "round mirror",
+          "bouclé armchair",
+          "marble table"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:26.359Z",
+        "classificationStatus": "completed",
+        "processingMs": 6812,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "patterned curtains · beige curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A double bedroom with light blue walls, white ceiling, beige carpet, and a blue upholstered headboard. The bed has grey bedding and white pillows. Two black nightstands with lamps flank the bed. A large abstract painting hangs on the wall. A window with white trim lets in natural light. A white radiator is under the window. A white door is visible on the right.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e7cd57d68854bc64158367352b68ab7a435d75a308be3822259fa2d14d96a861",
       "path": "images/e7cd57d68854bc64158367352b68ab7a435d75a308be3822259fa2d14d96a861.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474188/3Z9A2123.webp",
-      "error": "Classification not requested"
+      "error": "Local model output incomplete; classification was not saved."
     },
     {
       "id": "c43319c1eceb18f6cbcd6192e6fee4c16e555dbff1a3e20563f541045af3ee80",
       "path": "images/c43319c1eceb18f6cbcd6192e6fee4c16e555dbff1a3e20563f541045af3ee80.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Thespian/Aspen-Walk/_large/2474190/3Z9A2151.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bathtub",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "towel rack",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with grey tiled walls, white fixtures, and a dark grey floor. Includes a pedestal sink, toilet, bathtub, mirror, and radiator.",
+        "objects": [
+          "sink",
+          "toilet",
+          "bathtub",
+          "towel rack",
+          "mirror",
+          "radiator"
+        ],
+        "colours": [
+          "grey",
+          "white",
+          "dark grey",
+          "silver"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Pedestal sink",
+          "White toilet",
+          "White bathtub"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:35:07.065Z",
+        "classificationStatus": "completed",
+        "processingMs": 5210,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bathroom",
+        "description": "A modern bathroom with grey tiled walls, white fixtures, and a dark grey floor. Includes a pedestal sink, toilet, bathtub, mirror, and radiator.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "3bb034b5200af24f5635364bb076b06b727dc3fa3f9a358910b7145f0e8632a3",
       "path": "images/3bb034b5200af24f5635364bb076b06b727dc3fa3f9a358910b7145f0e8632a3.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/External/_large/2828379/003-BellwaySW_WeaversMeadow_External_Mason.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural CGI of modern brick houses with solar panels on roofs, black-framed windows, and landscaped front yards under a blue sky with clouds.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:41.898Z",
+        "classificationStatus": "completed",
+        "processingMs": 2061,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "Photorealistic architectural CGI of modern brick houses with solar panels on roofs, black-framed windows, and landscaped front yards under a blue sky with clouds.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "b96d6c550c85babfaa147e80a1116c046aa1dd36209d8f19d423a8b3c9506ce1",
       "path": "images/b96d6c550c85babfaa147e80a1116c046aa1dd36209d8f19d423a8b3c9506ce1.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/External/_large/2828384/008-BellwaySW_WeaversMeadow_External_Mason_Garden.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "",
+        "description": "A well-maintained garden with a lawn, paved pathway, wooden pergola, and wooden fence. The house has a brick wall and dark roof. The sky is blue with white clouds.",
+        "objects": [
+          "paved pathway",
+          "lawn",
+          "wooden pergola",
+          "wooden fence",
+          "brick wall",
+          "roof"
+        ],
+        "colours": [
+          "green",
+          "brown",
+          "red",
+          "gray",
+          "blue",
+          "white"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:46.674Z",
+        "classificationStatus": "completed",
+        "processingMs": 2603,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A well-maintained garden with a lawn, paved pathway, wooden pergola, and wooden fence. The house has a brick wall and dark roof. The sky is blue with white clouds.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "14901a3d86f291881be575be5f51f9aca6f9164d6ae75096afdceb2dd8c5023b",
       "path": "images/14901a3d86f291881be575be5f51f9aca6f9164d6ae75096afdceb2dd8c5023b.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/External/_large/2828383/007-BellwaySW_WeaversMeadow_External_Mason_Garden.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "",
+        "description": "A residential backyard with a lawn, stone patio, wooden pergolas, and a brick house under a partly cloudy sky.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:37.666Z",
+        "classificationStatus": "completed",
+        "processingMs": 1969,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A residential backyard with a lawn, stone patio, wooden pergolas, and a brick house under a partly cloudy sky.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "30d242e144c11546f8895a4f50638f53bb420733f2b0b6deb51df60fdd6dec24",
       "path": "images/30d242e144c11546f8895a4f50638f53bb420733f2b0b6deb51df60fdd6dec24.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012736/70505-mason_2.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark roof, surrounded by trees and a fence. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:39.755Z",
+        "classificationStatus": "completed",
+        "processingMs": 2039,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a dark roof, surrounded by trees and a fence. No interior is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "edf7114c745c2301bc92d6e15ec5a6f811a580ee2be088db1fa7068ba7fb320a",
       "path": "images/edf7114c745c2301bc92d6e15ec5a6f811a580ee2be088db1fa7068ba7fb320a.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012737/70512-mason_39.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural CGI of a two-story house with white and brick exterior, dark roof, and surrounding greenery.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:48.698Z",
+        "classificationStatus": "completed",
+        "processingMs": 1977,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "Photorealistic architectural CGI of a two-story house with white and brick exterior, dark roof, and surrounding greenery.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9d1ae7df15e8a29cde17c7c6690da17cc617666a37cccffebc836fa59dc38319",
       "path": "images/9d1ae7df15e8a29cde17c7c6690da17cc617666a37cccffebc836fa59dc38319.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012735/70511-mason_93.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a gabled roof, windows, and a front door, surrounded by trees and a fence.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:44.017Z",
+        "classificationStatus": "completed",
+        "processingMs": 2061,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story brick house with a gabled roof, windows, and a front door, surrounded by trees and a fence.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "751f4aba0f6707fcfeb5b8dcbaa1667094aacdad00e6c60798acc309e2ef2dec",
       "path": "images/751f4aba0f6707fcfeb5b8dcbaa1667094aacdad00e6c60798acc309e2ef2dec.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012769/70501-scrivener_61.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story residential house with brick and white exterior walls, a red tiled roof, and a landscaped front garden. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:58.423Z",
+        "classificationStatus": "completed",
+        "processingMs": 2123,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story residential house with brick and white exterior walls, a red tiled roof, and a landscaped front garden. No interior is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "38f5cd9adc2d63079071601b05e5f00353e6d67c1823b46a53e63099ba972489",
       "path": "images/38f5cd9adc2d63079071601b05e5f00353e6d67c1823b46a53e63099ba972489.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012767/70508-scrivener_3.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "",
+        "description": "A two-story brick house with a dark grey roof, black window frames, and a dark grey front door. The house is surrounded by greenery and a wooden fence. The image is a photorealistic architectural CGI rendering.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:56.254Z",
+        "classificationStatus": "completed",
+        "processingMs": 2201,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A two-story brick house with a dark grey roof, black window frames, and a dark grey front door. The house is surrounded by greenery and a wooden fence. The image is a photorealistic architectural CGI rendering.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "821200ab0b161025286621a4b391f998d52c33fdedc3d10f17dcbdf154079d44",
       "path": "images/821200ab0b161025286621a4b391f998d52c33fdedc3d10f17dcbdf154079d44.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012770/70502-scrivener_146.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story stone house with dark grey roof and windows, surrounded by trees and a fence.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:00.533Z",
+        "classificationStatus": "completed",
+        "processingMs": 2036,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story stone house with dark grey roof and windows, surrounded by trees and a fence.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "59498d671794cfeeb6d1f3ea0a4f413bd961ff9458511ce5595d43e0fff459d1",
@@ -166622,7 +169091,191 @@
       "id": "85531e1ca1baa8072bba1ba2d05032625a6a23830116fc2cd6bd98caac3cf237",
       "path": "images/85531e1ca1baa8072bba1ba2d05032625a6a23830116fc2cd6bd98caac3cf237.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Scrivener/Wellfield-Rise/_large/2473898/014-BellwayNE_WellfieldRise_Scrivener_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "couch",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "tv stand",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "blue",
+              "grey",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "blanket",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "tray",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "tv",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with light grey walls, white ceiling, and light grey carpet. Furniture includes light grey sofas, a black TV stand, and a blue coffee table. Decor includes blue and grey pillows, a white lamp, and dark grey curtains.",
+        "objects": [
+          "sofa",
+          "couch",
+          "tv stand",
+          "coffee table",
+          "lamp",
+          "curtains",
+          "pillows",
+          "blanket",
+          "vase",
+          "tray",
+          "tv"
+        ],
+        "colours": [
+          "light grey",
+          "white",
+          "blue",
+          "black",
+          "dark grey",
+          "silver",
+          "grey"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Geometric wallpaper",
+          "Feature wallpaper",
+          "Grey wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains",
+          "Dark grey curtains"
+        ],
+        "fabricTags": [
+          "Patterned cushions",
+          "Blue cushions",
+          "Grey cushions",
+          "White cushions"
+        ],
+        "furnishingTags": [
+          "Modern sofa",
+          "Modern lamp",
+          "Modern coffee table",
+          "Modern TV stand",
+          "Modern curtains"
+        ],
+        "chairs": [],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:08.137Z",
+        "classificationStatus": "completed",
+        "processingMs": 7547,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Geometric wallpaper · Feature wallpaper · Grey wallpaper",
+        "curtains": "Solid curtains · Dark grey curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Living Room",
+        "description": "A modern living room with light grey walls, white ceiling, and light grey carpet. Furniture includes light grey sofas, a black TV stand, and a blue coffee table. Decor includes blue and grey pillows, a white lamp, and dark grey curtains.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "ad366d3bd9c1494d2d2a77ee7066234e60002d025ec3fe38e1053eaae3e093df",
@@ -166905,7 +169558,156 @@
       "id": "a70cd5f847ba422109feb0d690528d988631314763d34aaee71185c73f6dc2b8",
       "path": "images/a70cd5f847ba422109feb0d690528d988631314763d34aaee71185c73f6dc2b8.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Scrivener/Wellfield-Rise/_large/2473894/005-BellwayNE_WellfieldRise_Scrivener_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "teal"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "glass dining table",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "dining chairs",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "bar stool",
+            "colours": [
+              "teal"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "black",
+              "blue",
+              "orange"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "kitchen counter",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A modern dining room with a glass table, light grey chairs, a teal bar stool, and a chandelier. Walls are white with a teal accent wall. The floor is light wood. There is a view to an outdoor area through glass doors.",
+        "objects": [
+          "glass dining table",
+          "dining chairs",
+          "armchair",
+          "bar stool",
+          "chandelier",
+          "artwork",
+          "curtains",
+          "kitchen counter"
+        ],
+        "colours": [
+          "white",
+          "teal",
+          "light wood",
+          "light grey",
+          "silver",
+          "black",
+          "blue",
+          "orange",
+          "beige"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "beige curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "dining chairs",
+          "armchair",
+          "bar stool"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:14.630Z",
+        "classificationStatus": "completed",
+        "processingMs": 6347,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "beige curtains"
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Dining Room",
+        "description": "A modern dining room with a glass table, light grey chairs, a teal bar stool, and a chandelier. Walls are white with a teal accent wall. The floor is light wood. There is a view to an outdoor area through glass doors.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "96d0d96fcc7565e10d5676ec58735347e1a5858feb9cb60e137fb3a1a369d616",
@@ -167441,7 +170243,112 @@
       "id": "cec56aac7ddff0153f471e5c471782f201ac4f078449d2ce8e3e4b59a9de0b3b",
       "path": "images/cec56aac7ddff0153f471e5c471782f201ac4f078449d2ce8e3e4b59a9de0b3b.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Scrivener/Wellfield-Rise/_large/2473902/023-BellwayNE_WellfieldRise_Scrivener_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "light blue",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "towel rack",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "shower enclosure",
+            "colours": [
+              "clear glass",
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Bathroom",
+        "description": "A modern bathroom with light blue and white walls, a white tiled floor, a glass shower enclosure, a white toilet, a white sink, and a silver towel rack holding red and teal towels.",
+        "objects": [
+          "towel rack",
+          "toilet",
+          "sink",
+          "shower enclosure",
+          "mirror",
+          "picture frame",
+          "towels",
+          "bathroom cabinet",
+          "bathroom sink",
+          "bathroom mirror",
+          "bathroom towel rack",
+          "bathroom toilet",
+          "bathroom sink",
+          "bathroom shower",
+          "bathroom wall",
+          "bathroom floor",
+          "bathroom ceiling"
+        ],
+        "colours": [
+          "light blue",
+          "white",
+          "silver",
+          "red",
+          "teal"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:34:19.502Z",
+        "classificationStatus": "completed",
+        "processingMs": 4797,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bathroom",
+        "description": "A modern bathroom with light blue and white walls, a white tiled floor, a glass shower enclosure, a white toilet, a white sink, and a silver towel rack holding red and teal towels.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e341f376ae3ba1da6c325473e389e3af370c1325ec71ef6de7db25f7730eec66",
@@ -167609,7 +170516,130 @@
       "id": "19a72446501835fbcf49a37b9dcf29236fc4337e6cbf5e89ccfb588206a462f8",
       "path": "images/19a72446501835fbcf49a37b9dcf29236fc4337e6cbf5e89ccfb588206a462f8.webp",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/Artisan-Showhome-Photography/The-Scrivener/Wellfield-Rise/_large/2473903/026-BellwayNE_WellfieldRise_Scrivener_Rooms.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "light green"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "light green"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "light green",
+              "grey",
+              "white",
+              "pink",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Bedroom (bed size unclear)",
+        "description": "A child's bedroom with light green walls, a bed with patterned bedding, a side table, and a hanging textile.",
+        "objects": [
+          "bed",
+          "side table",
+          "lamp",
+          "radiator",
+          "wallpaper",
+          "picture frame",
+          "wall hanging",
+          "wall decor"
+        ],
+        "colours": [
+          "light green",
+          "beige",
+          "grey",
+          "white",
+          "pink",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Dachshund wallpaper",
+          "Feature wallpaper",
+          "Light green wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [
+          "Polka dot bedding",
+          "Grey bedding",
+          "White bedding",
+          "Pink cushion",
+          "Beige cushion"
+        ],
+        "furnishingTags": [
+          "Round headboard",
+          "White side table",
+          "Black lamp",
+          "White radiator"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:53.976Z",
+        "classificationStatus": "completed",
+        "processingMs": 5166,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Dachshund wallpaper · Feature wallpaper · Light green wallpaper",
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Bedroom",
+        "description": "A child's bedroom with light green walls, a bed with patterned bedding, a side table, and a hanging textile.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": true,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "0fc973f5c2718d263ec1bceee3d78c3b7df8d0e17c81178adeda5bb93c6c6e36",
@@ -167903,13 +170933,83 @@
       "id": "0c5dee0509de6361db663016ff322183d276ed6b9b2d4c1d03f17c7704478d4d",
       "path": "images/0c5dee0509de6361db663016ff322183d276ed6b9b2d4c1d03f17c7704478d4d.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012726/70510-bowyer_14.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A two-story brick house with a dark gray roof, surrounded by trees and a fence, with no visible interior.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:09.888Z",
+        "classificationStatus": "completed",
+        "processingMs": 7195,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A two-story brick house with a dark gray roof, surrounded by trees and a fence, with no visible interior.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "220a76a9fd5033096324a6dd9f2d29dd8b661b89a66f658c666856df975120ba",
       "path": "images/220a76a9fd5033096324a6dd9f2d29dd8b661b89a66f658c666856df975120ba.jpg",
       "sourceUrl": "https://cms.bellway.co.uk/media/resized-images/division/south-west/weavers-meadow/images/_large/1012725/70509-bowyer_50.webp",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A photorealistic architectural CGI rendering of a two-story stone house with a dark roof, surrounded by trees and a fence. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-08T23:33:11.971Z",
+        "classificationStatus": "completed",
+        "processingMs": 2026,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "verdict": {
+        "matches": true,
+        "roomType": "Exterior",
+        "description": "A photorealistic architectural CGI rendering of a two-story stone house with a dark roof, surrounded by trees and a fence. No interior is visible.",
+        "reason": "Local vision classification",
+        "hasDesk": false,
+        "hasBed": false,
+        "hasFloorplan": false
+      },
+      "analysisModel": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e2ef2484c28e056c3ae12234d33ba967e3b34f4e8bcc361be0389f9be40da97a",
@@ -224576,9 +227676,9 @@
   },
   "classificationProgress": {
     "status": "running",
-    "updatedAt": "2026-10-08T23:27:02.300Z",
+    "updatedAt": "2026-10-08T23:35:48.947Z",
     "currentDevelopments": [
-      "Torvill Park"
+      "Weavers Meadow"
     ],
     "model": "qwen3-vl:8b-instruct"
   }
