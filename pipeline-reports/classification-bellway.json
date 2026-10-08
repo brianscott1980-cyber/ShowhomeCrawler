@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T22:24:24.552Z",
+  "updatedAt": "2026-10-08T22:41:19.236Z",
   "currentDevelopments": [
-    "Langmead Place"
+    "Sharnbrook Park"
   ],
   "totals": {
-    "completed": 1612,
+    "completed": 1762,
     "failed": 28,
-    "pending": 632,
+    "pending": 482,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 879
+    "structuredImages": 1029
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 879
+      "count": 1029
     }
   ],
   "developments": [
@@ -1271,7 +1271,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/wessex/langmead-place",
       "name": "Langmead Place",
-      "status": "running",
+      "status": "needs attention",
       "completed": 145,
       "failed": 3,
       "pending": 0,
@@ -1961,10 +1961,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
       "name": "Sharnbrook Park",
-      "status": "pending",
-      "completed": 19,
+      "status": "running",
+      "completed": 169,
       "failed": 0,
-      "pending": 150,
+      "pending": 0,
       "total": 169,
       "images": 169
     },
@@ -2282,9 +2282,9 @@
       "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-paddock-at-chilsey-grange",
       "name": "The Paddock at Chilsey Grange",
       "status": "pending",
-      "completed": 24,
+      "completed": 36,
       "failed": 0,
-      "pending": 79,
+      "pending": 67,
       "total": 103,
       "images": 103
     },
@@ -2332,9 +2332,9 @@
       "url": "https://www.bellway.co.uk/new-homes/east-midlands/torvill-park",
       "name": "Torvill Park",
       "status": "needs attention",
-      "completed": 65,
+      "completed": 122,
       "failed": 3,
-      "pending": 171,
+      "pending": 114,
       "total": 239,
       "images": 239
     },
@@ -2442,9 +2442,9 @@
       "url": "https://www.bellway.co.uk/new-homes/south-west/weavers-meadow",
       "name": "Weavers Meadow",
       "status": "needs attention",
-      "completed": 48,
+      "completed": 58,
       "failed": 1,
-      "pending": 44,
+      "pending": 34,
       "total": 93,
       "images": 93
     },
