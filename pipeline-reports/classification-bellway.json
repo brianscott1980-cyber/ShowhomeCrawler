@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T20:57:01.464Z",
+  "updatedAt": "2026-10-08T21:05:55.161Z",
   "currentDevelopments": [
-    "Arden Glade"
+    "Bellway at Hugglescote Grange"
   ],
   "totals": {
-    "completed": 918,
-    "failed": 6,
-    "pending": 1348,
+    "completed": 981,
+    "failed": 8,
+    "pending": 1283,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 185
+    "structuredImages": 248
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 185
+      "count": 248
     }
   ],
   "developments": [
@@ -111,7 +111,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/west-midlands/arden-glade",
       "name": "Arden Glade",
-      "status": "running",
+      "status": "needs attention",
       "completed": 209,
       "failed": 6,
       "pending": 0,
@@ -251,10 +251,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/east-midlands/bellway-at-hugglescote-grange",
       "name": "Bellway at Hugglescote Grange",
-      "status": "pending",
-      "completed": 0,
-      "failed": 0,
-      "pending": 65,
+      "status": "running",
+      "completed": 63,
+      "failed": 2,
+      "pending": 0,
       "total": 65,
       "images": 65
     },
@@ -1972,9 +1972,9 @@
       "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
       "name": "Sheasby Park",
       "status": "needs attention",
-      "completed": 69,
+      "completed": 84,
       "failed": 1,
-      "pending": 139,
+      "pending": 124,
       "total": 209,
       "images": 209
     },
