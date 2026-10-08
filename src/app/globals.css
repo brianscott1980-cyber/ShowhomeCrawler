@@ -405,3 +405,5 @@ button.tag{font:inherit;font-size:11px;cursor:pointer;margin:0;letter-spacing:no
 }
 
 @media(max-width:700px){.view-options button[aria-label="Smaller grid"]{display:none}}
+
+.site-header nav>a[aria-current="page"]{color:var(--accent)}
