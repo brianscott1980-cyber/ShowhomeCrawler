@@ -33,7 +33,7 @@ import {groupCollections,readGroups,spaceName,type GroupKind} from './groups';
 import {GroupCards} from './group-cards';
 import {ResultsPage} from './results-page';
 const labels:Record<GroupKind,string>={sites:'Developments',locations:'Developments',spaces:'Interiors',interiors:'Interiors',buildings:'Buildings'};
-const descriptions:Record<GroupKind,string>={sites:'Explore homebuilder developments by name and discover their published interiors.',locations:'Explore homebuilder developments by name and discover their published interiors.',spaces:'Explore interiors grouped by room and space type.',interiors:'Explore interiors grouped by room and space type.',buildings:'Explore homebuilder house types by name and discover their interiors.'};
+const descriptions:Record<GroupKind,string>={sites:'Explore homebuilder developments by name and discover their published interiors.',locations:'Explore homebuilder developments by name and discover their published interiors.',spaces:'Explore interiors grouped by room and space type.',interiors:'Explore showhome interiors by room and find ideas for your home.',buildings:'Explore homebuilder house types by name and discover their interiors.'};
 function prefixFor(kind:GroupKind):string{if(kind==='sites'||kind==='locations')return 'developments';if(kind==='spaces'||kind==='interiors')return 'interiors';return kind;}
 export async function GroupDirectory({kind,initial:provided,title,description,linkBase}:{kind:GroupKind;initial?:DirectoryPageData;title?:string;description?:string;linkBase?:string}){
  const normalized=kind==='sites'?'locations':kind==='spaces'?'interiors':kind;
