@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T22:41:19.236Z",
+  "updatedAt": "2026-10-08T22:54:52.468Z",
   "currentDevelopments": [
-    "Sharnbrook Park"
+    "Sheasby Park"
   ],
   "totals": {
-    "completed": 1762,
-    "failed": 28,
-    "pending": 482,
+    "completed": 1867,
+    "failed": 32,
+    "pending": 373,
     "total": 2272,
     "images": 2272,
     "developments": 252,
-    "developmentsCompleted": 67,
-    "structuredImages": 1029
+    "developmentsCompleted": 68,
+    "structuredImages": 1134
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1029
+      "count": 1134
     }
   ],
   "developments": [
@@ -1961,7 +1961,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/northern-home-counties/sharnbrook-park",
       "name": "Sharnbrook Park",
-      "status": "running",
+      "status": "completed",
       "completed": 169,
       "failed": 0,
       "pending": 0,
@@ -1971,10 +1971,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/west-midlands/sheasby-park",
       "name": "Sheasby Park",
-      "status": "needs attention",
-      "completed": 97,
-      "failed": 3,
-      "pending": 109,
+      "status": "running",
+      "completed": 202,
+      "failed": 7,
+      "pending": 0,
       "total": 209,
       "images": 209
     },
