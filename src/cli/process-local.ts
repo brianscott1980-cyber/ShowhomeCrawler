@@ -23,6 +23,7 @@ async function main(){
  const tags=await fetch('http://127.0.0.1:11434/api/tags').then(r=>r.json());
  if(!tags.models.some((m:{name:string})=>m.name==='qwen3-vl:8b-instruct'))throw new Error('Install qwen3-vl:8b-instruct first.');
  await preparePublication();
+ const statisticsWorker=spawn(process.execPath,['--import','tsx','src/cli/pipeline-statistics.ts'],{cwd:process.cwd(),windowsHide:true,detached:true,stdio:'ignore'});statisticsWorker.unref();
  const previous:State|undefined=await readFile(file,'utf8').then(JSON.parse).catch(()=>undefined);
  const state:State={pid:process.pid,startedAt:previous?.startedAt??new Date().toISOString(),updatedAt:new Date().toISOString(),status:'running',builders:previous?.builders??{}};
  const order=(await readFile('docs/builder-recrawl-order.txt','utf8')).split(/\r?\n/).filter(slug=>developers.some(b=>b.slug===slug));

@@ -1,8 +1,9 @@
+import type {PipelineStatistics} from './pipeline-statistics';
 import type {RunReport} from './report';
 export type PipelinePhase='crawl'|'classification';
 export interface PipelineActivity {status:'running'|'completed'|'stopped'|'failed';updatedAt:string;currentDevelopments:string[];model?:string;galleries?:Record<string,'running'|'completed'|'failed'>}
 export interface PipelineSummary {
- phase:PipelinePhase;builder:string;builderName:string;status:PipelineActivity['status']|'recorded';updatedAt:string;currentDevelopments:string[];
+ statistics?:PipelineStatistics;phase:PipelinePhase;builder:string;builderName:string;status:PipelineActivity['status']|'recorded';updatedAt:string;currentDevelopments:string[];
  totals:{completed:number;failed:number;pending:number;total:number;images:number;developments:number;developmentsCompleted:number;structuredImages:number};
  models:{name:string;count:number}[];
  developments:{url:string;name:string;status:string;completed:number;failed:number;pending:number;total:number;images:number}[];

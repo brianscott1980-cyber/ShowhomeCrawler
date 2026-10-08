@@ -1,3 +1,4 @@
+import {progressStatistics,type ProgressSample} from '../../../reports/pipeline-statistics';
 import {websiteDatabase} from '../../../database/website';
 import type {PipelineSummary} from '../../../reports/pipeline-summary';
 import {createClient} from '@supabase/supabase-js';
@@ -20,8 +21,9 @@ export async function GET(request:Request){
  const summaries=new Map(snapshots.map(s=>[s.phase+':'+s.builder,{...s,source:'snapshot'}]));
  let liveAvailable=false;
  try{
-  const rows=await websiteDatabase()`select payload from showhome_web.presentations where key like 'pipeline:crawl:%' or key like 'pipeline:classification:%'`;
+  const rows=await websiteDatabase()`select key,payload from showhome_web.presentations where key like 'pipeline:crawl:%' or key like 'pipeline:classification:%' or key like 'pipeline:statistics:%'`;
   for(const row of rows){const summary=row.payload as PipelineSummary;if(summary.phase==='crawl'||summary.phase==='classification')summaries.set(summary.phase+':'+summary.builder,{...summary,source:'live'});}
+  for(const row of rows){if(!row.key?.startsWith('pipeline:statistics:'))continue;const key=row.key.replace('pipeline:statistics:',''),summary=summaries.get(key);if(summary)summary.statistics=progressStatistics((row.payload.samples??[]) as ProgressSample[],summary);}
   liveAvailable=true;
  }catch{/* Committed summaries remain available when live progress cannot be read. */}
  return Response.json({commit:process.env.VERCEL_GIT_COMMIT_SHA??'local',liveAvailable,summaries:[...summaries.values()]}, {headers});
