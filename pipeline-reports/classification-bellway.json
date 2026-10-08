@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T21:44:16.288Z",
+  "updatedAt": "2026-10-08T21:56:36.725Z",
   "currentDevelopments": [
-    "Centurion Chase"
+    "Elder Brook"
   ],
   "totals": {
-    "completed": 1285,
-    "failed": 19,
-    "pending": 968,
+    "completed": 1371,
+    "failed": 23,
+    "pending": 878,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 552
+    "structuredImages": 638
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 552
+      "count": 638
     }
   ],
   "developments": [
@@ -481,7 +481,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/north-east/centurion-chase",
       "name": "Centurion Chase",
-      "status": "running",
+      "status": "needs attention",
       "completed": 55,
       "failed": 2,
       "pending": 0,
@@ -761,10 +761,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/eastern-counties/elder-brook",
       "name": "Elder Brook",
-      "status": "needs attention",
-      "completed": 25,
-      "failed": 2,
-      "pending": 90,
+      "status": "running",
+      "completed": 111,
+      "failed": 6,
+      "pending": 0,
       "total": 117,
       "images": 117
     },
@@ -2332,9 +2332,9 @@
       "url": "https://www.bellway.co.uk/new-homes/east-midlands/torvill-park",
       "name": "Torvill Park",
       "status": "needs attention",
-      "completed": 50,
-      "failed": 2,
-      "pending": 187,
+      "completed": 65,
+      "failed": 3,
+      "pending": 171,
       "total": 239,
       "images": 239
     },
@@ -2441,10 +2441,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/south-west/weavers-meadow",
       "name": "Weavers Meadow",
-      "status": "pending",
-      "completed": 23,
-      "failed": 0,
-      "pending": 70,
+      "status": "needs attention",
+      "completed": 48,
+      "failed": 1,
+      "pending": 44,
       "total": 93,
       "images": 93
     },
