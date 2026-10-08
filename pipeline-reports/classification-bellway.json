@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T23:35:48.947Z",
+  "updatedAt": "2026-10-08T23:45:42.136Z",
   "currentDevelopments": [
-    "Weavers Meadow"
+    "Woodbury Manor"
   ],
   "totals": {
-    "completed": 2115,
-    "failed": 38,
-    "pending": 119,
+    "completed": 2194,
+    "failed": 39,
+    "pending": 39,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 69,
-    "structuredImages": 1382
+    "structuredImages": 1461
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1382
+      "count": 1461
     }
   ],
   "developments": [
@@ -2441,7 +2441,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/south-west/weavers-meadow",
       "name": "Weavers Meadow",
-      "status": "running",
+      "status": "needs attention",
       "completed": 91,
       "failed": 2,
       "pending": 0,
@@ -2521,10 +2521,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/kent/woodbury-manor",
       "name": "Woodbury Manor",
-      "status": "pending",
-      "completed": 9,
-      "failed": 0,
-      "pending": 80,
+      "status": "running",
+      "completed": 88,
+      "failed": 1,
+      "pending": 0,
       "total": 89,
       "images": 89
     },
