@@ -20,7 +20,8 @@ import { writeReport, type RunReport, type ReportImage } from '../reports/report
 import { createDatabase } from '../database/postgres.js';
 import { PostgresCatalogRepository } from '../database/repositories/postgres-catalog-repository.js';
 async function exists(path: string) { try { await readFile(path); return true; } catch { return false; } }
-async function atomic(path: string, value: unknown) { const temporary = path + '.' + randomUUID() + '.tmp'; await writeFile(temporary, JSON.stringify(value)); await rename(temporary, path); }
+let checkpointQueue=Promise.resolve();
+async function atomic(path:string,value:unknown){checkpointQueue=checkpointQueue.catch(()=>{}).then(async()=>{const temporary=path+'.'+randomUUID()+'.tmp';await writeFile(temporary,JSON.stringify(value));await rename(temporary,path);});return checkpointQueue;}
 async function main() {
  const env = readEnv();
  const { values } = parseArgs({ options: { 'preserve-existing':{type:'boolean'},'content-root':{type:'string'},resume: {type:'boolean'}, 'refresh-pages': { type: 'boolean' }, 'live-missing': { type: 'boolean' }, 'all-images': { type: 'boolean', default: true }, 'browser-snapshots': { type: 'boolean' }, builder: { type: 'string', default: 'bellway' }, 'min-bedrooms': { type: 'string', default: '1' }, 'max-developments': { type: 'string', default: String(env.MAX_DEVELOPMENTS) }, 'max-properties': { type: 'string', default: String(env.MAX_PROPERTIES) }, 'max-images': { type: 'string', default: '500' }, output: { type: 'string' }, 'discover-only': { type: 'boolean', default: true }, development: { type: 'string', multiple: true }, persist: { type: 'boolean' } } });
@@ -54,7 +55,7 @@ async function main() {
  const sql = values.persist ? createDatabase() : null;
  const repo = sql ? new PostgresCatalogRepository(sql, site) : null;
  const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question: values['all-images'] ? 'All property gallery images' : question, analysisVersion: values['all-images'] ? 'all-property-images-v1' : analysisVersion, developments: [], properties: [], images: [], errors: [], metrics: {} };
- if(previous){report.startedAt=previous.startedAt;report.images=previous.images;report.errors=previous.errors.filter(e=>e.stage==='image');report.properties=previous.properties.filter(p=>p.imageIds.length>0&&!previous.errors.some(e=>e.url===p.url));}
+ if(previous){report.startedAt=previous.startedAt;report.images=previous.images;report.errors=previous.errors.filter(e=>e.stage==='image');report.properties=previous.properties.filter(p=>p.imageIds.length>0&&!previous.errors.some(e=>e.url===p.url)&&(!previous.crawlProgress?.galleries||previous.crawlProgress.galleries[p.url]==='completed'));}
  const progress=progressReporter('crawl');
  report.crawlProgress={status:'running',updatedAt:new Date().toISOString(),currentDevelopments:[],galleries:values.resume?(previous?.crawlProgress?.galleries??Object.fromEntries((previous?.properties??[]).filter(p=>p.imageIds.length>0).map(p=>[p.url,'completed' as const]))):{}};
  const activeGalleries=new Map<string,string>();
@@ -96,7 +97,7 @@ async function main() {
   const sourceTasks = new ImageSourceCache<string>();
   const identities: { identity: Awaited<ReturnType<typeof imageIdentity>>; image: ReportImage }[] = [];
   const galleryCache = new Map<string, string[]>();
-  for(const image of report.images){sourceImages.set(image.sourceUrl,image);if(values.resume){const bytes=values['content-root']?await readFile(resolve(values['content-root'],'assets',basename(image.path))):await storedFile(folder+'/'+image.path);const identity=await imageIdentity(bytes);if(identity.sha256!==image.id)throw new Error('Resume image does not match its identifier.');identities.push({identity,image});}}
+  for(const image of report.images){sourceImages.set(image.sourceUrl,image);if(values.resume){const bytes=values['content-root']?await readFile(resolve(values['content-root'],'assets',basename(image.path))):await storedFile(folder+'/'+image.path);const identity=await imageIdentity(bytes);if(identity.sha256!==image.id)throw new Error('Resume image does not match its identifier.');identities.push({identity,image});if(identities.length%100===0)await progress.update(site.slug,report);}}
   const completedProperties=new Set(values.resume?report.properties.map(p=>p.url):[]);
   report.metrics.skippedCompletedGalleries=0;
   let imageAttempts = 0, analysisUnavailable = false;
@@ -191,4 +192,4 @@ async function main() {
   throw error;
  } finally { await progress.close();if (sql) await sql.end(); await lock.close(); const { unlink } = await import('node:fs/promises'); await unlink(folder + '/.lock'); }
 }
-main().catch(error => { console.error(error instanceof Error && /^(Set GEMINI|All-images|Only Bellway|Invalid crawl|Output must|This output|Development is|No development|robots.txt)/.test(error.message) ? error.message : 'Crawl failed; credentials and raw provider responses withheld.'); process.exitCode = 1; });
+main().catch(error => { if((error as NodeJS.ErrnoException).code)console.error('Crawler failure code: '+(error as NodeJS.ErrnoException).code);console.error(error instanceof Error && /^(Set GEMINI|All-images|Only Bellway|Invalid crawl|Output must|This output|Development is|No development|robots.txt)/.test(error.message) ? error.message : 'Crawl failed; credentials and raw provider responses withheld.'); process.exitCode = 1; });

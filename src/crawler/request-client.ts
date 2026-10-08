@@ -82,9 +82,11 @@ export class RequestClient {
  async text(url: string,body?:string) { return (await this.bytes(url, 10_000_000,body)).toString('utf8'); }
 }
 export async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T, index: number) => Promise<R>): Promise<R[]> {
- const output: R[] = []; let next = 0;
- await Promise.all(Array.from({ length: Math.min(limit, items.length) }, async () => {
-  while (next < items.length) { const index = next++; output[index] = await fn(items[index]!, index); }
+ const output: R[] = []; let next = 0,failed=false;
+ const tasks=await Promise.allSettled(Array.from({ length: Math.min(limit, items.length) }, async () => {
+  while (!failed&&next < items.length) { const index = next++;try{output[index] = await fn(items[index]!, index);}catch(error){failed=true;throw error;} }
  }));
+ const failure=tasks.find(task=>task.status==='rejected');
+ if(failure?.status==='rejected')throw failure.reason;
  return output;
 }

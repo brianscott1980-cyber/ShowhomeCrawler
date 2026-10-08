@@ -95,3 +95,13 @@ it('rejects floorplans even when desks are drawn and requires the floorplan flag
 it('accepts an explicitly empty Bellway carousel without executing expressions',()=>{expect(galleryImages('<div x-data="multiImageCarousel({ images: [] })"></div>')).toEqual([]);expect(()=>galleryImages('<div x-data="multiImageCarousel({ images: dangerous() })"></div>')).toThrow('Unknown Bellway gallery encoding');});
 
 it('retains named Bellway house-style cards whose bedroom metadata is missing',()=>{const r=discoverHomes('<h1>New site</h1><div class="text-container"><h3 class="result-title">The New Home</h3><a href="/new-homes/division/new-site/the-new-home">Details</a></div>','https://www.bellway.co.uk/new-homes/division/new-site');expect(r.homes[0]).toMatchObject({name:'The New Home',bedrooms:null,url:'https://www.bellway.co.uk/new-homes/division/new-site/the-new-home'});});
+
+it('stops scheduling after failure and drains active workers before rejecting', async () => {
+ const started:number[]=[];let drained=false;
+ await expect(mapLimit([0,1,2,3],2,async n=>{
+  started.push(n);
+  if(n===0){await new Promise(resolve=>setTimeout(resolve,5));throw new Error('worker failed');}
+  await new Promise(resolve=>setTimeout(resolve,20));drained=true;return n;
+ })).rejects.toThrow('worker failed');
+ expect(started).toEqual([0,1]);expect(drained).toBe(true);
+});

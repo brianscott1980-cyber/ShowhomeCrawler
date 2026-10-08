@@ -4,10 +4,9 @@ import { writeFile, rename } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import { matchedPage } from './matched-page.js';
 import type { Verdict } from '../vision/gemini-classifier.js';
-async function saveArtifact(path: string, body: string) {
- const temporary = path + '.' + randomUUID() + '.tmp';
- await writeFile(temporary, body);
- await rename(temporary, path);
+const artifactQueues=new Map<string,Promise<void>>();
+async function saveArtifact(path:string,body:string){
+ const task=(artifactQueues.get(path)??Promise.resolve()).catch(()=>{}).then(async()=>{const temporary=path+'.'+randomUUID()+'.tmp';await writeFile(temporary,body);await rename(temporary,path);});artifactQueues.set(path,task);try{await task;}finally{if(artifactQueues.get(path)===task)artifactQueues.delete(path);}
 }
 export interface ColourAttribute { colours:string[]; prominence:'dominant'|'secondary'|'accent' }
 export interface ImageCategorisation {
