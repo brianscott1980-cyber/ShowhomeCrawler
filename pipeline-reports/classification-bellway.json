@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T23:11:32.648Z",
+  "updatedAt": "2026-10-08T23:27:02.300Z",
   "currentDevelopments": [
-    "The Paddock at Chilsey Grange"
+    "Torvill Park"
   ],
   "totals": {
-    "completed": 1970,
-    "failed": 35,
-    "pending": 267,
+    "completed": 2082,
+    "failed": 37,
+    "pending": 153,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 69,
-    "structuredImages": 1237
+    "structuredImages": 1349
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1237
+      "count": 1349
     }
   ],
   "developments": [
@@ -2281,7 +2281,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-paddock-at-chilsey-grange",
       "name": "The Paddock at Chilsey Grange",
-      "status": "running",
+      "status": "needs attention",
       "completed": 101,
       "failed": 2,
       "pending": 0,
@@ -2331,10 +2331,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/east-midlands/torvill-park",
       "name": "Torvill Park",
-      "status": "needs attention",
-      "completed": 122,
-      "failed": 3,
-      "pending": 114,
+      "status": "running",
+      "completed": 234,
+      "failed": 5,
+      "pending": 0,
       "total": 239,
       "images": 239
     },
