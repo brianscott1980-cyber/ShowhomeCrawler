@@ -319,7 +319,7 @@ export function Gallery({
      {introduction.details&&introduction.counts&&<div className="results-stats builder-results-stats">{Object.entries(introduction.counts).map(([label,count])=><div key={label}><strong><RollingCount key={count} value={count}/></strong><span>{label}</span></div>)}</div>}
     </section>
     {!introduction.details&&<div className="results-stats" aria-live="polite">
-     {Object.entries(displayedCounts).map(([label,count])=><div key={label}><strong>{favouritesOnly&&!ready?'…':<RollingCount key={count} value={count}/>}</strong><span>{label}</span></div>)}
+     {Object.entries(displayedCounts).filter(([label])=>!introduction.buildingType||label.toLowerCase()!=='room types').map(([label,count])=><div key={label}><strong>{favouritesOnly&&!ready?'…':<RollingCount key={count} value={count}/>}</strong><span>{label}</span></div>)}
     </div>}
     {!overviewOnly&&<div className="results-heading" id="collection"><h2>{favouritesOnly ? 'Your saved spaces' : isDevelopment?'Explore the development':introduction?.buildingType?<>Explore {introduction.title}</>:'Explore the collection'}</h2></div>}
    </>}
