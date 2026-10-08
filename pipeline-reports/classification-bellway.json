@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T21:37:45.558Z",
+  "updatedAt": "2026-10-08T21:44:16.288Z",
   "currentDevelopments": [
-    "Buttercross Meadows"
+    "Centurion Chase"
   ],
   "totals": {
-    "completed": 1249,
-    "failed": 17,
-    "pending": 1006,
+    "completed": 1285,
+    "failed": 19,
+    "pending": 968,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 67,
-    "structuredImages": 516
+    "structuredImages": 552
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 516
+      "count": 552
     }
   ],
   "developments": [
@@ -391,7 +391,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/yorkshire/buttercross-meadows",
       "name": "Buttercross Meadows",
-      "status": "running",
+      "status": "needs attention",
       "completed": 170,
       "failed": 5,
       "pending": 0,
@@ -481,10 +481,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/north-east/centurion-chase",
       "name": "Centurion Chase",
-      "status": "pending",
-      "completed": 19,
-      "failed": 0,
-      "pending": 38,
+      "status": "running",
+      "completed": 55,
+      "failed": 2,
+      "pending": 0,
       "total": 57,
       "images": 57
     },
