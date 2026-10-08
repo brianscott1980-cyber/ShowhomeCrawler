@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T23:02:20.225Z",
+  "updatedAt": "2026-10-08T23:11:32.648Z",
   "currentDevelopments": [
-    "The Lanes"
+    "The Paddock at Chilsey Grange"
   ],
   "totals": {
-    "completed": 1905,
-    "failed": 33,
-    "pending": 334,
+    "completed": 1970,
+    "failed": 35,
+    "pending": 267,
     "total": 2272,
     "images": 2272,
     "developments": 252,
-    "developmentsCompleted": 68,
-    "structuredImages": 1172
+    "developmentsCompleted": 69,
+    "structuredImages": 1237
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1172
+      "count": 1237
     }
   ],
   "developments": [
@@ -2251,7 +2251,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes",
       "name": "The Lanes",
-      "status": "running",
+      "status": "completed",
       "completed": 10,
       "failed": 0,
       "pending": 0,
@@ -2281,10 +2281,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-paddock-at-chilsey-grange",
       "name": "The Paddock at Chilsey Grange",
-      "status": "pending",
-      "completed": 36,
-      "failed": 0,
-      "pending": 67,
+      "status": "running",
+      "completed": 101,
+      "failed": 2,
+      "pending": 0,
       "total": 103,
       "images": 103
     },
