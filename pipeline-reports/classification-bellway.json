@@ -3,19 +3,19 @@
   "builder": "bellway",
   "builderName": "Bellway",
   "status": "running",
-  "updatedAt": "2026-10-08T23:00:01.175Z",
+  "updatedAt": "2026-10-08T23:02:20.225Z",
   "currentDevelopments": [
-    "St. Mary's Hill"
+    "The Lanes"
   ],
   "totals": {
-    "completed": 1897,
+    "completed": 1905,
     "failed": 33,
-    "pending": 342,
+    "pending": 334,
     "total": 2272,
     "images": 2272,
     "developments": 252,
     "developmentsCompleted": 68,
-    "structuredImages": 1164
+    "structuredImages": 1172
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 1164
+      "count": 1172
     }
   ],
   "developments": [
@@ -2101,7 +2101,7 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/wessex/st-marys-hill",
       "name": "St. Mary's Hill",
-      "status": "running",
+      "status": "needs attention",
       "completed": 36,
       "failed": 2,
       "pending": 0,
@@ -2251,10 +2251,10 @@
     {
       "url": "https://www.bellway.co.uk/new-homes/thames-valley/the-lanes",
       "name": "The Lanes",
-      "status": "pending",
-      "completed": 2,
+      "status": "running",
+      "completed": 10,
       "failed": 0,
-      "pending": 8,
+      "pending": 0,
       "total": 10,
       "images": 10
     },
