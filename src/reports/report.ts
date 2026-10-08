@@ -1,3 +1,4 @@
+import type {PipelineActivity} from './pipeline-summary';
 import {geminiStatusPanel,readGeminiState,type GeminiState} from './gemini-status.js';
 import { writeFile, rename } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
@@ -36,7 +37,7 @@ export interface ImageCategorisation {
 }
 export interface ReportImage { siteCategoryEvidence?:{pageUrl:string;field:string;text:string;categories:string[]}[]; id: string; path: string; sourceUrl: string; verdict?: Verdict; categorisation?: ImageCategorisation; analysisModel?: string; criteriaExclusion?: string; error?: string }
 export interface ReportProperty { development: string; developmentUrl: string; name: string; url: string; bedrooms: number; price: number | null; plots: { number?: string; price: number | null; available: boolean }[]; imageIds: string[] }
-export interface RunReport { geminiState?:GeminiState; builder?: {name:string;slug:string;websiteUrl:string}; status: string; startedAt: string; completedAt?: string; model: string; question: string; analysisVersion?: string; developments: { url: string; name?: string; town?: string|null; country?: string|null; status: string; homes?: number; qualifying?: number; error?: string; warning?: string }[]; properties: ReportProperty[]; images: ReportImage[]; errors: { url: string; stage: string; message: string }[]; metrics: Record<string, number>; }
+export interface RunReport { crawlProgress?:PipelineActivity; classificationProgress?:PipelineActivity; geminiState?:GeminiState; builder?: {name:string;slug:string;websiteUrl:string}; status: string; startedAt: string; completedAt?: string; model: string; question: string; analysisVersion?: string; developments: { url: string; name?: string; town?: string|null; country?: string|null; status: string; homes?: number; qualifying?: number; error?: string; warning?: string }[]; properties: ReportProperty[]; images: ReportImage[]; errors: { url: string; stage: string; message: string }[]; metrics: Record<string, number>; }
 const escape = (s: unknown) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
 export async function writeReport(folder: string, report: RunReport) {
  report.geminiState=await readGeminiState(folder) ?? report.geminiState;

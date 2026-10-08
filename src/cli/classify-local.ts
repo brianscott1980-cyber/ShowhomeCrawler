@@ -1,3 +1,4 @@
+import {progressReporter} from '../reports/pipeline-progress.js';
 import {preparePublication,developmentPublication} from './classification-publication.js';
 import {requireLocalContentRoot} from './local-ai-config.js';
 import {parseArgs} from 'node:util';
@@ -62,12 +63,16 @@ async function main(){
    if(await access(sourceFolder+'/.analysis-stream.lock').then(()=>true,()=>false))throw new Error('A streaming classifier is using this builder. Stop it before applying local results.');
    lock=await open(sourceFolder+'/.lock','wx');
   }
+  const progress=values.apply?progressReporter('classification'):undefined;
+  if(progress){report.classificationProgress={status:'running',updatedAt:new Date().toISOString(),currentDevelopments:[],model};}
   console.log(`${builder.name}: ${pending.length} images; ${concurrency} local request(s) in flight`);
   try{
    const order=classificationOrder(report);
    const developments:typeof pending[]=[];let previous='';
    for(const image of pending){const group=order.group(image);const development=group==='unlinked'?'unlinked':JSON.parse(group)[0];if(development!==previous||!developments.length)developments.push([]);developments.at(-1)!.push(image);previous=development;}
    for(const developmentImages of developments){
+   const developmentGroup=order.group(developmentImages[0]!);const developmentUrl=developmentGroup==='unlinked'?'unlinked':JSON.parse(developmentGroup)[0];const developmentName=report.properties.find(h=>h.developmentUrl===developmentUrl)?.development??developmentUrl;
+   if(progress&&report.classificationProgress){report.classificationProgress.currentDevelopments=[developmentName];await progress.update(builder.slug,report,true);}
    await orderedBatchPool(developmentImages,concurrency,async image=>{
     const file=resolve(folder,image.id+'.json');let result:Awaited<ReturnType<typeof classifyLocal>>|undefined,cached=false;
     try{
@@ -79,12 +84,14 @@ async function main(){
      if(values.apply){image.categorisation=result.categorisation;image.verdict=result.verdict;image.analysisModel=model;delete image.error;}
      console.log(`${entries.length}: ${builder.name} · ${result.categorisation.mainCategory} · ${cached?'cached':(result.elapsedMs/1000).toFixed(1)+'s'}`);
     }catch(error){const message=error instanceof Error&&error.message.startsWith('Local model')?error.message:'Local image classification failed; see source availability or Ollama logs and rerun.';if(values.apply)image.error=message;entries.push({builder:builder.slug,id:image.id,category:'Failed',elapsedMs:0,cached:false,error:message});console.log(`${builder.name}: ${message}`);}
+    if(progress)await progress.update(builder.slug,report);
    },()=>stopping);
+   if(progress&&report.classificationProgress){report.classificationProgress.status=stopping?'stopped':developmentImages===developments.at(-1)?'completed':'running';if(report.classificationProgress.status!=='running')report.classificationProgress.currentDevelopments=[];await progress.update(builder.slug,report,true);}
    if(values.apply){await atomic(sourceFolder+'/results.json',report);await atomic(sourceFolder+'/checkpoint.json',report);}
    if(publicationBranch&&!stopping){const group=order.group(developmentImages[0]!);const url=group==='unlinked'?'unlinked':JSON.parse(group)[0];const name=report.properties.find(h=>h.developmentUrl===url)?.development??url;await developmentPublication(builder.slug,sourceFolder,name,report,publicationBranch);}
    await review();if(stopping)break;
    }
-  }finally{if(lock){await lock.close();await unlink(sourceFolder+'/.lock');}await review();}
+  }catch(error){if(progress&&report.classificationProgress){if(report.classificationProgress.status!=='completed')report.classificationProgress.status='failed';await progress.update(builder.slug,report,true);}throw error;}finally{await progress?.close();if(lock){await lock.close();await unlink(sourceFolder+'/.lock');}await review();}
  }
  await review();console.log(`Review: ${resolve(folder,'report.html')}`);
  if(entries.some(entry=>entry.error))process.exitCode=1;

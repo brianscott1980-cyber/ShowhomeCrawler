@@ -1,3 +1,4 @@
+import {progressReporter} from '../reports/pipeline-progress.js';
 import {classificationOrder,classificationBatches} from '../vision/classification-order.js';
 import {storedFile} from '../web/content-storage.js';
 import {hasSiteCategorisation} from '../vision/site-categorisation.js';
@@ -33,6 +34,8 @@ async function main() {
  }
  for (const development of report.developments) if (development.name) development.name = load(development.name).text();
  for (const property of report.properties) { property.development = load(property.development).text(); property.name = load(property.name).text(); }
+ const progress=progressReporter('classification');const slug=report.builder?.slug??folder.split('/').at(-1)!.replace(/-home-offices$/, '');
+ report.classificationProgress={status:'running',updatedAt:new Date().toISOString(),currentDevelopments:[],model:classificationModel};
  const lock = await open(folder + '/.lock', 'wx');
  try {
   const priorityIds=new Set(report.properties.filter(home=>values['priority-development']&&home.development.toLowerCase().includes(values['priority-development'].toLowerCase())).flatMap(home=>home.imageIds));
@@ -45,6 +48,7 @@ async function main() {
   report.status = ['completed','completed_with_gaps'].includes(report.status)?'completed_with_gaps':'classifying'; await writeReport(folder, report);
   let processed=0;
   for (const images of classificationBatches(report,pending,8,values['priority-development'])) {
+   const group=classificationOrder(report).group(images[0]!);const developmentUrl=group==='unlinked'?'unlinked':JSON.parse(group)[0];report.classificationProgress!.currentDevelopments=[report.properties.find(h=>h.developmentUrl===developmentUrl)?.development??developmentUrl];await progress.update(slug,report,true);
    const remaining = [];
    for (const image of images) {
     for (const model of [...new Set([...pool.models,report.model,...(values['reuse-model'] ?? [])])]) {
@@ -109,6 +113,7 @@ async function main() {
    report.errors = report.errors.filter(error => error.stage !== 'classification' || !report.images.find(i => i.sourceUrl === error.url)?.verdict);
    report.metrics.pendingImages = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).length;
    report.metrics.matchedImages = report.images.filter(i => i.verdict?.matches).length;
+   await progress.update(slug,report,true);
    await writeReport(folder, report);
    processed+=images.length;
    console.log(JSON.stringify({ stage: 'batch_complete', processed, total: pending.length, matches: report.metrics.matchedImages }));
@@ -116,10 +121,12 @@ async function main() {
   }
   report.status = report.errors.length || report.metrics.pendingImages || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';
   await saveGeminiState(folder,{state:'complete',model:pool.currentModel,...pool.snapshot()});
+  report.classificationProgress!.status='completed';report.classificationProgress!.currentDevelopments=[];await progress.update(slug,report,true);
   report.completedAt = new Date().toISOString(); await writeReport(folder, report);
  } catch (error) {
+  report.classificationProgress!.status='failed';await progress.update(slug,report,true);
   if (report) { report.status = 'completed_with_gaps'; report.metrics.pendingImages = report.images.filter(i => values['all-images'] ? !i.categorisation : !i.verdict).length; await writeReport(folder, report); }
   throw error;
- } finally { await lock.close(); await unlink(folder + '/.lock'); }
+ } finally { await progress.close();await lock.close(); await unlink(folder + '/.lock'); }
 }
 main().catch(error => { console.error(error instanceof Error && /^Gemini HTTP \d+$/.test(error.message) ? error.message : 'Classification resume failed; credentials withheld.'); process.exitCode = 1; });

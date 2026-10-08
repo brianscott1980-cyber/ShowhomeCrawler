@@ -1,3 +1,4 @@
+import {pipelineSummary} from '../reports/pipeline-summary';
 import {classificationSnapshot} from '../reports/classification-snapshot';
 import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
@@ -13,6 +14,7 @@ const git=async(...args:string[])=>(await exec('git',args,{maxBuffer:8*1024*1024
 const checkpoint=resolve('.showhome/classification-publication.json');
 async function atomic(file:string,value:unknown){await mkdir(resolve(file,'..'),{recursive:true});const temp=file+'.'+randomUUID()+'.tmp';await writeFile(temp,JSON.stringify(value,null,2));await rename(temp,file);}
 interface State {phase:'publication'|'commit'|'push'|'done';slug:string;sourceFolder:string;development:string;branch:string;commit?:string}
+async function syncRemote(){await git('fetch');if(Number(await git('rev-list','--count','HEAD..@{upstream}'))>0)await git('rebase','@{upstream}');}
 export async function preparePublication(){
  const branch=await git('branch','--show-current');
  if(!branch)throw new Error('Classification publication requires a named branch.');
@@ -21,7 +23,7 @@ export async function preparePublication(){
  const state:State|null=await readFile(checkpoint,'utf8').then(JSON.parse).catch(error=>{if((error as NodeJS.ErrnoException).code==='ENOENT')return null;throw error;});
  if(state&&state.phase!=='done'){if(state.branch!==branch)throw new Error('Resume publication on branch '+state.branch);await finish(state);}
  if(await git('status','--porcelain'))throw new Error('Commit or resolve working tree changes before a publishing classification run.');
- return branch;
+ await syncRemote();return branch;
 }
 export async function developmentPublication(slug:string,sourceFolder:string,development:string,report:RunReport,branch:string){
  await writeReport(sourceFolder,report);
@@ -35,11 +37,13 @@ async function finish(state:State){
  if(state.phase==='publication'){
   const sql=createDatabase();try{await importBuilder(sql,state.slug);await publishWebsite(sql);}finally{await sql.end();}
   await atomic(resolve('classification-reports',state.slug+'.json'),classificationSnapshot(state.slug,report,state.development,'published'));
+  await atomic(resolve('pipeline-reports','classification-'+state.slug+'.json'),pipelineSummary(state.slug,report,'classification'));
   state.phase='commit';await atomic(checkpoint,state);
  }
  if(state.phase==='commit'){
+  await git('fetch');
   const paths=['results.json','full-report.html','index.html','properties.csv','matches.csv'].map(f=>relative(process.cwd(),resolve(state.sourceFolder,f)));
-  paths.push('classification-reports/'+state.slug+'.json');
+  paths.push('classification-reports/'+state.slug+'.json','pipeline-reports/classification-'+state.slug+'.json');
   const staged=(await git('diff','--cached','--name-only')).split('\n').filter(Boolean);
   const allowed=new Set(paths.map(p=>p.replaceAll('\\','/')));
   if(staged.some(p=>!allowed.has(p)))throw new Error('Unrelated staged changes prevent an isolated classification commit.');
@@ -48,6 +52,7 @@ async function finish(state:State){
   state.commit=await git('rev-parse','HEAD');state.phase='push';await atomic(checkpoint,state);
  }
  if(state.phase==='push'){
+  await syncRemote();state.commit=await git('rev-parse','HEAD');await atomic(checkpoint,state);
   await git('push');state.phase='done';await atomic(checkpoint,state);
   console.log(`Published and pushed ${state.slug}: ${state.development} (${state.commit})`);
  }

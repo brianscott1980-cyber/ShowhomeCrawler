@@ -1,3 +1,4 @@
+import {progressReporter} from '../reports/pipeline-progress.js';
 import {storedFile} from '../web/content-storage.js';
 import sharp from 'sharp';
 import { mkdir, readFile, writeFile, rename, open, link } from 'node:fs/promises';
@@ -52,6 +53,10 @@ async function main() {
  const repo = sql ? new PostgresCatalogRepository(sql, site) : null;
  const report: RunReport = { builder: { name:site.name, slug:site.slug, websiteUrl:site.websiteUrl }, status: 'running', startedAt: new Date().toISOString(), model, question: values['all-images'] ? 'All property gallery images' : question, analysisVersion: values['all-images'] ? 'all-property-images-v1' : analysisVersion, developments: [], properties: [], images: [], errors: [], metrics: {} };
  if(previous){report.startedAt=previous.startedAt;report.images=previous.images;report.errors=previous.errors.filter(e=>e.stage==='image');report.properties=previous.properties.filter(p=>p.imageIds.length>0&&!previous.errors.some(e=>e.url===p.url));}
+ const progress=progressReporter('crawl');
+ report.crawlProgress={status:'running',updatedAt:new Date().toISOString(),currentDevelopments:[],galleries:previous?.crawlProgress?.galleries??Object.fromEntries((previous?.properties??[]).filter(p=>p.imageIds.length>0).map(p=>[p.url,'completed' as const]))};
+ const activeGalleries=new Map<string,string>();
+ async function updateGallery(url:string,status:'completed'|'failed'){report.crawlProgress!.galleries![url]=status;activeGalleries.delete(url);report.crawlProgress!.currentDevelopments=[...new Set(activeGalleries.values())];await progress.update(site.slug,report,true);}
  let stopped = false; process.once('SIGINT', () => { stopped = true; }); process.once('SIGTERM', () => { stopped = true; });
  try {
   const sourceText = (url: string) => values['browser-snapshots'] ? readFile(`results/.cache/pages/${sha256(url)}.html`, 'utf8') : client.text(url);
@@ -64,8 +69,9 @@ async function main() {
   if (!all.length) throw new Error('No development URLs found.');
   let urls = all.slice(0, maxDevs);
   if (values.development) { if (values.development.some(url=>!all.includes(url))) throw new Error('Development is not in the builder sitemap.'); urls = [...new Set(values.development)]; }
-  report.metrics.sitemapDevelopments = all.length;
+  report.metrics.sitemapDevelopments = all.length;report.metrics.selectedDevelopments=urls.length;
   console.log(JSON.stringify({ stage: 'discovery', sitemapDevelopments: all.length, selected: urls.length }));
+  await progress.update(site.slug,report,true);
   const discovered = await mapLimit(urls, Math.min(3, env.MAX_CONCURRENCY), async url => {
    if (stopped) return null;
    try {
@@ -74,7 +80,7 @@ async function main() {
     const qualifying = result.homes;
     report.developments.push({ url, name: result.development.name, status: result.plotError ? 'complete_with_warning' : 'complete', homes: result.homes.length, qualifying: qualifying.length, warning: result.plotError ?? (result.development.url !== url ? 'Redirected to ' + result.development.url : undefined) });
     console.log(JSON.stringify({ stage: 'development', developer: site.name, completed: report.developments.length, total: urls.length, name: result.development.name, homes: result.homes.length, qualifying: qualifying.length }));
-    await atomic(folder + '/checkpoint.json', report);
+    await atomic(folder + '/checkpoint.json', report);await progress.update(site.slug,report);
     return { ...result, qualifying };
    } catch (error) {
     const message = error instanceof Error && error.message.startsWith('HTTP ') ? error.message : 'Development extraction or persistence failed';
@@ -96,6 +102,8 @@ async function main() {
   await mapLimit(homes.slice(0, maxProperties), values['all-images'] ? Math.min(3, env.MAX_CONCURRENCY) : 1, async ({ home, development, plots }) => {
    if (stopped) return;
    if (completedProperties.has(home.url)){report.metrics.skippedCompletedGalleries=(report.metrics.skippedCompletedGalleries??0)+1;return;}
+   activeGalleries.set(home.url,development.name);report.crawlProgress!.galleries![home.url]='running';report.crawlProgress!.currentDevelopments=[...new Set(activeGalleries.values())];await progress.update(site.slug,report);
+   let galleryFailed=false;
    const property = { development: development.name, developmentUrl: development.url, name: home.plotNumber ? `${home.name} · Plot ${home.plotNumber}` : home.name, url: home.url, bedrooms: home.bedrooms!, price: home.price, plots: plots.map(p => ({ number: p.plotNumber, price: p.price, available: p.available })), imageIds: [] as string[] };
    report.properties.push(property);
    try {
@@ -105,13 +113,14 @@ async function main() {
      if (name) property.name = name;
     }
     const images = galleryImages(html,home.url);
+    if (!images.length) galleryFailed=true;
     if (!images.length) report.errors.push({ url: home.url, stage: 'gallery', message: 'No supported image gallery found; not treated as a negative match.' });
     const galleryKey = sha256(JSON.stringify([...new Set(images.map(i => imageSourceKey(i.url)))].sort()));
     const reused = galleryCache.get(galleryKey);
-    if (reused) { property.imageIds = reused; report.metrics.reusedGalleries = (report.metrics.reusedGalleries ?? 0) + 1; return; }
+    if (reused) { property.imageIds = reused; report.metrics.reusedGalleries = (report.metrics.reusedGalleries ?? 0) + 1; await updateGallery(home.url,galleryFailed?'failed':'completed');await writeReport(folder,report);return; }
     const imageIds = await mapLimit(images, values['all-images'] ? 1 : Math.min(3, env.MAX_CONCURRENCY), async candidate => {
      if (stopped) return null;
-     return sourceTasks.get(candidate.url, async () => {
+     const id=await sourceTasks.get(candidate.url, async () => {
      const known = sourceImages.get(candidate.url);
      if (known) {report.metrics.reusedImageSources=(report.metrics.reusedImageSources??0)+1;return known.id;}
      if (imageAttempts >= maxImages) { report.metrics.imageLimitOmissions = (report.metrics.imageLimitOmissions ?? 0) + 1; return null; }
@@ -150,12 +159,15 @@ async function main() {
       return image.id;
      } catch { report.errors.push({ url: candidate.url, stage: 'image', message: 'Image download or hashing failed' }); return null; }
      }, () => { report.metrics.reusedImageSources = (report.metrics.reusedImageSources ?? 0) + 1; });
+     if(id&&!property.imageIds.includes(id))property.imageIds.push(id);await progress.update(site.slug,report);return id;
     });
+    if(imageIds.some(id=>id===null))galleryFailed=true;
     property.imageIds = imageIds.filter((id): id is string => id !== null);
     property.imageIds = [...new Set(property.imageIds)];
     if (imageIds.every(id => id !== null)) galleryCache.set(galleryKey, property.imageIds);
     console.log(JSON.stringify({ stage: 'gallery', developer: site.name, completed: report.properties.length, total: Math.min(homes.length,maxProperties), development: development.name, home: home.name, images: images.length, uniqueImages: report.images.length }));
-   } catch { report.errors.push({ url: home.url, stage: 'gallery', message: 'House page or gallery extraction failed' }); }
+   } catch { galleryFailed=true;report.errors.push({ url: home.url, stage: 'gallery', message: 'House page or gallery extraction failed' }); }
+   await updateGallery(home.url,galleryFailed?'failed':'completed');
    await writeReport(folder, report);
   });
   report.metrics.imagesAttempted = imageAttempts;
@@ -163,15 +175,17 @@ async function main() {
   report.metrics.matchedImages = report.images.filter(i => i.verdict?.matches).length;
   report.metrics.developmentLimitOmissions = values.development ? 0 : Math.max(0, all.length - urls.length);
   report.status = stopped ? 'cancelled' : report.errors.length || report.metrics.pendingImages || report.metrics.propertyLimitOmissions || report.metrics.imageLimitOmissions || report.metrics.developmentLimitOmissions ? 'completed_with_gaps' : 'completed';
+  report.crawlProgress!.status=stopped?'stopped':report.errors.some(e=>['image','gallery','development','source'].includes(e.stage))?'failed':'completed';report.crawlProgress!.currentDevelopments=[];await progress.update(site.slug,report,true);
   report.completedAt = new Date().toISOString(); await writeReport(folder, report); await atomic(folder + '/checkpoint.json', report);
   console.log(JSON.stringify({ stage: 'finished', status: report.status, developments: report.developments.length, properties: report.properties.length, uniqueImages: report.images.length, matches: report.metrics.matchedImages, errors: report.errors.length, output: folder }));
  } catch (error) {
+  report.crawlProgress!.status='failed';report.crawlProgress!.currentDevelopments=[];await progress.update(site.slug,report,true);
   report.status = 'failed'; report.completedAt = new Date().toISOString();
   const message = error instanceof Error && /^(HTTP \d+|No development URLs found\.|robots.txt disallows crawling\.)$/.test(error.message) ? error.message : 'Source discovery failed; no negative classification inferred.';
   report.errors.push({url:site.sitemap,stage:'source',message});
   await writeReport(folder,report);
   console.log(JSON.stringify({stage:'finished',developer:site.name,status:report.status,errors:report.errors.length,output:folder}));
   throw error;
- } finally { if (sql) await sql.end(); await lock.close(); const { unlink } = await import('node:fs/promises'); await unlink(folder + '/.lock'); }
+ } finally { await progress.close();if (sql) await sql.end(); await lock.close(); const { unlink } = await import('node:fs/promises'); await unlink(folder + '/.lock'); }
 }
 main().catch(error => { console.error(error instanceof Error && /^(Set GEMINI|All-images|Only Bellway|Invalid crawl|Output must|This output|Development is|No development|robots.txt)/.test(error.message) ? error.message : 'Crawl failed; credentials and raw provider responses withheld.'); process.exitCode = 1; });
