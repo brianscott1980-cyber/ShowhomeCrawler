@@ -15,6 +15,7 @@ beforeAll(async()=>{
  await db.exec('create view showhome_web.gallery_card_index as select * from showhome_web.gallery_cards');
  await db.exec(await readFile('supabase/migrations/20261009000100_image_furnishings.sql','utf8'));
  await db.exec(await readFile('supabase/migrations/20261010000100_generic_exterior_flags.sql','utf8'));
+ await db.exec(await readFile('supabase/migrations/20261010000200_gallery_publication_summaries.sql','utf8'));
  await db.exec(`insert into showhome_web.directory_cards(kind,key,name,href,collection_slugs,building_name,category,payload) values ('buildings','house','House','/buildings/alpha/house','{alpha}','House',null,'{}'),('interiors','bedroom','Bedroom','/interiors/bedroom','{alpha}',null,'Bedroom','{}')`);
  await db.exec(`insert into showhome_web.builders(slug,name,website_url) values('alpha','Alpha','https://example.com');
  insert into showhome_web.developments(key,builder_slug,source_url,name,display_name,geography) values('North','alpha','North','North','North','{"area":"North"}'),('South','alpha','South','South','South','{"area":"South"}');

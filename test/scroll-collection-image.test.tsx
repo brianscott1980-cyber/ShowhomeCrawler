@@ -53,6 +53,6 @@ it('preloads and decodes adjacent images before the card reaches the viewport',a
  try{
   await act(async()=>root.render(<ScrollCollectionImage images={[{src:'/one.jpg',alt:'One',roomType:'Bedroom'},{src:'/two.jpg',alt:'Two',roomType:'Kitchen'}]} image="/one.jpg" description="" layout="compact:cards"/>));
   await act(async()=>notify?.([{isIntersecting:true}] as IntersectionObserverEntry[],{} as IntersectionObserver));
-  expect(margin).toBe('800px 0px');expect(warmed).toHaveLength(1);expect(warmed[0].src).toContain('two.jpg');expect(warmed[0].sizes).toContain('25vw');expect(warmed[0].fetchPriority).toBe('auto');expect(warmed[0].decode).toHaveBeenCalledOnce();
+  expect(margin).toBe('800px 0px');expect(warmed).toHaveLength(1);expect(warmed[0].src).toContain('two.jpg');expect(warmed[0].sizes).toContain('25vw');expect(warmed[0].fetchPriority).toBe('low');expect(warmed[0].decode).toHaveBeenCalledOnce();
  }finally{await act(async()=>root.unmount());vi.unstubAllGlobals();}
 });

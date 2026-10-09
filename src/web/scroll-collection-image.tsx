@@ -84,7 +84,7 @@ export function ScrollCollectionImage({images,image,description,layout,caption=f
    for(const index of new Set([collectionIndex(slide.index,1,items.length),collectionIndex(slide.index,-1,items.length)])){
     const next=items[index]!;
     const props=getImageProps({src:optimizedImageSource(next.src),alt:'',fill:true,sizes,unoptimized:next.kind==='logo'}).props;
-    const preload=new Image();preload.decoding='async';preload.fetchPriority='auto';preload.sizes=sizes;
+    const preload=new Image();preload.decoding='async';preload.fetchPriority='low';preload.sizes=sizes;
     if(props.srcSet)preload.srcset=props.srcSet;
     preload.src=props.src;
     void preload.decode().catch(()=>{});

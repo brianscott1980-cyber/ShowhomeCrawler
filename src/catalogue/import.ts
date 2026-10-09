@@ -51,6 +51,7 @@ export async function importBuilder(sql:postgres.Sql,slug:string){
   await tx`select pg_advisory_xact_lock(hashtext(${slug}))`;
   const logo=logos.find(l=>l.slug===slug),office=offices.find(o=>o.slug===slug);
   await tx`insert into showhome_web.builders(slug,name,website_url,report_metadata,facts,logo_url,logo_background,office) values(${slug},${developer.name},${report.builder?.websiteUrl??developer.website},${tx.json(metadata)},${tx.json(builderFacts(slug))},${logo?'/logos/'+logo.file:null},${builderBrand(slug)?.logoBackground??'#fff'},${office?tx.json(office):null}) on conflict(slug) do update set name=excluded.name,website_url=excluded.website_url,report_metadata=excluded.report_metadata,facts=excluded.facts,logo_url=excluded.logo_url,logo_background=excluded.logo_background,office=excluded.office,imported_at=now()`;
+  await tx`insert into showhome_web.gallery_summary_refresh_queue(builder_slug) values(${slug}) on conflict(builder_slug) do nothing`;
   await tx`delete from showhome_web.developments where builder_slug=${slug}`;
   await tx`delete from showhome_web.buildings where builder_slug=${slug}`;
   await tx`delete from showhome_web.images where builder_slug=${slug}`;
