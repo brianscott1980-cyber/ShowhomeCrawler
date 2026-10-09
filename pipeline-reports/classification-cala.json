@@ -3,19 +3,19 @@
   "builder": "cala",
   "builderName": "Cala",
   "status": "running",
-  "updatedAt": "2026-10-09T00:26:46.700Z",
+  "updatedAt": "2026-10-09T00:31:44.940Z",
   "currentDevelopments": [
-    "Ballagan Woods, Killearn, Stirling"
+    "Barden Croft, Tonbridge, Kent"
   ],
   "totals": {
-    "completed": 842,
-    "failed": 3,
-    "pending": 2496,
+    "completed": 867,
+    "failed": 5,
+    "pending": 2469,
     "total": 3341,
     "images": 3341,
     "developments": 83,
     "developmentsCompleted": 3,
-    "structuredImages": 134
+    "structuredImages": 159
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 134
+      "count": 159
     }
   ],
   "developments": [
@@ -71,7 +71,7 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
       "name": "Ballagan Woods, Killearn, Stirling",
-      "status": "running",
+      "status": "needs attention",
       "completed": 73,
       "failed": 1,
       "pending": 0,
@@ -81,10 +81,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/barden-croft-tonbridge/availability-prices/",
       "name": "Barden Croft, Tonbridge, Kent",
-      "status": "pending",
-      "completed": 28,
-      "failed": 0,
-      "pending": 27,
+      "status": "running",
+      "completed": 53,
+      "failed": 2,
+      "pending": 0,
       "total": 55,
       "images": 55
     },
@@ -102,9 +102,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/birchwood-farnham/availability-prices/",
       "name": "Birchwood, Farnham, Surrey",
       "status": "pending",
-      "completed": 0,
+      "completed": 4,
       "failed": 0,
-      "pending": 68,
+      "pending": 64,
       "total": 68,
       "images": 68
     },
@@ -352,9 +352,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/enton-meadows-milford/availability-prices/",
       "name": "Enton Meadows, Milford, Surrey",
       "status": "pending",
-      "completed": 0,
+      "completed": 3,
       "failed": 0,
-      "pending": 47,
+      "pending": 44,
       "total": 47,
       "images": 47
     },
@@ -491,10 +491,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/langmead-place/availability-prices/",
       "name": "Langmead Place, West Sussex",
-      "status": "pending",
-      "completed": 0,
-      "failed": 0,
-      "pending": 49,
+      "status": "needs attention",
+      "completed": 7,
+      "failed": 1,
+      "pending": 41,
       "total": 49,
       "images": 49
     },
@@ -532,9 +532,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/maiden-view-woodchurch/availability-prices/",
       "name": "Maiden View, Woodchurch, Kent",
       "status": "pending",
-      "completed": 1,
+      "completed": 2,
       "failed": 0,
-      "pending": 55,
+      "pending": 54,
       "total": 56,
       "images": 56
     },
@@ -601,10 +601,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/new-monks-park-phase-2/availability-prices/",
       "name": "New Monks Park Phase 2, West Sussex",
-      "status": "pending",
-      "completed": 0,
-      "failed": 0,
-      "pending": 54,
+      "status": "needs attention",
+      "completed": 9,
+      "failed": 1,
+      "pending": 44,
       "total": 54,
       "images": 54
     },
@@ -621,10 +621,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
       "name": "Oakwood Park, Wimborne, Dorset",
-      "status": "pending",
-      "completed": 24,
-      "failed": 0,
-      "pending": 85,
+      "status": "needs attention",
+      "completed": 25,
+      "failed": 2,
+      "pending": 82,
       "total": 109,
       "images": 109
     },
@@ -672,9 +672,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/west-sussex/rosebrook-hambrook/availability-prices/",
       "name": "Rosebrook, Hambrook, West Sussex",
       "status": "pending",
-      "completed": 0,
+      "completed": 1,
       "failed": 0,
-      "pending": 69,
+      "pending": 68,
       "total": 69,
       "images": 69
     },
@@ -772,9 +772,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/east-sussex/the-oaks-wivelsfield/availability-prices/",
       "name": "The Oaks, Wivelsfield, East Sussex",
       "status": "pending",
-      "completed": 4,
+      "completed": 8,
       "failed": 0,
-      "pending": 65,
+      "pending": 61,
       "total": 69,
       "images": 69
     },
