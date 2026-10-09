@@ -1,4 +1,3 @@
-import {sharedBuildingExteriorPaths} from '../database/shared-building-exteriors';
 import {cache} from 'react';
 import {builderBrand} from './builder-brand';
 import {BuildingDevelopmentList} from './building-development-list';
@@ -12,11 +11,10 @@ function range(values:number[],money=false){
  return min===max?format(min):`${format(min)} – ${format(max)}`;
 }
 const buildingOverviewData=cache(async(slugs:string[],name:string)=>{
- const generic=(await sharedBuildingExteriorPaths()).map(path=>decodeURIComponent(path.replace(/^\/api\/assets\/[^/]+\//,'')));
  const [rows,{canonical}]=await Promise.all([
   websiteDatabase()`select g.price,g.bedrooms,g.plots,g.builder_slug,preview.path as preview_path,d.contact,d.postcode,d.country,d.geography,d.key as development_key,d.town,d.latitude,d.longitude,d.display_name as development,c.href,c.payload as card,b.logo_url,b.logo_background,b.name as builder from showhome_web.galleries g join showhome_web.buildings t on t.key=g.building_key join showhome_web.developments d on d.key=g.development_key join showhome_web.builders b on b.slug=g.builder_slug left join lateral (
  select i.path from showhome_web.galleries pg join showhome_web.gallery_image_links gi on gi.gallery_id=pg.internal_id join showhome_web.images i on i.internal_id=gi.image_id
- where pg.development_key=d.key and i.eligible and not(i.path=any(${generic}::text[])) and lower(coalesce(i.main_category,'')) not in ('floorplan','floor plan','uncategorised','other','infographic','illustration','logo','map','marketing image','promotional graphic','document','unknown','')
+ where pg.development_key=d.key and i.eligible and not i.is_generic_exterior and lower(coalesce(i.main_category,'')) not in ('floorplan','floor plan','uncategorised','other','infographic','illustration','logo','map','marketing image','promotional graphic','document','unknown','')
  and (lower(i.main_category) not in ('exterior','front elevation','facade') or pg.building_key=g.building_key)
  order by (pg.building_key=g.building_key and lower(i.main_category)='exterior') desc,(pg.building_key=g.building_key) desc,gi.position,i.catalogue_id limit 1
  ) preview on true left join showhome_web.directory_cards c on c.kind='locations' and c.development_url=d.source_url and c.builder_slug=g.builder_slug and c.is_ready where g.builder_slug=any(${slugs}::text[]) and lower(t.name)=lower(${name}) order by d.display_name`,

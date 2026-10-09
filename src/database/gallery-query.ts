@@ -1,4 +1,3 @@
-import {sharedBuildingExteriorPaths} from './shared-building-exteriors';
 import {colourPattern} from '../web/interior-tags';
 import {staticGalleryFacets} from './static-gallery-facets';
 import {staticGalleryCounts} from './static-gallery-counts';
@@ -14,11 +13,11 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const isAll=scope.kind==='interiors'&&(scope.href==='/interiors/all'||scope.href==='/interiors');
  const [reference]=favourite||isAll?[{collection_slugs:[],category:null,building_name:null}]:await sql`select * from showhome_web.directory_cards where kind=${scope.kind} and href=${scope.href}`;
  if(!reference)throw new Error('Gallery not found');
- const scopeConditions=favourite?[`i.image_id in(select jsonb_array_elements_text(${p(sql.json(input.favourites??[]))}::jsonb))`]:isAll?['i.eligible']:[`i.builder_slug in(select jsonb_array_elements_text(${p(sql.json(reference.collection_slugs))}::jsonb))`,'i.eligible'];
+ const scopeConditions=favourite?[`i.image_id in(select jsonb_array_elements_text(${p(sql.json(input.favourites??[]))}::jsonb))`]:isAll?['i.eligible']:[`i.builder_slug=any(${p(reference.collection_slugs)}::text[])`,'i.eligible'];
  scopeConditions.push("nullif(trim(lower(i.category)), '') is not null and lower(trim(i.category)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')");
  if(scope.kind==='interiors')scopeConditions.push("lower(trim(i.category)) not in ('exterior','floorplan','floor plan')");
  if(scope.kind==='interiors'&&reference.category)scopeConditions.push(`i.category=${p(reference.category)}`);
- if(scope.kind==='buildings'){const generic=(await sharedBuildingExteriorPaths()).map(path=>path.split('/').at(-1)!.replace(/\.[^.]+$/,''));if(generic.length)scopeConditions.push(`not(i.image_id=any(${p(generic)}::text[]))`);}
+ if(scope.kind==='buildings')scopeConditions.push('not exists(select 1 from showhome_web.images exterior where exterior.builder_slug=i.builder_slug and exterior.catalogue_id=i.image_id and exterior.is_generic_exterior)');
  const baseBuildingParam=scope.kind==='buildings'?p(reference.building_name):'';
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);
  if(scope.kind==='buildings')scopeConditions.push(`t.building_name=lower(${baseBuildingParam}::text)`);
@@ -45,7 +44,10 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const homesProjection=`coalesce((select jsonb_agg(h) from jsonb_array_elements(i.payload->'homes') h where r.building_name is null or lower(h->>'buildingName')=r.building_name),'[]'::jsonb)`;
  if(fixed.colour)scopeConditions.push(`tags.colour_tags && array(select jsonb_array_elements_text(${p(sql.json(selectedValues(fixed.colour)))}::jsonb))`);
  const source=`select case when cardinality(i.building_names)>1 then i.uid||':house:'||t.building_name else i.uid end as uid,i.uid as image_uid,i.image_id,t.building_name,i.builder_slug,i.builder_name,i.category,i.room${tagFields}${structuredFields},${filters.q?'i.search_text':"''::text as search_text"} from showhome_web.gallery_card_index i left join lateral(select distinct lower(name) as building_name from unnest(i.building_names) name) t on true ${tagJoin} where ${scopeConditions.join(' and ')}`;
- const homeSource=`select s.uid,h.gallery_key,h.builder_slug,h.url,h.bedrooms,h.price,h.development_url,h.development,h.building_name,h.areas from showhome_web.gallery_memberships h join source s on s.image_uid=h.uid and (s.building_name is null or h.building_name=s.building_name)`;
+ // For single-builder scopes, resolve memberships from each image using the
+ // existing identity/link indexes rather than joining the full catalogue first.
+ const memberships=!isAll&&!favourite&&reference.collection_slugs.length===1?`lateral(select h.* from showhome_web.gallery_memberships h where h.uid=s.image_uid and (s.building_name is null or h.building_name=s.building_name) offset 0)`:'showhome_web.gallery_memberships';
+ const homeSource=`select s.uid,h.gallery_key,h.builder_slug,h.url,h.bedrooms,h.price,h.development_url,h.development,h.building_name,h.areas from source s join ${memberships} h on s.image_uid=h.uid and (s.building_name is null or h.building_name=s.building_name)`;
  const ctes=`source as (${source}),homes as (${homeSource})`;
  const baseValues=values.slice();
  const selection=(field:string,key:string,omit:string)=>{const selected=selectedValues(filters[key]??'');return omit===key||!selected.length?'true':`${field} in(select jsonb_array_elements_text(${p(sql.json(selected))}::jsonb))`;};

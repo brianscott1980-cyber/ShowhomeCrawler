@@ -14,6 +14,7 @@ beforeAll(async()=>{
  for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
  await db.exec('create view showhome_web.gallery_card_index as select * from showhome_web.gallery_cards');
  await db.exec(await readFile('supabase/migrations/20261009000100_image_furnishings.sql','utf8'));
+ await db.exec(await readFile('supabase/migrations/20261010000100_generic_exterior_flags.sql','utf8'));
  await db.exec(`insert into showhome_web.directory_cards(kind,key,name,href,collection_slugs,building_name,category,payload) values ('buildings','house','House','/buildings/alpha/house','{alpha}','House',null,'{}'),('interiors','bedroom','Bedroom','/interiors/bedroom','{alpha}',null,'Bedroom','{}')`);
  await db.exec(`insert into showhome_web.builders(slug,name,website_url) values('alpha','Alpha','https://example.com');
  insert into showhome_web.developments(key,builder_slug,source_url,name,display_name,geography) values('North','alpha','North','North','North','{"area":"North"}'),('South','alpha','South','South','South','{"area":"South"}');
@@ -209,4 +210,14 @@ it('looks up normalised furnishing labels before pagination and supports multipl
   const items=await queryFurnishings(sql);
   expect(items.find(item=>item.name==='Bedding')?.count).toBe(1);
  }finally{await db.exec("update showhome_web.images set metadata='{}' where catalogue_id in ('b','orphan')");}
+});
+
+it('excludes stored generic exterior flags only from building galleries',async()=>{
+ await db.exec("update showhome_web.images set is_generic_exterior=true where catalogue_id='b'");
+ try{
+  const building=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'}},sql);
+  expect(building.images.some(image=>image.id==='b')).toBe(false);
+  const interiors=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'}},sql);
+  expect(interiors.images.some(image=>image.id==='b')).toBe(true);
+ }finally{await db.exec("update showhome_web.images set is_generic_exterior=false where catalogue_id='b'");}
 });
