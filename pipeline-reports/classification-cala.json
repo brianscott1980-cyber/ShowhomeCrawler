@@ -3,19 +3,19 @@
   "builder": "cala",
   "builderName": "Cala",
   "status": "running",
-  "updatedAt": "2026-10-09T00:03:44.000Z",
+  "updatedAt": "2026-10-09T00:11:46.144Z",
   "currentDevelopments": [
-    "Aurs Meadows, Barrhead, East Renfrewshire"
+    "Aylett's Green, Kelvedon, Essex"
   ],
   "totals": {
-    "completed": 776,
-    "failed": 1,
-    "pending": 2564,
+    "completed": 828,
+    "failed": 2,
+    "pending": 2511,
     "total": 3341,
     "images": 3341,
     "developments": 83,
     "developmentsCompleted": 3,
-    "structuredImages": 68
+    "structuredImages": 120
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 68
+      "count": 120
     }
   ],
   "developments": [
@@ -51,7 +51,7 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
       "name": "Aurs Meadows, Barrhead, East Renfrewshire",
-      "status": "running",
+      "status": "needs attention",
       "completed": 87,
       "failed": 1,
       "pending": 0,
@@ -61,10 +61,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/",
       "name": "Aylett's Green, Kelvedon, Essex",
-      "status": "pending",
-      "completed": 14,
-      "failed": 0,
-      "pending": 53,
+      "status": "running",
+      "completed": 66,
+      "failed": 1,
+      "pending": 0,
       "total": 67,
       "images": 67
     },
@@ -202,9 +202,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-finchwood-park-the-ridge-finchampstead/availability-prices/",
       "name": "Cala at Finchwood Park - The Ridge, Finchampstead, Berkshire",
       "status": "pending",
-      "completed": 1,
+      "completed": 2,
       "failed": 0,
-      "pending": 45,
+      "pending": 44,
       "total": 46,
       "images": 46
     },
@@ -212,9 +212,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/east-england/peterborough/cala-at-hampton-lakes/availability-prices/",
       "name": "Cala at Hampton Lakes, Peterborough",
       "status": "pending",
-      "completed": 0,
+      "completed": 1,
       "failed": 0,
-      "pending": 27,
+      "pending": 26,
       "total": 27,
       "images": 27
     },
@@ -422,9 +422,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/ingatestone-grove-ingatestone/availability-prices/",
       "name": "Ingatestone Grove, Ingatestone, Essex",
       "status": "pending",
-      "completed": 2,
+      "completed": 3,
       "failed": 0,
-      "pending": 88,
+      "pending": 87,
       "total": 90,
       "images": 90
     },
@@ -442,9 +442,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/kings-barton-at-monarchs-mead/availability-prices/",
       "name": "Kings Barton at Monarchs Mead, Hampshire",
       "status": "pending",
-      "completed": 0,
+      "completed": 1,
       "failed": 0,
-      "pending": 73,
+      "pending": 72,
       "total": 73,
       "images": 73
     },
@@ -592,9 +592,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/east-england/cambridgeshire/netherhall-gardens-cambridge/availability-prices/",
       "name": "Netherhall Gardens, Cambridge, Cambridgeshire",
       "status": "pending",
-      "completed": 4,
+      "completed": 6,
       "failed": 0,
-      "pending": 133,
+      "pending": 131,
       "total": 137,
       "images": 137
     },

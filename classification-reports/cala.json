@@ -1,8 +1,8 @@
 {
   "builder": "cala",
-  "updatedAt": "2026-10-09T00:06:07.008Z",
+  "updatedAt": "2026-10-09T00:24:50.677Z",
   "publication": "published",
-  "development": "Aurs Meadows, Barrhead, East Renfrewshire",
+  "development": "Aylett's Green, Kelvedon, Essex",
   "groups": [
     {
       "development": "Chariot Fields, Biddenham, Bedfordshire",
@@ -672,15 +672,15 @@
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Grange · Plot 68",
-      "completed": 14,
-      "failed": 1,
+      "completed": 15,
+      "failed": 0,
       "pending": 0
     },
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Grange · Plot 72",
-      "completed": 14,
-      "failed": 1,
+      "completed": 15,
+      "failed": 0,
       "pending": 0
     },
     {
@@ -1092,8 +1092,8 @@
     {
       "development": "Netherhall Gardens, Cambridge, Cambridgeshire",
       "buildingType": "Huntingdon · Plot 14",
-      "completed": 1,
-      "failed": 14,
+      "completed": 2,
+      "failed": 13,
       "pending": 0
     },
     {
@@ -1155,8 +1155,8 @@
     {
       "development": "Netherhall Gardens, Cambridge, Cambridgeshire",
       "buildingType": "Fulbourn · Plot 91",
-      "completed": 1,
-      "failed": 12,
+      "completed": 3,
+      "failed": 10,
       "pending": 0
     },
     {
@@ -1176,8 +1176,8 @@
     {
       "development": "Netherhall Gardens, Cambridge, Cambridgeshire",
       "buildingType": "Huntingdon · Plot 188",
-      "completed": 1,
-      "failed": 14,
+      "completed": 2,
+      "failed": 13,
       "pending": 0
     },
     {
@@ -1190,8 +1190,8 @@
     {
       "development": "Netherhall Gardens, Cambridge, Cambridgeshire",
       "buildingType": "Huntingdon · Plot 194",
-      "completed": 1,
-      "failed": 14,
+      "completed": 2,
+      "failed": 13,
       "pending": 0
     },
     {
@@ -1204,8 +1204,8 @@
     {
       "development": "Netherhall Gardens, Cambridge, Cambridgeshire",
       "buildingType": "Hemingford · Plot 196",
-      "completed": 0,
-      "failed": 12,
+      "completed": 1,
+      "failed": 11,
       "pending": 0
     },
     {
@@ -1218,15 +1218,15 @@
     {
       "development": "Cala at Hampton Lakes, Peterborough",
       "buildingType": "Cottesmore · Plot 9",
-      "completed": 0,
-      "failed": 18,
+      "completed": 1,
+      "failed": 17,
       "pending": 0
     },
     {
       "development": "Cala at Hampton Lakes, Peterborough",
       "buildingType": "Witham · Plot 91",
-      "completed": 0,
-      "failed": 10,
+      "completed": 1,
+      "failed": 9,
       "pending": 0
     },
     {
@@ -2527,15 +2527,15 @@
     {
       "development": "Cala at Finchwood Park - The Ridge, Finchampstead, Berkshire",
       "buildingType": "Fir · Plot 994",
-      "completed": 0,
-      "failed": 10,
+      "completed": 1,
+      "failed": 9,
       "pending": 0
     },
     {
       "development": "Cala at Finchwood Park - The Ridge, Finchampstead, Berkshire",
       "buildingType": "Fir · Plot 995",
-      "completed": 0,
-      "failed": 10,
+      "completed": 1,
+      "failed": 9,
       "pending": 0
     },
     {
@@ -2828,43 +2828,43 @@
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Wooler · Plot 2",
-      "completed": 0,
-      "failed": 15,
+      "completed": 15,
+      "failed": 0,
       "pending": 0
     },
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Newton · Plot 60",
-      "completed": 0,
-      "failed": 15,
+      "completed": 14,
+      "failed": 1,
       "pending": 0
     },
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Embleton · Plot 66",
-      "completed": 0,
-      "failed": 15,
+      "completed": 15,
+      "failed": 0,
       "pending": 0
     },
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Embleton · Plot 67",
-      "completed": 0,
-      "failed": 15,
+      "completed": 15,
+      "failed": 0,
       "pending": 0
     },
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Carwinley · Plot 70",
-      "completed": 0,
-      "failed": 15,
+      "completed": 15,
+      "failed": 0,
       "pending": 0
     },
     {
       "development": "Aylett's Green, Kelvedon, Essex",
       "buildingType": "The Embleton · Plot 80",
-      "completed": 0,
-      "failed": 15,
+      "completed": 15,
+      "failed": 0,
       "pending": 0
     },
     {
@@ -3059,8 +3059,8 @@
     {
       "development": "Ingatestone Grove, Ingatestone, Essex",
       "buildingType": "Everglade (Bespoke) · Plot 42",
-      "completed": 0,
-      "failed": 10,
+      "completed": 1,
+      "failed": 9,
       "pending": 0
     },
     {
@@ -3444,8 +3444,8 @@
     {
       "development": "Kings Barton at Monarchs Mead, Hampshire",
       "buildingType": "Fir – Detached · Plot 829",
-      "completed": 0,
-      "failed": 9,
+      "completed": 1,
+      "failed": 8,
       "pending": 0
     },
     {
@@ -20735,7 +20735,33 @@
     {
       "id": "40604f90ab5dd48ccee90fb108a408cce38845424ead125f4a1e91178a94ae66",
       "path": "images/40604f90ab5dd48ccee90fb108a408cce38845424ead125f4a1e91178a94ae66.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Infographic",
+        "subCategory": "",
+        "description": "Predicted Energy Assessment chart showing current energy rating of 86, classified as B grade (81-91), with a scale from A (92 plus) to G (1-20).",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:47.460Z",
+        "classificationStatus": "completed",
+        "processingMs": 2139,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "945011b23d5f9c33c0f31cdc69a1e180e3537e4228582f908390d6df393079c9",
@@ -20900,7 +20926,129 @@
     {
       "id": "21aed3014e85013a466aef2a9ba37ed0a4d76b859bd6258c91b83f3274f50128",
       "path": "images/21aed3014e85013a466aef2a9ba37ed0a4d76b859bd6258c91b83f3274f50128.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "desk",
+            "colours": [
+              "black",
+              "gold"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "black",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant pot",
+            "colours": [
+              "dark grey",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "picture frame",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Home Office",
+        "description": "A modern home office with a black desk and gold legs, a beige upholstered chair, and tropical-themed wall art. The room has white walls, a beige carpet, and a window with a beige roman blind. A laptop is on the desk, and potted plants add greenery.",
+        "objects": [
+          "desk",
+          "chair",
+          "laptop",
+          "vase",
+          "plant",
+          "picture frame",
+          "radiator",
+          "window",
+          "curtain",
+          "painting"
+        ],
+        "colours": [
+          "white",
+          "beige",
+          "black",
+          "gold",
+          "dark grey",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "solid curtain",
+          "beige curtain"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "modern desk",
+          "upholstered chair",
+          "tropical art",
+          "potted plants"
+        ],
+        "chairs": [
+          "chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": true,
+        "classifiedAt": "2026-10-09T00:10:42.217Z",
+        "classificationStatus": "completed",
+        "processingMs": 5597,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "solid curtain · beige curtain"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "7df8772af37eda0f1291551f306f1b87a83906baa1400794e040c797be63475d",
@@ -29458,7 +29606,139 @@
     {
       "id": "3b23ff2dec33bdb424e9b230278542a91b1ec3f1f0c3d4c9a1d91a805b45dd9b",
       "path": "images/3b23ff2dec33bdb424e9b230278542a91b1ec3f1f0c3d4c9a1d91a805b45dd9b.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tray",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "teapot",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a bed, headboard, lamps, side table, tray, teapot, and cushions. Walls are painted white with blue floral wallpaper. Ceiling and floor are white and beige respectively. The room has a window with blinds.",
+        "objects": [
+          "bed",
+          "headboard",
+          "lamp",
+          "side table",
+          "tray",
+          "teapot",
+          "cushions"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "beige"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Floral wallpaper",
+          "Feature wallpaper",
+          "Blue wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [
+          "Striped bedding",
+          "Blue bedding",
+          "Floral cushions",
+          "Blue cushions"
+        ],
+        "furnishingTags": [
+          "White lamp",
+          "Round side table",
+          "White tray",
+          "Blue teapot",
+          "Blue cushions"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:09:38.919Z",
+        "classificationStatus": "completed",
+        "processingMs": 5936,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Floral wallpaper · Feature wallpaper · Blue wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "2fa4b0153d36b5d4d7e1235b735f558a60ce6c0fe8b693852b9074139cc62229",
@@ -32707,7 +32987,33 @@
     {
       "id": "decaffceb7aad8e1b0144ef419260a31231892625e5c6a6150135d96d25d40bd",
       "path": "images/decaffceb7aad8e1b0144ef419260a31231892625e5c6a6150135d96d25d40bd.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "Photorealistic architectural CGI of a brick house with white windows and a black front door, set against a twilight sky. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:11:46.135Z",
+        "classificationStatus": "completed",
+        "processingMs": 2250,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "4cdcf39175b9d9594b5936c9eff6377a7b68a069999b7813b9a2462ddce1a369",
@@ -32855,7 +33161,141 @@
     {
       "id": "7a0b565b5f1dc92e3cea21f2b92ffd82d0d851355dfe364cced187ad5b3af997",
       "path": "images/7a0b565b5f1dc92e3cea21f2b92ffd82d0d851355dfe364cced187ad5b3af997.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "beige",
+              "green",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "black",
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "side tables",
+            "colours": [
+              "black",
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A spacious living room with beige walls, ceiling, and carpet. Two beige sofas with green and beige cushions are positioned facing each other. A black metal coffee table with wood top sits in the center. Side tables with black metal frames and wood tops flank the sofas. A hanging lamp with gold and black accents illuminates the space. Brown curtains cover the windows. An armchair with black and white stripes is partially visible. A wooden cabinet with a TV on top is on the left wall. Decorative plants and candles are placed on side tables and the coffee table.",
+        "objects": [
+          "sofa",
+          "cushions",
+          "coffee table",
+          "side tables",
+          "lamp",
+          "curtains",
+          "armchair",
+          "cabinet",
+          "tv",
+          "plants",
+          "candles"
+        ],
+        "colours": [
+          "beige",
+          "black",
+          "white",
+          "green",
+          "brown",
+          "gold"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "brown curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "beige sofa",
+          "black metal coffee table",
+          "black metal side tables",
+          "gold and black lamp",
+          "black and white striped armchair",
+          "wooden cabinet"
+        ],
+        "chairs": [
+          "armchair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:11:10.169Z",
+        "classificationStatus": "completed",
+        "processingMs": 6609,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "brown curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "f7a9c46af12d62d2d4b6b4628dcc8ad35abdfe579ebaeb62dc62505caab1f1d1",
@@ -32997,7 +33437,80 @@
     {
       "id": "f575b319a4fb1061e28d834dab26e8d614362b0ec69b23caa65d215ffdf62dbc",
       "path": "images/f575b319a4fb1061e28d834dab26e8d614362b0ec69b23caa65d215ffdf62dbc.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "wall",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark brown"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "chair",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "table",
+            "colours": [
+              "dark brown"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A promotional image for a 'Part Exchange' event by CALA, featuring a man and woman in a modern office setting with a large black and white CALA sign on the wall. The room has white walls and ceiling, a dark brown floor, and includes a white chair and a dark brown table.",
+        "objects": [
+          "chair",
+          "table",
+          "sign"
+        ],
+        "colours": [
+          "white",
+          "dark brown",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:38.239Z",
+        "classificationStatus": "completed",
+        "processingMs": 3703,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "752a3fa80d151d474ad9be6cb72382c29ccf8d8d958f6a6ea67589dbc7b2bbff",
@@ -33136,182 +33649,4575 @@
     {
       "id": "3d3d54dfe4e5a52d2359199af4e04e8f66a3f1f14470a307d882da3cddcdd8e4",
       "path": "images/3d3d54dfe4e5a52d2359199af4e04e8f66a3f1f14470a307d882da3cddcdd8e4.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "kitchen cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "oven",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "table",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen",
+        "description": "A modern kitchen with white cabinets, light wood flooring, and a wooden dining table with chairs. The walls and ceiling are white. The room has recessed lighting and a window with blinds. A glass door leads to an exterior brick area.",
+        "objects": [
+          "oven",
+          "cabinets",
+          "countertops",
+          "sink",
+          "table",
+          "chair",
+          "curtains",
+          "window",
+          "door",
+          "blinds"
+        ],
+        "colours": [
+          "white",
+          "light wood",
+          "black",
+          "beige"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "white curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "beige chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:55.797Z",
+        "classificationStatus": "completed",
+        "processingMs": 5629,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "white curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "7d97c74ba755144178247b83da1da3352f88e9cb8f9bf66ea1ecde1848444be2",
       "path": "images/7d97c74ba755144178247b83da1da3352f88e9cb8f9bf66ea1ecde1848444be2.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "countertop",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "watering can",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "shelf",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Utility Room",
+        "description": "A modern kitchen with white cabinets, a grey countertop, and beige walls. The room includes a sink, window with blinds, and decorative plants.",
+        "objects": [
+          "cabinet",
+          "sink",
+          "window",
+          "plant",
+          "watering can",
+          "shelf"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "grey",
+          "black",
+          "green",
+          "light wood"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:11:15.521Z",
+        "classificationStatus": "completed",
+        "processingMs": 5059,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "165b6c205cabf8356015a75f16c5f00ec2a9dd3c75c3bfa44d852111eb660824",
       "path": "images/165b6c205cabf8356015a75f16c5f00ec2a9dd3c75c3bfa44d852111eb660824.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "",
+        "description": "Photorealistic architectural CGI of a modern two-story house with cream exterior walls, dark grey roof tiles, red brick chimneys, white-framed windows, and a light blue front door. The house has a bay window, a small porch, and a neatly trimmed hedge. The surrounding area includes a paved driveway, a lawn, and neighboring houses under a blue sky with clouds.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:09:08.684Z",
+        "classificationStatus": "completed",
+        "processingMs": 2430,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "27e7aee9bf72cfb50231d26e62470958d55f55140d423f3f69a6d53cae082500",
       "path": "images/27e7aee9bf72cfb50231d26e62470958d55f55140d423f3f69a6d53cae082500.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "towel warmer",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel rack",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel",
+            "colours": [
+              "white",
+              "dark green"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel",
+            "colours": [
+              "white",
+              "dark grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "bottles",
+            "colours": [
+              "dark brown"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with beige tiled walls, a white sink, a white toilet, and a towel warmer. The walls are painted beige, the floor is dark brown, and there is a window with blinds. Decorative elements include a mirror, a vase with flowers, and towels in white and dark green.",
+        "objects": [
+          "sink",
+          "toilet",
+          "towel warmer",
+          "mirror",
+          "window",
+          "towel rack",
+          "towel",
+          "bottles",
+          "vase",
+          "plant"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "dark brown",
+          "silver",
+          "dark green",
+          "dark grey",
+          "dark brown",
+          "clear",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Floral wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:49.859Z",
+        "classificationStatus": "completed",
+        "processingMs": 7030,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Floral wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "531d0a4ed71b83c4a015a43bbc7290f4270956f5b2a767b88edb9439cb3c0df9",
       "path": "images/531d0a4ed71b83c4a015a43bbc7290f4270956f5b2a767b88edb9439cb3c0df9.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "kitchen backsplash",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "dining chairs",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sofa",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "light wood",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "area rug",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "light grey",
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "white",
+              "black",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "Modern open-plan living and dining area with white walls, white ceiling, white tiled floor, and light wood accents. Includes a grey sofa, black dining table and chairs, coffee table, area rug, and artwork. Curtains are beige. Lighting includes a gold lamp and track lighting. No television or computer visible.",
+        "objects": [
+          "dining table",
+          "dining chairs",
+          "sofa",
+          "coffee table",
+          "area rug",
+          "cushions",
+          "lamp",
+          "artwork",
+          "curtains",
+          "cabinets"
+        ],
+        "colours": [
+          "white",
+          "black",
+          "light wood",
+          "light grey",
+          "beige",
+          "gold"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "solid curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "dining chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:09:45.898Z",
+        "classificationStatus": "completed",
+        "processingMs": 6887,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "solid curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "4765eb206a7c8d6720ab8741caa03dfc6136fef242ee15401f09c46e0c89adc2",
       "path": "images/4765eb206a7c8d6720ab8741caa03dfc6136fef242ee15401f09c46e0c89adc2.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Other",
+        "description": "Photorealistic architectural render of modern residential houses with brick and painted facades under a blue sky.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:56.259Z",
+        "classificationStatus": "completed",
+        "processingMs": 1997,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "d77988743442b32f968bc8b3fef3f841fa5c3d1a8941b18d2097268be75ee8a6",
       "path": "images/d77988743442b32f968bc8b3fef3f841fa5c3d1a8941b18d2097268be75ee8a6.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "cabinets",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sofa",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "rug",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "Modern living room with dining area, featuring white walls, white tiled floor, grey furniture, and beige curtains. Includes a dining table with black chairs, a sofa, an armchair, a rug, and a lamp.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "sofa",
+          "armchair",
+          "rug",
+          "lamp",
+          "artwork",
+          "cabinets",
+          "curtains",
+          "windows"
+        ],
+        "colours": [
+          "white",
+          "black",
+          "grey",
+          "beige",
+          "gold"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "solid curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "black chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:18.250Z",
+        "classificationStatus": "completed",
+        "processingMs": 6008,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "solid curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "b3fd996eb5ddde38db05d378e7c9b45cdf5b04efead0c328d6bb7e8297c742d3",
       "path": "images/b3fd996eb5ddde38db05d378e7c9b45cdf5b04efead0c328d6bb7e8297c742d3.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "staircase",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "console table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "clear glass",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "basket",
+            "colours": [
+              "natural"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "clear glass",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "book",
+            "colours": [
+              "green",
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Hallway",
+        "subCategory": "Hallway",
+        "description": "A hallway with light-colored walls and ceiling, light brown flooring, and a staircase. Furnishings include a black console table, a black-framed mirror, beige chairs, a black and glass lamp, woven baskets, a clear glass vase, a green book, and a white decorative item. The walls have vertical paneling.",
+        "objects": [
+          "console table",
+          "mirror",
+          "chairs",
+          "lamp",
+          "basket",
+          "vase",
+          "book",
+          "staircase",
+          "door",
+          "window",
+          "light fixture",
+          "wall paneling"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "black",
+          "light brown",
+          "green",
+          "natural"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Vertical paneling"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Geometric lamp",
+          "Woven basket",
+          "Beige chair",
+          "Black console table"
+        ],
+        "chairs": [
+          "beige chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:11:34.730Z",
+        "classificationStatus": "completed",
+        "processingMs": 6359,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Vertical paneling",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "6dce2c8fc9882333b6c620bbb7e7541eed15530ff0b82b912e608f3bfe30e52e",
       "path": "images/6dce2c8fc9882333b6c620bbb7e7541eed15530ff0b82b912e608f3bfe30e52e.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "clear glass",
+              "gold"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sideboard",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "rug",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "blanket",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "light grey",
+              "blue pattern"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "blue",
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "tv",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A bright, modern living room with a light grey sofa, glass coffee table, wooden sideboard, and large windows. The walls are white, the floor is light wood, and there is a patterned rug. Decor includes cushions, a blue blanket, and potted plants.",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "sideboard",
+          "lamp",
+          "curtains",
+          "rug",
+          "blanket",
+          "cushions",
+          "planters",
+          "tv"
+        ],
+        "colours": [
+          "white",
+          "light grey",
+          "light wood",
+          "blue",
+          "gold",
+          "beige",
+          "green"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Geometric wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains"
+        ],
+        "fabricTags": [
+          "Solid cushions",
+          "Patterned cushions"
+        ],
+        "furnishingTags": [
+          "Glass coffee table",
+          "Wood sideboard",
+          "Beige lamp",
+          "Solid curtains",
+          "Patterned rug",
+          "Solid blanket",
+          "Solid cushions",
+          "Solid planters",
+          "Flat-screen TV"
+        ],
+        "chairs": [
+          "wicker chairs"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:03.992Z",
+        "classificationStatus": "completed",
+        "processingMs": 7410,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Geometric wallpaper",
+        "curtains": "Solid curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "6ee8584f224d724c4c26239f05cfc8da5b8010249aa974a28198d91339828e77",
       "path": "images/6ee8584f224d724c4c26239f05cfc8da5b8010249aa974a28198d91339828e77.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "ottoman",
+            "colours": [
+              "grey",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "rug",
+            "colours": [
+              "grey",
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "white",
+              "grey",
+              "beige"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "black",
+              "white",
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with a white sofa, brown armchairs, and a light-colored rug. Walls are white and light grey, ceiling is white, and floor is light beige. Furniture includes a white cabinet, round ottomans, and a chandelier with gold accents. Pillows and artwork add decorative elements.",
+        "objects": [
+          "sofa",
+          "chairs",
+          "ottoman",
+          "cabinet",
+          "lamp",
+          "rug",
+          "pillows",
+          "artwork",
+          "curtains"
+        ],
+        "colours": [
+          "white",
+          "brown",
+          "grey",
+          "beige",
+          "gold"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "beige curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "brown armchairs"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:09:59.966Z",
+        "classificationStatus": "completed",
+        "processingMs": 6440,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "beige curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "8c9b97b9a7384539933a282ad761b1fcda547513c82703c32611ce65b58ec7c7",
       "path": "images/8c9b97b9a7384539933a282ad761b1fcda547513c82703c32611ce65b58ec7c7.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "headboard wall",
+            "colours": [
+              "dark green"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "light wood",
+              "green",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedside table",
+            "colours": [
+              "beige",
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "white",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "picture frame",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a four-poster bed, green and white bedding, bedside tables with lamps, a chandelier, and a framed picture on the wall.",
+        "objects": [
+          "bed",
+          "bedside table",
+          "lamp",
+          "chandelier",
+          "picture frame",
+          "mirror"
+        ],
+        "colours": [
+          "white",
+          "green",
+          "beige",
+          "dark green",
+          "light wood",
+          "gold",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Textured wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [
+          "Green bedding",
+          "White bedding",
+          "Patterned cushions"
+        ],
+        "furnishingTags": [
+          "Wooden bed",
+          "Beige bedside table",
+          "White lamp",
+          "Geometric chandelier",
+          "Black picture frame",
+          "White mirror"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:11:21.749Z",
+        "classificationStatus": "completed",
+        "processingMs": 5881,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Textured wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "c1318424e8599007c22e62e9b945fc88e6f65e3389a1f6c232a548b4ef8cc307",
       "path": "images/c1318424e8599007c22e62e9b945fc88e6f65e3389a1f6c232a548b4ef8cc307.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "kitchen counter",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sofa",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "tv",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "gold",
+              "white",
+              "blue",
+              "brown"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A dining room with a wooden table and blue chairs, adjacent to a living area with a sofa and kitchen counter. Walls are partially covered with patterned wallpaper, and the ceiling and floor are white and light wood respectively. A television is mounted on the wall.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "sofa",
+          "cabinet",
+          "tv",
+          "artwork",
+          "curtains",
+          "wallpaper",
+          "flooring",
+          "kitchen counter"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "light wood",
+          "black",
+          "gold",
+          "brown"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Geometric wallpaper",
+          "Feature wallpaper",
+          "Blue wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains",
+          "Light grey curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Wooden table",
+          "Velvet chairs",
+          "Modern sofa",
+          "White cabinets",
+          "Flat-screen TV",
+          "Framed artwork"
+        ],
+        "chairs": [
+          "blue chairs"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:42.285Z",
+        "classificationStatus": "completed",
+        "processingMs": 6282,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Geometric wallpaper · Feature wallpaper · Blue wallpaper",
+        "curtains": "Solid curtains · Light grey curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "36d63c3ddcf8f9a6fae0ccdefcf945d8d111c48bf1b5bb0af9ce9a9750b0c03d",
       "path": "images/36d63c3ddcf8f9a6fae0ccdefcf945d8d111c48bf1b5bb0af9ce9a9750b0c03d.jpg",
-      "error": "Classification not requested"
+      "error": "Local model output incomplete; classification was not saved."
     },
     {
       "id": "1a41a63c9e5bc944d21cfaf5b09887739a97b874a035a4a003e11fd5e8d92daa",
       "path": "images/1a41a63c9e5bc944d21cfaf5b09887739a97b874a035a4a003e11fd5e8d92daa.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower enclosure",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel rack",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towels",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "soap dispensers",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with beige tiled walls, ceiling, and floor. It features a white sink with a grey cabinet, a white toilet, and a glass shower enclosure. Accessories include a mirror, towel rack, towels, a plant, and soap dispensers.",
+        "objects": [
+          "sink",
+          "cabinet",
+          "toilet",
+          "shower enclosure",
+          "mirror",
+          "towel rack",
+          "towels",
+          "plant",
+          "soap dispensers"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "grey",
+          "silver",
+          "green",
+          "brown"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:36.535Z",
+        "classificationStatus": "completed",
+        "processingMs": 5947,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a99d5bd2d0ac6890ebd49ed7633f5815f26239f8588b65c78d504fa63450352a",
       "path": "images/a99d5bd2d0ac6890ebd49ed7633f5815f26239f8588b65c78d504fa63450352a.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "countertop",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "washing machine",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "dryer",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "faucet",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "wall shelf",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "decorative sign",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "wicker basket",
+            "colours": [
+              "natural"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "towel",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green",
+              "dark green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Utility Room",
+        "subCategory": "Utility Room",
+        "description": "A modern utility room with white cabinetry, dark grey countertops, and beige walls. It contains two white Bosch washing machines, a sink, and decorative elements like a wicker basket, a plant, and a wall sign.",
+        "objects": [
+          "washing machine",
+          "dryer",
+          "sink",
+          "faucet",
+          "wall shelf",
+          "decorative sign",
+          "wicker basket",
+          "towel",
+          "plant"
+        ],
+        "colours": [
+          "beige",
+          "light grey",
+          "dark grey",
+          "white",
+          "chrome",
+          "black",
+          "natural",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:35.688Z",
+        "classificationStatus": "completed",
+        "processingMs": 6559,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a8e4563207688ce1644bb4e8844815b18c4439d04498c153c344b7b3a3320414",
       "path": "images/a8e4563207688ce1644bb4e8844815b18c4439d04498c153c344b7b3a3320414.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "headboard",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedside table",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "bench",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with a large bed, white walls, beige flooring, and a tufted bench at the foot of the bed. The room features a geometric headboard, bedside tables with lamps, a round mirror, and a chandelier. The bedding includes white and blue accents.",
+        "objects": [
+          "bed",
+          "bedside table",
+          "bench",
+          "lamp",
+          "chandelier",
+          "mirror",
+          "headboard"
+        ],
+        "colours": [
+          "white",
+          "beige",
+          "blue"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [
+          "striped bedding",
+          "blue bedding"
+        ],
+        "furnishingTags": [
+          "white lamp",
+          "round mirror",
+          "tufted bench"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:05.868Z",
+        "classificationStatus": "completed",
+        "processingMs": 5584,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "bdfe4487061422a221c122e2f67fd9303e34c7e49c647d14516f750310bf25e7",
       "path": "images/bdfe4487061422a221c122e2f67fd9303e34c7e49c647d14516f750310bf25e7.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "orange",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cushion",
+            "colours": [
+              "brown",
+              "blue",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "picture frame",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a bed, nightstand, lamps, and a decorative wallpaper.",
+        "objects": [
+          "bed",
+          "headboard",
+          "nightstand",
+          "lamp",
+          "mirror",
+          "cushion",
+          "picture frame",
+          "plant",
+          "radiator"
+        ],
+        "colours": [
+          "white",
+          "beige",
+          "orange",
+          "brown",
+          "gold",
+          "black",
+          "green",
+          "blue"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Jungle wallpaper",
+          "Feature wallpaper",
+          "Black and white wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [
+          "Striped bedding",
+          "White bedding",
+          "Brown cushions",
+          "Blue cushions"
+        ],
+        "furnishingTags": [
+          "Gold lamp",
+          "Round mirror",
+          "Wooden nightstand",
+          "White bed",
+          "Brown headboard"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:11:41.394Z",
+        "classificationStatus": "completed",
+        "processingMs": 6313,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Jungle wallpaper · Feature wallpaper · Black and white wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "e1cb8e0cb1d4c2ec317d8aaaee19f7a4076417a94e8ef0f0cbb1710890c809c6",
       "path": "images/e1cb8e0cb1d4c2ec317d8aaaee19f7a4076417a94e8ef0f0cbb1710890c809c6.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "yellow"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sofa",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "yellow",
+              "green",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "blanket",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "clear",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "rug",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "yellow"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "yellow",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "candle holders",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "picture frame",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A bright living room with beige walls and floor, featuring a yellow sofa, grey sofa, glass coffee table, and decorative cushions in yellow, green, and black. The room includes a chandelier, floor lamp, and patterned rug.",
+        "objects": [
+          "sofa",
+          "cushions",
+          "blanket",
+          "coffee table",
+          "rug",
+          "lamp",
+          "chandelier",
+          "curtains",
+          "plant",
+          "candle holders",
+          "picture frame",
+          "side table",
+          "cabinet"
+        ],
+        "colours": [
+          "beige",
+          "yellow",
+          "grey",
+          "green",
+          "black",
+          "white",
+          "gold",
+          "blue"
+        ],
+        "decor": [
+          "yellow decor",
+          "green decor",
+          "black decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "patterned curtains",
+          "yellow curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "yellow sofa",
+          "grey sofa",
+          "glass coffee table",
+          "patterned rug",
+          "yellow lamp",
+          "gold lamp",
+          "gold chandelier",
+          "patterned curtains",
+          "green plant",
+          "blue candle holders",
+          "black picture frame",
+          "black side table",
+          "black cabinet"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:09:04.968Z",
+        "classificationStatus": "completed",
+        "processingMs": 8825,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "patterned curtains · yellow curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9156b8dc64e28938a03063491f4dada2d01ba60cc0c177ccb10c7cc04a944b5c",
       "path": "images/9156b8dc64e28938a03063491f4dada2d01ba60cc0c177ccb10c7cc04a944b5c.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "white",
+              "metal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "picture frame",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with white walls, a white ceiling, and beige carpet. The bed has white and blue bedding. A white chandelier hangs from the ceiling. A round mirror and a framed picture are on the walls. White doors are visible.",
+        "objects": [
+          "bed",
+          "chandelier",
+          "mirror",
+          "door",
+          "picture frame"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "beige"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [
+          "blue bedding",
+          "white bedding"
+        ],
+        "furnishingTags": [
+          "white chandelier",
+          "round mirror",
+          "white door"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:15.590Z",
+        "classificationStatus": "completed",
+        "processingMs": 4958,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "08695f5070c04b380eca55543bda5ff82dd80f6777cc8bf2ed6423746c4fcdce",
       "path": "images/08695f5070c04b380eca55543bda5ff82dd80f6777cc8bf2ed6423746c4fcdce.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "shower enclosure",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel warmer",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "beige",
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "soap dispenser",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "towel rack",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "storage shelf",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with beige tiled walls, ceiling, and floor. It features a white pedestal sink, a wall-mounted toilet, and a glass-enclosed shower. Decorative elements include potted plants, a mirror, and a towel warmer.",
+        "objects": [
+          "sink",
+          "toilet",
+          "shower enclosure",
+          "mirror",
+          "towel warmer",
+          "planters",
+          "soap dispenser",
+          "towel rack",
+          "storage shelf"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "black",
+          "green",
+          "silver"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:30.259Z",
+        "classificationStatus": "completed",
+        "processingMs": 5878,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9d94a8bfff04e1ea7886ce5843ac2ddbf3276ef075e196621a0b4b8b0c2a530e",
       "path": "images/9d94a8bfff04e1ea7886ce5843ac2ddbf3276ef075e196621a0b4b8b0c2a530e.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "orange"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "desk",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "light wood",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "bookshelf",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "armchair",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Study & Home Office",
+        "subCategory": "Study",
+        "description": "A well-lit study with an orange wall, black desk, light wood chair, and window with white frame. Decor includes framed photos, a lamp, and a bookshelf.",
+        "objects": [
+          "desk",
+          "chair",
+          "lamp",
+          "bookshelf",
+          "armchair",
+          "window",
+          "radiator",
+          "curtain",
+          "picture frames",
+          "vases",
+          "books",
+          "plant"
+        ],
+        "colours": [
+          "orange",
+          "black",
+          "light wood",
+          "beige",
+          "white",
+          "gold",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "patterned curtains",
+          "beige curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "wooden chair",
+          "black desk",
+          "black lamp",
+          "black bookshelf",
+          "beige armchair"
+        ],
+        "chairs": [
+          "wooden chair",
+          "armchair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:21.545Z",
+        "classificationStatus": "completed",
+        "processingMs": 5667,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "patterned curtains · beige curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "6e0da6b573ca5995bfdf3f36428db03be0f35d5615c630760697a2835d4b8f82",
       "path": "images/6e0da6b573ca5995bfdf3f36428db03be0f35d5615c630760697a2835d4b8f82.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower enclosure",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window blind",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "seahorse ornament",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with beige tiled walls, ceiling, and floor. It includes a white sink with a dark grey cabinet, a white toilet, a black-framed round mirror, a glass shower enclosure, and a window with white blinds. Accent items include a white seahorse ornament and a green plant.",
+        "objects": [
+          "sink",
+          "cabinet",
+          "toilet",
+          "mirror",
+          "shower enclosure",
+          "window blind",
+          "seahorse ornament",
+          "plant"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "dark grey",
+          "black",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Glass shower enclosure",
+          "White sink",
+          "Dark grey cabinet",
+          "White toilet"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:10.335Z",
+        "classificationStatus": "completed",
+        "processingMs": 5914,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "5f340d825d180f9b8c1696794ea5d2e8c70f7d4e91896614464af40a34ac33ff",
       "path": "images/5f340d825d180f9b8c1696794ea5d2e8c70f7d4e91896614464af40a34ac33ff.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "desk",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "black",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "shelves",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "blinds",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a bed, desk, chair, lamp, shelves, radiator, and window with blinds. Walls are white, ceiling is white, floor is beige. Furnishings include a bed with white and grey bedding, a light wood desk, a grey chair, a black and gold lamp, a white radiator, and light wood shelves. Blinds are white with black slats. Decor includes a small potted plant and framed pictures.",
+        "objects": [
+          "bed",
+          "desk",
+          "chair",
+          "lamp",
+          "radiator",
+          "shelves",
+          "blinds",
+          "pillows",
+          "books",
+          "plant",
+          "picture frames",
+          "headphones",
+          "computer"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "beige",
+          "black",
+          "gold",
+          "light wood"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [
+          "striped bedding",
+          "grey bedding"
+        ],
+        "furnishingTags": [
+          "black lamp",
+          "gold lamp",
+          "light wood desk",
+          "grey chair",
+          "white radiator",
+          "light wood shelves",
+          "white blinds with black slats"
+        ],
+        "chairs": [
+          "grey chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": true,
+        "classifiedAt": "2026-10-09T00:11:02.766Z",
+        "classificationStatus": "completed",
+        "processingMs": 6646,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "653d33328b2c7ec3b9c2d348327b7d7d7603b9d1567d2b3f3b1275aa299e3489",
       "path": "images/653d33328b2c7ec3b9c2d348327b7d7d7603b9d1567d2b3f3b1275aa299e3489.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "bedding",
+            "colours": [
+              "grey",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a beige upholstered bed, white nightstands, and beige curtains. The walls are covered in beige wallpaper with a subtle pattern. The floor is beige carpet. The room has a white radiator and white window frames. The bedding includes grey and white textiles with decorative pillows.",
+        "objects": [
+          "bed",
+          "headboard",
+          "bedding",
+          "pillows",
+          "nightstand",
+          "lamp",
+          "curtains",
+          "radiator",
+          "window frame"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "grey"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Patterned wallpaper",
+          "Feature wallpaper",
+          "Beige wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains",
+          "Beige curtains"
+        ],
+        "fabricTags": [
+          "Striped bedding",
+          "Grey bedding",
+          "White bedding"
+        ],
+        "furnishingTags": [
+          "Modern lamp",
+          "White nightstand",
+          "Beige upholstered bed",
+          "White radiator",
+          "White window frame"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:09:53.170Z",
+        "classificationStatus": "completed",
+        "processingMs": 6834,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Patterned wallpaper · Feature wallpaper · Beige wallpaper",
+        "curtains": "Solid curtains · Beige curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "941bfffc3e0db56fbc4c46c1fb37c49cb1926f6ec511db2d9eedd1794c0bdfbc",
       "path": "images/941bfffc3e0db56fbc4c46c1fb37c49cb1926f6ec511db2d9eedd1794c0bdfbc.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "ottoman",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "rug",
+            "colours": [
+              "beige",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Single bedroom",
+        "description": "A child's bedroom with a loft bed, a built-in under-bed nook, and jungle-themed wallpaper on one wall. The room features white furniture, beige flooring, and warm lighting.",
+        "objects": [
+          "bed",
+          "cabinet",
+          "ottoman",
+          "rug",
+          "lamp",
+          "radiator",
+          "window frame"
+        ],
+        "colours": [
+          "white",
+          "brown",
+          "beige",
+          "gold",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Jungle wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:11:28.044Z",
+        "classificationStatus": "completed",
+        "processingMs": 5505,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Jungle wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "43ee63aedf17a739a5919f915b7ad8e92f509eac510376daaf24c729a7ddcf9b",
       "path": "images/43ee63aedf17a739a5919f915b7ad8e92f509eac510376daaf24c729a7ddcf9b.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "bathroom walls",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "dresser",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "artwork",
+            "colours": [
+              "beige",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with white walls, a white ceiling, and light grey flooring. The room features a bed with white and light grey bedding, a white dresser, a white lamp, and a white closet. A bathroom with a white sink is visible through an open door. The walls are decorated with beige and white artwork. The room has a clean, minimalist aesthetic with accent grey pillows and a black-framed mirror.",
+        "objects": [
+          "bed",
+          "dresser",
+          "lamp",
+          "mirror",
+          "artwork",
+          "cabinet",
+          "sink",
+          "pillows"
+        ],
+        "colours": [
+          "white",
+          "light grey",
+          "beige",
+          "black",
+          "grey"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [
+          "striped bedding",
+          "grey bedding"
+        ],
+        "furnishingTags": [
+          "geometric lamp",
+          "round mirror",
+          "white dresser",
+          "white cabinet",
+          "white sink"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:54.168Z",
+        "classificationStatus": "completed",
+        "processingMs": 6411,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "df95308e08120e1f0e8df862d362c62506ee90426fc8ef478fdd42d5a441ad2c",
       "path": "images/df95308e08120e1f0e8df862d362c62506ee90426fc8ef478fdd42d5a441ad2c.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel rack",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower enclosure",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant pot",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Bathroom",
+        "description": "A modern bathroom with beige tiled walls, ceiling, and floor. It features a white pedestal sink, a white toilet, a black round mirror, and a glass shower enclosure. Towels are folded on the toilet and sink ledge. A small potted plant is on the sink ledge. A window with white blinds is visible on the right wall.",
+        "objects": [
+          "sink",
+          "toilet",
+          "mirror",
+          "towel rack",
+          "shower enclosure",
+          "plant pot"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "black",
+          "silver"
+        ],
+        "decor": [
+          "blue"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "White pedestal sink",
+          "White toilet",
+          "Glass shower enclosure"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:23.949Z",
+        "classificationStatus": "completed",
+        "processingMs": 5372,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "d805cb23b7179947355f7bc72307c62a259d21dab4a704b74a0abe83b6c7e3fc",
       "path": "images/d805cb23b7179947355f7bc72307c62a259d21dab4a704b74a0abe83b6c7e3fc.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "black",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "woven",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige",
+              "grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "white",
+              "beige",
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "picture frame",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "clock",
+            "colours": [
+              "white",
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "shelf",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A modern double bedroom with a bed, lamp, and window. The walls are black with geometric wallpaper, and the floor is beige carpet. The curtains are beige and grey. The bed has white and blue bedding. The room has a white ceiling and radiator. There are accent items like a clock, picture frame, and plant.",
+        "objects": [
+          "bed",
+          "lamp",
+          "cabinet",
+          "radiator",
+          "curtains",
+          "pillows",
+          "window frame",
+          "picture frame",
+          "clock",
+          "shelf",
+          "plant"
+        ],
+        "colours": [
+          "black",
+          "white",
+          "beige",
+          "blue",
+          "gold",
+          "grey",
+          "green"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Geometric wallpaper",
+          "Feature wallpaper",
+          "Black wallpaper"
+        ],
+        "curtainTags": [
+          "Striped curtains",
+          "Beige curtains",
+          "Grey curtains"
+        ],
+        "fabricTags": [
+          "Striped bedding",
+          "Blue bedding",
+          "White bedding",
+          "Beige cushions",
+          "Blue cushions"
+        ],
+        "furnishingTags": [
+          "Woven lamp",
+          "Geometric lamp",
+          "Black cabinet",
+          "White radiator",
+          "Beige curtains",
+          "White pillows",
+          "Blue pillows",
+          "White window frame",
+          "Black picture frame",
+          "White clock",
+          "Black shelf",
+          "Green plant"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:51.413Z",
+        "classificationStatus": "completed",
+        "processingMs": 8431,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Geometric wallpaper · Feature wallpaper · Black wallpaper",
+        "curtains": "Striped curtains · Beige curtains · Grey curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a2c83fde7b784ca36826dd3c6be39f0b5fd57ee46ef7034717383228743c32aa",
       "path": "images/a2c83fde7b784ca36826dd3c6be39f0b5fd57ee46ef7034717383228743c32aa.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "pink",
+              "white",
+              "teal",
+              "yellow"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "desk",
+            "colours": [
+              "white",
+              "pink"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "blue",
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "white",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A bright, tropical-themed bedroom with a large bed, desk, and decorative wallpaper featuring large leaves. The room has white walls and ceiling, beige carpet, and natural light from a window with a patterned roman blind. Furnishings include a pink upholstered bed, white cabinet, and a blue chair. Decor includes a teal lamp and a neon sign.",
+        "objects": [
+          "bed",
+          "desk",
+          "chair",
+          "cabinet",
+          "lamp",
+          "mirror",
+          "radiator",
+          "window",
+          "curtain",
+          "wallpaper",
+          "picture",
+          "plant",
+          "laptop",
+          "book",
+          "ornament"
+        ],
+        "colours": [
+          "white",
+          "pink",
+          "teal",
+          "yellow",
+          "beige",
+          "green",
+          "gold",
+          "blue"
+        ],
+        "decor": [
+          "teal decor",
+          "yellow decor",
+          "pink decor",
+          "green decor"
+        ],
+        "wallpaperTags": [
+          "Floral wallpaper",
+          "Jungle wallpaper",
+          "Feature wallpaper"
+        ],
+        "curtainTags": [
+          "Patterned curtains",
+          "Pink curtains"
+        ],
+        "fabricTags": [
+          "Striped bedding",
+          "Yellow bedding",
+          "Teal bedding"
+        ],
+        "furnishingTags": [
+          "Round mirror",
+          "Geometric lamp",
+          "Wooden chair",
+          "White cabinet",
+          "White desk",
+          "White radiator"
+        ],
+        "chairs": [
+          "blue chair"
+        ],
+        "hasTelevision": false,
+        "hasComputer": true,
+        "classifiedAt": "2026-10-09T00:08:28.845Z",
+        "classificationStatus": "completed",
+        "processingMs": 6910,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Floral wallpaper · Jungle wallpaper · Feature wallpaper",
+        "curtains": "Patterned curtains · Pink curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a9464da9055c16a60b3b7c3912d4c9578a838b6dbabd25792133887155d37fc0",
       "path": "images/a9464da9055c16a60b3b7c3912d4c9578a838b6dbabd25792133887155d37fc0.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedside table",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "stool",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window blind",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtain valance",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a white bed, grey accent wall, white ceiling, beige carpet, and white walls. Furnishings include white lamps, a wooden bedside table, white stools, and a white radiator. Accent features include a blue curtain valance and blue patterned cushions.",
+        "objects": [
+          "bed",
+          "bedside table",
+          "lamp",
+          "stool",
+          "radiator",
+          "window blind",
+          "curtain valance",
+          "cushions"
+        ],
+        "colours": [
+          "white",
+          "grey",
+          "beige",
+          "blue"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "blue curtains"
+        ],
+        "fabricTags": [
+          "blue bedding",
+          "blue cushions"
+        ],
+        "furnishingTags": [
+          "white lamp",
+          "wood bedside table",
+          "white stool",
+          "white radiator",
+          "white window blind",
+          "blue curtain valance"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:10:12.133Z",
+        "classificationStatus": "completed",
+        "processingMs": 5873,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "blue curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "22b563c14545bc654439435d14b532fe28692859cf20b9335b1c95c6f8f0889c",
       "path": "images/22b563c14545bc654439435d14b532fe28692859cf20b9335b1c95c6f8f0889c.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "dark blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "bath",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "shower enclosure",
+            "colours": [
+              "clear glass"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "sink cabinet",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "towel radiator",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "silver frame"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel shelf",
+            "colours": [
+              "dark blue"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Bathroom",
+        "description": "A modern bathroom with white walls, a dark blue accent wall, light wood flooring, a white bathtub, a glass shower enclosure, a white sink with dark grey cabinet, and a white toilet. Towels are dark blue and white. Fixtures are silver. A towel radiator is visible.",
+        "objects": [
+          "towel radiator",
+          "sink",
+          "cabinet",
+          "toilet",
+          "mirror",
+          "shower",
+          "towel shelf",
+          "bathtub",
+          "window",
+          "towels",
+          "faucet",
+          "shower head",
+          "tiles",
+          "door",
+          "door handle"
+        ],
+        "colours": [
+          "white",
+          "dark blue",
+          "light wood",
+          "silver",
+          "dark grey"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:45.024Z",
+        "classificationStatus": "completed",
+        "processingMs": 6485,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "37e2c2655a3a60176c84145005ff039932bb767b86085964408b933a9307bbc1",
       "path": "images/37e2c2655a3a60176c84145005ff039932bb767b86085964408b933a9307bbc1.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "blue",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light wood"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "shelf",
+            "colours": [
+              "white",
+              "wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chair",
+            "colours": [
+              "wood"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "clock",
+            "colours": [
+              "white",
+              "silver"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with blue walls, white ceiling and light wood flooring. Furniture includes a shelf, cabinet, chair, clock and plant. A television is mounted on the wall.",
+        "objects": [
+          "shelf",
+          "cabinet",
+          "chair",
+          "clock",
+          "plant",
+          "television"
+        ],
+        "colours": [
+          "blue",
+          "white",
+          "light wood",
+          "green",
+          "wood",
+          "silver"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "wooden chair"
+        ],
+        "hasTelevision": true,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:09:32.902Z",
+        "classificationStatus": "completed",
+        "processingMs": 4690,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "de545f5b9420c8880df52b45a818845636c432605c6e2d8c4ddc1b8931831e6f",
       "path": "images/de545f5b9420c8880df52b45a818845636c432605c6e2d8c4ddc1b8931831e6f.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "table",
+            "colours": [
+              "light brown"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "chairs",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "table",
+            "colours": [
+              "light brown"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A dining room with a wooden table, beige chairs, white walls, and white curtains. The room has large windows with white frames and a light grey floor. A testimonial quote is overlaid on the image.",
+        "objects": [
+          "table",
+          "chairs",
+          "curtains",
+          "windows",
+          "walls",
+          "ceiling",
+          "floor"
+        ],
+        "colours": [
+          "white",
+          "light grey",
+          "light brown",
+          "beige"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "white curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "beige chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:08:55.813Z",
+        "classificationStatus": "completed",
+        "processingMs": 4333,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "white curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "7f673c187eb3a0537c9a42c91d09e1d956773ea1d2a8aeb4d2c41adcd7f90a8e",
       "path": "images/7f673c187eb3a0537c9a42c91d09e1d956773ea1d2a8aeb4d2c41adcd7f90a8e.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Infographic",
+        "subCategory": "",
+        "description": "Predicted Energy Assessment chart showing current energy rating of 85, classified as B grade (81-91), with color-coded efficiency scale from A to G.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:36.488Z",
+        "classificationStatus": "completed",
+        "processingMs": 2051,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "331d907249ae5fc04e3f6303b2000505a78bdfd3dacdeb4aeaa272157a8d105d",
       "path": "images/331d907249ae5fc04e3f6303b2000505a78bdfd3dacdeb4aeaa272157a8d105d.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [],
+        "furnishings": [],
+        "mainCategory": "Exterior",
+        "subCategory": "Empty",
+        "description": "A modern two-story house with white exterior walls, grey roof, and black trim. The front has a small garden with planters and a black metal fence. No interior is visible.",
+        "objects": [],
+        "colours": [],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:23.129Z",
+        "classificationStatus": "completed",
+        "processingMs": 2124,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": false,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "a9b93ae325d77b52016d4049060fd27e13d312a2f657db14092de2aa96bcb752",
       "path": "images/a9b93ae325d77b52016d4049060fd27e13d312a2f657db14092de2aa96bcb752.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "kitchen island",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "countertops",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "teal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "faucet",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "light fixture",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Kitchen",
+        "subCategory": "Kitchen",
+        "description": "A modern kitchen with white cabinetry, a central island, and dark wood flooring. The dining area is visible in the background with teal chairs.",
+        "objects": [
+          "kitchen island",
+          "cabinets",
+          "countertops",
+          "chairs",
+          "table",
+          "sink",
+          "faucet",
+          "plant",
+          "door",
+          "light fixture"
+        ],
+        "colours": [
+          "white",
+          "dark wood",
+          "teal",
+          "black",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [
+          "teal chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:02.364Z",
+        "classificationStatus": "completed",
+        "processingMs": 6245,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "1a2b4a4a5b6c0513e3068d829e336880fa246923bfb46fdd63d5cf9a538f2229",
@@ -33321,7 +38227,170 @@
     {
       "id": "8e7b060f39bfbaa805b8b3b65fac80dbbafb5927e1c7e79bfed74c5007524eca",
       "path": "images/8e7b060f39bfbaa805b8b3b65fac80dbbafb5927e1c7e79bfed74c5007524eca.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white",
+              "light beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "kitchen cabinets",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "surface": "kitchen backsplash",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "white",
+              "pink",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "coffee table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "kitchen island",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bar stools",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "sideboard",
+            "colours": [
+              "black",
+              "natural wood"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "dark grey",
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "cups",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "pendant light",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern open-plan living room and kitchen with white cabinetry, dark grey flooring, and neutral-toned walls. The living area features a white sofa with pink and blue cushions, a black coffee table, and a kitchen island with bar stools. Decor includes potted plants, a sideboard with woven texture, and a pendant light.",
+        "objects": [
+          "sofa",
+          "coffee table",
+          "kitchen island",
+          "bar stools",
+          "sideboard",
+          "planters",
+          "cups",
+          "mirror",
+          "pendant light"
+        ],
+        "colours": [
+          "white",
+          "pink",
+          "blue",
+          "black",
+          "dark grey",
+          "green"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Feature wallpaper",
+          "Light beige wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Modern sofa",
+          "Black coffee table",
+          "White kitchen island",
+          "Black bar stools",
+          "Black sideboard with woven texture",
+          "Potted plants",
+          "White cups",
+          "Black mirror",
+          "White pendant light"
+        ],
+        "chairs": [
+          "bar stools"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:49.310Z",
+        "classificationStatus": "completed",
+        "processingMs": 7281,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Feature wallpaper · Light beige wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "ef70acdc63968da80f4d2ea0208bc291e343828d39efe8eae0b2afd9dac43875",
@@ -33331,7 +38400,112 @@
     {
       "id": "7cb766be55fb0dac2f23d4aef3e465d1738823ed3c8a2af1a653076d8a6c8f90",
       "path": "images/7cb766be55fb0dac2f23d4aef3e465d1738823ed3c8a2af1a653076d8a6c8f90.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "grey",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [],
+            "prominence": "accent"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "towel warmer",
+            "colours": [
+              "silver"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "white",
+              "green"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with grey tiled walls, white fixtures, and a decorative gold mirror.",
+        "objects": [
+          "sink",
+          "toilet",
+          "towel warmer",
+          "mirror",
+          "plant"
+        ],
+        "colours": [
+          "grey",
+          "white",
+          "gold",
+          "silver"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Patterned wallpaper",
+          "Feature wallpaper",
+          "Grey wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Round mirror",
+          "Gold mirror",
+          "White sink",
+          "White toilet",
+          "Silver towel warmer"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:34.248Z",
+        "classificationStatus": "completed",
+        "processingMs": 4696,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Patterned wallpaper · Feature wallpaper · Grey wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "f6adc1b0e5d0de132a015e40353c3b38b26bf2b2140dcf7e35f35f15a3570e63",
@@ -33341,7 +38515,126 @@
     {
       "id": "db18859aa69e09bca40ccc6c2299ed2b1e3394ba60ccc70fea9969cbf4a47270",
       "path": "images/db18859aa69e09bca40ccc6c2299ed2b1e3394ba60ccc70fea9969cbf4a47270.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "dining table",
+            "colours": [
+              "brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold",
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dining Room",
+        "subCategory": "Dining Room",
+        "description": "A dining room with a wooden table, blue velvet chairs, a hanging light fixture, and a large window with curtains. The walls are covered in beige wallpaper, and the floor is beige carpet. A floor lamp and a radiator are also visible.",
+        "objects": [
+          "dining table",
+          "chairs",
+          "lamp",
+          "curtains",
+          "radiator",
+          "window",
+          "wallpaper",
+          "floor"
+        ],
+        "colours": [
+          "beige",
+          "blue",
+          "brown",
+          "white",
+          "gold"
+        ],
+        "decor": [],
+        "wallpaperTags": [
+          "Geometric wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains"
+        ],
+        "fabricTags": [],
+        "furnishingTags": [
+          "Velvet chairs",
+          "Wooden table",
+          "Hanging lamp",
+          "Floor lamp",
+          "Curtains"
+        ],
+        "chairs": [
+          "blue velvet chairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:27.831Z",
+        "classificationStatus": "completed",
+        "processingMs": 5579,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Geometric wallpaper",
+        "curtains": "Solid curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "874d9c89140a38a062c134081822547624b98c12427558b21495f3326b73fa31",
@@ -33351,7 +38644,179 @@
     {
       "id": "ae4ec5f8dc0f355aeea1c2db2f8427b15510dfc58d7b6107994a2cab41d5dca8",
       "path": "images/ae4ec5f8dc0f355aeea1c2db2f8427b15510dfc58d7b6107994a2cab41d5dca8.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sofa",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "chairs",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "ottoman",
+            "colours": [
+              "blue"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "side table",
+            "colours": [
+              "gold",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "console table",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "rugs",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cushions",
+            "colours": [
+              "blue",
+              "pink",
+              "white"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "planters",
+            "colours": [
+              "green",
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Living Room",
+        "subCategory": "Other",
+        "description": "A modern living room with a white sofa, blue accent chairs, and a dark blue ottoman. Walls and ceiling are white, floor is light grey. Decor includes gold-framed mirror, gold lamp, and light grey curtains. Accent colours are blue, pink, and white on cushions and decor.",
+        "objects": [
+          "sofa",
+          "chairs",
+          "ottoman",
+          "mirror",
+          "lamp",
+          "side table",
+          "console table",
+          "rugs",
+          "cushions",
+          "curtains",
+          "planters"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "pink",
+          "light grey",
+          "gold",
+          "black",
+          "green"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [
+          "solid curtains"
+        ],
+        "fabricTags": [
+          "solid cushions"
+        ],
+        "furnishingTags": [
+          "round mirror",
+          "gold lamp",
+          "modern armchair",
+          "round ottoman",
+          "console table"
+        ],
+        "chairs": [
+          "blue armchairs"
+        ],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:10.238Z",
+        "classificationStatus": "completed",
+        "processingMs": 7423,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": "solid curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "5087859c0561a5b7ef359ad9bc799e46aed56237f09167f82feaed7c32b40c31",
@@ -33361,7 +38826,134 @@
     {
       "id": "6637fcf7e77549a13179a5789b029ae4da35923aa9b1ea96e290ee113015a93c",
       "path": "images/6637fcf7e77549a13179a5789b029ae4da35923aa9b1ea96e290ee113015a93c.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark wood"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "washing machine",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "dryer",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "faucet",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant",
+            "colours": [
+              "green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "bottle",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "radiator",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Utility Room",
+        "subCategory": "",
+        "description": "A clean, modern utility room with white cabinetry, a washing machine, a dryer, and a sink. The walls and ceiling are white, the floor is dark wood, and there is a white radiator. A small green plant and a black bottle are visible as accents.",
+        "objects": [
+          "cabinet",
+          "washing machine",
+          "dryer",
+          "sink",
+          "faucet",
+          "plant",
+          "bottle",
+          "radiator"
+        ],
+        "colours": [
+          "white",
+          "dark wood",
+          "green",
+          "black",
+          "chrome"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:29.165Z",
+        "classificationStatus": "completed",
+        "processingMs": 5738,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "7efa5a5f50d9d20a694a3527286eebcbd5e317040b1d865dba98a0b379324563",
@@ -33371,7 +38963,124 @@
     {
       "id": "e003ce65d31911bc732033c5bb813fa218b9327296e8973e49ea465d16600d68",
       "path": "images/e003ce65d31911bc732033c5bb813fa218b9327296e8973e49ea465d16600d68.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "light green"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "beige",
+              "teal"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "dresser",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "stool",
+            "colours": [
+              "teal"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "chandelier",
+            "colours": [
+              "gold",
+              "clear"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a bed, dresser, and chandelier. Walls are light green, ceiling and floor are white and beige respectively. Furniture is white and teal.",
+        "objects": [
+          "bed",
+          "dresser",
+          "stool",
+          "chandelier",
+          "mirror",
+          "door"
+        ],
+        "colours": [
+          "white",
+          "beige",
+          "teal",
+          "light green",
+          "gold"
+        ],
+        "decor": [
+          "teal decor"
+        ],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [
+          "quilted bedding",
+          "velvet cushions"
+        ],
+        "furnishingTags": [
+          "white dresser",
+          "teal stool",
+          "gold mirror",
+          "chandelier"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:34.472Z",
+        "classificationStatus": "completed",
+        "processingMs": 5266,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "cf1798851c1a50c9454835dcbe97e9c0a3ac9577160bf76e95756e5a592414e9",
@@ -33381,7 +39090,133 @@
     {
       "id": "c341e1ce66cc6d19b5da5a6b2335731cf54da9c661c5f536e0c1cac5ea1b03c3",
       "path": "images/c341e1ce66cc6d19b5da5a6b2335731cf54da9c661c5f536e0c1cac5ea1b03c3.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark grey"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "shower enclosure",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "vanity unit",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black frame"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "window frame",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "door",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "door handle",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Toilet",
+        "description": "A modern bathroom with beige tiled walls, a white vanity unit and sink, a toilet, a walk-in shower with glass enclosure, and a window with white frame. The floor is dark grey wood-effect. Fixtures are chrome. Decorative items include bottles and a plant.",
+        "objects": [
+          "sink",
+          "vanity unit",
+          "mirror",
+          "toilet",
+          "shower",
+          "window",
+          "door",
+          "door handle"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "dark grey",
+          "chrome"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:21.859Z",
+        "classificationStatus": "completed",
+        "processingMs": 5772,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "9e1df59a60dd19ebaa8fc52144aa9c28210103adea310f6fa325f111e1721446",
@@ -33391,7 +39226,109 @@
     {
       "id": "b82398c31958fb0d24bc2089486ce13a2f7cce9b2bfefc61df53b0877d3c905f",
       "path": "images/b82398c31958fb0d24bc2089486ce13a2f7cce9b2bfefc61df53b0877d3c905f.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "light blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "light blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "baseboards",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "drawers",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "closet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "shoes",
+            "colours": [
+              "black"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "handbag",
+            "colours": [
+              "light blue"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Dressing Room",
+        "subCategory": "Dressing Room",
+        "description": "A well-organized dressing room with built-in closet units, a mirror, and various clothing items. The walls are painted light blue, the floor is beige, and the baseboards are white. The closet units and drawers are white with black handles. A black-framed mirror is mounted on the wall. A light blue handbag and black shoes are visible as accents.",
+        "objects": [
+          "mirror",
+          "drawers",
+          "closet",
+          "shoes",
+          "handbag"
+        ],
+        "colours": [
+          "light blue",
+          "beige",
+          "white",
+          "black"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:07:15.749Z",
+        "classificationStatus": "completed",
+        "processingMs": 5117,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "90b34cb70965becb44619ea89de12a8ba99e64512860fd0afcaeaf3a8c4a6b30",
@@ -33401,7 +39338,120 @@
     {
       "id": "95b2bedb2707c081d0ae2a9a151de53ea7b41bb1fe23f7fdd237366b13c4b70b",
       "path": "images/95b2bedb2707c081d0ae2a9a151de53ea7b41bb1fe23f7fdd237366b13c4b70b.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "blue"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "white",
+              "red",
+              "green"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "white",
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "cabinet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a bed, headboard, nightstands, lamps, and a wardrobe. Walls are beige, ceiling and floor are white and beige respectively. Bed has white and blue linens. Headboard has red and green pattern. Nightstands are black. Lamps are white and gold. Cabinet is white.",
+        "objects": [
+          "bed",
+          "headboard",
+          "nightstand",
+          "lamp",
+          "cabinet"
+        ],
+        "colours": [
+          "white",
+          "beige",
+          "black",
+          "blue",
+          "red",
+          "green",
+          "gold"
+        ],
+        "decor": [
+          "blue decor"
+        ],
+        "wallpaperTags": [
+          "Feature wallpaper"
+        ],
+        "curtainTags": [],
+        "fabricTags": [
+          "Blue bedding",
+          "Floral cushions"
+        ],
+        "furnishingTags": [
+          "White lamp",
+          "Black nightstand",
+          "White cabinet"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:56.026Z",
+        "classificationStatus": "completed",
+        "processingMs": 5319,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Feature wallpaper",
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "8bdac5976ebdf83bd10302d9b0c89767c8ecfa40adc193c9ee9ef339c8243257",
@@ -33411,7 +39461,178 @@
     {
       "id": "1f93fb6c4af731a3643eee74153375276ae45d55c2b8b1a9b5e3dc284b37b68f",
       "path": "images/1f93fb6c4af731a3643eee74153375276ae45d55c2b8b1a9b5e3dc284b37b68f.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige",
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "light grey"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "bed",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "bedding",
+            "colours": [
+              "white",
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "pillows",
+            "colours": [
+              "white",
+              "beige",
+              "olive green"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "lamp",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "curtains",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "headboard",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "gold"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "dresser",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "ottoman",
+            "colours": [
+              "olive green"
+            ],
+            "prominence": "accent"
+          },
+          {
+            "object": "nightstand",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "vase",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bedroom",
+        "subCategory": "Double bedroom",
+        "description": "A double bedroom with a bed, bedside tables, a dresser, and a mirror. The room has beige walls, a white ceiling, and light grey flooring. The bed has white and beige bedding with olive green and beige pillows. A gold lamp hangs above the bed. Beige curtains cover the window. An olive green ottoman sits near the dresser. The wallpaper is floral with a beige background.",
+        "objects": [
+          "bed",
+          "bedding",
+          "pillows",
+          "lamp",
+          "curtains",
+          "headboard",
+          "mirror",
+          "dresser",
+          "ottoman",
+          "nightstand",
+          "vase"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "light grey",
+          "gold",
+          "olive green"
+        ],
+        "decor": [
+          "floral decor"
+        ],
+        "wallpaperTags": [
+          "Floral wallpaper",
+          "Feature wallpaper",
+          "Beige wallpaper"
+        ],
+        "curtainTags": [
+          "Solid curtains",
+          "Beige curtains"
+        ],
+        "fabricTags": [
+          "Solid bedding",
+          "White bedding",
+          "Beige bedding",
+          "Olive green cushions"
+        ],
+        "furnishingTags": [
+          "Gold lamp",
+          "Geometric lamp",
+          "Round mirror",
+          "Brass mirror",
+          "Velvet ottoman",
+          "White nightstand",
+          "White dresser"
+        ],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:20.685Z",
+        "classificationStatus": "completed",
+        "processingMs": 7925,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": "Floral wallpaper · Feature wallpaper · Beige wallpaper",
+        "curtains": "Solid curtains · Beige curtains"
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "60ebddc77e63ab092a5c38a2fee30edacd45822894392203ff3de8bedcab353e",
@@ -33421,7 +39642,118 @@
     {
       "id": "829db235878b47c66280640aa81393e3ed9450b230a7f000fdf4c83081dfc030",
       "path": "images/829db235878b47c66280640aa81393e3ed9450b230a7f000fdf4c83081dfc030.jpg",
-      "error": "Classification not requested"
+      "categorisation": {
+        "interiorColours": [
+          {
+            "surface": "walls",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "ceiling",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "floor",
+            "colours": [
+              "dark brown"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "surface": "fixed surfaces",
+            "colours": [
+              "beige"
+            ],
+            "prominence": "dominant"
+          }
+        ],
+        "furnishings": [
+          {
+            "object": "sink",
+            "colours": [
+              "white"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "mirror",
+            "colours": [
+              "black"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "shower enclosure",
+            "colours": [
+              "clear"
+            ],
+            "prominence": "dominant"
+          },
+          {
+            "object": "toilet",
+            "colours": [
+              "white"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "towel rail",
+            "colours": [
+              "chrome"
+            ],
+            "prominence": "secondary"
+          },
+          {
+            "object": "plant pot",
+            "colours": [
+              "white"
+            ],
+            "prominence": "accent"
+          }
+        ],
+        "mainCategory": "Bathroom",
+        "subCategory": "Bathroom",
+        "description": "A modern bathroom with beige tiled walls and floor, a white wall-mounted sink, a glass shower enclosure, and a white toilet. Accessories include a black-framed mirror, chrome towel rail, and a small plant.",
+        "objects": [
+          "sink",
+          "mirror",
+          "shower enclosure",
+          "toilet",
+          "towel rail",
+          "plant pot"
+        ],
+        "colours": [
+          "beige",
+          "white",
+          "black",
+          "dark brown",
+          "chrome"
+        ],
+        "decor": [],
+        "wallpaperTags": [],
+        "curtainTags": [],
+        "fabricTags": [],
+        "furnishingTags": [],
+        "chairs": [],
+        "hasTelevision": false,
+        "hasComputer": false,
+        "classifiedAt": "2026-10-09T00:06:41.954Z",
+        "classificationStatus": "completed",
+        "processingMs": 5127,
+        "categorisationSource": "ollama",
+        "categorisationModel": "qwen3-vl:8b-instruct",
+        "categorisationVersion": "local-interiors-v2",
+        "isRoom": true,
+        "wallpaper": null,
+        "curtains": null
+      },
+      "model": "qwen3-vl:8b-instruct"
     },
     {
       "id": "eef477e2bbcd0effc054ccb53ee245ddab0faf634dcd3b172e62d6b7b41d86db",
