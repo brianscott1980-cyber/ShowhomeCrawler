@@ -6,11 +6,10 @@ import {colourPattern} from '../web/interior-tags';
 export interface Furnishing {name:string;slug:string;count:number;image:string}
 export async function queryFurnishings(sql:postgres.Sql=websiteDatabase()):Promise<Furnishing[]>{
  const rows=await sql.unsafe(`with items as (
- select distinct lower(trim(label)) as name,i.uid,m.path as path,i.builder_slug
- from showhome_web.gallery_card_index i join showhome_web.images m on m.builder_slug=i.builder_slug and m.catalogue_id=i.image_id
- cross join lateral jsonb_array_elements_text(coalesce(m.metadata->'categorisation'->'objects','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'chairs','[]'::jsonb)||coalesce((select jsonb_agg(f->>'object') from jsonb_array_elements(coalesce(m.metadata->'categorisation'->'furnishings','[]'::jsonb)) f),'[]'::jsonb)||jsonb_build_array(case when m.metadata->'categorisation'->>'hasTelevision'='true' then 'Television' end,case when m.metadata->'categorisation'->>'hasComputer'='true' then 'Computer' end)) label
+ select distinct f.name as name,i.uid,m.path as path,i.builder_slug
+ from showhome_web.image_furnishings f join showhome_web.gallery_card_index i on i.builder_slug=f.builder_slug and i.image_id=f.image_id join showhome_web.images m on m.key=f.image_key
  where i.eligible and lower(trim(i.category)) not in ('exterior','floorplan','floor plan','other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map')
- and nullif(trim(label),'') is not null
+ and nullif(f.name,'') is not null
  ) select name,count(distinct uid)::int as count,min('/api/assets/'||builder_slug||'/'||path) as image from items where name !~* $1 and name not in ('none','unknown','not applicable') group by name order by name`,[colourPattern]);
  return rows.map(row=>({name:String(row.name).replace(/\b\w/g,c=>c.toUpperCase()),slug:encodeURIComponent(String(row.name)),count:Number(row.count),image:String(row.image)}));
 }

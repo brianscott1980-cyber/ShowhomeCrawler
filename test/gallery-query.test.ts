@@ -13,6 +13,7 @@ beforeAll(async()=>{
  await db.exec('create role anon; create role authenticated;');
  for(const file of ['20261006000100_website_catalogue.sql','20261006000200_directory_routes.sql','20261006000400_gallery_and_query_cache.sql','20261006000500_gallery_building_index.sql','20261006000800_gallery_memberships.sql'])await db.exec(await readFile('supabase/migrations/'+file,'utf8'));
  await db.exec('create view showhome_web.gallery_card_index as select * from showhome_web.gallery_cards');
+ await db.exec(await readFile('supabase/migrations/20261009000100_image_furnishings.sql','utf8'));
  await db.exec(`insert into showhome_web.directory_cards(kind,key,name,href,collection_slugs,building_name,category,payload) values ('buildings','house','House','/buildings/alpha/house','{alpha}','House',null,'{}'),('interiors','bedroom','Bedroom','/interiors/bedroom','{alpha}',null,'Bedroom','{}')`);
  await db.exec(`insert into showhome_web.builders(slug,name,website_url) values('alpha','Alpha','https://example.com');
  insert into showhome_web.developments(key,builder_slug,source_url,name,display_name,geography) values('North','alpha','North','North','North','{"area":"North"}'),('South','alpha','South','South','South','{"area":"South"}');
@@ -188,4 +189,24 @@ it('keeps furnishing galleries scoped while applying other filters',async()=>{
   const empty=await queryGallery({scope,filters:{developer:'Missing'}},sql);
   expect(empty.total).toBe(0);
  }finally{await db.exec(`update showhome_web.images set metadata='{}' where catalogue_id='a'`);}
+});
+
+it('looks up normalised furnishing labels before pagination and supports multiple furnishing selections',async()=>{
+ await db.exec(`update showhome_web.images set metadata='{"categorisation":{"objects":[" Bedding ","BEDDING"],"furnishings":[{"object":"bedding","colours":["white"]}]}}' where catalogue_id='b';
+ update showhome_web.images set metadata='{"categorisation":{"objects":["Aprons"]}}' where catalogue_id='orphan'`);
+ const queries:string[]=[];
+ const measured=Object.assign((...args:unknown[])=>(sql as any)(...args),{json:sql.json,unsafe:(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}}) as unknown as postgres.Sql;
+ try{
+  const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:' BEDDING '};
+  const bedding=await queryGallery({scope,limit:1},measured);
+  expect(bedding.total).toBe(1);expect(bedding.images.map(i=>i.id)).toEqual(['b']);
+  expect(queries[0]).toContain('showhome_web.image_furnishings fm');
+  expect(queries[0]).not.toContain("fm.metadata");
+  const all={kind:'interiors' as const,href:'/interiors/all'};
+  const first=await queryGallery({scope:all,filters:{furnishing:'["BEDDING","Aprons"]'},limit:1},sql);
+  expect(first.total).toBe(2);expect(first.images.map(i=>i.id)).toEqual(['b']);
+  expect((await queryGallery({scope:all,filters:{furnishing:'["BEDDING","Aprons"]'},offset:1,limit:1},sql)).images.map(i=>i.id)).toEqual(['orphan']);
+  const items=await queryFurnishings(sql);
+  expect(items.find(item=>item.name==='Bedding')?.count).toBe(1);
+ }finally{await db.exec("update showhome_web.images set metadata='{}' where catalogue_id in ('b','orphan')");}
 });
