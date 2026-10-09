@@ -3,10 +3,10 @@ import {websiteDatabase} from '../database/website';
 import {cachedDirectory} from '../database/directory-cache';
 import {cachedGallery} from '../database/gallery-cache';
 import {homepageData} from '../web/homepage-data';
-// Local builds stay offline unless explicitly enabled. Vercel builds warm automatically.
+// Warm only on explicit manual invocation. Legacy deployment calls stay offline.
 const deployOnly=process.argv.includes('--deploy-only');
-if(deployOnly&&process.env.VERCEL!=='1'&&process.env.WARM_WEBSITE_CACHES!=='true'){
- console.log('Website cache warm-up skipped for local build. Run npm run website:warm to warm explicitly.');
+if(deployOnly){
+ console.log('Deployment cache warm-up disabled. Run npm run website:warm to warm explicitly.');
 }else{
  const sql=websiteDatabase();let failures=0;
  const warm=async(label:string,run:()=>Promise<unknown>)=>{

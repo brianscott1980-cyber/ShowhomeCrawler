@@ -1,0 +1,28 @@
+import {afterAll,expect,it} from 'vitest';
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+const db=new PGlite();
+afterAll(()=>db.close());
+it('backfills normalised labels and keeps them synchronised with imported image metadata',async()=>{
+ await db.exec('create role anon;create role authenticated;');
+ await db.exec(await readFile('supabase/migrations/20261006000100_website_catalogue.sql','utf8'));
+ await db.exec(`insert into showhome_web.builders(slug,name,website_url) values('test','Test','https://example.com');
+ insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,metadata) values('test:a','test','a','images/a.jpg','https://example.com/a','{"categorisation":{"objects":[" Bedding ","BEDDING","",null],"chairs":["Armchair"],"furnishings":[{"object":"bedding"},{"object":"Pillow"}],"hasTelevision":true,"hasComputer":true}}');`);
+ await db.exec(await readFile('supabase/migrations/20261009000100_image_furnishings.sql','utf8'));
+ const names=async()=> (await db.query<{name:string}>('select name from showhome_web.image_furnishings order by name')).rows.map(r=>r.name);
+ expect(await names()).toEqual(['armchair','bedding','computer','pillow','television']);
+ await db.exec('set enable_seqscan=off');
+ const plan=await db.query<{"QUERY PLAN":string}>("explain select * from showhome_web.image_furnishings where name='bedding'");
+ expect(JSON.stringify(plan.rows)).toContain('Index');
+ await db.exec(`update showhome_web.images set metadata='{"categorisation":{"objects":["Aprons"]}}',catalogue_id='renamed' where key='test:a'`);
+ expect(await names()).toEqual(['aprons']);
+ expect((await db.query('select image_id from showhome_web.image_furnishings')).rows).toEqual([{image_id:'renamed'}]);
+ await db.exec("delete from showhome_web.images where key='test:a'");
+ expect(await names()).toEqual([]);
+ await db.exec(`insert into showhome_web.images(key,builder_slug,catalogue_id,path,source_url,metadata) values('test:b','test','b','images/b.jpg','https://example.com/b','{"categorisation":{"furnishings":[{"object":"Bedding"}]}}')`);
+ expect(await names()).toEqual(['bedding']);
+ await db.exec("update showhome_web.images set metadata='{}' where key='test:b'");
+ expect(await names()).toEqual([]);
+ const access=await db.query<{allowed:boolean}>("select has_table_privilege('anon','showhome_web.image_furnishings','select') as allowed");
+ expect(access.rows[0].allowed).toBe(false);
+},60000);
