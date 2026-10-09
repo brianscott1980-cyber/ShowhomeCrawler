@@ -1,6 +1,6 @@
 import type { NextConfig } from 'next';
 const config: NextConfig = {
- images: { localPatterns: [{pathname:'/api/assets/**',search:'?optimize=1'},{pathname:'/logos/**',search:''}] },
+ images: { unoptimized: true, localPatterns: [{pathname:'/api/assets/**',search:'?optimize=1'},{pathname:'/logos/**',search:''}] },
  // Images use the asset route's existing source redirect when not bundled.
  outputFileTracingExcludes: { '/*': ['./collections/**/*', './results/**/*', './.showhome/**/*', './.git/**/*'] },
  outputFileTracingIncludes: { '/api/classifications': ['./pipeline-reports/**/*'] },

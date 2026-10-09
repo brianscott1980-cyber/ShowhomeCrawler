@@ -1,22 +1,28 @@
-vi.mock('../src/database/website',()=>({findWebsiteImage:async()=>({sourceUrl:'https://builder.example/photo.jpg'})}));
 import {afterEach,expect,it,vi} from 'vitest';
-vi.mock('node:fs/promises',()=>({realpath:vi.fn().mockRejectedValue(Object.assign(new Error('Missing'),{code:'ENOENT'})),readFile:vi.fn()}));
-vi.mock('../src/web/content-storage',()=>({storedImage:vi.fn().mockRejectedValue(new Error('Unavailable'))}));
-vi.mock('../src/web/collections',()=>({collectionFolder:()=>'/collections/example',readCollection:async()=>({images:[{id:'a'.repeat(64),path:`images/${'a'.repeat(64)}.jpg`,sourceUrl:'https://builder.example/photo.jpg'}]})}));
+const mocks=vi.hoisted(()=>({findImage:vi.fn(),readFile:vi.fn(),realpath:vi.fn()}));
+vi.mock('../src/database/website',()=>({findWebsiteImage:mocks.findImage}));
+vi.mock('node:fs/promises',()=>({realpath:mocks.realpath,readFile:mocks.readFile}));
+vi.mock('../src/web/collections',()=>({collectionFolder:()=>'/collections/example'}));
 import {GET} from '../src/app/api/assets/[slug]/[...path]/route';
+import {optimizedImageSource} from '../src/web/optimized-image-source';
 const params=Promise.resolve({slug:'example',path:['images',`${'a'.repeat(64)}.jpg`]});
-afterEach(()=>vi.unstubAllGlobals());
-it('returns image bytes for optimization when originals are not bundled',async()=>{
- const fetch=vi.fn().mockResolvedValue(new Response(new Uint8Array([1,2,3]),{headers:{'Content-Type':'image/jpeg'}}));vi.stubGlobal('fetch',fetch);
- const response=await GET(new Request('https://site.example/api/assets/example/image?optimize=1'),{params});
- expect(response.status).toBe(200);expect(response.headers.get('Content-Type')).toBe('image/jpeg');expect(new Uint8Array(await response.arrayBuffer())).toEqual(new Uint8Array([1,2,3]));expect(fetch).toHaveBeenCalledOnce();
-});
-it('retains source redirects for original image requests',async()=>{
+afterEach(()=>{vi.unstubAllGlobals();vi.clearAllMocks();});
+it.each(['','?optimize=1'])('redirects image requests directly without fetching or reading image bytes (%s)',async(query)=>{
+ mocks.findImage.mockResolvedValue({sourceUrl:'https://builder.example/photo.jpg'});
  const fetch=vi.fn();vi.stubGlobal('fetch',fetch);
- const response=await GET(new Request('https://site.example/api/assets/example/image'),{params});
- expect(response.status).toBe(307);expect(response.headers.get('Location')).toBe('https://builder.example/photo.jpg');expect(fetch).not.toHaveBeenCalled();
+ const response=await GET(new Request(`https://site.example/api/assets/example/image${query}`),{params});
+ expect(response.status).toBe(307);expect(response.headers.get('Location')).toBe('https://builder.example/photo.jpg');
+ expect(response.headers.get('Cache-Control')).toBe('public, max-age=86400');
+ expect(await response.text()).toBe('');expect(fetch).not.toHaveBeenCalled();expect(mocks.realpath).not.toHaveBeenCalled();expect(mocks.readFile).not.toHaveBeenCalled();
 });
-it('rejects oversized upstream images before downloading their body',async()=>{
- vi.stubGlobal('fetch',vi.fn().mockResolvedValue(new Response(null,{headers:{'Content-Length':String(21*1024*1024)}})));
- const response=await GET(new Request('https://site.example/api/assets/example/image?optimize=1'),{params});expect(response.status).toBe(502);
+it('returns 404 for missing source images',async()=>{
+ mocks.findImage.mockResolvedValue(null);
+ expect((await GET(new Request('https://site.example/image'),{params})).status).toBe(404);
+});
+it('rejects non-web redirect destinations',async()=>{
+ mocks.findImage.mockResolvedValue({sourceUrl:'file:///secret'});
+ expect((await GET(new Request('https://site.example/image'),{params})).status).toBe(502);
+});
+it('keeps card image URLs direct',()=>{
+ expect(optimizedImageSource('/api/assets/example/images/photo.jpg')).toBe('/api/assets/example/images/photo.jpg');
 });
