@@ -7,11 +7,14 @@ CONFIG=ROOT/'.showhome/storage-config.json';STATUS=ROOT/'.showhome/storage-statu
 def save(path,value):
  path.parent.mkdir(parents=True,exist_ok=True);tmp=path.with_name(path.name+'.'+uuid.uuid4().hex+'.tmp');tmp.write_text(json.dumps(value,indent=2)+'\n');tmp.replace(path)
 def mounted_share(output,server,share):
+ hosts={server.lower(),server.lower()+'.local'}
+ try:hosts.update(address[4][0].lower() for address in socket.getaddrinfo(server+'.local',445))
+ except OSError:pass
  for line in output.splitlines():
   match=re.match(r'//([^ ]+) on (.+) \((smbfs|afpfs),',line)
   if not match:continue
   source,mount,protocol=match.groups();host=source.split('@')[-1].split('/')[0].lower();name=source.rsplit('/',1)[-1]
-  if name==share and (host==server.lower()+'.local' or host.startswith(server.lower()+'._afpovertcp.')):return Path(mount)
+  if name==share and (host in hosts or host.startswith(server.lower()+'._afpovertcp.')):return Path(mount)
  return None
 
 def wifi_name(interface):
