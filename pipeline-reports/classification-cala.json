@@ -3,19 +3,19 @@
   "builder": "cala",
   "builderName": "Cala",
   "status": "running",
-  "updatedAt": "2026-10-08T23:59:45.962Z",
+  "updatedAt": "2026-10-09T00:03:44.000Z",
   "currentDevelopments": [
-    "Ascot Gardens, Ascot, Berkshire"
+    "Aurs Meadows, Barrhead, East Renfrewshire"
   ],
   "totals": {
-    "completed": 758,
-    "failed": 0,
-    "pending": 2583,
+    "completed": 776,
+    "failed": 1,
+    "pending": 2564,
     "total": 3341,
     "images": 3341,
     "developments": 83,
-    "developmentsCompleted": 2,
-    "structuredImages": 50
+    "developmentsCompleted": 3,
+    "structuredImages": 68
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 50
+      "count": 68
     }
   ],
   "developments": [
@@ -41,7 +41,7 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/ascot-gardens-ascot/availability-prices/",
       "name": "Ascot Gardens, Ascot, Berkshire",
-      "status": "running",
+      "status": "completed",
       "completed": 34,
       "failed": 0,
       "pending": 0,
@@ -51,10 +51,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/east-renfrewshire/aurs-meadows-barrhead/availability-prices/",
       "name": "Aurs Meadows, Barrhead, East Renfrewshire",
-      "status": "pending",
-      "completed": 69,
-      "failed": 0,
-      "pending": 19,
+      "status": "running",
+      "completed": 87,
+      "failed": 1,
+      "pending": 0,
       "total": 88,
       "images": 88
     },
@@ -312,9 +312,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
       "name": "Cornhill Village, Hamilton, South Lanarkshire",
       "status": "pending",
-      "completed": 72,
+      "completed": 73,
       "failed": 0,
-      "pending": 61,
+      "pending": 60,
       "total": 133,
       "images": 133
     },
@@ -512,9 +512,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/falkirk/lathallan-grange-polmont/availability-prices/",
       "name": "Lathallan Grange, Polmont, Falkirk",
       "status": "pending",
-      "completed": 53,
+      "completed": 54,
       "failed": 0,
-      "pending": 38,
+      "pending": 37,
       "total": 91,
       "images": 91
     },
@@ -642,9 +642,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/aberdeenshire/raemoir-park-banchory/availability-prices/",
       "name": "Raemoir Park, Banchory, Aberdeenshire",
       "status": "pending",
-      "completed": 52,
+      "completed": 56,
       "failed": 0,
-      "pending": 59,
+      "pending": 55,
       "total": 111,
       "images": 111
     },
