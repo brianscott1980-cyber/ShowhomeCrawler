@@ -3,19 +3,19 @@
   "builder": "cala",
   "builderName": "Cala",
   "status": "running",
-  "updatedAt": "2026-10-09T00:11:46.144Z",
+  "updatedAt": "2026-10-09T00:26:46.700Z",
   "currentDevelopments": [
-    "Aylett's Green, Kelvedon, Essex"
+    "Ballagan Woods, Killearn, Stirling"
   ],
   "totals": {
-    "completed": 828,
-    "failed": 2,
-    "pending": 2511,
+    "completed": 842,
+    "failed": 3,
+    "pending": 2496,
     "total": 3341,
     "images": 3341,
     "developments": 83,
     "developmentsCompleted": 3,
-    "structuredImages": 120
+    "structuredImages": 134
   },
   "models": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 120
+      "count": 134
     }
   ],
   "developments": [
@@ -61,7 +61,7 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/essex/aylett-s-green-kelvedon/availability-prices/",
       "name": "Aylett's Green, Kelvedon, Essex",
-      "status": "running",
+      "status": "needs attention",
       "completed": 66,
       "failed": 1,
       "pending": 0,
@@ -71,10 +71,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/stirling/ballagan-woods-killearn/availability-prices/",
       "name": "Ballagan Woods, Killearn, Stirling",
-      "status": "pending",
-      "completed": 59,
-      "failed": 0,
-      "pending": 15,
+      "status": "running",
+      "completed": 73,
+      "failed": 1,
+      "pending": 0,
       "total": 74,
       "images": 74
     },
@@ -311,10 +311,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/scotland/south-lanarkshire/cornhill-village-hamilton/availability-prices/",
       "name": "Cornhill Village, Hamilton, South Lanarkshire",
-      "status": "pending",
-      "completed": 73,
-      "failed": 0,
-      "pending": 60,
+      "status": "needs attention",
+      "completed": 85,
+      "failed": 1,
+      "pending": 47,
       "total": 133,
       "images": 133
     },
