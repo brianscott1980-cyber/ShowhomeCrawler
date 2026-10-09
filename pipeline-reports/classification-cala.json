@@ -3,19 +3,19 @@
   "builder": "cala",
   "builderName": "Cala",
   "status": "running",
-  "updatedAt": "2026-10-08T23:55:47.104Z",
+  "updatedAt": "2026-10-08T23:59:45.962Z",
   "currentDevelopments": [
-    "Arabella Park, Great Kimble, Buckinghamshire"
+    "Ascot Gardens, Ascot, Berkshire"
   ],
   "totals": {
-    "completed": 733,
+    "completed": 758,
     "failed": 0,
-    "pending": 2608,
+    "pending": 2583,
     "total": 3341,
     "images": 3341,
     "developments": 83,
-    "developmentsCompleted": 1,
-    "structuredImages": 25
+    "developmentsCompleted": 2,
+    "structuredImages": 50
   },
   "models": [
     {
@@ -24,14 +24,14 @@
     },
     {
       "name": "qwen3-vl:8b-instruct",
-      "count": 25
+      "count": 50
     }
   ],
   "developments": [
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/buckinghamshire/arabella-park-great-kimble/availability-prices/",
       "name": "Arabella Park, Great Kimble, Buckinghamshire",
-      "status": "running",
+      "status": "completed",
       "completed": 64,
       "failed": 0,
       "pending": 0,
@@ -41,10 +41,10 @@
     {
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/ascot-gardens-ascot/availability-prices/",
       "name": "Ascot Gardens, Ascot, Berkshire",
-      "status": "pending",
-      "completed": 9,
+      "status": "running",
+      "completed": 34,
       "failed": 0,
-      "pending": 25,
+      "pending": 0,
       "total": 34,
       "images": 34
     },
@@ -152,9 +152,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/brooklands-grove-weybridge/availability-prices/",
       "name": "Brooklands Grove, Weybridge, Surrey",
       "status": "pending",
-      "completed": 3,
+      "completed": 12,
       "failed": 0,
-      "pending": 77,
+      "pending": 68,
       "total": 80,
       "images": 80
     },
@@ -182,9 +182,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/berkshire/cala-at-buckler-s-park-the-pines-crowthorne/availability-prices/",
       "name": "Cala at Buckler's Park - The Pines, Crowthorne, Berkshire",
       "status": "pending",
-      "completed": 0,
+      "completed": 3,
       "failed": 0,
-      "pending": 41,
+      "pending": 38,
       "total": 41,
       "images": 41
     },
@@ -532,9 +532,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/kent/maiden-view-woodchurch/availability-prices/",
       "name": "Maiden View, Woodchurch, Kent",
       "status": "pending",
-      "completed": 0,
+      "completed": 1,
       "failed": 0,
-      "pending": 56,
+      "pending": 55,
       "total": 56,
       "images": 56
     },
@@ -622,9 +622,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-west-england/dorset/oakwood-park-wimborne/availability-prices/",
       "name": "Oakwood Park, Wimborne, Dorset",
       "status": "pending",
-      "completed": 23,
+      "completed": 24,
       "failed": 0,
-      "pending": 86,
+      "pending": 85,
       "total": 109,
       "images": 109
     },
@@ -652,9 +652,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/randall-fields-stotfold/availability-prices/",
       "name": "Randall Fields, Stotfold, Bedfordshire",
       "status": "pending",
-      "completed": 18,
+      "completed": 19,
       "failed": 0,
-      "pending": 60,
+      "pending": 59,
       "total": 78,
       "images": 78
     },
@@ -702,9 +702,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/east-england/bedfordshire/samuel-gardens-arlesey/availability-prices/",
       "name": "Samuel Gardens, Arlesey, Bedfordshire",
       "status": "pending",
-      "completed": 1,
+      "completed": 2,
       "failed": 0,
-      "pending": 102,
+      "pending": 101,
       "total": 103,
       "images": 103
     },
@@ -762,9 +762,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/surrey/the-glades-at-mindenhurst-deepcut/availability-prices/",
       "name": "The Glades at Mindenhurst, Deepcut, Surrey",
       "status": "pending",
-      "completed": 1,
+      "completed": 2,
       "failed": 0,
-      "pending": 104,
+      "pending": 103,
       "total": 105,
       "images": 105
     },
@@ -792,9 +792,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/the-willows-burridge/availability-prices/",
       "name": "The Willows, Burridge, Hampshire",
       "status": "pending",
-      "completed": 0,
+      "completed": 1,
       "failed": 0,
-      "pending": 32,
+      "pending": 31,
       "total": 32,
       "images": 32
     },
@@ -852,9 +852,9 @@
       "url": "https://www.cala.co.uk/homes-for-sale/south-east-england/hampshire/worting-park-basingstoke/availability-prices/",
       "name": "Worting Park, Basingstoke, Hampshire",
       "status": "pending",
-      "completed": 0,
+      "completed": 1,
       "failed": 0,
-      "pending": 75,
+      "pending": 74,
       "total": 75,
       "images": 75
     }
