@@ -11,7 +11,7 @@ it('shows separate current builders and a development summary without image card
  const host=document.createElement('div');document.body.append(host);const root=createRoot(host);
  try{
   await act(async()=>{root.render(<Classifications/>);});
-  expect(host.textContent).toContain('Current builder: Alpha');expect(host.textContent).toContain('Current builder: Beta');
+  expect([...host.querySelectorAll('h3')].map(h=>h.textContent)).toEqual(expect.arrayContaining(['Alpha','Beta']));
   expect(host.textContent).toContain('Image crawling');expect(host.textContent).toContain('Image classifications');
   expect(host.querySelectorAll('img')).toHaveLength(0);
   await act(async()=>[...host.querySelectorAll<HTMLButtonElement>('button')].find(b=>b.textContent==='Alpha')!.click());
