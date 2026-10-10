@@ -24,3 +24,8 @@ it('groups categorised images by their mainCategory and excludes uncategorised i
 });
 
 
+
+it('retains named types with repeated plot suffixes and type variants',()=>{
+ const col=collection('one');col.report.properties[0]!.name='Bantry · Plot 11 · Plot 11';col.report.properties[1]!.name='The Laverick - Type 3 · Plot 2';
+ expect(groupCollections([col],'buildings').map(group=>group.name)).toEqual(['Bantry','The Laverick - Type 3']);
+});

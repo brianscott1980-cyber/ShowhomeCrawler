@@ -35,3 +35,15 @@ export async function BuildingOverviewDetails({slugs,name}:{slugs:string[];name:
   <div><dt>Prices</dt><dd>{range(prices,true)}</dd></div>
  </dl></div>;
 }
+
+export async function buildingDevelopmentPreviews(slugs:string[],name:string){
+ const [rows,{canonical}]=await Promise.all([websiteDatabase()`
+ select distinct c.href,c.name,c.payload->>'image' as image,b.name as builder,b.logo_url,b.logo_background,d.latitude,d.longitude,d.town
+ from showhome_web.galleries g join showhome_web.buildings t on t.key=g.building_key
+ join showhome_web.developments d on d.key=g.development_key
+ join showhome_web.directory_cards c on c.kind='locations' and c.builder_slug=g.builder_slug and c.development_url=d.source_url and c.is_ready
+ join showhome_web.builders b on b.slug=g.builder_slug
+ where g.builder_slug=any(${slugs}::text[]) and lower(t.name)=lower(${name})
+ order by c.name`,readDevelopmentPublicRoutes()]);
+ return rows.map(row=>({href:canonical[row.href]??String(row.href),name:developmentName(String(row.name)),image:String(row.image??''),builderName:String(row.builder),builderLogo:row.logo_url??undefined,builderLogoBackground:row.logo_background??undefined,latitude:row.latitude??undefined,longitude:row.longitude??undefined,town:row.town??undefined}));
+}

@@ -69,7 +69,7 @@ export default async function Page({ params }: Props) {
   {path:'developments',label:'View developments',count:locations.length,unit:'developments',image:preview(developmentImages,true)},
   {path:'buildings',label:'View building types',count:overview.counts['Building types'],unit:'building types',image:preview(buildingImages,true)},
   {path:'interiors',label:'View interiors',count:overview.interiors,unit:'interiors',image:preview(interiorImages)},
- ];
+ ].filter(destination=>destination.count>0);
  const brand=await readWebsiteBuilder(slug),logo=brand?.logo_url;
  const mapDevelopments=await builderMapDevelopments(slug);
  const mapCards=locations.map(location=>({key:`${slug}:${location.url}`,name:location.name,developer:developer.name,latitude:location.latitude,longitude:location.longitude,country:location.geography?.country??null,image:'',description:location.name,count:0,properties:[],href:location.href}));
@@ -77,13 +77,15 @@ export default async function Page({ params }: Props) {
   description={`Discover ${developer.name} developments, explore their house types and find inspiration in their showhome rooms.`}
   builderOverview={{details:<BuilderOverviewDetails slug={slug} website={developer.website} countries={[...new Set(locations.map(location=>location.geography?.country).filter((country):country is string=>Boolean(country)))]}/>,map:<BuilderOverviewMap cards={mapCards} developments={mapDevelopments}/>,counts:overview.counts}}
   back={{ href: '/builders', label: '← All builders' }} collections={report ? [{ slug, name: developer.name, report }] : []} includeUnclassified>
+  {destinations.length>0&&<>
   <div className="results-heading builder-explore-heading"><h2>Explore {developer.name}</h2></div>
   <nav className="builder-navigation" aria-label={`Explore ${developer.name}`}>
-   {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={destination.path==='interiors'?`/interiors/${slug}`:`/${destination.path}`} data-filters={JSON.stringify({developer:developer.name})}>
+   {destinations.map(destination=><Link key={destination.path} className="builder-navigation-card" href={`/${destination.path}/${slug}`} data-filters={JSON.stringify({developer:developer.name})}>
     {destination.image?<NextCardImage src={optimizedImageSource(assetUrl(slug,destination.image.path))} alt="" width={640} height={480} sizes="(max-width: 700px) 100vw, 33vw" loading="lazy"/>:<div className="builder-navigation-placeholder">{developer.name}</div>}
     <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
    </Link>)}
   </nav>
+  </>}
   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }}/>
  </ResultsPage>;
 }

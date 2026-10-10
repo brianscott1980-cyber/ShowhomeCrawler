@@ -1,12 +1,15 @@
 'use client';
+import {ImageCardDescription} from './image-card-description';
+import {ImageHomesDialog} from './image-homes-dialog';
+import {useSavedLocation} from './location-preferences';
+import {cardTags,ImageCardTags} from './image-card-tags';
 import {optimizedImageSource} from './optimized-image-source';
-import {ColourSwatch} from './colour-swatch';
-import {colourPattern,interiorTags} from './interior-tags';
+import {interiorTags} from './interior-tags';
 import {cascadingFiltersEnabled} from './filter-settings';
 import {isCategorisedImage,isInteriorCategory} from './image-classification';
-import {sharedImageCards,roomLabel} from './shared-image-cards';
+import {sharedImageCards,uniqueImageCards,roomLabel} from './shared-image-cards';
 import {useGalleryQuery} from './use-gallery-query';
-import type {GalleryScope,GalleryPageData,GalleryImage} from './gallery-page-data';
+import type {GalleryScope,GalleryPageData,GalleryImage,DevelopmentPreview} from './gallery-page-data';
 import {DirectoryQueryStatus} from './use-directory-query';
 import {RollingCount} from './rolling-count';
 import {SingleSelectFilter} from './single-select-filter';
@@ -20,14 +23,14 @@ import {BreadcrumbBack} from './breadcrumb-back';
 import {MultiSelectFilter} from './multi-select-filter';
 import {matchesSelection,matchesAnySelection} from './filter-selection';
 import {DirectoryFilters} from './directory-filters';
-import { homeTypeName, uniqueHomeTypeNames, plotDetails } from '../reports/home-display';
+import { homeTypeName, uniqueHomeTypeNames } from '../reports/home-display';
 import { type ReactNode, type ComponentProps, type CSSProperties, useEffect, useRef, useState } from 'react';
 import type { RunReport } from '../reports/report';
 import { ViewOptions, useCardView } from './view-options';
 import { isRoomImage } from '../vision/room-classifier';
 import Link from 'next/link';
 import {useUrlFilters} from './url-filters';
-const galleryDefaults={interiorColour:'',furnishingColour:'',furnishing:'',colour:'',tag:'',building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
+const galleryDefaults={imageTag:'',interiorColour:'',furnishingColour:'',furnishing:'',colour:'',tag:'',building:'',q:'',development:'',category:'',room:'',developer:'',bedrooms:'',location:'',site:'',minBeds:'',maxBeds:'',minPrice:'',maxPrice:''};
 import { heartIcon } from '../reports/gallery-ui';
 
 interface Collection { slug: string; name: string; report: RunReport }
@@ -51,9 +54,10 @@ export function Gallery({
  overviewOnly = false,
  places,
  initialImage,
- galleryScope, galleryPage,
+ galleryScope, galleryPage, buildingDevelopments,
 }: {
  collections: Collection[];
+ buildingDevelopments?:DevelopmentPreview[];
  galleryScope?:GalleryScope; galleryPage?:GalleryPageData;
  initialImage?: string;
  favouritesOnly?: boolean;
@@ -63,17 +67,20 @@ export function Gallery({
  places?: Record<string,string[]>;
  introduction?: { title: ReactNode; description: string; eyebrow: ReactNode; titleAccessory?:ReactNode; buildingType?:boolean; developmentDetails?:ReactNode; developmentLocation?:ReactNode; back?: { href: string; label: string }; map?:ReactNode;details?:ReactNode;counts?:Record<string,number> };
 }) {
+ const savedLocation=useSavedLocation();
  const [view, changeView] = useCardView('showhome-gallery-view', 'large');
  const [favourites, setFavourites] = useState<string[]>([]);
  const [ready, setReady] = useState(false);
  const [filters,setFilters,filtersReady]=useUrlFilters(galleryDefaults);
  const {q:query,development,category:mainCategory,room:subCategory}=filters;
  const setQuery=(value:string)=>setFilters(previous=>({...previous,q:value}));
- const tagSelected=(value:string)=>galleryScope?.kind==='interiors'?matchesSelection(new RegExp(colourPattern,'i').test(value)?filters.colour:filters.tag,value)&&Boolean(new RegExp(colourPattern,'i').test(value)?filters.colour:filters.tag):query===value;
+ const tagSelected=(value:string)=>galleryScope?.kind==='interiors'?Boolean(filters.imageTag)&&matchesSelection(filters.imageTag,value):query===value;
  const resultsStart=useRef<HTMLDivElement>(null);
  const toggleTag=(value:string)=>{
   if(galleryScope?.kind!=='interiors')setQuery(query===value?'':value);
-  else{const key=new RegExp(colourPattern,'i').test(value)?'colour':'tag';setFilters(previous=>({...previous,q:'',[key]:previous[key]===value?'':value}));}
+  else setFilters(previous=>({...previous,q:'',imageTag:previous.imageTag===value?'':value}));
+ };
+ const scrollToResults=()=>{
   requestAnimationFrame(()=>{
    const target=resultsStart.current;if(!target)return;
    const header=document.querySelector<HTMLElement>('.site-header');
@@ -153,16 +160,17 @@ export function Gallery({
   }
  }
 
- const all:GalleryImage[] = collections.flatMap(c =>
+ const collectionImages:GalleryImage[] = collections.flatMap(c =>
   c.report.images.flatMap(image => {const card={
    ...image,
    slug: c.slug,
    developer: c.name,
    homes: c.report.properties.filter(p => p.imageIds.includes(image.id)),
    uid: `${c.slug}:${image.id}`,
-  };return featured?[{...card,imageUid:card.uid}]:sharedImageCards(card);})
+  };return featured||galleryScope?.kind==='interiors'?[{...card,imageUid:card.uid}]:sharedImageCards(card);})
  );
 
+ const all=galleryScope?.kind==='interiors'?uniqueImageCards(collectionImages):collectionImages;
  const available = all.filter(image => {
   if (!isCategorisedImage(image)) return false;
   if(galleryScope?.kind==='interiors'&&!isInteriorCategory(image.categorisation?.mainCategory??image.verdict?.roomType))return false;
@@ -179,6 +187,7 @@ export function Gallery({
  const homeMatches=(image:(typeof available)[number],home:(typeof available)[number]['homes'][number],f:typeof filters)=>matchesSelection(f.building,homeTypeName(home.buildingName??home.name).toLowerCase())&&(!f.minBeds||(home.bedrooms!==null&&home.bedrooms>=Number(f.minBeds)))&&(!f.maxBeds||(home.bedrooms!==null&&home.bedrooms<=Number(f.maxBeds)))&&(!f.minPrice||(home.price!==null&&home.price>=Number(f.minPrice)))&&(!f.maxPrice||(home.price!==null&&home.price<=Number(f.maxPrice)))&&matchesSelection(f.bedrooms,String(home.bedrooms))&&matchesSelection(f.site,home.development)&&matchesSelection(f.development,home.developmentUrl)&&matchesAnySelection(f.location,places?.[`${image.slug}:${home.developmentUrl}`]??[]);
  const matches=(image:(typeof available)[number],f:typeof filters)=>{
   if(!matchesSelection(f.developer,image.developer))return false;
+  if(f.imageTag){if(!image.categorisation)return false;const tags=cardTags(image.categorisation);if(![...tags.primary,...tags.remaining].some(tag=>tag.toLowerCase()===f.imageTag.toLowerCase()))return false;}
   if(!matchesAnySelection(f.colour,interiorTags(image.categorisation).colour)||!matchesAnySelection(f.tag,interiorTags(image.categorisation).tag))return false;
   if((f.building||f.minBeds||f.maxBeds||f.minPrice||f.maxPrice||f.bedrooms||f.location||f.site||f.development)&&!image.homes.some(home=>homeMatches(image,home,f)))return false;
   if (favouritesOnly && !favourites.includes(image.id)) return false;
@@ -370,6 +379,7 @@ export function Gallery({
      <MultiSelectFilter label="Developments" value={filters.site} options={siteOptions.map(value=>({value,label:developmentName(value)}))} onChange={value=>setFilters(previous=>({...previous,site:value}))}/>
     </>}
     </>}
+    {filters.imageTag&&<button className="tag" type="button" aria-label={`Clear image tag ${filters.imageTag}`} onClick={()=>setFilters(previous=>({...previous,imageTag:''}))}>{filters.imageTag} ×</button>}
     <button className={isDevelopment||isInterior||isBuilding?'location-filter-reset':'results-reset'} onClick={() => setFilters(galleryDefaults)}>Reset</button>
    </DirectoryFilters></div>
 
@@ -383,8 +393,8 @@ export function Gallery({
    <div ref={resultsStart} aria-hidden="true"/>
    <GalleryCardResults featured={featured} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore} className={featured ? 'image-grid home-featured-grid' : `image-grid image-grid-${view}`} label="Interiors" identity={JSON.stringify([filters,favouritesOnly])} paginate={!featured}>
     {images.map(image => (
-     <article className="image-card" key={image.uid} onClick={event=>{
-      if((event.target as HTMLElement).closest('button,a,details,input,select,textarea'))return;
+     <article className={`image-card${featured?'':' gallery-result-card'}`} key={image.uid} onClick={event=>{
+      if((event.target as HTMLElement).closest('button,a,details,dialog,input,select,textarea'))return;
       open(image.uid);
      }}>
       <div className="results-photo-frame">
@@ -400,60 +410,25 @@ export function Gallery({
        />
        {view!=='list'&&image.categorisation?.subCategory!==''&&<span className="photo-caption">{roomLabel(image.categorisation?.subCategory ?? 'Showhome interior')}</span>}
       </button>
-      {view!=='list'&&<button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>}
+      {(image.builderLogo??image.homes.find(home=>home.builderLogo)?.builderLogo)&&<img className="gallery-card-builder-logo" src={image.builderLogo??image.homes.find(home=>home.builderLogo)?.builderLogo} alt={`${image.developer} logo`} style={{background:image.builderLogoBackground??image.homes.find(home=>home.builderLogo)?.builderLogoBackground??'#fff'}} loading="lazy"/>}
+      {<button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>}
       </div>
 
-      {view==='list'&&<button className="results-save" onClick={() => toggle(image.id)} aria-pressed={favourites.includes(image.id)} aria-label={favourites.includes(image.id) ? 'Remove from favourites' : 'Add to favourites'} dangerouslySetInnerHTML={{ __html: heartIcon }}/>}
+
       <div className="image-body">
        {featured ? <><h3>{image.categorisation?.mainCategory ?? 'Showhome interior'}</h3><p className="subtle">{image.developer}</p></> : <>
-       {view!=='list'&&<div className="image-heading">
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-         <p className="eyebrow" style={{ margin: 0 }}>{image.developer}</p>
-         {image.categorisation?.subCategory && (
-          <span className="badge-pill">{roomLabel(image.categorisation.subCategory)}</span>
-         )}
-        </div>
-       </div>}
+       <div className="image-card-copy">
 
-       <h3 className={view==='list'?'image-room-title':undefined}>{view==='list'?roomLabel(image.categorisation?.subCategory||image.categorisation?.mainCategory||image.verdict?.roomType||'Showhome interior'):uniqueHomeTypeNames(image.homes.map(home => homeTypeName(home.name))).join(' · ') || image.developer}</h3>
-       <p className="subtle">{image.verdict?.description ?? 'Showhome interior'}</p>
 
-       {image.categorisation && (
-        <div className="feature-tags">
-         {image.categorisation.colours.slice(0, 3).map(c => (
-          <button type="button" key={c} className="tag tag-colour" aria-pressed={tagSelected(c)} onClick={()=>toggleTag(c)} title={`Filter by ${c}`}><ColourSwatch label={c}/>{c}</button>
-         ))}
-         {image.categorisation.hasTelevision && (
-          <span className="tag tag-tech" title="Television present">📺 TV</span>
-         )}
-         {image.categorisation.hasComputer && (
-          <span className="tag tag-tech" title="Computer / Workspace present">💻 PC</span>
-         )}
-         {[...new Set([...(image.categorisation.decor??[]),...(image.categorisation.wallpaperTags??[]),...(image.categorisation.curtainTags??[]),...(image.categorisation.fabricTags??[]),...(image.categorisation.furnishingTags??[])])].map(tag=><button type="button" key={tag} className="tag tag-decor" aria-pressed={tagSelected(tag)} onClick={()=>toggleTag(tag)} title={`Filter by ${tag}`}><ColourSwatch label={tag}/>{tag}</button>)}
-         {image.categorisation.wallpaper && (
-          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.wallpaper)} onClick={()=>toggleTag(image.categorisation!.wallpaper!)}><ColourSwatch label={image.categorisation.wallpaper}/>{image.categorisation.wallpaper}</button>
-         )}
-         {image.categorisation.curtains && (
-          <button type="button" className="tag tag-decor" aria-pressed={tagSelected(image.categorisation.curtains)} onClick={()=>toggleTag(image.categorisation!.curtains!)}><ColourSwatch label={image.categorisation.curtains}/>{image.categorisation.curtains}</button>
-         )}
-        </div>
-       )}
+       <h3 className={view==='list'?'image-room-title':undefined}>{view==='list'?roomLabel(image.categorisation?.subCategory||image.categorisation?.mainCategory||image.verdict?.roomType||'Showhome interior'):(isInterior&&new Set(image.homes.map(home=>home.buildingHref??`${home.builderSlug??image.slug}:${homeTypeName(home.name).toLowerCase()}`)).size>1?'Multiple':uniqueHomeTypeNames(image.homes.map(home => homeTypeName(home.name))).join(' · ') || image.developer)}</h3>
+       <ImageCardDescription text={image.verdict?.description ?? 'Showhome interior'}/>
 
-       <details className="image-home-details">
-        <summary>Explore this home</summary>
-        {image.homes.map((home, index) => (
-         <div className="property" key={`${home.url}:${index}`}>
-          <a href={home.url} target="_blank" rel="noreferrer">
-           {homeTypeName(home.name)} ↗
-          </a>
-          <span>
-           {developmentName(home.development)} · {home.bedrooms} beds
-           {home.price !== null ? ` · £${home.price.toLocaleString('en-GB')}` : ''}
-          </span>
-          <span>{plotDetails(home)}</span>
-         </div>
-        ))}
-       </details>
+       </div>
+       <div className="image-card-tags-slot">
+       {image.categorisation&&<ImageCardTags onFilterApplied={scrollToResults} category={image.categorisation} onFurnishing={isInterior?value=>setFilters(previous=>({...previous,q:'',furnishing:previous.furnishing===value?'':value})):undefined} onFurnishingColour={isInterior?value=>setFilters(previous=>({...previous,q:'',[galleryScope?.furnishing?'imageTag':'furnishingColour']:previous[galleryScope?.furnishing?'imageTag':'furnishingColour']===value?'':value})):undefined} selected={tag=>tagSelected(tag)||(Boolean(filters.furnishing)&&matchesSelection(filters.furnishing,tag))||(Boolean(filters.furnishingColour)&&matchesSelection(filters.furnishingColour,tag))} onTag={toggleTag} interiorSelected={colour=>Boolean(filters.interiorColour)&&matchesSelection(filters.interiorColour,colour)} onInteriorColour={colour=>setFilters(previous=>({...previous,q:'',interiorColour:previous.interiorColour===colour?'':colour}))}/>}
+
+       </div>
+       <div className="image-card-action-slot"><ImageHomesDialog image={image} location={savedLocation} developments={introduction?.buildingType?buildingDevelopments:undefined}/></div>
        </>}
       </div>
      </article>

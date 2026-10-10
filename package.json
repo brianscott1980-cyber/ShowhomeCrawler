@@ -44,7 +44,8 @@
     "website:warm": "tsx src/cli/warm-website-caches.ts",
     "ai:local:publish": "tsx src/cli/classify-local.ts --apply --publish",
     "classifications:reports": "tsx src/cli/classification-snapshots.ts",
-    "process:local": "tsx src/cli/process-local.ts"
+    "process:local": "tsx src/cli/process-local.ts",
+    "website:repair-building-types": "tsx src/cli/repair-building-types.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

@@ -1,10 +1,10 @@
-import {BuildingOverviewDetails} from './building-overview-details';
+import {BuildingOverviewDetails,buildingDevelopmentPreviews} from './building-overview-details';
 import {optimizedImageSource} from './optimized-image-source';
 import {publicDevelopmentCards} from '../database/development-public-routes';
 import {DevelopmentDirectoryBuilderLogo} from './development-directory-builder-logo';
 import {searchListing} from './seo';
 import {homeTypeName} from '../reports/home-display';
-import {roomLabel} from './shared-image-cards';
+import {roomLabel,roomCollectionLabel} from './shared-image-cards';
 import {CardImage,NextCardImage} from './card-image';
 import {cachedGallery as queryGallery} from '../database/gallery-cache';
 import {cachedDirectory as queryDirectory} from '../database/directory-cache';
@@ -92,7 +92,7 @@ export async function GroupDetail({kind,id,searchParams={},canonicalPath}:{kind:
   const galleryPage=await queryGallery({scope:galleryScope,...(typeof searchParams.image==='string'?{selectedUid:searchParams.image}:{})});
   if(galleryScope.kind==='buildings'&&!galleryPage.total)notFound();
   const brand=kind==='buildings'?await readWebsiteBuilder(reference.collection_slugs[0]):undefined;
-  return <ResultsPage buildingDetails={kind==='buildings'?<BuildingOverviewDetails slugs={reference.collection_slugs} name={reference.building_name??reference.name}/>:undefined} titleAccessory={brand?.logo_url?<img className="builder-results-logo development-builder-overview-logo" src={brand.logo_url} alt={`${brand.name} logo`} style={{background:brand.logo_background??'#fff'}}/>:undefined} title={kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)} eyebrow={kind==='interiors'||kind==='spaces'?null:reference.payload.developers?.join(' · ')} description={isAll?'Explore showhome inspiration across all room types. Discover the homes and developments behind each image.':`Explore interiors from ${kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={[]} places={{}} galleryScope={galleryScope} galleryPage={galleryPage} initialImage={typeof searchParams.image==='string'?searchParams.image:undefined} includeUnclassified/>;
+  return <ResultsPage buildingDetails={kind==='buildings'?<BuildingOverviewDetails slugs={reference.collection_slugs} name={reference.building_name??reference.name}/>:undefined} titleAccessory={brand?.logo_url?<img className="builder-results-logo development-builder-overview-logo" src={brand.logo_url} alt={`${brand.name} logo`} style={{background:brand.logo_background??'#fff'}}/>:undefined} buildingDevelopments={kind==='buildings'?await buildingDevelopmentPreviews(reference.collection_slugs,reference.building_name??reference.name):undefined} title={kind==='buildings'?homeTypeName(reference.name):roomCollectionLabel(reference.name)} eyebrow={kind==='interiors'||kind==='spaces'?null:reference.payload.developers?.join(' · ')} description={isAll?'Explore showhome inspiration across all room types. Discover the homes and developments behind each image.':`Explore interiors from ${kind==='buildings'?homeTypeName(reference.name):roomLabel(reference.name)}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={[]} places={{}} galleryScope={galleryScope} galleryPage={galleryPage} initialImage={typeof searchParams.image==='string'?searchParams.image:undefined} includeUnclassified/>;
  }
  const {group,path}=await findGroup(kind,id);
  if(!canonicalPath&&path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));

@@ -42,7 +42,7 @@ it('persists unfiltered gallery first pages and invalidates after publication',a
  const query=vi.fn(async()=>gallery),request={scope:{kind:'interiors' as const,href:'/interiors/bedroom'}};
  await cachedGallery(request,sql,query);await cachedGallery({...request,filters:{developer:'',colour:''}},sql,query);
  expect(query).toHaveBeenCalledTimes(1);
- const rows=await db.query("select expires_at::text as expiry from showhome_web.query_cache where key like 'gallery:static-rolodex-v6:%'");
+ const rows=await db.query("select expires_at::text as expiry from showhome_web.query_cache where key like 'gallery:static-rolodex-%'");
  expect(rows.rows).toEqual([{expiry:'infinity'}]);
  await db.exec('update showhome_web.publication_revision set revision=revision+1');
  await cachedGallery(request,sql,query);expect(query).toHaveBeenCalledTimes(2);

@@ -1,7 +1,7 @@
 'use client';
 import {cascadingFiltersEnabled} from './filter-settings';
 import {homeTypeName} from '../reports/home-display';
-import {roomLabel} from './shared-image-cards';
+import {roomCollectionLabel} from './shared-image-cards';
 import {useDirectoryQuery,DirectoryQueryStatus} from './use-directory-query';
 import type {DirectoryPageData} from './directory-page-data';
 import {CardResults} from './card-results';
@@ -141,19 +141,20 @@ export function GroupCards({
    </div>
    <CardResults className={`collection-grid directory-${view}`} label={isBuildings?"Buildings":"Interiors"} identity={JSON.stringify(filters)} hasMore={remote?.hasMore} loading={remote?.loading} replacing={remote?.replacing} onLoadMore={remote?.loadMore}>
     {displayCards.map(card => (
-     <Link prefetch={false} className={`collection-card${isBuildings?' building-card':''}`} href={linkBase ? `${linkBase}/${(card.href ?? `/${pathPrefix}/${card.key}`).split('/').filter(Boolean).at(-1)}` : card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
+     <Link prefetch={false} className={`collection-card group-directory-card${isBuildings?' building-card':''}`} href={linkBase ? `${linkBase}/${(card.href ?? `/${pathPrefix}/${card.key}`).split('/').filter(Boolean).at(-1)}` : card.href ?? `/${pathPrefix}/${card.key}`} data-filters={JSON.stringify({developer,bedrooms,location,site,building:filters.building})} key={card.key}>
       <div className="site-preview-photo group-preview-photo"><ScrollCollectionImage images={card.images} image={card.image} description={card.description} layout={imageLayout}/>{isBuildings&&card.logo&&<img className="development-builder-logo" src={card.logo} alt={`${card.developers[0]??'Builder'} logo`} style={{background:card.logoBackground??'#fff'}} loading="lazy"/>}</div>
       <div className="card-body">
-       <h2>{card.key==='all'?'All Room Types':(isBuildings?homeTypeName(card.name):roomLabel(card.name))}</h2>
+       <h2>{card.key==='all'?'All Room Types':(isBuildings?homeTypeName(card.name):roomCollectionLabel(card.name))}</h2>
        {pathPrefix!=='interiors'&&pathPrefix!=='spaces'&&<p className="subtle">{card.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)}</p>}
-       {card.bedrooms && card.bedrooms.length > 0 && (
+       {!isInteriors && card.bedrooms && card.bedrooms.length > 0 && (
         <p className="subtle">
          {card.bedrooms.map(b => `${b} bed`).join(' · ')}
          {card.sites && card.sites.length > 0 && ` · ${card.sites.length === 1 ? card.sites[0] : `${card.sites.length} sites`}`}
         </p>
        )}
-       <p>{card.count} {card.count === 1 ? 'image' : 'images'}</p>
-       <span className="subtle">Explore collection →</span>
+       {isInteriors && Boolean(card.sites?.length) && <p className="subtle">{card.sites!.length.toLocaleString('en-GB')} {card.sites!.length === 1 ? 'site' : 'sites'}</p>}
+       <p>{card.count.toLocaleString('en-GB')} {card.count === 1 ? 'image' : 'images'}</p>
+       <span className="group-card-footer">Explore collection<span className="image-homes-trigger-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M3 10 12 3 21 10M5 9v11h14V9M9 20v-7h6v7"/></svg></span></span>
       </div>
      </Link>
     ))}

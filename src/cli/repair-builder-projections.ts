@@ -1,3 +1,4 @@
+import {refreshDirectoryReadiness} from '../catalogue/publish';
 import {clearGalleryProjection,insertGalleryProjection,refreshGalleryMemberships} from '../catalogue/gallery-storage';
 import {parseArgs} from 'node:util';
 import {websiteDatabase,readWebsiteCollection} from '../database/website';
@@ -30,6 +31,7 @@ try{
   await insertGalleryProjection(tx,await galleryProjection(collection));
   await refreshGalleryMemberships(tx,slug);
   await tx`update showhome_web.presentations set payload=${tx.json(overview as never)},updated_at=now() where key=${'builder:'+slug}`;
+  await refreshDirectoryReadiness(tx);
   await tx`update showhome_web.publication_revision set revision=revision+1 where singleton=true`;
   await tx`delete from showhome_web.query_cache`;
  });

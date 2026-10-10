@@ -69,13 +69,13 @@ describe('Developer directory',()=>{
    await act(async()=>root.render(<GroupCards cards={multipleRooms} pathPrefix="interiors" kindLabel="Interiors"/>));
    const cardHeadings=[...document.querySelectorAll('.collection-card h2')].map(h=>h.textContent?.trim());
    expect(cardHeadings[0]).toBe('All Room Types');
-   expect(cardHeadings).toEqual(['All Room Types','Bathroom','Bedroom']);
+   expect(cardHeadings).toEqual(['All Room Types','Bathrooms','Bedrooms']);
    const allCard=document.querySelector('.collection-card') as HTMLAnchorElement;
    expect(allCard.getAttribute('href')).toBe('/interiors/all');
 
    await act(async()=>root.render(<GroupCards cards={singleRoom} pathPrefix="interiors" kindLabel="Interiors"/>));
    const singleHeadings=[...document.querySelectorAll('.collection-card h2')].map(h=>h.textContent?.trim());
-   expect(singleHeadings).toEqual(['Bathroom']);
+   expect(singleHeadings).toEqual(['Bathrooms']);
    expect(singleHeadings).not.toContain('All Room Types');
   }finally{await act(async()=>root.unmount());dom.window.close();}
  });
