@@ -22,6 +22,8 @@ it('preserves paginated galleries and legacy imports after normalising serving d
  const input={scope:{kind:'interiors' as const,href:'/interiors/bedroom'},filters:{developer:'Alpha',building:'house',site:'North',bedrooms:'3'}};
  await db.exec('create view showhome_web.gallery_card_index as select * from showhome_web.gallery_cards');
  await db.exec(await readFile('supabase/migrations/20261009000100_image_furnishings.sql','utf8'));
+ await db.exec(await readFile('supabase/migrations/20261010000100_generic_exterior_flags.sql','utf8'));
+ await db.exec(await readFile('supabase/migrations/20261010000200_gallery_publication_summaries.sql','utf8'));
  const before=await queryGallery(input,sql);
  await db.exec('drop view showhome_web.gallery_card_index');
  for(const file of ['20261006000900_compact_gallery_serving.sql','20261006001000_numeric_gallery_links.sql']){

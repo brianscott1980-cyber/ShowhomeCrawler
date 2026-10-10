@@ -39,7 +39,7 @@ function AnimatedGalleryImage({ style, optimized=false, ...props }: ComponentPro
  const [motion, setMotion] = useState(galleryMotions[0]);
  useEffect(() => { setMotion(galleryMotions[Math.floor(Math.random() * galleryMotions.length)]); }, []);
  const imageStyle={...style,'--gallery-motion':motion} as CSSProperties;
- return optimized?<NextCardImage src={optimizedImageSource(String(props.src))} alt={props.alt??''} width={1200} height={900} sizes="(max-width: 1000px) 100vw, 45vw" loading="eager" fetchPriority="high" className={props.className} style={imageStyle}/>:<img {...props} style={imageStyle}/>;
+ return optimized?<NextCardImage src={optimizedImageSource(String(props.src))} alt={props.alt??''} width={1200} height={900} sizes="(max-width: 1000px) 100vw, 45vw" loading="lazy" decoding="async" fetchPriority="low" className={props.className} style={imageStyle}/>:<img loading="lazy" decoding="async" fetchPriority="low" {...props} style={imageStyle}/>;
 }
 
 export function Gallery({
