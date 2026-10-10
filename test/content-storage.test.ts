@@ -5,7 +5,14 @@ import {storedFile,storedImage} from '../src/web/content-storage';
 vi.mock('../src/storage/nas-access',()=>({nasAccess:async(operation:()=>Promise<unknown>)=>operation(),nasImage:async(_id:string,path:string)=>{const {readFile}=await import('node:fs/promises');return readFile(path);}}));
 import {resolve} from 'node:path';
 const id='a'.repeat(64);
-beforeEach(()=>{mocks.files.clear();});
+beforeEach(()=>{mocks.files.clear();vi.unstubAllEnvs();});
+it('serves local canonical assets without checking the NAS',async()=>{
+ vi.stubEnv('LOCAL_CONTENT_ROOT','D:/ShowhomeCrawler');
+ mocks.files.set(resolve(`D:/ShowhomeCrawler/assets/${id}.jpg`),'local-original');
+ const {readFile}=await import('node:fs/promises');vi.mocked(readFile).mockClear();
+ expect((await storedImage(id,'jpg')).bytes.toString()).toBe('local-original');
+ expect(vi.mocked(readFile).mock.calls.some(([file])=>String(file).includes('storage-status'))).toBe(false);
+});
 it('serves a verified NAS original',async()=>{
  mocks.files.set('.showhome/storage-status.json',JSON.stringify({nasAvailable:true,checkedAt:Date.now()/1000,contentRoot:'/nas'}));
  mocks.files.set('.showhome/storage-config.json',JSON.stringify({identity:'expected'}));

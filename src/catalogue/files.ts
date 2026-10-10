@@ -16,7 +16,7 @@ function reportMetadata(file:string){
 }
 export function collectionFolder(slug: string) {
  if (!developers.some(d => d.slug === slug)) throw new Error('Unknown developer');
- const published=resolve('collections',`${slug}-home-offices`),canonical=resolve('results',`${slug}-home-offices`);
+ const published=resolve(process.env.LOCAL_CONTENT_ROOT??'.','collections',`${slug}-home-offices`),canonical=resolve('results',`${slug}-home-offices`);
  const candidates=[published,canonical];
  try{
   const manifest=JSON.parse(readFileSync(resolve('results/.cache/remaining-builder-scan-state.json'),'utf8'));
@@ -40,7 +40,7 @@ export async function readCollection(slug: string): Promise<RunReport | null> {
  }));
  const report=reports.filter((r): r is RunReport => r !== null).sort((a,b)=>Date.parse(b.completedAt??b.startedAt)-Date.parse(a.completedAt??a.startedAt))[0];
  if(!report)return null;
- const places:Record<string,{town?:string|null;country?:string|null}>=await readFile('collections/development-places.json','utf8').then(JSON.parse).catch(()=>({}));
+ const places:Record<string,{town?:string|null;country?:string|null}>=await readFile(resolve(process.env.LOCAL_CONTENT_ROOT??'.','collections/development-places.json'),'utf8').then(JSON.parse).catch(()=>({}));
  return {...report,developments:report.developments.map(development=>{const place=places[`${slug}:${development.url}`];return {...development,town:place?.town??development.town??null,country:place?.country??development.country??null};})};
 }
 export function assetUrl(slug: string, path: string) {

@@ -11,6 +11,7 @@ async function rawIndex(){
  return index;
 }
 async function nasRoot(){
+ if(process.env.LOCAL_CONTENT_ROOT&&!process.env.LOCAL_CONTENT_ROOT.startsWith('\\\\'))return null;
  try{
   const status=JSON.parse(await readFile('.showhome/storage-status.json','utf8'));
   if(!status.nasAvailable||Date.now()/1000-status.checkedAt>90)return null;
@@ -28,6 +29,12 @@ export async function storedFile(localPath:string,allowPreview=false):Promise<Bu
  const image=rel.match(/(?:^|\/)images\/([a-f0-9]{64}\.(?:jpg|jpeg|png|webp|avif|gif|tiff))$/);
  const images=image?await imageIndex():{};
  const blob=raw?(await rawIndex())[raw[1]!]:image?(images[rel]??images[image[1]!]??image[1]):undefined;
+ const localRoot=process.env.LOCAL_CONTENT_ROOT;
+ if(localRoot&&!localRoot.startsWith('\\\\')){
+  if(blob&&/^[a-f0-9]{64}\.(?:jpg|jpeg|png|webp|avif|gif|tiff|bin)$/.test(blob)){
+   try{return await readFile(resolve(localRoot,'assets',blob));}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
+  }
+ }
  const root=await timed(nasRoot());
  if(root){try{return await timed(blob&&/^[a-f0-9]{64}\./.test(blob)?nasImage(blob.slice(0,64),resolve(root,'assets',blob)):nasAccess(()=>readFile(resolve(root,blob?'assets/'+blob:'archive/'+rel))))}catch{}}
  if(image&&allowPreview){try{return await readFile(resolve(/* turbopackIgnore: true */ '.showhome/previews',(blob??image[1]!).split('.')[0]+'.webp'))}catch{}}

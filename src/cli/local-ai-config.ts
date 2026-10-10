@@ -24,10 +24,10 @@ export async function requireLocalContentRoot(explicit?:string){
  if(!root){
   if(!process.stdin.isTTY||!process.stdout.isTTY)throw new Error('Set LOCAL_CONTENT_ROOT in .env.local or pass --content-root before running. Interactive terminals prompt for it.');
   const terminal=createInterface({input:process.stdin,output:process.stdout});
-  try{root=(await terminal.question('NAS content folder (e.g. \\\\Synology\\GIT\\ShowhomeCrawler-content or Z:\\ShowhomeCrawler-content): ')).trim().replace(/^(["'])(.*)\1$/,'$2');}finally{terminal.close();}
-  if(!root)throw new Error('A NAS content folder is required.');
+  try{root=(await terminal.question('Content folder (e.g. D:\\ShowhomeCrawler): ')).trim().replace(/^(["'])(.*)\1$/,'$2');}finally{terminal.close();}
+  if(!root)throw new Error('A content folder is required.');
  }
- try{await nasAccess(()=>access(resolve(root,'assets'),constants.R_OK));}catch{throw new Error('NAS content folder is unavailable or lacks an assets directory. Connect the share and update LOCAL_CONTENT_ROOT in .env.local.');}
+ try{if(root.startsWith('\\\\'))await nasAccess(()=>access(resolve(root,'assets'),constants.R_OK));else await access(resolve(root,'assets'),constants.R_OK);}catch{throw new Error('Content folder is unavailable or lacks an assets directory. Update LOCAL_CONTENT_ROOT in .env.local.');}
  if(!explicit&&root!==process.env.LOCAL_CONTENT_ROOT)await saveLocalSetting('LOCAL_CONTENT_ROOT',root);
  return root;
 }
