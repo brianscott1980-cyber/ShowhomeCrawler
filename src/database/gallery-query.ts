@@ -1,3 +1,4 @@
+import {resolveFurnishingCategory} from './furnishings';
 import {readGalleryPublicationSummary} from './gallery-publication-summary';
 import {colourPattern} from '../web/interior-tags';
 import {staticGalleryFacets} from './static-gallery-facets';
@@ -8,7 +9,14 @@ import {websiteDatabase} from './website';
 import {selectedValues} from '../web/filter-selection';
 import type {GalleryRequest,GalleryPageData} from '../web/gallery-page-data';
 export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=websiteDatabase(),queryOptions:{prepareSummary?:boolean}={}):Promise<GalleryPageData>{
- const {scope,filters={}}=input,values:unknown[]=[];
+ const scope={...input.scope},filters={...input.filters},values:unknown[]=[];
+ if(scope.furnishing)scope.furnishing=await resolveFurnishingCategory(scope.furnishing,sql);
+ if(filters.furnishing){
+  const selected=selectedValues(filters.furnishing);
+  const labels=await sql`select source_name,category_name from showhome_web.furnishing_category_mappings where source_name=any(${selected.map(v=>v.toLowerCase().trim())}::text[])`;
+  const mapped=new Map(labels.map(r=>[String(r.source_name),r.category_name]));
+  filters.furnishing=JSON.stringify(selected.map(v=>String(mapped.get(v.toLowerCase().trim())??v).trim().toLowerCase()));
+ }
  const preparing=Boolean(queryOptions.prepareSummary);
  const published=!preparing&&!input.imageOnly&&!cascadingFiltersEnabled()?await readGalleryPublicationSummary(sql,scope):undefined;
  const p=(v:unknown)=>{values.push(v);return '$'+values.length;};
@@ -25,7 +33,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  if(scope.kind==='buildings')scopeConditions.push(`i.building_names @> array[${p(reference.building_name.toLowerCase())}::text]`);
  if(scope.kind==='buildings')scopeConditions.push(`t.building_name=lower(${baseBuildingParam}::text)`);
  if(scope.furnishing){
-  scopeConditions.push(`exists(select 1 from showhome_web.image_furnishings fm where fm.builder_slug=i.builder_slug and fm.image_id=i.image_id and fm.name=${p(scope.furnishing.toLowerCase().trim())})`);
+  scopeConditions.push(`exists(select 1 from showhome_web.image_furnishing_categories fm where fm.builder_slug=i.builder_slug and fm.image_id=i.image_id and fm.name=${p(scope.furnishing.toLowerCase().trim())})`);
  }
  const facetCache=published&&!filters.furnishing?{facets:published.facets}:!preparing&&!input.imageOnly&&!cascadingFiltersEnabled()?await staticGalleryFacets(sql,{scope,favourites:input.favourites,furnishing:filters.furnishing??''}):undefined;
  const fixed=scope.fixedFilters??{};
@@ -34,7 +42,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const tagArrays=['colours','objects','chairs','decor','wallpaperTags','curtainTags','fabricTags','furnishingTags'];
  const cat="m.metadata->'categorisation'";
  const furnishingSelection=scope.furnishing?[scope.furnishing.toLowerCase().trim()]:selectedValues(filters.furnishing??'').map(v=>v.toLowerCase().trim());
- const furnishingCondition=needTags&&furnishingSelection.length?`lower(trim(a->>'object')) in(select jsonb_array_elements_text(${p(sql.json(furnishingSelection))}::jsonb))`:'true';
+ const furnishingCondition=needTags&&furnishingSelection.length?`exists(select 1 from showhome_web.furnishing_category_mappings cm where cm.source_name=lower(trim(a->>'object')) and cm.category_name in(select jsonb_array_elements_text(${p(sql.json(furnishingSelection))}::jsonb)))`:'true';
  const interiorLabels=`array(select distinct initcap(trim(c)) from jsonb_array_elements(coalesce(${cat}->'interiorColours','[]'::jsonb)) a cross join lateral jsonb_array_elements_text(coalesce(a->'colours','[]'::jsonb)) c where a->>'prominence' in ('dominant','secondary'))`;
  const furnishingLabels=`array(select distinct initcap(trim(c)) from jsonb_array_elements(coalesce(${cat}->'furnishings','[]'::jsonb)) a cross join lateral jsonb_array_elements_text(coalesce(a->'colours','[]'::jsonb)) c where ${furnishingCondition})`;
  const tagJoin=needTags?`left join showhome_web.images m on m.builder_slug=i.builder_slug and m.catalogue_id=i.image_id left join lateral (
@@ -42,7 +50,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  from (select distinct trim(value) as label from jsonb_array_elements_text(${tagArrays.map(key=>`coalesce(${cat}->'${key}','[]'::jsonb)`).join('||')}||coalesce((select jsonb_agg(f->>'object') from jsonb_array_elements(coalesce(${cat}->'furnishings','[]'::jsonb)) f),'[]'::jsonb)||jsonb_build_array(${cat}->>'wallpaper',${cat}->>'curtains',case when ${cat}->>'hasTelevision'='true' then 'Television' end,case when ${cat}->>'hasComputer'='true' then 'Computer' end)) value where nullif(trim(value),'') is not null) labels
  ) tags on true`:'';
  const structuredFields=needTags?`,${interiorLabels} as interior_colour_tags,${furnishingLabels} as furnishing_colour_tags`:',array[]::text[] as interior_colour_tags,array[]::text[] as furnishing_colour_tags';
- const indexedFurnishings=`array(select initcap(f.name) from showhome_web.image_furnishings f where f.builder_slug=i.builder_slug and f.image_id=i.image_id and f.name !~* '${colourPattern}' order by f.name)`;
+ const indexedFurnishings=`array(select initcap(f.name) from showhome_web.image_furnishing_categories f where f.builder_slug=i.builder_slug and f.image_id=i.image_id and f.name !~* '${colourPattern}' order by f.name)`;
  const tagFields=needTags?`,${scope.furnishing?furnishingLabels:'tags.colour_tags'} as colour_tags,tags.other_tags,${indexedFurnishings} as furnishing_tags`:",array[]::text[] as colour_tags,array[]::text[] as other_tags,array[]::text[] as furnishing_tags";
  const homesProjection=`coalesce((select jsonb_agg(h) from jsonb_array_elements(i.payload->'homes') h where r.building_name is null or lower(h->>'buildingName')=r.building_name),'[]'::jsonb)`;
  if(fixed.colour)scopeConditions.push(`tags.colour_tags && array(select jsonb_array_elements_text(${p(sql.json(selectedValues(fixed.colour)))}::jsonb))`);
@@ -65,7 +73,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
   if(omit&&!cascadingFiltersEnabled())return 'true';
   const conditions=[selection('s.builder_name','developer',omit),selection('s.category','category',omit),selection('s.room','room',omit)];
   for(const [key,field] of [['interiorColour','interior_colour_tags'],['furnishingColour','furnishing_colour_tags'],['colour','colour_tags'],['tag','other_tags']])if(omit!==key&&filters[key!])conditions.push(`s.${field} && array(select jsonb_array_elements_text(${p(sql.json(selectedValues(filters[key!]!)))}::jsonb))`);
-  if(omit!=='furnishing'&&filters.furnishing)conditions.push(`exists(select 1 from showhome_web.image_furnishings ff where ff.builder_slug=s.builder_slug and ff.image_id=s.image_id and ff.name !~* '${colourPattern}' and ff.name in(select lower(trim(value)) from jsonb_array_elements_text(${p(sql.json(selectedValues(filters.furnishing)))}::jsonb)))`);
+  if(omit!=='furnishing'&&filters.furnishing)conditions.push(`exists(select 1 from showhome_web.image_furnishing_categories ff where ff.builder_slug=s.builder_slug and ff.image_id=s.image_id and ff.name !~* '${colourPattern}' and ff.name in(select lower(trim(value)) from jsonb_array_elements_text(${p(sql.json(selectedValues(filters.furnishing)))}::jsonb)))`);
   if(omit!=='q'&&filters.q)conditions.push(`position(${p(filters.q.toLowerCase())} in s.search_text)>0`);
   const homes=homeWhere(omit);
   if(['building','bedrooms','site','development','location','minBeds','maxBeds','minPrice','maxPrice'].some(k=>k!==omit&&filters[k]))conditions.push(`exists(select 1 from homes h where h.uid=s.uid and ${homes})`);
@@ -77,7 +85,7 @@ export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=website
  const page=`with ${ctes},ranked as(select s.uid,s.image_uid,s.building_name,row_number() over(order by s.uid)-1 as position from source s where ${matched}),batch as(select r.* from ranked r order by ${selected}r.uid limit ${p(input.limit??16)} offset ${p(input.offset??0)}) select i.payload||jsonb_build_object('uid',r.uid,'imageUid',r.image_uid,'homes',${homesProjection},'position',r.position) as payload from batch r join showhome_web.gallery_cards i on i.uid=r.image_uid order by ${selected}r.uid`;
  const pageValues=values.slice();
  if(input.imageOnly){const cards=await sql.unsafe(page,pageValues as never);return {images:cards.map(c=>c.payload),total:0,nextOffset:0,hasMore:false,counts:{},facets:{category:[],room:[],developer:[],bedrooms:[],location:[],site:[],development:[]}};}
- const summary=preparing||cascadingFiltersEnabled()?`with ${ctes} select count(*)::int as total,count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct nullif(trim(s.room),'')) filter(where lower(trim(s.room))<>'blank')::int as room_types from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`:`with ${ctes} select count(*)::int as total from source s where ${matched}`;
+ const summary=preparing||cascadingFiltersEnabled()?`with ${ctes} select count(distinct s.uid)::int as total,count(distinct s.image_uid)::int as unique_images,count(distinct h.builder_slug||':'||h.development_url)::int as developments,count(distinct nullif(trim(s.room),'')) filter(where lower(trim(s.room))<>'blank')::int as room_types from source s left join homes h on h.uid=s.uid and ${matchingHome} where ${matched}`:`with ${ctes} select count(*)::int as total from source s where ${matched}`;
  const facets=(facetCache?.facets?[]:['category','room','developer','bedrooms','location','site','development','building',...(tagScope?['colour','tag','furnishing','interiorColour','furnishingColour']:[])]).map(key=>{
   values.splice(0,values.length,...baseValues);const homeFacet=['bedrooms','location','site','development','building'].includes(key),w=where(key),hw=homeFacet?homeWhere(key):'true';
   const imageField=['colour','tag','furnishing','interiorColour','furnishingColour'].includes(key)?'labels.label':key==='developer'?'s.builder_name':key==='room'?'s.room':'s.category';

@@ -1,12 +1,12 @@
 import {notFound} from 'next/navigation';
-import {readFurnishings} from '../database/furnishings';
+import {readFurnishings,resolveFurnishingCategory} from '../database/furnishings';
 import {cachedGallery} from '../database/gallery-cache';
 import {FurnishingCards} from './furnishing-cards';
 import {ResultsPage} from './results-page';
 import {searchListing} from './seo';
 import {DirectoryCountProvider,DirectoryCounts} from './directory-counts';
 export const furnishingsMetadata=searchListing('Furnishings','Explore furniture, lighting and accessories in real showhome interiors. Compare furnishings and find inspiration for your home.','/furnishings');
-export async function furnishingItem(slug:string){return (await readFurnishings()).find(item=>decodeURIComponent(item.slug)===decodeURIComponent(slug).toLowerCase());}
+export async function furnishingItem(slug:string){const name=await resolveFurnishingCategory(decodeURIComponent(slug));return (await readFurnishings()).find(item=>decodeURIComponent(item.slug)===name);}
 export async function FurnishingsPage({slug}:{slug?:string}){
  if(slug){
   const item=await furnishingItem(slug);if(!item)notFound();

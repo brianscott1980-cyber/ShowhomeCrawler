@@ -1,4 +1,3 @@
-import {landingColours} from '../web/seo-landing-values';
 import {isCategorisedImage} from '../web/image-classification';
 import {cache} from 'react';
 import type postgres from 'postgres';
@@ -60,19 +59,13 @@ export async function findWebsiteImage(slug:string,path:string,id:string){
 
 export async function readWebsiteSitemap(){
  const sql=websiteDatabase();
- const [cards,builders,roomColours]=await Promise.all([
+ const [cards,builders]=await Promise.all([
   sql`select href from showhome_web.directory_cards c where (c.kind in ('locations','buildings') and c.is_ready=true) or (c.kind='interiors' and lower(trim(c.name)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map','exterior','floorplan','floor plan') and exists(select 1 from showhome_web.gallery_card_index i where i.category=c.category and i.eligible)) order by kind,name,key`,
   sql`select b.slug,b.report_metadata->>'completedAt' as completed_at,
-   exists(select 1 from showhome_web.directory_cards c join showhome_web.directory_filter_rows r on r.kind=c.kind and r.card_key=c.key where c.kind='locations' and c.is_ready and r.developer=b.name) as developments,
-   exists(select 1 from showhome_web.directory_cards c join showhome_web.directory_filter_rows r on r.kind=c.kind and r.card_key=c.key where c.kind='buildings' and c.is_ready and r.developer=b.name) as buildings
+   exists(select 1 from showhome_web.directory_cards c where c.kind='locations' and c.is_ready and c.collection_slugs @> array[b.slug]) as developments,
+   exists(select 1 from showhome_web.directory_cards c where c.kind='buildings' and c.is_ready and c.collection_slugs @> array[b.slug]) as buildings
    from showhome_web.builders b where exists(select 1 from showhome_web.gallery_card_index i where i.builder_slug=b.slug and i.eligible) order by b.slug`,
-  sql`select distinct c.href,colour.value as colour from showhome_web.directory_cards c
-   join showhome_web.gallery_card_index i on i.category=c.category and i.eligible
-   join showhome_web.images m on m.builder_slug=i.builder_slug and m.catalogue_id=i.image_id
-   cross join lateral jsonb_array_elements_text(coalesce(m.metadata->'categorisation'->'colours','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'objects','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'chairs','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'decor','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'wallpaperTags','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'curtainTags','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'fabricTags','[]'::jsonb)||coalesce(m.metadata->'categorisation'->'furnishingTags','[]'::jsonb)||jsonb_build_array(m.metadata->'categorisation'->>'wallpaper',m.metadata->'categorisation'->>'curtains')) label(value)
-   cross join jsonb_array_elements_text(${sql.json([...landingColours])}::jsonb) colour(value)
-   where c.kind='interiors' and lower(trim(c.name)) not in ('other','uncategorised','uncategorized','unknown','interior','infographic','illustration','promotional graphic','marketing image','document','logo','map','exterior','floorplan','floor plan')
-   and (colour.value=any(regexp_split_to_array(lower(label.value),'[^a-z]+')) or colour.value='grey' and 'gray'=any(regexp_split_to_array(lower(label.value),'[^a-z]+'))) order by c.href,colour.value`
+
  ]);
- return {cards,builders,roomColours};
+ return {cards,builders};
 }

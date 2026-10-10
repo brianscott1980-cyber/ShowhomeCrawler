@@ -16,6 +16,8 @@ beforeAll(async()=>{
  await db.exec(await readFile('supabase/migrations/20261009000100_image_furnishings.sql','utf8'));
  await db.exec(await readFile('supabase/migrations/20261010000100_generic_exterior_flags.sql','utf8'));
  await db.exec(await readFile('supabase/migrations/20261010000200_gallery_publication_summaries.sql','utf8'));
+ await db.exec(await readFile('supabase/migrations/20261010000300_furnishing_category_mappings.sql','utf8'));
+ await db.exec(await readFile('supabase/migrations/20261010000400_refine_furnishing_groups.sql','utf8'));
  await db.exec(`insert into showhome_web.directory_cards(kind,key,name,href,collection_slugs,building_name,category,payload) values ('buildings','house','House','/buildings/alpha/house','{alpha}','House',null,'{}'),('interiors','bedroom','Bedroom','/interiors/bedroom','{alpha}',null,'Bedroom','{}')`);
  await db.exec(`insert into showhome_web.builders(slug,name,website_url) values('alpha','Alpha','https://example.com');
  insert into showhome_web.developments(key,builder_slug,source_url,name,display_name,geography) values('North','alpha','North','North','North','{"area":"North"}'),('South','alpha','South','South','South','{"area":"South"}');
@@ -40,7 +42,7 @@ it('matches colours on the scoped furnishing, with plain object and colour facet
   expect(page.facets.furnishingColour).toEqual(['Brown']);
   expect(page.facets.colour).toEqual(['Brown']);
   expect((await queryGallery({scope,filters:{colour:'Blue'}},sql)).total).toBe(0);
-  expect(page.facets.furnishing).toContain('Chair');
+  expect(page.facets.furnishing).toContain('Chairs');
   expect(page.facets.furnishing).not.toContain('Blue chair');
   expect((await queryGallery({scope,filters:{furnishingColour:'Blue'}},sql)).total).toBe(0);
   expect((await queryGallery({scope,filters:{furnishingColour:'Brown'}},sql)).images.map(i=>i.id)).toEqual(['b']);
@@ -178,11 +180,11 @@ it('keeps furnishing galleries scoped while applying other filters',async()=>{
  await db.exec(`update showhome_web.images set metadata='{"categorisation":{"objects":["Lamp"],"furnishingTags":["Gold Lamp"]}}' where catalogue_id='a'`);
  try{
   const building=await queryGallery({scope:{kind:'buildings',href:'/buildings/alpha/house'},filters:{furnishing:'Lamp'}},sql);
-  expect(building.facets.furnishing).toContain('Lamp');
+  expect(building.facets.furnishing).toContain('Lamps');
   expect(building.images.length).toBeGreaterThan(0);
   expect(building.images.every(image=>image.id==='a')).toBe(true);
   const items=await queryFurnishings(sql);
-  expect(items.some(item=>item.name==='Lamp')).toBe(true);
+  expect(items.some(item=>item.name==='Lamps')).toBe(true);
   expect(items.some(item=>item.name==='Blue')).toBe(false);
   const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:'lamp'};
   const page=await queryGallery({scope},sql);
@@ -195,19 +197,19 @@ it('keeps furnishing galleries scoped while applying other filters',async()=>{
 
 it('looks up normalised furnishing labels before pagination and supports multiple furnishing selections',async()=>{
  await db.exec(`update showhome_web.images set metadata='{"categorisation":{"objects":[" Bedding ","BEDDING"],"furnishings":[{"object":"bedding","colours":["white"]}]}}' where catalogue_id='b';
- update showhome_web.images set metadata='{"categorisation":{"objects":["Aprons"]}}' where catalogue_id='orphan'`);
+ update showhome_web.images set metadata='{"categorisation":{"objects":["Candle"]}}' where catalogue_id='orphan'`);
  const queries:string[]=[];
  const measured=Object.assign((...args:unknown[])=>(sql as any)(...args),{json:sql.json,unsafe:(query:string,values:unknown[])=>{queries.push(query);return sql.unsafe(query,values as never);}}) as unknown as postgres.Sql;
  try{
   const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:' BEDDING '};
   const bedding=await queryGallery({scope,limit:1},measured);
   expect(bedding.total).toBe(1);expect(bedding.images.map(i=>i.id)).toEqual(['b']);
-  expect(queries[0]).toContain('showhome_web.image_furnishings fm');
+  expect(queries[0]).toContain('showhome_web.image_furnishing_categories fm');
   expect(queries[0]).not.toContain("fm.metadata");
   const all={kind:'interiors' as const,href:'/interiors/all'};
-  const first=await queryGallery({scope:all,filters:{furnishing:'["BEDDING","Aprons"]'},limit:1},sql);
+  const first=await queryGallery({scope:all,filters:{furnishing:'["BEDDING","Candle"]'},limit:1},sql);
   expect(first.total).toBe(2);expect(first.images.map(i=>i.id)).toEqual(['b']);
-  expect((await queryGallery({scope:all,filters:{furnishing:'["BEDDING","Aprons"]'},offset:1,limit:1},sql)).images.map(i=>i.id)).toEqual(['orphan']);
+  expect((await queryGallery({scope:all,filters:{furnishing:'["BEDDING","Candle"]'},offset:1,limit:1},sql)).images.map(i=>i.id)).toEqual(['orphan']);
   const items=await queryFurnishings(sql);
   expect(items.find(item=>item.name==='Bedding')?.count).toBe(1);
  }finally{await db.exec("update showhome_web.images set metadata='{}' where catalogue_id in ('b','orphan')");}
