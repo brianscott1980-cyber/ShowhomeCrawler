@@ -17,7 +17,8 @@ export function developmentContact(html:string):DevelopmentContact{
     if(Array.isArray(value)){value.forEach(visit);return;}
     const item=value as Record<string,unknown>;
     // Avoid importing the parent company's general contact details.
-    if(['LocalBusiness','RealEstateAgent','Residence'].includes(String(item['@type']))){
+    const types=Array.isArray(item['@type'])?item['@type']:[item['@type']];
+    if(!types.includes('Organization')&&types.some(type=>['LocalBusiness','RealEstateAgent','Residence','Place','HousingDevelopment','ApartmentComplex','HomeAndConstructionBusiness'].includes(String(type)))){
      if(item.address&&typeof item.address==='object'){const address=item.address as Record<string,unknown>;contact.address=[address.streetAddress,address.addressLocality,address.addressRegion,address.postalCode].filter(v=>typeof v==='string'&&v.trim()).join(', ')||contact.address;}
      if(!contact.telephone&&typeof item.telephone==='string')contact.telephone=item.telephone;
      if(!contact.email&&typeof item.email==='string')contact.email=item.email;

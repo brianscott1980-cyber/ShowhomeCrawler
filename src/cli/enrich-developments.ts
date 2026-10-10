@@ -81,7 +81,7 @@ async function main(){
     if(d.latitude!==null&&d.longitude!==null&&Number.isFinite(d.latitude)&&Number.isFinite(d.longitude)&&d.latitude>=49&&d.latitude<=61.2&&d.longitude>=-9&&d.longitude<=3)point={latitude:d.latitude,longitude:d.longitude};
     else if(extractedPoint.latitude!==undefined&&extractedPoint.longitude!==undefined){point={latitude:extractedPoint.latitude,longitude:extractedPoint.longitude};coordinateMethod='builder-map';}
     else if(d.postcode||extractedPoint.postcode){const postcode=d.postcode??extractedPoint.postcode;const r=await fetch(`https://api.postcodes.io/postcodes/${encodeURIComponent(postcode)}`,{headers,signal:AbortSignal.timeout(15000)});const data=await r.json();if(data.result){point={latitude:data.result.latitude,longitude:data.result.longitude};coordinateMethod='postcode-centre';}}
-    await sql`update showhome_web.developments set contact=contact||${sql.json(contact)},latitude=coalesce(latitude,${point?.latitude??null}),longitude=coalesce(longitude,${point?.longitude??null}),postcode=coalesce(postcode,${extractedPoint.postcode??null}) where key=${d.key}`;
+    await sql`update showhome_web.developments set contact=${sql.json(contact)}||jsonb_strip_nulls(coalesce(contact,'{}'::jsonb)),latitude=coalesce(latitude,${point?.latitude??null}),longitude=coalesce(longitude,${point?.longitude??null}),postcode=coalesce(postcode,${extractedPoint.postcode??null}) where key=${d.key}`;
     record.contact={telephone:Boolean(contact.telephone),email:Boolean(contact.email),address:Boolean(contact.address)};
     if(values['contacts-only']){record.status=record.sourceError?'source_unavailable':'contacts_scanned';audit.completed++;}
     else if(!point){record.status='needs_location';audit.needsLocation++;}
