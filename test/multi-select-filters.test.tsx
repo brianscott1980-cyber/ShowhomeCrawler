@@ -89,3 +89,16 @@ it('keeps independent filters interactive and menus open while results load',asy
   expect(change).toHaveBeenCalledTimes(2);expect(menu.open).toBe(true);
  }finally{await act(async()=>root.unmount());host.remove();}
 });
+
+it('defers large filter menus until opened and preserves their choices',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);const host=document.createElement('div');document.body.append(host);const root=createRoot(host),change=vi.fn();
+ try{
+  await act(async()=>root.render(<MultiSelectFilter label="Building Types" value="" options={Array.from({length:1000},(_,i)=>`Home ${i}`)} onChange={change}/>));
+  expect(host.querySelectorAll('input')).toHaveLength(0);
+  await act(async()=>{const details=host.querySelector('details')!;details.open=true;details.dispatchEvent(new Event('toggle'));});
+  expect(host.querySelectorAll('input[type=checkbox]')).toHaveLength(1000);
+  await act(async()=>host.querySelector<HTMLInputElement>('[aria-label="Home 777"]')!.click());expect(change).toHaveBeenCalledWith('Home 777');
+  await act(async()=>{const details=host.querySelector('details')!;details.open=false;details.dispatchEvent(new Event('toggle'));});
+  expect(host.querySelectorAll('input')).toHaveLength(0);
+ }finally{await act(async()=>root.unmount());host.remove();}
+});
