@@ -1,3 +1,4 @@
+import {atomicFile} from '../crawler/atomic-file';
 import type {PipelineActivity} from './pipeline-summary';
 import {geminiStatusPanel,readGeminiState,type GeminiState} from './gemini-status.js';
 import { writeFile, rename } from 'node:fs/promises';
@@ -6,7 +7,7 @@ import { matchedPage } from './matched-page.js';
 import type { Verdict } from '../vision/gemini-classifier.js';
 const artifactQueues=new Map<string,Promise<void>>();
 async function saveArtifact(path:string,body:string){
- const task=(artifactQueues.get(path)??Promise.resolve()).catch(()=>{}).then(async()=>{const temporary=path+'.'+randomUUID()+'.tmp';await writeFile(temporary,body);await rename(temporary,path);});artifactQueues.set(path,task);try{await task;}finally{if(artifactQueues.get(path)===task)artifactQueues.delete(path);}
+ const task=(artifactQueues.get(path)??Promise.resolve()).catch(()=>{}).then(async()=>{await atomicFile(path,body);});artifactQueues.set(path,task);try{await task;}finally{if(artifactQueues.get(path)===task)artifactQueues.delete(path);}
 }
 export interface ColourAttribute { colours:string[]; prominence:'dominant'|'secondary'|'accent' }
 export interface ImageCategorisation {

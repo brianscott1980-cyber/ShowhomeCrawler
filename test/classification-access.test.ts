@@ -26,3 +26,18 @@ it('returns compact independent summaries to the verified owner',async()=>{
  expect(data.summaries.every((s:{images?:unknown})=>s.images===undefined)).toBe(true);
  expect(response.headers.get('cache-control')).toBe('private, no-store');
 });
+
+it('allows anonymous loopback development requests and reads local files without Supabase',async()=>{
+ vi.stubEnv('NODE_ENV','development');vi.stubEnv('VERCEL','');
+ const response=await GET(new Request('http://127.0.0.1:3000/api/classifications'));
+ expect(response.status).toBe(200);expect((await response.json()).localMode).toBe(true);
+ expect(getUser).not.toHaveBeenCalled();expect(progressQuery).not.toHaveBeenCalled();
+});
+it('retains authentication for production and nonlocal requests',async()=>{
+ vi.stubEnv('NODE_ENV','production');vi.stubEnv('VERCEL','');
+ expect((await GET(new Request('http://localhost/api/classifications'))).status).toBe(401);
+ vi.stubEnv('NODE_ENV','development');
+ expect((await GET(new Request('https://example.com/api/classifications'))).status).toBe(401);
+ vi.stubEnv('VERCEL','1');
+ expect((await GET(new Request('http://localhost/api/classifications'))).status).toBe(401);
+});

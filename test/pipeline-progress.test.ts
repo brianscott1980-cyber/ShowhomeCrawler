@@ -1,6 +1,6 @@
 import {it,expect,vi,afterEach} from 'vitest';
 const calls=vi.hoisted(()=>({queries:[] as unknown[][],files:[] as string[],end:vi.fn()}));
-vi.mock('node:fs/promises',()=>({mkdir:async()=>{},writeFile:async(file:string)=>{calls.files.push(file);},rename:async()=>{}}));
+vi.mock('node:fs/promises',()=>({mkdir:async()=>{},writeFile:async(file:string)=>{calls.files.push(file);},rename:async()=>{},unlink:async()=>{}}));
 vi.mock('../src/database/postgres',()=>({createDatabase:()=>Object.assign(async(_strings:TemplateStringsArray,...values:unknown[])=>{calls.queries.push(values);},{json:(v:unknown)=>v,end:calls.end})}));
 import {progressReporter} from '../src/reports/pipeline-progress';
 import type {RunReport} from '../src/reports/report';

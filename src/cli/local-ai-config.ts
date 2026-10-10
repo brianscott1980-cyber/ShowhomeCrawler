@@ -1,4 +1,5 @@
 import {config} from 'dotenv';
+import {nasAccess} from '../storage/nas-access';
 import {access,readFile,writeFile} from 'node:fs/promises';
 import {constants} from 'node:fs';
 import {resolve} from 'node:path';
@@ -26,7 +27,7 @@ export async function requireLocalContentRoot(explicit?:string){
   try{root=(await terminal.question('NAS content folder (e.g. \\\\Synology\\GIT\\ShowhomeCrawler-content or Z:\\ShowhomeCrawler-content): ')).trim().replace(/^(["'])(.*)\1$/,'$2');}finally{terminal.close();}
   if(!root)throw new Error('A NAS content folder is required.');
  }
- try{await access(resolve(root,'assets'),constants.R_OK);}catch{throw new Error('NAS content folder is unavailable or lacks an assets directory. Connect the share and update LOCAL_CONTENT_ROOT in .env.local.');}
+ try{await nasAccess(()=>access(resolve(root,'assets'),constants.R_OK));}catch{throw new Error('NAS content folder is unavailable or lacks an assets directory. Connect the share and update LOCAL_CONTENT_ROOT in .env.local.');}
  if(!explicit&&root!==process.env.LOCAL_CONTENT_ROOT)await saveLocalSetting('LOCAL_CONTENT_ROOT',root);
  return root;
 }

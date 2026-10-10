@@ -3,8 +3,28 @@ import { readFile } from 'node:fs/promises';
 import sharp from 'sharp';
 import { galleryImages, developmentUrls, discoverHomes } from '../src/adapters/bellway/site-parser.js';
 import { imageIdentity, sameVisual, sha256 } from '../src/galleries/image-hasher.js';
-import { RequestClient, mapLimit, RequestError } from '../src/crawler/request-client.js';
+import { RequestClient, mapLimit, RequestError,quotaDelay } from '../src/crawler/request-client.js';
+it('respects server quota delays and waits thirty seconds when none is supplied',()=>{
+ expect(quotaDelay('45')).toBe(45000);
+ expect(quotaDelay('Thu, 01 Jan 1970 00:01:00 GMT',0)).toBe(60000);
+ expect(quotaDelay(null)).toBe(30000);
+ expect(quotaDelay('9999')).toBe(300000);
+});
 import { verdictSchema, validateBatch } from '../src/vision/gemini-classifier.js';
+it('accepts canonical www redirects and apex assets for the same registered builder',async()=>{
+ const targets:string[]=[];
+ const client=new RequestClient({delay:0,retries:0,timeout:1000,maxRequests:10},async(input)=>{
+  const url=String(input);targets.push(url);
+  return targets.length===1?new Response(null,{status:301,headers:{location:'https://bellway.co.uk/image.jpg'}}):new Response('image');
+ });
+ expect((await client.bytes('https://www.bellway.co.uk/image.jpg')).toString()).toBe('image');
+ expect(targets).toEqual(['https://www.bellway.co.uk/image.jpg','https://bellway.co.uk/image.jpg']);
+ expect((await client.bytes('https://bellway.co.uk/image.jpg')).toString()).toBe('image');
+});
+it('continues to reject redirects to unrelated hosts',async()=>{
+ const client=new RequestClient({delay:0,retries:0,timeout:1000,maxRequests:10},async()=>new Response(null,{status:301,headers:{location:'https://unrelated.example/image.jpg'}}));
+ await expect(client.bytes('https://www.bellway.co.uk/image.jpg')).rejects.toThrow('Redirect outside allowed source');
+});
 it('decodes the observed gallery without executing expressions', async () => {
  const images = galleryImages(await readFile('test/fixtures/bellway/gallery.html', 'utf8'));
  expect(images).toHaveLength(20); expect(images[0]!.position).toBe(0);

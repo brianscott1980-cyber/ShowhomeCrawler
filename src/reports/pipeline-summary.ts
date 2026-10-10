@@ -1,8 +1,11 @@
 import type {PipelineStatistics} from './pipeline-statistics';
 import type {RunReport} from './report';
 export type PipelinePhase='crawl'|'classification';
-export interface PipelineActivity {status:'running'|'completed'|'stopped'|'failed';updatedAt:string;currentDevelopments:string[];model?:string;galleries?:Record<string,'running'|'completed'|'failed'>}
+export interface CrawlStage {label:string;completed?:number;total?:number;unit?:string}
+export interface PipelineActivity {stage?:CrawlStage;status:'running'|'completed'|'stopped'|'failed';updatedAt:string;currentDevelopments:string[];model?:string;galleries?:Record<string,'running'|'completed'|'failed'>}
 export interface PipelineSummary {
+ stage?:CrawlStage;
+ workers?:{id:string;model:string;status:string;updatedAt:string;currentDevelopments:string[];statistics?:PipelineStatistics}[];
  statistics?:PipelineStatistics;phase:PipelinePhase;builder:string;builderName:string;status:PipelineActivity['status']|'recorded';updatedAt:string;currentDevelopments:string[];
  totals:{completed:number;failed:number;pending:number;total:number;images:number;developments:number;developmentsCompleted:number;structuredImages:number};
  models:{name:string;count:number}[];
@@ -30,5 +33,5 @@ export function pipelineSummary(builder:string,report:RunReport,phase:PipelinePh
  const total=phase==='classification'?report.images.length:rows.reduce((sum,d)=>sum+d.total,0);
  const models=new Map<string,number>();
  if(phase==='classification')for(const image of report.images){if(!image.categorisation)continue;const name=image.categorisation.categorisationModel??image.analysisModel??image.categorisation.categorisationSource??'Not recorded';models.set(name,(models.get(name)??0)+1);}
- return {phase,builder,builderName:report.builder?.name??builder,status:activity?.status??'recorded',updatedAt:activity?.updatedAt??report.completedAt??report.startedAt,currentDevelopments:activity?.status==='running'?activity.currentDevelopments:[],totals:{completed,failed,pending:Math.max(0,total-completed-(phase==='crawl'?rows.reduce((sum,d)=>sum+d.failed,0):failed)),total,images:report.images.length,developments:Math.max(rows.length,phase==='crawl'?report.metrics?.selectedDevelopments??0:rows.length),developmentsCompleted:rows.filter(d=>d.status==='completed').length,structuredImages:report.images.filter(i=>!!i.categorisation?.interiorColours&&!!i.categorisation?.furnishings).length},models:[...models].map(([name,count])=>({name,count})),developments:rows};
+ return {stage:activity?.stage,phase,builder,builderName:report.builder?.name??builder,status:activity?.status??'recorded',updatedAt:activity?.updatedAt??report.completedAt??report.startedAt,currentDevelopments:activity?.status==='running'?activity.currentDevelopments:[],totals:{completed,failed,pending:Math.max(0,total-completed-(phase==='crawl'?rows.reduce((sum,d)=>sum+d.failed,0):failed)),total,images:report.images.length,developments:Math.max(rows.length,phase==='crawl'?report.metrics?.selectedDevelopments??0:rows.length),developmentsCompleted:rows.filter(d=>d.status==='completed').length,structuredImages:report.images.filter(i=>!!i.categorisation?.interiorColours&&!!i.categorisation?.furnishings).length},models:[...models].map(([name,count])=>({name,count})),developments:rows};
 }

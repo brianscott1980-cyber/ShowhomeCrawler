@@ -1,3 +1,7 @@
+import {cachedImage,cacheImage,nasImage} from '../storage/nas-access';
+import {claimImage} from '../vision/image-claims';
+import {atomicFile} from '../crawler/atomic-file';
+import {queueClassification} from '../reports/classification-outbox';
 import {progressReporter} from '../reports/pipeline-progress.js';
 import {preparePublication,developmentPublication} from './classification-publication.js';
 import {requireLocalContentRoot} from './local-ai-config.js';
@@ -12,7 +16,8 @@ import {classificationOrder} from '../vision/classification-order.js';
 import {orderedBatchPool} from '../vision/ordered-batch-pool.js';
 import {classifyLocal,localClassificationVersion,localSchema} from '../vision/local-classifier.js';
 import type {ReportImage,RunReport} from '../reports/report.js';
-const {values}=parseArgs({options:{'source-folder':{type:'string'},publish:{type:'boolean'},sample:{type:'boolean'},model:{type:'string',default:process.env.LOCAL_AI_MODEL??'qwen3-vl:8b-instruct'},host:{type:'string',default:process.env.OLLAMA_HOST??'http://127.0.0.1:11434'},builder:{type:'string'},development:{type:'string'},'house-type':{type:'string'},limit:{type:'string'},concurrency:{type:'string',default:'1'},'content-root':{type:'string',default:process.env.LOCAL_CONTENT_ROOT},apply:{type:'boolean'},'include-classified':{type:'boolean'},'cache-dir':{type:'string',default:'.showhome/local-ai'}}});
+const {values}=parseArgs({options:{'local-only':{type:'boolean'},'source-folder':{type:'string'},publish:{type:'boolean'},sample:{type:'boolean'},model:{type:'string',default:process.env.LOCAL_AI_MODEL??'qwen3-vl:8b-instruct'},host:{type:'string',default:process.env.OLLAMA_HOST??'http://127.0.0.1:11434'},builder:{type:'string'},development:{type:'string'},'house-type':{type:'string'},limit:{type:'string'},concurrency:{type:'string',default:'1'},'content-root':{type:'string',default:process.env.LOCAL_CONTENT_ROOT},apply:{type:'boolean'},'include-classified':{type:'boolean'},'cache-dir':{type:'string',default:'.showhome/local-ai'}}});
+if(values['local-only']){if(values.publish||!values.apply)throw new Error('--local-only requires --apply without --publish.');process.env.SHOWHOME_LOCAL_ONLY='1';}
 const model=values.model!,host=values.host!,cacheRoot=resolve(values['cache-dir']!);
 const limit=values.limit?Number(values.limit):values.sample?8:Infinity,concurrency=Number(values.concurrency);
 if(!(limit>0)||!(Number.isInteger(concurrency)&&concurrency>=1&&concurrency<=8))throw new Error('Use a positive limit and concurrency between 1 and 8.');
@@ -26,13 +31,14 @@ const entries:Entry[]=[];
 let stopping=false,total=0;
 process.once('SIGINT',()=>{stopping=true;console.log('Stopping after active images finish; rerun to resume.');});
 process.once('SIGTERM',()=>{stopping=true;});
-async function atomic(file:string,value:unknown){const temporary=file+'.'+randomUUID()+'.tmp';await writeFile(temporary,JSON.stringify(value,null,2));await rename(temporary,file);}
+async function atomic(file:string,value:unknown){await atomicFile(file,JSON.stringify(value,null,2));}
 async function imageBytes(slug:string,sourceFolder:string,image:ReportImage){
+ try{return await cachedImage(image.id);}catch{}
  const download=resolve(cacheRoot,'images',image.id+'.bin');
- for(const path of [resolve(sourceFolder,image.path),resolve('collections',slug+'-home-offices',image.path),...(values['content-root']?[resolve(values['content-root'],'assets',basename(image.path)),resolve(values['content-root'],'archive',relative(process.cwd(),sourceFolder),image.path)]:[])])try{return await storedFile(path,true);}catch{}
- try{return await readFile(download);}catch{}
+ for(const path of [resolve(sourceFolder,image.path),resolve('collections',slug+'-home-offices',image.path),...(values['content-root']?[resolve(values['content-root'],'assets',basename(image.path)),resolve(values['content-root'],'archive',relative(process.cwd(),sourceFolder),image.path)]:[])])try{return await cacheImage(image.id,(path.startsWith('\\')||path===resolve(values['content-root']??'','assets',basename(image.path)))?await nasImage(image.id,path):await readFile(path));}catch{}
+ try{return await cacheImage(image.id,await readFile(download));}catch{}
  const sources=[image.sourceUrl,`https://showhomeexplorer.vercel.app/api/assets/${slug}/${image.path}`].filter(Boolean);
- for(const url of sources)try{const response=await fetch(url,{signal:AbortSignal.timeout(60000)});if(!response.ok)continue;const bytes=Buffer.from(await response.arrayBuffer());await sharp(bytes).metadata();await mkdir(resolve(cacheRoot,'images'),{recursive:true});await writeFile(download,bytes);return bytes;}catch{}
+ for(const url of sources)try{const response=await fetch(url,{signal:AbortSignal.timeout(60000)});if(!response.ok)continue;const bytes=Buffer.from(await response.arrayBuffer());await sharp(bytes).metadata();await mkdir(resolve(cacheRoot,'images'),{recursive:true});await writeFile(download,bytes);return await cacheImage(image.id,bytes);}catch{}
  throw new Error('Image unavailable locally, on NAS, or from source; will retry on the next run.');
 }
 async function review(){
@@ -74,6 +80,9 @@ async function main(){
    const developmentGroup=order.group(developmentImages[0]!);const developmentUrl=developmentGroup==='unlinked'?'unlinked':JSON.parse(developmentGroup)[0];const developmentName=report.properties.find(h=>h.developmentUrl===developmentUrl)?.development??developmentUrl;
    if(progress&&report.classificationProgress){report.classificationProgress.currentDevelopments=[developmentName];await progress.update(builder.slug,report,true);}
    await orderedBatchPool(developmentImages,concurrency,async image=>{
+    const shared=await readFile(resolve('.showhome/supabase-outbox',builder.slug,image.id+'.json'),'utf8').then(JSON.parse).catch(()=>undefined);
+    if(shared?.image?.categorisation){Object.assign(image,shared.image);return;}
+    const release=await claimImage(image.id);if(!release)return;
     const file=resolve(folder,image.id+'.json');let result:Awaited<ReturnType<typeof classifyLocal>>|undefined,cached=false;
     try{
      try{const saved=JSON.parse(await readFile(file,'utf8'));if(saved.model===model&&saved.version===localClassificationVersion){localSchema.parse({...saved.result.categorisation,description:saved.result.verdict.description});result=saved.result;cached=true;}}catch{}
@@ -81,9 +90,9 @@ async function main(){
      const preview=resolve(folder,'previews',builder.slug+'-'+image.id+'.jpg');
      if(cached&&!await access(preview).then(()=>true,()=>false)){const bytes=await imageBytes(builder.slug,sourceFolder,image);await sharp(bytes).rotate().resize({width:600,withoutEnlargement:true}).jpeg({quality:75}).toFile(preview);}
      entries.push({builder:builder.slug,id:image.id,category:result.categorisation.mainCategory,referenceCategory:image.categorisation?.mainCategory,elapsedMs:result.elapsedMs,cached});
-     if(values.apply){image.categorisation=result.categorisation;image.verdict=result.verdict;image.analysisModel=model;delete image.error;}
+     if(values.apply){const classified={...image,categorisation:result.categorisation,verdict:result.verdict,analysisModel:model};delete classified.error;if(process.env.SHOWHOME_LOCAL_ONLY==='1')await queueClassification(builder.slug,classified,report);Object.assign(image,classified);delete image.error;if(process.env.SHOWHOME_LOCAL_ONLY==='1')await atomic(sourceFolder+'/results.json',report);}
      console.log(`${entries.length}: ${builder.name} · ${result.categorisation.mainCategory} · ${cached?'cached':(result.elapsedMs/1000).toFixed(1)+'s'}`);
-    }catch(error){const message=error instanceof Error&&error.message.startsWith('Local model')?error.message:'Local image classification failed; see source availability or Ollama logs and rerun.';if(values.apply)image.error=message;entries.push({builder:builder.slug,id:image.id,category:'Failed',elapsedMs:0,cached:false,error:message});console.log(`${builder.name}: ${message}`);}
+    }catch(error){const message=error instanceof Error&&error.message.startsWith('Local model')?error.message:'Local image classification failed; see source availability or Ollama logs and rerun.';if(values.apply)image.error=message;entries.push({builder:builder.slug,id:image.id,category:'Failed',elapsedMs:0,cached:false,error:message});console.log(`${builder.name}: ${message}`);}finally{await release();}
     if(progress)await progress.update(builder.slug,report);
    },()=>stopping);
    if(progress&&report.classificationProgress){report.classificationProgress.status=stopping?'stopped':developmentImages===developments.at(-1)?'completed':'running';if(report.classificationProgress.status!=='running')report.classificationProgress.currentDevelopments=[];await progress.update(builder.slug,report,true);}

@@ -9,7 +9,7 @@ import {randomUUID} from 'node:crypto';
 import {setTimeout as sleep} from 'node:timers/promises';
 type Status='running'|'completed'|'completed_with_gaps'|'failed';
 interface Job {classificationPid?:number;retryAt?:number;crawl?:Status;classification?:Status;folder:string;pid?:number;error?:string}
-interface State {pid:number;startedAt:string;updatedAt:string;status:Status;builders:Record<string,Job>}
+interface State {pid:number;startedAt:string;updatedAt:string;status:Status;localOnly?:boolean;builders:Record<string,Job>}
 const root=resolve('.showhome/processing'),file=resolve(root,'state.json'),lockFile=resolve(root,'supervisor.lock');
 const alive=(pid:number)=>{try{process.kill(pid,0);return true;}catch{return false;}};
 let stopping=false;process.once('SIGINT',()=>{stopping=true;});process.once('SIGTERM',()=>{stopping=true;});
@@ -22,10 +22,17 @@ async function main(){
  const contentRoot=await requireLocalContentRoot();
  const tags=await fetch('http://127.0.0.1:11434/api/tags').then(r=>r.json());
  if(!tags.models.some((m:{name:string})=>m.name==='qwen3-vl:8b-instruct'))throw new Error('Install qwen3-vl:8b-instruct first.');
- await preparePublication();
- const statisticsWorker=spawn(process.execPath,['--import','tsx','src/cli/pipeline-statistics.ts'],{cwd:process.cwd(),windowsHide:true,detached:true,stdio:'ignore'});statisticsWorker.unref();
+ const settings=await readFile(resolve(root,'settings.json'),'utf8').then(text=>JSON.parse(text.replace(/^\uFEFF/,''))).catch(()=>({}));
+ const localOnly=settings.localOnly===true;
+ if(localOnly){process.env.SHOWHOME_LOCAL_ONLY='1';console.log('Local-only mode: Supabase and Git publishing disabled.');}
+ else await preparePublication();
+ if(settings.nasBackupEnabled!==false){const backupWorker=spawn(process.execPath,['--import','tsx','src/cli/sync-nas-results.ts'],{cwd:process.cwd(),windowsHide:true,detached:true,stdio:'ignore'});backupWorker.unref();}
+ if(settings.geminiEnabled===true){const worker=spawn(process.execPath,['--import','tsx','src/cli/classify-gemini-local.ts'],{cwd:process.cwd(),windowsHide:true,detached:true,stdio:'ignore'});worker.unref();}
+ if(!localOnly){const statisticsWorker=spawn(process.execPath,['--import','tsx','src/cli/pipeline-statistics.ts'],{cwd:process.cwd(),windowsHide:true,detached:true,stdio:'ignore'});statisticsWorker.unref();}
  const previous:State|undefined=await readFile(file,'utf8').then(JSON.parse).catch(()=>undefined);
- const state:State={pid:process.pid,startedAt:previous?.startedAt??new Date().toISOString(),updatedAt:new Date().toISOString(),status:'running',builders:previous?.builders??{}};
+ const state:State={pid:process.pid,startedAt:previous?.startedAt??new Date().toISOString(),updatedAt:new Date().toISOString(),status:'running',localOnly,builders:previous?.builders??{}};
+ const recovery=await readFile(resolve(root,'recovery/state.json'),'utf8').then(JSON.parse).catch(()=>({builders:{}}));
+ for(const [slug,outcome] of Object.entries(recovery.builders??{}))if(state.builders[slug])state.builders[slug]!.crawl=(outcome as {exitCode:number}).exitCode?'failed':'completed';
  const order=(await readFile('docs/builder-recrawl-order.txt','utf8')).split(/\r?\n/).filter(slug=>developers.some(b=>b.slug===slug));
  for(const slug of order){const job=state.builders[slug]??={folder:`results/${slug}-home-offices`};if(job.classificationPid&&alive(job.classificationPid))throw new Error('An earlier classifier is still running.');if(job.pid&&alive(job.pid))throw new Error('An earlier worker is still running; avoid duplicate processing.');if(job.crawl==='running'||job.crawl==='failed'){job.crawl=undefined;await unlink(resolve(job.folder,'.lock')).catch(()=>{});}if(job.classification==='running'||job.classification==='failed')job.classification=undefined;}
  let saveQueue=Promise.resolve();
@@ -37,7 +44,8 @@ async function main(){
  }
  let crawlingDone=false;
  async function crawl(){
-  try{for(const slug of order){if(stopping)break;const job=state.builders[slug]!;if(job.crawl==='completed'||job.crawl==='completed_with_gaps')continue;job.crawl='running';await save();const checkpoint=await readFile(resolve(job.folder,'checkpoint.json'),'utf8').then(JSON.parse).catch(()=>null);
+  try{const recoveryPid=await readFile(resolve(root,'recovery/lock'),'utf8').then(Number).catch(()=>0);if(recoveryPid&&alive(recoveryPid)){console.log('Outstanding crawler sequence is handling crawling.');return;}
+  for(const slug of order){if(stopping)break;const job=state.builders[slug]!;if(job.crawl==='completed'||job.crawl==='completed_with_gaps')continue;job.crawl='running';await save();const checkpoint=await readFile(resolve(job.folder,'checkpoint.json'),'utf8').then(JSON.parse).catch(()=>null);
    const args=['src/cli/crawl.ts','--builder',slug,'--all-images','--discover-only','--preserve-existing','--refresh-pages','--output',job.folder,'--content-root',contentRoot,'--max-developments','1000','--max-properties','10000','--max-images','100000'];
    if(checkpoint&&['running','cancelled','failed'].includes(checkpoint.status))args.push('--resume');
    const code=await run(slug,'crawl',args);job.crawl=code?'failed':'completed';if(code)job.error='Crawl failed; see worker log.';await save();
@@ -52,13 +60,13 @@ async function main(){
    const sourceFolder=resolve(root,'classification-work',slug);await mkdir(sourceFolder,{recursive:true});await writeFile(resolve(sourceFolder,'results.json'),JSON.stringify(report));
    let code=1;
    for(let attempt=0;attempt<3;attempt++){
-    code=await run(slug,'classification',['src/cli/classify-local.ts','--builder',slug,'--source-folder',sourceFolder,'--model','qwen3-vl:8b-instruct','--apply','--publish','--content-root',contentRoot]);
+    code=await run(slug,'classification',['src/cli/classify-local.ts','--builder',slug,'--source-folder',sourceFolder,'--model','qwen3-vl:8b-instruct','--apply',...(localOnly?['--local-only']:['--publish']),'--content-root',contentRoot]);
     const publication=await readFile('.showhome/classification-publication.json','utf8').then(JSON.parse).catch(()=>null);
-    if(!code||publication?.slug===slug&&publication?.phase==='done')break;
-    if(attempt<2)await sleep(30000);
+    if(!code||!localOnly&&publication?.slug===slug&&publication?.phase==='done')break;
+    if(attempt<2)await sleep(2000);
    }
    const publication=await readFile('.showhome/classification-publication.json','utf8').then(JSON.parse).catch(()=>null);
-   if(code&&(publication?.slug!==slug||publication?.phase!=='done')){job.classification='failed';job.error='Classification/publication will retry; see worker log.';job.retryAt=Date.now()+30000;await save();continue;}
+   if(code&&(localOnly||publication?.slug!==slug||publication?.phase!=='done')){job.classification='failed';job.error='Classification/publication will retry; see worker log.';job.retryAt=Date.now()+30000;await save();continue;}
    job.classification=code?'completed_with_gaps':'completed';job.retryAt=code?Date.now()+30000:0;await save();
   }
  }

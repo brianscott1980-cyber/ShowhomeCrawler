@@ -20,7 +20,7 @@ furnishingTags: separate object-specific colour, material/texture, shape and sty
 export async function classifyLocal(bytes:Buffer,{model,host,timeoutMs=300000}:{model:string;host:string;timeoutMs?:number}){
  const image=await sharp(bytes).rotate().resize({width:768,height:768,fit:'inside',withoutEnlargement:true}).jpeg({quality:85}).toBuffer();
  const start=performance.now();
- const response=await fetch(`${host.replace(/\/$/,'')}/api/chat`,{method:'POST',signal:AbortSignal.timeout(timeoutMs),headers:{'Content-Type':'application/json'},body:JSON.stringify({model,stream:false,keep_alive:'5m',format:z.toJSONSchema(localSchema),messages:[{role:'user',content:localPrompt+"\nReturn exactly one JSON object matching this schema:\n"+JSON.stringify(z.toJSONSchema(localSchema)),images:[image.toString('base64')]}],options:{temperature:0,num_ctx:4096,num_predict:2400}})});
+ const response=await fetch(`${host.replace(/\/$/,'')}/api/chat`,{method:'POST',signal:AbortSignal.timeout(timeoutMs),headers:{'Content-Type':'application/json'},body:JSON.stringify({model,stream:false,keep_alive:'5m',format:z.toJSONSchema(localSchema),messages:[{role:'user',content:localPrompt+"\nReturn exactly one JSON object matching this schema:\n"+JSON.stringify(z.toJSONSchema(localSchema)),images:[image.toString('base64')]}],options:{temperature:0,num_ctx:8192,num_predict:4096}})});
  if(!response.ok)throw new Error(`Local model HTTP ${response.status}; run npm run ai:local:setup first.`);
  const body=await response.json() as {done?:boolean;done_reason?:string;message?:{content?:string};eval_count?:number;total_duration?:number};
  if(!body.done||body.done_reason==='length')throw new Error('Local model output incomplete; classification was not saved.');
