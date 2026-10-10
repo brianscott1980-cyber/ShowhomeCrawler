@@ -9,7 +9,7 @@ let connection:postgres.Sql|undefined;
 export function websiteDatabase(){return connection??=createDatabase();}
 export const readWebsiteBuilder=cache(async(slug:string)=>{
  const [row]=await websiteDatabase()`select * from showhome_web.builders where slug=${slug}`;
- return row as {slug:string;name:string;website_url:string;report_metadata:Omit<RunReport,'developments'|'properties'|'images'|'errors'>;facts:BuilderFacts;office:{address?:string}|null;logo_url:string|null;logo_background:string|null}|undefined;
+ return row as {slug:string;name:string;website_url:string;report_metadata:Omit<RunReport,'developments'|'properties'|'images'|'errors'>;facts:BuilderFacts;office:{address?:string;telephone?:string;email?:string;sourceUrl?:string;checkedAt?:string}|null;logo_url:string|null;logo_background:string|null}|undefined;
 });
 export interface CollectionScope {developmentUrl?:string;buildingName?:string;category?:string}
 export const readWebsiteCollection=cache(async(slug:string,scope?:CollectionScope):Promise<RunReport|null>=>{

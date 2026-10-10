@@ -17,6 +17,7 @@ import {developmentNavigationImages} from './development-navigation-images';
 import Link from 'next/link';
 import {readDevelopmentContact} from './read-development-contact';
 import {DevelopmentOverviewDetails} from './development-overview-details';
+import {DevelopmentArea,readDevelopmentArea} from './development-area';
 import {DevelopmentDirectoryMap} from './development-directory-map';
 import {builderBrand} from './builder-brand';
 import {developmentName} from './development-name';
@@ -98,11 +99,12 @@ export async function GroupDetail({kind,id,searchParams={},canonicalPath}:{kind:
  if(!canonicalPath&&path!==`/${pathPrefix}/${id}`)permanentRedirect(withFilters(path,searchParams));
  const isDevelopment=kind==='sites'||kind==='locations';
  const builder=group.collections[0]!;
- const [placeEntries,detailCards,contact,brand]=await Promise.all([
+ const [placeEntries,detailCards,contact,brand,area]=await Promise.all([
   buildingLocationIndex([group]),
   isDevelopment?siteCards([group]):Promise.resolve([]),
   isDevelopment&&group.developmentUrl?readDevelopmentContact(group.developmentUrl):Promise.resolve(undefined),
-  isDevelopment?readWebsiteBuilder(builder.slug):Promise.resolve(undefined)
+  isDevelopment?readWebsiteBuilder(builder.slug):Promise.resolve(undefined),
+  isDevelopment&&group.developmentUrl?readDevelopmentArea(builder.slug,group.developmentUrl):Promise.resolve(undefined)
  ]);
  const places=Object.fromEntries(placeEntries),detailCard=detailCards[0];
  const developmentCounts=isDevelopment?{'Building Types':groupCollections(group.collections,'buildings').filter(group=>group.name!=='Development gallery').length,'Room Types':groupCollections(group.collections,'interiors').filter(group=>!['Exterior','Uncategorised'].includes(group.name)).length,Interiors:new Set(group.collections.flatMap(collection=>collection.report.images.filter(image=>image.categorisation?image.categorisation.isRoom:Boolean(image.verdict?.matches)&&spaceName(image,collection.report.question)!=='Exterior').map(image=>`${collection.slug}:${image.id}`))).size}:undefined;
@@ -120,9 +122,10 @@ export async function GroupDetail({kind,id,searchParams={},canonicalPath}:{kind:
     <div className="builder-navigation-content"><h2>{destination.label}<span aria-hidden="true">→</span></h2><p>{destination.count.toLocaleString('en-GB')} {destination.unit}</p></div>
    </Link>)}
   </nav>
+  <DevelopmentArea area={area}/>
  </>:undefined;
 
- return <ResultsPage title={group.name} counts={developmentCounts} developmentDetails={detailCard?<DevelopmentOverviewDetails card={detailCard} contact={contact}/>:undefined} titleAccessory={logo?<img className="builder-results-logo development-builder-overview-logo" src={logo} alt={`${builder.name} logo`} style={{background:brand?.logo_background??'#fff'}}/>:undefined} eyebrow={isDevelopment||kind==='interiors'||kind==='spaces'?null:group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={undefined} includeUnclassified>{navigation}</ResultsPage>;
+ return <ResultsPage title={group.name} counts={developmentCounts} developmentDetails={detailCard?<DevelopmentOverviewDetails card={detailCard} contact={contact} facts={brand?.facts}/>:undefined} titleAccessory={logo?<img className="builder-results-logo development-builder-overview-logo" src={logo} alt={`${builder.name} logo`} style={{background:brand?.logo_background??'#fff'}}/>:undefined} eyebrow={isDevelopment||kind==='interiors'||kind==='spaces'?null:group.developers.map((name,i)=><span key={name}>{i>0?' · ':''}<BuilderName name={name}/></span>)} description={`Explore interiors from ${group.name}. Discover the homes and developments behind each image.`} back={{href:`/${pathPrefix}`,label:`← All ${labels[kind].toLowerCase()}`}} collections={group.collections} places={places} initialImage={undefined} includeUnclassified>{navigation}</ResultsPage>;
 }
 export async function groupMetadata(kind:GroupKind,id:string,canonicalPath?:string){
  const sourcePath=`/${prefixFor(kind)}/${id}`;

@@ -1,5 +1,5 @@
 import {load} from 'cheerio';
-export interface DevelopmentContact {telephone?:string;email?:string;siteForeman?:string;siteSalesperson?:string;openingHours?:string[]}
+export interface DevelopmentContact {telephone?:string;email?:string;address?:string;sourceUrl?:string;checkedAt?:string;siteForeman?:string;siteSalesperson?:string;openingHours?:string[]}
 /** Read explicitly published development contact information from its page. */
 export function developmentContact(html:string):DevelopmentContact{
  const $=load(html),contact:DevelopmentContact={};
@@ -18,6 +18,7 @@ export function developmentContact(html:string):DevelopmentContact{
     const item=value as Record<string,unknown>;
     // Avoid importing the parent company's general contact details.
     if(['LocalBusiness','RealEstateAgent','Residence'].includes(String(item['@type']))){
+     if(item.address&&typeof item.address==='object'){const address=item.address as Record<string,unknown>;contact.address=[address.streetAddress,address.addressLocality,address.addressRegion,address.postalCode].filter(v=>typeof v==='string'&&v.trim()).join(', ')||contact.address;}
      if(!contact.telephone&&typeof item.telephone==='string')contact.telephone=item.telephone;
      if(!contact.email&&typeof item.email==='string')contact.email=item.email;
      const raw=item.openingHours;

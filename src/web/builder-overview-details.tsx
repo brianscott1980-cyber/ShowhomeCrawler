@@ -7,6 +7,8 @@ export async function BuilderOverviewDetails({slug,website,countries}:{slug:stri
   <div><dt>Ratings</dt><dd>{facts.reviews?`${facts.reviews.average.toFixed(1)} (${facts.reviews.count.toLocaleString('en-GB')})`:'Not available'}</dd></div>
   {facts.reviews?.sources.map(source=><div key={source.name}><dt>{source.name.replace(' (main office)','')}</dt><dd><a href={source.url} target="_blank" rel="noreferrer">{source.rating.toFixed(1)} ({source.count.toLocaleString('en-GB')}) ↗</a></dd></div>)}
   <div className="builder-company-address"><dt>Company address</dt><dd>{office?.address?<address>{office.address}</address>:'Not available'}</dd></div>
+  {office?.telephone&&<div><dt>Telephone</dt><dd><a href={`tel:${office.telephone.replace(/[^+\d]/g,'')}`}>{office.telephone}</a></dd></div>}
+  {office?.email&&<div><dt>Email</dt><dd><a href={`mailto:${office.email}`}>{office.email}</a></dd></div>}
   <div className="builder-country-coverage"><dt>Countries covered</dt><dd>{countries.sort().join(', ')||'Not available'}</dd></div>
  </dl><a className="builder-website-link" href={website} target="_blank" rel="noreferrer">Visit builder website ↗</a></>;
 }
