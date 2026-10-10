@@ -4,6 +4,20 @@ import {createRoot} from 'react-dom/client';
 import {expect,it,vi} from 'vitest';
 import {ImageCardTags,cardTags,fittingTagCount} from '../src/web/image-card-tags';
 import type {ImageCategorisation} from '../src/reports/report';
+it('routes shared wall and furnishing colours to the scoped furnishing filter',async()=>{
+ vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
+ const container=document.createElement('div'),root=createRoot(container);
+ const furnishing=vi.fn(),interior=vi.fn(),tag=vi.fn();
+ const category={colours:['Black'],interiorColours:[{surface:'walls',colours:['Black'],prominence:'dominant'}],furnishings:[{object:'alarm clock',colours:['White'],prominence:'accent'}]} as ImageCategorisation;
+ try{
+  await act(async()=>root.render(<ImageCardTags furnishingColourScope category={category} selected={c=>c==='Black'} interiorSelected={()=>false} onTag={tag} onInteriorColour={interior} onFurnishingColour={furnishing}/>));
+  const black=Array.from(container.querySelectorAll<HTMLButtonElement>('.image-card-tag-row > button')).find(b=>b.textContent==='Black')!;
+  await act(async()=>black.click());
+  expect(furnishing).toHaveBeenCalledWith('Black');
+  expect(interior).not.toHaveBeenCalled();expect(tag).not.toHaveBeenCalled();
+  expect(black.getAttribute('aria-pressed')).toBe('true');
+ }finally{await act(async()=>root.unmount());vi.unstubAllGlobals();}
+});
 it('fills three card tags and filters remaining tags without opening the card',async()=>{
  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT',true);
  const show=vi.fn(function(this:HTMLDialogElement){this.setAttribute('open','');});

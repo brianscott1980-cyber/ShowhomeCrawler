@@ -33,6 +33,17 @@ beforeAll(async()=>{
  await db.exec(`insert into showhome_web.gallery_memberships select c.uid,g.key,g.builder_slug,g.source_url,g.bedrooms,g.price,d.source_url,d.name,b.name,array(select value from jsonb_each_text(d.geography)) from showhome_web.gallery_cards c join showhome_web.images i on i.catalogue_id=c.image_id and i.builder_slug=c.builder_slug join showhome_web.gallery_images gi on gi.image_key=i.key join showhome_web.galleries g on g.key=gi.gallery_key join showhome_web.developments d on d.key=g.development_key join showhome_web.buildings b on b.key=g.building_key`);
 });
 afterAll(()=>db.close());
+it('matches Black alarm clocks rather than black walls or other furnishings',async()=>{
+ const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:'alarm clocks'};
+ for(const [id,colour] of [['a','black'],['b','white']]){
+  await db.query('update showhome_web.images set metadata=$1 where catalogue_id=$2',[JSON.stringify({categorisation:{interiorColours:[{surface:'walls',colours:['black'],prominence:'dominant'}],furnishings:[{object:'alarm clock',colours:[colour],prominence:'accent'},{object:'chair',colours:['black'],prominence:'secondary'}]}}),id]);
+ }
+ try{
+  const page=await queryGallery({scope,filters:{colour:'Black'}},sql);
+  expect(page.images.map(i=>i.id)).toEqual(['a']);
+  expect(page.total).toBe(1);
+ }finally{await db.exec("update showhome_web.images set metadata='{}' where catalogue_id in ('a','b')");}
+});
 it('matches colours on the scoped furnishing, with plain object and colour facets',async()=>{
  const scope={kind:'interiors' as const,href:'/interiors/all',furnishing:'chair'};
  const metadata={categorisation:{objects:['Chair','Curtain'],chairs:['dark grey chairs'],furnishings:[{object:'chair',colours:['brown'],prominence:'secondary'},{object:'curtain',colours:['blue'],prominence:'secondary'}],interiorColours:[{surface:'walls',colours:['white'],prominence:'dominant'},{surface:'wall',colours:['blue'],prominence:'accent'}]}};
