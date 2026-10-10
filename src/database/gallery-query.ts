@@ -7,9 +7,9 @@ import type postgres from 'postgres';
 import {websiteDatabase} from './website';
 import {selectedValues} from '../web/filter-selection';
 import type {GalleryRequest,GalleryPageData} from '../web/gallery-page-data';
-export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=websiteDatabase(),options:{prepareSummary?:boolean}={}):Promise<GalleryPageData>{
+export async function queryGallery(input:GalleryRequest,sql:postgres.Sql=websiteDatabase(),queryOptions:{prepareSummary?:boolean}={}):Promise<GalleryPageData>{
  const {scope,filters={}}=input,values:unknown[]=[];
- const preparing=Boolean(options.prepareSummary);
+ const preparing=Boolean(queryOptions.prepareSummary);
  const published=!preparing&&!input.imageOnly&&!cascadingFiltersEnabled()?await readGalleryPublicationSummary(sql,scope):undefined;
  const p=(v:unknown)=>{values.push(v);return '$'+values.length;};
  const favourite=scope.kind==='favourites';
