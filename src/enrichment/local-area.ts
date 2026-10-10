@@ -27,6 +27,6 @@ export function distanceLabels(places:AreaPlace[]){return ['rail','motorway','re
 /** AI selects documented facts; rendered prose cannot introduce unsupported claims. */
 export function areaSummary(places:AreaPlace[],selectedIds:string[]){
  const nearby=places.filter(p=>p.miles<=1),selected=selectedIds.map(id=>nearby.find(p=>p.id===id)).filter((p):p is AreaPlace=>Boolean(p)).slice(0,4);
- if(!selected.length)return '';
+ if(!selected.length)return nearby.length===0&&selectedIds.includes('coverage:none')?'The current map extract does not identify named amenities within one mile of the recorded development location. Nearby mapped transport, shops and services are shown below; map coverage may be incomplete.':'';
  return `Within one mile of the development, mapped amenities include ${selected.map(p=>`${p.name} (${p.label.toLowerCase()}, ${p.miles.toFixed(1)} miles)`).join('; ')}. Distances are measured in a straight line from the recorded development location.`;
 }

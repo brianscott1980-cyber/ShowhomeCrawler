@@ -1,0 +1,8 @@
+import {expect,it} from 'vitest';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {vi} from 'vitest';
+vi.mock('../src/database/website',()=>({websiteDatabase:vi.fn()}));
+import {DevelopmentArea} from '../src/web/development-area';
+import {BuilderRatingLabels} from '../src/web/builder-rating-labels';
+it('shows source-linked distance labels and distinguishes straight-line distances',()=>{const html=renderToStaticMarkup(<DevelopmentArea area={{summary:'A verified area statement.',radiusMiles:1,distanceMethod:'straight-line',coordinateMethod:'postcode-centre',latitude:51,longitude:0,generatedAt:'2026-10-10',model:'test',status:'complete',sources:[{name:'Map source',url:'https://www.openstreetmap.org',checkedAt:'2026-10-10'}],places:[{id:'node/1',kind:'rail',label:'Rail station',name:'Example Station',miles:0.654,url:'https://www.openstreetmap.org/node/1'}]}}/>);expect(html).toContain('Rail station');expect(html).toContain('0.7 miles');expect(html).toContain('postcode centre');expect(html).toContain('walking and driving routes will differ');expect(html).toContain('Sources and check date');});
+it('labels ratings as builder-wide and uses actual HBF stars rather than the composite score',()=>{const html=renderToStaticMarkup(<dl><BuilderRatingLabels facts={{rating:{stars:5,score:4.38,value:4.5,year:2026,source:'https://www.hbf.co.uk'},reviews:{average:4.4,count:10,sources:[{name:'Trustpilot',rating:4.4,count:10,url:'https://www.trustpilot.com',checkedAt:'2026-10-10'}]}}}/></dl>);expect(html).toContain('Builder HBF');expect(html).toContain('5 stars');expect(html).toContain('Builder reviews');expect(html).toContain('Rating sources');});
