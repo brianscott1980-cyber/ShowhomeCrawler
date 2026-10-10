@@ -8,7 +8,7 @@ it('requests structured vision JSON and records local provenance and searchable 
  const bytes=await sharp({create:{width:4,height:4,channels:3,background:'#fff'}}).jpeg().toBuffer();
  const result=await classifyLocal(bytes,{model:'qwen3-vl:2b',host:'http://localhost:11434'});
  expect(result.categorisation.categorisationSource).toBe('ollama');expect(result.verdict.matches).toBe(true);expect(result.categorisation.fabricTags).toEqual(['Blue bedding']);
- const request=JSON.parse(fetch.mock.calls[0]![1]!.body as string);expect(request.stream).toBe(false);expect(request.messages[0].images).toHaveLength(1);expect(request.format.properties.mainCategory.enum).toContain('Infographic');
+ const request=JSON.parse(fetch.mock.calls[0]![1]!.body as string);expect(request.stream).toBe(false);expect(request.think).toBe(false);expect(request.messages[0].images).toHaveLength(1);expect(request.format.properties.mainCategory.enum).toContain('Infographic');
 });
 it('excludes infographic drawings but permits property exterior renders',async()=>{
  const bytes=await sharp({create:{width:4,height:4,channels:3,background:'#fff'}}).jpeg().toBuffer();
