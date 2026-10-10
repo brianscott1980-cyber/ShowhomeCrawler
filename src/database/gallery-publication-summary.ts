@@ -22,7 +22,7 @@ export async function refreshGalleryPublicationSummaries(sql:postgres.Sql|postgr
   const key=gallerySummaryKey(scope);
   const card=rooms.find(r=>r.href===scope.href);
   const builders=(scope.href==='/interiors/all'||scope.href==='/interiors')?[]:(card?.collection_slugs??[]);
-  const summary=await queryGallery({scope,limit:1},sql as postgres.Sql);
+  const summary=await queryGallery({scope,limit:1},sql as postgres.Sql,{prepareSummary:true});
   const payload:GalleryPublicationSummary={total:summary.total,counts:summary.counts,facets:summary.facets};
   const fingerprint=createHash('sha256').update(JSON.stringify(payload)).digest('hex');
   await sql`insert into showhome_web.gallery_publication_summaries(key,scope,builders,fingerprint,payload,updated_at)

@@ -234,5 +234,16 @@ it('precomputes and serves gallery publication summaries automatically',async()=
  expect(summary?.total).toBe(4);
  expect(summary?.counts?.Developments).toBe(2);
  expect((await db.query('select count(*)::int as count from showhome_web.gallery_summary_refresh_queue')).rows[0].count).toBe(0);
+ // A publication must replace an existing summary, never read it back as
+ // the source of truth when the underlying gallery has changed.
+ vi.stubEnv('NEXT_PUBLIC_CASCADING_FILTERS','false');
+ await db.exec("update showhome_web.gallery_cards set category='Bathroom' where image_id='orphan'");
+ try{
+  await refreshGalleryPublicationSummaries(sql);
+  const updated=await readGalleryPublicationSummary(sql,{kind:'interiors',href:'/interiors/bedroom'});
+  expect(updated?.total).toBe(3);
+  const page=await queryGallery({scope:{kind:'interiors',href:'/interiors/bedroom'}},sql);
+  expect(page.total).toBe(3);expect(page.counts).toEqual(updated?.counts);
+ }finally{await db.exec("update showhome_web.gallery_cards set category='Bedroom' where image_id='orphan'");}
 });
 
