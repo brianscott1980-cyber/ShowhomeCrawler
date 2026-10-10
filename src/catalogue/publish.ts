@@ -10,6 +10,7 @@ import type {Collection} from '../web/groups';
 import {createDatabase} from '../database/postgres';
 import {builderDirectoryData,groupDirectoryData} from './directory-projections';
 import {computeHomepageData} from './homepage-projection';
+import {refreshGalleryPublicationSummaries} from '../database/gallery-publication-summary';
 export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
  await sql.begin(async tx=>{
   await tx`select pg_advisory_xact_lock(726391042)`;
@@ -40,10 +41,11 @@ export async function publishWebsite(sql:ReturnType<typeof createDatabase>){
   for(const {kind,counts} of [...directories,{kind:'builders',counts:builder.counts}])await tx`insert into showhome_web.presentations(key,payload) values(${`counts:${kind}`},${tx.json(counts)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
   for(const overview of overviews)await tx`insert into showhome_web.presentations(key,payload) values(${overview.key},${tx.json(overview.payload as never)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
   await tx`insert into showhome_web.presentations(key,payload) values('homepage',${tx.json(home as never)}) on conflict(key) do update set payload=excluded.payload,updated_at=now()`;
+  await refreshGalleryPublicationSummaries(tx);
   await tx`update showhome_web.publication_revision set revision=revision+1 where singleton=true`;
   await tx`delete from showhome_web.query_cache`;
  });
- await sql`analyze showhome_web.images,showhome_web.galleries,showhome_web.directory_cards,showhome_web.directory_filter_rows`;
+ await sql`analyze showhome_web.images,showhome_web.galleries,showhome_web.directory_cards,showhome_web.directory_filter_rows,showhome_web.gallery_publication_summaries`;
  console.log('Website projections published atomically');
 }
 export async function refreshDirectoryReadiness(sql:postgres.Sql|postgres.TransactionSql){

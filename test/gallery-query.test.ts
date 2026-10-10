@@ -222,3 +222,15 @@ it('excludes stored generic exterior flags only from building galleries',async()
   expect(interiors.images.some(image=>image.id==='b')).toBe(true);
  }finally{await db.exec("update showhome_web.images set is_generic_exterior=false where catalogue_id='b'");}
 });
+
+it('precomputes and serves gallery publication summaries automatically',async()=>{
+ const {refreshGalleryPublicationSummaries,readGalleryPublicationSummary}=await import('../src/database/gallery-publication-summary');
+ await db.exec("insert into showhome_web.gallery_summary_refresh_queue(builder_slug) values('alpha') on conflict do nothing");
+ await refreshGalleryPublicationSummaries(sql);
+ const summary=await readGalleryPublicationSummary(sql,{kind:'interiors',href:'/interiors/bedroom'});
+ expect(summary).toBeDefined();
+ expect(summary?.total).toBe(4);
+ expect(summary?.counts?.Developments).toBe(2);
+ expect((await db.query('select count(*)::int as count from showhome_web.gallery_summary_refresh_queue')).rows[0].count).toBe(0);
+});
+
